@@ -1,50 +1,53 @@
 # 部署指南
 
-## 前置：兩個待辦（見 GitHub issues 的 blocker）
+> 決策已定：**公開 repo、帳號 muxiliu512**。`config.js` 已設 `publicRaw:true`。
 
-1. **決定 repo 可見性**：private（需 GitHub Pro 開私有 Pages）或 public（縮圖公開）。
-2. **建立 fine-grained PAT**：
-   - GitHub → Settings → Developer settings → **Fine-grained tokens** → Generate new token
-   - Repository access：**Only select repositories → `lava-ig-console`**
-   - Permissions：`Contents` = **Read and write**、`Issues` = **Read and write**、`Metadata` = Read
-   - 有效期建議 90 天
+## 什麼是 PAT？
 
-## 步驟一：本機設定 .sync.json
+PAT（Personal Access Token，個人存取權杖）＝一組給「程式／腳本」用的專用密碼，讓它們代你操作 GitHub。它比帳號密碼安全，因為可以**限縮權限**（只授權這一個 repo、只給讀寫檔案與建 issue）、**設到期日**、隨時撤銷。我們用它讓：① 操控室網頁把你的審核寫回 repo；② 上線腳本把程式碼推上去。
+
+## 步驟一：在 GitHub 網站建立空 repo
+
+1. 登入 GitHub（帳號 `muxiliu512`）→ 右上「＋」→ **New repository**。
+2. Repository name 填 `lava-ig-console`；選 **Public**；**不要**勾 Add a README；按 **Create repository**。
+
+（fine-grained PAT 必須指定一個「已存在」的 repo，所以要先建。）
+
+## 步驟二：建立 fine-grained PAT
+
+1. 右上頭像 → **Settings** → 左下 **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**。
+2. 填：**Token name** = `lava-ig-console`；**Expiration** = 90 days；**Resource owner** = `muxiliu512`。
+3. **Repository access** → 選 **Only select repositories** → 勾 `lava-ig-console`。
+4. **Permissions** → 展開 **Repository permissions**，設：
+   - **Contents** → **Read and write**
+   - **Issues** → **Read and write**
+   -（Metadata 會自動變 Read，正常）
+5. 按 **Generate token** → **複製那串 `github_pat_...`**（只會顯示一次，關掉就看不到）。
+
+## 步驟三：把 token 填進本機 .sync.json
 
 ```bash
-cd lava-ig-console
+cd "貼文製造機器人/lava-ig-console"
 cp .sync.json.example .sync.json
-# 編輯 .sync.json，填入 owner / repo / branch / token
+open -e .sync.json          # 用文字編輯器打開，把 "token" 那格換成剛複製的 github_pat_...（owner/repo 已是對的）
 ```
-`.sync.json` 已被 `.gitignore` 忽略，不會進 repo。
+`.sync.json` 已被 `.gitignore` 忽略，**不會進 repo**。
 
-## 步驟二：建 repo ＋首推＋開 Pages
+## 步驟四：首推 + 開 Pages + 建 issue
 
 ```bash
-bash scripts/bootstrap_github.sh            # public
-# 或
-bash scripts/bootstrap_github.sh --private  # private（需 Pro）
+bash scripts/bootstrap_github.sh     # repo 已存在 → 直接推程式碼 + 嘗試開 Pages
+bash scripts/create_issues.sh        # 建立待決 issue（冪等，重跑不會重複）
 ```
-完成後 Pages 網址約為 `https://<owner>.github.io/lava-ig-console/docs/`（首次 1–2 分鐘）。
+若腳本的「開 Pages」那步沒成功（token 未含 Pages 權限屬正常），到 repo **Settings → Pages → Source = Deploy from a branch → 選 `main` 分支、`/docs` 資料夾 → Save** 手動開即可。
 
-> 若偏好手動：GitHub 網站建空 repo → 本機 `git remote add` 後 `git push` → repo Settings → Pages → Source 選 `main` 分支、`/docs` 資料夾。
+完成後 Pages 網址：`https://muxiliu512.github.io/lava-ig-console/docs/`（首次 1–2 分鐘）。
 
-## 步驟三：確認前端設定
+## 步驟五：手機開 Pages、貼入同一枚 PAT
 
-編輯 `docs/config.js`：`owner` 改成實際帳號；public repo 設 `publicRaw: true`（圖片走 raw、較快）、private 保持 `false`。改完 push。
+開上面的 Pages 網址 → 右上 ⚙︎ **設定** → 貼入同一枚 `github_pat_...` → **測試連線** → **儲存**。PAT 只存在你這台手機/瀏覽器（localStorage）。之後審核、輸入成效、審批提案、回滾——每個動作都會 commit 回 `data/*.json`。
 
-## 步驟四：手機開 Pages、貼入 PAT
-
-開 Pages 網址 → 右上 ⚙︎ **設定** → 填 owner/repo/branch、貼 PAT → **測試連線** → **儲存**。PAT 存在瀏覽器 localStorage。
-
-之後即可審核、輸入成效、審批提案、回滾——每個動作都會 commit 到 `data/*.json`。
-
-## 步驟五（可選）：建立 GitHub issues
-
-```bash
-bash scripts/create_issues.sh --dry-run   # 先看要建哪些
-bash scripts/create_issues.sh             # 實際建立（冪等，已存在則略過）
-```
+> 到期（90 天）後：回步驟二重建一枚，更新本機 `.sync.json` 與手機設定即可。
 
 ## 排程掛載（Phase 2/3/4）
 
