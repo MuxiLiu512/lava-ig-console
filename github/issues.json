@@ -1,15 +1,11 @@
 {
   "_note": "GitHub issues 的來源檔。scripts/create_issues.sh 讀本檔逐一建立。labels 需先存在或由 script 自動建立。",
+  "_decided": "可見性=公開 repo、帳號=muxiliu512（2026-07-15 Jesse 確認）。config.js 已設 publicRaw:true。",
   "issues": [
-    {
-      "title": "決策：repo 帳號與可見性（public vs private）",
-      "labels": ["decision", "blocker"],
-      "body": "## 背景\n操控室 repo 兼作資料庫與 GitHub Pages 前端。可見性影響三件事：\n\n1. **Pages**：私有 repo 的 Pages 需 GitHub Pro/Team。\n2. **圖片載入**：public → `<img src>` 直接吃 `raw.githubusercontent.com`（快、不耗 API 額度）；private → 需透過 Contents API 以 blob 載入（每張圖 1 次 API 呼叫，5000/hr 上限內足夠但較慢）。前端 `config.js` 的 `publicRaw` 旗標已預留切換。\n3. **素材外流**：public repo 任何人可看縮圖（已是 1080 長邊，可再加浮水印）。\n\n## 選項\n- **A（預設）**：private repo + GitHub Pro（私有 Pages）+ `publicRaw:false`。素材不外流，但需 Pro、圖片走 API。\n- **B**：public repo + `publicRaw:true`。最省事最快，但縮圖公開。\n- **C**：private repo + Cloudflare Pages（免 Pro）。多一個平台。\n\n## 需要 Jesse 決定\n選 A / B / C？帳號確認為 `muxiliu512`？"
-    },
     {
       "title": "阻擋：提供 fine-grained PAT（contents:read/write + issues:write）",
       "labels": ["decision", "blocker"],
-      "body": "## 為什麼需要\n- **前端寫回**：瀏覽器直接呼叫 Contents API 更新 `data/*.json`，需 `Contents: Read and write`。\n- **排程推送**：`scripts/push_files.sh` 用 token clone+push，需同一權限。\n- **自動建 issue**：`scripts/create_issues.sh` 需 `Issues: Read and write`（僅建 repo 用一次）。\n\n## 規格\n- Fine-grained PAT，**Repository access 僅限 `lava-ig-console` 這一個 repo**。\n- Permissions：Contents = Read and write；Issues = Read and write；Metadata = Read（必帶）。\n- 有效期建議 90 天，到期換發。\n\n## 存放\n- 前端：首次於操控室『設定』貼入，存瀏覽器 localStorage（不進 repo）。\n- 排程：寫進本機 `.sync.json`（已 git-ignored）。\n\n> ⚠️ 請勿把 PAT 貼在 issue／聊天。建立後放進本機 `.sync.json` 即可，我用 `push_files.sh` 讀取。"
+      "body": "## 為什麼需要\n- **前端寫回**：瀏覽器直接呼叫 Contents API 更新 `data/*.json`，需 `Contents: Read and write`。\n- **排程推送**：`scripts/push_files.sh` 用 token clone+push，需同一權限。\n- **自動建 issue**：`scripts/create_issues.sh` 需 `Issues: Read and write`（僅建 repo 用一次）。\n\n## 規格\n- Fine-grained PAT，**Repository access 僅限 `lava-ig-console` 這一個 repo**。\n- Permissions：Contents = Read and write；Issues = Read and write；Metadata = Read（必帶）。\n- 有效期建議 90 天，到期換發。\n\n## 存放\n- 前端：首次於操控室『設定』貼入，存瀏覽器 localStorage（不進 repo）。\n- 排程：寫進本機 `.sync.json`（已 git-ignored）。\n\n> ⚠️ 請勿把 PAT 貼在 issue／聊天。建立後放進本機 `.sync.json` 即可，用 `push_files.sh` 讀取。\n\n決策已定：**公開 repo、帳號 muxiliu512**，故圖片走 raw、免 Pro。"
     },
     {
       "title": "風險：3:4 成品 vs IG 動態消息 4:5 裁切",
