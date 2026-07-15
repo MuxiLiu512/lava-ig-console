@@ -1,0 +1,30 @@
+{
+  "proposals": [
+    {
+      "pid": "P-20260715-01",
+      "risk": "high",
+      "title": "封面光線配比改 暖:冷 = 7:3",
+      "diff_summary": "config/style-notes.md §光線：六張中亮色調由『至少 2 張』提升為『至少 3 張』，封面禁冷藍調。",
+      "evidence": [
+        "reviews: 2 篇退回底圖 feedback 皆提『封面光線太冷』",
+        "metrics: 冷色封面 3 篇 reach 平均較暖色封面低約 38%"
+      ],
+      "status": "pending",
+      "created_at": "2026-07-15T21:30:00+08:00",
+      "decided_at": null
+    },
+    {
+      "pid": "P-20260715-02",
+      "risk": "high",
+      "title": "CTA 尾板文案 A/B：加入『本週限定地點』動態行",
+      "diff_summary": "config/style-notes.md §CTA：尾板固定文案下方新增一行可變地點資訊（不改逐字鎖定的主文案）。",
+      "evidence": [
+        "metrics: follows 轉換在含具體地點的貼文較高",
+        "review: Jesse 於 07/13 approve 註記『想試試把地點講清楚』"
+      ],
+      "status": "pending",
+      "created_at": "2026-07-15T21:30:00+08:00",
+      "decided_at": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "_comment": "渲染引擎 v5 之上的可調項。render_post_v5.py 應讀本檔覆蓋預設；迭代 harness 可改。",
+  "engine_version": "v5",
+  "canvas": { "w": 1950, "h": 2600 },
+  "colors": {
+    "yellow": [250, 210, 40],
+    "orange": [232, 66, 36],
+    "orange_dark": [219, 53, 23],
+    "gray_source": [165, 167, 162],
+    "white": [255, 255, 255]
+  },
+  "overlay": {
+    "max_alpha": 216,
+    "ambient": 55,
+    "fade_span": 0.30,
+    "top_scrim_depth": 0.14,
+    "top_scrim_alpha": 95
+  },
+  "orange_bar": { "width_ratio": 0.068, "height_formula": "0.0035H+3px" },
+  "crop_default": "smart",
+  "still_source_label": { "enabled": true, "level_down": 2, "color": [165, 167, 162] },
+  "display_copy_max_chars": 140,
+  "bright_slides_min": 2
+}

@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-07-15T18:00:00+08:00",
+  "posts": [
+    {
+      "id": "20260712-已讀不回的心理學-v5",
+      "topic": "已讀不回的心理學",
+      "version": 5,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ac-demo-01",
+      "created_at": null,
+      "caption": "比起壞消息，你是不是也更厭惡「已讀不回」？\n\n那種懸在半空的感覺其實有名字——1920 年代心理學家 Bluma Zeigarnik 發現，大腦記得「沒做完的事」遠比記得「做完的事」清楚。一則已讀沒回的訊息，在腦裡就是一張還沒結帳的單子，持續佔用你的注意力。\n\n這跟你的魅力沒有關係，是聊天室這個設計本身讓每段關係都懸在半空。\n所以我們決定把聊天室拿掉——配對後回答三個價值觀問題，確認意願，直接約見面。\n\n出現就好，其他交給我們。\n\n#已讀不回 #交友軟體 #蔡格尼效應 #心理學 #Lava交友 #不聊天的交友軟體 #線下約會 #約會焦慮",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1b.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1c.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-1.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-2.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-3a.jpg",
+              "kind": "still"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-3b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-3.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-4b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-4.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-5b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-5.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "topic": "母胎單身的人，其實比你更懂得選擇伴侶",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ac-demo-02",
+      "created_at": null,
+      "caption": "母胎單身，其實比你更懂得「選擇」伴侶？\n\n沒談過戀愛，常被當成缺點。但從沒在關係裡將就過的人，往往對「自己要什麼」有更清楚的座標——他們不是沒有選擇，而是還沒遇到值得的相遇。\n\n見面是一場機率遊戲，你需要的是更多高品質的偶然接觸面積。\nLava 幫你把「遇到」這件事變簡單：滑動、配對、碰面。\n\n出現就好，其他交給我們。\n\n#母胎單身 #單身 #交友軟體 #Lava交友 #線下約會 #擇偶 #感情 #台灣約會",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/final/slide-1.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            }
+          ],
+          "final_src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/final/slide-2.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine-Nine"
+            }
+          ],
+          "final_src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/final/slide-3.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/final/slide-4.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            }
+          ],
+          "final_src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/final/slide-5.jpg",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/final/slide-6.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# 機密：PAT 只存本機，絕不進 repo
+.sync.json
+# 系統雜物
+.DS_Store
+__pycache__/
+*.pyc
+# 本地暫存
+/tmp/
+*.log

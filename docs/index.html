@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+  <meta name="theme-color" content="#0e0f11">
+  <title>Lava IG 操控室</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="title">Lava IG 操控室 <small id="modeTag"></small></div>
+    <button class="icon-btn" id="btnSettings" title="設定">⚙︎</button>
+  </header>
+
+  <main id="app">
+    <div class="empty"><span class="spin"></span> 載入中…</div>
+  </main>
+
+  <nav class="tabbar">
+    <button data-tab="review" class="active"><span class="ic">📥</span>審核<span class="cnt badge-dot hidden" id="cntReview"></span></button>
+    <button data-tab="metrics"><span class="ic">📊</span>成效</button>
+    <button data-tab="proposals"><span class="ic">💡</span>提案<span class="cnt badge-dot hidden" id="cntProp"></span></button>
+    <button data-tab="versions"><span class="ic">🕑</span>版本</button>
+  </nav>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "versions": [
+    {
+      "v": "cfg-001",
+      "date": "2026-07-15",
+      "commit": "init0000",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": ["建立 config 初始版本：從風格規格 v1.0+v1.1 與現行 pipeline prompt 萃取"],
+      "trigger": { "reviews": [], "metrics_window": null },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-002",
+      "date": "2026-07-15",
+      "commit": "abc1234",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": ["負面 prompt 追加 'deformed fingers, extra fingers'", "禁用詞 +2：加價、手續費"],
+      "trigger": { "reviews": ["R-20260713-01"], "metrics_window": "07/09–07/15" },
+      "rollback_of": null
+    }
+  ],
+  "rollback_requests": []
+}
