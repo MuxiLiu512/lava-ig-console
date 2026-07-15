@@ -1,0 +1,45 @@
+{
+  "_note": "GitHub issues 的來源檔。scripts/create_issues.sh 讀本檔逐一建立。labels 需先存在或由 script 自動建立。",
+  "issues": [
+    {
+      "title": "決策：repo 帳號與可見性（public vs private）",
+      "labels": ["decision", "blocker"],
+      "body": "## 背景\n操控室 repo 兼作資料庫與 GitHub Pages 前端。可見性影響三件事：\n\n1. **Pages**：私有 repo 的 Pages 需 GitHub Pro/Team。\n2. **圖片載入**：public → `<img src>` 直接吃 `raw.githubusercontent.com`（快、不耗 API 額度）；private → 需透過 Contents API 以 blob 載入（每張圖 1 次 API 呼叫，5000/hr 上限內足夠但較慢）。前端 `config.js` 的 `publicRaw` 旗標已預留切換。\n3. **素材外流**：public repo 任何人可看縮圖（已是 1080 長邊，可再加浮水印）。\n\n## 選項\n- **A（預設）**：private repo + GitHub Pro（私有 Pages）+ `publicRaw:false`。素材不外流，但需 Pro、圖片走 API。\n- **B**：public repo + `publicRaw:true`。最省事最快，但縮圖公開。\n- **C**：private repo + Cloudflare Pages（免 Pro）。多一個平台。\n\n## 需要 Jesse 決定\n選 A / B / C？帳號確認為 `muxiliu512`？"
+    },
+    {
+      "title": "阻擋：提供 fine-grained PAT（contents:read/write + issues:write）",
+      "labels": ["decision", "blocker"],
+      "body": "## 為什麼需要\n- **前端寫回**：瀏覽器直接呼叫 Contents API 更新 `data/*.json`，需 `Contents: Read and write`。\n- **排程推送**：`scripts/push_files.sh` 用 token clone+push，需同一權限。\n- **自動建 issue**：`scripts/create_issues.sh` 需 `Issues: Read and write`（僅建 repo 用一次）。\n\n## 規格\n- Fine-grained PAT，**Repository access 僅限 `lava-ig-console` 這一個 repo**。\n- Permissions：Contents = Read and write；Issues = Read and write；Metadata = Read（必帶）。\n- 有效期建議 90 天，到期換發。\n\n## 存放\n- 前端：首次於操控室『設定』貼入，存瀏覽器 localStorage（不進 repo）。\n- 排程：寫進本機 `.sync.json`（已 git-ignored）。\n\n> ⚠️ 請勿把 PAT 貼在 issue／聊天。建立後放進本機 `.sync.json` 即可，我用 `push_files.sh` 讀取。"
+    },
+    {
+      "title": "風險：3:4 成品 vs IG 動態消息 4:5 裁切",
+      "labels": ["risk", "enhancement"],
+      "body": "## 問題\n渲染版型是 **3:4（1950×2600）**，但 IG 動態消息單圖最高只到 **4:5（0.8）**。3:4（0.75）比 4:5 更高，發文時 IG 會**上下裁切約 6–7%**。我們的內容剛好上有 hook 問句、下有 footer/CTA，兩端都可能被吃掉。\n\n操控室的 IG Mockup 已內建切換鈕（`4:5 IG 實際裁切` / `3:4 完整成品`）讓 Jesse 審核時直接看到裁切風險。\n\n## 選項\n- **A**：渲染改以 4:5 為安全框，重要元素留在中間 90%（版型引擎 v6 調整）。\n- **B**：維持 3:4，接受裁切，靠審核時人工確認關鍵字不被切。\n- **C**：輸出雙版本（3:4 存檔 / 4:5 發文）。\n\n## 建議\nA 或 C。至少把「hook 與 footer 落在 4:5 安全區」寫進 `config/render-config.json` 與 QC 清單。"
+    },
+    {
+      "title": "設計：data/*.json 單一寫手原則與併發衝突",
+      "labels": ["risk", "architecture"],
+      "body": "## 問題\n『repo 當資料庫』下，瀏覽器與三個排程都會寫 `data/`。雖然 `saveJson` 有 409 refetch-sha 重試、`push_files.sh` 有 fetch+rebase 重試，但**同一檔同時被兩邊寫**仍可能互蓋。\n\n## 現況擁有權（建議明確化）\n| 檔 | 寫手 | 衝突點 |\n|---|---|---|\n| posts.json | 排程A | 低（單一寫手）|\n| reviews.json | 前端新增 / 排程A 標 consumed | 中 |\n| metrics.json | 前端（Phase4 後改排程） | 低 |\n| proposals.json | 排程B 新增 / 前端改 status | **高（雙寫手）** |\n| iterate_log.json | 排程B、C / 前端加 rollback_request | **高** |\n\n## 建議\n1. proposals：前端只改 `status/decided_at`，排程只 append 新 proposal 與讀 status —— 用欄位級不重疊降低風險。\n2. 高衝突檔考慮拆分（如 `rollback_requests.json` 獨立）。\n3. 排程執行前一律先 `git pull --rebase`；所有寫入保留現有重試。\n請 review 這份擁有權矩陣是否合理。"
+    },
+    {
+      "title": "優化：assets/ 無限成長 —— 縮圖保留策略",
+      "labels": ["enhancement"],
+      "body": "## 問題\n每篇貼文會推 N 張候選 + M 張 final 縮圖到 `assets/`。每天一篇、每篇十幾張，repo 會持續膨脹，且審核完的候選圖不再需要。\n\n## 建議策略\n- 貼文 **approved 後**：只保留被選中的候選與 final，其餘候選縮圖刪除（`git rm`，歷史仍在）。\n- 貼文 **published 後 N 天**：final 也可移出（成效已入 metrics.json）。\n- 由排程A或一支 `prune_assets.py` 定期執行，刪除動作寫入 commit 訊息方便追蹤。\n\n## 待確認\n保留窗口天數？是否需要保留全部歷史縮圖供回顧？"
+    },
+    {
+      "title": "優化：縮圖格式 webp vs jpg（本機工具鏈缺 webp 編碼）",
+      "labels": ["enhancement"],
+      "body": "## 現況\nPLAN 目標縮圖為 webp（長邊 1080）。但本機 `PIL 7.0.0`(anaconda) 與 `sips` 皆**無法輸出 webp**，故 `_thumbs.py` 目前**退回 JPEG q82**。demo 兩篇共 28 張圖約 2.6MB（可接受）。\n\n`_thumbs.make_thumb()` 已寫成：偵測到系統有 `cwebp` 就產 webp，否則 JPEG。\n\n## 選項\n- **A**：`brew install webp` 取得 `cwebp`，之後自動走 webp（repo 更輕、同畫質更小）。\n- **B**：維持 JPEG，簡單、零額外依賴。\n\n## 建議\nA（一次性安裝），long-term repo 體積差異明顯。"
+    },
+    {
+      "title": "接線：ClickUp 卡片狀態 ↔ 操控室審核結果回寫",
+      "labels": ["integration"],
+      "body": "## 範圍\nPLAN §6 排程A 要在審核後回寫 ClickUp（approve 留言＋改狀態；退回同步）。本次已建 posts.json 的 `clickup_task_id` 欄位，但實際回寫邏輯屬排程A（既有 pipeline）改動，尚未接。\n\n## 待確認\n- ClickUp 清單 `901819351278` 的狀態機：`待排版 / 退回重生 / 已核准 / 已發布` 對應名稱？\n- approve 時要在卡片留什麼格式的 comment（含操控室連結？成品 zip？）\n- 退回底圖 vs 退回排版是否對應不同 ClickUp 狀態？"
+    },
+    {
+      "title": "安全：前端零外部依賴 + 建議加 CSP",
+      "labels": ["security", "enhancement"],
+      "body": "## 現況（良好）\n前端 `docs/` 為純 vanilla JS、**零外部 script/CDN**，PAT 存 localStorage。只要不引入第三方 script，XSS 竊 token 風險極低。\n\n## 建議\n1. 在 `docs/index.html` 加嚴格 CSP meta，明訂只允許 `self` 與 `api.github.com`／`raw.githubusercontent.com`：杜絕未來誤加外部 script。\n2. 訂規範：`docs/` 永遠不得引入外部 CDN／字型／分析腳本。\n3. PAT 到期輪換（見 PAT issue）。\n\n是否要我直接加上 CSP meta？（可能需視實際 API host 微調）"
+    }
+  ]
+}
