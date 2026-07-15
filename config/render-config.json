@@ -1,7 +1,7 @@
 {
   "_comment": "渲染引擎 v5 之上的可調項。render_post_v5.py 應讀本檔覆蓋預設；迭代 harness 可改。",
-  "engine_version": "v5",
-  "canvas": { "w": 1950, "h": 2600 },
+  "engine_version": "v5.2",
+  "canvas": { "w": 1950, "h": 2438, "ratio": "4:5", "_note": "4:5＝IG 動態滿版上限；改自 3:4(2600) 以免 logo/footer 被裁" },
   "colors": {
     "yellow": [250, 210, 40],
     "orange": [232, 66, 36],

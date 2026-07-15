@@ -297,7 +297,12 @@ function buildMockup(p, choice) {
   // media
   const media = el("div", "ig-media");
   const track = el("div", "ig-track");
-  const finals = p.slides.map(s => s.final_src).filter(Boolean);
+  // 有成品用成品；尚未渲染（如 Drive 來源）則退回顯示該 slide 選中的候選底圖
+  const finals = p.slides.map(s => {
+    if (s.final_src) return s.final_src;
+    const cand = (s.candidates || []).find(c => c.cid === choice[s.n]) || (s.candidates || [])[0];
+    return cand ? cand.src : null;
+  }).filter(Boolean);
   finals.forEach(src => { const sl = el("div", "ig-slide"); sl.appendChild(img(src)); track.appendChild(sl); });
   media.appendChild(track);
   const count = el("div", "ig-count", "1/" + finals.length); media.appendChild(count);

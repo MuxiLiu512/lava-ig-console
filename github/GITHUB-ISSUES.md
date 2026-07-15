@@ -17,7 +17,7 @@
 
 | # | 標題 | 重點 |
 |---|---|---|
-| 2 | 3:4 成品 vs IG 4:5 裁切 | 3:4 發文會被上下裁切 ~6–7%，hook/footer 有風險；Mockup 已可切換預覽。建議渲染改對 4:5 安全框 |
+| 2 | 4:5 版型首次 render 驗證 | **已改 engine 為 4:5（1950×2438）**，logo/footer 不再被裁；待下批 render 目視確認文字不溢出 |
 | 3 | data/*.json 單一寫手原則 | proposals/iterate_log 有雙寫手；附擁有權矩陣待 review，建議欄位級不重疊＋排程先 pull --rebase |
 | 7 | 前端零依賴 + 建議加 CSP | 現況良好（無外部 script）；建議加嚴格 CSP meta 永久防護 |
 
