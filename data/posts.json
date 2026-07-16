@@ -244,7 +244,7 @@
               "source_label": "Friends"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260716-你知道weak-ties/final/slide-1.jpg",
           "default_cid": "a"
         },
         {
@@ -281,7 +281,7 @@
               "source_label": "Fleabag"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260716-你知道weak-ties/final/slide-2.jpg",
           "default_cid": "a"
         },
         {
@@ -294,7 +294,7 @@
               "kind": "generated"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260716-你知道weak-ties/final/slide-3.jpg",
           "default_cid": "a"
         },
         {
@@ -307,7 +307,7 @@
               "kind": "generated"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260716-你知道weak-ties/final/slide-4.jpg",
           "default_cid": "a"
         },
         {
@@ -320,14 +320,14 @@
               "kind": "generated"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260716-你知道weak-ties/final/slide-5.jpg",
           "default_cid": "a"
         },
         {
           "n": 6,
           "role": "CTA",
           "candidates": [],
-          "final_src": null
+          "final_src": "assets/20260716-你知道weak-ties/final/slide-6.jpg"
         }
       ]
     }
