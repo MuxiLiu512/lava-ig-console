@@ -81,7 +81,7 @@
       document.getElementById("modeBadge").textContent = isLocal ? "地端" : "雲端";
       var c = window.LAVA_CONFIG || {};
       document.getElementById("foot").innerHTML = isLocal
-        ? '地端模式：操控室以本地檔預覽（唯讀操作只改記憶體）。雲端網址：<code>https://' + (c.owner||'muxiliu512') + '.github.io/' + (c.repo||'lava-ig-console') + '/docs/home.html</code>'
+        ? '地端模式：操控室以本地檔預覽（唯讀操作只改記憶體）。雲端網址：<code>https://' + (c.owner||'muxiliu512') + '.github.io/' + (c.repo||'lava-ig-console') + '/home.html</code>'
         : '雲端模式：操控室的審核／成效會 commit 回 repo。首次請於操控室右上 ⚙︎ 貼入 PAT。';
     })();
   </script>
