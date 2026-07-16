@@ -126,6 +126,64 @@ def set_status(args):
     save("posts.json", d)
 
 
+# ── Phase 2 寫回：操控室審核結果 → ClickUp 卡片狀態（單一狀態真相） ──────
+# 對應「一張卡走到底」：核准→待排版、退回→退回重生，回饋寫成卡片留言。
+# 需 .sync.json 內含 clickup_token（ClickUp Settings → Apps → API Token）。
+CLICKUP_STATUS = {
+    ("approve", None): "待排版",
+    ("reject", "base_image"): "退回重生",
+    ("reject", "mockup"): "退回重生",
+}
+
+
+def _read_sync():
+    p = os.path.join(REPO, ".sync.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _clickup(method, path, token, body=None):
+    import urllib.request
+    req = urllib.request.Request(
+        "https://api.clickup.com/api/v2" + path, method=method,
+        headers={"Authorization": token, "Content-Type": "application/json"},
+        data=json.dumps(body).encode("utf-8") if body else None)
+    with urllib.request.urlopen(req) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def apply_reviews(args):
+    """讀未回寫的審核 → 改對應 ClickUp 卡片狀態＋留回饋，標 clickup_synced。
+    與 pipeline 的 consumed 分開（那個管重生），本旗標只管 ClickUp 狀態回寫。"""
+    token = _read_sync().get("clickup_token")
+    reviews = load("reviews.json")
+    posts = {p["id"]: p for p in load("posts.json").get("posts", [])}
+    todo = [r for r in reviews.get("reviews", []) if not r.get("clickup_synced")]
+    if not todo:
+        print("無待回寫審核"); return
+    for r in todo:
+        post = posts.get(r["post_id"]) or {}
+        cid = post.get("clickup_task_id")
+        status = CLICKUP_STATUS.get((r.get("decision"), r.get("scope")))
+        line = "%s → 卡片 %s → %s" % (r["post_id"], cid, status)
+        if args.dry_run or not token or not cid or not status:
+            reason = "dry-run" if args.dry_run else ("缺 clickup_token" if not token else ("缺 clickup_task_id" if not cid else "無對應狀態"))
+            print("(%s) %s" % (reason, line)); continue
+        _clickup("PUT", "/task/" + cid, token, {"status": status})
+        if r.get("decision") == "approve":
+            msg = "✅ 操控室核准（選圖 %s）。狀態→待排版，準備渲染排程。" % r.get("slide_choices", {})
+        else:
+            where = "底圖" if r.get("scope") == "base_image" else "排版"
+            msg = "↩ 操控室退回%s：%s（狀態→退回重生）" % (where, r.get("feedback", ""))
+        _clickup("POST", "/task/" + cid + "/comment", token, {"comment_text": msg, "notify_all": True})
+        r["clickup_synced"] = True
+        print("✓ " + line)
+    if not args.dry_run:
+        save("reviews.json", reviews)
+
+
 # ── 結尾：組 posts.json 條目 ─────────────────────────────────────────
 def add_post(args):
     """讀 manifest 檔（見檔頭 schema），產縮圖並 upsert 進 posts.json。"""
@@ -270,6 +328,7 @@ def main():
     a.set_defaults(func=from_drive)
     a = sub.add_parser("mark-consumed"); a.add_argument("ids", nargs="+"); a.set_defaults(func=mark_consumed)
     a = sub.add_parser("set-status"); a.add_argument("post_id"); a.add_argument("status"); a.set_defaults(func=set_status)
+    a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
     args.func(args)
