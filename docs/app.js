@@ -328,12 +328,6 @@ function buildMockup(p, choice) {
   more.onclick = () => { const c = body.classList.toggle("clamp"); more.textContent = c ? "…更多" : " 收合"; };
   ig.appendChild(cap);
   phone.appendChild(ig); wrap.appendChild(phone);
-  // crop toggle
-  const ct = el("div", "crop-toggle");
-  const b45 = el("button", "on", "4:5 IG 實際裁切"); const b34 = el("button", null, "3:4 完整成品");
-  b45.onclick = () => { media.classList.remove("full"); b45.classList.add("on"); b34.classList.remove("on"); };
-  b34.onclick = () => { media.classList.add("full"); b34.classList.add("on"); b45.classList.remove("on"); };
-  ct.appendChild(b45); ct.appendChild(b34); wrap.appendChild(ct);
   return wrap;
 }
 
