@@ -213,6 +213,10 @@ def _build_and_write(m):
             fo = make_thumb(s["final"], os.path.join(ASSETS, pid, "final", "slide-%d" % s["n"]))
             final_src = os.path.relpath(fo, REPO).replace(os.sep, "/")
         slide = {"n": s["n"], "role": s.get("role", ""), "candidates": cands, "final_src": final_src}
+        if s.get("heading"):
+            slide["heading"] = s["heading"]
+        if s.get("display_copy"):
+            slide["display_copy"] = s["display_copy"]
         if cands:
             slide["default_cid"] = cands[0]["cid"]
         slides.append(slide)
@@ -292,7 +296,8 @@ def from_drive(args):
                 fp = os.path.join(args.finals_dir, "final-%02d%s" % (n, ext))
                 if os.path.exists(fp):
                     final = fp; break
-        slides.append({"n": n, "role": str(s.get("role", "")), "final": final, "candidates": cands})
+        slides.append({"n": n, "role": str(s.get("role", "")), "final": final, "candidates": cands,
+                       "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")})
 
     pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
     m = {"id": pid, "topic": topic_raw, "version": args.version,

@@ -138,7 +138,7 @@ def apply_low_risk(change):
 def run(args):
     reviews_d = load("reviews.json"); metrics_d = load("metrics.json")
     props_d = load("proposals.json"); log = load("iterate_log.json")
-    summary = {"rollbacks": 0, "applied_proposals": 0, "auto_changes": 0, "new_proposals": 0, "feedback_consumed": 0}
+    summary = {"rollbacks": 0, "applied_proposals": 0, "auto_changes": 0, "new_proposals": 0, "feedback_consumed": 0, "copy_absorbed": 0}
 
     # 2) 回滾請求
     for req in log.get("rollback_requests", []):
@@ -203,12 +203,33 @@ def run(args):
         else:
             sys.stderr.write("⏸ 已達單日自動上限，%s 留待明日或轉提案\n" % cat)
 
+    # 5) 吸收操控室的文案編輯 → 語氣學習（低風險自動；把你改後的句子當偏好範例）
+    ce = load("copy_edits.json")
+    absorbed = 0
+    for e in ce.get("edits", []):
+        if e.get("consumed"):
+            continue
+        for ed in e.get("edits", []):
+            line = "- （語氣範例 %s，來自你對「%s」的修改）偏好寫法：%s" % (
+                today().isoformat(), (e.get("post_id", "") or "")[:20], (ed.get("edited", "") or "").replace("\n", " ")[:120])
+            if append_line(os.path.join(CONFIG, "style-notes.md"), line):
+                absorbed += 1
+        e["consumed"] = True
+    if absorbed and not args.dry_run:
+        v = next_cfg_version(log)
+        commit = commit_config("%s: 吸收 %d 則文案語氣範例 [risk:low] [auto]" % (v, absorbed))
+        log_version(log, v, "low", True, ["吸收操控室文案編輯的語氣範例 %d 則" % absorbed],
+                    {"reviews": [], "metrics_window": None}, commit=commit)
+        sys.stderr.write("✎ 吸收文案語氣範例 %d 則 → style-notes\n" % absorbed)
+    summary["copy_absorbed"] = absorbed
+
     if not args.dry_run:
         save("reviews.json", reviews_d)  # 註：consumed 由排程A處理發布後才標；此處僅 harness 記錄
         save("proposals.json", props_d)
         save("iterate_log.json", log)
+        save("copy_edits.json", ce)
         # 把 data 變更也 commit（config 已在 commit_config 內處理）
-        git("add", "data/proposals.json", "data/iterate_log.json", check=False)
+        git("add", "data/proposals.json", "data/iterate_log.json", "data/copy_edits.json", check=False)
         if git("status", "--porcelain", "data", check=False).stdout.strip():
             git("commit", "-m", "iterate: 更新 proposals/log %s" % today().isoformat(), check=False)
 

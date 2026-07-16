@@ -101,10 +101,10 @@ async function setImg(node, path) {
 const img = path => { const e = el("img"); setImg(e, path); return e; };
 
 // ── State ───────────────────────────────────────────────────────────
-const STATE = { posts: null, reviews: null, metrics: null, proposals: null, iterate_log: null };
+const STATE = { posts: null, reviews: null, metrics: null, proposals: null, iterate_log: null, copy_edits: null };
 const FILES = {
   posts: "data/posts.json", reviews: "data/reviews.json", metrics: "data/metrics.json",
-  proposals: "data/proposals.json", iterate_log: "data/iterate_log.json",
+  proposals: "data/proposals.json", iterate_log: "data/iterate_log.json", copy_edits: "data/copy_edits.json",
 };
 async function loadAll() {
   const keys = Object.keys(FILES);
@@ -210,6 +210,9 @@ function renderDetail(pid) {
   // IG Mockup
   app.appendChild(buildMockup(p, choice));
 
+  // 文案編輯（改動 → copy_edits.json → 迭代 harness 吸收語氣）
+  app.appendChild(buildCopyEditor(p));
+
   // 候選底圖挑選
   const picker = el("div"); picker.appendChild(el("div", "small muted", "為每張 slide 挑一張底圖（點選＝標記）"));
   p.slides.forEach(s => picker.appendChild(slideBlock(p, s, choice)));
@@ -279,6 +282,40 @@ function actionBar(p, choice) {
   return bar;
 }
 function disableBar(bar, on) { bar.querySelectorAll("button").forEach(b => b.disabled = on); }
+
+// ── 文案編輯 ─────────────────────────────────────────────────────────
+function buildCopyEditor(p) {
+  const withCopy = p.slides.filter(s => s.heading != null || s.display_copy != null);
+  if (!withCopy.length) return el("div");
+  const card = el("div", "card"); const pad = el("div", "pad");
+  pad.appendChild(el("div", null, '<b>✏️ 文案編輯</b> <span class="tiny muted">改動會餵給迭代 harness 學你的語氣</span>'));
+  const fields = [];
+  withCopy.forEach(s => {
+    pad.appendChild(el("div", "small muted", "slide " + s.n + " · " + esc(s.role || "")));
+    [["heading", "主標"], ["display_copy", "圖面文案"]].forEach(([f, label]) => {
+      if (s[f] == null) return;
+      pad.appendChild(el("label", "fld", label));
+      const ta = el("textarea"); ta.value = s[f];
+      if (f === "heading") ta.style.minHeight = "42px";
+      ta.dataset.n = s.n; ta.dataset.field = f; ta.dataset.orig = s[f];
+      pad.appendChild(ta); fields.push(ta);
+    });
+  });
+  const btn = el("button", "btn primary block", "儲存文案修改"); btn.style.marginTop = "12px";
+  btn.onclick = async () => {
+    const edits = fields.filter(t => t.value !== t.dataset.orig)
+      .map(t => ({ n: Number(t.dataset.n), field: t.dataset.field, original: t.dataset.orig, edited: t.value.trim() }));
+    if (!edits.length) { toast("沒有變更"); return; }
+    try {
+      btn.disabled = true;
+      await saveJson(FILES.copy_edits, d => { (d.edits = d.edits || []).push({ post_id: p.id, ts: nowISO(), consumed: false, edits }); }, "copy-edit: " + p.id);
+      toast("已儲存 " + edits.length + " 處修改");
+      edits.forEach(e => { const t = fields.find(f => Number(f.dataset.n) === e.n && f.dataset.field === e.field); if (t) t.dataset.orig = e.edited; });
+    } catch (e) { toast(e.message, true); }
+    btn.disabled = false;
+  };
+  pad.appendChild(btn); card.appendChild(pad); return card;
+}
 
 // ── IG Mockup ───────────────────────────────────────────────────────
 const IG_ICONS = {
