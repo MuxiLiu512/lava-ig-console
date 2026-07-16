@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e0f11">
+  <title>Lava 貼文生產｜首頁</title>
+  <style>
+    :root{--bg:#0e0f11;--surface:#17191c;--surface2:#1f2226;--line:#2a2e33;--text:#f2f3f4;--muted:#a5a7a2;--orange:#e84224;--yellow:#fad228;--radius:16px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang TC","Noto Sans TC",sans-serif;
+      max-width:720px;margin:0 auto;padding:28px 18px 48px}
+    header{margin:8px 4px 22px}
+    header h1{font-size:22px;margin:0 0 4px;letter-spacing:.3px}
+    header p{color:var(--muted);font-size:13.5px;margin:0}
+    .badge{display:inline-block;font-size:11px;padding:2px 9px;border-radius:999px;background:var(--surface2);color:var(--muted);border:1px solid var(--line);margin-left:6px}
+    .sec{margin:22px 4px 10px;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    a.card{display:block;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--line);
+      border-radius:var(--radius);padding:16px;transition:transform .1s,border-color .1s}
+    a.card:active{transform:scale(.98)}
+    a.card:hover{border-color:var(--orange)}
+    a.card.hero{grid-column:1/-1;background:linear-gradient(135deg,rgba(232,66,36,.18),rgba(250,210,40,.06));border-color:#5a2a2a}
+    .card .ic{font-size:26px;line-height:1;margin-bottom:10px}
+    .card b{display:block;font-size:15.5px;margin-bottom:3px}
+    .card span{font-size:12.5px;color:var(--muted);line-height:1.45}
+    .full{grid-column:1/-1}
+    footer{margin-top:26px;color:#767a80;font-size:11.5px;text-align:center;line-height:1.7}
+    footer code{background:var(--surface2);padding:1px 6px;border-radius:5px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌋 Lava 貼文生產 <span class="badge" id="modeBadge">…</span></h1>
+    <p>IG 內容管線的首頁 — 從選題、生成、審核到成效，一處進入。</p>
+  </header>
+
+  <div class="sec">審核與駕駛艙</div>
+  <div class="grid">
+    <a class="card hero" href="index.html">
+      <div class="ic">🎛️</div>
+      <b>操控室 Console</b>
+      <span>審核佇列 · IG Mockup 預覽 · 選底圖 · 成效儀表板 · 迭代提案 · 版本回滾</span>
+    </a>
+  </div>
+
+  <div class="sec">上游：選題與過稿（ClickUp）</div>
+  <div class="grid">
+    <a class="card" href="https://app.clickup.com/90182716173/v/li/901819351278" target="_blank" rel="noopener">
+      <div class="ic">📋</div><b>IG 內容管線</b>
+      <span>勾 🚀 放行選題 · PT 過稿設「決定」· 狀態流一覽</span>
+    </a>
+    <a class="card" href="https://lavadating.app.n8n.cloud/home/workflows" target="_blank" rel="noopener">
+      <div class="ic">🔧</div><b>n8n 工作流</b>
+      <span>01 撰稿 · 02 生圖 · 03 過稿 · 07 放行監聽</span>
+    </a>
+  </div>
+
+  <div class="sec">素材與規格（Google Drive）</div>
+  <div class="grid">
+    <a class="card" href="https://drive.google.com/drive/folders/1aSyyJMhtjWRP0fST0BxnnAPJaqY8-aAg" target="_blank" rel="noopener">
+      <div class="ic">🖼️</div><b>產出（底圖／劇照）</b>
+      <span>每篇的生成底圖與劇照候選</span>
+    </a>
+    <a class="card" href="https://drive.google.com/drive/folders/1pEEL61YW_YzW2vrujy_4lUFKLT6Y6DyB" target="_blank" rel="noopener">
+      <div class="ic">📐</div><b>風格規格（正本）</b>
+      <span>v1.1 撰稿／視覺準則 — 機器不改</span>
+    </a>
+    <a class="card full" href="https://drive.google.com/drive/folders/1R7d8eOUbZmreHsMpF6L4ZkKNza0ZSsTM" target="_blank" rel="noopener">
+      <div class="ic">🗂️</div><b>Lava INC. Assets · 98 Lava-IG-AI產文系統</b>
+      <span>素材庫索引 · 黃金參考 · 操作手冊 · 交付說明</span>
+    </a>
+  </div>
+
+  <footer id="foot"></footer>
+
+  <script src="config.js"></script>
+  <script>
+    (function(){
+      var isLocal = location.protocol === "file:" || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+      document.getElementById("modeBadge").textContent = isLocal ? "地端" : "雲端";
+      var c = window.LAVA_CONFIG || {};
+      document.getElementById("foot").innerHTML = isLocal
+        ? '地端模式：操控室以本地檔預覽（唯讀操作只改記憶體）。雲端網址：<code>https://' + (c.owner||'muxiliu512') + '.github.io/' + (c.repo||'lava-ig-console') + '/docs/home.html</code>'
+        : '雲端模式：操控室的審核／成效會 commit 回 repo。首次請於操控室右上 ⚙︎ 貼入 PAT。';
+    })();
+  </script>
+</body>
+</html>
