@@ -188,8 +188,28 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 
 ## 6. 待辦 / 卡關（給下一個 window 接手點）
 
-### #4 IG 自動發佈 — **唯一未完成**，卡在 Jesse 端前置
-教學已備：`guides/IG-自動發佈-設定教學.md`（5 步：IG 商業帳號 → 連 FB 粉專 → 建 Meta app → 權限 `instagram_content_publish` → 取 long-lived token）。
+### #4 IG 自動發佈 — 進行中（2026-07-17 更新）
+教學已備：`guides/IG-自動發佈-設定教學.md`。**已決定走 Instagram API with Facebook Login 路徑**（因需 insights 回拉「成效」分頁）。
+
+**已確認的固定值（非機密，可直接用）**：
+| 項目 | 值 |
+|---|---|
+| Meta App（lava inc.-IG）App ID | `917196600877456`（IG 產品編號另有 `894283759842674`）|
+| 企業管理平台 | half_waystudio，business_id `603190274427730`（Lava 資產在此）|
+| **IG Business Account ID（發文目標）** | `17841474839208540` |
+| App 管理員 | 楊子義（= Jesse 的 FB） |
+| 需要的權限 | `instagram_basic` `instagram_content_publish` `instagram_manage_insights` `pages_show_list` `pages_read_engagement` `business_management` |
+
+**已完成（2026-07-17 全部打通）**：app 建好、6 權限授權、換到**不過期粉專 token** 存進 n8n credential、n8n 實測發文 token 有效。
+- n8n credential：**`t44CUVrw6Bxkz6Do`**（type `httpQueryAuth`，name「Query Auth account」，query 參數名必須是 `access_token`）——**token 只在此，不在 chat/repo**。
+- 驗證 workflow：`Lava IG｜Token 測試`（`1QPt4MakN5VCFwkt`，一次性，可留作 token 健康檢查）。實測 `GET /17841474839208540?fields=username` → 回 `{"username":"lava_dating"}`。
+- 踩雷：Query Auth 參數名一開始掛錯 → FB 回 `(#200) Provide valid app ID`（= 沒收到 token 參數，非 token 壞）；把 Name 改成 `access_token` 即通。
+
+**剩餘 3 塊（我來建，不需 Jesse）**：
+1. **圖片公開 URL**：IG `/media` 只吃**公開 https 圖片**。方案＝render_and_archive 另把 finals 複製到 `docs/finals/<post-id>/`，靠 Pages 公開成 `https://muxiliu512.github.io/lava-ig-console/finals/<id>/slideN.jpg`（Pages 服務 /docs 於根，已驗證公開可達）。
+2. **操控室排程 UI**：已 render（有 finals）的貼文，加「排程發佈時間」datetime picker + 按鈕 → 寫 posts.json `publish_at` + status `已排程`。（PT 在審核台排程，貼合 repo-as-DB；替代方案：ClickUp 日期欄，較不一致）
+3. **workflow 10 IG 自動發佈**：scheduleTrigger 每 N 分 → 讀 posts.json（raw）→ 取 `已排程` 且 `publish_at<=now` → 建輪播（逐 slide POST /media `is_carousel_item` → POST /media `CAROUSEL`+children → /media_publish）→ 標 `已發布` + ClickUp 留言 @Jesse。caption 用 `_assemble_caption`。用 cred `t44CUVrw6Bxkz6Do`。
+App Review 自家帳號免（測試人員/dev 模式）。
 
 **Jesse 最後回覆「還沒，需要協助設定」** → 下一步是**陪 Jesse 走完 Meta 設定**，拿到：
 - IG Business account id

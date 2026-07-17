@@ -22,6 +22,10 @@ from _thumbs import make_thumb
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA = os.path.join(REPO, "data")
 ASSETS = os.path.join(REPO, "assets")
+DOCS = os.path.join(REPO, "docs")
+# Pages 服務 /docs 於站根：docs/finals/<pid>/slide-N.jpg → 下面這個公開 URL，供 IG /media 抓圖
+GH_PAGES = "https://muxiliu512.github.io/lava-ig-console"
+IG_LONG_EDGE = 1350  # IG 4:5 顯示上限 1080×1350；成品降到此尺寸當公開圖（IG 反正會再壓）
 CID = ["a", "b", "c", "d", "e", "f"]
 IMG_EXT = (".png", ".jpg", ".jpeg", ".gif", ".webp")
 
@@ -209,10 +213,14 @@ def _build_and_write(m):
                 entry["prompt_hash"] = c["prompt_hash"]
             cands.append(entry)
         final_src = None
+        public_url = None
         if s.get("final") and os.path.exists(s["final"]):
             fo = make_thumb(s["final"], os.path.join(ASSETS, pid, "final", "slide-%d" % s["n"]))
             final_src = os.path.relpath(fo, REPO).replace(os.sep, "/")
+            public_url = _publish_final(s["final"], pid, s["n"])  # 全圖公開版供 IG 發佈
         slide = {"n": s["n"], "role": s.get("role", ""), "candidates": cands, "final_src": final_src}
+        if public_url:
+            slide["public_url"] = public_url
         if s.get("heading"):
             slide["heading"] = s["heading"]
         if s.get("display_copy"):
@@ -232,6 +240,28 @@ def _build_and_write(m):
     posts.append(post)
     save("posts.json", d)
     print("✓ posts.json 已 upsert：%s（%d slides，%d 候選）" % (pid, len(slides), sum(len(s["candidates"]) for s in slides)))
+
+
+def _publish_final(src, pid, n):
+    """成品全圖 → IG 可抓的公開 JPEG（docs/finals/<pid>/slide-N.jpg，Pages 公開）。回傳公開 URL 或 None。"""
+    try:
+        from PIL import Image
+    except Exception:
+        return None
+    try:
+        outdir = os.path.join(DOCS, "finals", pid)
+        os.makedirs(outdir, exist_ok=True)
+        im = Image.open(src).convert("RGB")
+        w, h = im.size
+        scale = min(1.0, IG_LONG_EDGE / max(w, h))
+        if scale < 1.0:
+            im = im.resize((max(1, int(w * scale)), max(1, int(h * scale))))
+        im.save(os.path.join(outdir, "slide-%d.jpg" % n), "JPEG", quality=90, optimize=True)
+    except Exception as e:
+        sys.stderr.write("  ! 公開圖產生失敗 slide-%d：%s\n" % (n, e))
+        return None
+    from urllib.parse import quote
+    return "%s/finals/%s/slide-%d.jpg" % (GH_PAGES, quote(pid), n)
 
 
 def _collect_slide_imgs(dirs, kind):
@@ -313,6 +343,7 @@ def push(args):
     paths = ["data/posts.json", "data/reviews.json"]
     # 一併把新 assets 推上（保守起見推整個 assets）
     paths.append("assets")
+    paths.append("docs/finals")  # IG 公開圖（Pages 服務，供 workflow 10 發佈抓圖）
     r = subprocess.run(["bash", os.path.join(REPO, "scripts", "push_files.sh"), args.message] + paths)
     sys.exit(r.returncode)
 
