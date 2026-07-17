@@ -222,7 +222,16 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 3. **重餵防洗只保護 scheduled** → 已擴及 published（連 publish_at/published_at/media_id 一起保）。
 4. **`.sync.json` 的 `clickup_token` 是 placeholder**（值含中文「…個人…供回寫卡片狀態」非真 token）→ 本機 `apply-reviews`/`reconcile-published` 用它會失敗。已加防呆（非 ASCII 就略過）。**真正的 ClickUp 寫回是靠 n8n OAuth（workflow 09/10）与 feed 排程的 ClickUp MCP，不靠這把 token**，故不影響線上。若要用本機 ClickUp 命令，需在 .sync.json 換成真的 ClickUp API token。
 
-測試工具 `1QPt4MakN5VCFwkt`（手動/不發佈，留作「token＋抓圖」健康檢查，或刪）。App Review 自家帳號免。
+測試工具 `1QPt4MakN5VCFwkt`（手動/不發佈，留作「token＋抓圖／insights」健康檢查，或刪）。App Review 自家帳號免。
+
+### 成效追蹤（#4，2026-07-17 完成）
+零新憑證架構：token 只在 n8n，不外流。
+- **workflow 11 成效拉取**（`OF2Obz1kkjbM9gjt`，manual trigger）：GET IG media（近8天圖文/輪播）→ 逐篇 `/insights`（**period=lifetime**：reach, saved, shares, total_interactions, likes, comments, profile_visits, follows，全部實測可用）→ Assemble 輸出**乾淨陣列（不含 token）**。⚠️ 原始 media 回應的分頁 URL 夾 token，但 Assemble 不輸出它。
+- **粉絲/非粉絲**：per-post `reach` 的 `follow_type` breakdown 在此 API 版本**不相容**（Meta 限制）→ 改用 profile_visits＋follows＋reach 當受眾轉換訊號。
+- **本機 feed 排程 Part D**：`execute_workflow(11)`→`get_execution`(Assemble) → 寫 `data/insights.json`（每篇每日一 snapshot，同日覆蓋，留最近~10 筆；比對 media_id↔posts.json 補 post_id/topic）→ push。
+- **操控室「成效」分頁**：頂部「📊 IG 自動成效」讀 insights.json（觸及/互動/互動率/讚留珍分/個檔瀏覽/追蹤+／觸及趨勢 sparkline）；下方保留手動輸入。
+- **iterate_harness step 6**：insights 中 reach≥30 的貼文按互動率排序，≥3 篇時把高/低成效主題寫進 style-notes（拆解 hook/切角/情緒）供選題 looping。
+- IG 剛發的貼文有**建索引延遲**（subcode 33，通常<1天），指標會延後出現；已建索引的貼文（如 7/11）即時可讀（實測 reach 408）。
 
 **Jesse 最後回覆「還沒，需要協助設定」** → 下一步是**陪 Jesse 走完 Meta 設定**，拿到：
 - IG Business account id
