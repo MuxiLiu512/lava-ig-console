@@ -188,6 +188,35 @@ def apply_reviews(args):
         save("reviews.json", reviews)
 
 
+def reconcile_published(args):
+    """對帳：把 ClickUp 已標『已發布』的排程貼文，在 posts.json 也翻成 published。
+    補 workflow 10（n8n 無 repo 寫入權）發佈後 posts.json 不會自動翻狀態的缺口。排程 3×/日跑。"""
+    token = _read_sync().get("clickup_token")
+    if not token:
+        print("缺 clickup_token，略過對帳"); return
+    if not token.isascii():
+        print("clickup_token 疑似 placeholder（含非 ASCII）→ 略過。請在 .sync.json 換成真正的 ClickUp API token（Settings → Apps → API Token）"); return
+    def _norm(s):
+        return (s or "").strip().replace("佈", "布")
+    d = load("posts.json")
+    n = 0
+    for p in d.get("posts", []):
+        if p.get("status") != "scheduled" or not p.get("clickup_task_id"):
+            continue
+        try:
+            task = _clickup("GET", "/task/" + p["clickup_task_id"], token)
+        except Exception as e:
+            sys.stderr.write("  ! 查 ClickUp 卡 %s 失敗：%s\n" % (p["clickup_task_id"], e)); continue
+        if _norm((task.get("status") or {}).get("status")) == "已發布":
+            p["status"] = "published"
+            p.setdefault("published_at", p.get("publish_at"))
+            n += 1
+            print("✓ %s → published（ClickUp 已發布）" % p["id"])
+    if n and not args.dry_run:
+        save("posts.json", d)
+    print("對帳完成：翻 %d 篇%s" % (n, "（dry-run 未寫）" if args.dry_run else ""))
+
+
 # ── 結尾：組 posts.json 條目 ─────────────────────────────────────────
 def add_post(args):
     """讀 manifest 檔（見檔頭 schema），產縮圖並 upsert 進 posts.json。"""
@@ -237,10 +266,11 @@ def _build_and_write(m):
     d = load("posts.json")
     posts = d.setdefault("posts", [])
     old = next((p for p in posts if p["id"] == pid), None)
-    if old and old.get("status") == "scheduled":  # 已排程者不被重餵洗掉排程
-        post["status"] = "scheduled"
-        if old.get("publish_at"):
-            post["publish_at"] = old["publish_at"]
+    if old and old.get("status") in ("scheduled", "published"):  # 已排程/已發佈者不被重餵洗掉
+        post["status"] = old["status"]
+        for k in ("publish_at", "published_at", "media_id"):
+            if old.get(k):
+                post[k] = old[k]
     posts[:] = [p for p in posts if p["id"] != pid]  # upsert
     posts.append(post)
     save("posts.json", d)
@@ -370,6 +400,7 @@ def main():
     a = sub.add_parser("mark-consumed"); a.add_argument("ids", nargs="+"); a.set_defaults(func=mark_consumed)
     a = sub.add_parser("set-status"); a.add_argument("post_id"); a.add_argument("status"); a.set_defaults(func=set_status)
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
+    a = sub.add_parser("reconcile-published", help="ClickUp 已發布 → posts.json 翻 published（補發佈回寫缺口）"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=reconcile_published)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
     args.func(args)

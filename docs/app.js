@@ -336,6 +336,10 @@ function buildScheduler(p) {
   if (!ready.length) return el("div"); // 只有出成品（有公開圖）才排得了
   const card = el("div", "card"); const pad = el("div", "pad");
   pad.appendChild(el("div", null, '<b>📅 排程發佈到 IG</b> <span class="tiny muted">' + ready.length + ' 張成品就緒</span>'));
+  if (p.status === "published") {
+    pad.appendChild(el("div", "small", "✅ 已發佈到 IG" + (p.published_at ? "（" + fmtLocal(p.published_at) + "）" : "")));
+    card.appendChild(pad); return card;
+  }
   if (p.status === "scheduled" && p.publish_at) {
     pad.appendChild(el("div", "small", "✓ 已排程：<b>" + fmtLocal(p.publish_at) + "</b>（台灣時間）到點自動發佈"));
     const cancel = el("button", "btn warn", "取消排程"); cancel.style.marginTop = "10px";
