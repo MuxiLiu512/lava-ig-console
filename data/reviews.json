@@ -31,6 +31,22 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mrown8qe",
+      "post_id": "20260717-PitchYourFriend",
+      "ts": "2026-07-17T20:19:13+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "c",
+        "2": "c",
+        "3": "c",
+        "4": "e",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
