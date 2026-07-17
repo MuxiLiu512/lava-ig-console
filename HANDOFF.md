@@ -205,11 +205,15 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 - 驗證 workflow：`Lava IG｜Token 測試`（`1QPt4MakN5VCFwkt`，一次性，可留作 token 健康檢查）。實測 `GET /17841474839208540?fields=username` → 回 `{"username":"lava_dating"}`。
 - 踩雷：Query Auth 參數名一開始掛錯 → FB 回 `(#200) Provide valid app ID`（= 沒收到 token 參數，非 token 壞）；把 Name 改成 `access_token` 即通。
 
-**剩餘 3 塊（我來建，不需 Jesse）**：
-1. **圖片公開 URL**：IG `/media` 只吃**公開 https 圖片**。方案＝render_and_archive 另把 finals 複製到 `docs/finals/<post-id>/`，靠 Pages 公開成 `https://muxiliu512.github.io/lava-ig-console/finals/<id>/slideN.jpg`（Pages 服務 /docs 於根，已驗證公開可達）。
-2. **操控室排程 UI**：已 render（有 finals）的貼文，加「排程發佈時間」datetime picker + 按鈕 → 寫 posts.json `publish_at` + status `已排程`。（PT 在審核台排程，貼合 repo-as-DB；替代方案：ClickUp 日期欄，較不一致）
-3. **workflow 10 IG 自動發佈**：scheduleTrigger 每 N 分 → 讀 posts.json（raw）→ 取 `已排程` 且 `publish_at<=now` → 建輪播（逐 slide POST /media `is_carousel_item` → POST /media `CAROUSEL`+children → /media_publish）→ 標 `已發布` + ClickUp 留言 @Jesse。caption 用 `_assemble_caption`。用 cred `t44CUVrw6Bxkz6Do`。
-App Review 自家帳號免（測試人員/dev 模式）。
+**3 塊已完成並實測（2026-07-17）**：
+1. ✅ **圖片公開 URL**：`sync_console._publish_final` 把成品降到 1350 長邊 JPEG 存 `docs/finals/<pid>/slide-N.jpg`，Pages 公開成 `https://muxiliu512.github.io/lava-ig-console/finals/<pid>/slide-N.jpg`（pid 的中文用 percent-encode）。posts.json 每 slide 多一個 `public_url`。`push` 已含 `docs/finals`。**實測 IG 能抓此圖建容器成功**。
+2. ✅ **操控室排程 UI**：`app.js buildScheduler(p)`——貼文有 `public_url`（＝出過成品）才顯示 datetime picker →「排程發佈」寫 posts.json `publish_at`(＋08:00)＋`status:"scheduled"`；佇列多「📅 已排程」分組可取消/改期。`sync_console._build_and_write` 加保護：重餵不洗掉已 scheduled 的排程。
+3. ✅ **workflow 10 IG 自動發佈**：**`56znLZUEHamJVJjJ`（目前 inactive）**。每 5 分讀 posts.json raw → `Pick Due Slides`（status=scheduled & publish_at<=now，static-data `published`/`attempting` 去重）fan 出 slides → `Create Item Container`(逐張) → `Collect Children` → `Create Carousel` → `Publish Carousel`(media_publish) → `Mark Published`(寫 static data) → ClickUp `Card 已發布` + `Notify Jesse`。cred：Graph API 用 `t44CUVrw6Bxkz6Do`、ClickUp 用 `Dx6ZhUm7eiha59p3`。
+
+**實測狀態**：token ✓、逐張容器 ✓、輪播組裝 ✓（全在測試 workflow `1QPt4MakN5VCFwkt` 驗證，未發佈）。**唯一未跑＝最後 media_publish**（真貼文，留待 Jesse 監督首發）。
+**首發 SOP**：① 操控室把一篇有成品的貼文排程到近未來 → ② 把該 ClickUp 卡狀態確認有「已發布」選項 → ③ n8n 將 workflow 10 **設為 active** → ④ 到點觀察自動發佈＋卡片留言 → ⑤ 首發成功後保持 active＝全自動。
+**已知小缺口**：發佈後 posts.json 的 status 不會自動翻成 published（無 n8n GitHub PAT）——只靠 static-data 防重貼＋ClickUp 標已發布；要讓操控室也反映，之後可在本機 feed 排程加一步對帳。App Review 自家帳號免（測試人員/dev 模式）。
+測試工具 `1QPt4MakN5VCFwkt`（手動/不發佈，可留作「token＋抓圖」健康檢查，或刪）。
 
 **Jesse 最後回覆「還沒，需要協助設定」** → 下一步是**陪 Jesse 走完 Meta 設定**，拿到：
 - IG Business account id
