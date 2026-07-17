@@ -211,7 +211,8 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 3. ✅ **workflow 10 IG 自動發佈**：**`56znLZUEHamJVJjJ`（目前 inactive）**。每 5 分讀 posts.json raw → `Pick Due Slides`（status=scheduled & publish_at<=now，static-data `published`/`attempting` 去重）fan 出 slides → `Create Item Container`(逐張) → `Collect Children` → `Create Carousel` → `Publish Carousel`(media_publish) → `Mark Published`(寫 static data) → ClickUp `Card 已發布` + `Notify Jesse`。cred：Graph API 用 `t44CUVrw6Bxkz6Do`、ClickUp 用 `Dx6ZhUm7eiha59p3`。
 
 **✅ 首發成功（2026-07-17）**：weak-ties 六張輪播已真實發佈到 @lava_dating（**media_id `18170712478446850`**）。workflow 10 全鏈路（讀排程→建容器→組輪播→media_publish→ClickUp 已發布→留言）跑通。posts.json 該篇已手動標 `status:"published"`＋media_id（防重貼）。
-**要開全自動**：n8n 把 workflow 10 **設為 active** 即可——之後 PT 在操控室排程任何貼文，到點就自動發（static-data 去重在 production 執行會持久化，不會重貼）。
+**✅ 已全自動（2026-07-17）**：workflow 10 **已 active**。PT 在操控室排程任何貼文，到點自動發。目前排程中：`20260718-你知道weak-ties` → 2026-07-18 17:00 台灣（weak-ties 用修好引擎重發；舊的 `20260716-你知道weak-ties` 已發佈的舊圖仍在 IG，需 Jesse 手動刪）。
+**排版引擎已統一修復（render_post_v5.py，非 git-tracked，在 排版引擎/）**：(1) 內文改**底部錨定＋自動縮字**，保證不壓到 footer（原 `bar_y=max(0.44H,…)` clamp 會讓長文出血）；(2) `strip_trailing_punct` 句尾標點（含 ——、句點）逐行省略；cover 與 content 都套。已在 weak-ties/已讀不回 重render 目視確認。
 **token 教訓**：粉專 token 必須從「**已延長的長效 user token**」去 `me/accounts` 取，偵錯工具驗到期日＝**永不**才對；短效 user token 直接存會幾小時後過期（code 190）。
 **發佈回寫（已補）**：自動發佈後 posts.json 不會被 n8n 直接翻 published（無 GitHub PAT），改由**本機 feed 排程 Part C 對帳**：`clickup_get_task` 查排程貼文卡片，狀態＝已發佈 → `sync_console set-status <id> published` → push。防重貼另有 workflow 10 的 static-data（production 執行持久化）。sync_console 亦有 `reconcile-published` 命令（同邏輯，但需 .sync.json 有**真的** clickup_token）。
 
