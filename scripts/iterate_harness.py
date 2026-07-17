@@ -138,7 +138,7 @@ def apply_low_risk(change):
 def run(args):
     reviews_d = load("reviews.json"); metrics_d = load("metrics.json")
     props_d = load("proposals.json"); log = load("iterate_log.json")
-    summary = {"rollbacks": 0, "applied_proposals": 0, "auto_changes": 0, "new_proposals": 0, "feedback_consumed": 0, "copy_absorbed": 0}
+    summary = {"rollbacks": 0, "applied_proposals": 0, "auto_changes": 0, "new_proposals": 0, "feedback_consumed": 0, "copy_absorbed": 0, "perf_signal": 0}
 
     # 2) 回滾請求
     for req in log.get("rollback_requests", []):
@@ -222,6 +222,33 @@ def run(args):
                     {"reviews": [], "metrics_window": None}, commit=commit)
         sys.stderr.write("✎ 吸收文案語氣範例 %d 則 → style-notes\n" % absorbed)
     summary["copy_absorbed"] = absorbed
+
+    # 6) 成效回饋 → 選題/撰稿信號（讀 insights.json，最近有數據的貼文按互動率排序，高/低成效寫進 style-notes 供 looping 拆解）
+    ins = load("insights.json").get("media", {})
+    scored = []
+    for mid, m in ins.items():
+        snaps = m.get("snapshots", [])
+        if not snaps:
+            continue
+        last = snaps[-1]; reach = last.get("reach", 0) or 0
+        if reach < 30:  # 樣本太小不列入
+            continue
+        er = round((last.get("total_interactions", 0) or 0) / reach * 1000) / 10.0
+        scored.append((er, (m.get("topic") or str(mid)[:10]), last))
+    if len(scored) >= 3 and not args.dry_run:
+        scored.sort(reverse=True)
+        top, bot = scored[0], scored[-1]
+        perf_line = ("- （成效觀察 %s）高成效：「%s」互動率 %.1f%%（觸及 %d、分享 %d、追蹤+%d）；低成效：「%s」%.1f%%。"
+                     "選題與撰稿向高成效模式靠攏，拆解其 hook／切角／情緒。" % (
+                         today().isoformat(), top[1][:24], top[0], top[2].get("reach", 0), top[2].get("shares", 0),
+                         top[2].get("follows", 0), bot[1][:24], bot[0]))
+        if append_line(os.path.join(CONFIG, "style-notes.md"), perf_line):
+            v = next_cfg_version(log)
+            commit = commit_config("%s: 成效回饋 top/bottom 主題 [risk:low] [auto]" % v)
+            log_version(log, v, "low", True, ["成效觀察：高「%s」%.1f%% / 低「%s」%.1f%%" % (top[1][:16], top[0], bot[1][:16], bot[0])],
+                        {"reviews": [], "metrics_window": today().isoformat()}, commit=commit)
+            sys.stderr.write("📊 成效回饋 → style-notes（高:%s %.1f%% / 低:%s %.1f%%）\n" % (top[1][:12], top[0], bot[1][:12], bot[0]))
+            summary["perf_signal"] = 1
 
     if not args.dry_run:
         save("reviews.json", reviews_d)  # 註：consumed 由排程A處理發布後才標；此處僅 harness 記錄
