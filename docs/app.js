@@ -443,6 +443,10 @@ function buildMockup(p, choice) {
   more.onclick = () => { const c = body.classList.toggle("clamp"); more.textContent = c ? "…更多" : " 收合"; };
   ig.appendChild(cap);
   phone.appendChild(ig); wrap.appendChild(phone);
+  if (!p.slides.some(s => s.final_src)) {
+    const hint = el("div", "tiny muted", "🔍 目前為底圖預覽——標題／內文文字會在成品渲染時合成上去");
+    hint.style.cssText = "text-align:center;margin:6px 0 2px"; wrap.appendChild(hint);
+  }
   return wrap;
 }
 

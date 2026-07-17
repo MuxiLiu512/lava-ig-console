@@ -15,7 +15,7 @@
 #
 # 說明：本檔操作的是「工作副本」= 這個 repo 目錄本身。實際推送交給 push_files.sh
 # （需 .sync.json）。排程可先 `git pull` 再呼叫，或用 push_files.sh 的 clone-overlay 模式。
-import os, sys, json, re, glob, argparse, subprocess, unicodedata
+import os, sys, json, re, glob, argparse, subprocess, unicodedata, shutil, datetime
 sys.path.insert(0, os.path.dirname(__file__))
 from _thumbs import make_thumb
 
@@ -95,6 +95,48 @@ def save(name, obj):
     with open(os.path.join(DATA, name), "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
         f.write("\n")
+
+
+def _now_iso():
+    return datetime.datetime.now().replace(microsecond=0).isoformat() + "+08:00"
+
+
+# cid→原圖絕對路徑 對照表（本機限定、git-ignored）。渲染時據此取 PT 選定的候選原檔。
+LOCAL_SOURCES = os.path.join(DATA, ".local_sources.json")
+
+
+def _load_local_sources():
+    if os.path.exists(LOCAL_SOURCES):
+        with open(LOCAL_SOURCES, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def _save_local_sources(d):
+    with open(LOCAL_SOURCES, "w", encoding="utf-8") as f:
+        json.dump(d, f, ensure_ascii=False, indent=1)
+
+
+def _flat_image(path, thresh=8.0):
+    """近純色圖（生圖失敗的色塊，如整片藍）→ True。無法讀取也視為壞圖。"""
+    try:
+        from PIL import Image, ImageStat
+        im = Image.open(path).convert("RGB").resize((48, 48))
+        return max(ImageStat.Stat(im).stddev) < thresh
+    except Exception:
+        return True
+
+
+def _latest_copy_edits(pid, ce_list):
+    """操控室文案編輯 → 每個 (slide n, 欄位) 取最新一筆 edited 值。"""
+    out = {}
+    for e in sorted([e for e in ce_list if e.get("post_id") == pid], key=lambda e: e.get("ts", "")):
+        for ed in e.get("edits", []):
+            try:
+                out[(int(ed["n"]), ed["field"])] = ed.get("edited", "")
+            except (KeyError, ValueError, TypeError):
+                continue
+    return out
 
 
 # ── 開頭：取未處理審核 ───────────────────────────────────────────────
@@ -226,9 +268,11 @@ def add_post(args):
 
 
 def _build_and_write(m):
-    """manifest dict → 縮圖 + posts.json upsert。final/candidates 的 src 為本機絕對路徑。"""
+    """manifest dict → 縮圖 + posts.json upsert。final/candidates 的 src 為本機絕對路徑。
+    同時把 cid→原圖路徑 寫進 .local_sources.json（渲染時取 PT 選定原檔用）。"""
     pid = m["id"]
     slides = []
+    srcmap = {}
     for s in m["slides"]:
         cands = []
         for i, c in enumerate(s.get("candidates", [])):
@@ -241,6 +285,7 @@ def _build_and_write(m):
             if c.get("prompt_hash"):
                 entry["prompt_hash"] = c["prompt_hash"]
             cands.append(entry)
+            srcmap.setdefault(str(s["n"]), {})[CID[i]] = os.path.abspath(c["src"])
         final_src = None
         public_url = None
         if s.get("final") and os.path.exists(s["final"]):
@@ -257,6 +302,15 @@ def _build_and_write(m):
         if cands:
             slide["default_cid"] = cands[0]["cid"]
         slides.append(slide)
+    # 操控室的文案編輯覆蓋（重餵不洗掉 PT 改過的字）
+    try:
+        edits = _latest_copy_edits(pid, load("copy_edits.json").get("edits", []))
+        for sl in slides:
+            for field in ("heading", "display_copy"):
+                if (sl["n"], field) in edits:
+                    sl[field] = edits[(sl["n"], field)]
+    except FileNotFoundError:
+        pass
     post = {
         "id": pid, "topic": m["topic"], "version": m.get("version", 1),
         "status": "awaiting_review", "clickup_task_id": m.get("clickup_task_id"),
@@ -268,12 +322,23 @@ def _build_and_write(m):
     old = next((p for p in posts if p["id"] == pid), None)
     if old and old.get("status") in ("approved", "scheduled", "published"):  # 已核准/已排程/已發佈者不被重餵洗掉
         post["status"] = old["status"]
-        for k in ("publish_at", "published_at", "media_id"):
+    if old:
+        for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since"):
             if old.get(k):
                 post[k] = old[k]
+    # 候選圖序列變動 → 舊審核的選圖失效：記 candidates_since；未出成品的 approved 退回待審
+    _sig = lambda ss: [(s.get("n"), tuple((c.get("cid"), c.get("kind")) for c in s.get("candidates", []))) for s in ss]
+    if old and _sig(old.get("slides", [])) != _sig(slides):
+        post["candidates_since"] = _now_iso()
+        if post.get("status") == "approved" and not any(s.get("final_src") for s in slides):
+            post["status"] = "awaiting_review"
+            sys.stderr.write("  ↩ 候選圖已更新，%s 由 approved 退回待審（請重新選圖核准）\n" % pid)
     posts[:] = [p for p in posts if p["id"] != pid]  # upsert
     posts.append(post)
     save("posts.json", d)
+    ls = _load_local_sources()
+    ls[pid] = {"draft_json": m.get("_draft_json"), "topic": m.get("topic", ""), "sources": srcmap}
+    _save_local_sources(ls)
     print("✓ posts.json 已 upsert：%s（%d slides，%d 候選）" % (pid, len(slides), sum(len(s["candidates"]) for s in slides)))
 
 
@@ -299,8 +364,9 @@ def _publish_final(src, pid, n):
     return "%s/finals/%s/slide-%d.jpg" % (GH_PAGES, quote(pid), n)
 
 
-def _collect_slide_imgs(dirs, kind):
-    """從資料夾（遞迴）蒐集 slide-N 圖片 → {n: [(path, label)]}。"""
+def _collect_slide_imgs(dirs, kind, prune=True):
+    """從資料夾（遞迴）蒐集 slide-N 圖片 → {n: [(path, label)]}。
+    prune=True 時剔除近純色破圖（生圖失敗）；重建舊貼文 cid 對照時須 prune=False 以復刻原始序列。"""
     out = {}
     for d in dirs:
         for f in sorted(glob.glob(os.path.join(d, "**", "*"), recursive=True)):
@@ -310,9 +376,20 @@ def _collect_slide_imgs(dirs, kind):
             mm = re.search(r"slide-?(\d+)", fn, re.I)
             if not mm:
                 continue
+            if prune and _flat_image(f):
+                sys.stderr.write("  ✂ 剔除疑似破圖（近純色）：%s\n" % fn)
+                continue
             label = _still_label(fn) if kind == "still" else None
             out.setdefault(int(mm.group(1)), []).append((f, label))
     return out
+
+
+def _scan_dirs(root, ntopic, prune=True):
+    """依主題掃 Drive 產出/ 的底圖與劇照資料夾 → (gen, still) 兩個 {n: [(path,label)]}。"""
+    subdirs = [d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d)]
+    base_dirs = [d for d in subdirs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
+    still_dirs = [d for d in subdirs if "劇照" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
+    return _collect_slide_imgs(base_dirs, "generated", prune), _collect_slide_imgs(still_dirs, "still", prune)
 
 
 def from_drive(args):
@@ -321,28 +398,31 @@ def from_drive(args):
     root = args.drive_root or DRIVE_PRODUCE
     if not os.path.isdir(root):
         sys.exit("✗ 找不到 Drive 產出資料夾：%s（確認 Google Drive 已掛載，或用 --drive-root 指定）" % root)
-    jsons = [f for f in glob.glob(os.path.join(root, "*.json"))
-             if "文案" in os.path.basename(f) and "ZZ" not in os.path.basename(f) and "易讀版" not in os.path.basename(f)]
-    if args.topic:
-        jsons = [f for f in jsons if args.topic in os.path.basename(f)]
-    if not jsons:
-        sys.exit("✗ 產出/ 內找不到符合的文案 JSON" + ("（topic=%s）" % args.topic if args.topic else ""))
-    datekey = lambda f: (re.match(r"(\d{6,8})", os.path.basename(f)) or [None, "0"])[1] if re.match(r"(\d{6,8})", os.path.basename(f)) else "0"
-    jf = sorted(jsons, key=lambda f: (datekey(f), os.path.getmtime(f)))[-1]
+    if getattr(args, "json", None):
+        jf = args.json
+        if not os.path.exists(jf):
+            sys.exit("✗ 指定的文案 JSON 不存在：%s" % jf)
+        # 主題資訊改由 --topic（或檔名）推導；日期由 --post-id 前綴或今天
+        base = os.path.basename(args.topic_base or jf) if getattr(args, "topic_base", None) else os.path.basename(jf)
+    else:
+        jsons = [f for f in glob.glob(os.path.join(root, "*.json"))
+                 if "文案" in os.path.basename(f) and "ZZ" not in os.path.basename(f) and "易讀版" not in os.path.basename(f)]
+        if args.topic:
+            jsons = [f for f in jsons if args.topic in os.path.basename(f)]
+        if not jsons:
+            sys.exit("✗ 產出/ 內找不到符合的文案 JSON" + ("（topic=%s）" % args.topic if args.topic else ""))
+        datekey = lambda f: (re.match(r"(\d{6,8})", os.path.basename(f)) or [None, "0"])[1] if re.match(r"(\d{6,8})", os.path.basename(f)) else "0"
+        jf = sorted(jsons, key=lambda f: (datekey(f), os.path.getmtime(f)))[-1]
+        base = os.path.basename(jf)
     with open(jf, encoding="utf-8") as f:
         data = json.load(f)
-    base = os.path.basename(jf)
     date = (re.match(r"(\d{6,8})", base) or [None, ""])[1] if re.match(r"(\d{6,8})", base) else ""
     topic_raw = re.sub(r"-?文案初稿.*$", "", re.sub(r"^\d{6,8}[-\s]*", "", os.path.splitext(base)[0]))
     ntopic = _norm_topic(base)
     sys.stderr.write("→ 選中文案：%s（主題核心=%s）\n" % (base, ntopic))
 
-    subdirs = [d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d)]
-    base_dirs = [d for d in subdirs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
-    still_dirs = [d for d in subdirs if "劇照" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
-    sys.stderr.write("→ 底圖資料夾 %d 個、劇照資料夾 %d 個\n" % (len(base_dirs), len(still_dirs)))
-    gen = _collect_slide_imgs(base_dirs, "generated")
-    still = _collect_slide_imgs(still_dirs, "still")
+    gen, still = _scan_dirs(root, ntopic)
+    sys.stderr.write("→ 底圖 slide 數 %d、劇照 slide 數 %d\n" % (len(gen), len(still)))
 
     slides = []
     for s in data.get("slides", []):
@@ -366,12 +446,180 @@ def from_drive(args):
 
     pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
     m = {"id": pid, "topic": topic_raw, "version": args.version,
-         "clickup_task_id": args.clickup, "created_at": None,
+         "clickup_task_id": args.clickup, "created_at": None, "_draft_json": os.path.abspath(jf),
          "caption": _assemble_caption(data), "topic_type": args.topic_type, "slides": slides}
     ncand = sum(len(s["candidates"]) for s in slides)
     if ncand == 0:
         sys.stderr.write("⚠ 未匹配到任何候選圖——請檢查底圖/劇照資料夾命名是否含主題關鍵字，或用 add-post 手動 manifest。\n")
     _build_and_write(m)
+
+
+# ── 渲染核准貼文：用 PT 在操控室選定的底圖出成品 ─────────────────────
+ENGINE_DIR = os.path.abspath(os.path.join(REPO, "..", "排版引擎"))
+
+
+def _rebuild_sources(p):
+    """無 .local_sources 的舊貼文：復刻 from-drive 掃描邏輯重建 cid→原圖，並以 (cid,kind) 序列驗證。"""
+    ntopic = _norm_topic(p.get("topic", ""))
+    gen, still = _scan_dirs(DRIVE_PRODUCE, ntopic, prune=False)  # 復刻原始（未剔破圖）序列
+    srcs = {}
+    for s in p.get("slides", []):
+        n = s["n"]
+        cand_paths = ([(path, "generated") for path, _ in gen.get(n, [])]
+                      + [(path, "still") for path, _ in still.get(n, [])])
+        built = []
+        for i, (path, kind) in enumerate(cand_paths):
+            if not os.path.exists(path):
+                continue
+            built.append((CID[i], path, kind))
+        want = [(c["cid"], c["kind"]) for c in s.get("candidates", [])]
+        got = [(cid, kind) for cid, _, kind in built]
+        if want != got:
+            return None, "slide %d 候選序列不符（重掃 %s ≠ posts %s）" % (n, got, want)
+        srcs[str(n)] = {cid: path for cid, path, _ in built}
+    return srcs, None
+
+
+def _find_draft_json(ntopic):
+    jsons = [f for f in glob.glob(os.path.join(DRIVE_PRODUCE, "*.json"))
+             if "文案" in os.path.basename(f) and "ZZ" not in os.path.basename(f)
+             and "易讀版" not in os.path.basename(f) and _topic_match(ntopic, os.path.basename(f))]
+    if not jsons:
+        return None
+    datekey = lambda f: (re.match(r"(\d{6,8})", os.path.basename(f)) or [None, "0"])[1] if re.match(r"(\d{6,8})", os.path.basename(f)) else "0"
+    return sorted(jsons, key=lambda f: (datekey(f), os.path.getmtime(f)))[-1]
+
+
+def render_approved(args):
+    """讀最新審核（approve／退回排版）＋文案編輯 → 用 PT 選定底圖渲染 → 歸檔 → 附回操控室。
+    冪等：posts.json 的 rendered_at 晚於（審核 ts、文案編輯 ts 最大值）就跳過。"""
+    posts_d = load("posts.json")
+    posts = {p["id"]: p for p in posts_d.get("posts", [])}
+    reviews = load("reviews.json").get("reviews", [])
+    ce_list = load("copy_edits.json").get("edits", [])
+    ls = _load_local_sources()
+    latest = {}
+    for r in reviews:  # 依序覆蓋 → 每篇取最後一筆
+        if r.get("post_id"):
+            latest[r["post_id"]] = r
+    rendered, skipped = [], []
+    for pid, r in latest.items():
+        p = posts.get(pid)
+        if not p or p.get("status") in ("scheduled", "published"):
+            continue
+        dec, scope = r.get("decision"), r.get("scope")
+        if dec == "reject" and scope == "base_image":
+            if p.get("status") != "awaiting_review":
+                p["status"] = "awaiting_review"  # 退回底圖 → 回佇列等新候選
+            skipped.append((pid, "退回底圖：等重生候選"))
+            continue
+        if dec != "approve" and not (dec == "reject" and scope == "mockup"):
+            continue
+        if dec == "approve" and p.get("status") == "awaiting_review":
+            p["status"] = "approved"  # 舊版核准未持久化的補正
+        want_ts = r.get("ts", "")
+        for e in ce_list:
+            if e.get("post_id") == pid and e.get("ts", "") > want_ts:
+                want_ts = e["ts"]
+        if p.get("rendered_at") and p["rendered_at"] >= want_ts and all(
+                s.get("public_url") for s in p["slides"] if s.get("final_src") or s.get("candidates")):
+            skipped.append((pid, "已渲染且無新變更"))
+            continue
+        entry = ls.get(pid) or {}
+        # 候選圖在審核之後被更新過 → 該審核的 cid 選圖已失效
+        stale = bool(p.get("candidates_since")) and r.get("ts", "") < p["candidates_since"]
+        reuse_paths = entry.get("last_render_choices") if stale else None
+        if stale and not reuse_paths:
+            if p.get("status") == "approved":
+                p["status"] = "awaiting_review"
+            skipped.append((pid, "候選圖已更新且無前次渲染紀錄 → 退回待審，請重新選圖核准"))
+            continue
+        srcs = entry.get("sources")
+        if not srcs and not reuse_paths:
+            srcs, err = _rebuild_sources(p)
+            if err:
+                skipped.append((pid, "圖源重建失敗：" + err))
+                continue
+        jf = entry.get("draft_json")
+        if not jf or not os.path.exists(jf):
+            jf = _find_draft_json(_norm_topic(p.get("topic", "")))
+        if not jf:
+            skipped.append((pid, "找不到文案 JSON"))
+            continue
+        choices = {}
+        for k, v in (r.get("slide_choices") or {}).items():
+            try:
+                choices[int(k)] = v
+            except ValueError:
+                pass
+        work = os.path.join(ENGINE_DIR, ".render-tmp", pid)
+        bgdir = os.path.join(work, "bg")
+        if os.path.isdir(work):
+            shutil.rmtree(work)
+        os.makedirs(bgdir)
+        ok = True
+        chosen_paths = {}
+        for s in p.get("slides", []):
+            if not s.get("candidates"):
+                continue  # CTA 公版由引擎處理
+            n = s["n"]
+            if reuse_paths:  # 重渲染：沿用上次成功渲染的原檔（cid 已失效不可用）
+                path = reuse_paths.get(str(n))
+            else:
+                cid = choices.get(n) or s.get("default_cid") or s["candidates"][0]["cid"]
+                path = (srcs.get(str(n)) or {}).get(cid)
+            if not path or not os.path.exists(path):
+                skipped.append((pid, "slide %d 選圖原檔不存在" % n)); ok = False; break
+            if _flat_image(path):
+                skipped.append((pid, "slide %d 選圖疑似破圖，請到操控室改選其他候選再核准" % n)); ok = False; break
+            chosen_paths[str(n)] = os.path.abspath(path)
+            shutil.copy2(path, os.path.join(bgdir, "slide-%d%s" % (n, os.path.splitext(path)[1].lower())))
+        if not ok:
+            continue
+        with open(jf, encoding="utf-8") as f:
+            draft = json.load(f)
+        edits = _latest_copy_edits(pid, ce_list)
+        for s in draft.get("slides", []):
+            for field in ("heading", "display_copy"):
+                key = (int(s.get("index", -1)), field)
+                if key in edits:
+                    s[field] = edits[key]
+        pj = os.path.join(work, "draft.json")
+        with open(pj, "w", encoding="utf-8") as f:
+            json.dump(draft, f, ensure_ascii=False)
+        if args.dry_run:
+            print("(dry-run) 會渲染 %s：選圖 %s，文案編輯 %d 處" % (pid, r.get("slide_choices"), len(edits)))
+            continue
+        rr = subprocess.run([sys.executable, os.path.join(ENGINE_DIR, "render_and_archive.py"), pj, bgdir, pid],
+                            cwd=ENGINE_DIR, capture_output=True, text=True)
+        if rr.returncode != 0:
+            skipped.append((pid, "渲染失敗：" + (rr.stderr or rr.stdout)[-300:].strip()))
+            continue
+        p["rendered_at"] = _now_iso()
+        rendered.append((pid, p.get("clickup_task_id") or "", jf, chosen_paths))
+        sys.stderr.write("✓ 渲染 %s（選圖 %s，文案編輯 %d 處）\n" % (pid, r.get("slide_choices"), len(edits)))
+    if not args.dry_run:
+        save("posts.json", posts_d)
+    # 附回操控室：finals 縮圖 + 公開圖（重餵；guard 會保留 approved/rendered_at/文案編輯）
+    for pid, cuid, jf, chosen_paths in rendered:
+        p = posts[pid]
+        ns = argparse.Namespace(drive_root=None, topic=None, post_id=pid, clickup=p.get("clickup_task_id"),
+                                finals_dir=os.path.join(ENGINE_DIR, "成品", pid), version=p.get("version", 1),
+                                topic_type=p.get("topic_type", "A-知識型"),
+                                json=os.path.join(ENGINE_DIR, ".render-tmp", pid, "draft.json"),
+                                topic_base=os.path.basename(jf))
+        from_drive(ns)
+        ls = _load_local_sources()
+        if pid in ls:
+            ls[pid]["draft_json"] = os.path.abspath(jf)  # 還原成 Drive 正本（scratch 會被清）
+            ls[pid]["last_render_choices"] = chosen_paths  # 供文案微調後重渲染沿用同組圖
+            _save_local_sources(ls)
+    for pid, cuid, _, _ in rendered:
+        print("✓RENDERED %s clickup=%s" % (pid, cuid or "-"))
+    for pid, why in skipped:
+        print("⏭ %s：%s" % (pid, why))
+    if not rendered and not skipped:
+        print("無待渲染的核准貼文")
 
 
 def push(args):
@@ -396,7 +644,11 @@ def main():
     a.add_argument("--version", type=int, default=1)
     a.add_argument("--clickup", default=None)
     a.add_argument("--topic-type", default="A-知識型")
+    a.add_argument("--json", default=None, help="直接指定文案 JSON（跳過掃描選擇）")
+    a.add_argument("--topic-base", default=None, help="與 --json 併用：主題推導用的原始檔名")
     a.set_defaults(func=from_drive)
+    a = sub.add_parser("render-approved", help="核准/退回排版 → 用 PT 選定底圖渲染成品並附回操控室")
+    a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=render_approved)
     a = sub.add_parser("mark-consumed"); a.add_argument("ids", nargs="+"); a.set_defaults(func=mark_consumed)
     a = sub.add_parser("set-status"); a.add_argument("post_id"); a.add_argument("status"); a.set_defaults(func=set_status)
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)

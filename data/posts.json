@@ -5,7 +5,7 @@
       "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
       "topic": "母胎單身的人，其實比你更懂得選擇伴侶",
       "version": 1,
-      "status": "awaiting_review",
+      "status": "approved",
       "clickup_task_id": "86ac-demo-02",
       "created_at": null,
       "caption": "母胎單身，其實比你更懂得「選擇」伴侶？\n\n沒談過戀愛，常被當成缺點。但從沒在關係裡將就過的人，往往對「自己要什麼」有更清楚的座標——他們不是沒有選擇，而是還沒遇到值得的相遇。\n\n見面是一場機率遊戲，你需要的是更多高品質的偶然接觸面積。\nLava 幫你把「遇到」這件事變簡單：滑動、配對、碰面。\n\n出現就好，其他交給我們。\n\n#母胎單身 #單身 #交友軟體 #Lava交友 #線下約會 #擇偶 #感情 #台灣約會",
@@ -241,142 +241,6 @@
       "published_at": "2026-07-17T17:45:07+08:00"
     },
     {
-      "id": "20260712-已讀不回的心理學-v5",
-      "topic": "已讀不回的心理學",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86ac-demo-01",
-      "created_at": null,
-      "caption": "那種懸在半空的感覺，其實是有名字的\n\nLava 的做法很直接：配對成功之後，兩個人只需要回答彼此設定的三個價值觀問題，確認有進一步認識的意願，接著就直接約時間見面，地點由我們安排好。 沒有無止境的訊息往返，沒有需要反覆解讀的已讀，也沒有那種懸在半空、不知道該不該再傳一句的夜晚。你要做的，只是決定要不要出現，而這個決定，【從頭到尾都在你自己手上】。 【出現就好，其他交給我們。】\n\n#已讀不回 #交友軟體 #蔡格尼效應 #心理學 #Lava交友 #不聊天的交友軟體 #線下約會 #約會焦慮 #真實相遇 #台灣約會",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-1a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-1b.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-1c.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-1.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-1.jpg",
-          "heading": "比起壞消息你是不是也更厭惡已讀不回?",
-          "display_copy": "那種懸在半空的感覺，其實是有名字的",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-2a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-2b.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-2c.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-2.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-2.jpg",
-          "heading": "我們都做過同一件事",
-          "display_copy": "訊息傳出去後，你再次點開對話框想確認對方讀了嗎? 映入眼簾卻是「已讀」兩個字。過了五個小時你又點進去看了一次，明知道畫面不會有任何變化，【卻還是忍不住再確認一遍】。\n你開始重讀自己傳的那句話，覺得語氣是不是太熱情了，或者太冷淡了，甚至懷疑那個表情符號是不是用錯了地方。【整個晚上就這樣被一則沒有回覆的訊息綁架】，而你甚至還沒真正見過這個人。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-3a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-3b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-3.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-3.jpg",
-          "heading": "大腦記得沒做完的事，遠比記得做完的事清楚",
-          "display_copy": "心理學家 Bluma Zeigarnik 在 1920 年代發現，人對未完成事件的記憶遠比已完成的深刻，這個現象後來被稱為【蔡格尼效應（Zeigarnik Effect）】。她觀察的是餐廳服務生：還沒結帳的訂單記得清清楚楚，客人一離開，那些細節就從腦中消失了。\n一則已讀沒回的訊息，在大腦裡就是【一張還沒結帳的單子】。它不會被歸檔，不會被關閉，只是持續掛在那裡，佔用著你原本可以拿去做別的事情的注意力。",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-4a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-4b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-4.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-4.jpg",
-          "heading": "這件事會發生，跟你的魅力沒有關係",
-          "display_copy": "在交友軟體裡，每一段對話都是一個潛在的未完成事件：對方可能同時開著十個對話視窗，回覆節奏沒有任何共識，雙方都在用回訊息的速度小心翼翼試探彼此的熱度。\n當系統的設計讓每段關係都停留在「還沒結束，但也還沒開始」，【人的能量就會在無數個懸空的對話裡被慢慢磨光】，很多人在真正見到對方之前，就已經對見面失去了力氣。",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-5a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-5b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-5.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-5.jpg",
-          "heading": "我們決定把聊天室拿掉",
-          "display_copy": "Lava 的做法很直接：配對成功之後，兩個人只需要回答彼此設定的三個價值觀問題，確認有進一步認識的意願，接著就直接約時間見面，地點由我們安排好。\n沒有無止境的訊息往返，沒有需要反覆解讀的已讀，也沒有那種懸在半空、不知道該不該再傳一句的夜晚。你要做的，只是決定要不要出現，而這個決定，【從頭到尾都在你自己手上】。\n【出現就好，其他交給我們。】",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-6.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-6.jpg",
-          "heading": "Lava 不聊天的交友軟體",
-          "display_copy": "CTA 公版"
-        }
-      ]
-    },
-    {
       "id": "20260718-你知道weak-ties",
       "topic": "你知道「weak ties（弱連結）」才是你找到對象的關鍵嗎？",
       "version": 1,
@@ -527,10 +391,147 @@
       "publish_at": "2026-07-18T17:00:00+08:00"
     },
     {
+      "id": "20260712-已讀不回的心理學-v5",
+      "topic": "已讀不回的心理學",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86ac-demo-01",
+      "created_at": null,
+      "caption": "那種懸在半空的感覺，其實是有名字的\n\nLava 的做法很直接：配對成功之後，兩個人只需要回答彼此設定的三個價值觀問題，確認有進一步認識的意願，接著就直接約時間見面，地點由我們安排好。 沒有無止境的訊息往返，沒有需要反覆解讀的已讀，也沒有那種懸在半空、不知道該不該再傳一句的夜晚。你要做的，只是決定要不要出現，而這個決定，【從頭到尾都在你自己手上】。 【出現就好，其他交給我們。】\n\n#已讀不回 #交友軟體 #蔡格尼效應 #心理學 #Lava交友 #不聊天的交友軟體 #線下約會 #約會焦慮 #真實相遇 #台灣約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1b.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1c.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-1.jpg",
+          "heading": "比起壞消息你是不是也更厭惡已讀不回?",
+          "display_copy": "那種懸在半空的感覺，其實是有名字的",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2b.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2c.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-2.jpg",
+          "heading": "我們都做過同一件事",
+          "display_copy": "訊息傳出去後，你再次點開對話框想確認對方讀了嗎? 映入眼簾卻是「已讀」兩個字。過了五個小時你又點進去看了一次，明知道畫面不會有任何變化，【卻還是忍不住再確認一遍】。\n你開始重讀自己傳的那句話，覺得語氣是不是太熱情了，或者太冷淡了，甚至懷疑那個表情符號是不是用錯了地方。【整個晚上就這樣被一則沒有回覆的訊息綁架】，而你甚至還沒真正見過這個人。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-3b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-3.jpg",
+          "heading": "大腦記得沒做完的事，遠比記得做完的事清楚",
+          "display_copy": "心理學家 Bluma Zeigarnik 在 1920 年代發現，人對未完成事件的記憶遠比已完成的深刻，這個現象後來被稱為【蔡格尼效應（Zeigarnik Effect）】。她觀察的是餐廳服務生：還沒結帳的訂單記得清清楚楚，客人一離開，那些細節就從腦中消失了。\n一則已讀沒回的訊息，在大腦裡就是【一張還沒結帳的單子】。它不會被歸檔，不會被關閉，只是持續掛在那裡，佔用著你原本可以拿去做別的事情的注意力。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-4b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-4.jpg",
+          "heading": "這件事會發生，跟你的魅力沒有關係",
+          "display_copy": "在交友軟體裡，每一段對話都是一個潛在的未完成事件：對方可能同時開著十個對話視窗，回覆節奏沒有任何共識，雙方都在用回訊息的速度小心翼翼試探彼此的熱度。\n當系統的設計讓每段關係都停留在「還沒結束，但也還沒開始」，【人的能量就會在無數個懸空的對話裡被慢慢磨光】，很多人在真正見到對方之前，就已經對見面失去了力氣。",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-5b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-5.jpg",
+          "heading": "我們決定把聊天室拿掉",
+          "display_copy": "Lava 的做法很直接：配對成功之後，兩個人只需要回答彼此設定的三個價值觀問題，確認有進一步認識的意願，接著就直接約時間見面，地點由我們安排好。\n沒有無止境的訊息往返，沒有需要反覆解讀的已讀，也沒有那種懸在半空、不知道該不該再傳一句的夜晚。你要做的，只是決定要不要出現，而這個決定，【從頭到尾都在你自己手上】。\n【出現就好，其他交給我們。】",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-6.jpg",
+          "heading": "Lava 不聊天的交友軟體",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "rendered_at": "2026-07-17T21:06:22+08:00"
+    },
+    {
       "id": "20260717-PitchYourFriend",
       "topic": "「Pitch Your Friend」正在歐美爆紅——幫閨蜜／兄弟寫交友履歷，這在紅什麼？",
       "version": 1,
-      "status": "awaiting_review",
+      "status": "approved",
       "clickup_task_id": "86ey8fn7j",
       "created_at": null,
       "caption": "朋友抽走你的手機，準備替你做交友簡報；如果〖他比你更會介紹你〗，你敢讓他發出去嗎？\n\n請朋友回答三題：跟你相處最舒服的是什麼、哪件小事最像你、你適合什麼樣的人，再由你決定【哪些話能被看見】。\n\n#PitchYourFriend #朋友幫你徵友 #交友履歷 #約會觀察 #台灣Dating #LavaDating #不聊天的交友軟體",
@@ -570,7 +571,8 @@
               "source_label": "How I Met Your Mother"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-1.jpg",
           "heading": "你敢讓朋友替你徵友嗎？",
           "display_copy": "朋友抽走你的手機，準備替你做交友簡報；如果〖他比你更會介紹你〗，你敢讓他發出去嗎？",
           "default_cid": "a"
@@ -609,7 +611,8 @@
               "source_label": "The Office"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-2.jpg",
           "heading": "把交友自介，變成朋友的提案",
           "display_copy": "朋友把你的個性、相處亮點與理想對象，做成求職簡報般的短影音或投影片，再上傳社群【公開推薦你】。",
           "default_cid": "a"
@@ -621,7 +624,8 @@
             {
               "cid": "a",
               "src": "assets/20260717-PitchYourFriend/slide-3a.jpg",
-              "kind": "generated"
+              "kind": "still",
+              "source_label": "Suits"
             },
             {
               "cid": "b",
@@ -640,15 +644,10 @@
               "src": "assets/20260717-PitchYourFriend/slide-3d.jpg",
               "kind": "still",
               "source_label": "Suits"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260717-PitchYourFriend/slide-3e.jpg",
-              "kind": "still",
-              "source_label": "Suits"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-3.jpg",
           "heading": "朋友講，為什麼更容易相信？",
           "display_copy": "自己寫會怕太自戀，最後只剩「愛旅行、愛美食」；朋友卻能用共同記憶與具體故事，讓【優點變成看得見的日常】。",
           "default_cid": "a"
@@ -687,7 +686,8 @@
               "source_label": "Brooklyn Nine Nine"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-4.jpg",
           "heading": "台灣人不是不會誇，是不敢被看見",
           "display_copy": "朋友私下誇你可以滔滔不絕，公開時卻會多一層顧慮；事先說好【可公開範圍】，害羞也能變成有分寸的真誠。",
           "default_cid": "a"
@@ -726,7 +726,8 @@
               "source_label": "Ted Lasso"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-5.jpg",
           "heading": "讓朋友補光，不必替你代演",
           "display_copy": "請朋友回答三題：跟你相處最舒服的是什麼、哪件小事最像你、你適合什麼樣的人，再由你決定【哪些話能被看見】。",
           "default_cid": "a"
@@ -735,11 +736,14 @@
           "n": 6,
           "role": "CTA",
           "candidates": [],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-6.jpg",
           "heading": "讓真實的你，被願意見面的人看見",
           "display_copy": "CTA 公版"
         }
-      ]
+      ],
+      "rendered_at": "2026-07-17T21:06:29+08:00",
+      "candidates_since": "2026-07-17T21:06:37+08:00"
     }
   ]
 }

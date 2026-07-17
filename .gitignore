@@ -7,3 +7,4 @@ __pycache__/
 # 本地暫存
 /tmp/
 *.log
+data/.local_sources.json
