@@ -228,6 +228,17 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 
 測試工具 `1QPt4MakN5VCFwkt`（手動/不發佈，留作「token＋抓圖／insights」健康檢查，或刪）。App Review 自家帳號免。
 
+### 渲染管線 v2：render-approved（2026-07-17，Fable 5 重構）
+**PT 在操控室選的圖從此真正生效**。單一指令 `python3 scripts/sync_console.py render-approved`（feed Part B 呼叫；`--dry-run` 可預演）：
+1. 讀每篇**最新** review（approve／退回排版）＋文案編輯 → 冪等 gate：`rendered_at ≥ max(review ts, copy_edit ts)` 就跳過。
+2. **圖源解析**：`data/.local_sources.json`（git-ignored；from-drive 時寫入 cid→原圖絕對路徑）；舊貼文無對照則復刻掃描重建並以 (cid,kind) 序列驗證，不符即拒渲染（絕不瞎猜）。
+3. **選定圖檢查**：近純色破圖（`_flat_image`，stddev<8）攔下；intake 端 `_collect_slide_imgs` 也自動剔除破圖（prune）。
+4. 文案：Drive 正本 JSON ＋ 操控室 copy_edits 最新值 → 渲染與 posts.json 同步反映。
+5. 渲染 → Drive 歸檔 → from-drive 附回（finals＋public_url）→ `last_render_choices` 存檔（文案微調重渲染沿用同組圖）。
+**狀態機防護**：候選圖序列變動 → `candidates_since` 戳記，未出成品的 approved **自動退回待審**（舊審核 cid 已失效）；scheduled/published 永不被重餵動到。
+**測試**：`scripts/selftest.py` 14 項（句尾標點、破圖偵測、copy_edits 合併、topic 比對）全綠；實測 Pitch/已讀 用 PT 確切選圖渲染成功（視覺驗證 final-03=選定劇照）。
+**佇列 UI**：待審核底圖 → ✅已核准（渲染中/待排程）→ 📅已排程；核准不再消失；底圖預覽有「文字渲染時合成」提示。
+
 ### 成效追蹤（#4，2026-07-17 完成）
 零新憑證架構：token 只在 n8n，不外流。
 - **workflow 11 成效拉取**（`OF2Obz1kkjbM9gjt`，manual trigger）：GET IG media（近8天圖文/輪播）→ 逐篇 `/insights`（**period=lifetime**：reach, saved, shares, total_interactions, likes, comments, profile_visits, follows，全部實測可用）→ Assemble 輸出**乾淨陣列（不含 token）**。⚠️ 原始 media 回應的分頁 URL 夾 token，但 Assemble 不輸出它。
@@ -281,6 +292,29 @@ curl -s https://raw.githubusercontent.com/MuxiLiu512/lava-ig-console/main/data/p
 cd lava-ig-console && node --check docs/app.js && python3 -m py_compile scripts/*.py && echo OK
 ```
 n8n 用 `search_workflows(query:"Lava")` 確認全 active；排程用 `list_scheduled_tasks` 確認 `lava-ig-console-feed` enabled。
+
+---
+
+## 9. 優化與擴充藍圖（2026-07-17 全面檢核＋業界對照後）
+
+**已對齊業界最佳實踐**：兩段式 container→publish、發佈前 status_code=FINISHED 檢查（WF10 已加 Wait 12s→Check→Assert，未就緒中止、attempting 冷卻後自動重試）、JPEG-only＋4:5 驗證（公開 finals 即 JPEG）、HITL 審核台、品牌語氣學習（copy_edits→style-notes，多數市售工具沒有）、成效回饋迴路、git 原生審計軌跡。
+
+**近期優化（低工／高值）**：
+1. **失敗告警**：WF10/01 掛錯誤 errorWorkflow → ClickUp/LINE 通知（現在失敗只躺在 n8n executions）。
+2. **429/暫時性錯誤退避**：發佈節點加 retryOnFail＋exponential backoff（現量 1-2 篇/日離 100 篇/24h 上限很遠，先低優）。
+3. **容器輪詢升級**：單次檢查 → 迴圈輪詢至 FINISHED（影片/Reels 上線前必做）。
+4. **資料可見性決策（Jesse 拍板）**：public repo 上 insights.json（商業數據）與**未發佈的排程內容**任何人可讀。選項：接受（風險低）／repo 轉 private＋Pages 付費／敏感資料改私有儲存。
+
+**擴充路線（依 ROI 排序）**：
+1. **最佳發文時段**：用累積 insights 的時段×互動率回歸，操控室排程器預設建議時段。
+2. **重複主題防呆**：選題雷達比對歷史 posts（05 已有雛形可強化 embedding 比對）。
+3. **Reels/影片**：管線天然支援（換 media_type＋輪詢），業界流量紅利區。
+4. **A/B caption**：同圖兩版 caption 輪替發佈，insights 對照回饋撰稿。
+5. **贏家重製**：高成效貼文自動進「repurpose 佇列」（改切角/改視覺重跑）。
+6. **留言自動化**：IG webhooks（Meta app 已能訂）→ 常見問題自動回＋高意圖留言推 ClickUp。
+7. **Threads 交叉發佈**：同素材一鍵雙發（Meta app 加 Threads API use case 即可）。
+
+參考來源：[n8n IG Graph API 指南](https://www.keyapi.ai/blog/n8n-instagram-graph-api-node-guide/)、[IG Graph API 2026 開發指南](https://elfsight.com/blog/instagram-graph-api-complete-developer-guide-for-2026/)、[n8n IG 錯誤處理](https://www.weblineglobal.com/blog/fix-instagram-api-errors-n8n-workflows/)、[n8n 全內容型發佈模板](https://n8n.io/workflows/4498-schedule-and-publish-all-instagram-content-types-with-facebook-graph-api/)、[HITL agent 工作流設計](https://towardsdatascience.com/building-human-in-the-loop-agentic-workflows/)、[AI 社群 agent 架構](https://fast.io/resources/ai-agent-social-media-automation/)。
 
 ---
 *若需更深脈絡：完整對話 transcript 在 `/Users/mimo/.claude/projects/-Users-mimo-Desktop-Claude--------/2ccb55fb-85a1-4969-9366-0bcc01f3d747.jsonl`*
