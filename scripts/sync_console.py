@@ -507,6 +507,8 @@ def render_approved(args):
         p = posts.get(pid)
         if not p or p.get("status") in ("scheduled", "published"):
             continue
+        if getattr(args, "only", None) and pid != args.only:
+            continue
         dec, scope = r.get("decision"), r.get("scope")
         if dec == "reject" and scope == "base_image":
             if p.get("status") != "awaiting_review":
@@ -521,7 +523,7 @@ def render_approved(args):
         for e in ce_list:
             if e.get("post_id") == pid and e.get("ts", "") > want_ts:
                 want_ts = e["ts"]
-        if p.get("rendered_at") and p["rendered_at"] >= want_ts and all(
+        if not getattr(args, "force", False) and p.get("rendered_at") and p["rendered_at"] >= want_ts and all(
                 s.get("public_url") for s in p["slides"] if s.get("final_src") or s.get("candidates")):
             skipped.append((pid, "已渲染且無新變更"))
             continue
@@ -648,7 +650,10 @@ def main():
     a.add_argument("--topic-base", default=None, help="與 --json 併用：主題推導用的原始檔名")
     a.set_defaults(func=from_drive)
     a = sub.add_parser("render-approved", help="核准/退回排版 → 用 PT 選定底圖渲染成品並附回操控室")
-    a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=render_approved)
+    a.add_argument("--dry-run", action="store_true")
+    a.add_argument("--force", action="store_true", help="忽略 rendered_at 閘門（引擎修復後重出成品用）")
+    a.add_argument("--only", default=None, help="只處理指定 post-id")
+    a.set_defaults(func=render_approved)
     a = sub.add_parser("mark-consumed"); a.add_argument("ids", nargs="+"); a.set_defaults(func=mark_consumed)
     a = sub.add_parser("set-status"); a.add_argument("post_id"); a.add_argument("status"); a.set_defaults(func=set_status)
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
