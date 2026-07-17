@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-07-17",
+  "note": "IG 成效由 workflow 11（n8n）拉取、本機 feed 排程寫入。每篇每日一筆 snapshot（7 天）。token 不進此檔。",
+  "media": {
+    "17919758940183806": {
+      "permalink": "https://www.instagram.com/p/DaqNFB5lOpo/",
+      "timestamp": "2026-07-11T16:33:20+0000",
+      "post_id": null,
+      "topic": null,
+      "snapshots": [
+        { "day": "2026-07-17", "reach": 408, "likes": 10, "comments": 2, "saved": 0, "shares": 15, "total_interactions": 28, "profile_visits": 10, "follows": 0 }
+      ]
+    }
+  }
+}

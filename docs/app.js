@@ -101,10 +101,11 @@ async function setImg(node, path) {
 const img = path => { const e = el("img"); setImg(e, path); return e; };
 
 // ── State ───────────────────────────────────────────────────────────
-const STATE = { posts: null, reviews: null, metrics: null, proposals: null, iterate_log: null, copy_edits: null };
+const STATE = { posts: null, reviews: null, metrics: null, proposals: null, iterate_log: null, copy_edits: null, insights: null };
 const FILES = {
   posts: "data/posts.json", reviews: "data/reviews.json", metrics: "data/metrics.json",
   proposals: "data/proposals.json", iterate_log: "data/iterate_log.json", copy_edits: "data/copy_edits.json",
+  insights: "data/insights.json",
 };
 async function loadAll() {
   const keys = Object.keys(FILES);
@@ -422,12 +423,51 @@ function buildMockup(p, choice) {
 }
 
 // ── 2. 成效 ─────────────────────────────────────────────────────────
+function buildInsights() {
+  const ins = (STATE.insights && STATE.insights.media) || {};
+  const posts = (STATE.posts && STATE.posts.posts) || [];
+  const list = Object.keys(ins).map(mid => Object.assign({ mid }, ins[mid]))
+    .sort((a, b) => String(b.timestamp || "").localeCompare(String(a.timestamp || "")));
+  const wrap = el("div");
+  wrap.appendChild(el("div", null, '<b>📊 IG 自動成效</b> <span class="tiny muted">n8n 每日拉取 · 已發佈貼文</span>'));
+  if (STATE.insights && STATE.insights._error) { wrap.appendChild(el("div", "small muted", "尚未有成效資料")); return wrap; }
+  if (!list.length) { wrap.appendChild(el("div", "small muted", "尚無自動成效（貼文發佈後 IG 建索引才會出現）")); return wrap; }
+  const spk = "▁▂▃▄▅▆▇█";
+  list.forEach(m => {
+    const snaps = m.snapshots || []; const last = snaps[snaps.length - 1] || {};
+    const topic = m.topic || (posts.find(p => p.media_id === m.mid) || {}).topic || "IG 貼文";
+    const reach = last.reach || 0, inter = last.total_interactions || 0;
+    const er = reach ? Math.round(inter / reach * 1000) / 10 : 0;
+    const card = el("div", "card"); const pad = el("div", "pad");
+    pad.appendChild(el("div", null, "<b>" + esc(topic) + "</b>" + (m.permalink ? ` <a href="${esc(m.permalink)}" target="_blank" class="tiny">↗ IG</a>` : "")));
+    pad.appendChild(el("div", "tiny muted", String(m.timestamp || "").slice(0, 10) + " · 追蹤 " + snaps.length + " 天"));
+    const kpi = el("div", "kpi"); kpi.style.marginTop = "8px";
+    kpi.innerHTML = `<div class="k"><b>${nfmt(reach)}</b><span>觸及</span></div>`
+      + `<div class="k"><b>${nfmt(inter)}</b><span>互動</span></div>`
+      + `<div class="k"><b>${er}%</b><span>互動率</span></div>`;
+    pad.appendChild(kpi);
+    const r2 = el("div", "tiny muted"); r2.style.marginTop = "6px";
+    r2.innerHTML = `讚 ${last.likes || 0} · 留言 ${last.comments || 0} · 珍藏 ${last.saved || 0} · 分享 ${last.shares || 0} · 個檔瀏覽 ${last.profile_visits || 0} · 追蹤+ ${last.follows || 0}`;
+    pad.appendChild(r2);
+    if (snaps.length > 1) {
+      const mx = Math.max(1, ...snaps.map(s => s.reach || 0));
+      const sp = el("div", "small muted"); sp.style.marginTop = "6px";
+      sp.innerHTML = "觸及趨勢 " + snaps.map(s => spk[Math.min(7, Math.floor((s.reach || 0) / mx * 7))]).join("");
+      pad.appendChild(sp);
+    }
+    card.appendChild(pad); wrap.appendChild(card);
+  });
+  return wrap;
+}
+
 function renderMetrics() {
   const b = noPatBanner(); if (b) app.appendChild(b);
+  app.appendChild(buildInsights());
   const entries = (STATE.metrics && STATE.metrics.entries) || [];
   const posts = (STATE.posts && STATE.posts.posts) || [];
   // 表單
   const card = el("div", "card"); const pad = el("div", "pad");
+  const hr = el("div", "small muted", "── 手動成效（迭代備用）──"); hr.style.margin = "18px 0 8px"; app.appendChild(hr);
   pad.appendChild(el("div", null, "<b>手動輸入成效</b>"));
   const optPosts = posts.map(p => `<option value="${esc(p.id)}">${esc(p.topic)} v${p.version}</option>`).join("");
   pad.innerHTML += `
