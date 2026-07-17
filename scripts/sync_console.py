@@ -266,7 +266,7 @@ def _build_and_write(m):
     d = load("posts.json")
     posts = d.setdefault("posts", [])
     old = next((p for p in posts if p["id"] == pid), None)
-    if old and old.get("status") in ("scheduled", "published"):  # 已排程/已發佈者不被重餵洗掉
+    if old and old.get("status") in ("approved", "scheduled", "published"):  # 已核准/已排程/已發佈者不被重餵洗掉
         post["status"] = old["status"]
         for k in ("publish_at", "published_at", "media_id"):
             if old.get(k):

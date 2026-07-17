@@ -176,9 +176,18 @@ function renderQueue() {
   if (err) { app.appendChild(el("div", "empty", "載入 posts.json 失敗：<br>" + esc(err))); return; }
   const all = STATE.posts.posts || [];
   const posts = all.filter(p => p.status === "awaiting_review");
+  const approved = all.filter(p => p.status === "approved");
   const scheduled = all.filter(p => p.status === "scheduled").sort((a, b) => (a.publish_at || "").localeCompare(b.publish_at || ""));
-  if (!posts.length && !scheduled.length) { app.appendChild(el("div", "empty", "🎉 審核佇列已清空")); return; }
-  posts.forEach(p => app.appendChild(qcard(p, `v${p.version} · ${p.slides.length} slides · ${totalCands(p)} 候選底圖`, `<span class="tag">待審核</span>`)));
+  if (!posts.length && !approved.length && !scheduled.length) { app.appendChild(el("div", "empty", "🎉 審核佇列已清空")); return; }
+  posts.forEach(p => app.appendChild(qcard(p, `v${p.version} · ${p.slides.length} slides · ${totalCands(p)} 候選底圖`, `<span class="tag">待審核底圖</span>`)));
+  if (approved.length) {
+    const hdr = el("div", "small muted", "✅ 已核准（出成品／待排程）"); hdr.style.margin = "16px 0 4px"; app.appendChild(hdr);
+    approved.forEach(p => {
+      const rn = p.slides.filter(s => s.public_url).length;
+      app.appendChild(qcard(p, rn ? `成品就緒 ${rn} 張 · 點入設發佈時間` : "出成品中…（渲染後回此排程）",
+        `<span class="tag" style="background:${rn ? "#c2410c" : "#555"};color:#fff">${rn ? "待排程" : "渲染中"}</span>`));
+    });
+  }
   if (scheduled.length) {
     const hdr = el("div", "small muted", "📅 已排程發佈"); hdr.style.margin = "16px 0 4px"; app.appendChild(hdr);
     scheduled.forEach(p => app.appendChild(qcard(p, `${p.slides.filter(s => s.public_url).length} 張成品 · 發佈於 ${fmtLocal(p.publish_at)}`, `<span class="tag" style="background:#1f7a4d;color:#fff">已排程</span>`)));
@@ -222,6 +231,16 @@ function renderDetail(pid) {
 
   // 排程發佈到 IG（成品就緒時才顯示）
   app.appendChild(buildScheduler(p));
+
+  // 已核准：不再顯示底圖挑選/動作列，改顯示狀態（成品就緒＝上方排程；否則出成品中）
+  if (p.status === "approved") {
+    const rn = p.slides.filter(s => s.public_url).length;
+    const note = el("div", "card"); const np = el("div", "pad");
+    np.innerHTML = rn ? "<b>✅ 已核准，成品就緒</b><br><span class='small muted'>用上方「📅 排程發佈」設定發佈時間即可。</span>"
+                      : "<b>✅ 已核准，出成品中</b><br><span class='small muted'>渲染完成後成品會出現，屆時回此頁設發佈時間。</span>";
+    note.appendChild(np); app.appendChild(note);
+    return;
+  }
 
   // 候選底圖挑選
   const picker = el("div"); picker.appendChild(el("div", "small muted", "為每張 slide 挑一張底圖（點選＝標記）"));
@@ -279,9 +298,14 @@ function actionBar(p, choice) {
     try {
       disableBar(bar, true);
       await saveJson(FILES.reviews, d => { (d.reviews = d.reviews || []).push(review); }, `review: ${decision} ${p.id}`);
-      // 本地反映：把該貼文標記為已處理（github 模式下由排程再更新，但 UI 先移出佇列）
-      p.status = decision === "approve" ? "approved" : "rejected";
-      toast(decision === "approve" ? "已核准 ✓" : "已退回，排程下次處理");
+      if (decision === "approve") {
+        // 核准 → posts.json 標 approved（卡片留在「已核准」組，出成品後回來排程；不再憑空消失）
+        await saveJson(FILES.posts, d => { const pp = (d.posts || []).find(x => x.id === p.id); if (pp) pp.status = "approved"; }, `approve: ${p.id}`);
+        p.status = "approved";
+        toast("已核准 ✓ 出成品後回來排程");
+      } else {
+        toast("已退回，排程下次處理");
+      }
       DETAIL = null; render();
     } catch (e) { toast(e.message, true); disableBar(bar, false); }
   };
