@@ -69,13 +69,16 @@
 |---|---|---|---|---|
 | 01 | 撰稿與審查 | `v3HTRGmvWDa7JndZ` | 被 07 呼叫 | **GPT-5.6 撰稿+重寫**（cred `73DXO5CKwdhD1NhX`，無 temperature）；Claude 審查 |
 | 02 | 生圖 Higgsfield | `xoyAcXqUOF0OGXiv` | 被 01 呼叫 | 每 slide 生圖 → Drive |
-| 03 | 過稿迴路 | `Dvs18yDdtTkPq96P` | ClickUp「決定」 | 舊迴路，含防迴圈 |
+| 03 | 過稿迴路 | `Dvs18yDdtTkPq96P` | — | **已退休（inactive）**：審核移到操控室，舊 待排版/退回重生 迴路作廢 |
 | 04 | 素材搬運工 | `WxEcQ6qmFR04i7Vb` | URL→Drive | |
 | 05 | 選題雷達 | `UPClEV6bFGAG2aFr` | 每日 | 產靈感卡 |
 | 06 | 素材搜尋 v3 | `PD79ZwJkneQDCUxI` | | 劇照+slide 標示 |
-| 07 | 靈感卡放行監聽 | `eeNh3PGpbAqAwoYY` | taskUpdated | 讀 checkbox **🚀放行 = `b0deb388`** → 觸發 01 |
+| 07 | 靈感卡放行監聽 | `eeNh3PGpbAqAwoYY` | taskUpdated | 讀 checkbox **🚀放行 = `b0deb388`**（guard 認 選題待定 或 靈感審核）→ 觸發 01 → 卡設 **在製中** |
 | 08 | 素材入庫 | `kHWvSfP5ZiGTLLtW` | taskUpdated | 讀 checkbox **📥入素材庫 = `10217a70`** → 複製底圖進黃金參考 |
-| 09 | 操控室審核回寫 | `NKwZ8LtzXOMg3u1z` | 每 2 分 | 讀 reviews.json → ClickUp 改狀態+留言（static-data dedup）|
+| 09 | 操控室審核回寫 | `NKwZ8LtzXOMg3u1z` | — | **已退休（inactive）**：approve/reject 不再改 ClickUp 狀態（卡留在 在製中）；渲染改由 feed Part B 觸發 |
+| 11 | 成效拉取 | `OF2Obz1kkjbM9gjt` | manual（feed 呼叫）| 拉 IG insights → Assemble 輸出（去 token）|
+| 01 | （撰稿）狀態 | `v3HTRGmvWDa7JndZ` | — | Open ClickUp Card 現設 **在製中**（原 待過稿）；onError continue |
+| 10 | （發佈）狀態 | `56znLZUEHamJVJjJ` | — | Card 現設 **發佈完成**（原 已發佈）|
 
 全部 `active: true`。改 workflow 用 `update_workflow` 原子操作（addNode/setNodeParameter…），不要整包重建。
 
@@ -93,7 +96,8 @@
 | Jesse member id | `113529526`（留言 @ 用）|
 | checkbox 🚀放行 | `b0deb388` |
 | checkbox 📥入素材庫 | `10217a70` |
-| 狀態機 | 選題待定 → 生成中 → 待過稿 → 退回重生 → 待排版 → 已排程 → 已發布 |
+| 狀態機（2026-07-17 精簡為 4） | **靈感審核** →(🚀放行,WF07)→ **在製中** →(操控室排程)→ **已排程** →(WF10發佈)→ **發佈完成** |
+| 分工 | ClickUp＝決策層（只有「靈感審核」需人工放行）；**操控室＝生產層**（選底圖/退回底圖或排版/改文案/設排程時間全在操控室，ClickUp 不反映這些細節）|
 | 一卡到底原則 | **一張卡從靈感走到發佈**，不再開新卡。01 改名+改狀態沿用同卡。|
 
 ### 排程（本機 Claude Code scheduled task）
