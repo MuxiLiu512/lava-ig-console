@@ -242,7 +242,7 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 ### 撰稿研究步驟＋封面版面防護（2026-07-17 晚，Fable 5）
 - **WF01 新增「Research Topic (Claude+Web)」→「Parse Research」**（Extract Spec Text 之後、Write Draft 之前）：Claude sonnet-4-6 + `web_search_20250305`（Anthropic cred `9Cci7CUN8iYsJxEB`，直接打 api.anthropic.com，header `anthropic-version: 2023-06-01`）查證主題起源/具名人物/數據/在地化 → 筆記餵給 GPT 撰稿與重寫。研究失敗 onError continue（空筆記時囑咐不得捏造引用）。
 - **撰稿 prompt 加密度規則**：display_copy 目標 **80–140 字**（原「上限140、寧可少」導致文字太少的風格退化）；具體人名/年份/地點/數據至少擇二；起源故事講清楚。
-- **⚠️ 重大發現：Jesse 的 OpenAI key（cred `73DXO5CKwdhD1NhX`）`insufficient_quota` 沒額度**——撰稿實際一直跑在 **n8n 免費 OpenAI credits**（cred `8rtJ704d7Zu06B7l`，n8n 代理 token，只能過 n8n 節點、不能直打 API）。免費額度耗盡整條撰稿即停，**需 Jesse 到 OpenAI 儲值**後把 WF01 兩個 GPT 節點換回自己的 key。研究步驟因此改用 Claude（真 key、可直打）。
+- **⚠️ 撰稿目前停擺：Jesse 的 OpenAI key（cred `73DXO5CKwdhD1NhX`）`insufficient_quota` 額度耗盡**（2026-07-17 中午 Pitch 那篇是最後一筆成功）。已測 n8n 免費 credits（`8rtJ704d7Zu06B7l`）：**不允許 gpt-5.6**（"Model not allowed with n8n AI credits"）。WF01 兩個 GPT 節點已還原掛 Jesse 的 key——**Jesse 到 platform.openai.com 儲值後即恢復**，屆時重觸發 Pitch 重寫（webhook lava-ig-draft，taskId 86ey8fn7j）。研究步驟不受影響（Claude 真 key 可直打）。實測研究輸出品質極高（起源/創辦人/城市數/Pew·SAGE 數據全帶出處）。
 - **render_post_v5 封面版面防護**（原副標**完全沒換行**導致左右爆框）：副標逐行換行＋footer 安全區塞不下逐級縮字（0.032W→0.68×）；主標 >3 行自動縮字；eyebrow 過長縮字。content 頁先前已有底部錨定＋縮字。**版面安全規則現已全 slide 型別覆蓋**。
 - render-approved 加 `--force`（忽略 rendered_at 閘門，引擎修復後重出成品）與 `--only <pid>`。
 
