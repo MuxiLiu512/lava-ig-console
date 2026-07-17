@@ -2,118 +2,6 @@
   "generated_at": "2026-07-15T18:00:00+08:00",
   "posts": [
     {
-      "id": "20260712-已讀不回的心理學-v5",
-      "topic": "已讀不回的心理學",
-      "version": 5,
-      "status": "awaiting_review",
-      "clickup_task_id": "86ac-demo-01",
-      "created_at": null,
-      "caption": "比起壞消息，你是不是也更厭惡「已讀不回」？\n\n那種懸在半空的感覺其實有名字——1920 年代心理學家 Bluma Zeigarnik 發現，大腦記得「沒做完的事」遠比記得「做完的事」清楚。一則已讀沒回的訊息，在腦裡就是一張還沒結帳的單子，持續佔用你的注意力。\n\n這跟你的魅力沒有關係，是聊天室這個設計本身讓每段關係都懸在半空。\n所以我們決定把聊天室拿掉——配對後回答三個價值觀問題，確認意願，直接約見面。\n\n出現就好，其他交給我們。\n\n#已讀不回 #交友軟體 #蔡格尼效應 #心理學 #Lava交友 #不聊天的交友軟體 #線下約會 #約會焦慮",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-1a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-1b.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-1c.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-1.jpg",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-2a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-2b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-2.jpg",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-3a.jpg",
-              "kind": "still"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-3b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-3.jpg",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-4a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-4b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-4.jpg",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-5a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260712-已讀不回的心理學-v5/slide-5b.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-5.jpg",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-6.jpg"
-        }
-      ]
-    },
-    {
       "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
       "topic": "母胎單身的人，其實比你更懂得選擇伴侶",
       "version": 1,
@@ -351,6 +239,292 @@
       "publish_at": "2026-07-17T16:13:46+08:00",
       "media_id": "18170712478446850",
       "published_at": "2026-07-17T17:45:07+08:00"
+    },
+    {
+      "id": "20260712-已讀不回的心理學-v5",
+      "topic": "已讀不回的心理學",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ac-demo-01",
+      "created_at": null,
+      "caption": "那種懸在半空的感覺，其實是有名字的\n\nLava 的做法很直接：配對成功之後，兩個人只需要回答彼此設定的三個價值觀問題，確認有進一步認識的意願，接著就直接約時間見面，地點由我們安排好。 沒有無止境的訊息往返，沒有需要反覆解讀的已讀，也沒有那種懸在半空、不知道該不該再傳一句的夜晚。你要做的，只是決定要不要出現，而這個決定，【從頭到尾都在你自己手上】。 【出現就好，其他交給我們。】\n\n#已讀不回 #交友軟體 #蔡格尼效應 #心理學 #Lava交友 #不聊天的交友軟體 #線下約會 #約會焦慮 #真實相遇 #台灣約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1b.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-1c.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-1.jpg",
+          "heading": "比起壞消息你是不是也更厭惡已讀不回?",
+          "display_copy": "那種懸在半空的感覺，其實是有名字的",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2b.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-2c.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-2.jpg",
+          "heading": "我們都做過同一件事",
+          "display_copy": "訊息傳出去後，你再次點開對話框想確認對方讀了嗎? 映入眼簾卻是「已讀」兩個字。過了五個小時你又點進去看了一次，明知道畫面不會有任何變化，【卻還是忍不住再確認一遍】。\n你開始重讀自己傳的那句話，覺得語氣是不是太熱情了，或者太冷淡了，甚至懷疑那個表情符號是不是用錯了地方。【整個晚上就這樣被一則沒有回覆的訊息綁架】，而你甚至還沒真正見過這個人。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-3b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-3.jpg",
+          "heading": "大腦記得沒做完的事，遠比記得做完的事清楚",
+          "display_copy": "心理學家 Bluma Zeigarnik 在 1920 年代發現，人對未完成事件的記憶遠比已完成的深刻，這個現象後來被稱為【蔡格尼效應（Zeigarnik Effect）】。她觀察的是餐廳服務生：還沒結帳的訂單記得清清楚楚，客人一離開，那些細節就從腦中消失了。\n一則已讀沒回的訊息，在大腦裡就是【一張還沒結帳的單子】。它不會被歸檔，不會被關閉，只是持續掛在那裡，佔用著你原本可以拿去做別的事情的注意力。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-4b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-4.jpg",
+          "heading": "這件事會發生，跟你的魅力沒有關係",
+          "display_copy": "在交友軟體裡，每一段對話都是一個潛在的未完成事件：對方可能同時開著十個對話視窗，回覆節奏沒有任何共識，雙方都在用回訊息的速度小心翼翼試探彼此的熱度。\n當系統的設計讓每段關係都停留在「還沒結束，但也還沒開始」，【人的能量就會在無數個懸空的對話裡被慢慢磨光】，很多人在真正見到對方之前，就已經對見面失去了力氣。",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260712-已讀不回的心理學-v5/slide-5b.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-5.jpg",
+          "heading": "我們決定把聊天室拿掉",
+          "display_copy": "Lava 的做法很直接：配對成功之後，兩個人只需要回答彼此設定的三個價值觀問題，確認有進一步認識的意願，接著就直接約時間見面，地點由我們安排好。\n沒有無止境的訊息往返，沒有需要反覆解讀的已讀，也沒有那種懸在半空、不知道該不該再傳一句的夜晚。你要做的，只是決定要不要出現，而這個決定，【從頭到尾都在你自己手上】。\n【出現就好，其他交給我們。】",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260712-已讀不回的心理學-v5/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260712-%E5%B7%B2%E8%AE%80%E4%B8%8D%E5%9B%9E%E7%9A%84%E5%BF%83%E7%90%86%E5%AD%B8-v5/slide-6.jpg",
+          "heading": "Lava 不聊天的交友軟體",
+          "display_copy": "CTA 公版"
+        }
+      ]
+    },
+    {
+      "id": "20260718-你知道weak-ties",
+      "topic": "你知道「weak ties（弱連結）」才是你找到對象的關鍵嗎？",
+      "version": 1,
+      "status": "scheduled",
+      "clickup_task_id": "86ey8pkn1",
+      "created_at": null,
+      "caption": "你認識的人，幾乎都〖認識彼此〗  你的好朋友、你的同事、前任介紹的朋友—— 他們的資訊圈，跟你的【高度重疊】。  如果你一直在這個圈子裡等對象出現， 你等到的機率，比你想的低非常多。\n\n「多出去走走」聽起來像廢話， 但背後有真實的社會學邏輯。  你每走進一個新場合，就在累積新的【弱連結】； 而每一條弱連結，都是一個你原本觸及不到的可能性。  Lava 做的事情很簡單—— 讓你在台灣的真實場景裡，遇見那些跟你只有一點點交集的人， 然後讓你們有機會在線下真正見面。  〖剩下的，是你的事。〗\n\n#弱連結 #交友軟體 #台灣約會 #社交圈 #Lava交友 #線下約會 #WeakTies #社會學 #脫單 #真實相遇",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260718-你知道weak-ties/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260718-你知道weak-ties/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260718-你知道weak-ties/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260718-你知道weak-ties/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260718-你知道weak-ties/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            }
+          ],
+          "final_src": "assets/20260718-你知道weak-ties/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260718-%E4%BD%A0%E7%9F%A5%E9%81%93weak-ties/slide-1.jpg",
+          "heading": "你認識的人，幾乎都認識彼此",
+          "display_copy": "你認識的人，幾乎都〖認識彼此〗\n\n你的好朋友、你的同事、前任介紹的朋友——\n他們的資訊圈，跟你的【高度重疊】。\n\n如果你一直在這個圈子裡等對象出現，\n你等到的機率，比你想的低非常多。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260718-你知道weak-ties/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260718-你知道weak-ties/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260718-你知道weak-ties/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260718-你知道weak-ties/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260718-你知道weak-ties/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": "assets/20260718-你知道weak-ties/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260718-%E4%BD%A0%E7%9F%A5%E9%81%93weak-ties/slide-2.jpg",
+          "heading": "你上一次認識「圈子外的人」，是什麼時候？",
+          "display_copy": "你上一次認識【圈子外的人】，是什麼時候？\n\n不是滑 IG 看到的，不是朋友介紹的——\n而是走進一個地方，遇見一個完全陌生的人，\n後來還真的有了交集。\n\n大多數人想一想，會發現那已經是很久以前的事了。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260718-你知道weak-ties/slide-3a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260718-你知道weak-ties/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260718-%E4%BD%A0%E7%9F%A5%E9%81%93weak-ties/slide-3.jpg",
+          "heading": "1973 年，一個社會學家解釋了這件事",
+          "display_copy": "1973 年，社會學家 Mark Granovetter 提出——\n\n〖弱連結的力量〗\n\n讓你人生產生重大改變的機會，\n往往不是來自好朋友，\n而是來自【你不太熟、偶爾才會遇到的人】。\n\n好朋友跟你高度同質，他們能給你的，你幾乎已經有了。\n弱連結帶來的，是你從沒接觸過的全新資源。\n\n資料來源：Granovetter, M. (1973). The Strength of Weak Ties. American Journal of Sociology, 78(6), 1360–1380.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260718-你知道weak-ties/slide-4a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260718-你知道weak-ties/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260718-%E4%BD%A0%E7%9F%A5%E9%81%93weak-ties/slide-4.jpg",
+          "heading": "你的下一個對象，在你圈子的邊緣",
+          "display_copy": "你的好朋友認識的人，你大概都認識了。\n你同事的朋友，你也差不多接觸過了。\n\n真正有可能帶來新對象的，\n是那些跟你【只有一點點交集的人】——\n\n同一個運動課偶爾打招呼的人、\n在某個活動聊了十分鐘的人、\n因為某個場合剛好站在一起的人。\n\n這些，才是統計意義上最可能帶你走出原有圈子的人。",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260718-你知道weak-ties/slide-5a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260718-你知道weak-ties/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260718-%E4%BD%A0%E7%9F%A5%E9%81%93weak-ties/slide-5.jpg",
+          "heading": "走出去這件事，不是玄學，是機率",
+          "display_copy": "「多出去走走」聽起來像廢話，\n但背後有真實的社會學邏輯。\n\n你每走進一個新場合，就在累積新的【弱連結】；\n而每一條弱連結，都是一個你原本觸及不到的可能性。\n\nLava 做的事情很簡單——\n讓你在台灣的真實場景裡，遇見那些跟你只有一點點交集的人，\n然後讓你們有機會在線下真正見面。\n\n〖剩下的，是你的事。〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260718-你知道weak-ties/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260718-%E4%BD%A0%E7%9F%A5%E9%81%93weak-ties/slide-6.jpg",
+          "heading": "下載 Lava，走出你的圈子",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "publish_at": "2026-07-18T17:00:00+08:00"
     }
   ]
 }
