@@ -525,6 +525,221 @@
         }
       ],
       "publish_at": "2026-07-18T17:00:00+08:00"
+    },
+    {
+      "id": "20260717-PitchYourFriend",
+      "topic": "「Pitch Your Friend」正在歐美爆紅——幫閨蜜／兄弟寫交友履歷，這在紅什麼？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ey8fn7j",
+      "created_at": null,
+      "caption": "朋友抽走你的手機，準備替你做交友簡報；如果〖他比你更會介紹你〗，你敢讓他發出去嗎？\n\n請朋友回答三題：跟你相處最舒服的是什麼、哪件小事最像你、你適合什麼樣的人，再由你決定【哪些話能被看見】。\n\n#PitchYourFriend #朋友幫你徵友 #交友履歷 #約會觀察 #台灣Dating #LavaDating #不聊天的交友軟體",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260717-PitchYourFriend/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260717-PitchYourFriend/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "How I Met Your Mother"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260717-PitchYourFriend/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "How I Met Your Mother"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260717-PitchYourFriend/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "How I Met Your Mother"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260717-PitchYourFriend/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "How I Met Your Mother"
+            }
+          ],
+          "final_src": null,
+          "heading": "你敢讓朋友替你徵友嗎？",
+          "display_copy": "朋友抽走你的手機，準備替你做交友簡報；如果〖他比你更會介紹你〗，你敢讓他發出去嗎？",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260717-PitchYourFriend/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260717-PitchYourFriend/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260717-PitchYourFriend/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260717-PitchYourFriend/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260717-PitchYourFriend/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": null,
+          "heading": "把交友自介，變成朋友的提案",
+          "display_copy": "朋友把你的個性、相處亮點與理想對象，做成求職簡報般的短影音或投影片，再上傳社群【公開推薦你】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260717-PitchYourFriend/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260717-PitchYourFriend/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260717-PitchYourFriend/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260717-PitchYourFriend/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260717-PitchYourFriend/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": null,
+          "heading": "朋友講，為什麼更容易相信？",
+          "display_copy": "自己寫會怕太自戀，最後只剩「愛旅行、愛美食」；朋友卻能用共同記憶與具體故事，讓【優點變成看得見的日常】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260717-PitchYourFriend/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260717-PitchYourFriend/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260717-PitchYourFriend/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260717-PitchYourFriend/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260717-PitchYourFriend/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "台灣人不是不會誇，是不敢被看見",
+          "display_copy": "朋友私下誇你可以滔滔不絕，公開時卻會多一層顧慮；事先說好【可公開範圍】，害羞也能變成有分寸的真誠。",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260717-PitchYourFriend/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260717-PitchYourFriend/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Ted Lasso"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260717-PitchYourFriend/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Ted Lasso"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260717-PitchYourFriend/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Ted Lasso"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260717-PitchYourFriend/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Ted Lasso"
+            }
+          ],
+          "final_src": null,
+          "heading": "讓朋友補光，不必替你代演",
+          "display_copy": "請朋友回答三題：跟你相處最舒服的是什麼、哪件小事最像你、你適合什麼樣的人，再由你決定【哪些話能被看見】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "讓真實的你，被願意見面的人看見",
+          "display_copy": "CTA 公版"
+        }
+      ]
     }
   ]
 }
