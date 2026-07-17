@@ -173,21 +173,27 @@ function renderQueue() {
   const b = noPatBanner(); if (b) app.appendChild(b);
   const err = STATE.posts && STATE.posts._error;
   if (err) { app.appendChild(el("div", "empty", "載入 posts.json 失敗：<br>" + esc(err))); return; }
-  const posts = (STATE.posts.posts || []).filter(p => p.status === "awaiting_review");
-  if (!posts.length) { app.appendChild(el("div", "empty", "🎉 審核佇列已清空")); return; }
-  posts.forEach(p => {
-    const c = el("div", "card qcard"); const pad = el("div", "pad row");
-    const cover = img(coverSrc(p)); cover.className = "cover";
-    const info = el("div", "grow");
-    info.appendChild(el("h3", null, esc(p.topic)));
-    info.appendChild(el("div", "small muted", `v${p.version} · ${p.slides.length} slides · ${totalCands(p)} 候選底圖`));
-    const tags = el("div", null, ""); tags.style.marginTop = "6px";
-    tags.innerHTML = `<span class="tag">待審核</span>`;
-    info.appendChild(tags);
-    pad.appendChild(cover); pad.appendChild(info); pad.appendChild(el("div", "muted", "›"));
-    c.appendChild(pad); c.onclick = () => { DETAIL = p.id; render(); };
-    app.appendChild(c);
-  });
+  const all = STATE.posts.posts || [];
+  const posts = all.filter(p => p.status === "awaiting_review");
+  const scheduled = all.filter(p => p.status === "scheduled").sort((a, b) => (a.publish_at || "").localeCompare(b.publish_at || ""));
+  if (!posts.length && !scheduled.length) { app.appendChild(el("div", "empty", "🎉 審核佇列已清空")); return; }
+  posts.forEach(p => app.appendChild(qcard(p, `v${p.version} · ${p.slides.length} slides · ${totalCands(p)} 候選底圖`, `<span class="tag">待審核</span>`)));
+  if (scheduled.length) {
+    const hdr = el("div", "small muted", "📅 已排程發佈"); hdr.style.margin = "16px 0 4px"; app.appendChild(hdr);
+    scheduled.forEach(p => app.appendChild(qcard(p, `${p.slides.filter(s => s.public_url).length} 張成品 · 發佈於 ${fmtLocal(p.publish_at)}`, `<span class="tag" style="background:#1f7a4d;color:#fff">已排程</span>`)));
+  }
+}
+function qcard(p, subtitle, tagHtml) {
+  const c = el("div", "card qcard"); const pad = el("div", "pad row");
+  const cover = img(coverSrc(p)); cover.className = "cover";
+  const info = el("div", "grow");
+  info.appendChild(el("h3", null, esc(p.topic)));
+  info.appendChild(el("div", "small muted", subtitle));
+  const tags = el("div", null, tagHtml); tags.style.marginTop = "6px";
+  info.appendChild(tags);
+  pad.appendChild(cover); pad.appendChild(info); pad.appendChild(el("div", "muted", "›"));
+  c.appendChild(pad); c.onclick = () => { DETAIL = p.id; render(); };
+  return c;
 }
 const coverSrc = p => { const s = p.slides.find(s => s.n === 1) || p.slides[0]; return (s && s.final_src) || (s && s.candidates[0] && s.candidates[0].src); };
 const totalCands = p => p.slides.reduce((a, s) => a + s.candidates.length, 0);
@@ -212,6 +218,9 @@ function renderDetail(pid) {
 
   // 文案編輯（改動 → copy_edits.json → 迭代 harness 吸收語氣）
   app.appendChild(buildCopyEditor(p));
+
+  // 排程發佈到 IG（成品就緒時才顯示）
+  app.appendChild(buildScheduler(p));
 
   // 候選底圖挑選
   const picker = el("div"); picker.appendChild(el("div", "small muted", "為每張 slide 挑一張底圖（點選＝標記）"));
@@ -315,6 +324,46 @@ function buildCopyEditor(p) {
     btn.disabled = false;
   };
   pad.appendChild(btn); card.appendChild(pad); return card;
+}
+
+// ── 排程發佈到 IG ────────────────────────────────────────────────────
+const _p2 = n => String(n).padStart(2, "0");
+function defaultWhen() { const d = new Date(Date.now() + 864e5); return `${d.getFullYear()}-${_p2(d.getMonth() + 1)}-${_p2(d.getDate())}T20:00`; }
+function localToISO(v) { if (!v || v.length < 16) return null; return (v.length === 16 ? v + ":00" : v) + "+08:00"; } // datetime-local 視為台灣時間
+function fmtLocal(iso) { const m = String(iso || "").match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/); return m ? `${m[1]}/${m[2]}/${m[3]} ${m[4]}:${m[5]}` : (iso || ""); }
+function buildScheduler(p) {
+  const ready = p.slides.filter(s => s.public_url);
+  if (!ready.length) return el("div"); // 只有出成品（有公開圖）才排得了
+  const card = el("div", "card"); const pad = el("div", "pad");
+  pad.appendChild(el("div", null, '<b>📅 排程發佈到 IG</b> <span class="tiny muted">' + ready.length + ' 張成品就緒</span>'));
+  if (p.status === "scheduled" && p.publish_at) {
+    pad.appendChild(el("div", "small", "✓ 已排程：<b>" + fmtLocal(p.publish_at) + "</b>（台灣時間）到點自動發佈"));
+    const cancel = el("button", "btn warn", "取消排程"); cancel.style.marginTop = "10px";
+    cancel.onclick = async () => {
+      try {
+        cancel.disabled = true;
+        await saveJson(FILES.posts, d => { const pp = (d.posts || []).find(x => x.id === p.id); if (pp) { pp.status = "awaiting_review"; delete pp.publish_at; } }, "unschedule: " + p.id);
+        toast("已取消排程"); p.status = "awaiting_review"; delete p.publish_at; render();
+      } catch (e) { toast(e.message, true); cancel.disabled = false; }
+    };
+    pad.appendChild(cancel);
+  } else {
+    pad.appendChild(el("label", "fld", "發佈時間（台灣時間）"));
+    const inp = el("input"); inp.type = "datetime-local"; inp.value = defaultWhen();
+    pad.appendChild(inp);
+    const btn = el("button", "btn primary block", "排程發佈"); btn.style.marginTop = "10px";
+    btn.onclick = async () => {
+      const iso = localToISO(inp.value);
+      if (!iso) { toast("請先選發佈時間", true); return; }
+      try {
+        btn.disabled = true;
+        await saveJson(FILES.posts, d => { const pp = (d.posts || []).find(x => x.id === p.id); if (pp) { pp.publish_at = iso; pp.status = "scheduled"; } }, "schedule: " + p.id + " @ " + iso);
+        toast("已排程 ✓ 到點自動發佈"); p.status = "scheduled"; p.publish_at = iso; DETAIL = null; render();
+      } catch (e) { toast(e.message, true); btn.disabled = false; }
+    };
+    pad.appendChild(btn);
+  }
+  card.appendChild(pad); return card;
 }
 
 // ── IG Mockup ───────────────────────────────────────────────────────

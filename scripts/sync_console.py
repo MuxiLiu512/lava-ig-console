@@ -236,6 +236,11 @@ def _build_and_write(m):
     }
     d = load("posts.json")
     posts = d.setdefault("posts", [])
+    old = next((p for p in posts if p["id"] == pid), None)
+    if old and old.get("status") == "scheduled":  # 已排程者不被重餵洗掉排程
+        post["status"] = "scheduled"
+        if old.get("publish_at"):
+            post["publish_at"] = old["publish_at"]
     posts[:] = [p for p in posts if p["id"] != pid]  # upsert
     posts.append(post)
     save("posts.json", d)
