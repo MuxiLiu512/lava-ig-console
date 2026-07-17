@@ -213,7 +213,14 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 **✅ 首發成功（2026-07-17）**：weak-ties 六張輪播已真實發佈到 @lava_dating（**media_id `18170712478446850`**）。workflow 10 全鏈路（讀排程→建容器→組輪播→media_publish→ClickUp 已發布→留言）跑通。posts.json 該篇已手動標 `status:"published"`＋media_id（防重貼）。
 **要開全自動**：n8n 把 workflow 10 **設為 active** 即可——之後 PT 在操控室排程任何貼文，到點就自動發（static-data 去重在 production 執行會持久化，不會重貼）。
 **token 教訓**：粉專 token 必須從「**已延長的長效 user token**」去 `me/accounts` 取，偵錯工具驗到期日＝**永不**才對；短效 user token 直接存會幾小時後過期（code 190）。
-**已知小缺口（非阻塞）**：自動發佈後 posts.json 的 status 不會自動翻 published（n8n 無 GitHub PAT），操控室會一直把它顯示在「已排程」；防重貼靠 static-data＋ClickUp 已發布。要修＝本機 feed 排程加一步「ClickUp 已發布→回寫 posts.json published」對帳，或給 n8n 一把 GitHub PAT 讓 workflow 10 自己回寫。
+**發佈回寫（已補）**：自動發佈後 posts.json 不會被 n8n 直接翻 published（無 GitHub PAT），改由**本機 feed 排程 Part C 對帳**：`clickup_get_task` 查排程貼文卡片，狀態＝已發佈 → `sync_console set-status <id> published` → push。防重貼另有 workflow 10 的 static-data（production 執行持久化）。sync_console 亦有 `reconcile-published` 命令（同邏輯，但需 .sync.json 有**真的** clickup_token）。
+
+**巡查發現並修正的 bug（2026-07-17）**：
+1. **ClickUp 狀態字不符**：workflow 10 原送「已發**布**」，但 ClickUp 實際狀態是「已發**佈**」（佈）→ 卡片狀態更新靜默失敗（onError:continue 吞掉）。已改 workflow 10 送「已發佈」。**狀態名雷區**：發佈用「已發佈」(佈)、排程狀態叫「已排程**.**」(含句點)。
+2. **操控室對已發佈貼文仍顯示改期 UI** → 已修（published 顯示「✅ 已發佈」不再給 picker）。
+3. **重餵防洗只保護 scheduled** → 已擴及 published（連 publish_at/published_at/media_id 一起保）。
+4. **`.sync.json` 的 `clickup_token` 是 placeholder**（值含中文「…個人…供回寫卡片狀態」非真 token）→ 本機 `apply-reviews`/`reconcile-published` 用它會失敗。已加防呆（非 ASCII 就略過）。**真正的 ClickUp 寫回是靠 n8n OAuth（workflow 09/10）与 feed 排程的 ClickUp MCP，不靠這把 token**，故不影響線上。若要用本機 ClickUp 命令，需在 .sync.json 換成真的 ClickUp API token。
+
 測試工具 `1QPt4MakN5VCFwkt`（手動/不發佈，留作「token＋抓圖」健康檢查，或刪）。App Review 自家帳號免。
 
 **Jesse 最後回覆「還沒，需要協助設定」** → 下一步是**陪 Jesse 走完 Meta 設定**，拿到：
