@@ -26,7 +26,7 @@ DOCS = os.path.join(REPO, "docs")
 # Pages 服務 /docs 於站根：docs/finals/<pid>/slide-N.jpg → 下面這個公開 URL，供 IG /media 抓圖
 GH_PAGES = "https://muxiliu512.github.io/lava-ig-console"
 IG_LONG_EDGE = 1350  # IG 4:5 顯示上限 1080×1350；成品降到此尺寸當公開圖（IG 反正會再壓）
-CID = ["a", "b", "c", "d", "e", "f"]
+CID = list("abcdefghijkl")  # 單 slide 候選上限 12（重寫輪會累加新舊資料夾的圖）
 IMG_EXT = (".png", ".jpg", ".jpeg", ".gif", ".webp")
 
 # Drive 產出資料夾（service@lava.tw 掛載）。--drive-root 可覆寫。
@@ -276,6 +276,8 @@ def _build_and_write(m):
     for s in m["slides"]:
         cands = []
         for i, c in enumerate(s.get("candidates", [])):
+            if i >= len(CID):
+                sys.stderr.write("  ! slide %d 候選超過 %d 張，其餘截斷（清舊資料夾可減量）\n" % (s["n"], len(CID))); break
             if not os.path.exists(c["src"]):
                 sys.stderr.write("  ! 缺候選圖 %s\n" % c["src"]); continue
             out = make_thumb(c["src"], os.path.join(ASSETS, pid, "slide-%d%s" % (s["n"], CID[i])))

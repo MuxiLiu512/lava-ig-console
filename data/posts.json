@@ -660,10 +660,10 @@
       "id": "20260717-PitchYourFriend",
       "topic": "「Pitch Your Friend」正在歐美爆紅——幫閨蜜／兄弟寫交友履歷，這在紅什麼？",
       "version": 1,
-      "status": "approved",
+      "status": "awaiting_review",
       "clickup_task_id": "86ey8fn7j",
       "created_at": null,
-      "caption": "朋友抽走你的手機，準備替你做交友簡報；如果〖他比你更會介紹你〗，你敢讓他發出去嗎？\n\n請朋友回答三題：跟你相處最舒服的是什麼、哪件小事最像你、你適合什麼樣的人，再由你決定【哪些話能被看見】。\n\n#PitchYourFriend #朋友幫你徵友 #交友履歷 #約會觀察 #台灣Dating #LavaDating #不聊天的交友軟體",
+      "caption": "朋友站到酒吧投影幕前，按下下一頁，你的怪癖、優點與理想型全被做成交友簡報，台下甚至真的有人舉手想認識你。〖當最懂你的朋友替你 pitch，這份介紹或許更接近真實的你。〗\n\n台灣人要寫「我很值得認識」常常卡住，替閨蜜或兄弟介紹時，卻能從早餐習慣一路講到失戀後怎麼照顧人。Lava 把選擇權還給你：帶著朋友眼中的線索去見面，再親自確認【有沒有真實的感覺】。\n\n#PitchYourFriend #PitchAFriend #交友趨勢 #朋友認證 #線下約會 #LavaDating #不聊天的交友軟體",
       "topic_type": "A-知識型",
       "slides": [
         {
@@ -678,8 +678,7 @@
             {
               "cid": "b",
               "src": "assets/20260717-PitchYourFriend/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "How I Met Your Mother"
+              "kind": "generated"
             },
             {
               "cid": "c",
@@ -698,17 +697,46 @@
               "src": "assets/20260717-PitchYourFriend/slide-1e.jpg",
               "kind": "still",
               "source_label": "How I Met Your Mother"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260717-PitchYourFriend/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "How I Met Your Mother"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260717-PitchYourFriend/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260717-PitchYourFriend/slide-1h.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260717-PitchYourFriend/slide-1i.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260717-PitchYourFriend/slide-1j.jpg",
+              "kind": "still",
+              "source_label": "The Office"
             }
           ],
-          "final_src": "assets/20260717-PitchYourFriend/final/slide-1.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-1.jpg",
-          "heading": "你敢讓朋友替你徵友嗎？",
-          "display_copy": "朋友抽走你的手機，準備替你做交友簡報；如果〖他比你更會介紹你〗，你敢讓他發出去嗎？",
+          "final_src": null,
+          "heading": "朋友比你更會介紹你",
+          "display_copy": "朋友站到酒吧投影幕前，按下下一頁，你的怪癖、優點與理想型全被做成交友簡報，台下甚至真的有人舉手想認識你。〖當最懂你的朋友替你 pitch，這份介紹或許更接近真實的你。〗",
           "default_cid": "a"
         },
         {
           "n": 2,
-          "role": "共感場景",
+          "role": "知識解釋",
           "candidates": [
             {
               "cid": "a",
@@ -718,8 +746,7 @@
             {
               "cid": "b",
               "src": "assets/20260717-PitchYourFriend/slide-2b.jpg",
-              "kind": "still",
-              "source_label": "The Office"
+              "kind": "generated"
             },
             {
               "cid": "c",
@@ -738,12 +765,17 @@
               "src": "assets/20260717-PitchYourFriend/slide-2e.jpg",
               "kind": "still",
               "source_label": "The Office"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260717-PitchYourFriend/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "The Office"
             }
           ],
-          "final_src": "assets/20260717-PitchYourFriend/final/slide-2.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-2.jpg",
-          "heading": "把交友自介，變成朋友的提案",
-          "display_copy": "朋友把你的個性、相處亮點與理想對象，做成求職簡報般的短影音或投影片，再上傳社群【公開推薦你】。",
+          "final_src": null,
+          "heading": "起點其實在西雅圖",
+          "display_copy": "【起點其實在西雅圖】：活動自2022年3月定期舉辦。Melissa Schipke 與 Ariana Brogan 看完 TikTok 影片後，把概念帶回費城，同年11月在 Punch Buggy Brewing 辦了當地首場。\n資料來源：Pitch A Friend Seattle；Philadelphia Inquirer，2024/1/9",
           "default_cid": "a"
         },
         {
@@ -753,8 +785,7 @@
             {
               "cid": "a",
               "src": "assets/20260717-PitchYourFriend/slide-3a.jpg",
-              "kind": "still",
-              "source_label": "Suits"
+              "kind": "generated"
             },
             {
               "cid": "b",
@@ -773,12 +804,41 @@
               "src": "assets/20260717-PitchYourFriend/slide-3d.jpg",
               "kind": "still",
               "source_label": "Suits"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260717-PitchYourFriend/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260717-PitchYourFriend/slide-3f.jpg",
+              "kind": "still",
+              "source_label": "Parksand Recreation"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260717-PitchYourFriend/slide-3g.jpg",
+              "kind": "still",
+              "source_label": "Parksand Recreation"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260717-PitchYourFriend/slide-3h.jpg",
+              "kind": "still",
+              "source_label": "Parksand Recreation"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260717-PitchYourFriend/slide-3i.jpg",
+              "kind": "still",
+              "source_label": "Parksand Recreation"
             }
           ],
-          "final_src": "assets/20260717-PitchYourFriend/final/slide-3.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-3.jpg",
-          "heading": "朋友講，為什麼更容易相信？",
-          "display_copy": "自己寫會怕太自戀，最後只剩「愛旅行、愛美食」；朋友卻能用共同記憶與具體故事，讓【優點變成看得見的日常】。",
+          "final_src": null,
+          "heading": "31 萬次觀看後，活動在城市落地",
+          "display_copy": "西雅圖宣傳片累積逾31萬次觀看。費城活動讓朋友用【3至5分鐘】介紹單身好友的亮點與理想對象，截至報導時已在酒廠舉辦逾18場，短影音熱度也落地成固定聚會。\n資料來源：Pitch-A-Friend；Philadelphia Inquirer",
           "default_cid": "a"
         },
         {
@@ -815,10 +875,9 @@
               "source_label": "Brooklyn Nine Nine"
             }
           ],
-          "final_src": "assets/20260717-PitchYourFriend/final/slide-4.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-4.jpg",
-          "heading": "台灣人不是不會誇，是不敢被看見",
-          "display_copy": "朋友私下誇你可以滔滔不絕，公開時卻會多一層顧慮；事先說好【可公開範圍】，害羞也能變成有分寸的真誠。",
+          "final_src": null,
+          "heading": "大家累的可能是自我行銷",
+          "display_copy": "2024年 OnePoll 調查1,000名美國交友 App 使用者，78%至少偶爾感到情緒耗竭，平均每天仍花51分鐘使用。當自介越寫越像行銷文案，【朋友說出的具體故事】反而更容易讓人看見你。\n資料來源：Forbes Health／OnePoll，2024",
           "default_cid": "a"
         },
         {
@@ -833,8 +892,7 @@
             {
               "cid": "b",
               "src": "assets/20260717-PitchYourFriend/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Ted Lasso"
+              "kind": "generated"
             },
             {
               "cid": "c",
@@ -853,26 +911,53 @@
               "src": "assets/20260717-PitchYourFriend/slide-5e.jpg",
               "kind": "still",
               "source_label": "Ted Lasso"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260717-PitchYourFriend/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Ted Lasso"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260717-PitchYourFriend/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260717-PitchYourFriend/slide-5h.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260717-PitchYourFriend/slide-5i.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260717-PitchYourFriend/slide-5j.jpg",
+              "kind": "still",
+              "source_label": "Friends"
             }
           ],
-          "final_src": "assets/20260717-PitchYourFriend/final/slide-5.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-5.jpg",
-          "heading": "讓朋友補光，不必替你代演",
-          "display_copy": "請朋友回答三題：跟你相處最舒服的是什麼、哪件小事最像你、你適合什麼樣的人，再由你決定【哪些話能被看見】。",
+          "final_src": null,
+          "heading": "你不用把自己寫成廣告",
+          "display_copy": "台灣人要寫「我很值得認識」常常卡住，替閨蜜或兄弟介紹時，卻能從早餐習慣一路講到失戀後怎麼照顧人。Lava 把選擇權還給你：帶著朋友眼中的線索去見面，再親自確認【有沒有真實的感覺】。",
           "default_cid": "a"
         },
         {
           "n": 6,
           "role": "CTA",
           "candidates": [],
-          "final_src": "assets/20260717-PitchYourFriend/final/slide-6.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-6.jpg",
-          "heading": "讓真實的你，被願意見面的人看見",
+          "final_src": null,
           "display_copy": "CTA 公版"
         }
       ],
       "rendered_at": "2026-07-17T22:35:29+08:00",
-      "candidates_since": "2026-07-17T21:06:37+08:00"
+      "candidates_since": "2026-07-18T11:20:11+08:00"
     }
   ]
 }
