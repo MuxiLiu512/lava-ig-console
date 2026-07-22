@@ -55,5 +55,13 @@ check("copy_edits 不跨篇", (2, "display_copy") not in m)
 check("topic 正規化", _norm_topic("20260717-「Pitch Your Friend」正在歐美爆紅-文案初稿.json").startswith("PitchYourFriend"))
 check("topic 模糊比對", _topic_match(_norm_topic("Pitch Your Friend 正在歐美爆紅"), "20260717 Pitch Your Friend 底圖"))
 
-print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", 14 - len(FAIL), len(FAIL)))
+# 5) IG 說明欄清洗（去標記/破折號/空白正規化）
+from sync_console import _clean_caption  # noqa: E402
+check("caption 去標記", _clean_caption("都〖認識彼此〗的【高度重疊】") == "都認識彼此的高度重疊")
+check("caption 去破折號", "——" not in _clean_caption("前任介紹的朋友——他們的圈子"))
+check("caption 標點後無空白", _clean_caption("像廢話，  但背後有邏輯") == "像廢話，但背後有邏輯")
+check("caption 換行接合", _clean_caption("第一行\n第二行") == "第一行第二行")
+
+TOTAL = 18
+print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)

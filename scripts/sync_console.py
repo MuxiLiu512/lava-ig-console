@@ -70,13 +70,23 @@ def _slug(s):
     return re.sub(r"[^0-9A-Za-z一-鿿]+", "", s)[:24] or "post"
 
 
+def _clean_caption(t):
+    """IG 說明欄清洗：去渲染標記【】〖〗、去禁用破折號、空白正規化（CJK 換行直接接合）。"""
+    t = re.sub(r"[【】〖〗]", "", t or "")
+    t = t.replace("——", "，").replace("──", "，")
+    t = re.sub(r"\n+", "", t)
+    t = re.sub(r"[ \t]{2,}", " ", t)
+    t = re.sub(r"([，。；：、！？])\s+", r"\1", t)  # 全形標點後不留空白
+    return t.strip()
+
+
 def _assemble_caption(data):
     """從文案 JSON 組 IG caption：hook + 品牌段 + hashtags。"""
     slides = data.get("slides", [])
     def body_of(pred):
         for s in slides:
             if pred(s):
-                return (s.get("display_copy") or s.get("body") or "").replace("\n", " ").strip()
+                return _clean_caption(s.get("body") or s.get("display_copy") or "")
         return ""
     hook = body_of(lambda s: s.get("index") == 1 or "hook" in str(s.get("role", "")).lower())
     brand = body_of(lambda s: "品牌" in str(s.get("role", "")) or "立場" in str(s.get("role", "")))
@@ -319,13 +329,15 @@ def _build_and_write(m):
         "created_at": m.get("created_at"), "caption": m.get("caption", ""),
         "topic_type": m.get("topic_type", "A-知識型"), "slides": slides,
     }
+    if m.get("writer_model"):
+        post["writer_model"] = m["writer_model"]   # A/B：這篇文案由哪個模型撰寫（成效迴路比較用）
     d = load("posts.json")
     posts = d.setdefault("posts", [])
     old = next((p for p in posts if p["id"] == pid), None)
     if old and old.get("status") in ("approved", "scheduled", "published"):  # 已核准/已排程/已發佈者不被重餵洗掉
         post["status"] = old["status"]
     if old:
-        for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since"):
+        for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since", "image_credits"):
             if old.get(k):
                 post[k] = old[k]
     # 候選圖序列變動 → 舊審核的選圖失效：記 candidates_since；未出成品的 approved 退回待審
@@ -339,7 +351,9 @@ def _build_and_write(m):
     posts.append(post)
     save("posts.json", d)
     ls = _load_local_sources()
-    ls[pid] = {"draft_json": m.get("_draft_json"), "topic": m.get("topic", ""), "sources": srcmap}
+    prev = ls.get(pid) or {}
+    prev.update({"draft_json": m.get("_draft_json"), "topic": m.get("topic", ""), "sources": srcmap})
+    ls[pid] = prev   # 合併式更新：保留 last_render_choices 等既有鍵（原本整包覆寫會洗掉）
     _save_local_sources(ls)
     print("✓ posts.json 已 upsert：%s（%d slides，%d 候選）" % (pid, len(slides), sum(len(s["candidates"]) for s in slides)))
 
@@ -449,7 +463,8 @@ def from_drive(args):
     pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
     m = {"id": pid, "topic": topic_raw, "version": args.version,
          "clickup_task_id": args.clickup, "created_at": None, "_draft_json": os.path.abspath(jf),
-         "caption": _assemble_caption(data), "topic_type": args.topic_type, "slides": slides}
+         "caption": _assemble_caption(data), "topic_type": args.topic_type, "slides": slides,
+         "writer_model": data.get("writer_model")}
     ncand = sum(len(s["candidates"]) for s in slides)
     if ncand == 0:
         sys.stderr.write("⚠ 未匹配到任何候選圖——請檢查底圖/劇照資料夾命名是否含主題關鍵字，或用 add-post 手動 manifest。\n")
@@ -519,8 +534,6 @@ def render_approved(args):
             continue
         if dec != "approve" and not (dec == "reject" and scope == "mockup"):
             continue
-        if dec == "approve" and p.get("status") == "awaiting_review":
-            p["status"] = "approved"  # 舊版核准未持久化的補正
         want_ts = r.get("ts", "")
         for e in ce_list:
             if e.get("post_id") == pid and e.get("ts", "") > want_ts:
@@ -533,6 +546,8 @@ def render_approved(args):
         # 候選圖在審核之後被更新過 → 該審核的 cid 選圖已失效
         stale = bool(p.get("candidates_since")) and r.get("ts", "") < p["candidates_since"]
         reuse_paths = entry.get("last_render_choices") if stale else None
+        if dec == "approve" and not stale and p.get("status") == "awaiting_review":
+            p["status"] = "approved"  # 舊版核准未持久化的補正（stale 審核不補：需重新選圖核准）
         if stale and not reuse_paths:
             if p.get("status") == "approved":
                 p["status"] = "awaiting_review"
@@ -563,12 +578,16 @@ def render_approved(args):
         os.makedirs(bgdir)
         ok = True
         chosen_paths = {}
+        credits = {}   # {n: 圖上來源標示}；用「實際選定」的候選判斷（劇照/人物照才標）
         for s in p.get("slides", []):
             if not s.get("candidates"):
                 continue  # CTA 公版由引擎處理
             n = s["n"]
+            cid = None
             if reuse_paths:  # 重渲染：沿用上次成功渲染的原檔（cid 已失效不可用）
                 path = reuse_paths.get(str(n))
+                if path:  # 反查 cid 以取得出處標籤
+                    cid = next((c for c, pth in (srcs.get(str(n)) or {}).items() if os.path.abspath(pth) == os.path.abspath(path)), None)
             else:
                 cid = choices.get(n) or s.get("default_cid") or s["candidates"][0]["cid"]
                 path = (srcs.get(str(n)) or {}).get(cid)
@@ -576,6 +595,9 @@ def render_approved(args):
                 skipped.append((pid, "slide %d 選圖原檔不存在" % n)); ok = False; break
             if _flat_image(path):
                 skipped.append((pid, "slide %d 選圖疑似破圖，請到操控室改選其他候選再核准" % n)); ok = False; break
+            cand = next((c for c in s["candidates"] if c.get("cid") == cid), None)
+            if cand and cand.get("kind") == "still" and cand.get("source_label"):
+                credits[n] = "圖片來源：《%s》劇照，版權屬原權利方" % cand["source_label"]
             chosen_paths[str(n)] = os.path.abspath(path)
             shutil.copy2(path, os.path.join(bgdir, "slide-%d%s" % (n, os.path.splitext(path)[1].lower())))
         if not ok:
@@ -588,6 +610,10 @@ def render_approved(args):
                 key = (int(s.get("index", -1)), field)
                 if key in edits:
                     s[field] = edits[key]
+            if int(s.get("index", -1)) in credits:
+                s["render_credit"] = credits[int(s["index"])]   # 圖上小字來源標示（引擎繪製）
+        if credits:
+            p["image_credits"] = ["第 %d 張：%s" % (n, credits[n].replace("圖片來源：", "")) for n in sorted(credits)]
         pj = os.path.join(work, "draft.json")
         with open(pj, "w", encoding="utf-8") as f:
             json.dump(draft, f, ensure_ascii=False)
