@@ -1,7 +1,9 @@
 # Lava IG 中介操控室 — 交接文件 (HANDOFF)
 
 > 給下一個 context window / 下一位維護者。讀完這份就能接手，不需回溯對話。
-> 最後更新：2026-07-17 · 維護者：Claude (為 Jesse / jesse@lava.tw)
+> 最後更新：2026-07-22 · 維護者：Claude (為 Jesse / jesse@lava.tw)
+
+> 🔴 **接手最優先（2026-07-22 發現）：IG 發文 token 失效。** WF12 Token 哨兵實測 `GET /{ig-id}?fields=username` 回 **OAuthException code 190**（"...permission(s) must be granted before impersonating a user's page"）。這是 WF10 發佈＋WF11 成效共用的同一顆 token → **IG 自動發佈與成效拉取目前皆中斷**。需重新產生粉專長效（不過期）token，更新 n8n 憑證 **`t44CUVrw6Bxkz6Do`（Query Auth account）**。修好前，排程到點的貼文會發佈失敗（現在會自動告警，不再靜默）。
 
 ---
 
@@ -290,6 +292,33 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 ### 其他可優化（非阻塞）
 - render_and_archive 目前靠排程觸發；若要「核准即渲染」可再收斂（Jesse 曾問全自動，已用排程滿足）。
 - Console↔home 導覽、素材入庫、退回底圖只重生被退 slide — 皆已完成，若回報問題從對應 workflow/JS 查。
+
+---
+
+## 6.5 維運強化（2026-07-22，Jesse「清單照做」七項）
+
+**新增 n8n 工作流**
+- **錯誤告警 `2z8gkB27paoSjT5K`**（Error Trigger → ClickUp 留言）。已掛為 **9 支 active 生產工作流的 errorWorkflow**（01/02/04/05/06/07/08/10/11）。任一失敗 → 在告警卡 **`86eyckbur`（🔧 Lava IG 系統告警日誌）** 自動留言 @Jesse（不污染內容看板）。
+- **WF12 Token 哨兵 `NGJVZ1i1mL76YamA`**（每日 08:30 cron）→ `GET /{ig-id}?fields=username`；失敗即在 `86eyckbur` 告警。**實測已抓到 code 190 token 失效並成功告警**（見頂部紅字）。
+
+**修 latent bug**
+- **WF11 成效 `OF2Obz1kkjbM9gjt`**：原本只有 Manual Trigger → 無法 publish/execute via API，**feed Part D 一直靜默失敗**。已改 **Schedule Trigger（每日 10:00）**，可啟用可執行。⚠️ 但 token 失效時 Get Media 仍回 190（成效需 token 修好才有數據）。
+
+**WF10 發佈守門**：Pick Due Slides 加 `!p.no_publish && !/demo/i.test(clickup_task_id)` — demo/測試卡與標記 no_publish 的貼文永不自動發佈。
+
+**sync_console.py 新指令**
+- `archive-post <ids...> [--note]`：把 demo/廢棄貼文移出 posts.json → `data/archived-posts.json`（不動 IG，只讓自動化不再碰）。
+- `archive-data [--days 90]`：reviews/copy_edits 過期且已處理者搬 `data/archive/*.jsonl`；insights 每篇只留 N 天內快照。→ feed 【E】每日跑。
+- `archive-drive-rounds <post_id>`：**發佈後**把該主題舊輪 Drive 產出搬 `產出/ZZ-歸檔/`（`_scan_dirs` 本就跳過 ZZ）。已發佈＝舊輪全歸檔留最新；在製中＝保護渲染來源。Drive 未掛載自動略過。→ feed 【C】發佈對帳後跑。
+
+**已清掉的髒資料**（→ `data/archived-posts.json`，附 note）
+- `20260712-已讀不回的心理學-v5`（demo-01，scheduled）：WF10 靜態資料顯示 **約 07-18 已自動發佈到 IG**，假 id 無法對帳。**Jesse 請到 IG 確認、若不需要手動典藏。**
+- `20260711-母胎單身…`（demo-02，awaiting_review，未渲染）：測試殘留。
+- `20260718-你知道weak-ties`（scheduled）：**與已發佈的 `20260716-你知道weak-ties` 同一 clickup id、同主題 → re-feed 重複卡**。歸檔避免 token 修復後重發相同內容。**Jesse 請確認 IG 是否已有兩則 weak-ties。**
+
+**#3 待 Jesse 一步手動（無法用 API 建憑證）**：WF06 `PD79ZwJkneQDCUxI` 的 Giphy／TMDB `api_key` 仍硬編碼在節點內文（`MHdny…`／`66a37…`，皆免費可重生金鑰）。n8n MCP 無 create_credential，需 Jesse 在 UI 建 2 個 **httpQueryAuth** 憑證後，我再把 3 個節點（Giphy Search／TMDB Search／TMDB Scene Stills）改用憑證並刪掉 query 內的 api_key。TMDB 確定有用；Giphy 若確認無來源送 `source:giphy` 可整個節點刪除（連帶消掉一顆金鑰）。
+
+**#7（公開 repo 可見未發佈內容）**：Jesse 拍板**接受現狀**，不處理。
 
 ---
 

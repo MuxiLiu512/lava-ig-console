@@ -706,6 +706,139 @@ def render_approved(args):
         print("無待渲染的核准貼文")
 
 
+def _ts_older(ts, days):
+    """ISO 字串（含 +08:00 時區）是否早於 N 天前。解析失敗 → False（保守保留）。"""
+    try:
+        t = datetime.datetime.fromisoformat(str(ts).replace("Z", "+00:00")).replace(tzinfo=None)
+        return (datetime.datetime.now() - t).days > days
+    except Exception:
+        return False
+
+
+def _append_jsonl(path, rows):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "a", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+# ── #6：把 demo/測試/廢棄貼文移出主檔（不動 IG，只讓自動化不再碰它） ──────
+def archive_post(args):
+    d = load("posts.json")
+    keep, moved = [], []
+    ids = set(args.ids)
+    for p in d.get("posts", []):
+        if p["id"] in ids:
+            if args.note:
+                p["archived_note"] = args.note
+            p["archived_at"] = _now_iso()
+            p["no_publish"] = True  # 雙保險：即使誤留主檔也不會被 WF10 發佈
+            moved.append(p)
+        else:
+            keep.append(p)
+    if not moved:
+        print("! 找不到要歸檔的貼文：%s" % ", ".join(ids)); return
+    d["posts"] = keep
+    save("posts.json", d)
+    ap = os.path.join(DATA, "archived-posts.json")
+    arch = {"posts": []}
+    if os.path.exists(ap):
+        with open(ap, encoding="utf-8") as f:
+            arch = json.load(f)
+    arch["posts"].extend(moved)
+    with open(ap, "w", encoding="utf-8") as f:
+        json.dump(arch, f, ensure_ascii=False, indent=2); f.write("\n")
+    for p in moved:
+        print("✓ 歸檔 %s → data/archived-posts.json（status was %s）" % (p["id"], p.get("status")))
+
+
+# ── #5：資料檔瘦身（reviews/copy_edits 過期歸檔、insights 快照裁切） ─────
+def archive_data(args):
+    days = args.days
+    pub = {p["id"] for p in load("posts.json").get("posts", []) if p.get("status") == "published"}
+    # reviews：保留未 consumed 或 N 天內；其餘搬 archive
+    rv = load("reviews.json"); keep, old = [], []
+    for r in rv.get("reviews", []):
+        if r.get("consumed") and _ts_older(r.get("ts"), days):
+            old.append(r)
+        else:
+            keep.append(r)
+    if old:
+        _append_jsonl(os.path.join(DATA, "archive", "reviews.jsonl"), old)
+        rv["reviews"] = keep; save("reviews.json", rv)
+    # copy_edits：published 貼文且 N 天前的編輯搬 archive（語氣樣本已進 harness）
+    ce = load("copy_edits.json"); ckeep, cold = [], []
+    for e in ce.get("edits", []):
+        if e.get("post_id") in pub and _ts_older(e.get("ts"), days):
+            cold.append(e)
+        else:
+            ckeep.append(e)
+    if cold:
+        _append_jsonl(os.path.join(DATA, "archive", "copy_edits.jsonl"), cold)
+        ce["edits"] = ckeep; save("copy_edits.json", ce)
+    # insights：每篇只留 N 天內快照（至少留最新 1 筆）
+    ins = load("insights.json"); trimmed = 0
+    for mid, m in (ins.get("media") or {}).items():
+        snaps = m.get("snapshots") or []
+        if len(snaps) <= 1:
+            continue
+        fresh = [s for s in snaps if not _ts_older(s.get("day"), days)]
+        if not fresh:
+            fresh = snaps[-1:]
+        if len(fresh) != len(snaps):
+            trimmed += len(snaps) - len(fresh); m["snapshots"] = fresh
+    if trimmed:
+        save("insights.json", ins)
+    print("✓ 歸檔：reviews %d 筆、copy_edits %d 筆、insights 裁切 %d 快照（門檻 %d 天）"
+          % (len(old), len(cold), trimmed, days))
+
+
+# ── #2：發佈後把該主題舊輪 Drive 產出資料夾搬 ZZ-歸檔（控候選爆量） ──────
+def archive_drive_rounds(args):
+    root = args.drive_root or DRIVE_PRODUCE
+    if not os.path.isdir(root):
+        print("⏭ Drive 產出資料夾未掛載，略過：%s" % root); return
+    p = next((x for x in load("posts.json").get("posts", []) if x["id"] == args.post_id), None)
+    if not p:
+        print("! 找不到貼文 %s" % args.post_id); return
+    ntopic = _norm_topic(p.get("topic", "") or args.post_id)
+    # 目前這一輪用到的資料夾（渲染來源＋沿用選圖）＝絕不搬
+    ls = _load_local_sources().get(args.post_id, {})
+    live = set()
+    def _vals(x):
+        return list(x.values()) if isinstance(x, dict) else (x if isinstance(x, list) else [])
+    for src in _vals(ls.get("sources")) + _vals(ls.get("last_render_choices")):
+        if isinstance(src, str):
+            live.add(os.path.dirname(os.path.abspath(src)))
+    matching = [d for d in glob.glob(os.path.join(root, "*"))
+                if os.path.isdir(d) and "ZZ" not in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
+    if not matching:
+        print("⏭ %s：Drive 無符合主題的產出資料夾" % args.post_id); return
+    newest = max(matching, key=os.path.getmtime)  # 保底：永遠保留最新一輪當存參
+    if p.get("status") == "published":
+        to_move = [d for d in matching if d != newest]           # 已發佈＝這篇完工，舊輪全歸檔
+    else:
+        to_move = [d for d in matching if os.path.abspath(d) not in live and d != newest]  # 在製中：保護渲染來源
+    if not to_move:
+        print("⏭ %s：無舊輪可歸檔（僅 %d 輪）" % (args.post_id, len(matching))); return
+    dest = os.path.join(root, "ZZ-歸檔")
+    os.makedirs(dest, exist_ok=True)
+    if args.dry_run:
+        for d in to_move:
+            print("[dry] 將搬 %s → ZZ-歸檔/" % os.path.basename(d))
+        return
+    n = 0
+    for d in to_move:
+        tgt = os.path.join(dest, os.path.basename(d))
+        if os.path.exists(tgt):
+            tgt += "-" + datetime.datetime.now().strftime("%H%M%S")
+        try:
+            shutil.move(d, tgt); n += 1
+        except Exception as e:
+            sys.stderr.write("  ! 搬 %s 失敗：%s\n" % (os.path.basename(d), e))
+    print("✓ %s：歸檔 %d 個舊輪資料夾 → ZZ-歸檔/（保留最新輪＋當前渲染來源）" % (args.post_id, n))
+
+
 def push(args):
     paths = ["data/posts.json", "data/reviews.json"]
     # 一併把新 assets 推上（保守起見推整個 assets）
@@ -740,6 +873,9 @@ def main():
     a = sub.add_parser("set-status"); a.add_argument("post_id"); a.add_argument("status"); a.set_defaults(func=set_status)
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
     a = sub.add_parser("reconcile-published", help="ClickUp 已發布 → posts.json 翻 published（補發佈回寫缺口）"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=reconcile_published)
+    a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
+    a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
+    a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
     args.func(args)
