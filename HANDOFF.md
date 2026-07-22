@@ -246,6 +246,16 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 - **render_post_v5 封面版面防護**（原副標**完全沒換行**導致左右爆框）：副標逐行換行＋footer 安全區塞不下逐級縮字（0.032W→0.68×）；主標 >3 行自動縮字；eyebrow 過長縮字。content 頁先前已有底部錨定＋縮字。**版面安全規則現已全 slide 型別覆蓋**。
 - render-approved 加 `--force`（忽略 rendered_at 閘門，引擎修復後重出成品）與 `--only <pid>`。
 
+### 四項優化（2026-07-18，Jesse 對照 The Weekend Club 提出）
+1. **遮罩/排版**（render_post_v5 v5.3）：MAX_ALPHA 216→198、封面全域壓暗 120→88＋overlay 205→190；段落間距減半（空行 0.55×行高）、內文行高 1.72→1.60 → 文字塊變矮、背景可辨識。`lines_height()` 同步高度計算。
+2. **A/B 寫手**（WF01，30 節點）：Parse Research → **AB Router**（staticData 輪替 gpt-5.6 / claude-sonnet-4-6）→ Writer Is GPT? 分流 → Write Draft (GPT)/(Claude)；重寫同寫手（Rewrite With GPT? 分流）。`writer_model` 注入 draft JSON（Parse Draft/Parse Rewrite）→ posts.json → insights → harness 成效行帶「寫手 GPT/Claude」標籤。審查加第 8 條：**密度（80–140字）與擴散力檢核**。
+3. **說明欄整潔**：`_clean_caption`（去【】〖〗、——→逗號、空白正規化、CJK 換行接合）；caption 改優先取 body（散文體）。selftest 18 項。
+4. **人物志/書摘題材＋授權**：
+   - WF05 選題加**題型 D 人物志/書摘**（每日至少 1 張，Weekend Club 風格；suggested_show 填「人物照片：人名」/「書封：書名」）。
+   - WF06 加 **person/book 搜尋線**：Wikipedia pageimages（人物照，自由授權）＋ Open Library covers（書封）；檔名前綴 WM-/OL-。WF01 Build Stills Request 路由 photo_direction.type 人物照片優先/書封優先；兩寫手 schema 已更新。
+   - **授權三層**：圖上 credit 小字（引擎 `draw_credit`，render-approved 依實選候選注入 `render_credit`：WM→Wikimedia Commons、OL→Open Library、劇照→《劇名》劇照）＋ posts.json `image_credits` ＋ **WF10 發佈後自動留言**（Build Credits Msg → POST /{media}/comments，token 同 cred）。
+   - 已知：WF06 Giphy/TMDB API key 硬編碼（歷史遺留，warning 已標）；person 搜尋僅取 Wikipedia 主圖 1 張（保守授權策略）。
+
 ### 成效追蹤（#4，2026-07-17 完成）
 零新憑證架構：token 只在 n8n，不外流。
 - **workflow 11 成效拉取**（`OF2Obz1kkjbM9gjt`，manual trigger）：GET IG media（近8天圖文/輪播）→ 逐篇 `/insights`（**period=lifetime**：reach, saved, shares, total_interactions, likes, comments, profile_visits, follows，全部實測可用）→ Assemble 輸出**乾淨陣列（不含 token）**。⚠️ 原始 media 回應的分頁 URL 夾 token，但 Assemble 不輸出它。
