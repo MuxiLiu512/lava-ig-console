@@ -316,7 +316,7 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 - `20260711-母胎單身…`（demo-02，awaiting_review，未渲染）：測試殘留。
 - `20260718-你知道weak-ties`（scheduled）：**與已發佈的 `20260716-你知道weak-ties` 同一 clickup id、同主題 → re-feed 重複卡**。歸檔避免 token 修復後重發相同內容。**Jesse 請確認 IG 是否已有兩則 weak-ties。**
 
-**#3 待 Jesse 一步手動（無法用 API 建憑證）**：WF06 `PD79ZwJkneQDCUxI` 的 Giphy／TMDB `api_key` 仍硬編碼在節點內文（`MHdny…`／`66a37…`，皆免費可重生金鑰）。n8n MCP 無 create_credential，需 Jesse 在 UI 建 2 個 **httpQueryAuth** 憑證後，我再把 3 個節點（Giphy Search／TMDB Search／TMDB Scene Stills）改用憑證並刪掉 query 內的 api_key。TMDB 確定有用；Giphy 若確認無來源送 `source:giphy` 可整個節點刪除（連帶消掉一顆金鑰）。
+**#3 完成（2026-07-22）**：Jesse 在 n8n UI 建了 2 個 httpQueryAuth 憑證 —— **Giphy Key `vPjtxajHhvqRvLDO`**、**TMDB Key `fKV5BFJaJ66IXrxN`**（Name 欄皆 `api_key`）。WF06 `PD79ZwJkneQDCUxI` 的 3 個節點（Giphy Search／TMDB Search／TMDB Scene Stills）已改 `genericCredentialType→httpQueryAuth` 綁憑證、query 內明文 api_key 全刪、已 publish。**Giphy 路徑目前不可達**（Build Stills Request 只發 tv/person/book，從不送 `source:giphy`）→ Giphy Key 憑證是「已備好但休眠」，未來若要做迷因梗圖題材，讓 WF01 Build Stills Request 對該題型送 `source:'giphy'` 即可啟用；不需要就留著無害，或刪 Giphy Search/Collect Giphy 兩節點＋該憑證。
 
 **#7（公開 repo 可見未發佈內容）**：Jesse 拍板**接受現狀**，不處理。
 
