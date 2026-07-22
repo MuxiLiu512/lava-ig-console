@@ -291,18 +291,20 @@ function actionBar(p, choice) {
   const submit = async (decision, scope) => {
     const feedback = fb.value.trim();
     if (decision === "reject" && !feedback) { toast("退回必須填寫回饋", true); fb.focus(); return; }
+    const cchoice = copyChoiceOf(p);
     const review = {
       id: rid("R"), post_id: p.id, ts: nowISO(), decision,
       slide_choices: { ...choice }, scope: scope || null, feedback, consumed: false,
+      copy_choice: cchoice || undefined,
     };
     try {
       disableBar(bar, true);
       await saveJson(FILES.reviews, d => { (d.reviews = d.reviews || []).push(review); }, `review: ${decision} ${p.id}`);
       if (decision === "approve") {
-        // 核准 → posts.json 標 approved（卡片留在「已核准」組，出成品後回來排程；不再憑空消失）
-        await saveJson(FILES.posts, d => { const pp = (d.posts || []).find(x => x.id === p.id); if (pp) pp.status = "approved"; }, `approve: ${p.id}`);
-        p.status = "approved";
-        toast("已核准 ✓ 出成品後回來排程");
+        // 核准 → posts.json 標 approved + 記錄文案版本（卡片留在「已核准」組，出成品後回來排程）
+        await saveJson(FILES.posts, d => { const pp = (d.posts || []).find(x => x.id === p.id); if (pp) { pp.status = "approved"; if (cchoice) pp.copy_choice = cchoice; } }, `approve: ${p.id}`);
+        p.status = "approved"; if (cchoice) p.copy_choice = cchoice;
+        toast("已核准 ✓（文案版：" + (cchoice === "claude" ? "Claude" : "GPT") + "）出成品後回來排程");
       } else {
         toast("已退回，排程下次處理");
       }
@@ -318,12 +320,42 @@ function actionBar(p, choice) {
 function disableBar(bar, on) { bar.querySelectorAll("button").forEach(b => b.disabled = on); }
 
 // ── 文案編輯 ─────────────────────────────────────────────────────────
+const COPY_CHOICE = {};   // 每篇當前顯示/選定的文案版本（gpt/claude）
+function copyChoiceOf(p) {
+  const v = p.copy_versions || {};
+  return COPY_CHOICE[p.id] || p.copy_choice || (v.gpt ? "gpt" : (Object.keys(v)[0] || null));
+}
 function buildCopyEditor(p) {
   const withCopy = p.slides.filter(s => s.heading != null || s.display_copy != null);
   if (!withCopy.length) return el("div");
   const card = el("div", "card"); const pad = el("div", "pad");
   pad.appendChild(el("div", null, '<b>✏️ 文案編輯</b> <span class="tiny muted">改動會餵給迭代 harness 學你的語氣</span>'));
   const fields = [];
+  const versions = p.copy_versions || null;
+  const vkeys = versions ? Object.keys(versions).filter(k => versions[k]) : [];
+  function applyVersion(k) {
+    const vs = (versions[k] && versions[k].slides) || {};
+    fields.forEach(t => {
+      const v = (vs[t.dataset.n] || {})[t.dataset.field];
+      if (v != null) { t.value = v; t.dataset.orig = v; }
+    });
+  }
+  if (vkeys.length > 1) {
+    const cur0 = copyChoiceOf(p);
+    const row = el("div", "btnrow"); row.style.margin = "6px 0 10px";
+    row.appendChild(el("span", "small muted", "比稿版本："));
+    vkeys.forEach(k => {
+      const b = el("button", "btn " + (cur0 === k ? "primary" : ""), k === "gpt" ? "✍️ GPT" : "✍️ Claude");
+      b.onclick = () => {
+        COPY_CHOICE[p.id] = k; applyVersion(k);
+        [...row.querySelectorAll("button")].forEach(x => x.className = "btn");
+        b.className = "btn primary";
+        toast((k === "gpt" ? "GPT" : "Claude") + " 版已載入——核准時採用此版");
+      };
+      row.appendChild(b);
+    });
+    pad.appendChild(row);
+  }
   withCopy.forEach(s => {
     pad.appendChild(el("div", "small muted", "slide " + s.n + " · " + esc(s.role || "")));
     [["heading", "主標"], ["display_copy", "圖面文案"]].forEach(([f, label]) => {
@@ -335,10 +367,15 @@ function buildCopyEditor(p) {
       pad.appendChild(ta); fields.push(ta);
     });
   });
+  if (vkeys.length > 1) {  // 進頁時載入目前選定版本的內容
+    const cur0 = copyChoiceOf(p);
+    if (cur0 && versions[cur0]) applyVersion(cur0);
+  }
   const btn = el("button", "btn primary block", "儲存文案修改"); btn.style.marginTop = "12px";
   btn.onclick = async () => {
+    const ver = copyChoiceOf(p);
     const edits = fields.filter(t => t.value !== t.dataset.orig)
-      .map(t => ({ n: Number(t.dataset.n), field: t.dataset.field, original: t.dataset.orig, edited: t.value.trim() }));
+      .map(t => ({ n: Number(t.dataset.n), field: t.dataset.field, original: t.dataset.orig, edited: t.value.trim(), version: ver || null }));
     if (!edits.length) { toast("沒有變更"); return; }
     try {
       btn.disabled = true;

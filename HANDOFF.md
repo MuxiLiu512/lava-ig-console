@@ -256,6 +256,13 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
    - **授權三層**：圖上 credit 小字（引擎 `draw_credit`，render-approved 依實選候選注入 `render_credit`：WM→Wikimedia Commons、OL→Open Library、劇照→《劇名》劇照）＋ posts.json `image_credits` ＋ **WF10 發佈後自動留言**（Build Credits Msg → POST /{media}/comments，token 同 cred）。
    - 已知：WF06 Giphy/TMDB API key 硬編碼（歷史遺留，warning 已標）；person 搜尋僅取 Wikipedia 主圖 1 張（保守授權策略）。
 
+### 雙引擎選題＋雙寫手比稿（2026-07-18 第二輪，Jesse 需求）
+- **WF05 雙選題引擎**：Topic Scout (Claude) ＋ Topic Scout (GPT) 平行選題（各 2-4 張/日），卡名帶 `｜🧠GPT/Claude`、內文有「選題來源」。兩 Parse 皆軟失敗（單引擎掛不影響另一個）。
+- **WF07 放行 → 雙寫手**：連打兩次 lava-ig-draft webhook（writer=gpt / claude）。**WF01** Normalize 收 writer 參數強制指定；檔名 `-文案初稿-GPT.json`/`-Claude.json`（易讀版同）；**圖像搜尋只由 GPT 輪觸發**（Should Gen Images? gate + Build Stills Request 首行擋 claude，不重複生圖）。
+- **操控室比稿**：from-drive 同日同主題雙檔 → post `copy_versions`{gpt,claude}（heading/display_copy/caption）＋ `.local_sources.draft_jsons`；文案編輯卡有「比稿版本 ✍️GPT/✍️Claude」切換；核准寫入 `copy_choice`（review＋posts.json）；**render-approved 依 copy_choice 取對應 JSON 渲染**，`writer_model` 以選定版計（A/B 成效以「被選中率＋發佈成效」雙指標裁決）。copy_edits 帶 version 欄，只套用到對應版本。
+- **人物圖源擴充**：WF06 person 線 = Wikipedia 主圖 ＋ **Wikimedia Commons 檔案搜尋**（gsrlimit 8、取 jpg/png、去重、上限 count+1 張，皆 WM- 前綴＝自由授權標示）；book 線 Open Library 3 張。
+- feed SKILL 4b：awaiting_review 的卡每輪冪等重餵（吃晚到的比稿版）。
+
 ### 成效追蹤（#4，2026-07-17 完成）
 零新憑證架構：token 只在 n8n，不外流。
 - **workflow 11 成效拉取**（`OF2Obz1kkjbM9gjt`，manual trigger）：GET IG media（近8天圖文/輪播）→ 逐篇 `/insights`（**period=lifetime**：reach, saved, shares, total_interactions, likes, comments, profile_visits, follows，全部實測可用）→ Assemble 輸出**乾淨陣列（不含 token）**。⚠️ 原始 media 回應的分頁 URL 夾 token，但 Assemble 不輸出它。

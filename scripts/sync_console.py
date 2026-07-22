@@ -137,11 +137,14 @@ def _flat_image(path, thresh=8.0):
         return True
 
 
-def _latest_copy_edits(pid, ce_list):
-    """操控室文案編輯 → 每個 (slide n, 欄位) 取最新一筆 edited 值。"""
+def _latest_copy_edits(pid, ce_list, version=None):
+    """操控室文案編輯 → 每個 (slide n, 欄位) 取最新一筆 edited 值。
+    version：只吃「無版本標記（舊制）」或「與選定文案版本相符」的編輯（雙寫手比稿用）。"""
     out = {}
     for e in sorted([e for e in ce_list if e.get("post_id") == pid], key=lambda e: e.get("ts", "")):
         for ed in e.get("edits", []):
+            if ed.get("version") and version and ed["version"] != version:
+                continue
             try:
                 out[(int(ed["n"]), ed["field"])] = ed.get("edited", "")
             except (KeyError, ValueError, TypeError):
@@ -314,9 +317,11 @@ def _build_and_write(m):
         if cands:
             slide["default_cid"] = cands[0]["cid"]
         slides.append(slide)
-    # 操控室的文案編輯覆蓋（重餵不洗掉 PT 改過的字）
+    # 操控室的文案編輯覆蓋（重餵不洗掉 PT 改過的字；只吃無版本或選定版本的編輯）
     try:
-        edits = _latest_copy_edits(pid, load("copy_edits.json").get("edits", []))
+        _oldrec = next((pp for pp in load("posts.json").get("posts", []) if pp["id"] == pid), None)
+        _ver = (_oldrec or {}).get("copy_choice") or ("gpt" if (m.get("_copy_versions") or {}).get("gpt") else None)
+        edits = _latest_copy_edits(pid, load("copy_edits.json").get("edits", []), version=_ver)
         for sl in slides:
             for field in ("heading", "display_copy"):
                 if (sl["n"], field) in edits:
@@ -331,13 +336,15 @@ def _build_and_write(m):
     }
     if m.get("writer_model"):
         post["writer_model"] = m["writer_model"]   # A/B：這篇文案由哪個模型撰寫（成效迴路比較用）
+    if m.get("_copy_versions"):
+        post["copy_versions"] = m["_copy_versions"]   # 雙寫手比稿：GPT/Claude 兩版 heading/display_copy/caption
     d = load("posts.json")
     posts = d.setdefault("posts", [])
     old = next((p for p in posts if p["id"] == pid), None)
     if old and old.get("status") in ("approved", "scheduled", "published"):  # 已核准/已排程/已發佈者不被重餵洗掉
         post["status"] = old["status"]
     if old:
-        for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since", "image_credits"):
+        for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since", "image_credits", "copy_choice"):
             if old.get(k):
                 post[k] = old[k]
     # 候選圖序列變動 → 舊審核的選圖失效：記 candidates_since；未出成品的 approved 退回待審
@@ -353,6 +360,10 @@ def _build_and_write(m):
     ls = _load_local_sources()
     prev = ls.get(pid) or {}
     prev.update({"draft_json": m.get("_draft_json"), "topic": m.get("topic", ""), "sources": srcmap})
+    if m.get("_draft_jsons"):
+        dj = prev.get("draft_jsons") or {}
+        dj.update(m["_draft_jsons"])
+        prev["draft_jsons"] = dj   # 雙寫手：兩版文案 JSON 路徑（渲染依 copy_choice 取用）
     ls[pid] = prev   # 合併式更新：保留 last_render_choices 等既有鍵（原本整包覆寫會洗掉）
     _save_local_sources(ls)
     print("✓ posts.json 已 upsert：%s（%d slides，%d 候選）" % (pid, len(slides), sum(len(s["candidates"]) for s in slides)))
@@ -430,6 +441,26 @@ def from_drive(args):
         datekey = lambda f: (re.match(r"(\d{6,8})", os.path.basename(f)) or [None, "0"])[1] if re.match(r"(\d{6,8})", os.path.basename(f)) else "0"
         jf = sorted(jsons, key=lambda f: (datekey(f), os.path.getmtime(f)))[-1]
         base = os.path.basename(jf)
+    # 雙寫手比稿：找同日期同主題的 -GPT / -Claude 兩版（預設顯示 GPT 版）
+    versions = {}
+    if not getattr(args, "json", None):
+        _bnt = _norm_topic(base)
+        _dk = (re.match(r"(\d{6,8})", base) or [None, ""])[1] if re.match(r"(\d{6,8})", base) else ""
+        for f2 in glob.glob(os.path.join(root, "*.json")):
+            b2 = os.path.basename(f2)
+            if "文案" not in b2 or "易讀版" in b2 or "ZZ" in b2:
+                continue
+            if _dk and not b2.startswith(_dk):
+                continue
+            if not _topic_match(_bnt, b2):
+                continue
+            mkey = "claude" if "-Claude" in b2 else ("gpt" if "-GPT" in b2 else None)
+            if mkey and (mkey not in versions or os.path.getmtime(f2) > os.path.getmtime(versions[mkey])):
+                versions[mkey] = f2
+        if versions:
+            jf = versions.get("gpt") or versions[sorted(versions)[0]]
+            base = os.path.basename(jf)
+            sys.stderr.write("→ 雙寫手版本：%s\n" % "、".join(sorted(versions)))
     with open(jf, encoding="utf-8") as f:
         data = json.load(f)
     date = (re.match(r"(\d{6,8})", base) or [None, ""])[1] if re.match(r"(\d{6,8})", base) else ""
@@ -461,10 +492,22 @@ def from_drive(args):
                        "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")})
 
     pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
+    copy_versions = {}
+    for mk, path in versions.items():
+        try:
+            with open(path, encoding="utf-8") as f:
+                dv = json.load(f)
+            copy_versions[mk] = {"caption": _assemble_caption(dv), "slides": {
+                str(s.get("index")): {"heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")}
+                for s in dv.get("slides", [])}}
+        except Exception as e:
+            sys.stderr.write("  ! 讀 %s 版文案失敗：%s\n" % (mk, e))
     m = {"id": pid, "topic": topic_raw, "version": args.version,
          "clickup_task_id": args.clickup, "created_at": None, "_draft_json": os.path.abspath(jf),
          "caption": _assemble_caption(data), "topic_type": args.topic_type, "slides": slides,
-         "writer_model": data.get("writer_model")}
+         "writer_model": data.get("writer_model"),
+         "_copy_versions": copy_versions or None,
+         "_draft_jsons": {k: os.path.abspath(v) for k, v in versions.items()} or None}
     ncand = sum(len(s["candidates"]) for s in slides)
     if ncand == 0:
         sys.stderr.write("⚠ 未匹配到任何候選圖——請檢查底圖/劇照資料夾命名是否含主題關鍵字，或用 add-post 手動 manifest。\n")
@@ -559,7 +602,9 @@ def render_approved(args):
             if err:
                 skipped.append((pid, "圖源重建失敗：" + err))
                 continue
-        jf = entry.get("draft_json")
+        djs = entry.get("draft_jsons") or {}
+        choice = r.get("copy_choice") or p.get("copy_choice") or ("gpt" if djs.get("gpt") else (sorted(djs)[0] if djs else None))
+        jf = (djs.get(choice) if choice else None) or entry.get("draft_json")
         if not jf or not os.path.exists(jf):
             jf = _find_draft_json(_norm_topic(p.get("topic", "")))
         if not jf:
@@ -610,7 +655,7 @@ def render_approved(args):
             continue
         with open(jf, encoding="utf-8") as f:
             draft = json.load(f)
-        edits = _latest_copy_edits(pid, ce_list)
+        edits = _latest_copy_edits(pid, ce_list, version=choice)
         for s in draft.get("slides", []):
             for field in ("heading", "display_copy"):
                 key = (int(s.get("index", -1)), field)
@@ -632,8 +677,11 @@ def render_approved(args):
             skipped.append((pid, "渲染失敗：" + (rr.stderr or rr.stdout)[-300:].strip()))
             continue
         p["rendered_at"] = _now_iso()
+        if choice:
+            p["copy_choice"] = choice
+            p["writer_model"] = "claude-sonnet-4-6" if choice == "claude" else "gpt-5.6"  # A/B：以 PT 選定版本計
         rendered.append((pid, p.get("clickup_task_id") or "", jf, chosen_paths))
-        sys.stderr.write("✓ 渲染 %s（選圖 %s，文案編輯 %d 處）\n" % (pid, r.get("slide_choices"), len(edits)))
+        sys.stderr.write("✓ 渲染 %s（文案版 %s，選圖 %s，文案編輯 %d 處）\n" % (pid, choice or "-", r.get("slide_choices"), len(edits)))
     if not args.dry_run:
         save("posts.json", posts_d)
     # 附回操控室：finals 縮圖 + 公開圖（重餵；guard 會保留 approved/rendered_at/文案編輯）

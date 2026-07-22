@@ -664,7 +664,7 @@
       "status": "approved",
       "clickup_task_id": "86ey8fn7j",
       "created_at": null,
-      "caption": "朋友站到酒吧投影幕前，按下下一頁，你的怪癖、優點與理想型全被做成交友簡報，台下甚至真的有人舉手想認識你。〖當最懂你的朋友替你 pitch，這份介紹或許更接近真實的你。〗\n\n台灣人要寫「我很值得認識」常常卡住，替閨蜜或兄弟介紹時，卻能從早餐習慣一路講到失戀後怎麼照顧人。Lava 把選擇權還給你：帶著朋友眼中的線索去見面，再親自確認【有沒有真實的感覺】。\n\n#PitchYourFriend #PitchAFriend #交友趨勢 #朋友認證 #線下約會 #LavaDating #不聊天的交友軟體",
+      "caption": "朋友站到酒吧投影幕前，按下下一頁，你的怪癖、優點與理想型全被做成交友簡報，台下甚至真的有人舉手想認識你。當最懂你的朋友替你 pitch，這份介紹或許更接近大家平常認識的你。\n\n台灣人要寫出自己多值得認識，常常盯著空白欄位半天；替閨蜜或兄弟介紹時，卻能從早餐習慣一路講到失戀後怎麼照顧人。Lava 把選擇權還給你：帶著朋友眼中的線索去見面，再由你親自確認有沒有真實的感覺。\n\n#PitchYourFriend #PitchAFriend #交友趨勢 #朋友認證 #線下約會 #LavaDating #不聊天的交友軟體",
       "topic_type": "A-知識型",
       "slides": [
         {
@@ -730,7 +730,8 @@
               "source_label": "The Office"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-1.jpg",
           "heading": "朋友比你更會介紹你",
           "display_copy": "朋友站到酒吧投影幕前，按下下一頁，你的怪癖、優點與理想型全被做成交友簡報，台下甚至真的有人舉手想認識你。〖當最懂你的朋友替你 pitch，這份介紹或許更接近真實的你。〗",
           "default_cid": "a"
@@ -774,7 +775,8 @@
               "source_label": "The Office"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-2.jpg",
           "heading": "起點其實在西雅圖",
           "display_copy": "【起點其實在西雅圖】：活動自2022年3月定期舉辦。Melissa Schipke 與 Ariana Brogan 看完 TikTok 影片後，把概念帶回費城，同年11月在 Punch Buggy Brewing 辦了當地首場。\n資料來源：Pitch A Friend Seattle；Philadelphia Inquirer，2024/1/9",
           "default_cid": "a"
@@ -837,7 +839,8 @@
               "source_label": "Parksand Recreation"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-3.jpg",
           "heading": "31 萬次觀看後，活動在城市落地",
           "display_copy": "西雅圖宣傳片累積逾31萬次觀看。費城活動讓朋友用【3至5分鐘】介紹單身好友的亮點與理想對象，截至報導時已在酒廠舉辦逾18場，短影音熱度也落地成固定聚會。\n資料來源：Pitch-A-Friend；Philadelphia Inquirer",
           "default_cid": "a"
@@ -876,7 +879,8 @@
               "source_label": "Brooklyn Nine Nine"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-4.jpg",
           "heading": "大家累的可能是自我行銷",
           "display_copy": "2024年 OnePoll 調查1,000名美國交友 App 使用者，78%至少偶爾感到情緒耗竭，平均每天仍花51分鐘使用。當自介越寫越像行銷文案，【朋友說出的具體故事】反而更容易讓人看見你。\n資料來源：Forbes Health／OnePoll，2024",
           "default_cid": "a"
@@ -944,7 +948,8 @@
               "source_label": "Friends"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-5.jpg",
           "heading": "你不用把自己寫成廣告",
           "display_copy": "台灣人要寫「我很值得認識」常常卡住，替閨蜜或兄弟介紹時，卻能從早餐習慣一路講到失戀後怎麼照顧人。Lava 把選擇權還給你：帶著朋友眼中的線索去見面，再親自確認【有沒有真實的感覺】。",
           "default_cid": "a"
@@ -953,12 +958,17 @@
           "n": 6,
           "role": "CTA",
           "candidates": [],
-          "final_src": null,
+          "final_src": "assets/20260717-PitchYourFriend/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260717-PitchYourFriend/slide-6.jpg",
           "display_copy": "CTA 公版"
         }
       ],
-      "rendered_at": "2026-07-17T22:35:29+08:00",
-      "candidates_since": "2026-07-18T11:20:11+08:00"
+      "rendered_at": "2026-07-22T17:46:23+08:00",
+      "candidates_since": "2026-07-18T11:20:11+08:00",
+      "image_credits": [
+        "第 2 張：《The Office》劇照，版權屬原權利方",
+        "第 4 張：《Brooklyn Nine Nine》劇照，版權屬原權利方"
+      ]
     }
   ]
 }
