@@ -1,7 +1,25 @@
 {
-  "updated_at": "2026-07-17",
-  "note": "IG 成效由 workflow 11（n8n）拉取、本機 feed 排程寫入。每篇每日一筆 snapshot（7 天）。token 不進此檔。",
+  "updated_at": "2026-07-22",
+  "note": "IG 成效由 workflow 11（n8n）拉取、本機 feed 排程寫入。每篇每日一筆 snapshot（90 天）。token 不進此檔。",
   "media": {
+    "18075957743686688": {
+      "permalink": "https://www.instagram.com/p/Da9rD0UlVOa/",
+      "timestamp": "2026-07-19T06:01:09+0000",
+      "post_id": "20260718-你知道weak-ties",
+      "topic": "weak-ties",
+      "snapshots": [
+        { "day": "2026-07-22", "reach": 134, "likes": 9, "comments": 0, "saved": 1, "shares": 2, "total_interactions": 12, "profile_visits": 1, "follows": 0 }
+      ]
+    },
+    "17907322680444242": {
+      "permalink": "https://www.instagram.com/p/Da6_ZzEFQ41/",
+      "timestamp": "2026-07-18T05:01:12+0000",
+      "post_id": "20260712-已讀不回的心理學-v5",
+      "topic": "已讀不回的心理學",
+      "snapshots": [
+        { "day": "2026-07-22", "reach": 200, "likes": 7, "comments": 0, "saved": 1, "shares": 3, "total_interactions": 12, "profile_visits": 5, "follows": 0 }
+      ]
+    },
     "17919758940183806": {
       "permalink": "https://www.instagram.com/p/DaqNFB5lOpo/",
       "timestamp": "2026-07-11T16:33:20+0000",

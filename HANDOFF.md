@@ -3,7 +3,8 @@
 > 給下一個 context window / 下一位維護者。讀完這份就能接手，不需回溯對話。
 > 最後更新：2026-07-22 · 維護者：Claude (為 Jesse / jesse@lava.tw)
 
-> 🔴 **接手最優先（2026-07-22 發現）：IG 發文 token 失效。** WF12 Token 哨兵實測 `GET /{ig-id}?fields=username` 回 **OAuthException code 190**（"...permission(s) must be granted before impersonating a user's page"）。這是 WF10 發佈＋WF11 成效共用的同一顆 token → **IG 自動發佈與成效拉取目前皆中斷**。需重新產生粉專長效（不過期）token，更新 n8n 憑證 **`t44CUVrw6Bxkz6Do`（Query Auth account）**。修好前，排程到點的貼文會發佈失敗（現在會自動告警，不再靜默）。
+> ✅ **IG token 已於 2026-07-22 修復。** 先前 WF12 哨兵抓到 token 失效（OAuthException code 190，缺 `pages_read_engagement`/`pages_show_list`）→ Jesse 重產帶完整權限的永不過期粉專 token，更新 n8n `t44CUVrw6Bxkz6Do`。實測 WF12（username）＋WF11（media/insights）皆通 → 發佈、成效、哨兵三線全綠。若日後哨兵再告警 code 190，照 HANDOFF「token 重產流程」重跑一次即可。
+> **IG 對帳（2026-07-22 用修好的 token 查證）**：`已讀不回-v5`（07-18 13:01，reach 200）與 `20260718-weak-ties`（07-19 14:01，reach 134）確認**已 live**（時間戳對得上排程）；初代 weak-ties（07-17）Jesse 已典藏，故 07-19 那則非可見重複。兩則皆保留、IG 端無需清理。
 
 ---
 
