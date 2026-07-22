@@ -225,6 +225,7 @@ def run(args):
 
     # 6) 成效回饋 → 選題/撰稿信號（讀 insights.json，最近有數據的貼文按互動率排序，高/低成效寫進 style-notes 供 looping 拆解）
     ins = load("insights.json").get("media", {})
+    _posts_by_id = {p["id"]: p for p in load("posts.json").get("posts", [])}
     scored = []
     for mid, m in ins.items():
         snaps = m.get("snapshots", [])
@@ -234,7 +235,9 @@ def run(args):
         if reach < 30:  # 樣本太小不列入
             continue
         er = round((last.get("total_interactions", 0) or 0) / reach * 1000) / 10.0
-        scored.append((er, (m.get("topic") or str(mid)[:10]), last))
+        writer = (_posts_by_id.get(m.get("post_id") or "", {}) or {}).get("writer_model", "")
+        label = (m.get("topic") or str(mid)[:10]) + ("（寫手 %s）" % ("GPT" if "gpt" in writer else "Claude") if writer else "")
+        scored.append((er, label, last))
     if len(scored) >= 3 and not args.dry_run:
         scored.sort(reverse=True)
         top, bot = scored[0], scored[-1]

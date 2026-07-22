@@ -597,7 +597,13 @@ def render_approved(args):
                 skipped.append((pid, "slide %d 選圖疑似破圖，請到操控室改選其他候選再核准" % n)); ok = False; break
             cand = next((c for c in s["candidates"] if c.get("cid") == cid), None)
             if cand and cand.get("kind") == "still" and cand.get("source_label"):
-                credits[n] = "圖片來源：《%s》劇照，版權屬原權利方" % cand["source_label"]
+                lb = cand["source_label"]
+                if lb.startswith("WM "):       # Wikipedia/Wikimedia 人物照（自由授權）
+                    credits[n] = "圖片來源：Wikimedia Commons（%s）" % lb[3:]
+                elif lb.startswith("OL "):     # Open Library 書封
+                    credits[n] = "圖片來源：Open Library 書封（%s）" % lb[3:]
+                else:
+                    credits[n] = "圖片來源：《%s》劇照，版權屬原權利方" % lb
             chosen_paths[str(n)] = os.path.abspath(path)
             shutil.copy2(path, os.path.join(bgdir, "slide-%d%s" % (n, os.path.splitext(path)[1].lower())))
         if not ok:
