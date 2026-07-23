@@ -157,7 +157,7 @@
       "id": "20260717-PitchYourFriend",
       "topic": "「Pitch Your Friend」正在歐美爆紅——幫閨蜜／兄弟寫交友履歷，這在紅什麼？",
       "version": 1,
-      "status": "approved",
+      "status": "scheduled",
       "clickup_task_id": "86ey8fn7j",
       "created_at": null,
       "caption": "朋友站到酒吧投影幕前，按下下一頁，你的怪癖、優點與理想型全被做成交友簡報，台下甚至真的有人舉手想認識你。當最懂你的朋友替你 pitch，這份介紹或許更接近大家平常認識的你。\n\n台灣人要寫出自己多值得認識，常常盯著空白欄位半天；替閨蜜或兄弟介紹時，卻能從早餐習慣一路講到失戀後怎麼照顧人。Lava 把選擇權還給你：帶著朋友眼中的線索去見面，再由你親自確認有沒有真實的感覺。\n\n#PitchYourFriend #PitchAFriend #交友趨勢 #朋友認證 #線下約會 #LavaDating #不聊天的交友軟體",
@@ -464,7 +464,8 @@
       "image_credits": [
         "第 2 張：《The Office》劇照，版權屬原權利方",
         "第 4 張：《Brooklyn Nine Nine》劇照，版權屬原權利方"
-      ]
+      ],
+      "publish_at": "2026-07-24T20:00:00+08:00"
     }
   ]
 }
