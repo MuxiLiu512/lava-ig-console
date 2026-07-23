@@ -466,6 +466,794 @@
         "第 4 張：《Brooklyn Nine Nine》劇照，版權屬原權利方"
       ],
       "publish_at": "2026-07-23T12:00:00+08:00"
+    },
+    {
+      "id": "20260716-關係幻覺",
+      "topic": "你們聊了 3 個月，卻連對方喝咖啡還是喝茶都不知道——這不叫曖昧，叫做「關係幻覺」",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyaen45",
+      "created_at": null,
+      "caption": "你們每天早安晚安，表情包來回丟，有時候聊到凌晨兩點還捨不得說再見。你覺得你們很近，近到你開始在心裡幫他留了一個位置。但如果有人問你：他喝咖啡還是喝茶？他怕冷還是怕熱？他上次真正難過是什麼時候？你會發現，你答不出來。這不叫曖昧，這叫做「關係幻覺」。\n\nLava 不讓你在 app 裡無限期聊天，因為我們知道：聊天只會餵養熟悉感，卻沒辦法製造連結感。我們設計的每一個功能，都在把你推向同一個方向，走出去，見面，讓真實的時刻決定這段關係值不值得繼續。你不需要再用三個月的訊息來說服自己你們很合適，你只需要一個下午。\n\n#關係幻覺 #單純曝光效應 #MereExposureEffect #曖昧 #線上交友 #心理學 #準社會關係 #Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #感情心理學",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-關係幻覺/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-關係幻覺/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-關係幻覺/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-關係幻覺/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": null,
+          "heading": "聊了 3 個月，你其實不認識他",
+          "display_copy": "聊了 3 個月\n你知道他幾點睡、幾點起\n卻不知道他〖喝咖啡還是喝茶〗\n\n這不叫曖昧\n這叫做【關係幻覺】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-關係幻覺/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-關係幻覺/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-關係幻覺/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-關係幻覺/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "You"
+            }
+          ],
+          "final_src": null,
+          "heading": "你以為在認識他，其實在認識你腦補的他",
+          "display_copy": "你分析他的已讀不回\n替他找理由、說服自己他只是在忙\n\n但你們從來沒有【在同一個空間待超過兩小時】\n\n你愛上的\n是他精心選擇讓你看見的那 20%",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-3a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "心理學怎麼解釋這件事",
+          "display_copy": "你的大腦把【熟悉感】翻譯成【連結感】\n\n心理學叫它：\n〖單純曝光效應〗\nMere Exposure Effect\n\n他每天出現在你的通知欄\n大腦就自動以為你們很近\n\n但熟悉感靠頻率累積\n連結感需要【真實的共同時刻】\n\n資料來源：Zajonc, R. B.（1968）. Attitudinal effects of mere exposure. Journal of Personality and Social Psychology.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-關係幻覺/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-關係幻覺/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-關係幻覺/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-關係幻覺/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            }
+          ],
+          "final_src": null,
+          "heading": "螢幕後的親密感，是大腦自己腦補的",
+          "display_copy": "研究者叫它【準社會關係】\n\n你在這頭腦補了一段關係\n他在那頭可能同時跟三個人\n聊著差不多的話\n\n真正的親密感只有一個測試：\n你們有沒有【一起經歷過任何一件麻煩的事】？\n\n一起迷路、一起等過一場雨\n這些才是連結真正生根的地方",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-5a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的設計，就是要打破這個幻覺",
+          "display_copy": "Lava 不讓你無限期聊天\n\n因為【聊天只會餵養熟悉感】\n卻沒辦法製造連結感\n\n我們把你推向同一個方向：\n\n走出去，見面\n讓【真實的時刻】決定\n這段關係值不值得繼續\n\n你不需要三個月的訊息\n你只需要【一個下午】",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 尾板",
+          "display_copy": "CTA 公版"
+        }
+      ]
+    },
+    {
+      "id": "20260716-見面前聊越久",
+      "topic": "研究發現：第一次見面前聊越久，約會成功率反而越低——你的「安全感」正在殺死這段關係",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyaen3b",
+      "created_at": null,
+      "caption": "你們每天早安晚安，聊工作聊夢想聊前任，對話框裡的他幽默、細心、懂你。終於約出來，他坐在你對面，點了一杯美式，你卻突然不知道說什麼，因為那個讓你心跳的人，從來只存在你的手機裡。\n\n在 Lava，你可以選擇在對的時機走出對話框，因為我們相信真正的化學反應只在現實裡發生。你只需要一個「他看起來還不錯，見一面又何妨」的理由就夠了。那杯咖啡裡的緊張感、第一次聽到對方笑聲的瞬間，才是任何對話框給不了你的東西，而那，才是關係真正開始的地方。\n\n#Lava交友 #線下約會 #第一次見面 #期望膨脹 #行為經濟學 #聊天陷阱 #約會心理學 #台灣交友app #真實相遇 #不聊天的交友軟體",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面前聊越久/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面前聊越久/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面前聊越久/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面前聊越久/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面前聊越久/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "You"
+            }
+          ],
+          "final_src": null,
+          "heading": "聊了三週，見面五分鐘就想回家",
+          "display_copy": "聊了三週\n見面五分鐘就想回家\n\n〖你愛上的，是他本人，還是你自己腦補的他？〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面前聊越久/slide-2a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個「完美的他」住在你的聊天室裡",
+          "display_copy": "見面之前\n你已經替他【填滿了所有空白】\n\n那些空白\n本來是留給真實相處去填的",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面前聊越久/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面前聊越久/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面前聊越久/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面前聊越久/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面前聊越久/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": null,
+          "heading": "研究者說：聊越久，期待值越難被真人滿足",
+          "display_copy": "聊越久，腦中的他就越完整、越理想化\n真實的人反而【輸給你腦中的幻象】\n\n研究者把這個現象叫做\n〖期望膨脹 Expectation Inflation〗\n\n資料來源：Finkel et al.（2012）. Online Dating: A Critical Analysis. *Psychological Science in the Public Interest*.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面前聊越久/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面前聊越久/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面前聊越久/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面前聊越久/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面前聊越久/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            }
+          ],
+          "final_src": null,
+          "heading": "「安全感」本身才是問題",
+          "display_copy": "你以為聊久一點比較【安全】，但那個安全感是假的——你真正想躲開的，是那一點點讓關係真正發生的不確定性。\n\n把所有空白都用文字填完\n走進咖啡廳的時候\n已經沒有空間讓驚喜發生了",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面前聊越久/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面前聊越久/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面前聊越久/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面前聊越久/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面前聊越久/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的邏輯剛好反過來",
+          "display_copy": "在 Lava，你可以選擇在對的時機走出對話框，因為【真正的化學反應】只在現實裡發生。\n\n你只需要一個「見一面又何妨」的理由\n那杯帶點緊張的咖啡\n會替你回答剩下的問題",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ]
+    },
+    {
+      "id": "20260716-見面卻尷尬到想逃",
+      "topic": "為什麼你在 app 上聊得來，見面卻尷尬到想逃？神經科學告訴你：人類的大腦根本不是為了「文字交友」而設計的",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyaemk0",
+      "created_at": null,
+      "caption": "你們在 app 上聊到凌晨兩點，梗接梗、話題永遠不斷，你甚至覺得「這個人懂我」。然後你們約出來見面，坐下來，點完飲料，然後，沉默。不是討厭對方，但就是不知道說什麼，那個在螢幕上發光的人好像換了一個人。你沒有做錯任何事，但你的大腦正在告訴你：它從來沒有真正認識過他。\n\nLava 不是要你不聊天，而是不讓「聊天」變成認識一個人的主要方式，因為你的大腦本來就不是為了這個而設計的。我們把見面放在前面，不是因為見面更浪漫，而是因為見面才是你的神經系統真正能夠評估一個人的時刻，那 93% 的頻寬，只有在同一個空間裡才會開啟。你不需要靠想像力愛上一個人，你值得用你全部的感知去認識他。\n\n#Lava交友 #線下約會 #神經科學 #社交臨場感 #約會科學 #見面才算數 #交友軟體 #台灣交友 #dating #firstdate #neuroscience #LavaDating",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Masterof None"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Masterof None"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Masterof None"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Masterof None"
+            }
+          ],
+          "final_src": null,
+          "heading": "聊了三週，見面第一句話就冷場",
+          "display_copy": "聊了三週\n見面第一句話就〖冷場〗\n\n你沒有做錯任何事——\n但你的大腦從來沒有\n【真正認識過他】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "You"
+            }
+          ],
+          "final_src": null,
+          "heading": "你以為你在認識他，其實你在認識你自己的想像",
+          "display_copy": "他回「哈哈」\n你不知道他是真的在笑\n還是只是【禮貌性回應】\n\n每一次你自己解讀\n你就多愛上了一點\n〖你腦中那個版本的他〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "The IT Crowd"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "The IT Crowd"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "The IT Crowd"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "The IT Crowd"
+            }
+          ],
+          "final_src": null,
+          "heading": "你只用了 7% 的頻寬在認識他",
+          "display_copy": "人類情感溝通\n【55%】肢體與表情\n【38%】聲音語氣\n〖7%〗文字本身\n\n你花三週聊天\n等於只用 7% 的頻寬\n在認識一個人\n\n資料來源：Mehrabian（1971）. Silent Messages; Short et al.（1976）. The Social Psychology of Telecommunications.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": null,
+          "heading": "見面的前五分鐘，大腦在做什麼",
+          "display_copy": "見面的前五分鐘\n你的大腦同時在讀取：\n眼神、停頓、笑的方式\n聲音裡有沒有緊張\n\n這叫【社交校準】\n是人類演化數百萬年的能力\n\n那種尷尬\n不是你們不合\n是你們【第一次真正開始認識彼此】",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-見面卻尷尬到想逃/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的邏輯：先見面，讓大腦做它最擅長的事",
+          "display_copy": "Lava 不是要你不聊天\n\n而是不讓聊天\n變成認識一個人的【主要方式】\n\n因為那 93% 的頻寬\n只有在同一個空間裡\n才會開啟\n\n你值得用【全部的感知】\n去認識他",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 尾板",
+          "display_copy": "CTA 公版"
+        }
+      ]
+    },
+    {
+      "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "topic": "母胎單身的人，其實比你更懂得「選擇」伴侶？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ey89y51",
+      "created_at": null,
+      "caption": "手機裡有二十幾個對話框。每一個都聊過天氣、聊過工作、聊過「最近在幹嘛」。然後就沒有然後了。不是沒有機會，是每一次都卡在同一個地方，聊天聊到一半，不知道怎麼推進，對方也沒有動作，然後兩個人就這樣，繼續在各自的畫面上顯示「已讀」。這不是你的問題。這是一個結構性的陷阱。\n\n大多數交友 App 的邏輯是：先聊天，聊到有感覺，再約出來。但對啟動門檻高的人來說，這個流程等於：先聊天，聊到不知道怎麼推進，然後消失。Lava 的邏輯不一樣。我們直接跳過無限期的聊天暖身，雙方確認見面意願之後，App 幫你安排，你只需要出現。不是逼你，是幫你把「怎麼開始」這件事，從你的待辦清單裡拿走。第一步不需要完美，第一步只需要發生。\n\n#母胎單身大作戰2 #母胎單身 #交友軟體 #Lava交友 #台灣交友 #線下約會 #感情 #戀愛心理學 #第一步 #不聊天的交友軟體",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": null,
+          "heading": "你不是找不到人，你只是從來沒有「真的開始」",
+          "display_copy": "手機裡有二十幾個對話框。\n每一個都聊到一半，\n然後就【沒有然後了】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            }
+          ],
+          "final_src": null,
+          "heading": "母胎單身的人，不是不想談戀愛",
+          "display_copy": "他們不是太挑，\n是【每一次都像是第一次】。\n每一個「不知道怎麼開口」，\n都比上一次更重。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "研究說：母胎單身者的問題不是「選擇標準」，是「啟動門檻」",
+          "display_copy": "「見面」對他們來說不只是見面，\n是一次【可能被拒絕的暴露】。\n\n所以他們繼續聊天——\n聊天是安全的，\n【但安全讓你原地踏步】。\n\n資料來源：Boyes, A.（2013）. Action Initiation in Anxiety and Avoidance. Psychology Today.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": null,
+          "heading": "但這裡有個反轉：他們其實更懂得「選擇」",
+          "display_copy": "他們從來沒有「反正試試看」，\n每一次考慮都是【真的在考慮】。\n\n卡關的從來不是「要不要」，\n是【怎麼開始】。\n\n資料來源：Apostolou, M. et al.（2020）. Why people remain single. Personality and Individual Differences.",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的設計，就是為了打破這個卡關",
+          "display_copy": "Lava 直接跳過無限期聊天——\n確認意願，\nApp 幫你安排見面。\n\n【第一步不需要完美，\n第一步只需要發生】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "準備好走出第一步了嗎？",
+          "display_copy": "你已經想清楚了。\n你只是需要一個\n【讓「開始」變得容易的地方】。\n\n下載 Lava，直接見面。\n🔗 下載連結在限動"
+        }
+      ]
     }
   ]
 }
