@@ -323,6 +323,22 @@ python3 -m py_compile scripts/sync_console.py scripts/iterate_harness.py
 
 ---
 
+## 6.6 撰稿排隊機制＋n8n Pro 升級（2026-07-23，容量事故後根治）
+
+**事故時間軸（0723）**：Jesse 批次放行 ~7 張 → 舊 WF07 立刻連打 14 個撰稿 → n8n Starter（5 併發）連環 crash → **WF01/WF02 被 n8n 自動停用**（重複崩潰保護）→ 同時 **月額度 2,500 用罄**（WF10 每 5 分輪詢＝大戶）→ 全線停擺。恢復過程又因手動補跑+排程器同啟二次超載。**教訓：n8n Cloud 會自動停用連環崩潰的工作流；額度用罄時執行卡「new」＋回「The service failed to process your request」。**
+
+**根治（全部完成）**：
+- **n8n 升級 Pro 60€/月**（10k 執行、20 併發）。Starter 2,500 根本養不起輪詢型架構。
+- **WF07 放行＝只排隊**：撰稿觸發節點已拔除，放行只把卡設「在製中」；操作不變（勾 🚀）。
+- **WF13 撰稿排程器 `jn9qilLJN34wzFPE`**：cron `*/15 8-22 * * *`；每輪撿「在製中＋名稱 靈感｜＋不在 posts.json＋冷卻 2h 外＋重試 <3 次」最舊 **1 張** → 打 GPT+Claude 雙撰稿。**必用 ClickUp 專用節點撈卡**（ClickUp OAuth 憑證禁用於 HTTP Request 節點）；Pick Queue 需 executeOnce。撰稿成功 → WF01 把卡改名 IG貼文｜＋feed 進 posts.json → 自動出隊。重試 3 次仍無產出＝放棄（防無限迴圈燒額度）。舊版 `fOHmkKVOfOuwiSyU` 已封存。
+- **WF10 輪詢 5 分 → 15 分**（月燒 9k → 3k；IG 排程精度 ±15 分可接受）。
+- **WF01「Trigger Stills Workflow」改 onError:continue**：圖搜爆掉不再拖垮撰稿（草稿本來就先存）。
+- **額度水位**：升級後 2,661/10,000，估月燒 ~5k，餘裕 50%。
+
+**維一遺留**：`傳100則`/`天氣` 兩篇候選圖偏少（3-4 張，圖搜在事故中陣亡）——內容完整可審；要更多劇照可之後對這兩主題手動補打 lava-ig-stills webhook。
+
+---
+
 ## 7. Guardrails（務必遵守）
 
 - **不改 Drive 風格正本**：`style-notes.md` 是增補層可改；Drive 上的 v1.0/v1.1 規格 Doc 是正本，機器不碰。
