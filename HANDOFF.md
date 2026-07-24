@@ -388,3 +388,8 @@ n8n 用 `search_workflows(query:"Lava")` 確認全 active；排程用 `list_sche
 
 ---
 *若需更深脈絡：完整對話 transcript 在 `/Users/mimo/.claude/projects/-Users-mimo-Desktop-Claude--------/2ccb55fb-85a1-4969-9366-0bcc01f3d747.jsonl`*
+
+### 零 token 渲染哨兵（2026-07-24）
+- **launchd `tw.lava.ig-autorender`**（`~/Library/LaunchAgents/tw.lava.ig-autorender.plist`，每 600 秒）→ 跑 `scripts/auto_render.sh`：Drive 掛載檢查 → git pull → `render-approved`（冪等，審核/文案編輯比成品新才重出）→ 有產出才 commit+push。**純腳本零 token**；log 在 `/tmp/lava-ig-autorender.log`；防重疊鎖 `/tmp/lava-ig-autorender.lock`。
+- 分工：**高頻機械（渲染）＝launchd；低頻判斷（餵卡/留言/成效）＝Claude feed 每日 3 次**。PT 核准或改文案後 ≤10 分鐘自動出成品，不需等 11/16/20 班次。cron 出的成品不留 ClickUp 留言（操控室直接看得到，可接受）。
+- 管理指令：`launchctl unload/load ~/Library/LaunchAgents/tw.lava.ig-autorender.plist`。
