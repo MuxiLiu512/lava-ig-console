@@ -190,6 +190,22 @@
       "scope": "mockup",
       "feedback": "文案不過關，跟母胎單身好像關聯性低",
       "consumed": false
+    },
+    {
+      "id": "R-mrywebga",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:09:58+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "d",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "base_image",
+      "feedback": "文案不過關，跟母胎單身關聯性低",
+      "consumed": false
     }
   ]
 }
