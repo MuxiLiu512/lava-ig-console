@@ -158,6 +158,22 @@
       "feedback": "第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少",
       "consumed": false,
       "copy_choice": "gpt"
+    },
+    {
+      "id": "R-mrywcuj3",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:08:50+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "mockup",
+      "feedback": "文案不過關，跟母胎單身關聯性較低",
+      "consumed": false
     }
   ]
 }
