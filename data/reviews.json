@@ -206,6 +206,23 @@
       "scope": "base_image",
       "feedback": "文案不過關，跟母胎單身關聯性低",
       "consumed": false
+    },
+    {
+      "id": "R-mrz0wir4",
+      "post_id": "20260723-天氣變差約會取消",
+      "ts": "2026-07-24T22:16:06+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "e",
+        "3": "c",
+        "4": "d",
+        "5": "d"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
