@@ -127,6 +127,22 @@
       "feedback": "選擇過少",
       "consumed": false,
       "copy_choice": "claude"
+    },
+    {
+      "id": "R-mrywardn",
+      "post_id": "20260716-見面前聊越久",
+      "ts": "2026-07-24T20:07:12+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "底圖重複太多，每篇都是一樣的",
+      "consumed": false
     }
   ]
 }
