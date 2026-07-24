@@ -79,6 +79,22 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mryw4tz0",
+      "post_id": "20260716-關係幻覺",
+      "ts": "2026-07-24T20:02:36+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "b",
+        "3": "a",
+        "4": "c",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
