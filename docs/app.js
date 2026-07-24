@@ -371,6 +371,21 @@ function buildCopyEditor(p) {
     const cur0 = copyChoiceOf(p);
     if (cur0 && versions[cur0]) applyVersion(cur0);
   }
+  // 疊上已儲存的文案修改（修：重整頁面後看起來像「沒存到」——其實存在 copy_edits.json）
+  try {
+    const cur1 = copyChoiceOf(p);
+    const late = {};
+    ((STATE.copy_edits && STATE.copy_edits.edits) || [])
+      .filter(e => e.post_id === p.id)
+      .sort((a, b) => (a.ts || "").localeCompare(b.ts || ""))
+      .forEach(e => (e.edits || []).forEach(d => {
+        if (!d.version || !cur1 || d.version === cur1) late[d.n + "|" + d.field] = d.edited;
+      }));
+    fields.forEach(t => {
+      const v = late[t.dataset.n + "|" + t.dataset.field];
+      if (v != null) { t.value = v; t.dataset.orig = v; }
+    });
+  } catch (e) {}
   const btn = el("button", "btn primary block", "儲存文案修改"); btn.style.marginTop = "12px";
   btn.onclick = async () => {
     const ver = copyChoiceOf(p);

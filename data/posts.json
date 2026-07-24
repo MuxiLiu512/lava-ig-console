@@ -683,185 +683,6 @@
       ]
     },
     {
-      "id": "20260716-關係幻覺",
-      "topic": "你們聊了 3 個月，卻連對方喝咖啡還是喝茶都不知道——這不叫曖昧，叫做「關係幻覺」",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eyaen45",
-      "created_at": null,
-      "caption": "你們每天早安晚安，表情包來回丟，有時候聊到凌晨兩點還捨不得說再見。你覺得你們很近，近到你開始在心裡幫他留了一個位置。但如果有人問你：他喝咖啡還是喝茶？他怕冷還是怕熱？他上次真正難過是什麼時候？你會發現，你答不出來。這不叫曖昧，這叫做「關係幻覺」。\n\nLava 不讓你在 app 裡無限期聊天，因為我們知道：聊天只會餵養熟悉感，卻沒辦法製造連結感。我們設計的每一個功能，都在把你推向同一個方向，走出去，見面，讓真實的時刻決定這段關係值不值得繼續。你不需要再用三個月的訊息來說服自己你們很合適，你只需要一個下午。\n\n#關係幻覺 #單純曝光效應 #MereExposureEffect #曖昧 #線上交友 #心理學 #準社會關係 #Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #感情心理學",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260716-關係幻覺/slide-1a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260716-關係幻覺/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260716-關係幻覺/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260716-關係幻覺/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260716-關係幻覺/slide-1e.jpg",
-              "kind": "still",
-              "source_label": "Fleabag"
-            }
-          ],
-          "final_src": "assets/20260716-關係幻覺/final/slide-1.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-1.jpg",
-          "heading": "聊了 3 個月，你其實不認識他",
-          "display_copy": "聊了 3 個月\n你知道他幾點睡、幾點起\n卻不知道他〖喝咖啡還是喝茶〗\n\n這不叫曖昧\n這叫做【關係幻覺】",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260716-關係幻覺/slide-2a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260716-關係幻覺/slide-2b.jpg",
-              "kind": "still",
-              "source_label": "You"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260716-關係幻覺/slide-2c.jpg",
-              "kind": "still",
-              "source_label": "You"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260716-關係幻覺/slide-2d.jpg",
-              "kind": "still",
-              "source_label": "You"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260716-關係幻覺/slide-2e.jpg",
-              "kind": "still",
-              "source_label": "You"
-            }
-          ],
-          "final_src": "assets/20260716-關係幻覺/final/slide-2.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-2.jpg",
-          "heading": "你以為在認識他，其實在認識你腦補的他",
-          "display_copy": "你分析他的已讀不回\n替他找理由、說服自己他只是在忙\n\n但你們從來沒有【在同一個空間待超過兩小時】\n\n你愛上的\n是他精心選擇讓你看見的那 20%",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260716-關係幻覺/slide-3a.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260716-關係幻覺/final/slide-3.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-3.jpg",
-          "heading": "心理學怎麼解釋這件事",
-          "display_copy": "你的大腦把【熟悉感】翻譯成【連結感】\n\n心理學叫它：\n〖單純曝光效應〗\nMere Exposure Effect\n\n他每天出現在你的通知欄\n大腦就自動以為你們很近\n\n但熟悉感靠頻率累積\n連結感需要【真實的共同時刻】\n\n資料來源：Zajonc, R. B.（1968）. Attitudinal effects of mere exposure. Journal of Personality and Social Psychology.",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260716-關係幻覺/slide-4a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260716-關係幻覺/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260716-關係幻覺/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260716-關係幻覺/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260716-關係幻覺/slide-4e.jpg",
-              "kind": "still",
-              "source_label": "Normal People"
-            }
-          ],
-          "final_src": "assets/20260716-關係幻覺/final/slide-4.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-4.jpg",
-          "heading": "螢幕後的親密感，是大腦自己腦補的",
-          "display_copy": "研究者叫它【準社會關係】\n\n你在這頭腦補了一段關係\n他在那頭可能同時跟三個人\n聊著差不多的話\n\n真正的親密感只有一個測試：\n你們有沒有【一起經歷過任何一件麻煩的事】？\n\n一起迷路、一起等過一場雨\n這些才是連結真正生根的地方",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260716-關係幻覺/slide-5a.jpg",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260716-關係幻覺/final/slide-5.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-5.jpg",
-          "heading": "Lava 的設計，就是要打破這個幻覺",
-          "display_copy": "Lava 不讓你無限期聊天\n\n因為【聊天只會餵養熟悉感】\n卻沒辦法製造連結感\n\n我們把你推向同一個方向：\n\n走出去，見面\n讓【真實的時刻】決定\n這段關係值不值得繼續\n\n你不需要三個月的訊息\n你只需要【一個下午】",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260716-關係幻覺/final/slide-6.jpg",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-6.jpg",
-          "heading": "CTA 尾板",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "rendered_at": "2026-07-24T20:29:26+08:00",
-      "image_credits": [
-        "第 1 張：《Fleabag》劇照，版權屬原權利方",
-        "第 2 張：《You》劇照，版權屬原權利方",
-        "第 4 張：《Normal People》劇照，版權屬原權利方"
-      ]
-    },
-    {
       "id": "20260716-見面卻尷尬到想逃",
       "topic": "為什麼你在 app 上聊得來，見面卻尷尬到想逃？神經科學告訴你：人類的大腦根本不是為了「文字交友」而設計的",
       "version": 1,
@@ -1473,6 +1294,185 @@
       "writer_model": "gpt-5.6",
       "rendered_at": "2026-07-24T20:29:47+08:00",
       "copy_choice": "gpt"
+    },
+    {
+      "id": "20260716-關係幻覺",
+      "topic": "你們聊了 3 個月，卻連對方喝咖啡還是喝茶都不知道——這不叫曖昧，叫做「關係幻覺」",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eyaen45",
+      "created_at": null,
+      "caption": "你們每天早安晚安，表情包來回丟，有時候聊到凌晨兩點還捨不得說再見。你覺得你們很近，近到你開始在心裡幫他留了一個位置。但如果有人問你：他喝咖啡還是喝茶？他怕冷還是怕熱？他上次真正難過是什麼時候？你會發現，你答不出來。這不叫曖昧，這叫做「關係幻覺」。\n\nLava 不讓你在 app 裡無限期聊天，因為我們知道：聊天只會餵養熟悉感，卻沒辦法製造連結感。我們設計的每一個功能，都在把你推向同一個方向，走出去，見面，讓真實的時刻決定這段關係值不值得繼續。你不需要再用三個月的訊息來說服自己你們很合適，你只需要一個下午。\n\n#關係幻覺 #單純曝光效應 #MereExposureEffect #曖昧 #線上交友 #心理學 #準社會關係 #Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #感情心理學",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-關係幻覺/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-關係幻覺/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-關係幻覺/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-關係幻覺/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": "assets/20260716-關係幻覺/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-1.jpg",
+          "heading": "聊了 3 個月，你其實不認識他",
+          "display_copy": "聊了 3 個月\n你知道他幾點睡、幾點起\n卻不知道他〖喝咖啡還是喝茶〗\n\n這不叫曖昧\n這叫做【關係幻覺】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-關係幻覺/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-關係幻覺/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-關係幻覺/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-關係幻覺/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "You"
+            }
+          ],
+          "final_src": "assets/20260716-關係幻覺/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-2.jpg",
+          "heading": "你以為在認識他，其實在認識你腦補的他",
+          "display_copy": "你分析他的已讀不回\n替他找理由、說服自己他只是在忙\n\n但你們從來沒有【在同一個空間待超過兩小時】\n\n你愛上的\n是他精心選擇讓你看見的那 20%",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-3a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260716-關係幻覺/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-3.jpg",
+          "heading": "心理學怎麼解釋這件事",
+          "display_copy": "你的大腦把【熟悉感】翻譯成【連結感】\n\n心理學叫它：\n〖單純曝光效應〗\nMere Exposure Effect\n\n他每天出現在你的通知欄\n大腦就自動以為你們很近\n\n但熟悉感靠頻率累積\n連結感需要【真實的共同時刻】\n\n資料來源：Zajonc, R. B.（1968）. Attitudinal effects of mere exposure. Journal of Personality and Social Psychology.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260716-關係幻覺/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260716-關係幻覺/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260716-關係幻覺/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260716-關係幻覺/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            }
+          ],
+          "final_src": "assets/20260716-關係幻覺/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-4.jpg",
+          "heading": "螢幕後的親密感，是大腦自己腦補的",
+          "display_copy": "研究者叫它【準社會關係】\n\n你在這頭腦補了一段關係\n他在那頭可能同時跟三個人\n聊著差不多的話\n\n真正的親密感只有一個測試：\n你們有沒有【一起經歷過任何一件麻煩的事】？\n\n一起迷路、一起等過一場雨\n這些才是連結真正生根的地方",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260716-關係幻覺/slide-5a.jpg",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260716-關係幻覺/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-5.jpg",
+          "heading": "Lava 的設計，就是要打破這個幻覺",
+          "display_copy": "Lava 不讓你無限期聊天\n\n因為【聊天只會餵養熟悉感】\n卻沒辦法製造連結感\n\n我們把你推向同一個方向：\n\n走出去，見面\n讓【真實的時刻】決定\n這段關係值不值得繼續\n\n你不需要三個月的訊息\n你只需要【一次見面】",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260716-關係幻覺/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260716-%E9%97%9C%E4%BF%82%E5%B9%BB%E8%A6%BA/slide-6.jpg",
+          "heading": "CTA 尾板",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "rendered_at": "2026-07-24T21:09:01+08:00",
+      "image_credits": [
+        "第 1 張：《Fleabag》劇照，版權屬原權利方",
+        "第 2 張：《You》劇照，版權屬原權利方",
+        "第 4 張：《Normal People》劇照，版權屬原權利方"
+      ]
     }
   ]
 }
