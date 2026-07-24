@@ -111,6 +111,22 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mryw8kv4",
+      "post_id": "20260723-傳100則訊息還是不熟",
+      "ts": "2026-07-24T20:05:31+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a"
+      },
+      "scope": null,
+      "feedback": "選擇過少",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
