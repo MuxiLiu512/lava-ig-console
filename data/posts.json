@@ -1300,279 +1300,10 @@
       "published_at": "2026-07-25T11:01:24+08:00"
     },
     {
-      "id": "20260723-天氣變差約會取消",
-      "topic": "天氣變差，約會取消率上升 40%——「等天氣好再約」是分手的開始",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86ey8czm3",
-      "created_at": null,
-      "caption": "週五 18:47，你換好衣服、查完路線，卻收到一句「雨太大了，等天氣好再約」。你回了沒關係，手指仍停在對話框上。行程取消可以重新安排，最讓人不安的是沒有日期的承諾：這句改天，還有下一次嗎？\n\n如果雨真的太大，取消前可以一起完成三件事：先換成捷運可到的室內地點，再直接提出兩個可行日期，最後約好最晚何時確認。具體安排能讓彼此知道這次只是延期。Lava 不替你決定誰值得見，只鼓勵你把想見面的意願變成下一步行動。\n\n#LavaDating #不聊天的交友軟體 #約會心理學 #交友軟體 #第一次約會 #雨天約會 #關係經營",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260723-天氣變差約會取消/slide-1a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260723-天氣變差約會取消/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260723-天氣變差約會取消/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260723-天氣變差約會取消/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260723-天氣變差約會取消/slide-1e.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            }
-          ],
-          "final_src": null,
-          "heading": "「等天氣好再約」之後呢？",
-          "display_copy": "週五 18:47，你換好衣服、查完路線，卻收到一句「雨太大了，等天氣好再約」。你回了沒關係，手指仍停在對話框上。行程取消可以重新安排，最讓人不安的是沒有日期的承諾：〖這句改天，還有下一次嗎？〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260723-天氣變差約會取消/slide-2a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260723-天氣變差約會取消/slide-2b.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260723-天氣變差約會取消/slide-2c.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260723-天氣變差約會取消/slide-2d.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260723-天氣變差約會取消/slide-2e.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            }
-          ],
-          "final_src": null,
-          "heading": "最容易消失的，是沒有日期的改天",
-          "display_copy": "一場雨天約會取消後，你們都說下次再約，卻沒有人提出日期。接著週末各自有事、訊息隔天才回，兩週後聊天只剩貼圖。距離往往從這個空白開始拉開；【取消當下若沒有一起定下時間，期待就很容易被日常沖淡】。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260723-天氣變差約會取消/slide-3a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260723-天氣變差約會取消/slide-3b.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260723-天氣變差約會取消/slide-3c.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260723-天氣變差約會取消/slide-3d.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260723-天氣變差約會取消/slide-3e.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            }
-          ],
-          "final_src": null,
-          "heading": "想取消，可能是真的累",
-          "display_copy": "2008 年，Denissen 等人分析【1,233 人】的線上日記與氣象資料，發現溫度、風力及日照會影響負向情緒，日照也會改變降雨與疲倦感的關聯。壞天氣降低赴約動力，不必立刻解讀成對方沒興趣。\n資料來源：Denissen et al., Emotion, 2008",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260723-天氣變差約會取消/slide-4a.jpg",
-              "kind": "still",
-              "source_label": "Youve Got Mail"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260723-天氣變差約會取消/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Youve Got Mail"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260723-天氣變差約會取消/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Youve Got Mail"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260723-天氣變差約會取消/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Youve Got Mail"
-            }
-          ],
-          "final_src": null,
-          "heading": "沒有日期，期待容易卡在 app 裡",
-          "display_copy": "交友 app 裡常見這種停滯：雙方繼續聊天、累積新配對，卻遲遲沒有把關係帶到線下。研究觀察顯示，這類摩擦點會讓互動留在 app 內；當【改天沒有日期】，等待期間的話題與期待就可能逐漸變淡。\n資料來源：Bandinelli & Bandinelli, 2021",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260723-天氣變差約會取消/slide-5a.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260723-天氣變差約會取消/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260723-天氣變差約會取消/slide-5c.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260723-天氣變差約會取消/slide-5d.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            }
-          ],
-          "final_src": null,
-          "heading": "取消可以，但下一次要具體",
-          "display_copy": "如果雨真的太大，取消前可以一起完成三件事：先換成捷運可到的室內地點，再直接提出兩個可行日期，最後約好最晚何時確認。具體安排能讓彼此知道這次只是延期。Lava 不替你決定誰值得見，只鼓勵你把〖想見面的意願〗變成下一步行動。",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "把改天，約成某一天",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "gpt-5.6",
-      "copy_versions": {
-        "claude": {
-          "caption": "你上次說「等天氣好再約」，是幾週前的事了？那個人，你現在還記得他的聲音嗎？壞天氣是最溫柔的拖延藉口，聽起來不是拒絕，只是順延。但研究發現，配對後越晚見面，對方的放棄成本就越低，ghosting 的機率也越高。不是天氣讓你們沒緣分，是「等一下」這個習慣，悄悄把機會關掉了。\n\nLava 從一開始就不是設計來讓你「先聊聊看」的 App。我們沒有文字聊天室，不是因為我們懶，而是因為研究和數據都指向同一件事：對話拖越久，見面的機率越低；見面越晚，印象越模糊，ghosting 越自然地發生。Lava 把「見面」這件事直接放在流程的最前面，讓你在還沒有機會找到任何藉口之前，就已經約定好了時間和地點。壞天氣可以是一個背景，但它不應該是你們故事的結局。\n\n#Lava交友 #線下約會 #不聊天的交友軟體 #約會心理學 #ghosting #壞天氣 #見面才是開始 #台灣交友 #交友App #拖延症候群",
-          "slides": {
-            "1": {
-              "heading": "「下雨欸，改天好不好？」",
-              "display_copy": "「下雨欸，\n改天好不好？」\n\n〖說這句話的那天，計時器就開始倒數了。〗"
-            },
-            "2": {
-              "heading": "那些「下週再約」最後變成了什麼",
-              "display_copy": "第一週：颱風，改天。\n第二週：加班，改天。\n第三週：天氣不好，改天。\n第四週：他的限動裡多了另一個人。\n\n【每一個「改天」，都是對方重新考慮你的機會。】\n\n資料來源：Winged App Dating Report, 2025；Mentor Research Institute"
-            },
-            "3": {
-              "heading": "為什麼天氣讓你更想「等等再說」",
-              "display_copy": "壞天氣不只讓你不想出門——\n它讓你的大腦把「出去見人」\n歸類成【一項成本太高的任務】。\n\n攝氏 10–21 度：人體情緒最正向的溫度帶。\n低於這個區間，身體自動進入節能模式。\n陽光觸發血清素，主動社交意願跟著上升。\n\n資料來源：Guéguen, N., Social Influence, 2012；Psychology Today, 2025"
-            },
-            "4": {
-              "heading": "拖越久，你在對方心裡就越模糊",
-              "display_copy": "配對初期，你在對方心裡的重量接近於零。\n\n越快見面，ghosting 的機率越低。\n主動回覆 vs. 拖延數天才回：\n〖促成見面的機率差距高達 40–50%。〗\n\n「等天氣好」，是在把優勢一天一天送出去。\n\n資料來源：eHarmony Dating Advice；Checklovers Dating Statistics"
-            },
-            "5": {
-              "heading": "Lava 的邏輯：見面才是開始",
-              "display_copy": "Lava 沒有文字聊天室。\n不是因為懶，\n是因為【對話拖越久，見面的機率越低】。\n\n我們把見面放在最前面——\n在你找到藉口之前，時間就已經約好了。\n\n壞天氣可以是背景，\n不應該是你們故事的結局。"
-            },
-            "6": {
-              "heading": "今天就約，不等天氣",
-              "display_copy": "CTA 公版"
-            }
-          }
-        },
-        "gpt": {
-          "caption": "週五 18:47，你換好衣服、查完路線，卻收到一句「雨太大了，等天氣好再約」。你回了沒關係，手指仍停在對話框上。行程取消可以重新安排，最讓人不安的是沒有日期的承諾：這句改天，還有下一次嗎？\n\n如果雨真的太大，取消前可以一起完成三件事：先換成捷運可到的室內地點，再直接提出兩個可行日期，最後約好最晚何時確認。具體安排能讓彼此知道這次只是延期。Lava 不替你決定誰值得見，只鼓勵你把想見面的意願變成下一步行動。\n\n#LavaDating #不聊天的交友軟體 #約會心理學 #交友軟體 #第一次約會 #雨天約會 #關係經營",
-          "slides": {
-            "1": {
-              "heading": "「等天氣好再約」之後呢？",
-              "display_copy": "週五 18:47，你換好衣服、查完路線，卻收到一句「雨太大了，等天氣好再約」。你回了沒關係，手指仍停在對話框上。行程取消可以重新安排，最讓人不安的是沒有日期的承諾：〖這句改天，還有下一次嗎？〗"
-            },
-            "2": {
-              "heading": "最容易消失的，是沒有日期的改天",
-              "display_copy": "一場雨天約會取消後，你們都說下次再約，卻沒有人提出日期。接著週末各自有事、訊息隔天才回，兩週後聊天只剩貼圖。距離往往從這個空白開始拉開；【取消當下若沒有一起定下時間，期待就很容易被日常沖淡】。"
-            },
-            "3": {
-              "heading": "想取消，可能是真的累",
-              "display_copy": "2008 年，Denissen 等人分析【1,233 人】的線上日記與氣象資料，發現溫度、風力及日照會影響負向情緒，日照也會改變降雨與疲倦感的關聯。壞天氣降低赴約動力，不必立刻解讀成對方沒興趣。\n資料來源：Denissen et al., Emotion, 2008"
-            },
-            "4": {
-              "heading": "沒有日期，期待容易卡在 app 裡",
-              "display_copy": "交友 app 裡常見這種停滯：雙方繼續聊天、累積新配對，卻遲遲沒有把關係帶到線下。研究觀察顯示，這類摩擦點會讓互動留在 app 內；當【改天沒有日期】，等待期間的話題與期待就可能逐漸變淡。\n資料來源：Bandinelli & Bandinelli, 2021"
-            },
-            "5": {
-              "heading": "取消可以，但下一次要具體",
-              "display_copy": "如果雨真的太大，取消前可以一起完成三件事：先換成捷運可到的室內地點，再直接提出兩個可行日期，最後約好最晚何時確認。具體安排能讓彼此知道這次只是延期。Lava 不替你決定誰值得見，只鼓勵你把〖想見面的意願〗變成下一步行動。"
-            },
-            "6": {
-              "heading": "把改天，約成某一天",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "rendered_at": "2026-07-24T20:29:47+08:00",
-      "copy_choice": "claude",
-      "candidates_since": "2026-07-24T21:17:46+08:00"
-    },
-    {
       "id": "20260723-傳100則訊息還是不熟",
       "topic": "為什麼你傳了 100 則訊息，還是覺得「不熟」？科學解釋你的交友 App 焦慮",
       "version": 1,
-      "status": "scheduled",
+      "status": "awaiting_review",
       "clickup_task_id": "86ey8czm2",
       "created_at": null,
       "caption": "凌晨 1:17，你把訊息刪掉重寫，確認語氣不會太積極才送出。對話已經超過 100 則，對方晚回 30 分鐘，你又開始檢查每個句點。文字累積得很快，了解卻沒有同步增加。為什麼聊了整晚，你還是覺得不熟？\n\n讓關係獲得文字給不了的資訊，焦慮才有機會下降。當你覺得安全、舒服，也確實想繼續認識對方，可以約在交通方便的公共場所見面，並先告知朋友行程。Lava 不替你判斷誰適合，只把要不要繼續認識的選擇權交還給現場的你。\n\n#LavaDating #不聊天的交友軟體 #交友App #約會焦慮 #心理學 #親密關係 #線下約會 #真實見面",
@@ -1824,6 +1555,227 @@
       "rendered_at": "2026-07-24T20:29:38+08:00",
       "copy_choice": "claude",
       "candidates_since": "2026-07-24T21:18:03+08:00"
+    },
+    {
+      "id": "20260723-天氣變差約會取消",
+      "topic": "天氣變差，約會取消率上升 40%——「等天氣好再約」是分手的開始",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86ey8czm3",
+      "created_at": null,
+      "caption": "你上次說「等天氣好再約」，是幾週前的事了？那個人，你現在還記得他的聲音嗎？壞天氣是最溫柔的拖延藉口，聽起來不是拒絕，只是順延。但研究發現，配對後越晚見面，對方的放棄成本就越低，ghosting 的機率也越高。不是天氣讓你們沒緣分，是「等一下」這個習慣，悄悄把機會關掉了。\n\nLava 從一開始就不是設計來讓你「先聊聊看」的 App。我們沒有文字聊天室，不是因為我們懶，而是因為研究和數據都指向同一件事：對話拖越久，見面的機率越低；見面越晚，印象越模糊，ghosting 越自然地發生。Lava 把「見面」這件事直接放在流程的最前面，讓你在還沒有機會找到任何藉口之前，就已經約定好了時間和地點。壞天氣可以是一個背景，但它不應該是你們故事的結局。\n\n#Lava交友 #線下約會 #不聊天的交友軟體 #約會心理學 #ghosting #壞天氣 #見面才是開始 #台灣交友 #交友App #拖延症候群",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260723-天氣變差約會取消/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260723-天氣變差約會取消/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260723-天氣變差約會取消/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260723-天氣變差約會取消/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260723-天氣變差約會取消/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": "assets/20260723-天氣變差約會取消/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260723-%E5%A4%A9%E6%B0%A3%E8%AE%8A%E5%B7%AE%E7%B4%84%E6%9C%83%E5%8F%96%E6%B6%88/slide-1.jpg",
+          "heading": "「下雨欸，改天好不好？」",
+          "display_copy": "「下雨欸，\n改天好不好？」\n\n〖說這句話的那天，計時器就開始倒數了。〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260723-天氣變差約會取消/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260723-天氣變差約會取消/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260723-天氣變差約會取消/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260723-天氣變差約會取消/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260723-天氣變差約會取消/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            }
+          ],
+          "final_src": "assets/20260723-天氣變差約會取消/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260723-%E5%A4%A9%E6%B0%A3%E8%AE%8A%E5%B7%AE%E7%B4%84%E6%9C%83%E5%8F%96%E6%B6%88/slide-2.jpg",
+          "heading": "那些「下週再約」最後變成了什麼",
+          "display_copy": "第一週：颱風，改天。\n第二週：加班，改天。\n第三週：天氣不好，改天。\n第四週：他的限動裡多了另一個人。\n\n【每一個「改天」，都是對方重新考慮你的機會。】\n\n資料來源：Winged App Dating Report, 2025；Mentor Research Institute",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260723-天氣變差約會取消/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260723-天氣變差約會取消/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260723-天氣變差約會取消/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260723-天氣變差約會取消/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260723-天氣變差約會取消/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": "assets/20260723-天氣變差約會取消/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260723-%E5%A4%A9%E6%B0%A3%E8%AE%8A%E5%B7%AE%E7%B4%84%E6%9C%83%E5%8F%96%E6%B6%88/slide-3.jpg",
+          "heading": "為什麼天氣讓你更想「等等再說」",
+          "display_copy": "壞天氣不只讓你不想出門——\n它讓你的大腦把「出去見人」\n歸類成【一項成本太高的任務】。\n\n攝氏 10–21 度：人體情緒最正向的溫度帶。\n低於這個區間，身體自動進入節能模式。\n陽光觸發血清素，主動社交意願跟著上升。\n\n資料來源：Guéguen, N., Social Influence, 2012；Psychology Today, 2025",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260723-天氣變差約會取消/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Youve Got Mail"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260723-天氣變差約會取消/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Youve Got Mail"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260723-天氣變差約會取消/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Youve Got Mail"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260723-天氣變差約會取消/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Youve Got Mail"
+            }
+          ],
+          "final_src": "assets/20260723-天氣變差約會取消/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260723-%E5%A4%A9%E6%B0%A3%E8%AE%8A%E5%B7%AE%E7%B4%84%E6%9C%83%E5%8F%96%E6%B6%88/slide-4.jpg",
+          "heading": "拖越久，你在對方心裡就越模糊",
+          "display_copy": "配對初期，你在對方心裡的重量接近於零。\n\n越快見面，ghosting 的機率越低。\n主動回覆 vs. 拖延數天才回：\n〖促成見面的機率差距高達 40–50%。〗\n\n「等天氣好」，是在把優勢一天一天送出去。\n\n資料來源：eHarmony Dating Advice；Checklovers Dating Statistics",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260723-天氣變差約會取消/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260723-天氣變差約會取消/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260723-天氣變差約會取消/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260723-天氣變差約會取消/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": "assets/20260723-天氣變差約會取消/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260723-%E5%A4%A9%E6%B0%A3%E8%AE%8A%E5%B7%AE%E7%B4%84%E6%9C%83%E5%8F%96%E6%B6%88/slide-5.jpg",
+          "heading": "Lava 的邏輯：見面才是開始",
+          "display_copy": "Lava 沒有文字聊天室。\n不是因為懶，\n是因為【對話拖越久，見面的機率越低】。\n\n我們把見面放在最前面——\n在你找到藉口之前，時間就已經約好了。\n\n壞天氣可以是背景，\n不應該是你們故事的結局。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260723-天氣變差約會取消/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260723-%E5%A4%A9%E6%B0%A3%E8%AE%8A%E5%B7%AE%E7%B4%84%E6%9C%83%E5%8F%96%E6%B6%88/slide-6.jpg",
+          "heading": "今天就約，不等天氣",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-07-27T11:28:23+08:00",
+      "candidates_since": "2026-07-24T21:17:46+08:00",
+      "image_credits": [
+        "第 2 張：《Friends》劇照，版權屬原權利方",
+        "第 3 張：《Suits》劇照，版權屬原權利方",
+        "第 4 張：《Youve Got Mail》劇照，版權屬原權利方",
+        "第 5 張：《Brooklyn Nine Nine》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude"
     }
   ]
 }

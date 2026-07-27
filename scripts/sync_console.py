@@ -565,8 +565,10 @@ def render_approved(args):
     rendered, skipped = [], []
     for pid, r in latest.items():
         p = posts.get(pid)
-        if not p or p.get("status") in ("scheduled", "published"):
+        if not p or p.get("status") == "published":
             continue
+        if p.get("status") == "scheduled" and all(s.get("public_url") for s in p["slides"] if s.get("candidates")):
+            continue  # 已排程且成品齊 → 不動；成品缺（重餵洗掉）→ 放行往下重渲染，否則 WF10 到點發不出去
         if getattr(args, "only", None) and pid != args.only:
             continue
         dec, scope = r.get("decision"), r.get("scope")
