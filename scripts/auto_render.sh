@@ -24,6 +24,11 @@ git pull --rebase --quiet origin main >>"$LOG" 2>&1 || { git rebase --abort >/de
 OUT=$(python3 scripts/sync_console.py render-approved 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $OUT" | grep -E "✓RENDERED|⏭|Error|Traceback" >>"$LOG"
 
+# 發佈對帳（ClickUp 發佈完成 → posts.json published）；.sync.json 無真 token 時內部自動略過
+REC=$(python3 scripts/sync_console.py reconcile-published 2>&1)
+echo "$REC" | grep -E "✓|published" >>"$LOG"
+echo "$REC" | grep -q "✓" && { git add -A; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
+
 if echo "$OUT" | grep -q "✓RENDERED"; then
   git add -A
   git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-render: 偵測到新審核/文案修改，重出成品" \
