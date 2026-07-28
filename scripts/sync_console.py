@@ -262,7 +262,7 @@ def reconcile_published(args):
             task = _clickup("GET", "/task/" + p["clickup_task_id"], token)
         except Exception as e:
             sys.stderr.write("  ! 查 ClickUp 卡 %s 失敗：%s\n" % (p["clickup_task_id"], e)); continue
-        if _norm((task.get("status") or {}).get("status")) == "已發布":
+        if _norm((task.get("status") or {}).get("status")) in ("已發布", "發布完成"):
             p["status"] = "published"
             p.setdefault("published_at", p.get("publish_at"))
             n += 1
