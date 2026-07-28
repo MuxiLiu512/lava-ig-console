@@ -240,6 +240,22 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": "claude"
+    },
+    {
+      "id": "R-ms4poznb",
+      "post_id": "20260724-SoftLaunch你的",
+      "ts": "2026-07-28T21:48:56+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "h",
+        "2": "a",
+        "3": "a",
+        "4": "a"
+      },
+      "scope": "base_image",
+      "feedback": "使用過多劇照，但劇照跟文案內容不相符、低關聯",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
