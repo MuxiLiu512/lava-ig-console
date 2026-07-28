@@ -52,18 +52,30 @@ def _topic_match(ntopic, name):
     if not a or not b:
         return False
     short, long = sorted([a, b], key=len)
+    if len(short) < 4:
+        return short == long   # 太短的主題只允許全等，防跨主題資料夾互吃
     return short[:6] in long or long[:6] in short
 
 
 def _still_label(fn):
-    """slide1-TheOffice-2.jpg → 'The Office'（駝峰拆詞）。取不到回 None。"""
+    """檔名 → (label, source_kind)。
+    slide1-TheOffice-2.jpg → ('The Office', None)；slide2-WM-EstherPerel-1.jpg → ('Esther Perel','WM')；
+    WM-EstherPerel-1.jpg（無 slide 標籤）→ ('Esther Perel','WM')。source_kind ∈ {WM,OV,OL,None}。"""
     m = re.match(r"slide-?\d+[-_ ]+(.+?)([-_ ]\d+)?\.\w+$", fn, re.I)
-    if not m:
-        return None
-    core = m.group(1)
+    if m:
+        core = m.group(1)
+    else:
+        m = re.match(r"((?:WM|OV|OL)-.+?)([-_ ]\d+)?\.\w+$", fn, re.I)
+        if not m:
+            return None, None
+        core = m.group(1)
+    sk = None
+    m2 = re.match(r"(?i)^(WM|OV|OL)[- ](.+)$", core)
+    if m2:
+        sk, core = m2.group(1).upper(), m2.group(2)
     core = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", core)      # HaveI → Have I
     core = re.sub(r"(?<=[A-Z])(?=[A-Z][a-z])", " ", core)  # IEver → I Ever
-    return core.replace("_", " ").strip() or None
+    return (core.replace("_", " ").strip() or None), sk
 
 
 def _slug(s):
@@ -132,7 +144,10 @@ def _flat_image(path, thresh=8.0):
     try:
         from PIL import Image, ImageStat
         im = Image.open(path).convert("RGB").resize((48, 48))
-        return max(ImageStat.Stat(im).stddev) < thresh
+        if max(ImageStat.Stat(im).stddev) < thresh:
+            return True
+        quads = [im.crop(b) for b in ((0, 0, 24, 24), (24, 0, 48, 24), (0, 24, 24, 48), (24, 24, 48, 48))]
+        return all(max(ImageStat.Stat(q).stddev) < 6.0 for q in quads)
     except Exception:
         return True
 
@@ -397,27 +412,34 @@ def _collect_slide_imgs(dirs, kind, prune=True):
     """從資料夾（遞迴）蒐集 slide-N 圖片 → {n: [(path, label)]}。
     prune=True 時剔除近純色破圖（生圖失敗）；重建舊貼文 cid 對照時須 prune=False 以復刻原始序列。"""
     out = {}
-    for d in dirs:
+    seen_names = set()   # 跨輪資料夾同名圖去重（F6）
+    for d in sorted(dirs):
         for f in sorted(glob.glob(os.path.join(d, "**", "*"), recursive=True)):
             fn = os.path.basename(f)
             if not fn.lower().endswith(IMG_EXT):
                 continue
-            mm = re.search(r"slide-?(\d+)", fn, re.I)
-            if not mm:
+            if fn.lower() in seen_names:
                 continue
+            mm = re.search(r"slide-?(\d+)", fn, re.I)
             if prune and _flat_image(f):
                 sys.stderr.write("  ✂ 剔除疑似破圖（近純色）：%s\n" % fn)
                 continue
-            label = _still_label(fn) if kind == "still" else None
-            out.setdefault(int(mm.group(1)), []).append((f, label))
+            label, sk = (_still_label(fn) if kind == "still" else (None, None))
+            seen_names.add(fn.lower())
+            # 無 slide 標籤的新來源檔（WM-/OV-/OL-）進 0 號池，之後輪流分配到內容 slides
+            key = int(mm.group(1)) if mm else (0 if sk else None)
+            if key is None:
+                continue
+            out.setdefault(key, []).append((f, label, sk))
     return out
 
 
 def _scan_dirs(root, ntopic, prune=True):
     """依主題掃 Drive 產出/ 的底圖與劇照資料夾 → (gen, still) 兩個 {n: [(path,label)]}。"""
-    subdirs = [d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d)]
+    subdirs = sorted(d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d))
     base_dirs = [d for d in subdirs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
-    still_dirs = [d for d in subdirs if "劇照" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
+    _SK = ("劇照", "人物", "書封", "參考圖")
+    still_dirs = [d for d in subdirs if any(k in os.path.basename(d) for k in _SK) and _topic_match(ntopic, os.path.basename(d))]
     return _collect_slide_imgs(base_dirs, "generated", prune), _collect_slide_imgs(still_dirs, "still", prune)
 
 
@@ -440,7 +462,7 @@ def from_drive(args):
             jsons = [f for f in jsons if args.topic in os.path.basename(f)]
         if not jsons:
             sys.exit("✗ 產出/ 內找不到符合的文案 JSON" + ("（topic=%s）" % args.topic if args.topic else ""))
-        datekey = lambda f: (re.match(r"(\d{6,8})", os.path.basename(f)) or [None, "0"])[1] if re.match(r"(\d{6,8})", os.path.basename(f)) else "0"
+        datekey = lambda f: (lambda mm: ("0" if not mm else (mm.group(1) if len(mm.group(1)) == 8 else "20" + mm.group(1))))(re.match(r"(\d{6,8})", os.path.basename(f)))
         jf = sorted(jsons, key=lambda f: (datekey(f), os.path.getmtime(f)))[-1]
         base = os.path.basename(jf)
     # 雙寫手比稿：找同日期同主題的 -GPT / -Claude 兩版（預設顯示 GPT 版）
@@ -474,16 +496,25 @@ def from_drive(args):
     sys.stderr.write("→ 底圖 slide 數 %d、劇照 slide 數 %d\n" % (len(gen), len(still)))
 
     slides = []
+    pool = list(still.get(0, []))   # 無 slide 標籤的新來源（WM/OV/OL）→ 輪流分配到內容 slides
+    content_ns = [s.get("index") for s in data.get("slides", []) if (s.get("role") or "") != "CTA"]
+    pool_assign = {}
+    for i, item in enumerate(pool):
+        tgt = content_ns[i % max(1, len(content_ns))] if content_ns else 1
+        pool_assign.setdefault(tgt, []).append(item)
     for s in data.get("slides", []):
         n = s.get("index")
         cands = []
-        for path, _ in gen.get(n, []):
-            cands.append({"src": path, "kind": "generated"})
-        for path, label in still.get(n, []):
+        # 劇照/新來源優先（原本 gen 在前導致 CID 12 格被生圖吃光、新來源被截斷）
+        for path, label, sk in (still.get(n, []) + pool_assign.get(n, [])):
             c = {"src": path, "kind": "still"}
             if label:
                 c["source_label"] = label
+            if sk:
+                c["source_kind"] = sk
             cands.append(c)
+        for path, *_ in gen.get(n, []):
+            cands.append({"src": path, "kind": "generated"})
         final = None
         if args.finals_dir:
             for ext in (".png", ".jpg", ".webp"):
@@ -527,8 +558,8 @@ def _rebuild_sources(p):
     srcs = {}
     for s in p.get("slides", []):
         n = s["n"]
-        cand_paths = ([(path, "generated") for path, _ in gen.get(n, [])]
-                      + [(path, "still") for path, _ in still.get(n, [])])
+        cand_paths = ([(path, "generated") for path, *_ in gen.get(n, [])]
+                      + [(path, "still") for path, *_ in still.get(n, [])])
         built = []
         for i, (path, kind) in enumerate(cand_paths):
             if not os.path.exists(path):
@@ -548,7 +579,7 @@ def _find_draft_json(ntopic):
              and "易讀版" not in os.path.basename(f) and _topic_match(ntopic, os.path.basename(f))]
     if not jsons:
         return None
-    datekey = lambda f: (re.match(r"(\d{6,8})", os.path.basename(f)) or [None, "0"])[1] if re.match(r"(\d{6,8})", os.path.basename(f)) else "0"
+    datekey = lambda f: (lambda mm: ("0" if not mm else (mm.group(1) if len(mm.group(1)) == 8 else "20" + mm.group(1))))(re.match(r"(\d{6,8})", os.path.basename(f)))
     return sorted(jsons, key=lambda f: (datekey(f), os.path.getmtime(f)))[-1]
 
 
@@ -647,10 +678,17 @@ def render_approved(args):
             cand = next((c for c in s["candidates"] if c.get("cid") == cid), None)
             if cand and cand.get("kind") == "still" and cand.get("source_label"):
                 lb = cand["source_label"]
-                if lb.startswith("WM "):       # Wikipedia/Wikimedia 人物照（自由授權）
-                    credits[n] = "圖片來源：Wikimedia Commons（%s）" % lb[3:]
-                elif lb.startswith("OL "):     # Open Library 書封
-                    credits[n] = "圖片來源：Open Library 書封（%s）" % lb[3:]
+                sk = cand.get("source_kind")
+                if not sk:
+                    m3 = re.match(r"(?i)^(WM|OV|OL)[- ](.+)$", lb)
+                    if m3:
+                        sk, lb = m3.group(1).upper(), m3.group(2)
+                if sk == "WM":
+                    credits[n] = "圖片來源：Wikimedia Commons（%s，自由授權）" % lb
+                elif sk == "OL":
+                    credits[n] = "圖片來源：Open Library 書封（%s）" % lb
+                elif sk == "OV":
+                    credits[n] = "圖片來源：Openverse 創用 CC（%s）" % lb
                 else:
                     credits[n] = "圖片來源：《%s》劇照，版權屬原權利方" % lb
             chosen_paths[str(n)] = os.path.abspath(path)

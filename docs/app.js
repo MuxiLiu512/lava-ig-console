@@ -224,7 +224,10 @@ function renderDetail(pid) {
   app.appendChild(el("h2", null, esc(p.topic) + ` <span class="muted small">v${p.version}</span>`));
 
   // IG Mockup
-  app.appendChild(buildMockup(p, choice));
+  const mockWrap = el("div");
+  mockWrap.appendChild(buildMockup(p, choice));
+  app.appendChild(mockWrap);
+  window._refreshMockup = () => { mockWrap.innerHTML = ""; mockWrap.appendChild(buildMockup(p, choice)); };
 
   // 文案編輯（改動 → copy_edits.json → 迭代 harness 吸收語氣）
   app.appendChild(buildCopyEditor(p));
@@ -263,18 +266,24 @@ function slideBlock(p, s, choice) {
     cands.appendChild(none);
   }
   s.candidates.forEach(cd => {
+    const si = srcInfo(cd);
     const cc = el("div", "cand" + (choice[s.n] === cd.cid ? " sel" : ""));
     const iw = el("div", "imwrap"); const im = img(cd.src); iw.appendChild(im);
-    iw.appendChild(el("div", "chk", "✓")); cc.appendChild(iw);
+    iw.appendChild(el("div", "chk", "✓"));
+    const zm = el("div", "zoom", "🔍");
+    zm.onclick = (e) => { e.stopPropagation(); showLightbox(cd.src, si.line); };
+    iw.appendChild(zm);
+    cc.appendChild(iw);
     const meta = el("div", "meta");
-    meta.innerHTML = `<span class="tag ${cd.kind === "still" ? "still" : "gen"}">${cd.kind === "still" ? "劇照" : "生成"}</span><span class="tiny muted">${cd.cid.toUpperCase()}</span>`;
+    meta.innerHTML = `<span class="tag ${si.cls}">${si.tag}</span>`;
     cc.appendChild(meta);
-    if (cd.source_label) cc.appendChild(el("div", "src", "出處：" + esc(cd.source_label)));
+    cc.appendChild(el("div", "src", esc(si.line)));
     cc.onclick = () => {
       choice[s.n] = cd.cid;
       // 就地更新選取狀態，不整頁重繪（避免長列表點選後跳回頂端）
       [...cands.children].forEach(x => x.classList.remove("sel"));
       cc.classList.add("sel");
+      if (window._refreshMockup) window._refreshMockup();   // 預覽即時跟上選圖
     };
     cands.appendChild(cc);
   });
@@ -320,6 +329,24 @@ function actionBar(p, choice) {
 function disableBar(bar, on) { bar.querySelectorAll("button").forEach(b => b.disabled = on); }
 
 // ── 文案編輯 ─────────────────────────────────────────────────────────
+// 候選圖來源 → 人話標籤（kind + source_kind/前綴 → tag/說明行）
+function srcInfo(cd) {
+  let lb = cd.source_label || "";
+  let sk = cd.source_kind || "";
+  const m = !sk && /^(WM|OV|OL)[- ](.+)$/i.exec(lb);
+  if (m) { sk = m[1].toUpperCase(); lb = m[2]; }
+  if (sk === "WM") return { tag: "Wiki", cls: "wm", line: (lb ? lb + " · " : "") + "Wikimedia 自由授權" };
+  if (sk === "OV") return { tag: "CC圖庫", cls: "ov", line: (lb ? lb + " · " : "") + "Openverse 創用 CC" };
+  if (sk === "OL") return { tag: "書封", cls: "ol", line: (lb ? lb + " · " : "") + "Open Library" };
+  if (cd.kind === "still") return { tag: "劇照", cls: "still", line: lb ? "《" + lb + "》" : "劇照（來源未標）" };
+  return { tag: "生成", cls: "gen", line: "AI 生成 · Higgsfield" };
+}
+function showLightbox(src, caption) {
+  const ov = el("div", "lightbox");
+  ov.innerHTML = `<img src="${src}"><div class="lb-cap">${esc(caption || "")}（點任意處關閉）</div>`;
+  ov.onclick = () => ov.remove();
+  document.body.appendChild(ov);
+}
 const COPY_CHOICE = {};   // 每篇當前顯示/選定的文案版本（gpt/claude）
 function copyChoiceOf(p) {
   const v = p.copy_versions || {};
