@@ -293,6 +293,8 @@ def _build_and_write(m):
                 sys.stderr.write("  ! slide %d 候選超過 %d 張，其餘截斷（清舊資料夾可減量）\n" % (s["n"], len(CID))); break
             if not os.path.exists(c["src"]):
                 sys.stderr.write("  ! 缺候選圖 %s\n" % c["src"]); continue
+            if _flat_image(c["src"]):
+                sys.stderr.write("  ↩ 剔除空圖/破圖候選：%s\n" % os.path.basename(c["src"])); continue
             out = make_thumb(c["src"], os.path.join(ASSETS, pid, "slide-%d%s" % (s["n"], CID[i])))
             entry = {"cid": CID[i], "src": os.path.relpath(out, REPO).replace(os.sep, "/"), "kind": c.get("kind", "generated")}
             if c.get("source_label"):
