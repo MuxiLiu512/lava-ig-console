@@ -223,6 +223,23 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": "claude"
+    },
+    {
+      "id": "R-ms4pldg6",
+      "post_id": "20260725-大稻埕煙火約會指南人擠人",
+      "ts": "2026-07-28T21:46:07+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "f",
+        "3": "b",
+        "4": "a",
+        "5": "e"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
