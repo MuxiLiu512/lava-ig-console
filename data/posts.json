@@ -470,221 +470,6 @@
       "published_at": "2026-07-23T12:01:16+08:00"
     },
     {
-      "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-      "topic": "母胎單身的人，其實比你更懂得「選擇」伴侶？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86ey89y51",
-      "created_at": null,
-      "caption": "手機裡有二十幾個對話框。每一個都聊過天氣、聊過工作、聊過「最近在幹嘛」。然後就沒有然後了。不是沒有機會，是每一次都卡在同一個地方，聊天聊到一半，不知道怎麼推進，對方也沒有動作，然後兩個人就這樣，繼續在各自的畫面上顯示「已讀」。這不是你的問題。這是一個結構性的陷阱。\n\n大多數交友 App 的邏輯是：先聊天，聊到有感覺，再約出來。但對啟動門檻高的人來說，這個流程等於：先聊天，聊到不知道怎麼推進，然後消失。Lava 的邏輯不一樣。我們直接跳過無限期的聊天暖身，雙方確認見面意願之後，App 幫你安排，你只需要出現。不是逼你，是幫你把「怎麼開始」這件事，從你的待辦清單裡拿走。第一步不需要完美，第一步只需要發生。\n\n#母胎單身大作戰2 #母胎單身 #交友軟體 #Lava交友 #台灣交友 #線下約會 #感情 #戀愛心理學 #第一步 #不聊天的交友軟體",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1e.jpg",
-              "kind": "still",
-              "source_label": "The Office"
-            }
-          ],
-          "final_src": null,
-          "heading": "你不是找不到人，你只是從來沒有「真的開始」",
-          "display_copy": "手機裡有二十幾個對話框。\n每一個都聊到一半，\n然後就【沒有然後了】。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2b.jpg",
-              "kind": "still",
-              "source_label": "Never Have I Ever"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2c.jpg",
-              "kind": "still",
-              "source_label": "Never Have I Ever"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2d.jpg",
-              "kind": "still",
-              "source_label": "Never Have I Ever"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2e.jpg",
-              "kind": "still",
-              "source_label": "Never Have I Ever"
-            }
-          ],
-          "final_src": null,
-          "heading": "母胎單身的人，不是不想談戀愛",
-          "display_copy": "他們不是太挑，\n是【每一次都像是第一次】。\n每一個「不知道怎麼開口」，\n都比上一次更重。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3b.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3c.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3d.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3e.jpg",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            }
-          ],
-          "final_src": null,
-          "heading": "研究說：母胎單身者的問題不是「選擇標準」，是「啟動門檻」",
-          "display_copy": "「見面」對他們來說不只是見面，\n是一次【可能被拒絕的暴露】。\n\n所以他們繼續聊天——\n聊天是安全的，\n【但安全讓你原地踏步】。\n\n資料來源：Boyes, A.（2013）. Action Initiation in Anxiety and Avoidance. Psychology Today.",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4e.jpg",
-              "kind": "still",
-              "source_label": "Suits"
-            }
-          ],
-          "final_src": null,
-          "heading": "但這裡有個反轉：他們其實更懂得「選擇」",
-          "display_copy": "他們從來沒有「反正試試看」，\n每一次考慮都是【真的在考慮】。\n\n卡關的從來不是「要不要」，\n是【怎麼開始】。\n\n資料來源：Apostolou, M. et al.（2020）. Why people remain single. Personality and Individual Differences.",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5a.jpg",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5c.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5d.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5e.jpg",
-              "kind": "still",
-              "source_label": "Friends"
-            }
-          ],
-          "final_src": null,
-          "heading": "Lava 的設計，就是為了打破這個卡關",
-          "display_copy": "Lava 直接跳過無限期聊天——\n確認意願，\nApp 幫你安排見面。\n\n【第一步不需要完美，\n第一步只需要發生】。",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "準備好走出第一步了嗎？",
-          "display_copy": "你已經想清楚了。\n你只是需要一個\n【讓「開始」變得容易的地方】。\n\n下載 Lava，直接見面。\n🔗 下載連結在限動"
-        }
-      ]
-    },
-    {
       "id": "20260716-見面卻尷尬到想逃",
       "topic": "為什麼你在 app 上聊得來，見面卻尷尬到想逃？神經科學告訴你：人類的大腦根本不是為了「文字交友」而設計的",
       "version": 1,
@@ -1776,6 +1561,221 @@
         "第 5 張：《Brooklyn Nine Nine》劇照，版權屬原權利方"
       ],
       "copy_choice": "claude"
+    },
+    {
+      "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "topic": "母胎單身的人，其實比你更懂得「選擇」伴侶？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ey89y51",
+      "created_at": null,
+      "caption": "手機裡有二十幾個對話框。每一個都聊過天氣、聊過工作、聊過「最近在幹嘛」。然後就沒有然後了。不是沒有機會，是每一次都卡在同一個地方，聊天聊到一半，不知道怎麼推進，對方也沒有動作，然後兩個人就這樣，繼續在各自的畫面上顯示「已讀」。這不是你的問題。這是一個結構性的陷阱。\n\n大多數交友 App 的邏輯是：先聊天，聊到有感覺，再約出來。但對啟動門檻高的人來說，這個流程等於：先聊天，聊到不知道怎麼推進，然後消失。Lava 的邏輯不一樣。我們直接跳過無限期的聊天暖身，雙方確認見面意願之後，App 幫你安排，你只需要出現。不是逼你，是幫你把「怎麼開始」這件事，從你的待辦清單裡拿走。第一步不需要完美，第一步只需要發生。\n\n#母胎單身大作戰2 #母胎單身 #交友軟體 #Lava交友 #台灣交友 #線下約會 #感情 #戀愛心理學 #第一步 #不聊天的交友軟體",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": null,
+          "heading": "你不是找不到人，你只是從來沒有「真的開始」",
+          "display_copy": "手機裡有二十幾個對話框。\n每一個都聊到一半，\n然後就【沒有然後了】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Never Have I Ever"
+            }
+          ],
+          "final_src": null,
+          "heading": "母胎單身的人，不是不想談戀愛",
+          "display_copy": "他們不是太挑，\n是【每一次都像是第一次】。\n每一個「不知道怎麼開口」，\n都比上一次更重。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "研究說：母胎單身者的問題不是「選擇標準」，是「啟動門檻」",
+          "display_copy": "「見面」對他們來說不只是見面，\n是一次【可能被拒絕的暴露】。\n\n所以他們繼續聊天——\n聊天是安全的，\n【但安全讓你原地踏步】。\n\n資料來源：Boyes, A.（2013）. Action Initiation in Anxiety and Avoidance. Psychology Today.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": null,
+          "heading": "但這裡有個反轉：他們其實更懂得「選擇」",
+          "display_copy": "他們從來沒有「反正試試看」，\n每一次考慮都是【真的在考慮】。\n\n卡關的從來不是「要不要」，\n是【怎麼開始】。\n\n資料來源：Apostolou, M. et al.（2020）. Why people remain single. Personality and Individual Differences.",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5a.jpg",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Friends"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的設計，就是為了打破這個卡關",
+          "display_copy": "Lava 直接跳過無限期聊天——\n確認意願，\nApp 幫你安排見面。\n\n【第一步不需要完美，\n第一步只需要發生】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "準備好走出第一步了嗎？",
+          "display_copy": "你已經想清楚了。\n你只是需要一個\n【讓「開始」變得容易的地方】。\n\n下載 Lava，直接見面。\n🔗 下載連結在限動"
+        }
+      ]
     }
   ]
 }
