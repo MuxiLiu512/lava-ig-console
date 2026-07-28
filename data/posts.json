@@ -1571,7 +1571,7 @@
       "status": "awaiting_review",
       "clickup_task_id": "86ey89y51",
       "created_at": null,
-      "caption": "手機裡有二十幾個對話框。每一個都聊過天氣、聊過工作、聊過「最近在幹嘛」。然後就沒有然後了。不是沒有機會，是每一次都卡在同一個地方，聊天聊到一半，不知道怎麼推進，對方也沒有動作，然後兩個人就這樣，繼續在各自的畫面上顯示「已讀」。這不是你的問題。這是一個結構性的陷阱。\n\n大多數交友 App 的邏輯是：先聊天，聊到有感覺，再約出來。但對啟動門檻高的人來說，這個流程等於：先聊天，聊到不知道怎麼推進，然後消失。Lava 的邏輯不一樣。我們直接跳過無限期的聊天暖身，雙方確認見面意願之後，App 幫你安排，你只需要出現。不是逼你，是幫你把「怎麼開始」這件事，從你的待辦清單裡拿走。第一步不需要完美，第一步只需要發生。\n\n#母胎單身大作戰2 #母胎單身 #交友軟體 #Lava交友 #台灣交友 #線下約會 #感情 #戀愛心理學 #第一步 #不聊天的交友軟體",
+      "caption": "一項涵蓋約1萬名速配參與者的研究顯示，參與者平均對40%的對象說「yes」，女性為34%、男性為49%。多數人的篩選可能比想像中寬鬆；約會前反覆看菜單、準備話題的人，也可能把每次靠近都看得格外慎重。\n\n選擇權一直在你手上。你可以走進真實相處，也可以在感到不舒服時停下；每次見面後，記下讓你放鬆、好奇或退縮的瞬間。Lava讓認識從見面開始，讓經驗逐漸取代腦內推演，你也會慢慢累積自己的答案。\n\n#LavaDating #母胎單身 #第一次約會 #戀愛心理 #伴侶選擇 #交友軟體 #不聊天的交友軟體",
       "topic_type": "A-知識型",
       "slides": [
         {
@@ -1606,11 +1606,35 @@
               "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1e.jpg",
               "kind": "still",
               "source_label": "The Office"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1h.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-1i.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
             }
           ],
           "final_src": null,
-          "heading": "你不是找不到人，你只是從來沒有「真的開始」",
-          "display_copy": "手機裡有二十幾個對話框。\n每一個都聊到一半，\n然後就【沒有然後了】。",
+          "heading": "一萬名速配者，平均對四成對象說 yes",
+          "display_copy": "約1萬名速配參與者的研究顯示，參與者對40%的對象說「yes」；女性34%、男性49%。多數人的篩選可能比想像中寬鬆。反覆看菜單、寫話題的人，也可能把〖每次靠近都看得很重〗。\n資料來源：Personality and Social Psychology Review（2021）",
           "default_cid": "a"
         },
         {
@@ -1645,11 +1669,35 @@
               "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2e.jpg",
               "kind": "still",
               "source_label": "Never Have I Ever"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2h.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-2i.jpg",
+              "kind": "still",
+              "source_label": "Better Late Than Single"
             }
           ],
           "final_src": null,
-          "heading": "母胎單身的人，不是不想談戀愛",
-          "display_copy": "他們不是太挑，\n是【每一次都像是第一次】。\n每一個「不知道怎麼開口」，\n都比上一次更重。",
+          "heading": "你的參照系，正從第一次見面長出來",
+          "display_copy": "「母胎單身」源自韓文「모태솔로」，意思是年齡等於單身年資。2025年《母胎單身戀愛大作戰》中，近30歲的珉鴻提到：別人在十幾歲、二十出頭摸索喜歡什麼，他們現在才開始。每次相遇，都在【從零建立參照系】。\n資料來源：Netflix節目；FarHugs心理師分析",
           "default_cid": "a"
         },
         {
@@ -1684,11 +1732,35 @@
               "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3e.jpg",
               "kind": "still",
               "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3f.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3g.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3h.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-3i.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
             }
           ],
           "final_src": null,
-          "heading": "研究說：母胎單身者的問題不是「選擇標準」，是「啟動門檻」",
-          "display_copy": "「見面」對他們來說不只是見面，\n是一次【可能被拒絕的暴露】。\n\n所以他們繼續聊天——\n聊天是安全的，\n【但安全讓你原地踏步】。\n\n資料來源：Boyes, A.（2013）. Action Initiation in Anxiety and Avoidance. Psychology Today.",
+          "heading": "關係開始前進，就會更難停下來",
+          "display_copy": "2021年，Joel與MacDonald回顧多領域文獻，提出「關係推進偏誤」：人們更容易讓關係前進，停止或退出較困難。這項綜述描述的是維持現狀的傾向，【無法證明有經驗的人更會選】。\n資料來源：Personality and Social Psychology Review",
           "default_cid": "a"
         },
         {
@@ -1723,11 +1795,35 @@
               "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4e.jpg",
               "kind": "still",
               "source_label": "Suits"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Cherry Magic Thirty Yearsof Virginity Can Make Youa Wizard"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Cherry Magic Thirty Yearsof Virginity Can Make Youa Wizard"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4h.jpg",
+              "kind": "still",
+              "source_label": "Cherry Magic Thirty Yearsof Virginity Can Make Youa Wizard"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-4i.jpg",
+              "kind": "still",
+              "source_label": "Cherry Magic Thirty Yearsof Virginity Can Make Youa Wizard"
             }
           ],
           "final_src": null,
-          "heading": "但這裡有個反轉：他們其實更懂得「選擇」",
-          "display_copy": "他們從來沒有「反正試試看」，\n每一次考慮都是【真的在考慮】。\n\n卡關的從來不是「要不要」，\n是【怎麼開始】。\n\n資料來源：Apostolou, M. et al.（2020）. Why people remain single. Personality and Individual Differences.",
+          "heading": "第一次見面，只決定要不要有第二次",
+          "display_copy": "有人約會過許多次，坐下來仍反覆檢查每句話；也有人把一次吃飯想成唯一機會，忙著避免失誤，忘了感受相處。把任務縮小：我能放鬆嗎、我還想了解他嗎、界線有被尊重嗎？【一次見面，只需要回答要不要再見一次】。",
           "default_cid": "a"
         },
         {
@@ -1762,11 +1858,35 @@
               "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5e.jpg",
               "kind": "still",
               "source_label": "Friends"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5h.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260711-母胎單身其實比你更懂得選擇伴侶/slide-5i.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
             }
           ],
           "final_src": null,
-          "heading": "Lava 的設計，就是為了打破這個卡關",
-          "display_copy": "Lava 直接跳過無限期聊天——\n確認意願，\nApp 幫你安排見面。\n\n【第一步不需要完美，\n第一步只需要發生】。",
+          "heading": "先累積感受，再決定誰適合留下",
+          "display_copy": "選擇權一直在你手上。你可以走進真實相處，也可以在感到不舒服時停下；每次見面後，記下讓你放鬆、好奇或退縮的瞬間。Lava讓認識從見面開始，讓〖見面成為樣本，承諾留給更後面〗，你會逐漸累積自己的答案。",
           "default_cid": "a"
         },
         {
@@ -1774,10 +1894,72 @@
           "role": "CTA",
           "candidates": [],
           "final_src": null,
-          "heading": "準備好走出第一步了嗎？",
-          "display_copy": "你已經想清楚了。\n你只是需要一個\n【讓「開始」變得容易的地方】。\n\n下載 Lava，直接見面。\n🔗 下載連結在限動"
+          "heading": "Lava・不聊天的交友軟體",
+          "display_copy": "CTA 公版"
         }
-      ]
+      ],
+      "writer_model": "gpt-5.6",
+      "copy_versions": {
+        "claude": {
+          "caption": "你打開交友 App，滑了三十個人，沒有一個按喜歡。不是沒有人看起來還可以，而是你腦袋裡有一個聲音一直在說：「就這樣？」然後你關掉 App，告訴自己你太挑了。但你有沒有想過，「挑」本身就是一種能力，而你練習這個能力，比大多數人還要長？\n\n心理學者 Samantha Joel 與 Geoff MacDonald 在 2021 年《Personality and Social Psychology Review》的研究指出，大多數人在第一次見面時其實並不會仔細篩選，他們傾向先廣撒網，等互動之後才慢慢評估。但母胎單身者的狀況往往相反：你在見面之前就已經想了很多，對每一次出現的人都認真對待，甚至把它看得太重，重到讓自己緊張。這不是缺點，這是你唯一會的方式，因為你從來沒有可以偷懶的舊經驗，你只能每次都全力以赴。Lava 設計線下優先的見面邏輯，不是要你更快決定，而是讓每一次見面的重量，變成你真正認識一個人的開始。\n\n#母胎單身 #交友心理學 #單身不是病 #台灣單身 #伴侶選擇 #Lava交友 #不聊天的交友軟體 #線下約會 #戀愛研究 #單身族",
+          "slides": {
+            "1": {
+              "heading": "從來沒交過男女朋友，不代表你不懂愛",
+              "display_copy": "你打開交友 App，\n滑了三十個人，\n沒有一個按喜歡。\n\n不是沒人還可以——\n而是你腦袋裡有個聲音一直說：\n\n〖「就這樣？」〗\n\n你告訴自己你太挑了。\n但挑，其實是一種能力。\n而你練習它，比大多數人還要長。"
+            },
+            "2": {
+              "heading": "每一次見面，都像是第一次上場",
+              "display_copy": "朋友說：「就輕鬆聊就好。」\n\n但你沒有【「上次」】可以參考——\n沒有一段舊戀情告訴你，\n你習慣怎麼開始，\n你在哪一刻會安心，\n你對哪種節奏最自在。\n\n所有人用過去的經驗找模式。\n\n你，是從零開始【建立自己的標準】。\n\n這不是缺陷。這是你唯一走過的路。"
+            },
+            "3": {
+              "heading": "「太挑剔」不是缺點，研究說它是你的第一反應",
+              "display_copy": "Apostolou 等人，2020 年，\n648 名單身者，92 種原因——\n\n排名最前的：【「太挑剔」】。\n\n但 2025 年同領域研究，\n測量 340 名單身者後發現：\n\n自稱很挑 ≠ 行為很挑。\n\n自稱挑剔的人，\n對交友檔案的實際評分反而更寬鬆。\n\n知道自己要什麼，\n和【用那個標準去選】，是兩件事。\n\n資料來源：Apostolou et al., Frontiers in Psychology, 2020；Archives of Sexual Behavior, Springer, 2025"
+            },
+            "4": {
+              "heading": "台灣 25–39 歲，三個男生只有一個結婚了",
+              "display_copy": "台灣 25–39 歲男性，\n【每三個人，只有一個已婚】。\n\n未婚率：67.07%。\n（2024 年內政部統計）\n\n三十年前，25–44 歲未婚率是 21%。\n現在：43%。翻了一倍。\n\n56% 的未婚族其實【想結婚】——\n最大障礙不是不想，\n是「找不到對象」。\n\n不是不選，是不知道怎麼開始選。\n\n資料來源：內政部婚姻狀況統計，2024；主計總處人口普查；今周刊，2023.03.30"
+            },
+            "5": {
+              "heading": "你把見面看得很重，這件事本身就是答案",
+              "display_copy": "研究發現，多數人第一次見面\n根本不會仔細篩選——\n先廣撒網，之後互動才慢慢評估。\n\n但你不一樣。\n\n你見面前就已經想了很多，\n每一次都【認真對待】，\n重到讓自己緊張。\n\n這不是缺點。\n這是你唯一會的方式——\n因為你沒有可以偷懶的舊經驗。\n\n〖每次都全力以赴，才是真正的選擇。〗\n\n資料來源：Joel & MacDonald, Personality and Social Psychology Review, 2021"
+            },
+            "6": {
+              "heading": "Lava｜不聊天的交友軟體",
+              "display_copy": "CTA 公版"
+            }
+          }
+        },
+        "gpt": {
+          "caption": "一項涵蓋約1萬名速配參與者的研究顯示，參與者平均對40%的對象說「yes」，女性為34%、男性為49%。多數人的篩選可能比想像中寬鬆；約會前反覆看菜單、準備話題的人，也可能把每次靠近都看得格外慎重。\n\n選擇權一直在你手上。你可以走進真實相處，也可以在感到不舒服時停下；每次見面後，記下讓你放鬆、好奇或退縮的瞬間。Lava讓認識從見面開始，讓經驗逐漸取代腦內推演，你也會慢慢累積自己的答案。\n\n#LavaDating #母胎單身 #第一次約會 #戀愛心理 #伴侶選擇 #交友軟體 #不聊天的交友軟體",
+          "slides": {
+            "1": {
+              "heading": "一萬名速配者，平均對四成對象說 yes",
+              "display_copy": "約1萬名速配參與者的研究顯示，參與者對40%的對象說「yes」；女性34%、男性49%。多數人的篩選可能比想像中寬鬆。反覆看菜單、寫話題的人，也可能把〖每次靠近都看得很重〗。\n資料來源：Personality and Social Psychology Review（2021）"
+            },
+            "2": {
+              "heading": "你的參照系，正從第一次見面長出來",
+              "display_copy": "「母胎單身」源自韓文「모태솔로」，意思是年齡等於單身年資。2025年《母胎單身戀愛大作戰》中，近30歲的珉鴻提到：別人在十幾歲、二十出頭摸索喜歡什麼，他們現在才開始。每次相遇，都在【從零建立參照系】。\n資料來源：Netflix節目；FarHugs心理師分析"
+            },
+            "3": {
+              "heading": "關係開始前進，就會更難停下來",
+              "display_copy": "2021年，Joel與MacDonald回顧多領域文獻，提出「關係推進偏誤」：人們更容易讓關係前進，停止或退出較困難。這項綜述描述的是維持現狀的傾向，【無法證明有經驗的人更會選】。\n資料來源：Personality and Social Psychology Review"
+            },
+            "4": {
+              "heading": "第一次見面，只決定要不要有第二次",
+              "display_copy": "有人約會過許多次，坐下來仍反覆檢查每句話；也有人把一次吃飯想成唯一機會，忙著避免失誤，忘了感受相處。把任務縮小：我能放鬆嗎、我還想了解他嗎、界線有被尊重嗎？【一次見面，只需要回答要不要再見一次】。"
+            },
+            "5": {
+              "heading": "先累積感受，再決定誰適合留下",
+              "display_copy": "選擇權一直在你手上。你可以走進真實相處，也可以在感到不舒服時停下；每次見面後，記下讓你放鬆、好奇或退縮的瞬間。Lava讓認識從見面開始，讓〖見面成為樣本，承諾留給更後面〗，你會逐漸累積自己的答案。"
+            },
+            "6": {
+              "heading": "Lava・不聊天的交友軟體",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-07-28T17:31:10+08:00"
     }
   ]
 }
