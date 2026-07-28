@@ -21,6 +21,10 @@ trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 cd "$REPO" || exit 0
 git pull --rebase --quiet origin main >>"$LOG" 2>&1 || { git rebase --abort >/dev/null 2>&1; exit 0; }
 
+# 入料：在製中卡的新草稿自動餵進操控室（每輪最多 2 張，避免單輪過長）
+ING=$(python3 scripts/sync_console.py ingest-new --limit 2 2>&1)
+echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|⏭ 餵入|Error" >>"$LOG"
+
 OUT=$(python3 scripts/sync_console.py render-approved 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $OUT" | grep -E "✓RENDERED|⏭|Error|Traceback" >>"$LOG"
 
@@ -29,7 +33,7 @@ REC=$(python3 scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add -A; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
-if echo "$OUT" | grep -q "✓RENDERED"; then
+if echo "$OUT$ING" | grep -qE "✓RENDERED|✓ posts"; then
   git add -A
   git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-render: 偵測到新審核/文案修改，重出成品" \
     -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1

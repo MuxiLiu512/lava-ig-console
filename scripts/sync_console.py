@@ -795,6 +795,54 @@ def archive_data(args):
           % (len(old), len(cold), trimmed, days))
 
 
+# ── 入料哨兵：ClickUp 在製中卡 × Drive 草稿 → 自動餵進 posts.json（零 AI）──
+def ingest_new(args):
+    """掃「在製中」且名為 IG貼文｜、尚未在 posts.json 的卡：Drive 有草稿就 from-drive 餵入。
+    取代 Claude feed Part A 的機械部分；哨兵每 10 分呼叫（--limit 控制單輪量）。"""
+    import urllib.parse
+    token = _read_sync().get("clickup_token")
+    if not token or not token.isascii():
+        print("缺 clickup_token，略過入料"); return
+    root = DRIVE_PRODUCE
+    if not os.path.isdir(root):
+        print("Drive 未掛載，略過入料"); return
+    known = {p.get("clickup_task_id") for p in load("posts.json").get("posts", [])}
+    try:
+        tasks = _clickup("GET", "/list/901819351278/task?" +
+                         urllib.parse.urlencode({"statuses[]": "在製中"}), token).get("tasks", [])
+    except Exception as e:
+        print("! ClickUp 查詢失敗：%s" % e); return
+    todo = [t for t in tasks if t["id"] not in known
+            and (t.get("name") or "").startswith("IG貼文｜")
+            and "端到端測試" not in (t.get("name") or "")]
+    fed = 0
+    for t in todo:
+        if fed >= (args.limit or 3):
+            break
+        topic_full = t["name"].split("｜", 1)[1]
+        nt = _norm_topic(topic_full)
+        frag = next((f for f in (nt[:6], nt[:4]) if f and any(
+            f in os.path.basename(x) for x in glob.glob(os.path.join(root, "*.json"))
+            if "文案初稿" in os.path.basename(x))), None)
+        if not frag:
+            print("⏭ 無草稿：%s" % t["name"][:36]); continue
+        newest = max((x for x in glob.glob(os.path.join(root, "*.json"))
+                      if "文案初稿" in os.path.basename(x) and frag in os.path.basename(x)),
+                     key=os.path.getmtime)
+        mdate = re.match(r"(\d{6,8})", os.path.basename(newest))
+        pid = (mdate.group(1) if mdate else "20260000") + "-" + _slug(nt)[:12]
+        ns = argparse.Namespace(drive_root=None, topic=frag, post_id=pid, finals_dir=None,
+                                version=1, clickup=t["id"], topic_type="A-知識型",
+                                json=None, topic_base=None)
+        try:
+            from_drive(ns); fed += 1
+        except SystemExit:
+            print("⏭ 餵入失敗：%s" % t["name"][:36])
+        except Exception as e:
+            print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e))
+    print("入料完成：%d 篇（佇列剩 %d 張未入）" % (fed, max(0, len(todo) - fed)))
+
+
 # ── #2：發佈後把該主題舊輪 Drive 產出資料夾搬 ZZ-歸檔（控候選爆量） ──────
 def archive_drive_rounds(args):
     root = args.drive_root or DRIVE_PRODUCE
@@ -875,6 +923,7 @@ def main():
     a = sub.add_parser("set-status"); a.add_argument("post_id"); a.add_argument("status"); a.set_defaults(func=set_status)
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
     a = sub.add_parser("reconcile-published", help="ClickUp 已發布 → posts.json 翻 published（補發佈回寫缺口）"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=reconcile_published)
+    a = sub.add_parser("ingest-new", help="在製中卡×Drive 草稿 → 自動餵進操控室（哨兵用）"); a.add_argument("--limit", type=int, default=3); a.set_defaults(func=ingest_new)
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
