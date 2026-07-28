@@ -393,3 +393,9 @@ n8n 用 `search_workflows(query:"Lava")` 確認全 active；排程用 `list_sche
 - **launchd `tw.lava.ig-autorender`**（`~/Library/LaunchAgents/tw.lava.ig-autorender.plist`，每 600 秒）→ 跑 `scripts/auto_render.sh`：Drive 掛載檢查 → git pull → `render-approved`（冪等，審核/文案編輯比成品新才重出）→ 有產出才 commit+push。**純腳本零 token**；log 在 `/tmp/lava-ig-autorender.log`；防重疊鎖 `/tmp/lava-ig-autorender.lock`。
 - 分工：**高頻機械（渲染）＝launchd；低頻判斷（餵卡/留言/成效）＝Claude feed 每日 3 次**。PT 核准或改文案後 ≤10 分鐘自動出成品，不需等 11/16/20 班次。cron 出的成品不留 ClickUp 留言（操控室直接看得到，可接受）。
 - 管理指令：`launchctl unload/load ~/Library/LaunchAgents/tw.lava.ig-autorender.plist`。
+
+### 入料哨兵（2026-07-28，最後一塊自動化拼圖）
+- 事故：在製中積 17 張卡無人處理——渲染/對帳/發佈已自動化，但「Drive 草稿 → posts.json 入料」仍綁在停擺的 Claude feed Part A。
+- **`sync_console.py ingest-new [--limit N]`**：掃 ClickUp 在製中（IG貼文｜開頭、不在 posts.json、排除端到端測試）× Drive 文案初稿 → 逐張 from-drive 餵入。已掛進 auto_render.sh（每輪 2 張）。首戰一次清掉 13 篇積壓。
+- 哨兵現負責：**入料 → 渲染 → 發佈對帳**，每 10 分鐘全自動（launchd `/bin/bash` + Full Disk Access；lava-bash 複製法會被 macOS codesigning 擊殺，勿再試）。Claude feed 只剩 insights/留言/歸檔等低頻工作。
+- 雷區：reconcile 狀態名認「發佈完成」（已修，勿再用舊名「已發布」）；Anthropic API 額度第三度見底過——**建議 Jesse 開 auto-reload**。
