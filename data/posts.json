@@ -2569,6 +2569,30 @@
               "src": "assets/20260723-Situationshi/slide-1d.jpg",
               "kind": "still",
               "source_label": "Normal People正常人"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260723-Situationshi/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260723-Situationshi/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260723-Situationshi/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260723-Situationshi/slide-1h.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
             }
           ],
           "final_src": null,
@@ -2579,10 +2603,36 @@
         {
           "n": 2,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260723-Situationshi/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260723-Situationshi/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260723-Situationshi/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260723-Situationshi/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Past Lives"
+            }
+          ],
           "final_src": null,
           "heading": "這段灰色關係，終於有了名字",
-          "display_copy": "【Situationship】結合 situation 與 relationship，指介於隨性約會與正式伴侶之間、親密卻未定義的關係。Merriam-Webster 將最早已知用例定於 2014 年。\n資料來源：Merriam-Webster"
+          "display_copy": "【Situationship】結合 situation 與 relationship，指介於隨性約會與正式伴侶之間、親密卻未定義的關係。Merriam-Webster 將最早已知用例定於 2014 年。\n資料來源：Merriam-Webster",
+          "default_cid": "a"
         },
         {
           "n": 3,
@@ -2645,6 +2695,30 @@
               "src": "assets/20260723-Situationshi/slide-4d.jpg",
               "kind": "still",
               "source_label": "Normal People正常人"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260723-Situationshi/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260723-Situationshi/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260723-Situationshi/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260723-Situationshi/slide-4h.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
             }
           ],
           "final_src": null,
@@ -2755,7 +2829,8 @@
             }
           }
         }
-      }
+      },
+      "candidates_since": "2026-07-28T19:27:40+08:00"
     },
     {
       "id": "20260724-天赦日去告白成功率真的比",
@@ -3486,23 +3561,47 @@
               "cid": "a",
               "src": "assets/20260724-SoftLaunch你的/slide-1a.jpg",
               "kind": "still",
-              "source_label": "The Office"
+              "source_label": "Emilyin Paris"
             },
             {
               "cid": "b",
               "src": "assets/20260724-SoftLaunch你的/slide-1b.jpg",
               "kind": "still",
-              "source_label": "The Office"
+              "source_label": "Emilyin Paris"
             },
             {
               "cid": "c",
               "src": "assets/20260724-SoftLaunch你的/slide-1c.jpg",
               "kind": "still",
-              "source_label": "The Office"
+              "source_label": "Emilyin Paris"
             },
             {
               "cid": "d",
               "src": "assets/20260724-SoftLaunch你的/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Emilyin Paris"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-SoftLaunch你的/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-SoftLaunch你的/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-SoftLaunch你的/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-SoftLaunch你的/slide-1h.jpg",
               "kind": "still",
               "source_label": "The Office"
             }
@@ -3515,10 +3614,36 @@
         {
           "n": 2,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260724-SoftLaunch你的/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260724-SoftLaunch你的/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260724-SoftLaunch你的/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260724-SoftLaunch你的/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            }
+          ],
           "final_src": null,
           "heading": "戀愛，也借用了商業用語",
-          "display_copy": "「Soft launch」原是產品小規模試推。2021/3/25，Smith S. 在 Refinery29 發表〈Why We're 'Soft-Launching' Relationships on Insta〉，用來描述 IG 戀情：先露出【線索】，暫不揭露對方身分。\n資料來源：Smith S.，Refinery29（2021）"
+          "display_copy": "「Soft launch」原是產品小規模試推。2021/3/25，Smith S. 在 Refinery29 發表〈Why We're 'Soft-Launching' Relationships on Insta〉，用來描述 IG 戀情：先露出【線索】，暫不揭露對方身分。\n資料來源：Smith S.，Refinery29（2021）",
+          "default_cid": "a"
         },
         {
           "n": 3,
@@ -3562,23 +3687,47 @@
               "cid": "a",
               "src": "assets/20260724-SoftLaunch你的/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Crazy Rich Asians"
             },
             {
               "cid": "b",
               "src": "assets/20260724-SoftLaunch你的/slide-4b.jpg",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Crazy Rich Asians"
             },
             {
               "cid": "c",
               "src": "assets/20260724-SoftLaunch你的/slide-4c.jpg",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Crazy Rich Asians"
             },
             {
               "cid": "d",
               "src": "assets/20260724-SoftLaunch你的/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Crazy Rich Asians"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-SoftLaunch你的/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-SoftLaunch你的/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-SoftLaunch你的/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-SoftLaunch你的/slide-4h.jpg",
               "kind": "still",
               "source_label": "Brooklyn Nine Nine"
             }
@@ -3664,7 +3813,8 @@
             }
           }
         }
-      }
+      },
+      "candidates_since": "2026-07-28T19:27:55+08:00"
     },
     {
       "id": "20260724-心理學實驗發現第一次約會",
@@ -3684,23 +3834,47 @@
               "cid": "a",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-1a.jpg",
               "kind": "still",
-              "source_label": "Love Life"
+              "source_label": "First Dates"
             },
             {
               "cid": "b",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-1b.jpg",
               "kind": "still",
-              "source_label": "Love Life"
+              "source_label": "First Dates"
             },
             {
               "cid": "c",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-1c.jpg",
               "kind": "still",
-              "source_label": "Love Life"
+              "source_label": "First Dates"
             },
             {
               "cid": "d",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "First Dates"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-1h.jpg",
               "kind": "still",
               "source_label": "Love Life"
             }
@@ -3718,23 +3892,47 @@
               "cid": "a",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-2a.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "La La Land"
             },
             {
               "cid": "b",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-2b.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "La La Land"
             },
             {
               "cid": "c",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-2c.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "La La Land"
             },
             {
               "cid": "d",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "La La Land"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-2h.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -3760,23 +3958,47 @@
               "cid": "a",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Crash Landingon You"
+              "source_label": "About Time"
             },
             {
               "cid": "b",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-4b.jpg",
               "kind": "still",
-              "source_label": "Crash Landingon You"
+              "source_label": "About Time"
             },
             {
               "cid": "c",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-4c.jpg",
               "kind": "still",
-              "source_label": "Crash Landingon You"
+              "source_label": "About Time"
             },
             {
               "cid": "d",
               "src": "assets/20260724-心理學實驗發現第一次約會/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Crash Landingon You"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Crash Landingon You"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Crash Landingon You"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-心理學實驗發現第一次約會/slide-4h.jpg",
               "kind": "still",
               "source_label": "Crash Landingon You"
             }
@@ -3889,7 +4111,8 @@
             }
           }
         }
-      }
+      },
+      "candidates_since": "2026-07-28T19:28:11+08:00"
     },
     {
       "id": "20260724-阿根廷對瑞士梅西那種一個",
@@ -4153,6 +4376,30 @@
               "src": "assets/20260724-為生日禮物吵架研究發現情/slide-1d.jpg",
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "The Break Up"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "The Break Up"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "The Break Up"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-1h.jpg",
+              "kind": "still",
+              "source_label": "The Break Up"
             }
           ],
           "final_src": null,
@@ -4187,6 +4434,30 @@
               "src": "assets/20260724-為生日禮物吵架研究發現情/slide-2d.jpg",
               "kind": "still",
               "source_label": "Modern Family"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-2h.jpg",
+              "kind": "still",
+              "source_label": "Nobody Wants This"
             }
           ],
           "final_src": null,
@@ -4205,10 +4476,36 @@
         {
           "n": 4,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260724-為生日禮物吵架研究發現情/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            }
+          ],
           "final_src": null,
           "heading": "把爭吵往下看三層",
-          "display_copy": "把爭吵往下看三層：表面是【禮物不合期待】，中間是失望、被忽視，底層則在問：「我對你重要嗎？」Gottman 也以生日為例指出，憤怒有時不是因為禮物本身，而是「想感到特別」的期待被阻礙。\n資料來源：The Gottman Institute，The Anger Iceberg"
+          "display_copy": "把爭吵往下看三層：表面是【禮物不合期待】，中間是失望、被忽視，底層則在問：「我對你重要嗎？」Gottman 也以生日為例指出，憤怒有時不是因為禮物本身，而是「想感到特別」的期待被阻礙。\n資料來源：The Gottman Institute，The Anger Iceberg",
+          "default_cid": "a"
         },
         {
           "n": 5,
@@ -4313,7 +4610,8 @@
             }
           }
         }
-      }
+      },
+      "candidates_since": "2026-07-28T19:28:25+08:00"
     },
     {
       "id": "20260724-大谷翔平的老婆從不看他比",
