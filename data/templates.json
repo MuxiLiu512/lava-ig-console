@@ -192,6 +192,108 @@
    "fit_for_lava": "高適配。「不聊天」主張天生是矛盾開場素材庫：首幀「兩支手機面朝下放桌上」+大字「我們整場約會沒傳半句訊息」→ 反轉揭曉是 Lava 破冰道具在帶話題。Loop 收尾接回桌面畫面即可，製作門檻低，適合 reels 週更線。",
    "status": "candidate",
    "used_by": []
+  },
+  {
+   "id": "tpl-issue-to-table-funnel",
+   "type": "post",
+   "hook_type": "議題策展→主題桌 funnel",
+   "curated_by": "jesse",
+   "skeleton": "cover=職涯/生活轉型議題立題（不談產品）→ 中段=議題乾貨（未來人才兩種原型：深度專家 vs 跨域連結者）→ 尾張=把議題收斂成本週主題桌（SideHustle 桌）報名 CTA。骨架依 embed 首圖+caption 推定，取得全輪播後補逐張拆解。",
+   "why_it_works": "先給完整的議題價值再把 CTA 包裝成「繼續聊這個話題的線下場」——活動報名不是廣告而是內容的自然延伸；議題選在目標客群的身分焦慮帶（不想只靠一份工作），精準觸發儲存與轉發給同溫層。",
+   "evidence": {
+    "source_account": "@thewknd.club",
+    "post_url": "https://www.instagram.com/p/DarbC6WEWGS/",
+    "engagement": "5,772 讚、19 留言（帳號 45.9K 粉）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "高適配：Lava 可用同構把約會議題（如「不聊天約會學」）收斂成成立約會 CTA；差異在 Lava 是 1:1 不是主題桌，CTA 改「這週讓 Lava 幫你安排一場」。",
+   "status": "validated",
+   "used_by": []
+  },
+  {
+   "id": "tpl-life-decision-mustread",
+   "type": "post",
+   "hook_type": "人生決策必看體",
+   "curated_by": "jesse",
+   "skeleton": "cover=「想要○○的朋友必看這篇」直接圈住處在人生決策點的族群 → 中段=決策的心理洞察（換城市＝擺脫既有名聲、能真實呈現自己）逐張推進 → 尾張=陌生人晚餐/品牌場景收尾。視覺整組 Emily in Paris 式暖調生活感攝影。骨架依 embed 推定，取得全輪播後補逐張拆解。",
+   "why_it_works": "「必看」＋明確族群圈定＝自我篩選的強 hook（處在該決策點的人無法滑過）；把搬家/換環境昇華成身分重啟的心理敘事，給讀者一個轉發給「正在考慮的那位朋友」的理由；aspirational 攝影讓儲存＝收藏一種想要的生活。此篇 33K 讚為該帳號量級異常值（粉絲 46K），屬 outlier 級模板。",
+   "evidence": {
+    "source_account": "@thewknd.club",
+    "post_url": "https://www.instagram.com/p/Dap5Ya8gdzj/",
+    "engagement": "33,158 讚、41+ 留言（帳號 46K 粉——讚數 72% of 粉絲數，outlier）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "高適配：Lava 題材庫中「母胎單身」「Situationship」等身分決策點都可套（『想要結束曖昧的朋友必看這篇』）；尾張品牌段須守『使用者主動選擇』規則。",
+   "status": "validated",
+   "used_by": []
+  },
+  {
+   "id": "tpl-brand-values-manifesto",
+   "type": "post",
+   "hook_type": "品牌價值主張卡",
+   "curated_by": "jesse",
+   "skeleton": "單張/短輪播：一句品牌世界觀宣言（a space for intentional dating / people show up and respect each other's time）＋極簡品牌視覺；caption 短、hashtag 打品類詞（#intentionaldating）。",
+   "why_it_works": "不賣功能賣立場：把產品差異寫成一種約會價值觀，吸引認同者自我歸隊（follow＝表態）；「show up」「respect time」直指 dating app 用戶最大痛點（放鴿子、已讀不回），痛點共鳴替品牌立場背書；品類詞 hashtag 佔位搜尋心智。",
+   "evidence": {
+    "source_account": "@breeze.social（荷蘭 offline-first 約會 app，64.6K 粉）",
+    "post_url": "https://www.instagram.com/p/DSIPtx8CL_l/",
+    "engagement": "unverified（embed 僅見 9 留言）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "直接適配：Breeze 是 Lava 的同定位競品（先約再聊），其「intentional dating」品類詞可對標 Lava 的「不聊天的交友軟體」；設計底生成器可直接產此類宣言卡。",
+   "status": "validated",
+   "used_by": []
+  },
+  {
+   "id": "tpl-promise-butterfly-oneliner",
+   "type": "post",
+   "hook_type": "品牌承諾×情緒反差 one-liner",
+   "curated_by": "jesse",
+   "skeleton": "單張：一句「我們搞定 X，你只要負責 Y」句式（Breeze was designed with your safety in mind. You just have to handle the butterflies 🦋）＋呼應的極簡視覺（蝴蝶）；caption 即主文，一句到位。",
+   "why_it_works": "句式把理性承諾（安全）與感性報酬（心動）壓進一個反差結構，一秒讀完且自帶溫度；「你只要負責心動」把產品該做的無聊事（安全機制）翻譯成用戶的情緒利益；單圖+短句=最低閱讀成本的品牌廣告，適合投放與置頂。",
+   "evidence": {
+    "source_account": "@breeze.social",
+    "post_url": "https://www.instagram.com/p/DR2Nax3CC4L/",
+    "engagement": "unverified（embed 僅見 18 留言）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "高適配且可量產：Lava 版句庫如「地點我們排好了，你只要人到」「尷尬的開場我們處理，你只要負責出現」——與『出現是主動選擇』的品牌規則同向。",
+   "status": "validated",
+   "used_by": []
+  },
+  {
+   "id": "tpl-weekly-ritual-concierge",
+   "type": "reels",
+   "hook_type": "固定節奏儀式化敘事",
+   "curated_by": "jesse",
+   "skeleton": "前 1.5 秒=點名痛點句（No more 'wyd tonight'）→ 中段=展示「每週三 7PM 幫你安排一場約會」的 concierge 流程（講你的型→我們排好人/時/地/活動）→ 收尾=校園/城市限定的歸屬感 CTA（join 35K+ students）。",
+   "why_it_works": "把產品從『無限滑卡』重新框架成『每週一次的儀式』——固定節奏製造期待與習慣迴圈（週三=約會日），也天然給每週一支內容的節目化排期；「我們全包」的 concierge 敘事直接消滅 dating app 最大摩擦（誰主動、去哪、聊什麼）；在地社群數字（UCLA、35K+ 學生）給社會證明。",
+   "evidence": {
+    "source_account": "@ditto_ucla（美國校園 offline-first 約會新創）",
+    "post_url": "https://www.instagram.com/p/DQsKUSlEqWh/",
+    "engagement": "451 讚（新帳號早期數據）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "極高適配：Lava 的成立約會＝同一 concierge 主張，可做台灣版「週三 Lava 日」固定檔期敘事＋每週回顧接力（與 tpl-offline-recap-carousel 組成前後檔）。",
+   "status": "validated",
+   "used_by": []
+  },
+  {
+   "id": "tpl-archetype-comedy-reel",
+   "type": "reels",
+   "hook_type": "約會對象原型喜劇",
+   "curated_by": "jesse",
+   "skeleton": "前 1.5 秒=第一個原型登場自帶字卡（Gym bro）→ 中段=連續 3-5 個約會對象原型短喜劇（Finance Bro、Hot Nerd…每型一個梗）→ 收尾=產品主張一句收（get to your irl date 1000x faster）。高製作規格（正式導演/卡司/攝影）。",
+   "why_it_works": "原型（archetype）是內建的分享觸發器——觀眾邊看邊 tag「這就是你」；多原型結構讓每 3-5 秒換一個梗，完播率與重看率雙高；喜劇先行、產品一句收尾，廣告感被劇情稀釋；121 留言/816 讚的留言比異常高＝原型引戰留言區（你是哪型）有效。",
+   "evidence": {
+    "source_account": "@ditto",
+    "post_url": "https://www.instagram.com/p/DMdgJ25ym-y/",
+    "engagement": "816 讚、121 留言（留言率異常高）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "適配（降製作規格版）：台灣版原型（健身仔/金融男/文青/工程師…）用 KOC 拍即可；守則：吐槽行為不吐槽外貌條件（性別中立、不物化），原型要男女對稱出。",
+   "status": "validated",
+   "used_by": []
   }
  ]
 }

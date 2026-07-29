@@ -427,10 +427,11 @@ n8n 用 `search_workflows(query:"Lava")` 確認全 active；排程用 `list_sche
 6. **W1-6 智慧層**：swipe 庫 `data/templates.json` 12 筆（台灣 3 筆：街頭故事漫畫體/微靠背記事本體/thewknd 線下回顧；Reels 3 筆；全附實訪 evidence）→ WF05 已接（digest 附模板清單、靈感卡輸出 template_id）；golden set `data/golden/golden.json`（5 pass＋2 fail，rubric 改版回歸基準）；critic advisory 首跑（張凌赫 65/100 詳評已留 ClickUp 卡）。
 7. **W1-7 Ad Library spike 證偽**：Meta Ad Library API 台灣區**只開放政治/社會議題廣告**，全類型商業廣告僅歐盟/英國（DSA）→ 正式砍掉「台灣競品投放監測」路線；競品情報改走 lava-research 網研＋歐盟區素材參考（Tinder/Bumble 歐盟投放可看創意方向，非台灣實況）。
 
-### UTM 規約（北極星：link-in-bio 點擊 → PostHog）
-- **bio 常駐**：`https://manager.lava.tw/?utm_source=instagram&utm_medium=bio&utm_campaign=lava_ig`
-- **貼文/限動/DM 變體**：`utm_medium=post|story|dm` ＋ `utm_content=<post_id>`（例：`...&utm_medium=post&utm_campaign=lava_ig&utm_content=20260724-張凌赫效應為什麼高冷男主`）
-- 成效判讀只抓 outlier（>2× 中位數→repurpose），不做小樣本統計。
+### UTM 規約（北極星：link-in-bio 點擊 → PostHog；2026-07-29 Jesse 改用 lava-ig-link 落地頁）
+- **bio 常駐**：`https://wei-yin-hwang.github.io/lava-ig-link/?utm_source=ig&utm_medium=social&utm_content=link_in_bio`
+  （⚠ Jesse 原始貼連結帶 `fbclid=...`——那是 Meta 點擊時自動附加的一次性追蹤參數，**不要**固定寫進 bio，已剝除）
+- **貼文/限動/DM 變體**：同 base，`utm_content` 換 `post_<post_id>`｜`story_<post_id>`｜`dm_<post_id>`（例：`...&utm_content=post_20260724-張凌赫效應為什麼高冷男主`）
+- 成效判讀只抓 outlier（>2× 中位數→repurpose），不做小樣本統計。舊 manager.lava.tw 直連規約作廢。
 
 ### Critic advisory 常設步驟（feed 時執行）
 渲染後/待審前，派 general-purpose subagent 讀：①critic SKILL（desktop skills-plugin 目錄 lava-ig-critic）②風格規格 ③該篇 copy_versions+候選組成 → 固定格式檢核結果 → `clickup_create_comment` 留言（advisory，不改狀態不重寫）。首例：86ey9fgmw comment 90180241822987。
