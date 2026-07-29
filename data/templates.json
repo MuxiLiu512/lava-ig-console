@@ -311,6 +311,23 @@
    "fit_for_lava": "極高適配：可做「約會現場的 N 種人」「聊天室裡的 N 種曖昧對象」原型圖鑑；尾張情感宣言＋caption 轉接成立約會（『你的下一個 2am 救火隊，可能就坐在 Lava 排好的位子上』）；halftone 文字卡系統可納入設計底生成器新模板。守則：原型吐槽行為不吐槽外貌、男女對稱、punchline 必須溫情反轉（禁純嘲諷）。與 tpl-archetype-comedy-reel（Reels 版）互為姊妹條目。",
    "status": "validated",
    "used_by": []
+  },
+  {
+   "id": "tpl-newsjack-oneliner-collage",
+   "type": "post",
+   "hook_type": "時事畫面挪用一句反轉",
+   "curated_by": "jesse",
+   "skeleton": "單張：爆紅新聞畫面（雙人蒙面爬上紐約高樓頂的病毒照）裝進拍立得框 → 疊品牌拼貼系統（橘底、黑白城市剪貼、紙質感）→ 拍立得下緣一句手寫反轉（You don't have to climb a building to tell your friend you love them）→ caption 只有兩個字收梗（Just text）。",
+   "why_it_works": "搭現成注意力波：病毒畫面自帶識別度，看到就想起那條新聞，省掉 hook 成本；一句手寫反轉把奇觀翻譯成人人可做的小事（爬樓示愛→傳訊息就好），情緒從獵奇轉溫情；caption 兩字＝笑點經濟學，圖負責鋪陳、caption 負責收梗，留言區自然接力（The power of love）；單張零製作負擔卻拿到全帳號 outlier 互動（2K 讚 vs 原型輪播 880），證明格式槓桿 > 內容量。",
+   "evidence": {
+    "source_account": "@timeleft（verified）",
+    "post_url": "https://www.instagram.com/p/DaTAHGKsrLr/",
+    "engagement": "2K 讚、33 留言、53 分享（2026-07-03 發布；Jesse 登入截圖實測）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "高適配但有紀律要求：適用「非財經非賽事」的爆紅畫面（Lava 時事橋接配額仍每日≤1、股市運動禁出）；Lava 版收梗句庫如『不用爬大樓，見一面就好——Just meet.』；新聞照屬引用式使用，發布必標注出處（法遵規則）；拼貼視覺可併入 timeleft 系設計語言（與 tpl-archetype-catalog-carousel 同系統）。",
+   "status": "validated",
+   "used_by": []
   }
  ]
 }
