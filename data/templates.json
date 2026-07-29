@@ -294,6 +294,23 @@
    "fit_for_lava": "適配（降製作規格版）：台灣版原型（健身仔/金融男/文青/工程師…）用 KOC 拍即可；守則：吐槽行為不吐槽外貌條件（性別中立、不物化），原型要男女對稱出。",
    "status": "validated",
    "used_by": []
+  },
+  {
+   "id": "tpl-archetype-catalog-carousel",
+   "type": "post",
+   "hook_type": "原型圖鑑輪播",
+   "curated_by": "jesse",
+   "skeleton": "每張=一個「朋友原型」自成一格：原型名大字（The 'one drink' wonder friend / The sorry I'm 20 min late friend / The judgey confessional friend…）＋兩拍行為梗（手寫感 tape 標籤句）＋一句反轉溫情 punchline（You hate it, but the night is better when they arrive）；每張輪替一個主色（橘/藍/粉/紫）、halftone 網點人像拼貼＋皺紙質感＋箭頭引導鈕；尾張收斂成情感宣言（Friends like these are hard to find—CHERISH THEM. INVEST IN THEM. They are unhinged and irreplaceable）＋純 logo，不放硬 CTA；caption 才做產品轉接（Your future 2am crisis manager is at a table somewhere 🔥）。",
+   "why_it_works": "原型=內建 tag 觸發器（44 分享 vs 9 留言，分享比異常高＝DM『這就是你』轉傳型）；每張自成一格讓任意一張都能當入口、也都值得截圖；吐槽→溫情的兩拍反轉讓 tag 行為變成示愛不是嘲笑（轉傳零社交風險）；色彩輪替維持滑動新鮮感但拼貼系統統一＝一眼認出品牌；內容全程講友情不講產品，只用 caption 一句把『這種朋友』重新框架成『在某張餐桌等你』——廣告感為零的導流。",
+   "evidence": {
+    "source_account": "@timeleft（verified；陌生人晚餐平台，Lava 同賽道對標）",
+    "post_url": "https://www.instagram.com/p/DavuTdQDHNe/",
+    "engagement": "880 讚、9 留言、44 分享（2026-07-14 發布；Jesse 登入截圖實測）",
+    "seen_at": "2026-07-29"
+   },
+   "fit_for_lava": "極高適配：可做「約會現場的 N 種人」「聊天室裡的 N 種曖昧對象」原型圖鑑；尾張情感宣言＋caption 轉接成立約會（『你的下一個 2am 救火隊，可能就坐在 Lava 排好的位子上』）；halftone 文字卡系統可納入設計底生成器新模板。守則：原型吐槽行為不吐槽外貌、男女對稱、punchline 必須溫情反轉（禁純嘲諷）。與 tpl-archetype-comedy-reel（Reels 版）互為姊妹條目。",
+   "status": "validated",
+   "used_by": []
   }
  ]
 }
