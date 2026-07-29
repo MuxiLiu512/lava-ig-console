@@ -174,3 +174,6 @@ ul.changes { margin: 6px 0 0; padding-left: 18px; } ul.changes li { margin: 2px 
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
 .lightbox img { max-width: 96vw; max-height: 86vh; object-fit: contain; border-radius: 8px; }
 .lightbox .lb-cap { color: #ddd; font-size: 13px; }
+
+.tag.design { background: #4a1d12; color: #ff9d85; }
+.tag.lowq { background: #4a3b00; color: #ffd34d; }

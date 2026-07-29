@@ -65,14 +65,16 @@ def _still_label(fn):
     if m:
         core = m.group(1)
     else:
-        m = re.match(r"((?:WM|OV|OL)-.+?)([-_ ]\d+)?\.\w+$", fn, re.I)
+        m = re.match(r"((?:WM|OV|OL|DESIGN)-.+?)([-_ ]\d+)?\.\w+$", fn, re.I)
         if not m:
             return None, None
         core = m.group(1)
     sk = None
-    m2 = re.match(r"(?i)^(WM|OV|OL)[- ](.+)$", core)
+    m2 = re.match(r"(?i)^(WM|OV|OL|DESIGN)[- ](.+)$", core)
     if m2:
         sk, core = m2.group(1).upper(), m2.group(2)
+    if sk == "DESIGN":
+        core = re.sub(r"-s\d+$", "", core)
     core = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", core)      # HaveI → Have I
     core = re.sub(r"(?<=[A-Z])(?=[A-Z][a-z])", " ", core)  # IEver → I Ever
     return (core.replace("_", " ").strip() or None), sk
@@ -308,7 +310,7 @@ def _build_and_write(m):
                 sys.stderr.write("  ! slide %d 候選超過 %d 張，其餘截斷（清舊資料夾可減量）\n" % (s["n"], len(CID))); break
             if not os.path.exists(c["src"]):
                 sys.stderr.write("  ! 缺候選圖 %s\n" % c["src"]); continue
-            if _flat_image(c["src"]):
+            if "-DESIGN-" not in os.path.basename(c["src"]) and _flat_image(c["src"]):
                 sys.stderr.write("  ↩ 剔除空圖/破圖候選：%s\n" % os.path.basename(c["src"])); continue
             out = make_thumb(c["src"], os.path.join(ASSETS, pid, "slide-%d%s" % (s["n"], CID[i])))
             entry = {"cid": CID[i], "src": os.path.relpath(out, REPO).replace(os.sep, "/"), "kind": c.get("kind", "generated")}
@@ -425,10 +427,15 @@ def _collect_slide_imgs(dirs, kind, prune=True):
             if fn.lower() in seen_names:
                 continue
             mm = re.search(r"slide-?(\d+)", fn, re.I)
-            if prune and _flat_image(f):
+            is_design = "-DESIGN-" in fn
+            if prune and not is_design and _flat_image(f):
                 sys.stderr.write("  ✂ 剔除疑似破圖（近純色）：%s\n" % fn)
                 continue
-            label, sk = (_still_label(fn) if kind == "still" else (None, None))
+            lb0, sk0 = _still_label(fn)
+            if kind == "still" or is_design:
+                label, sk = lb0, sk0
+            else:
+                label, sk = None, None
             seen_names.add(fn.lower())
             # 無 slide 標籤的新來源檔（WM-/OV-/OL-）進 0 號池，之後輪流分配到內容 slides
             key = int(mm.group(1)) if mm else (0 if sk else None)
@@ -496,6 +503,15 @@ def from_drive(args):
     ntopic = _norm_topic(base)
     sys.stderr.write("→ 選中文案：%s（主題核心=%s）\n" % (base, ntopic))
 
+    # 設計底（Tier 1 預設視覺）：對最新底圖資料夾冪等補產；無底圖資料夾則建立
+    try:
+        _subs = sorted(d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d))
+        _bds = [d for d in _subs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
+        _bd = max(_bds, key=os.path.getmtime) if _bds else os.path.join(root, "%s %s 底圖" % (date or "20260000", topic_raw[:24]))
+        subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen_design_bg.py"),
+                        "--draft", jf, "--outdir", _bd, "--post-id", pid], check=False, timeout=180)
+    except Exception as e:
+        sys.stderr.write("  ! 設計底生成失敗（不阻斷）：%s\n" % e)
     gen, still = _scan_dirs(root, ntopic)
     sys.stderr.write("→ 底圖 slide 數 %d、劇照 slide 數 %d\n" % (len(gen), len(still)))
 
@@ -517,8 +533,13 @@ def from_drive(args):
             if sk:
                 c["source_kind"] = sk
             cands.append(c)
-        for path, *_ in gen.get(n, []):
-            cands.append({"src": path, "kind": "generated"})
+        gen_items = list(gen.get(n, []))
+        for path, label, sk in gen_items:      # 設計底排在生成圖前
+            if sk == "DESIGN":
+                cands.append({"src": path, "kind": "design", "source_kind": "DESIGN", "source_label": label or "design"})
+        for path, label, sk in gen_items:
+            if sk != "DESIGN":
+                cands.append({"src": path, "kind": "generated"})
         final = None
         if args.finals_dir:
             for ext in (".png", ".jpg", ".webp"):

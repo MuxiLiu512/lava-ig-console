@@ -338,6 +338,7 @@ function srcInfo(cd) {
   if (sk === "WM") return { tag: "Wiki", cls: "wm", line: (lb ? lb + " · " : "") + "Wikimedia 自由授權" };
   if (sk === "OV") return { tag: "CC圖庫", cls: "ov", line: (lb ? lb + " · " : "") + "Openverse 創用 CC" };
   if (sk === "OL") return { tag: "書封", cls: "ol", line: (lb ? lb + " · " : "") + "Open Library" };
+  if (sk === "DESIGN" || cd.kind === "design") return { tag: "設計底", cls: "design", line: (lb ? lb + " · " : "") + "品牌自產（免授權）" };
   if (cd.kind === "still") return { tag: "劇照", cls: "still", line: lb ? "《" + lb + "》" : "劇照（來源未標）" };
   return { tag: "生成", cls: "gen", line: "AI 生成 · Higgsfield" };
 }
