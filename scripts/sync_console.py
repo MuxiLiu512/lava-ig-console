@@ -360,7 +360,10 @@ def _build_and_write(m):
                     _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
                                "file": os.path.basename(c["src"]), "reason": reason, "metrics": metrics})
                     sys.stderr.write("  ⚠ 低畫質標記（%s）：%s\n" % (reason, os.path.basename(c["src"])))
-            out = make_thumb(c["src"], os.path.join(ASSETS, pid, "slide-%d%s" % (s["n"], CID[i])))
+            try:
+                out = make_thumb(c["src"], os.path.join(ASSETS, pid, "slide-%d%s" % (s["n"], CID[i])))
+            except Exception as e:   # 截斷/損毀檔（如被 timeout 砍斷的寫入）不拖垮整篇
+                sys.stderr.write("  ↩ 縮圖失敗剔除：%s（%s）\n" % (os.path.basename(c["src"]), e)); continue
             entry = {"cid": CID[i], "src": os.path.relpath(out, REPO).replace(os.sep, "/"), "kind": c.get("kind", "generated")}
             if c.get("source_label"):
                 entry["source_label"] = c["source_label"]
@@ -550,6 +553,7 @@ def from_drive(args):
     topic_raw = re.sub(r"-?文案初稿.*$", "", re.sub(r"^\d{6,8}[-\s]*", "", os.path.splitext(base)[0]))
     ntopic = _norm_topic(base)
     sys.stderr.write("→ 選中文案：%s（主題核心=%s）\n" % (base, ntopic))
+    pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
 
     # 設計底（Tier 1 預設視覺）：對最新底圖資料夾冪等補產；無底圖資料夾則建立
     try:
@@ -597,7 +601,6 @@ def from_drive(args):
         slides.append({"n": n, "role": str(s.get("role", "")), "final": final, "candidates": cands,
                        "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")})
 
-    pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
     copy_versions = {}
     for mk, path in versions.items():
         try:

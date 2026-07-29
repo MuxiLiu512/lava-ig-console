@@ -31,6 +31,8 @@ def main():
                 else:
                     kinds["生成"] += 1
                 src = os.path.join(REPO, c.get("src", ""))
+                if c.get("source_kind") == "DESIGN" or "-DESIGN-" in src:
+                    continue   # 品牌設計底（漸層）天然近純色，不算破圖
                 if os.path.exists(src) and _flat_image(src):
                     flats += 1
         mix = " ".join("%s×%d" % (k, v) for k, v in sorted(kinds.items()))

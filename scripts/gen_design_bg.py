@@ -119,7 +119,9 @@ def main():
             fp = os.path.join(a.outdir, fn)
             if os.path.exists(fp):
                 continue  # 冪等
-            make_bg(tpl, seed).save(fp, "PNG", optimize=True)
+            tmp = fp + ".part"   # 原子寫入：先寫暫存再 rename，被 timeout 砍掉不留截斷檔
+            make_bg(tpl, seed).save(tmp, "PNG", optimize=True)
+            os.replace(tmp, fp)
             made += 1
     print("✓ 設計底 %d 張 → %s" % (made, a.outdir))
 
