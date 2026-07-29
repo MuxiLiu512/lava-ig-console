@@ -86,12 +86,10 @@ label.fld { display: block; margin: 10px 0 4px; font-size: 12.5px; color: var(--
   display: flex; align-items: center; justify-content: center; font-weight: 800; color:#fff; font-size: 15px; }
 .ig-top .nm { font-weight: 600; font-size: 13.5px; } .ig-top .more { margin-left: auto; font-size: 18px; color: #fff; }
 .ig-media { position: relative; width: 100%; aspect-ratio: 4/5; background: #111; overflow: hidden; }
-.ig-media.full { aspect-ratio: 3/4; }
 .ig-track { display: flex; height: 100%; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .ig-track::-webkit-scrollbar { display: none; }
 .ig-slide { flex: 0 0 100%; height: 100%; scroll-snap-align: start; position: relative; }
-.ig-slide img { width: 100%; height: 100%; object-fit: contain; background:#000; display: block; }
-.ig-media.full .ig-slide img { object-fit: contain; background:#000; }
+.ig-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }  /* 4:5 cover＝IG 實際裁法 */
 .ig-count { position: absolute; top: 10px; right: 12px; background: rgba(0,0,0,.6); color:#fff;
   font-size: 12px; padding: 2px 9px; border-radius: 999px; }
 .ig-dots { display: flex; gap: 5px; justify-content: center; padding: 9px 0 4px; }
@@ -106,10 +104,6 @@ label.fld { display: block; margin: 10px 0 4px; font-size: 12.5px; color: var(--
 .ig-cap .body { white-space: pre-wrap; }
 .ig-cap .clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .ig-cap .more { color: var(--muted2); cursor: pointer; }
-.crop-toggle { display:flex; gap:8px; justify-content:center; margin: 2px 0 12px; }
-.crop-toggle button { font-size: 12px; padding: 6px 12px; border-radius: 999px; border:1px solid var(--line);
-  background: var(--surface); color: var(--muted); }
-.crop-toggle button.on { color:#fff; border-color: var(--orange); background: rgba(232,66,36,.14); }
 
 /* Candidate picker */
 .slide-block { margin: 14px 0; }

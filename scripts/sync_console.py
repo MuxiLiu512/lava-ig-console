@@ -314,6 +314,10 @@ def _build_and_write(m):
             entry = {"cid": CID[i], "src": os.path.relpath(out, REPO).replace(os.sep, "/"), "kind": c.get("kind", "generated")}
             if c.get("source_label"):
                 entry["source_label"] = c["source_label"]
+            if c.get("source_kind"):
+                entry["source_kind"] = c["source_kind"]   # WM/OV/OL/DESIGN → UI badge 與法遵標注都靠它
+            if c.get("low_q"):
+                entry["low_q"] = True
             if c.get("prompt_hash"):
                 entry["prompt_hash"] = c["prompt_hash"]
             cands.append(entry)
