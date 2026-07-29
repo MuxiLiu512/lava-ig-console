@@ -1,0 +1,49 @@
+{
+  "_schema": "swipe 庫：情報線（lava-research）唯一輸出工件；產文線 Strategy 階段讀此檔選模板。每筆必附 evidence，查不到互動數據標 unverified。retired 不刪除。",
+  "templates": [
+    {
+      "id": "tpl-trend-word-textcard",
+      "type": "post",
+      "hook_type": "趨勢詞策展",
+      "skeleton": "cover=單一趨勢詞大字（設計文字卡，非照片）→ 2-4張=該詞的情境展開（每張一個具體場景句）→ 尾張=線下活動/品牌 CTA",
+      "why_it_works": "趨勢詞自帶搜尋與討論熱度；設計文字卡在動態裡與照片流形成對比、3 秒可讀；策展（幫讀者命名一種處境）觸發『這在說我』的轉發動機，比知識灌輸的分享成本低。",
+      "evidence": {"source_account": "@thewknd.club", "post_url": "https://www.instagram.com/p/DbPzikYEdZW/", "engagement": "高互動（Jesse 指定對標；具體數據 unverified）", "seen_at": "2026-07-28"},
+      "fit_for_lava": "直接適配：Lava 線下優先的定位可承接『不想再聊天了』類趨勢詞；設計底生成器（DESIGN）已能產文字卡底。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-data-contrast-hook",
+      "type": "post",
+      "hook_type": "數據反差",
+      "skeleton": "cover=具體數字反差主標（例：傳了100則訊息，還是約不出來）→ 中段=場景故事先行、研究後置解釋內心戲 → 尾張=品牌段（使用者主動選擇的行動）",
+      "why_it_works": "具體數字給 hook 可信度與畫面感；反差製造認知缺口驅動滑動；故事先行研究後置避免 wiki 感（AI 味主因之一）。",
+      "evidence": {"source_account": "多帳號通用公式（風格規格 v1.0 hook 公式庫）", "post_url": "", "engagement": "unverified", "seen_at": "2026-07-28"},
+      "fit_for_lava": "適配：Lava 的『不聊天』主張天然帶數據反差素材（訊息數 vs 見面數）。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-thats-me-scenario",
+      "type": "post",
+      "hook_type": "這在說我情境問句",
+      "skeleton": "cover=具體到動作層次的情境問句（你也會點開對話框看到已讀又退出去嗎）→ 中段=該族群內心戲逐張推進 → 尾張=解方+CTA",
+      "why_it_works": "具體情境讓特定族群被精準命中（大題目=弱 hook）；tag 朋友的分享動機是『這就是你』；儲存動機是『這就是我』。",
+      "evidence": {"source_account": "critic rubric hook 公式＋Weekend Club 對話式 hook 機制", "post_url": "", "engagement": "unverified", "seen_at": "2026-07-28"},
+      "fit_for_lava": "適配：交友情境的內心戲題材庫近乎無限；注意禁句規則（不得用赦免式安慰收尾）。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-save-worthy-list",
+      "type": "post",
+      "hook_type": "清單體/金句卡",
+      "skeleton": "cover=承諾一個可截圖收藏的濃縮物（公式/清單/金句）→ 中段=逐條展開每條配一個場景例 → 尾張=完整版彙總卡（截圖點）+CTA",
+      "why_it_works": "儲存是 IG 演算法最重的互動訊號之一；『值得截圖』給讀者回訪理由；彙總卡讓儲存行為集中在同一張，放大訊號。",
+      "evidence": {"source_account": "IG 通用高儲存格式（critic rubric 儲存價值項）", "post_url": "", "engagement": "unverified", "seen_at": "2026-07-28"},
+      "fit_for_lava": "適配：約會前檢查清單、開場白公式等；需守引用查證規則（研究來源可查證才可列）。",
+      "status": "candidate",
+      "used_by": []
+    }
+  ]
+}
