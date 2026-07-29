@@ -228,19 +228,19 @@
    "used_by": []
   },
   {
-   "id": "tpl-brand-values-manifesto",
+   "id": "tpl-product-intro-carousel",
    "type": "post",
-   "hook_type": "品牌價值主張卡",
+   "hook_type": "產品機制圖解輪播",
    "curated_by": "jesse",
-   "skeleton": "單張/短輪播：一句品牌世界觀宣言（a space for intentional dating / people show up and respect each other's time）＋極簡品牌視覺；caption 短、hashtag 打品類詞（#intentionaldating）。",
-   "why_it_works": "不賣功能賣立場：把產品差異寫成一種約會價值觀，吸引認同者自我歸隊（follow＝表態）；「show up」「respect time」直指 dating app 用戶最大痛點（放鴿子、已讀不回），痛點共鳴替品牌立場背書；品類詞 hashtag 佔位搜尋心智。",
+   "skeleton": "cover=受眾自我篩選宣言（Designed for intentional daters，halftone 人像+檔案卡 UI 疊框）→ 每張=一個產品機制寫成「立場句」而非功能名：No endless swiping（興趣 chips UI+每日限量策展）→ Built-in commitment（雙方預付＋一個硬數字 <1% stand-up rate 大字）→ Check, check, double check（確認/遲到/我到了 訊息 UI）→ Ghosters not welcome（幽靈插畫+帳號凍結訊息截圖）→ A clear path from match to date（match→付款→選日→地點揭曉→確認→約會日 時間軸 UI）→ 尾張=情感收尾+下載 CTA（Love is worth the leap + 真實約會照拼貼）；caption=一句世界觀宣言（A space for intentional dating. Where people show up and respect each other's time）。每張輪替主色（橘/粉/深梅/米），拼貼紙質感統一。",
+   "why_it_works": "把功能清單翻譯成立場清單——每張標題都是一個可認同的態度（Ghosters not welcome）而非功能名（帳號凍結），看的人是在『歸隊』不是在『讀說明書』；真實產品 UI 當插圖＝主張有實物背書；唯一一個硬數字（<1% 放鳥率）承擔全部說服力，比堆數據可信；craft 拼貼質感讓產品教學看起來像 zine 不像簡報；cover 自我篩選（intentional daters）讓非目標客群滑走、留下的全是高意圖受眾。⚠留言區教訓：產品主張型貼文會吸引問責型負評（篩選功能、配額、無聊天的反面聲音）——發布需備留言 SLA 與不過度承諾（數字必須真實可守）。",
    "evidence": {
-    "source_account": "@breeze.social（荷蘭 offline-first 約會 app，64.6K 粉）",
+    "source_account": "@breeze.social（verified，64.6K 粉）",
     "post_url": "https://www.instagram.com/p/DSIPtx8CL_l/",
-    "engagement": "unverified（embed 僅見 9 留言）",
+    "engagement": "unverified（2025-12-11 發布；Jesse 登入截圖見完整 7 張）",
     "seen_at": "2026-07-29"
    },
-   "fit_for_lava": "直接適配：Breeze 是 Lava 的同定位競品（先約再聊），其「intentional dating」品類詞可對標 Lava 的「不聊天的交友軟體」；設計底生成器可直接產此類宣言卡。",
+   "fit_for_lava": "極高適配（Jesse 點名可用）：Lava 機制天然同構——不聊天（每日限量策展）／成立約會雙方承諾／時段地點確認流／爽約處理／match→見面路徑圖。製作走設計底+UI 元素圖解（DESIGN 系統）。鐵律：產品事實以 lava-product-context 正本為準（金額/規則/用語），放鳥率等數字必須用真實數據、沒有就不放；留言 SLA 24h。",
    "status": "validated",
    "used_by": []
   },
