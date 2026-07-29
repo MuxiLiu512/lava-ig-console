@@ -399,3 +399,46 @@ n8n 用 `search_workflows(query:"Lava")` 確認全 active；排程用 `list_sche
 - **`sync_console.py ingest-new [--limit N]`**：掃 ClickUp 在製中（IG貼文｜開頭、不在 posts.json、排除端到端測試）× Drive 文案初稿 → 逐張 from-drive 餵入。已掛進 auto_render.sh（每輪 2 張）。首戰一次清掉 13 篇積壓。
 - 哨兵現負責：**入料 → 渲染 → 發佈對帳**，每 10 分鐘全自動（launchd `/bin/bash` + Full Disk Access；lava-bash 複製法會被 macOS codesigning 擊殺，勿再試）。Claude feed 只剩 insights/留言/歸檔等低頻工作。
 - 雷區：reconcile 狀態名認「發佈完成」（已修，勿再用舊名「已發布」）；Anthropic API 額度第三度見底過——**建議 Jesse 開 auto-reload**。
+
+---
+
+## 10. Media Team OS — Week 1 施工完成（2026-07-29，Fable 5）
+
+**目標升級**：從「ops 修修補補」→「AI media team 取代 social media team」。核准計畫正本：`/Users/mimo/.claude/plans/purrfect-purring-micali.md`。
+
+### 組織圖（三線一板；角色=章程+工件契約，不是聊天室自由人）
+```
+【黑板＝repo 工件】templates.json（swipe庫）· posts.json · insights.json · style-notes · proposals · golden/
+──────────────────────────────────────────────────────────
+情報線（週+on-demand） 🔬 lava-research（章程 .claude/agents/lava-research.md）→ 寫 templates.json
+產文線（事件驅動）     🧭Strategy→✍️Copy(Claude-only)→🎨Design→🔍Critic（n8n 流水線＋critic subagent）
+                      └→ 待審池 → 👑Jesse 批次審（唯一人審 gate）→ 哨兵渲染/發佈 → 成效
+數據線（週日）         📊 lava-pmm（章程 .claude/agents/lava-pmm.md）→ 週報+prompt diff 提案+learnings
+維運（常駐）           🔧 launchd 哨兵（入料/渲染/對帳，零 token）
+```
+**Loop 紀律**：critic-rewrite 上限 1 輪；critic 先 advisory 兩週（不擋流），採納率高再升 gate；反思必綁外部訊號（成效/退稿）。
+
+### Week 1 落地清單（全部完成並驗證）
+1. **W1-1 source_kind 全鏈路**：`_still_label` 回傳 (label, kind)；WM/OV/OL/DESIGN badge＋出處行；4:5 預覽（object-fit:cover＝IG 實際裁法）；lightbox。
+2. **W1-2 設計底生成器** `scripts/gen_design_bg.py`：4 模板（dusk/slash/grain/grid）、1950×2438 原生、亮度預補償、seed 可重現、**原子寫入**（timeout 砍斷不留截斷檔）。from-drive 自動冪等補產（曾因 `pid` 未定義靜默失敗——已修，這就是「設計底一直沒出現」的根因）。
+3. **W1-3 WF01 升級**（c553e11c）：Claude-only 撰稿（gpt 分支停用）、image_brief（`need∈scene_still|person_photo|book_cover|design_only`；book_cover 只配有「」引文页，Layer2 機械執法）、hashtag/IG SEO 段、hook_type/template_id 輸出、產品事實注入宣告（單向：lava-product-context 正本 → prompt，不回流）。
+4. **W1-4 WF06 圖素 v2**（df70acb4）：Giphy 刪除；Commons/Openverse metadata 過濾（min(w,h)<700 或 max<1000 或 ratio>2.8 或 >15MB 剔除）；**雷區：update_workflow 連線指定輸出口用 `sourceIndex`**（`sourceOutput`/`outputIndex` 會被靜默忽略，掛回 output 0）。
+5. **W1-5 品質閘門** `_image_ok()`：解析度/JPEG bpp/Laplacian 模糊（暗圖豁免 brightness<40）；**log-only 校準期**（標 low_q badge 不剔除）→ `data/archive/image_gate.jsonl`；審計指令 `python3 scripts/sync_console.py gate-audit`；門檻校準後再升硬閘。
+6. **W1-6 智慧層**：swipe 庫 `data/templates.json` 12 筆（台灣 3 筆：街頭故事漫畫體/微靠背記事本體/thewknd 線下回顧；Reels 3 筆；全附實訪 evidence）→ WF05 已接（digest 附模板清單、靈感卡輸出 template_id）；golden set `data/golden/golden.json`（5 pass＋2 fail，rubric 改版回歸基準）；critic advisory 首跑（張凌赫 65/100 詳評已留 ClickUp 卡）。
+7. **W1-7 Ad Library spike 證偽**：Meta Ad Library API 台灣區**只開放政治/社會議題廣告**，全類型商業廣告僅歐盟/英國（DSA）→ 正式砍掉「台灣競品投放監測」路線；競品情報改走 lava-research 網研＋歐盟區素材參考（Tinder/Bumble 歐盟投放可看創意方向，非台灣實況）。
+
+### UTM 規約（北極星：link-in-bio 點擊 → PostHog）
+- **bio 常駐**：`https://manager.lava.tw/?utm_source=instagram&utm_medium=bio&utm_campaign=lava_ig`
+- **貼文/限動/DM 變體**：`utm_medium=post|story|dm` ＋ `utm_content=<post_id>`（例：`...&utm_medium=post&utm_campaign=lava_ig&utm_content=20260724-張凌赫效應為什麼高冷男主`）
+- 成效判讀只抓 outlier（>2× 中位數→repurpose），不做小樣本統計。
+
+### Critic advisory 常設步驟（feed 時執行）
+渲染後/待審前，派 general-purpose subagent 讀：①critic SKILL（desktop skills-plugin 目錄 lava-ig-critic）②風格規格 ③該篇 copy_versions+候選組成 → 固定格式檢核結果 → `clickup_create_comment` 留言（advisory，不改狀態不重寫）。首例：86ey9fgmw comment 90180241822987。
+
+### 驗收鐵律（每次改動）
+harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具＋Browser 親眼截圖＋一次只動一個工作流＋prompt/章程改動全 git 化（selftest+harness 不得變紅）。
+
+### Jesse 待辦（機器做不了的三件）
+1. Anthropic Console 開 auto-reload（額度已三度見底）。
+2. IG bio 連結換上面的 UTM 網址。
+3. 丟 5-10 條你覺得「這就是我要的」爆文連結給 lava-research 入庫；圈 5-6 篇存貨進 Week-2 精品重做。
