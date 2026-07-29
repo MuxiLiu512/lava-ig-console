@@ -154,6 +154,47 @@ def _flat_image(path, thresh=8.0):
         return True
 
 
+def _image_ok(path):
+    """品質閘門（W1-5）：解析度／JPEG 壓縮率／模糊偵測。回傳 (ok, reason, metrics)。
+    DESIGN 檔（品牌自產漸層）由呼叫端 bypass；門檻校準期間 log-only 不剔除。"""
+    try:
+        from PIL import Image, ImageStat, ImageFilter
+        im = Image.open(path)
+        w, h = im.size
+        size = os.path.getsize(path)
+        metrics = {"w": w, "h": h, "bytes": size}
+        if min(w, h) < 700:
+            return False, "low_res", metrics
+        fmt = (im.format or "").upper()
+        if fmt == "JPEG":
+            bpp = size / float(w * h)
+            metrics["bpp"] = round(bpp, 4)
+            if bpp < 0.05:
+                return False, "over_compressed", metrics
+        g = im.convert("L")
+        scale = 512.0 / max(w, h)
+        if scale < 1.0:
+            g = g.resize((max(1, int(w * scale)), max(1, int(h * scale))))
+        mean = ImageStat.Stat(g).mean[0]
+        metrics["brightness"] = round(mean, 1)
+        if mean >= 40:   # 暗圖豁免：夜景/劇照低對比本來就低變異，不算模糊
+            ev = ImageStat.Stat(g.filter(ImageFilter.FIND_EDGES)).var[0]
+            metrics["edge_var"] = round(ev, 1)
+            if ev < 60:
+                return False, "blurry", metrics
+        return True, None, metrics
+    except Exception as e:
+        return False, "unreadable:%s" % type(e).__name__, {}
+
+
+def _gate_log(rec):
+    """image_gate.jsonl append-only（校準期審計；gate-audit 讀這裡）。"""
+    outdir = os.path.join(DATA, "archive")
+    os.makedirs(outdir, exist_ok=True)
+    with open(os.path.join(outdir, "image_gate.jsonl"), "a", encoding="utf-8") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
 def _latest_copy_edits(pid, ce_list, version=None):
     """操控室文案編輯 → 每個 (slide n, 欄位) 取最新一筆 edited 值。
     version：只吃「無版本標記（舊制）」或「與選定文案版本相符」的編輯（雙寫手比稿用）。"""
@@ -312,6 +353,13 @@ def _build_and_write(m):
                 sys.stderr.write("  ! 缺候選圖 %s\n" % c["src"]); continue
             if "-DESIGN-" not in os.path.basename(c["src"]) and _flat_image(c["src"]):
                 sys.stderr.write("  ↩ 剔除空圖/破圖候選：%s\n" % os.path.basename(c["src"])); continue
+            if "-DESIGN-" not in os.path.basename(c["src"]):
+                ok, reason, metrics = _image_ok(c["src"])
+                if not ok:
+                    c["low_q"] = True   # log-only：標記不剔除，門檻用 gate-audit 校準後再升硬閘
+                    _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
+                               "file": os.path.basename(c["src"]), "reason": reason, "metrics": metrics})
+                    sys.stderr.write("  ⚠ 低畫質標記（%s）：%s\n" % (reason, os.path.basename(c["src"])))
             out = make_thumb(c["src"], os.path.join(ASSETS, pid, "slide-%d%s" % (s["n"], CID[i])))
             entry = {"cid": CID[i], "src": os.path.relpath(out, REPO).replace(os.sep, "/"), "kind": c.get("kind", "generated")}
             if c.get("source_label"):
@@ -954,6 +1002,34 @@ def archive_drive_rounds(args):
     print("✓ %s：歸檔 %d 個舊輪資料夾 → ZZ-歸檔/（保留最新輪＋當前渲染來源）" % (args.post_id, n))
 
 
+def gate_audit(args):
+    """image_gate.jsonl 審計：按原因/貼文彙總，供校準門檻後決定是否升硬閘。"""
+    fp = os.path.join(DATA, "archive", "image_gate.jsonl")
+    if not os.path.exists(fp):
+        print("（尚無低畫質紀錄）"); return
+    import collections
+    recs = []
+    with open(fp, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                recs.append(json.loads(line))
+    if args.days:
+        cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=args.days)).isoformat()
+        recs = [r for r in recs if r.get("ts", "") >= cutoff]
+    by_reason = collections.Counter(r.get("reason", "?") for r in recs)
+    by_post = collections.Counter(r.get("post_id", "?") for r in recs)
+    print("低畫質標記 %d 筆（近 %s 天）" % (len(recs), args.days or "∞"))
+    print("按原因：", "  ".join("%s×%d" % kv for kv in by_reason.most_common()))
+    print("按貼文：")
+    for pid, n in by_post.most_common(10):
+        print("  %-32s %d" % (pid[:32], n))
+    print("最近 %d 筆：" % min(args.tail, len(recs)))
+    for r in recs[-args.tail:]:
+        print("  %s │ %s │ s%s │ %-14s │ %s" % (r.get("ts", "")[:16], r.get("post_id", "")[:24],
+                                                r.get("slide"), r.get("reason"), r.get("file")))
+
+
 def push(args):
     paths = ["data/posts.json", "data/reviews.json"]
     # 一併把新 assets 推上（保守起見推整個 assets）
@@ -992,6 +1068,7 @@ def main():
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
+    a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
     args.func(args)

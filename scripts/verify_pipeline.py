@@ -14,11 +14,13 @@ def main():
     print("─" * 86)
     for p in audit:
         kinds = collections.Counter()
-        flats, nolabel = 0, 0
+        flats, nolabel, lowq = 0, 0, 0
         total = 0
         for s in p.get("slides", []):
             for c in s.get("candidates", []):
                 total += 1
+                if c.get("low_q"):
+                    lowq += 1
                 sk = c.get("source_kind")
                 if sk:
                     kinds[sk] += 1
@@ -39,6 +41,8 @@ def main():
             flags.append("🔴破圖×%d" % flats)
         if nolabel:
             flags.append("⚠劇照無出處×%d" % nolabel)
+        if lowq:
+            flags.append("⚠低畫質×%d" % lowq)
         if not (kinds.get("WM") or kinds.get("OV") or kinds.get("OL")) and kinds.get("劇照", 0) == 0:
             flags.append("⚠只有生成圖")
         if flats or total < 8:

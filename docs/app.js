@@ -275,7 +275,7 @@ function slideBlock(p, s, choice) {
     iw.appendChild(zm);
     cc.appendChild(iw);
     const meta = el("div", "meta");
-    meta.innerHTML = `<span class="tag ${si.cls}">${si.tag}</span>`;
+    meta.innerHTML = `<span class="tag ${si.cls}">${si.tag}</span>` + (cd.low_q ? ` <span class="tag lowq">畫質低</span>` : ``);
     cc.appendChild(meta);
     cc.appendChild(el("div", "src", esc(si.line)));
     cc.onclick = () => {
