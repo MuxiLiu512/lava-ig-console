@@ -443,3 +443,23 @@ harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具�
 1. Anthropic Console 開 auto-reload（額度已三度見底）。
 2. IG bio 連結換上面的 UTM 網址。
 3. 丟 5-10 條你覺得「這就是我要的」爆文連結給 lava-research 入庫；圈 5-6 篇存貨進 Week-2 精品重做。
+
+---
+
+## 11. 素材線 v2「截圖策展」＋編輯政策（2026-07-30，Jesse 拍板）
+
+**成品標準（Weekend Club 參照）**：講誰就截誰——內容提到的人物/影片/文章/書，就實際去 YouTube/Twitter/IG/網站截那個畫面，配統合分析級深度說明。素材要有「人工研究足跡」。
+
+**編輯政策（owner 決策）**：版權採**社群慣行的引用式使用＋出處標注**（Weekend Club/timeleft 同標準），不再以 CC 授權為供圖前提。保留：每張自動 credit（render_credit 上圖＋caption 出處）、shots_credits.json 來源記錄。不碰：私人帳號內容、明顯盜攝外流物。
+
+**管線**：WF01 研究步驟每個論點附真實 URL（第 5 項要求）→ 撰稿每張 slide 輸出 `visual_refs:[{url,frame_hint,credit}]`（01fca1f2）→ 哨兵每輪 `forage-pending --limit 2` → `scripts/forage_shots.py`：yt 縮圖直抓／gstack browse daemon 截網頁（首屏）+推文/IG embed／書封直抓 → 頂部錨定裁 1950×2438 → `slideN-SHOT-*.png`＋`shots_credits.json` 進 Drive 底圖資料夾 → feed 時 SHOT 排候選最前（default_cid）、操控室青色「截圖」badge＋出處行。
+
+**雷區**：本機 raw Chrome headless 會與運行中的 Chrome 衝突卡死——一律用 browse daemon（`~/.claude/skills/gstack/browse/dist/browse`，輸出路徑限 /private/tmp 或 repo 內）；forager 產物一律本地先寫再搬 Drive。
+
+**Learnings（2026-07-30 檢討）**：
+1. 搞錯主要矛盾：時間花在管線韌性，但輸出品質第一決定因素是**來源策略**——「在合規圖庫找 MrBeast」注定失敗。從成品長相反推供應鏈。
+2. 越權預設政策：版權界線是 owner 的編輯/商業決策，不該由工程端最保守預設綁死。
+3. 過早宣稱（新驗收鐵律）：宣稱任何改善前，必須指得出該產物流經的新環節（可稽核）。Attached/Aziz 誤稱新管線稿即此教訓。
+4. Drive 掛載是常態事故源：EDEADLK/慢寫/截斷——重要產物本地先寫。
+
+**首兩個實測案**：Attached（Levine 訪談×3＋書封＋Sabrina Zohar 對談）、Aziz（BookCon 座談＋NPR 專訪＋書封＋Wiki＋Goodreads），SHOT×5 各就 slide 首位。存貨處置：端到端樣板過關後 Jesse 圈 5-6 篇重做，其餘封存。

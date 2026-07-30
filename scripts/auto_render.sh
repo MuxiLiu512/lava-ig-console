@@ -21,6 +21,10 @@ trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 cd "$REPO" || exit 0
 git pull --rebase --quiet origin main >>"$LOG" 2>&1 || { git rebase --abort >/dev/null 2>&1; exit 0; }
 
+# 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
+FRG=$(timeout 700 python3 scripts/sync_console.py forage-pending --limit 2 2>&1)
+echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+
 # 入料：在製中卡的新草稿自動餵進操控室（每輪最多 2 張，避免單輪過長）
 ING=$(python3 scripts/sync_console.py ingest-new --limit 2 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|⏭ 餵入|Error" >>"$LOG"

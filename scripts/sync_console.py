@@ -1043,6 +1043,56 @@ def archive_drive_rounds(args):
     print("✓ %s：歸檔 %d 個舊輪資料夾 → ZZ-歸檔/（保留最新輪＋當前渲染來源）" % (args.post_id, n))
 
 
+def forage_pending(args):
+    """掃最近的 Claude 文案稿：有 visual_refs 但底圖資料夾缺對應 SHOT 檔 → 呼叫 forage_shots.py 實地截圖。
+    素材線 v2（截圖策展）；哨兵每輪執行，--limit 控制單輪處理篇數。"""
+    root = DRIVE_PRODUCE
+    if not os.path.isdir(root):
+        print("Drive 未掛載，略過 forage"); return
+    jfs = sorted([f for f in glob.glob(os.path.join(root, "*.json"))
+                  if "文案初稿" in os.path.basename(f) and "-Claude" in os.path.basename(f)
+                  and "ZZ" not in os.path.basename(f)],
+                 key=os.path.getmtime, reverse=True)[:8]
+    done = 0
+    for jf in jfs:
+        if done >= (args.limit or 2):
+            break
+        try:
+            with open(jf, encoding="utf-8") as f:
+                d = json.load(f)
+        except Exception:
+            continue
+        refs = []
+        for s in d.get("slides", []):
+            for vr in (s.get("visual_refs") or []):
+                if vr.get("url"):
+                    refs.append({"slide": s.get("index") or 1, "url": vr["url"],
+                                 "frame_hint": vr.get("frame_hint", ""), "credit": vr.get("credit", "")})
+        if not refs:
+            continue
+        base = os.path.basename(jf)
+        date = (re.match(r"(\d{6,8})", base) or [None, ""])[1] if re.match(r"(\d{6,8})", base) else ""
+        topic_raw = re.sub(r"-?文案初稿.*$", "", re.sub(r"^\d{6,8}[-\s]*", "", os.path.splitext(base)[0]))
+        ntopic = _norm_topic(base)
+        subdirs = [dd for dd in glob.glob(os.path.join(root, "*")) if os.path.isdir(dd) and "ZZ" not in os.path.basename(dd)]
+        bds = [dd for dd in subdirs if "底圖" in os.path.basename(dd) and _topic_match(ntopic, os.path.basename(dd))]
+        bd = max(bds, key=os.path.getmtime) if bds else os.path.join(root, "%s %s 底圖" % (date or "20260000", topic_raw[:24]))
+        missing = [r for r in refs if not glob.glob(os.path.join(bd, "slide%d-SHOT-*" % r["slide"]))]
+        if not missing:
+            continue
+        rf = os.path.join("/private/tmp", "forage-refs-%d.json" % os.getpid())
+        with open(rf, "w", encoding="utf-8") as f:
+            json.dump(missing, f, ensure_ascii=False)
+        sys.stderr.write("→ forage %s（%d refs）\n" % (base[:40], len(missing)))
+        try:
+            subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "forage_shots.py"),
+                            "--refs", rf, "--outdir", bd], check=False, timeout=600)
+        except subprocess.TimeoutExpired:
+            sys.stderr.write("  ! forage timeout（下輪續抓缺檔）\n")
+        done += 1
+    print("forage-pending：處理 %d 篇" % done)
+
+
 def gate_audit(args):
     """image_gate.jsonl 審計：按原因/貼文彙總，供校準門檻後決定是否升硬閘。"""
     fp = os.path.join(DATA, "archive", "image_gate.jsonl")
@@ -1109,6 +1159,7 @@ def main():
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
+    a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.set_defaults(func=forage_pending)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
