@@ -4945,284 +4945,6 @@
       "candidates_since": "2026-07-28T21:03:56+08:00"
     },
     {
-      "id": "20260724-張凌赫效應為什麼高冷男主",
-      "topic": "張凌赫效應：為什麼「高冷男主」在現實中幾乎不存在，但我們一直在找他？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86ey9fgmw",
-      "created_at": null,
-      "caption": "你存下的那張張凌赫劇照，記錄了一種被專注看見的感覺：謝徵在人群裡只望向一個人，連細微情緒都沒有錯過。當這段經過編劇、配樂與剪輯修整的最佳片段成為比較基準，真人還來不及被認識，就可能先為一次停頓或答錯話失分。\n\n你不必降低標準，也不用戒掉高冷男主；你可以主動把角色魅力拆成能在見面時觀察的行為，例如情緒是否穩定、能否聽懂你的話、是否尊重界線，以及答應的事有沒有做到。Lava提供線下碰面的機會，你帶著自己的判斷走進關係，也由你決定誰值得繼續認識。\n\n#張凌赫 #逐玉 #高冷男主 #媒體心理學 #對比效應 #理想伴侶 #LavaDating",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1a.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1e.jpg",
-              "kind": "still",
-              "source_label": "Zhang Linghe",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1f.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1g.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "真人輸給男主角，可能從第一次見面前就開始了",
-          "display_copy": "真人最吃虧的地方，是你拿他的第一次見面，去比較謝徵被編劇、配樂與剪輯反覆修整後的最佳片段；你存下張凌赫的劇照時，也可能悄悄把〖被專注看見〗誤認成一張臉必須自帶的能力。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2a.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2b.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2c.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2d.jpg",
-              "kind": "still",
-              "source_label": "逐玉"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2e.jpg",
-              "kind": "still",
-              "source_label": "Zhang Linghe",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2f.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2g.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "高冷男主，是被整套敘事共同完成的",
-          "display_copy": "張凌赫以190公分身形與《蒼蘭訣》等作品累積辨識度，《逐玉》再把他放進武安侯謝徵的角色裡；劇中每次【沉默與回頭】都有鏡頭、配樂和情節托住，真人的安靜卻可能只是疲倦、分心，或還在想怎麼回答。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-3a.jpg",
-              "kind": "still",
-              "source_label": "Zhang Linghe",
-              "source_kind": "WM",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-3b.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-3c.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "追劇不會決定標準，卻可能提供比較尺",
-          "display_copy": "Segrin 與 Nabi 發現，較多電視觀看與較理想化的婚姻期待呈現關聯；這不等於追劇會讓人挑不到對象，卻提醒我們：真人需要說明與磨合，角色的回應早已被寫好。\n資料來源：Journal of Communication，2002",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-4a.jpg",
-              "kind": "still",
-              "source_label": "Zhang Linghe",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-4b.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-4c.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "五分鐘能移動外觀基準，愛情仍待驗證",
-          "display_copy": "接觸特定女性體型影像約【5分鐘】後，參與者對正常外觀的判斷出現改變；但這項研究測的是身體外觀，沒有直接測試擇偶，只能作為對比效應的線索。\n資料來源：Winkler & Rhodes，British Journal of Psychology，2005",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-5a.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-5b.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "保留心動，再把角色翻譯成行為",
-          "display_copy": "你可以把「高冷」翻成情緒穩定，把「記得細節」翻成能否聽懂、回應並做到。〖現實裡的專注〗沒有慢動作；但當一個人記得你上週說的小事，也尊重你的沉默與界線，這些可重複觀察的行為，會幫你決定誰值得再見一次。",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "gpt-5.6",
-      "copy_versions": {
-        "claude": {
-          "caption": "根據《網路溫度計 DailyView》輿情分析，張凌赫憑《逐玉》謝征角色聲量狂飆，斷層奪冠，力壓楊洋、肖戰等人。台灣網友大量討論製作規格的加成效果，指出導演曾慶杰「幾乎給每個鏡頭慢動作＋側臉」，有人留言：「曾導拍成這樣，叫我以後怎麼看別導拍的？」這不是追劇廢話，這是心理學現象的民間自白，你的審美基準，已經被重置了。\n\n《逐玉》官方宣布 2026 年 8 月將辦「逐玉一念」演唱會，票價最高達人民幣 1,680 元，但男女主角雙雙缺席，台灣粉絲的反應是：「沒有男女主，跟逐玉有 0 個關係。」這句話說明了一件事：大家真正想要的，從來不是那個 IP，而是謝征與她之間的那種在場感。Lava 沒有辦法替你製造慢動作側臉，但研究說自尊越高的人越不容易拿自己與理想化信念比較，關係滿意度也越高，所以我們把心力放在讓你帶著清醒去見一個真實的人，而不是帶著謝征的模版去驗收他。\n\n#張凌赫 #逐玉 #媒體心理學 #對比效應 #理想伴侶 #高冷男主 #交友心理學 #Lava約會 #寄生社交 #現實感情 #台灣交友 #LavaDating",
-          "slides": {
-            "1": {
-              "heading": "你愛的是他，還是導演替他設計的每一個側臉？",
-              "display_copy": "你愛的是他\n還是導演替他設計的\n〖每一個側臉？〗\n\n《逐玉》導演曾慶杰\n幾乎給每個鏡頭慢動作＋側臉\n張凌赫謝征的眼神從畫面裡壓過來\n\n網友自白：「叫我以後怎麼看別導拍的？」\n\n這不是追劇廢話\n這是你的審美基準，已經被重置了\n\n資料來源：DailyView 每日調查"
-            },
-            "2": {
-              "heading": "刷完一整季，再看現實的人，怎麼都像缺了什麼？",
-              "display_copy": "刷完一整季\n再看現實的人\n【怎麼都像缺了什麼？】\n\n他不會在你說累的時候\n沉默地幫你擋住人群\n不會記得你三個月前隨口說過的那句話\n眼神也沒有對準你超過五秒\n\n你沒有嫌棄他\n只是隱約覺得——少了什麼\n\n那個「少了什麼」\n從來不存在於現實\n它存在於劇本、分鏡表\n和後製調色裡"
-            },
-            "3": {
-              "heading": "5 分鐘就夠了：媒體重置你審美基準的速度",
-              "display_copy": "這不是你的錯\n是兩個機制同時在作用\n\n【媒體曝光效應】\n沒有伴侶的人，看越多電視\n對理想伴侶標準越高\n關係滿意度越低\n\n【對比效應】\n1980 年，81 名受試者\n看完以高吸引力女性為主角的節目後\n對普通人的評分，顯著下降\n\n〖只需 5 分鐘的媒體曝光\n就足以重置你對「吸引力」的判斷基準〗\n\n資料來源：Kenrick & Gutierres (1980)；Winkler & Rhodes (2005)；ResearchGate, 2009"
-            },
-            "4": {
-              "heading": "你喜歡的是張凌赫，還是「那種專注」？",
-              "display_copy": "你喜歡的是張凌赫\n還是【那種專注】？\n\n謝征記得她說過的每一句話\n在人群裡只看她一個人\n\n你追的可能不是高冷人設\n而是「被認真對待的感覺」\n\n研究顯示：對明星的高度單向情感連結\n讓社會比較傾向增強（β = .18）\n自尊隨之下降（β = -.51）\n\n自尊越低，越難在真實關係裡\n感知到「認真」的信號——即使它就在眼前\n\n不是現實中沒有認真的人\n是你的接收頻率，跑掉了\n\n資料來源：MMPR Pilot Study, PMC/NCBI, 2022"
-            },
-            "5": {
-              "heading": "沒有劇本濾鏡的「專注」，其實更真實",
-              "display_copy": "沒有劇本濾鏡的【專注】\n其實更真實\n\n《逐玉》演唱會票價最高 1,680 人民幣\n男女主角雙雙缺席\n台灣粉絲：「跟逐玉有 0 個關係」\n\n大家真正想要的\n從來不是那個 IP\n而是謝征與她之間——那種在場感\n\nLava 讓你看到的\n是他今天願意出現的地方\n不是精心設計的人設頁面\n\n高冷男主在現實中幾乎不存在\n但一個願意在週三下午\n從捷運站走過來見你的人\n此刻就在地圖上某個圓點裡"
-            },
-            "6": {
-              "heading": "來現實找他",
-              "display_copy": "CTA 公版"
-            }
-          }
-        },
-        "gpt": {
-          "caption": "你存下的那張張凌赫劇照，記錄了一種被專注看見的感覺：謝徵在人群裡只望向一個人，連細微情緒都沒有錯過。當這段經過編劇、配樂與剪輯修整的最佳片段成為比較基準，真人還來不及被認識，就可能先為一次停頓或答錯話失分。\n\n你不必降低標準，也不用戒掉高冷男主；你可以主動把角色魅力拆成能在見面時觀察的行為，例如情緒是否穩定、能否聽懂你的話、是否尊重界線，以及答應的事有沒有做到。Lava提供線下碰面的機會，你帶著自己的判斷走進關係，也由你決定誰值得繼續認識。\n\n#張凌赫 #逐玉 #高冷男主 #媒體心理學 #對比效應 #理想伴侶 #LavaDating",
-          "slides": {
-            "1": {
-              "heading": "真人輸給男主角，可能從第一次見面前就開始了",
-              "display_copy": "真人最吃虧的地方，是你拿他的第一次見面，去比較謝徵被編劇、配樂與剪輯反覆修整後的最佳片段；你存下張凌赫的劇照時，也可能悄悄把〖被專注看見〗誤認成一張臉必須自帶的能力。"
-            },
-            "2": {
-              "heading": "高冷男主，是被整套敘事共同完成的",
-              "display_copy": "張凌赫以190公分身形與《蒼蘭訣》等作品累積辨識度，《逐玉》再把他放進武安侯謝徵的角色裡；劇中每次【沉默與回頭】都有鏡頭、配樂和情節托住，真人的安靜卻可能只是疲倦、分心，或還在想怎麼回答。"
-            },
-            "3": {
-              "heading": "追劇不會決定標準，卻可能提供比較尺",
-              "display_copy": "Segrin 與 Nabi 發現，較多電視觀看與較理想化的婚姻期待呈現關聯；這不等於追劇會讓人挑不到對象，卻提醒我們：真人需要說明與磨合，角色的回應早已被寫好。\n資料來源：Journal of Communication，2002"
-            },
-            "4": {
-              "heading": "五分鐘能移動外觀基準，愛情仍待驗證",
-              "display_copy": "接觸特定女性體型影像約【5分鐘】後，參與者對正常外觀的判斷出現改變；但這項研究測的是身體外觀，沒有直接測試擇偶，只能作為對比效應的線索。\n資料來源：Winkler & Rhodes，British Journal of Psychology，2005"
-            },
-            "5": {
-              "heading": "保留心動，再把角色翻譯成行為",
-              "display_copy": "你可以把「高冷」翻成情緒穩定，把「記得細節」翻成能否聽懂、回應並做到。〖現實裡的專注〗沒有慢動作；但當一個人記得你上週說的小事，也尊重你的沉默與界線，這些可重複觀察的行為，會幫你決定誰值得再見一次。"
-            },
-            "6": {
-              "heading": "",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-07-29T13:19:03+08:00"
-    },
-    {
       "id": "20260725-大稻埕煙火約會指南人擠人",
       "topic": "大稻埕煙火約會指南：人擠人還是浪漫滿分？科學怎麼說",
       "version": 1,
@@ -5254,16 +4976,16 @@
             {
               "cid": "c",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-1c.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "fireworkscrowdnight",
+              "source_kind": "OV"
             },
             {
               "cid": "d",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-1d.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "fireworkscrowdnight",
+              "source_kind": "WM"
             }
           ],
           "final_src": null,
@@ -5316,16 +5038,16 @@
             {
               "cid": "g",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2g.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "Dadaochengfireworksfestival Taipei",
+              "source_kind": "WM"
             },
             {
               "cid": "h",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2h.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "fireworkscrowdnight",
+              "source_kind": "WM"
             }
           ],
           "final_src": null,
@@ -5354,16 +5076,9 @@
             {
               "cid": "c",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-3c.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-3d.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "Dadaochengfireworksfestival Taipei",
+              "source_kind": "WM"
             }
           ],
           "final_src": null,
@@ -5385,16 +5100,16 @@
             {
               "cid": "b",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-4b.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "Taipeinightriverfestival",
+              "source_kind": "OV"
             },
             {
               "cid": "c",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-4c.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "fireworkscrowdnight",
+              "source_kind": "WM"
             }
           ],
           "final_src": null,
@@ -5440,16 +5155,16 @@
             {
               "cid": "f",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5f.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "Taipeinightriverfestival",
+              "source_kind": "OV"
             },
             {
               "cid": "g",
               "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5g.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
+              "kind": "still",
+              "source_label": "fireworkscrowdnight",
+              "source_kind": "WM"
             }
           ],
           "final_src": null,
@@ -5527,16 +5242,221 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T13:26:27+08:00",
-      "copy_choice": "claude",
-      "render_note": "候選圖已更新且無前次渲染紀錄 → 退回待審，請重新選圖核准"
+      "candidates_since": "2026-07-30T15:23:51+08:00",
+      "copy_choice": "claude"
+    },
+    {
+      "id": "20260724-張凌赫效應為什麼高冷男主",
+      "topic": "張凌赫效應：為什麼「高冷男主」在現實中幾乎不存在，但我們一直在找他？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86ey9fgmw",
+      "created_at": null,
+      "caption": "你存下的那張張凌赫劇照，記錄了一種被專注看見的感覺：謝徵在人群裡只望向一個人，連細微情緒都沒有錯過。當這段經過編劇、配樂與剪輯修整的最佳片段成為比較基準，真人還來不及被認識，就可能先為一次停頓或答錯話失分。\n\n你不必降低標準，也不用戒掉高冷男主；你可以主動把角色魅力拆成能在見面時觀察的行為，例如情緒是否穩定、能否聽懂你的話、是否尊重界線，以及答應的事有沒有做到。Lava提供線下碰面的機會，你帶著自己的判斷走進關係，也由你決定誰值得繼續認識。\n\n#張凌赫 #逐玉 #高冷男主 #媒體心理學 #對比效應 #理想伴侶 #LavaDating",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Zhang Linghe",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": null,
+          "heading": "真人輸給男主角，可能從第一次見面前就開始了",
+          "display_copy": "真人最吃虧的地方，是你拿他的第一次見面，去比較謝徵被編劇、配樂與剪輯反覆修整後的最佳片段；你存下張凌赫的劇照時，也可能悄悄把〖被專注看見〗誤認成一張臉必須自帶的能力。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "逐玉"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Zhang Linghe",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": null,
+          "heading": "高冷男主，是被整套敘事共同完成的",
+          "display_copy": "張凌赫以190公分身形與《蒼蘭訣》等作品累積辨識度，《逐玉》再把他放進武安侯謝徵的角色裡；劇中每次【沉默與回頭】都有鏡頭、配樂和情節托住，真人的安靜卻可能只是疲倦、分心，或還在想怎麼回答。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "Zhang Linghe",
+              "source_kind": "WM",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "追劇不會決定標準，卻可能提供比較尺",
+          "display_copy": "Segrin 與 Nabi 發現，較多電視觀看與較理想化的婚姻期待呈現關聯；這不等於追劇會讓人挑不到對象，卻提醒我們：真人需要說明與磨合，角色的回應早已被寫好。\n資料來源：Journal of Communication，2002",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260724-張凌赫效應為什麼高冷男主/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Zhang Linghe",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": null,
+          "heading": "五分鐘能移動外觀基準，愛情仍待驗證",
+          "display_copy": "接觸特定女性體型影像約【5分鐘】後，參與者對正常外觀的判斷出現改變；但這項研究測的是身體外觀，沒有直接測試擇偶，只能作為對比效應的線索。\n資料來源：Winkler & Rhodes，British Journal of Psychology，2005",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "保留心動，再把角色翻譯成行為",
+          "display_copy": "你可以把「高冷」翻成情緒穩定，把「記得細節」翻成能否聽懂、回應並做到。〖現實裡的專注〗沒有慢動作；但當一個人記得你上週說的小事，也尊重你的沉默與界線，這些可重複觀察的行為，會幫你決定誰值得再見一次。"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "gpt-5.6",
+      "copy_versions": {
+        "claude": {
+          "caption": "根據《網路溫度計 DailyView》輿情分析，張凌赫憑《逐玉》謝征角色聲量狂飆，斷層奪冠，力壓楊洋、肖戰等人。台灣網友大量討論製作規格的加成效果，指出導演曾慶杰「幾乎給每個鏡頭慢動作＋側臉」，有人留言：「曾導拍成這樣，叫我以後怎麼看別導拍的？」這不是追劇廢話，這是心理學現象的民間自白，你的審美基準，已經被重置了。\n\n《逐玉》官方宣布 2026 年 8 月將辦「逐玉一念」演唱會，票價最高達人民幣 1,680 元，但男女主角雙雙缺席，台灣粉絲的反應是：「沒有男女主，跟逐玉有 0 個關係。」這句話說明了一件事：大家真正想要的，從來不是那個 IP，而是謝征與她之間的那種在場感。Lava 沒有辦法替你製造慢動作側臉，但研究說自尊越高的人越不容易拿自己與理想化信念比較，關係滿意度也越高，所以我們把心力放在讓你帶著清醒去見一個真實的人，而不是帶著謝征的模版去驗收他。\n\n#張凌赫 #逐玉 #媒體心理學 #對比效應 #理想伴侶 #高冷男主 #交友心理學 #Lava約會 #寄生社交 #現實感情 #台灣交友 #LavaDating",
+          "slides": {
+            "1": {
+              "heading": "你愛的是他，還是導演替他設計的每一個側臉？",
+              "display_copy": "你愛的是他\n還是導演替他設計的\n〖每一個側臉？〗\n\n《逐玉》導演曾慶杰\n幾乎給每個鏡頭慢動作＋側臉\n張凌赫謝征的眼神從畫面裡壓過來\n\n網友自白：「叫我以後怎麼看別導拍的？」\n\n這不是追劇廢話\n這是你的審美基準，已經被重置了\n\n資料來源：DailyView 每日調查"
+            },
+            "2": {
+              "heading": "刷完一整季，再看現實的人，怎麼都像缺了什麼？",
+              "display_copy": "刷完一整季\n再看現實的人\n【怎麼都像缺了什麼？】\n\n他不會在你說累的時候\n沉默地幫你擋住人群\n不會記得你三個月前隨口說過的那句話\n眼神也沒有對準你超過五秒\n\n你沒有嫌棄他\n只是隱約覺得——少了什麼\n\n那個「少了什麼」\n從來不存在於現實\n它存在於劇本、分鏡表\n和後製調色裡"
+            },
+            "3": {
+              "heading": "5 分鐘就夠了：媒體重置你審美基準的速度",
+              "display_copy": "這不是你的錯\n是兩個機制同時在作用\n\n【媒體曝光效應】\n沒有伴侶的人，看越多電視\n對理想伴侶標準越高\n關係滿意度越低\n\n【對比效應】\n1980 年，81 名受試者\n看完以高吸引力女性為主角的節目後\n對普通人的評分，顯著下降\n\n〖只需 5 分鐘的媒體曝光\n就足以重置你對「吸引力」的判斷基準〗\n\n資料來源：Kenrick & Gutierres (1980)；Winkler & Rhodes (2005)；ResearchGate, 2009"
+            },
+            "4": {
+              "heading": "你喜歡的是張凌赫，還是「那種專注」？",
+              "display_copy": "你喜歡的是張凌赫\n還是【那種專注】？\n\n謝征記得她說過的每一句話\n在人群裡只看她一個人\n\n你追的可能不是高冷人設\n而是「被認真對待的感覺」\n\n研究顯示：對明星的高度單向情感連結\n讓社會比較傾向增強（β = .18）\n自尊隨之下降（β = -.51）\n\n自尊越低，越難在真實關係裡\n感知到「認真」的信號——即使它就在眼前\n\n不是現實中沒有認真的人\n是你的接收頻率，跑掉了\n\n資料來源：MMPR Pilot Study, PMC/NCBI, 2022"
+            },
+            "5": {
+              "heading": "沒有劇本濾鏡的「專注」，其實更真實",
+              "display_copy": "沒有劇本濾鏡的【專注】\n其實更真實\n\n《逐玉》演唱會票價最高 1,680 人民幣\n男女主角雙雙缺席\n台灣粉絲：「跟逐玉有 0 個關係」\n\n大家真正想要的\n從來不是那個 IP\n而是謝征與她之間——那種在場感\n\nLava 讓你看到的\n是他今天願意出現的地方\n不是精心設計的人設頁面\n\n高冷男主在現實中幾乎不存在\n但一個願意在週三下午\n從捷運站走過來見你的人\n此刻就在地圖上某個圓點裡"
+            },
+            "6": {
+              "heading": "來現實找他",
+              "display_copy": "CTA 公版"
+            }
+          }
+        },
+        "gpt": {
+          "caption": "你存下的那張張凌赫劇照，記錄了一種被專注看見的感覺：謝徵在人群裡只望向一個人，連細微情緒都沒有錯過。當這段經過編劇、配樂與剪輯修整的最佳片段成為比較基準，真人還來不及被認識，就可能先為一次停頓或答錯話失分。\n\n你不必降低標準，也不用戒掉高冷男主；你可以主動把角色魅力拆成能在見面時觀察的行為，例如情緒是否穩定、能否聽懂你的話、是否尊重界線，以及答應的事有沒有做到。Lava提供線下碰面的機會，你帶著自己的判斷走進關係，也由你決定誰值得繼續認識。\n\n#張凌赫 #逐玉 #高冷男主 #媒體心理學 #對比效應 #理想伴侶 #LavaDating",
+          "slides": {
+            "1": {
+              "heading": "真人輸給男主角，可能從第一次見面前就開始了",
+              "display_copy": "真人最吃虧的地方，是你拿他的第一次見面，去比較謝徵被編劇、配樂與剪輯反覆修整後的最佳片段；你存下張凌赫的劇照時，也可能悄悄把〖被專注看見〗誤認成一張臉必須自帶的能力。"
+            },
+            "2": {
+              "heading": "高冷男主，是被整套敘事共同完成的",
+              "display_copy": "張凌赫以190公分身形與《蒼蘭訣》等作品累積辨識度，《逐玉》再把他放進武安侯謝徵的角色裡；劇中每次【沉默與回頭】都有鏡頭、配樂和情節托住，真人的安靜卻可能只是疲倦、分心，或還在想怎麼回答。"
+            },
+            "3": {
+              "heading": "追劇不會決定標準，卻可能提供比較尺",
+              "display_copy": "Segrin 與 Nabi 發現，較多電視觀看與較理想化的婚姻期待呈現關聯；這不等於追劇會讓人挑不到對象，卻提醒我們：真人需要說明與磨合，角色的回應早已被寫好。\n資料來源：Journal of Communication，2002"
+            },
+            "4": {
+              "heading": "五分鐘能移動外觀基準，愛情仍待驗證",
+              "display_copy": "接觸特定女性體型影像約【5分鐘】後，參與者對正常外觀的判斷出現改變；但這項研究測的是身體外觀，沒有直接測試擇偶，只能作為對比效應的線索。\n資料來源：Winkler & Rhodes，British Journal of Psychology，2005"
+            },
+            "5": {
+              "heading": "保留心動，再把角色翻譯成行為",
+              "display_copy": "你可以把「高冷」翻成情緒穩定，把「記得細節」翻成能否聽懂、回應並做到。〖現實裡的專注〗沒有慢動作；但當一個人記得你上週說的小事，也尊重你的沉默與界線，這些可重複觀察的行為，會幫你決定誰值得再見一次。"
+            },
+            "6": {
+              "heading": "",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-07-30T15:23:52+08:00"
     },
     {
       "id": "20260728-Attached說你不是",
       "topic": "《Attached》說：你不是「感情運很差」，你只是不知道自己是哪一型",
       "version": 1,
       "status": "awaiting_review",
-      "clickup_task_id": "86eyebgve",
+      "clickup_task_id": null,
       "created_at": null,
       "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
       "topic_type": "A-知識型",
@@ -5547,17 +5467,28 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-1a.png",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-Attached說你不是/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
             },
             {
               "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-1b.png",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-Attached說你不是/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-Attached說你不是/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260728-Attached說你不是/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
             }
           ],
           "final_src": null,
@@ -5568,50 +5499,18 @@
         {
           "n": 2,
           "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-2a.png",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-2b.png",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "同一個已讀，三種人會寫出三種劇本",
-          "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》",
-          "default_cid": "a"
+          "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》"
         },
         {
           "n": 3,
           "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-3a.png",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-3b.png",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "這不是星座分類，而是超過 70 年的研究線",
-          "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH",
-          "default_cid": "a"
+          "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH"
         },
         {
           "n": 4,
@@ -5619,17 +5518,27 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-4a.png",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-Attached說你不是/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
             },
             {
               "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-4b.png",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-Attached說你不是/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-Attached說你不是/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260728-Attached說你不是/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
             }
           ],
           "final_src": null,
@@ -5643,17 +5552,28 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-5a.png",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-Attached說你不是/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-5b.png",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-Attached說你不是/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-Attached說你不是/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260728-Attached說你不是/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
             }
           ],
           "final_src": null,
@@ -5731,14 +5651,14 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T13:36:31+08:00"
+      "candidates_since": "2026-07-30T15:23:54+08:00"
     },
     {
       "id": "20260728-AzizAnsari花年",
       "topic": "Aziz Ansari 花 2 年訪問全球數千人寫了一本書——他說現代人談戀愛最大的問題，不是選擇太少，是選擇太多",
       "version": 1,
       "status": "awaiting_review",
-      "clickup_task_id": "86eydqp1k",
+      "clickup_task_id": null,
       "created_at": null,
       "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
       "topic_type": "A-知識型",
@@ -5749,17 +5669,27 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-1a.png",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "New Girl"
             },
             {
               "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-1b.png",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "New Girl"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-AzizAnsari花年/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "New Girl"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260728-AzizAnsari花年/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "New Girl"
             }
           ],
           "final_src": null,
@@ -5770,26 +5700,10 @@
         {
           "n": 2,
           "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-2a.png",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-2b.png",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "一場感情困擾，變成兩年的全球研究",
-          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015",
-          "default_cid": "a"
+          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015"
         },
         {
           "n": 3,
@@ -5797,17 +5711,11 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-3a.png",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-3b.png",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "Modern Romance An Investigation",
+              "source_kind": "OV",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5821,17 +5729,27 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-4a.png",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
             },
             {
               "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-4b.png",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-AzizAnsari花年/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260728-AzizAnsari花年/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
             }
           ],
           "final_src": null,
@@ -5845,17 +5763,27 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-5a.png",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
             },
             {
               "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-5b.png",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
+              "src": "assets/20260728-AzizAnsari花年/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-AzizAnsari花年/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260728-AzizAnsari花年/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
             }
           ],
           "final_src": null,
@@ -5933,7 +5861,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T13:36:31+08:00"
+      "candidates_since": "2026-07-30T15:23:56+08:00"
     }
   ]
 }
