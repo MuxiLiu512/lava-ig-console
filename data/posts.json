@@ -5223,7 +5223,7 @@
       "topic": "《Attached》說：你不是「感情運很差」，你只是不知道自己是哪一型",
       "version": 1,
       "status": "awaiting_review",
-      "clickup_task_id": "86eyebgve",
+      "clickup_task_id": null,
       "created_at": null,
       "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
       "topic_type": "A-知識型",
@@ -5401,6 +5401,20 @@
               "src": "assets/20260728-Attached說你不是/slide-5d.jpg",
               "kind": "still",
               "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-Attached說你不是/slide-5e.jpg",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-Attached說你不是/slide-5f.jpg",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
             }
           ],
           "final_src": null,
@@ -5477,14 +5491,15 @@
             }
           }
         }
-      }
+      },
+      "candidates_since": "2026-07-30T13:24:56+08:00"
     },
     {
       "id": "20260728-AzizAnsari花年",
       "topic": "Aziz Ansari 花 2 年訪問全球數千人寫了一本書——他說現代人談戀愛最大的問題，不是選擇太少，是選擇太多",
       "version": 1,
       "status": "awaiting_review",
-      "clickup_task_id": "86eydqp1k",
+      "clickup_task_id": null,
       "created_at": null,
       "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
       "topic_type": "A-知識型",
@@ -5668,6 +5683,20 @@
               "src": "assets/20260728-AzizAnsari花年/slide-5d.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-AzizAnsari花年/slide-5e.jpg",
+              "kind": "design",
+              "source_label": "dusk",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-AzizAnsari花年/slide-5f.jpg",
+              "kind": "design",
+              "source_label": "grain",
+              "source_kind": "DESIGN"
             }
           ],
           "final_src": null,
@@ -5744,7 +5773,8 @@
             }
           }
         }
-      }
+      },
+      "candidates_since": "2026-07-30T13:25:42+08:00"
     },
     {
       "id": "20260725-大稻埕煙火約會指南人擠人",
@@ -5960,6 +5990,20 @@
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5f.jpg",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5g.jpg",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
             }
           ],
           "final_src": null,
@@ -6037,7 +6081,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T13:21:24+08:00",
+      "candidates_since": "2026-07-30T13:26:27+08:00",
       "copy_choice": "claude"
     }
   ]
