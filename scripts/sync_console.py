@@ -795,11 +795,15 @@ def render_approved(args):
             skipped.append((pid, "渲染失敗：" + (rr.stderr or rr.stdout)[-300:].strip()))
             continue
         p["rendered_at"] = _now_iso()
+        p.pop("render_note", None)   # 渲染成功清掉卡住原因
         if choice:
             p["copy_choice"] = choice
             p["writer_model"] = "claude-sonnet-4-6" if choice == "claude" else "gpt-5.6"  # A/B：以 PT 選定版本計
         rendered.append((pid, p.get("clickup_task_id") or "", jf, chosen_paths))
         sys.stderr.write("✓ 渲染 %s（文案版 %s，選圖 %s，文案編輯 %d 處）\n" % (pid, choice or "-", r.get("slide_choices"), len(edits)))
+    for pid, why in skipped:   # 卡住原因寫進貼文 → 操控室直接看得到，不再只躺在哨兵 log
+        if pid in posts:
+            posts[pid]["render_note"] = why
     if not args.dry_run:
         save("posts.json", posts_d)
     # 附回操控室：finals 縮圖 + 公開圖（重餵；guard 會保留 approved/rendered_at/文案編輯）

@@ -184,8 +184,9 @@ function renderQueue() {
     const hdr = el("div", "small muted", "✅ 已核准（出成品／待排程）"); hdr.style.margin = "16px 0 4px"; app.appendChild(hdr);
     approved.forEach(p => {
       const rn = p.slides.filter(s => s.public_url).length;
-      app.appendChild(qcard(p, rn ? `成品就緒 ${rn} 張 · 點入設發佈時間` : "出成品中…（渲染後回此排程）",
-        `<span class="tag" style="background:${rn ? "#c2410c" : "#555"};color:#fff">${rn ? "待排程" : "渲染中"}</span>`));
+      const blocked = !rn && p.render_note;
+      app.appendChild(qcard(p, rn ? `成品就緒 ${rn} 張 · 點入設發佈時間` : (blocked ? `⚠ ${esc(p.render_note)}` : "出成品中…（渲染後回此排程）"),
+        `<span class="tag" style="background:${rn ? "#c2410c" : (blocked ? "#a11d33" : "#555")};color:#fff">${rn ? "待排程" : (blocked ? "卡住待處理" : "渲染中")}</span>`));
     });
   }
   if (scheduled.length) {
@@ -240,7 +241,8 @@ function renderDetail(pid) {
     const rn = p.slides.filter(s => s.public_url).length;
     const note = el("div", "card"); const np = el("div", "pad");
     np.innerHTML = rn ? "<b>✅ 已核准，成品就緒</b><br><span class='small muted'>用上方「📅 排程發佈」設定發佈時間即可。</span>"
-                      : "<b>✅ 已核准，出成品中</b><br><span class='small muted'>渲染完成後成品會出現，屆時回此頁設發佈時間。</span>";
+                      : (p.render_note ? `<b>⚠ 渲染卡住</b><br><span class='small'>${esc(p.render_note)}</span>`
+                                       : "<b>✅ 已核准，出成品中</b><br><span class='small muted'>渲染完成後成品會出現，屆時回此頁設發佈時間。</span>");
     note.appendChild(np); app.appendChild(note);
     return;
   }
