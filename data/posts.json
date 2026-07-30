@@ -1305,7 +1305,8 @@
         "第 4 張：《Youve Got Mail》劇照，版權屬原權利方",
         "第 5 張：《Brooklyn Nine Nine》劇照，版權屬原權利方"
       ],
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "已渲染且無新變更"
     },
     {
       "id": "20260723-Situationshi",
@@ -2128,7 +2129,8 @@
           }
         }
       },
-      "candidates_since": "2026-07-28T19:27:55+08:00"
+      "candidates_since": "2026-07-28T19:27:55+08:00",
+      "render_note": "退回底圖：等重生候選"
     },
     {
       "id": "20260724-心理學實驗發現第一次約會",
@@ -2969,7 +2971,8 @@
       "publish_at": "2026-07-28T20:00:00+08:00",
       "rendered_at": "2026-07-24T20:29:38+08:00",
       "candidates_since": "2026-07-28T20:45:59+08:00",
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "slide 1 選圖疑似破圖，請到操控室改選其他候選再核准"
     },
     {
       "id": "20260711-母胎單身其實比你更懂得選擇伴侶",
@@ -3366,7 +3369,8 @@
           }
         }
       },
-      "candidates_since": "2026-07-28T20:46:15+08:00"
+      "candidates_since": "2026-07-28T20:46:15+08:00",
+      "render_note": "退回底圖：等重生候選"
     },
     {
       "id": "20260725-EstherPerel你",
@@ -5219,564 +5223,6 @@
       "candidates_since": "2026-07-29T13:19:03+08:00"
     },
     {
-      "id": "20260728-Attached說你不是",
-      "topic": "《Attached》說：你不是「感情運很差」，你只是不知道自己是哪一型",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": null,
-      "created_at": null,
-      "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-1a.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-Attached說你不是/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-Attached說你不是/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-Attached說你不是/slide-1e.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260728-Attached說你不是/slide-1f.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "盤面一跌、他又晚回，你會抓緊還是逃開？",
-          "display_copy": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是說出需要？【這不一定是運氣差】，可能是〖壓力放大了依附反應〗。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-2a.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-2b.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "同一個已讀，三種人會寫出三種劇本",
-          "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-3a.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-3b.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "這不是星座分類，而是超過 70 年的研究線",
-          "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-4a.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-Attached說你不是/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-Attached說你不是/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-Attached說你不是/slide-4e.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260728-Attached說你不是/slide-4f.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "壓力一來，熟悉的反應會被調大聲",
-          "display_copy": "壓力會把依附策略調大聲：焦慮依附者可能出現較高皮質醇與血壓；對部分迴避依附者，伴侶在場反而伴隨更高心率與收縮壓。【追得更急或退得更遠】，可能是身體先自保，不代表你注定如此。\n資料來源：Quirin et al., 2008；Gallo & Matthews, 2006",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-5a.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-Attached說你不是/slide-5c.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-Attached說你不是/slide-5d.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-Attached說你不是/slide-5e.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260728-Attached說你不是/slide-5f.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "辨認模式，不是替自己判刑",
-          "display_copy": "下次市場、工作與曖昧一起震盪，先寫：「我想連發訊息／消失，因為我怕＿＿。」再提出可回應的需要：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、治療與健康關係，都可能長出「賺得的安全感」。Lava 把認識帶回線下，【怎麼靠近仍由你選】。",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "把心動帶回真實見面",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "gpt-5.6",
-      "copy_versions": {
-        "claude": {
-          "caption": "又一段關係結束，你坐在那裡回放細節：為什麼我越喜歡越不敢主動？為什麼偏偏被那種若即若離的人吸引？為什麼每次吵架都是我先道歉？你把答案歸咎於運氣，歸咎於對方，歸咎於時機。但 1987 年，兩位心理學家 Cindy Hazan 和 Phillip Shaver 在研究成人戀愛行為時發現了另一個答案：你的反應模式，在你有記憶之前就已經被寫進去了。\n\n《Attached》全球已售出超過 300 萬冊、以 40 種以上語言出版，《紐約時報》形容它「出版逾十年後，仍讓人深深著迷」。它最根本的主張只有一個：依附類型不是你的命運，而是你可以看見、可以理解的模式。研究也指出，童年經歷固然有影響，但所有可測量的前因變量最多只能解釋迴避型變異的 29%，這個模式可以被改寫。一旦你知道自己的系統設定，你就能開始辨認哪些反應是真實的感受，哪些只是舊程式在運行。Lava 存在的理由，是讓你有機會在線下的當下，感受到那個差別。\n\n#依附理論 #Attached #感情心理學 #焦慮型依附 #迴避型依附 #安全型依附 #交友 #認識自己 #關係 #Lava不聊天的交友軟體 #台灣交友 #心理學 #自我成長 #戀愛 #線下約會",
-          "slides": {
-            "1": {
-              "heading": "你以為自己選錯人，其實你只是不認識自己",
-              "display_copy": "你以為自己【選錯人】\n其實你只是不認識自己\n\n為什麼越喜歡越不敢主動？\n為什麼偏偏被若即若離的人吸引？\n為什麼每次都是你先道歉？\n\n1987 年，Hazan & Shaver 給了另一個答案：\n你的反應模式\n在你有記憶之前就已經被寫進去了\n\n〖不是感情運的問題〗\n是依附類型的問題"
-            },
-            "2": {
-              "heading": "現在年輕人的不安全依附，已經超過一半",
-              "display_copy": "【超過一半的年輕世代】\n是不安全依附\n\n美國大學生 meta 分析（1988–2011）\n安全型從 48.98% → 41.62%\n不安全型已越過 58%\n疏離型更從 11.93% 暴增至 18.62%\n\n而且壓力越大\n你的依附模式【放大越快】\n\n焦慮型更難安定\n迴避型退得更遠\n\n那個讓你最崩潰的時刻\n從來不是意外\n\n資料來源：meta 分析，美國大學生依附風格變遷，1988–2011"
-            },
-            "3": {
-              "heading": "三種類型，決定你在愛情裡的每一個反應",
-              "display_copy": "【三種依附類型】\n決定你在愛情裡的每個反應\n\n安全型 ｜ 能給也能收\n【焦慮型】｜ 依附系統長期過度啟動\n迴避型 ｜ 越被需要越想後退\n\nHazan & Shaver（1987）原始數據：\n約 60% 安全型 ／ 20% 迴避 ／ 20% 焦慮\n\nBowlby 說依附系統跨越人的一生\n「從搖籃到墳墓」\n\n你的模式不是個性問題\n〖是系統設定〗\n\n資料來源：Hazan & Shaver (1987). Romantic love conceptualized as an attachment process. Journal of Personality and Social Psychology, 52(3), 511–524."
-            },
-            "4": {
-              "heading": "焦慮型偏偏被迴避型吸引：不是命，是機制",
-              "display_copy": "焦慮型越追\n迴避型越退\n\n然後焦慮型把這種張力\n【誤讀為「有感覺」】\n\n腦部掃描顯示：\n焦慮型杏仁核對情緒刺激【反應持續放大】\n後扣帶迴皮質過度活躍\n\n更有基因層面的依據：\n焦慮型依附 → 與多巴胺受體 DRD2 相關\n迴避型依附 → 與血清素受體 HTR2A 相關\n\n若即若離讓你覺得活著\n是有生理原因的\n\n資料來源：Gillath et al. (2008). Attachment, caregiving, and sex within the framework of attachment theory."
-            },
-            "5": {
-              "heading": "知道自己是哪一型，才能選擇而不是被反應帶著走",
-              "display_copy": "《Attached》全球賣出【超過 300 萬冊】\n40 種以上語言出版\n《紐約時報》：「出版逾十年後仍讓人著迷」\n\n核心只有一件事：\n依附類型不是你的命運\n而是你可以【看見的模式】\n\n研究顯示：\n童年前因最多只解釋 29% 的依附變異\n\n〖這個模式，可以被改寫〗\n\n焦慮型不需要假裝不在乎\n迴避型不需要強迫自己靠近\n你只需要遇見一個\n讓系統有機會安定的人"
-            },
-            "6": {
-              "heading": "線下見面，才能感受到真實的依附訊號",
-              "display_copy": "CTA 公版"
-            }
-          }
-        },
-        "gpt": {
-          "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
-          "slides": {
-            "1": {
-              "heading": "盤面一跌、他又晚回，你會抓緊還是逃開？",
-              "display_copy": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是說出需要？【這不一定是運氣差】，可能是〖壓力放大了依附反應〗。"
-            },
-            "2": {
-              "heading": "同一個已讀，三種人會寫出三種劇本",
-              "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》"
-            },
-            "3": {
-              "heading": "這不是星座分類，而是超過 70 年的研究線",
-              "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH"
-            },
-            "4": {
-              "heading": "壓力一來，熟悉的反應會被調大聲",
-              "display_copy": "壓力會把依附策略調大聲：焦慮依附者可能出現較高皮質醇與血壓；對部分迴避依附者，伴侶在場反而伴隨更高心率與收縮壓。【追得更急或退得更遠】，可能是身體先自保，不代表你注定如此。\n資料來源：Quirin et al., 2008；Gallo & Matthews, 2006"
-            },
-            "5": {
-              "heading": "辨認模式，不是替自己判刑",
-              "display_copy": "下次市場、工作與曖昧一起震盪，先寫：「我想連發訊息／消失，因為我怕＿＿。」再提出可回應的需要：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、治療與健康關係，都可能長出「賺得的安全感」。Lava 把認識帶回線下，【怎麼靠近仍由你選】。"
-            },
-            "6": {
-              "heading": "把心動帶回真實見面",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-07-30T13:24:56+08:00"
-    },
-    {
-      "id": "20260728-AzizAnsari花年",
-      "topic": "Aziz Ansari 花 2 年訪問全球數千人寫了一本書——他說現代人談戀愛最大的問題，不是選擇太少，是選擇太多",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": null,
-      "created_at": null,
-      "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-1a.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-AzizAnsari花年/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-AzizAnsari花年/slide-1e.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260728-AzizAnsari花年/slide-1f.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "看得越多，你可能拒絕得越快",
-          "display_copy": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現：受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，結果可能是〖看得越多，越容易拒絕〗。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-2a.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-2b.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "一場感情困擾，變成兩年的全球研究",
-          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-3a.jpg",
-              "kind": "still",
-              "source_label": "Modern Romance An Investigation",
-              "source_kind": "OV",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-3b.jpg",
-              "kind": "design",
-              "source_label": "grid",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-3c.jpg",
-              "kind": "design",
-              "source_label": "slash",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "果醬實驗提供的是一個類比",
-          "display_copy": "2000 年，Iyengar 與 Lepper 比較 24 種及 6 種果醬，發現選項多的攤位更吸睛，購買比例卻較低。這項研究測量的是【消費選擇】，無法直接證明約會行為；它提供的是選項過多可能增加決策負擔的類比。\n資料來源：Iyengar & Lepper, JPSP, 2000",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-4a.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-AzizAnsari花年/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-AzizAnsari花年/slide-4e.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260728-AzizAnsari花年/slide-4f.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "大量瀏覽，會把人推向拒絕心態",
-          "display_copy": "三項研究發現，隨著受試者持續瀏覽約會對象，照片滿意度與成功預期逐漸下滑。作者報告，從第一個到最後一個選項，對象被接受的機率平均下降 27%，並將這種趨勢稱為〖拒絕心態〗。\n資料來源：Pronk & Denissen, SPPS, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-5c.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-AzizAnsari花年/slide-5d.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-AzizAnsari花年/slide-5e.jpg",
-              "kind": "design",
-              "source_label": "dusk",
-              "source_kind": "DESIGN"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260728-AzizAnsari花年/slide-5f.jpg",
-              "kind": "design",
-              "source_label": "grain",
-              "source_kind": "DESIGN"
-            }
-          ],
-          "final_src": null,
-          "heading": "別再囤配對，開始累積相處的證據",
-          "display_copy": "如果配對名單越存越長，真正見面卻寥寥可數，可以先暫停【囤積式配對】，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動減少比較、增加見面，是否繼續認識，始終由你判斷。",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "把認識，帶回真實相處",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "gpt-5.6",
-      "copy_versions": {
-        "gpt": {
-          "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
-          "slides": {
-            "1": {
-              "heading": "看得越多，你可能拒絕得越快",
-              "display_copy": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現：受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，結果可能是〖看得越多，越容易拒絕〗。"
-            },
-            "2": {
-              "heading": "一場感情困擾，變成兩年的全球研究",
-              "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015"
-            },
-            "3": {
-              "heading": "果醬實驗提供的是一個類比",
-              "display_copy": "2000 年，Iyengar 與 Lepper 比較 24 種及 6 種果醬，發現選項多的攤位更吸睛，購買比例卻較低。這項研究測量的是【消費選擇】，無法直接證明約會行為；它提供的是選項過多可能增加決策負擔的類比。\n資料來源：Iyengar & Lepper, JPSP, 2000"
-            },
-            "4": {
-              "heading": "大量瀏覽，會把人推向拒絕心態",
-              "display_copy": "三項研究發現，隨著受試者持續瀏覽約會對象，照片滿意度與成功預期逐漸下滑。作者報告，從第一個到最後一個選項，對象被接受的機率平均下降 27%，並將這種趨勢稱為〖拒絕心態〗。\n資料來源：Pronk & Denissen, SPPS, 2020"
-            },
-            "5": {
-              "heading": "別再囤配對，開始累積相處的證據",
-              "display_copy": "如果配對名單越存越長，真正見面卻寥寥可數，可以先暫停【囤積式配對】，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動減少比較、增加見面，是否繼續認識，始終由你判斷。"
-            },
-            "6": {
-              "heading": "把認識，帶回真實相處",
-              "display_copy": "CTA 公版"
-            }
-          }
-        },
-        "claude": {
-          "caption": "喜劇演員 Aziz Ansari 在感情裡屢屢碰壁之後，沒有去找心理師，而是去找了紐約大學社會學家 Eric Klinenberg。兩個人在 2013 年設計了一套研究計畫，跑遍東京、布宜諾斯艾利斯、威奇托，做了數百場訪談與焦點座談，還在 Reddit 架了一個論壇，蒐集了數千則真實告白。兩年後，這些田野調查變成了《Modern Romance: An Investigation》這本書。書裡最讓人坐立難安的發現只有一個：現代人感情出問題，不是因為選擇太少，而是因為選擇太多。\n\n《Modern Romance》的研究最後給的答案，不是「少用 app」，而是「認真對待眼前這個人」。Ansari 和 Klinenberg 在訪談中發現，那些真正走入關係的人，往往不是因為找到了最完美的選項，而是因為他們在某個時間點決定停止比較，認真把時間給了面前這個人。Lava 設計的邏輯也是這樣：不是要你在 app 裡聊出感情，而是直接邀你出門，在真實的場景裡確認一個人值不值得你繼續認識。選擇悖論的解法，從來不是更多選擇，而是一次認真的見面。\n\n#選擇悖論 #ModernRomance #AzizAnsari #交友App #感情心理學 #台灣單身 #線上交友 #ParadoxOfChoice #Lava交友 #不聊天的交友軟體 #見面才是真的 #現代愛情 #拒絕心態",
-          "slides": {
-            "1": {
-              "heading": "你滑過的人，比你父母這輩子認識的所有人還多——但你還是覺得「還沒找到對的人」",
-              "display_copy": "你滑過的人\n比你父母這輩子認識的所有人還多\n\n但你還是覺得\n〖「還沒找到對的人」〗\n\n選擇從來不是問題\n問題是選擇多到讓你停不下來\n\n資料來源：Aziz Ansari & Eric Klinenberg, *Modern Romance: An Investigation* (Penguin Press, 2015)"
-            },
-            "2": {
-              "heading": "你不是花心，你是被「下一個可能更好」這句話給困住了",
-              "display_copy": "每次配對通知\n都在對你說一句話：\n\n【「等一下，說不定還有更好的。」】\n\n不是你不認真\n是這個系統就是這樣設計的\n\n選項越多，焦慮越深，後悔越長\n\n資料來源：Barry Schwartz, *The Paradox of Choice: Why More Is Less* (2004)"
-            },
-            "3": {
-              "heading": "實驗數據說的更直接：選項越多，你接受對方的機率越低",
-              "display_copy": "看得越多，接受的機率越低\n\n荷蘭研究：從第一個配對看到最後一個\n【接受對方的機率平均下降 27%】\n\n不是後面的人更差\n是「一直比較」讓你的大腦學會拒絕\n\n果醬實驗也說同一件事：\n六個選項的購買率是二十四個選項的十倍\n\n資料來源：Pronk & Denissen (2020), *Social Psychological and Personality Science*, 11(3), 388–396；Iyengar & Lepper (2000), *Journal of Personality and Social Psychology*"
-            },
-            "4": {
-              "heading": "台灣的狀況：65% 的用戶每週至少開一次 app，但大家都說「越滑越空虛」",
-              "display_copy": "台灣 65% 的交友 App 用戶\n每週至少開啟一次\n\n但 2024 年用戶的真實感受是：\n\n【「越滑越覺得空虛」】\n\n配對在累積，見面沒有發生\n每個人都以「備選」的姿態存在\n\n資料來源：Rakuten Insight Taiwan Dating App Survey (2022)；Ansari & Klinenberg, *Modern Romance* (2015)"
-            },
-            "5": {
-              "heading": "認識的人變多，不代表感情變容易——見面，才是讓一個人從「備選」變成真實的唯一方法",
-              "display_copy": "停止比較\n認真把時間給面前這個人\n\nAnsari 的研究最後說：\n走入關係的人，不是找到「最完美的選項」\n\n〖而是在某個時刻，決定停止滑下去〗\n\n見面，才是讓一個人從備選變成真實\n\nLava，讓見面先發生"
-            },
-            "6": {
-              "heading": "Lava，不聊天的交友軟體",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-07-30T13:25:42+08:00"
-    },
-    {
       "id": "20260725-大稻埕煙火約會指南人擠人",
       "topic": "大稻埕煙火約會指南：人擠人還是浪漫滿分？科學怎麼說",
       "version": 1,
@@ -6082,7 +5528,412 @@
         }
       },
       "candidates_since": "2026-07-30T13:26:27+08:00",
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "候選圖已更新且無前次渲染紀錄 → 退回待審，請重新選圖核准"
+    },
+    {
+      "id": "20260728-Attached說你不是",
+      "topic": "《Attached》說：你不是「感情運很差」，你只是不知道自己是哪一型",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyebgve",
+      "created_at": null,
+      "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-1a.png",
+              "kind": "design",
+              "source_label": "dusk",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-Attached說你不是/slide-1b.png",
+              "kind": "design",
+              "source_label": "grain",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "盤面一跌、他又晚回，你會抓緊還是逃開？",
+          "display_copy": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是說出需要？【這不一定是運氣差】，可能是〖壓力放大了依附反應〗。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-2a.png",
+              "kind": "design",
+              "source_label": "dusk",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-Attached說你不是/slide-2b.png",
+              "kind": "design",
+              "source_label": "grain",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "同一個已讀，三種人會寫出三種劇本",
+          "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-3a.png",
+              "kind": "design",
+              "source_label": "dusk",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-Attached說你不是/slide-3b.png",
+              "kind": "design",
+              "source_label": "grain",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "這不是星座分類，而是超過 70 年的研究線",
+          "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-4a.png",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-Attached說你不是/slide-4b.png",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "壓力一來，熟悉的反應會被調大聲",
+          "display_copy": "壓力會把依附策略調大聲：焦慮依附者可能出現較高皮質醇與血壓；對部分迴避依附者，伴侶在場反而伴隨更高心率與收縮壓。【追得更急或退得更遠】，可能是身體先自保，不代表你注定如此。\n資料來源：Quirin et al., 2008；Gallo & Matthews, 2006",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-5a.png",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-Attached說你不是/slide-5b.png",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "辨認模式，不是替自己判刑",
+          "display_copy": "下次市場、工作與曖昧一起震盪，先寫：「我想連發訊息／消失，因為我怕＿＿。」再提出可回應的需要：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、治療與健康關係，都可能長出「賺得的安全感」。Lava 把認識帶回線下，【怎麼靠近仍由你選】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "把心動帶回真實見面",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "gpt-5.6",
+      "copy_versions": {
+        "claude": {
+          "caption": "又一段關係結束，你坐在那裡回放細節：為什麼我越喜歡越不敢主動？為什麼偏偏被那種若即若離的人吸引？為什麼每次吵架都是我先道歉？你把答案歸咎於運氣，歸咎於對方，歸咎於時機。但 1987 年，兩位心理學家 Cindy Hazan 和 Phillip Shaver 在研究成人戀愛行為時發現了另一個答案：你的反應模式，在你有記憶之前就已經被寫進去了。\n\n《Attached》全球已售出超過 300 萬冊、以 40 種以上語言出版，《紐約時報》形容它「出版逾十年後，仍讓人深深著迷」。它最根本的主張只有一個：依附類型不是你的命運，而是你可以看見、可以理解的模式。研究也指出，童年經歷固然有影響，但所有可測量的前因變量最多只能解釋迴避型變異的 29%，這個模式可以被改寫。一旦你知道自己的系統設定，你就能開始辨認哪些反應是真實的感受，哪些只是舊程式在運行。Lava 存在的理由，是讓你有機會在線下的當下，感受到那個差別。\n\n#依附理論 #Attached #感情心理學 #焦慮型依附 #迴避型依附 #安全型依附 #交友 #認識自己 #關係 #Lava不聊天的交友軟體 #台灣交友 #心理學 #自我成長 #戀愛 #線下約會",
+          "slides": {
+            "1": {
+              "heading": "你以為自己選錯人，其實你只是不認識自己",
+              "display_copy": "你以為自己【選錯人】\n其實你只是不認識自己\n\n為什麼越喜歡越不敢主動？\n為什麼偏偏被若即若離的人吸引？\n為什麼每次都是你先道歉？\n\n1987 年，Hazan & Shaver 給了另一個答案：\n你的反應模式\n在你有記憶之前就已經被寫進去了\n\n〖不是感情運的問題〗\n是依附類型的問題"
+            },
+            "2": {
+              "heading": "現在年輕人的不安全依附，已經超過一半",
+              "display_copy": "【超過一半的年輕世代】\n是不安全依附\n\n美國大學生 meta 分析（1988–2011）\n安全型從 48.98% → 41.62%\n不安全型已越過 58%\n疏離型更從 11.93% 暴增至 18.62%\n\n而且壓力越大\n你的依附模式【放大越快】\n\n焦慮型更難安定\n迴避型退得更遠\n\n那個讓你最崩潰的時刻\n從來不是意外\n\n資料來源：meta 分析，美國大學生依附風格變遷，1988–2011"
+            },
+            "3": {
+              "heading": "三種類型，決定你在愛情裡的每一個反應",
+              "display_copy": "【三種依附類型】\n決定你在愛情裡的每個反應\n\n安全型 ｜ 能給也能收\n【焦慮型】｜ 依附系統長期過度啟動\n迴避型 ｜ 越被需要越想後退\n\nHazan & Shaver（1987）原始數據：\n約 60% 安全型 ／ 20% 迴避 ／ 20% 焦慮\n\nBowlby 說依附系統跨越人的一生\n「從搖籃到墳墓」\n\n你的模式不是個性問題\n〖是系統設定〗\n\n資料來源：Hazan & Shaver (1987). Romantic love conceptualized as an attachment process. Journal of Personality and Social Psychology, 52(3), 511–524."
+            },
+            "4": {
+              "heading": "焦慮型偏偏被迴避型吸引：不是命，是機制",
+              "display_copy": "焦慮型越追\n迴避型越退\n\n然後焦慮型把這種張力\n【誤讀為「有感覺」】\n\n腦部掃描顯示：\n焦慮型杏仁核對情緒刺激【反應持續放大】\n後扣帶迴皮質過度活躍\n\n更有基因層面的依據：\n焦慮型依附 → 與多巴胺受體 DRD2 相關\n迴避型依附 → 與血清素受體 HTR2A 相關\n\n若即若離讓你覺得活著\n是有生理原因的\n\n資料來源：Gillath et al. (2008). Attachment, caregiving, and sex within the framework of attachment theory."
+            },
+            "5": {
+              "heading": "知道自己是哪一型，才能選擇而不是被反應帶著走",
+              "display_copy": "《Attached》全球賣出【超過 300 萬冊】\n40 種以上語言出版\n《紐約時報》：「出版逾十年後仍讓人著迷」\n\n核心只有一件事：\n依附類型不是你的命運\n而是你可以【看見的模式】\n\n研究顯示：\n童年前因最多只解釋 29% 的依附變異\n\n〖這個模式，可以被改寫〗\n\n焦慮型不需要假裝不在乎\n迴避型不需要強迫自己靠近\n你只需要遇見一個\n讓系統有機會安定的人"
+            },
+            "6": {
+              "heading": "線下見面，才能感受到真實的依附訊號",
+              "display_copy": "CTA 公版"
+            }
+          }
+        },
+        "gpt": {
+          "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
+          "slides": {
+            "1": {
+              "heading": "盤面一跌、他又晚回，你會抓緊還是逃開？",
+              "display_copy": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是說出需要？【這不一定是運氣差】，可能是〖壓力放大了依附反應〗。"
+            },
+            "2": {
+              "heading": "同一個已讀，三種人會寫出三種劇本",
+              "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》"
+            },
+            "3": {
+              "heading": "這不是星座分類，而是超過 70 年的研究線",
+              "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH"
+            },
+            "4": {
+              "heading": "壓力一來，熟悉的反應會被調大聲",
+              "display_copy": "壓力會把依附策略調大聲：焦慮依附者可能出現較高皮質醇與血壓；對部分迴避依附者，伴侶在場反而伴隨更高心率與收縮壓。【追得更急或退得更遠】，可能是身體先自保，不代表你注定如此。\n資料來源：Quirin et al., 2008；Gallo & Matthews, 2006"
+            },
+            "5": {
+              "heading": "辨認模式，不是替自己判刑",
+              "display_copy": "下次市場、工作與曖昧一起震盪，先寫：「我想連發訊息／消失，因為我怕＿＿。」再提出可回應的需要：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、治療與健康關係，都可能長出「賺得的安全感」。Lava 把認識帶回線下，【怎麼靠近仍由你選】。"
+            },
+            "6": {
+              "heading": "把心動帶回真實見面",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-07-30T13:36:31+08:00"
+    },
+    {
+      "id": "20260728-AzizAnsari花年",
+      "topic": "Aziz Ansari 花 2 年訪問全球數千人寫了一本書——他說現代人談戀愛最大的問題，不是選擇太少，是選擇太多",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eydqp1k",
+      "created_at": null,
+      "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-1a.png",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-1b.png",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "看得越多，你可能拒絕得越快",
+          "display_copy": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現：受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，結果可能是〖看得越多，越容易拒絕〗。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-2a.png",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-2b.png",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "一場感情困擾，變成兩年的全球研究",
+          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-3a.png",
+              "kind": "design",
+              "source_label": "grid",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-3b.png",
+              "kind": "design",
+              "source_label": "slash",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "果醬實驗提供的是一個類比",
+          "display_copy": "2000 年，Iyengar 與 Lepper 比較 24 種及 6 種果醬，發現選項多的攤位更吸睛，購買比例卻較低。這項研究測量的是【消費選擇】，無法直接證明約會行為；它提供的是選項過多可能增加決策負擔的類比。\n資料來源：Iyengar & Lepper, JPSP, 2000",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-4a.png",
+              "kind": "design",
+              "source_label": "dusk",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-4b.png",
+              "kind": "design",
+              "source_label": "grain",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "大量瀏覽，會把人推向拒絕心態",
+          "display_copy": "三項研究發現，隨著受試者持續瀏覽約會對象，照片滿意度與成功預期逐漸下滑。作者報告，從第一個到最後一個選項，對象被接受的機率平均下降 27%，並將這種趨勢稱為〖拒絕心態〗。\n資料來源：Pronk & Denissen, SPPS, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-5a.png",
+              "kind": "design",
+              "source_label": "dusk",
+              "source_kind": "DESIGN"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-5b.png",
+              "kind": "design",
+              "source_label": "grain",
+              "source_kind": "DESIGN"
+            }
+          ],
+          "final_src": null,
+          "heading": "別再囤配對，開始累積相處的證據",
+          "display_copy": "如果配對名單越存越長，真正見面卻寥寥可數，可以先暫停【囤積式配對】，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動減少比較、增加見面，是否繼續認識，始終由你判斷。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "把認識，帶回真實相處",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "gpt-5.6",
+      "copy_versions": {
+        "gpt": {
+          "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
+          "slides": {
+            "1": {
+              "heading": "看得越多，你可能拒絕得越快",
+              "display_copy": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現：受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，結果可能是〖看得越多，越容易拒絕〗。"
+            },
+            "2": {
+              "heading": "一場感情困擾，變成兩年的全球研究",
+              "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015"
+            },
+            "3": {
+              "heading": "果醬實驗提供的是一個類比",
+              "display_copy": "2000 年，Iyengar 與 Lepper 比較 24 種及 6 種果醬，發現選項多的攤位更吸睛，購買比例卻較低。這項研究測量的是【消費選擇】，無法直接證明約會行為；它提供的是選項過多可能增加決策負擔的類比。\n資料來源：Iyengar & Lepper, JPSP, 2000"
+            },
+            "4": {
+              "heading": "大量瀏覽，會把人推向拒絕心態",
+              "display_copy": "三項研究發現，隨著受試者持續瀏覽約會對象，照片滿意度與成功預期逐漸下滑。作者報告，從第一個到最後一個選項，對象被接受的機率平均下降 27%，並將這種趨勢稱為〖拒絕心態〗。\n資料來源：Pronk & Denissen, SPPS, 2020"
+            },
+            "5": {
+              "heading": "別再囤配對，開始累積相處的證據",
+              "display_copy": "如果配對名單越存越長，真正見面卻寥寥可數，可以先暫停【囤積式配對】，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動減少比較、增加見面，是否繼續認識，始終由你判斷。"
+            },
+            "6": {
+              "heading": "把認識，帶回真實相處",
+              "display_copy": "CTA 公版"
+            }
+          }
+        },
+        "claude": {
+          "caption": "喜劇演員 Aziz Ansari 在感情裡屢屢碰壁之後，沒有去找心理師，而是去找了紐約大學社會學家 Eric Klinenberg。兩個人在 2013 年設計了一套研究計畫，跑遍東京、布宜諾斯艾利斯、威奇托，做了數百場訪談與焦點座談，還在 Reddit 架了一個論壇，蒐集了數千則真實告白。兩年後，這些田野調查變成了《Modern Romance: An Investigation》這本書。書裡最讓人坐立難安的發現只有一個：現代人感情出問題，不是因為選擇太少，而是因為選擇太多。\n\n《Modern Romance》的研究最後給的答案，不是「少用 app」，而是「認真對待眼前這個人」。Ansari 和 Klinenberg 在訪談中發現，那些真正走入關係的人，往往不是因為找到了最完美的選項，而是因為他們在某個時間點決定停止比較，認真把時間給了面前這個人。Lava 設計的邏輯也是這樣：不是要你在 app 裡聊出感情，而是直接邀你出門，在真實的場景裡確認一個人值不值得你繼續認識。選擇悖論的解法，從來不是更多選擇，而是一次認真的見面。\n\n#選擇悖論 #ModernRomance #AzizAnsari #交友App #感情心理學 #台灣單身 #線上交友 #ParadoxOfChoice #Lava交友 #不聊天的交友軟體 #見面才是真的 #現代愛情 #拒絕心態",
+          "slides": {
+            "1": {
+              "heading": "你滑過的人，比你父母這輩子認識的所有人還多——但你還是覺得「還沒找到對的人」",
+              "display_copy": "你滑過的人\n比你父母這輩子認識的所有人還多\n\n但你還是覺得\n〖「還沒找到對的人」〗\n\n選擇從來不是問題\n問題是選擇多到讓你停不下來\n\n資料來源：Aziz Ansari & Eric Klinenberg, *Modern Romance: An Investigation* (Penguin Press, 2015)"
+            },
+            "2": {
+              "heading": "你不是花心，你是被「下一個可能更好」這句話給困住了",
+              "display_copy": "每次配對通知\n都在對你說一句話：\n\n【「等一下，說不定還有更好的。」】\n\n不是你不認真\n是這個系統就是這樣設計的\n\n選項越多，焦慮越深，後悔越長\n\n資料來源：Barry Schwartz, *The Paradox of Choice: Why More Is Less* (2004)"
+            },
+            "3": {
+              "heading": "實驗數據說的更直接：選項越多，你接受對方的機率越低",
+              "display_copy": "看得越多，接受的機率越低\n\n荷蘭研究：從第一個配對看到最後一個\n【接受對方的機率平均下降 27%】\n\n不是後面的人更差\n是「一直比較」讓你的大腦學會拒絕\n\n果醬實驗也說同一件事：\n六個選項的購買率是二十四個選項的十倍\n\n資料來源：Pronk & Denissen (2020), *Social Psychological and Personality Science*, 11(3), 388–396；Iyengar & Lepper (2000), *Journal of Personality and Social Psychology*"
+            },
+            "4": {
+              "heading": "台灣的狀況：65% 的用戶每週至少開一次 app，但大家都說「越滑越空虛」",
+              "display_copy": "台灣 65% 的交友 App 用戶\n每週至少開啟一次\n\n但 2024 年用戶的真實感受是：\n\n【「越滑越覺得空虛」】\n\n配對在累積，見面沒有發生\n每個人都以「備選」的姿態存在\n\n資料來源：Rakuten Insight Taiwan Dating App Survey (2022)；Ansari & Klinenberg, *Modern Romance* (2015)"
+            },
+            "5": {
+              "heading": "認識的人變多，不代表感情變容易——見面，才是讓一個人從「備選」變成真實的唯一方法",
+              "display_copy": "停止比較\n認真把時間給面前這個人\n\nAnsari 的研究最後說：\n走入關係的人，不是找到「最完美的選項」\n\n〖而是在某個時刻，決定停止滑下去〗\n\n見面，才是讓一個人從備選變成真實\n\nLava，讓見面先發生"
+            },
+            "6": {
+              "heading": "Lava，不聊天的交友軟體",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-07-30T13:36:31+08:00"
     }
   ]
 }
