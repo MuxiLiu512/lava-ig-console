@@ -65,12 +65,12 @@ def _still_label(fn):
     if m:
         core = m.group(1)
     else:
-        m = re.match(r"((?:WM|OV|OL|DESIGN)-.+?)([-_ ]\d+)?\.\w+$", fn, re.I)
+        m = re.match(r"((?:WM|OV|OL|DESIGN|SHOT)-.+?)([-_ ]\d+)?\.\w+$", fn, re.I)
         if not m:
             return None, None
         core = m.group(1)
     sk = None
-    m2 = re.match(r"(?i)^(WM|OV|OL|DESIGN)[- ](.+)$", core)
+    m2 = re.match(r"(?i)^(WM|OV|OL|DESIGN|SHOT)[- ](.+)$", core)
     if m2:
         sk, core = m2.group(1).upper(), m2.group(2)
     if sk == "DESIGN":
@@ -355,9 +355,10 @@ def _build_and_write(m):
                 sys.stderr.write("  ! slide %d 候選超過 %d 張，其餘截斷（清舊資料夾可減量）\n" % (s["n"], len(CID))); break
             if not os.path.exists(c["src"]):
                 sys.stderr.write("  ! 缺候選圖 %s\n" % c["src"]); continue
-            if "-DESIGN-" not in os.path.basename(c["src"]) and _flat_image(c["src"]):
-                sys.stderr.write("  ↩ 剔除空圖/破圖候選：%s\n" % os.path.basename(c["src"])); continue
-            if "-DESIGN-" not in os.path.basename(c["src"]):
+            _bn = os.path.basename(c["src"])
+            if "-DESIGN-" not in _bn and "-SHOT-" not in _bn and _flat_image(c["src"]):
+                sys.stderr.write("  ↩ 剔除空圖/破圖候選：%s\n" % _bn); continue
+            if "-DESIGN-" not in _bn and "-SHOT-" not in _bn:
                 ok, reason, metrics = _image_ok(c["src"])
                 if not ok:
                     c["low_q"] = True   # log-only：標記不剔除，門檻用 gate-audit 校準後再升硬閘
@@ -482,6 +483,7 @@ def _collect_slide_imgs(dirs, kind, prune=True):
     prune=True 時剔除近純色破圖（生圖失敗）；重建舊貼文 cid 對照時須 prune=False 以復刻原始序列。"""
     out = {}
     seen_names = set()   # 跨輪資料夾同名圖去重（F6）
+    shot_credits = {}    # {dir: {filename: 出處}}（forager 的 shots_credits.json sidecar）
     for d in sorted(dirs):
         for f in sorted(glob.glob(os.path.join(d, "**", "*"), recursive=True)):
             fn = os.path.basename(f)
@@ -491,14 +493,24 @@ def _collect_slide_imgs(dirs, kind, prune=True):
                 continue
             mm = re.search(r"slide-?(\d+)", fn, re.I)
             is_design = "-DESIGN-" in fn
-            if prune and not is_design and _flat_image(f):
+            is_shot = "-SHOT-" in fn
+            if prune and not is_design and not is_shot and _flat_image(f):
                 sys.stderr.write("  ✂ 剔除疑似破圖（近純色）：%s\n" % fn)
                 continue
             lb0, sk0 = _still_label(fn)
-            if kind == "still" or is_design:
+            if kind == "still" or is_design or is_shot:
                 label, sk = lb0, sk0
             else:
                 label, sk = None, None
+            if is_shot:   # sidecar 有完整出處（帳號/媒體/影片名）就用它取代檔名 slug
+                dd = os.path.dirname(f)
+                if dd not in shot_credits:
+                    try:
+                        with open(os.path.join(dd, "shots_credits.json"), encoding="utf-8") as cf:
+                            shot_credits[dd] = json.load(cf)
+                    except Exception:
+                        shot_credits[dd] = {}
+                label = shot_credits[dd].get(fn) or label
             seen_names.add(fn.lower())
             # 無 slide 標籤的新來源檔（WM-/OV-/OL-）進 0 號池，之後輪流分配到內容 slides
             key = int(mm.group(1)) if mm else (0 if sk else None)
@@ -593,7 +605,12 @@ def from_drive(args):
     for s in data.get("slides", []):
         n = s.get("index")
         cands = []
-        # 劇照/新來源優先（原本 gen 在前導致 CID 12 格被生圖吃光、新來源被截斷）
+        gen_items = list(gen.get(n, []))
+        # 截圖策展（SHOT）最優先——這是撰稿指定的「講誰就截誰」素材（素材線 v2）
+        for path, label, sk in gen_items:
+            if sk == "SHOT":
+                cands.append({"src": path, "kind": "still", "source_kind": "SHOT", "source_label": label or "截圖"})
+        # 劇照/新來源次之（原本 gen 在前導致 CID 12 格被生圖吃光、新來源被截斷）
         for path, label, sk in (still.get(n, []) + pool_assign.get(n, [])):
             c = {"src": path, "kind": "still"}
             if label:
@@ -601,12 +618,11 @@ def from_drive(args):
             if sk:
                 c["source_kind"] = sk
             cands.append(c)
-        gen_items = list(gen.get(n, []))
         for path, label, sk in gen_items:      # DESIGN 已停用（Jesse 2026-07-29 否決抽象漸層底）
             if sk == "DESIGN" and INCLUDE_DESIGN:
                 cands.append({"src": path, "kind": "design", "source_kind": "DESIGN", "source_label": label or "design"})
         for path, label, sk in gen_items:
-            if sk != "DESIGN":
+            if sk not in ("DESIGN", "SHOT"):
                 cands.append({"src": path, "kind": "generated"})
         final = None
         if args.finals_dir:
@@ -775,7 +791,9 @@ def render_approved(args):
                     m3 = re.match(r"(?i)^(WM|OV|OL)[- ](.+)$", lb)
                     if m3:
                         sk, lb = m3.group(1).upper(), m3.group(2)
-                if sk == "WM":
+                if sk == "SHOT":
+                    credits[n] = "圖片來源：%s（截圖引用）" % lb
+                elif sk == "WM":
                     credits[n] = "圖片來源：Wikimedia Commons（%s，自由授權）" % lb
                 elif sk == "OL":
                     credits[n] = "圖片來源：Open Library 書封（%s）" % lb

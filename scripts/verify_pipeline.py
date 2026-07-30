@@ -31,8 +31,8 @@ def main():
                 else:
                     kinds["生成"] += 1
                 src = os.path.join(REPO, c.get("src", ""))
-                if c.get("source_kind") == "DESIGN" or "-DESIGN-" in src:
-                    continue   # 品牌設計底（漸層）天然近純色，不算破圖
+                if c.get("source_kind") in ("DESIGN", "SHOT") or "-DESIGN-" in src or "-SHOT-" in src:
+                    continue   # 設計底/策展截圖（文章白底）不做近純色判定
                 if os.path.exists(src) and _flat_image(src):
                     flats += 1
         mix = " ".join("%s×%d" % (k, v) for k, v in sorted(kinds.items()))
@@ -45,7 +45,7 @@ def main():
             flags.append("⚠劇照無出處×%d" % nolabel)
         if lowq:
             flags.append("⚠低畫質×%d" % lowq)
-        if not (kinds.get("WM") or kinds.get("OV") or kinds.get("OL")) and kinds.get("劇照", 0) == 0:
+        if not (kinds.get("SHOT") or kinds.get("WM") or kinds.get("OV") or kinds.get("OL")) and kinds.get("劇照", 0) == 0:
             flags.append("⚠只有生成圖")
         if flats or total < 8:
             bad += 1

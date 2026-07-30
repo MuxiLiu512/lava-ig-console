@@ -337,6 +337,7 @@ function srcInfo(cd) {
   let sk = cd.source_kind || "";
   const m = !sk && /^(WM|OV|OL)[- ](.+)$/i.exec(lb);
   if (m) { sk = m[1].toUpperCase(); lb = m[2]; }
+  if (sk === "SHOT") return { tag: "截圖", cls: "shot", line: (lb ? lb + " · " : "") + "截圖引用（發布自動標注出處）" };
   if (sk === "WM") return { tag: "Wiki", cls: "wm", line: (lb ? lb + " · " : "") + "Wikimedia 自由授權" };
   if (sk === "OV") return { tag: "CC圖庫", cls: "ov", line: (lb ? lb + " · " : "") + "Openverse 創用 CC" };
   if (sk === "OL") return { tag: "書封", cls: "ol", line: (lb ? lb + " · " : "") + "Open Library" };

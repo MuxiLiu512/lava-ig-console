@@ -5470,24 +5470,31 @@
               "cid": "a",
               "src": "assets/20260728-Attached說你不是/slide-1a.jpg",
               "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-Attached說你不是/slide-1b.jpg",
               "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
+              "source_label": "Crazy Ex Girlfriend"
             },
             {
               "cid": "c",
               "src": "assets/20260728-Attached說你不是/slide-1c.jpg",
               "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
             },
             {
               "cid": "d",
               "src": "assets/20260728-Attached說你不是/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-Attached說你不是/slide-1e.jpg",
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend"
             }
@@ -5500,18 +5507,36 @@
         {
           "n": 2,
           "role": "共感場景",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
+              "source_kind": "SHOT"
+            }
+          ],
           "final_src": null,
           "heading": "同一個已讀，三種人會寫出三種劇本",
-          "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》"
+          "display_copy": "《Attached》將成人親密關係常見反應整理成三型：焦慮型容易把晚回解讀成拒絕；迴避型可能越在意越想拉開距離；安全型較能承認不安、提出具體需要。若即若離之所以像心動，有時只是【追逐與退開】太熟悉。\n資料來源：Levine & Heller，《Attached》",
+          "default_cid": "a"
         },
         {
           "n": 3,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-Attached說你不是/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "《Attached》Amir Levine & Rachel Heller 書封／Open Library",
+              "source_kind": "SHOT"
+            }
+          ],
           "final_src": null,
           "heading": "這不是星座分類，而是超過 70 年的研究線",
-          "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH"
+          "display_copy": "依附研究一路從親子走到成人戀愛：Bowlby 於 1950 年代奠基，Ainsworth 在 1978 年發展「陌生情境」；Hazan 與 Shaver 於 1987 年發現成人戀愛也有平行模式。《Attached》把它翻成【可辨認的關係反應】，銷量超過 200 萬冊。\n資料來源：Hazan & Shaver（1987）；PRH",
+          "default_cid": "a"
         },
         {
           "n": 4,
@@ -5521,7 +5546,8 @@
               "cid": "a",
               "src": "assets/20260728-Attached說你不是/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Because This Is My First Life"
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
@@ -5540,6 +5566,12 @@
               "src": "assets/20260728-Attached說你不是/slide-4d.jpg",
               "kind": "still",
               "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-Attached說你不是/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
             }
           ],
           "final_src": null,
@@ -5555,14 +5587,15 @@
               "cid": "a",
               "src": "assets/20260728-Attached說你不是/slide-5a.jpg",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-Attached說你不是/slide-5b.jpg",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "c",
@@ -5573,6 +5606,12 @@
             {
               "cid": "d",
               "src": "assets/20260728-Attached說你不是/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-Attached說你不是/slide-5e.jpg",
               "kind": "still",
               "source_label": "Hometown Cha Cha Cha"
             }
@@ -5652,7 +5691,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T16:24:53+08:00"
+      "candidates_since": "2026-07-30T18:37:02+08:00"
     },
     {
       "id": "20260728-AzizAnsari花年",
@@ -5672,7 +5711,8 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-1a.jpg",
               "kind": "still",
-              "source_label": "New Girl"
+              "source_label": "Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
@@ -5691,6 +5731,12 @@
               "src": "assets/20260728-AzizAnsari花年/slide-1d.jpg",
               "kind": "still",
               "source_label": "New Girl"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-AzizAnsari花年/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "New Girl"
             }
           ],
           "final_src": null,
@@ -5701,10 +5747,19 @@
         {
           "n": 2,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "NPR《All Things Considered》Aziz Ansari 專訪",
+              "source_kind": "SHOT"
+            }
+          ],
           "final_src": null,
           "heading": "一場感情困擾，變成兩年的全球研究",
-          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015"
+          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015",
+          "default_cid": "a"
         },
         {
           "n": 3,
@@ -5713,6 +5768,13 @@
             {
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "《Modern Romance》Aziz Ansari & Eric Klinenberg 書封／Open Library",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-3b.jpg",
               "kind": "still",
               "source_label": "Modern Romance An Investigation",
               "source_kind": "OV",
@@ -5732,7 +5794,8 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Love Life"
+              "source_label": "Wikipedia「Modern Romance: An Investigation」條目",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
@@ -5751,6 +5814,12 @@
               "src": "assets/20260728-AzizAnsari花年/slide-4d.jpg",
               "kind": "still",
               "source_label": "Love Life"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-AzizAnsari花年/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
             }
           ],
           "final_src": null,
@@ -5766,7 +5835,8 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Goodreads《Modern Romance》書評頁",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
@@ -5783,6 +5853,12 @@
             {
               "cid": "d",
               "src": "assets/20260728-AzizAnsari花年/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-AzizAnsari花年/slide-5e.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -5862,7 +5938,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T16:24:55+08:00"
+      "candidates_since": "2026-07-30T18:37:05+08:00"
     }
   ]
 }

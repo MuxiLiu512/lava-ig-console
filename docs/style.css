@@ -176,4 +176,5 @@ ul.changes { margin: 6px 0 0; padding-left: 18px; } ul.changes li { margin: 2px 
 .lightbox .lb-cap { color: #ddd; font-size: 13px; }
 
 .tag.design { background: #4a1d12; color: #ff9d85; }
+.tag.shot { background: #0f3d3a; color: #6fe3d6; }
 .tag.lowq { background: #4a3b00; color: #ffd34d; }
