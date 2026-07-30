@@ -555,8 +555,12 @@ def from_drive(args):
     sys.stderr.write("→ 選中文案：%s（主題核心=%s）\n" % (base, ntopic))
     pid = args.post_id or ("%s-%s" % (date or "draft", _slug(ntopic)))
 
-    # 設計底（Tier 1 預設視覺）：對最新底圖資料夾冪等補產；無底圖資料夾則建立
+    # 設計底：2026-07-29 Jesse 否決抽象漸層版（「沒有意義的東西」）→ 停用；
+    # 生成器保留待 v2（timeleft 式拼貼文字卡，需與渲染文字合成預覽）再啟用
+    INCLUDE_DESIGN = False
     try:
+        if not INCLUDE_DESIGN:
+            raise RuntimeError("design bg disabled by Jesse 2026-07-29")
         _subs = sorted(d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d))
         _bds = [d for d in _subs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
         _bd = max(_bds, key=os.path.getmtime) if _bds else os.path.join(root, "%s %s 底圖" % (date or "20260000", topic_raw[:24]))
@@ -586,8 +590,8 @@ def from_drive(args):
                 c["source_kind"] = sk
             cands.append(c)
         gen_items = list(gen.get(n, []))
-        for path, label, sk in gen_items:      # 設計底排在生成圖前
-            if sk == "DESIGN":
+        for path, label, sk in gen_items:      # DESIGN 已停用（Jesse 2026-07-29 否決抽象漸層底）
+            if sk == "DESIGN" and INCLUDE_DESIGN:
                 cands.append({"src": path, "kind": "design", "source_kind": "DESIGN", "source_label": label or "design"})
         for path, label, sk in gen_items:
             if sk != "DESIGN":
