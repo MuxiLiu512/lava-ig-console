@@ -5243,7 +5243,8 @@
         }
       },
       "candidates_since": "2026-07-30T15:23:51+08:00",
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "退回底圖：等重生候選"
     },
     {
       "id": "20260724-張凌赫效應為什麼高冷男主",
@@ -5456,7 +5457,7 @@
       "topic": "《Attached》說：你不是「感情運很差」，你只是不知道自己是哪一型",
       "version": 1,
       "status": "awaiting_review",
-      "clickup_task_id": null,
+      "clickup_task_id": "86eyebgve",
       "created_at": null,
       "caption": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是直接說出需要？這不一定是運氣差，可能是壓力放大了依附反應。\n\n下次市場、工作與曖昧一起震盪，先寫下：「我想連發訊息或消失，因為我怕＿＿。」再提出可回應的需要，例如：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、心理治療與健康關係，都可能幫人建立「賺得的安全感」。Lava 把認識帶回線下，怎麼靠近仍由你選。\n\n#LavaDating #依附理論 #Attached #安全型依附 #焦慮型依附 #迴避型依附 #賺得的安全感 #感情心理學 #線下約會",
       "topic_type": "A-知識型",
@@ -5464,37 +5465,10 @@
         {
           "n": 1,
           "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-1a.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-Attached說你不是/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-Attached說你不是/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "盤面一跌、他又晚回，你會抓緊還是逃開？",
-          "display_copy": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是說出需要？【這不一定是運氣差】，可能是〖壓力放大了依附反應〗。",
-          "default_cid": "a"
+          "display_copy": "早上 9:03，台股開盤一片綠。你按掉券商通知，卻立刻點開昨晚的對話框：他已讀 40 分鐘，你開始重看每個句點。當市場、工作與曖昧一起升壓，你會連發訊息、突然消失，還是說出需要？【這不一定是運氣差】，可能是〖壓力放大了依附反應〗。"
         },
         {
           "n": 2,
@@ -5515,71 +5489,18 @@
         {
           "n": 4,
           "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-4a.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-Attached說你不是/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-Attached說你不是/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "壓力一來，熟悉的反應會被調大聲",
-          "display_copy": "壓力會把依附策略調大聲：焦慮依附者可能出現較高皮質醇與血壓；對部分迴避依附者，伴侶在場反而伴隨更高心率與收縮壓。【追得更急或退得更遠】，可能是身體先自保，不代表你注定如此。\n資料來源：Quirin et al., 2008；Gallo & Matthews, 2006",
-          "default_cid": "a"
+          "display_copy": "壓力會把依附策略調大聲：焦慮依附者可能出現較高皮質醇與血壓；對部分迴避依附者，伴侶在場反而伴隨更高心率與收縮壓。【追得更急或退得更遠】，可能是身體先自保，不代表你注定如此。\n資料來源：Quirin et al., 2008；Gallo & Matthews, 2006"
         },
         {
           "n": 5,
           "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-Attached說你不是/slide-5a.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-Attached說你不是/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-Attached說你不是/slide-5c.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-Attached說你不是/slide-5d.jpg",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "辨認模式，不是替自己判刑",
-          "display_copy": "下次市場、工作與曖昧一起震盪，先寫：「我想連發訊息／消失，因為我怕＿＿。」再提出可回應的需要：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、治療與健康關係，都可能長出「賺得的安全感」。Lava 把認識帶回線下，【怎麼靠近仍由你選】。",
-          "default_cid": "a"
+          "display_copy": "下次市場、工作與曖昧一起震盪，先寫：「我想連發訊息／消失，因為我怕＿＿。」再提出可回應的需要：「今晚能確認見面時間嗎？」依附風格不是命運；覺察、治療與健康關係，都可能長出「賺得的安全感」。Lava 把認識帶回線下，【怎麼靠近仍由你選】。"
         },
         {
           "n": 6,
@@ -5651,14 +5572,14 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T15:23:54+08:00"
+      "candidates_since": "2026-07-30T15:28:22+08:00"
     },
     {
       "id": "20260728-AzizAnsari花年",
       "topic": "Aziz Ansari 花 2 年訪問全球數千人寫了一本書——他說現代人談戀愛最大的問題，不是選擇太少，是選擇太多",
       "version": 1,
       "status": "awaiting_review",
-      "clickup_task_id": null,
+      "clickup_task_id": "86eydqp1k",
       "created_at": null,
       "caption": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現，受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，持續增加的選項卻可能讓大腦更快進入拒絕模式。\n\n如果你發現配對名單越存越長，真正見面卻寥寥可數，可以先暫停「這個也留著」的囤積習慣，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動決定減少比較、增加見面，而是否繼續認識，始終由你親自判斷。\n\n#LavaDating #不聊天的交友軟體 #ModernRomance #選擇悖論 #交友軟體 #現代愛情 #約會心理學 #線下約會",
       "topic_type": "A-知識型",
@@ -5666,36 +5587,10 @@
         {
           "n": 1,
           "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-1a.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-1b.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-1c.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-AzizAnsari花年/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "New Girl"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "看得越多，你可能拒絕得越快",
-          "display_copy": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現：受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，結果可能是〖看得越多，越容易拒絕〗。",
-          "default_cid": "a"
+          "display_copy": "2020 年，Pronk 與 Denissen 在三項線上約會研究中發現：受試者從第一個看到最後一個選項時，對象被接受的機率平均下降 27%。你以為多滑幾個人更容易找到喜歡的，結果可能是〖看得越多，越容易拒絕〗。"
         },
         {
           "n": 2,
@@ -5708,88 +5603,26 @@
         {
           "n": 3,
           "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-3a.jpg",
-              "kind": "still",
-              "source_label": "Modern Romance An Investigation",
-              "source_kind": "OV",
-              "low_q": true
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "果醬實驗提供的是一個類比",
-          "display_copy": "2000 年，Iyengar 與 Lepper 比較 24 種及 6 種果醬，發現選項多的攤位更吸睛，購買比例卻較低。這項研究測量的是【消費選擇】，無法直接證明約會行為；它提供的是選項過多可能增加決策負擔的類比。\n資料來源：Iyengar & Lepper, JPSP, 2000",
-          "default_cid": "a"
+          "display_copy": "2000 年，Iyengar 與 Lepper 比較 24 種及 6 種果醬，發現選項多的攤位更吸睛，購買比例卻較低。這項研究測量的是【消費選擇】，無法直接證明約會行為；它提供的是選項過多可能增加決策負擔的類比。\n資料來源：Iyengar & Lepper, JPSP, 2000"
         },
         {
           "n": 4,
           "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-4a.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-4b.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-4c.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-AzizAnsari花年/slide-4d.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "大量瀏覽，會把人推向拒絕心態",
-          "display_copy": "三項研究發現，隨著受試者持續瀏覽約會對象，照片滿意度與成功預期逐漸下滑。作者報告，從第一個到最後一個選項，對象被接受的機率平均下降 27%，並將這種趨勢稱為〖拒絕心態〗。\n資料來源：Pronk & Denissen, SPPS, 2020",
-          "default_cid": "a"
+          "display_copy": "三項研究發現，隨著受試者持續瀏覽約會對象，照片滿意度與成功預期逐漸下滑。作者報告，從第一個到最後一個選項，對象被接受的機率平均下降 27%，並將這種趨勢稱為〖拒絕心態〗。\n資料來源：Pronk & Denissen, SPPS, 2020"
         },
         {
           "n": 5,
           "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260728-AzizAnsari花年/slide-5b.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260728-AzizAnsari花年/slide-5c.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260728-AzizAnsari花年/slide-5d.jpg",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
+          "candidates": [],
           "final_src": null,
           "heading": "別再囤配對，開始累積相處的證據",
-          "display_copy": "如果配對名單越存越長，真正見面卻寥寥可數，可以先暫停【囤積式配對】，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動減少比較、增加見面，是否繼續認識，始終由你判斷。",
-          "default_cid": "a"
+          "display_copy": "如果配對名單越存越長，真正見面卻寥寥可數，可以先暫停【囤積式配對】，挑出一個確實好奇的人，讓一次線下相處補上照片與文字無法提供的證據。你可以在 Lava 主動減少比較、增加見面，是否繼續認識，始終由你判斷。"
         },
         {
           "n": 6,
@@ -5861,7 +5694,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T15:23:56+08:00"
+      "candidates_since": "2026-07-30T15:28:22+08:00"
     }
   ]
 }
