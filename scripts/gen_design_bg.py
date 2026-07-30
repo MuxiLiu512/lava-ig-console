@@ -8,7 +8,7 @@
 # 檔名 slide{N}-DESIGN-{tpl}-s{seed}.png（可被 slide-N regex 收錄；DESIGN 為 source_kind 錨點）。
 #
 # 用法：python3 gen_design_bg.py --draft <文案.json> --outdir <Drive底圖資料夾> [--per-slide 2] [--seed N]
-import os, sys, json, argparse, zlib, random, math
+import os, sys, json, argparse, zlib, random, math, tempfile, shutil
 
 from PIL import Image, ImageDraw, ImageFilter
 
@@ -119,9 +119,13 @@ def main():
             fp = os.path.join(a.outdir, fn)
             if os.path.exists(fp):
                 continue  # 冪等
-            tmp = fp + ".part"   # 原子寫入：先寫暫存再 rename，被 timeout 砍掉不留截斷檔
-            make_bg(tpl, seed).save(tmp, "PNG", optimize=True)
+            # 本地先渲染（Drive 掛載直寫太慢，180s 內寫不完整批）→ 再搬進 Drive；.part 防截斷
+            local = os.path.join(tempfile.gettempdir(), fn)
+            make_bg(tpl, seed).save(local, "PNG", optimize=True)
+            tmp = fp + ".part"
+            shutil.copyfile(local, tmp)
             os.replace(tmp, fp)
+            os.unlink(local)
             made += 1
     print("✓ 設計底 %d 張 → %s" % (made, a.outdir))
 

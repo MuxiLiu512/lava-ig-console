@@ -561,7 +561,7 @@ def from_drive(args):
         _bds = [d for d in _subs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
         _bd = max(_bds, key=os.path.getmtime) if _bds else os.path.join(root, "%s %s 底圖" % (date or "20260000", topic_raw[:24]))
         subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen_design_bg.py"),
-                        "--draft", jf, "--outdir", _bd, "--post-id", pid], check=False, timeout=180)
+                        "--draft", jf, "--outdir", _bd, "--post-id", pid], check=False, timeout=300)
     except Exception as e:
         sys.stderr.write("  ! 設計底生成失敗（不阻斷）：%s\n" % e)
     gen, still = _scan_dirs(root, ntopic)
