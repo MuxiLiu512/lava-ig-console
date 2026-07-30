@@ -142,16 +142,20 @@ def _save_local_sources(d):
 
 
 def _flat_image(path, thresh=8.0):
-    """近純色圖（生圖失敗的色塊，如整片藍）→ True。無法讀取也視為壞圖。"""
-    try:
-        from PIL import Image, ImageStat
-        im = Image.open(path).convert("RGB").resize((48, 48))
-        if max(ImageStat.Stat(im).stddev) < thresh:
-            return True
-        quads = [im.crop(b) for b in ((0, 0, 24, 24), (24, 0, 48, 24), (0, 24, 24, 48), (24, 24, 48, 48))]
-        return all(max(ImageStat.Stat(q).stddev) < 6.0 for q in quads)
-    except Exception:
-        return True
+    """近純色圖（生圖失敗的色塊，如整片藍）→ True。無法讀取重試一次（Drive 掛載偶發 EDEADLK），仍失敗才視為壞圖。"""
+    from PIL import Image, ImageStat
+    import time
+    for attempt in (0, 1):
+        try:
+            im = Image.open(path).convert("RGB").resize((48, 48))
+            if max(ImageStat.Stat(im).stddev) < thresh:
+                return True
+            quads = [im.crop(b) for b in ((0, 0, 24, 24), (24, 0, 48, 24), (0, 24, 24, 48), (24, 24, 48, 48))]
+            return all(max(ImageStat.Stat(q).stddev) < 6.0 for q in quads)
+        except Exception:
+            if attempt == 0:
+                time.sleep(0.8)
+    return True
 
 
 def _image_ok(path):
@@ -421,6 +425,14 @@ def _build_and_write(m):
         for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since", "image_credits", "copy_choice"):
             if old.get(k):
                 post[k] = old[k]
+        if not post.get("clickup_task_id") and old.get("clickup_task_id"):
+            post["clickup_task_id"] = old["clickup_task_id"]   # 重餵漏 --clickup 不得洗掉卡號（否則哨兵會重複入料）
+    # 安全網：新版 0 候選不得覆蓋有候選的舊版（Drive 瞬時 I/O 錯誤會把全池誤判破圖清空）
+    new_total = sum(len(s["candidates"]) for s in slides)
+    old_total = sum(len(s.get("candidates", [])) for s in (old or {}).get("slides", []))
+    if new_total == 0 and old_total > 0:
+        sys.stderr.write("  ✋ 拒絕覆蓋：新版 0 候選、舊版 %d 候選（疑 Drive 讀取異常），保留舊版 %s\n" % (old_total, pid))
+        return
     # 候選圖序列變動 → 舊審核的選圖失效：記 candidates_since；未出成品的 approved 退回待審
     _sig = lambda ss: [(s.get("n"), tuple((c.get("cid"), c.get("kind")) for c in s.get("candidates", []))) for s in ss]
     if old and _sig(old.get("slides", [])) != _sig(slides):
