@@ -147,7 +147,7 @@ def grab_youtube(url, work):
     if os.path.exists(YTDLP) and os.path.exists(FFMPEG):
         try:
             meta = subprocess.run([YTDLP, "--no-playlist", "--print", "duration", "--print", "urls",
-                                   "-f", "b[height<=1080][ext=mp4]/b[height<=1080]/b[height<=480]/18/b",
+                                   "-f", "bv*[height<=1080][ext=mp4]/bv*[height<=1080]/b[height<=1080]/b",
                                    url], capture_output=True, text=True, timeout=90)
             lines = [x for x in (meta.stdout or "").strip().splitlines() if x.strip()]
             dur = float(lines[0]) if lines and re.match(r"^[\d.]+$", lines[0]) else 0
