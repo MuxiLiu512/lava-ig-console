@@ -325,22 +325,74 @@ def compose(src_path, source_type, focus_x=None):
         x = (im2.width - W) // 2
         out = im2.crop((x, 0, x + W, H))
     else:
-        out = _saliency_crop(im, focus_x)   # 寬圖（yt 16:9）→ focus_x／顯著性滿版裁切
+        # 寬圖（yt 16:9）→ 頂錨完整呈現＋下方漸層入黑（Jesse 裁決：不強制滿版，
+        # 引擎文字壓下半部、遮罩會漸層變黑——圖保完整、構圖美觀優先）。
+        # focus_x 仍用於超寬圖的水平取景（寬到 top 區塞不下時輕裁）。
+        tw = W
+        th = round(tw * im.height / im.width)
+        if th < int(H * 0.34):   # 過寬（如超寬螢幕）→ 依 focus_x 輕裁到 16:9 再頂錨
+            im = _saliency_crop_to(im, 16 / 9, focus_x)
+            th = round(W * im.height / im.width)
+        top = im.resize((tw, th), Image.LANCZOS)
+        # 底場：影像底緣模糊延伸並壓暗，與引擎遮罩無縫銜接
+        strip = im.crop((0, int(im.height * 0.7), im.width, im.height))
+        field = strip.resize((W, H - th), Image.LANCZOS).filter(ImageFilter.GaussianBlur(90))
+        field = Image.eval(field, lambda v: int(v * 0.30))
+        out = Image.new("RGB", (W, H))
+        out.paste(top, (0, 0))
+        out.paste(field, (0, th))
+        # 接縫 220px 漸層融合
+        fade_h = min(220, H - th)
+        if fade_h > 10:
+            seam_src = top.crop((0, th - fade_h, W, th)) if th >= fade_h else top
+            dark = Image.eval(seam_src.resize((W, fade_h)).filter(ImageFilter.GaussianBlur(40)), lambda v: int(v * 0.30))
+            mask = Image.new("L", (W, fade_h))
+            md = ImageDraw.Draw(mask)
+            for yy in range(fade_h):
+                md.line([(0, yy), (W, yy)], fill=int(255 * yy / fade_h))
+            out.paste(dark, (0, th - fade_h), mask)
     if source_type in ("yt_frame", "yt_thumb"):
         out = out.filter(ImageFilter.UnsharpMask(radius=2, percent=85, threshold=3))   # 放大後補銳
     return out
 
 
+def _saliency_crop_to(im, target_ar, focus_x=None):
+    """把超寬圖水平裁到 target_ar（focus_x 取景）。"""
+    tw = int(im.height * target_ar)
+    if tw >= im.width:
+        return im
+    if focus_x is not None:
+        X = int(im.width * focus_x / 100 - tw / 2)
+    else:
+        X = (im.width - tw) // 2
+    X = max(0, min(im.width - tw, X))
+    return im.crop((X, 0, X + tw, im.height))
+
+
 def compose_collage(items, seed=7):
-    """Cover 組圖（Weekend Club 式）：3-5 張白框散排在深底。items=[(path, source_type)]。"""
+    """Cover 組圖（Weekend Club 式）：白框卡全幅散排。items=[(path, source_type, dedup_key)]。
+    v2.1.2：①同源去重（同支影片只進一張）②旋轉用 RGBA 透明角（原本黑角蓋卡＝破圖感）③環境底＝首圖模糊放大，不再是死黑。"""
     import random
     rnd = random.Random(seed)
-    bg = Image.new("RGB", (W, H), (16, 16, 18))
-    n = Image.effect_noise((W // 2, H // 2), 20).resize((W, H)).convert("L")
-    bg = Image.blend(bg, Image.merge("RGB", (n, n, n)), 0.05)
-    picks = items[:5]
-    # 全幅散排（引擎主標壓在 H 24%-65% 中上帶——卡片鋪滿整幅、文字疊其上＝wknd 封面同構；
-    # 上下皆有卡防頭重腳輕，中段卡會被遮罩壓暗成文字底）
+    seen_keys, picks = set(), []
+    for it in items:
+        p, st = it[0], it[1]
+        key = it[2] if len(it) > 2 and it[2] else p
+        if key in seen_keys:
+            continue
+        seen_keys.add(key)
+        picks.append((p, st))
+        if len(picks) >= 5:
+            break
+    # 環境底：用第一張模糊放大壓暗（有機質感），避免大片死黑像破圖
+    try:
+        base = Image.open(picks[0][0]).convert("RGB")
+        bg = base.resize((W, H), Image.LANCZOS).filter(ImageFilter.GaussianBlur(80))
+        bg = Image.eval(bg, lambda v: int(v * 0.32))
+    except Exception:
+        bg = Image.new("RGB", (W, H), (16, 16, 18))
+    n = Image.effect_noise((W // 2, H // 2), 18).resize((W, H)).convert("L")
+    bg = Image.blend(bg, Image.merge("RGB", (n, n, n)), 0.04)
     slots = [(0.02, 0.02, 0.56), (0.46, 0.09, 0.52), (0.03, 0.37, 0.52), (0.48, 0.47, 0.50), (0.20, 0.70, 0.56)]
     for i, (p, st) in enumerate(picks):
         try:
@@ -354,11 +406,10 @@ def compose_collage(items, seed=7):
             im = im.resize((tw, int(tw * im.height / im.width)), Image.LANCZOS)
             if im.height > th:
                 im = im.crop((0, 0, tw, th))
-            card = Image.new("RGB", (im.width + 24, im.height + 24), (245, 243, 238))
+            card = Image.new("RGBA", (im.width + 24, im.height + 24), (245, 243, 238, 255))
             card.paste(im, (12, 12))
-            card = card.rotate(rnd.uniform(-3.5, 3.5), expand=True, fillcolor=None)
-            mask = Image.new("L", card.size, 255)
-            bg.paste(card, (int(W * fx), int(H * fy)), mask)
+            card = card.rotate(rnd.uniform(-3.5, 3.5), expand=True, fillcolor=(0, 0, 0, 0))
+            bg.paste(card.convert("RGB"), (int(W * fx), int(H * fy)), card.split()[3])   # alpha 遮罩＝透明角
         except Exception:
             continue
     return bg
@@ -455,7 +506,9 @@ def main():
         all_rejects += [(n,) + x for x in rejects]
         for p, st in cands:
             cid += 1
-            staged.setdefault(n, []).append({"id": "c%d" % cid, "path": p, "source_type": st, "credit": r.get("credit") or r.get("url", "")})
+            staged.setdefault(n, []).append({"id": "c%d" % cid, "path": p, "source_type": st,
+                                             "credit": r.get("credit") or r.get("url", ""),
+                                             "src_key": _yt_id(r.get("url") or "") or (r.get("url") or "").split("?")[0]})
         if cands:
             sys.stderr.write("  ✓ s%d %s → %d 候選\n" % (n, (r.get("url") or "")[:56], len(cands)))
         else:
@@ -482,9 +535,12 @@ def main():
         for cid_ in ranking[n][:1]:
             winners_all.append(id2[cid_])
     cover_n = min(ranking) if ranking else 1
+    id2score = {}
+    for n, sc in scores.items():
+        id2score.update(sc)
     if len(winners_all) >= 3:
         seed = sum(ord(ch) for ch in (a.post_id or os.path.basename(a.outdir))) & 0xFFFF
-        col = compose_collage([(c["path"], c["source_type"]) for c in winners_all], seed)
+        col = compose_collage([(c["path"], c["source_type"], c.get("src_key")) for c in winners_all], seed)
         fn = "slide%d-SHOT-a-collage.png" % cover_n
         if _write_checked(col, os.path.join(a.outdir, fn), work):
             credits[fn] = "組圖：" + "；".join(dict.fromkeys(c["credit"] for c in winners_all[:4]))
