@@ -5470,21 +5470,22 @@
               "cid": "a",
               "src": "assets/20260728-Attached說你不是/slide-1a.jpg",
               "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-Attached說你不是/slide-1b.jpg",
               "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260728-Attached說你不是/slide-1c.jpg",
               "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
             },
             {
               "cid": "d",
@@ -5495,6 +5496,19 @@
             {
               "cid": "e",
               "src": "assets/20260728-Attached說你不是/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-Attached說你不是/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260728-Attached說你不是/slide-1g.jpg",
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend"
             }
@@ -5511,6 +5525,13 @@
             {
               "cid": "a",
               "src": "assets/20260728-Attached說你不是/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-Attached說你不是/slide-2b.jpg",
               "kind": "still",
               "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
               "source_kind": "SHOT"
@@ -5553,7 +5574,8 @@
               "cid": "b",
               "src": "assets/20260728-Attached說你不是/slide-4b.jpg",
               "kind": "still",
-              "source_label": "Because This Is My First Life"
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
@@ -5570,6 +5592,12 @@
             {
               "cid": "e",
               "src": "assets/20260728-Attached說你不是/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-Attached說你不是/slide-4f.jpg",
               "kind": "still",
               "source_label": "Because This Is My First Life"
             }
@@ -5594,14 +5622,15 @@
               "cid": "b",
               "src": "assets/20260728-Attached說你不是/slide-5b.jpg",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260728-Attached說你不是/slide-5c.jpg",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "d",
@@ -5612,6 +5641,12 @@
             {
               "cid": "e",
               "src": "assets/20260728-Attached說你不是/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-Attached說你不是/slide-5f.jpg",
               "kind": "still",
               "source_label": "Hometown Cha Cha Cha"
             }
@@ -5691,7 +5726,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T18:37:02+08:00"
+      "candidates_since": "2026-07-31T13:50:47+08:00"
     },
     {
       "id": "20260728-AzizAnsari花年",
@@ -5711,14 +5746,15 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-1a.jpg",
               "kind": "still",
-              "source_label": "Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）",
+              "source_label": "組圖：Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）；NPR《All Things Considered》Aziz Ansari 專訪；《Modern Romance》Aziz Ansari & Eric Klinenberg 書封；Aziz Ansari／BookCon 2015 座談（YouTube）",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-1b.jpg",
               "kind": "still",
-              "source_label": "New Girl"
+              "source_label": "Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
@@ -5735,6 +5771,12 @@
             {
               "cid": "e",
               "src": "assets/20260728-AzizAnsari花年/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "New Girl"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-AzizAnsari花年/slide-1f.jpg",
               "kind": "still",
               "source_label": "New Girl"
             }
@@ -5769,7 +5811,7 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-3a.jpg",
               "kind": "still",
-              "source_label": "《Modern Romance》Aziz Ansari & Eric Klinenberg 書封／Open Library",
+              "source_label": "《Modern Romance》Aziz Ansari & Eric Klinenberg 書封",
               "source_kind": "SHOT"
             },
             {
@@ -5794,8 +5836,7 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Wikipedia「Modern Romance: An Investigation」條目",
-              "source_kind": "SHOT"
+              "source_label": "Love Life"
             },
             {
               "cid": "b",
@@ -5814,12 +5855,6 @@
               "src": "assets/20260728-AzizAnsari花年/slide-4d.jpg",
               "kind": "still",
               "source_label": "Love Life"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260728-AzizAnsari花年/slide-4e.jpg",
-              "kind": "still",
-              "source_label": "Love Life"
             }
           ],
           "final_src": null,
@@ -5835,14 +5870,15 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
               "kind": "still",
-              "source_label": "Goodreads《Modern Romance》書評頁",
+              "source_label": "Aziz Ansari／BookCon 2015 座談（YouTube）",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-5b.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Aziz Ansari／BookCon 2015 座談（YouTube）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
@@ -5859,6 +5895,12 @@
             {
               "cid": "e",
               "src": "assets/20260728-AzizAnsari花年/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260728-AzizAnsari花年/slide-5f.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -5938,7 +5980,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-30T18:37:05+08:00"
+      "candidates_since": "2026-07-31T13:50:50+08:00"
     }
   ]
 }
