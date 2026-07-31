@@ -256,27 +256,19 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
     cands, rejects = [], []
     try:
         from urllib.parse import quote
-        _b("viewport", "1440x1200", "--scale", "1", timeout=90)
-        # mkt=en-US 避開台灣區域化（英文 query 在 TW Bing 會撈回本地部落格雜圖）；imagesize-large 濾小圖
-        nav = _b("goto", "https://www.bing.com/images/search?q=%s&form=HDRSC2&first=1&mkt=en-US&setlang=en&qft=+filterui:imagesize-large" % quote(query), timeout=90)
-        if "Navigated" not in (nav.stdout or "") + (nav.stderr or ""):
-            return [], [(query[:40], "bing goto 失敗")]
+        # DuckDuckGo Images API：l=us-en 鎖美區（Bing 會被 geo/cookies 蓋掉 mkt 而撈回中文商用圖庫）；
+        # thumbnail 走 DDG 官方代理必可抓（縮圖先策展），image=原圖 URL 供勝者抓取；附原始寬高可預濾
+        html = _fetch("https://duckduckgo.com/?q=%s&iax=images&ia=images" % quote(query)).decode(errors="ignore")
+        mv = re.search(r"vqd=([\d-]+)", html) or re.search(r'vqd="([^"]+)"', html)
+        if not mv:
+            return [], [(query[:40], "ddg vqd 不可得")]
+        j = json.loads(_fetch("https://duckduckgo.com/i.js?l=us-en&o=json&q=%s&vqd=%s&f=,,,&p=1" % (quote(query), mv.group(1))).decode(errors="ignore"))
         pairs = []
-        seen_m = set()
-        for _round in range(3):   # 懶載入：捲動三輪收集 (murl=原圖, turl=Bing 縮圖—必可抓)
-            js = _b("js", "JSON.stringify([...document.querySelectorAll('a.iusc,div.iusc')].map(a=>{try{const j=JSON.parse(a.getAttribute('m'));return {m:j.murl,t:j.turl}}catch(e){return null}}).filter(Boolean))", "--raw", timeout=45)
-            raw = (js.stdout or "").strip()
-            m = re.search(r"\[.*\]", raw, re.S)
-            got = json.loads(m.group(0)) if m else []
-            if isinstance(got, str):
-                got = json.loads(got)
-            for it in got:
-                if it and it.get("m") and it["m"] not in seen_m:
-                    seen_m.add(it["m"]); pairs.append(it)
+        for res in j.get("results", []):
+            if res.get("width", 0) >= 850 and res.get("image") and res.get("thumbnail"):
+                pairs.append({"m": res["image"], "t": res["thumbnail"]})
             if len(pairs) >= want * 3:
                 break
-            _b("js", "window.scrollBy(0, 1600)", "--raw", timeout=20)
-            _b("wait", "--load", timeout=20)
     except Exception as e:
         return [], [(query[:40], "圖搜:%s" % type(e).__name__)]
     # 縮圖先行：staging 用 Bing 縮圖（永遠抓得到→無「盜連站倖存偏差」），策展勝出後才抓原圖
