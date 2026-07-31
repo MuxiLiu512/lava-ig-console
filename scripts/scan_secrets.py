@@ -21,7 +21,7 @@ import subprocess
 import sys
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-SENSITIVE_FILES = [".sync.json", ".env", ".env.local", "credentials.json"]
+SENSITIVE_FILES = [".env", ".env.local", ".sync.json", "credentials.json"]
 
 # 疑似真實金鑰：前綴 + 足夠長度 + 字元夠雜（避開 github_pat_xxx 這種文件佔位符）
 PATTERNS = {
@@ -77,6 +77,13 @@ def main():
         files = [f for f in _git("diff", "--cached", "--name-only").split("\n") if f.strip()]
     else:
         files = [f for f in _git("ls-files").split("\n") if f.strip()]
+    if not files:      # 非 git repo（如海巡）：掃描原始碼與文件
+        for root, dirs, fs in os.walk(REPO):
+            dirs[:] = [d for d in dirs if d not in
+                       {".git", "node_modules", "__pycache__", "data", "inbox", "eval"}]
+            for fn in fs:
+                if fn.endswith((".py", ".mjs", ".js", ".sh", ".md", ".json", ".html", ".command")):
+                    files.append(os.path.relpath(os.path.join(root, fn), REPO))
     for f in files:
         p = os.path.join(REPO, f)
         if not os.path.isfile(p) or os.path.getsize(p) > 2_000_000:
@@ -93,8 +100,18 @@ def main():
         if sf in tracked:
             problems.append("  ⛔ %s 正被 git 追蹤 → git rm --cached %s 並加進 .gitignore" % (sf, sf))
         elif os.path.exists(os.path.join(REPO, sf)):
-            ig = subprocess.run(["git", "check-ignore", "-q", sf], cwd=REPO).returncode == 0
-            if not ig:
+            # git check-ignore 在非 git 專案會失效 → 退回直接讀 .gitignore（避免誤報）
+            gi = os.path.join(REPO, ".gitignore")
+            ignored = False
+            if os.path.isdir(os.path.join(REPO, ".git")):
+                ignored = subprocess.run(["git", "check-ignore", "-q", sf],
+                                         cwd=REPO).returncode == 0
+            elif os.path.exists(gi):
+                with open(gi, encoding="utf-8", errors="ignore") as fh:
+                    rules = {ln.strip().rstrip("/") for ln in fh if ln.strip()
+                             and not ln.startswith("#")}
+                ignored = sf in rules or sf.lstrip("./") in rules
+            if not ignored:
                 problems.append("  ⛔ %s 存在但未被 .gitignore 擋 → 加進 .gitignore" % sf)
 
     # 4) 歷史中曾提交敏感檔
