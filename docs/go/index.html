@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lava</title>
+<meta name="robots" content="noindex">
+<!--
+  Lava 點擊計數轉址頁（2026-07-30）
+  用途：回覆/貼文/bio 的連結先指到這裡 → 記一次點擊 → 立刻轉去 landing page（保留 UTM）。
+  為什麼要這一跳：GitHub Pages 是靜態站，無法在伺服器端計數；而 landing page
+  （wei-yin-hwang/lava-ig-link）不是我們的 repo。這頁放在自己的 Pages 上，
+  就能完全掌握點擊數，且不必更動別人的專案。
+
+  設定：把下面的 ANALYTICS.ga4 換成自己的 GA4 評估 ID（G-XXXXXXXXXX）即開始計數。
+  未設定時只轉址、不計數（不會壞掉）。
+-->
+<style>
+  html,body{height:100%;margin:0;background:#0b0f17;color:#e6edf6;
+    font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+  .wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+  .dot{width:34px;height:34px;border-radius:50%;border:3px solid #23304a;border-top-color:#ff5a3c;
+    animation:spin .8s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  a{color:#ff8a6a}
+  p{font-size:14px;color:#8aa0bd;margin:0}
+  @media (prefers-reduced-motion:reduce){.dot{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="dot" aria-hidden="true"></div>
+  <p>正在前往 Lava…</p>
+  <p><a id="fallback" href="https://wei-yin-hwang.github.io/lava-ig-link/">沒有自動跳轉？點這裡</a></p>
+</div>
+<script>
+(function () {
+  // ---- 設定 ----
+  var TARGET = "https://wei-yin-hwang.github.io/lava-ig-link/";  // 轉址目的地（原 landing page）
+  var ANALYTICS = {
+    ga4: ""            // ← 填入 G-XXXXXXXXXX 就開始計數；留空＝只轉址不計數
+  };
+
+  var qs = window.location.search || "";
+  var params = new URLSearchParams(qs);
+  var dest = TARGET + (qs ? qs : "");           // 原樣帶著 UTM 過去，落地頁仍看得到來源
+  document.getElementById("fallback").href = dest;
+
+  function go() { window.location.replace(dest); }
+
+  if (!ANALYTICS.ga4) { go(); return; }         // 未設定分析 → 直接轉址
+
+  // GA4：以 script 載入後送一個 click 事件，帶上 UTM 供分流統計
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + ANALYTICS.ga4;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", ANALYTICS.ga4, { send_page_view: true });
+  gtag("event", "link_click", {
+    utm_source: params.get("utm_source") || "(none)",
+    utm_medium: params.get("utm_medium") || "(none)",      // reply / bio / social
+    utm_campaign: params.get("utm_campaign") || "(none)",  // sge_reply / profile
+    utm_content: params.get("utm_content") || "(none)",    // draft_id 前 8 碼 → 可回溯單則回覆
+    event_callback: go                                     // 事件送出後才跳轉
+  });
+  setTimeout(go, 900);   // 保險：分析載不動也不能卡住使用者
+})();
+</script>
+</body>
+</html>
