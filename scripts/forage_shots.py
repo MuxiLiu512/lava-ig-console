@@ -250,6 +250,50 @@ def grab_browser(url, work):
     return [(out, st)], rejects
 
 
+def grab_imagesearch(query, work, want=6, source_type="mood"):
+    """圖片搜尋（Bing Images via browse daemon）→ 抓 top N 原圖並驗證。
+    視覺企劃層 v2.2：人物多場合照/情緒場景圖/持書照都靠這個（wknd 的 art direction 做法）。"""
+    cands, rejects = [], []
+    try:
+        from urllib.parse import quote
+        _b("viewport", "1440x1200", "--scale", "1", timeout=90)
+        nav = _b("goto", "https://www.bing.com/images/search?q=%s&form=HDRSC2&first=1" % quote(query), timeout=90)
+        if "Navigated" not in (nav.stdout or "") + (nav.stderr or ""):
+            return [], [(query[:40], "bing goto 失敗")]
+        urls = []
+        for _round in range(3):   # 懶載入：捲動三輪收集
+            js = _b("js", "JSON.stringify([...document.querySelectorAll('a.iusc,div.iusc')].map(a=>{try{return JSON.parse(a.getAttribute('m')).murl}catch(e){return null}}).filter(Boolean))", "--raw", timeout=45)
+            raw = (js.stdout or "").strip()
+            m = re.search(r"\[.*\]", raw, re.S)
+            got = json.loads(m.group(0)) if m else []
+            if isinstance(got, str):
+                got = json.loads(got)
+            for u in got:
+                if u not in urls:
+                    urls.append(u)
+            if len(urls) >= want * 3:
+                break
+            _b("js", "window.scrollBy(0, 1600)", "--raw", timeout=20)
+            _b("wait", "--load", timeout=20)
+    except Exception as e:
+        return [], [(query[:40], "圖搜:%s" % type(e).__name__)]
+    for u in urls:
+        if len(cands) >= want:
+            break
+        try:
+            data = _fetch(u, timeout=20)
+            p = os.path.join(work, "is-" + hashlib.md5(u.encode()).hexdigest()[:10] + ".img")
+            open(p, "wb").write(data)
+            ok, why = _valid_img(p, min_dim=550, min_bytes=15000)
+            if ok:
+                cands.append((p, source_type))
+            else:
+                rejects.append((u[:40], why))
+        except Exception as e:
+            rejects.append((u[:40], type(e).__name__))
+    return cands, rejects
+
+
 def grab(url, work):
     if _yt_id(url):
         return grab_youtube(url, work)
@@ -489,8 +533,10 @@ def main():
             n = s.get("index") or 1
             copy_by_slide[n] = {"heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")}
             for vr in (s.get("visual_refs") or []):
-                if vr.get("url"):
-                    refs.append({"slide": n, "url": vr["url"], "frame_hint": vr.get("frame_hint", ""), "credit": vr.get("credit", "")})
+                if vr.get("url") or vr.get("query"):
+                    refs.append({"slide": n, "url": vr.get("url", ""), "query": vr.get("query", ""),
+                                 "role": vr.get("role", ""), "frame_hint": vr.get("frame_hint", ""),
+                                 "credit": vr.get("credit", "")})
     if not refs:
         sys.exit("✗ 無 refs")
     os.makedirs(a.outdir, exist_ok=True)
@@ -498,17 +544,31 @@ def main():
     staged, all_rejects, cid = {}, [], 0
     for r in refs:
         n = r.get("slide") or 1
+        role = (r.get("role") or "").strip().lower()
+        q = (r.get("query") or "").strip()
+        u = (r.get("url") or "").strip()
+        if not role:
+            role = "evidence" if u else "mood"
         cands, rejects = [], []
         try:
-            cands, rejects = grab((r.get("url") or "").strip(), work)
+            # 視覺企劃層（v2.2）：按角色決定找圖方式——wknd 的 art direction 邏輯
+            if q and role in ("person", "mood", "book"):
+                cands, rejects = grab_imagesearch(q, work, want=(4 if role == "book" else 5), source_type=role)
+                if u and role == "person":   # 人物張補指定影片的影格（多場合多樣性）
+                    c2, r2 = grab(u, work); cands += c2; rejects += r2
+                if not cands and u:          # 圖搜空手 → 退回 URL 路徑
+                    c2, r2 = grab(u, work); cands += c2; rejects += r2
+            elif u:
+                cands, rejects = grab(u, work)
         except Exception as e:
-            rejects = [((r.get("url") or "")[:50], type(e).__name__)]
+            rejects = [((u or q)[:50], type(e).__name__)]
         all_rejects += [(n,) + x for x in rejects]
+        credit_val = "" if role == "mood" else (r.get("credit") or u or q)   # 情緒圖不標出處（Jesse 2026-08-01 裁決，wknd 同標準）
         for p, st in cands:
             cid += 1
             staged.setdefault(n, []).append({"id": "c%d" % cid, "path": p, "source_type": st,
-                                             "credit": r.get("credit") or r.get("url", ""),
-                                             "src_key": _yt_id(r.get("url") or "") or (r.get("url") or "").split("?")[0]})
+                                             "credit": credit_val,
+                                             "src_key": _yt_id(u) or hashlib.md5(open(p, "rb").read(8192)).hexdigest()[:10]})
         if cands:
             sys.stderr.write("  ✓ s%d %s → %d 候選\n" % (n, (r.get("url") or "")[:56], len(cands)))
         else:
@@ -541,7 +601,7 @@ def main():
     if len(winners_all) >= 3:
         seed = sum(ord(ch) for ch in (a.post_id or os.path.basename(a.outdir))) & 0xFFFF
         col = compose_collage([(c["path"], c["source_type"], c.get("src_key")) for c in winners_all], seed)
-        fn = "slide%d-SHOT-a-collage.png" % cover_n
+        fn = "slide%d-SHOT-b-collage.png" % cover_n   # 封面雙版：a=單張 hero（wknd 式）、b=組圖（timeleft 式），操控室挑
         if _write_checked(col, os.path.join(a.outdir, fn), work):
             credits[fn] = "組圖：" + "；".join(dict.fromkeys(c["credit"] for c in winners_all[:4]))
             made += 1
@@ -551,9 +611,8 @@ def main():
         for rank_i, cid_ in enumerate(ranking[n][:2]):
             c = id2[cid_]
             slug = re.sub(r"[^A-Za-z0-9]+", "", c["source_type"])[:10] + hashlib.md5(c["path"].encode()).hexdigest()[:5]
-            letter = "b" if (n == cover_n and len(winners_all) >= 3) else ("a" if rank_i == 0 else "b")
-            if rank_i == 1:
-                letter = "c" if (n == cover_n and len(winners_all) >= 3) else "b"
+            is_cover_dual = (n == cover_n and len(winners_all) >= 3)
+            letter = ("a" if rank_i == 0 else ("c" if is_cover_dual else "b"))   # 封面：a=hero、b=組圖、c=次選
             fn = "slide%d-SHOT-%s-%s.png" % (n, letter, slug)
             fp = os.path.join(a.outdir, fn)
             if os.path.exists(fp):

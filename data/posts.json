@@ -5746,21 +5746,21 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-1a.jpg",
               "kind": "still",
-              "source_label": "組圖：Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）；《Modern Romance》Aziz Ansari & Eric Klinenberg 書封；Aziz Ansari／BookCon 2015 座談（YouTube）",
+              "source_label": "Aziz Ansari／Netflix stand-up",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-1b.jpg",
               "kind": "still",
-              "source_label": "Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）",
+              "source_label": "組圖：Aziz Ansari／Netflix stand-up；；《Modern Romance》Aziz Ansari；NPR《All Things Considered》專訪",
               "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260728-AzizAnsari花年/slide-1c.jpg",
               "kind": "still",
-              "source_label": "Aziz Ansari／BookCon 2015《Modern Romance》座談（YouTube）",
+              "source_label": "Aziz Ansari／Netflix stand-up",
               "source_kind": "SHOT"
             },
             {
@@ -5796,10 +5796,26 @@
         {
           "n": 2,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260728-AzizAnsari花年/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "a-mood07887",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260728-AzizAnsari花年/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "b-moodfe2b8",
+              "source_kind": "SHOT"
+            }
+          ],
           "final_src": null,
           "heading": "一場感情困擾，變成兩年的全球研究",
-          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015"
+          "display_copy": "2013 至 2014 年，Aziz Ansari 與 NYU 社會學家 Eric Klinenberg 走訪【東京、布宜諾斯艾利斯、威奇托】等地，透過訪談、焦點團體、手機互動觀察及 Reddit 數千則回應，完成《Modern Romance》。\n資料來源：Modern Romance, Penguin Press, 2015",
+          "default_cid": "a"
         },
         {
           "n": 3,
@@ -5809,7 +5825,7 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-3a.jpg",
               "kind": "still",
-              "source_label": "《Modern Romance》Aziz Ansari & Eric Klinenberg 書封",
+              "source_label": "《Modern Romance》Aziz Ansari",
               "source_kind": "SHOT"
             },
             {
@@ -5834,7 +5850,8 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Love Life"
+              "source_label": "NPR《All Things Considered》專訪",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
@@ -5853,6 +5870,12 @@
               "src": "assets/20260728-AzizAnsari花年/slide-4d.jpg",
               "kind": "still",
               "source_label": "Love Life"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260728-AzizAnsari花年/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Love Life"
             }
           ],
           "final_src": null,
@@ -5868,14 +5891,14 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
               "kind": "still",
-              "source_label": "Aziz Ansari／BookCon 2015 座談（YouTube）",
+              "source_label": "a-moodc3fe7",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-5b.jpg",
               "kind": "still",
-              "source_label": "Aziz Ansari／BookCon 2015 座談（YouTube）",
+              "source_label": "b-mood81002",
               "source_kind": "SHOT"
             },
             {
@@ -5978,7 +6001,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-31T14:21:43+08:00"
+      "candidates_since": "2026-07-31T20:08:08+08:00"
     }
   ]
 }
