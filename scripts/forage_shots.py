@@ -147,7 +147,7 @@ def grab_youtube(url, work):
     if os.path.exists(YTDLP) and os.path.exists(FFMPEG):
         try:
             meta = subprocess.run([YTDLP, "--no-playlist", "--print", "duration", "--print", "urls",
-                                   "-f", "b[height<=480][ext=mp4]/b[height<=480]/18/b",
+                                   "-f", "b[height<=1080][ext=mp4]/b[height<=1080]/b[height<=480]/18/b",
                                    url], capture_output=True, text=True, timeout=90)
             lines = [x for x in (meta.stdout or "").strip().splitlines() if x.strip()]
             dur = float(lines[0]) if lines and re.match(r"^[\d.]+$", lines[0]) else 0
@@ -158,7 +158,8 @@ def grab_youtube(url, work):
                     subprocess.run([FFMPEG, "-ss", str(max(1, int(dur * frac))), "-i", surl,
                                     "-frames:v", "1", "-q:v", "3", "-y", fp],
                                    capture_output=True, timeout=90)
-                    ok, why = _valid_img(fp, min_dim=360)
+                    # 低清影格閘門：來源是老 webcam/低畫質串流時，放大只會更糊——寧退回縮圖
+                    ok, why = _valid_img(fp, min_dim=560)
                     if ok:
                         cands.append((fp, "yt_frame"))
                     else:
@@ -274,13 +275,17 @@ def _autocrop(im):
     return im
 
 
-def _saliency_crop(im):
-    """寬圖 → 4:5 滿版：邊緣能量掃描找主體窗（純 PIL）。"""
+def _saliency_crop(im, focus_x=None):
+    """寬圖 → 4:5 滿版。focus_x（策展員 vision 回報的主體水平位置 0-100）優先；無則邊緣+膚色掃描。"""
     scale = max(W / im.width, H / im.height)
     big = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
     if big.width <= W + 8:
         x = (big.width - W) // 2
         return big.crop((x, 0, x + W, H))
+    if focus_x is not None:
+        X = int(big.width * focus_x / 100 - W / 2)
+        X = max(0, min(big.width - W, X))
+        return big.crop((X, 0, X + W, H))
     small = big.resize((big.width // 8, big.height // 8))
     edges = small.convert("L").filter(ImageFilter.FIND_EDGES)
     # 膚色圖（人臉/手的粗略偵測）：主體權重遠高於背景欄杆/枝葉的硬邊
@@ -290,7 +295,8 @@ def _saliency_crop(im):
     for yy in range(small.height):
         for xx in range(small.width):
             r, g, bch = px[xx, yy][:3]
-            if r > 90 and g > 40 and bch > 20 and r > g and g >= bch and (r - bch) > 12 and (r - g) < 90:
+            # r-g ≥ 12 排除米色牆/淺木頭（牆面 r≈g，膚色紅通道明顯高）
+            if r > 90 and g > 40 and bch > 20 and (r - g) >= 12 and g >= bch and (r - bch) > 18 and (r - g) < 90:
                 sp[xx, yy] = 255
     win = W // 8
     best_x, best_e = 0, -1
@@ -308,7 +314,7 @@ def _saliency_crop(im):
     return big.crop((X, 0, X + W, H))
 
 
-def compose(src_path, source_type):
+def compose(src_path, source_type, focus_x=None):
     im = Image.open(src_path).convert("RGB")
     if source_type in ("tweet", "ig", "article", "book"):
         im = _autocrop(im)
@@ -317,8 +323,12 @@ def compose(src_path, source_type):
         scale = max(W / im.width, H / im.height)
         im2 = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
         x = (im2.width - W) // 2
-        return im2.crop((x, 0, x + W, H))
-    return _saliency_crop(im)   # 寬圖（yt 16:9）→ 顯著性滿版裁切
+        out = im2.crop((x, 0, x + W, H))
+    else:
+        out = _saliency_crop(im, focus_x)   # 寬圖（yt 16:9）→ focus_x／顯著性滿版裁切
+    if source_type in ("yt_frame", "yt_thumb"):
+        out = out.filter(ImageFilter.UnsharpMask(radius=2, percent=85, threshold=3))   # 放大後補銳
+    return out
 
 
 def compose_collage(items, seed=7):
@@ -329,8 +339,9 @@ def compose_collage(items, seed=7):
     n = Image.effect_noise((W // 2, H // 2), 20).resize((W, H)).convert("L")
     bg = Image.blend(bg, Image.merge("RGB", (n, n, n)), 0.05)
     picks = items[:5]
-    # 散排格位（頂部 70% 區域；引擎會在下方疊大標）
-    slots = [(0.06, 0.035, 0.52), (0.52, 0.10, 0.44), (0.10, 0.33, 0.46), (0.50, 0.40, 0.46), (0.28, 0.20, 0.40)]
+    # 全幅散排（引擎主標壓在 H 24%-65% 中上帶——卡片鋪滿整幅、文字疊其上＝wknd 封面同構；
+    # 上下皆有卡防頭重腳輕，中段卡會被遮罩壓暗成文字底）
+    slots = [(0.02, 0.02, 0.56), (0.46, 0.09, 0.52), (0.03, 0.37, 0.52), (0.48, 0.47, 0.50), (0.20, 0.70, 0.56)]
     for i, (p, st) in enumerate(picks):
         try:
             im = Image.open(p).convert("RGB")
@@ -339,7 +350,7 @@ def compose_collage(items, seed=7):
             fx, fy, fw = slots[i % len(slots)]
             tw = int(W * fw)
             th = int(tw * im.height / im.width)
-            th = min(th, int(H * 0.34))
+            th = min(th, int(H * 0.38))
             im = im.resize((tw, int(tw * im.height / im.width)), Image.LANCZOS)
             if im.height > th:
                 im = im.crop((0, 0, tw, th))
@@ -380,13 +391,20 @@ def curate(staged, copy_by_slide):
             res = json.loads(f.read().decode())
         ranking = {int(k): v.get("ranking", []) for k, v in (res.get("slides") or {}).items()}
         scores = {int(k): v.get("scores", {}) for k, v in (res.get("slides") or {}).items()}
+        focus = {}
+        for k, v in (res.get("slides") or {}).items():
+            for cid_, fx in (v.get("focus") or {}).items():
+                try:
+                    focus[cid_] = max(0, min(100, int(fx)))
+                except Exception:
+                    pass
         if ranking:
-            return ranking, scores, True
+            return ranking, scores, focus, True
     except Exception as e:
         sys.stderr.write("  ! 策展員不可達（%s）→ 啟發式降級\n" % type(e).__name__)
     pref = {"yt_frame": 0, "article": 1, "book": 2, "tweet": 3, "ig": 4, "image": 5, "yt_thumb": 6}
     ranking = {n: [c["id"] for c in sorted(cds, key=lambda c: pref.get(c["source_type"], 9))] for n, cds in staged.items()}
-    return ranking, {}, False
+    return ranking, {}, {}, False
 
 
 def apply_quota(staged, ranking, max_thumb=2):
@@ -446,7 +464,7 @@ def main():
         print("完成：0 張（全部抓取失敗）")
         _metrics(a, refs, staged, all_rejects, {}, False, 0, False)
         sys.exit(1)
-    ranking, scores, curated = curate(staged, copy_by_slide)
+    ranking, scores, focus, curated = curate(staged, copy_by_slide)
     ranking = apply_quota(staged, ranking)
     _log_curation(a, staged, ranking, scores, curated)
     # 合成優勝（每 slide 首選＋次選）；cover（最小 slide）優先組圖
@@ -484,7 +502,7 @@ def main():
             fp = os.path.join(a.outdir, fn)
             if os.path.exists(fp):
                 continue
-            img = compose(c["path"], c["source_type"])
+            img = compose(c["path"], c["source_type"], focus.get(cid_))
             if _write_checked(img, fp, work):
                 credits[fn] = c["credit"]
                 made += 1
