@@ -6,6 +6,16 @@ import os, sys, json, collections
 sys.path.insert(0, os.path.dirname(__file__))
 from sync_console import load, REPO, _flat_image
 
+
+def _shot_broken(path):
+    """截圖破圖判定：全黑/全白（抓取失敗的典型形態）。"""
+    try:
+        from PIL import Image, ImageStat
+        st = ImageStat.Stat(Image.open(path).convert("L").resize((48, 48)))
+        return (st.mean[0] < 12 or st.mean[0] > 243) and st.stddev[0] < 10
+    except Exception:
+        return True
+
 def main():
     posts = load("posts.json").get("posts", [])
     audit = [p for p in posts if p.get("status") in ("awaiting_review", "approved")]
@@ -31,8 +41,13 @@ def main():
                 else:
                     kinds["生成"] += 1
                 src = os.path.join(REPO, c.get("src", ""))
-                if c.get("source_kind") in ("DESIGN", "SHOT") or "-DESIGN-" in src or "-SHOT-" in src:
-                    continue   # 設計底/策展截圖（文章白底）不做近純色判定
+                if c.get("source_kind") == "SHOT" or "-SHOT-" in src:
+                    # 策展截圖：不做近純色判定（文章白底合法），但全黑/全白＝破圖（v2.1 backstop）
+                    if os.path.exists(src) and _shot_broken(src):
+                        flats += 1
+                    continue
+                if c.get("source_kind") == "DESIGN" or "-DESIGN-" in src:
+                    continue   # 設計底（漸層）天然近純色，不算破圖
                 if os.path.exists(src) and _flat_image(src):
                     flats += 1
         mix = " ".join("%s×%d" % (k, v) for k, v in sorted(kinds.items()))

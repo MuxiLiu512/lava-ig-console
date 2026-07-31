@@ -15,6 +15,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep, WebSearch
 - `data/posts.json` — writer_model / hook_type / template_id 標籤
 - ClickUp 卡片留言中的 critic 檢核結果
 - `data/templates.json` — 各模板被引用與成效對應
+- `data/quality_metrics.jsonl`＋`data/curation_log.jsonl` — 素材線品質趨勢與策展分數（v2.1）：週回顧須彙整①破圖趨勢②YT 縮圖佔比③Jesse 實選 vs 策展 top1 命中率（比對 curation_log ranking 與 .local_sources 的 last_render_choices）→ 命中率 <60% 時提 curator prompt 調參提案；校準案例寫入 `data/golden/curation/`
 
 ## 工件契約（輸出）
 1. **週報**：`data/archive/weekly/YYYY-MM-DD.md` — 結構固定：本週發佈清單→outlier（>2× 中位數才算，其餘寫「無 outlier」）→退稿主題聚類→critic 分數 vs Jesse 裁決的一致率→下週動作。

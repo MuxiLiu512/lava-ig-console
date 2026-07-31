@@ -1093,6 +1093,62 @@ def forage_pending(args):
     print("forage-pending：處理 %d 篇" % done)
 
 
+def quality_report(args):
+    """素材線品質趨勢（quality_metrics.jsonl＋curation_log.jsonl）＋紅線判定。
+    紅線：破圖>0＝🔴；YT 縮圖佔比>30%＝🟡；策展降級率>50%＝🟡。目標線見 HANDOFF §11。"""
+    import collections
+    def _load_jl(name):
+        fp = os.path.join(DATA, name)
+        rows = []
+        if os.path.exists(fp):
+            with open(fp, encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        try:
+                            rows.append(json.loads(line))
+                        except Exception:
+                            pass
+        return rows
+    cutoff = (datetime.datetime.now().astimezone() - datetime.timedelta(days=args.days)).isoformat()
+    qm = [r for r in _load_jl("quality_metrics.jsonl") if r.get("ts", "") >= cutoff]
+    if not qm:
+        print("（近 %d 天無 forage 紀錄）" % args.days); return
+    mix = collections.Counter()
+    for r in qm:
+        for k, v in (r.get("source_mix") or {}).items():
+            mix[k] += v
+    total_cand = sum(mix.values()) or 1
+    thumb_pct = 100.0 * mix.get("yt_thumb", 0) / total_cand
+    curated_ok = sum(1 for r in qm if r.get("curated"))
+    scores = [r["curator_avg"] for r in qm if r.get("curator_avg") is not None]
+    selfrej = sum(r.get("self_check_rejects", 0) for r in qm)
+    fetchrej = sum(r.get("fetch_rejects", 0) for r in qm)
+    composed = sum(r.get("composed", 0) for r in qm)
+    print("素材線品質報告（近 %d 天，%d 次 forage）" % (args.days, len(qm)))
+    print("─" * 60)
+    print("合成產出：%d 張｜抓取剔除：%d｜合成自檢剔除：%d" % (composed, fetchrej, selfrej))
+    print("候選來源組成：", "  ".join("%s×%d" % kv for kv in mix.most_common()))
+    print("策展成功率：%d/%d（%.0f%%）｜策展平均分：%s" %
+          (curated_ok, len(qm), 100.0 * curated_ok / len(qm),
+           ("%.1f" % (sum(scores) / len(scores))) if scores else "—"))
+    print("組圖 cover：%d 次" % sum(1 for r in qm if r.get("collage")))
+    flags = []
+    # 破圖以 harness 為準（操控室現況）
+    import subprocess as _sp
+    hv = _sp.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "verify_pipeline.py")],
+                 capture_output=True, text=True)
+    broken = hv.stdout.count("🔴")
+    if broken:
+        flags.append("🔴 操控室存在破圖 ×%d（硬線：必須=0）" % broken)
+    if thumb_pct > 30:
+        flags.append("🟡 YT 縮圖佔比 %.0f%%（目標 ≤30%%）" % thumb_pct)
+    if curated_ok < len(qm) * 0.5:
+        flags.append("🟡 策展降級率 %.0f%%（WF14 不穩）" % (100 - 100.0 * curated_ok / len(qm)))
+    print("紅線：", "；".join(flags) if flags else "✅ 全綠")
+    print("（人類訊號——實選 vs 策展 top1 命中率、退圖率——累積於 curation_log/reviews，PMM 週回顧彙整）")
+
+
 def gate_audit(args):
     """image_gate.jsonl 審計：按原因/貼文彙總，供校準門檻後決定是否升硬閘。"""
     fp = os.path.join(DATA, "archive", "image_gate.jsonl")
@@ -1160,6 +1216,7 @@ def main():
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
     a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.set_defaults(func=forage_pending)
+    a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
