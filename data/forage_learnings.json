@@ -1,0 +1,8 @@
+{
+ "goodreads.com": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 100%（登入牆/空頁）",
+  "last": "2026-07-31T13:36:05+08:00"
+ }
+}
