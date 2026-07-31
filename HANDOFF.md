@@ -457,6 +457,8 @@ harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具�
 **雷區**：本機 raw Chrome headless 會與運行中的 Chrome 衝突卡死——一律用 browse daemon（`~/.claude/skills/gstack/browse/dist/browse`，輸出路徑限 /private/tmp 或 repo 內）；forager 產物一律本地先寫再搬 Drive。
 
 **Learnings（2026-07-30 檢討）**：
+0. **金鑰外洩的定義比想像廣**：PAT 沒進 repo、`.sync.json` 也被 gitignore 擋住，但寫在 git remote URL 裡，`git remote -v` 一印就洩進對話紀錄。**「被印出來」也是外洩**。且遮蔽規則用黑名單（只遮 `token`/`pat` 鍵名）會漏掉 `clickup_token`——**改用白名單：預設遮蔽所有值，只放行 owner/repo/branch**。防線＝乾淨 remote＋輸出遮蔽＋`scripts/scan_secrets.py` 提交守門（`git config core.hooksPath .githooks`）。詳見 `SECURITY.md`。
+
 1. 搞錯主要矛盾：時間花在管線韌性，但輸出品質第一決定因素是**來源策略**——「在合規圖庫找 MrBeast」注定失敗。從成品長相反推供應鏈。
 2. 越權預設政策：版權界線是 owner 的編輯/商業決策，不該由工程端最保守預設綁死。
 3. 過早宣稱（新驗收鐵律）：宣稱任何改善前，必須指得出該產物流經的新環節（可稽核）。Attached/Aziz 誤稱新管線稿即此教訓。
