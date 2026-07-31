@@ -465,3 +465,11 @@ harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具�
 4. Drive 掛載是常態事故源：EDEADLK/慢寫/截斷——重要產物本地先寫。
 
 **首兩個實測案**：Attached（Levine 訪談×3＋書封＋Sabrina Zohar 對談）、Aziz（BookCon 座談＋NPR 專訪＋書封＋Wiki＋Goodreads），SHOT×5 各就 slide 首位。存貨處置：端到端樣板過關後 Jesse 圈 5-6 篇重做，其餘封存。
+
+### §11.1 素材線 v2.1「品質迴圈＋受眾視角策展」（2026-07-31）
+- **抓取驗證鏈**：所有下載過驗（≥8KB/≥400px/非純色/非全黑白）；書封 `?default=false`→OL cover_i→Google Books 三段 fallback；登入牆白頁偵測→`data/forage_learnings.json` 網域策略自累積（goodreads 已入表）；YT 改**串流抽格**（yt-dlp -g 直連 URL＋ffmpeg range-seek 抽 25/50/75% 三影格＋縮圖＝4 候選，不下載整支影片）
+- **構圖**：16:9→4:5 膚色加權顯著性滿版裁切（取代模糊補邊）；**組圖 cover**（≥3 優勝→白框散排拼貼，Weekend Club 式）；合成後自檢（黑白/純色不寫檔）
+- **WF14 圖像策展員 `Ea4WtM0BLXOgXKDW`**（webhook lava-ig-curate）：候選圖 512px b64＋各 slide 文案 → Claude vision 受眾人格（25-34 台灣 IG 使用者）評分 0-10：停留力/圖文關聯/套路懲罰（YT 封面臉≤4）/滑動慾 → 排名；forager 依排名合成 top1/top2，**yt_thumb 全篇 ≤2** 機械配額；WF14 不可達＝啟發式降級並標 uncurated。實測：縮圖 2-3 分、影格 4-7 分，判斷語與 Jesse 標準一致
+- **量測**：`data/quality_metrics.jsonl`（來源組成/剔除數/策展分）＋`data/curation_log.jsonl`（全排名，供實選命中率校準）；指令 `python3 scripts/sync_console.py quality-report [--days 7]`——紅線：操控室破圖>0＝🔴、YT 縮圖佔比>30%＝🟡、策展降級>50%＝🟡；harness 對 SHOT 改「全黑/全白」backstop 判定
+- **三迴圈**：快（forage_learnings 自累積）／週（PMM retro 讀 metrics+curation_log，命中率<60% 提 curator 調參提案）／校準（實選≠top1 案例入 `data/golden/curation/`，prompt 改版非退化）
+- 驗收（07-31）：Attached 17 候選策展✓組圖 cover✓、Aziz Wikipedia 白頁被正確拒收、操控室破圖歸零、harness 18/18 綠
