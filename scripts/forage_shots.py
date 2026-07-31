@@ -263,10 +263,16 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
         if not mv:
             return [], [(query[:40], "ddg vqd 不可得")]
         j = json.loads(_fetch("https://duckduckgo.com/i.js?l=us-en&o=json&q=%s&vqd=%s&f=,,,&p=1" % (quote(query), mv.group(1))).decode(errors="ignore"))
+        STOCK_BLOCK = ("alamy.", "gettyimages.", "shutterstock.", "istockphoto.", "dreamstime.",
+                       "123rf.", "depositphotos.", "freepik.", "vecteezy.", "stock.adobe.",
+                       "qiantucdn.", "58pic.", "nipic.")   # 圖庫預覽必帶浮水印，512px 縮圖下策展員會看漏
         pairs = []
         for res in j.get("results", []):
-            if res.get("width", 0) >= 850 and res.get("image") and res.get("thumbnail"):
-                pairs.append({"m": res["image"], "t": res["thumbnail"]})
+            img_u = res.get("image") or ""
+            if any(s in img_u for s in STOCK_BLOCK):
+                continue
+            if res.get("width", 0) >= 850 and img_u and res.get("thumbnail"):
+                pairs.append({"m": img_u, "t": res["thumbnail"]})
             if len(pairs) >= want * 3:
                 break
     except Exception as e:

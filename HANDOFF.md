@@ -479,3 +479,10 @@ harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具�
 - **影格畫質**：YT 高畫質是 DASH 分離流，`b`（合併流）最高 360p → 抽格改 `bv*[height<=1080]` 純視訊流；低清閘門 min_dim 560（webcam 老片退回縮圖）；yt 系合成後 UnsharpMask 補銳；策展員新增 D 畫質維度（模糊/低解析 ≤4 分）
 - **主體置中**：橫圖裁切改由 WF14 回傳 `focus_x`（vision 看人臉位置 0-100）決定裁窗；膚色掃描僅作降級 fallback（已加 r-g≥12 排除米色牆誤判）
 - 驗證：先前裁到剩牆的 How Attachment Works webcam 影格，focus_x 後人臉正置中；真實封面合成品全幅平衡、標題副標可讀
+
+### §11.3 視覺企劃層 v2.2（2026-08-01，Jesse 三裁決後定版）
+- **Jesse 三裁決**：①情緒圖全跟 wknd（圖搜美圖、不標出處；人物/證據/書維持標注）②封面雙版（a=單張 hero、b=組圖）操控室挑 ③書=持書照>mockup>Amazon 頁。
+- **role 制 art direction**：WF01 visual_refs 帶 role+query（5315acec→role 版）；person=多場合高質感照、mood=場景攝影、evidence=頁面截圖、book=持書照。鐵律正本 `config/visual-rules.md`（8 條，策展員/critic/自檢共用）。
+- **圖搜引擎＝DuckDuckGo i.js**（us-en 鎖區）：Bing 已棄用（TW geo/cookies 蓋掉 mkt 參數撈回中文圖庫雜圖、qft `+` 編碼壞掉）。**縮圖先策展、勝者才抓原圖**（DDG 縮圖走官方代理必可抓→殺「盜連站倖存偏差」——好圖抓不下來只剩垃圾站圖那件事）。圖庫網域黑名單（alamy/getty/shutterstock/freepik/千圖等，預覽必帶浮水印且 512px 縮圖下策展員會看漏）。
+- **WF14 v2.2.1 角色執法**（492e3b61）：payload 帶每 slide role+intent_query；person 非本人真照 ≤1、mood 離題 ≤2、「全部不合格就全低分」防矮子拔高；**分數線 <5 該張不出 SHOT（寧缺勿爛）**——哈密瓜/青花魚/卡通娃娃事故（v2.2 首跑）不再可能。
+- 驗收（08-01）：Aziz v2.2.2 全鏈——策展分 s1 本人舞台照 8 分、書張 8 分；hero 封面=真 Aziz 舞台照合成品✓、組圖版五卡全在題✓。

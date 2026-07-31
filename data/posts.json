@@ -5753,7 +5753,7 @@
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-1b.jpg",
               "kind": "still",
-              "source_label": "組圖：Aziz Ansari／Netflix stand-up；；《Modern Romance》Aziz Ansari；NPR《All Things Considered》專訪",
+              "source_label": "組圖：Aziz Ansari／Netflix stand-up；《Modern Romance》Aziz Ansari；NPR《All Things Considered》專訪",
               "source_kind": "SHOT"
             },
             {
@@ -5801,14 +5801,14 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-2a.jpg",
               "kind": "still",
-              "source_label": "a-mood07887",
+              "source_label": "a-mood44830",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-2b.jpg",
               "kind": "still",
-              "source_label": "b-moodfe2b8",
+              "source_label": "b-moodb0a19",
               "source_kind": "SHOT"
             }
           ],
@@ -5831,6 +5831,13 @@
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "《Modern Romance》Aziz Ansari",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260728-AzizAnsari花年/slide-3c.jpg",
               "kind": "still",
               "source_label": "Modern Romance An Investigation",
               "source_kind": "OV",
@@ -5891,14 +5898,14 @@
               "cid": "a",
               "src": "assets/20260728-AzizAnsari花年/slide-5a.jpg",
               "kind": "still",
-              "source_label": "a-moodc3fe7",
+              "source_label": "a-mooddfeba",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260728-AzizAnsari花年/slide-5b.jpg",
               "kind": "still",
-              "source_label": "b-mood81002",
+              "source_label": "b-mood75af3",
               "source_kind": "SHOT"
             },
             {
@@ -6001,7 +6008,7 @@
           }
         }
       },
-      "candidates_since": "2026-07-31T20:08:08+08:00"
+      "candidates_since": "2026-07-31T20:25:12+08:00"
     }
   ]
 }
