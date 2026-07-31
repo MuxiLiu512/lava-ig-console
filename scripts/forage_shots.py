@@ -257,40 +257,44 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
     try:
         from urllib.parse import quote
         _b("viewport", "1440x1200", "--scale", "1", timeout=90)
-        nav = _b("goto", "https://www.bing.com/images/search?q=%s&form=HDRSC2&first=1" % quote(query), timeout=90)
+        # mkt=en-US 避開台灣區域化（英文 query 在 TW Bing 會撈回本地部落格雜圖）；imagesize-large 濾小圖
+        nav = _b("goto", "https://www.bing.com/images/search?q=%s&form=HDRSC2&first=1&mkt=en-US&setlang=en&qft=+filterui:imagesize-large" % quote(query), timeout=90)
         if "Navigated" not in (nav.stdout or "") + (nav.stderr or ""):
             return [], [(query[:40], "bing goto 失敗")]
-        urls = []
-        for _round in range(3):   # 懶載入：捲動三輪收集
-            js = _b("js", "JSON.stringify([...document.querySelectorAll('a.iusc,div.iusc')].map(a=>{try{return JSON.parse(a.getAttribute('m')).murl}catch(e){return null}}).filter(Boolean))", "--raw", timeout=45)
+        pairs = []
+        seen_m = set()
+        for _round in range(3):   # 懶載入：捲動三輪收集 (murl=原圖, turl=Bing 縮圖—必可抓)
+            js = _b("js", "JSON.stringify([...document.querySelectorAll('a.iusc,div.iusc')].map(a=>{try{const j=JSON.parse(a.getAttribute('m'));return {m:j.murl,t:j.turl}}catch(e){return null}}).filter(Boolean))", "--raw", timeout=45)
             raw = (js.stdout or "").strip()
             m = re.search(r"\[.*\]", raw, re.S)
             got = json.loads(m.group(0)) if m else []
             if isinstance(got, str):
                 got = json.loads(got)
-            for u in got:
-                if u not in urls:
-                    urls.append(u)
-            if len(urls) >= want * 3:
+            for it in got:
+                if it and it.get("m") and it["m"] not in seen_m:
+                    seen_m.add(it["m"]); pairs.append(it)
+            if len(pairs) >= want * 3:
                 break
             _b("js", "window.scrollBy(0, 1600)", "--raw", timeout=20)
             _b("wait", "--load", timeout=20)
     except Exception as e:
         return [], [(query[:40], "圖搜:%s" % type(e).__name__)]
-    for u in urls:
+    # 縮圖先行：staging 用 Bing 縮圖（永遠抓得到→無「盜連站倖存偏差」），策展勝出後才抓原圖
+    for it in pairs:
         if len(cands) >= want:
             break
+        tu = it.get("t") or it["m"]
         try:
-            data = _fetch(u, timeout=20)
-            p = os.path.join(work, "is-" + hashlib.md5(u.encode()).hexdigest()[:10] + ".img")
+            data = _fetch(tu, timeout=15)
+            p = os.path.join(work, "is-" + hashlib.md5(it["m"].encode()).hexdigest()[:10] + ".img")
             open(p, "wb").write(data)
-            ok, why = _valid_img(p, min_dim=550, min_bytes=15000)
+            ok, why = _valid_img(p, min_dim=260, min_bytes=6000)   # 縮圖階段放寬；原圖階段再嚴驗
             if ok:
-                cands.append((p, source_type))
+                cands.append((p, source_type, it["m"]))
             else:
-                rejects.append((u[:40], why))
+                rejects.append((tu[:40], why))
         except Exception as e:
-            rejects.append((u[:40], type(e).__name__))
+            rejects.append((tu[:40], type(e).__name__))
     return cands, rejects
 
 
@@ -469,7 +473,7 @@ def _b64_small(path, max_px=512):
     return base64.b64encode(buf.getvalue()).decode()
 
 
-def curate(staged, copy_by_slide):
+def curate(staged, copy_by_slide, slide_intent=None):
     """staged={n:[{id,path,source_type,credit}]} → WF14 評分排名。失敗＝啟發式降級。回傳 (ranking{n:[id...]}, scores, curated_bool)。"""
     payload = {"slides": []}
     for n in sorted(staged):
@@ -477,8 +481,10 @@ def curate(staged, copy_by_slide):
         if not cds:
             continue
         cp = copy_by_slide.get(n, {})
+        it = (slide_intent or {}).get(n, {})
         payload["slides"].append({
             "n": n, "heading": cp.get("heading", ""), "display_copy": cp.get("display_copy", "")[:200],
+            "role": it.get("role", ""), "intent_query": it.get("query", ""),
             "candidates": [{"id": c["id"], "source_type": c["source_type"], "b64": _b64_small(c["path"])} for c in cds]})
     try:
         req = Request(CURATOR_URL, data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
@@ -542,6 +548,7 @@ def main():
     os.makedirs(a.outdir, exist_ok=True)
     work = tempfile.mkdtemp(prefix="forage-", dir="/private/tmp")   # browse daemon 只允許 /private/tmp 或 repo
     staged, all_rejects, cid = {}, [], 0
+    slide_intent = {}
     for r in refs:
         n = r.get("slide") or 1
         role = (r.get("role") or "").strip().lower()
@@ -553,7 +560,7 @@ def main():
         try:
             # 視覺企劃層（v2.2）：按角色決定找圖方式——wknd 的 art direction 邏輯
             if q and role in ("person", "mood", "book"):
-                cands, rejects = grab_imagesearch(q, work, want=(4 if role == "book" else 5), source_type=role)
+                cands, rejects = grab_imagesearch(q, work, want=(5 if role == "book" else 7), source_type=role)
                 if u and role == "person":   # 人物張補指定影片的影格（多場合多樣性）
                     c2, r2 = grab(u, work); cands += c2; rejects += r2
                 if not cands and u:          # 圖搜空手 → 退回 URL 路徑
@@ -564,10 +571,13 @@ def main():
             rejects = [((u or q)[:50], type(e).__name__)]
         all_rejects += [(n,) + x for x in rejects]
         credit_val = "" if role == "mood" else (r.get("credit") or u or q)   # 情緒圖不標出處（Jesse 2026-08-01 裁決，wknd 同標準）
-        for p, st in cands:
+        slide_intent.setdefault(n, {"role": role, "query": q or r.get("frame_hint", "")})
+        for c_it in cands:
+            p, st = c_it[0], c_it[1]
+            murl = c_it[2] if len(c_it) > 2 else None
             cid += 1
             staged.setdefault(n, []).append({"id": "c%d" % cid, "path": p, "source_type": st,
-                                             "credit": credit_val,
+                                             "credit": credit_val, "murl": murl, "role": role,
                                              "src_key": _yt_id(u) or hashlib.md5(open(p, "rb").read(8192)).hexdigest()[:10]})
         if cands:
             sys.stderr.write("  ✓ s%d %s → %d 候選\n" % (n, (r.get("url") or "")[:56], len(cands)))
@@ -577,7 +587,7 @@ def main():
         print("完成：0 張（全部抓取失敗）")
         _metrics(a, refs, staged, all_rejects, {}, False, 0, False)
         sys.exit(1)
-    ranking, scores, focus, curated = curate(staged, copy_by_slide)
+    ranking, scores, focus, curated = curate(staged, copy_by_slide, slide_intent)
     ranking = apply_quota(staged, ranking)
     _log_curation(a, staged, ranking, scores, curated)
     # 合成優勝（每 slide 首選＋次選）；cover（最小 slide）優先組圖
@@ -598,18 +608,44 @@ def main():
     id2score = {}
     for n, sc in scores.items():
         id2score.update(sc)
+    MIN_SCORE = 5   # 分數線：策展 top 也低於此＝該張寧缺勿爛（防「垃圾裡挑垃圾」）
+    resolved = {}   # {n: [c...]}，murl 已換抓原圖並通過嚴驗
+    for n in sorted(ranking):
+        keep = []
+        for cid_ in ranking[n]:
+            if len(keep) >= 2:
+                break
+            c = id2[cid_]
+            if curated and id2score.get(cid_) is not None and id2score[cid_] < MIN_SCORE:
+                continue
+            path = c["path"]
+            if c.get("murl"):   # 縮圖先策展；勝者才抓原圖（避開盜連倖存偏差）
+                try:
+                    data = _fetch(c["murl"], timeout=25)
+                    fpth = os.path.join(work, "full-" + hashlib.md5(c["murl"].encode()).hexdigest()[:10] + ".img")
+                    open(fpth, "wb").write(data)
+                    ok, why = _valid_img(fpth, min_dim=550, min_bytes=15000)
+                    if not ok:
+                        sys.stderr.write("  ↩ 原圖不合格 %s（%s）→ 用次名\n" % (c["murl"][:44], why)); continue
+                    path = fpth
+                except Exception as e:
+                    sys.stderr.write("  ↩ 原圖抓取失敗（%s）→ 用次名\n" % type(e).__name__); continue
+            keep.append(dict(c, path=path, _cid=cid_))
+        if not keep and ranking[n]:
+            sys.stderr.write("  ✋ s%d 全部候選未達分數線/原圖不可得，該張不出 SHOT\n" % n)
+        resolved[n] = keep
+    winners_all = [ks[0] for ks in (resolved[n] for n in sorted(resolved)) if ks]
     if len(winners_all) >= 3:
         seed = sum(ord(ch) for ch in (a.post_id or os.path.basename(a.outdir))) & 0xFFFF
         col = compose_collage([(c["path"], c["source_type"], c.get("src_key")) for c in winners_all], seed)
         fn = "slide%d-SHOT-b-collage.png" % cover_n   # 封面雙版：a=單張 hero（wknd 式）、b=組圖（timeleft 式），操控室挑
         if _write_checked(col, os.path.join(a.outdir, fn), work):
-            credits[fn] = "組圖：" + "；".join(dict.fromkeys(c["credit"] for c in winners_all[:4]))
+            credits[fn] = "組圖：" + "；".join(dict.fromkeys(c["credit"] for c in winners_all[:4] if c["credit"]))
             made += 1
         else:
             selfrej += 1
-    for n in sorted(ranking):
-        for rank_i, cid_ in enumerate(ranking[n][:2]):
-            c = id2[cid_]
+    for n in sorted(resolved):
+        for rank_i, c in enumerate(resolved[n]):
             slug = re.sub(r"[^A-Za-z0-9]+", "", c["source_type"])[:10] + hashlib.md5(c["path"].encode()).hexdigest()[:5]
             is_cover_dual = (n == cover_n and len(winners_all) >= 3)
             letter = ("a" if rank_i == 0 else ("c" if is_cover_dual else "b"))   # 封面：a=hero、b=組圖、c=次選
@@ -617,7 +653,7 @@ def main():
             fp = os.path.join(a.outdir, fn)
             if os.path.exists(fp):
                 continue
-            img = compose(c["path"], c["source_type"], focus.get(cid_))
+            img = compose(c["path"], c["source_type"], focus.get(c["_cid"]))
             if _write_checked(img, fp, work):
                 credits[fn] = c["credit"]
                 made += 1
