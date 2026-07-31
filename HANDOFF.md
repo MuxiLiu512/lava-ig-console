@@ -473,3 +473,9 @@ harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具�
 - **量測**：`data/quality_metrics.jsonl`（來源組成/剔除數/策展分）＋`data/curation_log.jsonl`（全排名，供實選命中率校準）；指令 `python3 scripts/sync_console.py quality-report [--days 7]`——紅線：操控室破圖>0＝🔴、YT 縮圖佔比>30%＝🟡、策展降級>50%＝🟡；harness 對 SHOT 改「全黑/全白」backstop 判定
 - **三迴圈**：快（forage_learnings 自累積）／週（PMM retro 讀 metrics+curation_log，命中率<60% 提 curator 調參提案）／校準（實選≠top1 案例入 `data/golden/curation/`，prompt 改版非退化）
 - 驗收（07-31）：Attached 17 候選策展✓組圖 cover✓、Aziz Wikipedia 白頁被正確拒收、操控室破圖歸零、harness 18/18 綠
+
+### §11.2 v2.1.1 構圖與畫質修正（2026-07-31 晚，Jesse 二輪驗收回饋）
+- **封面組圖對齊引擎事實**：render_cover 文字實佔 H 24%-65% 中上帶（先前組圖靠上=正面對撞）→ 改全幅散排（上下皆有卡、中段卡被遮罩壓暗當文字底）＝wknd 封面同構；驗收以「真實合成品」為準（render_cover 直出），不再只看底圖
+- **影格畫質**：YT 高畫質是 DASH 分離流，`b`（合併流）最高 360p → 抽格改 `bv*[height<=1080]` 純視訊流；低清閘門 min_dim 560（webcam 老片退回縮圖）；yt 系合成後 UnsharpMask 補銳；策展員新增 D 畫質維度（模糊/低解析 ≤4 分）
+- **主體置中**：橫圖裁切改由 WF14 回傳 `focus_x`（vision 看人臉位置 0-100）決定裁窗；膚色掃描僅作降級 fallback（已加 r-g≥12 排除米色牆誤判）
+- 驗證：先前裁到剩牆的 How Attachment Works webcam 影格，focus_x 後人臉正置中；真實封面合成品全幅平衡、標題副標可讀
