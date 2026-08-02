@@ -961,6 +961,10 @@ def ingest_new(args):
     if not os.path.isdir(root):
         print("Drive 未掛載，略過入料"); return
     known = {p.get("clickup_task_id") for p in load("posts.json").get("posts", [])}
+    try:   # 已歸檔者不得被當新卡重新入料（清存貨後的防迴圈）
+        known |= {p.get("clickup_task_id") for p in load("archived-posts.json").get("posts", [])}
+    except FileNotFoundError:
+        pass
     try:
         tasks = _clickup("GET", "/list/901819351278/task?" +
                          urllib.parse.urlencode({"statuses[]": "在製中"}), token).get("tasks", [])
