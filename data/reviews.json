@@ -1,271 +1,288 @@
 {
- "reviews": [
-  {
-   "id": "R-mrov1tkr",
-   "post_id": "20260712-已讀不回的心理學-v5",
-   "ts": "2026-07-17T19:34:34+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "b",
-    "2": "b",
-    "3": "b",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrov2hbv",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-17T19:35:05+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrown8qe",
-   "post_id": "20260717-PitchYourFriend",
-   "ts": "2026-07-17T20:19:13+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "c",
-    "2": "c",
-    "3": "c",
-    "4": "e",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrownxh4",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-17T20:19:45+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrpunred",
-   "post_id": "20260717-PitchYourFriend",
-   "ts": "2026-07-18T12:11:24+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "b",
-    "2": "d",
-    "3": "a",
-    "4": "e",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mryw4tz0",
-   "post_id": "20260716-關係幻覺",
-   "ts": "2026-07-24T20:02:36+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "b",
-    "2": "b",
-    "3": "a",
-    "4": "c",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mryw6ibi",
-   "post_id": "20260716-見面卻尷尬到想逃",
-   "ts": "2026-07-24T20:03:54+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "d",
-    "3": "c",
-    "4": "c",
-    "5": "b"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mryw8kv4",
-   "post_id": "20260723-傳100則訊息還是不熟",
-   "ts": "2026-07-24T20:05:31+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a"
-   },
-   "scope": null,
-   "feedback": "選擇過少",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-mrywardn",
-   "post_id": "20260716-見面前聊越久",
-   "ts": "2026-07-24T20:07:12+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "e",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "底圖重複太多，每篇都是一樣的",
-   "consumed": false
-  },
-  {
-   "id": "R-mrywblpd",
-   "post_id": "20260723-天氣變差約會取消",
-   "ts": "2026-07-24T20:07:52+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a"
-   },
-   "scope": null,
-   "feedback": "第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少",
-   "consumed": false,
-   "copy_choice": "gpt"
-  },
-  {
-   "id": "R-mrywcuj3",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-24T20:08:50+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "e",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": "mockup",
-   "feedback": "文案不過關，跟母胎單身關聯性較低",
-   "consumed": false
-  },
-  {
-   "id": "R-mrywdupl",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-24T20:09:37+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "e",
-    "2": "d",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": "mockup",
-   "feedback": "文案不過關，跟母胎單身好像關聯性低",
-   "consumed": false
-  },
-  {
-   "id": "R-mrywebga",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-24T20:09:58+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "e",
-    "2": "d",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": "base_image",
-   "feedback": "文案不過關，跟母胎單身關聯性低",
-   "consumed": false
-  },
-  {
-   "id": "R-mrz0wir4",
-   "post_id": "20260723-天氣變差約會取消",
-   "ts": "2026-07-24T22:16:06+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "e",
-    "3": "c",
-    "4": "d",
-    "5": "d"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-ms4pldg6",
-   "post_id": "20260725-大稻埕煙火約會指南人擠人",
-   "ts": "2026-07-28T21:46:07+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "f",
-    "3": "b",
-    "4": "a",
-    "5": "e"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-ms4poznb",
-   "post_id": "20260724-SoftLaunch你的",
-   "ts": "2026-07-28T21:48:56+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "h",
-    "2": "a",
-    "3": "a",
-    "4": "a"
-   },
-   "scope": "base_image",
-   "feedback": "使用過多劇照，但劇照跟文案內容不相符、低關聯",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-manual-20260729-dadaocheng",
-   "post_id": "20260725-大稻埕煙火約會指南人擠人",
-   "ts": "2026-07-30T15:22:21+08:00",
-   "decision": "reject",
-   "scope": "base_image",
-   "feedback": "1. 品牌底圖完全不行，不要用這種沒有意義的東西 2. 其他的選圖跟煙火、人擠人相關的內容毫無關聯",
-   "consumed": true,
-   "note": "PAT 403 寫入失敗，由 Claude 代錄（截圖原文）；已執行：DESIGN 停用＋補打煙火/人潮素材重餵"
-  }
- ]
+  "reviews": [
+    {
+      "id": "R-mrov1tkr",
+      "post_id": "20260712-已讀不回的心理學-v5",
+      "ts": "2026-07-17T19:34:34+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "b",
+        "3": "b",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrov2hbv",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-17T19:35:05+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrown8qe",
+      "post_id": "20260717-PitchYourFriend",
+      "ts": "2026-07-17T20:19:13+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "c",
+        "2": "c",
+        "3": "c",
+        "4": "e",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrownxh4",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-17T20:19:45+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrpunred",
+      "post_id": "20260717-PitchYourFriend",
+      "ts": "2026-07-18T12:11:24+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "d",
+        "3": "a",
+        "4": "e",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mryw4tz0",
+      "post_id": "20260716-關係幻覺",
+      "ts": "2026-07-24T20:02:36+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "b",
+        "3": "a",
+        "4": "c",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mryw6ibi",
+      "post_id": "20260716-見面卻尷尬到想逃",
+      "ts": "2026-07-24T20:03:54+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "d",
+        "3": "c",
+        "4": "c",
+        "5": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mryw8kv4",
+      "post_id": "20260723-傳100則訊息還是不熟",
+      "ts": "2026-07-24T20:05:31+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a"
+      },
+      "scope": null,
+      "feedback": "選擇過少",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-mrywardn",
+      "post_id": "20260716-見面前聊越久",
+      "ts": "2026-07-24T20:07:12+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "底圖重複太多，每篇都是一樣的",
+      "consumed": false
+    },
+    {
+      "id": "R-mrywblpd",
+      "post_id": "20260723-天氣變差約會取消",
+      "ts": "2026-07-24T20:07:52+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a"
+      },
+      "scope": null,
+      "feedback": "第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少",
+      "consumed": false,
+      "copy_choice": "gpt"
+    },
+    {
+      "id": "R-mrywcuj3",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:08:50+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "mockup",
+      "feedback": "文案不過關，跟母胎單身關聯性較低",
+      "consumed": false
+    },
+    {
+      "id": "R-mrywdupl",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:09:37+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "d",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "mockup",
+      "feedback": "文案不過關，跟母胎單身好像關聯性低",
+      "consumed": false
+    },
+    {
+      "id": "R-mrywebga",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:09:58+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "d",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "base_image",
+      "feedback": "文案不過關，跟母胎單身關聯性低",
+      "consumed": false
+    },
+    {
+      "id": "R-mrz0wir4",
+      "post_id": "20260723-天氣變差約會取消",
+      "ts": "2026-07-24T22:16:06+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "e",
+        "3": "c",
+        "4": "d",
+        "5": "d"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-ms4pldg6",
+      "post_id": "20260725-大稻埕煙火約會指南人擠人",
+      "ts": "2026-07-28T21:46:07+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "f",
+        "3": "b",
+        "4": "a",
+        "5": "e"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-ms4poznb",
+      "post_id": "20260724-SoftLaunch你的",
+      "ts": "2026-07-28T21:48:56+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "h",
+        "2": "a",
+        "3": "a",
+        "4": "a"
+      },
+      "scope": "base_image",
+      "feedback": "使用過多劇照，但劇照跟文案內容不相符、低關聯",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-manual-20260729-dadaocheng",
+      "post_id": "20260725-大稻埕煙火約會指南人擠人",
+      "ts": "2026-07-30T15:22:21+08:00",
+      "decision": "reject",
+      "scope": "base_image",
+      "feedback": "1. 品牌底圖完全不行，不要用這種沒有意義的東西 2. 其他的選圖跟煙火、人擠人相關的內容毫無關聯",
+      "consumed": true,
+      "note": "PAT 403 寫入失敗，由 Claude 代錄（截圖原文）；已執行：DESIGN 停用＋補打煙火/人潮素材重餵"
+    },
+    {
+      "id": "R-msbc8rqy",
+      "post_id": "20260728-AzizAnsari花年",
+      "ts": "2026-08-02T13:06:48+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "gpt"
+    }
+  ]
 }
