@@ -1069,9 +1069,11 @@ def forage_pending(args):
         refs = []
         for s in d.get("slides", []):
             for vr in (s.get("visual_refs") or []):
-                if vr.get("url"):
-                    refs.append({"slide": s.get("index") or 1, "url": vr["url"],
-                                 "frame_hint": vr.get("frame_hint", ""), "credit": vr.get("credit", "")})
+                if vr.get("url") or vr.get("query"):   # v2.2：query 型（圖搜）與 url 型並收，role 一併傳遞
+                    refs.append({"slide": s.get("index") or 1, "url": vr.get("url", ""),
+                                 "query": vr.get("query", ""), "role": vr.get("role", ""),
+                                 "frame_hint": vr.get("frame_hint", ""), "credit": vr.get("credit", ""),
+                                 "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")})
         if not refs:
             continue
         base = os.path.basename(jf)
