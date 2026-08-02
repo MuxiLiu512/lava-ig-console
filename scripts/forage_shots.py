@@ -484,23 +484,33 @@ def curate(staged, copy_by_slide, slide_intent=None):
             "n": n, "heading": cp.get("heading", ""), "display_copy": cp.get("display_copy", "")[:200],
             "role": it.get("role", ""), "intent_query": it.get("query", ""),
             "candidates": [{"id": c["id"], "source_type": c["source_type"], "b64": _b64_small(c["path"])} for c in cds]})
-    try:
-        req = Request(CURATOR_URL, data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
-        with urlopen(req, timeout=180) as f:
-            res = json.loads(f.read().decode())
-        ranking = {int(k): v.get("ranking", []) for k, v in (res.get("slides") or {}).items()}
-        scores = {int(k): v.get("scores", {}) for k, v in (res.get("slides") or {}).items()}
-        focus = {}
-        for k, v in (res.get("slides") or {}).items():
-            for cid_, fx in (v.get("focus") or {}).items():
-                try:
-                    focus[cid_] = max(0, min(100, int(fx)))
-                except Exception:
-                    pass
-        if ranking:
-            return ranking, scores, focus, True
-    except Exception as e:
-        sys.stderr.write("  ! 策展員不可達（%s）→ 啟發式降級\n" % type(e).__name__)
+    ranking, scores, focus = {}, {}, {}
+    ok_any = False
+    for sl in payload["slides"]:   # 逐 slide 分批（整包 30+ 張會逾時；單批 ≤8 張穩定）
+        try:
+            req = Request(CURATOR_URL, data=json.dumps({"slides": [sl]}).encode(), headers={"Content-Type": "application/json"})
+            with urlopen(req, timeout=150) as f:
+                res = json.loads(f.read().decode())
+            v = (res.get("slides") or {}).get(str(sl["n"])) or (res.get("slides") or {}).get(sl["n"])
+            if v and v.get("ranking"):
+                ranking[sl["n"]] = v["ranking"]
+                scores[sl["n"]] = v.get("scores", {})
+                for cid_, fx in (v.get("focus") or {}).items():
+                    try:
+                        focus[cid_] = max(0, min(100, int(fx)))
+                    except Exception:
+                        pass
+                ok_any = True
+            else:
+                sys.stderr.write("  ! s%s 策展回應無 ranking → 該張啟發式\n" % sl["n"])
+        except Exception as e:
+            sys.stderr.write("  ! s%s 策展失敗（%s）→ 該張啟發式\n" % (sl["n"], type(e).__name__))
+    if ok_any:
+        pref = {"yt_frame": 0, "mood": 0, "person": 0, "book": 1, "article": 1, "tweet": 3, "ig": 4, "image": 5, "yt_thumb": 6}
+        for n, cds in staged.items():
+            if n not in ranking:
+                ranking[n] = [c["id"] for c in sorted(cds, key=lambda c: pref.get(c["source_type"], 9))]
+        return ranking, scores, focus, True
     pref = {"yt_frame": 0, "article": 1, "book": 2, "tweet": 3, "ig": 4, "image": 5, "yt_thumb": 6}
     ranking = {n: [c["id"] for c in sorted(cds, key=lambda c: pref.get(c["source_type"], 9))] for n, cds in staged.items()}
     return ranking, {}, {}, False

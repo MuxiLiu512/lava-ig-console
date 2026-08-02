@@ -1326,21 +1326,21 @@
               "cid": "a",
               "src": "assets/20260801-大稻埕煙火v2/slide-1a.jpg",
               "kind": "still",
-              "source_label": "a-moodedec6",
+              "source_label": "a-moodffdca",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260801-大稻埕煙火v2/slide-1b.jpg",
               "kind": "still",
-              "source_label": "組圖：Medium / Human Sexuality",
+              "source_label": "b-collage",
               "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260801-大稻埕煙火v2/slide-1c.jpg",
               "kind": "still",
-              "source_label": "c-mood8cc5b",
+              "source_label": "c-mood1db42",
               "source_kind": "SHOT"
             },
             {
@@ -1397,14 +1397,15 @@
               "cid": "a",
               "src": "assets/20260801-大稻埕煙火v2/slide-2a.jpg",
               "kind": "still",
-              "source_label": "vivianexplore.tw",
+              "source_label": "a-articlefe92e",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260801-大稻埕煙火v2/slide-2b.jpg",
               "kind": "still",
-              "source_label": "A Business Proposal"
+              "source_label": "b-article523f7",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
@@ -1428,19 +1429,25 @@
               "cid": "f",
               "src": "assets/20260801-大稻埕煙火v2/slide-2f.jpg",
               "kind": "still",
-              "source_label": "Dadaocheng",
-              "source_kind": "OV"
+              "source_label": "A Business Proposal"
             },
             {
               "cid": "g",
               "src": "assets/20260801-大稻埕煙火v2/slide-2g.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
-              "source_kind": "WM"
+              "source_kind": "OV"
             },
             {
               "cid": "h",
               "src": "assets/20260801-大稻埕煙火v2/slide-2h.jpg",
+              "kind": "still",
+              "source_label": "Dadaocheng",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2i.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
@@ -1459,15 +1466,14 @@
               "cid": "a",
               "src": "assets/20260801-大稻埕煙火v2/slide-3a.jpg",
               "kind": "still",
-              "source_label": "a-mood0e0a1",
+              "source_label": "a-mood44cdd",
               "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260801-大稻埕煙火v2/slide-3b.jpg",
               "kind": "still",
-              "source_label": "b-mood763d3",
-              "source_kind": "SHOT"
+              "source_label": "Inthe Moodfor Love"
             },
             {
               "cid": "c",
@@ -1485,25 +1491,19 @@
               "cid": "e",
               "src": "assets/20260801-大稻埕煙火v2/slide-3e.jpg",
               "kind": "still",
-              "source_label": "Inthe Moodfor Love"
+              "source_label": "Dadaocheng",
+              "source_kind": "OV"
             },
             {
               "cid": "f",
               "src": "assets/20260801-大稻埕煙火v2/slide-3f.jpg",
               "kind": "still",
-              "source_label": "Dadaocheng",
+              "source_label": "Taipeinightriverfestival",
               "source_kind": "OV"
             },
             {
               "cid": "g",
               "src": "assets/20260801-大稻埕煙火v2/slide-3g.jpg",
-              "kind": "still",
-              "source_label": "Taipeinightriverfestival",
-              "source_kind": "OV"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260801-大稻埕煙火v2/slide-3h.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
@@ -1522,15 +1522,13 @@
               "cid": "a",
               "src": "assets/20260801-大稻埕煙火v2/slide-4a.jpg",
               "kind": "still",
-              "source_label": "Medium / Human Sexuality",
-              "source_kind": "SHOT"
+              "source_label": "500Daysof Summer"
             },
             {
               "cid": "b",
               "src": "assets/20260801-大稻埕煙火v2/slide-4b.jpg",
               "kind": "still",
-              "source_label": "b-mood8d3e0",
-              "source_kind": "SHOT"
+              "source_label": "500Daysof Summer"
             },
             {
               "cid": "c",
@@ -1542,31 +1540,19 @@
               "cid": "d",
               "src": "assets/20260801-大稻埕煙火v2/slide-4d.jpg",
               "kind": "still",
-              "source_label": "500Daysof Summer"
+              "source_label": "Dadaocheng",
+              "source_kind": "OV"
             },
             {
               "cid": "e",
               "src": "assets/20260801-大稻埕煙火v2/slide-4e.jpg",
               "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260801-大稻埕煙火v2/slide-4f.jpg",
-              "kind": "still",
-              "source_label": "Dadaocheng",
-              "source_kind": "OV"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260801-大稻埕煙火v2/slide-4g.jpg",
-              "kind": "still",
               "source_label": "Taipeinightriverfestival",
               "source_kind": "OV"
             },
             {
-              "cid": "h",
-              "src": "assets/20260801-大稻埕煙火v2/slide-4h.jpg",
+              "cid": "f",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4f.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
@@ -1585,15 +1571,13 @@
               "cid": "a",
               "src": "assets/20260801-大稻埕煙火v2/slide-5a.jpg",
               "kind": "still",
-              "source_label": "a-moode0f96",
-              "source_kind": "SHOT"
+              "source_label": "Before Sunrise"
             },
             {
               "cid": "b",
               "src": "assets/20260801-大稻埕煙火v2/slide-5b.jpg",
               "kind": "still",
-              "source_label": "b-mood54195",
-              "source_kind": "SHOT"
+              "source_label": "Before Sunrise"
             },
             {
               "cid": "c",
@@ -1611,13 +1595,13 @@
               "cid": "e",
               "src": "assets/20260801-大稻埕煙火v2/slide-5e.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Our Times"
             },
             {
               "cid": "f",
               "src": "assets/20260801-大稻埕煙火v2/slide-5f.jpg",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Our Times"
             },
             {
               "cid": "g",
@@ -1629,31 +1613,19 @@
               "cid": "h",
               "src": "assets/20260801-大稻埕煙火v2/slide-5h.jpg",
               "kind": "still",
-              "source_label": "Our Times"
+              "source_label": "Dadaocheng",
+              "source_kind": "WM"
             },
             {
               "cid": "i",
               "src": "assets/20260801-大稻埕煙火v2/slide-5i.jpg",
               "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260801-大稻埕煙火v2/slide-5j.jpg",
-              "kind": "still",
-              "source_label": "Dadaocheng",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260801-大稻埕煙火v2/slide-5k.jpg",
-              "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "OV"
             },
             {
-              "cid": "l",
-              "src": "assets/20260801-大稻埕煙火v2/slide-5l.jpg",
+              "cid": "j",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5j.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
@@ -1672,26 +1644,12 @@
               "cid": "a",
               "src": "assets/20260801-大稻埕煙火v2/slide-6a.jpg",
               "kind": "still",
-              "source_label": "a-moodc1f96",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260801-大稻埕煙火v2/slide-6b.jpg",
-              "kind": "still",
-              "source_label": "b-moodb8afd",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260801-大稻埕煙火v2/slide-6c.jpg",
-              "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "WM"
             },
             {
-              "cid": "d",
-              "src": "assets/20260801-大稻埕煙火v2/slide-6d.jpg",
+              "cid": "b",
+              "src": "assets/20260801-大稻埕煙火v2/slide-6b.jpg",
               "kind": "still",
               "source_label": "Dadaochengfireworksfestival Taipei",
               "source_kind": "WM"
@@ -1712,7 +1670,7 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "candidates_since": "2026-08-02T14:58:59+08:00"
+      "candidates_since": "2026-08-02T15:11:50+08:00"
     }
   ]
 }
