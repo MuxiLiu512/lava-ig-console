@@ -283,6 +283,23 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": "gpt"
+    },
+    {
+      "id": "R-msbhkfuv",
+      "post_id": "20260801-大稻埕煙火v2",
+      "ts": "2026-08-02T15:35:50+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "d",
+        "2": "a",
+        "3": "d",
+        "4": "a",
+        "5": "f",
+        "6": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
