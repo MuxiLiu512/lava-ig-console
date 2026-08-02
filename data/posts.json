@@ -1309,13 +1309,13 @@
       "render_note": "已渲染且無新變更"
     },
     {
-      "id": "20260725-大稻埕煙火約會指南人擠人",
-      "topic": "大稻埕煙火約會指南：人擠人還是浪漫滿分？科學怎麼說",
+      "id": "20260801-大稻埕煙火v2",
+      "topic": "大稻埕煙火約會指南：人擠人還是浪漫滿分",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyd7743",
       "created_at": null,
-      "caption": "煙火炸開，他下意識靠近，你也突然聽見自己的心跳。感覺當然是真的，但大腦未必知道它從哪裡來：噪音、擁擠與腎上腺素，都可能被誤認成對身旁那個人的好感。\n\n別把吊橋效應當成把對方困在人潮裡的約會攻略。出發前先約好碰面地點與散場路線，任何靠近都確認彼此舒服；煙火結束後，再到安靜處聊15分鐘。如果刺激退去，你們仍想延長相處，那份好感才更值得繼續。Lava幫你把人約出來，真正的靠近由你決定。\n\n#LavaDating #大稻埕煙火 #大稻埕夏日節 #煙火約會 #吊橋效應 #約會心理學 #台北約會 #不聊天的交友軟體",
+      "caption": "欸，你有沒有發現：大稻埕煙火那種「肩膀貼肩膀、幾乎喘不過氣」的感覺，散場之後，反而覺得跟對方好像更近了一點？這不是你的錯覺。也不是煙火太美的緣故。2026 年大稻埕夏日節，8 月 15 日壓軸場，蜘蛛人無人機加煙火，整整 20 分鐘。去年同場景湧入超過 15 萬人次。人潮壓力，究竟是約會殺手，還是感情加速器？答案，心理學早就說過了。\n\n大稻埕的煙火，每年都在。15 萬人次的人潮，每年都在。喚起錯置的機制、共享注意力的效應，科學說它們每年都在運作。但這些加成，有個前提：你旁邊要有一個人。不是「剛好在同個 group 一起去」的那種。是你願意在散場那 30 分鐘人擠人的混亂裡，自然而然走到他旁邊的那種。Lava 的設計，是讓你在見面之前就對這個人有足夠的認識，不是用聊天堆積的曖昧，而是用你真正在乎的條件，找到一個值得帶去 8 月 15 日的人。夏夜還沒結束。\n\n#大稻埕煙火 #大稻埕夏日節 #台北約會 #交友軟體 #約會 #台北夏天 #煙火約會 #心理學約會 #喚起錯置 #Lava交友 #不聊天的交友軟體 #台北活動2026 #夏日約會攻略 #線下約會",
       "topic_type": "A-知識型",
       "slides": [
         {
@@ -1324,37 +1324,48 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-1a.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "Chungking Express"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260801-大稻埕煙火v2/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Chungking Express"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260801-大稻埕煙火v2/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Chungking Express"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260801-大稻埕煙火v2/slide-1d.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "OV",
               "low_q": true
             },
             {
-              "cid": "b",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-1b.jpg",
+              "cid": "e",
+              "src": "assets/20260801-大稻埕煙火v2/slide-1e.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "WM"
             },
             {
-              "cid": "c",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-1c.jpg",
+              "cid": "f",
+              "src": "assets/20260801-大稻埕煙火v2/slide-1f.jpg",
               "kind": "still",
-              "source_label": "fireworkscrowdnight",
-              "source_kind": "OV"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-1d.jpg",
-              "kind": "still",
-              "source_label": "fireworkscrowdnight",
+              "source_label": "Dadaochengfireworksfestival Taipei",
               "source_kind": "WM"
             }
           ],
           "final_src": null,
-          "heading": "心動是真的，原因不一定是他",
-          "display_copy": "煙火炸開，他下意識靠近，你也突然聽見自己的心跳。這份〖心動〗當然是真的，但原因不一定是他：噪音、擁擠與腎上腺素，都可能被大腦誤認成對身旁那個人的好感。",
+          "heading": "15 萬人擠一條河岸，你們還是只看見彼此？",
+          "display_copy": "欸，你有沒有發現——\n\n大稻埕煙火那種\n「肩膀貼肩膀、幾乎喘不過氣」\n\n散場後，反而覺得跟對方\n〖好像更近了一點？〗\n\n2026 大稻埕夏日節\n8/15 壓軸場｜20 分鐘煙火＋無人機\n去年同場 15 萬人擠一條河岸\n\n人潮，是約會殺手——還是感情加速器？",
           "default_cid": "a"
         },
         {
@@ -1363,60 +1374,60 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2a.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2a.jpg",
               "kind": "still",
-              "source_label": "A Business Proposal"
+              "source_label": "vivianexplore.tw",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2b.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2b.jpg",
               "kind": "still",
               "source_label": "A Business Proposal"
             },
             {
               "cid": "c",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2c.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2c.jpg",
               "kind": "still",
               "source_label": "A Business Proposal"
             },
             {
               "cid": "d",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2d.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2d.jpg",
               "kind": "still",
               "source_label": "A Business Proposal"
             },
             {
               "cid": "e",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2e.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "A Business Proposal"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2f.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "OV"
             },
             {
-              "cid": "f",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2f.jpg",
+              "cid": "g",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2g.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "WM"
             },
             {
-              "cid": "g",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2g.jpg",
-              "kind": "still",
-              "source_label": "Dadaochengfireworksfestival Taipei",
-              "source_kind": "WM"
-            },
-            {
               "cid": "h",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-2h.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-2h.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
             }
           ],
           "final_src": null,
-          "heading": "這場浪漫，本來就很擠",
-          "display_copy": "大稻埕煙火始於【2005年】，從七夕「大稻埕情人節」，到2023年擴大為夏日節。2025壓軸場湧入〖14.6萬人〗；2026活動資訊列7月25日至8月15日，並加入蜘蛛人無人機秀。\n資料來源：商業周刊、中央社、vivianexplore",
+          "heading": "現場根本是生存遊戲：8/15 壓軸場攻略",
+          "display_copy": "8/15（六）壓軸場攻略\n\n【地點】大稻埕碼頭 延平河濱公園 3–5 號水門\n【時間】16:00 進場，蜘蛛人無人機＋煙火共 20 分鐘\n【卡位】提早至少 1 小時，帶摺疊椅\n【交管】9 項管制措施，散場靠雙腳走\n\n去年 15 萬人同擠一條河岸\n今年首度結合蜘蛛人 IP\n人潮只會更多\n\n【你帶的那個人——是值得跟他靠這麼近的人嗎？】\n\n資料來源：台北市政府觀光傳播局、中央社 2025 年大稻埕夏日節報導",
           "default_cid": "a"
         },
         {
@@ -1425,29 +1436,47 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-3a.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "Inthe Moodfor Love"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260801-大稻埕煙火v2/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "Inthe Moodfor Love"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260801-大稻埕煙火v2/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Inthe Moodfor Love"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260801-大稻埕煙火v2/slide-3d.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "OV"
             },
             {
-              "cid": "b",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-3b.jpg",
+              "cid": "e",
+              "src": "assets/20260801-大稻埕煙火v2/slide-3e.jpg",
               "kind": "still",
-              "source_label": "Dadaocheng",
-              "source_kind": "WM"
+              "source_label": "Taipeinightriverfestival",
+              "source_kind": "OV"
             },
             {
-              "cid": "c",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-3c.jpg",
+              "cid": "f",
+              "src": "assets/20260801-大稻埕煙火v2/slide-3f.jpg",
               "kind": "still",
-              "source_label": "Dadaochengfireworksfestival Taipei",
+              "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
             }
           ],
           "final_src": null,
-          "heading": "吊橋效應，真的做過實驗",
-          "display_copy": "1974年，Dutton與Aron比較走過約【70公尺高】晃動吊橋與低矮穩固橋的男性。女性訪員請他們寫TAT故事並留下電話；高橋組出現更多浪漫／性意象，也更常回電。這就是〖激發誤判〗的經典證據。\n資料來源：Dutton & Aron, JPSP（1974）",
+          "heading": "為什麼吊橋上遇見的人特別有感覺",
+          "display_copy": "1974 年，距地 230 英尺的吊橋上\nDutton & Aron 做了一個實驗\n\n同一名女性研究者，分別在\n【高吊橋】vs 穩固低橋上訪問男性\n\n結果：吊橋上的男性\n回電要求約會的比例【顯著更高】\n寫作中使用性暗示意象的頻率也更高\n\n原因：心跳加速、頭暈、手心出汗\n大腦沒辦法分辨——\n「這是恐懼」還是「這是心動」\n\n這就是【喚起錯置（Misattribution of Arousal）】\n\n高喚起情境殘留的生理能量\n會轉移到你對身邊那個人的感覺上\n\n資料來源：Dutton & Aron (1974), Journal of Personality and Social Psychology",
           "default_cid": "a"
         },
         {
@@ -1456,88 +1485,148 @@
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-4a.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4d.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "OV"
             },
             {
-              "cid": "b",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-4b.jpg",
+              "cid": "e",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4e.jpg",
               "kind": "still",
               "source_label": "Taipeinightriverfestival",
               "source_kind": "OV"
             },
             {
-              "cid": "c",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-4c.jpg",
+              "cid": "f",
+              "src": "assets/20260801-大稻埕煙火v2/slide-4f.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
             }
           ],
           "final_src": null,
-          "heading": "心跳加速，不等於愛上誰",
-          "display_copy": "但【心跳加速】不等於愛上誰：男性訪員或安全橋條件下，效果都未出現。依情緒雙因素理論，大腦會替生理激發找原因；煙火能放大你對「可行對象」的注意，卻不能憑空製造喜歡。\n資料來源：Schachter & Singer（1962）；Dutton & Aron（1974）",
+          "heading": "雲霄飛車實驗：一起緊張，比一起輕鬆更有用",
+          "display_copy": "Meston & Frohlich, 2004\n《Love at First Fright》\n遊樂園雲霄飛車實驗\n\n【剛下車的人】對照片裡陌生人的吸引力評分\n顯著高於還在排隊的人\n\n但有一個條件——\n\n這個效果只對【非戀人同伴】有效\n已確認交往的那組：評分無顯著差異\n\n解讀：高喚起情境\n加速你對新對象的感知\n對已建立關係的人效果則趨於穩定\n\n〖第一次約會帶去煙火節\n比帶去咖啡廳，效果大得多〗\n\n資料來源：Meston & Frohlich (2004), Archives of Sexual Behavior",
           "default_cid": "a"
         },
         {
           "n": 5,
-          "role": "品牌立場",
+          "role": "知識解釋",
           "candidates": [
             {
               "cid": "a",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5a.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5a.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             },
             {
               "cid": "b",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5b.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5b.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             },
             {
               "cid": "c",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5c.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5c.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             },
             {
               "cid": "d",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5d.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5d.jpg",
               "kind": "still",
               "source_label": "Before Sunrise"
             },
             {
               "cid": "e",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5e.jpg",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5h.jpg",
               "kind": "still",
               "source_label": "Dadaocheng",
               "source_kind": "WM"
             },
             {
-              "cid": "f",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5f.jpg",
+              "cid": "i",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5i.jpg",
               "kind": "still",
-              "source_label": "Taipeinightriverfestival",
+              "source_label": "fireworkscrowdnight",
               "source_kind": "OV"
             },
             {
-              "cid": "g",
-              "src": "assets/20260725-大稻埕煙火約會指南人擠人/slide-5g.jpg",
+              "cid": "j",
+              "src": "assets/20260801-大稻埕煙火v2/slide-5j.jpg",
               "kind": "still",
               "source_label": "fireworkscrowdnight",
               "source_kind": "WM"
             }
           ],
           "final_src": null,
-          "heading": "刺激退去，才看得見好感",
-          "display_copy": "別把吊橋效應當成把人困在人潮裡的攻略。先約好碰面點與散場路線，任何靠近都確認彼此舒服；煙火後再去安靜處聊【15分鐘】。刺激退去還想延長相處，才是更值得相信的訊號。Lava幫你見面，〖真正的靠近由你決定〗。",
+          "heading": "兩個人一起看同一件事，本身就是一種黏合",
+          "display_copy": "Böckler, Knoblich & Sebanz, 2016\n（歐洲研究委員會資助）\n\n研究發現：\n兩人共同注視【同一個方向】\n即使完全沉默、無法確認對方是否真的在看\n\n【連結感（bondedness）評分仍然更高】\n\n只共享目標但注意力方向不同？\n效果並不出現\n\n這就是——\n共享注意力（Shared Attention）效應\n\n煙火，是讓兩個人\n幾乎不可能去看「不同東西」的裝置\n\n注意力方向一致\n情緒被同一個畫面牽動\n\n不需要對話\n歸屬感就已經在累積",
           "default_cid": "a"
         },
         {
           "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260801-大稻埕煙火v2/slide-6a.jpg",
+              "kind": "still",
+              "source_label": "Dadaocheng",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260801-大稻埕煙火v2/slide-6b.jpg",
+              "kind": "still",
+              "source_label": "Dadaochengfireworksfestival Taipei",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": null,
+          "heading": "不是人潮太多，是你還沒找到對的人站在你旁邊",
+          "display_copy": "科學說，煙火的浪漫加成是真實的\n\n喚起錯置讓緊張變心動\n共享注意力讓沉默也能累積歸屬感\n\n但有一個前提——\n\n你旁邊要有一個人\n不是「順便一起」的那種\n是在 15 萬人潮裡\n【你自然走到他旁邊的那種】\n\nLava 讓你在見面之前\n就對這個人有足夠的認識\n\n不靠聊天堆積曖昧\n靠你真正在乎的條件篩選\n\n找到一個值得帶去 8/15 壓軸場的人\n\n〖夏夜還沒結束〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
           "role": "CTA",
           "candidates": [],
           "final_src": null,
@@ -1545,70 +1634,7 @@
           "display_copy": "CTA 公版"
         }
       ],
-      "writer_model": "gpt-5.6",
-      "copy_versions": {
-        "claude": {
-          "caption": "每年夏天，大稻埕碼頭那條人龍從下午就開始排。2025 年壓軸場單日湧入 14.6 萬人，你幾乎無法移動，汗水、煙硝味、遠處的爆炸聲混在一起。很多人以為這種環境糟透了，根本不適合約會。但心理學家在 1974 年就用一座吊橋告訴我們：你可能完全搞錯方向了。\n\n吊橋效應告訴我們一件事：約會場景本身是有力量的，不只是背景而已。14.6 萬人的大稻埕，噪音、人潮、爆炸聲讓你的身體處於高度喚醒狀態，而當你在那個時刻轉頭看到一個你本來就有一點喜歡的人，大腦會把那份悸動全部算在他身上。這不是操控，這是給一段可能性一個最好的出場條件。Lava 想做的事情，和煙火一樣，我們不製造感情，我們讓你們出現在同一個對的地方。線下見面不需要累積幾個月的訊息，一個約定，一個地點，讓真實感覺自己說話。\n\n#大稻埕煙火 #大稻埕夏日節 #吊橋效應 #約會心理學 #台北約會 #煙火約會 #Lava交友 #線下約會 #七夕約會攻略 #LavaDating",
-          "slides": {
-            "1": {
-              "heading": "人擠人，竟然是最強助攻？",
-              "display_copy": "每年 14.6 萬人擠進大稻埕碼頭\n你以為這是約會的噩夢\n\n〖心理學說：這才是最強的浪漫催化劑〗\n\n恐懼與心動，在生理上幾乎一模一樣\n大腦只能靠「身旁的人」來分辨\n\n資料來源：2025 大稻埕夏日節壓軸場官方人流統計"
-            },
-            "2": {
-              "heading": "大稻埕煙火，從情人節辦到整個夏天",
-              "display_copy": "【2005 年】台北第一場大稻埕煙火\n從光復 60 週年，辦成台北最大夏日盛事\n\n2023 年升級為「大稻埕夏日節」\n煙火 × 音樂 × 市集，橫跨整個夏天\n\n【2026 大稻埕夏日節】7/25 & 8/15\n無人機 × 煙火 × 電影配樂，兩場週六大秀\n\n資料來源：大稻埕夏日節官方活動資訊（2026）"
-            },
-            "3": {
-              "heading": "1974 年，一座吊橋改寫了愛情心理學",
-              "display_copy": "溫哥華，1974 年，一座 70 公尺高的吊橋\nDutton & Aron 發現：\n\n走過【恐懼吊橋】的男性\n事後主動致電研究助理的比例【顯著更高】\n他們的故事裡，也充滿了浪漫情節\n\n換成男性研究助理？回電率立刻歸零\n\n〖你的心跳在說「好喜歡你」\n其實可能是在說「好可怕」〗\n\n資料來源：Dutton & Aron (1974), Journal of Personality and Social Psychology"
-            },
-            "4": {
-              "heading": "為什麼身體會說謊？情緒雙因素理論",
-              "display_copy": "恐懼與心動，在生理上幾乎一模一樣\n\n杏仁核活化 → 腎上腺素上升 → 心跳加速\n皮質醇飆升、呼吸變淺、注意力收窄\n\n大腦需要一個解釋\n【身旁的人，就是最近的答案】\n\n煙火、人潮、爆炸聲——全都是喚醒的燃料\n\n關鍵前提：對方必須是你本來就覺得「有可能」的人\n對完全陌生的人，這個效應不成立\n\n資料來源：Schachter & Singer (1962), Two-Factor Theory of Emotion；雲霄飛車複現研究"
-            },
-            "5": {
-              "heading": "所以，帶喜歡的人去看煙火，是聰明的決定",
-              "display_copy": "約會場景不只是背景\n它是感覺的催化劑\n\n14.6 萬人擠在河岸邊的那一刻\n你轉頭看到他——\n\n【大腦不知道那是煙火的心跳，還是你的】\n\nLava 不製造感情\n〖我們讓你們出現在同一個對的地方〗"
-            },
-            "6": {
-              "heading": "還在等什麼？先約起來再說",
-              "display_copy": "CTA 公版"
-            }
-          }
-        },
-        "gpt": {
-          "caption": "煙火炸開，他下意識靠近，你也突然聽見自己的心跳。感覺當然是真的，但大腦未必知道它從哪裡來：噪音、擁擠與腎上腺素，都可能被誤認成對身旁那個人的好感。\n\n別把吊橋效應當成把對方困在人潮裡的約會攻略。出發前先約好碰面地點與散場路線，任何靠近都確認彼此舒服；煙火結束後，再到安靜處聊15分鐘。如果刺激退去，你們仍想延長相處，那份好感才更值得繼續。Lava幫你把人約出來，真正的靠近由你決定。\n\n#LavaDating #大稻埕煙火 #大稻埕夏日節 #煙火約會 #吊橋效應 #約會心理學 #台北約會 #不聊天的交友軟體",
-          "slides": {
-            "1": {
-              "heading": "心動是真的，原因不一定是他",
-              "display_copy": "煙火炸開，他下意識靠近，你也突然聽見自己的心跳。這份〖心動〗當然是真的，但原因不一定是他：噪音、擁擠與腎上腺素，都可能被大腦誤認成對身旁那個人的好感。"
-            },
-            "2": {
-              "heading": "這場浪漫，本來就很擠",
-              "display_copy": "大稻埕煙火始於【2005年】，從七夕「大稻埕情人節」，到2023年擴大為夏日節。2025壓軸場湧入〖14.6萬人〗；2026活動資訊列7月25日至8月15日，並加入蜘蛛人無人機秀。\n資料來源：商業周刊、中央社、vivianexplore"
-            },
-            "3": {
-              "heading": "吊橋效應，真的做過實驗",
-              "display_copy": "1974年，Dutton與Aron比較走過約【70公尺高】晃動吊橋與低矮穩固橋的男性。女性訪員請他們寫TAT故事並留下電話；高橋組出現更多浪漫／性意象，也更常回電。這就是〖激發誤判〗的經典證據。\n資料來源：Dutton & Aron, JPSP（1974）"
-            },
-            "4": {
-              "heading": "心跳加速，不等於愛上誰",
-              "display_copy": "但【心跳加速】不等於愛上誰：男性訪員或安全橋條件下，效果都未出現。依情緒雙因素理論，大腦會替生理激發找原因；煙火能放大你對「可行對象」的注意，卻不能憑空製造喜歡。\n資料來源：Schachter & Singer（1962）；Dutton & Aron（1974）"
-            },
-            "5": {
-              "heading": "刺激退去，才看得見好感",
-              "display_copy": "別把吊橋效應當成把人困在人潮裡的攻略。先約好碰面點與散場路線，任何靠近都確認彼此舒服；煙火後再去安靜處聊【15分鐘】。刺激退去還想延長相處，才是更值得相信的訊號。Lava幫你見面，〖真正的靠近由你決定〗。"
-            },
-            "6": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-07-30T15:23:51+08:00",
-      "copy_choice": "claude",
-      "render_note": "退回底圖：等重生候選"
+      "writer_model": "claude-sonnet-4-6"
     }
   ]
 }
