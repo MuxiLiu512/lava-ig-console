@@ -1092,7 +1092,7 @@ def forage_pending(args):
         sys.stderr.write("→ forage %s（%d refs）\n" % (base[:40], len(missing)))
         try:
             subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "forage_shots.py"),
-                            "--refs", rf, "--outdir", bd], check=False, timeout=600)
+                            "--refs", rf, "--outdir", bd], check=False, timeout=1500)   # 逐 slide 策展較慢；中斷則下輪續抓
         except subprocess.TimeoutExpired:
             sys.stderr.write("  ! forage timeout（下輪續抓缺檔）\n")
         done += 1
