@@ -42,4 +42,4 @@ if ! push; then
   git rebase "origin/$BRANCH" 2>&1 | mask
   push
 fi
-echo "✓ 已推上 $OWNER/$REPO_N@$BRANCH：$*"
+echo "✓ 已推上 $OWNER/$REPO_N@${BRANCH}：$*"
