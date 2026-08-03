@@ -70,5 +70,11 @@
   "strategy": "skip_screenshot",
   "why": "近白頁 92%（登入牆/空頁）",
   "last": "2026-08-03T14:30:35+08:00"
+ },
+ "pmc.ncbi.nlm.nih.gov": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 99%（登入牆/空頁）",
+  "last": "2026-08-03T15:19:34+08:00"
  }
 }
