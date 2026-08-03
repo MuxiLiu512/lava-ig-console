@@ -370,6 +370,21 @@
       "slide_choices": {},
       "feedback": "Jesse 指示（8/3）：放行批次直接渲染，成品照常回操控室審",
       "console_version": "takeover-0803"
+    },
+    {
+      "id": "R-manual-aziz-s2fix",
+      "post_id": "20260728-AzizAnsari花年",
+      "ts": "2026-08-03T18:31:35+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "c",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
     }
   ]
 }
