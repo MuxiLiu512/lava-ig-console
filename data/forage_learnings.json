@@ -58,5 +58,11 @@
   "strategy": "skip_screenshot",
   "why": "近白頁 92%（登入牆/空頁）",
   "last": "2026-08-03T14:09:40+08:00"
+ },
+ "time.com": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 90%（登入牆/空頁）",
+  "last": "2026-08-03T14:22:24+08:00"
  }
 }

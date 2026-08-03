@@ -2216,7 +2216,8 @@
         "第 7 張：《Eternal Sunshineofthe Spotless Mind》劇照，版權屬原權利方",
         "第 8 張：a-mood5c995（截圖引用）"
       ],
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "已渲染且無新變更"
     },
     {
       "id": "20260803-JohnGottman研",
@@ -2536,7 +2537,8 @@
         "第 7 張：a-mood678a7（截圖引用）",
         "第 8 張：a-mood99955（截圖引用）"
       ],
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "已渲染且無新變更"
     },
     {
       "id": "20260803-DeluluistheS",
@@ -2891,7 +2893,8 @@
         "第 7 張：a-mood30097（截圖引用）",
         "第 8 張：a-mood5b214（截圖引用）"
       ],
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "已渲染且無新變更"
     },
     {
       "id": "20260803-卡蜜拉王后今天熱搜第一嫁",
@@ -3198,7 +3201,8 @@
         "第 7 張：a-mood36259（截圖引用）",
         "第 8 張：a-mood82016（截圖引用）"
       ],
-      "copy_choice": "claude"
+      "copy_choice": "claude",
+      "render_note": "已渲染且無新變更"
     },
     {
       "id": "20260803-川口春奈效應為什麼日系清",
@@ -3704,6 +3708,323 @@
         "第 6 張：a-mood9a2c0（截圖引用）",
         "第 7 張：a-moodc6d92（截圖引用）",
         "第 8 張：a-mood40797（截圖引用）"
+      ],
+      "copy_choice": "claude",
+      "render_note": "已渲染且無新變更"
+    },
+    {
+      "id": "20260803-欸你有沒有發現歐美正在流",
+      "topic": "欸…你有沒有發現，歐美正在流行「不帶手機去約會」？",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eygddc2",
+      "created_at": null,
+      "caption": "歐美正在流行一件事：約會時把手機鎖進小袋子，或翻面扣在桌上，全程不碰。\n\n不是規定，是自願的。\n因為他們發現：真正稀缺的，不是時間，而是注意力。\n\n其實，Phone-Free date 背後的邏輯，Lava 在設計時就已經選了立場：不提供聊天功能，讓兩個人直接約出來見面，因為真正重要的事，沒辦法在螢幕上發生。\n注意力是這個時代最稀缺的禮物，而給出去的方式，不是多傳幾則訊息，而是真的把手機放下，出現在對方面前。\n\n#交友軟體 #約會 #台灣約會 #PhoneFreeDate #不聊天的交友軟體 #Lava交友 #手機排毒 #數位斷捨離 #注意力經濟 #真實連結 #約會技巧 #現代愛情 #線下約會 #台北約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood6a9da",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mooddfe00",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Her"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-1.jpg",
+          "heading": "手機放著沒在用，也會讓約會變差",
+          "display_copy": "欸⋯你有沒有發現\n歐美在流行「不帶手機去約會」？\n\n不是規定，是【自願的】。\n因為他們發現：真正稀缺的不是時間——\n而是注意力。\n\n手機放桌上沒在用，對話就已經變淺了。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mooded3bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Modern Love"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-2.jpg",
+          "heading": "你也有這種感覺嗎？",
+          "display_copy": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累——你有沒有這種感覺？",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3a.webp",
+              "kind": "still",
+              "source_label": "a-mood5b2bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3b.webp",
+              "kind": "still",
+              "source_label": "b-mood8d6a6",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-3.jpg",
+          "heading": "光是放桌上，就夠了",
+          "display_copy": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有——桌上【有沒有放手機】。\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-4.jpg",
+          "heading": "MIT 教授叫這個現象「缺席的在場」",
+          "display_copy": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】——身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "一個裝手機的袋子，變成了一場文化運動",
+          "display_copy": "2014 年，加州創業家 Graham Dugoni 創立 Yondr——一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood28de2",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-moodf8d8b",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-6.jpg",
+          "heading": "567%——這個數字說明了什麼",
+          "display_copy": "Eventbrite 數據：2024–2025 年，全球 phone-free 社交活動成長〖567%〗，英國出席人數更暴增 1,441%。\n\n主導這波浪潮的，不是不懂科技的長輩——\n而是那些【成年後才有智慧型手機的世代】。\n\n他們從小被訓練「先記錄再體驗」，現在選擇反過來——先活著，不記錄。\n\n資料來源：Eventbrite 活動監測報告，2026 年 4 月；Good News Network",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood073b1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mood3b208",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-7.jpg",
+          "heading": "Lava 從一開始就沒讓你在螢幕上耗",
+          "display_copy": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇——沒有聊天功能，直接約出來見面。不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood9b25b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-moodef574",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8c.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8d.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8e.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-8.jpg",
+          "heading": "下次約會，試試這三件事",
+          "display_copy": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升——你的眼神和時間，只有一個去處。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-9.jpg",
+          "heading": "不聊天，直接見面",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-03T14:27:53+08:00",
+      "image_credits": [
+        "第 1 張：a-mood6a9da（截圖引用）",
+        "第 2 張：a-mooded3bd（截圖引用）",
+        "第 3 張：a-mood5b2bd（截圖引用）",
+        "第 4 張：Greater Good, UC Berkeley（截圖引用）",
+        "第 6 張：a-mood28de2（截圖引用）",
+        "第 7 張：a-mood073b1（截圖引用）",
+        "第 8 張：a-mood9b25b（截圖引用）"
       ],
       "copy_choice": "claude"
     }
