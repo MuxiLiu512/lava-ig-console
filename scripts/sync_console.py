@@ -95,18 +95,28 @@ def _clean_caption(t):
 
 
 def _assemble_caption(data):
-    """從文案 JSON 組 IG caption：hook + 品牌段 + hashtags。"""
+    """從文案 JSON 組 IG caption：hook + 品牌段 + hashtags。
+    排版鐵則（2026-08-03 Jesse 驗收）：首句獨立成行＋空一行；其後逐句斷行；段落間空行——不得糊成字牆。"""
     slides = data.get("slides", [])
     def body_of(pred):
         for s in slides:
             if pred(s):
                 return _clean_caption(s.get("body") or s.get("display_copy") or "")
         return ""
+    def _sent_lines(text):
+        parts = [x.strip() for x in re.split(r"(?<=[。！？!?…])", text) if x.strip()]
+        return "\n".join(parts)
     hook = body_of(lambda s: s.get("index") == 1 or "hook" in str(s.get("role", "")).lower())
     brand = body_of(lambda s: "品牌" in str(s.get("role", "")) or "立場" in str(s.get("role", "")))
+    first, rest = "", ""
+    m = re.match(r"(.+?[。！？!?…])\s*(.*)$", hook, re.S)
+    if m:
+        first, rest = m.group(1).strip(), m.group(2).strip()
+    else:
+        first = hook.strip()
     tags = data.get("hashtags", [])
     tagline = " ".join(t if t.startswith("#") else "#" + t for t in tags)
-    parts = [p for p in [hook, brand, tagline] if p]
+    parts = [p for p in [first, _sent_lines(rest), _sent_lines(brand), tagline] if p]
     return "\n\n".join(parts)
 
 
