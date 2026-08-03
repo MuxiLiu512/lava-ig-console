@@ -1004,14 +1004,13 @@ def ingest_new(args):
             break
         topic_full = t["name"].split("｜", 1)[1]
         nt = _norm_topic(topic_full)
-        frag = next((f for f in (nt[:6], nt[:4]) if f and any(
-            f in os.path.basename(x) for x in glob.glob(os.path.join(root, "*.json"))
-            if "文案初稿" in os.path.basename(x))), None)
+        # 比對兩側都走 _norm_topic：卡名與檔名的空白/標點/v+數字剝除互相抵消（「Lava」→「Laa」bug 修正）
+        cand = [(x, _norm_topic(os.path.basename(x))) for x in glob.glob(os.path.join(root, "*.json"))
+                if "文案初稿" in os.path.basename(x)]
+        frag = next((f for f in (nt[:6], nt[:4]) if f and any(f in nb for _, nb in cand)), None)
         if not frag:
             print("⏭ 無草稿：%s" % t["name"][:36]); continue
-        newest = max((x for x in glob.glob(os.path.join(root, "*.json"))
-                      if "文案初稿" in os.path.basename(x) and frag in os.path.basename(x)),
-                     key=os.path.getmtime)
+        newest = max((x for x, nb in cand if frag in nb), key=os.path.getmtime)
         mdate = re.match(r"(\d{6,8})", os.path.basename(newest))
         pid = (mdate.group(1) if mdate else "20260000") + "-" + _slug(nt)[:12]
         ns = argparse.Namespace(drive_root=None, topic=frag, post_id=pid, finals_dir=None,

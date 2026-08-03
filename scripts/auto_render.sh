@@ -11,12 +11,12 @@ LOG="/tmp/lava-ig-autorender.log"
 # Drive 未掛載就靜默跳過（渲染需讀原圖）
 [ -d "$DP" ] || exit 0
 
-# 防重疊鎖（殘留超過 30 分鐘視為僵鎖，清掉）
-if [ -d "$LOCK" ]; then
-  if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +30 2>/dev/null)" ]; then rmdir "$LOCK" 2>/dev/null; else exit 0; fi
+# 防重疊鎖（殘留超過 30 分鐘視為僵鎖，清掉；rm -rf 兼容鎖被寫成普通檔案的壞態）
+if [ -e "$LOCK" ]; then
+  if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +30 2>/dev/null)" ]; then rm -rf "$LOCK" 2>/dev/null; else exit 0; fi
 fi
 mkdir "$LOCK" || exit 0
-trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+trap 'rm -rf "$LOCK" 2>/dev/null' EXIT
 
 cd "$REPO" || exit 0
 git pull --rebase --quiet origin main >>"$LOG" 2>&1 || { git rebase --abort >/dev/null 2>&1; exit 0; }
