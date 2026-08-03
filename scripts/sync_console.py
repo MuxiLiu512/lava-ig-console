@@ -539,6 +539,22 @@ def _scan_dirs(root, ntopic, prune=True):
     return _collect_slide_imgs(base_dirs, "generated", prune), _collect_slide_imgs(still_dirs, "still", prune)
 
 
+def _read_json_retry(path, tries=4, wait=3.0):
+    """Drive 掛載讀檔：檔案剛從雲端同步下來、本地尚在 hydration 時會撞 EDEADLK/EAGAIN，退避重試。"""
+    import errno, time
+    last = None
+    for i in range(tries):
+        try:
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+        except OSError as e:
+            if getattr(e, "errno", None) not in (errno.EDEADLK, errno.EAGAIN, errno.EIO):
+                raise
+            last = e
+            time.sleep(wait * (i + 1))
+    raise last
+
+
 def from_drive(args):
     """掃 Drive 產出/ 的最新一篇（文案 json + 底圖 + 劇照候選）→ 組 manifest → upsert posts.json。
     finals（成品）若未產出可留空；操控室 Mockup 會退回顯示選中的候選底圖。"""
@@ -581,8 +597,7 @@ def from_drive(args):
             jf = versions.get("gpt") or versions[sorted(versions)[0]]
             base = os.path.basename(jf)
             sys.stderr.write("→ 雙寫手版本：%s\n" % "、".join(sorted(versions)))
-    with open(jf, encoding="utf-8") as f:
-        data = json.load(f)
+    data = _read_json_retry(jf)
     date = (re.match(r"(\d{6,8})", base) or [None, ""])[1] if re.match(r"(\d{6,8})", base) else ""
     topic_raw = re.sub(r"-?文案初稿.*$", "", re.sub(r"^\d{6,8}[-\s]*", "", os.path.splitext(base)[0]))
     ntopic = _norm_topic(base)
@@ -1072,9 +1087,9 @@ def forage_pending(args):
         if done >= (args.limit or 2):
             break
         try:
-            with open(jf, encoding="utf-8") as f:
-                d = json.load(f)
-        except Exception:
+            d = _read_json_retry(jf)
+        except Exception as e:
+            print("⏭ forage 讀稿失敗 %s：%s" % (os.path.basename(jf)[:24], e))
             continue
         refs = []
         for s in d.get("slides", []):

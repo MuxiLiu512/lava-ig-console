@@ -22,5 +22,11 @@
   "strategy": "skip_screenshot",
   "why": "近白頁 91%（登入牆/空頁）",
   "last": "2026-08-02T14:48:34+08:00"
+ },
+ "pubmed.ncbi.nlm.nih.gov": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 100%（登入牆/空頁）",
+  "last": "2026-08-03T13:50:35+08:00"
  }
 }

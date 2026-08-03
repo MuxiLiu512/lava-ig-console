@@ -37,3 +37,6 @@
 {"ts": "2026-08-02T15:43:39+08:00", "post_id": "20260728-AzizAnsari花年", "slide": 3, "file": "slide3-OV-ModernRomanceAnInvestigation-1.jpg", "reason": "low_res", "metrics": {"w": 683, "h": 1024, "bytes": 286220}}
 {"ts": "2026-08-02T15:43:43+08:00", "post_id": "20260801-大稻埕煙火v2", "slide": 1, "file": "OV-Dadaocheng-5.jpg", "reason": "low_res", "metrics": {"w": 679, "h": 1024, "bytes": 124518}}
 {"ts": "2026-08-03T10:42:49+08:00", "post_id": "20260728-AzizAnsari花年", "slide": 3, "file": "slide3-OV-ModernRomanceAnInvestigation-1.jpg", "reason": "low_res", "metrics": {"w": 683, "h": 1024, "bytes": 286220}}
+{"ts": "2026-08-03T13:54:55+08:00", "post_id": "20260803-JohnGottman研", "slide": 5, "file": "slide5-KramervsKramer-1.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 103565, "bpp": 0.0499}}
+{"ts": "2026-08-03T13:54:57+08:00", "post_id": "20260803-JohnGottman研", "slide": 6, "file": "slide6-LietoMe-2.jpg", "reason": "low_res", "metrics": {"w": 400, "h": 225, "bytes": 27078}}
+{"ts": "2026-08-03T13:55:25+08:00", "post_id": "20260803-DeluluistheS", "slide": 3, "file": "slide3-SchittsCreek-1.jpg", "reason": "low_res", "metrics": {"w": 720, "h": 405, "bytes": 60090}}
