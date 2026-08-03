@@ -360,6 +360,16 @@
       "slide_choices": {},
       "feedback": "Jesse 指示（8/3）：放行批次直接渲染，成品照常回操控室審",
       "console_version": "takeover-0803"
+    },
+    {
+      "id": "R-auto-新詞懶人包這個詞說的",
+      "post_id": "20260803-約會新詞懶人包這個詞說的",
+      "ts": "2026-08-03T15:17:09+08:00",
+      "decision": "approve",
+      "scope": null,
+      "slide_choices": {},
+      "feedback": "Jesse 指示（8/3）：放行批次直接渲染，成品照常回操控室審",
+      "console_version": "takeover-0803"
     }
   ]
 }

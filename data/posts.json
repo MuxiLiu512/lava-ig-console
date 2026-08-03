@@ -4028,6 +4028,348 @@
       ],
       "copy_choice": "claude",
       "render_note": "已渲染且無新變更"
+    },
+    {
+      "id": "20260803-約會新詞懶人包這個詞說的",
+      "topic": "2025 約會新詞懶人包：這 4 個詞，說的都是你身邊的人",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eygddcd",
+      "created_at": null,
+      "caption": "你身邊的人在發生的事，早就被歐美網路命名了。\n\n這四個詞有一個共同點：它們描述的所有感覺，都只在真實見面的時候才會發生。\nPocketing 是因為你站在他的世界邊緣，Beige Flag 是在看他第二十次做同一件蠢事，Slow Burn 是兩個人慢慢靠近的時間，Ick Spiral 是因為你注意到了他吃麵的聲音，這些都需要你們真實地在同一個空間裡出現過。\nLava 從一開始就只設計成見面用的，不是因為聊天不好，而是因為這些真實的感覺，從來不住在訊息框裡。\n\n#約會 #交友軟體 #感情 #戀愛 #交友 #約會新詞 #戀愛心理學 #感情觀 #SlowBurn #Pocketing #BeigeFlag #IckSpiral #Lava交友 #不聊天的交友軟體 #2025約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood765f4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mood4239d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-1.jpg",
+          "heading": "欸，你有沒有發現",
+          "display_copy": "欸，你有沒有發現——\n他根本沒打算介紹你給任何人認識？\n他點餐必問服務生推薦，然後一道都不點？\n你認識他半年才牽手，感覺卻比上次那段更穩？\n\n2025 約會新詞，說的就是你身邊那些人。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-2a.webp",
+              "kind": "still",
+              "source_label": "b-mood496fb",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-2b.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-2c.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-2d.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-2.jpg",
+          "heading": "這些事你一定遇過",
+          "display_copy": "交了三個月，你沒被介紹給任何人——「時機未到。」\n他點餐必問服務生推薦，然後一道都不點，你莫名覺得很可愛。\n認識半年才牽手，感覺卻比三週速食戀愛更穩。\n然後某天他吃麵發出聲音，你突然不對勁，那個畫面在腦海裡重播三天。\n\n這些事，早就被網路命名了。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-3a.webp",
+              "kind": "still",
+              "source_label": "a-moodbb146",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-3b.webp",
+              "kind": "still",
+              "source_label": "b-mood8eb81",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-3c.webp",
+              "kind": "still",
+              "source_label": "Somebody Somewhere"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-3d.webp",
+              "kind": "still",
+              "source_label": "Somebody Somewhere"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-3e.webp",
+              "kind": "still",
+              "source_label": "Somebody Somewhere"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-3.jpg",
+          "heading": "① Pocketing",
+          "display_copy": "【① Pocketing】把你藏起來\n\n交了三個月，他媽媽生日你還是沒被邀請，對方說「時機未到」——你只是被放口袋裡藏著啦。\n\nPocketing 讓這段關係對外完全隱形。最難的是它看起來和「慢慢來」一模一樣——真正的關鍵，是你追問時對方的反應。Psychology Today 2025 年指出，這也可能是承諾恐懼的信號。\n\n資料來源：Psychology Today, 2025；TODAY Show, NBC, 2021",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-4a.webp",
+              "kind": "still",
+              "source_label": "a-mooda4b31",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Extraordinary Attorney Woo"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Extraordinary Attorney Woo",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Extraordinary Attorney Woo"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-4.jpg",
+          "heading": "② Beige Flag",
+          "display_copy": "【② Beige Flag】奇怪，但你接受\n\n他每次點餐都問服務生推薦什麼，然後一道都不點——這是什麼儀式？但你笑著看他這樣做已經第二十次了。\n\nBeige Flag 由澳洲 TikTok 創作者 @itscaito 於 2022 年提出，不是紅旗也不是優點，就是讓你說不出「這很奇怪」但也說不出「這很可愛」的那種存在。治療師 Anita Chlipala 說，能分清楚這三類，本身就是一種練習。\n\n資料來源：SimplyPsychology.org；TODAY.com, 2023",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-mood9ae12",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-moodcdb34",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Beloved Summer"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Our Beloved Summer"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Beloved Summer"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-5.jpg",
+          "heading": "③ Slow Burn",
+          "display_copy": "【③ Slow Burn】慢慢來，才是真的來\n\n認識半年才牽手，感覺卻比三週速食戀愛更穩——這不是你們太慢，這是 Slow Burn。\n\n〖Plenty of Fish 2025 年調查（n≈6,000）：投入 Slow Dating 的人，三個月後仍保持聯繫的機率高出 65%。〗\n\n急著確認關係的衝動，正在被全球越來越多人有意識地放慢。\n\n資料來源：Plenty of Fish 2025 用戶調查（n≈6,000）",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood921a4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-mood62045",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Gilmore Girls",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Gilmore Girls",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Gilmore Girls"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-6.jpg",
+          "heading": "④ Ick Spiral",
+          "display_copy": "【④ Ick Spiral】一個細節，然後停不下來\n\n他上週吃麵發出聲音，你突然覺得整個人不對勁，那個畫面在腦海裡重播了三天——這叫 Ick Spiral。\n\n大腦一旦鎖定「哪裡不對」，就會啟動確認偏誤，開始搜集所有支持這個感覺的證據，越滾越大。Plenty of Fish 調查顯示仍有 36% 的人選擇跨越 Ick 繼續交往——那個瞬間不一定是終點。\n\n資料來源：Plenty of Fish 2025 用戶調查（n≈6,000）",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-moodfdaaf",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-7.jpg",
+          "heading": "線上聊不出這些感覺",
+          "display_copy": "這四個詞有一個共同點——它們描述的感覺，全部只在見面之後才會發生。\n\nPocketing 是因為你站在他世界的邊緣。Beige Flag 是看他第二十次做同一件蠢事。Ick Spiral 是因為你注意到了他吃麵的聲音。Slow Burn 需要的是真實靠近的時間。\n\nLava 從一開始就只設計成見面用的，不是因為聊天不好，而是因為這些感覺從來不住在訊息框裡。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood1c005",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-8b.webp",
+              "kind": "still",
+              "source_label": "Sex Education"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Sex Education"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-約會新詞懶人包這個詞說的/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Sex Education"
+            }
+          ],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-8.jpg",
+          "heading": "遇到這四種情況，你可以這樣想",
+          "display_copy": "四個詞，四個應對方式——\n\n【Pocketing】給自己一個時間點，三個月後直接問，不要猜。\n【Beige Flag】先問：「這讓我覺得煩，還是覺得有趣？」答案不一樣，意義完全不同。\n【Slow Burn】治療師 Anita Chlipala 說：先知道自己的底線，不是底線的事就讓它慢慢長。\n【Ick Spiral】分清楚「我注意到一件事」和「我已經下了結論」是兩個不同的步驟。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-約會新詞懶人包這個詞說的/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E7%B4%84%E6%9C%83%E6%96%B0%E8%A9%9E%E6%87%B6%E4%BA%BA%E5%8C%85%E9%80%99%E5%80%8B%E8%A9%9E%E8%AA%AA%E7%9A%84/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-03T15:17:19+08:00",
+      "image_credits": [
+        "第 1 張：a-mood765f4（截圖引用）",
+        "第 2 張：b-mood496fb（截圖引用）",
+        "第 3 張：a-moodbb146（截圖引用）",
+        "第 4 張：a-mooda4b31（截圖引用）",
+        "第 5 張：a-mood9ae12（截圖引用）",
+        "第 6 張：a-mood921a4（截圖引用）",
+        "第 7 張：a-moodfdaaf（截圖引用）",
+        "第 8 張：a-mood1c005（截圖引用）"
+      ],
+      "copy_choice": "claude"
     }
   ]
 }
