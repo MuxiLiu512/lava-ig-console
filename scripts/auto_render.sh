@@ -19,7 +19,27 @@ mkdir "$LOCK" || exit 0
 trap 'rm -rf "$LOCK" 2>/dev/null' EXIT
 
 cd "$REPO" || exit 0
-git pull --rebase --quiet origin main >>"$LOG" 2>&1 || { git rebase --abort >/dev/null 2>&1; exit 0; }
+# 工作區髒污（未提交的腳本改動）曾讓 pull 每輪失敗、整條線靜默停擺兩天（2026-08-03~05）。
+# 改為：先 stash 再 pull，成功後還原；失敗才放棄本輪。哨兵不再被未提交檔案卡死。
+STASHED=0
+if [ -n "$(git status --porcelain)" ]; then
+  git stash push -q -u -m "autorender-$(date +%s)" >>"$LOG" 2>&1 && STASHED=1
+fi
+FAILFILE="/tmp/lava-ig-pullfail.count"
+if ! git pull --rebase --quiet origin main >>"$LOG" 2>&1; then
+  git rebase --abort >/dev/null 2>&1
+  [ "$STASHED" = 1 ] && git stash pop -q >>"$LOG" 2>&1
+  N=$(( $(cat "$FAILFILE" 2>/dev/null || echo 0) + 1 ))
+  echo "$N" >"$FAILFILE"
+  echo "[$(date '+%m-%d %H:%M')] ⚠ git pull 失敗（連續 $N 輪），本輪略過" >>"$LOG"
+  # 連續 6 輪（≈1 小時）＝哨兵實質停擺 → 自報告警到 ClickUp 告警日誌卡，避免再靜默兩天
+  if [ "$N" = 6 ]; then
+    python3 scripts/sync_console.py alert "哨兵停擺：git pull 連續 6 輪失敗（約 1 小時）。渲染／入料／對帳全部停止，需人工排查工作區狀態。" >>"$LOG" 2>&1
+  fi
+  exit 0
+fi
+rm -f "$FAILFILE"
+[ "$STASHED" = 1 ] && git stash pop -q >>"$LOG" 2>&1
 
 # 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
 FRG=$(timeout 700 python3 scripts/sync_console.py forage-pending --limit 2 2>&1)
@@ -31,6 +51,12 @@ echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|�
 
 OUT=$(python3 scripts/sync_console.py render-approved 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $OUT" | grep -E "✓RENDERED|⏭|Error|Traceback" >>"$LOG"
+
+# 成篇視覺總檢：有新成品才跑（撞主體/浮水印/不可讀/出處異常——逐張閘門看不出來的）
+if echo "$OUT" | grep -q "✓RENDERED"; then
+  QA=$(timeout 600 python3 scripts/sync_console.py post-qa 2>&1)
+  echo "$QA" | grep -E "🔴|🟡|✅|\[block\]" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+fi
 
 # 發佈對帳（ClickUp 發佈完成 → posts.json published）；.sync.json 無真 token 時內部自動略過
 REC=$(python3 scripts/sync_console.py reconcile-published 2>&1)

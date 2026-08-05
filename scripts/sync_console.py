@@ -819,7 +819,12 @@ def render_approved(args):
                     if m3:
                         sk, lb = m3.group(1).upper(), m3.group(2)
                 if sk == "SHOT":
-                    credits[n] = "圖片來源：%s（截圖引用）" % lb
+                    # forager 的內部標籤（a-mood44830 / b-personfc29a 這類 role+hash）不是出處，
+                    # 印上去等於在成品洩漏檔名。情緒圖本就不標（Jesse 2026-08-01 裁決），其餘無真出處時一律留白。
+                    if re.match(r"^[a-z]-(mood|person|book|article|evidence|still)[0-9a-f]{4,}$", lb):
+                        pass
+                    else:
+                        credits[n] = "圖片來源：%s（截圖引用）" % lb
                 elif sk == "WM":
                     credits[n] = "圖片來源：Wikimedia Commons（%s，自由授權）" % lb
                 elif sk == "OL":
@@ -974,6 +979,83 @@ def archive_data(args):
         save("insights.json", ins)
     print("✓ 歸檔：reviews %d 筆、copy_edits %d 筆、insights 裁切 %d 快照（門檻 %d 天）"
           % (len(old), len(cold), trimmed, days))
+
+
+ALERT_CARD = "86eyckbur"   # 🔧 Lava IG 系統告警日誌
+POSTQA_URL = "https://lavadating.app.n8n.cloud/webhook/lava-ig-postqa"
+
+
+def _post_qa(pid, finals_dir):
+    """成篇視覺總檢（WF15）：把整篇成品送 Claude vision，抓單張看不出來的問題。
+    2026-08-05 Aziz 事件：三張都是同一本書封、slide5 浮水印漏網、credit 印出內部檔名——
+    每張單看都過閘門，合起來才露餡。逐張把關擋不住的，只有全篇把關擋得住。"""
+    import base64, io, urllib.request
+    from PIL import Image
+    imgs = sorted(glob.glob(os.path.join(finals_dir, "slide-*.jpg")),
+                  key=lambda f: int(re.search(r"slide-(\d+)", f).group(1)))
+    if len(imgs) < 3:
+        return None
+    post = next((x for x in load("posts.json").get("posts", []) if x["id"] == pid), {})
+    heads = {s.get("n"): s.get("heading", "") for s in post.get("slides", [])}
+    slides = []
+    for f in imgs:
+        n = int(re.search(r"slide-(\d+)", f).group(1))
+        im = Image.open(f).convert("RGB")
+        im.thumbnail((820, 1025))   # 浮水印是細筆畫平鋪，壓太小會消失（520px 時 Magnific 浮水印漏檢）
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=82)
+        slides.append({"n": n, "heading": heads.get(n, ""),
+                       "b64": base64.b64encode(buf.getvalue()).decode()})
+    body = json.dumps({"post_id": pid, "slides": slides}).encode()
+    req = urllib.request.Request(POSTQA_URL, data=body,
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=240) as r:
+        return json.loads(r.read().decode())
+
+
+def post_qa(args):
+    """發佈前全篇檢查；block 級問題會擋住排程（操控室顯示待修）。"""
+    posts_d = load("posts.json")
+    targets = [p for p in posts_d.get("posts", [])
+               if (p["id"] == args.post_id if args.post_id else p.get("status") in ("approved", "scheduled"))]
+    if not targets:
+        print("無可檢查的貼文"); return
+    for p in targets:
+        fd = os.path.join(REPO, "docs", "finals", p["id"])
+        if not os.path.isdir(fd):
+            print("⏭ %s：無成品" % p["id"][:26]); continue
+        try:
+            res = _post_qa(p["id"], fd)
+        except Exception as e:
+            print("! %s 總檢失敗：%s" % (p["id"][:26], e)); continue
+        if not res:
+            print("⏭ %s：成品不足 3 張" % p["id"][:26]); continue
+        issues = res.get("issues") or []
+        blocks = [i for i in issues if i.get("severity") == "block"]
+        p["qa"] = {"ts": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+                   "pass": not blocks, "issues": issues, "rhythm": res.get("rhythm_note", "")}
+        mark = "🔴 %d 項須修" % len(blocks) if blocks else ("🟡 %d 項提醒" % len(issues) if issues else "✅ 通過")
+        print("%s %s" % (mark, p["id"][:30]))
+        for i in issues:
+            print("   [%s] 第 %s 張：%s → %s" % (i.get("severity", "?"),
+                  "、".join(str(x) for x in (i.get("slides") or [])), i.get("detail", ""), i.get("fix", "")))
+        if res.get("rhythm_note"):
+            print("   節奏：%s" % res["rhythm_note"])
+    save("posts.json", posts_d)
+
+
+def alert(args):
+    """哨兵自報告警（管線自身停擺時，n8n 的 errorWorkflow 抓不到——它只看 n8n 執行）。"""
+    token = _read_sync().get("clickup_token")
+    if not token or not token.isascii():
+        print("缺 clickup_token，略過告警"); return
+    ts = datetime.datetime.now().astimezone().strftime("%m-%d %H:%M")
+    try:
+        _clickup("POST", "/task/%s/comment" % ALERT_CARD, token,
+                 {"comment_text": "⚠ [%s] 哨兵告警：%s" % (ts, args.message), "notify_all": True})
+        print("✓ 告警已送出")
+    except Exception as e:
+        print("! 告警送出失敗：%s" % e)
 
 
 # ── 入料哨兵：ClickUp 在製中卡 × Drive 草稿 → 自動餵進 posts.json（零 AI）──
@@ -1250,6 +1332,8 @@ def main():
     a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.set_defaults(func=forage_pending)
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
+    a = sub.add_parser("post-qa", help="成篇視覺總檢（WF15）：撞主體/浮水印/不可讀/出處異常"); a.add_argument("--post-id", default=None); a.set_defaults(func=post_qa)
+    a = sub.add_parser("alert", help="哨兵自報告警 → ClickUp 告警日誌卡留言"); a.add_argument("message"); a.set_defaults(func=alert)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()
     args.func(args)

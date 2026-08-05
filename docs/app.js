@@ -186,15 +186,16 @@ function renderQueue() {
       const rn = p.slides.filter(s => s.public_url).length;
       const blocked = !rn && p.render_note;
       app.appendChild(qcard(p, rn ? `成品就緒 ${rn} 張 · 點入設發佈時間` : (blocked ? `⚠ ${esc(p.render_note)}` : "出成品中…（渲染後回此排程）"),
-        `<span class="tag" style="background:${rn ? "#c2410c" : (blocked ? "#a11d33" : "#555")};color:#fff">${rn ? "待排程" : (blocked ? "卡住待處理" : "渲染中")}</span>`));
+        `<span class="tag" style="background:${rn ? "#c2410c" : (blocked ? "#a11d33" : "#555")};color:#fff">${rn ? "待排程" : (blocked ? "卡住待處理" : "渲染中")}</span>`, qaHtml(p)));
     });
   }
   if (scheduled.length) {
     const hdr = el("div", "small muted", "📅 已排程發佈"); hdr.style.margin = "16px 0 4px"; app.appendChild(hdr);
-    scheduled.forEach(p => app.appendChild(qcard(p, `${p.slides.filter(s => s.public_url).length} 張成品 · 發佈於 ${fmtLocal(p.publish_at)}`, `<span class="tag" style="background:#1f7a4d;color:#fff">已排程</span>`)));
+    scheduled.forEach(p => app.appendChild(qcard(p, `${p.slides.filter(s => s.public_url).length} 張成品 · 發佈於 ${fmtLocal(p.publish_at)}`,
+      `<span class="tag" style="background:${qaBlocked(p) ? "#a11d33" : "#1f7a4d"};color:#fff">${qaBlocked(p) ? "總檢未過·不會發佈" : "已排程"}</span>`, qaHtml(p))));
   }
 }
-function qcard(p, subtitle, tagHtml) {
+function qcard(p, subtitle, tagHtml, extraHtml) {
   const c = el("div", "card qcard"); const pad = el("div", "pad row");
   const cover = img(coverSrc(p)); cover.className = "cover";
   const info = el("div", "grow");
@@ -202,9 +203,24 @@ function qcard(p, subtitle, tagHtml) {
   info.appendChild(el("div", "small muted", subtitle));
   const tags = el("div", null, tagHtml); tags.style.marginTop = "6px";
   info.appendChild(tags);
+  if (extraHtml) { const x = el("div", "small", extraHtml); x.style.marginTop = "6px"; info.appendChild(x); }
   pad.appendChild(cover); pad.appendChild(info); pad.appendChild(el("div", "muted", "›"));
   c.appendChild(pad); c.onclick = () => { DETAIL = p.id; render(); };
   return c;
+}
+// 成篇視覺總檢（WF15）：撞主體／浮水印／文字不可讀／出處異常——逐張閘門看不出來的問題
+const qaBlocked = p => !!(p.qa && p.qa.pass === false);
+function qaHtml(p) {
+  if (!p.qa || !(p.qa.issues || []).length) return "";
+  const rows = p.qa.issues.map(i => {
+    const isBlock = i.severity === "block";
+    const who = (i.slides || []).join("、");
+    return `<div style="margin:3px 0;color:${isBlock ? "#ff8a9b" : "#e0b34a"}">`
+      + `${isBlock ? "🔴" : "🟡"} 第 ${esc(who)} 張：${esc(i.detail || "")}`
+      + (i.fix ? `<br><span class="muted" style="padding-left:1.2em">建議：${esc(i.fix)}</span>` : "")
+      + `</div>`;
+  }).join("");
+  return `<div style="border-left:2px solid #a11d33;padding-left:8px">${rows}</div>`;
 }
 const coverSrc = p => { const s = p.slides.find(s => s.n === 1) || p.slides[0]; return (s && s.final_src) || (s && s.candidates[0] && s.candidates[0].src); };
 const totalCands = p => p.slides.reduce((a, s) => a + s.candidates.length, 0);
