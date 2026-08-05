@@ -555,6 +555,11 @@ def main():
         sys.exit("✗ 無 refs")
     os.makedirs(a.outdir, exist_ok=True)
     work = tempfile.mkdtemp(prefix="forage-", dir="/private/tmp")   # browse daemon 只允許 /private/tmp 或 repo
+    try:   # 死 ref 記憶：同一 (url|query|role) 連敗 2 次後不再重試（防哨兵每輪燒 timeout）
+        _learn = json.load(open(LEARN_FP, encoding="utf-8"))
+    except Exception:
+        _learn = {}
+    ref_fails = dict(_learn.get("ref_fails") or {})
     staged, all_rejects, cid = {}, [], 0
     slide_intent = {}
     for r in refs:
@@ -562,6 +567,12 @@ def main():
         role = (r.get("role") or "").strip().lower()
         q = (r.get("query") or "").strip()
         u = (r.get("url") or "").strip()
+        if not u and not q:
+            continue
+        rkey = hashlib.md5(("%s|%s|%s" % (u, q, role)).encode()).hexdigest()[:12]
+        if ref_fails.get(rkey, 0) >= 2:
+            sys.stderr.write("  ⏭ s%d 死ref跳過（連敗%d）：%s\n" % (n, ref_fails[rkey], (u or q)[:48]))
+            continue
         if not role:
             role = "evidence" if u else "mood"
         cands, rejects = [], []
@@ -589,8 +600,21 @@ def main():
                                              "src_key": _yt_id(u) or hashlib.md5(open(p, "rb").read(8192)).hexdigest()[:10]})
         if cands:
             sys.stderr.write("  ✓ s%d %s → %d 候選\n" % (n, (r.get("url") or "")[:56], len(cands)))
+            ref_fails.pop(rkey, None)
         else:
             sys.stderr.write("  ✗ s%d %s（%s）\n" % (n, (r.get("url") or "")[:56], "; ".join("%s:%s" % x for x in rejects)[:80]))
+            ref_fails[rkey] = ref_fails.get(rkey, 0) + 1
+    try:   # 回寫死 ref 記憶（re-read merge：避免蓋掉 grab_browser 期間累積的牆站學習）
+        cur = json.load(open(LEARN_FP, encoding="utf-8"))
+    except Exception:
+        cur = {}
+    mg = cur.setdefault("ref_fails", {})
+    for k, v in ref_fails.items():
+        mg[k] = max(v, mg.get(k, 0))
+    try:
+        json.dump(cur, open(LEARN_FP, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    except Exception:
+        pass
     if not staged:
         print("完成：0 張（全部抓取失敗）")
         _metrics(a, refs, staged, all_rejects, {}, False, 0, False)

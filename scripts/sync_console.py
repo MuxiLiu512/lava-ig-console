@@ -571,7 +571,9 @@ def from_drive(args):
         jsons = [f for f in glob.glob(os.path.join(root, "*.json"))
                  if "文案" in os.path.basename(f) and "ZZ" not in os.path.basename(f) and "易讀版" not in os.path.basename(f)]
         if args.topic:
-            jsons = [f for f in jsons if args.topic in os.path.basename(f)]
+            _ntq = _norm_topic(args.topic)  # frag 已是正規化字串 → 檔名側也正規化再比（v 剝除 bug 兩側抵消）
+            jsons = [f for f in jsons if args.topic in os.path.basename(f)
+                     or (_ntq and _ntq in _norm_topic(os.path.basename(f)))]
         if not jsons:
             sys.exit("✗ 產出/ 內找不到符合的文案 JSON" + ("（topic=%s）" % args.topic if args.topic else ""))
         datekey = lambda f: (lambda mm: ("0" if not mm else (mm.group(1) if len(mm.group(1)) == 8 else "20" + mm.group(1))))(re.match(r"(\d{6,8})", os.path.basename(f)))
