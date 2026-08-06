@@ -486,3 +486,18 @@ harness 全綠（`python3 scripts/verify_pipeline.py`）＋critic 意見出具�
 - **圖搜引擎＝DuckDuckGo i.js**（us-en 鎖區）：Bing 已棄用（TW geo/cookies 蓋掉 mkt 參數撈回中文圖庫雜圖、qft `+` 編碼壞掉）。**縮圖先策展、勝者才抓原圖**（DDG 縮圖走官方代理必可抓→殺「盜連站倖存偏差」——好圖抓不下來只剩垃圾站圖那件事）。圖庫網域黑名單（alamy/getty/shutterstock/freepik/千圖等，預覽必帶浮水印且 512px 縮圖下策展員會看漏）。
 - **WF14 v2.2.1 角色執法**（492e3b61）：payload 帶每 slide role+intent_query；person 非本人真照 ≤1、mood 離題 ≤2、「全部不合格就全低分」防矮子拔高；**分數線 <5 該張不出 SHOT（寧缺勿爛）**——哈密瓜/青花魚/卡通娃娃事故（v2.2 首跑）不再可能。
 - 驗收（08-01）：Aziz v2.2.2 全鏈——策展分 s1 本人舞台照 8 分、書張 8 分；hero 封面=真 Aziz 舞台照合成品✓、組圖版五卡全在題✓。
+
+### §11.4 成篇視覺總檢 v2.3（2026-08-06，Aziz 撞圖事件後新增）
+- **事件**：8/3 發佈的 Aziz 篇（IG media 18169997161443085）四張連續同主體（他本人/《Modern Romance》書封）、slide5 帶 Magnific 浮水印、圖上出處印成內部檔名 `a-mooddfeba`、slide4 白底截圖壓白字不可讀。**每一張單獨過閘門，合起來才露餡**——逐張把關（_image_ok／WF14 策展）在結構上看不見「整篇」。
+- **WF15 成篇視覺總檢**（`VqSquYgRxDCsThtW`，webhook `lava-ig-postqa`）：渲染後把**成品**（文字已疊上、820px）整篇送 Claude vision，查六類：`duplicate_subject`（同書/同人/同物跨張，即使背景不同）、`watermark`、`unreadable`、`credit_leak`、`composition`、`monotone`。block 級 → `posts.json.qa.pass=false`。
+- **閘門接線**：哨兵 render 後自動跑 `post-qa`；WF10 Pick Due Slides 加 `!(p.qa && p.qa.pass===false)` → 總檢未過不得發佈；操控室卡片顯示問題與 fix 建議（`docs/app.js` qaHtml）。
+- **解析度教訓**：520px 縮圖漏檢浮水印（細筆畫平鋪），提到 820px 後四項 block 全中。送檢解析度是偵測下限，不可為省 token 再壓。
+- **credit 修正**：`source_label` 形如 `[a-z]-(mood|person|book|…)[0-9a-f]+` 是 forager 內部標籤不是出處，印上去等於洩漏檔名 → 一律留白（情緒圖本就不標）。
+
+### §11.5 三個沉默故障（2026-08-05~06 連鎖排查）
+三者共同型態：**執行「成功」但實際沒做事**，且無告警。
+1. **哨兵靜默停擺兩天**：8/3 改的 scripts 未推送（`push` 只推 data/assets 白名單），工作區髒污 → `git pull --rebase` 每輪失敗 → `exit 0`。渲染/入料/對帳全停，無人知曉。修：stash-pull-restore（髒污不再癱瘓）＋連續 6 輪失敗 `sync_console.py alert` 自報 ClickUp（n8n errorWorkflow 看不見本機管線）。
+2. **每日靈感卡公告從未送達**：`Notify 全體 Channel` 用 HTTP Request + `clickUpOAuth2Api` 打 chat API，但**ClickUp OAuth 憑證被 n8n 禁止用於 HTTP Request 節點**，回 "This credential is configured to prevent use..."；因 onError 續行 → 執行標記成功。改用原生 ClickUp comment 節點留言於公告卡 `86eyhw996`（notifyAll）。恢復 chat 頻道需 Jesse 自建 Header Auth 憑證（token 不經對話）。
+3. **去重清單漏掉全部已發佈題目**：ClickUp `getAll` 預設不回 closed 任務，而「發佈完成」正是 closed → **發得越多、防重複記憶越短**（清單 17 項，7 篇已發佈全失蹤），8/6 因此又選出 Aziz《Modern Romance》。修：`filters.includeClosed=true`，清單回到 39 項並含全部已發佈（實測驗證）。
+- **另**：`Topic Scout (GPT)` 為 A/B 時代孤立殘留節點（無下游），OpenAI credits 用盡後每日 429 把成功的雷達標記為 error（假警報）→ 停用；Claude 單具配額補上調 2-4→4-6 並加題型分佈鐵則。
+- **教訓**：`onError: continueRegularOutput` 讓故障看起來像成功——凡是「該送出而沒送出」的節點，必須驗證回傳內容而非只看執行狀態。
