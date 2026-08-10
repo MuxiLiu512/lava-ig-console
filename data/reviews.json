@@ -315,6 +315,26 @@
       },
       "scope": null,
       "feedback": "Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
+    },
+    {
+      "id": "R-msnadkr8",
+      "post_id": "20260803-JohnGottman研",
+      "ts": "2026-08-10T21:47:47+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "b",
+        "3": "a",
+        "4": "a",
+        "5": "d",
+        "6": "e",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
