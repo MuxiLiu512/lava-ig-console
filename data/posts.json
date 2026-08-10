@@ -1308,7 +1308,7 @@
       "copy_choice": "claude",
       "render_note": "已渲染且無新變更",
       "qa": {
-        "ts": "2026-08-10T21:58:25+08:00",
+        "ts": "2026-08-10T22:10:08+08:00",
         "pass": true,
         "issues": [
           {
@@ -1320,8 +1320,8 @@
               5
             ],
             "severity": "warn",
-            "detail": "第2至5張全部採用「影視劇照＋左下角文字區塊」的相同排版公式：人物佔畫面上半、標題黃色加粗、內文白字左對齊、圖片來源標在左下角。連滑四張格式幾乎一模一樣，讀者在第3張就會產生視覺疲勞，滑動節奏完全平坦。",
-            "fix": "至少拆開其中一張改用非劇照素材。建議第3張（心理學數據）換成數據視覺化設計：深藍底色＋溫度計或情緒量表圖示＋大字數字（10–21°C），讓這張成為輪播的『呼吸點』；第5張（品牌主張）改用Lava品牌色塊滿版排版或app介面截圖，與劇照做出明確區隔。"
+            "detail": "第2至5張連續四張皆採用「電視劇劇照＋左下角標題文字區塊」的相同構圖公式：人物特寫或中景置於上半部、文字壓底部、背景均為中低彩度的室內或戶外散景。滑動時視覺幾乎沒有換氣感，節奏完全平掉。",
+            "fix": "至少拆開其中兩張：第3張（心理數據張）改用純色或紙質底圖搭配大字排版infographic風格，不用劇照；第5張（品牌邏輯張）改用Lava品牌色塊＋手機mockup或約會場景俯拍，讓資訊卡與劇照張形成明確的視覺分組。"
           },
           {
             "type": "monotone",
@@ -1329,11 +1329,12 @@
               1,
               2,
               3,
+              4,
               5
             ],
             "severity": "warn",
-            "detail": "除第4張（戶外日光劇照，相對明亮）與第6張（純黑底）之外，第1、2、3、5張底圖全屬低曝光暗調（深藍、深灰、暗棕），整篇明暗曲線呈『暗→暗→暗→亮→暗→黑』，缺乏高亮張作為視覺錨點，讀者長時間盯著暗畫面容易疲勞且記憶點模糊。",
-            "fix": "第3張或第5張擇一換成高亮底圖：例如第3張改用晴天城市街道仰角（色溫暖白、陽光溢出），呼應「陽光觸發血清素」文案，在暗調海中製造一個光感爆點，拉開全篇明暗節奏。"
+            "detail": "第1至5張底圖清一色是深藍灰／深棕暗調，整篇前五張幾乎沒有高亮或鮮明色彩的主圖面，只靠文字的黃色和橘紅色點綴。第6張突然跳成純黑，明暗對比雖然翻轉但缺乏過渡，整篇缺少一張真正明亮或中調的呼吸張。",
+            "fix": "在第4張或第5張插入一張以自然光拍攝的明亮咖啡廳或街道場景（搜圖關鍵字：'sunny taipei cafe couple bright window bokeh'），讓整篇從暗→亮→收尾黑，形成有起伏的明暗弧線。"
           },
           {
             "type": "composition",
@@ -1342,11 +1343,11 @@
               6
             ],
             "severity": "warn",
-            "detail": "第1張與第6張同為接近純色滿版背景（深藍漸層vs純黑），兩張都沒有人物、都高度倚賴文字，作為首尾呼應原本合理，但第1張內嵌的窗框小圖與第6張的App Store／Google Play badge都集中在畫面中上區，視覺重心位置雷同，滑到最後一張時沒有終結感的差異性。",
-            "fix": "第6張CTA版建議將App badge移至畫面下半、品牌大字往上拉，並在背景加入輕微紋理（如熔岩流或石紋低透明度疊圖），與第1張的純藍漸層做出質感區別，強化『這是終點、去下載』的視覺訊號。"
+            "detail": "第1張的內嵌深色小圖框與第6張的純黑滿版底色，兩張都是「幾乎全黑畫面＋白字」，雖然不相鄰但作為首尾造成視覺失憶——讀者翻回第一張與最後一張會誤以為是同一視覺系統，削弱封面的鉤子效果。",
+            "fix": "第1張封面建議保留但為內嵌小圖加一層半透明品牌色（Lava橘紅）暈染，讓封面在深色系裡仍有可辨識的色彩鉤點，與第6張純黑尾頁做出細微區分。"
           }
         ],
-        "rhythm": "整篇節奏是『暗封面→四張深色劇照→黑底CTA』，視覺幾乎全程低沉，中間缺少一張高亮或高飽和度的換氣張；劇照公式連用四張更讓輪播在第3張就失去驚喜感——至少要有一張打破劇照格式的設計張，才能讓讀者撐到最後的下載頁。"
+        "rhythm": "整篇節奏是『暗→暗→暗→暗→暗→黑』，五張劇照串連後讀者的眼睛沒有任何起伏點；建議在第3或第4張安排一張明調設計卡作為視覺換氣，整篇才會有『沉浸→數據衝擊→品牌收網』的三段式韻律。"
       }
     },
     {
@@ -3998,6 +3999,20 @@
               "kind": "still",
               "source_label": "Gottman Institute",
               "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-3b.webp",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-3c.webp",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
             }
           ],
           "final_src": "assets/20260803-JohnGottman研/final/slide-3.webp",
@@ -4252,29 +4267,20 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-10T21:55:01+08:00",
+      "rendered_at": "2026-08-10T22:07:51+08:00",
       "candidates_since": "2026-08-10T21:56:12+08:00",
       "image_credits": [
         "第 1 張：《Marriage Story》劇照，版權屬原權利方",
         "第 2 張：《Gone Girl》劇照，版權屬原權利方",
-        "第 3 張：Gottman Institute（截圖引用）",
+        "第 3 張：John Gottman 演講（截圖引用）（截圖引用）",
         "第 5 張：《Kramervs Kramer》劇照，版權屬原權利方",
         "第 6 張：《Lieto Me》劇照，版權屬原權利方"
       ],
       "copy_choice": "claude",
       "qa": {
-        "ts": "2026-08-10T21:58:57+08:00",
+        "ts": "2026-08-10T22:10:41+08:00",
         "pass": false,
         "issues": [
-          {
-            "type": "unreadable",
-            "slides": [
-              3
-            ],
-            "severity": "block",
-            "detail": "第3張底圖直接使用 Gottman Institute 官網截圖，畫面中有大量英文正文、側欄連結、按鈕等網頁元素與疊加的中文標題互相干擾，中下段文字（尤其「結論：吵架頻率不重要，吵架的方式才是」那行）壓在網頁段落文字上，對比嚴重不足，實際閱讀時根本難以一眼分辨哪些字是輪播內文、哪些是底圖的英文。",
-            "fix": "換掉網頁截圖底圖。改用純色深背景（品牌黑或深炭灰）加一張 Gottman 在白板或講台前演講的單人黑白照（搜尋關鍵字：John Gottman lecture podium black and white portrait），或做成全資訊圖表卡（深底白字），讓研究流程數字成為主視覺，完全避開混雜的網頁排版。"
-          },
           {
             "type": "composition",
             "slides": [
@@ -4283,8 +4289,29 @@
               5
             ],
             "severity": "warn",
-            "detail": "第1、4、5張均為「暗調電影感底圖＋白色大標題＋左對齊內文」的相同構圖公式，三張色溫相近（暖棕偏暗），文字區塊落點幾乎一致（左下四分之三處），連續滑過時節奏停滯，感受不到視覺換氣。",
-            "fix": "第5張（輕蔑vs批評對比說明）是最適合改成亮底資訊卡的一張：白底＋兩欄對比表格（左欄批評／右欄輕蔑，用紅色標示攻擊點），搭配簡單線條插圖，讓整篇在暗-暗-亮-暗-亮-暗-亮-亮-純黑之間形成明暗起伏。"
+            "detail": "第1張（Marriage Story 情侶臥室暗調）、第4張（AI生成情侶客廳暗調）、第5張（Kramer vs Kramer 情侶近景暗調）三張同為「兩人對峙／親密但張力」的構圖，色調同為橘褐暗系，連續滑動時視覺主體幾乎無差異，節奏停滯。",
+            "fix": "第5張建議換成純圖形／資訊視覺化設計（例如：白底黑字對照表，左欄『批評』右欄『輕蔑』，用色塊區隔），完全跳出電影劇照序列，製造視覺換氣點。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              4,
+              5,
+              8
+            ],
+            "severity": "warn",
+            "detail": "第1、4、5、8張底圖均為低飽和暗調攝影，第8張雖為靜物（書本+馬克杯）但色調仍沿用同一橘褐暗系，整篇暗景佔比過高，僅第2張（Gone Girl較亮）、第3張（紫藍舞台）、第7張（戶外咖啡廳亮調）提供對比，但被夾在暗系張之間稀釋。",
+            "fix": "第8張靜物建議改為日光充足的明亮桌面（搜圖關鍵字：bright minimalist notebook table morning light overhead shot），或直接做純白底圖文字版，強化明暗起伏節奏。"
+          },
+          {
+            "type": "credit_leak",
+            "slides": [
+              3
+            ],
+            "severity": "block",
+            "detail": "第3張圖片來源標示為「John Gottman 演講（截圖引用）（截圖引用）」——『（截圖引用）』出現兩次，明顯為複製貼上殘留，且『截圖引用』本身不是合法授權聲明，對外發布存在版權風險與版面不專業問題。",
+            "fix": "確認此圖實際授權來源（TED官方／YouTube公開演講截圖是否符合fair use）並修正為單一正確出處，例如「圖片來源：TEDx Talks，YouTube公開影片截圖」，刪除重複括號。"
           },
           {
             "type": "monotone",
@@ -4297,566 +4324,11 @@
               8
             ],
             "severity": "warn",
-            "detail": "全篇九張中有六張底圖為暗調（1、2、4、5、6、8），亮底僅第3張（但因網頁截圖問題已須換掉）、第7張（咖啡廳）、第9張（純黑）。整體滑動體驗沉重壓抑，缺少明亮呼吸點，與第7張輕快笑臉的情緒對比過於孤立。",
-            "fix": "建議將第8張（行動建議卡）改為米白或暖米底色搭配手寫感插畫（搜尋：notebook open flat lay warm light minimal），呼應「你現在可以怎麼做」的實用暖色調，打破連續暗張的壓迫感，並在第9張CTA前製造情緒回升。"
+            "detail": "全篇9張中有6張底圖為深褐／深灰暗調，整體輪播視覺重心持續下沉，缺乏明暗起伏；僅第3張（藍紫舞台）和第7張（戶外亮調）形成局部亮點，但比例嚴重失衡。",
+            "fix": "建議將第8張或第5張其中一張改為高亮度底圖或純色系設計稿（白底＋品牌橘紅色塊），在篇幅後半製造一次明確的明調呼吸點，避免讀者視覺疲勞提前放棄滑動。"
           }
         ],
-        "rhythm": "整篇以電影劇照暗調為基調建立了情緒厚度，但六暗二亮一純黑的分佈讓後半段（第5–8張）幾乎連成一片暗區，滑動節奏在進入核心概念時反而最沉悶；第3張網頁截圖底圖是最急迫的可讀性地雷，必須在上線前替換。"
-      }
-    },
-    {
-      "id": "20260803-川口春奈效應為什麼日系清",
-      "topic": "川口春奈效應：為什麼日系清冷感正在成為台灣約會市場的新審美標準？",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eyb9cap",
-      "created_at": null,
-      "caption": "最近讓台灣人最心動的臉，都有一個共同點：她不太需要你喜歡她。\n\n如果清冷感吸引力的核心是「有自己世界的人」，那最有效的見面，從來都不是在螢幕後面用文字慢慢猜，而是走出來，讓兩個各自有世界的人真實地站在一起。\nLava 設計的起點就是線下見面優先，不是因為浪漫，而是因為在過度表演的時代，真實存在本身就是最強的信號。\n\n#交友軟體 #約會 #台灣約會 #川口春奈 #塩顔 #清冷感 #日系審美 #約會趨勢 #戀愛心理學 #吸引力法則 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣單身 #鹽系",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-person8c943",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1b.webp",
-              "kind": "still",
-              "source_label": "b-collage",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-person57951",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1d.webp",
-              "kind": "still",
-              "source_label": "川口春奈Kawaguchi Haruna",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Kawaguchi Haruna",
-              "source_kind": "WM"
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-1.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-1.jpg",
-          "heading": "欸，你有沒有發現——",
-          "display_copy": "欸，你有沒有\n發現這件事\n\n最近讓台灣人最\n心動的臉，都不太\n需要你喜歡她",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-moodf225e",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-mood3efcd",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Midnight Diner Tokyo Stories",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Midnight Diner Tokyo Stories",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Midnight Diner Tokyo Stories",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2f.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2g.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2h.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-2.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-2.jpg",
-          "heading": "那種心動，說不清楚在哪裡",
-          "display_copy": "你滑過太多精心策劃的笑容、完美打光的自拍——某一天看到一張臉，眼神有點遠、表情不太熱情，就這樣安靜地存在著，你竟然停下來多看了兩秒。\n\n這種感覺不是被攻略，是被【吸引】，差別在於主動權不知道什麼時候悄悄換手了。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3a.webp",
-              "kind": "still",
-              "source_label": "a-person51557",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3b.webp",
-              "kind": "still",
-              "source_label": "b-personace86",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3c.webp",
-              "kind": "still",
-              "source_label": "中学聖日記",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3d.webp",
-              "kind": "still",
-              "source_label": "中学聖日記",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3e.webp",
-              "kind": "still",
-              "source_label": "中学聖日記",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-3.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-3.jpg",
-          "heading": "這種氣質有個日文名字：塩顔",
-          "display_copy": "「塩顔」從「醬油顏」派生而來，醬油顏 1980 年代後半已在日本流行，塩顔比它更清淡——【鹽顏清淡，有味但不搶戲】。\n\n2013 年，坂口健太郎讓「鹽系男子」滲透日本主流審美：靜靜站著就很賞心悅目，不需表演，不需過多話語。\n\n川口春奈是女性版最廣泛討論的當代代表。她 2007 年以《nicola》第 11 屆選秀冠軍出道，真正讓人記住的，是那雙距離感恰到好處的眼睛。\n\n資料來源：Pixiv 百科事典「塩顔」詞條；Wazaiii「鹽顏男神坂口健太郎」；Cosmopolitan HK 調味料顏圖鑑",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mooda3a45",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4b.webp",
-              "kind": "still",
-              "source_label": "b-mood5be2b",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4c.webp",
-              "kind": "still",
-              "source_label": "An"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4d.webp",
-              "kind": "still",
-              "source_label": "An"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4e.webp",
-              "kind": "still",
-              "source_label": "An"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Suits",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Suits"
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-4.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-4.jpg",
-          "heading": "科學怎麼說：距離感為什麼反而更吸引人？",
-          "display_copy": "清冷感不是萬用公式，它是一種【放大器】。\n\n2014 年，史丹佛商學院研究（Dai, Dong & Jia，*Journal of Experimental Psychology: General*, Vol.143 Issue 2）發現：距離感會提升對方的「wanting（想要）」，但同時可能降低「liking（喜歡）」——兩者並不等號。\n\n〖關鍵前提：對方必須已對你有一定程度的心理承諾，清冷感才會奏效。〗\n\n若對方根本無動於衷，距離感反而讓兩者雙雙歸零。\n\n資料來源：Dai, Dong & Jia (2014), *Journal of Experimental Psychology: General*, Vol.143(2). Stanford GSB",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-moodb5de8",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5b.webp",
-              "kind": "still",
-              "source_label": "組圖：",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5c.webp",
-              "kind": "still",
-              "source_label": "c-moodd03ce",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5d.webp",
-              "kind": "still",
-              "source_label": "My Brilliant Friend"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5e.webp",
-              "kind": "still",
-              "source_label": "My Brilliant Friend"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5f.webp",
-              "kind": "still",
-              "source_label": "My Brilliant Friend"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5i.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-5.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-5.jpg",
-          "heading": "清冷感的經濟學：稀缺性讓人更想靠近",
-          "display_copy": "清冷感的本質，是一種【降低感知可及性】的氣質信號。\n\n2013 年，Jonason & Li（*European Journal of Personality*）透過 N=270 與 N=425 兩組實驗發現：當一個人看起來不那麼「隨時可得」，對方願意投入的時間與心力反而顯著上升。\n\n它在說的不是「我不在意你」，而是：\n「我有自己的世界，你不是理所當然能進來的。」\n\n資料來源：Jonason & Li (2013), *European Journal of Personality*. SAGE Journals",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood9a2c0",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-moodc71ac",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6c.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6d.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6e.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6f.webp",
-              "kind": "still",
-              "source_label": "Terrace House Tokyo20192020",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6g.webp",
-              "kind": "still",
-              "source_label": "Terrace House Tokyo20192020",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6h.webp",
-              "kind": "still",
-              "source_label": "Terrace House Tokyo20192020",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-6.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-6.jpg",
-          "heading": "台灣在地轉向：大家真的累了",
-          "display_copy": "【64%】的受訪者說，2025 年約會最需要的元素是「情緒上的誠實」。（Tinder 2025 全球調查）\n\nTinder CMO Melissa Hobley 指出：當年輕世代同時面對職涯焦慮與氣候危機，感情如果再變成高耗能戰場，大家只會更想逃離。\n\nGQ Taiwan 趨勢觀察：從 2024 年的 Dating for the Plot，到 2025 年的 Situationship 混亂期——台灣約會審美正在發生一場安靜的革命，人們開始渴望「有自己世界的人」。\n\n資料來源：Tinder Future of Dating 2025；GQ Taiwan 約會趨勢報導",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-moodc6d92",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mooddd078",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Norwegian Wood"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Norwegian Wood"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Norwegian Wood"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7f.webp",
-              "kind": "still",
-              "source_label": "Lostin Translation"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7g.webp",
-              "kind": "still",
-              "source_label": "Lostin Translation"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7h.webp",
-              "kind": "still",
-              "source_label": "Lostin Translation"
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-7.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-7.jpg",
-          "heading": "Lava 的邏輯，其實一開始就在這裡",
-          "display_copy": "清冷感吸引力的核心是：「我有自己的世界，你不是理所當然能進來的。」\n\n但有自己世界的人，最終還是要【走出來】才能被看見。\n\nLava 設計的起點是線下見面優先——不是因為浪漫，而是因為在過度表演的時代，〖真實存在本身就是最強的吸引力信號〗。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood40797",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-moodce004",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8g.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8h.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            }
-          ],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-8.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-8.jpg",
-          "heading": "所以，你怎麼成為那個「有自己世界的人」？",
-          "display_copy": "清冷感的底層邏輯，是真的有東西在裡面。\n\n三個可以實踐的方向：\n\n① 【不急著填滿沉默】——讓對話有留白，沉默本身也是信號。\n\n② 【對自己的喜好誠實】——不為了討好對方臨時改變立場，立場本身就是磁力。\n\n③ 【線上鋪陳越少，線下反差越強】——在見面前不要透支自己的存在感，讓真實出現的那一刻有重量。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-9.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-9.jpg",
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-10T21:55:12+08:00",
-      "candidates_since": "2026-08-03T14:18:47+08:00",
-      "image_credits": [
-        "第 3 張：《中学聖日記》劇照，版權屬原權利方",
-        "第 4 張：《An》劇照，版權屬原權利方",
-        "第 5 張：《Midnightin Paris》劇照，版權屬原權利方",
-        "第 6 張：《Terrace House Tokyo20192020》劇照，版權屬原權利方",
-        "第 7 張：《Norwegian Wood》劇照，版權屬原權利方",
-        "第 8 張：《Before Sunset》劇照，版權屬原權利方"
-      ],
-      "copy_choice": "claude",
-      "qa": {
-        "ts": "2026-08-10T21:59:34+08:00",
-        "pass": false,
-        "issues": [
-          {
-            "type": "composition",
-            "slides": [
-              4,
-              5,
-              6
-            ],
-            "severity": "warn",
-            "detail": "第4、5、6張連續三張都是「深色底圖＋上半部影像模糊壓暗＋下半部大段白字內文」的相同版式，且三張背景色調同屬暖褐／冷黑暗調，滑動時幾乎感受不到節奏切換，視覺完全停滯。",
-            "fix": "建議其中一張（最適合換的是第5張，內容是稀缺性經濟學）改為高對比淺底版式：用一張日光下的空曠城市街道或咖啡廳窗邊空位的俯拍（搜圖關鍵字：「empty café window seat daylight minimal Tokyo」），文字改深色壓淺底，製造一次明暗呼吸。"
-          },
-          {
-            "type": "composition",
-            "slides": [
-              7,
-              8
-            ],
-            "severity": "warn",
-            "detail": "第7張《Norwegian Wood》與第8張《Before Sunset》連續兩張都是「戶外綠色植物背景＋兩人極近距離臉部特寫、構圖居中偏上、下方壓文字區塊」，色調同屬自然光綠褐系，滑動時像看同一場景的兩個鏡頭，沒有資訊層次的跳躍。",
-            "fix": "第8張建議換成非人物的城市場景圖：例如巴黎或京都街道夜景、一個人走在光暈路燈下的背影（搜圖關鍵字：「solitary person walking night street bokeh warm light cinematic」），呼應「線下真實出現」的文案，同時拉開與第7張的距離。"
-          },
-          {
-            "type": "monotone",
-            "slides": [
-              2,
-              3,
-              4,
-              5,
-              6
-            ],
-            "severity": "warn",
-            "detail": "第2至6張連續五張整體亮度都偏低（畫面主體均被壓暗至30–50%亮度區間），加上第9張是純黑底，整篇暗張比例達6/9，缺乏明亮插卡來製造視覺起伏與閱讀喘息點。",
-            "fix": "建議在第3張（塩顔定義說明頁）或第5張（稀缺性經濟學）其中一張，改用淺米白或霧灰底色的純排版卡（無照片），以簡潔的字體排版呈現核心金句，製造全篇唯一的「亮卡」，整組明暗節奏立刻活起來。"
-          },
-          {
-            "type": "unreadable",
-            "slides": [
-              3
-            ],
-            "severity": "block",
-            "detail": "第3張內文出現多處空白方框「「　」」，推測是日文字「塩」字或特殊字符在當前字型環境下無法渲染，讀者看到的是破字，核心概念名詞直接消失，整張邏輯斷裂。",
-            "fix": "將「塩顔」二字改用圖片嵌字（將該詞以向量圖輸出後貼回）或換用支援日文字元的字型（如Noto Sans JP、源ノ角ゴシック），確保「塩」字在所有裝置上可見；同時檢查「口健太郎」的「口」是否也是同樣的缺字問題（正確漢字應為「坂口健太郎」）。"
-          }
-        ],
-        "rhythm": "整篇開場第1張用獨照人物製造懸念、第2張切入劇照雙人氛圍，前兩張節奏尚可；但第3張起連續六張幾乎清一色暗底壓字版式，既無明暗對比的呼吸點、也無構圖變化的視覺重音，整組滑下來像一首沒有副歌的歌——建議在第5或第6張插入一張純排版亮卡，結尾第9張純黑CTA才能真正形成「收束感」而非「又一張暗卡」。"
+        "rhythm": "整篇節奏呈現『暗→暗→藍紫→暗→暗→暗→亮→暗→純黑』的U型塌陷結構，第3張的藍紫和第7張的暖亮雖各自成立，但被大量暗調電影劇照淹沒，中後段（第4至第8張）連續五張無明暗換氣，滑動體驗沉悶；CTA第9張純黑雖風格乾淨，但在整篇已過度黑暗的基礎上更無收束感，建議在第5或第8張強制插入一張高對比亮色設計稿打破節奏。"
       }
     },
     {
@@ -5415,7 +4887,7 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-10T21:55:24+08:00",
+      "rendered_at": "2026-08-10T22:08:26+08:00",
       "candidates_since": "2026-08-10T21:57:51+08:00",
       "image_credits": [
         "第 2 張：《Modern Love》劇照，版權屬原權利方",
@@ -5425,7 +4897,7 @@
       ],
       "copy_choice": "claude",
       "qa": {
-        "ts": "2026-08-10T22:00:02+08:00",
+        "ts": "2026-08-10T22:11:15+08:00",
         "pass": false,
         "issues": [
           {
@@ -5437,8 +4909,18 @@
               8
             ],
             "severity": "block",
-            "detail": "四張底圖都是「一男一女近距離對坐／依偎」的情侶場景：第1張餐廳對坐、第2張Modern Love劇照握手、第7張Before Sunset依偎、第8張About Time額頭相碰。雖然劇照來源不同，但視覺主體完全同類——男女二人臉部特寫或半身，每張給讀者的新資訊幾乎為零，滑過去像同一張圖換了濾鏡。",
-            "fix": "只保留一張情侶劇照（建議留第2張Modern Love，情緒最貼切）。第1張換成「餐桌特寫：兩支手機螢幕朝下放在桌角，旁邊是餐具」的靜物構圖（搜尋關鍵字：overhead shot two phones face-down restaurant table date）；第7張換成Lava app介面截圖或品牌視覺排版圖，突出產品；第8張換成「手寫三條行動清單 + 咖啡杯」俯視桌面插圖，與文字checklist內容呼應（搜尋：top view handwritten list coffee cup date tips flat lay）。"
+            "detail": "四張皆以「異性情侶／男女近距離臉部對視或共處」為主體：第1張餐廳約會對坐、第2張Modern Love情侶手握、第7張Before Sunset情侶依偎、第8張About Time情侶額頭相觸。雖然來源劇照不同，但視覺語言完全相同——深色背景＋男女臉部特寫＋曖昧光線，讀者滑過去感覺是同一張圖換了濾鏡。",
+            "fix": "保留第1張作封面情境、第8張作收尾行動呼籲。第2張換成「一個人獨坐餐廳、對面空位擺著一支螢幕朝上的手機」的俯拍靜物照，強調孤獨感而非浪漫感；第7張換成Lava app介面截圖或品牌識別視覺（黑底橘字的產品畫面），給整篇唯一一張「產品臉」，與前後人物照拉開距離。"
+          },
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              1,
+              3
+            ],
+            "severity": "block",
+            "detail": "第1張封面底圖可見桌上有手機（雖非主體），第3張則以「咖啡廳桌上的手機」作為唯一主體特寫。兩張都在傳達「手機放桌上」的畫面，視覺資訊重疊。",
+            "fix": "第3張改用資訊圖表設計：白底或深色底，畫一張示意圖——左格「桌上有手機」對話框短淺、右格「桌上無手機」對話框深長，用圖解呈現Misra實驗結果，徹底跳脫攝影圖庫風格，也讓整篇出現第一張純設計頁。"
           },
           {
             "type": "composition",
@@ -5449,8 +4931,8 @@
               8
             ],
             "severity": "warn",
-            "detail": "第1、2、7、8張構圖結構幾乎一致：上半部暗調人像背景、下半部黃白文字區塊，四張連續滑動完全沒有視覺節奏切換。",
-            "fix": "在第7或第8張導入純色/品牌色背景排版卡（如全黑底+大白字），製造明暗節奏斷點，避免八張裡有一半是同構圖。"
+            "detail": "第1、2、7、8張構圖幾乎一致：人物佔上半區60-70%、文字壓在下半區、底部加深色漸層蓋字。四張連續或近連續出現時，滑動節奏如同原地踏步。",
+            "fix": "第2張改為純文字+大引號設計頁（黑底白字黃色引號，無攝影圖）；第7張改為產品截圖頁（見上條建議）。讓輪播節奏呈現：攝影→文字→攝影→圖表→活動照→數據→產品→動作→CTA的交替韻律。"
           },
           {
             "type": "monotone",
@@ -5463,11 +4945,558 @@
               8
             ],
             "severity": "warn",
-            "detail": "除第5張（演唱會彩色舞台燈光）和第6張（草地黃昏暖光）外，其餘六張底圖均為暗調低飽和，整篇幾乎壓在暗部，缺少明亮或高對比的視覺呼吸點。",
-            "fix": "第3張（手機放桌上）建議換成日光咖啡廳環境的明亮版本，或改用白底資訊圖表呈現Misra實驗數據，拉出一張亮卡製造節奏起伏（搜尋：bright cafe table smartphone flat lay daylight minimal）。"
+            "detail": "六張底圖均為暗調（深棕、深黑、深紅），僅第5張演唱會有強烈打光色彩、第6張有戶外黃金時刻暖光。整篇亮部比例嚴重不足，滑到中段讀者視覺已疲勞。",
+            "fix": "第3張換為前述白底資訊圖表；第4張（Sherry Turkle講座照）底部漸層過重，可改用明亮的演講廳全景照並提高曝光，或換成淺灰底的引言卡設計（大字排版「Absent Presence」），打破連續暗調。"
           }
         ],
-        "rhythm": "九張中有四張情侶人像＋暗調反覆出現，節奏像一首歌副歌唱了四遍；第5張演唱會彩光和第6張黃昏草地是僅有的兩個視覺呼吸點，第9張純黑收尾尚可，但中段1→2→3→4的暗調連發會讓讀者在第3張就已視覺疲勞，需插入至少一張亮色或純排版卡打散節奏。"
+        "rhythm": "整篇節奏呈「暗—暗—暗—暗—亮—亮—暗—暗—純黑」，高潮（第5、6張）夾在中後段一閃而過，首尾四張幾乎同色調同構圖，建議將至少一張明亮的設計頁移至第3或第4位，製造視覺呼吸點。"
+      }
+    },
+    {
+      "id": "20260803-川口春奈效應為什麼日系清",
+      "topic": "川口春奈效應：為什麼日系清冷感正在成為台灣約會市場的新審美標準？",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eyb9cap",
+      "created_at": null,
+      "caption": "最近讓台灣人最心動的臉，都有一個共同點：她不太需要你喜歡她。\n\n如果清冷感吸引力的核心是「有自己世界的人」，那最有效的見面，從來都不是在螢幕後面用文字慢慢猜，而是走出來，讓兩個各自有世界的人真實地站在一起。\nLava 設計的起點就是線下見面優先，不是因為浪漫，而是因為在過度表演的時代，真實存在本身就是最強的信號。\n\n#交友軟體 #約會 #台灣約會 #川口春奈 #塩顔 #清冷感 #日系審美 #約會趨勢 #戀愛心理學 #吸引力法則 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣單身 #鹽系",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-person8c943",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1b.webp",
+              "kind": "still",
+              "source_label": "b-collage",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-person57951",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1d.webp",
+              "kind": "still",
+              "source_label": "川口春奈Kawaguchi Haruna",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Kawaguchi Haruna",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-1.jpg",
+          "heading": "欸，你有沒有發現——",
+          "display_copy": "欸，你有沒有\n發現這件事\n\n最近讓台灣人最\n心動的臉，都不太\n需要你喜歡她",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-moodf225e",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood3efcd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Midnight Diner Tokyo Stories",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Midnight Diner Tokyo Stories",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Midnight Diner Tokyo Stories",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2f.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2g.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-2h.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-2.jpg",
+          "heading": "那種心動，說不清楚在哪裡",
+          "display_copy": "你滑過太多精心策劃的笑容、完美打光的自拍——某一天看到一張臉，眼神有點遠、表情不太熱情，就這樣安靜地存在著，你竟然停下來多看了兩秒。\n\n這種感覺不是被攻略，是被【吸引】，差別在於主動權不知道什麼時候悄悄換手了。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3a.webp",
+              "kind": "still",
+              "source_label": "a-person51557",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3b.webp",
+              "kind": "still",
+              "source_label": "b-personace86",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3c.webp",
+              "kind": "still",
+              "source_label": "中学聖日記",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3d.webp",
+              "kind": "still",
+              "source_label": "中学聖日記",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-3e.webp",
+              "kind": "still",
+              "source_label": "中学聖日記",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-3.jpg",
+          "heading": "這種氣質有個日文名字：塩顔",
+          "display_copy": "「塩顔」從「醬油顏」派生而來，醬油顏 1980 年代後半已在日本流行，塩顔比它更清淡——【鹽顏清淡，有味但不搶戲】。\n\n2013 年，坂口健太郎讓「鹽系男子」滲透日本主流審美：靜靜站著就很賞心悅目，不需表演，不需過多話語。\n\n川口春奈是女性版最廣泛討論的當代代表。她 2007 年以《nicola》第 11 屆選秀冠軍出道，真正讓人記住的，是那雙距離感恰到好處的眼睛。\n\n資料來源：Pixiv 百科事典「塩顔」詞條；Wazaiii「鹽顏男神坂口健太郎」；Cosmopolitan HK 調味料顏圖鑑",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4a.webp",
+              "kind": "still",
+              "source_label": "a-mooda3a45",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4b.webp",
+              "kind": "still",
+              "source_label": "b-mood5be2b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4c.webp",
+              "kind": "still",
+              "source_label": "An"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4d.webp",
+              "kind": "still",
+              "source_label": "An"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4e.webp",
+              "kind": "still",
+              "source_label": "An"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Suits",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-4.jpg",
+          "heading": "科學怎麼說：距離感為什麼反而更吸引人？",
+          "display_copy": "清冷感不是萬用公式，它是一種【放大器】。\n\n2014 年，史丹佛商學院研究（Dai, Dong & Jia，*Journal of Experimental Psychology: General*, Vol.143 Issue 2）發現：距離感會提升對方的「wanting（想要）」，但同時可能降低「liking（喜歡）」——兩者並不等號。\n\n〖關鍵前提：對方必須已對你有一定程度的心理承諾，清冷感才會奏效。〗\n\n若對方根本無動於衷，距離感反而讓兩者雙雙歸零。\n\n資料來源：Dai, Dong & Jia (2014), *Journal of Experimental Psychology: General*, Vol.143(2). Stanford GSB",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-moodb5de8",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5b.webp",
+              "kind": "still",
+              "source_label": "組圖：",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5c.webp",
+              "kind": "still",
+              "source_label": "c-moodd03ce",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5d.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5e.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5f.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-5i.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-5.jpg",
+          "heading": "清冷感的經濟學：稀缺性讓人更想靠近",
+          "display_copy": "清冷感的本質，是一種【降低感知可及性】的氣質信號。\n\n2013 年，Jonason & Li（*European Journal of Personality*）透過 N=270 與 N=425 兩組實驗發現：當一個人看起來不那麼「隨時可得」，對方願意投入的時間與心力反而顯著上升。\n\n它在說的不是「我不在意你」，而是：\n「我有自己的世界，你不是理所當然能進來的。」\n\n資料來源：Jonason & Li (2013), *European Journal of Personality*. SAGE Journals",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood9a2c0",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-moodc71ac",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6c.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6d.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6e.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6f.webp",
+              "kind": "still",
+              "source_label": "Terrace House Tokyo20192020",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6g.webp",
+              "kind": "still",
+              "source_label": "Terrace House Tokyo20192020",
+              "low_q": true
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-6h.webp",
+              "kind": "still",
+              "source_label": "Terrace House Tokyo20192020",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-6.jpg",
+          "heading": "台灣在地轉向：大家真的累了",
+          "display_copy": "【64%】的受訪者說，2025 年約會最需要的元素是「情緒上的誠實」。（Tinder 2025 全球調查）\n\nTinder CMO Melissa Hobley 指出：當年輕世代同時面對職涯焦慮與氣候危機，感情如果再變成高耗能戰場，大家只會更想逃離。\n\nGQ Taiwan 趨勢觀察：從 2024 年的 Dating for the Plot，到 2025 年的 Situationship 混亂期——台灣約會審美正在發生一場安靜的革命，人們開始渴望「有自己世界的人」。\n\n資料來源：Tinder Future of Dating 2025；GQ Taiwan 約會趨勢報導",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-moodc6d92",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mooddd078",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Norwegian Wood"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Norwegian Wood"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Norwegian Wood"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7f.webp",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7g.webp",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-7h.webp",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-7.jpg",
+          "heading": "Lava 的邏輯，其實一開始就在這裡",
+          "display_copy": "清冷感吸引力的核心是：「我有自己的世界，你不是理所當然能進來的。」\n\n但有自己世界的人，最終還是要【走出來】才能被看見。\n\nLava 設計的起點是線下見面優先——不是因為浪漫，而是因為在過度表演的時代，〖真實存在本身就是最強的吸引力信號〗。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood40797",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-moodce004",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-川口春奈效應為什麼日系清/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-8.jpg",
+          "heading": "所以，你怎麼成為那個「有自己世界的人」？",
+          "display_copy": "清冷感的底層邏輯，是真的有東西在裡面。\n\n三個可以實踐的方向：\n\n① 【不急著填滿沉默】——讓對話有留白，沉默本身也是信號。\n\n② 【對自己的喜好誠實】——不為了討好對方臨時改變立場，立場本身就是磁力。\n\n③ 【線上鋪陳越少，線下反差越強】——在見面前不要透支自己的存在感，讓真實出現的那一刻有重量。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-川口春奈效應為什麼日系清/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E5%B7%9D%E5%8F%A3%E6%98%A5%E5%A5%88%E6%95%88%E6%87%89%E7%82%BA%E4%BB%80%E9%BA%BC%E6%97%A5%E7%B3%BB%E6%B8%85/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-10T22:09:11+08:00",
+      "candidates_since": "2026-08-03T14:18:47+08:00",
+      "image_credits": [
+        "第 3 張：《中学聖日記》劇照，版權屬原權利方",
+        "第 4 張：《An》劇照，版權屬原權利方",
+        "第 5 張：《Midnightin Paris》劇照，版權屬原權利方",
+        "第 6 張：《Terrace House Tokyo20192020》劇照，版權屬原權利方",
+        "第 7 張：《Norwegian Wood》劇照，版權屬原權利方",
+        "第 8 張：《Before Sunset》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude",
+      "qa": {
+        "ts": "2026-08-10T22:11:45+08:00",
+        "pass": true,
+        "issues": [
+          {
+            "type": "composition",
+            "slides": [
+              3,
+              4,
+              5,
+              6
+            ],
+            "severity": "warn",
+            "detail": "第3到第6張連續四張的版面結構幾乎一模一樣：上半區壓暗人物照、下半區白底黑字文字區塊，文字量接近、字級相仿、排版邏輯相同。滑動時毫無節奏感，讀者會以為停在同一張。",
+            "fix": "至少拆解其中兩張的版面邏輯：例如第4張改成全版深色底+大字排版（無人物照，純文字氛圍張），或第5張改成左右分欄構圖，用橫向電影截圖當滿版背景並壓淡至20%，讓文字浮在其上；總之需要破掉「上圖下文」的重複節奏。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              7,
+              8
+            ],
+            "severity": "warn",
+            "detail": "第7張《Norwegian Wood》情侶近景＋第8張《Before Sunset》情侶近景，同樣是戶外綠色樹木背景、同樣是兩人靠近的臉部特寫、同樣是暖色系暗調、同樣下半段文字排版，連續兩張看起來像同一部電影的不同幀。",
+            "fix": "第8張換掉圖片，改用非情侶的單人場景，例如：一個人坐在咖啡廳靠窗座位望向窗外的街道（城市日景，冷色調），呼應『有自己世界的人』的獨立感；搜圖關鍵字建議：'person alone cafe window city street cold tone film still'。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "severity": "warn",
+            "detail": "第2至第6張連續五張幾乎全是暗調（深藍、深棕、深灰底），整段中間區域明暗毫無起伏，閱讀疲勞感高。第1張稍亮、第9張純黑，全篇都沒有一張高亮度或高對比跳脫張。",
+            "fix": "在第4或第5張安排一張視覺上明顯偏亮的畫面作為節奏呼吸點，例如：白天自然光下的淺色場景（米白牆面、灑落日光的木質桌面、或空曠的早晨街道），讓眼睛有一個重置點；搜圖關鍵字：'minimalist morning light cafe table warm white sunlight film photography'。"
+          }
+        ],
+        "rhythm": "整篇節奏問題集中在中段第3–6張：相同版式堆疊四連張形成視覺黑洞，讀者滑過去只會感覺『還在同一張』；第7–8張情侶照連發又製造第二個撞衫點；建議全篇在第4或第5張插入一個版式與明度都截然不同的『呼吸張』，讓輪播有前—中—後三段明確的視覺節拍。"
       }
     }
   ]

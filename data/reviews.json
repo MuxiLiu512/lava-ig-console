@@ -375,6 +375,24 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": "claude"
+    },
+    {
+      "id": "R-fix-gottman-s3",
+      "post_id": "20260803-JohnGottman研",
+      "ts": "2026-08-10T22:07:38+08:00",
+      "decision": "approve",
+      "scope": null,
+      "slide_choices": {
+        "1": "e",
+        "2": "b",
+        "3": "b",
+        "4": "a",
+        "5": "d",
+        "6": "e",
+        "7": "a",
+        "8": "a"
+      },
+      "feedback": "slide3 原候選僅 1 張（Gottman 官網截圖，中文壓在英文正文上不可讀，成篇總檢 block）。補抓 person 素材後改用講台照；Jesse 可在操控室改選其他候選。"
     }
   ]
 }
