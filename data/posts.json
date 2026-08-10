@@ -1308,8 +1308,8 @@
       "copy_choice": "claude",
       "render_note": "已渲染且無新變更",
       "qa": {
-        "ts": "2026-08-10T22:10:08+08:00",
-        "pass": true,
+        "ts": "2026-08-10T22:17:09+08:00",
+        "pass": false,
         "issues": [
           {
             "type": "composition",
@@ -1320,8 +1320,8 @@
               5
             ],
             "severity": "warn",
-            "detail": "第2至5張連續四張皆採用「電視劇劇照＋左下角標題文字區塊」的相同構圖公式：人物特寫或中景置於上半部、文字壓底部、背景均為中低彩度的室內或戶外散景。滑動時視覺幾乎沒有換氣感，節奏完全平掉。",
-            "fix": "至少拆開其中兩張：第3張（心理數據張）改用純色或紙質底圖搭配大字排版infographic風格，不用劇照；第5張（品牌邏輯張）改用Lava品牌色塊＋手機mockup或約會場景俯拍，讓資訊卡與劇照張形成明確的視覺分組。"
+            "detail": "第2～5張全部採用「電視劇劇照做滿版底圖＋左下角黃色大標題＋白色內文」的相同版型，且四張底圖皆為室內或半室外、人物中景／近景，色調同屬暗調暖棕／灰藍系；連續四張滑過去節奏完全沒有換氣，讀者視覺疲勞。",
+            "fix": "至少拆解其中一張：建議第3張（心理學數據）改用純排版數據視覺化（infographic風格，亮底深字，例如溫度計或色塊對比圖示），或第5張（品牌邏輯）換成Lava app實機畫面截圖做底，讓「劇照敘事區」與「品牌主張區」有明確視覺切換。"
           },
           {
             "type": "monotone",
@@ -1333,21 +1333,23 @@
               5
             ],
             "severity": "warn",
-            "detail": "第1至5張底圖清一色是深藍灰／深棕暗調，整篇前五張幾乎沒有高亮或鮮明色彩的主圖面，只靠文字的黃色和橘紅色點綴。第6張突然跳成純黑，明暗對比雖然翻轉但缺乏過渡，整篇缺少一張真正明亮或中調的呼吸張。",
-            "fix": "在第4張或第5張插入一張以自然光拍攝的明亮咖啡廳或街道場景（搜圖關鍵字：'sunny taipei cafe couple bright window bokeh'），讓整篇從暗→亮→收尾黑，形成有起伏的明暗弧線。"
+            "detail": "第1～5張整體偏暗（深藍、深灰、暗棕），直到第6張才跳成全黑底。全篇缺少一張明亮或高彩度的喘息點，讀者在IG快速滑動時辨識度下降，且與Lava品牌橘紅能量感脫節。",
+            "fix": "在第3或第4張插入一張高亮度底圖：例如晴天午後咖啡廳窗邊俯拍（自然光打亮木紋桌面＋一杯咖啡），或純白底搭配大號橘紅數據字排版，製造明暗對比節奏。"
           },
           {
-            "type": "composition",
+            "type": "duplicate_subject",
             "slides": [
-              1,
-              6
+              2,
+              3,
+              4,
+              5
             ],
-            "severity": "warn",
-            "detail": "第1張的內嵌深色小圖框與第6張的純黑滿版底色，兩張都是「幾乎全黑畫面＋白字」，雖然不相鄰但作為首尾造成視覺失憶——讀者翻回第一張與最後一張會誤以為是同一視覺系統，削弱封面的鉤子效果。",
-            "fix": "第1張封面建議保留但為內嵌小圖加一層半透明品牌色（Lava橘紅）暈染，讓封面在深色系裡仍有可辨識的色彩鉤點，與第6張純黑尾頁做出細微區分。"
+            "severity": "block",
+            "detail": "四張底圖皆取自不同英美影集劇照（Friends／Suits／You've Got Mail／Brooklyn Nine-Nine），主體「虛構人物的互動場景」本質上是同一類視覺語言——劇中男女或人物對話的中景鏡頭——連續出現四張，給讀者「這篇內容全是借來的圖」的印象，且劇照風格統一（電影感調色、演員特寫），視覺上幾乎無法區分來源差異，等同主體重複。",
+            "fix": "建議最多保留2張劇照，其餘替換為：(a)第3張改用真實生活場景圖——雨天窗邊手機螢幕亮著、桌上有外賣的獨居情境（搜尋關鍵字：「rainy day alone apartment phone screen warm light」）；(b)第5張改用Lava app實機mockup或品牌場景圖（兩人在戶外咖啡座初次見面微笑，明亮自然光，搜尋：「first date outdoor cafe sunlight candid meet」），讓劇照與真實場景交替出現。"
           }
         ],
-        "rhythm": "整篇節奏是『暗→暗→暗→暗→暗→黑』，五張劇照串連後讀者的眼睛沒有任何起伏點；建議在第3或第4張安排一張明調設計卡作為視覺換氣，整篇才會有『沉浸→數據衝擊→品牌收網』的三段式韻律。"
+        "rhythm": "整篇節奏是『暗→暗→暗→暗→暗→全黑』，五張劇照底圖疊成一道沉悶的暗牆後突然切白字黑底收尾，缺少明亮喘息點與版型變化，建議在第3或第4張注入一張高亮度視覺，並以infographic或品牌mockup打破劇照連連看的單調感。"
       }
     },
     {
@@ -3876,1083 +3878,6 @@
       "writer_model": "claude-sonnet-4-6"
     },
     {
-      "id": "20260803-JohnGottman研",
-      "topic": "John Gottman 研究 40 年、觀察 3000 對夫妻——他說能預測分手的，不是吵架，是這個表情",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eydj5k7",
-      "created_at": null,
-      "caption": "欸…\n\n…\n你有沒有發現，有些伴侶明明吵得很凶，最後還是在一起；有些兩個人看起來相安無事，卻悄悄走向終點。\n心理學家 John Gottman 在愛情實驗室研究 40 年後說：問題從來不是吵不吵架，而是那個在吵架時一閃而過的表情。\n\n台灣人很習慣忍耐「小小的瞧不起」，那個一直被糾正語氣、那個對方說你「就是這樣」時你選擇沉默，那個你說完一件事對方笑了但你不確定是好笑還是嘲笑。\nGottman 說，輕蔑不是一夜之間出現的，它由一個個被吞下去的挫折堆積而成，每一次未解決的衝突都在為它提供養分。\n這就是為什麼 Lava 認為，在感情正式開始之前，親自見面、親眼看見對方，遠比訊息往來重要。\n有些訊號，只有在現場才能感知。\n\n#交友軟體 #約會 #感情關係 #伴侶溝通 #心理學 #Gottman #關係研究 #輕蔑 #溝通技巧 #愛情心理學 #台灣交友 #Lava交友 #不聊天的交友軟體 #線下約會 #感情經營",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood8eaaa",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Gottman Institute",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moodfd074",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-1.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-1.jpg",
-          "heading": "能預測分手的，不是吵架頻率，是這個表情",
-          "display_copy": "欸，你有沒有發現\n有些情侶吵得很凶，卻沒分\n有些幾乎不吵，卻散了\n\nGottman 研究 40 年、超過 3,000 對伴侶\n結論只有一句話：\n〖能預測分手的，不是吵架頻率，是這個表情〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood9e0f4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-2e.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-2f.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-JohnGottman研/slide-2g.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-2.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-2.jpg",
-          "heading": "你大概有過這種感覺",
-          "display_copy": "對方說了句話，不算過分\n但那個語氣，那個眼神\n嘴角微微往上一勾\n你感覺到了\n\n然後你告訴自己：【「算了，他只是這樣講話」】\n\nGottman 說——\n輕蔑不是一夜出現的\n它由每一個吞下去的「算了」堆積而成",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Gottman Institute",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-3b.webp",
-              "kind": "still",
-              "source_label": "John Gottman",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-3c.webp",
-              "kind": "still",
-              "source_label": "John Gottman",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-3.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-3.jpg",
-          "heading": "Gottman 的愛情實驗室",
-          "display_copy": "華盛頓大學，「愛情實驗室（Love Lab）」\n\n真實伴侶在裡面做飯、看電視、討論衝突\n攝影機＋生理監測＋臉部微表情，全程記錄\n\n觀察超過 【3,000 對伴侶】，橫跨 40 年\n他要回答一個問題：\n【感情走向，能不能被預測？】\n\n結論：吵架頻率不重要，吵架的方式才是\n資料來源：Gottman, J.M., The Marriage Clinic, W.W. Norton & Company, 1999；The Gottman Institute, gottman.com",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mooddc0b5",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-4b.webp",
-              "kind": "still",
-              "source_label": "b-moodb7099",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Scenesfroma Marriage"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Scenesfroma Marriage"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Scenesfroma Marriage"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Revolutionary Road"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-JohnGottman研/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Revolutionary Road"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-JohnGottman研/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Revolutionary Road"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-4.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-4.jpg",
-          "heading": "94% 準確率，只需要 15 分鐘",
-          "display_copy": "1992 年，Gottman 的研究只觀察伴侶 【15 分鐘】\n就能以 〖94% 準確率〗 預測離婚\n\n他找到的關鍵叫「末日四騎士」：\n批評 → 輕蔑 → 防禦 → 冷戰\n四個傾向按順序出現，像骨牌\n\n四騎士裡【破壞力最強的，不是最激烈的那個】\n是最安靜的那個\n資料來源：Buehlman, K., Gottman, J.M., & Katz, L., 1992, Journal of Family Psychology",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-moodabd67",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-mood46882",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Kramervs Kramer",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Kramervs Kramer"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Kramervs Kramer"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-JohnGottman研/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-JohnGottman研/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-5.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-5.jpg",
-          "heading": "輕蔑和批評，差在哪裡",
-          "display_copy": "批評：「你又忘了付帳單。」\n→ 攻擊的是一個行為，可能反映未滿足的需求\n\n輕蔑：「你就是這麼沒責任感，從來都這樣。」\n→ 攻擊的是【這個人本身】\n\n輕蔑傳達的訊息是：\n〖「我比你優越，你這個人有問題」〗\n\n它不是一時的不滿，是長期積怨的結晶\n長期承受輕蔑的人，連免疫系統都會下降",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood273fc",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-mood36418",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Lieto Me"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Lieto Me",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-6e.webp",
-              "kind": "still",
-              "source_label": "Lieto Me"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-6.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-6.jpg",
-          "heading": "那個一閃而過的表情",
-          "display_copy": "輕蔑的微表情：【單側嘴角上揚 + 翻白眼】\n發生時間：1/25 秒至 1/5 秒，比眨眼還快\n\n約 80–90% 的人在對話中完全錯過它\n但你的身體察覺了\n\n那個「說不清楚、只覺哪裡怪」的感覺\n【可能在第一次見面就已經在告訴你了】\n\n你習慣說服自己：「我想太多。」\n資料來源：Ekman, P., Facial Action Coding System (FACS)；Gottman Institute Training Materials",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood678a7",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mood8f512",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-7.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-7.jpg",
-          "heading": "Lava 在做的事",
-          "display_copy": "台灣人很習慣忍耐「小小的瞧不起」\n那個語氣，那個笑，那個「你就是這樣」\n\nGottman 說：輕蔑由吞下去的挫折堆積而成\n每一個未解決的衝突，都是它的養分\n\nLava 認為，有些訊號【只有在現場才能感知】\n訊息再多，也感受不到那個一閃而過的眼神\n見面，才是真正的開始",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood99955",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood2a85c",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-8.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-8.jpg",
-          "heading": "那你現在可以怎麼做",
-          "display_copy": "Gottman 給你的三個觀察點：\n\n① 對方不滿時，攻擊的是【你做的事】還是【你這個人】？\n② 那個「說不清楚的不舒服」——別急著說服自己沒事\n   你的直覺比你的大腦更早讀到訊號\n③ 健康關係的正負互動比例：【至少 5:1】\n   低於這個，關係就在被消耗\n\n輕蔑很少大聲，它通常很安靜\n而且【出現得很早】",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-9.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-9.jpg",
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-10T22:07:51+08:00",
-      "candidates_since": "2026-08-10T21:56:12+08:00",
-      "image_credits": [
-        "第 1 張：《Marriage Story》劇照，版權屬原權利方",
-        "第 2 張：《Gone Girl》劇照，版權屬原權利方",
-        "第 3 張：John Gottman 演講（截圖引用）（截圖引用）",
-        "第 5 張：《Kramervs Kramer》劇照，版權屬原權利方",
-        "第 6 張：《Lieto Me》劇照，版權屬原權利方"
-      ],
-      "copy_choice": "claude",
-      "qa": {
-        "ts": "2026-08-10T22:10:41+08:00",
-        "pass": false,
-        "issues": [
-          {
-            "type": "composition",
-            "slides": [
-              1,
-              4,
-              5
-            ],
-            "severity": "warn",
-            "detail": "第1張（Marriage Story 情侶臥室暗調）、第4張（AI生成情侶客廳暗調）、第5張（Kramer vs Kramer 情侶近景暗調）三張同為「兩人對峙／親密但張力」的構圖，色調同為橘褐暗系，連續滑動時視覺主體幾乎無差異，節奏停滯。",
-            "fix": "第5張建議換成純圖形／資訊視覺化設計（例如：白底黑字對照表，左欄『批評』右欄『輕蔑』，用色塊區隔），完全跳出電影劇照序列，製造視覺換氣點。"
-          },
-          {
-            "type": "composition",
-            "slides": [
-              1,
-              4,
-              5,
-              8
-            ],
-            "severity": "warn",
-            "detail": "第1、4、5、8張底圖均為低飽和暗調攝影，第8張雖為靜物（書本+馬克杯）但色調仍沿用同一橘褐暗系，整篇暗景佔比過高，僅第2張（Gone Girl較亮）、第3張（紫藍舞台）、第7張（戶外咖啡廳亮調）提供對比，但被夾在暗系張之間稀釋。",
-            "fix": "第8張靜物建議改為日光充足的明亮桌面（搜圖關鍵字：bright minimalist notebook table morning light overhead shot），或直接做純白底圖文字版，強化明暗起伏節奏。"
-          },
-          {
-            "type": "credit_leak",
-            "slides": [
-              3
-            ],
-            "severity": "block",
-            "detail": "第3張圖片來源標示為「John Gottman 演講（截圖引用）（截圖引用）」——『（截圖引用）』出現兩次，明顯為複製貼上殘留，且『截圖引用』本身不是合法授權聲明，對外發布存在版權風險與版面不專業問題。",
-            "fix": "確認此圖實際授權來源（TED官方／YouTube公開演講截圖是否符合fair use）並修正為單一正確出處，例如「圖片來源：TEDx Talks，YouTube公開影片截圖」，刪除重複括號。"
-          },
-          {
-            "type": "monotone",
-            "slides": [
-              1,
-              2,
-              4,
-              5,
-              6,
-              8
-            ],
-            "severity": "warn",
-            "detail": "全篇9張中有6張底圖為深褐／深灰暗調，整體輪播視覺重心持續下沉，缺乏明暗起伏；僅第3張（藍紫舞台）和第7張（戶外亮調）形成局部亮點，但比例嚴重失衡。",
-            "fix": "建議將第8張或第5張其中一張改為高亮度底圖或純色系設計稿（白底＋品牌橘紅色塊），在篇幅後半製造一次明確的明調呼吸點，避免讀者視覺疲勞提前放棄滑動。"
-          }
-        ],
-        "rhythm": "整篇節奏呈現『暗→暗→藍紫→暗→暗→暗→亮→暗→純黑』的U型塌陷結構，第3張的藍紫和第7張的暖亮雖各自成立，但被大量暗調電影劇照淹沒，中後段（第4至第8張）連續五張無明暗換氣，滑動體驗沉悶；CTA第9張純黑雖風格乾淨，但在整篇已過度黑暗的基礎上更無收束感，建議在第5或第8張強制插入一張高對比亮色設計稿打破節奏。"
-      }
-    },
-    {
-      "id": "20260803-欸你有沒有發現歐美正在流",
-      "topic": "欸…你有沒有發現，歐美正在流行「不帶手機去約會」？",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eygddc2",
-      "created_at": null,
-      "caption": "歐美正在流行一件事：約會時把手機鎖進小袋子，或翻面扣在桌上，全程不碰。\n\n不是規定，是自願的。\n因為他們發現：真正稀缺的，不是時間，而是注意力。\n\n其實，Phone-Free date 背後的邏輯，Lava 在設計時就已經選了立場：不提供聊天功能，讓兩個人直接約出來見面，因為真正重要的事，沒辦法在螢幕上發生。\n注意力是這個時代最稀缺的禮物，而給出去的方式，不是多傳幾則訊息，而是真的把手機放下，出現在對方面前。\n\n#交友軟體 #約會 #台灣約會 #PhoneFreeDate #不聊天的交友軟體 #Lava交友 #手機排毒 #數位斷捨離 #注意力經濟 #真實連結 #約會技巧 #現代愛情 #線下約會 #台北約會",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood6a9da",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Greater Good, UC Berkeley",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-mooddfe00",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Severance"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Severance"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Severance"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1j.webp",
-              "kind": "still",
-              "source_label": "My Mister",
-              "low_q": true
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1k.webp",
-              "kind": "still",
-              "source_label": "My Mister"
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1l.webp",
-              "kind": "still",
-              "source_label": "My Mister"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-1.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-1.jpg",
-          "heading": "手機放著沒在用，也會讓約會變差",
-          "display_copy": "欸⋯你有沒有發現\n歐美在流行「不帶手機去約會」？\n\n不是規定，是【自願的】。\n因為他們發現：真正稀缺的不是時間——\n而是注意力。\n\n手機放桌上沒在用，對話就已經變淺了。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mooded3bd",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Modern Love"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Modern Love"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Modern Love"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Beef"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2f.webp",
-              "kind": "still",
-              "source_label": "Beef"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2g.webp",
-              "kind": "still",
-              "source_label": "Beef"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2h.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2i.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2j.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-2.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-2.jpg",
-          "heading": "你也有這種感覺嗎？",
-          "display_copy": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累——你有沒有這種感覺？",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3a.webp",
-              "kind": "still",
-              "source_label": "a-mood5b2bd",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3b.webp",
-              "kind": "still",
-              "source_label": "b-mood8d6a6",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3c.webp",
-              "kind": "still",
-              "source_label": "Six Feet Under"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3d.webp",
-              "kind": "still",
-              "source_label": "Six Feet Under"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3e.webp",
-              "kind": "still",
-              "source_label": "Six Feet Under"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-3.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-3.jpg",
-          "heading": "光是放桌上，就夠了",
-          "display_copy": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有——桌上【有沒有放手機】。\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Greater Good, UC Berkeley",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Greater Good, UC Berkeley",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Sherry Turkle",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Sherry Turkle",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Sherry Turkle",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Sherry Turkle",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4i.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4j.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4k.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4l.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-4.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-4.jpg",
-          "heading": "MIT 教授叫這個現象「缺席的在場」",
-          "display_copy": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】——身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-moodbc490",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-mood7f68d",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Normal People"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-5.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-5.jpg",
-          "heading": "一個裝手機的袋子，變成了一場文化運動",
-          "display_copy": "2014 年，加州創業家 Graham Dugoni 創立 Yondr——一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood28de2",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-moodf8d8b",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6e.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-6.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-6.jpg",
-          "heading": "567%——這個數字說明了什麼",
-          "display_copy": "Eventbrite 數據：2024–2025 年，全球 phone-free 社交活動成長〖567%〗，英國出席人數更暴增 1,441%。\n\n主導這波浪潮的，不是不懂科技的長輩——\n而是那些【成年後才有智慧型手機的世代】。\n\n他們從小被訓練「先記錄再體驗」，現在選擇反過來——先活著，不記錄。\n\n資料來源：Eventbrite 活動監測報告，2026 年 4 月；Good News Network",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood073b1",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mood3b208",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7f.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7g.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7h.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7i.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7j.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7k.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-7.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-7.jpg",
-          "heading": "Lava 從一開始就沒讓你在螢幕上耗",
-          "display_copy": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇——沒有聊天功能，直接約出來見面。不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood9b25b",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-moodef574",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8c.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8d.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8e.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8g.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8h.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            }
-          ],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-8.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-8.jpg",
-          "heading": "下次約會，試試這三件事",
-          "display_copy": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升——你的眼神和時間，只有一個去處。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-9.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-9.jpg",
-          "heading": "不聊天，直接見面",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-10T22:08:26+08:00",
-      "candidates_since": "2026-08-10T21:57:51+08:00",
-      "image_credits": [
-        "第 2 張：《Modern Love》劇照，版權屬原權利方",
-        "第 4 張：Greater Good, UC Berkeley（截圖引用）",
-        "第 7 張：《Before Sunset》劇照，版權屬原權利方",
-        "第 8 張：《About Time》劇照，版權屬原權利方"
-      ],
-      "copy_choice": "claude",
-      "qa": {
-        "ts": "2026-08-10T22:11:15+08:00",
-        "pass": false,
-        "issues": [
-          {
-            "type": "duplicate_subject",
-            "slides": [
-              1,
-              2,
-              7,
-              8
-            ],
-            "severity": "block",
-            "detail": "四張皆以「異性情侶／男女近距離臉部對視或共處」為主體：第1張餐廳約會對坐、第2張Modern Love情侶手握、第7張Before Sunset情侶依偎、第8張About Time情侶額頭相觸。雖然來源劇照不同，但視覺語言完全相同——深色背景＋男女臉部特寫＋曖昧光線，讀者滑過去感覺是同一張圖換了濾鏡。",
-            "fix": "保留第1張作封面情境、第8張作收尾行動呼籲。第2張換成「一個人獨坐餐廳、對面空位擺著一支螢幕朝上的手機」的俯拍靜物照，強調孤獨感而非浪漫感；第7張換成Lava app介面截圖或品牌識別視覺（黑底橘字的產品畫面），給整篇唯一一張「產品臉」，與前後人物照拉開距離。"
-          },
-          {
-            "type": "duplicate_subject",
-            "slides": [
-              1,
-              3
-            ],
-            "severity": "block",
-            "detail": "第1張封面底圖可見桌上有手機（雖非主體），第3張則以「咖啡廳桌上的手機」作為唯一主體特寫。兩張都在傳達「手機放桌上」的畫面，視覺資訊重疊。",
-            "fix": "第3張改用資訊圖表設計：白底或深色底，畫一張示意圖——左格「桌上有手機」對話框短淺、右格「桌上無手機」對話框深長，用圖解呈現Misra實驗結果，徹底跳脫攝影圖庫風格，也讓整篇出現第一張純設計頁。"
-          },
-          {
-            "type": "composition",
-            "slides": [
-              1,
-              2,
-              7,
-              8
-            ],
-            "severity": "warn",
-            "detail": "第1、2、7、8張構圖幾乎一致：人物佔上半區60-70%、文字壓在下半區、底部加深色漸層蓋字。四張連續或近連續出現時，滑動節奏如同原地踏步。",
-            "fix": "第2張改為純文字+大引號設計頁（黑底白字黃色引號，無攝影圖）；第7張改為產品截圖頁（見上條建議）。讓輪播節奏呈現：攝影→文字→攝影→圖表→活動照→數據→產品→動作→CTA的交替韻律。"
-          },
-          {
-            "type": "monotone",
-            "slides": [
-              1,
-              2,
-              3,
-              4,
-              7,
-              8
-            ],
-            "severity": "warn",
-            "detail": "六張底圖均為暗調（深棕、深黑、深紅），僅第5張演唱會有強烈打光色彩、第6張有戶外黃金時刻暖光。整篇亮部比例嚴重不足，滑到中段讀者視覺已疲勞。",
-            "fix": "第3張換為前述白底資訊圖表；第4張（Sherry Turkle講座照）底部漸層過重，可改用明亮的演講廳全景照並提高曝光，或換成淺灰底的引言卡設計（大字排版「Absent Presence」），打破連續暗調。"
-          }
-        ],
-        "rhythm": "整篇節奏呈「暗—暗—暗—暗—亮—亮—暗—暗—純黑」，高潮（第5、6張）夾在中後段一閃而過，首尾四張幾乎同色調同構圖，建議將至少一張明亮的設計頁移至第3或第4位，製造視覺呼吸點。"
-      }
-    },
-    {
       "id": "20260803-川口春奈效應為什麼日系清",
       "topic": "川口春奈效應：為什麼日系清冷感正在成為台灣約會市場的新審美標準？",
       "version": 1,
@@ -5457,7 +4382,7 @@
       ],
       "copy_choice": "claude",
       "qa": {
-        "ts": "2026-08-10T22:11:45+08:00",
+        "ts": "2026-08-10T22:17:38+08:00",
         "pass": true,
         "issues": [
           {
@@ -5469,8 +4394,8 @@
               6
             ],
             "severity": "warn",
-            "detail": "第3到第6張連續四張的版面結構幾乎一模一樣：上半區壓暗人物照、下半區白底黑字文字區塊，文字量接近、字級相仿、排版邏輯相同。滑動時毫無節奏感，讀者會以為停在同一張。",
-            "fix": "至少拆解其中兩張的版面邏輯：例如第4張改成全版深色底+大字排版（無人物照，純文字氛圍張），或第5張改成左右分欄構圖，用橫向電影截圖當滿版背景並壓淡至20%，讓文字浮在其上；總之需要破掉「上圖下文」的重複節奏。"
+            "detail": "第3至6張連續四張採用相同版式：上半部暗色底圖人物（皆為近景半身／頭部特寫）＋下半部黑底白字內文區塊，比例切割幾乎一致，滑動時視覺無法換氣",
+            "fix": "建議至少將第4或第5張改為純文字排版（米白或深藍底色＋大字數據，無人物照）；或第5張換成抽象概念圖，例如：俯拍城市街道孤身人影、空曠咖啡廳一張空椅，製造視覺呼吸點"
           },
           {
             "type": "composition",
@@ -5479,24 +4404,1105 @@
               8
             ],
             "severity": "warn",
-            "detail": "第7張《Norwegian Wood》情侶近景＋第8張《Before Sunset》情侶近景，同樣是戶外綠色樹木背景、同樣是兩人靠近的臉部特寫、同樣是暖色系暗調、同樣下半段文字排版，連續兩張看起來像同一部電影的不同幀。",
-            "fix": "第8張換掉圖片，改用非情侶的單人場景，例如：一個人坐在咖啡廳靠窗座位望向窗外的街道（城市日景，冷色調），呼應『有自己世界的人』的獨立感；搜圖關鍵字建議：'person alone cafe window city street cold tone film still'。"
+            "detail": "第7張《Norwegian Wood》與第8張《Before Sunset》同為男女雙人靠近臉部特寫、綠色自然背景、暖暗色調，構圖與色盤幾乎孿生，連續滑動等於看同一張圖兩次",
+            "fix": "第8張改為非人物主體：例如一張空曠城市街角夜景（霓虹反光地面）或手寫筆記本開頁特寫，傳遞「有自己世界」的生活感，而非再次用情侶互動場景重複第7張的情緒"
           },
           {
             "type": "monotone",
             "slides": [
-              2,
               3,
               4,
               5,
               6
             ],
             "severity": "warn",
-            "detail": "第2至第6張連續五張幾乎全是暗調（深藍、深棕、深灰底），整段中間區域明暗毫無起伏，閱讀疲勞感高。第1張稍亮、第9張純黑，全篇都沒有一張高亮度或高對比跳脫張。",
-            "fix": "在第4或第5張安排一張視覺上明顯偏亮的畫面作為節奏呼吸點，例如：白天自然光下的淺色場景（米白牆面、灑落日光的木質桌面、或空曠的早晨街道），讓眼睛有一個重置點；搜圖關鍵字：'minimalist morning light cafe table warm white sunlight film photography'。"
+            "detail": "第3至6張底圖明度幾乎同處於低曝光暗部區間（黑灰棕為主），整段連續四張缺乏明度起伏，視覺節奏沉悶",
+            "fix": "在第5或第6張插入一張高調（high-key）圖：例如強日光打亮的白牆咖啡廳、乾淨米白色系書桌平拍，打破連續暗調，製造明暗對比節奏"
           }
         ],
-        "rhythm": "整篇節奏問題集中在中段第3–6張：相同版式堆疊四連張形成視覺黑洞，讀者滑過去只會感覺『還在同一張』；第7–8張情侶照連發又製造第二個撞衫點；建議全篇在第4或第5張插入一個版式與明度都截然不同的『呼吸張』，讓輪播有前—中—後三段明確的視覺節拍。"
+        "rhythm": "開頭第1張（冷藍人像）到第2張（韓劇劇照）入場節奏佳；第3至6張因版式與明度雙重雷同讓中段節奏完全塌陷；第7、8張再以兩張極相似雙人劇照連排加劇疲勞；第9張全黑CTA雖收尾乾淨，卻因前段節奏失控而顯得突兀——整篇最需要解決的是中段連續四張的構圖版式與明度輪換"
+      }
+    },
+    {
+      "id": "20260803-JohnGottman研",
+      "topic": "John Gottman 研究 40 年、觀察 3000 對夫妻——他說能預測分手的，不是吵架，是這個表情",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eydj5k7",
+      "created_at": null,
+      "caption": "欸…\n\n…\n你有沒有發現，有些伴侶明明吵得很凶，最後還是在一起；有些兩個人看起來相安無事，卻悄悄走向終點。\n心理學家 John Gottman 在愛情實驗室研究 40 年後說：問題從來不是吵不吵架，而是那個在吵架時一閃而過的表情。\n\n台灣人很習慣忍耐「小小的瞧不起」，那個一直被糾正語氣、那個對方說你「就是這樣」時你選擇沉默，那個你說完一件事對方笑了但你不確定是好笑還是嘲笑。\nGottman 說，輕蔑不是一夜之間出現的，它由一個個被吞下去的挫折堆積而成，每一次未解決的衝突都在為它提供養分。\n這就是為什麼 Lava 認為，在感情正式開始之前，親自見面、親眼看見對方，遠比訊息往來重要。\n有些訊號，只有在現場才能感知。\n\n#交友軟體 #約會 #感情關係 #伴侶溝通 #心理學 #Gottman #關係研究 #輕蔑 #溝通技巧 #愛情心理學 #台灣交友 #Lava交友 #不聊天的交友軟體 #線下約會 #感情經營",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood8eaaa",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Gottman Institute",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moodfd074",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-1.jpg",
+          "heading": "能預測分手的，不是吵架頻率，是這個表情",
+          "display_copy": "欸，你有沒有發現\n有些情侶吵得很凶，卻沒分\n有些幾乎不吵，卻散了\n\nGottman 研究 40 年、超過 3,000 對伴侶\n結論只有一句話：\n〖能預測分手的，不是吵架頻率，是這個表情〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood9e0f4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-2e.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-2f.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-JohnGottman研/slide-2g.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-2.jpg",
+          "heading": "你大概有過這種感覺",
+          "display_copy": "對方說了句話，不算過分\n但那個語氣，那個眼神\n嘴角微微往上一勾\n你感覺到了\n\n然後你告訴自己：【「算了，他只是這樣講話」】\n\nGottman 說——\n輕蔑不是一夜出現的\n它由每一個吞下去的「算了」堆積而成",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Gottman Institute",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-3b.webp",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-3c.webp",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-3.jpg",
+          "heading": "Gottman 的愛情實驗室",
+          "display_copy": "華盛頓大學，「愛情實驗室（Love Lab）」\n\n真實伴侶在裡面做飯、看電視、討論衝突\n攝影機＋生理監測＋臉部微表情，全程記錄\n\n觀察超過 【3,000 對伴侶】，橫跨 40 年\n他要回答一個問題：\n【感情走向，能不能被預測？】\n\n結論：吵架頻率不重要，吵架的方式才是\n資料來源：Gottman, J.M., The Marriage Clinic, W.W. Norton & Company, 1999；The Gottman Institute, gottman.com",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-4a.webp",
+              "kind": "still",
+              "source_label": "a-mooddc0b5",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-4b.webp",
+              "kind": "still",
+              "source_label": "b-moodb7099",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-JohnGottman研/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-JohnGottman研/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-4.jpg",
+          "heading": "94% 準確率，只需要 15 分鐘",
+          "display_copy": "1992 年，Gottman 的研究只觀察伴侶 【15 分鐘】\n就能以 〖94% 準確率〗 預測離婚\n\n他找到的關鍵叫「末日四騎士」：\n批評 → 輕蔑 → 防禦 → 冷戰\n四個傾向按順序出現，像骨牌\n\n四騎士裡【破壞力最強的，不是最激烈的那個】\n是最安靜的那個\n資料來源：Buehlman, K., Gottman, J.M., & Katz, L., 1992, Journal of Family Psychology",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-moodabd67",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-mood46882",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Kramervs Kramer",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Kramervs Kramer"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Kramervs Kramer"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-JohnGottman研/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-JohnGottman研/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-5.jpg",
+          "heading": "輕蔑和批評，差在哪裡",
+          "display_copy": "批評：「你又忘了付帳單。」\n→ 攻擊的是一個行為，可能反映未滿足的需求\n\n輕蔑：「你就是這麼沒責任感，從來都這樣。」\n→ 攻擊的是【這個人本身】\n\n輕蔑傳達的訊息是：\n〖「我比你優越，你這個人有問題」〗\n\n它不是一時的不滿，是長期積怨的結晶\n長期承受輕蔑的人，連免疫系統都會下降",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood273fc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-mood36418",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Lieto Me"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Lieto Me",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Lieto Me"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-6.jpg",
+          "heading": "那個一閃而過的表情",
+          "display_copy": "輕蔑的微表情：【單側嘴角上揚 + 翻白眼】\n發生時間：1/25 秒至 1/5 秒，比眨眼還快\n\n約 80–90% 的人在對話中完全錯過它\n但你的身體察覺了\n\n那個「說不清楚、只覺哪裡怪」的感覺\n【可能在第一次見面就已經在告訴你了】\n\n你習慣說服自己：「我想太多。」\n資料來源：Ekman, P., Facial Action Coding System (FACS)；Gottman Institute Training Materials",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood678a7",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mood8f512",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-7.jpg",
+          "heading": "Lava 在做的事",
+          "display_copy": "台灣人很習慣忍耐「小小的瞧不起」\n那個語氣，那個笑，那個「你就是這樣」\n\nGottman 說：輕蔑由吞下去的挫折堆積而成\n每一個未解決的衝突，都是它的養分\n\nLava 認為，有些訊號【只有在現場才能感知】\n訊息再多，也感受不到那個一閃而過的眼神\n見面，才是真正的開始",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood99955",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood2a85c",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-8.jpg",
+          "heading": "那你現在可以怎麼做",
+          "display_copy": "Gottman 給你的三個觀察點：\n\n① 對方不滿時，攻擊的是【你做的事】還是【你這個人】？\n② 那個「說不清楚的不舒服」——別急著說服自己沒事\n   你的直覺比你的大腦更早讀到訊號\n③ 健康關係的正負互動比例：【至少 5:1】\n   低於這個，關係就在被消耗\n\n輕蔑很少大聲，它通常很安靜\n而且【出現得很早】",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-10T22:15:28+08:00",
+      "candidates_since": "2026-08-10T21:56:12+08:00",
+      "image_credits": [
+        "第 1 張：《Marriage Story》劇照，版權屬原權利方",
+        "第 2 張：《Gone Girl》劇照，版權屬原權利方",
+        "第 3 張：John Gottman（截圖引用）",
+        "第 5 張：《Kramervs Kramer》劇照，版權屬原權利方",
+        "第 6 張：《Lieto Me》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude",
+      "qa": {
+        "ts": "2026-08-10T22:18:09+08:00",
+        "pass": true,
+        "issues": [
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              4,
+              5
+            ],
+            "severity": "warn",
+            "detail": "三張皆為「一對男女近距離、暗色調、室內／戶外柔焦背景」構圖——第1張躺姿情侶暗部、第4張沙發背對情侶暗部、第5張雙人貼近側臉暗部，色溫與人物關係框架高度雷同，連續滑動時視覺停滯感明顯。",
+            "fix": "第5張（輕蔑vs批評概念張）改換非人物的符號化視覺：例如搜尋『crumpled paper note with smug emoji minimalist dark background』或設計一張純文字對比排版（白底黑字＋紅色標記），製造明暗與形式的跳脫，打斷暗色人像的連環節奏。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              8
+            ],
+            "severity": "warn",
+            "detail": "全篇九張中，第1、2、4、5、6、8張底圖均落在暗棕／暗灰色系，僅第3張（紫色舞台光）、第7張（亮暖咖啡廳）、第9張（純黑）有明度差異，但第9張又是純黑CTA，整體視覺從第4張起連續五張幾乎都是深色調，缺乏高明度的呼吸點。",
+            "fix": "在第6張或第8張中擇一換成高明度底圖：第6張（微表情概念）可改用『extreme close-up human eye with subtle smirk expression bright white studio light』，或白底＋人臉局部插圖，製造明度高峰；第8張（行動建議張）可保留暖色但提亮至日間窗邊自然光版本，搜尋『bright morning window journal coffee warm light overhead shot』。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              4,
+              8
+            ],
+            "severity": "warn",
+            "detail": "第4張（沙發暗部情侶）與第8張（窗邊書桌馬克杯）均採用「室內家居、暖棕色調、物件／人物置右、大片暗色壓底」的構圖邏輯，作為第4→5→6→7→8的連續張，構圖語言重複度過高，節奏拖沓。",
+            "fix": "第8張行動建議建議改為資訊圖表式設計（白或淺米底，三個觀察點用圖示＋色塊條列），完全脫離攝影底圖框架，既強化內容可讀性，也在視覺上製造『轉折感』。"
+          }
+        ],
+        "rhythm": "整篇節奏呈現『暗→暗→紫→暗→暗→暗→亮→暗→黑』的W形走勢，高潮點只有第3張和第7張，第4至6張連續三張暗色人像情侶場景幾乎讓人誤以為滑回同一張，建議在第5或第6張強制插入一張高對比、非人像的視覺形式（資訊圖表或純色系概念圖），才能撐起中段節奏。"
+      }
+    },
+    {
+      "id": "20260803-欸你有沒有發現歐美正在流",
+      "topic": "欸…你有沒有發現，歐美正在流行「不帶手機去約會」？",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eygddc2",
+      "created_at": null,
+      "caption": "歐美正在流行一件事：約會時把手機鎖進小袋子，或翻面扣在桌上，全程不碰。\n\n不是規定，是自願的。\n因為他們發現：真正稀缺的，不是時間，而是注意力。\n\n其實，Phone-Free date 背後的邏輯，Lava 在設計時就已經選了立場：不提供聊天功能，讓兩個人直接約出來見面，因為真正重要的事，沒辦法在螢幕上發生。\n注意力是這個時代最稀缺的禮物，而給出去的方式，不是多傳幾則訊息，而是真的把手機放下，出現在對方面前。\n\n#交友軟體 #約會 #台灣約會 #PhoneFreeDate #不聊天的交友軟體 #Lava交友 #手機排毒 #數位斷捨離 #注意力經濟 #真實連結 #約會技巧 #現代愛情 #線下約會 #台北約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood6a9da",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mooddfe00",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1j.webp",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1k.webp",
+              "kind": "still",
+              "source_label": "My Mister"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-1l.webp",
+              "kind": "still",
+              "source_label": "My Mister"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-1.jpg",
+          "heading": "手機放著沒在用，也會讓約會變差",
+          "display_copy": "欸⋯你有沒有發現\n歐美在流行「不帶手機去約會」？\n\n不是規定，是【自願的】。\n因為他們發現：真正稀缺的不是時間——\n而是注意力。\n\n手機放桌上沒在用，對話就已經變淺了。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-moodca2a9",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2b.webp",
+              "kind": "still",
+              "source_label": "a-mooded3bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2c.webp",
+              "kind": "still",
+              "source_label": "b-moodbae58",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2f.webp",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2g.webp",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2h.webp",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2i.webp",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2j.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2k.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-2l.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-2.jpg",
+          "heading": "你也有這種感覺嗎？",
+          "display_copy": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累——你有沒有這種感覺？",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3a.webp",
+              "kind": "still",
+              "source_label": "a-mood5b2bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3b.webp",
+              "kind": "still",
+              "source_label": "b-mood8d6a6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3c.webp",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3d.webp",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-3e.webp",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-3.jpg",
+          "heading": "光是放桌上，就夠了",
+          "display_copy": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有——桌上【有沒有放手機】。\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4i.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4j.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4k.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-4l.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-4.jpg",
+          "heading": "MIT 教授叫這個現象「缺席的在場」",
+          "display_copy": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】——身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-moodbc490",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-mood7f68d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-5.jpg",
+          "heading": "一個裝手機的袋子，變成了一場文化運動",
+          "display_copy": "2014 年，加州創業家 Graham Dugoni 創立 Yondr——一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood28de2",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-moodf8d8b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-6.jpg",
+          "heading": "567%——這個數字說明了什麼",
+          "display_copy": "Eventbrite 數據：2024–2025 年，全球 phone-free 社交活動成長〖567%〗，英國出席人數更暴增 1,441%。\n\n主導這波浪潮的，不是不懂科技的長輩——\n而是那些【成年後才有智慧型手機的世代】。\n\n他們從小被訓練「先記錄再體驗」，現在選擇反過來——先活著，不記錄。\n\n資料來源：Eventbrite 活動監測報告，2026 年 4 月；Good News Network",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood073b1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7b.webp",
+              "kind": "still",
+              "source_label": "a-mood27caf",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7c.webp",
+              "kind": "still",
+              "source_label": "b-mood3b208",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7f.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7g.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7h.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7i.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7j.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7k.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-7l.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-7.jpg",
+          "heading": "Lava 從一開始就沒讓你在螢幕上耗",
+          "display_copy": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇——沒有聊天功能，直接約出來見面。不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood9b25b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-moodef574",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8c.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8d.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8e.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-欸你有沒有發現歐美正在流/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-8.jpg",
+          "heading": "下次約會，試試這三件事",
+          "display_copy": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升——你的眼神和時間，只有一個去處。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-9.jpg",
+          "heading": "不聊天，直接見面",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-10T22:16:02+08:00",
+      "candidates_since": "2026-08-10T22:16:38+08:00",
+      "image_credits": [
+        "第 4 張：Greater Good, UC Berkeley（截圖引用）",
+        "第 8 張：《About Time》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude",
+      "qa": {
+        "ts": "2026-08-10T22:18:44+08:00",
+        "pass": false,
+        "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              1,
+              2,
+              3
+            ],
+            "severity": "block",
+            "detail": "三張底圖的核心主體都是「情侶／兩人在餐桌或咖啡廳場景中與手機互動」：第1張夜景餐廳情侶對坐、第2張燭光晚餐兩人滑手機、第3張咖啡廳桌面放著手機——場景換了但主體語義完全重複，讀者連滑三張都在看同一件事。",
+            "fix": "第3張應換掉餐廳桌面手機場景，改用能具象化『手機存在感』的非人物圖：例如俯拍乾淨木桌上一支螢幕朝下的手機（極簡、高對比），或純粹的實驗室／學術感靜物，與前兩張的情侶場景做明確切換，同時呼應Misra實驗的學術語境。搜圖關鍵字：「overhead flat lay smartphone face down minimalist table」"
+          },
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              1,
+              2,
+              7
+            ],
+            "severity": "block",
+            "detail": "第1張、第2張、第7張的底圖主體都是『兩至三人面對面坐著互動的人像特寫』，雖然第7張人數從2變3且轉為日光咖啡廳，但構圖語言（室內、桌邊、人臉、淺景深）高度雷同，三張加總讓輪播有一半篇幅都是同類型人物照。",
+            "fix": "第7張作為品牌轉折頁，建議改用無人物的品牌視覺：Lava app介面截圖＋乾淨白或品牌橘背景，或用手持手機但畫面只露手部與app配對頁的特寫，強調『直接約出來』的產品動作而非又一張聚會人像。搜圖關鍵字：「hand holding smartphone dating app UI close up warm background」"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              2,
+              3
+            ],
+            "severity": "warn",
+            "detail": "第1至3張連續使用『暗底+下半部文字區塊』的相同版型，色調皆為深棕／暗橘暖色調，滑動時節奏幾乎停滯，讀者難以感受到敘事推進。",
+            "fix": "第3張若依上方建議換成俯拍極簡靜物，同時可將文字區塊移至上半部或使用亮底深字的反轉配色，打破連續暗調版型。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "severity": "warn",
+            "detail": "前四張整體明度偏低（暗餐廳、燭光、暗咖啡廳、深色舞台），直到第5張演唱會才出現高亮度背光，視覺長期壓抑後突然爆亮，缺乏漸進式明暗起伏。",
+            "fix": "建議第3張或第4張其中一張採用中明度、自然光場景作為過渡，避免1-4暗、5突然全亮的落差。第4張Turkle演講照可考慮換成她書封《Reclaiming Conversation》的平鋪靜物（書封＋白背景），明度提升同時也更具可信度視覺錨點。搜圖關鍵字：「Reclaiming Conversation book Sherry Turkle flat lay bright」"
+          }
+        ],
+        "rhythm": "整篇開頭三張連續暗調人物餐桌場景消耗了節奏儲備，第5張演唱會打光雖是全篇最強的視覺爆點但來得突兀，第6張野餐夕陽的暖亮調是整篇最舒緩的呼吸點，第9張純黑品牌頁收尾乾脆但與第8張電影劇照的暖褐色調切換過硬——建議將視覺節奏調整為「暗→中亮→亮→中→純版型」的拱形結構，而非現在的「連暗→突亮→暗收」。"
       }
     }
   ]

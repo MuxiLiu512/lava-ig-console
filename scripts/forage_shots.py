@@ -265,7 +265,10 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
         j = json.loads(_fetch("https://duckduckgo.com/i.js?l=us-en&o=json&q=%s&vqd=%s&f=,,,&p=1" % (quote(query), mv.group(1))).decode(errors="ignore"))
         STOCK_BLOCK = ("alamy.", "gettyimages.", "shutterstock.", "istockphoto.", "dreamstime.",
                        "123rf.", "depositphotos.", "freepik.", "vecteezy.", "stock.adobe.",
-                       "qiantucdn.", "58pic.", "nipic.")   # 圖庫預覽必帶浮水印，512px 縮圖下策展員會看漏
+                       "qiantucdn.", "58pic.", "nipic.",
+                       # 2026-08-10 補：滿版平鋪浮水印，成篇總檢才抓到（縮圖策展看不出）
+                       "mindframe.", "magnific.", "canva.", "envato.", "pond5.",
+                       "bigstockphoto.", "shutterfly.", "photodune.", "stocksy.")   # 圖庫預覽必帶浮水印，512px 縮圖下策展員會看漏
         pairs = []
         for res in j.get("results", []):
             img_u = res.get("image") or ""
