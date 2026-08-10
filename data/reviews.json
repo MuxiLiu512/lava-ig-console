@@ -355,6 +355,26 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": "claude"
+    },
+    {
+      "id": "R-msnajcsq",
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-10T21:52:16+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "d",
+        "3": "a",
+        "4": "b",
+        "5": "b",
+        "6": "b",
+        "7": "c",
+        "8": "d"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
