@@ -1029,13 +1029,16 @@ def _copy_self_check(post, draft):
         return flags
     head = (cover.get("heading") or "").strip()
     topic = post.get("topic") or ""
-    # A1 空洞 hook：命中公版開場且與主題無 2 字以上共詞
-    if any(re.search(p, head) for p in _HOLLOW):
-        grams = {topic[i:i+2] for i in range(max(0, len(topic) - 1))}
-        if not any(g in head for g in grams if len(g) == 2):
-            flags.append({"code": "hollow_hook", "severity": "block",
-                          "detail": "封面主標「%s」只有公版開場、不含主題名詞，讀者不知道要發現什麼" % head[:20],
-                          "fix": "把主題的具體名詞放進主標；對話式開場只能當前綴"})
+    # A1 空洞 hook：剝掉公版開場後若無實質內容 → 讀者不知道要發現什麼。
+    # （原以「與 topic 字面共詞」判定過嚴：主標用同義說法時會誤報，2026-08-11 修正）
+    rest = head
+    for pat in _HOLLOW:
+        rest = re.sub(pat, "", rest)
+    rest = re.sub(r"^[，,、—－\-…⋯\.：:？?！!\s]+", "", rest).strip()
+    if any(re.search(p, head) for p in _HOLLOW) and len(rest) < 6:
+        flags.append({"code": "hollow_hook", "severity": "block",
+                      "detail": "封面主標「%s」只有公版開場、沒有主題內容，讀者不知道要發現什麼" % head[:20],
+                      "fix": "開場後補上主題的具體說法（人名／現象／反差），對話式開場只能當前綴"})
     # A3 副標詞中斷行（引擎已語意斷行，此為回歸驗證）
     for ln in [l.strip() for l in (cover.get("display_copy") or "").split("\n") if l.strip()]:
         if ln and ln[-1] in _NO_TRAIL:

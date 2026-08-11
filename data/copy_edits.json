@@ -27,6 +27,29 @@
           "version": null
         }
       ]
+    },
+    {
+      "post_id": "20260811-川口春奈效應v2",
+      "ts": "2026-08-11T15:07:25+08:00",
+      "consumed": false,
+      "by": "claude-proposal",
+      "note": "封面 hollow_hook 修正提案（self-check A1）：主標補進主題「心動的臉／冷」，副標改用專有名詞「塩顔」並逐行語意完整。Jesse 可在操控室直接改寫覆蓋。",
+      "edits": [
+        {
+          "n": 1,
+          "field": "heading",
+          "original": "欸，你有沒有發現——",
+          "edited": "欸，你有沒有發現——最近讓人心動的臉，都變「冷」了",
+          "version": "claude"
+        },
+        {
+          "n": 1,
+          "field": "display_copy",
+          "original": "欸，你有沒有\n發現這件事\n\n最近讓台灣人最\n心動的臉，都不太\n需要你喜歡她",
+          "edited": "日本人管這種氣質叫「塩顔」。\n不刻意討好，不急著證明什麼，\n反而成了台灣約會市場的新標準。",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
