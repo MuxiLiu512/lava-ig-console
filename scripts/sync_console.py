@@ -839,6 +839,19 @@ def render_approved(args):
             continue
         with open(jf, encoding="utf-8") as f:
             draft = json.load(f)
+        # 變更紀錄：這輪跟上次渲染比，哪幾張換了圖（Jesse 2026-08-10：自動化改了什麼要看得到）
+        prev = (entry.get("last_render_choices") or {})
+        moved = [n for n, pth in chosen_paths.items()
+                 if prev.get(n) and os.path.abspath(prev[n]) != os.path.abspath(pth)]
+        if moved:
+            r_note = (r.get("feedback") or "").strip()
+            p.setdefault("change_log", []).append({
+                "ts": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+                "what": "換底圖：第 %s 張" % "、".join(sorted(moved, key=int)),
+                "why": r_note[:120] or "依最新審核選圖重出",
+                "by": r.get("id", ""),
+            })
+            p["change_log"] = p["change_log"][-20:]
         edits = _latest_copy_edits(pid, ce_list, version=choice)
         for s in draft.get("slides", []):
             for field in ("heading", "display_copy"):
@@ -849,6 +862,16 @@ def render_approved(args):
                 s["render_credit"] = credits[int(s["index"])]   # 圖上小字來源標示（引擎繪製）
         if credits:
             p["image_credits"] = ["第 %d 張：%s" % (n, credits[n].replace("圖片來源：", "")) for n in sorted(credits)]
+        # 封面文案自我審查（機械、零 AI）——規則正本 config/self-check.md
+        _cov = next((s for s in draft.get("slides", []) if int(s.get("index", 0) or 0) == 1), None)
+        p["cover_head"] = ((_cov or {}).get("heading") or "").strip()
+        cf = _copy_self_check(p, draft) + _hook_repeat_check(p, draft, posts_d.get("posts", []))
+        if cf:
+            p["copy_flags"] = cf
+            for x in cf:
+                print("   %s 封面：%s" % ("🔴" if x["severity"] == "block" else "🟡", x["detail"]))
+        else:
+            p.pop("copy_flags", None)
         pj = os.path.join(work, "draft.json")
         with open(pj, "w", encoding="utf-8") as f:
             json.dump(draft, f, ensure_ascii=False)
@@ -983,6 +1006,55 @@ def archive_data(args):
 
 ALERT_CARD = "86eyckbur"   # 🔧 Lava IG 系統告警日誌
 POSTQA_URL = "https://lavadating.app.n8n.cloud/webhook/lava-ig-postqa"
+
+# 公版對話式開場（單獨當標題＝空洞 hook；只能當前綴）——config/self-check.md A1/A2
+_HOLLOW = (r"^欸[，,、…⋯\.]*\s*你(有沒有|知不知道)", r"^你(有沒有|知不知道)發現", r"^有沒有發現",
+           r"^欸[，,、…⋯\.]*\s*$", r"^你(們)?知道嗎")
+_NO_TRAIL = set("最不很更也都又再還就才將被把讓使令對於和與及跟並而但因所如若則每同各此該其之的地得")
+
+
+def _copy_self_check(post, draft):
+    """封面文案機械檢查（零 AI，每次渲染跑）。規則正本 config/self-check.md。"""
+    flags = []
+    slides = draft.get("slides") or []
+    cover = next((s for s in slides if int(s.get("index", 0) or 0) == 1), None)
+    if not cover:
+        return flags
+    head = (cover.get("heading") or "").strip()
+    topic = post.get("topic") or ""
+    # A1 空洞 hook：命中公版開場且與主題無 2 字以上共詞
+    if any(re.search(p, head) for p in _HOLLOW):
+        grams = {topic[i:i+2] for i in range(max(0, len(topic) - 1))}
+        if not any(g in head for g in grams if len(g) == 2):
+            flags.append({"code": "hollow_hook", "severity": "block",
+                          "detail": "封面主標「%s」只有公版開場、不含主題名詞，讀者不知道要發現什麼" % head[:20],
+                          "fix": "把主題的具體名詞放進主標；對話式開場只能當前綴"})
+    # A3 副標詞中斷行（引擎已語意斷行，此為回歸驗證）
+    for ln in [l.strip() for l in (cover.get("display_copy") or "").split("\n") if l.strip()]:
+        if ln and ln[-1] in _NO_TRAIL:
+            flags.append({"code": "bad_linebreak", "severity": "warn",
+                          "detail": "封面副標有一行以修飾詞「%s」結尾（%s）" % (ln[-1], ln[-12:]),
+                          "fix": "改在標點處斷句，或縮短該行"})
+            break
+    return flags
+
+
+def _hook_repeat_check(post, draft, posts_all):
+    """A2 開場濫用：近 5 篇封面主標前 6 字重複。"""
+    slides = draft.get("slides") or []
+    cover = next((s for s in slides if int(s.get("index", 0) or 0) == 1), None)
+    head = ((cover or {}).get("heading") or "").strip()
+    if len(head) < 6:
+        return []
+    pre = head[:6]
+    recent = [p for p in posts_all if p.get("id") != post.get("id")
+              and p.get("status") in ("published", "scheduled", "approved")][-5:]
+    hits = [p["id"] for p in recent if (p.get("cover_head") or "").startswith(pre)]
+    if hits:
+        return [{"code": "hook_repeat", "severity": "warn",
+                 "detail": "封面開場「%s…」與近期 %d 篇重複（%s）" % (pre, len(hits), hits[0][:18]),
+                 "fix": "換一種開場句型，同型近 5 篇最多 1 次"}]
+    return []
 
 
 def _post_qa(pid, finals_dir):

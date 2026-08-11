@@ -211,16 +211,31 @@ function qcard(p, subtitle, tagHtml, extraHtml) {
 // 成篇視覺總檢（WF15）：撞主體／浮水印／文字不可讀／出處異常——逐張閘門看不出來的問題
 const qaBlocked = p => !!(p.qa && p.qa.pass === false);
 function qaHtml(p) {
-  if (!p.qa || !(p.qa.issues || []).length) return "";
-  const rows = p.qa.issues.map(i => {
-    const isBlock = i.severity === "block";
-    const who = (i.slides || []).join("、");
-    return `<div style="margin:3px 0;color:${isBlock ? "#ff8a9b" : "#e0b34a"}">`
-      + `${isBlock ? "🔴" : "🟡"} 第 ${esc(who)} 張：${esc(i.detail || "")}`
+  const out = [];
+  // 封面文案機械檢查（config/self-check.md，零 AI 每次渲染跑）
+  (p.copy_flags || []).forEach(f => {
+    const b = f.severity === "block";
+    out.push(`<div style="margin:3px 0;color:${b ? "#ff8a9b" : "#e0b34a"}">`
+      + `${b ? "🔴" : "🟡"} 封面：${esc(f.detail || "")}`
+      + (f.fix ? `<br><span class="muted" style="padding-left:1.2em">建議：${esc(f.fix)}</span>` : "")
+      + `</div>`);
+  });
+  ((p.qa || {}).issues || []).forEach(i => {
+    const b = i.severity === "block";
+    out.push(`<div style="margin:3px 0;color:${b ? "#ff8a9b" : "#e0b34a"}">`
+      + `${b ? "🔴" : "🟡"} 第 ${esc((i.slides || []).join("、"))} 張：${esc(i.detail || "")}`
       + (i.fix ? `<br><span class="muted" style="padding-left:1.2em">建議：${esc(i.fix)}</span>` : "")
-      + `</div>`;
-  }).join("");
-  return `<div style="border-left:2px solid #a11d33;padding-left:8px">${rows}</div>`;
+      + `</div>`);
+  });
+  // 變更紀錄：自動化改了什麼，這裡看得到（Jesse 2026-08-10）
+  const cl = (p.change_log || []).slice(-3).reverse();
+  if (cl.length) {
+    out.push(`<div class="muted" style="margin-top:6px">🕘 最近變更`
+      + cl.map(c => `<br>· ${esc((c.ts || "").slice(5, 16))} ${esc(c.what || "")}`
+        + (c.why ? `（${esc(c.why.slice(0, 40))}）` : "")).join("") + `</div>`);
+  }
+  if (!out.length) return "";
+  return `<div style="border-left:2px solid #a11d33;padding-left:8px">${out.join("")}</div>`;
 }
 const coverSrc = p => { const s = p.slides.find(s => s.n === 1) || p.slides[0]; return (s && s.final_src) || (s && s.candidates[0] && s.candidates[0].src); };
 const totalCands = p => p.slides.reduce((a, s) => a + s.candidates.length, 0);

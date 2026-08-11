@@ -39,7 +39,17 @@ if ! git pull --rebase --quiet origin main >>"$LOG" 2>&1; then
   exit 0
 fi
 rm -f "$FAILFILE"
-[ "$STASHED" = 1 ] && git stash pop -q >>"$LOG" 2>&1
+# stash pop 撞衝突會把 <<<<<<< 標記寫進 posts.json（2026-08-11 實際發生，操控室排程資料一度壞掉）。
+# 衝突時一律以遠端為準並保留 stash 供人工比對，絕不留壞 JSON 在工作區。
+if [ "$STASHED" = 1 ]; then
+  if ! git stash pop -q >>"$LOG" 2>&1; then
+    git checkout --theirs -- . >>"$LOG" 2>&1 || true
+    git checkout -- data/ >>"$LOG" 2>&1 || true
+    git reset -q >>"$LOG" 2>&1
+    echo "[$(date '+%m-%d %H:%M')] ⚠ stash pop 衝突：已取遠端版本，本地變更留在 stash@{0}" >>"$LOG"
+    python3 scripts/sync_console.py alert "哨兵 stash pop 衝突：已保留遠端版本，本地暫存在 stash@{0}，請人工確認是否有未同步的操控室操作。" >>"$LOG" 2>&1
+  fi
+fi
 
 # 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
 FRG=$(timeout 700 python3 scripts/sync_console.py forage-pending --limit 2 2>&1)
