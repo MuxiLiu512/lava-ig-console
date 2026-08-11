@@ -736,7 +736,14 @@ def render_approved(args):
         if not p or p.get("status") == "published":
             continue
         if p.get("status") == "scheduled" and all(s.get("public_url") for s in p["slides"] if s.get("candidates")):
-            continue  # 已排程且成品齊 → 不動；成品缺（重餵洗掉）→ 放行往下重渲染，否則 WF10 到點發不出去
+            # 已排程且成品齊 → 原則不動（成品缺＝重餵洗掉，放行往下重渲染，否則 WF10 到點發不出去）。
+            # 例外（2026-08-11 Jesse：改了文案卻發到舊版）：排程後才存的文案編輯／審核若比 rendered_at 新，
+            # 仍必須重出——否則修改靜默失效，且 WF10 到點把舊版發上 IG，無法回收。
+            _ts = [e.get("ts", "") for e in ce_list if e.get("post_id") == pid] + [r.get("ts", "")]
+            _newest = max([t for t in _ts if t] or [""])
+            if not (_newest and p.get("rendered_at") and _newest > p["rendered_at"]):
+                continue
+            print("   ↻ %s 排程後有新修改（%s）→ 重出成品" % (pid[:22], _newest[:16]))
         if getattr(args, "only", None) and pid != args.only:
             continue
         dec, scope = r.get("decision"), r.get("scope")

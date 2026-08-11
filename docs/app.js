@@ -449,6 +449,22 @@ function buildCopyEditor(p) {
     });
   } catch (e) {}
   const btn = el("button", "btn primary block", "儲存文案修改"); btn.style.marginTop = "12px";
+  // 未儲存提示（2026-08-11：改了文案沒按儲存 → 舊版直接發到 IG，無法回收）
+  const dirtyCount = () => fields.filter(t => t.value !== t.dataset.orig).length;
+  const syncBtn = () => {
+    const n = dirtyCount();
+    btn.textContent = n ? `儲存文案修改（${n} 處未儲存）` : "儲存文案修改";
+    btn.style.background = n ? "#e84424" : "";
+    btn.style.animation = n ? "pulse 1.6s ease-in-out infinite" : "";
+  };
+  fields.forEach(t => t.addEventListener("input", syncBtn));
+  syncBtn();
+  if (p.status === "scheduled") {
+    const w = el("div", "small", "⚠️ 本篇已排程。改完務必按下方按鈕儲存——儲存後系統會自動用新文案重出成品；沒儲存就到點發佈的是舊版，發出去無法收回。");
+    w.style.cssText = "color:#e0b34a;margin:8px 0;line-height:1.5";
+    pad.appendChild(w);
+  }
+  window.onbeforeunload = () => (dirtyCount() ? "有未儲存的文案修改" : undefined);
   btn.onclick = async () => {
     const ver = copyChoiceOf(p);
     const edits = fields.filter(t => t.value !== t.dataset.orig)
@@ -457,8 +473,9 @@ function buildCopyEditor(p) {
     try {
       btn.disabled = true;
       await saveJson(FILES.copy_edits, d => { (d.edits = d.edits || []).push({ post_id: p.id, ts: nowISO(), consumed: false, edits }); }, "copy-edit: " + p.id);
-      toast("已儲存 " + edits.length + " 處修改");
+      toast("已儲存 " + edits.length + " 處修改" + (p.status === "scheduled" ? "，將自動重出成品" : ""));
       edits.forEach(e => { const t = fields.find(f => Number(f.dataset.n) === e.n && f.dataset.field === e.field); if (t) t.dataset.orig = e.edited; });
+      syncBtn(); window.onbeforeunload = null;
     } catch (e) { toast(e.message, true); }
     btn.disabled = false;
   };
