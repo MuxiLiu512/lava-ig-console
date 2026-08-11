@@ -8,6 +8,19 @@ DP="/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava I
 LOCK="/tmp/lava-ig-autorender.lock"
 LOG="/tmp/lava-ig-autorender.log"
 
+# Python 解譯器：launchd 的 PATH 不含 anaconda，`python3` 會落到 /usr/bin/python3（無 PIL），
+# 導致渲染／總檢在部分輪次靜默失敗（log 自 2026-08-02 起零星出現 ModuleNotFoundError: PIL）。
+# 明確挑一個帶得動 PIL 的解譯器，挑不到就直接告警退出，不再半殘運轉。
+PY=""
+for c in /Users/mimo/opt/anaconda3/bin/python3 "$(command -v python3 2>/dev/null)" /usr/bin/python3; do
+  [ -n "$c" ] && [ -x "$c" ] || continue
+  if "$c" -c "import PIL" >/dev/null 2>&1; then PY="$c"; break; fi
+done
+if [ -z "$PY" ]; then
+  echo "[$(date '+%m-%d %H:%M')] ✗ 找不到帶 PIL 的 python3，哨兵中止" >>"$LOG"
+  exit 1
+fi
+
 # Drive 未掛載就靜默跳過（渲染需讀原圖）
 [ -d "$DP" ] || exit 0
 
@@ -34,7 +47,7 @@ if ! git pull --rebase --quiet origin main >>"$LOG" 2>&1; then
   echo "[$(date '+%m-%d %H:%M')] ⚠ git pull 失敗（連續 $N 輪），本輪略過" >>"$LOG"
   # 連續 6 輪（≈1 小時）＝哨兵實質停擺 → 自報告警到 ClickUp 告警日誌卡，避免再靜默兩天
   if [ "$N" = 6 ]; then
-    python3 scripts/sync_console.py alert "哨兵停擺：git pull 連續 6 輪失敗（約 1 小時）。渲染／入料／對帳全部停止，需人工排查工作區狀態。" >>"$LOG" 2>&1
+    "$PY" scripts/sync_console.py alert "哨兵停擺：git pull 連續 6 輪失敗（約 1 小時）。渲染／入料／對帳全部停止，需人工排查工作區狀態。" >>"$LOG" 2>&1
   fi
   exit 0
 fi
@@ -47,29 +60,29 @@ if [ "$STASHED" = 1 ]; then
     git checkout -- data/ >>"$LOG" 2>&1 || true
     git reset -q >>"$LOG" 2>&1
     echo "[$(date '+%m-%d %H:%M')] ⚠ stash pop 衝突：已取遠端版本，本地變更留在 stash@{0}" >>"$LOG"
-    python3 scripts/sync_console.py alert "哨兵 stash pop 衝突：已保留遠端版本，本地暫存在 stash@{0}，請人工確認是否有未同步的操控室操作。" >>"$LOG" 2>&1
+    "$PY" scripts/sync_console.py alert "哨兵 stash pop 衝突：已保留遠端版本，本地暫存在 stash@{0}，請人工確認是否有未同步的操控室操作。" >>"$LOG" 2>&1
   fi
 fi
 
 # 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
-FRG=$(timeout 700 python3 scripts/sync_console.py forage-pending --limit 2 2>&1)
+FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
 # 入料：在製中卡的新草稿自動餵進操控室（每輪最多 2 張，避免單輪過長）
-ING=$(python3 scripts/sync_console.py ingest-new --limit 2 2>&1)
+ING=$("$PY" scripts/sync_console.py ingest-new --limit 2 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|⏭ 餵入|Error" >>"$LOG"
 
-OUT=$(python3 scripts/sync_console.py render-approved 2>&1)
+OUT=$("$PY" scripts/sync_console.py render-approved 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $OUT" | grep -E "✓RENDERED|⏭|Error|Traceback" >>"$LOG"
 
 # 成篇視覺總檢：有新成品才跑（撞主體/浮水印/不可讀/出處異常——逐張閘門看不出來的）
 if echo "$OUT" | grep -q "✓RENDERED"; then
-  QA=$(timeout 600 python3 scripts/sync_console.py post-qa 2>&1)
+  QA=$(timeout 600 "$PY" scripts/sync_console.py post-qa 2>&1)
   echo "$QA" | grep -E "🔴|🟡|✅|\[block\]" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 fi
 
 # 發佈對帳（ClickUp 發佈完成 → posts.json published）；.sync.json 無真 token 時內部自動略過
-REC=$(python3 scripts/sync_console.py reconcile-published 2>&1)
+REC=$("$PY" scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add -A; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
