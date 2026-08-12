@@ -8196,6 +8196,1089 @@
           "CTA 公版"
         ]
       }
+    },
+    {
+      "id": "20260808-KristinNeff研",
+      "topic": "Kristin Neff 研究 20 年「自我慈悲」——她說，你對自己說話的方式，決定了你在關係裡的樣子",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyhwab8",
+      "created_at": null,
+      "caption": "欸⋯⋯你有沒有發現，每次感情出了問題，你第一個攻擊的對象，往往是自己？\n\n你沒辦法靠無限滑動來驗證自己值不值得被愛，那只會讓你更快陷入另一輪自我批評。\nLava 的設計邏輯很簡單，少一點表演，多一點真實見面。\n當你願意帶著不完美的自己出現在一個真實的人面前，那本身就是一種自我慈悲的練習：你在說，我現在這樣就已經可以了。\n\n#自我慈悲 #依附理論 #交友軟體 #約會 #KristinNeff #心理學 #親密關係 #自我批評 #安全依附 #台灣交友 #Lava交友 #不聊天的交友軟體 #線下約會 #關係心理學 #自我成長",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-KristinNeff研/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-KristinNeff研/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-KristinNeff研/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "你對自己說話的方式，決定了你在關係裡的樣子",
+          "display_copy": "欸⋯⋯你有沒有發現\n感情出問題時\n你第一個攻擊的，是自己？\n\n「我怎麼又這樣」\n「是我太敏感了」\n「我本來就不值得被好好對待」\n\n你對自己說話的方式\n決定了你在關係裡的樣子",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-KristinNeff研/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Inside Out2"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-KristinNeff研/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Inside Out2"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-KristinNeff研/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Inside Out2"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個在腦袋裡一直罵你的聲音",
+          "display_copy": "「我怎麼又這樣」\n「我本來就不值得被好好對待」\n\n這些話你說給【自己】聽的頻率\n可能比任何人說給你的都還要多\n\n台灣人從小被教「嚴以律己是美德」\n批評自己＝有上進心\n對自己好＝偷懶\n\n如果你對朋友絕對不會這樣說\n為什麼你覺得對自己說沒關係？",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Kristin Neff 的三元素模型",
+          "display_copy": "Kristin Neff｜德克薩斯大學奧斯汀分校\n2003 年開創自我慈悲量表（SCS）\n至今引發超過 5,000 篇研究\n\n【自我慈悲三元素】\n✚ 自我善待（Self-Kindness）\n✚ 共同人性（Common Humanity）\n✚ 正念（Mindfulness）\n\n不是叫你假裝沒問題\n而是在你最需要支持的時候\n先成為自己的那個人\n\n資料來源：Neff（2023），Annual Review of Psychology, 74:193–217"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-KristinNeff研/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-KristinNeff研/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-KristinNeff研/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            }
+          ],
+          "final_src": null,
+          "heading": "自我批評越強，依附越不安全",
+          "display_copy": "整合【46 項研究、17,650 人】的統合分析\n\n自我慈悲 ↑\n依附焦慮（黏人、怕被拋棄）↓　r = −.42\n迴避型依附（推開對方、假裝不在乎）↓　r = −.32\n\n對自己越苛刻\n在關係裡越難有安全感\n\n這不是個性問題\n而是你內在的安全感基地出了問題\n\n資料來源：Huang & Wu（2025），Journal of Social and Personal Relationships；Hill et al.（2025），Psychology and Psychotherapy",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-KristinNeff研/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-KristinNeff研/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-KristinNeff研/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "對自己好，你才能對伴侶好",
+          "display_copy": "Neff & Beretvas（2013）研究了【104 對情侶】\n\n高自我慈悲者，被伴侶描述為：\n✔ 更有情感連結\n✔ 更接納對方\n✔ 更支持對方自主性\n✔ 較少控制、冷漠與攻擊行為\n✔ 伴侶對關係滿意度也更高\n\n你對自己的態度\n不只是你的內在問題\n它會完整地投射進你們之間的空間\n\n資料來源：Neff & Beretvas（2013），Self and Identity, 12(1), 78–98",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "台灣人的自我慈悲分數，是三個文化裡最低的",
+          "display_copy": "Neff 等人（2008）跨文化研究\n比較台灣、美國、泰國三地\n\n〖台灣的自我慈悲分數是三個文化中最低的〗\n泰國最高｜美國居中｜台灣最低\n\n同樣集體主義——為何泰國截然不同？\n答案：佛教慈悲觀 vs. 儒家羞恥感驅動\n\n「嚴以律己」不是你天生的個性\n而是文化寫進你身體裡的程式\n\n資料來源：Neff, Pisitsungkagarn & Hsieh（2008），Journal of Cross-Cultural Psychology, 39(3), 267–285"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "真實見面，是練習自我慈悲最快的方式之一",
+          "display_copy": "你沒辦法靠無限滑動\n來驗證自己值不值得被愛\n\n那只會讓你更快\n陷入另一輪【自我批評】\n\nLava 的邏輯很簡單\n少一點表演，多一點真實見面\n\n當你願意帶著不完美的自己出現\n那本身就是一種自我慈悲的練習\n\n你在說：我現在這樣，就已經可以了"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-KristinNeff研/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "Little Miss Sunshine"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-KristinNeff研/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "Little Miss Sunshine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-KristinNeff研/slide-8c.jpg",
+              "kind": "still",
+              "source_label": "Little Miss Sunshine"
+            }
+          ],
+          "final_src": null,
+          "heading": "從今天開始，試試這一件事",
+          "display_copy": "當你又開始在腦袋裡審判自己\n\n停一秒，問自己：\n【如果是我最好的朋友遇到一樣的狀況\n我會對他說什麼？】\n\n然後把那句話說給自己聽\n\n這個練習在重新訓練你的內在基地\n讓你在關係裡不需要靠焦慮或迴避來保護自己\n\n因為你內部\n已經有一個不會拋棄你的人了",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "欸⋯⋯你有沒有發現，每次感情出了問題，你第一個攻擊的對象，往往是自己？\n\n你沒辦法靠無限滑動來驗證自己值不值得被愛，那只會讓你更快陷入另一輪自我批評。\nLava 的設計邏輯很簡單，少一點表演，多一點真實見面。\n當你願意帶著不完美的自己出現在一個真實的人面前，那本身就是一種自我慈悲的練習：你在說，我現在這樣就已經可以了。\n\n#自我慈悲 #依附理論 #交友軟體 #約會 #KristinNeff #心理學 #親密關係 #自我批評 #安全依附 #台灣交友 #Lava交友 #不聊天的交友軟體 #線下約會 #關係心理學 #自我成長",
+          "slides": {
+            "1": {
+              "heading": "你對自己說話的方式，決定了你在關係裡的樣子",
+              "display_copy": "欸⋯⋯你有沒有發現\n感情出問題時\n你第一個攻擊的，是自己？\n\n「我怎麼又這樣」\n「是我太敏感了」\n「我本來就不值得被好好對待」\n\n你對自己說話的方式\n決定了你在關係裡的樣子"
+            },
+            "2": {
+              "heading": "那個在腦袋裡一直罵你的聲音",
+              "display_copy": "「我怎麼又這樣」\n「我本來就不值得被好好對待」\n\n這些話你說給【自己】聽的頻率\n可能比任何人說給你的都還要多\n\n台灣人從小被教「嚴以律己是美德」\n批評自己＝有上進心\n對自己好＝偷懶\n\n如果你對朋友絕對不會這樣說\n為什麼你覺得對自己說沒關係？"
+            },
+            "3": {
+              "heading": "Kristin Neff 的三元素模型",
+              "display_copy": "Kristin Neff｜德克薩斯大學奧斯汀分校\n2003 年開創自我慈悲量表（SCS）\n至今引發超過 5,000 篇研究\n\n【自我慈悲三元素】\n✚ 自我善待（Self-Kindness）\n✚ 共同人性（Common Humanity）\n✚ 正念（Mindfulness）\n\n不是叫你假裝沒問題\n而是在你最需要支持的時候\n先成為自己的那個人\n\n資料來源：Neff（2023），Annual Review of Psychology, 74:193–217"
+            },
+            "4": {
+              "heading": "自我批評越強，依附越不安全",
+              "display_copy": "整合【46 項研究、17,650 人】的統合分析\n\n自我慈悲 ↑\n依附焦慮（黏人、怕被拋棄）↓　r = −.42\n迴避型依附（推開對方、假裝不在乎）↓　r = −.32\n\n對自己越苛刻\n在關係裡越難有安全感\n\n這不是個性問題\n而是你內在的安全感基地出了問題\n\n資料來源：Huang & Wu（2025），Journal of Social and Personal Relationships；Hill et al.（2025），Psychology and Psychotherapy"
+            },
+            "5": {
+              "heading": "對自己好，你才能對伴侶好",
+              "display_copy": "Neff & Beretvas（2013）研究了【104 對情侶】\n\n高自我慈悲者，被伴侶描述為：\n✔ 更有情感連結\n✔ 更接納對方\n✔ 更支持對方自主性\n✔ 較少控制、冷漠與攻擊行為\n✔ 伴侶對關係滿意度也更高\n\n你對自己的態度\n不只是你的內在問題\n它會完整地投射進你們之間的空間\n\n資料來源：Neff & Beretvas（2013），Self and Identity, 12(1), 78–98"
+            },
+            "6": {
+              "heading": "台灣人的自我慈悲分數，是三個文化裡最低的",
+              "display_copy": "Neff 等人（2008）跨文化研究\n比較台灣、美國、泰國三地\n\n〖台灣的自我慈悲分數是三個文化中最低的〗\n泰國最高｜美國居中｜台灣最低\n\n同樣集體主義——為何泰國截然不同？\n答案：佛教慈悲觀 vs. 儒家羞恥感驅動\n\n「嚴以律己」不是你天生的個性\n而是文化寫進你身體裡的程式\n\n資料來源：Neff, Pisitsungkagarn & Hsieh（2008），Journal of Cross-Cultural Psychology, 39(3), 267–285"
+            },
+            "7": {
+              "heading": "真實見面，是練習自我慈悲最快的方式之一",
+              "display_copy": "你沒辦法靠無限滑動\n來驗證自己值不值得被愛\n\n那只會讓你更快\n陷入另一輪【自我批評】\n\nLava 的邏輯很簡單\n少一點表演，多一點真實見面\n\n當你願意帶著不完美的自己出現\n那本身就是一種自我慈悲的練習\n\n你在說：我現在這樣，就已經可以了"
+            },
+            "8": {
+              "heading": "從今天開始，試試這一件事",
+              "display_copy": "當你又開始在腦袋裡審判自己\n\n停一秒，問自己：\n【如果是我最好的朋友遇到一樣的狀況\n我會對他說什麼？】\n\n然後把那句話說給自己聽\n\n這個練習在重新訓練你的內在基地\n讓你在關係裡不需要靠焦慮或迴避來保護自己\n\n因為你內部\n已經有一個不會拋棄你的人了"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "你對自己說話的方式，決定了你在關係裡的樣",
+          "子",
+          "",
+          "欸⋯⋯你有沒有發現",
+          "感情出問題時",
+          "你第一個攻擊的，是自己",
+          "「我怎麼又這樣」",
+          "「是我太敏感了」",
+          "「我本來就不值得被好好對待」",
+          "你對自己說話的方式",
+          "決定了你在關係裡的樣子"
+        ],
+        "2": [
+          "那個在腦袋裡一直罵你的聲音",
+          "",
+          "「我怎麼又這樣」",
+          "「我本來就不值得被好好對待」",
+          "這些話你說給自己聽的頻率",
+          "可能比任何人說給你的都還要多",
+          "台灣人從小被教「嚴以律己是美德」",
+          "批評自己＝有上進心",
+          "對自己好＝偷懶",
+          "如果你對朋友絕對不會這樣說",
+          "為什麼你覺得對自己說沒關係"
+        ],
+        "3": [
+          "Kristin Neff 的三元素模型",
+          "",
+          "Kristin Neff｜德克薩斯大學奧斯汀分校",
+          "2003 年開創自我慈悲量表（SCS）",
+          "至今引發超過 5,000 篇研究",
+          "自我慈悲三元素",
+          "✚ 自我善待（Self-Kindness）",
+          "✚ 共同人性（Common Humanity）",
+          "✚ 正念（Mindfulness）",
+          "不是叫你假裝沒問題",
+          "而是在你最需要支持的時候",
+          "先成為自己的那個人",
+          "資料來源：Neff（2023），Annual Review of",
+          "Psychology, 74:193–217"
+        ],
+        "4": [
+          "自我批評越強，依附越不安全",
+          "",
+          "整合46 項研究、17,650 人的統合分析",
+          "自我慈悲 ↑",
+          "依附焦慮（黏人、怕被拋棄）↓　r = −.42",
+          "迴避型依附（推開對方、假裝不在乎）↓　r = −.32",
+          "對自己越苛刻",
+          "在關係裡越難有安全感",
+          "這不是個性問題",
+          "而是你內在的安全感基地出了問題",
+          "資料來源：Huang & Wu（2025），Journal of Social",
+          "and Personal Relationships；Hill et al.（2025）",
+          "Psychology and Psychotherapy"
+        ],
+        "5": [
+          "對自己好，你才能對伴侶好",
+          "",
+          "Neff & Beretvas（2013）研究了104 對情侶",
+          "高自我慈悲者，被伴侶描述為",
+          "✔ 更有情感連結",
+          "✔ 更接納對方",
+          "✔ 更支持對方自主性",
+          "✔ 較少控制、冷漠與攻擊行為",
+          "✔ 伴侶對關係滿意度也更高",
+          "你對自己的態度",
+          "不只是你的內在問題",
+          "它會完整地投射進你們之間的空間",
+          "資料來源：Neff & Beretvas（2013），Self and",
+          "Identity, 12(1), 78–98"
+        ],
+        "6": [
+          "台灣人的自我慈悲分數，是三個文化裡最低的",
+          "",
+          "Neff 等人（2008）跨文化研究",
+          "比較台灣、美國、泰國三地",
+          "台灣的自我慈悲分數是三個文化中最低的",
+          "泰國最高｜美國居中｜台灣最低",
+          "同樣集體主義——為何泰國截然不同",
+          "答案：佛教慈悲觀 vs. 儒家羞恥感驅動",
+          "「嚴以律己」不是你天生的個性",
+          "而是文化寫進你身體裡的程式",
+          "資料來源：Neff, Pisitsungkagarn & Hsieh（2008）",
+          "Journal of Cross-Cultural Psychology, 39(3), 267–",
+          "285"
+        ],
+        "7": [
+          "真實見面，是練習自我慈悲最快的方式之一",
+          "",
+          "你沒辦法靠無限滑動",
+          "來驗證自己值不值得被愛",
+          "那只會讓你更快",
+          "陷入另一輪自我批評",
+          "Lava 的邏輯很簡單",
+          "少一點表演，多一點真實見面",
+          "當你願意帶著不完美的自己出現",
+          "那本身就是一種自我慈悲的練習",
+          "你在說：我現在這樣，就已經可以了"
+        ],
+        "8": [
+          "從今天開始，試試這一件事",
+          "",
+          "當你又開始在腦袋裡審判自己",
+          "停一秒，問自己",
+          "【如果是我最好的朋友遇到一樣的狀況",
+          "我會對他說什麼】",
+          "然後把那句話說給自己聽",
+          "這個練習在重新訓練你的內在基地",
+          "讓你在關係裡不需要靠焦慮或迴避來保護自己",
+          "因為你內部",
+          "已經有一個不會拋棄你的人了"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
+    },
+    {
+      "id": "20260808-欸你有沒有發現rTind",
+      "topic": "欸…你有沒有發現，寵物去世後「不敢再養」這件事——心理學家說，這和你在感情裡「被傷過就關閉自己」是同一個機制？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyht5dp",
+      "created_at": null,
+      "caption": "寵物走了之後說「不敢再養」的人，跟感情受傷之後說「不想再談了」的人，其實在做同一件事。\n\n被傷過的人才知道連結有多重要，也才知道它有多危險。\nLava 存在的理由，不是幫你找一個「完美無傷」的人，而是讓你在還沒說出口之前，先實際見到一個真實的人。\n少一點在文字裡反覆確認對方安不安全，多一點在同一個空間裡感受對方是不是值得。\n\n#交友軟體 #台灣交友 #約會 #心理學 #依附理論 #感情關係 #Lava交友 #不聊天的交友軟體 #悲傷心理 #迴避型依附 #寵物離世 #心理健康 #戀愛心理學 #線下約會 #自我成長",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "a-mood6a9da",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "組圖：Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "c-mooddfe00",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1h.jpg",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1i.jpg",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1j.jpg",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1k.jpg",
+              "kind": "still",
+              "source_label": "My Mister"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-1l.jpg",
+              "kind": "still",
+              "source_label": "My Mister"
+            }
+          ],
+          "final_src": null,
+          "heading": "欸…你有沒有發現",
+          "display_copy": "欸…你有沒有發現\n\n「不敢再養」\n跟「不想再愛」\n\n〖是同一個機制？〗\n\n寵物走了、感情傷了\n你關上的，是同一扇門",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "a-moodca2a9",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "a-mooded3bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "b-moodbae58",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2h.jpg",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2i.jpg",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2j.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2k.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-2l.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "PTT 上那條推文",
+          "display_copy": "PTT WomenTalk 有人問：\n寵物過世後怎麼面對？\n\n推文裡出現兩種聲音——\n「再養一隻吧」\n「太痛了，後來也不敢再養」\n\n你說過這句話嗎？\n對象是一隻貓，\n還是一個人？\n\n資料來源：PTT WomenTalk〈是怎麼面對寵物過世呢？〉2023；〈寵物離世是不是像小孩死了〉2026",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "a-mood5b2bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "b-mood8d6a6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            }
+          ],
+          "final_src": null,
+          "heading": "心理學給這件事一個名字",
+          "display_copy": "心理學家 Kenneth Doka，1989 年\n\n他說這叫\n【剝奪性悲傷】\nDisenfranchised Grief\n\n「不過是一隻貓狗」\n這句話不是安慰\n\n是在告訴你：\n你沒有資格悲傷\n——所以只能選擇不再投入\n\n資料來源：Doka, K. (1989). Disenfranchised Grief. Lexington Books.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4h.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4i.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4j.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4k.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-4l.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "依附理論說：這不是你不愛了",
+          "display_copy": "Bowlby 依附理論這樣說：\n\n【依附迴避】\n不是你不愛了\n\n是你的大腦主動切斷連結\n讓思念「失去取用管道」\n——以此換取不再受傷\n\n寵物與主人的依附強度\n可媲美浪漫伴侶關係\n（Beck & Madresh, 2008）\n\n資料來源：Human-Animal Interaction Bulletin / CABI Digital Library",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "a-moodbc490",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "b-mood7f68d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-5h.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            }
+          ],
+          "final_src": null,
+          "heading": "數據說：迴避並沒有讓你比較好過",
+          "display_copy": "《Death Studies》2023 年研究\n樣本：496 名失去寵物的成人\n\n高迴避者表面上「悲傷分數較低」\n\n但研究者說：\n【這不代表他們沒事】\n很可能只是——\n情緒被壓下去，等著爆發\n\n31 項研究、8,347 人 Meta 分析確認：\n迴避與複雜性悲傷顯著相關（r = 0.15）\n\n資料來源：Death Studies / Tandfonline (2023)；Personality and Individual Differences (2023)",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-6a.jpg",
+              "kind": "still",
+              "source_label": "a-mood28de2",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-6b.jpg",
+              "kind": "still",
+              "source_label": "b-moodf8d8b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-6c.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-6d.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-6e.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "迴避的代價：你關上的不只是痛",
+          "display_copy": "兩份 Meta 分析\n（Hadden et al., 2014；Li & Chan, 2012）\n同樣得出：\n\n依附迴避越高\n【關係滿意度越低】\n\n「獨立」有時候\n只是恐懼穿了一件體面的外衣\n\n你關上的不只是痛\n也是所有可能走進來的人\n\n資料來源：Personality and Individual Differences / ScienceDirect",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7a.jpg",
+              "kind": "still",
+              "source_label": "a-mood073b1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7b.jpg",
+              "kind": "still",
+              "source_label": "a-mood27caf",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7c.jpg",
+              "kind": "still",
+              "source_label": "b-mood3b208",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7d.jpg",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7e.jpg",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7f.jpg",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7g.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7h.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7i.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7j.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7k.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-7l.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 想找的，不是沒有傷過的人",
+          "display_copy": "被傷過的人\n才知道連結有多珍貴\n\nLava 不是要你\n假裝沒有受過傷\n\n而是讓你\n【少一點文字試探】\n多一點真實相遇\n\n因為有些答案\n只有在同一個空間裡\n才能感覺得到",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "a-mood9b25b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "b-moodef574",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8c.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8d.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8e.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8f.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8g.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現rTind/slide-8h.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": null,
+          "heading": "那，可以怎麼開始？",
+          "display_copy": "心理學家說：\n不是要你強迫自己打開\n\n而是先注意到——\n你什麼時候開始找藉口不赴約？\n對話熱起來的時候為什麼想消失？\n\n研究把這叫做\n【刻意反芻】\n有意識地重新處理失落\n\n三分之一的人從沒說出口\n但你可以開始承認：\n「我還沒好。」\n\n資料來源：PMC (2025)，中國大學生寵物失落悲傷研究",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "寵物走了之後說「不敢再養」的人，跟感情受傷之後說「不想再談了」的人，其實在做同一件事。\n\n被傷過的人才知道連結有多重要，也才知道它有多危險。\nLava 存在的理由，不是幫你找一個「完美無傷」的人，而是讓你在還沒說出口之前，先實際見到一個真實的人。\n少一點在文字裡反覆確認對方安不安全，多一點在同一個空間裡感受對方是不是值得。\n\n#交友軟體 #台灣交友 #約會 #心理學 #依附理論 #感情關係 #Lava交友 #不聊天的交友軟體 #悲傷心理 #迴避型依附 #寵物離世 #心理健康 #戀愛心理學 #線下約會 #自我成長",
+          "slides": {
+            "1": {
+              "heading": "欸…你有沒有發現",
+              "display_copy": "欸…你有沒有發現\n\n「不敢再養」\n跟「不想再愛」\n\n〖是同一個機制？〗\n\n寵物走了、感情傷了\n你關上的，是同一扇門"
+            },
+            "2": {
+              "heading": "PTT 上那條推文",
+              "display_copy": "PTT WomenTalk 有人問：\n寵物過世後怎麼面對？\n\n推文裡出現兩種聲音——\n「再養一隻吧」\n「太痛了，後來也不敢再養」\n\n你說過這句話嗎？\n對象是一隻貓，\n還是一個人？\n\n資料來源：PTT WomenTalk〈是怎麼面對寵物過世呢？〉2023；〈寵物離世是不是像小孩死了〉2026"
+            },
+            "3": {
+              "heading": "心理學給這件事一個名字",
+              "display_copy": "心理學家 Kenneth Doka，1989 年\n\n他說這叫\n【剝奪性悲傷】\nDisenfranchised Grief\n\n「不過是一隻貓狗」\n這句話不是安慰\n\n是在告訴你：\n你沒有資格悲傷\n——所以只能選擇不再投入\n\n資料來源：Doka, K. (1989). Disenfranchised Grief. Lexington Books."
+            },
+            "4": {
+              "heading": "依附理論說：這不是你不愛了",
+              "display_copy": "Bowlby 依附理論這樣說：\n\n【依附迴避】\n不是你不愛了\n\n是你的大腦主動切斷連結\n讓思念「失去取用管道」\n——以此換取不再受傷\n\n寵物與主人的依附強度\n可媲美浪漫伴侶關係\n（Beck & Madresh, 2008）\n\n資料來源：Human-Animal Interaction Bulletin / CABI Digital Library"
+            },
+            "5": {
+              "heading": "數據說：迴避並沒有讓你比較好過",
+              "display_copy": "《Death Studies》2023 年研究\n樣本：496 名失去寵物的成人\n\n高迴避者表面上「悲傷分數較低」\n\n但研究者說：\n【這不代表他們沒事】\n很可能只是——\n情緒被壓下去，等著爆發\n\n31 項研究、8,347 人 Meta 分析確認：\n迴避與複雜性悲傷顯著相關（r = 0.15）\n\n資料來源：Death Studies / Tandfonline (2023)；Personality and Individual Differences (2023)"
+            },
+            "6": {
+              "heading": "迴避的代價：你關上的不只是痛",
+              "display_copy": "兩份 Meta 分析\n（Hadden et al., 2014；Li & Chan, 2012）\n同樣得出：\n\n依附迴避越高\n【關係滿意度越低】\n\n「獨立」有時候\n只是恐懼穿了一件體面的外衣\n\n你關上的不只是痛\n也是所有可能走進來的人\n\n資料來源：Personality and Individual Differences / ScienceDirect"
+            },
+            "7": {
+              "heading": "Lava 想找的，不是沒有傷過的人",
+              "display_copy": "被傷過的人\n才知道連結有多珍貴\n\nLava 不是要你\n假裝沒有受過傷\n\n而是讓你\n【少一點文字試探】\n多一點真實相遇\n\n因為有些答案\n只有在同一個空間裡\n才能感覺得到"
+            },
+            "8": {
+              "heading": "那，可以怎麼開始？",
+              "display_copy": "心理學家說：\n不是要你強迫自己打開\n\n而是先注意到——\n你什麼時候開始找藉口不赴約？\n對話熱起來的時候為什麼想消失？\n\n研究把這叫做\n【刻意反芻】\n有意識地重新處理失落\n\n三分之一的人從沒說出口\n但你可以開始承認：\n「我還沒好。」\n\n資料來源：PMC (2025)，中國大學生寵物失落悲傷研究"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "欸…你有沒有發現",
+          "",
+          "欸…你有沒有發現",
+          "「不敢再養」",
+          "跟「不想再愛」",
+          "〖是同一個機制〗",
+          "寵物走了、感情傷了",
+          "你關上的，是同一扇門"
+        ],
+        "2": [
+          "PTT 上那條推文",
+          "",
+          "PTT WomenTalk 有人問",
+          "寵物過世後怎麼面對",
+          "推文裡出現兩種聲音",
+          "「再養一隻吧」",
+          "「太痛了，後來也不敢再養」",
+          "你說過這句話嗎",
+          "對象是一隻貓",
+          "還是一個人",
+          "資料來源：PTT WomenTalk〈是怎麼面對寵物過世呢？",
+          "〉2023；〈寵物離世是不是像小孩死了〉2026"
+        ],
+        "3": [
+          "心理學給這件事一個名字",
+          "",
+          "心理學家 Kenneth Doka，1989 年",
+          "他說這叫",
+          "剝奪性悲傷",
+          "Disenfranchised Grief",
+          "「不過是一隻貓狗」",
+          "這句話不是安慰",
+          "是在告訴你",
+          "你沒有資格悲傷",
+          "——所以只能選擇不再投入",
+          "資料來源：Doka, K. (1989). Disenfranchised Grief.",
+          "Lexington Books"
+        ],
+        "4": [
+          "依附理論說：這不是你不愛了",
+          "",
+          "Bowlby 依附理論這樣說",
+          "依附迴避",
+          "不是你不愛了",
+          "是你的大腦主動切斷連結",
+          "讓思念「失去取用管道」",
+          "——以此換取不再受傷",
+          "寵物與主人的依附強度",
+          "可媲美浪漫伴侶關係",
+          "（Beck & Madresh, 2008）",
+          "資料來源：Human-Animal Interaction Bulletin / CABI",
+          "Digital Library"
+        ],
+        "5": [
+          "數據說：迴避並沒有讓你比較好過",
+          "",
+          "《Death Studies》2023 年研究",
+          "樣本：496 名失去寵物的成人",
+          "高迴避者表面上「悲傷分數較低」",
+          "但研究者說",
+          "這不代表他們沒事",
+          "很可能只是",
+          "情緒被壓下去，等著爆發",
+          "31 項研究、8,347 人 Meta 分析確認",
+          "迴避與複雜性悲傷顯著相關（r = 0.15）",
+          "資料來源：Death Studies / Tandfonline (2023)",
+          "Personality and Individual Differences (2023)"
+        ],
+        "6": [
+          "迴避的代價：你關上的不只是痛",
+          "",
+          "兩份 Meta 分析",
+          "（Hadden et al., 2014；Li & Chan, 2012）",
+          "同樣得出",
+          "依附迴避越高",
+          "關係滿意度越低",
+          "「獨立」有時候",
+          "只是恐懼穿了一件體面的外衣",
+          "你關上的不只是痛",
+          "也是所有可能走進來的人",
+          "資料來源：Personality and Individual Differences /",
+          "ScienceDirect"
+        ],
+        "7": [
+          "Lava 想找的，不是沒有傷過的人",
+          "",
+          "被傷過的人",
+          "才知道連結有多珍貴",
+          "Lava 不是要你",
+          "假裝沒有受過傷",
+          "而是讓你",
+          "少一點文字試探",
+          "多一點真實相遇",
+          "因為有些答案",
+          "只有在同一個空間裡",
+          "才能感覺得到"
+        ],
+        "8": [
+          "那，可以怎麼開始",
+          "",
+          "心理學家說",
+          "不是要你強迫自己打開",
+          "而是先注意到",
+          "你什麼時候開始找藉口不赴約",
+          "對話熱起來的時候為什麼想消失",
+          "研究把這叫做",
+          "刻意反芻",
+          "有意識地重新處理失落",
+          "三分之一的人從沒說出口",
+          "但你可以開始承認",
+          "「我還沒好。」",
+          "資料來源：PMC (2025)，中國大學生寵物失落悲傷研",
+          "究"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
     }
   ]
 }
