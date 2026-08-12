@@ -94,7 +94,7 @@ fi
 # 發佈對帳（ClickUp 發佈完成 → posts.json published）；.sync.json 無真 token 時內部自動略過
 REC=$("$PY" scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
-echo "$REC" | grep -q "✓" && { git add -A; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
+echo "$REC" | grep -q "✓" && { git add data/ docs/finals/ assets/ 2>/dev/null; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
 if echo "$OUT$ING" | grep -qE "✓RENDERED|✓ posts"; then
   git add data/ docs/finals/ assets/ 2>/dev/null
