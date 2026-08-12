@@ -429,6 +429,26 @@
         "8": "d"
       },
       "feedback": "v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。"
+    },
+    {
+      "id": "R-mspo7trv",
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-12T13:50:45+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "g",
+        "3": "b",
+        "4": "a",
+        "5": "a",
+        "6": "d",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
