@@ -735,7 +735,10 @@ def render_approved(args):
         p = posts.get(pid)
         if not p or p.get("status") == "published":
             continue
-        if p.get("status") == "scheduled" and all(s.get("public_url") for s in p["slides"] if s.get("candidates")):
+        if getattr(args, "only", None) and pid != args.only:
+            continue   # --only 必須最先判斷，否則其他篇的訊息會混進來（2026-08-12）
+        if (p.get("status") == "scheduled" and not getattr(args, "force", False)
+                and all(s.get("public_url") for s in p["slides"] if s.get("candidates"))):
             # 已排程且成品齊 → 原則不動（成品缺＝重餵洗掉，放行往下重渲染，否則 WF10 到點發不出去）。
             # 例外（2026-08-11 Jesse：改了文案卻發到舊版）：排程後才存的文案編輯／審核若比 rendered_at 新，
             # 仍必須重出——否則修改靜默失效，且 WF10 到點把舊版發上 IG，無法回收。
@@ -744,8 +747,6 @@ def render_approved(args):
             if not (_newest and p.get("rendered_at") and _newest > p["rendered_at"]):
                 continue
             print("   ↻ %s 排程後有新修改（%s）→ 重出成品" % (pid[:22], _newest[:16]))
-        if getattr(args, "only", None) and pid != args.only:
-            continue
         dec, scope = r.get("decision"), r.get("scope")
         if dec == "reject" and scope == "base_image":
             if p.get("status") != "awaiting_review":
@@ -869,6 +870,35 @@ def render_approved(args):
                 s["render_credit"] = credits[int(s["index"])]   # 圖上小字來源標示（引擎繪製）
         if credits:
             p["image_credits"] = ["第 %d 張：%s" % (n, credits[n].replace("圖片來源：", "")) for n in sorted(credits)]
+        # 圖上實際呈現的逐行文字：操控室的文字框是「原始文案」，圖上經過清標點／重斷行，
+        # 兩者不一致時使用者無從判斷哪個是真的（Jesse 2026-08-12）。
+        # 存在 post 層而非 slides[]——slides 會被 refeed 重建，寫在那裡會被沖掉。
+        try:
+            import check_typography as _ct
+            rl = {}
+            for s_ in draft.get("slides", []):
+                n = int(s_.get("index", 0) or 0)
+                if not n:
+                    continue
+                head = _ct.E.strip_trailing_punct(re.sub(r"[【】〖〗]", "", s_.get("heading") or ""))
+                body = _ct.E.strip_trailing_punct(s_.get("display_copy") or "")
+                f_h = _ct.ImageFont.truetype(_ct.E.F_MED, int(_ct.E.W * 0.043))
+                f_b = _ct.ImageFont.truetype(_ct.E.F_MED if n == 1 else _ct.E.F_REG,
+                                             int(_ct.E.W * (0.032 if n == 1 else 0.036)))
+                mw_b = int(_ct.E.W * (0.78 if n == 1 else 0.86))
+                out = []
+                for para in [x for x in head.split("\n") if x.strip()]:
+                    out += ["".join(t for t, _ in L)
+                            for L in _ct._lines_for(para, f_h, int(_ct.E.W * 0.86), False)]
+                if out:
+                    out.append("")
+                for para in [x for x in body.split("\n") if x.strip()]:
+                    out += ["".join(t for t, _ in L) for L in _ct._lines_for(para, f_b, mw_b, n == 1)]
+                rl[str(n)] = out
+            if rl:
+                p["rendered_lines"] = rl
+        except Exception as _e:
+            sys.stderr.write("  ! 實際呈現文字計算失敗：%s\n" % _e)
         # 封面文案自我審查（機械、零 AI）——規則正本 config/self-check.md
         _cov = next((s for s in draft.get("slides", []) if int(s.get("index", 0) or 0) == 1), None)
         p["cover_head"] = ((_cov or {}).get("heading") or "").strip()

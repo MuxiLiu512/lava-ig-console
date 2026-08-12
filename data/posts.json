@@ -4383,410 +4383,6 @@
       "published_at": "2026-08-11T16:10:50+08:00"
     },
     {
-      "id": "20260803-JohnGottman研",
-      "topic": "John Gottman 研究 40 年、觀察 3000 對夫妻——他說能預測分手的，不是吵架，是這個表情",
-      "version": 1,
-      "status": "scheduled",
-      "clickup_task_id": "86eydj5k7",
-      "created_at": null,
-      "caption": "欸…\n\n…\n你有沒有發現，有些伴侶明明吵得很凶，最後還是在一起；有些兩個人看起來相安無事，卻悄悄走向終點。\n心理學家 John Gottman 在愛情實驗室研究 40 年後說：問題從來不是吵不吵架，而是那個在吵架時一閃而過的表情。\n\n台灣人很習慣忍耐「小小的瞧不起」，那個一直被糾正語氣、那個對方說你「就是這樣」時你選擇沉默，那個你說完一件事對方笑了但你不確定是好笑還是嘲笑。\nGottman 說，輕蔑不是一夜之間出現的，它由一個個被吞下去的挫折堆積而成，每一次未解決的衝突都在為它提供養分。\n這就是為什麼 Lava 認為，在感情正式開始之前，親自見面、親眼看見對方，遠比訊息往來重要。\n有些訊號，只有在現場才能感知。\n\n#交友軟體 #約會 #感情關係 #伴侶溝通 #心理學 #Gottman #關係研究 #輕蔑 #溝通技巧 #愛情心理學 #台灣交友 #Lava交友 #不聊天的交友軟體 #線下約會 #感情經營",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood8eaaa",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Gottman Institute",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moodfd074",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-1.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-1.jpg",
-          "heading": "能預測分手的，不是吵架頻率，是這個表情",
-          "display_copy": "欸，你有沒有發現\n有些情侶吵得很凶，卻沒分\n有些幾乎不吵，卻散了\n\nGottman 研究 40 年、超過 3,000 對伴侶\n結論只有一句話：\n〖能預測分手的，不是吵架頻率，是這個表情〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood9e0f4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-2e.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-2f.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-JohnGottman研/slide-2g.webp",
-              "kind": "still",
-              "source_label": "My Liberation Notes"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-2.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-2.jpg",
-          "heading": "你大概有過這種感覺",
-          "display_copy": "對方說了句話，不算過分\n但那個語氣，那個眼神\n嘴角微微往上一勾\n你感覺到了\n\n然後你告訴自己：【「算了，他只是這樣講話」】\n\nGottman 說——\n輕蔑不是一夜出現的\n它由每一個吞下去的「算了」堆積而成",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Gottman Institute",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-3b.webp",
-              "kind": "still",
-              "source_label": "John Gottman",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-3c.webp",
-              "kind": "still",
-              "source_label": "John Gottman",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-3.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-3.jpg",
-          "heading": "Gottman 的愛情實驗室",
-          "display_copy": "華盛頓大學，「愛情實驗室（Love Lab）」\n\n真實伴侶在裡面做飯、看電視、討論衝突\n攝影機＋生理監測＋臉部微表情，全程記錄\n\n觀察超過 【3,000 對伴侶】，橫跨 40 年\n他要回答一個問題：\n【感情走向，能不能被預測？】\n\n結論：吵架頻率不重要，吵架的方式才是\n資料來源：Gottman, J.M., The Marriage Clinic, W.W. Norton & Company, 1999；The Gottman Institute, gottman.com",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mooddc0b5",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-4b.webp",
-              "kind": "still",
-              "source_label": "b-moodb7099",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Scenesfroma Marriage"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Scenesfroma Marriage"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Scenesfroma Marriage"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Revolutionary Road"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-JohnGottman研/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Revolutionary Road"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-JohnGottman研/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Revolutionary Road"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-4.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-4.jpg",
-          "heading": "94% 準確率，只需要 15 分鐘",
-          "display_copy": "1992 年，Gottman 的研究只觀察伴侶 【15 分鐘】\n就能以 〖94% 準確率〗 預測離婚\n\n他找到的關鍵叫「末日四騎士」：\n批評 → 輕蔑 → 防禦 → 冷戰\n四個傾向按順序出現，像骨牌\n\n四騎士裡【破壞力最強的，不是最激烈的那個】\n是最安靜的那個\n資料來源：Buehlman, K., Gottman, J.M., & Katz, L., 1992, Journal of Family Psychology",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-moodabd67",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-mood46882",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Kramervs Kramer",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Kramervs Kramer"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Kramervs Kramer"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-JohnGottman研/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260803-JohnGottman研/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260803-JohnGottman研/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-5.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-5.jpg",
-          "heading": "輕蔑和批評，差在哪裡",
-          "display_copy": "批評：「你又忘了付帳單。」\n→ 攻擊的是一個行為，可能反映未滿足的需求\n\n輕蔑：「你就是這麼沒責任感，從來都這樣。」\n→ 攻擊的是【這個人本身】\n\n輕蔑傳達的訊息是：\n〖「我比你優越，你這個人有問題」〗\n\n它不是一時的不滿，是長期積怨的結晶\n長期承受輕蔑的人，連免疫系統都會下降",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood273fc",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-mood36418",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Lieto Me"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Lieto Me",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-6e.webp",
-              "kind": "still",
-              "source_label": "Lieto Me"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-6.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-6.jpg",
-          "heading": "那個一閃而過的表情",
-          "display_copy": "輕蔑的微表情：【單側嘴角上揚 + 翻白眼】\n發生時間：1/25 秒至 1/5 秒，比眨眼還快\n\n約 80–90% 的人在對話中完全錯過它\n但你的身體察覺了\n\n那個「說不清楚、只覺哪裡怪」的感覺\n【可能在第一次見面就已經在告訴你了】\n\n你習慣說服自己：「我想太多。」\n資料來源：Ekman, P., Facial Action Coding System (FACS)；Gottman Institute Training Materials",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood678a7",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mood8f512",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-JohnGottman研/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-JohnGottman研/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-JohnGottman研/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-7.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-7.jpg",
-          "heading": "Lava 在做的事",
-          "display_copy": "台灣人很習慣忍耐「小小的瞧不起」\n那個語氣，那個笑，那個「你就是這樣」\n\nGottman 說：輕蔑由吞下去的挫折堆積而成\n每一個未解決的衝突，都是它的養分\n\nLava 認為，有些訊號【只有在現場才能感知】\n訊息再多，也感受不到那個一閃而過的眼神\n見面，才是真正的開始",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-JohnGottman研/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood99955",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-JohnGottman研/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood2a85c",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-8.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-8.jpg",
-          "heading": "那你現在可以怎麼做",
-          "display_copy": "Gottman 給你的三個觀察點：\n\n① 對方不滿時，攻擊的是【你做的事】還是【你這個人】？\n② 那個「說不清楚的不舒服」——別急著說服自己沒事\n   你的直覺比你的大腦更早讀到訊號\n③ 健康關係的正負互動比例：【至少 5:1】\n   低於這個，關係就在被消耗\n\n輕蔑很少大聲，它通常很安靜\n而且【出現得很早】",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260803-JohnGottman研/final/slide-9.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-9.jpg",
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-11T16:46:58+08:00",
-      "candidates_since": "2026-08-10T21:56:12+08:00",
-      "image_credits": [
-        "第 1 張：《Marriage Story》劇照，版權屬原權利方",
-        "第 2 張：《Gone Girl》劇照，版權屬原權利方",
-        "第 3 張：John Gottman（截圖引用）",
-        "第 5 張：《Kramervs Kramer》劇照，版權屬原權利方",
-        "第 6 張：《Lieto Me》劇照，版權屬原權利方"
-      ],
-      "copy_choice": "claude",
-      "publish_at": "2026-08-12T14:00:00+08:00"
-    },
-    {
       "id": "20260803-欸你有沒有發現歐美正在流",
       "topic": "欸…你有沒有發現，歐美正在流行「不帶手機去約會」？",
       "version": 1,
@@ -4879,8 +4475,8 @@
           ],
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-1.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-1.jpg",
-          "heading": "手機放著沒在用，也會讓約會變差",
-          "display_copy": "欸⋯你有沒有發現\n歐美在流行「不帶手機去約會」？\n\n不是規定，是【自願的】。\n因為他們發現：真正稀缺的不是時間——\n而是注意力。\n\n手機放桌上沒在用，對話就已經變淺了。",
+          "heading": "手機真的會毀了約會？\n看看科學以及實驗怎麼說吧",
+          "display_copy": "大家在意的，可能不是對方有沒有付出時間，而是對方是否注意你。\n手機作為注意力的代表，即便放桌上沒在用，可能就導致對話深度變淺。",
           "default_cid": "a"
         },
         {
@@ -4966,7 +4562,7 @@
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-2.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-2.jpg",
           "heading": "你也有這種感覺嗎？",
-          "display_copy": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累——你有沒有這種感覺？",
+          "display_copy": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累，你有沒有這種感覺？",
           "default_cid": "a"
         },
         {
@@ -5009,7 +4605,7 @@
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-3.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-3.jpg",
           "heading": "光是放桌上，就夠了",
-          "display_copy": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有——桌上【有沒有放手機】。\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
+          "display_copy": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有 \"桌上【有沒有放手機】\"\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
           "default_cid": "a"
         },
         {
@@ -5098,7 +4694,7 @@
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-4.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-4.jpg",
           "heading": "MIT 教授叫這個現象「缺席的在場」",
-          "display_copy": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】——身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
+          "display_copy": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】 身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
           "default_cid": "a"
         },
         {
@@ -5159,7 +4755,7 @@
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-5.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-5.jpg",
           "heading": "一個裝手機的袋子，變成了一場文化運動",
-          "display_copy": "2014 年，加州創業家 Graham Dugoni 創立 Yondr——一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025",
+          "display_copy": "2014 年，加州創業家 Graham Dugoni 創立 Yondr，一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025",
           "default_cid": "a"
         },
         {
@@ -5201,7 +4797,7 @@
           ],
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-6.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-6.jpg",
-          "heading": "567%——這個數字說明了什麼",
+          "heading": "567% 這個數字說明了什麼",
           "display_copy": "Eventbrite 數據：2024–2025 年，全球 phone-free 社交活動成長〖567%〗，英國出席人數更暴增 1,441%。\n\n主導這波浪潮的，不是不懂科技的長輩——\n而是那些【成年後才有智慧型手機的世代】。\n\n他們從小被訓練「先記錄再體驗」，現在選擇反過來——先活著，不記錄。\n\n資料來源：Eventbrite 活動監測報告，2026 年 4 月；Good News Network",
           "default_cid": "a"
         },
@@ -5288,7 +4884,7 @@
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-7.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-7.jpg",
           "heading": "Lava 從一開始就沒讓你在螢幕上耗",
-          "display_copy": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇——沒有聊天功能，直接約出來見面。不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
+          "display_copy": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇，「沒有聊天功能，直接約出來見面。」不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
           "default_cid": "a"
         },
         {
@@ -5349,7 +4945,7 @@
           "final_src": "assets/20260803-欸你有沒有發現歐美正在流/final/slide-8.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-%E6%AC%B8%E4%BD%A0%E6%9C%89%E6%B2%92%E6%9C%89%E7%99%BC%E7%8F%BE%E6%AD%90%E7%BE%8E%E6%AD%A3%E5%9C%A8%E6%B5%81/slide-8.jpg",
           "heading": "下次約會，試試這三件事",
-          "display_copy": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升——你的眼神和時間，只有一個去處。",
+          "display_copy": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升，你的眼神和時間，只有一個去處。",
           "default_cid": "a"
         },
         {
@@ -5363,14 +4959,420 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-08-11T16:47:33+08:00",
+      "publish_at": "2026-08-12T21:00:00+08:00",
+      "rendered_at": "2026-08-12T14:04:48+08:00",
       "candidates_since": "2026-08-10T22:16:38+08:00",
       "image_credits": [
+        "第 2 張：《Beef》劇照，版權屬原權利方",
         "第 4 張：Greater Good, UC Berkeley（截圖引用）",
-        "第 8 張：《About Time》劇照，版權屬原權利方"
+        "第 6 張：《Our Times》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude"
+    },
+    {
+      "id": "20260803-JohnGottman研",
+      "topic": "John Gottman 研究 40 年、觀察 3000 對夫妻——他說能預測分手的，不是吵架，是這個表情",
+      "version": 1,
+      "status": "published",
+      "clickup_task_id": "86eydj5k7",
+      "created_at": null,
+      "caption": "欸…\n\n…\n你有沒有發現，有些伴侶明明吵得很凶，最後還是在一起；有些兩個人看起來相安無事，卻悄悄走向終點。\n心理學家 John Gottman 在愛情實驗室研究 40 年後說：問題從來不是吵不吵架，而是那個在吵架時一閃而過的表情。\n\n台灣人很習慣忍耐「小小的瞧不起」，那個一直被糾正語氣、那個對方說你「就是這樣」時你選擇沉默，那個你說完一件事對方笑了但你不確定是好笑還是嘲笑。\nGottman 說，輕蔑不是一夜之間出現的，它由一個個被吞下去的挫折堆積而成，每一次未解決的衝突都在為它提供養分。\n這就是為什麼 Lava 認為，在感情正式開始之前，親自見面、親眼看見對方，遠比訊息往來重要。\n有些訊號，只有在現場才能感知。\n\n#交友軟體 #約會 #感情關係 #伴侶溝通 #心理學 #Gottman #關係研究 #輕蔑 #溝通技巧 #愛情心理學 #台灣交友 #Lava交友 #不聊天的交友軟體 #線下約會 #感情經營",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "a-mood8eaaa",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "組圖：Gottman Institute",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "c-moodfd074",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-1.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-1.jpg",
+          "heading": "吵架頻率能預測分手嗎？\n可能不是你想的這樣",
+          "display_copy": "有些情侶吵得很凶，卻沒分\n有些幾乎不吵，卻散了\n\nGottman 研究 40 年、超過 3,000 對伴侶\n結論只有一句話：\n〖能預測分手的，不是吵架頻率，是這個表情〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "a-mood9e0f4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-JohnGottman研/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-2.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-2.jpg",
+          "heading": "你大概有過這種感覺",
+          "display_copy": "對方說了句話，不算過分\n但那個語氣，那個眼神\n嘴角微微往上一勾\n你感覺到了\n\n然後你告訴自己：【「算了，他只是這樣講話」】\n\nGottman 說——\n輕蔑不是一夜出現的\n它由每一個吞下去的「算了」堆積而成",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "Gottman Institute",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-3.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-3.jpg",
+          "heading": "Gottman 的愛情實驗室",
+          "display_copy": "華盛頓大學，「愛情實驗室（Love Lab）」\n\n真實伴侶在裡面做飯、看電視、討論衝突\n攝影機＋生理監測＋臉部微表情，全程記錄\n\n觀察超過 【3,000 對伴侶】，橫跨 40 年\n他要回答一個問題：\n【感情走向，能不能被預測？】\n\n結論：吵架頻率不重要，吵架的方式才是\n資料來源：Gottman, J.M., The Marriage Clinic, W.W. Norton & Company, 1999；The Gottman Institute, gottman.com",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "a-mooddc0b5",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "b-moodb7099",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-JohnGottman研/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-JohnGottman研/slide-4h.jpg",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-4.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-4.jpg",
+          "heading": "94% 準確率，只需要 15 分鐘",
+          "display_copy": "1992 年，Gottman 的研究只觀察伴侶 【15 分鐘】\n就能以 〖94% 準確率〗 預測離婚\n\n他找到的關鍵叫「末日四騎士」：\n批評 → 輕蔑 → 防禦 → 冷戰\n四個傾向按順序出現，像骨牌\n\n四騎士裡【破壞力最強的，不是最激烈的那個】\n是最安靜的那個\n資料來源：Buehlman, K., Gottman, J.M., & Katz, L., 1992, Journal of Family Psychology",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "a-moodabd67",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "b-mood46882",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Kramervs Kramer",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Kramervs Kramer"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Kramervs Kramer"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260803-JohnGottman研/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260803-JohnGottman研/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260803-JohnGottman研/slide-5h.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-5.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-5.jpg",
+          "heading": "輕蔑和批評，差在哪裡",
+          "display_copy": "批評：「你又忘了付帳單。」\n→ 攻擊的是一個行為，可能反映未滿足的需求\n\n輕蔑：「你就是這麼沒責任感，從來都這樣。」\n→ 攻擊的是【這個人本身】\n\n輕蔑傳達的訊息是：\n〖「我比你優越，你這個人有問題」〗\n\n它不是一時的不滿，是長期積怨的結晶\n長期承受輕蔑的人，連免疫系統都會下降",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-6a.jpg",
+              "kind": "still",
+              "source_label": "a-mood273fc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-6b.jpg",
+              "kind": "still",
+              "source_label": "b-mood36418",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-6c.jpg",
+              "kind": "still",
+              "source_label": "Lieto Me"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-6d.jpg",
+              "kind": "still",
+              "source_label": "Lieto Me",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-6e.jpg",
+              "kind": "still",
+              "source_label": "Lieto Me"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-6.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-6.jpg",
+          "heading": "那個一閃而過的表情",
+          "display_copy": "輕蔑的微表情：【單側嘴角上揚 + 翻白眼】\n發生時間：1/25 秒至 1/5 秒，比眨眼還快\n\n約 80–90% 的人在對話中完全錯過它\n但你的身體察覺了\n\n那個「說不清楚、只覺哪裡怪」的感覺\n【可能在第一次見面就已經在告訴你了】\n\n你習慣說服自己：「我想太多。」\n資料來源：Ekman, P., Facial Action Coding System (FACS)；Gottman Institute Training Materials",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-7a.jpg",
+              "kind": "still",
+              "source_label": "a-mood678a7",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-7b.jpg",
+              "kind": "still",
+              "source_label": "b-mood8f512",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-JohnGottman研/slide-7c.jpg",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260803-JohnGottman研/slide-7d.jpg",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260803-JohnGottman研/slide-7e.jpg",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-7.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-7.jpg",
+          "heading": "Lava 在做的事",
+          "display_copy": "台灣人很習慣忍耐「小小的瞧不起」\n那個語氣，那個笑，那個「你就是這樣」\n\nGottman 說：輕蔑由吞下去的挫折堆積而成\n每一個未解決的衝突，都是它的養分\n\nLava 認為，有些訊號【只有在現場才能感知】\n訊息再多，也感受不到那個一閃而過的眼神\n見面，才是真正的開始",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-JohnGottman研/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "a-mood99955",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-JohnGottman研/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "b-mood2a85c",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-8.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-8.jpg",
+          "heading": "那你現在可以怎麼做",
+          "display_copy": "Gottman 給你的三個觀察點：\n\n① 對方不滿時，攻擊的是【你做的事】還是【你這個人】？\n② 那個「說不清楚的不舒服」——別急著說服自己沒事\n   你的直覺比你的大腦更早讀到訊號\n③ 健康關係的正負互動比例：【至少 5:1】\n   低於這個，關係就在被消耗\n\n輕蔑很少大聲，它通常很安靜\n而且【出現得很早】",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-JohnGottman研/final/slide-9.jpg",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-JohnGottman%E7%A0%94/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "publish_at": "2026-08-12T14:00:00+08:00",
+      "rendered_at": "2026-08-12T14:06:26+08:00",
+      "candidates_since": "2026-08-10T21:56:12+08:00",
+      "image_credits": [
+        "第 1 張：《Marriage Story》劇照，版權屬原權利方",
+        "第 2 張：《Gone Girl》劇照，版權屬原權利方",
+        "第 3 張：John Gottman（截圖引用）",
+        "第 5 張：《Kramervs Kramer》劇照，版權屬原權利方",
+        "第 6 張：《Lieto Me》劇照，版權屬原權利方"
       ],
       "copy_choice": "claude",
-      "publish_at": "2026-08-12T21:00:00+08:00"
+      "published_at": "2026-08-12T14:00:00+08:00"
     }
   ]
 }
