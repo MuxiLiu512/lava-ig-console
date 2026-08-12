@@ -56,8 +56,11 @@ rm -f "$FAILFILE"
 # 衝突時一律以遠端為準並保留 stash 供人工比對，絕不留壞 JSON 在工作區。
 if [ "$STASHED" = 1 ]; then
   if ! git stash pop -q >>"$LOG" 2>&1; then
-    git checkout --theirs -- . >>"$LOG" 2>&1 || true
-    git checkout -- data/ >>"$LOG" 2>&1 || true
+    # 2026-08-12 實測：`--theirs` 在 stash pop 情境指的是 **stash 那一側**（哨兵舊版），
+    # 不是遠端。原寫法會把操控室剛存的核准／排程／文案編輯無聲換回舊版，
+    # 而且產出是合法 JSON（無衝突標記），衝突標記檢查完全抓不到。
+    # pull 已經完成，HEAD 就是遠端最新 → 取 HEAD 才是「以遠端為準」。
+    git checkout HEAD -- . >>"$LOG" 2>&1 || true
     git reset -q >>"$LOG" 2>&1
     echo "[$(date '+%m-%d %H:%M')] ⚠ stash pop 衝突：已取遠端版本，本地變更留在 stash@{0}" >>"$LOG"
     "$PY" scripts/sync_console.py alert "哨兵 stash pop 衝突：已保留遠端版本，本地暫存在 stash@{0}，請人工確認是否有未同步的操控室操作。" >>"$LOG" 2>&1
@@ -94,7 +97,7 @@ echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add -A; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
 if echo "$OUT$ING" | grep -qE "✓RENDERED|✓ posts"; then
-  git add -A
+  git add data/ docs/finals/ assets/ 2>/dev/null
   git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-render: 偵測到新審核/文案修改，重出成品" \
     -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1
   git push --quiet origin main >>"$LOG" 2>&1

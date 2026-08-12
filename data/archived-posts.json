@@ -5531,7 +5531,8 @@
       "published_at": "2026-08-11T14:35:00+08:00",
       "archived_note": "已發佈（IG media 18068504714733425）但封面品質不合格（空洞 hook＋詞中斷行，舊引擎產物）；Jesse 於 IG 典藏該貼文，改以 v2 重做。此紀錄保留供成效對照。",
       "archived_at": "2026-08-11T15:05:58+08:00",
-      "no_publish": true
+      "no_publish": true,
+      "ig_media_id": "18068504714733425"
     }
   ]
 }
