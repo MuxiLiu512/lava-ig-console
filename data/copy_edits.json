@@ -122,6 +122,76 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-12T13:48:39+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 1,
+          "field": "heading",
+          "original": "手機放著沒在用，也會讓約會變差",
+          "edited": "手機真的會毀了約會？\n看看科學以及實驗怎麼說吧",
+          "version": "claude"
+        },
+        {
+          "n": 1,
+          "field": "display_copy",
+          "original": "欸⋯你有沒有發現\n歐美在流行「不帶手機去約會」？\n\n不是規定，是【自願的】。\n因為他們發現：真正稀缺的不是時間——\n而是注意力。\n\n手機放桌上沒在用，對話就已經變淺了。",
+          "edited": "大家在意的，可能不是對方有沒有付出時間，而是對方是否注意你。\n手機作為注意力的代表，即便放桌上沒在用，可能就導致對話深度變淺。",
+          "version": "claude"
+        },
+        {
+          "n": 2,
+          "field": "display_copy",
+          "original": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累——你有沒有這種感覺？",
+          "edited": "對方就坐在你面前，你們點好餐、倒好水，然後兩個人都拿起了手機。\n\n不是有急事，只是【習慣】。\n\n對話斷了又接，接了又斷，聊完好像什麼也沒說。那種若即若離，比距離更讓人累，你有沒有這種感覺？",
+          "version": "claude"
+        },
+        {
+          "n": 3,
+          "field": "display_copy",
+          "original": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有——桌上【有沒有放手機】。\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
+          "edited": "維吉尼亞理工大學 Shalini Misra 做了一個讓人不舒服的實驗：\n\n兩人對話，差別只有 \"桌上【有沒有放手機】\"\n\n結果：有手機的那組，對話深度和連結感都顯著下降。不管有沒有響，有沒有被拿起來。\n\n手機代表著整個社交網絡，光是「存在」，就夠分心了。\n\n資料來源：Misra et al., Environment & Behavior, 2014；PsyPost 複製研究確認",
+          "version": "claude"
+        },
+        {
+          "n": 4,
+          "field": "display_copy",
+          "original": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】——身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
+          "edited": "MIT 教授 Sherry Turkle 把這件事命名為【Absent Presence（缺席的在場）】 身體在這裡，心思在別處。\n\n她的數據：89% 的美國人在社交場合拿出手機，其中 82% 承認這讓對話品質下降。\n\n手機一介入，對話會往淺的走——人們只聊那些「不介意被打斷」的話題，同理心連結也跟著下滑。\n\n資料來源：Turkle, Reclaiming Conversation (2015)；Greater Good, UC Berkeley",
+          "version": "claude"
+        },
+        {
+          "n": 5,
+          "field": "display_copy",
+          "original": "2014 年，加州創業家 Graham Dugoni 創立 Yondr——一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025",
+          "edited": "2014 年，加州創業家 Graham Dugoni 創立 Yondr，一個能把手機鎖起來的磁扣袋。\n\n從 Dave Chappelle 小型駐演、Harry Styles「One Night Only」到 Paul McCartney 巡演，Yondr 已用於全球逾 10,000 場活動，封存【超過 2,000 萬台裝置】，入選 2024《Time》年度最佳發明。\n\n然後，這個概念從演唱會蔓延到了約會現場。\n\n資料來源：Time Best Inventions 2024；BroadwayWorld, 2025",
+          "version": "claude"
+        },
+        {
+          "n": 6,
+          "field": "heading",
+          "original": "567%——這個數字說明了什麼",
+          "edited": "567% 這個數字說明了什麼",
+          "version": "claude"
+        },
+        {
+          "n": 7,
+          "field": "display_copy",
+          "original": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇——沒有聊天功能，直接約出來見面。不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
+          "edited": "Phone-Free date 的核心邏輯是：【注意力才是最稀缺的禮物】。\n\nLava 從設計上就做了這個選擇，「沒有聊天功能，直接約出來見面。」不是因為反科技，而是因為真正重要的事，沒辦法在螢幕上發生。\n\n把手機放下，出現在對方面前，就是這個時代最直接的表態。",
+          "version": "claude"
+        },
+        {
+          "n": 8,
+          "field": "display_copy",
+          "original": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升——你的眼神和時間，只有一個去處。",
+          "edited": "不需要 Yondr 袋，也不用正式宣告：\n\n① 坐下前，兩人把手機【翻面推到桌角】\n② 不設「查一下」的例外，讓對話自己走\n③ 沒有退路可滑的時候，你反而更容易說出真正想說的話\n\n研究顯示，拿掉手機後，對話深度與同理心連結都會顯著上升，你的眼神和時間，只有一個去處。",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
