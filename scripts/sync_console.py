@@ -870,35 +870,6 @@ def render_approved(args):
                 s["render_credit"] = credits[int(s["index"])]   # 圖上小字來源標示（引擎繪製）
         if credits:
             p["image_credits"] = ["第 %d 張：%s" % (n, credits[n].replace("圖片來源：", "")) for n in sorted(credits)]
-        # 圖上實際呈現的逐行文字：操控室的文字框是「原始文案」，圖上經過清標點／重斷行，
-        # 兩者不一致時使用者無從判斷哪個是真的（Jesse 2026-08-12）。
-        # 存在 post 層而非 slides[]——slides 會被 refeed 重建，寫在那裡會被沖掉。
-        try:
-            import check_typography as _ct
-            rl = {}
-            for s_ in draft.get("slides", []):
-                n = int(s_.get("index", 0) or 0)
-                if not n:
-                    continue
-                head = _ct.E.strip_trailing_punct(re.sub(r"[【】〖〗]", "", s_.get("heading") or ""))
-                body = _ct.E.strip_trailing_punct(s_.get("display_copy") or "")
-                f_h = _ct.ImageFont.truetype(_ct.E.F_MED, int(_ct.E.W * 0.043))
-                f_b = _ct.ImageFont.truetype(_ct.E.F_MED if n == 1 else _ct.E.F_REG,
-                                             int(_ct.E.W * (0.032 if n == 1 else 0.036)))
-                mw_b = int(_ct.E.W * (0.78 if n == 1 else 0.86))
-                out = []
-                for para in [x for x in head.split("\n") if x.strip()]:
-                    out += ["".join(t for t, _ in L)
-                            for L in _ct._lines_for(para, f_h, int(_ct.E.W * 0.86), False)]
-                if out:
-                    out.append("")
-                for para in [x for x in body.split("\n") if x.strip()]:
-                    out += ["".join(t for t, _ in L) for L in _ct._lines_for(para, f_b, mw_b, n == 1)]
-                rl[str(n)] = out
-            if rl:
-                p["rendered_lines"] = rl
-        except Exception as _e:
-            sys.stderr.write("  ! 實際呈現文字計算失敗：%s\n" % _e)
         # 封面文案自我審查（機械、零 AI）——規則正本 config/self-check.md
         _cov = next((s for s in draft.get("slides", []) if int(s.get("index", 0) or 0) == 1), None)
         p["cover_head"] = ((_cov or {}).get("heading") or "").strip()
@@ -925,6 +896,12 @@ def render_approved(args):
         if choice:
             p["copy_choice"] = choice
             p["writer_model"] = "claude-sonnet-4-6" if choice == "claude" else "gpt-5.6"  # A/B：以 PT 選定版本計
+        # 重出完成 → 自動恢復排程。操控室按核准會把狀態降回 approved（避免在成品還沒更新前
+        # 被 WF10 發到舊圖），publish_at 一直保留著；成品更新完成才放回 scheduled。
+        # Jesse 2026-08-12：改圖核准後排程消失，得重設時間——那是這個降級沒有回程造成的。
+        if p.get("status") == "approved" and p.get("publish_at"):
+            p["status"] = "scheduled"
+            print("   ⏰ %s 成品已更新 → 恢復排程 %s" % (pid[:20], p["publish_at"][:16]))
         rendered.append((pid, p.get("clickup_task_id") or "", jf, chosen_paths))
         sys.stderr.write("✓ 渲染 %s（文案版 %s，選圖 %s，文案編輯 %d 處）\n" % (pid, choice or "-", r.get("slide_choices"), len(edits)))
     for pid, why in skipped:   # 卡住原因寫進貼文 → 操控室直接看得到，不再只躺在哨兵 log
@@ -946,6 +923,30 @@ def render_approved(args):
             ls[pid]["draft_json"] = os.path.abspath(jf)  # 還原成 Drive 正本（scratch 會被清）
             ls[pid]["last_render_choices"] = chosen_paths  # 供文案微調後重渲染沿用同組圖
             _save_local_sources(ls)
+    # 完稿通知：改完文案／換完圖後不知道何時真的出好（Jesse 2026-08-12）。
+    # 成品重出完成即在 ClickUp 卡留言並推播，附上排程時間與 final review 連結。
+    _tok = _read_sync().get("clickup_token")
+    for pid, cuid, _, _ in rendered:
+        p = posts.get(pid) or {}
+        if not (cuid and _tok and _tok.isascii()):
+            continue
+        try:
+            n_fin = len([s for s in p.get("slides", []) if s.get("public_url")])
+            when = p.get("publish_at")
+            sched = ("　排程：**%s** 到點自動發佈" % when[:16].replace("T", " ")) if when and p.get("status") == "scheduled" \
+                else "　尚未排程（到操控室設定發佈時間）"
+            qa = p.get("qa") or {}
+            nblk = len([i for i in qa.get("issues", []) if i.get("severity") == "block"])
+            flags = p.get("copy_flags") or []
+            warn = ""
+            if nblk or flags:
+                warn = "\n⚠ 總檢：%d 項須修%s" % (nblk, ("、封面檢查 %d 項" % len(flags)) if flags else "")
+            _clickup("POST", "/task/%s/comment" % cuid, _tok, {
+                "comment_text": "✅ **成品已重出**（%d 張）——你剛才的修改已套用，可做 final review。\n%s%s\n"
+                                "操控室：https://muxiliu512.github.io/lava-ig-console/" % (n_fin, sched, warn),
+                "notify_all": True})
+        except Exception as e:
+            sys.stderr.write("  ! 完稿通知失敗 %s：%s\n" % (pid[:20], e))
     for pid, cuid, _, _ in rendered:
         print("✓RENDERED %s clickup=%s" % (pid, cuid or "-"))
     for pid, why in skipped:
@@ -1168,6 +1169,62 @@ def alert(args):
         print("✓ 告警已送出")
     except Exception as e:
         print("! 告警送出失敗：%s" % e)
+
+
+def rendered_lines(args):
+    """把「圖上實際會印出來的每一行」寫進 posts.json，供操控室與文字框對照。
+    獨立成一步而非塞在 render_approved 裡——渲染流程中途會 refeed 重建 posts.json，
+    寫在裡面會被沖掉（2026-08-12 實測）。哨兵在 render 之後呼叫。"""
+    import check_typography as ct
+    d = load("posts.json")
+    ls = _load_local_sources()
+    ce_list = load("copy_edits.json").get("edits", [])
+    n_ok = 0
+    for p in d.get("posts", []):
+        if p.get("status") == "published" and not getattr(args, "all", False):
+            continue
+        if getattr(args, "post_id", None) and p["id"] != args.post_id:
+            continue
+        e = ls.get(p["id"]) or {}
+        jf = e.get("draft_json") or (e.get("draft_jsons") or {}).get("claude")
+        if not jf or not os.path.exists(jf):
+            continue
+        try:
+            draft = _read_json_retry(jf)
+        except Exception:
+            continue
+        edits = _latest_copy_edits(p["id"], ce_list, version=p.get("copy_choice"))
+        rl = {}
+        for s_ in draft.get("slides", []):
+            n = int(s_.get("index", 0) or 0)
+            if not n:
+                continue
+            head = s_.get("heading") or ""
+            body = s_.get("display_copy") or ""
+            if (n, "heading") in edits:
+                head = edits[(n, "heading")]
+            if (n, "display_copy") in edits:
+                body = edits[(n, "display_copy")]
+            head = ct.E.strip_trailing_punct(re.sub(r"[【】〖〗]", "", head))
+            body = ct.E.strip_trailing_punct(body)
+            f_h = ct.ImageFont.truetype(ct.E.F_MED, int(ct.E.W * 0.043))
+            f_b = ct.ImageFont.truetype(ct.E.F_MED if n == 1 else ct.E.F_REG,
+                                        int(ct.E.W * (0.032 if n == 1 else 0.036)))
+            mw_b = int(ct.E.W * (0.78 if n == 1 else 0.86))
+            out = []
+            for para in [x for x in head.split("\n") if x.strip()]:
+                out += ["".join(t for t, _ in L)
+                        for L in ct._lines_for(para, f_h, int(ct.E.W * 0.86), False)]
+            if out:
+                out.append("")
+            for para in [x for x in body.split("\n") if x.strip()]:
+                out += ["".join(t for t, _ in L) for L in ct._lines_for(para, f_b, mw_b, n == 1)]
+            rl[str(n)] = out
+        if rl:
+            p["rendered_lines"] = rl
+            n_ok += 1
+    save("posts.json", d)
+    print("✓ 已更新 %d 篇的「圖上實際呈現」文字" % n_ok)
 
 
 # ── 入料哨兵：ClickUp 在製中卡 × Drive 草稿 → 自動餵進 posts.json（零 AI）──
@@ -1445,6 +1502,7 @@ def main():
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
     a = sub.add_parser("post-qa", help="成篇視覺總檢（WF15）：撞主體/浮水印/不可讀/出處異常"); a.add_argument("--post-id", default=None); a.set_defaults(func=post_qa)
+    a = sub.add_parser("rendered-lines", help="計算圖上實際呈現的逐行文字（供操控室對照）"); a.add_argument("--post-id", default=None); a.add_argument("--all", action="store_true"); a.set_defaults(func=rendered_lines)
     a = sub.add_parser("alert", help="哨兵自報告警 → ClickUp 告警日誌卡留言"); a.add_argument("message"); a.set_defaults(func=alert)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)
     args = ap.parse_args()

@@ -185,8 +185,14 @@ function renderQueue() {
     approved.forEach(p => {
       const rn = p.slides.filter(s => s.public_url).length;
       const blocked = !rn && p.render_note;
-      app.appendChild(qcard(p, rn ? `成品就緒 ${rn} 張 · 點入設發佈時間` : (blocked ? `⚠ ${esc(p.render_note)}` : "出成品中…（渲染後回此排程）"),
-        `<span class="tag" style="background:${rn ? "#c2410c" : (blocked ? "#a11d33" : "#555")};color:#fff">${rn ? "待排程" : (blocked ? "卡住待處理" : "渲染中")}</span>`, qaHtml(p)));
+      // 已排程又被改動 → 暫降 approved 但 publish_at 還在；重出完成會自動恢復排程
+      const requeued = !!p.publish_at && !blocked;
+      const sub = requeued
+        ? `🔄 正在依你的修改重出成品…完成後自動恢復排程（${fmtLocal(p.publish_at)}）`
+        : (rn ? `成品就緒 ${rn} 張 · 點入設發佈時間` : (blocked ? `⚠ ${esc(p.render_note)}` : "出成品中…（渲染後回此排程）"));
+      const tag = requeued ? "重出中·排程保留" : (rn ? "待排程" : (blocked ? "卡住待處理" : "渲染中"));
+      const bg = requeued ? "#2563eb" : (rn ? "#c2410c" : (blocked ? "#a11d33" : "#555"));
+      app.appendChild(qcard(p, sub, `<span class="tag" style="background:${bg};color:#fff">${tag}</span>`, qaHtml(p)));
     });
   }
   if (scheduled.length) {
@@ -428,6 +434,17 @@ function buildCopyEditor(p) {
       ta.dataset.n = s.n; ta.dataset.field = f; ta.dataset.orig = s[f];
       pad.appendChild(ta); fields.push(ta);
     });
+    // 圖上實際呈現（唯讀）：文字框是原始文案，圖上會清標點、重新斷行——
+    // 兩者不同時使用者無從判斷哪個是真的（Jesse 2026-08-12）。這裡是圖上的真相。
+    const rl = (p.rendered_lines || {})[String(s.n)];
+    if (rl && rl.length) {
+      const box = el("div", "small");
+      box.style.cssText = "margin:4px 0 10px;padding:8px 10px;border-left:2px solid #3a3a3a;"
+        + "background:#141414;border-radius:4px;line-height:1.75;color:#c9c9c9;white-space:pre-wrap";
+      box.innerHTML = `<span class="muted tiny">圖上實際呈現（已清標點／重新斷行）</span>\n`
+        + rl.map(x => esc(x)).join("\n");
+      pad.appendChild(box);
+    }
   });
   if (vkeys.length > 1) {  // 進頁時載入目前選定版本的內容
     const cur0 = copyChoiceOf(p);

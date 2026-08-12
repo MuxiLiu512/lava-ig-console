@@ -75,6 +75,9 @@ echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|�
 OUT=$("$PY" scripts/sync_console.py render-approved 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $OUT" | grep -E "✓RENDERED|⏭|Error|Traceback" >>"$LOG"
 
+# 圖上實際呈現的逐行文字（供操控室與文字框對照，避免「不知道哪邊才是正確的」）
+"$PY" scripts/sync_console.py rendered-lines >/dev/null 2>&1
+
 # 排版回歸檢查（零成本，機械）：行尾標點／詞中斷行／缺字——用引擎本身的斷行函式重算驗證
 TYP=$("$PY" scripts/check_typography.py 2>&1 | tail -3)
 echo "$TYP" | grep -E "違規 [1-9]|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
