@@ -101,6 +101,27 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260803-JohnGottman研",
+      "ts": "2026-08-12T13:40:55+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 1,
+          "field": "heading",
+          "original": "能預測分手的，不是吵架頻率，是這個表情",
+          "edited": "吵架頻率能預測分手嗎？\n可能不是你想的這樣",
+          "version": "claude"
+        },
+        {
+          "n": 1,
+          "field": "display_copy",
+          "original": "欸，你有沒有發現\n有些情侶吵得很凶，卻沒分\n有些幾乎不吵，卻散了\n\nGottman 研究 40 年、超過 3,000 對伴侶\n結論只有一句話：\n〖能預測分手的，不是吵架頻率，是這個表情〗",
+          "edited": "有些情侶吵得很凶，卻沒分\n有些幾乎不吵，卻散了\n\nGottman 研究 40 年、超過 3,000 對伴侶\n結論只有一句話：\n〖能預測分手的，不是吵架頻率，是這個表情〗",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
