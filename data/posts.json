@@ -6185,6 +6185,734 @@
           "CTA 公版"
         ]
       }
+    },
+    {
+      "id": "20260808-HelenFisher研",
+      "topic": "Helen Fisher 研究人類愛情 30 年，她說：「墜入愛河」不是一種感覺，是大腦裡三個系統同時被觸發——而你用 app 聊天，只能觸發其中一個",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyjgpc0",
+      "created_at": null,
+      "caption": "有些人聊天聊得超好，見到面卻完全沒感覺。\n\n這不是你挑剔，也不是緣分未到，一位研究人類愛情超過 30 年的科學家說，這是大腦結構的問題。\n\n這不是玄學，這是神經科學。\n文字聊天可以養出 Attraction 的一小部分，但 Lust 需要你們真實靠近，Attachment 需要你們實際碰觸和眼神交會，沒有一個人的大腦可以只靠訊息完整組裝出愛情。\nLava 從設計邏輯的源頭就選擇不讓你在這裡消耗時間聊天，因為真正的三個系統，只有見了面才能同時開始運作。\n\n#交友軟體 #約會 #愛情 #心理學 #神經科學 #戀愛科學 #HelenFisher #大腦與愛情 #多巴胺 #催產素 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友 #愛情研究",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "欸⋯你有沒有發現",
+          "display_copy": "聊得那麼好\n見面卻沒感覺\n\n這不是你挑剔，\n也不是緣分問題。\n\n研究愛情 30 年的科學家說：\n這是你大腦的結構問題。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個你聊了三週的人",
+          "display_copy": "你們聊了三週，話題從童年聊到對未來的想像，你以為這次不一樣。\n\n然後你們終於見面了——\n對方坐在你面前，你卻發現心裡什麼都沒有。\n\n不是他變了，\n是你從來沒真正認識他。\n\n這個現象有個名字：「超個人效應」（Hyperpersonal Effect）——\n文字聊天讓雙方都對彼此過度理想化。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Helen Fisher 說：愛情是三個腦系統",
+          "display_copy": "研究人類愛情 30 年的生物人類學家 Helen Fisher 說：\n\n「墜入愛河」不是一種情緒——\n是大腦裡【三個系統】同時被觸發的結果。\n\nLust（性慾）\nAttraction（浪漫吸引）\nAttachment（依附）\n\n少了任何一個，都不算完整的愛。\n\n資料來源：Fisher et al. (2002), Archives of Sexual Behavior, Vol.31, No.5"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Call Meby Your Name"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Call Meby Your Name"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Call Meby Your Name"
+            }
+          ],
+          "final_src": null,
+          "heading": "第一系統：Lust（性慾）",
+          "display_copy": "第一個系統：【Lust（性慾）】\n由高雄性素與雌激素驅動。\n\n它不需要你喜歡這個人——\n它需要的是氣味、體溫，\n以及對方真實站在你面前的存在感。\n\n〖文字訊息，完全無法觸發這個系統。〗\n\n資料來源：Fisher et al. (2002), Archives of Sexual Behavior, Vol.31, No.5",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            }
+          ],
+          "final_src": null,
+          "heading": "第二系統：Attraction（浪漫吸引）",
+          "display_copy": "第二個系統：【Attraction（浪漫吸引）】\n與高多巴胺相關——就是那個讓你腦子不斷回放對方的化學物質。\n\nFisher 的 fMRI 研究（2005）分析逾 2,500 張腦部掃描：\n看著心儀對象的照片，大腦的獎賞迴路\n與吸食古柯鹼的反應高度相似。\n\n文字聊天只能觸發這裡的一小部分。\n\n資料來源：Fisher, Aron & Brown (2005), Journal of Comparative Neurology, 493:58-62",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-6a.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-6b.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-6c.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "第三系統：Attachment（依附）",
+          "display_copy": "第三個系統：【Attachment（依附）】\n由催產素與加壓素驅動——讓你真正想留下來的那個。\n\n催產素在擁抱、牽手、眼神接觸時釋放，\n它讓神經系統平靜，讓信任感真正建立。\n\nKing's College London（2023）研究發現：\n視訊互動的催產素水平比純文字高 23%，\n而面對面的差距，只會更大。\n\n資料來源：King's College London, 2023（據報導）",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-7a.jpg",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-7b.jpg",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-7c.jpg",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            }
+          ],
+          "final_src": null,
+          "heading": "所以「聊得很好但見面沒感覺」是結構性問題",
+          "display_copy": "「聊得很好但見面沒感覺」\n不是你挑剔，不是緣分問題——\n\n是你只啟動了三個腦系統裡的【三分之一】。\n\nLust 需要靠近，Attachment 需要觸碰，\n沒有人的大腦能靠訊息組裝出完整的愛情。\n\nLava 不讓你在這裡聊天，\n因為那兩個系統，只有見了面才能啟動。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-HelenFisher研/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "Lefabuleuxdestind Amlie Poulain"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-HelenFisher研/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "Lefabuleuxdestind Amlie Poulain"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-HelenFisher研/slide-8c.jpg",
+              "kind": "still",
+              "source_label": "Lefabuleuxdestind Amlie Poulain"
+            }
+          ],
+          "final_src": null,
+          "heading": "你現在可以做的一件事",
+          "display_copy": "下次「聊得不錯」的時候——\n\n不要再多聊三週。\n\n你的 Lust 系統和 Attachment 系統\n感測器不在手指上，\n在你的皮膚裡、鼻腔裡，\n以及看著一個人說話時的那雙眼睛裡。\n\n【給你的大腦完整的資料，讓它自己做決定。】",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "有些人聊天聊得超好，見到面卻完全沒感覺。\n\n這不是你挑剔，也不是緣分未到，一位研究人類愛情超過 30 年的科學家說，這是大腦結構的問題。\n\n這不是玄學，這是神經科學。\n文字聊天可以養出 Attraction 的一小部分，但 Lust 需要你們真實靠近，Attachment 需要你們實際碰觸和眼神交會，沒有一個人的大腦可以只靠訊息完整組裝出愛情。\nLava 從設計邏輯的源頭就選擇不讓你在這裡消耗時間聊天，因為真正的三個系統，只有見了面才能同時開始運作。\n\n#交友軟體 #約會 #愛情 #心理學 #神經科學 #戀愛科學 #HelenFisher #大腦與愛情 #多巴胺 #催產素 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友 #愛情研究",
+          "slides": {
+            "1": {
+              "heading": "欸⋯你有沒有發現",
+              "display_copy": "聊得那麼好\n見面卻沒感覺\n\n這不是你挑剔，\n也不是緣分問題。\n\n研究愛情 30 年的科學家說：\n這是你大腦的結構問題。"
+            },
+            "2": {
+              "heading": "那個你聊了三週的人",
+              "display_copy": "你們聊了三週，話題從童年聊到對未來的想像，你以為這次不一樣。\n\n然後你們終於見面了——\n對方坐在你面前，你卻發現心裡什麼都沒有。\n\n不是他變了，\n是你從來沒真正認識他。\n\n這個現象有個名字：「超個人效應」（Hyperpersonal Effect）——\n文字聊天讓雙方都對彼此過度理想化。"
+            },
+            "3": {
+              "heading": "Helen Fisher 說：愛情是三個腦系統",
+              "display_copy": "研究人類愛情 30 年的生物人類學家 Helen Fisher 說：\n\n「墜入愛河」不是一種情緒——\n是大腦裡【三個系統】同時被觸發的結果。\n\nLust（性慾）\nAttraction（浪漫吸引）\nAttachment（依附）\n\n少了任何一個，都不算完整的愛。\n\n資料來源：Fisher et al. (2002), Archives of Sexual Behavior, Vol.31, No.5"
+            },
+            "4": {
+              "heading": "第一系統：Lust（性慾）",
+              "display_copy": "第一個系統：【Lust（性慾）】\n由高雄性素與雌激素驅動。\n\n它不需要你喜歡這個人——\n它需要的是氣味、體溫，\n以及對方真實站在你面前的存在感。\n\n〖文字訊息，完全無法觸發這個系統。〗\n\n資料來源：Fisher et al. (2002), Archives of Sexual Behavior, Vol.31, No.5"
+            },
+            "5": {
+              "heading": "第二系統：Attraction（浪漫吸引）",
+              "display_copy": "第二個系統：【Attraction（浪漫吸引）】\n與高多巴胺相關——就是那個讓你腦子不斷回放對方的化學物質。\n\nFisher 的 fMRI 研究（2005）分析逾 2,500 張腦部掃描：\n看著心儀對象的照片，大腦的獎賞迴路\n與吸食古柯鹼的反應高度相似。\n\n文字聊天只能觸發這裡的一小部分。\n\n資料來源：Fisher, Aron & Brown (2005), Journal of Comparative Neurology, 493:58-62"
+            },
+            "6": {
+              "heading": "第三系統：Attachment（依附）",
+              "display_copy": "第三個系統：【Attachment（依附）】\n由催產素與加壓素驅動——讓你真正想留下來的那個。\n\n催產素在擁抱、牽手、眼神接觸時釋放，\n它讓神經系統平靜，讓信任感真正建立。\n\nKing's College London（2023）研究發現：\n視訊互動的催產素水平比純文字高 23%，\n而面對面的差距，只會更大。\n\n資料來源：King's College London, 2023（據報導）"
+            },
+            "7": {
+              "heading": "所以「聊得很好但見面沒感覺」是結構性問題",
+              "display_copy": "「聊得很好但見面沒感覺」\n不是你挑剔，不是緣分問題——\n\n是你只啟動了三個腦系統裡的【三分之一】。\n\nLust 需要靠近，Attachment 需要觸碰，\n沒有人的大腦能靠訊息組裝出完整的愛情。\n\nLava 不讓你在這裡聊天，\n因為那兩個系統，只有見了面才能啟動。"
+            },
+            "8": {
+              "heading": "你現在可以做的一件事",
+              "display_copy": "下次「聊得不錯」的時候——\n\n不要再多聊三週。\n\n你的 Lust 系統和 Attachment 系統\n感測器不在手指上，\n在你的皮膚裡、鼻腔裡，\n以及看著一個人說話時的那雙眼睛裡。\n\n【給你的大腦完整的資料，讓它自己做決定。】"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "欸⋯你有沒有發現",
+          "",
+          "聊得那麼好",
+          "見面卻沒感覺",
+          "這不是你挑剔",
+          "也不是緣分問題",
+          "研究愛情 30 年的科學家說",
+          "這是你大腦的結構問題"
+        ],
+        "2": [
+          "那個你聊了三週的人",
+          "",
+          "你們聊了三週，話題從童年聊到對未來的想像，你以",
+          "為這次不一樣",
+          "然後你們終於見面了",
+          "對方坐在你面前，你卻發現心裡什麼都沒有",
+          "不是他變了",
+          "是你從來沒真正認識他",
+          "這個現象有個名字：「超個人效應」（Hyperpersonal",
+          "Effect）",
+          "文字聊天讓雙方都對彼此過度理想化"
+        ],
+        "3": [
+          "Helen Fisher 說：愛情是三個腦系統",
+          "",
+          "研究人類愛情 30 年的生物人類學家 Helen Fisher 說",
+          "「墜入愛河」不是一種情緒",
+          "是大腦裡三個系統同時被觸發的結果",
+          "Lust（性慾）",
+          "Attraction（浪漫吸引）",
+          "Attachment（依附）",
+          "少了任何一個，都不算完整的愛",
+          "資料來源：Fisher et al. (2002), Archives of Sexual",
+          "Behavior, Vol.31, No.5"
+        ],
+        "4": [
+          "第一系統：Lust（性慾）",
+          "",
+          "第一個系統：Lust（性慾）",
+          "由高雄性素與雌激素驅動",
+          "它不需要你喜歡這個人",
+          "它需要的是氣味、體溫",
+          "以及對方真實站在你面前的存在感",
+          "文字訊息，完全無法觸發這個系統",
+          "資料來源：Fisher et al. (2002), Archives of Sexual",
+          "Behavior, Vol.31, No.5"
+        ],
+        "5": [
+          "第二系統：Attraction（浪漫吸引）",
+          "",
+          "第二個系統：Attraction（浪漫吸引）",
+          "與高多巴胺相關——就是那個讓你腦子不斷回放對方",
+          "的化學物質",
+          "Fisher 的 fMRI 研究（2005）分析逾 2,500 張腦部掃",
+          "描",
+          "看著心儀對象的照片，大腦的獎賞迴路",
+          "與吸食古柯鹼的反應高度相似",
+          "文字聊天只能觸發這裡的一小部分",
+          "資料來源：Fisher, Aron & Brown (2005), Journal of",
+          "Comparative Neurology, 493:58-62"
+        ],
+        "6": [
+          "第三系統：Attachment（依附）",
+          "",
+          "第三個系統：Attachment（依附）",
+          "由催產素與加壓素驅動——讓你真正想留下來的那個",
+          "催產素在擁抱、牽手、眼神接觸時釋放",
+          "它讓神經系統平靜，讓信任感真正建立",
+          "King's College London（2023）研究發現",
+          "視訊互動的催產素水平比純文字高 23%",
+          "而面對面的差距，只會更大",
+          "資料來源：King's College London, 2023（據報導）"
+        ],
+        "7": [
+          "所以「聊得很好但見面沒感覺」是結構性問題",
+          "",
+          "「聊得很好但見面沒感覺」",
+          "不是你挑剔，不是緣分問題",
+          "是你只啟動了三個腦系統裡的三分之一",
+          "Lust 需要靠近，Attachment 需要觸碰",
+          "沒有人的大腦能靠訊息組裝出完整的愛情",
+          "Lava 不讓你在這裡聊天",
+          "因為那兩個系統，只有見了面才能啟動"
+        ],
+        "8": [
+          "你現在可以做的一件事",
+          "",
+          "下次「聊得不錯」的時候",
+          "不要再多聊三週",
+          "你的 Lust 系統和 Attachment 系統",
+          "感測器不在手指上",
+          "在你的皮膚裡、鼻腔裡",
+          "以及看著一個人說話時的那雙眼睛裡",
+          "給你的大腦完整的資料，讓它自己做決定"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
+    },
+    {
+      "id": "20260808-行為經濟學家DanAri",
+      "topic": "行為經濟學家 Dan Ariely 說：你在交友 App 上「選人」的方式，和你在超市挑優格完全一樣——而這正是你一直沒辦法真的喜歡上誰的原因",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyj5u42",
+      "created_at": null,
+      "caption": "欸，你有沒有發現，你在交友 App 上滑了兩小時，最後按下喜歡的那個人，你其實說不太出來哪裡喜歡他？\n\n行為經濟學家 Dan Ariely 說：你只是在「選購」。\n\nAriely 給的答案很簡單：限制選擇的數量，把認知資源留給真正重要的事，見面時的感受。\nPronk & Denissen（2020，SAGE）的研究也發現同樣的悖論：線上平台提供了前所未有的機會，人們卻反而更難真正在一起。\nLava 從一開始就不走「讓你一直滑」的路線，因為真正的連結不是在大量比較之後篩選出來的，而是在你願意放下規格表、真正去見一個人的那一刻開始的。\n\n#交友軟體 #約會 #交友App #行為經濟學 #心理學 #選擇超載 #DanAriely #線上交友 #約會心理學 #感情 #台灣交友 #Lava交友 #不聊天的交友軟體 #真實連結 #見面才是開始",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "Superstore"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "Superstore"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "Superstore"
+            }
+          ],
+          "final_src": null,
+          "heading": "你根本不是在「喜歡」誰",
+          "display_copy": "欸，你有沒有發現\n\n你在 App 上滑了兩小時\n最後你也說不清楚\n\n〖為什麼按下喜歡〗\n\n行為經濟學家 Dan Ariely 說：\n你不是在「喜歡」誰\n你只是在【選購】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "你那晚到底在做什麼",
+          "display_copy": "你滑了四十張之後\n已經記不得第一張長什麼樣\n\n這個高一點、那個愛運動\n這個笑起來比較好看\n\n最後傳訊息的那個\n是「看起來【最沒問題】的那個」\n\n不是讓你心跳加速的那個\n\n這不是你的錯——\n這是你的大腦在用【選購模式】\n處理一件它根本不擅長的事",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "果醬實驗：24 款 vs 6 款",
+          "display_copy": "2000 年，哥倫比亞 × 史丹佛大學聯合實驗\n\n擺出【24 款果醬】→ 只有 2% 的人買\n擺出【6 款果醬】→ 有 12% 的人買\n\n選項多 4 倍，購買率少 6 倍\n\n〖選越多，越不想選〗\n\n這就是「選擇超載（choice overload）」\n你的大腦在太多選項面前\n會直接罷工\n\n資料來源：Iyengar & Lepper (2000),〈When Choice is Demotivating〉, Columbia University / Stanford University"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Black Mirror"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Black Mirror"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Black Mirror"
+            }
+          ],
+          "final_src": null,
+          "heading": "Ariely 說：滑動，把人變成商品",
+          "display_copy": "Duke University 行為經濟學家 Dan Ariely\n在《The Upside of Irrationality》裡說：\n\n滑動式介面讓你的大腦\n自動切換成【選購模式】\n\n你比較的不是感覺\n而是【規格：身高、工作、照片】\n\n你問的不是「跟他相處起來什麼感覺」\n你問的是「條件過不過關」\n\n最後選出的是「最不差的那個」\n不是讓你〖真正心動〗的那個\n\n資料來源：Dan Ariely,《The Upside of Irrationality》; The Fabulous Blog",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "Catastrophe"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "Catastrophe",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Catastrophe",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "六小時，只為了一次約會",
+          "display_copy": "Ariely 研究團隊算了一筆帳：\n\n透過線上交友安排一次約會\n平均要花【6 小時】搜尋、篩選、通訊\n\n這 6 小時裡\n你感受不到對方握手的力道\n聽不到他的笑聲\n也感受不到那種說不清楚的【頻率感】\n\n維也納大學調查 667 名成人（2021）：\n滑越多 profile\n對「能在這裡找到對象」的預期【越悲觀】\n\n〖滑越多，越不相信愛情〗\n\n資料來源：Ariely / Big Think；University of Vienna (2021), ScienceDirect",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "規格化的代價：175cm 的男人要多賺多少",
+          "display_copy": "Ariely 用「勞動市場迴歸分析」\n把線上交友當成市場定價來算：\n\n身高【175cm 的男性】\n必須年薪多賺【$40,000 美元】\n才能在線上交友市場達到\n和 177cm 男性同等的吸引力\n\n你不是真的在乎這些數字\n\n但當介面強迫你用規格篩選\n你的大腦就【真的開始用規格衡量一個人】\n\n連你自己都沒有意識到\n\n〖這不是你的偏見，是介面設計出來的〗\n\n資料來源：Duke Research Blog, Dan Ariely (2014)"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "少一點選擇，多一點真實",
+          "display_copy": "Ariely 的建議很直白：\n\n【減少選項】\n把認知資源留給真正重要的——\n「見面時你們相處起來什麼感覺」\n\nPronk & Denissen（2020）也說：\n平台給的機會越多\n人反而越難真正在一起\n\nLava 不走「讓你一直滑」的路\n\n因為真實的連結\n從你〖願意放下規格表去見人〗開始\n\n資料來源：Pronk & Denissen (2020), SAGE Journals"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-行為經濟學家DanAri/slide-8c.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": null,
+          "heading": "你現在可以做的事",
+          "display_copy": "Ariely 研究的最後結論：\n\n決策品質靠的不是更多選項\n而是【更少選項＋更清楚的意圖】\n\nWisconsin 大學研究也發現：\n從大量選項選出對象的人\n滿意度更低、訊息更敷衍\n\n下次打開 App 之前先問自己：\n「我是來【採購】，還是來【認識人】？」\n\n只看三個，然後約出去見面\n\n〖見面才是開始，滑動只是幻覺〗\n\n資料來源：University of Wisconsin Library; Ariely / Big Think",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "欸，你有沒有發現，你在交友 App 上滑了兩小時，最後按下喜歡的那個人，你其實說不太出來哪裡喜歡他？\n\n行為經濟學家 Dan Ariely 說：你只是在「選購」。\n\nAriely 給的答案很簡單：限制選擇的數量，把認知資源留給真正重要的事，見面時的感受。\nPronk & Denissen（2020，SAGE）的研究也發現同樣的悖論：線上平台提供了前所未有的機會，人們卻反而更難真正在一起。\nLava 從一開始就不走「讓你一直滑」的路線，因為真正的連結不是在大量比較之後篩選出來的，而是在你願意放下規格表、真正去見一個人的那一刻開始的。\n\n#交友軟體 #約會 #交友App #行為經濟學 #心理學 #選擇超載 #DanAriely #線上交友 #約會心理學 #感情 #台灣交友 #Lava交友 #不聊天的交友軟體 #真實連結 #見面才是開始",
+          "slides": {
+            "1": {
+              "heading": "你根本不是在「喜歡」誰",
+              "display_copy": "欸，你有沒有發現\n\n你在 App 上滑了兩小時\n最後你也說不清楚\n\n〖為什麼按下喜歡〗\n\n行為經濟學家 Dan Ariely 說：\n你不是在「喜歡」誰\n你只是在【選購】"
+            },
+            "2": {
+              "heading": "你那晚到底在做什麼",
+              "display_copy": "你滑了四十張之後\n已經記不得第一張長什麼樣\n\n這個高一點、那個愛運動\n這個笑起來比較好看\n\n最後傳訊息的那個\n是「看起來【最沒問題】的那個」\n\n不是讓你心跳加速的那個\n\n這不是你的錯——\n這是你的大腦在用【選購模式】\n處理一件它根本不擅長的事"
+            },
+            "3": {
+              "heading": "果醬實驗：24 款 vs 6 款",
+              "display_copy": "2000 年，哥倫比亞 × 史丹佛大學聯合實驗\n\n擺出【24 款果醬】→ 只有 2% 的人買\n擺出【6 款果醬】→ 有 12% 的人買\n\n選項多 4 倍，購買率少 6 倍\n\n〖選越多，越不想選〗\n\n這就是「選擇超載（choice overload）」\n你的大腦在太多選項面前\n會直接罷工\n\n資料來源：Iyengar & Lepper (2000),〈When Choice is Demotivating〉, Columbia University / Stanford University"
+            },
+            "4": {
+              "heading": "Ariely 說：滑動，把人變成商品",
+              "display_copy": "Duke University 行為經濟學家 Dan Ariely\n在《The Upside of Irrationality》裡說：\n\n滑動式介面讓你的大腦\n自動切換成【選購模式】\n\n你比較的不是感覺\n而是【規格：身高、工作、照片】\n\n你問的不是「跟他相處起來什麼感覺」\n你問的是「條件過不過關」\n\n最後選出的是「最不差的那個」\n不是讓你〖真正心動〗的那個\n\n資料來源：Dan Ariely,《The Upside of Irrationality》; The Fabulous Blog"
+            },
+            "5": {
+              "heading": "六小時，只為了一次約會",
+              "display_copy": "Ariely 研究團隊算了一筆帳：\n\n透過線上交友安排一次約會\n平均要花【6 小時】搜尋、篩選、通訊\n\n這 6 小時裡\n你感受不到對方握手的力道\n聽不到他的笑聲\n也感受不到那種說不清楚的【頻率感】\n\n維也納大學調查 667 名成人（2021）：\n滑越多 profile\n對「能在這裡找到對象」的預期【越悲觀】\n\n〖滑越多，越不相信愛情〗\n\n資料來源：Ariely / Big Think；University of Vienna (2021), ScienceDirect"
+            },
+            "6": {
+              "heading": "規格化的代價：175cm 的男人要多賺多少",
+              "display_copy": "Ariely 用「勞動市場迴歸分析」\n把線上交友當成市場定價來算：\n\n身高【175cm 的男性】\n必須年薪多賺【$40,000 美元】\n才能在線上交友市場達到\n和 177cm 男性同等的吸引力\n\n你不是真的在乎這些數字\n\n但當介面強迫你用規格篩選\n你的大腦就【真的開始用規格衡量一個人】\n\n連你自己都沒有意識到\n\n〖這不是你的偏見，是介面設計出來的〗\n\n資料來源：Duke Research Blog, Dan Ariely (2014)"
+            },
+            "7": {
+              "heading": "少一點選擇，多一點真實",
+              "display_copy": "Ariely 的建議很直白：\n\n【減少選項】\n把認知資源留給真正重要的——\n「見面時你們相處起來什麼感覺」\n\nPronk & Denissen（2020）也說：\n平台給的機會越多\n人反而越難真正在一起\n\nLava 不走「讓你一直滑」的路\n\n因為真實的連結\n從你〖願意放下規格表去見人〗開始\n\n資料來源：Pronk & Denissen (2020), SAGE Journals"
+            },
+            "8": {
+              "heading": "你現在可以做的事",
+              "display_copy": "Ariely 研究的最後結論：\n\n決策品質靠的不是更多選項\n而是【更少選項＋更清楚的意圖】\n\nWisconsin 大學研究也發現：\n從大量選項選出對象的人\n滿意度更低、訊息更敷衍\n\n下次打開 App 之前先問自己：\n「我是來【採購】，還是來【認識人】？」\n\n只看三個，然後約出去見面\n\n〖見面才是開始，滑動只是幻覺〗\n\n資料來源：University of Wisconsin Library; Ariely / Big Think"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "你根本不是在「喜歡」誰",
+          "",
+          "欸，你有沒有發現",
+          "你在 App 上滑了兩小時",
+          "最後你也說不清楚",
+          "〖為什麼按下喜歡〗",
+          "行為經濟學家 Dan Ariely 說",
+          "你不是在「喜歡」誰",
+          "你只是在【選購】"
+        ],
+        "2": [
+          "你那晚到底在做什麼",
+          "",
+          "你滑了四十張之後",
+          "已經記不得第一張長什麼樣",
+          "這個高一點、那個愛運動",
+          "這個笑起來比較好看",
+          "最後傳訊息的那個",
+          "是「看起來最沒問題的那個」",
+          "不是讓你心跳加速的那個",
+          "這不是你的錯",
+          "這是你的大腦在用選購模式",
+          "處理一件它根本不擅長的事"
+        ],
+        "3": [
+          "果醬實驗：24 款 vs 6 款",
+          "",
+          "2000 年，哥倫比亞 × 史丹佛大學聯合實驗",
+          "擺出24 款果醬→ 只有 2% 的人買",
+          "擺出6 款果醬→ 有 12% 的人買",
+          "選項多 4 倍，購買率少 6 倍",
+          "選越多，越不想選",
+          "這就是「選擇超載（choice overload）」",
+          "你的大腦在太多選項面前",
+          "會直接罷工",
+          "資料來源：Iyengar & Lepper (2000),〈When Choice",
+          "is Demotivating〉, Columbia University / Stanford",
+          "University"
+        ],
+        "4": [
+          "Ariely 說：滑動，把人變成商品",
+          "",
+          "Duke University 行為經濟學家 Dan Ariely",
+          "在《The Upside of Irrationality》裡說",
+          "滑動式介面讓你的大腦",
+          "自動切換成選購模式",
+          "你比較的不是感覺",
+          "而是規格：身高、工作、照片",
+          "你問的不是「跟他相處起來什麼感覺」",
+          "你問的是「條件過不過關」",
+          "最後選出的是「最不差的那個」",
+          "不是讓你真正心動的那個",
+          "資料來源：Dan Ariely,《The Upside of Irrationality》",
+          "The Fabulous Blog"
+        ],
+        "5": [
+          "六小時，只為了一次約會",
+          "",
+          "Ariely 研究團隊算了一筆帳",
+          "透過線上交友安排一次約會",
+          "平均要花6 小時搜尋、篩選、通訊",
+          "這 6 小時裡",
+          "你感受不到對方握手的力道",
+          "聽不到他的笑聲",
+          "也感受不到那種說不清楚的頻率感",
+          "維也納大學調查 667 名成人（2021）",
+          "滑越多 profile",
+          "對「能在這裡找到對象」的預期越悲觀",
+          "滑越多，越不相信愛情",
+          "資料來源：Ariely / Big Think；University of Vienna (",
+          "2021), ScienceDirect"
+        ],
+        "6": [
+          "規格化的代價：175cm 的男人要多賺多少",
+          "",
+          "Ariely 用「勞動市場迴歸分析」",
+          "把線上交友當成市場定價來算",
+          "身高175cm 的男性",
+          "必須年薪多賺$40,000 美元",
+          "才能在線上交友市場達到",
+          "和 177cm 男性同等的吸引力",
+          "你不是真的在乎這些數字",
+          "但當介面強迫你用規格篩選",
+          "你的大腦就真的開始用規格衡量一個人",
+          "連你自己都沒有意識到",
+          "這不是你的偏見，是介面設計出來的",
+          "資料來源：Duke Research Blog, Dan Ariely (2014)"
+        ],
+        "7": [
+          "少一點選擇，多一點真實",
+          "",
+          "Ariely 的建議很直白",
+          "減少選項",
+          "把認知資源留給真正重要的",
+          "「見面時你們相處起來什麼感覺」",
+          "Pronk & Denissen（2020）也說",
+          "平台給的機會越多",
+          "人反而越難真正在一起",
+          "Lava 不走「讓你一直滑」的路",
+          "因為真實的連結",
+          "從你願意放下規格表去見人開始",
+          "資料來源：Pronk & Denissen (2020), SAGE Journals"
+        ],
+        "8": [
+          "你現在可以做的事",
+          "",
+          "Ariely 研究的最後結論",
+          "決策品質靠的不是更多選項",
+          "而是更少選項＋更清楚的意圖",
+          "Wisconsin 大學研究也發現",
+          "從大量選項選出對象的人",
+          "滿意度更低、訊息更敷衍",
+          "下次打開 App 之前先問自己",
+          "「我是來採購，還是來認識人？」",
+          "只看三個，然後約出去見面",
+          "見面才是開始，滑動只是幻覺",
+          "資料來源：University of Wisconsin Library; Ariely /",
+          "Big Think"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
     }
   ]
 }
