@@ -6913,6 +6913,1289 @@
           "CTA 公版"
         ]
       }
+    },
+    {
+      "id": "20260808-欸你有沒有發現寵物去世後",
+      "topic": "欸…你有沒有發現，寵物去世後「不敢再養」這件事——心理學家說，這和你在感情裡「被傷過就關閉自己」是同一個機制？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyj5u3z",
+      "created_at": null,
+      "caption": "寵物走了之後說「不敢再養」的人，跟感情受傷之後說「不想再談了」的人，其實在做同一件事。\n\n被傷過的人才知道連結有多重要，也才知道它有多危險。\nLava 存在的理由，不是幫你找一個「完美無傷」的人，而是讓你在還沒說出口之前，先實際見到一個真實的人。\n少一點在文字裡反覆確認對方安不安全，多一點在同一個空間裡感受對方是不是值得。\n\n#交友軟體 #台灣交友 #約會 #心理學 #依附理論 #感情關係 #Lava交友 #不聊天的交友軟體 #悲傷心理 #迴避型依附 #寵物離世 #心理健康 #戀愛心理學 #線下約會 #自我成長",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "a-mood6a9da",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "組圖：Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "c-mooddfe00",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1g.jpg",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1h.jpg",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1i.jpg",
+              "kind": "still",
+              "source_label": "Severance"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1j.jpg",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1k.jpg",
+              "kind": "still",
+              "source_label": "My Mister"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-1l.jpg",
+              "kind": "still",
+              "source_label": "My Mister"
+            }
+          ],
+          "final_src": null,
+          "heading": "欸…你有沒有發現",
+          "display_copy": "欸…你有沒有發現\n\n「不敢再養」\n跟「不想再愛」\n\n〖是同一個機制？〗\n\n寵物走了、感情傷了\n你關上的，是同一扇門",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "a-moodca2a9",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "a-mooded3bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "b-moodbae58",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "Modern Love"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2h.jpg",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2i.jpg",
+              "kind": "still",
+              "source_label": "Beef"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2j.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2k.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-2l.jpg",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "PTT 上那條推文",
+          "display_copy": "PTT WomenTalk 有人問：\n寵物過世後怎麼面對？\n\n推文裡出現兩種聲音——\n「再養一隻吧」\n「太痛了，後來也不敢再養」\n\n你說過這句話嗎？\n對象是一隻貓，\n還是一個人？\n\n資料來源：PTT WomenTalk〈是怎麼面對寵物過世呢？〉2023；〈寵物離世是不是像小孩死了〉2026",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "a-mood5b2bd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "b-mood8d6a6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-3d.jpg",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-3e.jpg",
+              "kind": "still",
+              "source_label": "Six Feet Under"
+            }
+          ],
+          "final_src": null,
+          "heading": "心理學給這件事一個名字",
+          "display_copy": "心理學家 Kenneth Doka，1989 年\n\n他說這叫\n【剝奪性悲傷】\nDisenfranchised Grief\n\n「不過是一隻貓狗」\n這句話不是安慰\n\n是在告訴你：\n你沒有資格悲傷\n——所以只能選擇不再投入\n\n資料來源：Doka, K. (1989). Disenfranchised Grief. Lexington Books.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "Greater Good, UC Berkeley",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Sherry Turkle",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4h.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4i.jpg",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4j.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4k.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-4l.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "依附理論說：這不是你不愛了",
+          "display_copy": "Bowlby 依附理論這樣說：\n\n【依附迴避】\n不是你不愛了\n\n是你的大腦主動切斷連結\n讓思念「失去取用管道」\n——以此換取不再受傷\n\n寵物與主人的依附強度\n可媲美浪漫伴侶關係\n（Beck & Madresh, 2008）\n\n資料來源：Human-Animal Interaction Bulletin / CABI Digital Library",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "a-moodbc490",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "b-mood7f68d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-5h.jpg",
+              "kind": "still",
+              "source_label": "Normal People"
+            }
+          ],
+          "final_src": null,
+          "heading": "數據說：迴避並沒有讓你比較好過",
+          "display_copy": "《Death Studies》2023 年研究\n樣本：496 名失去寵物的成人\n\n高迴避者表面上「悲傷分數較低」\n\n但研究者說：\n【這不代表他們沒事】\n很可能只是——\n情緒被壓下去，等著爆發\n\n31 項研究、8,347 人 Meta 分析確認：\n迴避與複雜性悲傷顯著相關（r = 0.15）\n\n資料來源：Death Studies / Tandfonline (2023)；Personality and Individual Differences (2023)",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-6a.jpg",
+              "kind": "still",
+              "source_label": "a-mood28de2",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-6b.jpg",
+              "kind": "still",
+              "source_label": "b-moodf8d8b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-6c.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-6d.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-6e.jpg",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "迴避的代價：你關上的不只是痛",
+          "display_copy": "兩份 Meta 分析\n（Hadden et al., 2014；Li & Chan, 2012）\n同樣得出：\n\n依附迴避越高\n【關係滿意度越低】\n\n「獨立」有時候\n只是恐懼穿了一件體面的外衣\n\n你關上的不只是痛\n也是所有可能走進來的人\n\n資料來源：Personality and Individual Differences / ScienceDirect",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7a.jpg",
+              "kind": "still",
+              "source_label": "a-mood073b1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7b.jpg",
+              "kind": "still",
+              "source_label": "a-mood27caf",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7c.jpg",
+              "kind": "still",
+              "source_label": "b-mood3b208",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7d.jpg",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7e.jpg",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7f.jpg",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7g.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7h.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7i.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7j.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7k.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-7l.jpg",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 想找的，不是沒有傷過的人",
+          "display_copy": "被傷過的人\n才知道連結有多珍貴\n\nLava 不是要你\n假裝沒有受過傷\n\n而是讓你\n【少一點文字試探】\n多一點真實相遇\n\n因為有些答案\n只有在同一個空間裡\n才能感覺得到",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "a-mood9b25b",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "b-moodef574",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8c.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8d.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8e.jpg",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8f.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8g.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-欸你有沒有發現寵物去世後/slide-8h.jpg",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": null,
+          "heading": "那，可以怎麼開始？",
+          "display_copy": "心理學家說：\n不是要你強迫自己打開\n\n而是先注意到——\n你什麼時候開始找藉口不赴約？\n對話熱起來的時候為什麼想消失？\n\n研究把這叫做\n【刻意反芻】\n有意識地重新處理失落\n\n三分之一的人從沒說出口\n但你可以開始承認：\n「我還沒好。」\n\n資料來源：PMC (2025)，中國大學生寵物失落悲傷研究",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "寵物走了之後說「不敢再養」的人，跟感情受傷之後說「不想再談了」的人，其實在做同一件事。\n\n被傷過的人才知道連結有多重要，也才知道它有多危險。\nLava 存在的理由，不是幫你找一個「完美無傷」的人，而是讓你在還沒說出口之前，先實際見到一個真實的人。\n少一點在文字裡反覆確認對方安不安全，多一點在同一個空間裡感受對方是不是值得。\n\n#交友軟體 #台灣交友 #約會 #心理學 #依附理論 #感情關係 #Lava交友 #不聊天的交友軟體 #悲傷心理 #迴避型依附 #寵物離世 #心理健康 #戀愛心理學 #線下約會 #自我成長",
+          "slides": {
+            "1": {
+              "heading": "欸…你有沒有發現",
+              "display_copy": "欸…你有沒有發現\n\n「不敢再養」\n跟「不想再愛」\n\n〖是同一個機制？〗\n\n寵物走了、感情傷了\n你關上的，是同一扇門"
+            },
+            "2": {
+              "heading": "PTT 上那條推文",
+              "display_copy": "PTT WomenTalk 有人問：\n寵物過世後怎麼面對？\n\n推文裡出現兩種聲音——\n「再養一隻吧」\n「太痛了，後來也不敢再養」\n\n你說過這句話嗎？\n對象是一隻貓，\n還是一個人？\n\n資料來源：PTT WomenTalk〈是怎麼面對寵物過世呢？〉2023；〈寵物離世是不是像小孩死了〉2026"
+            },
+            "3": {
+              "heading": "心理學給這件事一個名字",
+              "display_copy": "心理學家 Kenneth Doka，1989 年\n\n他說這叫\n【剝奪性悲傷】\nDisenfranchised Grief\n\n「不過是一隻貓狗」\n這句話不是安慰\n\n是在告訴你：\n你沒有資格悲傷\n——所以只能選擇不再投入\n\n資料來源：Doka, K. (1989). Disenfranchised Grief. Lexington Books."
+            },
+            "4": {
+              "heading": "依附理論說：這不是你不愛了",
+              "display_copy": "Bowlby 依附理論這樣說：\n\n【依附迴避】\n不是你不愛了\n\n是你的大腦主動切斷連結\n讓思念「失去取用管道」\n——以此換取不再受傷\n\n寵物與主人的依附強度\n可媲美浪漫伴侶關係\n（Beck & Madresh, 2008）\n\n資料來源：Human-Animal Interaction Bulletin / CABI Digital Library"
+            },
+            "5": {
+              "heading": "數據說：迴避並沒有讓你比較好過",
+              "display_copy": "《Death Studies》2023 年研究\n樣本：496 名失去寵物的成人\n\n高迴避者表面上「悲傷分數較低」\n\n但研究者說：\n【這不代表他們沒事】\n很可能只是——\n情緒被壓下去，等著爆發\n\n31 項研究、8,347 人 Meta 分析確認：\n迴避與複雜性悲傷顯著相關（r = 0.15）\n\n資料來源：Death Studies / Tandfonline (2023)；Personality and Individual Differences (2023)"
+            },
+            "6": {
+              "heading": "迴避的代價：你關上的不只是痛",
+              "display_copy": "兩份 Meta 分析\n（Hadden et al., 2014；Li & Chan, 2012）\n同樣得出：\n\n依附迴避越高\n【關係滿意度越低】\n\n「獨立」有時候\n只是恐懼穿了一件體面的外衣\n\n你關上的不只是痛\n也是所有可能走進來的人\n\n資料來源：Personality and Individual Differences / ScienceDirect"
+            },
+            "7": {
+              "heading": "Lava 想找的，不是沒有傷過的人",
+              "display_copy": "被傷過的人\n才知道連結有多珍貴\n\nLava 不是要你\n假裝沒有受過傷\n\n而是讓你\n【少一點文字試探】\n多一點真實相遇\n\n因為有些答案\n只有在同一個空間裡\n才能感覺得到"
+            },
+            "8": {
+              "heading": "那，可以怎麼開始？",
+              "display_copy": "心理學家說：\n不是要你強迫自己打開\n\n而是先注意到——\n你什麼時候開始找藉口不赴約？\n對話熱起來的時候為什麼想消失？\n\n研究把這叫做\n【刻意反芻】\n有意識地重新處理失落\n\n三分之一的人從沒說出口\n但你可以開始承認：\n「我還沒好。」\n\n資料來源：PMC (2025)，中國大學生寵物失落悲傷研究"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "欸…你有沒有發現",
+          "",
+          "欸…你有沒有發現",
+          "「不敢再養」",
+          "跟「不想再愛」",
+          "〖是同一個機制〗",
+          "寵物走了、感情傷了",
+          "你關上的，是同一扇門"
+        ],
+        "2": [
+          "PTT 上那條推文",
+          "",
+          "PTT WomenTalk 有人問",
+          "寵物過世後怎麼面對",
+          "推文裡出現兩種聲音",
+          "「再養一隻吧」",
+          "「太痛了，後來也不敢再養」",
+          "你說過這句話嗎",
+          "對象是一隻貓",
+          "還是一個人",
+          "資料來源：PTT WomenTalk〈是怎麼面對寵物過世呢？",
+          "〉2023；〈寵物離世是不是像小孩死了〉2026"
+        ],
+        "3": [
+          "心理學給這件事一個名字",
+          "",
+          "心理學家 Kenneth Doka，1989 年",
+          "他說這叫",
+          "剝奪性悲傷",
+          "Disenfranchised Grief",
+          "「不過是一隻貓狗」",
+          "這句話不是安慰",
+          "是在告訴你",
+          "你沒有資格悲傷",
+          "——所以只能選擇不再投入",
+          "資料來源：Doka, K. (1989). Disenfranchised Grief.",
+          "Lexington Books"
+        ],
+        "4": [
+          "依附理論說：這不是你不愛了",
+          "",
+          "Bowlby 依附理論這樣說",
+          "依附迴避",
+          "不是你不愛了",
+          "是你的大腦主動切斷連結",
+          "讓思念「失去取用管道」",
+          "——以此換取不再受傷",
+          "寵物與主人的依附強度",
+          "可媲美浪漫伴侶關係",
+          "（Beck & Madresh, 2008）",
+          "資料來源：Human-Animal Interaction Bulletin / CABI",
+          "Digital Library"
+        ],
+        "5": [
+          "數據說：迴避並沒有讓你比較好過",
+          "",
+          "《Death Studies》2023 年研究",
+          "樣本：496 名失去寵物的成人",
+          "高迴避者表面上「悲傷分數較低」",
+          "但研究者說",
+          "這不代表他們沒事",
+          "很可能只是",
+          "情緒被壓下去，等著爆發",
+          "31 項研究、8,347 人 Meta 分析確認",
+          "迴避與複雜性悲傷顯著相關（r = 0.15）",
+          "資料來源：Death Studies / Tandfonline (2023)",
+          "Personality and Individual Differences (2023)"
+        ],
+        "6": [
+          "迴避的代價：你關上的不只是痛",
+          "",
+          "兩份 Meta 分析",
+          "（Hadden et al., 2014；Li & Chan, 2012）",
+          "同樣得出",
+          "依附迴避越高",
+          "關係滿意度越低",
+          "「獨立」有時候",
+          "只是恐懼穿了一件體面的外衣",
+          "你關上的不只是痛",
+          "也是所有可能走進來的人",
+          "資料來源：Personality and Individual Differences /",
+          "ScienceDirect"
+        ],
+        "7": [
+          "Lava 想找的，不是沒有傷過的人",
+          "",
+          "被傷過的人",
+          "才知道連結有多珍貴",
+          "Lava 不是要你",
+          "假裝沒有受過傷",
+          "而是讓你",
+          "少一點文字試探",
+          "多一點真實相遇",
+          "因為有些答案",
+          "只有在同一個空間裡",
+          "才能感覺得到"
+        ],
+        "8": [
+          "那，可以怎麼開始",
+          "",
+          "心理學家說",
+          "不是要你強迫自己打開",
+          "而是先注意到",
+          "你什麼時候開始找藉口不赴約",
+          "對話熱起來的時候為什麼想消失",
+          "研究把這叫做",
+          "刻意反芻",
+          "有意識地重新處理失落",
+          "三分之一的人從沒說出口",
+          "但你可以開始承認",
+          "「我還沒好。」",
+          "資料來源：PMC (2025)，中國大學生寵物失落悲傷研",
+          "究"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
+    },
+    {
+      "id": "20260808-JohnGottman說",
+      "topic": "John Gottman 說：一段關係裡最危險的沉默，不是吵架後的冷戰——而是這種",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyhwcva",
+      "created_at": null,
+      "caption": "欸⋯你有沒有發現，有一種沉默比吵架還要可怕，不是冷戰，不是憤怒，而是那種「我已經不想解釋了」的關機狀態。\n\nJohn Gottman 研究了 40 年、觀察超過 3,000 對伴侶，他說：這才是關係死亡最精準的預告。\n\nGottman 的研究告訴我們：關係不是毀於大吵，而是毀於那些沒有被接住的沉默，兩個人都不知道對方的神經系統正在發生什麼，於是一個人在呼救，另一個人已經關機，彼此都以為對方不在乎。\n這是為什麼 Lava 選擇從面對面開始：你第一次和一個人共處同一個空間，你看到他怎麼反應、怎麼停頓、怎麼在不舒服的時候還願意留下來，那些資訊，在任何文字對話裡都看不見。\n\n#感情 #戀愛 #關係 #心理學 #伴侶 #Gottman #溝通 #情感關閉 #stonewalling #交友軟體 #約會 #關係心理學 #Lava交友 #不聊天的交友軟體 #線下約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-1a.jpg",
+              "kind": "still",
+              "source_label": "a-mood8eaaa",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-1b.jpg",
+              "kind": "still",
+              "source_label": "組圖：Gottman Institute",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-1c.jpg",
+              "kind": "still",
+              "source_label": "c-moodfd074",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-JohnGottman說/slide-1d.jpg",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-JohnGottman說/slide-1e.jpg",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-JohnGottman說/slide-1f.jpg",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": null,
+          "heading": "「算了，隨便你。」",
+          "display_copy": "欸⋯你有沒有發現\n有一種沉默比吵架還可怕\n不是冷戰——而是這種\n\n【Gottman 40 年、3,000 對伴侶的發現】\n只需觀察 15 分鐘\n就能以 94% 準確率預測誰會離婚",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-2a.jpg",
+              "kind": "still",
+              "source_label": "a-mood9e0f4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-2b.jpg",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-2c.jpg",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-JohnGottman說/slide-2d.jpg",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-JohnGottman說/slide-2e.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-JohnGottman說/slide-2f.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-JohnGottman說/slide-2g.jpg",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個「我不想吵」的瞬間",
+          "display_copy": "你說了什麼，他突然就安靜了。\n不是思考的沉默——是整個人【關機】。\n眼神移開、訊息不回、話題直接蒸發。\n\n你比吵架的時候還不知所措\n因為你連一面牆都找不到可以推\n\n台灣人最熟悉的版本：\n「算了」「隨便」「我不想講了」\n——那不是放棄爭論，那叫做〖stonewalling〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-3a.jpg",
+              "kind": "still",
+              "source_label": "Gottman Institute",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-3b.jpg",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-3c.jpg",
+              "kind": "still",
+              "source_label": "John Gottman",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "Gottman 在 Love Lab 裡發現了什麼",
+          "display_copy": "1986 年，Gottman 在華盛頓大學建了「Love Lab」\n座椅裝抖動計（Jiggle Meters）、同步分析壓力荷爾蒙\n他要知道的不只是你說了什麼\n而是你的身體在那個當下正在承受什麼\n\n40 年、超過 3,000 對伴侶的資料\n他整理出【婚姻末日的四騎士】\n批評、防禦、蔑視、情感關閉（Stonewalling）\n\n資料來源：Greater Good Science Center, UC Berkeley — greatergood.berkeley.edu/profile/john_gottman；Wikipedia — en.wikipedia.org/wiki/John_Gottman",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-4a.jpg",
+              "kind": "still",
+              "source_label": "a-mooddc0b5",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-4b.jpg",
+              "kind": "still",
+              "source_label": "b-moodb7099",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-4c.jpg",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-JohnGottman說/slide-4d.jpg",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-JohnGottman說/slide-4e.jpg",
+              "kind": "still",
+              "source_label": "Scenesfroma Marriage"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-JohnGottman說/slide-4f.jpg",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-JohnGottman說/slide-4g.jpg",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-JohnGottman說/slide-4h.jpg",
+              "kind": "still",
+              "source_label": "Revolutionary Road"
+            }
+          ],
+          "final_src": null,
+          "heading": "心跳超過 100 下，同理心就不存在了",
+          "display_copy": "Gottman 命名了一個機制：【Flooding（情感淹沒）】\n\n當衝突強度超過門檻\n心率攀升到每分鐘超過 100 下\n身體進入戰或逃反應\n\n此時同理溝通的能力不是「困難」\n而是生理上〖不可能〗\n\n你的伴侶不是選擇不聽你說話\n是神經系統強行拉下了緊急煞車\n\n資料來源：Gottman & Levenson (1992), Journal of Personality and Social Psychology, 63, 221–233 — johngottman.net/wp-content/uploads/2011/05/Marital-processes-predictive-of-later-dissolution-behavior-physiology-and-health.pdf",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-5a.jpg",
+              "kind": "still",
+              "source_label": "a-moodabd67",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-5b.jpg",
+              "kind": "still",
+              "source_label": "b-mood46882",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-5c.jpg",
+              "kind": "still",
+              "source_label": "Kramervs Kramer",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-JohnGottman說/slide-5d.jpg",
+              "kind": "still",
+              "source_label": "Kramervs Kramer"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-JohnGottman說/slide-5e.jpg",
+              "kind": "still",
+              "source_label": "Kramervs Kramer"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260808-JohnGottman說/slide-5f.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260808-JohnGottman說/slide-5g.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260808-JohnGottman說/slide-5h.jpg",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "最反直覺的事：stonewalling 的人，通常最在乎",
+          "display_copy": "Gottman 研究最反直覺的發現：\n\nStonewalling 的人，通常【不是】不在乎\n而是情緒系統超載後，神經系統自動執行的緊急關機\n\n數據同樣反直覺：\nStonewallers 有【85% 是男性】\nGottman 推測：男性 flooding 門檻更低、恢復更慢\n退縮是適應性的自我調節，不是主動傷害\n\n但不管意圖是什麼\n對另一方的感受永遠只有一個：\n「你消失了。」",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-6a.jpg",
+              "kind": "still",
+              "source_label": "a-mood273fc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-6b.jpg",
+              "kind": "still",
+              "source_label": "b-mood36418",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-6c.jpg",
+              "kind": "still",
+              "source_label": "Lieto Me"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-JohnGottman說/slide-6d.jpg",
+              "kind": "still",
+              "source_label": "Lieto Me",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-JohnGottman說/slide-6e.jpg",
+              "kind": "still",
+              "source_label": "Lieto Me"
+            }
+          ],
+          "final_src": null,
+          "heading": "在認識一個人之前，先知道他怎麼面對沉默",
+          "display_copy": "Gottman 的研究告訴我們：\n關係不是毀於大吵\n而是毀於那些沒有被接住的【沉默】\n\n一個人在呼救，另一個人已經關機\n彼此都以為對方不在乎\n\n這是為什麼 Lava 選擇從面對面開始\n你第一次和一個人共處同一個空間\n就已經在讀那些文字永遠傳不到的訊息",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-7a.jpg",
+              "kind": "still",
+              "source_label": "a-mood678a7",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-7b.jpg",
+              "kind": "still",
+              "source_label": "b-mood8f512",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-JohnGottman說/slide-7c.jpg",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260808-JohnGottman說/slide-7d.jpg",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260808-JohnGottman說/slide-7e.jpg",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            }
+          ],
+          "final_src": null,
+          "heading": "「主動撤退」和 stonewalling 不一樣",
+          "display_copy": "Gottman 給了一個關鍵區分：\n\n【健康的暫停】\n是有意識的決定：「我需要冷靜，一小時後回來」\n然後你真的回來了\n\n【Stonewalling】\n是自我察覺能力被淹沒之後\n沒有承諾、沒有時間點、沒有回來——只有消失\n\n2014 年研究確認：長期被 stonewalling 的一方\n生理壓力更高、情感疏離更深\n傷害是雙向的，包括那個消失的人\n\n資料來源：Journal of Marriage and Family Therapy (2014)；Gottman (1993), Journal of Family Psychology, 7(1), 57–75 — psycnet.apa.org/record/1994-01471-001",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-JohnGottman說/slide-8a.jpg",
+              "kind": "still",
+              "source_label": "a-mood99955",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-JohnGottman說/slide-8b.jpg",
+              "kind": "still",
+              "source_label": "b-mood2a85c",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "你能做的第一件事",
+          "display_copy": "如果你是那個【關機】的人：\n在狀態還好的時候，練習說\n「我安靜不是因為不在乎，是神經系統需要重設」\n把生理機制變成兩個人都理解的語言\n\n如果你是那個【被消失】的人：\n你的伴侶不是在選擇拋棄你\n他在那個當下真的無法應對\n給彼此一個有期限的空間，讓系統冷卻\n再重新找到彼此\n\nLava 相信：好的關係從認識彼此的生理開始\n不只是心理",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "欸⋯你有沒有發現，有一種沉默比吵架還要可怕，不是冷戰，不是憤怒，而是那種「我已經不想解釋了」的關機狀態。\n\nJohn Gottman 研究了 40 年、觀察超過 3,000 對伴侶，他說：這才是關係死亡最精準的預告。\n\nGottman 的研究告訴我們：關係不是毀於大吵，而是毀於那些沒有被接住的沉默，兩個人都不知道對方的神經系統正在發生什麼，於是一個人在呼救，另一個人已經關機，彼此都以為對方不在乎。\n這是為什麼 Lava 選擇從面對面開始：你第一次和一個人共處同一個空間，你看到他怎麼反應、怎麼停頓、怎麼在不舒服的時候還願意留下來，那些資訊，在任何文字對話裡都看不見。\n\n#感情 #戀愛 #關係 #心理學 #伴侶 #Gottman #溝通 #情感關閉 #stonewalling #交友軟體 #約會 #關係心理學 #Lava交友 #不聊天的交友軟體 #線下約會",
+          "slides": {
+            "1": {
+              "heading": "「算了，隨便你。」",
+              "display_copy": "欸⋯你有沒有發現\n有一種沉默比吵架還可怕\n不是冷戰——而是這種\n\n【Gottman 40 年、3,000 對伴侶的發現】\n只需觀察 15 分鐘\n就能以 94% 準確率預測誰會離婚"
+            },
+            "2": {
+              "heading": "那個「我不想吵」的瞬間",
+              "display_copy": "你說了什麼，他突然就安靜了。\n不是思考的沉默——是整個人【關機】。\n眼神移開、訊息不回、話題直接蒸發。\n\n你比吵架的時候還不知所措\n因為你連一面牆都找不到可以推\n\n台灣人最熟悉的版本：\n「算了」「隨便」「我不想講了」\n——那不是放棄爭論，那叫做〖stonewalling〗"
+            },
+            "3": {
+              "heading": "Gottman 在 Love Lab 裡發現了什麼",
+              "display_copy": "1986 年，Gottman 在華盛頓大學建了「Love Lab」\n座椅裝抖動計（Jiggle Meters）、同步分析壓力荷爾蒙\n他要知道的不只是你說了什麼\n而是你的身體在那個當下正在承受什麼\n\n40 年、超過 3,000 對伴侶的資料\n他整理出【婚姻末日的四騎士】\n批評、防禦、蔑視、情感關閉（Stonewalling）\n\n資料來源：Greater Good Science Center, UC Berkeley — greatergood.berkeley.edu/profile/john_gottman；Wikipedia — en.wikipedia.org/wiki/John_Gottman"
+            },
+            "4": {
+              "heading": "心跳超過 100 下，同理心就不存在了",
+              "display_copy": "Gottman 命名了一個機制：【Flooding（情感淹沒）】\n\n當衝突強度超過門檻\n心率攀升到每分鐘超過 100 下\n身體進入戰或逃反應\n\n此時同理溝通的能力不是「困難」\n而是生理上〖不可能〗\n\n你的伴侶不是選擇不聽你說話\n是神經系統強行拉下了緊急煞車\n\n資料來源：Gottman & Levenson (1992), Journal of Personality and Social Psychology, 63, 221–233 — johngottman.net/wp-content/uploads/2011/05/Marital-processes-predictive-of-later-dissolution-behavior-physiology-and-health.pdf"
+            },
+            "5": {
+              "heading": "最反直覺的事：stonewalling 的人，通常最在乎",
+              "display_copy": "Gottman 研究最反直覺的發現：\n\nStonewalling 的人，通常【不是】不在乎\n而是情緒系統超載後，神經系統自動執行的緊急關機\n\n數據同樣反直覺：\nStonewallers 有【85% 是男性】\nGottman 推測：男性 flooding 門檻更低、恢復更慢\n退縮是適應性的自我調節，不是主動傷害\n\n但不管意圖是什麼\n對另一方的感受永遠只有一個：\n「你消失了。」"
+            },
+            "6": {
+              "heading": "在認識一個人之前，先知道他怎麼面對沉默",
+              "display_copy": "Gottman 的研究告訴我們：\n關係不是毀於大吵\n而是毀於那些沒有被接住的【沉默】\n\n一個人在呼救，另一個人已經關機\n彼此都以為對方不在乎\n\n這是為什麼 Lava 選擇從面對面開始\n你第一次和一個人共處同一個空間\n就已經在讀那些文字永遠傳不到的訊息"
+            },
+            "7": {
+              "heading": "「主動撤退」和 stonewalling 不一樣",
+              "display_copy": "Gottman 給了一個關鍵區分：\n\n【健康的暫停】\n是有意識的決定：「我需要冷靜，一小時後回來」\n然後你真的回來了\n\n【Stonewalling】\n是自我察覺能力被淹沒之後\n沒有承諾、沒有時間點、沒有回來——只有消失\n\n2014 年研究確認：長期被 stonewalling 的一方\n生理壓力更高、情感疏離更深\n傷害是雙向的，包括那個消失的人\n\n資料來源：Journal of Marriage and Family Therapy (2014)；Gottman (1993), Journal of Family Psychology, 7(1), 57–75 — psycnet.apa.org/record/1994-01471-001"
+            },
+            "8": {
+              "heading": "你能做的第一件事",
+              "display_copy": "如果你是那個【關機】的人：\n在狀態還好的時候，練習說\n「我安靜不是因為不在乎，是神經系統需要重設」\n把生理機制變成兩個人都理解的語言\n\n如果你是那個【被消失】的人：\n你的伴侶不是在選擇拋棄你\n他在那個當下真的無法應對\n給彼此一個有期限的空間，讓系統冷卻\n再重新找到彼此\n\nLava 相信：好的關係從認識彼此的生理開始\n不只是心理"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "「算了，隨便你。」",
+          "",
+          "欸⋯你有沒有發現",
+          "有一種沉默比吵架還可怕",
+          "不是冷戰——而是這種",
+          "【Gottman 40 年、3,000 對伴侶的發現】",
+          "只需觀察 15 分鐘",
+          "就能以 94% 準確率預測誰會離婚"
+        ],
+        "2": [
+          "那個「我不想吵」的瞬間",
+          "",
+          "你說了什麼，他突然就安靜了",
+          "不是思考的沉默——是整個人關機",
+          "眼神移開、訊息不回、話題直接蒸發",
+          "你比吵架的時候還不知所措",
+          "因為你連一面牆都找不到可以推",
+          "台灣人最熟悉的版本",
+          "「算了」「隨便」「我不想講了」",
+          "——那不是放棄爭論，那叫做stonewalling"
+        ],
+        "3": [
+          "Gottman 在 Love Lab 裡發現了什麼",
+          "",
+          "1986 年，Gottman 在華盛頓大學建了「Love Lab」",
+          "座椅裝抖動計（Jiggle Meters）、同步分析壓力荷爾",
+          "蒙",
+          "他要知道的不只是你說了什麼",
+          "而是你的身體在那個當下正在承受什麼",
+          "40 年、超過 3,000 對伴侶的資料",
+          "他整理出婚姻末日的四騎士",
+          "批評、防禦、蔑視、情感關閉（Stonewalling）",
+          "資料來源：Greater Good Science Center, UC",
+          "Berkeley — greatergood.berkeley.edu/profile/john_",
+          "gottman；Wikipedia — en.wikipedia.org/wiki/John_",
+          "Gottman"
+        ],
+        "4": [
+          "心跳超過 100 下，同理心就不存在了",
+          "",
+          "Gottman 命名了一個機制：Flooding（情感淹沒）",
+          "當衝突強度超過門檻",
+          "心率攀升到每分鐘超過 100 下",
+          "身體進入戰或逃反應",
+          "此時同理溝通的能力不是「困難」",
+          "而是生理上不可能",
+          "你的伴侶不是選擇不聽你說話",
+          "是神經系統強行拉下了緊急煞車",
+          "資料來源：Gottman & Levenson (1992), Journal of",
+          "Personality and Social Psychology, 63, 221–233",
+          "johngottman.net/wp-content/uploads/2011/05/",
+          "Marital-processes-predictive-of-later-dissolution-behavior-physiology-and-health.",
+          "pdf"
+        ],
+        "5": [
+          "最反直覺的事：stonewalling 的人，通",
+          "常最在乎",
+          "",
+          "Gottman 研究最反直覺的發現",
+          "Stonewalling 的人，通常不是不在乎",
+          "而是情緒系統超載後，神經系統自動執行的緊急關機",
+          "數據同樣反直覺",
+          "Stonewallers 有85% 是男性",
+          "Gottman 推測：男性 flooding 門檻更低、恢復更慢",
+          "退縮是適應性的自我調節，不是主動傷害",
+          "但不管意圖是什麼",
+          "對另一方的感受永遠只有一個",
+          "「你消失了。」"
+        ],
+        "6": [
+          "在認識一個人之前，先知道他怎麼面對沉默",
+          "",
+          "Gottman 的研究告訴我們",
+          "關係不是毀於大吵",
+          "而是毀於那些沒有被接住的沉默",
+          "一個人在呼救，另一個人已經關機",
+          "彼此都以為對方不在乎",
+          "這是為什麼 Lava 選擇從面對面開始",
+          "你第一次和一個人共處同一個空間",
+          "就已經在讀那些文字永遠傳不到的訊息"
+        ],
+        "7": [
+          "「主動撤退」和 stonewalling 不一樣",
+          "",
+          "Gottman 給了一個關鍵區分",
+          "健康的暫停",
+          "是有意識的決定：「我需要冷靜，一小時後回來」",
+          "然後你真的回來了",
+          "Stonewalling",
+          "是自我察覺能力被淹沒之後",
+          "沒有承諾、沒有時間點、沒有回來——只有消失",
+          "2014 年研究確認：長期被 stonewalling 的一方",
+          "生理壓力更高、情感疏離更深",
+          "傷害是雙向的，包括那個消失的人",
+          "資料來源：Journal of Marriage and Family Therapy (",
+          "2014)；Gottman (1993), Journal of Family",
+          "Psychology, 7(1), 57–75 — psycnet.apa.org/record/",
+          "1994-01471-001"
+        ],
+        "8": [
+          "你能做的第一件事",
+          "",
+          "如果你是那個關機的人",
+          "在狀態還好的時候，練習說",
+          "「我安靜不是因為不在乎，是神經系統需要重設」",
+          "把生理機制變成兩個人都理解的語言",
+          "如果你是那個被消失的人",
+          "你的伴侶不是在選擇拋棄你",
+          "他在那個當下真的無法應對",
+          "給彼此一個有期限的空間，讓系統冷卻",
+          "再重新找到彼此",
+          "Lava 相信：好的關係從認識彼此的生理開始",
+          "不只是心理"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
     }
   ]
 }
