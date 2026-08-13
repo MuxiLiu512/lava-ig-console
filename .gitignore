@@ -9,3 +9,4 @@ __pycache__/
 *.log
 data/.local_sources.json
 .gstack/
+docs/reels/
