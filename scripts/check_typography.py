@@ -51,11 +51,25 @@ def check_slide(s):
     idx = int(s.get("index") or 0)
     checks = []
     if idx == 1:
-        checks.append((head, ImageFont.truetype(E.F_MED, int(E.W * 0.043)), int(E.W * 0.86), False))
-        checks.append((body, ImageFont.truetype(E.F_MED, int(E.W * 0.032)), int(E.W * 0.78), True))
+        # 封面主標必須走引擎的 cover_title_lines（含動態縮字），不可自行猜字級。
+        # 2026-08-13 事故：本檢查原本寫死 W*0.043 / W*0.86，引擎實際 W*0.075 起跳 / W*0.89，
+        # 字級只有 57%，算出的斷點與印出來的完全不同，導致「9 篇全過」是假的。
+        cov_lines, cov_font, _fs = E.cover_title_lines(s.get("heading") or "", _D)
+        for i, line in enumerate(cov_lines):
+            t = "".join(tok for tok, _ in line).rstrip()
+            if not t:
+                continue
+            if t[-1] in E.LINE_END_STRIP:
+                bad.append(("line_end_punct", t))
+            elif i < len(cov_lines) - 1 and t[-1] in CHECK_NO_TRAIL:
+                bad.append(("mid_word_break", t))
+        checks.append((body, ImageFont.truetype(E.F_MED, int(E.W * E.COVER_SUB_FS)),
+                       int(E.W * 0.78), True))
     else:
-        checks.append((head, ImageFont.truetype(E.F_MED, int(E.W * 0.043)), int(E.W * 0.86), False))
-        checks.append((body, ImageFont.truetype(E.F_REG, int(E.W * 0.036)), int(E.W * 0.86), False))
+        checks.append((head, ImageFont.truetype(E.F_MED, int(E.W * E.BODY_TITLE_FS)),
+                       E.content_width(), False))
+        checks.append((body, ImageFont.truetype(E.F_REG, int(E.W * E.BODY_FS)),
+                       E.content_width(), False))
     for text, font, max_w, semantic in checks:
         if not text.strip():
             continue
