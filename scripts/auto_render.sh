@@ -67,6 +67,13 @@ if [ "$STASHED" = 1 ]; then
   fi
 fi
 
+# 訊號蒐集（每天第一輪跑一次即可；來源清單在本機，加來源不用動 n8n）
+SIGDATE=$(date '+%Y-%m-%d')
+if [ ! -f "data/signals/${SIGDATE}.json" ]; then
+  SIG=$("$PY" scripts/collect_signals.py 2>&1 | head -1)
+  echo "[$(date '+%m-%d %H:%M')] 訊號 $SIG" >>"$LOG"
+fi
+
 # 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
 FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"

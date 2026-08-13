@@ -1,0 +1,1007 @@
+{
+ "generated_at": "2026-08-13T12:19:26+08:00",
+ "source_count": 26,
+ "ok_count": 26,
+ "signal_count": 120,
+ "sources": [
+  {
+   "id": "r_relationships",
+   "name": "r/relationships",
+   "tier": "global_forum",
+   "url": "https://www.reddit.com/r/relationships/hot/.rss",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "My partner (28M) plays twisted mind games, tests me (27F), and uses my pets to mentally break me. Am I crazy?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmvodo/my_partner_28m_plays_twisted_mind_games_tests_me/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "[27M] My girlfriend [27F] ended our 6 year relationship after I stopped giving her large amounts of money",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmkwgl/27m_my_girlfriend_27f_ended_our_6_year/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "I hurt my girlfriend by bringing up her deepest vulnerability during an argument, and now we're separated/cool off. I don't know what to do with myself. (22f)",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmxaoo/i_hurt_my_girlfriend_by_bringing_up_her_deepest/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My (24F) boyfriend (25M) of 5 years says he has \"no type\" but constantly jokes about my body and called me \"average.\" How do I address this?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmza9j/my_24f_boyfriend_25m_of_5_years_says_he_has_no/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My mom (50sF) keeps taking my (30sF) ideas for gifts for my kid but still gets the wrong thing. How do I address this?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vm525x/my_mom_50sf_keeps_taking_my_30sf_ideas_for_gifts/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Relationship and Body Image",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmy64w/relationship_and_body_image/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "[UPDATE] I (18f) had sex with my best friend (18f), and she wanted us to forget it ever happened.",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmeh5d/update_i_18f_had_sex_with_my_best_friend_18f_and/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Is it possible for me (26F) to get over my resentment towards boyfriend (25M)?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmkyxy/is_it_possible_for_me_26f_to_get_over_my/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My SO(m34) told me(f29) I was the knower of all things of unimportance.",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmf6vo/my_som34_told_mef29_i_was_the_knower_of_all/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My bf says talking and gaming isn't possible",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmq4co/my_bf_says_talking_and_gaming_isnt_possible/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My (26M) girlfriend (F22) kissed someone else from her recent past. Should I still visit her?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmoctv/my_26m_girlfriend_f22_kissed_someone_else_from/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "I (25 F) am struggling with dealing with constant rejections from my (26M) Boyfriend, any advice?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmsc0q/i_25_f_am_struggling_with_dealing_with_constant/",
+     "note": "",
+     "rel": "raw"
+    }
+   ],
+   "ms": 3189
+  },
+  {
+   "id": "cosmo",
+   "name": "Cosmopolitan",
+   "tier": "global_pop",
+   "url": "https://www.cosmopolitan.com/rss/all.xml/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "They May Not Be Officially Dating, but Raye and Michael B. Jordan Proved That Theme Parks Are the Ultimate Date Idea",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73416185/raye-michael-b-jordan-theme-parks-are-the-ultimate-date-idea/",
+     "note": "Can we hold hands while riding a roller coaster?",
+     "rel": "strong"
+    },
+    {
+     "title": "Ahem, Travis Kelce Just Dished About His and Taylor Swift’s MSG Wedding for the First Time",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73416105/travis-kelce-breaks-silence-taylor-swift-wedding/",
+     "note": "He hath spoken!",
+     "rel": "weak"
+    },
+    {
+     "title": "The Internet Is Convinced Rep. Alexandria Ocasio-Cortez Might Be Single as She Documents Egg-Freezing Journey",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73414085/is-aoc-single/",
+     "note": "Not that it’s anyone’s business…",
+     "rel": "weak"
+    },
+    {
+     "title": "Titi Speaks Out After ‘Love Island USA’ Reunion Red Carpet Negativity, Requests “Grace and Kindness” for Herself and Fellow Islanders",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73412508/titi-responds-love-island-usa-reunion-red-carpet-backlash/",
+     "note": "“We literally just came out of the Villa and are stepping into an industry that's very new to a lot of us.”",
+     "rel": "weak"
+    },
+    {
+     "title": "Please, for the Love of God, Just Break Up With Me Over Text",
+     "url": "https://www.cosmopolitan.com/relationships/a45696974/why-break-up-over-text/",
+     "note": "I am literally begging you to dump me on iMessage.",
+     "rel": "strong"
+    },
+    {
+     "title": "Should Men Get Their Dates an Uber?",
+     "url": "https://www.cosmopolitan.com/relationships/a73404019/should-your-date-send-an-uber/",
+     "note": "This has become one of the biggest questions—and ongoing sagas—in modern dating.",
+     "rel": "strong"
+    },
+    {
+     "title": "24 Signs You’re Falling in Love (Even If You Haven’t Said It Yet)",
+     "url": "https://www.cosmopolitan.com/relationships/a73391253/signs-falling-in-love/",
+     "note": "Sometimes love looks less like fireworks and more like really, really liking someone.",
+     "rel": "weak"
+    },
+    {
+     "title": "Jennifer Lopez’s Under-$50 Free People Tank Has the Prettiest Romantic Details",
+     "url": "https://www.cosmopolitan.com/style-beauty/fashion/a73405685/jennifer-lopez-free-people-cami-top/",
+     "note": "I fear I will be wearing this every other day...",
+     "rel": "strong"
+    },
+    {
+     "title": "Who Is Malcolm Todd Dating? The Musician Said Himself That He’s “In Love”",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73405018/malcolm-todd-dating-rumors/",
+     "note": "Let’s sort through the evidence.",
+     "rel": "strong"
+    },
+    {
+     "title": "‘Off Campus’ Stars Mika Abdalla and Josh Heuston’s Relationship Timeline Is a Delightful Whirlwind",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73402972/mika-abdalla-josh-heuston-relationship-timeline/",
+     "note": "They’re bringing fans some romance between seasons.",
+     "rel": "strong"
+    },
+    {
+     "title": "Spoiler Alert: Kaia Gerber and Homer Gere Don’t Really Care That Their Parents Were Married",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73403481/kaia-gerber-homer-gere-react-parents-married/",
+     "note": "Wasn’t really expecting this response.",
+     "rel": "weak"
+    },
+    {
+     "title": "Are Michelle and Cameron From ‘Married at First Sight’ Still Together? I Found Some Compelling Evidence...",
+     "url": "https://www.cosmopolitan.com/entertainment/tv/a73403606/mafs-michelle-cameron-status/",
+     "note": "",
+     "rel": "weak"
+    }
+   ],
+   "ms": 582
+  },
+  {
+   "id": "dazed",
+   "name": "Dazed",
+   "tier": "global_pop",
+   "url": "https://www.dazeddigital.com/rss",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Inside Lin Zhipeng’s sultry, summery YSL exhibition",
+     "url": "https://www.dazeddigital.com/art-photography/article/70781/1/finger-223-lin-zhipeng-ysl-anthony-vaccarello-rive-droit?utm_source=Link&utm_medium=Link&utm_campaign=RSSFeed&utm_term=inside-lin-zhipeng-s-sultry-summery-ysl-exhibition",
+     "note": "The latest show by the artist Lin Zhipeng (AKA No.223) evokes the romantic atmosphere of Qixi, the Chinese equivalent of Valentine’s Day",
+     "rel": "strong"
+    }
+   ],
+   "ms": 115
+  },
+  {
+   "id": "elle",
+   "name": "ELLE",
+   "tier": "global_pop",
+   "url": "https://www.elle.com/rss/all.xml/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "Ana de Armas’s Complete Dating History",
+     "url": "https://www.elle.com/culture/celebrities/a65565158/ana-de-armas-dating-history-explained/",
+     "note": "From Ben Affleck to Tom Cruise and beyond.",
+     "rel": "strong"
+    },
+    {
+     "title": "All About John Miller, Jennifer Garner’s Longtime Boyfriend",
+     "url": "https://www.elle.com/culture/celebrities/a39998995/who-is-john-miller-jennifer-garner-boyfriend/",
+     "note": "",
+     "rel": "weak"
+    },
+    {
+     "title": "Taylor Swift and Travis Kelce’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a45378530/taylor-swift-travis-kelce-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "All About Alexandra Leclerc, Charles Leclerc’s Wife",
+     "url": "https://www.elle.com/culture/celebrities/a71321377/who-is-alexandra-leclerc-charles-leclerc-wife/",
+     "note": "",
+     "rel": "weak"
+    },
+    {
+     "title": "Keke Palmer and Sean Evans’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a71582252/keke-palmer-sean-evans-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "Ariana Grande and Ricky Alvarez’s Full Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a71857038/ariana-grande-ricky-alvarez-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "Ariana Grande Makes Her Relationship With Ricky Alvarez Instagram Official",
+     "url": "https://www.elle.com/culture/celebrities/a73413668/ariana-grande-ricky-alvarez-instagram-official-photos/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "Jennifer Garner and John Miller Feel Their Relationship Is ‘Unbreakable’",
+     "url": "https://www.elle.com/culture/celebrities/a73413197/jennifer-garner-john-miller-relationship-details-august-2026/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "All About Natalie Portman’s Boyfriend, Tanguy Destable",
+     "url": "https://www.elle.com/culture/celebrities/a64104107/who-is-tanguy-destable-tepr-boyfriend-natalie-portman/",
+     "note": "",
+     "rel": "weak"
+    },
+    {
+     "title": "Off Campus’s Josh Heuston and Mika Abdalla’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a71683383/josh-heuston-mika-abdalla-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "Georgina Rodríguez and Cristiano Ronaldo’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a65807921/georgina-rodriguez-cristiano-ronaldo-complete-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "Glen Powell and Michelle Randolph’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a69774468/glen-powell-michelle-randolph-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    }
+   ],
+   "ms": 415
+  },
+  {
+   "id": "gq",
+   "name": "GQ",
+   "tier": "global_pop",
+   "url": "https://www.gq.com/feed/rss",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "‘He Comes to Every Concert With Me’: Meeting the BTS ARMY Boyfriends Outside the Arirang Tour",
+     "url": "https://www.gq.com/gallery/bts-army-boyfriends-arirang-tour",
+     "note": "Outside of MetLife Stadium, GQ talked to the boyfriends of BTS fans to learn what it’s like to love a member of the world’s most devoted and dedicated fanbase.",
+     "rel": "weak"
+    }
+   ],
+   "ms": 152
+  },
+  {
+   "id": "highsnobiety",
+   "name": "Highsnobiety",
+   "tier": "global_pop",
+   "url": "https://www.highsnobiety.com/feed",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 163
+  },
+  {
+   "id": "hypebeast",
+   "name": "Hypebeast",
+   "tier": "global_pop",
+   "url": "https://hypebeast.com/feed",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 70
+  },
+  {
+   "id": "i_d",
+   "name": "i-D",
+   "tier": "global_pop",
+   "url": "https://i-d.co/feed",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 1335
+  },
+  {
+   "id": "interview",
+   "name": "Interview Magazine",
+   "tier": "global_pop",
+   "url": "https://www.interviewmagazine.com/feed",
+   "ok": true,
+   "count": 3,
+   "items": [
+    {
+     "title": "Everything Andy Warhol Would Have Loved About 2026",
+     "url": "https://www.interviewmagazine.com/culture/everything-andy-warhol-would-have-loved-about-2026",
+     "note": "We asked Interview staff to make predictions on all of the things the artist would've gagged over if he was still alive.\nThe post Everything Andy Warhol Would H",
+     "rel": "weak"
+    },
+    {
+     "title": "Monica Barbaro and Este Haim Settle the New York Vs. L.A. Dating Debate",
+     "url": "https://www.interviewmagazine.com/film/monica-barbaro-este-haim-one-night-only-callum-turner-ziwe-romcom-meet-cute",
+     "note": "The One Night Only stars discuss meet-cutes, natural deodorant, and the pitfalls of dating in Los Angeles.\nThe post Monica Barbaro and Este Haim Settle the New ",
+     "rel": "strong"
+    },
+    {
+     "title": "Ferragamo’s Fall 2026 Campaign Is a Shoe Lover’s Paradise",
+     "url": "https://www.interviewmagazine.com/fashion/salvatore-ferragamo-fall-winter-2026-campaign-anok-yai-vittoria-ceretti",
+     "note": "The fashion house's new imagery pays homage to its design roots with a surrealist-inspired campaign starring faces like Anok Yai and Vittoria Ceretti.\nThe post ",
+     "rel": "weak"
+    }
+   ],
+   "ms": 1014
+  },
+  {
+   "id": "papermag",
+   "name": "PAPER",
+   "tier": "global_pop",
+   "url": "https://www.papermag.com/feeds/feed.rss",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Dua Lipa, Charli xcx and the Romance of the City Hall Fling",
+     "url": "https://www.papermag.com/celebrity-city-hall-wedding",
+     "note": "We woke up on May 31 to the news that Dua Lipa and Callum Turner got married in a civil ceremony at Old Marylebone Town Hall. \nLipa donned a Bianca Jagger-esque",
+     "rel": "strong"
+    }
+   ],
+   "ms": 900
+  },
+  {
+   "id": "psyche",
+   "name": "Psyche",
+   "tier": "global_pop",
+   "url": "https://psyche.co/feed.rss",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Two actors, no director, one dreamlike play",
+     "url": "https://psyche.co/turning-points/how-acting-in-a-surreal-play-in-my-pyjamas-healed-my-heartache",
+     "note": "After a painful breakup, I found myself agreeing to perform in a surreal play, dressed in my pyjamas- by Melissa MatthewsonRead on Psyche",
+     "rel": "strong"
+    }
+   ],
+   "ms": 214
+  },
+  {
+   "id": "refinery29",
+   "name": "Refinery29",
+   "tier": "global_pop",
+   "url": "https://www.refinery29.com/en-us/rss.xml",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "I Grew Up Watching Romance Movies Set In Ireland. Then I Found My Own Love Story There",
+     "url": "https://www.refinery29.com/en-us/ireland-travel-romance-essay?utm_source=feed&utm_medium=rss",
+     "note": "After a horse-and-carriage ride through Killarney National Park, an enchanted emerald forest in southwestern Ireland, I walked through the old countryside town,",
+     "rel": "strong"
+    }
+   ],
+   "ms": 638
+  },
+  {
+   "id": "thecut",
+   "name": "The Cut / NY Mag",
+   "tier": "global_pop",
+   "url": "https://feeds.feedburner.com/nymag/fashion",
+   "ok": true,
+   "count": 4,
+   "items": [
+    {
+     "title": "Travis Kelce Awakened His Inner Wife Guy",
+     "url": "http://www.thecut.com/article/travis-kelce-officially-wife-guy.html?utm_source=rss&utm_medium=social_acct&utm_campaign=feed-part",
+     "note": "The Kansas City tight end just made a rare public comment about his wedding to Taylor Swift.",
+     "rel": "weak"
+    },
+    {
+     "title": "Is AOC Single?",
+     "url": "http://www.thecut.com/article/aoc-reported-breakup-riley-roberts.html?utm_source=rss&utm_medium=social_acct&utm_campaign=feed-part",
+     "note": "The representative reportedly split from fiancé Riley Roberts about two years ago.",
+     "rel": "weak"
+    },
+    {
+     "title": "Cristiano Ronaldo and Georgina Rodríguez Are Married at Last",
+     "url": "http://www.thecut.com/article/cristiano-ronaldo-georgina-rodrguez-married.html?utm_source=rss&utm_medium=social_acct&utm_campaign=feed-part",
+     "note": "And wearing understated rings this time.",
+     "rel": "weak"
+    },
+    {
+     "title": "Are Michael B. Jordan and Raye Dating?",
+     "url": "http://www.thecut.com/article/michael-b-jordan-raye-dating-rumors.html?utm_source=rss&utm_medium=social_acct&utm_campaign=feed-part",
+     "note": "Their Six Flags outing says “maybe”!",
+     "rel": "strong"
+    }
+   ],
+   "ms": 3197
+  },
+  {
+   "id": "vogue",
+   "name": "Vogue",
+   "tier": "global_pop",
+   "url": "https://www.vogue.com/feed/rss",
+   "ok": true,
+   "count": 4,
+   "items": [
+    {
+     "title": "Travis Kelce Says His Wedding to Taylor Swift Was the “Best Night of My Life”—Here’s Everything We Know About It",
+     "url": "https://www.vogue.com/article/taylor-swift-and-travis-kelce-wedding-location-date-guests",
+     "note": "The couple officially married at Madison Square Garden on Friday, July 3. Here’s everything you need to know about the multi-day celebration.",
+     "rel": "weak"
+    },
+    {
+     "title": "Copenhagen Fashion Week: The Trends That Made a Splash at the Spring 2027 Shows",
+     "url": "https://www.vogue.com/article/the-trends-that-made-a-splash-at-the-spring-2027-shows-in-copenhagen",
+     "note": "From wardrobe mainstays (shirts, long shorts, roomy pants), to swim-inspired designs, lingerie touches, and romantic flourishes, these are the 11 trends that de",
+     "rel": "strong"
+    },
+    {
+     "title": "Coco Gauff on her Oura Ring, US Open Hopes, and Her Love Island Thoughts",
+     "url": "https://www.vogue.com/article/coco-gauff-oura-ring-interview",
+     "note": "Vogue talks with the tennis star about her REM cycle, her Oura ring, and plans for the US Open.",
+     "rel": "weak"
+    },
+    {
+     "title": "28 Black-Tie Wedding Guest Dresses That Are Perfectly Formal",
+     "url": "https://www.vogue.com/slideshow/black-tie-wedding-guest-dresses",
+     "note": "From sequined gowns to maximalist florals, our edit of the best black-tie wedding guest dresses will help you master the formal attire dress code.",
+     "rel": "weak"
+    }
+   ],
+   "ms": 138
+  },
+  {
+   "id": "psyarxiv",
+   "name": "PsyArXiv 預印本",
+   "tier": "research",
+   "url": "https://api.osf.io/v2/preprints/?filter[provider]=psyarxiv&sort=-date_published&page[size]=30",
+   "ok": true,
+   "count": 5,
+   "items": [
+    {
+     "title": "Relational Meaning Theory: How meaning in life develops through relationships",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/jxs4h_v1/",
+     "note": "This paper introduces the Relational Meaning Theory, which seeks to explain how human beings develop meaning in life through the meaning embedded in close personal relationships. Relational Meaning Th",
+     "metric": "2026-08-12"
+    },
+    {
+     "title": "Positive Affect as a Moderator of the Relationship Between Everyday Cognitive Failures and Global Self-Esteem: A Pre-Registered Cross-Sectional Study",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/n5g7f_v2/",
+     "note": "Everyday cognitive failures, minor slips of memory, attention, and action, are reliably linked to negative affect, but whether positive affect protects self-esteem from the evaluative cost of these fa",
+     "metric": "2026-08-12"
+    },
+    {
+     "title": "Why and How Romantic Partners Make Each Other Feel Bad: A Dyadic Study of Goals, Strategies, and Outcomes of Extrinsic Emotion Regulation Over Three Weeks",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/7xaqw_v3/",
+     "note": "Emotion regulation research has focused on how we improve our own emotions, only recently considering how we improve or worsen others’ emotions. The current study examines how man/woman romantic coupl",
+     "metric": "2026-08-12"
+    },
+    {
+     "title": "Bargaining for leisure time in the household: the case of the Kipsigis",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/94ufb_v1/",
+     "note": "We study a bargaining model of household decision-making, where inequality in outside options—the resources one could access if intra-household cooperation fails—should provide bargaining power and sh",
+     "metric": "2026-08-11"
+    },
+    {
+     "title": "Longitudinal Profiles of Parental Self- and Child-Focused Emotion Regulation",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/2u6nj_v4/",
+     "note": "Parenting is an emotion-eliciting experience that requires parents to navigate the dual demands of regulating their own and their children’s emotions, drawing on regulatory strategies such as reapprai",
+     "metric": "2026-08-11"
+    }
+   ],
+   "ms": 4722
+  },
+  {
+   "id": "cna_life",
+   "name": "中央社 生活",
+   "tier": "tw_local",
+   "url": "https://feeds.feedburner.com/rsscna/lifehealth",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "印尼觀光客續增　台灣推穆斯林友善旅遊強化吸引力",
+     "url": "https://www.cna.com.tw/news/ahel/202608130029.aspx",
+     "note": "（中央社記者羅薇佳、實習記者黃鈺涵泗水13日專電）印尼赴台旅遊持續成長，駐泗水辦事處處長林文俊向中央社表示，印尼今年截至目前已有約22萬人次赴台，較去年同期增加約9%，顯示印尼赴台旅遊市場持續回溫。",
+     "rel": "weak"
+    }
+   ],
+   "ms": 2497
+  },
+  {
+   "id": "cna_social",
+   "name": "中央社 社會",
+   "tier": "tw_local",
+   "url": "https://feeds.feedburner.com/rsscna/social",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 3010
+  },
+  {
+   "id": "ettoday",
+   "name": "ETtoday",
+   "tier": "tw_local",
+   "url": "https://feeds.feedburner.com/ettoday/realtime",
+   "ok": true,
+   "count": 5,
+   "items": [
+    {
+     "title": "陳幸妤爆離婚　趙建銘6000萬診所「配偶贈與」",
+     "url": "https://house.ettoday.net/news/3218412",
+     "note": "前第一千金陳幸妤一則《Google》評論「前妻」留言，掀出與丈夫趙建銘已離婚的震撼彈。婚變消息一出，讓診所再度受關注。根據實登，診所所在的中西區「誠美樸真」1樓店面，2020年以6000萬元成交；謄本再揭，隔年該店面以「配偶贈與」登記在趙建銘名下。 《詳全文...》",
+     "rel": "weak"
+    },
+    {
+     "title": "棄女友狂追陳幸妤！趙建銘遭爆離婚　昔台開案內線交易遭判3年8月",
+     "url": "https://www.ettoday.net/news/20260813/3218427.htm",
+     "note": "前總統陳水扁女婿趙建銘與陳幸妤離婚已成「前女婿」，恐與扁家緣分已盡，陳幸妤當年結婚前本有穩定交往的學長男友，後來男友出國留學，趙建銘得知陳幸妤的身份就拋棄女友，瘋狂追求空窗期的陳幸妤，兩人才結婚。 《詳全文...》",
+     "rel": "strong"
+    },
+    {
+     "title": "陳幸妤「開撕前夫」離婚趙建銘　陳水扁4字回應！陳致中送祝福",
+     "url": "https://www.ettoday.net/news/20260813/3218407.htm",
+     "note": "前總統陳水扁女兒陳幸妤2001年與骨科醫師趙建銘結婚，婚後育有3子，不料昨天卻突然在趙建銘的骨科診所留下的Google評論，親自「爆破」趙建銘與小三糾纏不清、對「前妻」跟小孩無情無義等內容。針對陳幸妤離婚一事，陳水扁回應「沒有補充」，弟弟陳致中稍早也在Threads祝福姊姊陳幸妤50歲生日快樂，並稱「回首向來蕭瑟處，歸",
+     "rel": "weak"
+    },
+    {
+     "title": "陳幸妤自爆離婚轟趙建銘「亂搞男女關係」　陳水扁低調回應",
+     "url": "https://www.ettoday.net/news/20260813/3218405.htm",
+     "note": "前總統陳水扁女兒陳幸妤2001年與骨科醫師趙建銘結婚，婚後育有3名兒子，不過爆出疑由陳幸妤本人在趙建銘直骨科診所留下的Google評論，指控趙建銘與小三糾纏不清、對前妻跟小孩無情無義等內容。根據《鏡週刊》報導，陳幸妤已證實是本人所寫。至於近日活躍在社群平台的陳幸妤父親陳水扁，對此僅低調回應，「沒有補充」。\r\n\r\n 《詳",
+     "rel": "weak"
+    },
+    {
+     "title": "愛女歸寧宴遭酸「明天辦離婚」！八點檔男星氣炸報警…揪出藏鏡人",
+     "url": "https://star.ettoday.net/news/3218402",
+     "note": "八點檔男星「黑面」林郁順曾演過《親戚不計較》、《台灣龍捲風》、《台灣霹靂火》等經典台語八點檔與劇集打開知名度。他本月2日為愛女舉辦歸寧喜宴，席開超過200桌，眾多政商名流與大咖明星到場祝賀，不料卻遭網友惡意留言咒罵，讓黑面氣得前往警局報案！\r\n\r\n 《詳全文...》",
+     "rel": "weak"
+    }
+   ],
+   "ms": 3565
+  },
+  {
+   "id": "gnews_dating",
+   "name": "Google News 交友軟體",
+   "tier": "tw_local",
+   "url": "https://news.google.com/rss/search?q=%E4%BA%A4%E5%8F%8B%E8%BB%9F%E9%AB%94&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "交友軟體退流行，線下活動正興起 - 草根影響力新視野",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNYWRSeGR5bTBBbm5wX2MyWDZiUFJkOF82dE5FdVpIaGpjLWxpQ3V3UjVrNHVEZGNXRll3QjdyUkNsU2gyYzNwNWJkSGpLcDk3c3BRZmU0aUVKcVZMOF94dExJMXFYZHpCRkR4NnVJd0tkX0E4dGZfR3c0Z25sZW5vMkVJTlBEZ2pjUkdMRXhCdlhyMXFwcGhDNEV3d1ZSX3AwQlp4RTlNdFZjWnUtNElvVFZBR2pmYXpwczVwTHJqWURTY3pvbFZvT2d6NjYzcS1sTVdjTGE0M1k4SmZtZVVBREhKLTIwc0RSN0xZR2xLVkNWaVE?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMi8wFBVV95cUxNYWRSeGR5bTBBbm5wX2MyWDZiUFJkOF82dE5FdVpIaGpjLWxpQ3V3UjVrNHVEZGNXRll3QjdyUkNsU2gyYzNwNWJkSGpLcDk3c3",
+     "rel": "raw"
+    },
+    {
+     "title": "東森深度周報／單身商機夯 交友市場吹起主題經濟 - 東森新聞",
+     "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tQWNYMGFETTgzTXNhZUlkaDVjbXh3bmdvVTZESk84M2ZISXN4VnFlSUNrSWVhenpkbDFLZHJZMklRbUw4ZC1QeVpQcGxFM3RDcmdHVQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tQWNYMGFETTgzTXNhZUlkaDVjbXh3bmdvVTZESk84M2ZISXN4VnFlSUNrSWVhenpkbDFLZHJZMklRbUw4ZC1QeVpQcGxFM3RDcm",
+     "rel": "raw"
+    },
+    {
+     "title": "語音聊天交友興起 台灣口音成華語圈新亮點 - 商傳媒",
+     "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQMmdDdkJQTUNKRDVOR0tmU1d5Zno5V1lvZi1EdHV3a25GUDZNLXh2cS1RSnFTR1NCR0V0UFUyTXpSeWVHb29VaktVeFdOWUQtRnhCMmpxY0tyUS1SXzVwN0VkQ2k5Tkh2bU5NUktoQWNwUkxhMWM5VXZ0MzdiTzhJNGJqQTRWeDVzS1dVR01idjNhSmNvb2xUR2I4VHBCUy1EdTd3cFRiVjRRM3VOel84RWlhWUdUWEFFcl9UaUVtQXdoNmswVUszck14RVpBTnUxbURwRzFaVk04QXNSc0xPcUNNVzJTWlRZRnlWblIyc29LRUtPeUtDcXItZ3JuMVJGVTRfNkxUcE1kckNRRXg0dTdLcEtvcWRPV2oxY3FyUk9Kcm5GaFI2dEVBYjZvaFFNc0t4MGZLOHUtejMwUlBJVnNfUEVtNzdBZWpSUlBjRQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMizwJBVV95cUxQMmdDdkJQTUNKRDVOR0tmU1d5Zno5V1lvZi1EdHV3a25GUDZNLXh2cS1RSnFTR1NCR0V0UFUyTXpSeWVHb29VaktVeFdOWUQtRn",
+     "rel": "raw"
+    },
+    {
+     "title": "交友軟體遇狼！工程師U2電影館「強吻摸胸」狡辯在曖昧...悲喊：公費留學飛了 - mirrordaily.news",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NQTlMeW5hQkNGdHpiNUJkWFJ3dzVmc3NkNjA5YkF6RXphbVljcHRER0FfMEZFTFJldVhMUzdHTjdQampDRy1BU25oZjI1amZadXc?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NQTlMeW5hQkNGdHpiNUJkWFJ3dzVmc3NkNjA5YkF6RXphbVljcHRER0FfMEZFTFJldVhMUzdHTjdQampDRy1BU25oZjI1amZadX",
+     "rel": "raw"
+    },
+    {
+     "title": "打破招牌規則！交友軟體Bumble允許雙方主動發訊息 - 民視新聞網",
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40WndjU01RbGEzc0hzSXcxSnVwR291MkwtWV9HbDVNbW5BS3JVd0h6bGtUZE9hMzEwYklQaDJqcVJZN1k2U1VvT3M5MXJIVThEUUZ2TjFJUmM4OU9WYzkwRA?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE40WndjU01RbGEzc0hzSXcxSnVwR291MkwtWV9HbDVNbW5BS3JVd0h6bGtUZE9hMzEwYklQaDJqcVJZN1k2U1VvT3M5MXJIVThEUU",
+     "rel": "raw"
+    },
+    {
+     "title": "不靠交友軟體！出社會後「怎麼找另一半」　過來人給答案：蠻容易 - ETtoday新聞雲",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE43dUdUdXUzenpveWxodXcxWVdWREhiUExkRWRBb0xHZ2dlanh4VVNhVVNWRXJpT1hPb0RWSnAtRnlCUDR5bUtPbUt1ZGlJb0ZTRmVPS2FCRnRFM0gyTlHSAUtBVV95cUxNdlZpSXJCQzFtUmFPOXdncVBoMVc3ZUQ4RzE3Vmlvb1g1R1RGSVdjNlI4VmtwbVVIYWl4QlRvbVRvUlB4X3pGdUU0Y1k?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE43dUdUdXUzenpveWxodXcxWVdWREhiUExkRWRBb0xHZ2dlanh4VVNhVVNWRXJpT1hPb0RWSnAtRnlCUDR5bUtPbUt1ZGlJb0ZTRm",
+     "rel": "raw"
+    },
+    {
+     "title": "男性看重外表、女性在乎職業？交友軟體「1指標」成配對成功關鍵 - 優活健康網",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE94TENXQWxKblo1S0R2VFowSzZQdmViSm5uejdzbzhma0ZpY21yZHVyai1rYURYYlV2dWtwY3dvaVhfLWJWT0RwWGY2YVFYWnRmUEMw?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE94TENXQWxKblo1S0R2VFowSzZQdmViSm5uejdzbzhma0ZpY21yZHVyai1rYURYYlV2dWtwY3dvaVhfLWJWT0RwWGY2YVFYWnRmUE",
+     "rel": "raw"
+    },
+    {
+     "title": "交友軟體禁未成年國外App恐成漏洞- 其他 - 旺得富理財網",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE44WnM2bXhySWlrcjBoWDFRVkF5TE1JWTFzbk9PTms4bF9LOFN0eHZCeGs5MkIya3lKZGEwY1dpSnZ0MktMaUNoVFhQN0NmQXBGRzRWQ21sSC1HZU9YRGRJWUUyRWpKVm53dnc?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE44WnM2bXhySWlrcjBoWDFRVkF5TE1JWTFzbk9PTms4bF9LOFN0eHZCeGs5MkIya3lKZGEwY1dpSnZ0MktMaUNoVFhQN0NmQXBGRz",
+     "rel": "raw"
+    },
+    {
+     "title": "女學生交友軟體認識牙醫「3天閃婚、10天鬧翻」：每月30萬元生活費沒給 - Yahoo新聞",
+     "url": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxNN05LVGp6M3F5eTRmWUpERkl0dEFIWlBzQmFpWGRBMWpDUWRfRk00bUtHWjBnUHR0NHl5V2drREstYWRpNmRPSS1vOTdSaHN5YkFCUE5UYVc0ZGw0ZHFfRm9zdXpfcm1hRjJYbWI5X2ZHR1lRZkpSMmRIU0t5VVhOSWVsSkpJUVRrNjhCLXo5TUppX01QS2RPNWJ2amo4SEUwZGkzZXZ5WXVPeUcyZFlUeHU1YkZiTFN6QVEtNTI2WmxXSzFVZTE5UGhoVW1rUkFWeEhmVUcwYlN1b3M1UDNTTF9BVmlxSk1iRzNHQ2NWYURHTmx3NkF3RklLVW8zZnZ4aEVIMS1aVF8tUnVFWU9NeTVWTklFMkl1QTZDaEMtMmtfODdYRW1KMXBUTVBRUmNoQ0o4a0FjZ2szenFKWGFoSXdXTWJKUXVUQUVGVVRhOFJSTXNWbWFfUjdzWXRqRjlFNHRidE5GWk10ODYxc21tZE56RGF3Qk54MklKRjRGOUs3ZURGdDRtTlIzTkZoOFZiaDJxZTR5VU9LUVVKVS1nWWs4X05GRWJHaGFOZ2hmWWVnNmNqeHpTN0E5OWYydGJvNmc?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiwgNBVV95cUxNN05LVGp6M3F5eTRmWUpERkl0dEFIWlBzQmFpWGRBMWpDUWRfRk00bUtHWjBnUHR0NHl5V2drREstYWRpNmRPSS1vOTdSaHN5Yk",
+     "rel": "raw"
+    },
+    {
+     "title": "她嘆出社會後「順其自然＝萬年單身」 網友分享實戰經驗：靠這招找真愛 | 鏡週刊 - LINE TODAY",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10MVctZEIyQzhzU3YwMGpOUFYya0FLNzJvZmp2ZEk2NG1VMWptZlBiZ2tHRnh3dXBGT3NiQzYzNERBaGZUUlJnWGNJQlRBR3Jha05VVzBn?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE10MVctZEIyQzhzU3YwMGpOUFYya0FLNzJvZmp2ZEk2NG1VMWptZlBiZ2tHRnh3dXBGT3NiQzYzNERBaGZUUlJnWGNJQlRBR3Jha0",
+     "rel": "raw"
+    },
+    {
+     "title": "七夕就看這部！《一夜限定》電影6大看點：沒有交友軟體，你還知道怎麼愛一個人嗎？莫妮卡芭芭羅、卡倫透納譜寫命定戀曲 - ELLE",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEx6dC1JQTBDTlRLQ3ZQSjZGYk1GRnIzQjRkamJQNmZIRVFIS190WlJvS0c5R1ZkWFlLaS1uWWJjTUpLdElGRXEtU0hiWUpfcXhEZHRWY1pKTVdJbzhtLTB4QWhVekhoN1ItUTlkSmpMRUZmNV9fWFR0dmdDRnNmdW1KaFFidzVFZzdr?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEx6dC1JQTBDTlRLQ3ZQSjZGYk1GRnIzQjRkamJQNmZIRVFIS190WlJvS0c5R1ZkWFlLaS1uWWJjTUpLdElGRXEtU0hiWUpfcX",
+     "rel": "raw"
+    },
+    {
+     "title": "U2包廂強吻摸女網友胸！ 男失去赴美公費留學機會二審認罪獲緩刑- 社會 - 自由時報",
+     "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TS215NDM4SDZodHdDMnFhRHVoZHBLMWJuMjBWWkdxVEJmNXZUMDVKd09QaHNDUFVid1pCY01rSW41QnBSaGVJZUc3Q0RqWC1RU2wxZDJENG5sclFNX0hGWGE3RW05VDBD?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE5TS215NDM4SDZodHdDMnFhRHVoZHBLMWJuMjBWWkdxVEJmNXZUMDVKd09QaHNDUFVid1pCY01rSW41QnBSaGVJZUc3Q0RqWC1RU2",
+     "rel": "raw"
+    }
+   ],
+   "ms": 611
+  },
+  {
+   "id": "gnews_dcard",
+   "name": "Google News Dcard熱帖",
+   "tier": "tw_local",
+   "url": "https://news.google.com/rss/search?q=dcard+%E6%84%9F%E6%83%85&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "性感照遭男友發到網路上 卡友批：很不尊重你｜Dcard熱門事件 - social-lab.cc",
+     "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNalBpNW80czdiTWxZa3Q2akVHeUNFTjJqNHo4NjJMeW5zRVVCemZHLXh1ZHBlcWlDTVlyTGdjbV84YzQyVzBJTzdXOFJSY0Rsc1ZzVUp6b25pM2xNLTlGM3RaUU91VU1VY3dDMThfeUVScXBBbWI2XzdTQ0lsRkFpMTYwbWVNVElpZFZBSzFROWFHcWdUakh4WDYzSmxxXzdsR2w0QlJzVFBQRVFUWEtyYVhuX19aWWtTb05IQVBtSGVMWkhEYnlIZk5XWVpwWngwTUM3WjltUHA4X3JqRFNSYVNmQTRPYWpSTmxvT0JsV3BCX1MxN1ZrLUtRWjZaMEtySEh2R3MwX2NEUjFpVGxyNS1oMkZ0UG5aaUhpb21Oa245SFFGYTUyWkI2NElHRFlqTFV0X2xpeGdNMzFuSTVTQ0RhVFY2VE5kZWxzODZncU5aYmk3TFNIbWdFa3VzRjQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMi3wJBVV95cUxNalBpNW80czdiTWxZa3Q2akVHeUNFTjJqNHo4NjJMeW5zRVVCemZHLXh1ZHBlcWlDTVlyTGdjbV84YzQyVzBJTzdXOFJSY0Rsc1",
+     "rel": "raw"
+    },
+    {
+     "title": "「危險情人」在Dcard感情版引發了哪些討論？ - Bella.tw儂儂",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaHJSZDFBWS16WlFwNFhNbzZFY2hLZmY0cHd5RjQxZTFubDRxMHJTTGRfVFNFTVVTbzI2NmJvTndPYzBPTmE3OVNJTW9lUkxaTXBHeGpnODNudHB1QXI2QzhMa0gxSzRTTDhNTjh1bnRDMHhaNnRDaE1LSTVBNzJXQUF0MGo5TDdyUFF4V3BYRFUwS2cwT18yRjZZX2oxQQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxPaHJSZDFBWS16WlFwNFhNbzZFY2hLZmY0cHd5RjQxZTFubDRxMHJTTGRfVFNFTVVTbzI2NmJvTndPYzBPTmE3OVNJTW9lUkxaTX",
+     "rel": "raw"
+    },
+    {
+     "title": "愛情長久不靠運氣！ 網友曝5大維繫法 - 花花日報",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GUEt0dWEyY2VCWjc5WHljeWlUZTBEczhsRHJZWGE0VmVqeGEyLUpHMnVVcVZVQkgyaF95Tmc1dDA5SWp3cDRPQjBaUkc3ZG9IcUZjQVhiQjBpSFhvZ2R2VnJsYXBnTmVzazBfZk5KMA?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1GUEt0dWEyY2VCWjc5WHljeWlUZTBEczhsRHJZWGE0VmVqeGEyLUpHMnVVcVZVQkgyaF95Tmc1dDA5SWp3cDRPQjBaUkc3ZG9IcU",
+     "rel": "raw"
+    },
+    {
+     "title": "「訊息一天一則」你能接受嗎？她怨：工程師男友上班像人間蒸發... - 4gtv.tv",
+     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWFFGamgzYW1lNTZzYmF3YjlZdHN6SkdaSmk4Tm1UOUcyd0lZd2Z1YVlwS3N3ZVI3Yk5IRnF1dnFOWWk2MmZIVG5nUzlpVDlwVFg4ekpBUQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWFFGamgzYW1lNTZzYmF3YjlZdHN6SkdaSmk4Tm1UOUcyd0lZd2Z1YVlwS3N3ZVI3Yk5IRnF1dnFOWWk2MmZIVG5nUzlpVDlwVF",
+     "rel": "raw"
+    },
+    {
+     "title": "Dcard正妹新人疑搶閨密男友！感情黑歷史被挖出受害者不止一位- 娛樂 - 中時新聞網",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5McXhWRnJfTTE1MnY3ZzRUR3RvSTZ2ZThUMVFHend2TU5Kd3BFdHcyZlFJckNKVkZsczJKMUZCQzRCYWV6QWpWMmVUWGcwaVhuR0cxU0tfVm5qcTk5RV82YWlmeV9NYTU4akEza2FR?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5McXhWRnJfTTE1MnY3ZzRUR3RvSTZ2ZThUMVFHend2TU5Kd3BFdHcyZlFJckNKVkZsczJKMUZCQzRCYWV6QWpWMmVUWGcwaVhuR0",
+     "rel": "raw"
+    },
+    {
+     "title": "《男生男生配》感情線大洗牌　Dcard網友敲碗這兩人配對成功 - 鏡週刊Mirror Media",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wNzNMVEMyNTdIUTJtVU12YlYza1RVLVJZel8yVkxJQk1mUGtTN3BvRFFwN28yRFBER1l3RTdEREJkbGVYazFsYjN1aG9wT016U1ZtclprbDRiTzDSAWBBVV95cUxPTWlnYmtBTkZITGFmdVpqMzJLRXlQRmVvY3l5NUVEQ0ViSEZCSWVPSVNSRUEybjBtWHVDTlpOd291X2xObXlUTnZCb0VsSElHUC1vRUpzN2tYMTZDZ085UG8?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wNzNMVEMyNTdIUTJtVU12YlYza1RVLVJZel8yVkxJQk1mUGtTN3BvRFFwN28yRFBER1l3RTdEREJkbGVYazFsYjN1aG9wT016U1",
+     "rel": "raw"
+    },
+    {
+     "title": "知三當三？Dcard大書小三黑歷史遭挖 2受害者出面爆料：是慣犯｜TTshow 台灣達人秀 - 台灣達人秀TTshow",
+     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtWFhtTmRvdmZXWjFUZ0FFT0UxUVNxT0hiNTluTFlOenJBbUZqT21MdDJ2UXRHTmN6LWo5czE5d3puWDh2WWhZNHNtV0M?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtWFhtTmRvdmZXWjFUZ0FFT0UxUVNxT0hiNTluTFlOenJBbUZqT21MdDJ2UXRHTmN6LWo5czE5d3puWDh2WWhZNHNtV0M?oc=5\" ",
+     "rel": "raw"
+    },
+    {
+     "title": "大書之亂！Dcard正妹新人「黑歷史遭挖」　2受害女痛心發聲了 - 三立娛樂星聞",
+     "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBjM2I5Ty1ULXFqOF8wOEFLeXBVcnpvMzFiVEwxaVhLNGRKazJqWEVKSmx6SVZrSzlzQVBndHFHbjU2OEF5cFZYZldB0gFfQVVfeXFMUHo1ZE9RQ2Z5dGpXaktJOGQxZHlJN0IzM19RZmotU0MyOUh6MWhGQVlIMTBMX09JbXBQemVLbzN3M1JLczRHTVN1bG42TUhyc1pHR0NiTzgydU9mMWJvUnM?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiSkFVX3lxTFBjM2I5Ty1ULXFqOF8wOEFLeXBVcnpvMzFiVEwxaVhLNGRKazJqWEVKSmx6SVZrSzlzQVBndHFHbjU2OEF5cFZYZldB0gFfQVVfeX",
+     "rel": "raw"
+    },
+    {
+     "title": "Dcard網友問另一半太愛吃醋怎麼辦？感情專家秘授 3 招 - Yahoo新聞",
+     "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPS3hDRlo3b1RZSFlYX0hockEyUE9OTkxIdVpFb2pUUF9zV2RlUlBsQWlOZVRjMEVpWlI4elpteTI1di1pM2dlMEdJSERZMmx6Q2dNb1BZbU1TOHFiM3k2M1R3NDlSZ3dEbFhvNFdQQUd2WnhQQUZiYTJ6alkyWGZHQnZ3WkpRM2I5MFZieTBDWHJJbnhNSlJ4TlpsaUtacl9vZnZBUGZoVi1JRC15eERiMzR0SXBWVUk2LTN4Y2N6UlZCUnA0b2ZmaEVtTlNVRlNpYzlrbms1cEcwOFlveWZlZXlDTmVveUxjallBaUo0dEJULVdSci0xbWFBcW13UzM2YUM1aXY1WnU1YU95MlhXNVcxRDNvN1cxLUF4UVMzRVJxRm1FdGp6eWFzaVBDXzJSRWpjMGlUdFRwRy01NGIwbG9RWFI?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMixAJBVV95cUxPS3hDRlo3b1RZSFlYX0hockEyUE9OTkxIdVpFb2pUUF9zV2RlUlBsQWlOZVRjMEVpWlI4elpteTI1di1pM2dlMEdJSERZMmx6Q2",
+     "rel": "raw"
+    },
+    {
+     "title": "怎樣才算感情「暈船」？流行語從Dcard爆紅 衍生新詞「我鹿了」｜熱門話題 - 網路溫度計 DailyView",
+     "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB3T1E1d1B1WnFLS1RxOTdCZ1Zwc192bFVpS3owaWo4djdsMFdwYUFlVzFoWDA5SEEzMGRwYk1XaXJIQnZlV1E4OTJ2dGRJVHNjYWlv?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTFB3T1E1d1B1WnFLS1RxOTdCZ1Zwc192bFVpS3owaWo4djdsMFdwYUFlVzFoWDA5SEEzMGRwYk1XaXJIQnZlV1E4OTJ2dGRJVHNjYW",
+     "rel": "raw"
+    },
+    {
+     "title": "只會用Instagram、Dcard就過時了！年輕人社群超愛用1APP：好看的都在裡面 | 施俞婷 | 風生活 - 風傳媒",
+     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05VFZ3bGZuaHEzbV9yRnRMYThacHZoWTFvNWp6djg2VHpnSVQ3VGJUWGFuZFZncW83YThjYnJRTHZNQUNtbF9CaUx1dFBRaWM?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE05VFZ3bGZuaHEzbV9yRnRMYThacHZoWTFvNWp6djg2VHpnSVQ3VGJUWGFuZFZncW83YThjYnJRTHZNQUNtbF9CaUx1dFBRaWM?oc",
+     "rel": "raw"
+    },
+    {
+     "title": "存股5年變提款機？女友嘴臉現形嚇壞他| 民視新聞網 - LINE TODAY",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nRTcySi0xc3hHb0RNVk5nLWtmZEY4LWhjZ3hFWk5HeXdpUVNwWl9VLWdQOGNwM0h5eGF4RWNVdzBFRTE4RHBuM2l6ZkNFdURLRGxhc2RB?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nRTcySi0xc3hHb0RNVk5nLWtmZEY4LWhjZ3hFWk5HeXdpUVNwWl9VLWdQOGNwM0h5eGF4RWNVdzBFRTE4RHBuM2l6ZkNFdURLRG",
+     "rel": "raw"
+    }
+   ],
+   "ms": 411
+  },
+  {
+   "id": "gtrends_tw",
+   "name": "Google Trends TW",
+   "tier": "tw_local",
+   "url": "https://trends.google.com/trending/rss?geo=TW",
+   "ok": true,
+   "count": 10,
+   "items": [
+    {
+     "title": "泰山 暫停 交易",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "3533",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "海味揚蝦堡",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "迷你麥盲盒",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "道奇 對 皇家",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "pixel tag",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "元大金",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "陈幸妤",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "演習時間",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "宏致",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    }
+   ],
+   "ms": 775
+  },
+  {
+   "id": "ltn",
+   "name": "自由時報",
+   "tier": "tw_local",
+   "url": "https://news.ltn.com.tw/rss/all.xml",
+   "ok": true,
+   "count": 3,
+   "items": [
+    {
+     "title": "全台熱搜第一！陳幸妤開轟趙建銘「超兇留言」被刪了",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5538304",
+     "note": "前總統陳水扁的女兒陳幸妤與骨科醫師趙建銘傳出婚變。日前陳幸妤於趙建銘在台南開設的「趙建銘兆福脊椎骨科診所」Google 商家頁面上留1星負評，爆料看診潦草還有感情糾紛，並自稱「前...…",
+     "rel": "strong"
+    },
+    {
+     "title": "陳幸妤離婚情緒穩定看診！  病患心疼「一打三」 聽到「渣男」趙建銘超認同",
+     "url": "https://news.ltn.com.tw/news/politics/breakingnews/5538334",
+     "note": "陳幸妤與趙建銘婚姻劃下句點，病患聽到提問趙建銘是不是「渣男」時毫不猶豫比讚認同！一位婦人看診後表達，陳幸妤照常看診，情緒穩定，僅對病患關心簡短道謝。患者對她獨自撫養三個小孩感到心...…",
+     "rel": "strong"
+    },
+    {
+     "title": "中市議員憂結婚率降低 民政局：辦滿25場單身聯誼、視需求增加",
+     "url": "https://news.ltn.com.tw/news/life/breakingnews/5538317",
+     "note": "現在願意結婚的年輕人愈來愈少，民進黨台中市議員施志昌、林祈烽表示，目前政府推動促進結婚相關政策，都只是托育補助等，但很少談到促進結婚意願、排除成家障礙，為何年輕人不結婚？中研院...…",
+     "rel": "strong"
+    }
+   ],
+   "ms": 144
+  },
+  {
+   "id": "ptt_boygirl",
+   "name": "PTT Boy-Girl",
+   "tier": "tw_local",
+   "url": "https://www.ptt.cc/bbs/Boy-Girl/index.html",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Re: [閒聊] 會因為怕尷尬放棄認識人嗎？",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1786548273.A.1A2.html",
+     "metric": "推 1"
+    }
+   ],
+   "ms": 153
+  },
+  {
+   "id": "ptt_marriage",
+   "name": "PTT marriage",
+   "tier": "tw_local",
+   "url": "https://www.ptt.cc/bbs/marriage/index.html",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Re: [求助] 收入暴漲的另一半卻還是接近月光族...",
+     "url": "https://www.ptt.cc/bbs/marriage/M.1786002509.A.197.html",
+     "metric": "推 61"
+    }
+   ],
+   "ms": 2066
+  },
+  {
+   "id": "ptt_women",
+   "name": "PTT WomenTalk",
+   "tier": "tw_local",
+   "url": "https://www.ptt.cc/bbs/WomenTalk/index.html",
+   "ok": true,
+   "count": 6,
+   "items": [
+    {
+     "title": "Re: [問題] 脆上灣姊有什麼特質？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1786580190.A.F95.html",
+     "metric": "推 3"
+    },
+    {
+     "title": "[問題] 味噌蛋花湯算是台灣改版的外國食物嗎？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1786583988.A.498.html",
+     "metric": "推 2"
+    },
+    {
+     "title": "[閒聊] 這個包裝容易會誤會吧？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1786588832.A.1DE.html",
+     "metric": "推 2"
+    },
+    {
+     "title": "[閒聊] 創作文的意義",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1786590105.A.3F3.html",
+     "metric": "推 2"
+    },
+    {
+     "title": "Fw: [公告] 批踢踢說明(關於駭客入侵)",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1724387130.A.996.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "Fw: [公告] 請使用者留意 shen129353 之信件",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1729779081.A.485.html",
+     "metric": "推 0"
+    }
+   ],
+   "ms": 1082
+  },
+  {
+   "id": "womany",
+   "name": "女人迷",
+   "tier": "tw_local",
+   "url": "https://womany.net/read/feed",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "走到別人的位置看世界！新北市青年局 X 女人迷首場活動直擊：用同理跨越偏見界線，讓平權走進工作與生活",
+     "url": "https://womany.net/read/article/33508?ref=rss",
+     "note": "7/25 在新北市青職基地，迎來由新北市政府青年局與女人迷攜手舉辦的「Next-Gen Impact 共融世代：啟動影響力的 3 場實踐學」系列工作坊首場活動。",
+     "rel": "raw"
+    },
+    {
+     "title": "和孩子留下一個夢幻夏天！遠東香格里拉 x 三麗鷗美樂蒂主題房登場",
+     "url": "https://womany.net/read/article/33507?ref=rss",
+     "note": "暑假倒數，你們的親子行程排好了嗎？☀️\n#台北遠東香格里拉 x #三麗鷗 聯手，整個 2026 暑假把整層樓變成 \"夏日星夢樂園\" 🎀\n\n✔️ 5 款夢幻主題房\n✔️ 7 大互動樂園\n✔️ 職能治療師帶手作課\n（非住客購票也能入園喔）\n\n#暑假親子飯店 #美樂蒂 #雙星仙子",
+     "rel": "raw"
+    },
+    {
+     "title": "真正的照顧，不是一直增加：metime 私密沐浴露帶給我的「生活減法哲學」",
+     "url": "https://womany.net/read/article/33506?ref=rss",
+     "note": "迷人體驗申請中！\n\n讓挑剔小姐分享她的減法哲學，用 metime 私密沐浴露，重新思考與身體相處的方式。",
+     "rel": "raw"
+    },
+    {
+     "title": "北歐芬蘭「護膚界護國神山」！芬蘭國民品牌 Lumene 露明研重磅登台",
+     "url": "https://womany.net/read/article/33505?ref=rss",
+     "note": "芬蘭國民保養品牌 Lumene 露明研正式登台！\n不僅通過 B 型企業認證、堅持 100% 純素永續，更以極地冰川水與白樺樹汁打造「極地小藍瓶」，為肌膚提供 72 小時長效補水！",
+     "rel": "raw"
+    },
+    {
+     "title": "第五屆「白蘭媽媽夢想勇敢 GO」成果發表直擊：從母親回歸自我，見證夢想在生活裡盛開的勇敢力量",
+     "url": "https://womany.net/read/article/33504?ref=rss",
+     "note": "第五屆白蘭媽媽夢想勇敢 GO 計劃成果發表會在 7/18 登場！\n\n這一天媽媽們以創作者、提案者與行動者的姿態，重新站回自己的人生裡。",
+     "rel": "raw"
+    },
+    {
+     "title": "開箱綠藤生機 metime 私密沐浴露：越是向外付出，越要向內照顧自己",
+     "url": "https://womany.net/read/article/33503?ref=rss",
+     "note": "身體下班了，心卻還留在辦公室？當講求效率與輸出成為常態，「學會暫停」反而成了現代人最奢侈的功課。\n\n女人迷邀請作家、《小妮子情理生活學》創辦人小妮子（Anny）分享她的生活哲學：真正的療癒，從來不是等生活變輕鬆，而是你終於願意，把自己放回最重要的位置。",
+     "rel": "raw"
+    },
+    {
+     "title": "AI時代不想被取代？王怡雯：不當乖乖牌，刪去法拿回職涯主導權｜與軒軒講EP.46",
+     "url": "https://womany.net/read/article/33502?ref=rss",
+     "note": "台灣數位企業總會創辦人 Bella 王怡雯分享實戰經驗：如何建立不可取代性、撕下外貌標籤、用「刪去法」刪除無效投入，拿回屬於妳的職涯主導權。",
+     "rel": "raw"
+    },
+    {
+     "title": "每天給自己 20 分鐘的 me time，練習有意識的私密沐浴",
+     "url": "https://womany.net/read/article/33501?ref=rss",
+     "note": "想要重啟生活質感，其實不見得需要驚天動地的改變，或許就是從當下的每一刻，開始為自己做出有意識的選擇！\n\n拒絕匆忙、把時間還給自己，更選擇純粹天然成分的產品，用溫和清潔、滋潤保濕的 metime 私密沐浴露，為自己預約一個舒適的夏天！",
+     "rel": "raw"
+    },
+    {
+     "title": "面對死亡無常的最終練習：學會善終鐵三角，把「愛」還給當下｜老軒常談 EP.10",
+     "url": "https://womany.net/read/article/33499?ref=rss",
+     "note": "善終是什麼意思？如何跟家人好好說再見？《老軒常談》與殯葬從業員郭憲鴻 aka 小冬瓜的精采對談持續到下集，從「孤獨老死的執念」談到「善終鐵三角」，分享預立醫療決定如何成為一份成熟的生命底牌，帶我們重新練習看待名為死亡的終點。",
+     "rel": "raw"
+    },
+    {
+     "title": "武則天被誤解千年？吳淡如：真正的強大，是學會拒絕內耗｜與軒軒講 EP.47",
+     "url": "https://womany.net/read/article/33498?ref=rss",
+     "note": "妳是否也曾為了不想被貼上『野心太大』的標籤，而在職場或生活中默默退讓？其實，強大並非男性的專利，而是一種生存的選擇。本集《與軒軒講》邀請《武則天攻略》作者吳淡如，透過解析武則天這場橫跨千年的權力博弈，希望能陪妳卸下內耗與焦慮，找回屬於自己的解釋權，在雜音中活出最真實的模樣。",
+     "rel": "raw"
+    },
+    {
+     "title": "為什麼死亡是生命最好的禮物？小冬瓜談死亡：人生沒有標準答案｜老軒常談 EP.9",
+     "url": "https://womany.net/read/article/33497?ref=rss",
+     "note": "我們都以為死亡是結束，但如果它，其實是一份禮物呢？《老軒常談》邀請殯葬從業員郭憲鴻 aka 小冬瓜，和我們一起聊聊死亡的一體兩面，以及它所能夠帶給我們的不同體驗。",
+     "rel": "raw"
+    },
+    {
+     "title": "義大利樂奇雅松露 40 週年，攜手 189 家台灣餐廳深耕高端餐飲佈局",
+     "url": "https://womany.net/read/article/33496?ref=rss",
+     "note": "義大利頂級松露品牌「樂奇雅」迎來 40 週年！不只在全台 189 家高端餐廳能品嚐到經典義式松露饗宴，現在更能輕鬆帶回家。",
+     "rel": "raw"
+    }
+   ],
+   "ms": 465
+  }
+ ]
+}
