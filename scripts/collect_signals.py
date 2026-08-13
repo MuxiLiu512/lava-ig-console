@@ -50,12 +50,31 @@ KW_WEAK_TW = ("單身", "婚", "心動", "喜歡的人", "調情", "孤獨", "�
               "戀人", "離婚", "告白", "分居", "曖昧期")
 
 
-def _relevant(title, desc="", nofilter=False):
+# 人物／書籍／概念層專用判準：這一層要的是「心靈、做事風格、魅力」，
+# 用約會關鍵字去濾會把 Aeon、Farnam Street 的好文章全部濾掉。
+KW_MIND = ("habit", "discipline", "ambition", "mindset", "identity", "self", "ego",
+           "confidence", "charisma", "authentic", "vulnerab", "shame", "regret",
+           "meaning", "purpose", "motivation", "willpower", "attention", "focus",
+           "decision", "judgment", "bias", "success", "failure", "resilience",
+           "creativity", "craft", "mastery", "practice", "ritual", "solitude",
+           "friendship", "trust", "status", "envy", "comparison", "belonging",
+           "psychology", "philosoph", "emotion", "empathy", "boundaries",
+           "manifest", "luck", "serendipity", "obsession", "perfectionism")
+
+
+def _relevant_mind(title, desc=""):
+    blob = (title + " " + desc).lower()
+    return "strong" if any(k in blob for k in KW_MIND) else None
+
+
+def _relevant(title, desc="", nofilter=False, tier=None):
     """回傳 None（不收）或 'strong'／'weak'／'raw'。
     過濾不可能完美（時裝週報導也會命中 wedding），所以不追求零雜訊，
     改成把相關度標進資料裡，讓下游選題引擎自己權衡。"""
     if nofilter:
         return "raw"
+    if tier == "mind":
+        return _relevant_mind(title, desc)
     t_low, all_low = title.lower(), (title + " " + desc).lower()
     if any(k in all_low for k in KW_STRONG_EN) or any(k in (title + " " + desc) for k in KW_STRONG_TW):
         return "strong"
@@ -136,6 +155,24 @@ SOURCES = [
     dict(id="r_over30", name="r/datingoverthirty", tier="global_forum", kind="rss",
          url="https://www.reddit.com/r/datingoverthirty/hot/.rss", nofilter=True),
 
+    # ── 人物／書籍／概念（Jesse 2026-08-12 指定）─────────────────────
+    # 用途：人物誌、書摘、概念拆解三類選題。對標 @heavenravenofficial 的
+    # Tom Holland 顯化篇（27.7k 讚）：人物成就 + 概念翻轉 + 合作者證言鏈。
+    dict(id="aeon", name="Aeon 長文", tier="mind", kind="rss",
+         url="https://aeon.co/feed.rss"),
+    dict(id="fs_blog", name="Farnam Street", tier="mind", kind="rss",
+         url="https://fs.blog/feed/", nofilter=True),
+    dict(id="bigthink", name="Big Think", tier="mind", kind="rss",
+         url="https://bigthink.com/feed/"),
+    dict(id="marginalian", name="The Marginalian", tier="mind", kind="rss",
+         url="https://www.themarginalian.org/feed/"),
+    dict(id="nextbigidea", name="Next Big Idea 書摘", tier="mind", kind="rss",
+         url="https://nextbigideaclub.com/magazine/feed/", nofilter=True),
+    dict(id="lithub", name="Literary Hub", tier="mind", kind="rss",
+         url="https://lithub.com/feed/"),
+    dict(id="ted", name="TED Talks", tier="mind", kind="rss",
+         url="https://feeds.feedburner.com/TEDTalks_video"),
+
     # ── 學術（新研究比媒體早 6-12 個月）──────────────────────────────
     dict(id="psyarxiv", name="PsyArXiv 預印本", tier="research", kind="osf",
          url="https://api.osf.io/v2/preprints/?filter[provider]=psyarxiv&sort=-date_published&page[size]=30"),
@@ -196,7 +233,7 @@ def parse_rss(body, src):
         if not title:
             continue
         desc = _clean(md.group(1))[:280] if md else ""
-        rel = _relevant(title, desc, src.get("nofilter"))
+        rel = _relevant(title, desc, src.get("nofilter"), src.get("tier"))
         if not rel:
             continue
         items.append({"title": title, "url": _clean(ml.group(1)) if ml else "",

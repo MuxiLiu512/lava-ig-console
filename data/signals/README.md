@@ -31,3 +31,24 @@
   customerreviews JSON 皆回 200 但 feed 無 entry 欄位。已停用，待查替代路徑。
 - **Dcard**：官方 API 403（Cloudflare），改走 Google News 搜尋 Dcard 熱帖的二手路徑。
 - **Threads**：官方 API 需過 App Review 才能搜公開貼文，未接。
+
+## mind 層（人物／書籍／概念）
+〔Jesse 2026-08-12 指定，佐證：@heavenravenofficial 的 Tom Holland 顯化篇 27.7k 讚〕
+
+| 來源 | 供什麼題型 |
+|---|---|
+| Farnam Street | 人物志（Rockefeller 的原則、創辦人心法） |
+| Next Big Idea | 書摘（1500 篇訃聞教會我的事、比 IQ 更重要的腦力） |
+| The Marginalian | 概念＋人物（Nick Cave 談有意義人生的兩根支柱） |
+| Aeon／Big Think | 概念拆解（哲學與心理學長文） |
+| TED Talks | 人物觀點 |
+| Literary Hub | 書籍與作家 |
+
+**判準另立一組**：這一層要的是心靈、做事風格、魅力，
+用約會關鍵字去濾會把 Aeon、Farnam Street 的好文章全部濾掉。
+改用 `KW_MIND`（habit／discipline／charisma／meaning／manifest／resilience…）。
+
+對應的 swipe 庫模板（`data/templates.json`）：
+- `tpl-manifest-proof-chain` 人物證言鏈，先堆證據再自我翻轉
+- `tpl-persona-column` 固定欄目制人物誌
+- `tpl-concept-decode` 概念拆解，含反例張

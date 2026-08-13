@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-08-13T12:19:26+08:00",
- "source_count": 26,
- "ok_count": 26,
- "signal_count": 120,
+ "generated_at": "2026-08-13T12:31:18+08:00",
+ "source_count": 33,
+ "ok_count": 33,
+ "signal_count": 170,
  "sources": [
   {
    "id": "r_relationships",
@@ -13,38 +13,8 @@
    "count": 12,
    "items": [
     {
-     "title": "My partner (28M) plays twisted mind games, tests me (27F), and uses my pets to mentally break me. Am I crazy?",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmvodo/my_partner_28m_plays_twisted_mind_games_tests_me/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "[27M] My girlfriend [27F] ended our 6 year relationship after I stopped giving her large amounts of money",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmkwgl/27m_my_girlfriend_27f_ended_our_6_year/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "I hurt my girlfriend by bringing up her deepest vulnerability during an argument, and now we're separated/cool off. I don't know what to do with myself. (22f)",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmxaoo/i_hurt_my_girlfriend_by_bringing_up_her_deepest/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "My (24F) boyfriend (25M) of 5 years says he has \"no type\" but constantly jokes about my body and called me \"average.\" How do I address this?",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmza9j/my_24f_boyfriend_25m_of_5_years_says_he_has_no/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
      "title": "My mom (50sF) keeps taking my (30sF) ideas for gifts for my kid but still gets the wrong thing. How do I address this?",
      "url": "https://www.reddit.com/r/relationships/comments/1vm525x/my_mom_50sf_keeps_taking_my_30sf_ideas_for_gifts/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "Relationship and Body Image",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmy64w/relationship_and_body_image/",
      "note": "",
      "rel": "raw"
     },
@@ -61,18 +31,6 @@
      "rel": "raw"
     },
     {
-     "title": "My SO(m34) told me(f29) I was the knower of all things of unimportance.",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmf6vo/my_som34_told_mef29_i_was_the_knower_of_all/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "My bf says talking and gaming isn't possible",
-     "url": "https://www.reddit.com/r/relationships/comments/1vmq4co/my_bf_says_talking_and_gaming_isnt_possible/",
-     "note": "",
-     "rel": "raw"
-    },
-    {
      "title": "My (26M) girlfriend (F22) kissed someone else from her recent past. Should I still visit her?",
      "url": "https://www.reddit.com/r/relationships/comments/1vmoctv/my_26m_girlfriend_f22_kissed_someone_else_from/",
      "note": "",
@@ -83,9 +41,51 @@
      "url": "https://www.reddit.com/r/relationships/comments/1vmsc0q/i_25_f_am_struggling_with_dealing_with_constant/",
      "note": "",
      "rel": "raw"
+    },
+    {
+     "title": "My (30F) bf (32M) threatens to leave me after every argument",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmayt5/my_30f_bf_32m_threatens_to_leave_me_after_every/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Feeling disconnected from my partner, any advice?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmxr60/feeling_disconnected_from_my_partner_any_advice/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "I [27F] am afraid my apathy and shitty memory are going to ruin my marriage with my husband [27M]",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmcmj4/i_27f_am_afraid_my_apathy_and_shitty_memory_are/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Why the rudeness over a simple question?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vm3fgs/why_the_rudeness_over_a_simple_question/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Is my (F20) relationship worth it ? (M20)",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmzzzy/is_my_f20_relationship_worth_it_m20/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Advice for me 29m reconnecting with an old friend 29f?",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmzk1g/advice_for_me_29m_reconnecting_with_an_old_friend/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "(23M) My girlfriend (23F) has pushed me past the edge of patience and I feel so guilty but also fed up",
+     "url": "https://www.reddit.com/r/relationships/comments/1vmt07h/23m_my_girlfriend_23f_has_pushed_me_past_the_edge/",
+     "note": "",
+     "rel": "raw"
     }
    ],
-   "ms": 3189
+   "ms": 1798
   },
   {
    "id": "cosmo",
@@ -168,7 +168,7 @@
      "rel": "weak"
     }
    ],
-   "ms": 582
+   "ms": 695
   },
   {
    "id": "dazed",
@@ -185,7 +185,7 @@
      "rel": "strong"
     }
    ],
-   "ms": 115
+   "ms": 3099
   },
   {
    "id": "elle",
@@ -268,7 +268,7 @@
      "rel": "strong"
     }
    ],
-   "ms": 415
+   "ms": 692
   },
   {
    "id": "gq",
@@ -285,7 +285,7 @@
      "rel": "weak"
     }
    ],
-   "ms": 152
+   "ms": 214
   },
   {
    "id": "highsnobiety",
@@ -295,7 +295,7 @@
    "ok": true,
    "count": 0,
    "items": [],
-   "ms": 163
+   "ms": 499
   },
   {
    "id": "hypebeast",
@@ -305,7 +305,7 @@
    "ok": true,
    "count": 0,
    "items": [],
-   "ms": 70
+   "ms": 292
   },
   {
    "id": "i_d",
@@ -315,7 +315,7 @@
    "ok": true,
    "count": 0,
    "items": [],
-   "ms": 1335
+   "ms": 1575
   },
   {
    "id": "interview",
@@ -344,7 +344,7 @@
      "rel": "weak"
     }
    ],
-   "ms": 1014
+   "ms": 988
   },
   {
    "id": "papermag",
@@ -361,7 +361,7 @@
      "rel": "strong"
     }
    ],
-   "ms": 900
+   "ms": 1000
   },
   {
    "id": "psyche",
@@ -378,7 +378,7 @@
      "rel": "strong"
     }
    ],
-   "ms": 214
+   "ms": 448
   },
   {
    "id": "refinery29",
@@ -395,7 +395,7 @@
      "rel": "strong"
     }
    ],
-   "ms": 638
+   "ms": 670
   },
   {
    "id": "thecut",
@@ -430,7 +430,7 @@
      "rel": "strong"
     }
    ],
-   "ms": 3197
+   "ms": 2882
   },
   {
    "id": "vogue",
@@ -465,7 +465,389 @@
      "rel": "weak"
     }
    ],
-   "ms": 138
+   "ms": 3823
+  },
+  {
+   "id": "aeon",
+   "name": "Aeon 長文",
+   "tier": "mind",
+   "url": "https://aeon.co/feed.rss",
+   "ok": true,
+   "count": 2,
+   "items": [
+    {
+     "title": "Bouncy brothers",
+     "url": "https://aeon.co/videos/a-tale-of-brotherhood-bouncy-castles-and-the-american-dream",
+     "note": "Two brothers struggle to keep a bouncy house business afloat in this nuanced portrait of family and the pursuit of success- by Aeon VideoWatch on Aeon",
+     "rel": "strong"
+    },
+    {
+     "title": "The taming of Black thought",
+     "url": "https://aeon.co/essays/epistemic-convergence-in-the-study-of-world-philosophies",
+     "note": "Black philosophers now feature on Western curricula, but the European tradition diminishes their radicalism into reassurance- by Takeshi MorisatoRead on Aeon",
+     "rel": "strong"
+    }
+   ],
+   "ms": 215
+  },
+  {
+   "id": "bigthink",
+   "name": "Big Think",
+   "tier": "mind",
+   "url": "https://bigthink.com/feed/",
+   "ok": true,
+   "count": 4,
+   "items": [
+    {
+     "title": "How not to confuse good outcomes for good decision-making",
+     "url": "https://bigthink.com/work-wise/how-not-to-confuse-good-outcomes-for-good-decision-making/",
+     "note": "In my decades of playing soccer, I’ve taken part in hundreds of games. I’ve played in games where we dominated and lost. I’ve played in games where we were awfu",
+     "rel": "strong"
+    },
+    {
+     "title": "When to trust your intuition (and when not to)",
+     "url": "https://bigthink.com/mind-behavior/when-to-trust-your-intuition-and-when-not-to/",
+     "note": "Intuition is having a moment. If you listen to podcasts or read nonfiction books, you’ll hear similar advice: trust your gut, listen to your body, follow your i",
+     "rel": "strong"
+    },
+    {
+     "title": "What living systems teach us about true agency",
+     "url": "https://bigthink.com/the-well/what-living-systems-teach-us-about-true-agency/",
+     "note": "We call AI systems “agents” all the time. But what does “agency” actually mean? \nAlan Love, philosopher and professor at the University of Minnesota Twin Cities",
+     "rel": "strong"
+    },
+    {
+     "title": "Starts With A Bang podcast #132 – Space in the ultraviolet",
+     "url": "https://bigthink.com/starts-with-a-bang/starts-with-a-bang-podcast-132-space-in-the-ultraviolet/",
+     "note": "Whenever you look at the Universe in a more powerful way than you ever have before, either in a new set of wavelengths, at higher sensitivity, on wider-field sc",
+     "rel": "strong"
+    }
+   ],
+   "ms": 345
+  },
+  {
+   "id": "fs_blog",
+   "name": "Farnam Street",
+   "tier": "mind",
+   "url": "https://fs.blog/feed/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "The Mindset Behind Building Billion-Dollar Companies | Brad Jacobs",
+     "url": "https://fs.blog/knowledge-project-podcast/brad-jacobs-2/",
+     "note": "This summer, I’m revisiting one of my favorite episodes. If you haven’t heard it, now is the time. If you have, it’s a classic and worth listening to again. Bra",
+     "rel": "raw"
+    },
+    {
+     "title": "[Outliers] John D. Rockefeller: The Principles Behind The Greatest Fortune in History",
+     "url": "https://fs.blog/knowledge-project-podcast/outliers-john-d-rockefeller/",
+     "note": "John D. Rockefeller became the richest man the world had ever known by thinking differently about business, competition, and family. This episode isn’t just the",
+     "rel": "raw"
+    },
+    {
+     "title": "Truth Over Feelings: Inside Opendoor’s Turnaround",
+     "url": "https://fs.blog/knowledge-project-podcast/kaz-nejatian/",
+     "note": "No company decides to fail. It drifts there one comfortable lie at a time. Kaz Nejatian took over Opendoor when it was just months away from bankruptcy and set ",
+     "rel": "raw"
+    },
+    {
+     "title": "The Best Summary of Atlas Shrugged",
+     "url": "https://fs.blog/atlas-shrugged-summary/",
+     "note": "A brief, no-fluff, summary of Atlas Shrugged by Ayn Rand. If you want to learn how capitalist countries become socialist, this book will help you. Let’s dive in",
+     "rel": "raw"
+    },
+    {
+     "title": "The Mindset That Unlocks Your Full Potential | Dr. Gio Valiante",
+     "url": "https://fs.blog/knowledge-project-podcast/performance-psychologist-mindset/",
+     "note": "For the next hour, the world’s top mindset coach is your coach too. Dr. Gio Valiante is the world’s leading performance psychologist. We discuss why most people",
+     "rel": "raw"
+    },
+    {
+     "title": "How to Repair and Nourish Your Gut | Dr. Giulia Enders",
+     "url": "https://fs.blog/knowledge-project-podcast/dr-giulia-enders/",
+     "note": "Dr. Giulia Enders has changed the way millions of people think about the human body. As a physician, microbiome researcher, and bestselling author, she has spen",
+     "rel": "raw"
+    },
+    {
+     "title": "Mental Models That Change How You Think | Bill Gurley",
+     "url": "https://fs.blog/knowledge-project-podcast/bill-gurley/",
+     "note": "Bill Gurley spent years on Wall Street, built his career as a partner at Benchmark, worked through Uber’s hypergrowth era, and now serves on the board of the Sa",
+     "rel": "raw"
+    },
+    {
+     "title": "Proven, Better, New: Mark Pincus on the Rules of Innovation",
+     "url": "https://fs.blog/knowledge-project-podcast/mark-pincus/",
+     "note": "Mark Pincus is the creator behind Farmville and Words with Friends. He built Zynga into one of the biggest gaming companies in the world and helped shape the ea",
+     "rel": "raw"
+    },
+    {
+     "title": "[Outliers] Chung Ju-yung: The Hyundai Founder Who Put a Country on His Back",
+     "url": "https://fs.blog/knowledge-project-podcast/outliers-chung-ju-yung/",
+     "note": "Chung Ju-yung built Hyundai because he refused to be stopped. He is known for turning Hyundai into an industrial force that helped transform South Korea. The co",
+     "rel": "raw"
+    },
+    {
+     "title": "Winston Weinberg: Speed, Stress, and Better Decisions",
+     "url": "https://fs.blog/knowledge-project-podcast/winston-weinberg/",
+     "note": "Winston Weinberg is the CEO and co-founder of Harvey, the AI platform built for the legal industry. Available Now: YouTube | Spotify | Apple Podcasts | Transcri",
+     "rel": "raw"
+    },
+    {
+     "title": "Greg Brockman: Inside the 72 Hours That Almost Killed OpenAI",
+     "url": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
+     "note": "The AI race, the future of AGI, and the inside story of OpenAI. Greg Brockman is the co-founder and President of OpenAI, the company behind ChatGPT and GPT-5. H",
+     "rel": "raw"
+    },
+    {
+     "title": "Mario Harik: Playing to Win",
+     "url": "https://fs.blog/knowledge-project-podcast/mario-harik/",
+     "note": "Mario Harik is the CEO of XPO, one of the largest logistics companies in the world. For years, he was the protege of legendary entrepreneur Brad Jacobs (who bui",
+     "rel": "raw"
+    }
+   ],
+   "ms": 121
+  },
+  {
+   "id": "lithub",
+   "name": "Literary Hub",
+   "tier": "mind",
+   "url": "https://lithub.com/feed/",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 216
+  },
+  {
+   "id": "marginalian",
+   "name": "The Marginalian",
+   "tier": "mind",
+   "url": "https://www.themarginalian.org/feed/",
+   "ok": true,
+   "count": 9,
+   "items": [
+    {
+     "title": "J.R.R. Tolkien on Fairy Tales, Language, the Psychology of Fantasy, and Why There’s No Such Thing as Writing “For Children”",
+     "url": "https://www.themarginalian.org/2026/08/11/j-r-r-tolkien-on-fairy-stories/",
+     "note": "\"Creative fantasy, because it is mainly trying to do something else (make something new), may open your hoard and let all the locked things fly away like cage-b",
+     "rel": "strong"
+    },
+    {
+     "title": "The Wisdom of Water: Alan Watts on the Ocean and the Meaning of Life",
+     "url": "https://www.themarginalian.org/2026/08/10/alan-watts-love-of-waters/",
+     "note": "Four billion years ago, in the hydrothermal vents at the bottom of the world where serpentine is forged, chemistry trembled with the promise of consciousness an",
+     "rel": "strong"
+    },
+    {
+     "title": "Nick Cave on the Two Pillars of a Meaningful Life",
+     "url": "https://www.themarginalian.org/2026/08/10/nick-cave-humility-curiosity/",
+     "note": "\"Cultivating a questioning mind, of which conversation is the chief instrument, enriches our relationship with the world.\"",
+     "rel": "strong"
+    },
+    {
+     "title": "Anaïs Nin on Why Emotional Excess is Essential to Creativity",
+     "url": "https://www.themarginalian.org/2026/08/10/anais-nin-on-emotion-and-writing/",
+     "note": "\"Something is always born of excess: great art was born of great terrors, great loneliness, great inhibitions, instabilities, and it always balances them.\"",
+     "rel": "strong"
+    },
+    {
+     "title": "How to Be a Good Explorer on the Lifelong Expedition to Yourself",
+     "url": "https://www.themarginalian.org/2026/08/09/pessoa-explorer/",
+     "note": "Life is an ongoing expedition into the brambled tendrilled wilderness of ourselves, continually stymied by all we mistake for a final destination — success, sup",
+     "rel": "strong"
+    },
+    {
+     "title": "The Stoic Antidote to Frustration: Marcus Aurelius on How to Keep Your Mental Composure and Emotional Equanimity When People Let You Down",
+     "url": "https://www.themarginalian.org/2026/08/09/marcus-aurelius-meditations-robin-waterfield/",
+     "note": "The art of tempering your fury with an infuriating existential truth.",
+     "rel": "strong"
+    },
+    {
+     "title": "Swimming and the Meaning of Life",
+     "url": "https://www.themarginalian.org/2026/08/08/roger-deakin-waterlog/",
+     "note": "One of my earliest and most vivid childhood memories is of swimming in a cool pool bounded by boulders in the middle of a river in the mountains of Bulgaria, th",
+     "rel": "strong"
+    },
+    {
+     "title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning",
+     "url": "https://www.themarginalian.org/2026/08/07/yes-to-life-in-spite-of-everything-viktor-frankl/",
+     "note": "\"Everything depends on the individual human being, regardless of how small a number of like-minded people there is... on each person... creatively making the me",
+     "rel": "strong"
+    },
+    {
+     "title": "Death and How to Be More Alive: Carl Jung on Immortality and the Rebirth of Middle Age",
+     "url": "https://www.themarginalian.org/2026/07/31/carl-jung-death-immortality/",
+     "note": "Once, I spent a year walking Brooklyn’s historic Green-Wood Cemetery daily, winding between the marble tombs engulfed by tree-roots and emblazoned with the surn",
+     "rel": "strong"
+    }
+   ],
+   "ms": 868
+  },
+  {
+   "id": "nextbigidea",
+   "name": "Next Big Idea 書摘",
+   "tier": "mind",
+   "url": "https://nextbigideaclub.com/magazine/feed/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "The Brain Skills That Matter More Than IQ",
+     "url": "https://nextbigideaclub.com/magazine/brain-skills-matter-iq-bookbite/61003/",
+     "note": "The brain system you rely on most is the one you understand the least.\nThe Brain Skills That Matter More Than IQ - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "What 1,500 Obituaries Taught Me About Life",
+     "url": "https://nextbigideaclub.com/magazine/1500-obituaries-taught-life-bookbite/60992/",
+     "note": "Famous last words.\nWhat 1,500 Obituaries Taught Me About Life - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "5 Things Kids Know That Adults Forget",
+     "url": "https://nextbigideaclub.com/magazine/5-things-kids-know-adults-forget-bookbite/60981/",
+     "note": "Your imagination is out of shape.\n5 Things Kids Know That Adults Forget - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "The Hidden Cost of Loving Where You Work",
+     "url": "https://nextbigideaclub.com/magazine/hidden-cost-loving-work-bookbite/60971/",
+     "note": "The institution you work for tells a story about itself—and it could become yours.\nThe Hidden Cost of Loving Where You Work - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "The Strange History of Our Obsession With Animals",
+     "url": "https://nextbigideaclub.com/magazine/strange-history-obsession-animals-bookbite/60960/",
+     "note": "The psychology behind our attitudes toward animals.\nThe Strange History of Our Obsession With Animals - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "In a World Full of Answers, Ask Better Questions",
+     "url": "https://nextbigideaclub.com/magazine/world-full-answers-ask-better-questions-bookbite/60948/",
+     "note": "We are taught to answer, not to ask.\nIn a World Full of Answers, Ask Better Questions - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "We’ve Taken More From the Earth in 50 Years Than in All of Previous Human History",
+     "url": "https://nextbigideaclub.com/magazine/weve-taken-earth-50-years-previous-human-history-bookbite/60936/",
+     "note": "Extraction is our global operating system.\nWe’ve Taken More From the Earth in 50 Years Than in All of Previous Human History - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "5 Rules for Making the Most of Your 20s",
+     "url": "https://nextbigideaclub.com/magazine/5-rules-making-20s-bookbite/60926/",
+     "note": "Everything in life is stage-specific.\n5 Rules for Making the Most of Your 20s - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "The Science of Self-Persuasion",
+     "url": "https://nextbigideaclub.com/magazine/science-self-persuasion-bookbite/60914/",
+     "note": "You are your own greatest propagandist.\nThe Science of Self-Persuasion - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "The Tiny Habits That Can Make You Happier—and Actually Stick",
+     "url": "https://nextbigideaclub.com/magazine/tiny-habits-can-make-happier-actually-stick-bookbite/60903/",
+     "note": "To make big changes, think small.\nThe Tiny Habits That Can Make You Happier—and Actually Stick - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "Inside the Billionaire Takeover of America",
+     "url": "https://nextbigideaclub.com/magazine/inside-billionaire-takeover-america-bookbite/60892/",
+     "note": "The oligarchs have taken over.\nInside the Billionaire Takeover of America - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "The Complicated History of Earth’s Wildest Places",
+     "url": "https://nextbigideaclub.com/magazine/complicated-history-earths-wildest-places-bookbite/60879/",
+     "note": "Wilderness is hard to map.\nThe Complicated History of Earth’s Wildest Places - Next Big Idea Club",
+     "rel": "raw"
+    }
+   ],
+   "ms": 956
+  },
+  {
+   "id": "ted",
+   "name": "TED Talks",
+   "tier": "mind",
+   "url": "https://feeds.feedburner.com/TEDTalks_video",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "This is what the future of media looks like | Hamish McKenzie",
+     "url": "https://www.ted.com/talks/hamish_mckenzie_this_is_what_the_future_of_media_looks_like?rss=172BB350-0205",
+     "note": "What if the polarizing mess of social media, clickbait headlines and addictive algorithms isn't a breakdown of media but a transition to something better? Subst",
+     "rel": "strong"
+    },
+    {
+     "title": "What if the climate movement felt like a house party? | Matthew Phillips",
+     "url": "https://www.ted.com/talks/matthew_phillips_what_if_the_climate_movement_felt_like_a_house_party?rss=172BB350-0205",
+     "note": "You’re invited into a bold new vision for the climate movement — a space of trust and honesty, where artists inspire action and everyone has a role to play. Soc",
+     "rel": "strong"
+    },
+    {
+     "title": "The poetry of family | Duncan Keegan",
+     "url": "https://www.ted.com/talks/duncan_keegan_the_poetry_of_family?rss=172BB350-0205",
+     "note": "Duncan Keegan doesn't consider himself a poet, but this deeply beautiful talk shows otherwise. With simple grace and quiet eloquence, he celebrates family, conn",
+     "rel": "strong"
+    },
+    {
+     "title": "You are the bridge to the next generation | Ndinini Kimesera Sikar",
+     "url": "https://www.ted.com/talks/ndinini_kimesera_sikar_you_are_the_bridge_to_the_next_generation?rss=172BB350-0205",
+     "note": "\"Do you know what you want to preserve for the next generation?\" asks community leader Ndinini Kimesera Sikar. Drawing on her experience growing up in a family ",
+     "rel": "strong"
+    },
+    {
+     "title": "A new vision of healthy masculinity | Davonte Green",
+     "url": "https://www.ted.com/talks/davonte_green_a_new_vision_of_healthy_masculinity?rss=172BB350-0205",
+     "note": "What does it actually mean to be a \"real man\" these days? In a personal talk packed with actionable advice, youth advocate Davonte Green challenges age-old ster",
+     "rel": "strong"
+    },
+    {
+     "title": "Feeling stressed? The answer isn’t to “just relax” | Aditi Nerurkar",
+     "url": "https://www.ted.com/talks/aditi_nerurkar_feeling_stressed_the_answer_isn_t_to_just_relax?rss=172BB350-0205",
+     "note": "Stress isn’t all bad. In fact, the right kind can fuel growth instead of burnout. In this actionable discussion, physician and author Aditi Nerurkar shares tips",
+     "rel": "strong"
+    },
+    {
+     "title": "The AI arsenal that could stop World War III | Palmer Luckey",
+     "url": "https://www.ted.com/talks/palmer_luckey_the_ai_arsenal_that_could_stop_world_war_iii?rss=172BB350-0205",
+     "note": "AI in warfare is no longer hypothetical; it's inevitable, says Palmer Luckey, an inventor and founder of the defense technology company Anduril Industries. He t",
+     "rel": "strong"
+    },
+    {
+     "title": "The role of art and forgiveness in democracy | Marc Bamuthi Joseph and Wendy Whelan",
+     "url": "https://www.ted.com/talks/marc_bamuthi_joseph_and_wendy_whelan_the_role_of_art_and_forgiveness_in_democracy?rss=172BB350-0205",
+     "note": "Can art pave the way for a politically divided nation to move forward? Artist, cultural strategist and TED Fellow Marc Bamuthi Joseph reflects on the role of ar",
+     "rel": "strong"
+    },
+    {
+     "title": "Your inner fire is your greatest strength | Xiye Bastida",
+     "url": "https://www.ted.com/talks/xiye_bastida_your_inner_fire_is_your_greatest_strength?rss=172BB350-0205",
+     "note": "Hope isn’t just a feeling, but a skill you can practice, explains climate activist Xiye Bastida. Taking cues from the resilience of nature, she shows why trusti",
+     "rel": "strong"
+    },
+    {
+     "title": "How music helped me live through long COVID | Joshua Roman",
+     "url": "https://www.ted.com/talks/joshua_roman_how_music_helped_me_live_through_long_covid?rss=172BB350-0205",
+     "note": "An accomplished cellist, TED Fellow Joshua Roman has practiced his instrument daily since he was a child — until a severe case of long COVID almost robbed him o",
+     "rel": "strong"
+    },
+    {
+     "title": "Norse mythology’s climate lessons for the future | Lauren Fadiman",
+     "url": "https://www.ted.com/talks/lauren_fadiman_norse_mythology_s_climate_lessons_for_the_future?rss=172BB350-0205",
+     "note": "What if ancient myths are warnings for the future? Contemporary folklorist Lauren Fadiman explores how the Norse tale of Ragnarök may stem from real climate cat",
+     "rel": "strong"
+    },
+    {
+     "title": "How \"Bluey\" teaches adults to be playful again | Sarina Petersen",
+     "url": "https://www.ted.com/talks/sarina_petersen_how_bluey_teaches_adults_to_be_playful_again?rss=172BB350-0205",
+     "note": "\"Bluey,\" the Australian children's show, is a global phenomenon. But how did a cartoon for kids become a smash hit with adults, too? Sarina Petersen, who studie",
+     "rel": "strong"
+    }
+   ],
+   "ms": 519
   },
   {
    "id": "psyarxiv",
@@ -511,7 +893,7 @@
      "metric": "2026-08-11"
     }
    ],
-   "ms": 4722
+   "ms": 4994
   },
   {
    "id": "cna_life",
@@ -528,7 +910,7 @@
      "rel": "weak"
     }
    ],
-   "ms": 2497
+   "ms": 2492
   },
   {
    "id": "cna_social",
@@ -538,7 +920,7 @@
    "ok": true,
    "count": 0,
    "items": [],
-   "ms": 3010
+   "ms": 2933
   },
   {
    "id": "ettoday",
@@ -579,7 +961,7 @@
      "rel": "weak"
     }
    ],
-   "ms": 3565
+   "ms": 3466
   },
   {
    "id": "gnews_dating",
@@ -614,7 +996,7 @@
      "rel": "raw"
     },
     {
-     "title": "打破招牌規則！交友軟體Bumble允許雙方主動發訊息 - 民視新聞網",
+     "title": "打破招牌規則！交友軟體Bumble允許雙方主動發訊息 - ftvnews.com.tw",
      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE40WndjU01RbGEzc0hzSXcxSnVwR291MkwtWV9HbDVNbW5BS3JVd0h6bGtUZE9hMzEwYklQaDJqcVJZN1k2U1VvT3M5MXJIVThEUUZ2TjFJUmM4OU9WYzkwRA?oc=5",
      "note": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE40WndjU01RbGEzc0hzSXcxSnVwR291MkwtWV9HbDVNbW5BS3JVd0h6bGtUZE9hMzEwYklQaDJqcVJZN1k2U1VvT3M5MXJIVThEUU",
      "rel": "raw"
@@ -662,7 +1044,7 @@
      "rel": "raw"
     }
    ],
-   "ms": 611
+   "ms": 600
   },
   {
    "id": "gnews_dcard",
@@ -745,7 +1127,7 @@
      "rel": "raw"
     }
    ],
-   "ms": 411
+   "ms": 406
   },
   {
    "id": "gtrends_tw",
@@ -756,19 +1138,37 @@
    "count": 10,
    "items": [
     {
+     "title": "宋麗華",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "麥當勞",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "廖 人傑",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "洛杉磯 湖人",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "賽·揚",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
      "title": "泰山 暫停 交易",
-     "url": "https://trends.google.com/trending/rss?geo=TW",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "3533",
-     "url": "https://trends.google.com/trending/rss?geo=TW",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "海味揚蝦堡",
      "url": "https://trends.google.com/trending/rss?geo=TW",
      "note": "",
      "rel": "raw"
@@ -792,31 +1192,13 @@
      "rel": "raw"
     },
     {
-     "title": "元大金",
-     "url": "https://trends.google.com/trending/rss?geo=TW",
-     "note": "",
-     "rel": "raw"
-    },
-    {
      "title": "陈幸妤",
-     "url": "https://trends.google.com/trending/rss?geo=TW",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "演習時間",
-     "url": "https://trends.google.com/trending/rss?geo=TW",
-     "note": "",
-     "rel": "raw"
-    },
-    {
-     "title": "宏致",
      "url": "https://trends.google.com/trending/rss?geo=TW",
      "note": "",
      "rel": "raw"
     }
    ],
-   "ms": 775
+   "ms": 900
   },
   {
    "id": "ltn",
@@ -824,7 +1206,7 @@
    "tier": "tw_local",
    "url": "https://news.ltn.com.tw/rss/all.xml",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "items": [
     {
      "title": "全台熱搜第一！陳幸妤開轟趙建銘「超兇留言」被刪了",
@@ -837,15 +1219,9 @@
      "url": "https://news.ltn.com.tw/news/politics/breakingnews/5538334",
      "note": "陳幸妤與趙建銘婚姻劃下句點，病患聽到提問趙建銘是不是「渣男」時毫不猶豫比讚認同！一位婦人看診後表達，陳幸妤照常看診，情緒穩定，僅對病患關心簡短道謝。患者對她獨自撫養三個小孩感到心...…",
      "rel": "strong"
-    },
-    {
-     "title": "中市議員憂結婚率降低 民政局：辦滿25場單身聯誼、視需求增加",
-     "url": "https://news.ltn.com.tw/news/life/breakingnews/5538317",
-     "note": "現在願意結婚的年輕人愈來愈少，民進黨台中市議員施志昌、林祈烽表示，目前政府推動促進結婚相關政策，都只是托育補助等，但很少談到促進結婚意願、排除成家障礙，為何年輕人不結婚？中研院...…",
-     "rel": "strong"
     }
    ],
-   "ms": 144
+   "ms": 257
   },
   {
    "id": "ptt_boygirl",
@@ -861,7 +1237,7 @@
      "metric": "推 1"
     }
    ],
-   "ms": 153
+   "ms": 501
   },
   {
    "id": "ptt_marriage",
@@ -877,7 +1253,7 @@
      "metric": "推 61"
     }
    ],
-   "ms": 2066
+   "ms": 2062
   },
   {
    "id": "ptt_women",
@@ -918,7 +1294,7 @@
      "metric": "推 0"
     }
    ],
-   "ms": 1082
+   "ms": 1048
   },
   {
    "id": "womany",
@@ -1001,7 +1377,7 @@
      "rel": "raw"
     }
    ],
-   "ms": 465
+   "ms": 373
   }
  ]
 }
