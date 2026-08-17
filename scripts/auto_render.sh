@@ -7,6 +7,7 @@ REPO="/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console"
 DP="/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/產出"
 LOCK="/tmp/lava-ig-autorender.lock"
 LOG="/tmp/lava-ig-autorender.log"
+RUNMARK="/tmp/lava-ig-autorender.running"
 
 # Python 解譯器：launchd 的 PATH 不含 anaconda，`python3` 會落到 /usr/bin/python3（無 PIL），
 # 導致渲染／總檢在部分輪次靜默失敗（log 自 2026-08-02 起零星出現 ModuleNotFoundError: PIL）。
@@ -29,9 +30,23 @@ if [ -e "$LOCK" ]; then
   if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +30 2>/dev/null)" ]; then rm -rf "$LOCK" 2>/dev/null; else exit 0; fi
 fi
 mkdir "$LOCK" || exit 0
-trap 'rm -rf "$LOCK" 2>/dev/null' EXIT
+trap 'rm -rf "$LOCK" 2>/dev/null; rm -f "$RUNMARK" 2>/dev/null' EXIT
 
 cd "$REPO" || exit 0
+
+# 未完成輪次告警 〔2026-08-17 事故〕
+# ingest-new 卡在 Drive 讀檔 21.5 小時，launchd 不併發啟動同一個 job → 整條線靜默停擺，
+# log 也沒有新行（每步都沒跑完，沒東西可印）。「沒有訊息」與「一切正常」長得一模一樣。
+# 判準用「開始了卻沒結束」而非「兩輪間隔過久」：後者會把筆電睡眠誤報成卡死，
+# 睡眠時上一輪早就正常收尾、標記已清，只有真的卡死才會留下這個檔。
+# 前提是每步都有 timeout（本檔各步已加），否則卡死的那輪永遠跑不到清除這一行。
+if [ -f "$RUNMARK" ]; then
+  STUCK=$(( ($(date +%s) - $(stat -f %m "$RUNMARK")) / 60 ))
+  LASTSTEP=$(cat "$RUNMARK" 2>/dev/null)
+  echo "[$(date '+%m-%d %H:%M')] ⚠ 上一輪未完成（停在 ${LASTSTEP}，${STUCK} 分鐘前）" >>"$LOG"
+  timeout 120 "$PY" scripts/sync_console.py alert "哨兵上一輪未跑完就中斷（停在「${LASTSTEP}」，${STUCK} 分鐘前）。渲染／入料／成效在這段期間停止，請確認佇列狀態。" >>"$LOG" 2>&1
+fi
+echo "啟動" >"$RUNMARK"
 # 工作區髒污（未提交的腳本改動）曾讓 pull 每輪失敗、整條線靜默停擺兩天（2026-08-03~05）。
 # 改為：先 stash 再 pull，成功後還原；失敗才放棄本輪。哨兵不再被未提交檔案卡死。
 STASHED=0
@@ -70,36 +85,63 @@ fi
 # 訊號蒐集（每天第一輪跑一次即可；來源清單在本機，加來源不用動 n8n）
 SIGDATE=$(date '+%Y-%m-%d')
 if [ ! -f "data/signals/${SIGDATE}.json" ]; then
-  SIG=$("$PY" scripts/collect_signals.py 2>&1 | head -1)
+  echo "訊號蒐集" >"$RUNMARK"
+  SIG=$(timeout 600 "$PY" scripts/collect_signals.py 2>&1 | head -1)
   echo "[$(date '+%m-%d %H:%M')] 訊號 $SIG" >>"$LOG"
 fi
 
+# IG 成效（每天最多試一次；戳記用 /tmp 而非 insights.json 的 updated_at——
+# 缺 token 或 API 失敗時 updated_at 不會前進，會變成每 10 分鐘重試並刷爆 log）。
+# 2026-08-17 起改本機抓：n8n WF11 每天照跑，但它的輸出沒有任何寫入端，成效實際停在 7/27。
+INS_STAMP="/tmp/lava-ig-insights.$(date '+%Y-%m-%d')"
+if [ ! -f "$INS_STAMP" ]; then
+  touch "$INS_STAMP"
+  echo "IG 成效" >"$RUNMARK"
+  IGI=$(timeout 300 "$PY" scripts/ig_insights.py 2>&1)
+  echo "$IGI" | grep -E "✓ 成效|✗|！缺 ig_token" | head -2 | sed "s/^/[$(date '+%m-%d %H:%M')] 成效/" >>"$LOG"
+  # 成效自己 commit：本輪若沒有渲染產出，下方的 push 不會觸發，
+  # insights.json 就只留在本機，操控室（GitHub Pages 讀 repo）永遠看不到新數字。
+  if echo "$IGI" | grep -q "✓ 成效"; then
+    git add data/insights.json data/posts.json 2>/dev/null
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-insights: IG 成效每日快照" \
+      -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+fi
+
 # 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
+echo "截圖策展" >"$RUNMARK"
 FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
 # 入料：在製中卡的新草稿自動餵進操控室（每輪最多 2 張，避免單輪過長）
-ING=$("$PY" scripts/sync_console.py ingest-new --limit 2 2>&1)
+echo "入料" >"$RUNMARK"
+ING=$(timeout 420 "$PY" scripts/sync_console.py ingest-new --limit 2 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|⏭ 餵入|Error" >>"$LOG"
 
-OUT=$("$PY" scripts/sync_console.py render-approved 2>&1)
+echo "渲染" >"$RUNMARK"
+OUT=$(timeout 600 "$PY" scripts/sync_console.py render-approved 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $OUT" | grep -E "✓RENDERED|⏭|Error|Traceback" >>"$LOG"
 
 # 圖上實際呈現的逐行文字（供操控室與文字框對照，避免「不知道哪邊才是正確的」）
-"$PY" scripts/sync_console.py rendered-lines >/dev/null 2>&1
+echo "逐行文字" >"$RUNMARK"
+timeout 300 "$PY" scripts/sync_console.py rendered-lines >/dev/null 2>&1
 
 # 排版回歸檢查（零成本，機械）：行尾標點／詞中斷行／缺字——用引擎本身的斷行函式重算驗證
-TYP=$("$PY" scripts/check_typography.py 2>&1 | tail -3)
+echo "排版檢查" >"$RUNMARK"
+TYP=$(timeout 300 "$PY" scripts/check_typography.py 2>&1 | tail -3)
 echo "$TYP" | grep -E "違規 [1-9]|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
 
 # 成篇視覺總檢：有新成品才跑（撞主體/浮水印/不可讀/出處異常——逐張閘門看不出來的）
 if echo "$OUT" | grep -q "✓RENDERED"; then
+  echo "成篇總檢" >"$RUNMARK"
   QA=$(timeout 600 "$PY" scripts/sync_console.py post-qa 2>&1)
   echo "$QA" | grep -E "🔴|🟡|✅|\[block\]" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 fi
 
 # 發佈對帳（ClickUp 發佈完成 → posts.json published）；.sync.json 無真 token 時內部自動略過
-REC=$("$PY" scripts/sync_console.py reconcile-published 2>&1)
+echo "發佈對帳" >"$RUNMARK"
+REC=$(timeout 300 "$PY" scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add data/ docs/finals/ assets/ 2>/dev/null; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
