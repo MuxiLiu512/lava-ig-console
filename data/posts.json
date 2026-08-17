@@ -9828,6 +9828,728 @@
           "CTA 公版"
         ]
       }
+    },
+    {
+      "id": "20260808-塔里克史庫柏今天熱搜但你",
+      "topic": "塔里克·史庫柏今天熱搜——但你知道「跨文化吸引力」背後有一個反直覺的心理學研究嗎？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyhbgtg",
+      "created_at": null,
+      "caption": "塔里克·史庫柏今天佔據熱搜，捷克姓氏、阿拉伯名字、美國職棒，這個名字本身就是一道文化混搭題。\n\n然後留言區瞬間炸開：大家在討論的不只是棒球，而是「跨文化」這件事到底有沒有未來。\n\n共群共享不是靠聊天聊出來的，它需要你親自坐到那個人面前，看著他點菜的方式、聽他說話時換語言的節奏、感受他對世界有一套你從來沒想過的邏輯。\nLava 的設計邏輯從一開始就是「先見面」，因為真正讓兩個人跨越差異的，不是在對話框裡把對方研究透，而是你願不願意帶著開放的心，出現在同一個空間裡。\n\n#塔里克史庫柏 #跨文化戀愛 #異國戀 #交友軟體 #心理學 #約會 #吸引力 #關係心理學 #台灣交友 #共群共享 #Lava交友 #不聊天的交友軟體 #相似吸引理論 #線下約會 #MLB台灣",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Pachinko"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Pachinko"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Pachinko",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "異國戀為什麼反而更穩？",
+          "display_copy": "塔里克·史庫柏。\n捷克姓、阿拉伯名、美國職棒。\n\n這個名字本身，就是一道文化混搭題。\n\n然後留言區炸了——\n大家討論的不只是棒球，\n而是「跨文化」這件事，\n到底有沒有【未來】。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "每次聊到異國戀，留言都在打架",
+          "display_copy": "「文化差太多遲早分。」\n「正因為不同才有吸引力啊！」\n\n這兩派在你的限動留言區吵，\n在心理學期刊裡也吵了【超過 50 年】。\n\n而且到現在——\n學者還沒有人完全贏過。\n\n所以今天，我們不憑感覺，\n我們看數據。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "第一派：相似才穩（心理學主流觀點）",
+          "display_copy": "Byrne（1971）說：\n\n你喜歡一個人，\n本質上是因為他讓你覺得\n【自己的世界觀是對的】。\n\n相似的人驗證你的態度與想法，\n那種被驗證的感覺，\n就轉化成吸引力。\n\n這叫「效能動機」（effectance motive）——\n也是主流心理學用了 50 年的框架。\n\n資料來源：Byrne, D. (1971). The attraction paradigm. Academic Press."
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "但 240 篇研究統合分析說：沒那麼簡單",
+          "display_copy": "Montoya, Horton & Kirchner（2008）\n分析了 313 項研究、【35,747 人】的數據，\n結論是一個很掃興的答案：\n\n「感知到的相似性，\n比實際相似性，\n更能預測吸引力。」\n\n也就是說——\n〖你覺得他跟你像，比你們真的像，更影響一切。〗\n\nMontoya & Horton（2013）再分析 240 篇，也印證：相似不是萬能的。\n\n資料來源：Montoya, Horton & Kirchner (2008). JSPR；Montoya & Horton (2013). JSPR."
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            }
+          ],
+          "final_src": null,
+          "heading": "跨文化配對：壞消息與好消息",
+          "display_copy": "過去的預設：\n跨文化配對壓力大，所以更不穩定。\n\n但 Froidevaux & Campos（2023，JSPR）\n比較跨文化與同文化戀人後發現：\n跨文化戀愛的個體回報了\n【更高的承諾度與滿意度】。\n\nUhlich et al.（2022，Personal Relationships）\n的統合分析也指向類似方向。\n\n研究結論仍有不一致，\n但「跨文化一定更差」這個預設，\n已經被正式挑戰了。\n\n資料來源：Froidevaux & Campos (2023), JSPR；Uhlich et al. (2022), Personal Relationships.",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            }
+          ],
+          "final_src": null,
+          "heading": "關鍵不在「相似」，在共群共享的關係模式",
+          "display_copy": "Machette & Cionea（2022）\n訪問了 248 名跨文化婚姻中的個體，\n結論是：決定關係滿意度的關鍵變數，\n不是「你們有多像」，\n\n而是你們有沒有形成\n【共群共享（communal sharing）的關係模式】——\n\n也就是，你願不願意把對方的文化體驗，\n當作自己的一部分來理解與接納。\n\n這是「文化好奇心」最接近的學術定義。\n\n資料來源：Machette & Cionea (2022). Journal of Intercultural Communication Research.",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Lava 在做的事情，其實就是這個",
+          "display_copy": "心理學說跨越差異的關鍵，\n是【共群共享的關係模式】，\n不是相似度。\n\n但那種模式，\n不是在對話框裡打出來的——\n\n它是你坐到對方面前，\n看他點菜、聽他換語言的節奏、\n感受他對世界有一套你沒想過的邏輯，\n\n然後你選擇，繼續好奇。\n\nLava 先見面的設計，原來是有道理的。"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-8b.webp",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-塔里克史庫柏今天熱搜但你/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Lostin Translation"
+            }
+          ],
+          "final_src": null,
+          "heading": "所以，下次你在想「我們差這麼多」的時候",
+          "display_copy": "下次你猶豫「我們差這麼多，可以嗎」——\n\n心理學真正的問題不是「你們有多像」，\n而是：\n【你願不願意把他的文化體驗當作自己的一部分？】\n\n塔里克·史庫柏那個混搭的名字，\n捷克姓、阿拉伯名，\n可能本身就是某種跨越差異的開放態度，\n留下的一個痕跡。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "塔里克·史庫柏今天佔據熱搜，捷克姓氏、阿拉伯名字、美國職棒，這個名字本身就是一道文化混搭題。\n\n然後留言區瞬間炸開：大家在討論的不只是棒球，而是「跨文化」這件事到底有沒有未來。\n\n共群共享不是靠聊天聊出來的，它需要你親自坐到那個人面前，看著他點菜的方式、聽他說話時換語言的節奏、感受他對世界有一套你從來沒想過的邏輯。\nLava 的設計邏輯從一開始就是「先見面」，因為真正讓兩個人跨越差異的，不是在對話框裡把對方研究透，而是你願不願意帶著開放的心，出現在同一個空間裡。\n\n#塔里克史庫柏 #跨文化戀愛 #異國戀 #交友軟體 #心理學 #約會 #吸引力 #關係心理學 #台灣交友 #共群共享 #Lava交友 #不聊天的交友軟體 #相似吸引理論 #線下約會 #MLB台灣",
+          "slides": {
+            "1": {
+              "heading": "異國戀為什麼反而更穩？",
+              "display_copy": "塔里克·史庫柏。\n捷克姓、阿拉伯名、美國職棒。\n\n這個名字本身，就是一道文化混搭題。\n\n然後留言區炸了——\n大家討論的不只是棒球，\n而是「跨文化」這件事，\n到底有沒有【未來】。"
+            },
+            "2": {
+              "heading": "每次聊到異國戀，留言都在打架",
+              "display_copy": "「文化差太多遲早分。」\n「正因為不同才有吸引力啊！」\n\n這兩派在你的限動留言區吵，\n在心理學期刊裡也吵了【超過 50 年】。\n\n而且到現在——\n學者還沒有人完全贏過。\n\n所以今天，我們不憑感覺，\n我們看數據。"
+            },
+            "3": {
+              "heading": "第一派：相似才穩（心理學主流觀點）",
+              "display_copy": "Byrne（1971）說：\n\n你喜歡一個人，\n本質上是因為他讓你覺得\n【自己的世界觀是對的】。\n\n相似的人驗證你的態度與想法，\n那種被驗證的感覺，\n就轉化成吸引力。\n\n這叫「效能動機」（effectance motive）——\n也是主流心理學用了 50 年的框架。\n\n資料來源：Byrne, D. (1971). The attraction paradigm. Academic Press."
+            },
+            "4": {
+              "heading": "但 240 篇研究統合分析說：沒那麼簡單",
+              "display_copy": "Montoya, Horton & Kirchner（2008）\n分析了 313 項研究、【35,747 人】的數據，\n結論是一個很掃興的答案：\n\n「感知到的相似性，\n比實際相似性，\n更能預測吸引力。」\n\n也就是說——\n〖你覺得他跟你像，比你們真的像，更影響一切。〗\n\nMontoya & Horton（2013）再分析 240 篇，也印證：相似不是萬能的。\n\n資料來源：Montoya, Horton & Kirchner (2008). JSPR；Montoya & Horton (2013). JSPR."
+            },
+            "5": {
+              "heading": "跨文化配對：壞消息與好消息",
+              "display_copy": "過去的預設：\n跨文化配對壓力大，所以更不穩定。\n\n但 Froidevaux & Campos（2023，JSPR）\n比較跨文化與同文化戀人後發現：\n跨文化戀愛的個體回報了\n【更高的承諾度與滿意度】。\n\nUhlich et al.（2022，Personal Relationships）\n的統合分析也指向類似方向。\n\n研究結論仍有不一致，\n但「跨文化一定更差」這個預設，\n已經被正式挑戰了。\n\n資料來源：Froidevaux & Campos (2023), JSPR；Uhlich et al. (2022), Personal Relationships."
+            },
+            "6": {
+              "heading": "關鍵不在「相似」，在共群共享的關係模式",
+              "display_copy": "Machette & Cionea（2022）\n訪問了 248 名跨文化婚姻中的個體，\n結論是：決定關係滿意度的關鍵變數，\n不是「你們有多像」，\n\n而是你們有沒有形成\n【共群共享（communal sharing）的關係模式】——\n\n也就是，你願不願意把對方的文化體驗，\n當作自己的一部分來理解與接納。\n\n這是「文化好奇心」最接近的學術定義。\n\n資料來源：Machette & Cionea (2022). Journal of Intercultural Communication Research."
+            },
+            "7": {
+              "heading": "Lava 在做的事情，其實就是這個",
+              "display_copy": "心理學說跨越差異的關鍵，\n是【共群共享的關係模式】，\n不是相似度。\n\n但那種模式，\n不是在對話框裡打出來的——\n\n它是你坐到對方面前，\n看他點菜、聽他換語言的節奏、\n感受他對世界有一套你沒想過的邏輯，\n\n然後你選擇，繼續好奇。\n\nLava 先見面的設計，原來是有道理的。"
+            },
+            "8": {
+              "heading": "所以，下次你在想「我們差這麼多」的時候",
+              "display_copy": "下次你猶豫「我們差這麼多，可以嗎」——\n\n心理學真正的問題不是「你們有多像」，\n而是：\n【你願不願意把他的文化體驗當作自己的一部分？】\n\n塔里克·史庫柏那個混搭的名字，\n捷克姓、阿拉伯名，\n可能本身就是某種跨越差異的開放態度，\n留下的一個痕跡。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "異國戀為什麼反而更穩",
+          "",
+          "塔里克·史庫柏",
+          "捷克姓、阿拉伯名、美國職棒",
+          "這個名字本身，就是一道文化混搭題",
+          "然後留言區炸了",
+          "大家討論的不只是棒球",
+          "而是「跨文化」這件事",
+          "到底有沒有【未來】"
+        ],
+        "2": [
+          "每次聊到異國戀，留言都在打架",
+          "",
+          "「文化差太多遲早分。」",
+          "「正因為不同才有吸引力啊！」",
+          "這兩派在你的限動留言區吵",
+          "在心理學期刊裡也吵了超過 50 年",
+          "而且到現在",
+          "學者還沒有人完全贏過",
+          "所以今天，我們不憑感覺",
+          "我們看數據"
+        ],
+        "3": [
+          "第一派：相似才穩（心理學主流觀點）",
+          "",
+          "Byrne（1971）說",
+          "你喜歡一個人",
+          "本質上是因為他讓你覺得",
+          "自己的世界觀是對的",
+          "相似的人驗證你的態度與想法",
+          "那種被驗證的感覺",
+          "就轉化成吸引力",
+          "這叫「效能動機」（effectance motive）",
+          "也是主流心理學用了 50 年的框架",
+          "資料來源：Byrne, D. (1971). The attraction paradigm.",
+          "Academic Press"
+        ],
+        "4": [
+          "但 240 篇研究統合分析說：沒那麼簡單",
+          "",
+          "Montoya, Horton & Kirchner（2008）",
+          "分析了 313 項研究、35,747 人的數據",
+          "結論是一個很掃興的答案",
+          "「感知到的相似性",
+          "比實際相似性",
+          "更能預測吸引力。」",
+          "也就是說",
+          "你覺得他跟你像，比你們真的像，更影響一切",
+          "Montoya & Horton（2013）再分析 240 篇，也印證",
+          "相似不是萬能的",
+          "資料來源：Montoya, Horton & Kirchner (2008). JSPR",
+          "Montoya & Horton (2013). JSPR"
+        ],
+        "5": [
+          "跨文化配對：壞消息與好消息",
+          "",
+          "過去的預設",
+          "跨文化配對壓力大，所以更不穩定",
+          "但 Froidevaux & Campos（2023，JSPR）",
+          "比較跨文化與同文化戀人後發現",
+          "跨文化戀愛的個體回報了",
+          "更高的承諾度與滿意度",
+          "Uhlich et al.（2022，Personal Relationships）",
+          "的統合分析也指向類似方向",
+          "研究結論仍有不一致",
+          "但「跨文化一定更差」這個預設",
+          "已經被正式挑戰了",
+          "資料來源：Froidevaux & Campos (2023), JSPR",
+          "Uhlich et al. (2022), Personal Relationships"
+        ],
+        "6": [
+          "關鍵不在「相似」，在共群共享的關係模式",
+          "",
+          "Machette & Cionea（2022）",
+          "訪問了 248 名跨文化婚姻中的個體",
+          "結論是：決定關係滿意度的關鍵變數",
+          "不是「你們有多像」",
+          "而是你們有沒有形成",
+          "共群共享（communal sharing）的關係模式",
+          "也就是，你願不願意把對方的文化體驗",
+          "當作自己的一部分來理解與接納",
+          "這是「文化好奇心」最接近的學術定義",
+          "資料來源：Machette & Cionea (2022). Journal of",
+          "Intercultural Communication Research"
+        ],
+        "7": [
+          "Lava 在做的事情，其實就是這個",
+          "",
+          "心理學說跨越差異的關鍵",
+          "是共群共享的關係模式",
+          "不是相似度",
+          "但那種模式",
+          "不是在對話框裡打出來的",
+          "它是你坐到對方面前",
+          "看他點菜、聽他換語言的節奏",
+          "感受他對世界有一套你沒想過的邏輯",
+          "然後你選擇，繼續好奇",
+          "Lava 先見面的設計，原來是有道理的"
+        ],
+        "8": [
+          "所以，下次你在想「我們差這麼多」的時候",
+          "",
+          "下次你猶豫「我們差這麼多，可以嗎」",
+          "心理學真正的問題不是「你們有多像」",
+          "而是",
+          "你願不願意把他的文化體驗當作自己的一部分",
+          "塔里克·史庫柏那個混搭的名字",
+          "捷克姓、阿拉伯名",
+          "可能本身就是某種跨越差異的開放態度",
+          "留下的一個痕跡"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
+    },
+    {
+      "id": "20260808-欸如履薄冰在WomenT",
+      "topic": "欸…「如履薄冰」在 WomenTalk 炸鍋——這個梗，其實說的是現代人談戀愛的狀態",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eygwwg1",
+      "created_at": null,
+      "caption": "欸…\n\n…\n你有沒有發現，你在喜歡一個人的時候，反而最不敢做自己？\n傳訊息要想半小時、回應快了怕太黏、慢了又怕冷掉，明明很在乎，卻每一步都踩得像怕冰裂開。\n這不是你太敏感，這是 2026 年台灣人談戀愛的集體處境。\n\nLava 的設計出發點只有一個：你無法透過反覆修改過的文字，真正認識一個人，也無法被真正認識。\n那些你傳之前想了三十分鐘的訊息、那些你因為怕讀錯對方語氣而輾轉難眠的夜晚，其實都發生在見面之前，都發生在一塊你根本不需要站上去的薄冰上。\nLava 存在的理由，就是讓你跳過那塊冰，直接走到對岸。\n\n#交友軟體 #約會 #戀愛心理 #依附理論 #焦慮依附 #如履薄冰 #現代愛情 #關係心理學 #線下約會 #交友App #Lava交友 #不聊天的交友軟體 #attachment #台灣交友 #PTT",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "如履薄冰",
+          "display_copy": "欸……你有沒有發現\n在喜歡一個人的時候\n反而最不敢做自己？\n\n傳訊息要想半小時\n回應快了怕太黏\n慢了又怕冷掉——\n\n每一步都踩得像怕冰裂開。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-2a.webp",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-2b.webp",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-2c.webp",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": null,
+          "heading": "PTT 上的一個問號，說出了很多人的狀態",
+          "display_copy": "2026 年 8 月 3 日，PTT WomenTalk 板\n一篇「[問題] 如履薄冰是什麼梗？」\n衝上熱門。\n\n留言串裡，有人突然意識到：\n\n這不只是一個梗——\n它【意外精準描述了談戀愛的感覺】。\n\n資料來源：PTT WomenTalk M.1785749051.A.1F5.html，2026-08-03",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-3c.webp",
+              "kind": "still",
+              "source_label": "Her"
+            }
+          ],
+          "final_src": null,
+          "heading": "為什麼喜歡一個人，反而會讓你變得不像自己？",
+          "display_copy": "耶魯大學心理學家 Edward Lemay\n在頂尖期刊發表「Walking on Eggshells」研究：\n\n你越是【小心翼翼地掩蓋真實的自己】\n對方越感覺到距離——\n\n然後你們都變得更不安全。\n\n不安全感，會自己餵養自己。\n\n資料來源：Lemay & Clark (2008). Journal of Personality and Social Psychology, 95, 420–441.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            }
+          ],
+          "final_src": null,
+          "heading": "交友 App 裡，焦慮依附的人佔了將近一半",
+          "display_copy": "44,435 人的研究顯示：\n\n交友 App 使用者裡，\n〖焦慮依附型佔 44%〗——最大宗。\n\n他們使用 App 最頻繁，\n卻是【最不敢真的去見面】的那群人。\n\n困在 App 裡，越聊越不敢踏出去。\n\n資料來源：Attachment Project, Dating App Psychology Study (attachmentproject.com)",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "文字拉鋸，是最薄的那塊冰",
+          "display_copy": "焦慮依附的人，最愛用交友 App——\n因為打字讓他們覺得【安全】。\n\n傳之前可以反覆修改，\n掌控每一個字給對方的印象。\n\n但研究同時發現：\n焦慮程度越高，越不可能真的去見面。\n\n文字聊得越多，距離反而越遠。\n\n資料來源：Chin, Edelstein & Vernon (2019). New Media & Society；PubMed PMID: 32345053",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "見面之前的那些文字，才是最大的薄冰",
+          "display_copy": "你不需要在文字裡\n完美地詮釋自己。\n\n那些傳之前想了三十分鐘的訊息、\n那些怕讀錯語氣而睡不著的夜晚——\n\n都發生在見面之前，\n都發生在一塊\n【你根本不需要站上去的薄冰】上。\n\nLava 的設計，\n是讓你直接走到對岸。"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-7a.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-7b.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            }
+          ],
+          "final_src": null,
+          "heading": "「如履薄冰」不是你的錯，是神經系統在保護你",
+          "display_copy": "焦慮依附者在第一次見面時\n往往會顯得比較【冷淡疏離】——\n\n但那不是冷漠，\n那是神經系統在說：\n「我怕受傷，所以我先退後一步。」\n\n這個模式曾經保護過你，\n只是現在，它讓你困住了。\n\n資料來源：Information, Communication & Society (2025). doi: 10.1080/1369118X.2025.2539294",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-8a.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-8b.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260808-欸如履薄冰在WomenT/slide-8c.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            }
+          ],
+          "final_src": null,
+          "heading": "你值得一個不用踮腳尖說話的關係",
+          "display_copy": "焦慮依附者感覺到安全，\n從來不是因為一段【措辭精準的訊息】。\n\n而是因為有一次相遇，\n讓他們發現：\n\n「跟這個人在一起，\n我好像不用踮腳尖說話。」\n\n那種相遇，\n需要真實的空間才能發生。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "欸…\n\n…\n你有沒有發現，你在喜歡一個人的時候，反而最不敢做自己？\n傳訊息要想半小時、回應快了怕太黏、慢了又怕冷掉，明明很在乎，卻每一步都踩得像怕冰裂開。\n這不是你太敏感，這是 2026 年台灣人談戀愛的集體處境。\n\nLava 的設計出發點只有一個：你無法透過反覆修改過的文字，真正認識一個人，也無法被真正認識。\n那些你傳之前想了三十分鐘的訊息、那些你因為怕讀錯對方語氣而輾轉難眠的夜晚，其實都發生在見面之前，都發生在一塊你根本不需要站上去的薄冰上。\nLava 存在的理由，就是讓你跳過那塊冰，直接走到對岸。\n\n#交友軟體 #約會 #戀愛心理 #依附理論 #焦慮依附 #如履薄冰 #現代愛情 #關係心理學 #線下約會 #交友App #Lava交友 #不聊天的交友軟體 #attachment #台灣交友 #PTT",
+          "slides": {
+            "1": {
+              "heading": "如履薄冰",
+              "display_copy": "欸……你有沒有發現\n在喜歡一個人的時候\n反而最不敢做自己？\n\n傳訊息要想半小時\n回應快了怕太黏\n慢了又怕冷掉——\n\n每一步都踩得像怕冰裂開。"
+            },
+            "2": {
+              "heading": "PTT 上的一個問號，說出了很多人的狀態",
+              "display_copy": "2026 年 8 月 3 日，PTT WomenTalk 板\n一篇「[問題] 如履薄冰是什麼梗？」\n衝上熱門。\n\n留言串裡，有人突然意識到：\n\n這不只是一個梗——\n它【意外精準描述了談戀愛的感覺】。\n\n資料來源：PTT WomenTalk M.1785749051.A.1F5.html，2026-08-03"
+            },
+            "3": {
+              "heading": "為什麼喜歡一個人，反而會讓你變得不像自己？",
+              "display_copy": "耶魯大學心理學家 Edward Lemay\n在頂尖期刊發表「Walking on Eggshells」研究：\n\n你越是【小心翼翼地掩蓋真實的自己】\n對方越感覺到距離——\n\n然後你們都變得更不安全。\n\n不安全感，會自己餵養自己。\n\n資料來源：Lemay & Clark (2008). Journal of Personality and Social Psychology, 95, 420–441."
+            },
+            "4": {
+              "heading": "交友 App 裡，焦慮依附的人佔了將近一半",
+              "display_copy": "44,435 人的研究顯示：\n\n交友 App 使用者裡，\n〖焦慮依附型佔 44%〗——最大宗。\n\n他們使用 App 最頻繁，\n卻是【最不敢真的去見面】的那群人。\n\n困在 App 裡，越聊越不敢踏出去。\n\n資料來源：Attachment Project, Dating App Psychology Study (attachmentproject.com)"
+            },
+            "5": {
+              "heading": "文字拉鋸，是最薄的那塊冰",
+              "display_copy": "焦慮依附的人，最愛用交友 App——\n因為打字讓他們覺得【安全】。\n\n傳之前可以反覆修改，\n掌控每一個字給對方的印象。\n\n但研究同時發現：\n焦慮程度越高，越不可能真的去見面。\n\n文字聊得越多，距離反而越遠。\n\n資料來源：Chin, Edelstein & Vernon (2019). New Media & Society；PubMed PMID: 32345053"
+            },
+            "6": {
+              "heading": "見面之前的那些文字，才是最大的薄冰",
+              "display_copy": "你不需要在文字裡\n完美地詮釋自己。\n\n那些傳之前想了三十分鐘的訊息、\n那些怕讀錯語氣而睡不著的夜晚——\n\n都發生在見面之前，\n都發生在一塊\n【你根本不需要站上去的薄冰】上。\n\nLava 的設計，\n是讓你直接走到對岸。"
+            },
+            "7": {
+              "heading": "「如履薄冰」不是你的錯，是神經系統在保護你",
+              "display_copy": "焦慮依附者在第一次見面時\n往往會顯得比較【冷淡疏離】——\n\n但那不是冷漠，\n那是神經系統在說：\n「我怕受傷，所以我先退後一步。」\n\n這個模式曾經保護過你，\n只是現在，它讓你困住了。\n\n資料來源：Information, Communication & Society (2025). doi: 10.1080/1369118X.2025.2539294"
+            },
+            "8": {
+              "heading": "你值得一個不用踮腳尖說話的關係",
+              "display_copy": "焦慮依附者感覺到安全，\n從來不是因為一段【措辭精準的訊息】。\n\n而是因為有一次相遇，\n讓他們發現：\n\n「跟這個人在一起，\n我好像不用踮腳尖說話。」\n\n那種相遇，\n需要真實的空間才能發生。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "如履薄冰",
+          "",
+          "欸……你有沒有發現",
+          "在喜歡一個人的時候",
+          "反而最不敢做自己",
+          "傳訊息要想半小時",
+          "回應快了怕太黏",
+          "慢了又怕冷掉",
+          "每一步都踩得像怕冰裂開"
+        ],
+        "2": [
+          "PTT 上的一個問號，說出了很多人的狀態",
+          "",
+          "2026 年 8 月 3 日，PTT WomenTalk 板",
+          "一篇「[問題] 如履薄冰是什麼梗？」",
+          "衝上熱門",
+          "留言串裡，有人突然意識到",
+          "這不只是一個梗",
+          "它意外精準描述了談戀愛的感覺",
+          "資料來源：PTT WomenTalk M.1785749051.A.1F5.",
+          "html，2026-08-03"
+        ],
+        "3": [
+          "為什麼喜歡一個人，反而會讓你變得不像自己",
+          "",
+          "耶魯大學心理學家 Edward Lemay",
+          "在頂尖期刊發表「Walking on Eggshells」研究",
+          "你越是小心翼翼地掩蓋真實的自己",
+          "對方越感覺到距離",
+          "然後你們都變得更不安全",
+          "不安全感，會自己餵養自己",
+          "資料來源：Lemay & Clark (2008). Journal of",
+          "Personality and Social Psychology, 95, 420–441"
+        ],
+        "4": [
+          "交友 App 裡，焦慮依附的人佔了將近一半",
+          "",
+          "44,435 人的研究顯示",
+          "交友 App 使用者裡",
+          "焦慮依附型佔 44%——最大宗",
+          "他們使用 App 最頻繁",
+          "卻是最不敢真的去見面的那群人",
+          "困在 App 裡，越聊越不敢踏出去",
+          "資料來源：Attachment Project, Dating App",
+          "Psychology Study (attachmentproject.com)"
+        ],
+        "5": [
+          "文字拉鋸，是最薄的那塊冰",
+          "",
+          "焦慮依附的人，最愛用交友 App",
+          "因為打字讓他們覺得安全",
+          "傳之前可以反覆修改",
+          "掌控每一個字給對方的印象",
+          "但研究同時發現",
+          "焦慮程度越高，越不可能真的去見面",
+          "文字聊得越多，距離反而越遠",
+          "資料來源：Chin, Edelstein & Vernon (2019). New",
+          "Media & Society；PubMed PMID: 32345053"
+        ],
+        "6": [
+          "見面之前的那些文字，才是最大的薄冰",
+          "",
+          "你不需要在文字裡",
+          "完美地詮釋自己",
+          "那些傳之前想了三十分鐘的訊息",
+          "那些怕讀錯語氣而睡不著的夜晚",
+          "都發生在見面之前",
+          "都發生在一塊",
+          "你根本不需要站上去的薄冰上",
+          "Lava 的設計",
+          "是讓你直接走到對岸"
+        ],
+        "7": [
+          "「如履薄冰」不是你的錯，是神經系統在保護",
+          "你",
+          "",
+          "焦慮依附者在第一次見面時",
+          "往往會顯得比較冷淡疏離",
+          "但那不是冷漠",
+          "那是神經系統在說",
+          "「我怕受傷，所以我先退後一步。」",
+          "這個模式曾經保護過你",
+          "只是現在，它讓你困住了",
+          "資料來源：Information, Communication & Society (",
+          "2025). doi: 10.1080/1369118X.2025.2539294"
+        ],
+        "8": [
+          "你值得一個不用踮腳尖說話的關係",
+          "",
+          "焦慮依附者感覺到安全",
+          "從來不是因為一段措辭精準的訊息",
+          "而是因為有一次相遇",
+          "讓他們發現",
+          "「跟這個人在一起",
+          "我好像不用踮腳尖說話。」",
+          "那種相遇",
+          "需要真實的空間才能發生"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      }
     }
   ]
 }

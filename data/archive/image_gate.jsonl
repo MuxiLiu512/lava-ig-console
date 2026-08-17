@@ -230,3 +230,4 @@
 {"ts": "2026-08-12T16:13:11+08:00", "post_id": "20260808-JohnGottman說", "slide": 5, "file": "slide5-KramervsKramer-1.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 103565, "bpp": 0.0499}}
 {"ts": "2026-08-12T16:13:12+08:00", "post_id": "20260808-JohnGottman說", "slide": 6, "file": "slide6-LietoMe-2.jpg", "reason": "low_res", "metrics": {"w": 400, "h": 225, "bytes": 27078}}
 {"ts": "2026-08-12T16:23:33+08:00", "post_id": "20260808-欸你有沒有發現rTind", "slide": 1, "file": "slide1-MyMister-1.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 81837, "bpp": 0.0395}}
+{"ts": "2026-08-17T17:45:25+08:00", "post_id": "20260808-塔里克史庫柏今天熱搜但你", "slide": 1, "file": "slide1-Pachinko-3.jpg", "reason": "over_compressed", "metrics": {"w": 3840, "h": 2160, "bytes": 198155, "bpp": 0.0239}}
