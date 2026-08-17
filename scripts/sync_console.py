@@ -1332,8 +1332,19 @@ def forage_pending(args):
         print("Drive 未掛載，略過 forage"); return
     jfs = sorted([f for f in glob.glob(os.path.join(root, "*.json"))
                   if "文案初稿" in os.path.basename(f) and "-Claude" in os.path.basename(f)
-                  and "ZZ" not in os.path.basename(f)],
-                 key=os.path.getmtime, reverse=True)[:8]
+                  and "ZZ" not in os.path.basename(f)
+                  # Drive 同步產生的同名副本「… (1).json」會被當成另一篇重抓一次
+                  # （2026-08-17 實測 Drive 上有 4 份）。主檔才是流程的真值。
+                  and not re.search(r"\(\d+\)\.json$", os.path.basename(f))],
+                 key=os.path.getmtime, reverse=True)[:40]
+    # 取樣範圍原本寫死「最新 8 份草稿」，2026-08-17 抓到後果：
+    # 8/08 那批就有 10 份，8/03 那批 7 篇直接落在窗外，**永遠排不進來補素材**
+    # （產品機制圖解缺 s2/s7 卡了兩週）。改成依「還缺不缺」而不是「新不新」——
+    # 已補齊的草稿在下面 missing 判斷就 continue，成本只有幾次 glob。
+    # 用正面表列而非「排除已發佈」：窗口放大後，Drive 裡還有大量沒有對應貼文的舊稿
+    # （已歸檔、GPT 版本、實驗稿），實測 40 份裡有 16 份是這種，全抓等於白燒時間。
+    pend = [ (x.get("topic") or "") for x in load("posts.json").get("posts", [])
+             if x.get("status") != "published" ]
     done = 0
     for jf in jfs:
         if done >= (args.limit or 2):
@@ -1357,6 +1368,8 @@ def forage_pending(args):
         date = (re.match(r"(\d{6,8})", base) or [None, ""])[1] if re.match(r"(\d{6,8})", base) else ""
         topic_raw = re.sub(r"-?文案初稿.*$", "", re.sub(r"^\d{6,8}[-\s]*", "", os.path.splitext(base)[0]))
         ntopic = _norm_topic(base)
+        if not any(_topic_match(ntopic, t) for t in pend if t):
+            continue
         subdirs = [dd for dd in glob.glob(os.path.join(root, "*")) if os.path.isdir(dd) and "ZZ" not in os.path.basename(dd)]
         bds = [dd for dd in subdirs if "底圖" in os.path.basename(dd) and _topic_match(ntopic, os.path.basename(dd))]
         bd = max(bds, key=os.path.getmtime) if bds else os.path.join(root, "%s %s 底圖" % (date or "20260000", topic_raw[:24]))

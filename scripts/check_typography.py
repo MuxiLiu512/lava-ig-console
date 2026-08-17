@@ -99,7 +99,7 @@ def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None
     posts = sc.load("posts.json").get("posts", [])
     ls = sc._load_local_sources()
-    total_bad, checked = 0, 0
+    total_bad, checked, broken = 0, 0, []
     for p in posts:
         if only and p["id"] != only:
             continue
@@ -108,11 +108,11 @@ def main():
         e = ls.get(p["id"]) or {}
         jf = e.get("draft_json") or (e.get("draft_jsons") or {}).get("claude")
         if not jf or not os.path.exists(jf):
-            print("⏭ %s：找不到文案" % p["id"][:26]); continue
+            broken.append((p["id"], "找不到文案")); continue
         try:
             d = sc._read_json_retry(jf)
         except Exception as ex:
-            print("⏭ %s：讀稿失敗 %s" % (p["id"][:26], ex)); continue
+            broken.append((p["id"], "讀稿失敗 %s" % ex)); continue
         # 套用操控室的文案編輯，檢查的才是實際會印出來的版本
         edits = sc._latest_copy_edits(p["id"], sc.load("copy_edits.json").get("edits", []),
                                       version=p.get("copy_choice"))
@@ -133,8 +133,14 @@ def main():
                 print("   第%s張 [%s] %s" % (n, rule, line[-34:]))
         else:
             print("✅ %s" % p["id"][:30])
-    print("\n檢查 %d 篇，違規 %d 處" % (checked, total_bad))
-    return 1 if total_bad else 0
+    # 稿檔損毀不能只是「跳過」：2026-08-17 抓到產品圖解那篇的 Drive 草稿被硬截斷
+    # （WF01 舊 maxTokens 的遺留），forage 與本檢查都靜默略過，於是那篇的排版從沒被驗過。
+    # 讀不到稿 ＝ 這篇完全沒被檢查，等同違規，必須讓哨兵看得見。
+    for pid, why in broken:
+        print("🔴 稿檔損毀 %s：%s" % (pid[:30], why))
+    print("\n檢查 %d 篇，違規 %d 處%s" % (
+        checked, total_bad, "，稿檔損毀 %d 篇" % len(broken) if broken else ""))
+    return 1 if (total_bad or broken) else 0
 
 
 if __name__ == "__main__":

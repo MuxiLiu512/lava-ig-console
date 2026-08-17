@@ -129,8 +129,8 @@ timeout 300 "$PY" scripts/sync_console.py rendered-lines >/dev/null 2>&1
 
 # 排版回歸檢查（零成本，機械）：行尾標點／詞中斷行／缺字——用引擎本身的斷行函式重算驗證
 echo "排版檢查" >"$RUNMARK"
-TYP=$(timeout 300 "$PY" scripts/check_typography.py 2>&1 | tail -3)
-echo "$TYP" | grep -E "違規 [1-9]|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
+TYP=$(timeout 300 "$PY" scripts/check_typography.py 2>&1 | tail -8)
+echo "$TYP" | grep -E "違規 [1-9]|稿檔損毀|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
 
 # 成篇視覺總檢：有新成品才跑（撞主體/浮水印/不可讀/出處異常——逐張閘門看不出來的）
 if echo "$OUT" | grep -q "✓RENDERED"; then
