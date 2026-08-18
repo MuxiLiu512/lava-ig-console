@@ -1,0 +1,22 @@
+{
+  "title": "Lava Superlike",
+  "template_id": "tpl-product-intro-carousel",
+  "slides": [
+    {"index":1,"product_layout":"hero","shot":"superlike.png","eyebrow":"Lava Superlike",
+     "heading":"不只喜歡你。\n【這次約會，我請。】"},
+    {"index":2,"product_layout":"diagram","focus_label":"你",
+     "display_copy":"遇到真的想認識的人，\n別只等對方剛好滑到你。",
+     "heading":"讓他【優先】看見你"},
+    {"index":3,"product_layout":"notify","bg":"cream","shot":"meet.png",
+     "notify_text":"有人送出了 Superlike",
+     "display_copy":"Superlike 不是普通右滑。",
+     "heading":"是讓對方知道：\n你【真的想見他】。"},
+    {"index":4,"product_layout":"price",
+     "display_copy":"如果彼此都願意見面，\n這次由你買單。",
+     "price_label":"對方的 Lava 媒合服務費","price_amount":"NT$0",
+     "price_note":"約會未成立，不收取約會服務費。","heading":""},
+    {"index":5,"product_layout":"cta","cta_button":"打開 Lava",
+     "display_copy":"下一個真的想見的人，\n別只右滑。",
+     "heading":"送出你的 Superlike"}
+  ]
+}
