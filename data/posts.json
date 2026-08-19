@@ -4242,366 +4242,6 @@
       }
     },
     {
-      "id": "20260803-Laa是怎麼把配對變成真",
-      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyey802",
-      "created_at": null,
-      "caption": "你在那個 App 上聊了三週、傳了幾百則訊息，最後還是沒見到面。\n\n不是因為你不夠努力，是因為那個 App 根本沒設計成「要讓你們見到面」的樣子。\nLava 從第一天起就只有一個目標：把配對變成真的出現在對方面前。\n\nStep 1：填寫 100 字自介，回答 3 道價值觀問題，AI 再追問 3 題個人化問題。\nStep 2：系統根據答案配對，雙方選定時段並完成預付 NT$500（含一杯飲料），約會正式成立。\nStep 3：地點揭曉為安全稽核合作酒吧，App 日曆同步，確認訊息全程跟進。\nStep 4：到場，專屬座位等你，破冰卡牌遊戲開始，30 到 45 分鐘自然認識對方。\nStep 5：約會結束後可匿名回饋，維護社群品質。\n從第一個問答到真實見面，整條路都是 Lava 設計好的，你只需要決定要不要走進來。\n\n#交友軟體 #約會 #台灣交友 #線下約會 #Lava交友 #不聊天的交友軟體 #交友app推薦 #認識新朋友 #真實見面 #行為經濟學 #承諾裝置 #質感交友 #台北約會 #配對見面 #交友軟體推薦",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood7de99",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Current Psychology, Springer (2009)",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-mood31130",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Catastrophe"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Catastrophe",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Catastrophe",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "欸⋯你有沒有發現",
-          "display_copy": "欸⋯你有沒有發現\n\n聊了三週\n還是沒見到面\n\n〖這不是你的問題。\n是那個 App 根本沒打算讓你們見面。〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "No endless swiping",
-          "display_copy": "【No endless swiping】\n\n6 題價值觀問答\n是篩網，不是性格測驗\n\n100 字自介＋3 題＋AI 個人化 3 題\n答完，你就知道值不值得見這個人\n\n資料來源：Lava Google Play 官方頁面 play.google.com/store/apps/details?id=tw.lava.app"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Current Psychology, Springer (2009)",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
-              "kind": "still",
-              "source_label": "Seinfeld"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
-              "kind": "still",
-              "source_label": "Seinfeld",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3d.webp",
-              "kind": "still",
-              "source_label": "Seinfeld"
-            }
-          ],
-          "final_src": null,
-          "heading": "Built-in commitment",
-          "display_copy": "【Built-in commitment】\n\n約會成立＝雙方各自預付 NT$500\n費用含一杯飲料\n\n這不是押金，是「承諾裝置」\n行為經濟學證明：\n一旦你的錢已經在桌上\n你就不會隨便說不去了\n\n資料來源：Current Psychology, Springer (2009) link.springer.com/article/10.1007/s12144-009-9042-5",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mood6a7a3",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-4b.webp",
-              "kind": "still",
-              "source_label": "b-moodc58d6",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Check, check, double check",
-          "display_copy": "【Check, check, double check】\n\n地點？Lava 選好了\n台北首波：Sitdown Taipei\n時段？App 日曆直接訂\n到場前？確認訊息全程跟你走\n\n你只需要做一件事：\n〖出現。〗\n\n資料來源：lava.tw 官網；WEPEOPLE CLUB wepeople.club/lava/",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-mood8466a",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-moodc085e",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Coupling",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Coupling",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Coupling",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "Ghosters not welcome",
-          "display_copy": "【Ghosters not welcome】\n\n爽約＝你損失那筆費用\n對方爽約＝50% 訂金退回你帳戶\n\n不是懲罰機制\n是雙向保底的承諾設計\n\n幽靈在這裡沒有棲身之地\n\n資料來源：Learning Loop, Commitment Devices learningloop.io/plays/psychology/commitment-devices",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood16a3e",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-moodbca9f",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "你不是一個人赴約",
-          "display_copy": "【你不是一個人赴約】\n\n合作場地全數通過安全稽核\nAngel Shot 一鍵觸發，店家隱密介入\n破冰卡牌等你，30–45 分鐘自然了解對方\n\n安全感是 Lava 設計出來的\n不是你自己撐出來的\n\n資料來源：udn 女子漾 woman.udn.com/woman/story/123166/9309425",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [],
-          "final_src": null,
-          "heading": "Match → 見面，完整路徑長這樣",
-          "display_copy": "【Match → 見面，路徑長這樣】\n\n① 6 題問答配對\n② 選時段＋雙方預付 NT$500，約會成立\n③ 地點揭曉，確認訊息跟進\n④ 到場：專屬座位＋破冰卡牌\n⑤ 匿名回饋，社群品質有人顧\n\n整條路 Lava 設計好了\n你只需要決定要不要走進來\n\n資料來源：Lava Google Play 官方頁面 play.google.com/store/apps/details?id=tw.lava.app"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood51b75",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-moodcf220",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
-          "final_src": null,
-          "heading": "見面，才是起點",
-          "display_copy": "見面，才是起點\n\n化學反應不會在對話框裡發生\n它只會在你們真的同處一室\n看著同一張破冰卡牌傻笑的那一刻才出現\n\n〖真正的連結，從來都在現實裡。〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "下載 Lava",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "rendered_lines": {
-        "1": [
-          "欸⋯你有沒有發現",
-          "",
-          "欸⋯你有沒有發現",
-          "聊了三週",
-          "還是沒見到面",
-          "〖這不是你的問題",
-          "是那個 App 根本沒打算讓你們見面〗"
-        ],
-        "2": [
-          "No endless swiping",
-          "",
-          "No endless swiping",
-          "6 題價值觀問答",
-          "是篩網，不是性格測驗",
-          "100 字自介＋3 題＋AI 個人化 3 題",
-          "答完，你就知道值不值得見這個人",
-          "資料來源：Lava Google Play 官方頁面 play.google.",
-          "com/store/apps/details?id=tw.lava.app"
-        ],
-        "3": [
-          "Built-in commitment",
-          "",
-          "Built-in commitment",
-          "約會成立＝雙方各自預付 NT$500",
-          "費用含一杯飲料",
-          "這不是押金，是「承諾裝置」",
-          "行為經濟學證明",
-          "一旦你的錢已經在桌上",
-          "你就不會隨便說不去了",
-          "資料來源：Current Psychology, Springer (2009) link.",
-          "springer.com/article/10.1007/s12144-009-9042-5"
-        ],
-        "4": [
-          "Check, check, double check",
-          "",
-          "Check, check, double check",
-          "地點？Lava 選好了",
-          "台北首波：Sitdown Taipei",
-          "時段？App 日曆直接訂",
-          "到場前？確認訊息全程跟你走",
-          "你只需要做一件事",
-          "出現",
-          "資料來源：lava.tw 官網；WEPEOPLE CLUB",
-          "wepeople.club/lava/"
-        ],
-        "5": [
-          "Ghosters not welcome",
-          "",
-          "Ghosters not welcome",
-          "爽約＝你損失那筆費用",
-          "對方爽約＝50% 訂金退回你帳戶",
-          "不是懲罰機制",
-          "是雙向保底的承諾設計",
-          "幽靈在這裡沒有棲身之地",
-          "資料來源：Learning Loop, Commitment Devices",
-          "learningloop.io/plays/psychology/",
-          "commitment-devices"
-        ],
-        "6": [
-          "你不是一個人赴約",
-          "",
-          "你不是一個人赴約",
-          "合作場地全數通過安全稽核",
-          "Angel Shot 一鍵觸發，店家隱密介入",
-          "破冰卡牌等你，30–45 分鐘自然了解對方",
-          "安全感是 Lava 設計出來的",
-          "不是你自己撐出來的",
-          "資料來源：udn 女子漾 woman.udn.com/woman/",
-          "story/123166/9309425"
-        ],
-        "7": [
-          "Match → 見面，完整路徑長這樣",
-          "",
-          "Match → 見面，路徑長這樣",
-          "① 6 題問答配對",
-          "② 選時段＋雙方預付 NT$500，約會成立",
-          "③ 地點揭曉，確認訊息跟進",
-          "④ 到場：專屬座位＋破冰卡牌",
-          "⑤ 匿名回饋，社群品質有人顧",
-          "整條路 Lava 設計好了",
-          "你只需要決定要不要走進來",
-          "資料來源：Lava Google Play 官方頁面 play.google.",
-          "com/store/apps/details?id=tw.lava.app"
-        ],
-        "8": [
-          "見面，才是起點",
-          "",
-          "見面，才是起點",
-          "化學反應不會在對話框裡發生",
-          "它只會在你們真的同處一室",
-          "看著同一張破冰卡牌傻笑的那一刻才出現",
-          "真正的連結，從來都在現實裡"
-        ],
-        "9": [
-          "下載 Lava",
-          "",
-          "CTA 公版"
-        ]
-      }
-    },
-    {
       "id": "20260811-川口春奈效應v2",
       "topic": "川口春奈效應：為什麼日系清冷感正在成為台灣約會市場的新審美標準？",
       "version": 2,
@@ -10554,6 +10194,119 @@
           "CTA 公版"
         ]
       }
+    },
+    {
+      "id": "20260803-Laa是怎麼把配對變成真",
+      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyey802",
+      "created_at": null,
+      "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "配對只是開始。\n【見面，我們幫你排。】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "",
+          "candidates": [],
+          "final_src": null,
+          "heading": "互答 6 題，才【走到下一關】",
+          "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
+        },
+        {
+          "n": 3,
+          "role": "",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "兩邊都選好，\n【約會才算成立】",
+          "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "",
+          "candidates": [],
+          "final_src": null,
+          "display_copy": "如果對方沒有出現，"
+        },
+        {
+          "n": 5,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "排一場真的會發生的約會",
+          "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
+        }
+      ],
+      "writer_model": "claude",
+      "copy_versions": {
+        "claude": {
+          "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+          "slides": {
+            "1": {
+              "heading": "配對只是開始。\n【見面，我們幫你排。】",
+              "display_copy": ""
+            },
+            "2": {
+              "heading": "互答 6 題，才【走到下一關】",
+              "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
+            },
+            "3": {
+              "heading": "兩邊都選好，\n【約會才算成立】",
+              "display_copy": "一方提出至少 3 個時段，\n另一方選一個。"
+            },
+            "4": {
+              "heading": "",
+              "display_copy": "如果對方沒有出現，"
+            },
+            "5": {
+              "heading": "排一場真的會發生的約會",
+              "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-19T16:38:04+08:00"
     }
   ]
 }
