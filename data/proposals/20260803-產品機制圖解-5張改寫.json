@@ -1,0 +1,30 @@
+{
+  "title": "配對之後，Lava 幫你把見面排好",
+  "eyebrow_en": "FROM MATCH TO DATE",
+  "hook_type": "產品機制圖解輪播",
+  "template_id": "tpl-product-intro-carousel",
+  "slides": [
+    {"index":1,"role":"Hook","product_layout":"hero","eyebrow":"From match to date",
+     "heading":"配對只是開始。\n【見面，我們幫你排。】"},
+
+    {"index":2,"product_layout":"diagram","focus_label":"成立",
+     "display_copy":"配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。",
+     "heading":"互答 6 題，才【走到下一關】"},
+
+    {"index":3,"product_layout":"notify","bg":"cream",
+     "notify_text":"你的約會已成立",
+     "display_copy":"一方提出至少 3 個時段，\n另一方選一個。",
+     "heading":"兩邊都選好，\n【約會才算成立】"},
+
+    {"index":4,"product_layout":"price",
+     "display_copy":"如果對方沒有出現，",
+     "price_label":"你付的費用退還","price_amount":"100%",
+     "price_note":"放鳥方帳號停權，從 3 天起算。","heading":""},
+
+    {"index":5,"role":"CTA","product_layout":"cta","cta_button":"打開 Lava",
+     "display_copy":"不用再猜對方想不想見面。\n流程會替你問。",
+     "heading":"排一場真的會發生的約會"}
+  ],
+  "hashtags": ["#Lava交友","#不聊天的交友軟體","#見面才算數","#台灣交友","#約會"],
+  "writer_model": "claude"
+}
