@@ -45,17 +45,56 @@ const authHdr = () => (S.pat ? { Authorization: "Bearer " + S.pat } : {});
 // 〔2026-08-17，UIUX 總體架構 §7.1〕contents API 的 JSON 回應只在檔案 <1MB 時附 content，
 // 超過就沒有 → posts.json 目前 490KB／27 篇（18.2KB／篇），再約 29 篇整個操控室會讀不到資料。
 // raw media type 沒有這個限制。代價是拿不到 sha，所以寫入時另外用目錄列表取（見 shaOf）。
+// PAT 失效時的降級 〔2026-08-19 事故〕
+// PAT 過期後，每個讀取都帶著壞 token → GitHub 對任何資源一律回 401（即使是公開 repo），
+// 整個操控室因此全滅。但 repo 是公開的（Pages 免費方案的前提），「讀」根本不需要憑證——
+// 憑證只有「寫」需要。所以：讀到 401 → 標記 AUTH_BAD、掛橫幅、改無認證重讀。
+// 無認證額度 60 次/小時/IP，JSON 每次載入 7 個檔，單人操作足夠；圖片走 publicRaw CDN 不計額。
+let AUTH_BAD = false;
+
+function authBanner() {
+  if ($("#patBanner")) return;
+  const b = el("div", null,
+    '⚠ GitHub PAT 已失效：目前<b>唯讀</b>，核准／排程／文案儲存都無法寫入。 ');
+  b.id = "patBanner";
+  b.style.cssText = "position:fixed;top:0;left:0;right:0;z-index:99;background:#B45309;" +
+    "color:#fff;padding:6px 12px;font-size:13px;text-align:center";
+  const btn = el("button", "btn", "更新 PAT");
+  btn.style.cssText = "margin-left:8px;padding:1px 10px;font-size:12px";
+  btn.onclick = patModal;
+  b.appendChild(btn);
+  document.body.prepend(b);
+  document.body.style.paddingTop = "34px";
+}
+
+async function patModal() {
+  const wrap = el("div");
+  wrap.appendChild(el("div", "small muted",
+    "貼上新的 fine-grained PAT（Contents 讀寫、僅授權 lava-ig-console）。只存這台瀏覽器的 localStorage，不會進 repo。"));
+  const inp = el("input"); inp.type = "password"; inp.placeholder = "github_pat_…";
+  inp.style.marginTop = "8px";
+  wrap.appendChild(inp);
+  const ok = await modal("更新 GitHub PAT", wrap,
+    [{ label: "取消", value: null }, { label: "儲存並重載", value: 1, cls: "primary" }]);
+  if (ok && inp.value.trim()) { S.pat = inp.value.trim(); location.reload(); }
+}
+
 async function apiGet(path) {
   if (MODE === "local") {
     const r = await fetch("../" + path + "?t=" + Date.now());
     if (!r.ok) throw new Error("本地讀取失敗 " + path);
     return { json: await r.json(), sha: null };
   }
-  const r = await fetch(`${apiBase()}/${path}?ref=${S.branch}&t=${Date.now()}`, {
-    headers: { Accept: "application/vnd.github.raw", ...authHdr() },
-  });
-  if (!r.ok) throw new Error(`讀取 ${path} 失敗 (${r.status})`);
-  return { json: JSON.parse(await r.text()), sha: null };
+  const url = `${apiBase()}/${path}?ref=${S.branch}&t=${Date.now()}`;
+  if (S.pat && !AUTH_BAD) {
+    const r = await fetch(url, { headers: { Accept: "application/vnd.github.raw", ...authHdr() } });
+    if (r.ok) return { json: JSON.parse(await r.text()), sha: null };
+    if (r.status !== 401) throw new Error(`讀取 ${path} 失敗 (${r.status})`);
+    AUTH_BAD = true; authBanner();          // 壞 PAT：降級唯讀，往下走無認證
+  }
+  const r2 = await fetch(url, { headers: { Accept: "application/vnd.github.raw" } });
+  if (!r2.ok) throw new Error(`讀取 ${path} 失敗 (${r2.status})`);
+  return { json: JSON.parse(await r2.text()), sha: null };
 }
 
 // 取檔案的 blob sha（寫入時 PUT 需要）。走「目錄列表」而不是「單檔內容」——
@@ -82,6 +121,7 @@ async function saveJson(path, mutateFn, message) {
     return { local: true };
   }
   if (!S.pat) throw new Error("尚未設定 PAT，無法寫入。請點右上角 ⚙︎ 設定。");
+  if (AUTH_BAD) throw new Error("PAT 已失效：目前唯讀。點頂部橫幅「更新 PAT」換新的再試。");
   let lastErr;
   for (let i = 0; i < 3; i++) {
     const [{ json }, sha] = await Promise.all([apiGet(path), shaOf(path)]);
@@ -97,6 +137,7 @@ async function saveJson(path, mutateFn, message) {
       body: JSON.stringify(body),
     });
     if (r.ok) { const key = path.split("/").pop().replace(".json", ""); STATE[key] = json; return await r.json(); }
+    if (r.status === 401) { AUTH_BAD = true; authBanner(); throw new Error("PAT 已失效：寫入被 GitHub 拒絕（401）。點頂部橫幅「更新 PAT」。"); }
     if (r.status === 409) { lastErr = new Error("409 撞車，重試"); continue; }
     const t = await r.text().catch(() => "");
     throw new Error(`寫入 ${path} 失敗 (${r.status}) ${t.slice(0, 120)}`);
@@ -162,5 +203,5 @@ const nowISO = () => { const d = new Date(); const z = -d.getTimezoneOffset(); c
 const rid = pfx => pfx + "-" + Date.now().toString(36);
 
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();

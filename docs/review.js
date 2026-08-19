@@ -5,7 +5,7 @@
    與舊介面並存，隨時可從左上角切回。 */
 (() => {
 "use strict";
-const { S, MODE, $, el, esc, saveJson, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid } = window.LavaCore;
+const { S, MODE, $, el, esc, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid } = window.LavaCore;
 
 const FILE_EFFORT = "data/effort_log.json";
 let QUEUE = [], IDX = 0, SLIDE = 1, PEND = [], PI = 0, CHOICE = {}, T0 = 0;
@@ -236,11 +236,25 @@ function showHelp() {
 }
 $("#btnHelp").onclick = showHelp;
 
+function loadFail(msg) {
+  // 空狀態與失敗狀態必須是兩個畫面：載入失敗時畫「佇列清空🎉」等於對使用者說謊
+  const h = $("#rvHero"); h.innerHTML = "";
+  const card = el("div", "empty");
+  card.appendChild(el("div", null, "<b>posts.json 載入失敗</b>"));
+  card.appendChild(el("div", "small muted", esc(msg)));
+  const row = el("div", "row"); row.style.cssText = "gap:8px;justify-content:center;margin-top:10px";
+  const b1 = el("button", "btn primary", "更新 PAT"); b1.onclick = patModal;
+  const b2 = el("button", "btn", "重新載入"); b2.onclick = () => location.reload();
+  row.appendChild(b1); row.appendChild(b2); card.appendChild(row);
+  h.appendChild(card);
+}
+
 loadAll().then(() => {
-  const all = (STATE.posts && STATE.posts.posts) || [];
-  QUEUE = all.filter(p => p.status === "awaiting_review" || (p.status === "approved" && p.render_note));
   $("#modeTag").textContent = MODE === "local" ? "· 本地預覽" : "";
+  const P = STATE.posts;
+  if (!P || P._error || !Array.isArray(P.posts)) { loadFail(String((P && P._error) || "資料不是預期格式")); return; }
+  QUEUE = P.posts.filter(p => p.status === "awaiting_review" || (p.status === "approved" && p.render_note));
   if (!QUEUE.length) { $("#rvHero").innerHTML = ""; $("#rvHero").appendChild(el("div", "empty", "佇列清空了 🎉")); renderBar(); return; }
   openPost();
-}).catch(e => { $("#rvHero").innerHTML = ""; $("#rvHero").appendChild(el("div", "empty", "載入失敗：" + esc(e.message))); });
+}).catch(e => loadFail(e.message));
 })();

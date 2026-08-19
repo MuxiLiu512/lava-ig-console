@@ -3,7 +3,7 @@
 # 職責：git pull → render-approved（冪等：只有「審核/文案編輯比成品新」才會真的重出）→ 有產出就 push。
 # 不做需要判斷的事（餵卡、留言、成效）——那些仍由 Claude feed 排程（每日 3 次）負責。
 set -u
-REPO="/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console"
+REPO="/Users/mimo/Claude/貼文製造機器人/lava-ig-console"
 DP="/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/產出"
 LOCK="/tmp/lava-ig-autorender.lock"
 LOG="/tmp/lava-ig-autorender.log"
@@ -106,6 +106,29 @@ if [ ! -f "$INS_STAMP" ]; then
     git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-insights: IG 成效每日快照" \
       -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
       && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+fi
+
+# GitHub PAT 每日 ping ＋ 正式站冒煙測 〔2026-08-19 事故：PAT 過期，操控室整站 401，
+# 死了多久沒人知道——IG token 有每日 ping，GitHub PAT 沒有。憑證有壽命，每一支都要有 ping。
+# 冒煙測走「訪客路徑」（無認證讀），等同真實使用者打開正式站的第一個請求。〕
+GH_STAMP="/tmp/lava-ig-ghpat.$(date '+%Y-%m-%d')"
+if [ ! -f "$GH_STAMP" ]; then
+  touch "$GH_STAMP"
+  echo "PAT 檢查" >"$RUNMARK"
+  GHTOK=$("$PY" -c "import json;print(json.load(open('.sync.json')).get('token',''))" 2>/dev/null)
+  if [ -n "$GHTOK" ]; then
+    CODE=$(curl -s --max-time 20 -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $GHTOK" https://api.github.com/user)
+    if [ "$CODE" = "401" ]; then
+      echo "[$(date '+%m-%d %H:%M')] ⚠ GitHub PAT 已失效（401）" >>"$LOG"
+      timeout 120 "$PY" scripts/sync_console.py alert "GitHub PAT 失效（401）：操控室寫入停用中（讀取自動降級無認證）。請產新的 fine-grained PAT（Contents 讀寫、僅 lava-ig-console），更新操控室 ⚙︎ 與 .sync.json 的 token。" >>"$LOG" 2>&1
+    fi
+  fi
+  PC=$(curl -s --max-time 20 -o /dev/null -w '%{http_code}' https://muxiliu512.github.io/lava-ig-console/review.html)
+  DC=$(curl -s --max-time 20 -o /dev/null -w '%{http_code}' -H "Accept: application/vnd.github.raw" "https://api.github.com/repos/MuxiLiu512/lava-ig-console/contents/data/posts.json?ref=main")
+  if [ "$PC" != "200" ] || [ "$DC" != "200" ]; then
+    echo "[$(date '+%m-%d %H:%M')] ⚠ 冒煙測失敗 Pages=$PC data=$DC" >>"$LOG"
+    timeout 120 "$PY" scripts/sync_console.py alert "正式站冒煙測失敗：Pages 回 $PC、無認證資料讀取回 $DC。操控室可能對訪客整站不可用。" >>"$LOG" 2>&1
   fi
 fi
 
