@@ -51,9 +51,24 @@ TITLE_MIN   = 0.044
 PAGE_FS     = 0.022
 CARD_R      = 0.035        # 卡片圓角（佔 W）
 
+# ── 垂直節奏 ────────────────────────────────────────────────────────
+# 第一版每個版型各自寫死 y 值（cy=0.52、by0=0.335…），結果是剩餘空間
+# 全部堆在版面下半部變成大片空洞，各張的留白也對不齊（Jesse 2026-08-17 退件）。
+# 改成「階梯 + 內容帶」：間距只能取自這個階梯，視覺元件置中於剩餘的帶內，
+# 空白由系統分配而不是由硬寫的座標決定。基準 8px 網格 ×3 = 24px。
+U   = 24
+S_XS, S_SM, S_MD, S_LG, S_XL = U, U*2, U*3, U*5, U*7      # 24 48 72 120 168
+GAP_HEADER = S_LG          # logo 底 → 導言
+GAP_LEAD   = S_XL          # 導言底 → 內容帶
+GAP_STAGE  = S_XL          # 內容帶 → 大標
+GAP_TITLE  = S_LG          # 大標底 → footer 上緣
+BAND_FILL  = 0.94          # 視覺元件最多吃掉內容帶的比例，四周留呼吸
+
 CTA_STOCK = E.CTA_STOCK
 # 徽章在 1080×1440 公版上的實測座標（純 PIL 掃描非黑列得出，2026-08-17）
 BADGE_BOXES = [(104, 150, 517, 272), (104, 295, 517, 416)]
+
+UPSCALED = []   # 本輪被放大超過 1.5 倍的來源，main() 收尾時報出來
 
 
 # ── 基礎 ────────────────────────────────────────────────────────────
@@ -86,7 +101,13 @@ def _round_paste(img, src, box, radius, border=None, bw=6):
     im = src.convert("RGB")
     # 等比填滿後置中裁切（不變形、不留邊）
     sc = max(tw / im.width, th / im.height)
+    if sc > 1.5:
+        # 靜默放大＝靜默糊掉。App 介面圖目前都是 375px 寬的 @1x 匯出，
+        # 放進卡片要放大約 2 倍。銳化只能救一點，真正的解法是 Figma 重出 @3x。
+        UPSCALED.append((getattr(src, "filename", "?"), round(sc, 2)))
     im = im.resize((max(1, int(im.width * sc)), max(1, int(im.height * sc))), Image.LANCZOS)
+    if sc > 1.2:
+        im = im.filter(ImageFilter.UnsharpMask(radius=max(1, int(sc)), percent=95, threshold=3))
     im = im.crop(((im.width - tw)//2, (im.height - th)//2,
                   (im.width - tw)//2 + tw, (im.height - th)//2 + th))
     mask = Image.new("L", (tw, th), 0)
@@ -107,9 +128,12 @@ def draw_pagination(d, idx, total, dark):
 
 
 def draw_logo(img, dark):
+    """畫 logo 並回傳它的底緣 y——垂直節奏要從實際佔位接續，不能再猜一個分數值。"""
     lg = Image.open(E.LOGO if dark else E.LOGO.replace("white", "black")).convert("RGBA")
     w = int(W * 0.18); lg = lg.resize((w, int(lg.height * w / lg.width)))
-    img.paste(lg, (int(W * MX), int(H * TOP_Y)), lg)
+    y = int(H * TOP_Y)
+    img.paste(lg, (int(W * MX), y), lg)
+    return y + lg.height
 
 
 def draw_footer(d, dark):
@@ -211,14 +235,15 @@ def _star(d, cx, cy, r, fill=WHITE):
     d.polygon(pts, fill=fill)
 
 
-def lay_hero(img, d, slide, shot, dark):
-    """封面：中央截圖卡＋紅框光暈＋星標徽章，兩側襯淡卡。"""
-    ch = int(H * 0.245); cw = int(ch * 0.62)       # 手機比例
-    cx, cy = W // 2, int(H * 0.315)
+def lay_hero(img, d, slide, shot, dark, band):
+    """封面：中央截圖卡＋紅框光暈＋星標徽章，兩側襯卡。整組置中於內容帶。"""
+    top, bot = band; bh = bot - top
+    ch = int(min(H * 0.245, bh * BAND_FILL / 2))   # ch＝半高
+    cw = int(ch * 0.62)                            # 手機比例
+    cx, cy = W // 2, (top + bot) // 2
     box = [cx - cw, cy - ch, cx + cw, cy + ch]
     r = int(W * CARD_R)
-    # 兩側襯卡：窄一點、短一點，只從主卡後面露出一角（參考稿是 peek 不是並排）
-    sw = int(cw * 0.78)
+    sw = int(cw * 0.78)                            # 襯卡只從主卡後面露一角
     for sgn in (-1, 1):
         scx = cx + sgn * int(cw * 1.35)
         sb = [scx - sw, box[1] + int(ch*0.36), scx + sw, box[3] - int(ch*0.26)]
@@ -231,72 +256,77 @@ def lay_hero(img, d, slide, shot, dark):
         d = ImageDraw.Draw(img)
     else:
         d.rounded_rectangle(box, radius=r, fill=DIM, outline=RED, width=int(W*0.005))
-    # 星標徽章壓在卡片下緣
-    br = int(W * 0.042)
-    bb = [cx - br, box[3] - br, cx + br, box[3] + br]
-    d.rounded_rectangle(bb, radius=int(br*0.32), fill=RED)
+    br = int(W * 0.042)                            # 星標徽章壓在卡片下緣
+    d.rounded_rectangle([cx - br, box[3] - br, cx + br, box[3] + br],
+                        radius=int(br*0.32), fill=RED)
     _star(d, cx, box[3], int(br*0.52))
     return img, d
 
 
-def lay_diagram(img, d, slide, shot, dark):
-    """卡片堆疊圖解：兩張淡卡 →（箭頭）→ 紅色重點卡＋星＋標籤。"""
-    cy = int(H * 0.52); ch = int(H * 0.135); cw = int(ch * 0.72)
-    r = int(W * 0.028)
+def lay_diagram(img, d, slide, shot, dark, band):
+    """卡片堆疊圖解：兩張淡卡 →（箭頭）→ 紅色重點卡。"""
+    top, bot = band
+    cy = (top + bot) // 2
+    ch = int(min(H * 0.135, (bot - top) * BAND_FILL / 2))
+    cw = int(ch * 0.72); r = int(W * 0.028)
     lx = int(W * 0.30)
-    for i, sgn in enumerate((-1, 0)):
+    for i in range(2):
         off = int(cw * 0.42 * i)
         sb = [lx - cw + off, cy - ch + int(ch*0.10*i), lx + cw + off, cy + ch]
         d.rounded_rectangle(sb, radius=r, fill=DIM if dark else (240, 214, 150),
                             outline=(58, 62, 46) if dark else (232, 200, 132), width=4)
-    # 箭頭
     ax0, ax1 = int(W * 0.47), int(W * 0.585)
     d.line([(ax0, cy), (ax1, cy)], fill=_accent(dark), width=7)
     hw = int(W * 0.016)
-    d.polygon([(ax1 + hw, cy), (ax1 - hw*0.3, cy - hw*0.75), (ax1 - hw*0.3, cy + hw*0.75)], fill=_accent(dark))
-    # 重點卡
+    d.polygon([(ax1 + hw, cy), (ax1 - hw*0.3, cy - hw*0.75), (ax1 - hw*0.3, cy + hw*0.75)],
+              fill=_accent(dark))
     rx = int(W * 0.755)
     rb = [rx - cw, cy - ch, rx + cw, cy + ch]
     img = _glow(img, rb, r, RED, spread=0.03, alpha=130); d = ImageDraw.Draw(img)
     d.rounded_rectangle(rb, radius=r, fill=RED)
     _star(d, rx, cy - int(ch*0.18), int(W*0.045))
     lbl = (slide.get("focus_label") or "你").strip()
-    fs = int(W * 0.030); f = ImageFont.truetype(E.F_MED, fs)
+    f = ImageFont.truetype(E.F_MED, int(W * 0.030))
     d.text((rx - d.textlength(lbl, font=f)/2, cy + int(ch*0.30)), lbl, font=f, fill=WHITE)
     return img, d
 
 
-def lay_notify(img, d, slide, shot, dark):
+def lay_notify(img, d, slide, shot, dark, band):
     """模擬推播：媒體卡＋壓在其上的白色通知卡。
 
-    版位會依來源比例切換——橫幅生活照走寬卡（同 Jesse 參考稿），
+    版位依來源比例切換——橫幅生活照走寬卡（同 Jesse 參考稿），
     直式 App 截圖走置中手機卡（硬塞進寬卡會被放大 4 倍只剩兩行字，2026-08-17 實測）。
     """
+    top, bot = band; bh = bot - top
     r = int(W * 0.022)
+    nh = int(H * 0.088)                     # 通知卡高
+    over = int(nh * 0.58)                   # 通知卡凸出媒體卡下緣的部分
     portrait = bool(shot) and (shot.height / max(1, shot.width)) > 1.2
     if portrait:
-        ch = int(H * 0.225); cw = int(ch * 0.60)
-        cx = W // 2; cy = int(H * 0.375)
+        ch = int(min(H * 0.225, (bh * BAND_FILL - over) / 2))
+        cw = int(ch * 0.60)
+        cx = W // 2; cy = top + (bh - over) // 2
         box = [cx - cw, cy - ch, cx + cw, cy + ch]
         _round_paste(img, shot, box, r, border=(58, 62, 46) if dark else (232, 200, 132), bw=4)
         d = ImageDraw.Draw(img)
         bx0, bx1, by1 = int(W * MX), W - int(W * MX), box[3] - int(ch * 0.30)
     else:
         bx0, bx1 = int(W * MX), W - int(W * MX)
-        by0 = int(H * 0.195); by1 = by0 + int(H * 0.205)
+        card_h = int(min(H * 0.205, bh * BAND_FILL - over))
+        by0 = top + (bh - card_h - over) // 2
+        by1 = by0 + card_h
         if shot:
             _round_paste(img, shot, [bx0, by0, bx1, by1], r)
         else:
             d.rounded_rectangle([bx0, by0, bx1, by1], radius=r, fill=DIM)
         d = ImageDraw.Draw(img)
-    # 通知卡
-    nh = int(H * 0.088); ny0 = by1 - int(nh * 0.42)
-    _shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    ImageDraw.Draw(_shadow).rounded_rectangle(
+    ny0 = by1 - int(nh * 0.42)
+    _sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(_sh).rounded_rectangle(
         [bx0, ny0 + int(nh*0.10), bx1, ny0 + nh + int(nh*0.10)],
         radius=int(W*0.020), fill=(0, 0, 0, 90))
     img.paste(Image.alpha_composite(img.convert("RGBA"),
-              _shadow.filter(ImageFilter.GaussianBlur(int(W*0.010)))).convert("RGB"), (0, 0))
+              _sh.filter(ImageFilter.GaussianBlur(int(W*0.010)))).convert("RGB"), (0, 0))
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([bx0, ny0, bx1, ny0 + nh], radius=int(W*0.020), fill=WHITE)
     ir = int(nh * 0.30); ix = bx0 + int(W * 0.030); iy = ny0 + nh//2
@@ -311,45 +341,57 @@ def lay_notify(img, d, slide, shot, dark):
     return img, d
 
 
-def lay_price(img, d, slide, shot, dark):
-    """大字數字卡：紅底圓角，小標＋巨大數字；註腳在卡下方。"""
+def lay_price(img, d, slide, shot, dark, band):
+    """大字數字卡：紅底圓角，小標＋巨大數字；註腳在卡下方，整組置中。"""
+    top, bot = band; bh = bot - top
     bx0, bx1 = int(W * MX), W - int(W * MX)
-    by0 = int(H * 0.335); by1 = by0 + int(H * 0.20)
+    note = (slide.get("price_note") or "").strip()
+    f_note = ImageFont.truetype(E.F_REG, int(W * 0.026))
+    note_h = (int(W * 0.026) + S_MD) if note else 0
+    card_h = int(min(H * 0.20, bh * BAND_FILL - note_h))
+    by0 = top + (bh - card_h - note_h) // 2
+    by1 = by0 + card_h
     r = int(W * 0.030)
     img = _glow(img, [bx0, by0, bx1, by1], r, RED, spread=0.03, alpha=110)
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([bx0, by0, bx1, by1], radius=r, fill=RED)
+    px = bx0 + int(W * 0.032)
     lab = (slide.get("price_label") or "").strip()
     amt = (slide.get("price_amount") or "").strip()
-    px = bx0 + int(W * 0.032)
+    inner = by0 + S_MD
     if lab:
         f = ImageFont.truetype(E.F_MED, int(W * 0.030))
-        d.text((px, by0 + int(H * 0.028)), lab, font=f, fill=WHITE)
+        d.text((px, inner), lab, font=f, fill=WHITE)
+        inner += int(W * 0.030) + S_SM
     if amt:
         fs = int(W * 0.115)
         while fs > int(W * 0.05):
             f = ImageFont.truetype(E.F_MED, fs)
-            if d.textlength(amt, font=f) <= (bx1 - bx0) - 2*int(W*0.032):
+            if (d.textlength(amt, font=f) <= (bx1 - bx0) - 2*int(W*0.032)
+                    and inner + fs * 1.15 <= by1 - S_XS):
                 break
             fs = int(fs * 0.93)
-        d.text((px, by0 + int(H * 0.070)), amt, font=f, fill=WHITE)
-    note = (slide.get("price_note") or "").strip()
+        d.text((px, inner), amt, font=f, fill=WHITE)
     if note:
-        f = ImageFont.truetype(E.F_REG, int(W * 0.026))
-        d.text((px, by1 + int(H * 0.030)), note, font=f, fill=_accent(dark))
+        d.text((px, by1 + S_MD), note, font=f_note, fill=_accent(dark))
     return img, d
 
 
-def lay_cta(img, d, slide, shot, dark):
-    """尾板：商店徽章（取自 CTA 公版）＋字標＋一句話＋紅色膠囊按鈕。"""
+BADGE_BOTTOM = [0]
+
+
+def lay_cta(img, d, slide, shot, dark, band=None):
+    """尾板的商店徽章。徽章直接取自 CTA 公版的實測座標，不自行仿製
+    （Apple／Google 的徽章有使用規範，畫一個像的等於仿冒）。"""
     src = Image.open(CTA_STOCK).convert("RGB")
     bw = int(W * 0.30)
-    y = int(H * 0.055)
+    y = int(H * TOP_Y)
     for bx0, by0, bx1, by1 in BADGE_BOXES:
         bd = src.crop((bx0, by0, bx1, by1))
         bh = int(bd.height * bw / bd.width)
         img.paste(bd.resize((bw, bh), Image.LANCZOS), (int(W * MX), y))
-        y += bh + int(H * 0.012)
+        y += bh + S_XS
+    BADGE_BOTTOM[0] = y - S_XS
     return img, d
 
 
@@ -372,60 +414,74 @@ def _pill(d, text, x, y, dark):
 
 
 def _render_cta(slide, out_path, dark=True):
+    """尾板：徽章 → 字標 → 標語 → 紅線 → 導言 → 重點句 → 按鈕，全部走間距階梯。"""
     img = _bg(dark); d = ImageDraw.Draw(img)
     img, d = lay_cta(img, d, slide, None, dark)
-    y = int(H * 0.335)
+    y = BADGE_BOTTOM[0] + S_XL
     lg = Image.open(E.LOGO if dark else E.LOGO.replace("white", "black")).convert("RGBA")
     lw = int(W * 0.42); lg = lg.resize((lw, int(lg.height * lw / lg.width)))
     img.paste(lg, (int(W * MX), y), lg); d = ImageDraw.Draw(img)
-    y += lg.height - int(H * 0.004)
-    f = ImageFont.truetype(E.F_MED, int(W * 0.062))
-    d.text((int(W * MX), y), "不聊天的交友軟體", font=f, fill=_fg(dark))
-    y += int(W * 0.062 * 1.5)
+    y += lg.height + S_XS
+    fs_tag = int(W * 0.062)
+    d.text((int(W * MX), y), "不聊天的交友軟體",
+           font=ImageFont.truetype(E.F_MED, fs_tag), fill=_fg(dark))
+    y += int(fs_tag * 1.25) + S_MD
     d.line([(int(W*MX), y), (int(W*MX) + int(W*0.075), y)], fill=RED, width=int(H*0.004))
-    y += int(H * 0.030)
-    y = draw_lead(d, slide.get("display_copy") or "", dark, y) + int(H * 0.020)
-    hl = (slide.get("heading") or "").strip()
+    y += S_MD
+    y = draw_lead(d, slide.get("display_copy") or "", dark, y) + S_MD
+    hl = re.sub(r"[【】〖〗]", "", (slide.get("heading") or "").strip())
     if hl:
-        fh = ImageFont.truetype(E.F_MED, int(W * 0.052))
-        d.text((int(W * MX), y), re.sub(r"[【】〖〗]", "", hl), font=fh, fill=_accent(dark))
-        y += int(W * 0.052 * 1.6)
-    _pill(d, (slide.get("cta_button") or "打開 Lava"), int(W * MX), int(H * 0.815), dark)
+        fs_h = int(W * 0.052)
+        d.text((int(W * MX), y), hl, font=ImageFont.truetype(E.F_MED, fs_h), fill=_accent(dark))
+        y += int(fs_h * 1.25)
+    footer_top = H - int(H * 0.052) - int(W * 0.022)
+    _pill(d, (slide.get("cta_button") or "打開 Lava"), int(W * MX),
+          max(y + S_XL, footer_top - S_LG - int(W * 0.036 + W*0.036*1.24)), dark)
     draw_footer(d, dark)
-    img.save(out_path, quality=95)
+    img.save(out_path, quality=97, subsampling=0)
     return out_path
 
 
 def render_slide(slide, shot_path, out_path, idx=None, total=None):
+    """垂直節奏：logo → GAP_HEADER → 導言 → GAP_LEAD →〔內容帶〕→ GAP_STAGE → 大標 → GAP_TITLE → footer。
+    視覺元件置中於內容帶，所以剩餘空白會平均分配，不會全部堆在下半部。"""
     layout = (slide.get("product_layout") or "diagram").strip()
     dark = (slide.get("bg") or "dark") != "cream"
     if layout == "cta":
         return _render_cta(slide, out_path, dark)
 
     img = _bg(dark); d = ImageDraw.Draw(img)
-    draw_logo(img, dark); d = ImageDraw.Draw(img)
+    logo_bottom = draw_logo(img, dark); d = ImageDraw.Draw(img)
     draw_pagination(d, idx, total, dark)
 
-    shot = None
-    if shot_path and os.path.exists(shot_path):
-        shot = Image.open(shot_path)
-
+    shot = Image.open(shot_path) if (shot_path and os.path.exists(shot_path)) else None
     footer_top = H - int(H * 0.052) - int(W * 0.022)
-    if layout == "hero":
-        img, d = lay_hero(img, d, slide, shot, dark)
-        eyebrow = (slide.get("eyebrow") or "").strip()
-        eb_h = int(H * 0.075) if eyebrow else 0
-        ty = draw_title(img, d, slide.get("heading") or "", dark, footer_top - int(H*0.055) - eb_h)
-        if eyebrow:
-            fs = int(W * 0.028); f = ImageFont.truetype(E.F_MED, fs)
-            d.text((int(W * MX), footer_top - int(H*0.070)),
-                   "  ".join(eyebrow.upper()), font=f, fill=RED)
-    else:
-        draw_lead(d, slide.get("display_copy") or "", dark, int(H * 0.135))
-        img, d = LAYOUTS[layout](img, d, slide, shot, dark)
-        draw_title(img, d, slide.get("heading") or "", dark, footer_top - int(H * 0.055))
+
+    # 封面沒有導言，改用下方的 eyebrow 標籤；其餘版型 display_copy 走導言
+    eyebrow = (slide.get("eyebrow") or "").strip() if layout == "hero" else ""
+    fs_eb = int(W * 0.028)
+    eb_h = (int(fs_eb * 1.25) + S_LG) if eyebrow else 0
+
+    lead_bottom = logo_bottom
+    if layout != "hero":
+        lead_bottom = draw_lead(d, slide.get("display_copy") or "", dark,
+                                logo_bottom + GAP_HEADER)
+
+    lines, f_t, fs_t = title_lines(slide.get("heading") or "", d, dark)
+    lh = int(fs_t * 1.30)
+    title_h = len(lines) * lh
+    title_top = footer_top - GAP_TITLE - eb_h - title_h
+
+    band = (lead_bottom + GAP_LEAD, title_top - GAP_STAGE)
+    img, d = LAYOUTS[layout](img, d, slide, shot, dark, band)
+
+    if lines:
+        E.draw_lines(d, lines, int(W * MX), title_top, f_t, lh)
+    if eyebrow:
+        d.text((int(W * MX), title_top + title_h + S_LG),
+               "  ".join(eyebrow.upper()), font=ImageFont.truetype(E.F_MED, fs_eb), fill=RED)
     draw_footer(d, dark)
-    img.save(out_path, quality=95)
+    img.save(out_path, quality=97, subsampling=0)
     return out_path
 
 
@@ -442,6 +498,11 @@ def main(json_path, shots_dir, out_dir):
         render_slide(s, sp, out, idx=i, total=total)
         print("✓ slide-%d [%s] %s" % (i, s.get("product_layout") or "diagram",
                                       os.path.basename(shot) if shot else "無截圖"))
+    if UPSCALED:
+        print("⚠ 來源解析度不足，被放大：")
+        for fn, sc in UPSCALED:
+            print("   %-46s ×%.2f" % (os.path.basename(str(fn))[:46], sc))
+        print("   App 介面圖目前是 375px 寬的 @1x 匯出，需從 Figma 重出 @3x（1125px）才會真的銳利。")
     print("完成 %d 張 → %s" % (total, out_dir))
 
 
