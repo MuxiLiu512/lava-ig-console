@@ -904,8 +904,17 @@ def render_approved(args):
             print("   ⏰ %s 成品已更新 → 恢復排程 %s" % (pid[:20], p["publish_at"][:16]))
         rendered.append((pid, p.get("clickup_task_id") or "", jf, chosen_paths))
         sys.stderr.write("✓ 渲染 %s（文案版 %s，選圖 %s，文案編輯 %d 處）\n" % (pid, choice or "-", r.get("slide_choices"), len(edits)))
-    for pid, why in skipped:   # 卡住原因寫進貼文 → 操控室直接看得到，不再只躺在哨兵 log
-        if pid in posts:
+    # 卡住原因寫進貼文 → 操控室直接看得到，不再只躺在哨兵 log。
+    # 但「已渲染且無新變更」是冪等 skip，不是卡住——寫進 render_note 會讓
+    # 操控室把好稿誤判成「卡住」（2026-08-19 看板實測：天氣變差被掛進卡住側欄）。
+    # 良性 skip 不寫入，且要清掉殘留的舊 note。
+    _BENIGN = ("已渲染且無新變更",)
+    for pid, why in skipped:
+        if pid not in posts:
+            continue
+        if why in _BENIGN:
+            posts[pid].pop("render_note", None)
+        else:
             posts[pid]["render_note"] = why
     if not args.dry_run:
         save("posts.json", posts_d)

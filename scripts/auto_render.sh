@@ -168,10 +168,44 @@ REC=$(timeout 300 "$PY" scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add data/ docs/finals/ assets/ 2>/dev/null; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
+# 心跳檔（工作台健康列的資料源，§3.2）：每輪寫入本輪結果；
+# 有工作 push 就搭便車進 repo，安靜時最多 55 分鐘推一次專用 commit。
+# 健康列的判準：心跳 >70 分鐘＝哨兵斷了（Drive 未掛載時腳本 26 行提前退出、
+# 心跳凍結，也會被同一個判準抓到——這正是「靜默 exit 0」十天前的坑）。
+echo "心跳" >"$RUNMARK"
+OUT="$OUT" ING="$ING" TYP="$TYP" "$PY" - <<'PYEOF' 2>>"$LOG"
+import json, os, datetime, re
+out=os.environ.get("OUT",""); ing=os.environ.get("ING",""); typ=os.environ.get("TYP","")
+errs=[]
+try:
+    with open("/tmp/lava-ig-autorender.log", encoding="utf-8", errors="replace") as f:
+        tail=f.readlines()[-40:]
+    today=datetime.date.today().strftime("%m-%d")
+    errs=[l.strip()[:160] for l in tail if l.startswith("[%s"%today) and ("⚠" in l or "✗" in l or "🔴" in l)][-5:]
+except Exception:
+    pass
+hb={"ts": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
+    "drive": True,
+    "rendered": out.count("✓RENDERED"),
+    "ingested": len(re.findall(r"✓ posts", ing)),
+    "typography_ok": "違規 0 處" in typ,
+    "errors": errs}
+json.dump(hb, open("data/heartbeat.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
+PYEOF
+
 if echo "$OUT$ING$TYP" | grep -qE "✓RENDERED|✓ posts|✎ typography 欄位寫回 [1-9]"; then
   git add data/ docs/finals/ assets/ 2>/dev/null
   git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-render: 偵測到新審核/文案修改，重出成品" \
     -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1
   git push --quiet origin main >>"$LOG" 2>&1
+fi
+# 心跳專用 commit（本輪沒有工作 push 時才會走到；55 分鐘節流）
+HBSTAMP="/tmp/lava-ig-hb.pushed"
+if [ -n "$(git status --porcelain data/heartbeat.json 2>/dev/null)" ]; then
+  if [ ! -f "$HBSTAMP" ] || [ -n "$(find "$HBSTAMP" -mmin +55 2>/dev/null)" ]; then
+    git add data/heartbeat.json
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-heartbeat" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1 && touch "$HBSTAMP"
+  fi
 fi
 exit 0

@@ -5,40 +5,16 @@
    與舊介面並存，隨時可從左上角切回。 */
 (() => {
 "use strict";
-const { S, MODE, $, el, esc, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid } = window.LavaCore;
+const { S, MODE, $, el, esc, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid, stageOf, gatesOf, alertOf, lacksMaterial } = window.LavaCore;
 
 const FILE_EFFORT = "data/effort_log.json";
 let QUEUE = [], IDX = 0, SLIDE = 1, PEND = [], PI = 0, CHOICE = {}, T0 = 0;
-
-// ── 三維狀態（§3.1）：階段單選、閘門四點、警示最多一個 ──────────────
-function stageOf(p) {
-  if (p.status === "published") return ["已發", "var(--stage-done)"];
-  if (p.status === "scheduled") return ["已排", "var(--stage-sched)"];
-  if (p.status === "awaiting_review" || p.render_note) return ["等你", "var(--stage-you)"];
-  if (p.status === "approved") {
-    const done = (p.slides || []).every(s => s.final_src || s.public_url);
-    return done ? ["待排", "var(--stage-wait)"] : ["製作中", "var(--stage-make)"];
-  }
-  return ["候選", "#4b5057"];
-}
-// 順序固定＝管線順序，位置固定才能被肌肉記憶（§3.1 維度 B）
-function gatesOf(p) {
-  const g = x => (x == null ? "" : x.pass === true ? "ok" : (x.issues || []).some(i => i.severity === "block") ? "bad" : "warn");
-  return [["文案", ""], ["事實", ""], ["視覺", g(p.qa)], ["排版", g(p.typography)]];
-}
-function alertOf(p) {
-  if (p.render_note) return "卡住";
-  if ((p.slides || []).some(s => needsImg(s) && !(s.candidates || []).length)) return "缺料";
-  return null;
-}
-// CTA／設計底不需要底圖；用「有沒有 candidates 欄位」判斷會把設計底誤判成缺料
-const needsImg = s => !/CTA/i.test(String(s.role || "")) && !!(s.candidates || []).length || (!/CTA/i.test(String(s.role || "")) && s.n !== undefined && (s.candidates || []).length === 0 && !s.final_src);
 
 // ── 待決項（§4.2）：只有系統沒把握的才進來 ───────────────────────────
 function pendingOf(p) {
   const out = [];
   (p.slides || []).forEach(s => {
-    if (needsImg(s) && !(s.candidates || []).length)
+    if (lacksMaterial(s))
       out.push({ n: s.n, kind: "缺料", sev: "block", text: "這張沒有任何候選圖，補圖前無法出成品" });
   });
   // 一個問題算一項，不按受影響張數展開——同一個「四張版型雷同」被拆成 4 項會讓

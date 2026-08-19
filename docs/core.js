@@ -203,5 +203,34 @@ const nowISO = () => { const d = new Date(); const z = -d.getTimezoneOffset(); c
 const rid = pfx => pfx + "-" + Date.now().toString(36);
 
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+// ── 三維狀態模型（§3.1）——唯一正本，審稿台與工作台共用 ────────────────
+// 維度 A 階段（單選）：品牌橘只給「等你」；維度 B 閘門四點（固定順序＝管線順序）；
+// 維度 C 警示（最多一個）。一張卡最多 1 階段＋4 點＋0/1 警示，禁止其他標籤。
+const slidesDone = p => (p.slides || []).every(sl => sl.final_src || sl.public_url || /CTA/i.test(String(sl.role || "")));
+const lacksMaterial = sl => !/CTA/i.test(String(sl.role || "")) && !(sl.candidates || []).length && !(sl.final_src || sl.public_url);
+
+function stageOf(p) {
+  if (p.status === "published") return ["已發", "var(--stage-done)", "done"];
+  if (p.status === "scheduled") return ["已排", "var(--stage-sched)", "sched"];
+  if (p.status === "awaiting_review") return ["等你", "var(--stage-you)", "you"];
+  if (p.status === "approved") {
+    if (p.render_note) return ["等你", "var(--stage-you)", "you"];
+    return slidesDone(p) ? ["待排", "var(--stage-wait)", "wait"] : ["製作中", "var(--stage-make)", "make"];
+  }
+  return ["候選", "#4b5057", "cand"];
+}
+
+function gatesOf(p) {
+  const g = x => (x == null ? "" : x.pass === true ? "ok"
+    : ((x.issues || []).some(i => i.severity === "block" || i.sev === "block") ? "bad" : "warn"));
+  return [["文案", ""], ["事實", ""], ["視覺", g(p.qa)], ["排版", g(p.typography)]];
+}
+
+function alertOf(p) {
+  if (p.render_note) return "卡住";
+  if ((p.slides || []).some(lacksMaterial)) return "缺料";
+  return null;
+}
+
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();
