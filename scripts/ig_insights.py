@@ -52,21 +52,27 @@ def _token():
     return None
 
 
-def _discover_user_id(token):
-    """用粉專 token 反查 IG Business Account ID，省掉一個要人工填的欄位。"""
+# Lava 的 IG Business Account ID（HANDOFF §發佈設定實測記錄）。
+# 寫死而不是自動反查：Jesse 的 FB 同時管理三個粉專（老派約會／Lava／Halfway Studio），
+# `/me/accounts` 第一個回的是「老派約會」@replayedromance.tw。
+# 2026-08-17 首次啟用時就抓錯帳號，寫進 7 筆別人的成效才發現。
+IG_USER_ID = "17841474839208540"      # @lava_dating
+IG_USERNAME = "lava_dating"
+
+
+def _resolve_user_id(token):
+    """決定要抓哪個帳號：.sync.json 覆寫 > 寫死常數。取得後一律驗 username 才動作。"""
+    uid = IG_USER_ID
     p = os.path.join(REPO, ".sync.json")
     if os.path.exists(p):
         with open(p, encoding="utf-8") as f:
-            cached = (json.load(f).get("ig_user_id") or "").strip()
-        if cached:
-            return cached
-    d = _get("%s/me/accounts?fields=name,instagram_business_account&access_token=%s"
-             % (GRAPH, urllib.parse.quote(token)))
-    for pg in d.get("data", []):
-        iba = (pg.get("instagram_business_account") or {}).get("id")
-        if iba:
-            return iba
-    raise RuntimeError("粉專底下找不到 instagram_business_account（檢查 IG 是否為專業帳號且已綁粉專）")
+            uid = (json.load(f).get("ig_user_id") or "").strip() or uid
+    who = _get("%s/%s?fields=username&access_token=%s"
+               % (GRAPH, uid, urllib.parse.quote(token)))
+    if who.get("username") != IG_USERNAME:
+        raise RuntimeError("帳號不符：查到 @%s，預期 @%s。抓錯帳號會把別人的成效寫進 insights。"
+                           % (who.get("username"), IG_USERNAME))
+    return uid
 
 
 def _parse_ts(s):
@@ -120,7 +126,7 @@ def main():
         return 0
 
     try:
-        uid = _discover_user_id(token)
+        uid = _resolve_user_id(token)
         media = _get("%s/%s/media?fields=id,caption,timestamp,permalink,media_type"
                      "&limit=%d&access_token=%s" % (GRAPH, uid, args.limit, urllib.parse.quote(token)))
     except urllib.error.HTTPError as e:
