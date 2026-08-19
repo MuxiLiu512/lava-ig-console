@@ -64,6 +64,7 @@ GAP_STAGE  = S_XL          # 內容帶 → 大標
 GAP_TITLE  = S_LG          # 大標底 → footer 上緣
 BAND_FILL  = 0.94          # 視覺元件最多吃掉內容帶的比例，四周留呼吸
 
+PRODUCT_TPL_ID = "tpl-product-intro-carousel"
 CTA_STOCK = E.CTA_STOCK
 # 徽章在 1080×1440 公版上的實測座標（純 PIL 掃描非黑列得出，2026-08-17）
 BADGE_BOXES = [(104, 150, 517, 272), (104, 295, 517, 416)]
@@ -438,7 +439,7 @@ def _render_cta(slide, out_path, dark=True):
     _pill(d, (slide.get("cta_button") or "打開 Lava"), int(W * MX),
           max(y + S_XL, footer_top - S_LG - int(W * 0.036 + W*0.036*1.24)), dark)
     draw_footer(d, dark)
-    img.save(out_path, quality=97, subsampling=0)
+    img.save(out_path)
     return out_path
 
 
@@ -481,32 +482,56 @@ def render_slide(slide, shot_path, out_path, idx=None, total=None):
         d.text((int(W * MX), title_top + title_h + S_LG),
                "  ".join(eyebrow.upper()), font=ImageFont.truetype(E.F_MED, fs_eb), fill=RED)
     draw_footer(d, dark)
-    img.save(out_path, quality=97, subsampling=0)
+    img.save(out_path)
     return out_path
 
 
-def main(json_path, shots_dir, out_dir):
+def infer_layout(slide, idx, total):
+    """草稿沒寫 product_layout 時的推斷。WF01 目前還不會產這個欄位（n8n 斷線中），
+    先讓引擎自己看得懂，之後 WF01 補上明確欄位就直接覆蓋這裡。"""
+    lay = (slide.get("product_layout") or "").strip()
+    if lay:
+        return lay
+    if "CTA" in str(slide.get("role", "")).upper() or idx == total:
+        return "cta"
+    if (slide.get("price_amount") or "").strip():
+        return "price"
+    if (slide.get("notify_text") or "").strip():
+        return "notify"
+    if idx == 1 or str(slide.get("role", "")) == "Hook":
+        return "hero"
+    return "diagram"
+
+
+def main(json_path, bg_dir, out_dir):
+    """與 render_post_v5.main 同簽章、同輸出命名，可直接替代。
+    每張的圖沿用操控室選好的底圖（bg_dir/slide-N.*），不另外開一套素材路徑——
+    Jesse 的選圖流程因此完全不用改。"""
     with open(json_path, encoding="utf-8") as f:
         doc = json.load(f)
     slides = doc.get("slides", [])
     os.makedirs(out_dir, exist_ok=True)
+    bgs = E.collect_bgs(bg_dir) if bg_dir and os.path.isdir(bg_dir) else {}
     total = len(slides)
     for i, s in enumerate(slides, 1):
-        shot = s.get("shot") or ""
-        sp = os.path.join(shots_dir, shot) if shot and shots_dir else ""
-        out = os.path.join(out_dir, "slide-%d.jpg" % i)
-        render_slide(s, sp, out, idx=i, total=total)
-        print("✓ slide-%d [%s] %s" % (i, s.get("product_layout") or "diagram",
-                                      os.path.basename(shot) if shot else "無截圖"))
+        idx = int(s.get("index") or i)
+        lay = infer_layout(s, idx, total)
+        s = dict(s, product_layout=lay)
+        shot = bgs.get(idx)
+        if not shot and s.get("shot") and bg_dir:
+            cand = os.path.join(bg_dir, s["shot"])
+            shot = cand if os.path.exists(cand) else None
+        out = os.path.join(out_dir, "final-%02d.png" % idx)
+        render_slide(s, shot, out, idx=idx, total=total)
+        print((idx, lay, os.path.basename(shot) if shot else "無圖", out))
     if UPSCALED:
         print("⚠ 來源解析度不足，被放大：")
         for fn, sc in UPSCALED:
             print("   %-46s ×%.2f" % (os.path.basename(str(fn))[:46], sc))
-        print("   App 介面圖目前是 375px 寬的 @1x 匯出，需從 Figma 重出 @3x（1125px）才會真的銳利。")
-    print("完成 %d 張 → %s" % (total, out_dir))
+        print("   App 介面圖是 375px 寬的 @1x 匯出，需從 Figma 重出 @3x（1125px）才會真的銳利。")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 4:
-        print(__doc__); sys.exit(2)
+    if len(sys.argv) != 4:
+        sys.exit("用法: python3 render_product.py <文案.json> <底圖資料夾> <輸出資料夾>")
     main(sys.argv[1], sys.argv[2], sys.argv[3])

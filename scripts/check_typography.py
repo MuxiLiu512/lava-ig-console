@@ -25,6 +25,7 @@ spec = importlib.util.spec_from_file_location("rp5", ENGINE)
 E = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(E)
 import sync_console as sc
+import render_product as RP     # 產品介紹版型：字級／斷行規則與知識型不同
 
 _D = ImageDraw.Draw(Image.new("RGB", (10, 10)))
 
@@ -41,6 +42,35 @@ def _lines_for(text, font, max_w, semantic):
             out += E.wrap_semantic(t, (255, 255, 255), font, max_w, _D)
         return E.strip_line_ends(out)
     return E.strip_line_ends(E.wrap_segments(E.parse_highlight(text), font, max_w, _D))
+
+
+def check_product_slide(s):
+    """產品介紹版型的檢查。字級與斷行一律呼叫 render_product 自己的函式（A9 通則）。
+
+    **不驗行尾標點**：F3 規定作者手打的 \n 行尾標點要保留，而 `title_lines`
+    已經把「寬度造成的斷行」清乾淨了——所以留下來的標點必然是作者刻意的，
+    在這裡報成違規等於跟 F3 打架。只驗詞中斷行與缺字。
+    """
+    bad = []
+    lay = RP.infer_layout(s, int(s.get("index") or 1), 99)
+    if lay == "cta":
+        return bad                       # 尾板是公版，無自由排版
+    lines, f, fs = RP.title_lines(s.get("heading") or "", _D, True)
+    for i, line in enumerate(lines[:-1]):
+        t = "".join(tok for tok, _ in line).rstrip()
+        if t and t[-1] in CHECK_NO_TRAIL:
+            bad.append(("mid_word_break", t))
+    for text, font in ((s.get("heading") or "", f),
+                       (s.get("display_copy") or "",
+                        ImageFont.truetype(E.F_MED, int(E.W * RP.LEAD_FS)))):
+        for ch in text:
+            if not ch.strip() or ch == "\n":
+                continue
+            if not E._has_glyph(font, ch):
+                fb = E._fb_of(font)
+                if not fb or not E._has_glyph(fb, ch):
+                    bad.append(("missing_glyph", "字元「%s」兩種字型皆缺" % ch))
+    return bad
 
 
 def check_slide(s):
@@ -123,8 +153,10 @@ def main():
                     s[field] = edits[k]
         checked += 1
         issues = []
+        product = (d.get("template_id") or "") == RP.PRODUCT_TPL_ID
+        fn = check_product_slide if product else check_slide
         for s in d.get("slides", []):
-            for rule, line in check_slide(s):
+            for rule, line in fn(s):
                 issues.append((s.get("index"), rule, line))
         if issues:
             total_bad += len(issues)
