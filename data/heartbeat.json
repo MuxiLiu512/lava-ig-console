@@ -1,9 +1,9 @@
 {
- "ts": "2026-08-19T23:33:41+08:00",
+ "ts": "2026-08-19T23:43:18+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
- "typography_ok": true,
+ "typography_ok": false,
  "errors": [
   "[08-19 18:35] ⚠ GitHub PAT 已失效（401）",
   "[08-19 23:33]   ✗ s5 https://pubmed.ncbi.nlm.nih.gov/16255001/（pubmed.ncbi.nlm.nih.gov:已知牆站，跳過截圖）",
