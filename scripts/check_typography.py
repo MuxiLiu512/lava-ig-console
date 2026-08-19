@@ -126,7 +126,12 @@ def check_slide(s):
 
 
 def main():
-    only = sys.argv[1] if len(sys.argv) > 1 else None
+    # --write：把結果寫回 posts.json 的 typography 欄位，供操控室的閘門顯示。
+    # 檢查每輪都在跑，但結果只印在 log 裡，操控室看不到（等於沒有這個閘門）。
+    args = [a for a in sys.argv[1:] if not a.startswith("-")]
+    write = "--write" in sys.argv
+    only = args[0] if args else None
+    results = {}
     posts = sc.load("posts.json").get("posts", [])
     ls = sc._load_local_sources()
     total_bad, checked, broken = 0, 0, []
@@ -158,6 +163,8 @@ def main():
         for s in d.get("slides", []):
             for rule, line in fn(s):
                 issues.append((s.get("index"), rule, line))
+        results[p["id"]] = {"ts": sc._now_iso(), "pass": not issues,
+                            "issues": [{"slide": n, "rule": r, "line": l} for n, r, l in issues]}
         if issues:
             total_bad += len(issues)
             print("🔴 %s（%d 處）" % (p["id"][:30], len(issues)))
@@ -169,7 +176,19 @@ def main():
     # （WF01 舊 maxTokens 的遺留），forage 與本檢查都靜默略過，於是那篇的排版從沒被驗過。
     # 讀不到稿 ＝ 這篇完全沒被檢查，等同違規，必須讓哨兵看得見。
     for pid, why in broken:
+        results[pid] = {"ts": sc._now_iso(), "pass": False,
+                        "issues": [{"slide": None, "rule": "draft_broken", "line": why}]}
         print("🔴 稿檔損毀 %s：%s" % (pid[:30], why))
+    if write and results:
+        pj = sc.load("posts.json")
+        n = 0
+        for q in pj.get("posts", []):
+            r = results.get(q["id"])
+            if r and q.get("typography") != r:
+                q["typography"] = r; n += 1
+        if n:
+            sc.save("posts.json", pj)
+        print("✎ typography 欄位寫回 %d 篇" % n)
     print("\n檢查 %d 篇，違規 %d 處%s" % (
         checked, total_bad, "，稿檔損毀 %d 篇" % len(broken) if broken else ""))
     return 1 if (total_bad or broken) else 0

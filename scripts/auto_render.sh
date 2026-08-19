@@ -129,7 +129,7 @@ timeout 300 "$PY" scripts/sync_console.py rendered-lines >/dev/null 2>&1
 
 # 排版回歸檢查（零成本，機械）：行尾標點／詞中斷行／缺字——用引擎本身的斷行函式重算驗證
 echo "排版檢查" >"$RUNMARK"
-TYP=$(timeout 300 "$PY" scripts/check_typography.py 2>&1 | tail -8)
+TYP=$(timeout 300 "$PY" scripts/check_typography.py --write 2>&1 | tail -8)
 echo "$TYP" | grep -E "違規 [1-9]|稿檔損毀|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
 
 # 成篇視覺總檢：有新成品才跑（撞主體/浮水印/不可讀/出處異常——逐張閘門看不出來的）
@@ -145,7 +145,7 @@ REC=$(timeout 300 "$PY" scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add data/ docs/finals/ assets/ 2>/dev/null; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
-if echo "$OUT$ING" | grep -qE "✓RENDERED|✓ posts"; then
+if echo "$OUT$ING$TYP" | grep -qE "✓RENDERED|✓ posts|✎ typography 欄位寫回 [1-9]"; then
   git add data/ docs/finals/ assets/ 2>/dev/null
   git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-render: 偵測到新審核/文案修改，重出成品" \
     -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1

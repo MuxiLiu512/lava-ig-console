@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e0f11">
+<title>審稿台 · Lava</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* 審稿台三欄。〔UIUX 總體架構 §2.2〕最小可用寬度 1180px；
+   <1180 右欄變抽屜；<900 唯讀（已定案的手機降級）。 */
+:root{ --stage-you:#E84224; --stage-make:#6B7280; --stage-wait:#B45309;
+       --stage-sched:#2563EB; --stage-done:#15803D; --rv-gap:12px; }
+/* style.css 的 body 有 max-width:var(--maxw)（手機版容器，640px），
+   審稿台是桌面三欄，必須解除，否則中欄會被壓成 0px。 */
+body.rv{ margin:0; max-width:none; width:100%; height:100vh; overflow:hidden;
+         display:flex; flex-direction:column; padding-bottom:0; }
+.rv-bar{ display:flex; align-items:center; gap:10px; padding:8px 14px;
+         border-bottom:1px solid var(--line,#25272c); flex:0 0 auto; }
+.rv-bar .grow{ flex:1 }
+.rv-main{ flex:1; display:grid; grid-template-columns:240px minmax(0,1fr) 380px;
+          gap:var(--rv-gap); padding:var(--rv-gap); overflow:hidden; }
+.rv-col{ overflow-y:auto; min-height:0 }
+.rv-stage{ display:flex; flex-direction:column; min-height:0 }
+.rv-hero{ flex:1; display:flex; align-items:center; justify-content:center; min-height:0 }
+.rv-hero img{ max-height:62vh; max-width:100%; object-fit:contain; border-radius:6px }
+.rv-film{ display:flex; gap:6px; overflow-x:auto; padding:8px 0 2px; flex:0 0 auto }
+.rv-film img{ height:86px; width:69px; object-fit:cover; border-radius:4px;
+              border:2px solid transparent; cursor:pointer }
+.rv-film .sel img{ border-color:#fff }
+.rv-film .pend img{ border-color:var(--stage-you) }
+.rv-film span{ position:relative; display:inline-block }
+.rv-film b{ position:absolute; left:3px; top:2px; font-size:10px; background:#000a;
+            padding:0 3px; border-radius:3px; font-weight:600 }
+.rv-q{ padding:7px 8px; border-radius:6px; cursor:pointer; margin-bottom:5px;
+       border-left:3px solid transparent; background:#16181c }
+.rv-q.on{ background:#22252b }
+.rv-q .t{ font-size:12px; line-height:1.35; margin-bottom:4px }
+.gates{ display:flex; gap:4px; align-items:center }
+.gate{ width:7px; height:7px; border-radius:50%; background:#4b5057 }
+.gate.ok{ background:var(--stage-done) } .gate.warn{ background:var(--stage-wait) }
+.gate.bad{ background:var(--stage-you) }
+.rv-pend{ border:1px solid #33363d; border-radius:6px; padding:8px; margin-bottom:8px }
+.rv-pend.on{ border-color:var(--stage-you) }
+.rv-cand{ display:grid; grid-template-columns:repeat(3,1fr); gap:6px }
+.rv-cand img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:4px;
+              border:2px solid transparent; cursor:pointer }
+.rv-cand .on img{ border-color:var(--stage-you) }
+.rv-ro{ display:none }
+@media (max-width:1179px){ .rv-main{ grid-template-columns:200px minmax(0,1fr) } .rv-col.right{ display:none } }
+@media (max-width:899px){ .rv-main{ grid-template-columns:1fr } .rv-col.left{ display:none }
+  .rv-write{ display:none !important } .rv-ro{ display:inline } }
+kbd{ background:#2a2d33; border-radius:3px; padding:1px 5px; font-size:11px }
+</style>
+</head>
+<body class="rv">
+  <div class="rv-bar">
+    <a class="icon-btn" href="index.html" title="回舊介面" style="text-decoration:none">←</a>
+    <div class="title" style="font-size:14px">審稿台 <small id="modeTag"></small></div>
+    <div id="rvPendCount" class="small muted"></div>
+    <span class="rv-ro small" style="color:var(--stage-wait)">唯讀模式（螢幕太窄）</span>
+    <div class="grow"></div>
+    <div id="rvActions" class="row rv-write" style="gap:6px"></div>
+    <button class="icon-btn" id="btnHelp" title="快捷鍵 ?">?</button>
+  </div>
+  <div class="rv-main">
+    <div class="rv-col left" id="rvQueue"></div>
+    <div class="rv-col rv-stage">
+      <div class="rv-hero" id="rvHero"><div class="empty"><span class="spin"></span> 載入中…</div></div>
+      <div class="rv-film" id="rvFilm"></div>
+    </div>
+    <div class="rv-col right" id="rvSide"></div>
+  </div>
+  <script src="config.js"></script>
+  <script src="core.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>
