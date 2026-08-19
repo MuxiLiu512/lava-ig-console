@@ -1,12 +1,10 @@
 {
- "ts": "2026-08-19T23:43:18+08:00",
+ "ts": "2026-08-20T00:53:55+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
  "typography_ok": false,
  "errors": [
-  "[08-19 18:35] ⚠ GitHub PAT 已失效（401）",
-  "[08-19 23:33]   ✗ s5 https://pubmed.ncbi.nlm.nih.gov/16255001/（pubmed.ncbi.nlm.nih.gov:已知牆站，跳過截圖）",
-  "[08-19 23:33]   ✗ s3 https://arxiv.org/pdf/2212.03931（arxiv.org:截圖失敗）"
+  "[08-20 00:43] ⚠ git pull 失敗（連續 1 輪），本輪略過"
  ]
 }
