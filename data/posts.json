@@ -3383,6 +3383,153 @@
         ]
       },
       "published_at": "2026-08-12T21:00:00+08:00"
+    },
+    {
+      "id": "20260803-Laa是怎麼把配對變成真",
+      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyey802",
+      "created_at": null,
+      "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "配對只是開始。\n【見面，我們幫你排。】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "",
+          "candidates": [],
+          "final_src": null,
+          "heading": "互答 6 題，才【走到下一關】",
+          "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
+        },
+        {
+          "n": 3,
+          "role": "",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": null,
+          "heading": "兩邊都選好，\n【約會才算成立】",
+          "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "",
+          "candidates": [],
+          "final_src": null,
+          "display_copy": "如果對方沒有出現，"
+        },
+        {
+          "n": 5,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "排一場真的會發生的約會",
+          "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
+        }
+      ],
+      "writer_model": "claude",
+      "copy_versions": {
+        "claude": {
+          "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+          "slides": {
+            "1": {
+              "heading": "配對只是開始。\n【見面，我們幫你排。】",
+              "display_copy": ""
+            },
+            "2": {
+              "heading": "互答 6 題，才【走到下一關】",
+              "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
+            },
+            "3": {
+              "heading": "兩邊都選好，\n【約會才算成立】",
+              "display_copy": "一方提出至少 3 個時段，\n另一方選一個。"
+            },
+            "4": {
+              "heading": "",
+              "display_copy": "如果對方沒有出現，"
+            },
+            "5": {
+              "heading": "排一場真的會發生的約會",
+              "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-19T16:38:04+08:00",
+      "typography": {
+        "ts": "2026-08-19T23:33:41+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "rendered_lines": {
+        "1": [
+          "配對只是開始",
+          "見面，我們幫你排",
+          ""
+        ],
+        "2": [
+          "互答 6 題，才走到下一關",
+          "",
+          "配對成功不等於會見面",
+          "多數人卡在「要約嗎」這一步"
+        ],
+        "3": [
+          "兩邊都選好",
+          "約會才算成立",
+          "",
+          "一方提出至少 3 個時段",
+          "另一方選一個"
+        ],
+        "4": [
+          "如果對方沒有出現"
+        ],
+        "5": [
+          "排一場真的會發生的約會",
+          "",
+          "不用再猜對方想不想見面",
+          "流程會替你問"
+        ]
+      }
     }
   ]
 }
