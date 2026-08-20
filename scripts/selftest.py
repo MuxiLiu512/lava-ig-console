@@ -5,7 +5,7 @@ import os, sys, tempfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "排版引擎")))
+sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "排版引擎")))
 
 FAIL = []
 

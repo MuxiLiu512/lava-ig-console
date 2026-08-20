@@ -10,3 +10,11 @@ __pycache__/
 data/.local_sources.json
 .gstack/
 docs/reels/
+# 排版引擎：只有程式碼進版控；產出與工作目錄留在本機
+排版引擎/成品/
+排版引擎/.render-tmp/
+排版引擎/底圖/
+排版引擎/文案/
+排版引擎/__pycache__/
+排版引擎/*.png
+排版引擎/.DS_Store

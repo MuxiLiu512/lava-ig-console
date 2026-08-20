@@ -18,7 +18,10 @@ from PIL import Image, ImageDraw, ImageFont
 import importlib.util
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-ENGINE = os.path.abspath(os.path.join(REPO, "..", "排版引擎", "render_post_v5.py"))
+ENGINE = os.path.join(next((p for p in [
+        os.path.join(REPO, "排版引擎"),
+        os.path.abspath(os.path.join(REPO, "..", "排版引擎")),
+    ] if os.path.isdir(p)), os.path.join(REPO, "排版引擎")), "render_post_v5.py")
 sys.path.insert(0, os.path.join(REPO, "scripts"))
 
 spec = importlib.util.spec_from_file_location("rp5", ENGINE)

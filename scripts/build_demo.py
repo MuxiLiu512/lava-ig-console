@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from _thumbs import make_thumb
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-ENGINE = os.path.abspath(os.path.join(REPO, "..", "排版引擎"))
+ENGINE = os.path.abspath(next(p for p in [os.path.join(REPO, "排版引擎"), os.path.join(REPO, "..", "排版引擎")] if os.path.isdir(p)))
 ASSETS = os.path.join(REPO, "assets")
 
 CID = ["a", "b", "c", "d"]

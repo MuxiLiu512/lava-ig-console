@@ -683,7 +683,10 @@ def from_drive(args):
 
 
 # ── 渲染核准貼文：用 PT 在操控室選定的底圖出成品 ─────────────────────
-ENGINE_DIR = os.path.abspath(os.path.join(REPO, "..", "排版引擎"))
+ENGINE_DIR = next((p for p in [
+    os.path.join(REPO, "排版引擎"),
+    os.path.abspath(os.path.join(REPO, "..", "排版引擎")),
+] if os.path.isdir(p)), os.path.join(REPO, "排版引擎"))
 
 
 def _rebuild_sources(p):
