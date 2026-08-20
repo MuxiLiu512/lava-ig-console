@@ -57,6 +57,58 @@ function postCard(p, key) {
   return c;
 }
 
+// ── 靈感卡（data/ideas.json，來源 ClickUp 靈感審核）─────────────────────
+// 放行只是寫下決定；實際勾 ClickUp 🚀放行 checkbox 的是哨兵 ideas-apply（最慢 10 分鐘），
+// 之後 WF07 → 撰稿 → 入料全自動。介面上要把這個時間差講清楚，不能假裝即時。
+function ideaCard(idea) {
+  const c = el("div", "bd-card"); c.style.borderLeftColor = "#4b5057";
+  c.appendChild(el("div", "t", "💡 " + esc(idea.title)));
+  const meta = el("div", "meta");
+  meta.appendChild(el("span", "age", "靈感 · 待放行"));
+  meta.appendChild(el("span", "age", esc(ago(idea.created_at))));
+  c.appendChild(meta);
+  c.onclick = () => openIdeaDrawer(idea);
+  return c;
+}
+
+function openIdeaDrawer(idea) {
+  const d = $("#bdDrawer"); d.innerHTML = "";
+  d.appendChild(el("h3", null, esc(idea.title)));
+  const body = el("div", "small"); body.style.cssText = "white-space:pre-wrap;color:#c8ccd2;margin-bottom:10px";
+  body.textContent = idea.desc || "（無描述）";
+  d.appendChild(body);
+  if (idea.url) { const a = el("a", "small muted", "在 ClickUp 開啟 ↗"); a.href = idea.url; a.target = "_blank"; d.appendChild(a); }
+  const row = el("div", "row"); row.style.cssText = "gap:8px;margin-top:14px";
+  const ok = el("button", "btn primary", "放行");
+  const no = el("button", "btn", "退回");
+  const close = el("button", "btn", "關閉");
+  ok.onclick = () => decideIdea(idea, "approve", "");
+  no.onclick = async () => {
+    const ta = el("textarea"); ta.rows = 2; ta.style.width = "100%";
+    const r = await modal("退回原因（會留言到卡上）", ta,
+      [{ label: "取消", value: null }, { label: "退回", value: 1, cls: "primary" }]);
+    if (r) decideIdea(idea, "reject", ta.value.trim());
+  };
+  close.onclick = () => d.classList.remove("open");
+  row.appendChild(ok); row.appendChild(no); row.appendChild(close);
+  d.appendChild(row);
+  d.classList.add("open");
+}
+
+async function decideIdea(idea, decision, reason) {
+  try {
+    await saveJson(FILES.ideas, doc => {
+      const t = (doc.ideas || []).find(x => x.task_id === idea.task_id);
+      if (t) { t.decision = decision; t.decided_at = nowISO(); t.reason = reason || ""; t.applied = false; }
+    }, `idea ${decision}: ${idea.task_id}`);
+    toast(decision === "approve"
+      ? "已放行 ✓ 哨兵 10 分鐘內回寫 ClickUp，之後自動撰稿入料"
+      : "已退回，原因會留言到卡上");
+    $("#bdDrawer").classList.remove("open");
+    boot();
+  } catch (e) { toast(e.message, true); }
+}
+
 // ── 放行欄：規則提案（repo 有的）＋ ClickUp 靈感卡（誠實地說在哪）───────
 function proposalCard(pr) {
   const c = el("div", "bd-card"); c.style.borderLeftColor = "#4b5057";
@@ -157,13 +209,11 @@ function boot() {
     const cards = el("div", "bd-cards");
     let list = [];
     if (key === "rel") {
+      const ideas = (((STATE.ideas && STATE.ideas.ideas) || [])).filter(x => !x.decision);
+      ideas.forEach(idea => cards.appendChild(ideaCard(idea)));
       props.forEach(pr => cards.appendChild(proposalCard(pr)));
-      const cu = el("div", "bd-card");
-      cu.appendChild(el("div", "t", "💡 靈感卡在 ClickUp 放行（每日 09:00 產 4-6 張）"));
-      cu.appendChild(el("div", "age", "資料在 ClickUp，操控室僅提示"));
-      cu.onclick = () => window.open("https://app.clickup.com", "_blank");
-      cards.appendChild(cu);
-      list = props;
+      if (!ideas.length && !props.length) cards.appendChild(el("div", "small muted", "（今天沒有待放行的靈感）"));
+      list = ideas.concat(props);
     } else {
       list = by(key);
       list.forEach(p => cards.appendChild(postCard(p, key)));
@@ -209,7 +259,8 @@ function boot() {
   }
 }
 
-FILES.heartbeat = "data/heartbeat.json";   // 可能還沒產出，loadAll 會塞 _error，healthBar 誠實顯示
+FILES.heartbeat = "data/heartbeat.json";
+FILES.ideas = "data/ideas.json";   // 可能還沒產出，loadAll 會塞 _error，healthBar 誠實顯示
 loadAll().then(() => {
   $("#modeTag").textContent = MODE === "local" ? "· 本地預覽" : "";
   const P = STATE.posts;

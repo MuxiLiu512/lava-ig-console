@@ -137,6 +137,11 @@ echo "截圖策展" >"$RUNMARK"
 FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
+# 靈感同步：先套用看板的放行/退回決定（勾 ClickUp 🚀放行 → WF07 接手），再拉新卡
+echo "靈感同步" >"$RUNMARK"
+IDE=$(timeout 120 "$PY" scripts/sync_console.py ideas-apply 2>&1; timeout 120 "$PY" scripts/sync_console.py ideas-pull 2>&1)
+echo "$IDE" | grep -E "✓ 靈感|! " | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+
 # 入料：在製中卡的新草稿自動餵進操控室（每輪最多 2 張，避免單輪過長）
 echo "入料" >"$RUNMARK"
 ING=$(timeout 420 "$PY" scripts/sync_console.py ingest-new --limit 2 2>&1)
@@ -193,7 +198,7 @@ hb={"ts": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
 json.dump(hb, open("data/heartbeat.json","w",encoding="utf-8"), ensure_ascii=False, indent=1)
 PYEOF
 
-if echo "$OUT$ING$TYP" | grep -qE "✓RENDERED|✓ posts|✎ typography 欄位寫回 [1-9]"; then
+if echo "$OUT$ING$TYP$IDE" | grep -qE "✓RENDERED|✓ posts|✎ typography 欄位寫回 [1-9]|✓ 靈感"; then
   git add data/ docs/finals/ assets/ 2>/dev/null
   git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-render: 偵測到新審核/文案修改，重出成品" \
     -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1

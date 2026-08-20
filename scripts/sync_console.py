@@ -991,6 +991,84 @@ def _append_jsonl(path, rows):
 
 
 # ── #6：把 demo/測試/廢棄貼文移出主檔（不動 IG，只讓自動化不再碰它） ──────
+# ── 靈感卡放行（2026-08-20 Jesse：靈感也要進操控室排程流）────────────────
+# 現況機制（HANDOFF §77-104）：WF05 每日產靈感卡（狀態=靈感審核）→ 人勾卡上的
+# 🚀放行 checkbox（欄位 b0deb388）→ WF07 taskUpdated 監聽 → 觸發撰稿 → 卡轉在製中。
+# 操控室接手的只是「勾那個 checkbox」這一步，n8n 完全不用動。
+# 退回不改 ClickUp 狀態（4 態狀態機沒有退回位，不硬塞語意）：本地記 tombstone
+# ＋卡上留言退回原因；看板永久隱藏。要批次關卡等 Jesse 決定目標狀態再做。
+IDEA_LIST = "901819351278"
+IDEA_RELEASE_FIELD = "b0deb388"
+
+
+def ideas_pull(args):
+    """ClickUp 靈感審核卡 → data/ideas.json（看板放行欄的資料源）。只讀不寫 ClickUp。"""
+    import urllib.parse
+    token = _read_sync().get("clickup_token")
+    if not token or not token.isascii():
+        print("缺 clickup_token，略過靈感同步"); return
+    try:
+        tasks = _clickup("GET", "/list/%s/task?" % IDEA_LIST +
+                         urllib.parse.urlencode({"statuses[]": "靈感審核"}), token).get("tasks", [])
+    except Exception as e:
+        print("! ClickUp 查詢失敗：%s" % e); return
+    tasks = [t for t in tasks if (t.get("name") or "").startswith("靈感｜")]
+    try:
+        doc = load("ideas.json")
+    except FileNotFoundError:
+        doc = {"note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。", "ideas": []}
+    old = {x["task_id"]: x for x in doc.get("ideas", [])}
+    ideas, kept = [], 0
+    for t in tasks:
+        e = old.get(t["id"])
+        if e:                      # 已有本地紀錄（含未套用的決定、退回 tombstone）→ 原樣保留
+            kept += 1
+        else:
+            e = {"task_id": t["id"], "title": t["name"].split("｜", 1)[-1].strip(),
+                 "desc": (t.get("text_content") or "").strip()[:600],
+                 "url": t.get("url", ""),
+                 "created_at": datetime.datetime.fromtimestamp(
+                     int(t.get("date_created", "0")) / 1000).astimezone().isoformat(timespec="seconds"),
+                 "decision": None, "decided_at": None, "reason": "", "applied": False}
+        ideas.append(e)
+    ideas.sort(key=lambda x: x.get("created_at") or "", reverse=True)
+    doc["ideas"] = ideas
+    doc["pulled_at"] = _now_iso()
+    save("ideas.json", doc)
+    print("✓ 靈感同步：ClickUp %d 張（沿用本地紀錄 %d）" % (len(ideas), kept))
+
+
+def ideas_apply(args):
+    """把看板寫入的放行／退回決定回寫 ClickUp。放行＝勾 🚀放行（WF07 接手），
+    退回＝卡上留言（狀態不動）。每筆只套用一次（applied 旗標）。"""
+    token = _read_sync().get("clickup_token")
+    if not token or not token.isascii():
+        print("缺 clickup_token，略過"); return
+    try:
+        doc = load("ideas.json")
+    except FileNotFoundError:
+        return
+    todo = [x for x in doc.get("ideas", []) if x.get("decision") and not x.get("applied")]
+    if not todo:
+        return
+    changed = False
+    for x in todo:
+        try:
+            if x["decision"] == "approve":
+                _clickup("POST", "/task/%s/field/%s" % (x["task_id"], IDEA_RELEASE_FIELD),
+                         token, {"value": True})
+                print("✓ 靈感放行 → %s %s" % (x["task_id"], x["title"][:28]))
+            else:
+                _clickup("POST", "/task/%s/comment" % x["task_id"], token,
+                         {"comment_text": "操控室退回：%s" % (x.get("reason") or "未附原因"), "notify_all": False})
+                print("✓ 靈感退回（留言）→ %s %s" % (x["task_id"], x["title"][:28]))
+            x["applied"] = True; changed = True
+        except Exception as e:
+            print("! 套用失敗 %s：%s" % (x["task_id"], e))
+    if changed:
+        save("ideas.json", doc)
+
+
 def archive_post(args):
     d = load("posts.json")
     keep, moved = [], []
@@ -1527,6 +1605,8 @@ def main():
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
     a = sub.add_parser("reconcile-published", help="ClickUp 已發布 → posts.json 翻 published（補發佈回寫缺口）"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=reconcile_published)
     a = sub.add_parser("ingest-new", help="在製中卡×Drive 草稿 → 自動餵進操控室（哨兵用）"); a.add_argument("--limit", type=int, default=3); a.set_defaults(func=ingest_new)
+    a = sub.add_parser("ideas-pull", help="ClickUp 靈感審核卡 → data/ideas.json（看板放行欄）"); a.set_defaults(func=ideas_pull)
+    a = sub.add_parser("ideas-apply", help="看板放行/退回決定回寫 ClickUp（勾🚀放行/留言）"); a.set_defaults(func=ideas_apply)
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
