@@ -52,14 +52,80 @@ function renderQueue() {
   });
 }
 
+const srcOfCand = (s, cid) => (((s && s.candidates) || []).find(c => c.cid === cid) || {}).src || null;
+
+// ── 裁切（2026-08-20 Jesse：底圖是 16:9 時要能直接裁）────────────────
+// 無成品時主舞台不再滿版丟原始候選（看起來像壞掉），改成 4:5 裁切預覽：
+// object-position 的數學與引擎 fit_bg(focus) 完全一致，拖到哪就裁到哪，預覽即成品。
+let CROPDRAFT = {};   // {slide: [fx, fy]} 未儲存的拖曳；openPost 時清空
+
+function cropPreview(p, s, path) {
+  const wrap = el("div", "rv-cropwrap");
+  const box = el("div", "rv-crop");
+  const im = el("img"); im.draggable = false;
+  const focus = () => CROPDRAFT[SLIDE] || s.crop_focus || [0.5, 0.5];
+  const paint = () => { const [fx, fy] = focus(); im.style.objectPosition = (fx * 100) + "% " + (fy * 100) + "%"; };
+  setImg(im, path); paint();
+  box.appendChild(im);
+  box.appendChild(el("div", "crop-badge", "底圖候選 · 4:5 裁切預覽 · 拖曳調整"));
+  const bar = el("div", "crop-bar");
+  const save = el("button", "btn primary", "儲存裁切");
+  const reset = el("button", "btn", "重設置中");
+  const dirty = () => { bar.style.display = "flex"; };
+  if (CROPDRAFT[SLIDE]) dirty();
+  save.onclick = async () => {
+    const v = [Math.round(focus()[0] * 1000) / 1000, Math.round(focus()[1] * 1000) / 1000];
+    try {
+      await saveJson(FILES.posts, d => {
+        const q = (d.posts || []).find(x => x.id === p.id);
+        const sl = q && (q.slides || []).find(x => String(x.n) === String(SLIDE));
+        if (sl) sl.crop_focus = v;
+      }, `crop: ${p.id} s${SLIDE}`);
+      s.crop_focus = v; delete CROPDRAFT[SLIDE]; bar.style.display = "none";
+      toast("裁切已儲存 ✓ 核准後重出成品生效");
+    } catch (e) { toast(e.message, true); }
+  };
+  reset.onclick = () => { CROPDRAFT[SLIDE] = [0.5, 0.5]; paint(); dirty(); };
+  bar.appendChild(save); bar.appendChild(reset);
+  // 拖曳：位移換算成裁切窗在溢出量上的比例（cover 模式只有一軸有溢出）
+  let drag = null;
+  box.onpointerdown = e => { drag = { x: e.clientX, y: e.clientY, f: focus().slice() }; box.setPointerCapture(e.pointerId); };
+  box.onpointermove = e => {
+    if (!drag || !im.naturalWidth) return;
+    const r = box.getBoundingClientRect();
+    const sc = Math.max(r.width / im.naturalWidth, r.height / im.naturalHeight);
+    const ox = im.naturalWidth * sc - r.width, oy = im.naturalHeight * sc - r.height;
+    const nf = [
+      Math.min(1, Math.max(0, drag.f[0] + (ox > 2 ? (drag.x - e.clientX) / ox : 0))),
+      Math.min(1, Math.max(0, drag.f[1] + (oy > 2 ? (drag.y - e.clientY) / oy : 0))),
+    ];
+    // 圖本身已是 4:5（無溢出）時拖曳不改變任何東西，儲存列不該跳出來
+    if (Math.abs(nf[0] - focus()[0]) < 0.002 && Math.abs(nf[1] - focus()[1]) < 0.002) return;
+    CROPDRAFT[SLIDE] = nf;
+    paint(); dirty();
+  };
+  box.onpointerup = box.onpointercancel = () => { drag = null; };
+  wrap.appendChild(box); wrap.appendChild(bar);
+  return wrap;
+}
+
 function renderStage() {
   const p = cur(); if (!p) return;
   const hero = $("#rvHero"); hero.innerHTML = "";
   const s = slideOf(p, SLIDE);
-  const src = finalOf(s) || (CHOICE[SLIDE] && srcOfCand(s, CHOICE[SLIDE]));
-  if (src && /^https?:/.test(src)) { const e = el("img"); e.src = src; hero.appendChild(e); }
-  else if (src) hero.appendChild(img(src));
-  else hero.appendChild(el("div", "empty", "第 " + SLIDE + " 張還沒有成品"));
+  const fin = finalOf(s);
+  const isCTA = /CTA/i.test(String((s || {}).role || ""));
+  const cand = srcOfCand(s, CHOICE[SLIDE] || (s || {}).default_cid) || (((s || {}).candidates || [])[0] || {}).src;
+  if (fin) {
+    if (/^https?:/.test(fin)) { const e = el("img"); e.src = fin; hero.appendChild(e); }
+    else hero.appendChild(img(fin));
+  } else if (isCTA) {
+    hero.appendChild(el("div", "empty", "CTA 尾板：公版，渲染時由引擎自動產生"));
+  } else if (cand) {
+    hero.appendChild(cropPreview(p, s, cand));
+  } else {
+    hero.appendChild(el("div", "empty", "第 " + SLIDE + " 張沒有候選圖也沒有成品。等哨兵補圖，或退回這篇。"));
+  }
 
   const film = $("#rvFilm"); film.innerHTML = "";
   const pendN = new Set(); PEND.forEach(x => { (x.slides && x.slides.length ? x.slides : [x.n]).forEach(n => pendN.add(String(n))); });
@@ -68,15 +134,13 @@ function renderStage() {
     const src2 = finalOf(sl) || ((sl.candidates || [])[0] || {}).src;
     if (src2 && /^https?:/.test(src2)) { const e = el("img"); e.src = src2; w.appendChild(e); }
     else if (src2) w.appendChild(img(src2));
+    else if (/CTA/i.test(String(sl.role || ""))) { const d = el("div", "cta-ph", "CTA<br>公版"); w.appendChild(d); }
     else w.appendChild(el("img", "imgfail"));
     w.appendChild(el("b", null, esc(String(sl.n))));
     w.onclick = () => { SLIDE = Number(sl.n); renderStage(); renderSide(); };
     film.appendChild(w);
   });
 }
-
-const srcOfCand = (s, cid) => ((s && s.candidates) || []).find(c => c.cid === cid) ?
-  ((s.candidates || []).find(c => c.cid === cid).src) : null;
 
 function renderSide() {
   const p = cur(); const box = $("#rvSide"); box.innerHTML = "";
@@ -185,7 +249,7 @@ async function decide(decision) {
 // ── 開一篇 ──────────────────────────────────────────────────────────
 function openPost() {
   const p = cur();
-  CHOICE = {}; SLIDE = 1; PI = 0; T0 = Date.now();
+  CHOICE = {}; CROPDRAFT = {}; SLIDE = 1; PI = 0; T0 = Date.now();
   PEND = p ? pendingOf(p) : [];
   if (PEND.length) SLIDE = Number(PEND[0].n) || 1;
   renderQueue(); renderBar(); renderStage(); renderSide();

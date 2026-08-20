@@ -861,7 +861,14 @@ def render_approved(args):
             })
             p["change_log"] = p["change_log"][-20:]
         edits = _latest_copy_edits(pid, ce_list, version=choice)
+        # 操控室手動裁切（posts.json slides[].crop_focus）→ 注入 draft，引擎據此裁切。
+        # 預覽與成品同一套 object-position 數學，拖到哪裁到哪。
+        _crops = {str(s2.get("n")): s2.get("crop_focus")
+                  for s2 in p.get("slides", []) if s2.get("crop_focus")}
         for s in draft.get("slides", []):
+            _cfv = _crops.get(str(s.get("index")))
+            if _cfv:
+                s["crop_focus"] = _cfv
             for field in ("heading", "display_copy"):
                 key = (int(s.get("index", -1)), field)
                 if key in edits:
