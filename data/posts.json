@@ -3415,6 +3415,8 @@
             }
           ],
           "final_src": null,
+          "product_layout": "hero",
+          "frame_aspect": 0.62,
           "heading": "配對只是開始。\n【見面，我們幫你排。】",
           "default_cid": "a"
         },
@@ -3423,6 +3425,7 @@
           "role": "",
           "candidates": [],
           "final_src": null,
+          "product_layout": "diagram",
           "heading": "互答 6 題，才【走到下一關】",
           "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
         },
@@ -3447,6 +3450,11 @@
             }
           ],
           "final_src": null,
+          "product_layout": "notify",
+          "frame_aspect": {
+            "portrait": 0.6,
+            "landscape": 3.472
+          },
           "heading": "兩邊都選好，\n【約會才算成立】",
           "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
           "default_cid": "a"
@@ -3456,6 +3464,7 @@
           "role": "",
           "candidates": [],
           "final_src": null,
+          "product_layout": "price",
           "display_copy": "如果對方沒有出現，"
         },
         {
@@ -3463,10 +3472,12 @@
           "role": "CTA",
           "candidates": [],
           "final_src": null,
+          "product_layout": "cta",
           "heading": "排一場真的會發生的約會",
           "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
         }
       ],
+      "template_id": "tpl-product-intro-carousel",
       "writer_model": "claude",
       "copy_versions": {
         "claude": {
@@ -3495,41 +3506,7 @@
           }
         }
       },
-      "candidates_since": "2026-08-19T16:38:04+08:00",
-      "typography": {
-        "ts": "2026-08-19T23:33:41+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "rendered_lines": {
-        "1": [
-          "配對只是開始",
-          "見面，我們幫你排",
-          ""
-        ],
-        "2": [
-          "互答 6 題，才走到下一關",
-          "",
-          "配對成功不等於會見面",
-          "多數人卡在「要約嗎」這一步"
-        ],
-        "3": [
-          "兩邊都選好",
-          "約會才算成立",
-          "",
-          "一方提出至少 3 個時段",
-          "另一方選一個"
-        ],
-        "4": [
-          "如果對方沒有出現"
-        ],
-        "5": [
-          "排一場真的會發生的約會",
-          "",
-          "不用再猜對方想不想見面",
-          "流程會替你問"
-        ]
-      }
+      "candidates_since": "2026-08-19T16:38:04+08:00"
     }
   ]
 }

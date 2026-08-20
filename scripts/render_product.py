@@ -65,6 +65,17 @@ GAP_TITLE  = S_LG          # 大標底 → footer 上緣
 BAND_FILL  = 0.94          # 視覺元件最多吃掉內容帶的比例，四周留呼吸
 
 PRODUCT_TPL_ID = "tpl-product-intro-carousel"
+DESIGN_LAYOUTS = ("diagram", "price", "cta")   # 引擎繪製的設計版面，不需要照片
+
+
+def frame_specs():
+    """媒體版位的取景框比例（寬/高）。操控室裁切預覽的唯一數字來源——
+    比例只在這裡宣告，JS 端只消費存進 posts.json 的數字（A9：不准兩邊各算一套）。"""
+    return {
+        "hero": 0.62,                                        # lay_hero 手機卡 cw = ch*0.62
+        "notify_portrait": 0.60,                             # lay_notify 直式手機卡
+        "notify_landscape": round((W * (1 - 2 * MX)) / (H * 0.205), 3),
+    }
 CTA_STOCK = E.CTA_STOCK
 # 徽章在 1080×1440 公版上的實測座標（純 PIL 掃描非黑列得出，2026-08-17）
 BADGE_BOXES = [(104, 150, 517, 272), (104, 295, 517, 416)]
@@ -95,12 +106,14 @@ def _glow(img, box, radius, color=RED, spread=0.05, alpha=150):
     return img
 
 
-def _round_paste(img, src, box, radius, border=None, bw=6):
-    """把圖片以圓角貼上；border 有值就再描一圈。"""
+def _round_paste(img, src, box, radius, border=None, bw=6, focus=None):
+    """把圖片以圓角貼上；border 有值就再描一圈。focus=(fx,fy) 取景位置（0..1），
+    預設置中；語意與 fit_bg／CSS object-position 一致，操控室拖到哪就裁到哪。"""
+    fx, fy = focus or (0.5, 0.5)
     bx0, by0, bx1, by1 = box
     tw, th = bx1 - bx0, by1 - by0
     im = src.convert("RGB")
-    # 等比填滿後置中裁切（不變形、不留邊）
+    # 等比填滿後依 focus 裁切（不變形、不留邊）
     sc = max(tw / im.width, th / im.height)
     if sc > 1.5:
         # 靜默放大＝靜默糊掉。App 介面圖目前都是 375px 寬的 @1x 匯出，
@@ -109,8 +122,8 @@ def _round_paste(img, src, box, radius, border=None, bw=6):
     im = im.resize((max(1, int(im.width * sc)), max(1, int(im.height * sc))), Image.LANCZOS)
     if sc > 1.2:
         im = im.filter(ImageFilter.UnsharpMask(radius=max(1, int(sc)), percent=95, threshold=3))
-    im = im.crop(((im.width - tw)//2, (im.height - th)//2,
-                  (im.width - tw)//2 + tw, (im.height - th)//2 + th))
+    _x = int((im.width - tw) * min(max(fx, 0), 1)); _y = int((im.height - th) * min(max(fy, 0), 1))
+    im = im.crop((_x, _y, _x + tw, _y + th))
     mask = Image.new("L", (tw, th), 0)
     ImageDraw.Draw(mask).rounded_rectangle([0, 0, tw-1, th-1], radius=radius, fill=255)
     img.paste(im, (bx0, by0), mask)
@@ -226,6 +239,16 @@ def draw_lead(d, text, dark, y):
 
 
 # ── 五種構圖 ────────────────────────────────────────────────────────
+def _focus(slide):
+    cf = slide.get("crop_focus")
+    if isinstance(cf, (list, tuple)) and len(cf) == 2:
+        try:
+            return (float(cf[0]), float(cf[1]))
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
 def _star(d, cx, cy, r, fill=WHITE):
     import math
     pts = []
@@ -253,7 +276,7 @@ def lay_hero(img, d, slide, shot, dark, band):
     img = _glow(img, box, r, RED, spread=0.035, alpha=120)
     d = ImageDraw.Draw(img)
     if shot:
-        _round_paste(img, shot, box, r, border=RED, bw=int(W*0.005))
+        _round_paste(img, shot, box, r, border=RED, bw=int(W*0.005), focus=_focus(slide))
         d = ImageDraw.Draw(img)
     else:
         d.rounded_rectangle(box, radius=r, fill=DIM, outline=RED, width=int(W*0.005))
@@ -308,7 +331,7 @@ def lay_notify(img, d, slide, shot, dark, band):
         cw = int(ch * 0.60)
         cx = W // 2; cy = top + (bh - over) // 2
         box = [cx - cw, cy - ch, cx + cw, cy + ch]
-        _round_paste(img, shot, box, r, border=(58, 62, 46) if dark else (232, 200, 132), bw=4)
+        _round_paste(img, shot, box, r, border=(58, 62, 46) if dark else (232, 200, 132), bw=4, focus=_focus(slide))
         d = ImageDraw.Draw(img)
         bx0, bx1, by1 = int(W * MX), W - int(W * MX), box[3] - int(ch * 0.30)
     else:
@@ -317,7 +340,7 @@ def lay_notify(img, d, slide, shot, dark, band):
         by0 = top + (bh - card_h - over) // 2
         by1 = by0 + card_h
         if shot:
-            _round_paste(img, shot, [bx0, by0, bx1, by1], r)
+            _round_paste(img, shot, [bx0, by0, bx1, by1], r, focus=_focus(slide))
         else:
             d.rounded_rectangle([bx0, by0, bx1, by1], radius=r, fill=DIM)
         d = ImageDraw.Draw(img)

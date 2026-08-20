@@ -5,7 +5,7 @@
    與舊介面並存，隨時可從左上角切回。 */
 (() => {
 "use strict";
-const { S, MODE, $, el, esc, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid, stageOf, gatesOf, alertOf, lacksMaterial } = window.LavaCore;
+const { S, MODE, $, el, esc, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid, stageOf, gatesOf, alertOf, lacksMaterial, DESIGN_LAYOUTS } = window.LavaCore;
 
 const FILE_EFFORT = "data/effort_log.json";
 let QUEUE = [], IDX = 0, SLIDE = 1, PEND = [], PI = 0, CHOICE = {}, T0 = 0;
@@ -59,15 +59,29 @@ const srcOfCand = (s, cid) => (((s && s.candidates) || []).find(c => c.cid === c
 // object-position 的數學與引擎 fit_bg(focus) 完全一致，拖到哪就裁到哪，預覽即成品。
 let CROPDRAFT = {};   // {slide: [fx, fy]} 未儲存的拖曳；openPost 時清空
 
+function frameAspectOf(s, im) {
+  // 取景框比例只信 posts.json 存的數字（源頭是 render_product.frame_specs，A9）。
+  const fa = s && s.frame_aspect;
+  if (typeof fa === "number") return fa;
+  if (fa && typeof fa === "object" && im && im.naturalWidth)
+    return im.naturalHeight > im.naturalWidth ? fa.portrait : fa.landscape;
+  return 4 / 5;               // 知識型：滿版 4:5
+}
+
 function cropPreview(p, s, path) {
   const wrap = el("div", "rv-cropwrap");
   const box = el("div", "rv-crop");
   const im = el("img"); im.draggable = false;
+  const isProduct = !!(s && s.product_layout);
+  const applyAspect = () => { box.style.aspectRatio = String(frameAspectOf(s, im)); };
+  im.addEventListener("load", applyAspect); applyAspect();
   const focus = () => CROPDRAFT[SLIDE] || s.crop_focus || [0.5, 0.5];
   const paint = () => { const [fx, fy] = focus(); im.style.objectPosition = (fx * 100) + "% " + (fy * 100) + "%"; };
   setImg(im, path); paint();
   box.appendChild(im);
-  box.appendChild(el("div", "crop-badge", "底圖候選 · 4:5 裁切預覽 · 拖曳調整"));
+  box.appendChild(el("div", "crop-badge", isProduct
+    ? "照片將置入卡片 · 拖曳調整取景"
+    : "底圖候選 · 4:5 裁切預覽 · 拖曳調整"));
   const bar = el("div", "crop-bar");
   const save = el("button", "btn primary", "儲存裁切");
   const reset = el("button", "btn", "重設置中");
@@ -114,13 +128,16 @@ function renderStage() {
   const hero = $("#rvHero"); hero.innerHTML = "";
   const s = slideOf(p, SLIDE);
   const fin = finalOf(s);
-  const isCTA = /CTA/i.test(String((s || {}).role || ""));
+  const lay = String((s || {}).product_layout || "");
+  const isDesign = DESIGN_LAYOUTS.includes(lay) || /CTA/i.test(String((s || {}).role || ""));
   const cand = srcOfCand(s, CHOICE[SLIDE] || (s || {}).default_cid) || (((s || {}).candidates || [])[0] || {}).src;
   if (fin) {
     if (/^https?:/.test(fin)) { const e = el("img"); e.src = fin; hero.appendChild(e); }
     else hero.appendChild(img(fin));
-  } else if (isCTA) {
-    hero.appendChild(el("div", "empty", "CTA 尾板：公版，渲染時由引擎自動產生"));
+  } else if (isDesign) {
+    const name = { diagram: "卡片圖解", price: "數字卡", cta: "CTA 尾板" }[lay] || "設計版面";
+    hero.appendChild(el("div", "empty",
+      name + "：由引擎繪製，不需要照片。文字內容見右欄，成品渲染後回來看。"));
   } else if (cand) {
     hero.appendChild(cropPreview(p, s, cand));
   } else {
@@ -134,7 +151,10 @@ function renderStage() {
     const src2 = finalOf(sl) || ((sl.candidates || [])[0] || {}).src;
     if (src2 && /^https?:/.test(src2)) { const e = el("img"); e.src = src2; w.appendChild(e); }
     else if (src2) w.appendChild(img(src2));
-    else if (/CTA/i.test(String(sl.role || ""))) { const d = el("div", "cta-ph", "CTA<br>公版"); w.appendChild(d); }
+    else if (DESIGN_LAYOUTS.includes(String(sl.product_layout || "")) || /CTA/i.test(String(sl.role || ""))) {
+      const lbl = { diagram: "圖解", price: "數字卡", cta: "CTA<br>公版" }[String(sl.product_layout || "")] || "CTA<br>公版";
+      w.appendChild(el("div", "cta-ph", lbl));
+    }
     else w.appendChild(el("img", "imgfail"));
     w.appendChild(el("b", null, esc(String(sl.n))));
     w.onclick = () => { SLIDE = Number(sl.n); renderStage(); renderSide(); };

@@ -397,6 +397,10 @@ def _build_and_write(m):
             final_src = os.path.relpath(fo, REPO).replace(os.sep, "/")
             public_url = _publish_final(s["final"], pid, s["n"])  # 全圖公開版供 IG 發佈
         slide = {"n": s["n"], "role": s.get("role", ""), "candidates": cands, "final_src": final_src}
+        if s.get("product_layout"):
+            slide["product_layout"] = s["product_layout"]     # 設計版面／照片版位（操控室據此判缺料與取景框）
+        if s.get("frame_aspect") is not None:
+            slide["frame_aspect"] = s["frame_aspect"]
         if public_url:
             slide["public_url"] = public_url
         if s.get("heading"):
@@ -423,6 +427,8 @@ def _build_and_write(m):
         "created_at": m.get("created_at"), "caption": m.get("caption", ""),
         "topic_type": m.get("topic_type", "A-知識型"), "slides": slides,
     }
+    if m.get("template_id"):
+        post["template_id"] = m["template_id"]
     if m.get("writer_model"):
         post["writer_model"] = m["writer_model"]   # A/B：這篇文案由哪個模型撰寫（成效迴路比較用）
     if m.get("_copy_versions"):
@@ -657,8 +663,22 @@ def from_drive(args):
                 fp = os.path.join(args.finals_dir, "final-%02d%s" % (n, ext))
                 if os.path.exists(fp):
                     final = fp; break
-        slides.append({"n": n, "role": str(s.get("role", "")), "final": final, "candidates": cands,
-                       "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")})
+        entry = {"n": n, "role": str(s.get("role", "")), "final": final, "candidates": cands,
+                 "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")}
+        # 產品版型：把 layout 與取景框比例一路帶到 posts.json——
+        # 操控室要知道哪幾張是引擎繪製的設計版面（不需照片、不算缺料），
+        # 以及照片版位的取景框長什麼形（裁切預覽用，數字只源自 render_product）。
+        if (data.get("template_id") or "") == "tpl-product-intro-carousel":
+            import render_product as _RP
+            lay = _RP.infer_layout(s, n, len(data.get("slides", [])))
+            entry["product_layout"] = lay
+            _fs = _RP.frame_specs()
+            if lay == "hero":
+                entry["frame_aspect"] = _fs["hero"]
+            elif lay == "notify":
+                entry["frame_aspect"] = {"portrait": _fs["notify_portrait"],
+                                         "landscape": _fs["notify_landscape"]}
+        slides.append(entry)
 
     copy_versions = {}
     for mk, path in versions.items():
@@ -672,6 +692,7 @@ def from_drive(args):
             sys.stderr.write("  ! 讀 %s 版文案失敗：%s\n" % (mk, e))
     m = {"id": pid, "topic": topic_raw, "version": args.version,
          "clickup_task_id": args.clickup, "created_at": None, "_draft_json": os.path.abspath(jf),
+         "template_id": data.get("template_id") or None,
          "caption": _assemble_caption(data), "topic_type": args.topic_type, "slides": slides,
          "writer_model": data.get("writer_model"),
          "_copy_versions": copy_versions or None,

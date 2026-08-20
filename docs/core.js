@@ -207,7 +207,12 @@ const rid = pfx => pfx + "-" + Date.now().toString(36);
 // 維度 A 階段（單選）：品牌橘只給「等你」；維度 B 閘門四點（固定順序＝管線順序）；
 // 維度 C 警示（最多一個）。一張卡最多 1 階段＋4 點＋0/1 警示，禁止其他標籤。
 const slidesDone = p => (p.slides || []).every(sl => sl.final_src || sl.public_url || /CTA/i.test(String(sl.role || "")));
-const lacksMaterial = sl => !/CTA/i.test(String(sl.role || "")) && !(sl.candidates || []).length && !(sl.final_src || sl.public_url);
+// 產品版型的 diagram/price/cta 是引擎繪製的設計版面，本來就沒照片——
+// 2026-08-20 把它們誤判成「缺料 block」擋住核准，產品稿一進審稿台就被鎖死。
+const DESIGN_LAYOUTS = ["diagram", "price", "cta"];
+const lacksMaterial = sl => !/CTA/i.test(String(sl.role || ""))
+  && !DESIGN_LAYOUTS.includes(String(sl.product_layout || ""))
+  && !(sl.candidates || []).length && !(sl.final_src || sl.public_url);
 
 function stageOf(p) {
   if (p.status === "published") return ["已發", "var(--stage-done)", "done"];
@@ -232,5 +237,5 @@ function alertOf(p) {
   return null;
 }
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();
