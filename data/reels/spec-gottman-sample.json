@@ -3,7 +3,7 @@
   "base": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reels-一鏡到底測試-20260813.mp4",
   "duration": 10,
   "freeze": 1.5,
-  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片1-Gottman沉默-無音軌.mp4",
+  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片1-Gottman沉默-含音軌.mp4",
   "cards": [
     {
       "t0": 0.6,
@@ -31,5 +31,6 @@
       "brand": true,
       "hold": true
     }
-  ]
+  ],
+  "audio": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/音軌庫/bed-minimal-piano-11.5s.m4a"
 }
