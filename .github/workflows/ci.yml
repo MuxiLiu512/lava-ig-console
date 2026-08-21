@@ -1,0 +1,36 @@
+# 修法 A：每次提交自動驗證（Jesse 核准 2026-08-21）。
+# 取代「人自律」的機械閘門：語法、資料不變量、published 只增不減。
+# 注意：我們直推 main，CI 紅燈不能物理擋下提交，但會發信＋在 repo 首頁掛紅。
+name: ci
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: JS 語法（操控室四支）
+        run: for f in docs/*.js; do node --check "$f"; done
+      - name: Python 語法（scripts 與排版引擎）
+        run: |
+          python3 - <<'PYEOF'
+          import ast, glob, sys
+          bad = 0
+          for f in glob.glob("scripts/*.py") + glob.glob("排版引擎/*.py"):
+              try:
+                  ast.parse(open(f, encoding="utf-8").read())
+              except SyntaxError as e:
+                  print("✗", f, e); bad = 1
+          sys.exit(bad)
+          PYEOF
+      - name: 資料不變量（含 published 只增不減）
+        run: |
+          git show HEAD~1:data/posts.json > /tmp/prev-posts.json 2>/dev/null || true
+          python3 scripts/verify_invariants.py --prev /tmp/prev-posts.json

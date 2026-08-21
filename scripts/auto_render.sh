@@ -167,6 +167,14 @@ if echo "$OUT" | grep -q "✓RENDERED"; then
   echo "$QA" | grep -E "🔴|🟡|✅|\[block\]" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 fi
 
+# 資料不變量（修法 B）：違反＝立刻告警。「永遠不准發生」的狀態清單見 verify_invariants.py
+echo "不變量" >"$RUNMARK"
+INV=$(timeout 60 "$PY" scripts/verify_invariants.py 2>&1)
+if echo "$INV" | grep -q "🔴"; then
+  echo "$INV" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+  timeout 120 "$PY" scripts/sync_console.py alert "資料不變量違反：$(echo "$INV" | head -3 | tr '\n' '；')請立即檢查 posts.json。" >>"$LOG" 2>&1
+fi
+
 # 發佈對帳（ClickUp 發佈完成 → posts.json published）；.sync.json 無真 token 時內部自動略過
 echo "發佈對帳" >"$RUNMARK"
 REC=$(timeout 300 "$PY" scripts/sync_console.py reconcile-published 2>&1)

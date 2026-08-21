@@ -1,0 +1,52 @@
+# 修法 A：站外監工（dead man's switch）。跑在 GitHub，不跑在 Jesse 的筆電上，
+# 所以「筆電死掉」這件事終於有人能通報。異常＝開 GitHub issue（repo 擁有者會收信），
+# 恢復＝自動關 issue。只在台灣 09:00-23:00 檢查心跳（夜間筆電睡眠不算事故）。
+name: monitor
+on:
+  schedule:
+    - cron: "*/30 1-15 * * *"   # UTC 01-15 = 台灣 09-23
+  push:
+    paths: [".github/workflows/monitor.yml"]   # 改這個檔時立刻跑一次，驗證它自己
+  workflow_dispatch:
+permissions:
+  issues: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 檢查三件事
+        id: probe
+        run: |
+          FAIL=""
+          PC=$(curl -s --max-time 20 -o /dev/null -w '%{http_code}' https://muxiliu512.github.io/lava-ig-console/review.html)
+          [ "$PC" = "200" ] || FAIL="$FAIL Pages回$PC；"
+          DC=$(curl -s --max-time 20 -H "Accept: application/vnd.github.raw" -o /tmp/hb.json -w '%{http_code}' \
+            "https://api.github.com/repos/MuxiLiu512/lava-ig-console/contents/data/heartbeat.json?ref=main")
+          if [ "$DC" = "200" ]; then
+            AGE=$(python3 -c "
+          import json,datetime
+          ts=json.load(open('/tmp/hb.json'))['ts']
+          d=datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(ts)
+          print(int(d.total_seconds()//60))")
+            [ "$AGE" -le 90 ] || FAIL="$FAIL 哨兵心跳${AGE}分鐘無更新；"
+          else
+            FAIL="$FAIL 資料讀取回$DC；"
+          fi
+          echo "fail=$FAIL" >> "$GITHUB_OUTPUT"
+      - name: 異常開 issue／恢復關 issue（去重，不洗版）
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FAIL: ${{ steps.probe.outputs.fail }}
+        run: |
+          # 用標題前綴去重（不用 label：label 不存在時 gh 會直接失敗）
+          OPEN=$(gh issue list -R "$GITHUB_REPOSITORY" --state open --json number,title \
+                 -q '[.[] | select(.title | startswith("⚠ 站外監工"))][0].number')
+          if [ -n "$FAIL" ]; then
+            if [ -z "$OPEN" ]; then
+              gh issue create -R "$GITHUB_REPOSITORY" \
+                --title "⚠ 站外監工：$FAIL" \
+                --body "GitHub Actions 監工偵測到異常：$FAIL 檢查哨兵（筆電是否醒著、Drive 是否掛載）與 Pages。恢復後本 issue 會自動關閉。"
+            fi
+          else
+            [ -n "$OPEN" ] && gh issue close -R "$GITHUB_REPOSITORY" "$OPEN" -c "監工確認恢復正常，自動關閉。"
+          fi
