@@ -40,7 +40,7 @@ jobs:
         run: |
           # 用標題前綴去重（不用 label：label 不存在時 gh 會直接失敗）
           OPEN=$(gh issue list -R "$GITHUB_REPOSITORY" --state open --json number,title \
-                 -q '[.[] | select(.title | startswith("⚠ 站外監工"))][0].number')
+                 -q '[.[] | select(.title | startswith("⚠ 站外監工"))][0].number // empty' || true)
           if [ -n "$FAIL" ]; then
             if [ -z "$OPEN" ]; then
               gh issue create -R "$GITHUB_REPOSITORY" \
