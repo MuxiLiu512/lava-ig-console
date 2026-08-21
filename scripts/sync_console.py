@@ -1022,6 +1022,46 @@ IDEA_LIST = "901819351278"
 IDEA_RELEASE_FIELD = "b0deb388"
 
 
+MARKETING_PLAN = ("/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/"
+                  "Lava INC. Assets/02_Marketing/05_貼文規劃")
+
+
+def marketing_archive(args):
+    """已發佈貼文回填 02_Marketing/05_貼文規劃/YYYYMMDD 主題/（成品圖＋文案 txt）。
+    Jesse 2026-08-21：管線上線後發佈的貼文都沒進 Marketing 資料夾，行銷側看不到全貌。
+    冪等：posts.json 記 marketing_archived 旗標，補過不重複。"""
+    if not os.path.isdir(MARKETING_PLAN):
+        print("Marketing 資料夾未掛載，略過"); return
+    pj = load("posts.json"); done = 0
+    for p in pj.get("posts", []):
+        if p.get("status") != "published" or p.get("marketing_archived"):
+            continue
+        pid = p["id"]
+        date = pid.split("-", 1)[0]
+        topic = re.sub(r'[/\\:*?"<>|]', "", (p.get("topic") or pid.split("-", 1)[-1]))[:30].strip()
+        dst = os.path.join(MARKETING_PLAN, "%s %s" % (date, topic))
+        # 成品來源優先序：Drive 成品/<pid>（全解析度）→ repo docs/finals/<pid>（1350 發佈版）
+        cands = [os.path.join(DRIVE_PRODUCE, "..", "成品", pid),
+                 os.path.join(REPO, "docs", "finals", pid)]
+        src = next((c for c in cands if os.path.isdir(c) and
+                    any(f.lower().endswith((".png", ".jpg")) for f in os.listdir(c))), None)
+        if not src:
+            print("  ⏭ %s 找不到成品資料夾" % pid[:26]); continue
+        os.makedirs(dst, exist_ok=True)
+        n = 0
+        for f in sorted(os.listdir(src)):
+            if f.lower().endswith((".png", ".jpg")):
+                shutil.copy2(os.path.join(src, f), os.path.join(dst, f)); n += 1
+        if p.get("caption"):
+            with open(os.path.join(dst, "貼文文案.txt"), "w", encoding="utf-8") as f:
+                f.write(p["caption"])
+        p["marketing_archived"] = True; done += 1
+        print("  ✓ %s → 05_貼文規劃/%s（%d 張）" % (pid[:26], os.path.basename(dst), n))
+    if done:
+        save("posts.json", pj)
+    print("✓ Marketing 回填 %d 篇" % done)
+
+
 def ideas_pull(args):
     """ClickUp 靈感審核卡 → data/ideas.json（看板放行欄的資料源）。只讀不寫 ClickUp。"""
     import urllib.parse
@@ -1626,6 +1666,7 @@ def main():
     a = sub.add_parser("apply-reviews", help="操控室審核 → ClickUp 卡片狀態回寫"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=apply_reviews)
     a = sub.add_parser("reconcile-published", help="ClickUp 已發布 → posts.json 翻 published（補發佈回寫缺口）"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=reconcile_published)
     a = sub.add_parser("ingest-new", help="在製中卡×Drive 草稿 → 自動餵進操控室（哨兵用）"); a.add_argument("--limit", type=int, default=3); a.set_defaults(func=ingest_new)
+    a = sub.add_parser("marketing-archive", help="已發佈貼文回填 02_Marketing/05_貼文規劃"); a.set_defaults(func=marketing_archive)
     a = sub.add_parser("ideas-pull", help="ClickUp 靈感審核卡 → data/ideas.json（看板放行欄）"); a.set_defaults(func=ideas_pull)
     a = sub.add_parser("ideas-apply", help="看板放行/退回決定回寫 ClickUp（勾🚀放行/留言）"); a.set_defaults(func=ideas_apply)
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)

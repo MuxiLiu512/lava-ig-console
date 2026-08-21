@@ -181,6 +181,11 @@ REC=$(timeout 300 "$PY" scripts/sync_console.py reconcile-published 2>&1)
 echo "$REC" | grep -E "✓|published" >>"$LOG"
 echo "$REC" | grep -q "✓" && { git add data/ docs/finals/ assets/ 2>/dev/null; git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-reconcile: 發佈對帳" >>"$LOG" 2>&1; git push --quiet origin main >>"$LOG" 2>&1; }
 
+# 已發佈 → 回填 02_Marketing/05_貼文規劃（行銷側的完整檔案庫；冪等，補過不重複）
+echo "Marketing 回填" >"$RUNMARK"
+MKA=$(timeout 300 "$PY" scripts/sync_console.py marketing-archive 2>&1)
+echo "$MKA" | grep -E "✓ .*→|⏭" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+
 # 心跳檔（工作台健康列的資料源，§3.2）：每輪寫入本輪結果；
 # 有工作 push 就搭便車進 repo，安靜時最多 55 分鐘推一次專用 commit。
 # 健康列的判準：心跳 >70 分鐘＝哨兵斷了（Drive 未掛載時腳本 26 行提前退出、
