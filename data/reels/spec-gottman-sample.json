@@ -1,0 +1,35 @@
+{
+  "note": "樣片一號：Gottman 沉默（成效最好的輪播重新取一個點）。字卡速度全部低於 4.5 字/秒。 音軌：發佈時掛 IG 站內音樂（muted 會被降權，見 Reels 研究）。",
+  "base": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reels-一鏡到底測試-20260813.mp4",
+  "duration": 10,
+  "freeze": 1.5,
+  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片1-Gottman沉默-無音軌.mp4",
+  "cards": [
+    {
+      "t0": 0.6,
+      "t1": 3.4,
+      "text": "關係裡最危險的沉默",
+      "size": 72
+    },
+    {
+      "t0": 3.4,
+      "t1": 6.2,
+      "text": "不是吵架後的冷戰",
+      "size": 72
+    },
+    {
+      "t0": 6.2,
+      "t1": 8.4,
+      "text": "是坐在一起\n各滑各的",
+      "size": 72
+    },
+    {
+      "t0": 8.4,
+      "t1": 11.5,
+      "text": "先放下手機的人\n先見到面",
+      "size": 64,
+      "brand": true,
+      "hold": true
+    }
+  ]
+}
