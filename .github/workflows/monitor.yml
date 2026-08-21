@@ -48,5 +48,9 @@ jobs:
                 --body "GitHub Actions 監工偵測到異常：$FAIL 檢查哨兵（筆電是否醒著、Drive 是否掛載）與 Pages。恢復後本 issue 會自動關閉。"
             fi
           else
-            [ -n "$OPEN" ] && gh issue close -R "$GITHUB_REPOSITORY" "$OPEN" -c "監工確認恢復正常，自動關閉。"
+            # 注意：不能寫成 `[ -n ] && ...` 收尾。沒 issue 可關時該式回傳 false，
+            # 會讓整步被 Actions 判成 failure（首次上線就這樣紅了一次）。
+            if [ -n "$OPEN" ]; then
+              gh issue close -R "$GITHUB_REPOSITORY" "$OPEN" -c "監工確認恢復正常，自動關閉。"
+            fi
           fi
