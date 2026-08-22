@@ -53,8 +53,9 @@ def _scribble(d, box, color, w=6):
     d.arc([x0-pad-7, y0-pad+4, x1+pad+5, y1+pad+9], start=-8, end=300, fill=color, width=max(3, w-2))
 
 
-def _draw_runs_h(d, lines, base, y):
-    """橫排：每行置中，run 可各自字體/顏色/縮放；回傳（結束 y、圈註清單）。"""
+def _draw_runs_h(d, lines, base, y, gap=1.5):
+    """橫排：每行置中，run 可各自字體/顏色/縮放；回傳（結束 y、圈註清單）。
+    gap＝行距倍數；行內有放大的手寫字時要開到 1.8 以上，否則兩行貼臉。"""
     circles = []
     for runs in lines:
         widths, maxh = [], 0
@@ -69,7 +70,7 @@ def _draw_runs_h(d, lines, base, y):
             if r.get("circle"):
                 circles.append(([x, yy, x + w, yy + fs], COLORS.get(r.get("circle") if isinstance(r.get("circle"), str) else r.get("c", "white"), COLORS["neon_pink"])))
             x += w
-        y += int(maxh * 1.5)
+        y += int(maxh * gap)
     return y, circles
 
 
@@ -120,6 +121,11 @@ def card_png(card, out):
         lw = int(W * float(lg.get("w", 0.5)))
         li = li.resize((lw, int(li.height * lw / li.width)))
         im.paste(li, (int((W - lw) / 2), int(H * float(lg.get("y", 0.30)))), li)
+    if card.get("sub"):
+        fsub = _font("brand", 34)
+        t = card["sub"]
+        d.text(((W - d.textlength(t, font=fsub)) / 2, int(H * float(card.get("sub_y", 0.66)))),
+               t, font=fsub, fill=COLORS["white"])
     if card.get("handle"):
         fh = _font("brand", 30)
         t = "@LAVA_DATING"
@@ -129,7 +135,7 @@ def card_png(card, out):
         if card.get("layout") == "v":
             circles = _draw_runs_v(d, card["lines"], fs, y)
         else:
-            _, circles = _draw_runs_h(d, card["lines"], fs, y)
+            _, circles = _draw_runs_h(d, card["lines"], fs, y, gap=float(card.get("line_gap", 1.5)))
         for box, col in circles:
             _scribble(d, box, col)
     elif card.get("text"):                     # v1 相容：單字體白/墨字
@@ -157,11 +163,17 @@ def main(spec_path):
     spec = json.load(open(spec_path, encoding="utf-8"))
     base, cards = spec["base"], spec["cards"]
     freeze = float(spec.get("freeze", 0))
-    total = float(spec["duration"]) + freeze
+    total = float(spec["duration"]) + freeze + float(spec.get("boomerang", 0))
     tmp = tempfile.mkdtemp(prefix="reel-")
     inputs, filters = ["-i", base], []
     chain = "[0:v]scale=%d:%d" % (W, H)
-    if freeze:
+    boom = spec.get("boomerang")
+    if boom:
+        # 迴力鏢尾段：本片長度外的時間用「倒播最後 d 秒」補——鏡頭弧線反向繼續動，
+        # 取代凍格（凍格看起來像當機，Jesse 2026-08-22 退件）。
+        chain += "[sc];[sc]split[bf][br];[br]trim=start=%.2f:end=%.2f,setpts=PTS-STARTPTS,reverse[br2];[bf][br2]concat=n=2:v=1:a=0" % (
+            float(spec["duration"]) - float(boom), float(spec["duration"]))
+    elif freeze:
         chain += ",tpad=stop_mode=clone:stop_duration=%.2f" % freeze
     intro = spec.get("intro_fade")
     if intro:
@@ -194,7 +206,9 @@ def main(spec_path):
             if not c.get("hold"):
                 fade += ",fade=out:st=%.2f:d=0.25:alpha=1" % (t1 - 0.25)
             filters.append("[%d:v]%s[c%d]" % (i + 1, fade, i))
-        _en = "enable='between(t,%.3f,%.3f)'" % (t0, t1) if c.get("cut") else ""
+        # between 頭尾皆含，交界那一格會兩張卡同時成立（打字機疊影 bug，2026-08-22）。
+        # 改半開區間 [t0, t1)：gte*lt。
+        _en = "enable='gte(t,%.3f)*lt(t,%.3f)'" % (t0, t1) if c.get("cut") else ""
         filters.append("[v%d][c%d]overlay%s[v%d]" % (i, i, ("=" + _en) if _en else "", i + 1))
     out = spec["out"]
     cmd = ["ffmpeg", "-y"] + inputs
