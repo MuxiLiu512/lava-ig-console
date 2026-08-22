@@ -139,9 +139,98 @@
   },
   {
    "t0": 8.36,
-   "t1": 10.87,
+   "t1": 8.48,
+   "cut": true,
    "size": 66,
    "y": 0.22,
+   "line_gap": 1.8,
+   "lines": [
+    [
+     {
+      "t": "想見面，",
+      "f": "ming",
+      "c": "wine"
+     },
+     {
+      "t": "就_",
+      "f": "ming",
+      "c": "white",
+      "block": "black"
+     },
+     {
+      "t": "直接約",
+      "f": "ming",
+      "c": "white",
+      "clip_frac": 0
+     }
+    ]
+   ]
+  },
+  {
+   "t0": 8.48,
+   "t1": 8.6,
+   "cut": true,
+   "size": 66,
+   "y": 0.22,
+   "line_gap": 1.8,
+   "lines": [
+    [
+     {
+      "t": "想見面，",
+      "f": "ming",
+      "c": "wine"
+     },
+     {
+      "t": "就直_",
+      "f": "ming",
+      "c": "white",
+      "block": "black"
+     },
+     {
+      "t": "接約",
+      "f": "ming",
+      "c": "white",
+      "clip_frac": 0
+     }
+    ]
+   ]
+  },
+  {
+   "t0": 8.6,
+   "t1": 8.72,
+   "cut": true,
+   "size": 66,
+   "y": 0.22,
+   "line_gap": 1.8,
+   "lines": [
+    [
+     {
+      "t": "想見面，",
+      "f": "ming",
+      "c": "wine"
+     },
+     {
+      "t": "就直接_",
+      "f": "ming",
+      "c": "white",
+      "block": "black"
+     },
+     {
+      "t": "約",
+      "f": "ming",
+      "c": "white",
+      "clip_frac": 0
+     }
+    ]
+   ]
+  },
+  {
+   "t0": 8.72,
+   "t1": 10.87,
+   "cut": false,
+   "size": 66,
+   "y": 0.22,
+   "line_gap": 1.8,
    "lines": [
     [
      {
@@ -151,9 +240,15 @@
      },
      {
       "t": "就直接約",
-      "f": "hand",
-      "c": "neon_pink",
-      "s": 1.4
+      "f": "ming",
+      "c": "white",
+      "block": "black"
+     },
+     {
+      "t": "",
+      "f": "ming",
+      "c": "white",
+      "clip_frac": 0
      }
     ]
    ]

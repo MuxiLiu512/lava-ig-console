@@ -33,7 +33,7 @@ COLORS = {
     "white": (250, 250, 248, 255), "ink": INK, "orange": ORANGE,
     "cream": (255, 230, 169, 255), "gray": (150, 152, 146, 255),
     "neon_pink": (255, 45, 178, 255), "neon_green": (183, 255, 60, 255),
-    "wine": (116, 16, 23, 255),
+    "wine": (116, 16, 23, 255), "black": (0, 0, 0, 255),
 }
 _FCACHE = {}
 
@@ -70,6 +70,13 @@ def _draw_runs_h(im, d, lines, base, y, gap=1.5):
             fs = int(base * r.get("s", 1.0)); f = _font(r.get("f", "brand"), fs)
             yy = y + (maxh - fs)          # 底對齊，大小字同行不飄
             col = COLORS.get(r.get("c", "white"), COLORS["white"])
+            if r.get("block"):
+                # 畫重點色塊（Jesse 2026-08-23：混排手寫會錯位，重點改黑塊白字）。
+                # 塊寬跟著當下文字長度，打字時逐步變寬＝螢光筆掃過的感覺。
+                bp = int(fs * 0.22)
+                d.rounded_rectangle([x - bp, yy - bp * 0.6, x + w + bp, yy + fs + bp * 0.9],
+                                    radius=int(fs * 0.12),
+                                    fill=COLORS.get(r.get("block"), (0, 0, 0, 255)) if isinstance(r.get("block"), str) else (0, 0, 0, 255))
             frac = float(r.get("clip_frac", 1.0))
             if frac >= 1.0:
                 d.text((x, yy), r["t"], font=f, fill=col)
