@@ -1,0 +1,14 @@
+{
+  "note": "樣片一號對拍版：字卡切換全部落在 sweetly（71.78 BPM）的拍點上（beat 4/7/10）。發佈時 IG 掛「sweetly」同曲、音量 0。本曲內容絕不投廣告（紅線）。",
+  "base": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reels-一鏡到底測試-20260813.mp4",
+  "duration": 10,
+  "freeze": 3.4,
+  "audio": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/音軌庫/趨勢跟車/bed-sweetly-13.4s.m4a",
+  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片1-Gottman沉默-對拍版.mp4",
+  "cards": [
+    { "t0": 0.5,   "t1": 3.344, "text": "關係裡最危險的沉默", "size": 72 },
+    { "t0": 3.344, "t1": 5.851, "text": "不是吵架後的冷戰", "size": 72 },
+    { "t0": 5.851, "t1": 8.359, "text": "是坐在一起\n各滑各的", "size": 72 },
+    { "t0": 8.359, "t1": 13.4,  "text": "先放下手機的人\n先見到面", "size": 64, "brand": true, "hold": true }
+  ]
+}
