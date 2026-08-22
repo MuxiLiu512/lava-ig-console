@@ -167,8 +167,8 @@
    "t1": 11.0,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -180,8 +180,8 @@
    "t1": 11.065,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -193,12 +193,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.083
      }
     ]
@@ -209,8 +211,8 @@
    "t1": 11.13,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -222,12 +224,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.167
      }
     ]
@@ -238,8 +242,8 @@
    "t1": 11.195,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -251,12 +255,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.25
      }
     ]
@@ -267,8 +273,8 @@
    "t1": 11.26,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -280,12 +286,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.333
      }
     ]
@@ -296,8 +304,8 @@
    "t1": 11.325,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -309,12 +317,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.417
      }
     ]
@@ -325,8 +335,8 @@
    "t1": 11.39,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -338,12 +348,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.5
      }
     ]
@@ -354,8 +366,8 @@
    "t1": 11.455,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -367,12 +379,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.583
      }
     ]
@@ -383,8 +397,8 @@
    "t1": 11.52,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -396,12 +410,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.667
      }
     ]
@@ -412,8 +428,8 @@
    "t1": 11.585,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -425,12 +441,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.75
      }
     ]
@@ -441,8 +459,8 @@
    "t1": 11.65,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -454,12 +472,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.833
      }
     ]
@@ -470,8 +490,8 @@
    "t1": 11.715,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -483,12 +503,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 0.917
      }
     ]
@@ -499,8 +521,8 @@
    "t1": 11.78,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -512,12 +534,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1.0
      }
     ]
@@ -528,8 +552,8 @@
    "t1": 12.0,
    "cut": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -541,12 +565,14 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
@@ -558,8 +584,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -571,17 +597,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "L_"
+   "sub": "L_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.075,
@@ -589,8 +618,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -602,17 +631,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "La_"
+   "sub": "La_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.15,
@@ -620,8 +652,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -633,17 +665,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lav_"
+   "sub": "Lav_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.225,
@@ -651,8 +686,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -664,17 +699,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava_"
+   "sub": "Lava_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.3,
@@ -682,8 +720,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -695,17 +733,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava _"
+   "sub": "Lava _",
+   "sub_y": 0.72
   },
   {
    "t0": 12.375,
@@ -713,8 +754,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -726,17 +767,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava -_"
+   "sub": "Lava -_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.45,
@@ -744,8 +788,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -757,17 +801,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - _"
+   "sub": "Lava - _",
+   "sub_y": 0.72
   },
   {
    "t0": 12.525,
@@ -775,8 +822,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -788,17 +835,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把_"
+   "sub": "Lava - 把_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.6,
@@ -806,8 +856,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -819,17 +869,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把社_"
+   "sub": "Lava - 把社_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.675,
@@ -837,8 +890,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -850,17 +903,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把社交_"
+   "sub": "Lava - 把社交_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.75,
@@ -868,8 +924,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -881,17 +937,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把社交回_"
+   "sub": "Lava - 把社交回_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.825,
@@ -899,8 +958,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -912,17 +971,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把社交回歸_"
+   "sub": "Lava - 把社交回歸_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.9,
@@ -930,8 +992,8 @@
    "cut": true,
    "hold": false,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -943,17 +1005,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把社交回歸線_"
+   "sub": "Lava - 把社交回歸線_",
+   "sub_y": 0.72
   },
   {
    "t0": 12.975,
@@ -961,8 +1026,8 @@
    "cut": false,
    "hold": true,
    "size": 68,
-   "y": 0.47,
-   "line_gap": 1.8,
+   "y": 0.42,
+   "line_gap": 1.7,
    "logo": {
     "variant": "white",
     "w": 0.46,
@@ -974,17 +1039,20 @@
       "t": "聊得再多",
       "f": "ming",
       "c": "white"
-     },
+     }
+    ],
+    [
      {
       "t": "不如見一面",
       "f": "hand",
       "c": "neon_pink",
-      "s": 1.5,
+      "s": 3.0,
       "clip_frac": 1
      }
     ]
    ],
-   "sub": "Lava - 把社交回歸線下"
+   "sub": "Lava - 把社交回歸線下",
+   "sub_y": 0.72
   }
  ],
  "endcard_video": {
