@@ -201,18 +201,50 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-8SE6BYLL3N');
-document.addEventListener('click', function (e) {
-  var a = e.target && e.target.closest
-        ? e.target.closest('a[href*="apps.apple.com"],a[href*="play.google.com"]') : null;
-  if (!a) return;
+function lavaUtm() {
   var p = new URLSearchParams(window.location.search);
-  gtag('event', 'store_click', {
-    store: a.href.indexOf('apps.apple.com') > -1 ? 'ios' : 'android',
+  return {
     utm_source:  p.get('utm_source')  || '(none)',
     utm_medium:  p.get('utm_medium')  || '(none)',   // reply / bio / post / social
     utm_content: p.get('utm_content') || '(none)'    // draft_id 前 8 碼 → 回溯單則
-  });
+  };
+}
+
+document.addEventListener('click', function (e) {
+  if (!e.target || !e.target.closest) return;
+
+  // ① 商店按鈕（.dl-btn，在「用戶專區」底下）＝北極星的最後一哩
+  var a = e.target.closest('a[href*="apps.apple.com"],a[href*="play.google.com"]');
+  if (a) {
+    gtag('event', 'store_click', Object.assign(
+      { store: a.href.indexOf('apps.apple.com') > -1 ? 'ios' : 'android' }, lavaUtm()));
+    return;
+  }
+
+  // ② 商家招募（.venue-card）＝完全不同的受眾。
+  //    這頁同時服務「想交友的人」和「想合作的店家」，混在一起算轉換率會失真——
+  //    海巡帶來的流量若大量點這裡，代表我們的內容打到了錯的人。
+  var v = e.target.closest('a.venue-card,a[href*="lava-venue"]');
+  if (v) {
+    gtag('event', 'venue_click', lavaUtm());
+  }
 });
+
+// ③ 捲動深度 50%：這頁 59KB 很長，若多數人只看到第一屏就走，
+//    問題在首屏而不在流量。GA4 增強型評估只內建 90%，50% 要自己送。
+//    只送一次（用 fired 旗標），否則來回捲會灌爆事件數。
+(function () {
+  var fired = false;
+  window.addEventListener('scroll', function () {
+    if (fired) return;
+    var h = document.documentElement;
+    var depth = (h.scrollTop + window.innerHeight) / h.scrollHeight;
+    if (depth >= 0.5) {
+      fired = true;
+      gtag('event', 'scroll_50', lavaUtm());
+    }
+  }, { passive: true });
+})();
 </script>
 </head>
 <body>
