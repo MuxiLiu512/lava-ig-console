@@ -31,12 +31,15 @@
 <div class="wrap">
   <div class="dot" aria-hidden="true"></div>
   <p>正在前往 Lava…</p>
-  <p><a id="fallback" href="https://wei-yin-hwang.github.io/lava-ig-link/">沒有自動跳轉？點這裡</a></p>
+  <p><a id="fallback" href="https://muxiliu512.github.io/lava-ig-console/lp/">沒有自動跳轉？點這裡</a></p>
 </div>
 <script>
 (function () {
   // ---- 設定 ----
-  var TARGET = "https://wei-yin-hwang.github.io/lava-ig-link/";  // 轉址目的地（原 landing page）
+  var TARGET = "https://muxiliu512.github.io/lava-ig-console/lp/";  // 轉址目的地（我們自己的落地頁副本）
+  // 2026-08-22：原本指向 wei-yin-hwang/lava-ig-link。那是別人的 repo，
+  // 沒有分析碼又不能改，漏斗在那裡斷掉——量得到點擊、量不到下載。
+  // 改指向 docs/lp/（同一份頁面 + GA4 store_click 插樁），從此可自行改版。
   var ANALYTICS = {
     ga4: "G-8SE6BYLL3N"   // Lava 連結追蹤（GA4）；留空＝只轉址不計數
   };
