@@ -33,6 +33,7 @@ COLORS = {
     "white": (250, 250, 248, 255), "ink": INK, "orange": ORANGE,
     "cream": (255, 230, 169, 255), "gray": (150, 152, 146, 255),
     "neon_pink": (255, 45, 178, 255), "neon_green": (183, 255, 60, 255),
+    "wine": (116, 16, 23, 255),
 }
 _FCACHE = {}
 
@@ -53,9 +54,11 @@ def _scribble(d, box, color, w=6):
     d.arc([x0-pad-7, y0-pad+4, x1+pad+5, y1+pad+9], start=-8, end=300, fill=color, width=max(3, w-2))
 
 
-def _draw_runs_h(d, lines, base, y, gap=1.5):
+def _draw_runs_h(im, d, lines, base, y, gap=1.5):
     """橫排：每行置中，run 可各自字體/顏色/縮放；回傳（結束 y、圈註清單）。
-    gap＝行距倍數；行內有放大的手寫字時要開到 1.8 以上，否則兩行貼臉。"""
+    gap＝行距倍數；行內有放大的手寫字時要開到 1.8 以上，否則兩行貼臉。
+    run.clip_frac（0..1）＝只顯露左側比例——手寫字逐步掃出，模擬一筆一筆寫
+    （Jesse 2026-08-22：整塊跳出太突然）。版位永遠按完整行寬排，顯露中位置不動。"""
     circles = []
     for runs in lines:
         widths, maxh = [], 0
@@ -66,8 +69,17 @@ def _draw_runs_h(d, lines, base, y, gap=1.5):
         for r, w in zip(runs, widths):
             fs = int(base * r.get("s", 1.0)); f = _font(r.get("f", "brand"), fs)
             yy = y + (maxh - fs)          # 底對齊，大小字同行不飄
-            d.text((x, yy), r["t"], font=f, fill=COLORS.get(r.get("c", "white"), COLORS["white"]))
-            if r.get("circle"):
+            col = COLORS.get(r.get("c", "white"), COLORS["white"])
+            frac = float(r.get("clip_frac", 1.0))
+            if frac >= 1.0:
+                d.text((x, yy), r["t"], font=f, fill=col)
+            elif frac > 0:
+                lw, lh = int(w) + 8, int(fs * 1.45)
+                lay = Image.new("RGBA", (lw, lh), (0, 0, 0, 0))
+                ImageDraw.Draw(lay).text((0, 0), r["t"], font=f, fill=col)
+                cut = lay.crop((0, 0, max(1, int(lw * frac)), lh))
+                im.paste(cut, (int(x), int(yy)), cut)
+            if r.get("circle") and frac >= 1.0:
                 circles.append(([x, yy, x + w, yy + fs], COLORS.get(r.get("circle") if isinstance(r.get("circle"), str) else r.get("c", "white"), COLORS["neon_pink"])))
             x += w
         y += int(maxh * gap)
@@ -135,7 +147,7 @@ def card_png(card, out):
         if card.get("layout") == "v":
             circles = _draw_runs_v(d, card["lines"], fs, y)
         else:
-            _, circles = _draw_runs_h(d, card["lines"], fs, y, gap=float(card.get("line_gap", 1.5)))
+            _, circles = _draw_runs_h(im, d, card["lines"], fs, y, gap=float(card.get("line_gap", 1.5)))
         for box, col in circles:
             _scribble(d, box, col)
     elif card.get("text"):                     # v1 相容：單字體白/墨字
