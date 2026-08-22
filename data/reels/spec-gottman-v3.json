@@ -1,0 +1,166 @@
+{
+  "note": "樣片一號 v3：黑底直排開場＋手寫快閃（冷戰→已讀→沉默）＋圈註＋對拍。學〈微醺大飯店〉直排與快閃、〈愛情城市〉螢光重點與手繪圈。",
+  "base": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reels-一鏡到底測試-20260813.mp4",
+  "duration": 10,
+  "freeze": 3.4,
+  "intro_fade": {
+    "st": 3.0,
+    "d": 1.2
+  },
+  "audio": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/音軌庫/趨勢跟車/bed-sweetly-13.4s.m4a",
+  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片1-Gottman沉默-v3.mp4",
+  "cards": [
+    {
+      "t0": 0.35,
+      "t1": 1.25,
+      "cut": true,
+      "layout": "v",
+      "size": 74,
+      "y": 0.2,
+      "lines": [
+        [
+          {
+            "t": "關係裡",
+            "f": "ming",
+            "c": "white"
+          },
+          {
+            "t": "最危險的是",
+            "f": "ming",
+            "c": "white"
+          }
+        ],
+        [
+          {
+            "t": "冷戰？",
+            "f": "hand",
+            "c": "neon_pink",
+            "s": 1.7
+          }
+        ]
+      ]
+    },
+    {
+      "t0": 1.25,
+      "t1": 2.09,
+      "cut": true,
+      "layout": "v",
+      "size": 74,
+      "y": 0.2,
+      "lines": [
+        [
+          {
+            "t": "關係裡",
+            "f": "ming",
+            "c": "white"
+          },
+          {
+            "t": "最危險的是",
+            "f": "ming",
+            "c": "white"
+          }
+        ],
+        [
+          {
+            "t": "已讀？",
+            "f": "hand",
+            "c": "neon_pink",
+            "s": 1.7
+          }
+        ]
+      ]
+    },
+    {
+      "t0": 2.09,
+      "t1": 3.34,
+      "cut": true,
+      "layout": "v",
+      "size": 74,
+      "y": 0.2,
+      "lines": [
+        [
+          {
+            "t": "關係裡",
+            "f": "ming",
+            "c": "white"
+          },
+          {
+            "t": "最危險的是",
+            "f": "ming",
+            "c": "white"
+          }
+        ],
+        [
+          {
+            "t": "沉默",
+            "f": "hand",
+            "c": "neon_green",
+            "s": 2.0,
+            "circle": "neon_green"
+          }
+        ]
+      ]
+    },
+    {
+      "t0": 3.34,
+      "t1": 5.85,
+      "layout": "v",
+      "size": 72,
+      "y": 0.22,
+      "lines": [
+        [
+          {
+            "t": "是坐在一起",
+            "f": "ming",
+            "c": "ink"
+          }
+        ]
+      ]
+    },
+    {
+      "t0": 5.85,
+      "t1": 8.36,
+      "layout": "v",
+      "size": 72,
+      "y": 0.22,
+      "lines": [
+        [
+          {
+            "t": "各滑各的",
+            "f": "hand",
+            "c": "neon_pink",
+            "s": 1.45,
+            "circle": "neon_pink"
+          }
+        ]
+      ]
+    },
+    {
+      "t0": 8.36,
+      "t1": 13.4,
+      "hold": true,
+      "size": 58,
+      "y": 0.2,
+      "brand": true,
+      "brand_y": 0.78,
+      "lines": [
+        [
+          {
+            "t": "先放下手機的人",
+            "f": "ming",
+            "c": "ink"
+          }
+        ],
+        [
+          {
+            "t": "先見到面",
+            "f": "hand",
+            "c": "neon_pink",
+            "s": 1.6,
+            "circle": "orange"
+          }
+        ]
+      ]
+    }
+  ]
+}

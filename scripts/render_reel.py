@@ -15,22 +15,112 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1080, 1920
 BRAND = "/Users/mimo/my-site/brand/Lava Design System"
+REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 F_MED = os.path.join(BRAND, "fonts", "HarmonyOS_Sans_TC_Medium.ttf")
 INK = (22, 24, 26, 255)          # 亮底上的深墨
 ORANGE = (232, 66, 36, 255)      # Lava Orange，只給重點與品牌線
+
+# ── 字卡語言 v2（2026-08-22，Jesse 參考〈愛情城市〉〈微醺大飯店〉後定向）────
+# 三種字體：brand（版面公版）、ming（宋體，電影字卡感）、hand（辰宇落雁體，
+# OFL 授權可商用，檔存 repo assets/fonts；原檔 hinting 過複雜，PIL 的 FreeType
+# 畫不動（too many function definitions），已用 fontTools 去 hinting 另存 nohint 版）。
+FONT_FILES = {
+    "brand": (F_MED, 0),
+    "ming":  ("/System/Library/Fonts/Supplemental/Songti.ttc", 2),   # Songti TC Bold
+    "hand":  (os.path.join(REPO, "assets", "fonts", "ChenYuluoyan-Thin-nohint.ttf"), 0),
+}
+COLORS = {
+    "white": (250, 250, 248, 255), "ink": INK, "orange": ORANGE,
+    "cream": (255, 230, 169, 255), "gray": (150, 152, 146, 255),
+    "neon_pink": (255, 45, 178, 255), "neon_green": (183, 255, 60, 255),
+}
+_FCACHE = {}
+
+
+def _font(key, size):
+    path, idx = FONT_FILES.get(key, FONT_FILES["brand"])
+    k = (key, size)
+    if k not in _FCACHE:
+        _FCACHE[k] = ImageFont.truetype(path, size, index=idx)
+    return _FCACHE[k]
+
+
+def _scribble(d, box, color, w=6):
+    """手繪感圈註：兩圈帶缺口、微錯位的橢圓（參考稿的白色麥克筆圈選）。"""
+    x0, y0, x1, y1 = box
+    pad = 26
+    d.arc([x0-pad, y0-pad, x1+pad, y1+pad], start=-30, end=318, fill=color, width=w)
+    d.arc([x0-pad-7, y0-pad+4, x1+pad+5, y1+pad+9], start=-8, end=300, fill=color, width=max(3, w-2))
+
+
+def _draw_runs_h(d, lines, base, y):
+    """橫排：每行置中，run 可各自字體/顏色/縮放；回傳（結束 y、圈註清單）。"""
+    circles = []
+    for runs in lines:
+        widths, maxh = [], 0
+        for r in runs:
+            f = _font(r.get("f", "brand"), int(base * r.get("s", 1.0)))
+            widths.append(d.textlength(r["t"], font=f)); maxh = max(maxh, f.size)
+        x = (W - sum(widths)) / 2
+        for r, w in zip(runs, widths):
+            fs = int(base * r.get("s", 1.0)); f = _font(r.get("f", "brand"), fs)
+            yy = y + (maxh - fs)          # 底對齊，大小字同行不飄
+            d.text((x, yy), r["t"], font=f, fill=COLORS.get(r.get("c", "white"), COLORS["white"]))
+            if r.get("circle"):
+                circles.append(([x, yy, x + w, yy + fs], COLORS.get(r.get("circle") if isinstance(r.get("circle"), str) else r.get("c", "white"), COLORS["neon_pink"])))
+            x += w
+        y += int(maxh * 1.5)
+    return y, circles
+
+
+def _draw_runs_v(d, lines, base, y_top):
+    """直排：一行＝一直欄，右欄先讀（右→左）；字由上而下。微醺大飯店的排法。"""
+    circles = []
+    col_ws = []
+    for runs in lines:
+        col_ws.append(max(int(base * r.get("s", 1.0)) for r in runs))
+    gap = int(base * 0.55)
+    total_w = sum(col_ws) + gap * (len(col_ws) - 1)
+    x_right = (W + total_w) / 2
+    for runs, cw in zip(lines, col_ws):
+        x_right -= cw
+        y = y_top
+        for r in runs:
+            fs = int(base * r.get("s", 1.0)); f = _font(r.get("f", "brand"), fs)
+            col = COLORS.get(r.get("c", "white"), COLORS["white"])
+            x = x_right + (cw - fs) / 2
+            ry0 = y
+            for ch in r["t"]:
+                d.text((x, y), ch, font=f, fill=col)
+                y += int(fs * 1.12)
+            if r.get("circle"):
+                circles.append(([x - 6, ry0, x + fs + 6, y - int(fs * 0.08)],
+                                COLORS.get(r.get("circle") if isinstance(r.get("circle"), str) else "neon_pink", COLORS["neon_pink"])))
+            y += int(fs * 0.3)
+        x_right -= gap
+    return circles
 
 
 def card_png(card, out):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     fs = int(card.get("size", 68))
-    f = ImageFont.truetype(F_MED, fs)
     y = int(H * card.get("y", 0.24))
-    for line in card["text"].split("\n"):
-        w = d.textlength(line, font=f)
-        d.text(((W - w) / 2, y), line, font=f, fill=INK)
-        y += int(fs * 1.45)
+    if card.get("lines"):                      # v2：runs 語法（雙字體/變色/圈註/直排）
+        if card.get("layout") == "v":
+            circles = _draw_runs_v(d, card["lines"], fs, y)
+        else:
+            _, circles = _draw_runs_h(d, card["lines"], fs, y)
+        for box, col in circles:
+            _scribble(d, box, col)
+    elif card.get("text"):                     # v1 相容：單字體白/墨字
+        f = ImageFont.truetype(F_MED, fs)
+        for line in card["text"].split("\n"):
+            w = d.textlength(line, font=f)
+            d.text(((W - w) / 2, y), line, font=f, fill=INK)
+            y += int(fs * 1.45)
     if card.get("brand"):
+        y = int(H * card.get("brand_y", 0.62)) if card.get("lines") else y
         y += int(fs * 0.35)
         d.rectangle([W/2 - 36, y, W/2 + 36, y + 6], fill=ORANGE)
         y += 30
@@ -54,6 +144,10 @@ def main(spec_path):
     chain = "[0:v]scale=%d:%d" % (W, H)
     if freeze:
         chain += ",tpad=stop_mode=clone:stop_duration=%.2f" % freeze
+    intro = spec.get("intro_fade")
+    if intro:
+        # 黑底開場：字卡先講話，影像晚點浮現（微醺大飯店的開場手法）
+        chain += ",fade=in:st=%.2f:d=%.2f" % (float(intro.get("st", 1.0)), float(intro.get("d", 1.4)))
     chain += "[v0]"
     filters.append(chain)
     for i, c in enumerate(cards):
@@ -61,12 +155,16 @@ def main(spec_path):
         card_png(c, png)
         inputs += ["-framerate", "30", "-loop", "1", "-t", "%.2f" % total, "-i", png]
         t0, t1 = float(c["t0"]), float(c["t1"])
-        # 淡入淡出走 alpha，柔而不搶；最後一張留到片尾不淡出（凍格＝品牌停留）
-        fade = "format=rgba,fade=in:st=%.2f:d=0.25:alpha=1" % t0
-        if not c.get("hold"):
-            fade += ",fade=out:st=%.2f:d=0.25:alpha=1" % (t1 - 0.25)
-        filters.append("[%d:v]%s[c%d]" % (i + 1, fade, i))
-        filters.append("[v%d][c%d]overlay[v%d]" % (i, i, i + 1))
+        if c.get("cut"):
+            # 快閃卡：硬切不淡，靠 overlay enable 控制時窗（參考片的文字快閃節奏）
+            filters.append("[%d:v]format=rgba[c%d]" % (i + 1, i))
+        else:
+            fade = "format=rgba,fade=in:st=%.2f:d=0.25:alpha=1" % t0
+            if not c.get("hold"):
+                fade += ",fade=out:st=%.2f:d=0.25:alpha=1" % (t1 - 0.25)
+            filters.append("[%d:v]%s[c%d]" % (i + 1, fade, i))
+        _en = "enable='between(t,%.3f,%.3f)'" % (t0, t1) if c.get("cut") else ""
+        filters.append("[v%d][c%d]overlay%s[v%d]" % (i, i, ("=" + _en) if _en else "", i + 1))
     out = spec["out"]
     cmd = ["ffmpeg", "-y"] + inputs
     audio = spec.get("audio")
