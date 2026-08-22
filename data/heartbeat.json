@@ -1,8 +1,10 @@
 {
- "ts": "2026-08-22T09:49:36+08:00",
+ "ts": "2026-08-22T10:50:16+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
  "typography_ok": false,
- "errors": []
+ "errors": [
+  "[08-22 10:40] ⚠ git pull 失敗（連續 1 輪），本輪略過"
+ ]
 }
