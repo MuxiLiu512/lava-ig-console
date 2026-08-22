@@ -1,5 +1,5 @@
 {
-  "note": "樣片一 v4：同 v3＋品牌尾板（模糊淡出、Logo、產品 hook）。A/B 組別：負面開場。",
+  "note": "樣片三：A/B 負面組（不同主題驗證）。",
   "base": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reels-一鏡到底測試-20260813.mp4",
   "duration": 10,
   "freeze": 3.4,
@@ -8,54 +8,23 @@
     "d": 1.2
   },
   "audio": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/音軌庫/趨勢跟車/bed-sweetly-13.4s.m4a",
-  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片1-負面-Gottman沉默-v4.mp4",
+  "out": "/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/Lava INC. Assets/02_Marketing/98_Lava-IG-AI產文系統/Reels素材/reel-樣片3-負面-聊越久.mp4",
   "cards": [
     {
       "t0": 0.35,
       "t1": 1.25,
-      "cut": true,
       "layout": "v",
       "size": 74,
       "y": 0.2,
       "lines": [
         [
           {
-            "t": "關係裡",
+            "t": "聊了三個月",
             "f": "ming",
             "c": "white"
           },
           {
-            "t": "最危險的是",
-            "f": "ming",
-            "c": "white"
-          }
-        ],
-        [
-          {
-            "t": "冷戰？",
-            "f": "hand",
-            "c": "neon_pink",
-            "s": 1.7
-          }
-        ]
-      ]
-    },
-    {
-      "t0": 1.25,
-      "t1": 2.09,
-      "cut": true,
-      "layout": "v",
-      "size": 74,
-      "y": 0.2,
-      "lines": [
-        [
-          {
-            "t": "關係裡",
-            "f": "ming",
-            "c": "white"
-          },
-          {
-            "t": "最危險的是",
+            "t": "然後呢？",
             "f": "ming",
             "c": "white"
           }
@@ -68,49 +37,80 @@
             "s": 1.7
           }
         ]
-      ]
+      ],
+      "cut": true
     },
     {
-      "t0": 2.09,
-      "t1": 3.34,
-      "cut": true,
+      "t0": 1.25,
+      "t1": 2.09,
       "layout": "v",
       "size": 74,
       "y": 0.2,
       "lines": [
         [
           {
-            "t": "關係裡",
+            "t": "聊了三個月",
             "f": "ming",
             "c": "white"
           },
           {
-            "t": "最危險的是",
+            "t": "然後呢？",
             "f": "ming",
             "c": "white"
           }
         ],
         [
           {
-            "t": "沉默",
+            "t": "敷衍？",
+            "f": "hand",
+            "c": "neon_pink",
+            "s": 1.7
+          }
+        ]
+      ],
+      "cut": true
+    },
+    {
+      "t0": 2.09,
+      "t1": 3.34,
+      "layout": "v",
+      "size": 74,
+      "y": 0.2,
+      "lines": [
+        [
+          {
+            "t": "聊了三個月",
+            "f": "ming",
+            "c": "white"
+          },
+          {
+            "t": "然後呢？",
+            "f": "ming",
+            "c": "white"
+          }
+        ],
+        [
+          {
+            "t": "消失",
             "f": "hand",
             "c": "neon_green",
             "s": 2.0,
             "circle": "neon_green"
           }
         ]
-      ]
+      ],
+      "cut": true
     },
     {
       "t0": 3.34,
       "t1": 5.85,
       "layout": "v",
-      "size": 72,
-      "y": 0.22,
+      "size": 74,
+      "y": 0.2,
       "lines": [
         [
           {
-            "t": "是坐在一起",
+            "t": "見面前聊越久",
             "f": "ming",
             "c": "ink"
           }
@@ -121,12 +121,12 @@
       "t0": 5.85,
       "t1": 8.36,
       "layout": "v",
-      "size": 72,
-      "y": 0.22,
+      "size": 74,
+      "y": 0.2,
       "lines": [
         [
           {
-            "t": "各滑各的",
+            "t": "成功率越低",
             "f": "hand",
             "c": "neon_pink",
             "s": 1.45,
@@ -139,22 +139,19 @@
       "t0": 8.36,
       "t1": 10.87,
       "size": 58,
-      "y": 0.2,
+      "y": 0.22,
       "lines": [
         [
           {
-            "t": "先放下手機的人",
+            "t": "想見面，",
             "f": "ming",
             "c": "ink"
-          }
-        ],
-        [
+          },
           {
-            "t": "先見到面",
+            "t": "就直接約",
             "f": "hand",
             "c": "neon_pink",
-            "s": 1.6,
-            "circle": "orange"
+            "s": 1.4
           }
         ]
       ]

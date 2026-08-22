@@ -101,11 +101,30 @@ def _draw_runs_v(d, lines, base, y_top):
     return circles
 
 
+LOGOS = {
+    "white": os.path.join(BRAND, "assets", "logos", "logo-white-horizontal.png"),
+    "black": os.path.join(BRAND, "assets", "logos", "logo-black-horizontal.png"),
+    "orange": os.path.join(BRAND, "assets", "logos", "logo-orange-horizontal.png"),
+}
+
+
 def card_png(card, out):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     fs = int(card.get("size", 68))
     y = int(H * card.get("y", 0.24))
+    lg = card.get("logo")
+    if lg:
+        lp = LOGOS.get(lg.get("variant", "white"), LOGOS["white"])
+        li = Image.open(lp).convert("RGBA")
+        lw = int(W * float(lg.get("w", 0.5)))
+        li = li.resize((lw, int(li.height * lw / li.width)))
+        im.paste(li, (int((W - lw) / 2), int(H * float(lg.get("y", 0.30)))), li)
+    if card.get("handle"):
+        fh = _font("brand", 30)
+        t = "@LAVA_DATING"
+        d.text(((W - d.textlength(t, font=fh)) / 2, int(H * float(card.get("handle_y", 0.72)))),
+               t, font=fh, fill=COLORS["gray"])
     if card.get("lines"):                      # v2：runs 語法（雙字體/變色/圈註/直排）
         if card.get("layout") == "v":
             circles = _draw_runs_v(d, card["lines"], fs, y)
@@ -148,8 +167,20 @@ def main(spec_path):
     if intro:
         # 黑底開場：字卡先講話，影像晚點浮現（微醺大飯店的開場手法）
         chain += ",fade=in:st=%.2f:d=%.2f" % (float(intro.get("st", 1.0)), float(intro.get("d", 1.4)))
-    chain += "[v0]"
-    filters.append(chain)
+    ec = spec.get("endcard_video")
+    if ec:
+        # 品牌尾板（Jesse 2026-08-22）：結尾不能只剩聲音，影像模糊淡出、
+        # Logo 與產品 hook 接手。做法：split 出一路 gblur＋壓暗，xfade 溶接回主路。
+        chain += "[vpre]"
+        filters.append(chain)
+        filters.append("[vpre]split[ea][eb]")
+        filters.append("[eb]gblur=sigma=%s,eq=brightness=-%.2f[eb2]"
+                       % (ec.get("blur", 16), float(ec.get("darken", 0.22))))
+        filters.append("[ea][eb2]xfade=transition=fade:duration=%.2f:offset=%.2f[v0]"
+                       % (float(ec.get("d", 0.7)), float(ec.get("t0"))))
+    else:
+        chain += "[v0]"
+        filters.append(chain)
     for i, c in enumerate(cards):
         png = os.path.join(tmp, "c%d.png" % i)
         card_png(c, png)
