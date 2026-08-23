@@ -35,6 +35,13 @@ _spec = importlib.util.spec_from_file_location("rp5", _ENGINE)
 E = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(E)
 
 W, H = E.W, E.H
+# 品牌字型的完整字重。設計系統的 fonts/ 原本只收了 Thin／Regular／Medium，
+# 於是尾板整版同一個重量、價格數字比原稿細三分之一，只能用描邊硬撐
+# （Jesse 2026-08-23：字重沒有層級）。Bold／Black 原廠就有，2026-08-23 補進 fonts/。
+# 實測：原稿 NT$0 的筆寬÷墨高＝0.169，Medium 0.106、Bold 0.145、Black 0.169——
+# 也就是原稿那個數字本來就是 Black 畫的，不是 Bold。
+F_BOLD  = E.BRAND + "/fonts/HarmonyOS_Sans_TC_Bold.ttf"
+F_BLACK = E.BRAND + "/fonts/HarmonyOS_Sans_TC_Black.ttf"
 # 品牌色票正本：Lava Design System/colors_and_type.css
 DARK  = (12, 14, 8)        # --olive-dark  #0C0E08
 CREAM = (255, 230, 169)    # --soft-yellow #FFE6A9
@@ -44,7 +51,10 @@ WHITE = (255, 255, 255)
 OFFWHITE = (245, 247, 242)  # --neutral-50 #F5F7F2，大字用；純白壓在近黑底上會刺眼
 DIM   = (30, 33, 24)       # 深底上的襯卡
 
-MX          = 0.055        # 左右邊界，與 render_post_v5 一致
+# 原稿全頁左右邊界實測 0.075W（導言、註腳、footer、紅卡左緣量到的都是 81/1080）。
+# 這裡原本沿用知識型引擎的 0.055，所以每一張的內容都比原稿寬一點點，
+# 疊起來就是「說不出哪裡但就是不一樣」（Jesse 2026-08-23 要求對標）。
+MX          = 0.075
 TOP_Y       = 0.052        # logo／頁碼上緣
 LEAD_FS     = 0.030        # 上方導言
 TITLE_FS    = 0.064        # 下方大標起始字級
@@ -81,9 +91,6 @@ FS_PRICE_AMOUNT = 0.168    # 原稿墨高 183px@1080 → 0.168W
 PRICE_PAD_X       = 0.061  # 筆位左內縮 ÷ 卡寬（56/918）
 PRICE_LABEL_TOP   = 0.207  # 標籤墨頂 ÷ 卡高（81/392）
 PRICE_AMOUNT_TOP  = 0.401  # 數字墨頂 ÷ 卡高（157/392）
-# 原稿數字的筆寬÷墨高＝0.169，品牌字型 Medium 只有 0.106，細了三分之一。
-# 沒有 Bold 可用，用描邊補回來；0.037×字級實測可還原到 0.172。
-PRICE_AMOUNT_STROKE = 0.037
 FS_PRICE_NOTE = 0.0267     # 原稿註腳墨高 28px@1080（先前 0.036 目測，大了三成）
 
 PRODUCT_TPL_ID = "tpl-product-intro-carousel"
@@ -179,20 +186,21 @@ def draw_logo(img, dark):
 
 
 def draw_footer(d, dark):
-    """深底沿用引擎公版；米底要換深色字，引擎那支寫死白色。"""
-    if dark:
-        return E.draw_footer(d)
+    """深底原本直接呼叫引擎公版，但公版把邊界寫死 0.055。產品版型的 MX 改成 0.075 之後
+    footer 會單獨留在舊位置、跟整頁差 0.02W（2026-08-23）。所以兩種底色都自己畫，
+    邊界一律取本檔的 MX，這樣以後改 MX 不會再漏掉某個元件。"""
+    col = WHITE if dark else INK
     fs = int(W * 0.022); f = ImageFont.truetype(E.F_REG, fs)
     y = H - int(H * 0.052) - fs
-    d.text((int(W * MX), y), "@LAVA_DATING", font=f, fill=INK)
+    d.text((int(W * MX), y), "@LAVA_DATING", font=f, fill=col)
     t1, t2 = "LAVA", "不聊天的交友軟體"
     w1 = d.textlength(t1, font=f); w2 = d.textlength(t2, font=f)
     dot_r = fs * 0.10; gap = fs * 0.38
     x = W - int(W * MX) - (w1 + gap*2 + w2)
-    d.text((x, y), t1, font=f, fill=INK)
+    d.text((x, y), t1, font=f, fill=col)
     cy = y + fs * 0.58
-    d.ellipse([x+w1+gap-dot_r, cy-dot_r, x+w1+gap+dot_r, cy+dot_r], fill=INK)
-    d.text((x + w1 + gap*2, y), t2, font=f, fill=INK)
+    d.ellipse([x+w1+gap-dot_r, cy-dot_r, x+w1+gap+dot_r, cy+dot_r], fill=col)
+    d.text((x + w1 + gap*2, y), t2, font=f, fill=col)
 
 
 # ── 文字塊 ──────────────────────────────────────────────────────────
@@ -421,10 +429,8 @@ def lay_price(img, d, slide, shot, dark, band):
     lab = (slide.get("price_label") or "").strip()
     amt = (slide.get("price_amount") or "").strip()
 
-    def _ink_text(txt, f, ink_top, sw=0):
-        bb = f.getbbox(txt, stroke_width=sw) if sw else f.getbbox(txt)
-        d.text((penx, ink_top - bb[1]), txt, font=f, fill=WHITE,
-               stroke_width=sw, stroke_fill=WHITE if sw else None)
+    def _ink_text(txt, f, ink_top):
+        d.text((penx, ink_top - f.getbbox(txt)[1]), txt, font=f, fill=WHITE)
 
     if lab:
         _ink_text(lab, ImageFont.truetype(E.F_MED, int(W * FS_PRICE_LABEL)),
@@ -433,14 +439,13 @@ def lay_price(img, d, slide, shot, dark, band):
         fs = int(W * FS_PRICE_AMOUNT)
         ink_top = by0 + int(chh * PRICE_AMOUNT_TOP)
         while fs > int(W * 0.05):
-            f = ImageFont.truetype(E.F_MED, fs)
-            sw = max(1, int(fs * PRICE_AMOUNT_STROKE))
-            bb = f.getbbox(amt, stroke_width=sw)
+            f = ImageFont.truetype(F_BLACK, fs)          # 原稿就是 Black
+            bb = f.getbbox(amt)
             if (bb[2] - bb[0] <= cw_ - 2 * int(cw_ * PRICE_PAD_X)
                     and ink_top + (bb[3] - bb[1]) <= by1 - int(chh * 0.10)):
                 break
             fs = int(fs * 0.93)
-        _ink_text(amt, f, ink_top, sw=max(1, int(fs * PRICE_AMOUNT_STROKE)))
+        _ink_text(amt, f, ink_top)
     if note:
         # 貼齊 footer 上方（原稿實測 0.862H），由下往上長，長句自動斷行
         lines = _recolor(E.wrap_semantic(note, _accent(dark), f_note, bx1 - bx0, d),
@@ -502,12 +507,11 @@ def _render_cta(slide, out_path, dark=True):
     img.paste(lg, (int(W * MX), y), lg); d = ImageDraw.Draw(img)
     y += lg.height + S_LG                    # 標語再往下讓一階
     fs_tag = int(W * 0.074)                  # 0.062 → 0.074
-    # 描邊從 0.022 收到 0.010：中文筆畫多，描太粗會把「歸」「線」的內部空隙糊掉，
-    # 看起來就是「字型怪怪的」。字級本身放大才是拉重量的主力，描邊只補最後一點。
-    tag_col = OFFWHITE if dark else INK      # 純白在近黑底上過刺眼（Jesse 2026-08-23）
+    # 改用真的 Bold 字重，不再描邊。描邊在中文會吃掉「歸」「線」的內部空隙，
+    # 放大後看起來就像選錯字型（Jesse 2026-08-23）。
+    tag_col = OFFWHITE if dark else INK      # 純白在近黑底上過刺眼
     d.text((int(W * MX), y), (slide.get("tagline") or "讓社交回歸線下"),
-           font=ImageFont.truetype(E.F_MED, fs_tag), fill=tag_col,
-           stroke_width=max(1, int(fs_tag * 0.010)), stroke_fill=tag_col)
+           font=ImageFont.truetype(F_BOLD, fs_tag), fill=tag_col)
     y += int(fs_tag * 1.25) + S_LG
     d.line([(int(W*MX), y), (int(W*MX) + int(W*0.075), y)], fill=RED, width=int(H*0.004))
     y += S_LG
