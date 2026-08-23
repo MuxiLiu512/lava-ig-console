@@ -3535,7 +3535,7 @@
      "final_src": null,
      "product_layout": "hero",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-1.jpg",
-     "source": "external-design",
+     "source": "engine-render",
      "heading": "不只喜歡你。\n【這次約會，我請。】"
     },
     {
@@ -3545,7 +3545,7 @@
      "final_src": null,
      "product_layout": "diagram",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-2.jpg",
-     "source": "external-design",
+     "source": "engine-render",
      "heading": "讓他【優先】看見你",
      "display_copy": "遇到真的想認識的人，\n別只等對方剛好滑到你。"
     },
@@ -3556,7 +3556,7 @@
      "final_src": null,
      "product_layout": "notify",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-3.jpg",
-     "source": "external-design",
+     "source": "engine-render",
      "heading": "是讓對方知道：\n你【真的想見他】。",
      "display_copy": "Superlike 不是普通右滑。"
     },
@@ -3567,8 +3567,8 @@
      "final_src": null,
      "product_layout": "price",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-4.jpg",
-     "source": "external-design",
-     "display_copy": "如果彼此都願意見面，\n這次由你買單。"
+     "source": "engine-render",
+     "display_copy": "如果彼此都願意見面，\n這次約會由送出者買單。"
     },
     {
      "n": 5,
@@ -3577,14 +3577,16 @@
      "final_src": null,
      "product_layout": "cta",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-5.jpg",
-     "source": "external-design",
+     "source": "engine-render",
      "heading": "送出你的 Superlike",
-     "display_copy": "下一個真的想見的人，\n別只右滑。"
+     "display_copy": "下一個真的想見的人，\n別只右滑。",
+     "tagline": "讓社交回歸線下"
     }
    ],
    "template_id": "tpl-product-intro-carousel",
    "writer_model": "claude",
-   "asset_origin": "Jesse 外部設計稿（Desktop/Lava/Marketing/IG 貼文/20260823 superlike 介紹）"
+   "asset_origin": "引擎渲染，版面依 Jesse 2026-08-23 原稿實測校正；spec 在 data/product-specs/",
+   "render_spec": "data/product-specs/20260823-superlike介紹.json"
   }
  ]
 }

@@ -1,0 +1,57 @@
+{
+ "id": "20260823-superlike介紹",
+ "topic": "Superlike 是什麼：把心意變成一場真的約會",
+ "template_id": "tpl-product-intro-carousel",
+ "slides": [
+  {
+   "index": 1,
+   "product_layout": "hero",
+   "bg": "dark",
+   "role": "Hook",
+   "eyebrow": "Lava Superlike",
+   "heading": "不只喜歡你。\n【這次約會，我請。】",
+   "crop_focus": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "index": 2,
+   "product_layout": "diagram",
+   "bg": "dark",
+   "display_copy": "遇到真的想認識的人，\n別只等對方剛好滑到你。",
+   "heading": "讓他【優先】看見你"
+  },
+  {
+   "index": 3,
+   "product_layout": "notify",
+   "bg": "cream",
+   "display_copy": "Superlike 不是普通右滑。",
+   "notify_text": "有人送出了 Superlike",
+   "heading": "是讓對方知道：\n你【真的想見他】。",
+   "crop_focus": [
+    0.5,
+    0.3
+   ]
+  },
+  {
+   "index": 4,
+   "product_layout": "price",
+   "bg": "dark",
+   "display_copy": "如果彼此都願意見面，\n這次約會由送出者買單。",
+   "price_label": "對方的 Lava 媒合服務費",
+   "price_amount": "NT$0",
+   "price_note": "如約會最終未成立或遭對方取消，服務費將全額退還"
+  },
+  {
+   "index": 5,
+   "product_layout": "cta",
+   "bg": "dark",
+   "role": "CTA",
+   "display_copy": "下一個真的想見的人，\n別只右滑。",
+   "heading": "送出你的 Superlike",
+   "cta_button": "打開 Lava",
+   "tagline": "讓社交回歸線下"
+  }
+ ]
+}

@@ -103,7 +103,9 @@ def main():
                 sc = WORK_EDGE / max(im.size)
                 if sc < 1:
                     im = im.resize((int(im.width*sc), int(im.height*sc)), Image.LANCZOS)
-                cid = "abc"[got]
+                # 別寫死 "abc"：--per-slide 只要大於 3 就 IndexError（2026-08-23 選五官清楚
+                # 的照片、想一次看 14 張候選時炸掉）。候選數上限應該由參數決定，不是由字串長度。
+                cid = "abcdefghijklmnopqrstuvwxyz"[got]
                 out = os.path.join(a.outdir, "slide-%d%s.png" % (idx, cid))
                 im.save(out)
                 used.add(path); got += 1

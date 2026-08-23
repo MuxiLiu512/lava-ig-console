@@ -64,17 +64,30 @@ GAP_STAGE  = S_XL          # 內容帶 → 大標
 GAP_TITLE  = S_LG          # 大標底 → footer 上緣
 BAND_FILL  = 0.94          # 視覺元件最多吃掉內容帶的比例，四周留呼吸
 
+# 媒體版位的比例與高度：全部量自 Jesse 原稿（1080×1350），不是憑感覺調的。
+# hero 原本寫 0.62「手機比例」是為了放 App 截圖；改放真人照片後太窄，
+# 臉會被切掉兩側（Jesse 2026-08-23：五官要清晰可見、不要裁切）。
+HERO_ASPECT = 0.75         # 原稿卡框 0.394W × 0.419H → 寬高比 0.75
+HERO_H      = 0.419        # 卡片總高佔 H
+NOTIFY_H    = 0.2325       # 橫幅媒體帶總高佔 H（原稿 3.06:1，舊值 0.205 等於 3.47:1 太扁）
+
 PRODUCT_TPL_ID = "tpl-product-intro-carousel"
 DESIGN_LAYOUTS = ("diagram", "price", "cta")   # 引擎繪製的設計版面，不需要照片
+
+
+def footer_top():
+    """footer 文字的上緣。render_slide 與 lay_price 都要用它定位，
+    寫兩份遲早會分岔（self-check A9：同一個數字只能有一個來源）。"""
+    return H - int(H * 0.052) - int(W * 0.022)
 
 
 def frame_specs():
     """媒體版位的取景框比例（寬/高）。操控室裁切預覽的唯一數字來源——
     比例只在這裡宣告，JS 端只消費存進 posts.json 的數字（A9：不准兩邊各算一套）。"""
     return {
-        "hero": 0.62,                                        # lay_hero 手機卡 cw = ch*0.62
+        "hero": HERO_ASPECT,
         "notify_portrait": 0.60,                             # lay_notify 直式手機卡
-        "notify_landscape": round((W * (1 - 2 * MX)) / (H * 0.205), 3),
+        "notify_landscape": round((W * (1 - 2 * MX)) / (H * NOTIFY_H), 3),
     }
 CTA_STOCK = E.CTA_STOCK
 # 徽章在 1080×1440 公版上的實測座標（純 PIL 掃描非黑列得出，2026-08-17）
@@ -262,8 +275,8 @@ def _star(d, cx, cy, r, fill=WHITE):
 def lay_hero(img, d, slide, shot, dark, band):
     """封面：中央截圖卡＋紅框光暈＋星標徽章，兩側襯卡。整組置中於內容帶。"""
     top, bot = band; bh = bot - top
-    ch = int(min(H * 0.245, bh * BAND_FILL / 2))   # ch＝半高
-    cw = int(ch * 0.62)                            # 手機比例
+    ch = int(min(H * HERO_H / 2, bh * BAND_FILL / 2))   # ch＝半高
+    cw = int(ch * HERO_ASPECT)
     cx, cy = W // 2, (top + bot) // 2
     box = [cx - cw, cy - ch, cx + cw, cy + ch]
     r = int(W * CARD_R)
@@ -291,7 +304,9 @@ def lay_diagram(img, d, slide, shot, dark, band):
     """卡片堆疊圖解：兩張淡卡 →（箭頭）→ 紅色重點卡。"""
     top, bot = band
     cy = (top + bot) // 2
-    ch = int(min(H * 0.135, (bot - top) * BAND_FILL / 2))
+    # 0.155 是量出來的，不是調出來的：Jesse 原稿（1080×1350）紅卡佔 0.276W × 0.310H，
+    # 半高即 0.155H，而 cw/ch 實測 0.712 與既有的 0.72 一致（2026-08-23）。
+    ch = int(min(H * 0.155, (bot - top) * BAND_FILL / 2))
     cw = int(ch * 0.72); r = int(W * 0.028)
     lx = int(W * 0.30)
     for i in range(2):
@@ -336,7 +351,7 @@ def lay_notify(img, d, slide, shot, dark, band):
         bx0, bx1, by1 = int(W * MX), W - int(W * MX), box[3] - int(ch * 0.30)
     else:
         bx0, bx1 = int(W * MX), W - int(W * MX)
-        card_h = int(min(H * 0.205, bh * BAND_FILL - over))
+        card_h = int(min(H * NOTIFY_H, bh * BAND_FILL - over))
         by0 = top + (bh - card_h - over) // 2
         by1 = by0 + card_h
         if shot:
@@ -370,10 +385,12 @@ def lay_price(img, d, slide, shot, dark, band):
     top, bot = band; bh = bot - top
     bx0, bx1 = int(W * MX), W - int(W * MX)
     note = (slide.get("price_note") or "").strip()
-    f_note = ImageFont.truetype(E.F_REG, int(W * 0.026))
-    note_h = (int(W * 0.026) + S_MD) if note else 0
-    card_h = int(min(H * 0.20, bh * BAND_FILL - note_h))
-    by0 = top + (bh - card_h - note_h) // 2
+    # 註腳不佔內容帶：原稿裡它貼在版面底部（實測 0.862H，footer 之上），
+    # 不是黏在紅卡下緣。掛在帶內會同時吃掉卡片高度、又讓卡片被推離視覺中心。
+    fs_note = int(W * 0.036)
+    f_note = ImageFont.truetype(E.F_REG, fs_note)
+    card_h = int(min(H * 0.290, bh * BAND_FILL))    # 原稿實測 0.290H（舊值 0.20 偏小）
+    by0 = top + (bh - card_h) // 2
     by1 = by0 + card_h
     r = int(W * 0.030)
     img = _glow(img, [bx0, by0, bx1, by1], r, RED, spread=0.03, alpha=110)
@@ -382,13 +399,14 @@ def lay_price(img, d, slide, shot, dark, band):
     px = bx0 + int(W * 0.032)
     lab = (slide.get("price_label") or "").strip()
     amt = (slide.get("price_amount") or "").strip()
-    inner = by0 + S_MD
+    fs_lab = int(W * 0.043)                          # 原稿實測（舊值 0.030 偏小）
+    inner = by0 + S_SM
     if lab:
-        f = ImageFont.truetype(E.F_MED, int(W * 0.030))
+        f = ImageFont.truetype(E.F_MED, fs_lab)
         d.text((px, inner), lab, font=f, fill=WHITE)
-        inner += int(W * 0.030) + S_SM
+        inner += fs_lab + S_XS
     if amt:
-        fs = int(W * 0.115)
+        fs = int(W * 0.235)                          # 原稿實測字高約舊值的兩倍
         while fs > int(W * 0.05):
             f = ImageFont.truetype(E.F_MED, fs)
             if (d.textlength(amt, font=f) <= (bx1 - bx0) - 2*int(W*0.032)
@@ -397,7 +415,11 @@ def lay_price(img, d, slide, shot, dark, band):
             fs = int(fs * 0.93)
         d.text((px, inner), amt, font=f, fill=WHITE)
     if note:
-        d.text((px, by1 + S_MD), note, font=f_note, fill=_accent(dark))
+        # 貼齊 footer 上方（原稿實測 0.862H），由下往上長，長句自動斷行
+        lines = _recolor(E.wrap_semantic(note, _accent(dark), f_note, bx1 - bx0, d),
+                         _accent(dark), _accent(dark))
+        lh = int(fs_note * 1.4)
+        E.draw_lines(d, lines, bx0, footer_top() - S_LG - len(lines) * lh, f_note, lh)
     return img, d
 
 
@@ -445,9 +467,9 @@ def _render_cta(slide, out_path, dark=True):
     lg = Image.open(E.LOGO if dark else E.LOGO.replace("white", "black")).convert("RGBA")
     lw = int(W * 0.42); lg = lg.resize((lw, int(lg.height * lw / lg.width)))
     img.paste(lg, (int(W * MX), y), lg); d = ImageDraw.Draw(img)
-    y += lg.height + S_XS
+    y += lg.height + S_SM                    # 原本 S_XS，字標與標語黏太緊（Jesse 2026-08-23）
     fs_tag = int(W * 0.062)
-    d.text((int(W * MX), y), "不聊天的交友軟體",
+    d.text((int(W * MX), y), (slide.get("tagline") or "讓社交回歸線下"),
            font=ImageFont.truetype(E.F_MED, fs_tag), fill=_fg(dark))
     y += int(fs_tag * 1.25) + S_MD
     d.line([(int(W*MX), y), (int(W*MX) + int(W*0.075), y)], fill=RED, width=int(H*0.004))
@@ -458,9 +480,9 @@ def _render_cta(slide, out_path, dark=True):
         fs_h = int(W * 0.052)
         d.text((int(W * MX), y), hl, font=ImageFont.truetype(E.F_MED, fs_h), fill=_accent(dark))
         y += int(fs_h * 1.25)
-    footer_top = H - int(H * 0.052) - int(W * 0.022)
+    ftop = footer_top()
     _pill(d, (slide.get("cta_button") or "打開 Lava"), int(W * MX),
-          max(y + S_XL, footer_top - S_LG - int(W * 0.036 + W*0.036*1.24)), dark)
+          max(y + S_XL, ftop - S_LG - int(W * 0.036 + W*0.036*1.24)), dark)
     draw_footer(d, dark)
     img.save(out_path)
     return out_path
@@ -479,7 +501,7 @@ def render_slide(slide, shot_path, out_path, idx=None, total=None):
     draw_pagination(d, idx, total, dark)
 
     shot = Image.open(shot_path) if (shot_path and os.path.exists(shot_path)) else None
-    footer_top = H - int(H * 0.052) - int(W * 0.022)
+    ftop = footer_top()
 
     # 封面沒有導言，改用下方的 eyebrow 標籤；其餘版型 display_copy 走導言
     eyebrow = (slide.get("eyebrow") or "").strip() if layout == "hero" else ""
@@ -494,7 +516,7 @@ def render_slide(slide, shot_path, out_path, idx=None, total=None):
     lines, f_t, fs_t = title_lines(slide.get("heading") or "", d, dark)
     lh = int(fs_t * 1.30)
     title_h = len(lines) * lh
-    title_top = footer_top - GAP_TITLE - eb_h - title_h
+    title_top = ftop - GAP_TITLE - eb_h - title_h
 
     band = (lead_bottom + GAP_LEAD, title_top - GAP_STAGE)
     img, d = LAYOUTS[layout](img, d, slide, shot, dark, band)
