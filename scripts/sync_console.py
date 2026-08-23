@@ -427,6 +427,10 @@ def _build_and_write(m):
         "created_at": m.get("created_at"), "caption": m.get("caption", ""),
         "topic_type": m.get("topic_type", "A-知識型"), "slides": slides,
     }
+    if m.get("facts"):
+        # 事實出處清單 [{claim, source, quote}]。撰稿端負責產，fact_check.py 負責驗。
+        # 沒有這個欄位，任何帶數字或研究引用的稿都會被 I9 擋在排程之前（這是刻意的）。
+        post["facts"] = m["facts"]
     if m.get("template_id"):
         post["template_id"] = m["template_id"]
     if m.get("writer_model"):
@@ -692,6 +696,7 @@ def from_drive(args):
             sys.stderr.write("  ! 讀 %s 版文案失敗：%s\n" % (mk, e))
     m = {"id": pid, "topic": topic_raw, "version": args.version,
          "clickup_task_id": args.clickup, "created_at": None, "_draft_json": os.path.abspath(jf),
+         "facts": data.get("facts") or [],
          "template_id": data.get("template_id") or None,
          "caption": _assemble_caption(data), "topic_type": args.topic_type, "slides": slides,
          "writer_model": data.get("writer_model"),

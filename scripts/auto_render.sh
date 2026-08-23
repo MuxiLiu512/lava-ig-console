@@ -160,6 +160,14 @@ echo "排版檢查" >"$RUNMARK"
 TYP=$(timeout 300 "$PY" scripts/check_typography.py --write 2>&1 | tail -8)
 echo "$TYP" | grep -E "違規 [1-9]|稿檔損毀|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
 
+# 事實查核（機械，不需 LLM）：抓文案裡的數字與研究引用，驗每一條有沒有活著且對得上的出處。
+# 起因是 2026-08-23 的 Jason Arday 靈感卡：宣稱「今天台灣熱搜」但當日榜上沒有，
+# 年齡數字也與英媒說法不符，唯一出處還是每天會變的 trends 首頁。
+# 結果寫進 posts.json 的 fact 欄，操控室「事實」閘門讀它，I9 擋住未過的稿排程。
+echo "事實查核" >"$RUNMARK"
+FCT=$(timeout 600 "$PY" scripts/fact_check.py 2>&1 | tail -12)
+echo "$FCT" | grep -E "🔴|⚠|\[block\]" | sed "s/^/[$(date '+%m-%d %H:%M')] 事實/" >>"$LOG"
+
 # 成篇視覺總檢：有新成品才跑（撞主體/浮水印/不可讀/出處異常——逐張閘門看不出來的）
 if echo "$OUT" | grep -q "✓RENDERED"; then
   echo "成篇總檢" >"$RUNMARK"

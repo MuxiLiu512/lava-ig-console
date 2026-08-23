@@ -90,12 +90,29 @@ def main():
         except Exception as e:
             fail("I8", "無法比對上一版：%s" % e)
 
+    # I9 事實查核未過的貼文不得排程（Jesse 2026-08-23：只要涉及事實就必須再三確認）。
+    # 只看 scheduled：閘門要擋在「即將送出」那一刻。已發佈的是歷史，圖換不掉、
+    # 回頭罰它只會讓這條不變量永遠是紅的，然後大家學會忽略紅燈（那才是真正的風險）。
+    # 也只擋 block 級：warn（出處抓不到內容，需人工看）不擋，否則付費牆來源會永遠卡死。
+    for p in posts:
+        if p.get("status") != "scheduled":
+            continue
+        f = p.get("fact")
+        if f is None:
+            fail("I9", "%s 已排程/已發佈但從未跑過事實查核" % p["id"])
+        elif not f.get("pass"):
+            blk = [i for i in (f.get("issues") or [])
+                   if (i.get("severity") or i.get("sev")) == "block"]
+            if blk:
+                fail("I9", "%s 事實查核有 %d 項 block：%s"
+                     % (p["id"], len(blk), blk[0].get("line", "")[:60]))
+
     if BAD:
         print("🔴 不變量違反 %d 條：" % len(BAD))
         for r, d in BAD:
             print("  [%s] %s" % (r, d))
         return 1
-    print("✅ 不變量 I1-I8 全過（posts %d、archived %d）" % (len(posts), len(arch)))
+    print("✅ 不變量 I1-I9 全過（posts %d、archived %d）" % (len(posts), len(arch)))
     return 0
 
 

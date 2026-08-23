@@ -228,7 +228,9 @@ function stageOf(p) {
 function gatesOf(p) {
   const g = x => (x == null ? "" : x.pass === true ? "ok"
     : ((x.issues || []).some(i => i.severity === "block" || i.sev === "block") ? "bad" : "warn"));
-  return [["文案", ""], ["事實", ""], ["視覺", g(p.qa)], ["排版", g(p.typography)]];
+  // 「事實」原本是空格子（有欄位沒有人填）。2026-08-23 起由 scripts/fact_check.py 填，
+  // 檢查每個數字／研究引用有沒有活著且對得上的出處。
+  return [["文案", ""], ["事實", g(p.fact)], ["視覺", g(p.qa)], ["排版", g(p.typography)]];
 }
 
 function alertOf(p) {
