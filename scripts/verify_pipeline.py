@@ -19,10 +19,17 @@ def _shot_broken(path):
 def main():
     posts = load("posts.json").get("posts", [])
     audit = [p for p in posts if p.get("status") in ("awaiting_review", "approved")]
-    bad = 0
+    bad, skipped = 0, 0
     print("%-30s %4s │ %s" % ("貼文", "候選", "來源組成（劇照/Wiki/CC/書封/生成）＋紅燈"))
     print("─" * 86)
     for p in audit:
+        # 外部設計稿（Jesse 或設計端直接交成品圖）沒有 forager 候選，
+        # 套抓取檢查會永遠亮「候選過少／只有生成圖」兩盞假紅燈（2026-08-23 superlike 那篇抓到）。
+        # 這裡不是放行，是宣告「抓取檢查對這篇不適用」——品質由交稿端負責。
+        if p.get("asset_origin"):
+            print("%-30s %4s │ 外部設計稿，抓取檢查不適用" % (p["id"][:30], "—"))
+            skipped += 1
+            continue
         kinds = collections.Counter()
         flats, nolabel, lowq = 0, 0, 0
         total = 0
@@ -66,7 +73,8 @@ def main():
             bad += 1
         print("%-30s %4d │ %s %s" % (p["id"][:30], total, mix, " ".join(flags)))
     print("─" * 86)
-    print("結論：%d/%d 篇綠燈" % (len(audit) - bad, len(audit)))
+    n = len(audit) - skipped
+    print("結論：%d/%d 篇綠燈%s" % (n - bad, n, "（外部設計稿 %d 篇不計）" % skipped if skipped else ""))
     sys.exit(1 if bad else 0)
 
 if __name__ == "__main__":

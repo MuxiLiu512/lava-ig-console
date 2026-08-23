@@ -1,5 +1,10 @@
 # 機密：PAT 只存本機，絕不進 repo
+# 用萬用字元而不是單一檔名：2026-08-23 抓到 .sync.json.bak（含 PAT／IG token／ClickUp token）
+# 因為只忽略了精確檔名而暴露在公開 repo 的待加入清單裡。備份、暫存、換手檔一律吃進來。
 .sync.json
+.sync.json.*
+.sync.*.json
+*.sync.json
 # 系統雜物
 .DS_Store
 __pycache__/

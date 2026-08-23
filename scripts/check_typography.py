@@ -143,6 +143,14 @@ def main():
             continue
         if not only and p.get("status") == "published":
             continue
+        # 外部設計稿沒有 WF01 草稿檔，套「找不到文案＝稿檔損毀」會誤判成事故。
+        # 但也不能當成通過：排版是設計端做的，我們確實沒驗過，必須留成黃燈而不是綠燈。
+        if p.get("asset_origin"):
+            results[p["id"]] = {"ts": sc._now_iso(), "pass": False, "issues": [
+                {"slide": None, "rule": "external_design", "severity": "warn",
+                 "line": "外部設計稿，排版由交稿端負責，本檢查未驗"}]}
+            print("⚪ %s：外部設計稿，排版未驗（非違規）" % p["id"][:30])
+            continue
         e = ls.get(p["id"]) or {}
         jf = e.get("draft_json") or (e.get("draft_jsons") or {}).get("claude")
         if not jf or not os.path.exists(jf):
