@@ -3525,7 +3525,7 @@
    "status": "awaiting_review",
    "clickup_task_id": null,
    "created_at": "2026-08-23T13:24:49+08:00",
-   "caption": "有些人你右滑過去，心裡其實想的是「真希望他也剛好滑到我」。\n\nSuperlike 就是為了這一刻做的。\n\n一般右滑，是等演算法哪天把你排到他面前。\nSuperlike 會把你直接排到前面，而且對方看得出來——這不是隨手一滑。\n\n它還帶著一句話：\n如果我們真的見面，這一場我請。\n對方的 Lava 媒合服務費是 0 元。\n不用先考慮錢，只要考慮想不想見你。\n\n沒有見到面，就不會產生約會服務費。\n\n我們把 Superlike 做成有重量的東西，是因為在 Lava，喜歡不是收藏，是要走到見面的。\n每 3 天你會有一個。留給那個你真的想見的人。\n\n▸ 打開 Lava，送出你的 Superlike\n\n#Lava #不聊天的交友軟體 #Superlike #台灣交友 #交友軟體 #線下約會 #約會 #真人驗證 #見面才算數 #脫單",
+   "caption": "有些人你右滑過去，心裡其實想的是「真希望他也剛好滑到我」。\n\nSuperlike 就是為了這一刻做的。\n\n一般右滑，是等演算法哪天把你排到他面前。\nSuperlike 會把你直接排到前面，而且對方看得出來——這不是隨手一滑。\n\n它還帶著一句話：\n如果我們真的見面，這一場我請。\n對方的 Lava 媒合服務費是 0 元。\n不用先考慮錢，只要考慮想不想見你。\n\n沒有見到面，就不會產生約會服務費。\n\n我們把 Superlike 做成有重量的東西，是因為在 Lava，喜歡不是收藏，是要走到見面的。\n每 3 天你會有一個。留給那個你真的想見的人。\n\n▸ 打開 Lava，送出你的 Superlike\n\n#Lava #讓社交回歸線下 #Superlike #台灣交友 #交友軟體 #線下約會 #約會 #真人驗證 #見面才算數 #脫單",
    "topic_type": "B-產品介紹型",
    "slides": [
     {
@@ -3535,7 +3535,7 @@
      "final_src": null,
      "product_layout": "hero",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-1.jpg",
-     "source": "engine-render",
+     "source": "jesse-original-design",
      "heading": "不只喜歡你。\n【這次約會，我請。】"
     },
     {
@@ -3545,7 +3545,7 @@
      "final_src": null,
      "product_layout": "diagram",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-2.jpg",
-     "source": "engine-render",
+     "source": "jesse-original-design",
      "heading": "讓他【優先】看見你",
      "display_copy": "遇到真的想認識的人，\n別只等對方剛好滑到你。"
     },
@@ -3556,7 +3556,7 @@
      "final_src": null,
      "product_layout": "notify",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-3.jpg",
-     "source": "engine-render",
+     "source": "jesse-original-design",
      "heading": "是讓對方知道：\n你【真的想見他】。",
      "display_copy": "Superlike 不是普通右滑。"
     },
@@ -3567,7 +3567,7 @@
      "final_src": null,
      "product_layout": "price",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-4.jpg",
-     "source": "engine-render",
+     "source": "jesse-original-design",
      "display_copy": "如果彼此都願意見面，\n這次約會由送出者買單。"
     },
     {
@@ -3577,7 +3577,7 @@
      "final_src": null,
      "product_layout": "cta",
      "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260823-superlike%E4%BB%8B%E7%B4%B9/slide-5.jpg",
-     "source": "engine-render",
+     "source": "jesse-original-design",
      "heading": "送出你的 Superlike",
      "display_copy": "下一個真的想見的人，\n別只右滑。",
      "tagline": "讓社交回歸線下"
@@ -3585,8 +3585,7 @@
    ],
    "template_id": "tpl-product-intro-carousel",
    "writer_model": "claude",
-   "asset_origin": "引擎渲染，版面依 Jesse 2026-08-23 原稿實測校正；spec 在 data/product-specs/",
-   "render_spec": "data/product-specs/20260823-superlike介紹.json"
+   "asset_origin": "Jesse 原始設計稿（Desktop/Lava/Marketing/IG 貼文/20260823 superlike 介紹）"
   }
  ]
 }
