@@ -41,6 +41,7 @@ CREAM = (255, 230, 169)    # --soft-yellow #FFE6A9
 RED   = (232, 66, 36)      # --lava-orange #E84224
 INK   = (41, 45, 28)       # --night-olive #292D1C（米底上的深色字）
 WHITE = (255, 255, 255)
+OFFWHITE = (245, 247, 242)  # --neutral-50 #F5F7F2，大字用；純白壓在近黑底上會刺眼
 DIM   = (30, 33, 24)       # 深底上的襯卡
 
 MX          = 0.055        # 左右邊界，與 render_post_v5 一致
@@ -76,6 +77,14 @@ NOTIFY_H    = 0.2325       # 橫幅媒體帶總高佔 H（原稿 3.06:1，舊值
 # 校準法：在同一支字型下逐級渲染，量 getbbox 高度，取最接近原稿墨高的那級。
 FS_PRICE_LABEL  = 0.032    # 原稿墨高 33px@1080 → 0.032W
 FS_PRICE_AMOUNT = 0.168    # 原稿墨高 183px@1080 → 0.168W
+# 卡內位置全用卡片自身比例表示，卡片改大改小都跟著走（原稿卡 918×392px@1080）
+PRICE_PAD_X       = 0.061  # 筆位左內縮 ÷ 卡寬（56/918）
+PRICE_LABEL_TOP   = 0.207  # 標籤墨頂 ÷ 卡高（81/392）
+PRICE_AMOUNT_TOP  = 0.401  # 數字墨頂 ÷ 卡高（157/392）
+# 原稿數字的筆寬÷墨高＝0.169，品牌字型 Medium 只有 0.106，細了三分之一。
+# 沒有 Bold 可用，用描邊補回來；0.037×字級實測可還原到 0.172。
+PRICE_AMOUNT_STROKE = 0.037
+FS_PRICE_NOTE = 0.0267     # 原稿註腳墨高 28px@1080（先前 0.036 目測，大了三成）
 
 PRODUCT_TPL_ID = "tpl-product-intro-carousel"
 DESIGN_LAYOUTS = ("diagram", "price", "cta")   # 引擎繪製的設計版面，不需要照片
@@ -394,33 +403,44 @@ def lay_price(img, d, slide, shot, dark, band):
     note = (slide.get("price_note") or "").strip()
     # 註腳不佔內容帶：原稿裡它貼在版面底部（實測 0.862H，footer 之上），
     # 不是黏在紅卡下緣。掛在帶內會同時吃掉卡片高度、又讓卡片被推離視覺中心。
-    fs_note = int(W * 0.036)
+    fs_note = int(W * FS_PRICE_NOTE)
     f_note = ImageFont.truetype(E.F_REG, fs_note)
     card_h = int(min(H * 0.290, bh * BAND_FILL))    # 原稿實測 0.290H（舊值 0.20 偏小）
     by0 = top + (bh - card_h) // 2
     by1 = by0 + card_h
     r = int(W * 0.030)
-    img = _glow(img, [bx0, by0, bx1, by1], r, RED, spread=0.03, alpha=110)
+    img = _glow(img, [bx0, by0, bx1, by1], r, RED, spread=0.022, alpha=70)   # 原稿暈光很收斂
     d = ImageDraw.Draw(img)
     d.rounded_rectangle([bx0, by0, bx1, by1], radius=r, fill=RED)
-    px = bx0 + int(W * 0.032)
+    # 卡內定位一律用「卡片自身的比例」＋墨水對齊，不用間距階梯往下堆。
+    # 階梯是版面級的節奏，套進卡片內部就會和原稿對不上（Jesse 2026-08-23 兩次退件）：
+    # 原稿的標籤墨頂在卡高 20.7%、數字墨頂在 40.1%、數字墨底距卡底 13.3%。
+    # 另外 d.text 的 y 是 ascent 頂不是墨頂，直接餵座標必偏，所以先扣掉 getbbox 的位移。
+    cw_, chh = bx1 - bx0, by1 - by0
+    penx = bx0 + int(cw_ * PRICE_PAD_X)
     lab = (slide.get("price_label") or "").strip()
     amt = (slide.get("price_amount") or "").strip()
-    fs_lab = int(W * FS_PRICE_LABEL)
-    inner = by0 + S_SM
+
+    def _ink_text(txt, f, ink_top, sw=0):
+        bb = f.getbbox(txt, stroke_width=sw) if sw else f.getbbox(txt)
+        d.text((penx, ink_top - bb[1]), txt, font=f, fill=WHITE,
+               stroke_width=sw, stroke_fill=WHITE if sw else None)
+
     if lab:
-        f = ImageFont.truetype(E.F_MED, fs_lab)
-        d.text((px, inner), lab, font=f, fill=WHITE)
-        inner += fs_lab + S_XS
+        _ink_text(lab, ImageFont.truetype(E.F_MED, int(W * FS_PRICE_LABEL)),
+                  by0 + int(chh * PRICE_LABEL_TOP))
     if amt:
         fs = int(W * FS_PRICE_AMOUNT)
+        ink_top = by0 + int(chh * PRICE_AMOUNT_TOP)
         while fs > int(W * 0.05):
             f = ImageFont.truetype(E.F_MED, fs)
-            if (d.textlength(amt, font=f) <= (bx1 - bx0) - 2*int(W*0.032)
-                    and inner + fs * 1.15 <= by1 - S_XS):
+            sw = max(1, int(fs * PRICE_AMOUNT_STROKE))
+            bb = f.getbbox(amt, stroke_width=sw)
+            if (bb[2] - bb[0] <= cw_ - 2 * int(cw_ * PRICE_PAD_X)
+                    and ink_top + (bb[3] - bb[1]) <= by1 - int(chh * 0.10)):
                 break
             fs = int(fs * 0.93)
-        d.text((px, inner), amt, font=f, fill=WHITE)
+        _ink_text(amt, f, ink_top, sw=max(1, int(fs * PRICE_AMOUNT_STROKE)))
     if note:
         # 貼齊 footer 上方（原稿實測 0.862H），由下往上長，長句自動斷行
         lines = _recolor(E.wrap_semantic(note, _accent(dark), f_note, bx1 - bx0, d),
@@ -480,11 +500,14 @@ def _render_cta(slide, out_path, dark=True):
     lg = Image.open(E.LOGO if dark else E.LOGO.replace("white", "black")).convert("RGBA")
     lw = int(W * 0.42); lg = lg.resize((lw, int(lg.height * lw / lg.width)))
     img.paste(lg, (int(W * MX), y), lg); d = ImageDraw.Draw(img)
-    y += lg.height + S_MD
-    fs_tag = int(W * 0.062)
+    y += lg.height + S_LG                    # 標語再往下讓一階
+    fs_tag = int(W * 0.074)                  # 0.062 → 0.074
+    # 描邊從 0.022 收到 0.010：中文筆畫多，描太粗會把「歸」「線」的內部空隙糊掉，
+    # 看起來就是「字型怪怪的」。字級本身放大才是拉重量的主力，描邊只補最後一點。
+    tag_col = OFFWHITE if dark else INK      # 純白在近黑底上過刺眼（Jesse 2026-08-23）
     d.text((int(W * MX), y), (slide.get("tagline") or "讓社交回歸線下"),
-           font=ImageFont.truetype(E.F_MED, fs_tag), fill=_fg(dark),
-           stroke_width=max(1, int(fs_tag * 0.022)), stroke_fill=_fg(dark))
+           font=ImageFont.truetype(E.F_MED, fs_tag), fill=tag_col,
+           stroke_width=max(1, int(fs_tag * 0.010)), stroke_fill=tag_col)
     y += int(fs_tag * 1.25) + S_LG
     d.line([(int(W*MX), y), (int(W*MX) + int(W*0.075), y)], fill=RED, width=int(H*0.004))
     y += S_LG
