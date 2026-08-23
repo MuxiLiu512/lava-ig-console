@@ -71,6 +71,12 @@ HERO_ASPECT = 0.75         # 原稿卡框 0.394W × 0.419H → 寬高比 0.75
 HERO_H      = 0.419        # 卡片總高佔 H
 NOTIFY_H    = 0.2325       # 橫幅媒體帶總高佔 H（原稿 3.06:1，舊值 0.205 等於 3.47:1 太扁）
 
+# 價格卡字級：拿原稿的**實際墨高**去反解字級得到的，不是用 cap-height 比例估的。
+# 先前用 0.72 這個經驗值換算，把 NT$0 估成 0.235W，實際大了 40%（Jesse 2026-08-23 退件）。
+# 校準法：在同一支字型下逐級渲染，量 getbbox 高度，取最接近原稿墨高的那級。
+FS_PRICE_LABEL  = 0.032    # 原稿墨高 33px@1080 → 0.032W
+FS_PRICE_AMOUNT = 0.168    # 原稿墨高 183px@1080 → 0.168W
+
 PRODUCT_TPL_ID = "tpl-product-intro-carousel"
 DESIGN_LAYOUTS = ("diagram", "price", "cta")   # 引擎繪製的設計版面，不需要照片
 
@@ -232,13 +238,14 @@ def _lead_color(dark):
     return CREAM if dark else (92, 98, 76)
 
 
-def draw_lead(d, text, dark, y):
+def draw_lead(d, text, dark, y, font_path=None):
     """上方導言：兩三行小字。行尾標點同 title_lines 的規則——
-    作者手打的斷行保留，寬度造成的斷行才清。"""
+    作者手打的斷行保留，寬度造成的斷行才清。
+    font_path 讓呼叫端降字重（尾板要用 Regular 才拉得開層級）。"""
     if not (text or "").strip():
         return y
     col = _lead_color(dark)
-    fs = int(W * LEAD_FS); f = ImageFont.truetype(E.F_MED, fs)
+    fs = int(W * LEAD_FS); f = ImageFont.truetype(font_path or E.F_MED, fs)
     lh = int(fs * 1.55); max_w = int(W * 0.62)
     lines = []
     for para in [x for x in text.split("\n") if x.strip()]:
@@ -399,14 +406,14 @@ def lay_price(img, d, slide, shot, dark, band):
     px = bx0 + int(W * 0.032)
     lab = (slide.get("price_label") or "").strip()
     amt = (slide.get("price_amount") or "").strip()
-    fs_lab = int(W * 0.043)                          # 原稿實測（舊值 0.030 偏小）
+    fs_lab = int(W * FS_PRICE_LABEL)
     inner = by0 + S_SM
     if lab:
         f = ImageFont.truetype(E.F_MED, fs_lab)
         d.text((px, inner), lab, font=f, fill=WHITE)
         inner += fs_lab + S_XS
     if amt:
-        fs = int(W * 0.235)                          # 原稿實測字高約舊值的兩倍
+        fs = int(W * FS_PRICE_AMOUNT)
         while fs > int(W * 0.05):
             f = ImageFont.truetype(E.F_MED, fs)
             if (d.textlength(amt, font=f) <= (bx1 - bx0) - 2*int(W*0.032)
@@ -460,21 +467,28 @@ def _pill(d, text, x, y, dark):
 
 
 def _render_cta(slide, out_path, dark=True):
-    """尾板：徽章 → 字標 → 標語 → 紅線 → 導言 → 重點句 → 按鈕，全部走間距階梯。"""
+    """尾板：徽章 → 字標 → 標語 → 紅線 → 導言 → 重點句 → 按鈕，全部走間距階梯。
+
+    字重層級：品牌字型只有 Thin／Regular／Medium 三個字重，沒有 Bold。
+    尾板原本整版都用 Medium，於是四段文字看起來一樣重，讀者不知道先看哪一句
+    （Jesse 2026-08-23：字重沒有層級，看起來很吃力）。做法是兩端拉開——
+    標語用 Medium＋描邊做假粗體，導言降到 Regular，中間留給 Medium。
+    """
     img = _bg(dark); d = ImageDraw.Draw(img)
     img, d = lay_cta(img, d, slide, None, dark)
     y = BADGE_BOTTOM[0] + S_XL
     lg = Image.open(E.LOGO if dark else E.LOGO.replace("white", "black")).convert("RGBA")
     lw = int(W * 0.42); lg = lg.resize((lw, int(lg.height * lw / lg.width)))
     img.paste(lg, (int(W * MX), y), lg); d = ImageDraw.Draw(img)
-    y += lg.height + S_SM                    # 原本 S_XS，字標與標語黏太緊（Jesse 2026-08-23）
+    y += lg.height + S_MD
     fs_tag = int(W * 0.062)
     d.text((int(W * MX), y), (slide.get("tagline") or "讓社交回歸線下"),
-           font=ImageFont.truetype(E.F_MED, fs_tag), fill=_fg(dark))
-    y += int(fs_tag * 1.25) + S_MD
+           font=ImageFont.truetype(E.F_MED, fs_tag), fill=_fg(dark),
+           stroke_width=max(1, int(fs_tag * 0.022)), stroke_fill=_fg(dark))
+    y += int(fs_tag * 1.25) + S_LG
     d.line([(int(W*MX), y), (int(W*MX) + int(W*0.075), y)], fill=RED, width=int(H*0.004))
-    y += S_MD
-    y = draw_lead(d, slide.get("display_copy") or "", dark, y) + S_MD
+    y += S_LG
+    y = draw_lead(d, slide.get("display_copy") or "", dark, y, font_path=E.F_REG) + S_LG
     hl = re.sub(r"[【】〖〗]", "", (slide.get("heading") or "").strip())
     if hl:
         fs_h = int(W * 0.052)
