@@ -20,7 +20,18 @@
    "product_layout": "diagram",
    "bg": "dark",
    "display_copy": "遇到真的想認識的人，\n別只等對方剛好滑到你。",
-   "heading": "讓他【優先】看見你"
+   "heading": "讓他【優先】看見你",
+   "app_card": {
+    "photo": "assets/product/20260823-superlike/jesse-card.png",
+    "photo_focus": [
+     0.5,
+     0.5
+    ],
+    "name": "Jesse, 30",
+    "job": "Lava",
+    "school": "Cass Business School",
+    "bio": "希望透過 Lava 把社交這件事帶回線下，讓認識朋友變得更有溫度。"
+   }
   },
   {
    "index": 3,

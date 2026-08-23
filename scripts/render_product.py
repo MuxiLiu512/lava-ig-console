@@ -48,6 +48,7 @@ CREAM = (255, 230, 169)    # --soft-yellow #FFE6A9
 RED   = (232, 66, 36)      # --lava-orange #E84224
 INK   = (41, 45, 28)       # --night-olive #292D1C（米底上的深色字）
 WHITE = (255, 255, 255)
+GOLD  = (240, 190, 60)     # App 的 superlike 星鈕底色
 OFFWHITE = (245, 247, 242)  # --neutral-50 #F5F7F2，大字用；純白壓在近黑底上會刺眼
 DIM   = (30, 33, 24)       # 深底上的襯卡
 
@@ -324,6 +325,107 @@ def lay_hero(img, d, slide, shot, dark, band):
     return img, d
 
 
+# App 滑卡的版面比例，量自 @1x 設計稿 1. Match - Explore_Superlike_Send.png（375×812）。
+# 卡片內容取 y110→812（照片頂到底），下面的值都是「佔卡寬」或「佔卡高」。
+AC = {
+    "pad_x": 0.048,          # 左內縮 ÷ 卡寬
+    "fs_name": 0.075, "fs_meta": 0.046, "fs_bio": 0.040,
+    "btn_d": 0.165,          # 圓鈕直徑 ÷ 卡寬
+    "btn_bot": 0.055,        # 圓鈕底緣距卡底 ÷ 卡高
+    "gap_btn": 0.030,        # 文字底 → 圓鈕上緣 ÷ 卡高
+    "btn_x": (0.235, 0.500, 0.765),
+}
+
+
+def draw_app_card(img, box, radius, cfg):
+    """把一張真實產品畫面畫進卡片版位。照片用真機截圖（retina），UI 一層重畫到全解析度。
+
+    為什麼不整張貼截圖：手機截圖 1179px 寬，卡片版位換算後要放大 2 倍以上，
+    字會糊成一團——同一個坑 App 介面圖已經踩過（見 _round_paste 的 UPSCALED 警告）。
+    """
+    x0, y0, x1, y1 = box
+    cw, ch = x1 - x0, y1 - y0
+    shot = cfg.get("photo")
+    if shot and os.path.exists(shot):
+        _round_paste(img, Image.open(shot), box, radius,
+                     focus=tuple(cfg.get("photo_focus", (0.5, 0.35))))
+    else:
+        ImageDraw.Draw(img).rounded_rectangle(list(box), radius=radius, fill=DIM)
+
+    # 底部漸層壓暗，讓白字讀得出來（App 本身就是這個處理）
+    scrim = Image.new("RGBA", (cw, ch), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(scrim)
+    # 漸層只吃卡片下半的 42%：第一版吃 55%，剛好蓋在臉上（2026-08-23）
+    for i in range(int(ch * 0.42)):
+        yy = ch - 1 - i
+        a = int(228 * (i / (ch * 0.42)) ** 0.85)
+        sd.line([(0, yy), (cw, yy)], fill=(8, 10, 6, a))
+    mask = Image.new("L", (cw, ch), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, cw-1, ch-1], radius=radius, fill=255)
+    scrim.putalpha(Image.composite(scrim.getchannel("A"), Image.new("L", (cw, ch), 0), mask))
+    img.paste(Image.alpha_composite(
+        img.crop(box).convert("RGBA"), scrim).convert("RGB"), (x0, y0))
+    d = ImageDraw.Draw(img)
+
+    # 文字由下往上堆，位置從字型度量算出來，不用寫死的 y 分數。
+    # 第一版把設計稿的四個 y 值直接抄過來，卡片一縮小行距就不夠，四行黏成一團。
+    px_ = x0 + int(cw * AC["pad_x"])
+    maxw = cw - 2 * int(cw * AC["pad_x"])
+    bd = int(cw * AC["btn_d"]); br = bd // 2
+    bcy = y1 - int(ch * AC["btn_bot"]) - br
+
+    def _wrap(txt, f, limit=2):
+        line, out = "", []
+        for chx in txt:
+            if d.textlength(line + chx, font=f) > maxw and line:
+                out.append(line); line = chx
+            else:
+                line += chx
+        out.append(line)
+        if len(out) > limit:
+            out = out[:limit]; out[-1] = out[-1][:-1] + "…"
+        return out
+
+    f_name = ImageFont.truetype(F_BOLD,  max(9, int(cw * AC["fs_name"])))
+    f_meta = ImageFont.truetype(E.F_REG, max(8, int(cw * AC["fs_meta"])))
+    f_bio  = ImageFont.truetype(E.F_REG, max(8, int(cw * AC["fs_bio"])))
+    rows = [(t, f_name, WHITE) for t in [cfg.get("name", "")] if t]
+    rows += [(t, f_meta, (226, 229, 221)) for t in
+             (cfg.get("job", ""), cfg.get("school", "")) if t]
+    rows += [(t, f_bio, (206, 210, 200)) for t in _wrap((cfg.get("bio") or "").strip(), f_bio)
+             if t]
+    yy = bcy - br - int(ch * AC["gap_btn"])          # 由按鈕上緣往回長
+    for txt, f, col in reversed(rows):
+        lh = int(f.size * (1.62 if f is f_bio else 1.48))
+        yy -= lh
+        d.text((px_, yy), txt, font=f, fill=col)
+
+    # 三顆操作鈕：✕／★／♥。星星是這張圖的主角，加光暈與放大凸顯（Jesse：highlight 出來）
+    for i, fx in enumerate(AC["btn_x"]):
+        bcx = x0 + int(cw * fx)
+        if i == 1:
+            rr = int(br * 1.28)
+            img = _glow(img, [bcx-rr, bcy-rr, bcx+rr, bcy+rr], rr, GOLD, spread=0.009, alpha=150)
+            d = ImageDraw.Draw(img)
+            d.ellipse([bcx-rr, bcy-rr, bcx+rr, bcy+rr], fill=GOLD)
+            _star(d, bcx, bcy, int(rr * 0.62), fill=(38, 30, 8))
+        else:
+            d.ellipse([bcx-br, bcy-br, bcx+br, bcy+br], fill=(58, 60, 54))
+            if i == 0:
+                k = int(br * 0.34)
+                d.line([(bcx-k, bcy-k), (bcx+k, bcy+k)], fill=WHITE, width=max(2, br//9))
+                d.line([(bcx-k, bcy+k), (bcx+k, bcy-k)], fill=WHITE, width=max(2, br//9))
+            else:
+                _heart(d, bcx, bcy, int(br * 0.42), RED)
+    return img
+
+
+def _heart(d, cx, cy, r, fill):
+    d.ellipse([cx-r, cy-r*0.95, cx, cy+r*0.15], fill=fill)
+    d.ellipse([cx, cy-r*0.95, cx+r, cy+r*0.15], fill=fill)
+    d.polygon([(cx-r*0.98, cy-r*0.25), (cx+r*0.98, cy-r*0.25), (cx, cy+r*1.05)], fill=fill)
+
+
 def lay_diagram(img, d, slide, shot, dark, band):
     """卡片堆疊圖解：兩張淡卡 →（箭頭）→ 紅色重點卡。"""
     top, bot = band
@@ -346,11 +448,18 @@ def lay_diagram(img, d, slide, shot, dark, band):
     rx = int(W * 0.755)
     rb = [rx - cw, cy - ch, rx + cw, cy + ch]
     img = _glow(img, rb, r, RED, spread=0.03, alpha=130); d = ImageDraw.Draw(img)
-    d.rounded_rectangle(rb, radius=r, fill=RED)
-    _star(d, rx, cy - int(ch*0.18), int(W*0.045))
-    lbl = (slide.get("focus_label") or "你").strip()
-    f = ImageFont.truetype(E.F_MED, int(W * 0.030))
-    d.text((rx - d.textlength(lbl, font=f)/2, cy + int(ch*0.30)), lbl, font=f, fill=WHITE)
+    if slide.get("app_card"):
+        # 重點卡改放真實產品畫面（Jesse 2026-08-23）。不直接貼手機截圖：
+        # 設計稿是 375px @1x、真機截圖也只有 1179px 寬，塞進版面要放大兩倍以上會糊。
+        # 改成用截圖裡的**照片**當底，UI 一層在全解析度重畫，比例照 @1x 設計稿量。
+        img = draw_app_card(img, rb, r, slide["app_card"])
+        d = ImageDraw.Draw(img)
+    else:
+        d.rounded_rectangle(rb, radius=r, fill=RED)
+        _star(d, rx, cy - int(ch*0.18), int(W*0.045))
+        lbl = (slide.get("focus_label") or "你").strip()
+        f = ImageFont.truetype(E.F_MED, int(W * 0.030))
+        d.text((rx - d.textlength(lbl, font=f)/2, cy + int(ch*0.30)), lbl, font=f, fill=WHITE)
     return img, d
 
 
