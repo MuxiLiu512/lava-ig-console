@@ -3479,7 +3479,11 @@
           "candidates": [],
           "final_src": null,
           "product_layout": "price",
-          "display_copy": "如果對方沒有出現，"
+          "display_copy": "如果對方沒有出現，",
+          "crop_focus": [
+            0.5,
+            0.142
+          ]
         },
         {
           "n": 5,
