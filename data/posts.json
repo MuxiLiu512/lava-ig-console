@@ -4713,6 +4713,902 @@
           }
         ]
       }
+    },
+    {
+      "id": "20260824-StanTatkin說你",
+      "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力——但神經科學說，愛情是一項需要每天練習的技能",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyknz01",
+      "created_at": null,
+      "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": null,
+          "heading": "吵架前，你的大腦已經先輸了",
+          "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個「無緣無故的煩躁」其實有原因",
+          "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "杏仁核比你更快開口",
+          "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "焦慮型依附的神經特徵",
+          "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "愛不是找到的，是練出來的",
+          "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications.",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "線上聊再久，神經系統不買單",
+          "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Anchor、Island、Wave：你是哪一種？",
+          "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "把對方「登錄」進你大腦的安全清單",
+          "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Stan Tatkin 是 PACT（Psychobiological Approach to Couple Therapy）的創立者，臨床心理學博士（PsyD）兼婚姻家庭治療師（MFT）",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy (PACT)."
+        },
+        {
+          "claim": "Tatkin 於 2010 年與妻子 Tracey Boldemann-Tatkin 博士共同創立 PACT Institute",
+          "source": "https://www.pactinstitute.com/about",
+          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
+        },
+        {
+          "claim": "Tatkin 兼任 UCLA David Geffen School of Medicine 的助理臨床教授",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "He is an assistant clinical professor at UCLA David Geffen School of Medicine."
+        },
+        {
+          "claim": "《Wired for Love》由 New Harbinger Publications 於 2012 年出版",
+          "source": "https://www.newharbinger.com/9781608820580/wired-for-love/",
+          "quote": "Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship. New Harbinger Publications, 2012."
+        },
+        {
+          "claim": "《Wired for Love》已售出超過 170,000 冊",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Wired for Love has sold over 170,000 copies."
+        },
+        {
+          "claim": "Tatkin 的 TEDx 演講累計觀看人次已超過 170 萬",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "His TEDx talk has been viewed over 1.7 million times."
+        },
+        {
+          "claim": "2012 年 Pascal Vrticka 等人的研究發現，焦慮型依附個體在社會評估任務中，前額葉皮質與杏仁核之間的功能性連結顯著降低",
+          "source": "https://academic.oup.com/scan/article/7/3/290/1573643",
+          "quote": "Anxiously attached individuals showed reduced functional connectivity between the prefrontal cortex and the amygdala during social evaluation tasks."
+        },
+        {
+          "claim": "人類杏仁核病變會損害威脅優先處理能力，提供了杏仁核對回應迫在眉睫的危險具有因果角色的首個直接證據",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/21390292/",
+          "quote": "Patients with bilateral amygdala damage failed to show the normal threat-priority effect, providing the first direct evidence for a causal role of the amygdala in responding to imminent danger."
+        },
+        {
+          "claim": "伴侶是彼此的「生物存活單位（biological survival unit）」",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin describes couples as a biological survival unit — each person's primary attachment figure and the one they can always count on."
+        },
+        {
+          "claim": "Tatkin 使用 Anchor（錨型）、Island（島型）、Wave（浪型）三個標籤描述依附風格，不將任何一種類型描繪為有缺陷",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Tatkin describes three attachment styles — Anchor, Island, and Wave — and emphasizes that no type is inherently flawed; each develops from personal history and can thrive in relationship with the right understanding."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
+          "slides": {
+            "1": {
+              "heading": "吵架前，你的大腦已經先輸了",
+              "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。"
+            },
+            "2": {
+              "heading": "那個「無緣無故的煩躁」其實有原因",
+              "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。"
+            },
+            "3": {
+              "heading": "杏仁核比你更快開口",
+              "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
+            },
+            "4": {
+              "heading": "焦慮型依附的神經特徵",
+              "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
+            },
+            "5": {
+              "heading": "愛不是找到的，是練出來的",
+              "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications."
+            },
+            "6": {
+              "heading": "線上聊再久，神經系統不買單",
+              "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。"
+            },
+            "7": {
+              "heading": "Anchor、Island、Wave：你是哪一種？",
+              "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。"
+            },
+            "8": {
+              "heading": "把對方「登錄」進你大腦的安全清單",
+              "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "20260824-CarlRogers說你",
+      "topic": "Carl Rogers 說：你在感情裡一直在「評分」對方——但心理學最反直覺的發現是，放棄評分的人，反而更容易找到對的人",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eynxrxa",
+      "created_at": null,
+      "caption": "身高、工作、說話方式、那次遲到、那個奇怪的笑聲，你以為這叫「有眼光」，但人本心理學家 Carl Rogers 在研究人與人之間最真實的連結時，發現了一件反直覺的事：越努力評分的人，越難真正認識對方。\n\n他提出的「無條件正向關懷（UPR）」，後來被關係研究者帶入約會情境，結論同樣成立。\n\nRogers 說的 UPR，從來不是「無條件愛上每一個人」，而是在初次相遇時先給對方一個空間，讓他不需要為了讓你滿意而表演，讓他展示真實的自己，然後你再決定。\nLava 設計線下面對面見面的方式，也是基於同樣的邏輯：在你能真正觀察到一個人之前，聊天裡的印象管理幾乎是必然的。\n見到面，才是認識的開始。\n\n#交友軟體 #約會心理學 #感情 #戀愛 #Lava交友 #不聊天的交友軟體 #心理學 #CarlRogers #無條件正向關懷 #關係滿意度 #線下約會 #台灣交友 #感情觀 #自我成長 #人際關係",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "你的腦袋裡，有一張隱形的評分表",
+          "display_copy": "你的腦袋裡\n有一張〖隱形的評分表〗\n\n身高、工作、那次遲到\n那個奇怪的笑聲\n\n你以為這叫「有眼光」\nRogers 說，這才是問題所在",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            }
+          ],
+          "final_src": null,
+          "heading": "那場約會，你其實從沒「到場」",
+          "display_copy": "他點了奇怪的飲料，你【扣半分】\n他提到前任，再扣一分\n他笑聲很大，再扣\n\n約會結束你說「沒火花」\n\n——但你從來沒有\n真正【到場】過",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Rogers：被「接納」的人，才敢展示真實的自己",
+          "display_copy": "Rogers：\n\n「當我能接受他們作為獨立個體\n他們就會開始往某個方向移動」\n\n被【完整接納】的人\n才敢展示真實的自己\n\n那才是你判斷「有沒有火花」\n的唯一材料\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Houghton Mifflin."
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Suits",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": null,
+          "heading": "2016 年研究：「條件式關懷」正在毀掉你們的關係",
+          "display_copy": "2016 年，125 人跨四種關係的研究：\n\n【條件式關懷】同時傷害兩件事——\n\n「自主感」：你不需要為了被喜歡而表演\n「歸屬感」：你被當成真實的你被接受\n\n評分制度，本質上就是一種條件式關懷\n\n資料來源：Kanat-Maymon et al. (2016). Journal of Personality, 84, 446–460.",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": null,
+          "heading": "2017 年每日追蹤研究：扣分的那天，關係滿意度就下降了",
+          "display_copy": "2017 年，80 人每日追蹤研究：\n\n「你符合我期望，我才對你好」\n→ 關係滿意度【下降】\n\n「你讓我失望，我就撤回溫暖」\n→ 關係滿意度【同樣下降】\n\n評分不只發生在第一次約會\n它每一天都在侵蝕關係\n\n資料來源：Kanat-Maymon, Argaman & Roth (2017). Personal Relationships, 24, 27–35.",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "「放棄評分」不是放低標準，是換一種認識方式",
+          "display_copy": "Rogers 說的「接納」\n不是愛上所有人\n\n是給對方一個空間——\n讓他不需要為了讓你滿意\n而【表演】\n\n見到面\n才是認識真正開始的地方",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Rogers 的日落比喻：你為什麼要替日落打分數？",
+          "display_copy": "Rogers，《A Way of Being》：\n\n「人就像日落一樣美麗\n只要你讓他們自然展現\n\n我不會對日落說\n『把右角的橙色調淡一點』\n我帶著敬畏看著它展開」\n\n——在你看清楚之前\n〖先放下那支評分的筆〗\n\n資料來源：Rogers, C.R. A Way of Being. Goodreads."
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-8b.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "下次約會，試著做一件事：先不要評分",
+          "display_copy": "下次約會，試一件事：\n\n【先不要評分】\n\n不是接受一切\n是真正在場——\n聽他說話，不是為了找破綻\n而是因為你想知道他是誰\n\n那種感受\n比任何評分表都準確\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Goodreads.",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "UPR 最初由 Stanley Standal 於 1954 年提出概念雛型，後由 Carl Rogers 於 1956 年擴展並發揚光大",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "Rogers 著作與引言收錄於 Goodreads，On Becoming a Person 出版於 1961 年，UPR 概念在 1950 年代由 Rogers 系統化發展"
+        },
+        {
+          "claim": "Rogers 說：「在我與那些最困擾的個案最深接觸中，當我能接受他們作為獨立個體，他們就會開始往某個方向移動。」",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "In my most inner-most relationships with these individuals, when I am most sensitive in understanding them, and when I receive them as independent persons, then I find that they tend to move in certain directions."
+        },
+        {
+          "claim": "Rogers 在《A Way of Being》中的日落比喻：「人就像日落一樣美麗，只要你讓他們自然展現……」",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "People are just as wonderful as sunsets if you let them be. When I look at a sunset, I don't find myself saying, 'Soften the orange a bit on the right hand corner.' I don't try to control a sunset. I watch with awe as it unfolds."
+        },
+        {
+          "claim": "Rogers 的悖論語錄：「奇怪的矛盾在於，當我接受自己本來的樣子，我才能改變。」出自《On Becoming a Person》",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "The curious paradox is that when I accept myself just as I am, then I can change."
+        },
+        {
+          "claim": "Kanat-Maymon 等研究者於 2016 年針對 125 名受試者、橫跨戀人、好友、父母四種關係類型進行研究，發現條件式正向關懷（CPR）與關係品質呈顯著負相關",
+          "source": "https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171",
+          "quote": "Study 1 (N = 125) examined CPR from four relationship partners (mother, father, romantic partner, and best friend) and its associations with relationship quality... CPR was associated with poorer relationship quality."
+        },
+        {
+          "claim": "2017 年以每日日記法追蹤 80 名受試者，CPR 與 CNR 在個人層次皆與關係滿意度呈負相關",
+          "source": "https://onlinelibrary.wiley.com/doi/10.1111/pere.12164",
+          "quote": "Multilevel analyses on data from 80 participants… showed that both CPR and CNR were negatively associated with relationship satisfaction at the between-person level."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "身高、工作、說話方式、那次遲到、那個奇怪的笑聲，你以為這叫「有眼光」，但人本心理學家 Carl Rogers 在研究人與人之間最真實的連結時，發現了一件反直覺的事：越努力評分的人，越難真正認識對方。\n\n他提出的「無條件正向關懷（UPR）」，後來被關係研究者帶入約會情境，結論同樣成立。\n\nRogers 說的 UPR，從來不是「無條件愛上每一個人」，而是在初次相遇時先給對方一個空間，讓他不需要為了讓你滿意而表演，讓他展示真實的自己，然後你再決定。\nLava 設計線下面對面見面的方式，也是基於同樣的邏輯：在你能真正觀察到一個人之前，聊天裡的印象管理幾乎是必然的。\n見到面，才是認識的開始。\n\n#交友軟體 #約會心理學 #感情 #戀愛 #Lava交友 #不聊天的交友軟體 #心理學 #CarlRogers #無條件正向關懷 #關係滿意度 #線下約會 #台灣交友 #感情觀 #自我成長 #人際關係",
+          "slides": {
+            "1": {
+              "heading": "你的腦袋裡，有一張隱形的評分表",
+              "display_copy": "你的腦袋裡\n有一張〖隱形的評分表〗\n\n身高、工作、那次遲到\n那個奇怪的笑聲\n\n你以為這叫「有眼光」\nRogers 說，這才是問題所在"
+            },
+            "2": {
+              "heading": "那場約會，你其實從沒「到場」",
+              "display_copy": "他點了奇怪的飲料，你【扣半分】\n他提到前任，再扣一分\n他笑聲很大，再扣\n\n約會結束你說「沒火花」\n\n——但你從來沒有\n真正【到場】過"
+            },
+            "3": {
+              "heading": "Rogers：被「接納」的人，才敢展示真實的自己",
+              "display_copy": "Rogers：\n\n「當我能接受他們作為獨立個體\n他們就會開始往某個方向移動」\n\n被【完整接納】的人\n才敢展示真實的自己\n\n那才是你判斷「有沒有火花」\n的唯一材料\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Houghton Mifflin."
+            },
+            "4": {
+              "heading": "2016 年研究：「條件式關懷」正在毀掉你們的關係",
+              "display_copy": "2016 年，125 人跨四種關係的研究：\n\n【條件式關懷】同時傷害兩件事——\n\n「自主感」：你不需要為了被喜歡而表演\n「歸屬感」：你被當成真實的你被接受\n\n評分制度，本質上就是一種條件式關懷\n\n資料來源：Kanat-Maymon et al. (2016). Journal of Personality, 84, 446–460."
+            },
+            "5": {
+              "heading": "2017 年每日追蹤研究：扣分的那天，關係滿意度就下降了",
+              "display_copy": "2017 年，80 人每日追蹤研究：\n\n「你符合我期望，我才對你好」\n→ 關係滿意度【下降】\n\n「你讓我失望，我就撤回溫暖」\n→ 關係滿意度【同樣下降】\n\n評分不只發生在第一次約會\n它每一天都在侵蝕關係\n\n資料來源：Kanat-Maymon, Argaman & Roth (2017). Personal Relationships, 24, 27–35."
+            },
+            "6": {
+              "heading": "「放棄評分」不是放低標準，是換一種認識方式",
+              "display_copy": "Rogers 說的「接納」\n不是愛上所有人\n\n是給對方一個空間——\n讓他不需要為了讓你滿意\n而【表演】\n\n見到面\n才是認識真正開始的地方"
+            },
+            "7": {
+              "heading": "Rogers 的日落比喻：你為什麼要替日落打分數？",
+              "display_copy": "Rogers，《A Way of Being》：\n\n「人就像日落一樣美麗\n只要你讓他們自然展現\n\n我不會對日落說\n『把右角的橙色調淡一點』\n我帶著敬畏看著它展開」\n\n——在你看清楚之前\n〖先放下那支評分的筆〗\n\n資料來源：Rogers, C.R. A Way of Being. Goodreads."
+            },
+            "8": {
+              "heading": "下次約會，試著做一件事：先不要評分",
+              "display_copy": "下次約會，試一件事：\n\n【先不要評分】\n\n不是接受一切\n是真正在場——\n聽他說話，不是為了找破綻\n而是因為你想知道他是誰\n\n那種感受\n比任何評分表都準確\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Goodreads."
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "20260824-Rizz進了牛津詞典但r",
+      "topic": "「Rizz」進了牛津詞典——但 r Tinder 上最多人在問的是：Rizz 到底能不能學？還是你天生就有或沒有",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyk8vt3",
+      "created_at": null,
+      "caption": "2023 年，蜘蛛人演員 Tom Holland 在 BuzzFeed 訪談裡公開承認自己只有「limited rizz」，並說靠「打長期戰」才追到 Zendaya。\n\n這個說法當週讓 rizz 在全球搜尋量直接爆衝。\n問題是：如果連他都說自己沒有，那 rizz 到底是什麼，又能不能學？\n\n線上交友的遊戲規則把 rizz 這件事搞反了：你必須在什麼都不知道的情況下，用幾行字讓一個陌生人對你感興趣，這比任何現實搭訕都更難，因為你沒有語氣、沒有眼神、沒有當下的空氣感。\nLava 的邏輯是反過來的，把聊天的壓力拿掉，直接安排見面，讓 rizz 回到它本來應該存在的地方：兩個人在同一個空間裡，真實互動的那幾分鐘。\n\n#Rizz #交友軟體 #約會技巧 #魅力 #牛津年度詞彙 #戀愛心理學 #社交技巧 #約會 #線下約會 #Lava交友 #不聊天的交友軟體 #見面才是真的 #台灣交友 #KaiCenat",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Tom Holland",
+              "source_kind": "OV"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Tom Holland",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Tom Holland",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Tom Holland",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Tom Holland",
+              "source_kind": "WM",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Tom Holland 說他沒有 Rizz，但他追到了 Zendaya",
+          "display_copy": "Tom Holland 說他沒有 Rizz\n但他追到了 Zendaya\n\n他的說法：靠的是【打長期戰】\n\n〖Rizz 到底能不能學？〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2a.webp",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2b.webp",
+              "kind": "still",
+              "source_label": "The Office"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2c.webp",
+              "kind": "still",
+              "source_label": "The Office"
+            }
+          ],
+          "final_src": null,
+          "heading": "你在手機螢幕前想了十分鐘，發出去三個字",
+          "display_copy": "訊息欄空著，游標在閃\n你想了【十分鐘】，發出去三個字\n\n那種卡住的感覺，不是你天生沒 Rizz\n\n是因為沒有人告訴你\n線上和見面，根本是兩種遊戲",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Kai Cenat",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Kai Cenat",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3c.webp",
+              "kind": "still",
+              "source_label": "Kai Cenat",
+              "source_kind": "WM",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3d.webp",
+              "kind": "still",
+              "source_label": "Kai Cenat",
+              "source_kind": "WM"
+            }
+          ],
+          "final_src": null,
+          "heading": "牛津說是「charisma 的縮寫」，發明人說根本不是",
+          "display_copy": "牛津：rizz 是【charisma 的縮寫】\n發明人 Kai Cenat：「根本不是」\n\n超過【30,000 人投票】選出 2023 年度詞彙\n官方定義：吸引浪漫或性伴侶的風格與能力\n\nCenat 說，rizz 是朋友圈自然蹦出來的詞\n指的是你在現實裡讓對方對你感興趣的能力\n\n資料來源：Oxford University Press, 2023",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Suits",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": null,
+          "heading": "洛桑大學的實驗：魅力訓練後，有人進步了 60%",
+          "display_copy": "洛桑大學教授 John Antonakis 的實驗\n\n找來沒有演講經驗的 MBA 學生\n教他們【12 項魅力戰術（CLT）】\n\n部分人的魅力評分提升了【多達 60%】\n\n他的結論：魅力更像一種可學的技能\n不是你天生有或沒有的東西\n\n資料來源：Psychology Today, 2019",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire"
+            }
+          ],
+          "final_src": null,
+          "heading": "魅力的三根柱子：存在感、力量、溫暖",
+          "display_copy": "魅力研究者把 Rizz 拆成三根支柱\n\n【存在感】——問問題，而不是說更多話\n【力量】——自信，但透過自嘲和示弱傳達\n【溫暖】——讓對方感覺被善意對待\n\n每一根都有對應的練習方式\n不是等天份，而是選要先練哪根\n\n資料來源：Charles Duhigg, Substack",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Succession"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Succession"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Succession"
+            }
+          ],
+          "final_src": null,
+          "heading": "但 Kai Cenat 說：TikTok「殺死」了 rizz 原本的意思",
+          "display_copy": "Rizz 最紅的時候，發明人 Kai Cenat 說\n他自己【已經不用這個詞了】\n\nTikTok「殺死」了它原本的意思\n\n它從描述真實互動能力的詞\n變成了人人在螢幕後宣稱擁有\n卻永遠不需要兌現的標籤\n\nRizz 只能在【真實見面裡被感知】\n\n資料來源：Complex",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7a.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7b.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "線上聊天最需要 Rizz，見面反而不用演",
+          "display_copy": "線上交友把 Rizz 這件事搞反了\n\n你必須用幾行字讓陌生人對你感興趣\n沒有語氣，沒有眼神，沒有空氣感\n\nLava 把聊天壓力拿掉，直接安排見面\n\n讓 Rizz 回到它本來應該存在的地方\n【兩個人在同一個空間裡的那幾分鐘】",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8a.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8b.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "三件你現在就能練的事（不用等天份）",
+          "display_copy": "不用等天份，三個 CLT 起手動作\n\n【問一個你真的想知道答案的問題】\n讓對方說話超過你\n\n【找一件你覺得有點蠢的事說出來】\n不解釋、不道歉，存在感就是這樣傳遞的\n\n【在說「對耶」前多停一秒】\n回應對方在意的事，而不是字面上的意思\n\n這三件事，下次見面就能試",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Tom Holland 在 BuzzFeed 訪談裡公開承認自己只有「limited rizz」，並說靠「打長期戰（patience）」才追到 Zendaya",
+          "source": "https://www.npr.org/2023/12/04/1216950808/rizz-oxford-word-of-the-year-swiftie",
+          "quote": "Tom Holland told BuzzFeed that he has 'limited rizz' and that he won Zendaya over through 'patience.'"
+        },
+        {
+          "claim": "超過 30,000 名語言愛好者投票，牛津大學出版社將 rizz 選為 2023 年年度詞彙",
+          "source": "https://corp.oup.com/news/rizz-crowned-oxford-word-of-the-year-2023/",
+          "quote": "More than 30,000 people from around the world voted to help narrow down the shortlist, and Oxford University Press has announced that the Oxford Word of the Year 2023 is… rizz."
+        },
+        {
+          "claim": "牛津官方定義：rizz 是「風格、魅力或吸引力；吸引浪漫或性伴侶的能力」",
+          "source": "https://corp.oup.com/news/rizz-crowned-oxford-word-of-the-year-2023/",
+          "quote": "Rizz: noun, informal: style, charm, or attractiveness; the ability to attract a romantic or sexual partner."
+        },
+        {
+          "claim": "Antonakis 找來沒有公開演講經驗的 MBA 學生和中階主管，教他們 12 項魅力領導力戰術（CLT），部分演講者魅力評分提高了多達 60%",
+          "source": "https://www.psychologytoday.com/us/blog/between-cultures/201902/is-charisma-a-gift-or-can-it-be-trained",
+          "quote": "Antonakis took MBA students and mid-level managers who had no public speaking experience, had them give a speech, rated them on trustworthiness, likability, and charisma, then taught them 12 Charismatic Leadership Tactics (CLTs) and had them give another speech. Some of the speakers' scores went up by as much as 60 percent after training in CLT."
+        },
+        {
+          "claim": "Kai Cenat 說 TikTok「毀掉」了、「殺死」了 rizz 原本的意思，並在該詞最紅時表示他自己已經不用這個詞了",
+          "source": "https://www.complex.com/pop-culture/a/brad-callas/kai-cenat-whether-he-invented-term-rizz",
+          "quote": "Cenat said TikTok 'ruined' and 'killed' the original meaning of rizz."
+        },
+        {
+          "claim": "存在感（Presence）、力量（Power）和溫暖（Warmth）是研究人員歸納的魅力三根支柱",
+          "source": "https://charlesduhigg.substack.com/p/rizzzzz-it-up-like-a-scientist",
+          "quote": "Researchers say charisma has three pillars: Presence, Power, and Warmth."
+        },
+        {
+          "claim": "Kai Cenat 說 rizz 是他們朋友圈自然蹦出來的街頭語言，不是從 charisma 縮寫而來",
+          "source": "https://www.complex.com/pop-culture/a/brad-callas/kai-cenat-whether-he-invented-term-rizz",
+          "quote": "Cenat explained rizz was a shared term among his friend group — 'It was just something that came up when we were talking at the crib. One person said it, another person said it, and then I said it on Twitch.'"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "2023 年，蜘蛛人演員 Tom Holland 在 BuzzFeed 訪談裡公開承認自己只有「limited rizz」，並說靠「打長期戰」才追到 Zendaya。\n\n這個說法當週讓 rizz 在全球搜尋量直接爆衝。\n問題是：如果連他都說自己沒有，那 rizz 到底是什麼，又能不能學？\n\n線上交友的遊戲規則把 rizz 這件事搞反了：你必須在什麼都不知道的情況下，用幾行字讓一個陌生人對你感興趣，這比任何現實搭訕都更難，因為你沒有語氣、沒有眼神、沒有當下的空氣感。\nLava 的邏輯是反過來的，把聊天的壓力拿掉，直接安排見面，讓 rizz 回到它本來應該存在的地方：兩個人在同一個空間裡，真實互動的那幾分鐘。\n\n#Rizz #交友軟體 #約會技巧 #魅力 #牛津年度詞彙 #戀愛心理學 #社交技巧 #約會 #線下約會 #Lava交友 #不聊天的交友軟體 #見面才是真的 #台灣交友 #KaiCenat",
+          "slides": {
+            "1": {
+              "heading": "Tom Holland 說他沒有 Rizz，但他追到了 Zendaya",
+              "display_copy": "Tom Holland 說他沒有 Rizz\n但他追到了 Zendaya\n\n他的說法：靠的是【打長期戰】\n\n〖Rizz 到底能不能學？〗"
+            },
+            "2": {
+              "heading": "你在手機螢幕前想了十分鐘，發出去三個字",
+              "display_copy": "訊息欄空著，游標在閃\n你想了【十分鐘】，發出去三個字\n\n那種卡住的感覺，不是你天生沒 Rizz\n\n是因為沒有人告訴你\n線上和見面，根本是兩種遊戲"
+            },
+            "3": {
+              "heading": "牛津說是「charisma 的縮寫」，發明人說根本不是",
+              "display_copy": "牛津：rizz 是【charisma 的縮寫】\n發明人 Kai Cenat：「根本不是」\n\n超過【30,000 人投票】選出 2023 年度詞彙\n官方定義：吸引浪漫或性伴侶的風格與能力\n\nCenat 說，rizz 是朋友圈自然蹦出來的詞\n指的是你在現實裡讓對方對你感興趣的能力\n\n資料來源：Oxford University Press, 2023"
+            },
+            "4": {
+              "heading": "洛桑大學的實驗：魅力訓練後，有人進步了 60%",
+              "display_copy": "洛桑大學教授 John Antonakis 的實驗\n\n找來沒有演講經驗的 MBA 學生\n教他們【12 項魅力戰術（CLT）】\n\n部分人的魅力評分提升了【多達 60%】\n\n他的結論：魅力更像一種可學的技能\n不是你天生有或沒有的東西\n\n資料來源：Psychology Today, 2019"
+            },
+            "5": {
+              "heading": "魅力的三根柱子：存在感、力量、溫暖",
+              "display_copy": "魅力研究者把 Rizz 拆成三根支柱\n\n【存在感】——問問題，而不是說更多話\n【力量】——自信，但透過自嘲和示弱傳達\n【溫暖】——讓對方感覺被善意對待\n\n每一根都有對應的練習方式\n不是等天份，而是選要先練哪根\n\n資料來源：Charles Duhigg, Substack"
+            },
+            "6": {
+              "heading": "但 Kai Cenat 說：TikTok「殺死」了 rizz 原本的意思",
+              "display_copy": "Rizz 最紅的時候，發明人 Kai Cenat 說\n他自己【已經不用這個詞了】\n\nTikTok「殺死」了它原本的意思\n\n它從描述真實互動能力的詞\n變成了人人在螢幕後宣稱擁有\n卻永遠不需要兌現的標籤\n\nRizz 只能在【真實見面裡被感知】\n\n資料來源：Complex"
+            },
+            "7": {
+              "heading": "線上聊天最需要 Rizz，見面反而不用演",
+              "display_copy": "線上交友把 Rizz 這件事搞反了\n\n你必須用幾行字讓陌生人對你感興趣\n沒有語氣，沒有眼神，沒有空氣感\n\nLava 把聊天壓力拿掉，直接安排見面\n\n讓 Rizz 回到它本來應該存在的地方\n【兩個人在同一個空間裡的那幾分鐘】"
+            },
+            "8": {
+              "heading": "三件你現在就能練的事（不用等天份）",
+              "display_copy": "不用等天份，三個 CLT 起手動作\n\n【問一個你真的想知道答案的問題】\n讓對方說話超過你\n\n【找一件你覺得有點蠢的事說出來】\n不解釋、不道歉，存在感就是這樣傳遞的\n\n【在說「對耶」前多停一秒】\n回應對方在意的事，而不是字面上的意思\n\n這三件事，下次見面就能試"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      }
     }
   ]
 }
