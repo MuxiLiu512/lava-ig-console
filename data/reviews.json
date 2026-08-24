@@ -495,6 +495,22 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mt7bi9qb",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-24T22:14:49+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "照片是舊版的，品質太低",
+      "consumed": false
     }
   ]
 }
