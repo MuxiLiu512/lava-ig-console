@@ -482,6 +482,19 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mt71iald",
+      "post_id": "20260803-Laa是怎麼把配對變成真",
+      "ts": "2026-08-24T17:34:54+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "3": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
