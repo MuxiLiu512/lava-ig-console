@@ -1,4 +1,13 @@
 {
   "note": "北極星量測：每篇貼文消耗的 Jesse 分鐘數。審稿台開啟→做出決定之間的秒數。UIUX 總體架構 §6 B0。",
-  "entries": []
+  "entries": [
+    {
+      "post_id": "20260803-Laa是怎麼把配對變成真",
+      "ts": "2026-08-24T17:34:53+08:00",
+      "decision": "approve",
+      "seconds": 1,
+      "pending": 0,
+      "slides": 5
+    }
+  ]
 }
