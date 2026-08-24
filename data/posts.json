@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T00:03:04+08:00",
+        "ts": "2026-08-25T04:39:48+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T00:03:05+08:00",
+        "ts": "2026-08-25T04:39:49+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3969,7 +3969,7 @@
         }
       },
       "fact": {
-        "ts": "2026-08-25T00:03:10+08:00",
+        "ts": "2026-08-25T04:55:05+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4084,7 +4084,7 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T00:03:04+08:00",
+        "ts": "2026-08-25T04:39:48+08:00",
         "pass": true,
         "issues": []
       }
@@ -4682,12 +4682,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T00:03:04+08:00",
+        "ts": "2026-08-25T04:39:48+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T00:03:11+08:00",
+        "ts": "2026-08-25T05:12:58+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4702,9 +4702,9 @@
             "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
           },
           {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「60%」的出處無法自動核對，請人工看過：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
           },
           {
             "severity": "block",
@@ -5111,12 +5111,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T00:03:04+08:00",
+        "ts": "2026-08-25T04:39:48+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T00:03:15+08:00",
+        "ts": "2026-08-25T05:13:00+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5536,12 +5536,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T00:03:04+08:00",
+        "ts": "2026-08-25T04:39:48+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T00:03:15+08:00",
+        "ts": "2026-08-25T05:13:01+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6023,12 +6023,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T00:03:04+08:00",
+        "ts": "2026-08-25T04:39:49+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T00:03:18+08:00",
+        "ts": "2026-08-25T05:13:03+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
