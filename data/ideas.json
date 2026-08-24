@@ -54,7 +54,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T21:29:58+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyqbfqr",
@@ -76,7 +76,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T21:29:27+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyq9f6c",
@@ -87,7 +87,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T21:29:33+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyq3yp6",
@@ -175,7 +175,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T21:30:34+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypznkw",
@@ -915,5 +915,5 @@
       "applied": true
     }
   ],
-  "pulled_at": "2026-08-24T21:23:23+08:00"
+  "pulled_at": "2026-08-24T21:35:36+08:00"
 }
