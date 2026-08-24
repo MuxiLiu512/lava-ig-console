@@ -1099,11 +1099,29 @@ def ideas_pull(args):
                      int(t.get("date_created", "0")) / 1000).astimezone().isoformat(timespec="seconds"),
                  "decision": None, "decided_at": None, "reason": "", "applied": False}
         ideas.append(e)
+    # 放行的卡在 ClickUp 進入撰稿流程（改名 IG貼文｜、離開靈感審核）後就不在查詢結果裡，
+    # 上面的重建會把它整筆丟掉——看板的「撰稿中」卡因此永遠沒資料
+    # （2026-08-24：Jesse 放行 6 張後看板一片空白，重整再多次都一樣）。
+    # 這裡把 approve 的本地紀錄留成 tombstone，直到 posts.json 出現對應貼文才功成身退。
+    def _tkey(s):
+        s = re.sub(r"^(靈感｜|IG貼文｜)", "", str(s or "")).split("｜病毒分")[0]
+        return re.sub(r"[\s【】〖〗「」『』，。：！？—–\-…()（）]", "", s)[:22]
+    try:
+        landed = {_tkey(p.get("topic") or p.get("id")) for p in load("posts.json").get("posts", [])}
+    except Exception:
+        landed = set()
+    seen = {x["task_id"] for x in ideas}
+    carried = 0
+    for x in doc.get("ideas", []):
+        if (x.get("decision") == "approve" and x["task_id"] not in seen
+                and _tkey(x.get("title")) not in landed):
+            ideas.append(x); carried += 1
     ideas.sort(key=lambda x: x.get("created_at") or "", reverse=True)
     doc["ideas"] = ideas
     doc["pulled_at"] = _now_iso()
     save("ideas.json", doc)
-    print("✓ 靈感同步：ClickUp %d 張（沿用本地紀錄 %d）" % (len(ideas), kept))
+    print("✓ 靈感同步：ClickUp %d 張（沿用本地紀錄 %d、撰稿中保留 %d）"
+          % (len(ideas), kept, carried))
 
 
 def ideas_apply(args):
