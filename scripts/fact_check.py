@@ -54,11 +54,13 @@ CLAIM_PATTERNS = [
 
 
 def post_text(p):
-    """一篇貼文裡所有會被讀者看到的字。事實錯在哪一格都是錯。"""
+    """一篇貼文裡所有會被讀者看到的字。事實錯在哪一格都是錯。
+    先剝掉排版用的重點標記【】〖〗——它們會把「追蹤 134 對伴侶」切成
+    「追蹤【134 對伴侶】」，字串比對整組失靈（2026-08-24 首篇實測 5 項誤報 3 項）。"""
     parts = [p.get("topic", ""), p.get("caption", "")]
     for s in p.get("slides", []):
         parts += [s.get("heading") or "", s.get("display_copy") or ""]
-    return "\n".join(x for x in parts if x)
+    return re.sub(r"[【】〖〗]", "", "\n".join(x for x in parts if x))
 
 
 def find_claims(text):
@@ -99,6 +101,10 @@ def check_source(src):
     try:
         txt = fetch(url)
     except urllib.error.HTTPError as e:
+        # 403/429 多半是擋爬蟲（學術出版社、Cloudflare），連結本身是活的，
+        # 人用瀏覽器開得起來——降為「人工看過」而不是判死（Wiley DOI 實測）。
+        if e.code in (401, 403, 429):
+            return "unreadable", "站方擋自動抓取（HTTP %s），請人工開啟確認" % e.code, None
         return "dead", "連結回 HTTP %s" % e.code, None
     except Exception as e:
         return "unreadable", "抓不到內容：%s" % str(e)[:60], None
@@ -126,9 +132,23 @@ def check_post(p, verbose=False):
     for f in facts:
         byclaim.setdefault(str(f.get("claim", "")).strip(), []).append(f)
 
+    def _fact_hits(c):
+        """出處條目與宣稱的對應：字串包含，或數字交集（作者在 facts 裡的措辭
+        跟文案不必逐字相同——「20% 至 30%」對「20–30%」也該算對上）。"""
+        hits = [f for k, v in byclaim.items() if k and re.sub(r"[【】〖〗]", "", k) in c["context"] for f in v]
+        if hits:
+            return hits
+        # 「研究發現」這類宣稱本身沒有數字，改拿前後文的數字去對
+        #（「追蹤 134 對伴侶的縱向研究發現」→ 134 對得上 facts 裡的 134）
+        want = numbers_in(c["claim"]) or numbers_in(c["context"])
+        if want:
+            return [f for f in facts
+                    if want & numbers_in(str(f.get("claim", "")) + str(f.get("quote", "")))]
+        return []
+
     cache = {}
     for c in claims:
-        matched = [f for k, v in byclaim.items() if k and k in c["context"] for f in v]
+        matched = _fact_hits(c)
         if not matched:
             issues.append({"severity": "block", "rule": "no_source",
                            "line": "「%s」沒有對應出處（%s）" % (c["context"], c["kind"])})

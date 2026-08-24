@@ -79,20 +79,32 @@ async function patModal() {
   if (ok && inp.value.trim()) { S.pat = inp.value.trim(); location.reload(); }
 }
 
+// fetch 加逾時：瀏覽器的 fetch 預設可以掛非常久，網路一不穩（DNS 慢、連線僵住），
+// loadAll 的 allSettled 就永遠等不到 settle，頁面卡在「載入中…」什麼都不顯示，
+// 連失敗畫面都出不來（2026-08-24 Jesse 錄影抓到，同日哨兵也記錄到一次 DNS 解析失敗）。
+// 逾時把「掛住」變成「可見的失敗＋重試按鈕」。
+function tfetch(url, opts, ms = 15000) {
+  const ctl = new AbortController();
+  const t = setTimeout(() => ctl.abort(), ms);
+  return fetch(url, { ...(opts || {}), signal: ctl.signal })
+    .catch(e => { throw (e && e.name === "AbortError" ? new Error("連線逾時（15 秒）——網路不穩或 GitHub 沒回應") : e); })
+    .finally(() => clearTimeout(t));
+}
+
 async function apiGet(path) {
   if (MODE === "local") {
-    const r = await fetch("../" + path + "?t=" + Date.now());
+    const r = await tfetch("../" + path + "?t=" + Date.now());
     if (!r.ok) throw new Error("本地讀取失敗 " + path);
     return { json: await r.json(), sha: null };
   }
   const url = `${apiBase()}/${path}?ref=${S.branch}&t=${Date.now()}`;
   if (S.pat && !AUTH_BAD) {
-    const r = await fetch(url, { headers: { Accept: "application/vnd.github.raw", ...authHdr() } });
+    const r = await tfetch(url, { headers: { Accept: "application/vnd.github.raw", ...authHdr() } });
     if (r.ok) return { json: JSON.parse(await r.text()), sha: null };
     if (r.status !== 401) throw new Error(`讀取 ${path} 失敗 (${r.status})`);
     AUTH_BAD = true; authBanner();          // 壞 PAT：降級唯讀，往下走無認證
   }
-  const r2 = await fetch(url, { headers: { Accept: "application/vnd.github.raw" } });
+  const r2 = await tfetch(url, { headers: { Accept: "application/vnd.github.raw" } });
   if (!r2.ok) throw new Error(`讀取 ${path} 失敗 (${r2.status})`);
   return { json: JSON.parse(await r2.text()), sha: null };
 }
@@ -103,7 +115,7 @@ async function shaOf(path) {
   const i = path.lastIndexOf("/");
   const dir = i < 0 ? "" : path.slice(0, i);
   const name = path.slice(i + 1);
-  const r = await fetch(`${apiBase()}/${dir}?ref=${S.branch}&t=${Date.now()}`, {
+  const r = await tfetch(`${apiBase()}/${dir}?ref=${S.branch}&t=${Date.now()}`, {
     headers: { Accept: "application/vnd.github+json", ...authHdr() },
   });
   if (!r.ok) throw new Error(`取 sha 失敗 ${path} (${r.status})`);
@@ -131,7 +143,7 @@ async function saveJson(path, mutateFn, message) {
       content: strToB64(JSON.stringify(json, null, 2) + "\n"),
       sha, branch: S.branch,
     };
-    const r = await fetch(`${apiBase()}/${path}`, {
+    const r = await tfetch(`${apiBase()}/${path}`, {
       method: "PUT",
       headers: { Accept: "application/vnd.github+json", "Content-Type": "application/json", ...authHdr() },
       body: JSON.stringify(body),
@@ -153,7 +165,7 @@ async function setImg(node, path) {
   if (C.publicRaw) { node.src = rawUrl(path); return; }
   if (imgCache[path]) { node.src = imgCache[path]; return; }
   try {
-    const r = await fetch(`${apiBase()}/${path}?ref=${S.branch}`, { headers: { Accept: "application/vnd.github.raw", ...authHdr() } });
+    const r = await tfetch(`${apiBase()}/${path}?ref=${S.branch}`, { headers: { Accept: "application/vnd.github.raw", ...authHdr() } });
     if (!r.ok) throw 0;
     const u = URL.createObjectURL(await r.blob());
     imgCache[path] = u; node.src = u;

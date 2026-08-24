@@ -3607,7 +3607,7 @@
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-24T21:36:38+08:00",
+        "ts": "2026-08-24T21:40:36+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3643,6 +3643,352 @@
           }
         ],
         "rhythm": "第3張黃底是全篇唯一的節奏喘息點，但前後都是純黑，整篇視覺像一首歌只有一個副歌、其餘全是靜音——黑底張需要至少再分化出一張明底或中調頁，才能讓輪播產生真正的滑動節奏感。"
+      }
+    },
+    {
+      "id": "20260824-Attached說你不是",
+      "topic": "《Attached》說：你不是「太黏」或「太冷」——你只是從來沒有人告訴你，安全感是可以後天學會的",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyjncn9",
+      "created_at": null,
+      "caption": "Amir Levine 在《Attached》裡說了一件很多人還不知道的事：依附風格不是出廠設定，是可以改的。\n\n你不是天生就這樣，你只是還沒待過一個不需要表演、不需要試探的關係環境。\n\n哥倫比亞大學醫學院臨床精神科副教授 Amir Levine 在 2026 年新著《Secure》裡進一步提出：依附風格不是終身標籤，而是大腦可以重新學習的模式。\n而在一項追蹤四個月的縱向研究中，研究者還發現了更簡單的一件事：表達出「想變得更安全」的渴望這個念頭本身，就與未來更高的安全感評分顯著相關（Hudson et al., 2020）。\n你不需要先把自己「修好」才能開始一段關係。\n這也是 Lava 在做的事：讓你在還不完美的時候，先去見一個真實的人。\n\n#依附理論 #AttachmentTheory #心理學 #關係 #親密關係 #EarnedSecurity #焦慮依附 #迴避依附 #安全依附 #Attached書 #交友軟體 #約會 #Lava交友 #不聊天的交友軟體 #線下約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Attached說你不是/slide-1a.webp",
+              "kind": "still",
+              "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Attached說你不是/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Attached說你不是/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-Attached說你不是/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-Attached說你不是/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-Attached說你不是/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-Attached說你不是/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            }
+          ],
+          "final_src": null,
+          "heading": "焦慮型、迴避型——這不是你的個性，是你的環境訓練出來的",
+          "display_copy": "焦慮型、迴避型\n這不是你的個性\n是你的環境訓練出來的",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Attached說你不是/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Attached說你不是/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "你有沒有在一段關係裡，把自己搞得很累",
+          "display_copy": "傳了訊息等回覆，一直盯著「已讀」解讀沉默的意思；或者對方靠近一點，你就想往後退。\n\n你以為這是個性問題——但《Attached》說，這是你的神經系統【學會的一套生存策略】，而且可以重新學。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Attached說你不是/slide-3a.webp",
+              "kind": "still",
+              "source_label": "《Attached》Amir Levine & Rachel Heller 書封／Open Library",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "依附風格從哪裡來？John Bowlby 的答案",
+          "display_copy": "1960 年代，精神科醫師 John Bowlby 提出依附理論：\n\n你從嬰兒期開始，就根據照顧者的回應，建立出一套【關係預測模型】。\n\n「提出需求，對方不確定會不會回應？」→ 你學會焦慮型策略，放大訊號。\n「提出需求，通常沒有用？」→ 你學會迴避型策略，乾脆關掉需求。\n\n這不是個性，是保護機制。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Attached說你不是/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Attached說你不是/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Attached說你不是/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-Attached說你不是/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-Attached說你不是/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-Attached說你不是/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            }
+          ],
+          "final_src": null,
+          "heading": "20–30% 的人，成功從不安全依附翻轉了",
+          "display_copy": "《Attached》最重要的發現不是「你屬於哪一型」，而是：\n\n〖這個分類不是終點。〗\n\n研究估計，有【20–30%】在童年期具有不安全依附的成人，在成年後成功轉變為安全依附——研究者稱這個過程為「Earned Security（後天習得的安全感）」。\n\n資料來源：Roisman et al., 2002；CNBC, 2022.08.20",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-Attached說你不是/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Attached說你不是/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Attached說你不是/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-Attached說你不是/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-Attached說你不是/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-Attached說你不是/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            }
+          ],
+          "final_src": null,
+          "heading": "安全型伴侶，會讓你的大腦真的改變",
+          "display_copy": "「找一個安全型的人」——但為什麼？\n\n一項追蹤【134 對伴侶】的縱向研究發現：對伴侶建立信任，迴避依附程度隨時間降低；感受到伴侶支持你的目標，焦慮依附程度也降低。\n\n安全型的人會創造安全的環境，而那個環境會讓你的大腦【真的改變】——在壓力反應與情緒調節上，都和從小安全依附的人一樣。\n\n資料來源：Social and Personality Psychology Compass, 2023–2024",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "想改變的念頭本身，就已經是開始了",
+          "display_copy": "哥倫比亞大學醫學院臨床精神科副教授 Amir Levine，在新著《Secure》（2026）裡說：\n\n依附風格不是終身標籤，是大腦【可以重新學習的模式】。\n\n研究甚至發現：光是表達出「我想變得更安全」的渴望，就與未來更高的安全感顯著相關。\n\n你不需要先修好自己再開始——Lava 讓你在還不完美的時候，先去見一個真實的人。"
+        },
+        {
+          "n": 7,
+          "role": "應用/怎麼做",
+          "candidates": [],
+          "final_src": null,
+          "heading": "你可以從這三件小事開始練習 Earned Security",
+          "display_copy": "「後天習得的安全感」不是靠頓悟，是靠一次次小型的關係經驗重新訓練神經系統。\n\n從這三件事開始：\n\n① 練習說出需求，哪怕只是「我今天有點需要被陪」\n② 注意和哪些人在一起時，【不需要解讀對方的沉默】\n③ 出現焦慮或想逃時，先問：這是現在的情況，還是舊有的模式？"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Lava 的設計邏輯，就是「先見面」",
+          "display_copy": "依附理論說：安全感不是在頭腦裡想出來的，是在【真實的關係互動裡體驗到的】。\n\n聊天可以讓你感覺安全——但那是在練習控制，不是練習連結。\n\nLava 的邏輯很簡單：略過聊天，先去見一個真實的人。\n\n因為改變你大腦的，是那些面對面的、不確定的、〖真實的時刻〗。"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《Attached》全球銷售已超過 300 萬冊，並被翻譯成 40 多種語言",
+          "source": "https://www.cnbc.com/2022/08/20/why-attachment-theory-is-trending-according-to-dr-amir-levine.html",
+          "quote": "The book, which was published in 2010, has sold more than 3 million copies and been translated into over 40 languages."
+        },
+        {
+          "claim": "Amir Levine 是哥倫比亞大學醫學院臨床精神科副教授",
+          "source": "https://amirlevinemd.com/books/secure/",
+          "quote": "Amir Levine, MD, is an associate professor of clinical psychiatry at Columbia University Medical Center."
+        },
+        {
+          "claim": "研究估計，有 20% 至 30% 在童年期具有不安全依附的成人，在成年後展現出安全依附的模式（Earned Security）；引用 Roisman et al., 2002",
+          "source": "https://www.cnbc.com/2022/08/20/why-attachment-theory-is-trending-according-to-dr-amir-levine.html",
+          "quote": "Studies estimate that 20% to 30% of adults who had insecure early attachments display earned security in adulthood (Roisman et al., 2002)."
+        },
+        {
+          "claim": "一項追蹤 134 對伴侶的縱向研究發現：對伴侶的信任感能預測迴避依附程度隨時間降低；感受到伴侶支持自己目標追求，則能預測焦慮依附程度隨時間降低",
+          "source": "https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12808",
+          "quote": "In longitudinal analyses, trust in partner predicted decreases in avoidant attachment over time, and perceived partner support for goals predicted decreases in anxious attachment over time."
+        },
+        {
+          "claim": "較安全的個體可能創造出更安全的關係環境，進而讓伴侶也逐漸變得更安全（Hudson et al., 2014）",
+          "source": "https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12808",
+          "quote": "More secure individuals may create more secure relationship environments that in turn make their partners more secure over time (Hudson et al., 2014)."
+        },
+        {
+          "claim": "在一項追蹤四個月的縱向研究中，表達出想變得更安全的渴望，就與未來更高的安全感評分顯著相關（Hudson et al., 2020）",
+          "source": "https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12808",
+          "quote": "In a four-month longitudinal study, the desire to become more secure was significantly associated with higher security scores at follow-up (Hudson et al., 2020)."
+        },
+        {
+          "claim": "Amir Levine 新著《Secure》由 Avery／Penguin Random House 於 2026 年出版",
+          "source": "https://www.penguinrandomhouse.com/books/806976/secure-by-amir-levine-md/",
+          "quote": "Secure: The Revolutionary Guide to Creating a Secure Life by Amir Levine, MD. Published by Avery, an imprint of Penguin Random House."
+        },
+        {
+          "claim": "TikTok 上 #attachmentstyles 話題標籤累積 9,170 萬次觀看，#attachmenttheory 則達 1.424 億次觀看",
+          "source": "https://www.cnbc.com/2022/08/20/why-attachment-theory-is-trending-according-to-dr-amir-levine.html",
+          "quote": "The hashtag #attachmentstyles has 91.7 million views on TikTok, while #attachmenttheory has 142.4 million views."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "Amir Levine 在《Attached》裡說了一件很多人還不知道的事：依附風格不是出廠設定，是可以改的。\n\n你不是天生就這樣，你只是還沒待過一個不需要表演、不需要試探的關係環境。\n\n哥倫比亞大學醫學院臨床精神科副教授 Amir Levine 在 2026 年新著《Secure》裡進一步提出：依附風格不是終身標籤，而是大腦可以重新學習的模式。\n而在一項追蹤四個月的縱向研究中，研究者還發現了更簡單的一件事：表達出「想變得更安全」的渴望這個念頭本身，就與未來更高的安全感評分顯著相關（Hudson et al., 2020）。\n你不需要先把自己「修好」才能開始一段關係。\n這也是 Lava 在做的事：讓你在還不完美的時候，先去見一個真實的人。\n\n#依附理論 #AttachmentTheory #心理學 #關係 #親密關係 #EarnedSecurity #焦慮依附 #迴避依附 #安全依附 #Attached書 #交友軟體 #約會 #Lava交友 #不聊天的交友軟體 #線下約會",
+          "slides": {
+            "1": {
+              "heading": "焦慮型、迴避型——這不是你的個性，是你的環境訓練出來的",
+              "display_copy": "焦慮型、迴避型\n這不是你的個性\n是你的環境訓練出來的"
+            },
+            "2": {
+              "heading": "你有沒有在一段關係裡，把自己搞得很累",
+              "display_copy": "傳了訊息等回覆，一直盯著「已讀」解讀沉默的意思；或者對方靠近一點，你就想往後退。\n\n你以為這是個性問題——但《Attached》說，這是你的神經系統【學會的一套生存策略】，而且可以重新學。"
+            },
+            "3": {
+              "heading": "依附風格從哪裡來？John Bowlby 的答案",
+              "display_copy": "1960 年代，精神科醫師 John Bowlby 提出依附理論：\n\n你從嬰兒期開始，就根據照顧者的回應，建立出一套【關係預測模型】。\n\n「提出需求，對方不確定會不會回應？」→ 你學會焦慮型策略，放大訊號。\n「提出需求，通常沒有用？」→ 你學會迴避型策略，乾脆關掉需求。\n\n這不是個性，是保護機制。"
+            },
+            "4": {
+              "heading": "20–30% 的人，成功從不安全依附翻轉了",
+              "display_copy": "《Attached》最重要的發現不是「你屬於哪一型」，而是：\n\n〖這個分類不是終點。〗\n\n研究估計，有【20–30%】在童年期具有不安全依附的成人，在成年後成功轉變為安全依附——研究者稱這個過程為「Earned Security（後天習得的安全感）」。\n\n資料來源：Roisman et al., 2002；CNBC, 2022.08.20"
+            },
+            "5": {
+              "heading": "安全型伴侶，會讓你的大腦真的改變",
+              "display_copy": "「找一個安全型的人」——但為什麼？\n\n一項追蹤【134 對伴侶】的縱向研究發現：對伴侶建立信任，迴避依附程度隨時間降低；感受到伴侶支持你的目標，焦慮依附程度也降低。\n\n安全型的人會創造安全的環境，而那個環境會讓你的大腦【真的改變】——在壓力反應與情緒調節上，都和從小安全依附的人一樣。\n\n資料來源：Social and Personality Psychology Compass, 2023–2024"
+            },
+            "6": {
+              "heading": "想改變的念頭本身，就已經是開始了",
+              "display_copy": "哥倫比亞大學醫學院臨床精神科副教授 Amir Levine，在新著《Secure》（2026）裡說：\n\n依附風格不是終身標籤，是大腦【可以重新學習的模式】。\n\n研究甚至發現：光是表達出「我想變得更安全」的渴望，就與未來更高的安全感顯著相關。\n\n你不需要先修好自己再開始——Lava 讓你在還不完美的時候，先去見一個真實的人。"
+            },
+            "7": {
+              "heading": "你可以從這三件小事開始練習 Earned Security",
+              "display_copy": "「後天習得的安全感」不是靠頓悟，是靠一次次小型的關係經驗重新訓練神經系統。\n\n從這三件事開始：\n\n① 練習說出需求，哪怕只是「我今天有點需要被陪」\n② 注意和哪些人在一起時，【不需要解讀對方的沉默】\n③ 出現焦慮或想逃時，先問：這是現在的情況，還是舊有的模式？"
+            },
+            "8": {
+              "heading": "Lava 的設計邏輯，就是「先見面」",
+              "display_copy": "依附理論說：安全感不是在頭腦裡想出來的，是在【真實的關係互動裡體驗到的】。\n\n聊天可以讓你感覺安全——但那是在練習控制，不是練習連結。\n\nLava 的邏輯很簡單：略過聊天，先去見一個真實的人。\n\n因為改變你大腦的，是那些面對面的、不確定的、〖真實的時刻〗。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "fact": {
+        "ts": "2026-08-24T21:40:39+08:00",
+        "pass": false,
+        "claims": 5,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「hn Bowlby 的答案 1960 年代，精神科醫師 John B」沒有對應出處（年份）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究發現」的出處無法自動核對，請人工看過：https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12808"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「1960 年代，精神科醫師 John Bowlby 提出依附理論：  你從嬰兒期開始」沒有對應出處（人物引述）"
+          }
+        ]
       }
     }
   ]
