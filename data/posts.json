@@ -3395,138 +3395,6 @@
       "marketing_archived": true
     },
     {
-      "id": "20260803-Laa是怎麼把配對變成真",
-      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eyey802",
-      "created_at": null,
-      "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
-              "kind": "generated"
-            }
-          ],
-          "final_src": null,
-          "product_layout": "hero",
-          "frame_aspect": 0.62,
-          "heading": "配對只是開始。\n【見面，我們幫你排。】",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "",
-          "candidates": [],
-          "final_src": null,
-          "product_layout": "diagram",
-          "heading": "互答 6 題，才【走到下一關】",
-          "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
-        },
-        {
-          "n": 3,
-          "role": "",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
-              "kind": "generated"
-            }
-          ],
-          "final_src": null,
-          "product_layout": "notify",
-          "frame_aspect": {
-            "portrait": 0.6,
-            "landscape": 3.472
-          },
-          "heading": "兩邊都選好，\n【約會才算成立】",
-          "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
-          "default_cid": "a",
-          "crop_focus": [
-            0.5,
-            0.142
-          ]
-        },
-        {
-          "n": 4,
-          "role": "",
-          "candidates": [],
-          "final_src": null,
-          "product_layout": "price",
-          "display_copy": "如果對方沒有出現，",
-          "crop_focus": [
-            0.5,
-            0.142
-          ]
-        },
-        {
-          "n": 5,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "product_layout": "cta",
-          "heading": "排一場真的會發生的約會",
-          "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
-        }
-      ],
-      "template_id": "tpl-product-intro-carousel",
-      "writer_model": "claude",
-      "copy_versions": {
-        "claude": {
-          "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
-          "slides": {
-            "1": {
-              "heading": "配對只是開始。\n【見面，我們幫你排。】",
-              "display_copy": ""
-            },
-            "2": {
-              "heading": "互答 6 題，才【走到下一關】",
-              "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
-            },
-            "3": {
-              "heading": "兩邊都選好，\n【約會才算成立】",
-              "display_copy": "一方提出至少 3 個時段，\n另一方選一個。"
-            },
-            "4": {
-              "heading": "",
-              "display_copy": "如果對方沒有出現，"
-            },
-            "5": {
-              "heading": "排一場真的會發生的約會",
-              "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-19T16:38:04+08:00"
-    },
-    {
       "id": "20260823-superlike介紹",
       "topic": "Superlike 是什麼：把心意變成一場真的約會",
       "version": 1,
@@ -3600,6 +3468,182 @@
       "published_at": "2026-08-23T17:23:46+08:00",
       "permalink": "https://www.instagram.com/p/DcYJ-KYldyS/",
       "marketing_archived": true
+    },
+    {
+      "id": "20260803-Laa是怎麼把配對變成真",
+      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eyey802",
+      "created_at": null,
+      "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-1.webp",
+          "product_layout": "hero",
+          "frame_aspect": 0.75,
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-1.jpg",
+          "heading": "配對只是開始。\n【見面，我們幫你排。】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "",
+          "candidates": [],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-2.webp",
+          "product_layout": "diagram",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-2.jpg",
+          "heading": "互答 6 題，才【走到下一關】",
+          "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
+        },
+        {
+          "n": 3,
+          "role": "",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-3.webp",
+          "product_layout": "notify",
+          "frame_aspect": {
+            "portrait": 0.6,
+            "landscape": 2.924
+          },
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-3.jpg",
+          "heading": "兩邊都選好，\n【約會才算成立】",
+          "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "",
+          "candidates": [],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-4.webp",
+          "product_layout": "price",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-4.jpg",
+          "display_copy": "如果對方沒有出現，"
+        },
+        {
+          "n": 5,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-5.webp",
+          "product_layout": "cta",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-5.jpg",
+          "heading": "排一場真的會發生的約會",
+          "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
+        }
+      ],
+      "template_id": "tpl-product-intro-carousel",
+      "writer_model": "claude",
+      "rendered_at": "2026-08-24T21:00:35+08:00",
+      "candidates_since": "2026-08-19T16:38:04+08:00",
+      "copy_choice": "claude",
+      "rendered_lines": {
+        "1": [
+          "配對只是開始",
+          "見面，我們幫你排",
+          ""
+        ],
+        "2": [
+          "互答 6 題，才走到下一關",
+          "",
+          "配對成功不等於會見面",
+          "多數人卡在「要約嗎」這一步"
+        ],
+        "3": [
+          "兩邊都選好",
+          "約會才算成立",
+          "",
+          "一方提出至少 3 個時段",
+          "另一方選一個"
+        ],
+        "4": [
+          "如果對方沒有出現"
+        ],
+        "5": [
+          "排一場真的會發生的約會",
+          "",
+          "不用再猜對方想不想見面",
+          "流程會替你問"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-24T21:00:42+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-24T21:00:42+08:00",
+        "pass": true,
+        "claims": 0,
+        "issues": [],
+        "note": "文案未偵測到數字或研究引用"
+      },
+      "qa": {
+        "ts": "2026-08-24T21:01:03+08:00",
+        "pass": true,
+        "issues": [
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              2,
+              4,
+              5
+            ],
+            "severity": "warn",
+            "detail": "第1、2、4、5張底色全為純黑，主視覺元素（紅色圓角卡片／星星圖示）位置與尺寸高度相似，連續滑動時畫面幾乎沒有切換感，只有第3張黃底跳出來。黑底張佔整篇4／5，節奏嚴重失衡。",
+            "fix": "第4張（100%退費）建議改為深紅或炭灰漸層底，或引入一張有環境感的半暗場景照（例如：俯拍空桌面、一杯咖啡與手機的靜物，暖色調），打破純黑連續感；第5張CTA頁可改為品牌主色紅底白字，強化結尾視覺落點。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              4,
+              5
+            ],
+            "severity": "warn",
+            "detail": "全篇明度幾乎常駐在最暗區間，僅第3張黃底為唯一亮面，缺乏明暗起伏；讀者滑到第2張後已開始視覺疲勞，紅色卡片的強調效果也因背景過暗而互相抵消。",
+            "fix": "建議在第2張或第4張植入一張明度中高的畫面（例如：白底手機截圖UI展示、或亮灰色問卷題目排版頁），製造「暗→亮→暗→亮→暗」的明暗韻律。"
+          }
+        ],
+        "rhythm": "第3張黃底是全篇唯一的節奏喘息點，但前後都是純黑，整篇視覺像一首歌只有一個副歌、其餘全是靜音——黑底張需要至少再分化出一張明底或中調頁，才能讓輪播產生真正的滑動節奏感。"
+      }
     }
   ]
 }
