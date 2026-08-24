@@ -4,7 +4,7 @@
    所以卡片點擊是「帶你去做那個動作的地方」，不是拖拉。 */
 (() => {
 "use strict";
-const { $, el, esc, MODE, setImg, saveJson, STATE, FILES, loadAll, toast, modal, nowISO,
+const { $, el, esc, MODE, setImg, saveJson, STATE, FILES, loadAll, toast, modal, nowISO, tfetch,
         stageOf, gatesOf, alertOf } = window.LavaCore;
 
 const COLS = [
@@ -107,6 +107,70 @@ async function decideIdea(idea, decision, reason) {
     $("#bdDrawer").classList.remove("open");
     boot();
   } catch (e) { toast(e.message, true); }
+}
+
+// ── 撰稿中卡（放行後、入板前的隱形期）────────────────────────────────
+// 放行的卡從放行欄消失後，要等 排程器觸發撰稿（每 15 分 2 篇）→ 撰稿（約 6 分）→
+// 哨兵入板（每 10 分一輪）才會變成貼文出現。這段最長可到 40 分鐘，
+// 之前看板完全不顯示，Jesse 重整再多次也只看到空欄（2026-08-24 錄影退件）。
+// 這裡把「決定了但還沒入板」的卡畫在製作中欄，給預估時間與加速鈕。
+const DRAFT_HOOK = "https://lavadating.app.n8n.cloud/webhook/lava-ig-draft";
+
+const _tkey = s => String(s || "")
+  .replace(/^靈感｜|^IG貼文｜/, "").split("｜病毒分")[0]
+  .replace(/[\s【】〖〗「」『』，。：！？——–\-…()（）]/g, "").slice(0, 22);
+
+function draftingIdeas(posts) {
+  const ideas = ((STATE.ideas && STATE.ideas.ideas) || []).filter(x => x.decision === "approve");
+  const have = new Set(posts.map(p => _tkey(p.topic || p.id)));
+  return ideas.filter(i => !have.has(_tkey(i.title)))
+              .sort((a, b) => String(a.decided_at || "").localeCompare(String(b.decided_at || "")));
+}
+
+function draftingCard(idea, pos) {
+  const c = el("div", "bd-card"); c.style.borderLeftColor = "var(--stage-make, #d9a441)";
+  c.appendChild(el("div", "t", "✍ " + esc(_tkey(idea.title) ? idea.title.replace(/^靈感｜/, "").split("｜病毒分")[0] : idea.title)));
+  const meta = el("div", "meta");
+  meta.appendChild(el("span", "age", "撰稿中 · 放行於 " + esc(ago(idea.decided_at))));
+  // 預估：排程器每 15 分收 2 篇 → 撰稿 6 分 → 哨兵入板最慢 10 分。依佇列位置往後推。
+  const etaMin = 15 * (Math.floor(pos / 2) + 1) + 10;
+  meta.appendChild(el("span", "age", idea.rushed_at ? "已加速，入板最慢 15 分" : `預計 ${etaMin} 分內入板`));
+  c.appendChild(meta);
+  if (!idea.rushed_at) {
+    const b = el("button", "btn", "⚡ 加速");
+    b.style.marginTop = "6px";
+    b.onclick = e => { e.stopPropagation(); rushDraft(idea, b); };
+    c.appendChild(b);
+  }
+  return c;
+}
+
+async function rushDraft(idea, btn) {
+  const ok = await modal("立即觸發撰稿？",
+    el("div", "small muted",
+      "跳過排程器的分批節奏，現在就開始寫這一篇。若排程器其實已經在寫，會多寫出一份草稿（無害，但多花一次模型額度）。"),
+    [{ label: "取消", value: null }, { label: "立即撰稿", value: 1, cls: "primary" }]);
+  if (!ok) return;
+  btn.disabled = true;
+  let angle = "";
+  const m = /\*\*切角\*\*：([\s\S]*?)(\n\n|$)/.exec(idea.desc || "");
+  if (m) angle = m[1].trim();
+  const topic = (idea.title || "").replace(/^靈感｜/, "").split("｜病毒分")[0];
+  try {
+    const r = await tfetch(DRAFT_HOOK, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic, type: "知識型", slides: 9, angle, taskId: idea.task_id, writer: "claude" }),
+    }, 20000);
+    if (!r.ok) throw new Error("觸發失敗 (" + r.status + ")");
+    toast("已觸發撰稿 ✓ 約 6 分寫完，哨兵 10 分內入板");
+    try {
+      await saveJson(FILES.ideas, doc => {
+        const t = (doc.ideas || []).find(x => x.task_id === idea.task_id);
+        if (t) t.rushed_at = nowISO();
+      }, "rush draft: " + idea.task_id);
+    } catch (e) { /* 標記失敗不影響已觸發的撰稿 */ }
+    boot();
+  } catch (e) { btn.disabled = false; toast(e.message, true); }
 }
 
 // ── 放行欄：規則提案（repo 有的）＋ ClickUp 靈感卡（誠實地說在哪）───────
@@ -214,6 +278,13 @@ function boot() {
       props.forEach(pr => cards.appendChild(proposalCard(pr)));
       if (!ideas.length && !props.length) cards.appendChild(el("div", "small muted", "（今天沒有待放行的靈感）"));
       list = ideas.concat(props);
+    } else if (key === "make") {
+      list = by(key);
+      const drafting = draftingIdeas(posts);
+      drafting.forEach((idea, i) => cards.appendChild(draftingCard(idea, i)));
+      list.forEach(p => cards.appendChild(postCard(p, key)));
+      if (!list.length && !drafting.length) cards.appendChild(el("div", "small muted", "（空）"));
+      list = list.concat(drafting);
     } else {
       list = by(key);
       list.forEach(p => cards.appendChild(postCard(p, key)));

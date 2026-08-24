@@ -251,5 +251,5 @@ function alertOf(p) {
   return null;
 }
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();
