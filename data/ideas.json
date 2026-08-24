@@ -238,8 +238,8 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：Google Trends 台灣今日熱搜出現「naomi」（可能指 Naomi Wolf 或 Naomi Osaka，但 Wolf 的《The Beauty Myth》更有橋接價值）。Naomi Wolf 1990 年出版《The Beauty Myth》，核心論點：女性被訓練成要先「夠漂亮、夠好」才有資格被愛，這個邏輯讓她們把自我價值外包給他人的眼光。反直覺延伸：2025 年的研究顯示，這個「值得被愛」的焦慮，在年輕男性族群中的增長速度已經超過女性（社群媒體體態焦慮、身高焦慮、財力焦慮）。洞察：不管性別，「先讓自己夠好再去談戀愛」這個信念，可能才是讓你一直沒開始的原因。\n\n病毒係數：7/10。熱搜帶流量；反直覺角度（男性也有 beauty myth）容易引發討論；「值得被愛」這個命題命中大量單身者的內心獨白\n\n熱度證明：\nGoogle Trends 台灣｜naomi 今日熱搜｜今日台灣熱搜關鍵字｜https://trends.google.com.tw/\n《The Beauty Myth》Naomi Wolf｜Beauty Myth 出版 35 週年重新討論浪潮｜歐美書評與社群重新討論，35 週年版本｜https://en.wikipedia.org/wiki/The_Beauty_Myth\n\nLava 接點：Lava 的設計哲學：你不需",
       "url": "https://app.clickup.com/t/86eyn7xu1",
       "created_at": "2026-08-17T09:02:23+08:00",
-      "decision": null,
-      "decided_at": null,
+      "decision": "reject",
+      "decided_at": "2026-08-24T17:33:42+08:00",
       "reason": "",
       "applied": false
     },
