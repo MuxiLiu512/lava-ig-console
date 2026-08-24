@@ -1024,7 +1024,9 @@ def _append_jsonl(path, rows):
 # 退回不改 ClickUp 狀態（4 態狀態機沒有退回位，不硬塞語意）：本地記 tombstone
 # ＋卡上留言退回原因；看板永久隱藏。要批次關卡等 Jesse 決定目標狀態再做。
 IDEA_LIST = "901819351278"
-IDEA_RELEASE_FIELD = "b0deb388"
+# 🚀放行 checkbox 的完整 field id。之前只存了 UUID 前 8 碼，ClickUp 回 400，
+# 六張放行卡從沒真的勾進去（2026-08-24 抓到）。API 要的是完整 UUID。
+IDEA_RELEASE_FIELD = "b0deb388-0235-4be5-806c-d5e6acf1169a"
 
 
 MARKETING_PLAN = ("/Users/mimo/Library/CloudStorage/GoogleDrive-service@lava.tw/My Drive/"

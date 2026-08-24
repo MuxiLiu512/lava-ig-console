@@ -12,6 +12,18 @@ RUNMARK="/tmp/lava-ig-autorender.running"
 # Python 解譯器：launchd 的 PATH 不含 anaconda，`python3` 會落到 /usr/bin/python3（無 PIL），
 # 導致渲染／總檢在部分輪次靜默失敗（log 自 2026-08-02 起零星出現 ModuleNotFoundError: PIL）。
 # 明確挑一個帶得動 PIL 的解譯器，挑不到就直接告警退出，不再半殘運轉。
+# launchd 的 PATH 只有 /usr/bin:/bin:/usr/sbin:/sbin，沒有 homebrew。
+# `timeout` 裝在 /opt/homebrew/bin（coreutils），launchd 輪次裡每一個 timeout 呼叫
+# 都 127 command not found——訊號、成效、ideas-apply/pull、渲染、排版檢查全部靜默不跑，
+# 只剩沒包 timeout 的零星步驟在動（2026-08-24 抓到：ideas-pull 停在 08-20，
+# Jesse 的放行決定四天沒有回寫 ClickUp）。互動 shell 有 homebrew PATH，
+# 所以每次手動跑都是好的——正是「手動都過、排程全死」的經典組合。
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+if ! command -v timeout >/dev/null 2>&1; then
+  echo "[$(date '+%m-%d %H:%M')] ✗ 找不到 timeout（coreutils），哨兵中止——這會讓所有步驟靜默不跑" >>"$LOG"
+  exit 1
+fi
+
 PY=""
 for c in /Users/mimo/opt/anaconda3/bin/python3 "$(command -v python3 2>/dev/null)" /usr/bin/python3; do
   [ -n "$c" ] && [ -x "$c" ] || continue

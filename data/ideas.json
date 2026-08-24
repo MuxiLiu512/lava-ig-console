@@ -2,6 +2,226 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "86eyqbfrc",
+      "title": "欸…你有沒有發現，「年薪 350 萬的女生不看臉」這個問題——其實問錯了？r/datingoverthirty 上有個高讚回覆說：高收入讓人「不將就」，不是「不在乎外貌」，這兩件事差很多｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT Boy-Girl 今天「年薪 350 萬女生真的就不看臉了嗎」推 21 熱討論。切入角度：這個問題的前提就是錯的——研究顯示（包括 David Buss 的跨文化研究），高收入女性對伴侶的「最低標準」提高了，但外貌仍然是重要因素，只是她們更能等到「外貌＋其他條件都符合」的人出現。r/datingoverthirty 的洞察：經濟獨立讓人有「不將就」的底氣，不是讓人「不在乎」。\n\n病毒係數：7/10。話題本身已有熱度，反直覺角度（問題本身就問錯了）能引發討論；但需注意避免與已出過的「年薪 350 萬」選題重複——本次切角聚焦在「不將就 vs 不在乎」的概念區分，角度不同\n\n熱度證明：\nPTT Boy-Girl｜年薪350萬女生真的就不看臉了嗎｜推 21，今日 PTT 第二高熱度｜https://www.ptt.cc/bbs/Boy-Girl/M.1787413077.A.E79.html\n\nLava 接點：Lava 的見面設計讓人能在真實互動中感受「綜合吸引力」，而不是在 app 上用單一條件篩選\n\n圖像建議：概念對比圖卡：「不將就」vs「不在乎外貌」——差在哪裡\n\n建議類型：有趣知識與硬核觀點型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀 放行」即自動啟動撰稿（Claude，九張結構）；稿子完成後到操控室選圖核准。不做請封存。",
+      "url": "https://app.clickup.com/t/86eyqbfrc",
+      "created_at": "2026-08-24T09:02:10+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：標題禁用對話式開場（欸…你有沒有發現），讀起來像 AI。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyqbfr9",
+      "title": "Esther Perel 說：「遠距離戀愛」最讓人痛苦的，不是距離本身——而是你們對「這段關係要去哪裡」從來沒有說清楚過｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT 今天有「我真的很愛我女友但遠距離是真的很難過」獲得討論。Esther Perel 的反直覺觀點：遠距離關係的危機不是物理距離，而是「關係定義的模糊」——兩個人都在忍，但忍的是不同的事情，朝著不同的終點。她說，遠距離最需要的對話不是「我愛你」，而是「我們的終點是什麼，在什麼時間點」。沒有這個對話，距離只是把問題放大。\n\n病毒係數：8/10。遠距離是台灣年輕人高頻焦慮（求學、工作外派），Esther Perel 的角度反直覺且實用，容易引發「這說的就是我」的儲存衝動\n\n熱度證明：\nPTT Boy-Girl｜我真的很愛我女友 但遠距離是真的很難過｜推 9，今日討論串，引發回文｜https://www.ptt.cc/bbs/Boy-Girl/M.1787461033.A.551.html\nEsther Perel 官方 Podcast「Where Should We Begin」｜Long distance episodes｜遠距離主題為 Podcast 高收聽集數之一｜https://www.estherperel.com/podcast\n\nLava 接點：Lava 強調真實見面的價值，對遠距離用戶而言，每一次見面的品質更顯重要\n\n圖像建議：人物照片：Esther Perel\n\n建議類型：人物志型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀",
+      "url": "https://app.clickup.com/t/86eyqbfr9",
+      "created_at": "2026-08-24T09:02:08+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複（Esther Perel／Gottman／Aron 已嚴重過量）。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyqbfr7",
+      "title": "「Hesidating」「Slow Fade」「Soft Ghosting」「Breadcrumb Comeback」——4 個說的都是「我沒有明確拒絕你，但我也沒有真的在」的詞，這在紅什麼？｜病毒分 9｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：歐美約會圈正在密集討論一組詞，核心都是「模糊的不在場」：Hesidating（猶豫要不要繼續約，所以什麼都不做）、Slow Fade（慢慢減少回覆直到消失）、Soft Ghosting（只按讚不回文字）、Breadcrumb Comeback（消失一段時間後突然傳一句「最近還好嗎」）。台灣在地化：這四種行為在 PTT 都有對應的討論，但我們沒有這麼精準的詞。有了詞，才能說清楚那個感覺。\n\n病毒係數：9/10。每個詞都對應一個台灣人超有共鳴的真實經歷，打包成圖卡極高收藏與分享價值；「說中我了」情境強烈，且能引發標記朋友的衝動\n\n熱度證明：\nReddit r/Tinder + r/dating_advice｜Soft ghosting and hesidating discussion threads｜Hesidating 2024 年被多家媒體（Cosmopolitan、Refinery29）列為年度約會新詞；Soft ghosting 在 TikTok 超過 5 億次瀏覽｜https://www.reddit.com/r/Tinder/\n\nLava 接點：Lava 的設計讓關係直接進入見面階段，減少在「模糊曖昧」地帶耗損的時間與情緒成本\n\n圖像建議：概念圖卡\n\n建議類型：趨勢詞策展型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀 放行」即自動啟",
+      "url": "https://app.clickup.com/t/86eyqbfr7",
+      "created_at": "2026-08-24T09:02:06+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：純新詞打包／泛歐美趨勢不再採用，需綁定具體名人事件＋多家國外主流媒體報導。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyqbfr6",
+      "title": "「Attachment Injury」「Protest Behavior」「Deactivating Strategy」——3 個《Attached》沒教你的進階詞，說的都是「我明明很愛你，但我就是做出了那個讓你心寒的舉動」｜病毒分 9｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《Attached》讓大家認識了焦慮型／逃避型依附，但書裡還有三個更具體的機制很少人討論：Attachment Injury（一次讓你再也無法信任對方的事件）、Protest Behavior（焦慮型用來測試對方的行為，例如突然冷漠）、Deactivating Strategy（逃避型用來壓制親密感的策略，例如突然覺得對方哪裡不好）。這三個詞能讓人立刻對號入座。\n\n病毒係數：9/10。依附理論在台灣已有基礎認知，進階詞能給「已經知道自己是焦慮型」的人新的洞察，極高收藏價值；「說中我了」情境強烈\n\n熱度證明：\nReddit r/datingoverthirty + 《Attached》長銷熱度｜Attachment theory advanced concepts trending in relationship subreddits｜《Attached》持續位居亞馬遜心理學類暢銷榜，相關詞在 TikTok 累積數億次瀏覽｜https://www.reddit.com/r/datingoverthirty/\n\nLava 接點：理解這三個機制，能幫助用戶在真實見面時更快辨識自己和對方的互動模式，而不是在聊天室裡無限猜測\n\n圖像建議：書封：Attached（Amir Levine & Rachel Heller）\n\n建議類型：書摘型\n\n建議模板：",
+      "url": "https://app.clickup.com/t/86eyqbfr6",
+      "created_at": "2026-08-24T09:02:05+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：純新詞打包／泛歐美趨勢不再採用，需綁定具體名人事件＋多家國外主流媒體報導。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyqbfr1",
+      "title": "「結婚條件」今天在 PTT 推爆 54 篇——但 r/datingoverthirty 上的人說，他們後來發現，當初列的那張清單，幾乎每一條都問錯了問題｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT Boy-Girl「步入下一階段（結婚）的條件」今天推 54，是今日最高熱度串。切入：大家都在討論「條件」（收入、學歷、外貌），但 r/datingoverthirty 的高讚討論指出，30 歲後真正讓人決定結婚的，是「這個人讓我成為更好的自己嗎」而不是任何可量化條件。John Gottman 的研究也支持：預測婚姻幸福的指標，不是條件匹配，是互動品質。\n\n病毒係數：8/10。「結婚條件」是台灣 25-35 歲核心焦慮，推 54 代表高共鳴，反直覺角度（清單問錯問題）容易引發討論與儲存\n\n熱度證明：\nPTT Boy-Girl｜步入下一階段(結婚)的條件｜推 54，今日 PTT Boy-Girl 最高熱度｜https://www.ptt.cc/bbs/Boy-Girl/M.1787415265.A.3BA.html\n\nLava 接點：Lava 鼓勵真實見面而非紙上條件篩選，見面才能感受到「互動品質」這個真正的關鍵指標\n\n圖像建議：概念圖卡：「你以為的結婚條件清單」vs「Gottman 說真正重要的是⋯⋯」\n\n建議類型：有趣知識與硬核觀點型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀 放行」即自動啟動撰稿（Claude，九張結構）；稿子完成後到操控室選圖核准。不做請封存。",
+      "url": "https://app.clickup.com/t/86eyqbfr1",
+      "created_at": "2026-08-24T09:02:04+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eyqbfqr",
+      "title": "欸…你有沒有發現，「付出就要有回報」這句話——PTT 今天用股票在講感情，但行為經濟學家說，把感情當投資組合的人，通常最後兩頭空｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT Boy-Girl 今天有篇「從股票看男女交往付出就要有回報」獲得討論，切入點是：把感情「量化」的思維本身就是問題所在。行為經濟學家稱這為「Sunk Cost Fallacy in Relationships」——你繼續付出，不是因為值得，而是因為已經付出太多。反直覺洞察：真正健康的感情，雙方都不在記帳。\n\n病毒係數：7/10。「付出就要有回報」是台灣感情討論最高頻的焦慮之一，沉沒成本謬誤在關係中的應用反直覺且實用，容易引發「說中我了」的共鳴與轉發\n\n熱度證明：\nPTT Boy-Girl｜從股票看男女交往「付出就要有回報」這件事｜推 5，今日討論串｜https://www.ptt.cc/bbs/Boy-Girl/M.1787327701.A.FC5.html\n\nLava 接點：Lava 的設計邏輯是「直接見面」，減少在聊天階段無限付出卻沒有進展的沉沒成本陷阱\n\n圖像建議：概念對比圖：左邊「投資報酬率思維」vs 右邊「健康關係思維」\n\n建議類型：有趣知識與硬核觀點型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀 放行」即自動啟動撰稿（Claude，九張結構）；稿子完成後到操控室選圖核准。不做請封存。",
+      "url": "https://app.clickup.com/t/86eyqbfqr",
+      "created_at": "2026-08-24T09:02:03+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：標題禁用對話式開場（欸…你有沒有發現），讀起來像 AI。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyq9f6w",
+      "title": "東野圭吾走了，《白夜行》衝上台灣暢銷榜——雪穗和亮司的關係，愛情研究者會怎麼定義它？｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：東野圭吾辭世後，《白夜行》在台灣暢銷書榜急速竄升，大批年輕讀者重新入坑。這本書的核心是一個極端的問題：亮司用一生的犯罪，讓雪穗永遠活在光裡——這算愛嗎？關係心理學有一個概念叫「Enmeshment（糾纏型關係）」：兩個人的邊界完全消失，一個人的存在只為了成全另一個人。表面上是犧牲，實際上是兩個人都失去了自己。《白夜行》之所以讓人讀完說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？真正的關係，是兩個人都能站在光裡。Lava 想幫你找的，是那種不需要有人躲在暗處的連結。\n\n病毒係數：7/10。出圈證據為 UDN（台灣主流媒體）直接報導東野圭吾辭世帶動《白夜行》衝上台灣暢銷書榜，且點名年輕人大量入坑，確認此刻台灣真的有一群人在談這本書。\n\n熱度證明：\nUDN 聯合新聞網｜東野圭吾辭世「白夜行」帶頭搶占台灣暢銷書榜年輕人也入坑｜台灣主流媒體 UDN 報導，確認《白夜行》衝上台灣暢銷書榜且年輕讀者大量入坑｜https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jT0hsa3gySzZ2eGpqTmxwcW55ZHlGcDlNWk95dU9wdG80MER4TVdMeklOMWxPV3pmbkpoRUNCWS1oczI1NzNzLXdzenhNMl",
+      "url": "https://app.clickup.com/t/86eyq9f6w",
+      "created_at": "2026-08-23T21:01:26+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eyq9f6c",
+      "title": "《毛骨悚然的戀愛》大結局前，朴恩斌選擇留下的那一刻——心理學說，這才是真正的承諾｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《毛骨悚然的戀愛》8/23 大結局引發台灣觀眾熱議。劇中朴恩斌與梁世宗在事業危機、外界壓力下「解除婚約」又重新靠近的過程，其實觸碰到一個關係研究裡很核心的問題：為什麼人在最脆弱的時候，反而最容易逃離？心理學把這個現象叫做「Fear of Engulfment」——不是不愛，是太怕被關係淹沒。但研究發現，真正讓一段關係存活的，不是「沒有危機」，而是在危機裡選擇留下的那個決定。Lava 的設計邏輯也是這樣：不讓你在最安全的距離裡假裝在交往，而是創造真實見面的機會——因為承諾只在真實的接觸裡才會發生。\n\n病毒係數：7/10。出圈證據為風傳媒報導 Netflix 台灣 8 月收視排行榜，加上 Yahoo 新聞、Bella 等多家台灣主流媒體同時報導同一作品，確認台灣觀眾此刻真的在追這部劇且大結局在即，熱度有時效性。\n\n熱度證明：\nYahoo 新聞｜朴恩斌《毛骨悚然的戀愛》8/23大結局恐悲劇？改編孫藝真神作 韓劇VS.電影版差異一次看！｜Yahoo 新聞大結局專題報導，引發台灣觀眾熱議｜https://news.google.com/rss/articles/CBMilwRBVV95cUxNa2Znak9BVU1RLXR2ZW52TDcyQkpRSUZKeTBhbDU1UmlVZGl0dFdmT19RUHotQUk4U3RqM2YwZ05FQjh6",
+      "url": "https://app.clickup.com/t/86eyq9f6c",
+      "created_at": "2026-08-23T21:01:24+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eyq3yp6",
+      "title": "欸…你有沒有發現，「親親前會避免吃什麼」這個問題——WomenTalk 今天在討論，但心理學家說，你們能不能討論這種事，才是這段關係最重要的指標？｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：WomenTalk 今天有一篇「親親前會避免吃什麼嗎？」的閒聊。表面上是很生活的小事，但關係心理學家 John Gottman 的研究裡有一個概念叫「bids for connection」——兩個人能不能輕鬆討論這種「有點親密又有點尷尬」的小事，是判斷關係安全感的指標之一。能討論這種事，代表你們之間有「心理安全感」；不能討論，才是需要注意的信號。\n\n病毒係數：7/10。從生活小事切入關係心理學，讓人有「原來這件小事這麼重要」的驚喜感，容易引發「存起來傳給對象」的行為\n\n熱度證明：\nPTT WomenTalk｜[閒聊] 親親前會避免吃什麼嗎？｜今日 WomenTalk 版活躍討論｜https://www.ptt.cc/bbs/WomenTalk/M.1787379685.A.85F.html\nJohn Gottman 研究｜Bids for Connection and Relationship Quality｜Gottman Institute 核心研究，被廣泛引用｜https://www.gottman.com/blog/want-to-improve-your-relationship-start-paying-attention-to-bids-for-connection/\n\nLava 接點：Lava 讓你去見面——只有見了面，這",
+      "url": "https://app.clickup.com/t/86eyq3yp6",
+      "created_at": "2026-08-23T09:02:11+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：標題禁用對話式開場（欸…你有沒有發現），讀起來像 AI。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyq3yp3",
+      "title": "「Reverse Catfishing」「Underpromise Dating」「Anti-Highlight Reel」——歐美正在流行「故意把自己呈現得更普通」的約會策略，這在紅什麼？｜病毒分 9｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：歐美 r/Tinder 和 TikTok 上正在流行一個反精心包裝的趨勢：Reverse Catfishing（反向 Catfish，刻意用最普通的照片）、Underpromise Dating（先讓對方預期低一點，見面再驚喜）、Anti-Highlight Reel（不發最好看的，發最真實的）。背後邏輯：當所有人都在精心包裝自己，「看起來普通」反而成為差異化。台灣在地化：「朋友說我 IG 照片比本人好看，我決定換成最醜的那張」。\n\n病毒係數：9/10。反直覺策略 + 三個新詞打包 + 台灣人對「照片 vs 本人」的焦慮極度有共鳴，收藏與分享動機強，且與 Lava 的 offline-first 精神完美呼應\n\n熱度證明：\nReddit r/Tinder｜Reverse catfishing: using worse photos on purpose｜相關討論 2024-2025 年在 r/Tinder 持續出現，多篇破千讚｜https://www.reddit.com/r/Tinder/\nTikTok｜#underpromisedating #anticatfish trending｜相關 hashtag 累積數百萬次觀看｜https://www.tiktok.com/tag/underpromisedating\n\nLava 接點：La",
+      "url": "https://app.clickup.com/t/86eyq3yp3",
+      "created_at": "2026-08-23T09:02:10+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：純新詞打包／泛歐美趨勢不再採用，需綁定具體名人事件＋多家國外主流媒體報導。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyq3yp2",
+      "title": "Arthur Aron 說：讓人「想再見你一次」的關鍵，不是你有多有趣——而是你讓對方說了多少關於自己的事｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：Arthur Aron 的「36 個問題」實驗大家都知道，但他研究裡最被忽略的一個發現是：讓人想再見面的關鍵，不是你表現得多好、多有趣，而是對方在這次相處裡說了多少關於自己的事。心理學叫這個「self-disclosure reciprocity」——當一個人說了很多關於自己的事，他會對聽的那個人產生更強的連結感。反直覺結論：第一次約會，少說自己，多問對方。\n\n病毒係數：8/10。反直覺結論（少說自己才更吸引人）容易引發「原來如此」的收藏衝動，Arthur Aron 有足夠知名度但這個角度還沒被過度消費\n\n熱度證明：\nArthur Aron 研究｜The Experimental Generation of Interpersonal Closeness (1997)｜被引用超過 3,000 次，2015 年 NYT 報導後二度爆紅｜https://journals.sagepub.com/doi/10.1177/0146167297234003\nReddit r/datingadvice｜Why asking questions is more attractive than telling stories｜此類討論在 r/dating_advice 持續高熱，常破千讚｜https://www.reddit.com/r/dating_ad",
+      "url": "https://app.clickup.com/t/86eyq3yp2",
+      "created_at": "2026-08-23T09:02:09+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複（Esther Perel／Gottman／Aron 已嚴重過量）。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyq3yp1",
+      "title": "「Pity Dating」「Obligation Relationship」「Guilt Bonding」——3 個歐美約會圈正在討論的詞，說的都是「我不是真的喜歡你，但我說不出口」這種感覺，這在紅什麼？｜病毒分 9｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：歐美 r/Tinder 和 r/relationships 最近在討論一個現象：很多人維持一段關係，不是因為喜歡，而是因為「不好意思離開」。Pity Dating（同情式交往）、Obligation Relationship（責任感維繫的關係）、Guilt Bonding（罪惡感黏合）——這三個詞描述的是同一種台灣人非常熟悉但從來沒有名字的感覺。台灣在地化：「他對我很好，但我就是喜歡不起來，可是又不知道怎麼說」。\n\n病毒係數：9/10。「說不出口的感覺終於有名字了」是 IG 最高收藏動機，三個詞打包更有策展感，台灣年輕人對這種情境極度有共鳴\n\n熱度證明：\nReddit r/relationships｜I'm staying in this relationship out of guilt, not love｜相關討論串每月數十篇，留言數百至數千｜https://www.reddit.com/r/relationships/\nReddit r/Tinder｜Pity dating discussion threads｜r/Tinder 超過 300 萬訂閱，此類迷因與討論持續高熱｜https://www.reddit.com/r/Tinder/\n\nLava 接點：Lava 讓你用「見面」來確認感覺，而不是靠聊天說服自己喜歡或不喜歡——見了面",
+      "url": "https://app.clickup.com/t/86eyq3yp1",
+      "created_at": "2026-08-23T09:02:08+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：純新詞打包／泛歐美趨勢不再採用，需綁定具體名人事件＋多家國外主流媒體報導。",
+      "applied": true
+    },
+    {
+      "task_id": "86eyq3yp0",
+      "title": "「步入下一階段」這件事——r/datingoverthirty 上 30 歲後的人說，他們最後悔的不是「太早結婚」，而是這個｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT 今天熱討「結婚的條件」（推 13，今日最高），r/datingoverthirty 上同樣的討論卻有一個反直覺結論：30 歲後最多人後悔的不是「結婚太早」或「條件沒談清楚」，而是「花太多時間在確認條件，卻從來沒有真的相處過」。他們說，結婚的條件不是清單，是一種你們在一起時的「感覺品質」——但這個東西，只有見面才能測量。\n\n病毒係數：8/10。「結婚條件」是台灣 25-35 歲核心焦慮，r/datingoverthirty 的熟齡洞察帶來反直覺角度，容易引發「存起來」和「傳給對象看」的行為\n\n熱度證明：\nPTT Boy-Girl｜[討論] 步入下一階段(結婚)的條件｜推 13，今日 Boy-Girl 版最高推文｜https://www.ptt.cc/bbs/Boy-Girl/M.1787415265.A.3BA.html\nReddit r/datingoverthirty｜What do you wish you knew before getting married?｜r/datingoverthirty 超過 40 萬訂閱，此類討論串常破千留言｜https://www.reddit.com/r/datingoverthirty/\n\nLava 接點：Lava 的核心主張就是：感情的品質只有見面才能測量，不是清單，不是聊天記錄\n\n圖像",
+      "url": "https://app.clickup.com/t/86eyq3yp0",
+      "created_at": "2026-08-23T09:02:07+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eyq3ynw",
+      "title": "欸…你有沒有發現，「年薪 350 萬的女生真的不看臉了嗎」這個問題——行為經濟學家說，答案不是你以為的那樣？｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT 今天熱討「高收入女性的擇偶標準」，但行為經濟學家 Dan Ariely 的研究顯示：當人們「聲稱」自己更在乎內在條件時，實際配對行為卻仍高度受外表驅動。這個「說的和做的不一樣」的落差，有一個名字叫「stated vs. revealed preference」。高收入女性的擇偶標準真的改變了嗎？還是只是「想像中的自己」在回答這個問題？\n\n病毒係數：8/10。「高收入女性擇偶」是台灣長青話題，加上反直覺科學結論，容易引發「這說的就是我」或「不對我不是這樣」的留言爭論，互動率高\n\n熱度證明：\nPTT Boy-Girl｜[閒聊] 年薪350萬女生真的就不看臉了嗎!?｜推 4，今日 Boy-Girl 版活躍討論｜https://www.ptt.cc/bbs/Boy-Girl/M.1787413077.A.E79.html\n行為經濟學研究｜Dan Ariely: Stated vs. Revealed Preference in Dating｜TED Talk 超過 500 萬次觀看｜https://www.ted.com/talks/dan_ariely_on_online_dating\n\nLava 接點：Lava 的 offline-first 設計讓你在見面前沒有辦法靠「聊天印象」說服自己喜歡對方——你的「revealed prefer",
+      "url": "https://app.clickup.com/t/86eyq3ynw",
+      "created_at": "2026-08-23T09:02:04+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：標題禁用對話式開場（欸…你有沒有發現），讀起來像 AI。",
+      "applied": true
+    },
+    {
+      "task_id": "86eypznm7",
+      "title": "離婚協議保密違約金 1 億——《The All-or-Nothing Marriage》作者說：現代婚姻的問題，不是人們太容易離婚，而是我們對婚姻要求太高了｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：趙建銘離婚協議今天在 PTT 引發討論，切入心理學家 Eli Finkel（《The All-or-Nothing Marriage》作者）的核心論點：他研究美國婚姻 50 年的數據後發現，現代人對婚姻的期待已經從「安全感與生育」升級到「自我實現與靈魂伴侶」——這個期待值的提高，讓婚姻同時變得更美好（當它成功時）和更脆弱（因為失敗的標準也更高）。反直覺洞察：離婚率高，不是因為人們不認真，而是因為我們對「夠好的婚姻」的定義，已經是 50 年前的 10 倍高。台灣在地化：台灣年輕人說「寧缺勿濫」，其實說的就是這個——我們都在等一個能滿足所有需求的人。\n\n病毒係數：7/10。名人離婚新聞作為入口，搭配書摘型反直覺洞察，「對婚姻要求太高」這個觀點容易引發討論與自我反思\n\n熱度證明：\nPTT Boy-Girl / WomenTalk｜趙建銘秀離婚協議：保密違約金1億元｜PTT Boy-Girl 今日討論文，話題延燒至 WomenTalk｜https://www.ptt.cc/bbs/Boy-Girl/M.1787240393.A.ECC.html\n\nLava 接點：Lava 的切入點：在你決定要不要進入一段關係之前，先真的見到人——把對「完美伴侶」的想像，換成對「真實的人」的認識\n\n圖像建議：書封：The All-or-Nothing Marriag",
+      "url": "https://app.clickup.com/t/86eypznm7",
+      "created_at": "2026-08-22T09:02:17+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eypznm0",
+      "title": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：重陽節（老人節）今天台灣熱搜，切入一個反直覺研究：2023 年 UC San Diego 的研究發現，人生中孤獨感最強烈的不是老年期，而是 20-30 歲的年輕成人期——這個年紀社交壓力最大、比較心最重、但真實深度連結反而最少。研究者稱之為「孤獨悖論」：你以為老了才會孤獨，但你現在就已經是最孤獨的年齡。台灣在地化：台灣年輕人出社會後社交圈急速萎縮，這個研究說的正是你的狀態。反直覺 hook：我們替老人過節，但最需要被看見的，是你自己。\n\n病毒係數：8/10。時事節點（重陽節）+ 強烈反直覺數據（最孤獨的是年輕人）+ 高度「這在說我」情境，容易引發自我代入與分享\n\n熱度證明：\nGoogle Trends 台灣｜重陽節｜今日台灣熱搜詞｜https://trends.google.com.tw/\nUC San Diego / American Journal of Geriatric Psychiatry｜Loneliness peaks in young adulthood and old age｜可查證學術研究，2023 年發表｜https://www.ajgponline.org/\n\nLava 接點：Lava 存在的意義：解決的不是老年孤獨，是你現在、25-35 歲、最孤獨的這幾年——讓你出門，真的遇到人\n\n圖像建議：數據對比圖：各年齡孤獨",
+      "url": "https://app.clickup.com/t/86eypznm0",
+      "created_at": "2026-08-22T09:02:16+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eypznkw",
+      "title": "「Micro-cheating」「Emotional Affair」「Parasocial Crush」「Digital Intimacy」——4 個歐美正在討論的詞，說的都是「我沒有出軌，但我也沒有完全在這段關係裡」｜病毒分 9｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：趨勢詞策展：隨著社群媒體和 AI 陪伴興起，「出軌」的邊界變得越來越模糊。歐美約會圈正在用這 4 個詞描述灰色地帶——Micro-cheating（微出軌：對某人的 IG 限時動態每則都看完、傳曖昧表情符號）；Emotional Affair（情感外遇：沒有身體接觸但有情感依賴）；Parasocial Crush（對 YouTuber/主播產生的單向迷戀，但影響了真實關係）；Digital Intimacy（在網路上對陌生人比對伴侶更坦誠）。台灣在地化：台灣人對「算不算出軌」的標準差異極大，這 4 個詞幫你把模糊地帶說清楚。每個詞一句白話解釋，高收藏價值。\n\n病毒係數：9/10。「算不算出軌」是最高爭議性話題之一，這 4 個詞打包成圖卡極易被收藏與傳給伴侶或朋友；趨勢詞策展格式天生高收藏率\n\n熱度證明：\nr/Tinder / r/relationship_advice 文化觀察｜The blurry lines of modern infidelity: micro-cheating and emotional affairs｜長期高討論量主題，2025 年因 AI 陪伴興起再度升溫｜https://www.reddit.com/r/relationship_advice/\n\nLava 接點：Lava 主張真實見面、真實連結——這 4 種「",
+      "url": "https://app.clickup.com/t/86eypznkw",
+      "created_at": "2026-08-22T09:02:15+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：純新詞打包／泛歐美趨勢不再採用，需綁定具體名人事件＋多家國外主流媒體報導。",
+      "applied": true
+    },
+    {
+      "task_id": "86eypznkt",
+      "title": "「女生吃虧論」今天在 PTT 推爆——但 Esther Perel 說，感情裡真正的「吃虧」，和你以為的完全不同｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT Boy-Girl 今天「女生吃虧論」推文有熱度，切入 Esther Perel 的核心觀點：她認為感情裡最大的「吃虧」不是付出多、不是先愛上對方、不是年紀大——而是「把自己縮小，以為這樣對方就會留下來」。Perel 說，很多人以為在感情裡「讓步」是一種犧牲，但真正的問題是：你讓步的是你的需求，還是你的自我？前者是成熟，後者才是真的吃虧。反直覺洞察：她說，感情裡「吃虧」的人，往往不是付出最多的人，而是最不敢說出自己要什麼的人。\n\n病毒係數：7/10。「吃虧論」是台灣感情討論長青話題，搭配 Esther Perel 的反直覺切角，容易引發「原來是這樣」的頓悟感與分享衝動\n\n熱度證明：\nPTT Boy-Girl｜別處讀到的：女生吃虧論｜推 13，今日 Boy-Girl 熱門文｜https://www.ptt.cc/bbs/Boy-Girl/M.1787233345.A.FF0.html\n\nLava 接點：Lava 的邏輯是讓你直接出現、直接表達意圖——不在文字裡猜測誰吃虧，見了面才知道你們要的是不是同一件事\n\n圖像建議：人物照片：Esther Perel\n\n建議類型：人物志型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀 放行」即自動啟動撰稿（Claude，九張結構）；稿子完成後到操控室選圖核准。不做請封存。",
+      "url": "https://app.clickup.com/t/86eypznkt",
+      "created_at": "2026-08-22T09:02:14+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複（Esther Perel／Gottman／Aron 已嚴重過量）。",
+      "applied": true
+    },
+    {
+      "task_id": "86eypznkr",
+      "title": "「Therapy speak」「Boundaries」「Triggered」「Gaslighting」——歐美正在出現「心理學詞彙過量」的反彈，有個新詞叫「Therapy-speak Fatigue」，這在紅什麼？｜病毒分 8｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：r/Tinder 和 r/datingoverthirty 近期出現大量討論：有人開始抱怨約會對象動不動就說「這觸發了我」「你在 gaslight 我」「我需要設立界限」——這種把所有關係問題都包裝成心理學術語的現象，被稱為「therapy-speak」，而它的過量使用正在讓真實溝通變得更困難。歐美開始流行「Therapy-speak Fatigue」這個詞，意思是：當所有人都在用心理學語言保護自己，反而沒有人真的在說自己的感受。台灣在地化：台灣年輕人也開始大量使用「依附類型」「創傷」「界限」這些詞，但有時候這些詞成了迴避真實對話的盾牌。\n\n病毒係數：8/10。高度「這在說我」——台灣年輕人已大量使用這些詞，看到這張卡會立刻自我代入或想 tag 朋友；同時帶有輕微爭議性，容易引發留言討論\n\n熱度證明：\nr/datingoverthirty / r/Tinder 文化觀察｜Therapy-speak in dating: when psychological vocabulary becomes a barrier｜近期 r/datingoverthirty 高頻討論主題｜https://www.reddit.com/r/datingoverthirty/\n\nLava 接點：Lava 鼓勵直接見面、真實互動，而不是在文字聊天裡用術語包裝自己—",
+      "url": "https://app.clickup.com/t/86eypznkr",
+      "created_at": "2026-08-22T09:02:12+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：純新詞打包／泛歐美趨勢不再採用，需綁定具體名人事件＋多家國外主流媒體報導。",
+      "applied": true
+    },
+    {
+      "task_id": "86eypznkn",
+      "title": "欸…你有沒有發現，「七夕前跑去廟裡綁架月老」——這件事，心理學家說「太想脫單」這個狀態，本身就是讓你脫不了單的原因？｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：PTT 今天出現「男子七夕前闖樂成宮綁架月老」新聞，用這個荒誕事件切入「desperate energy（絕望氣場）」這個歐美約會圈概念——研究顯示，當一個人在約會時散發出強烈的「我需要找到對象」訊號，反而會系統性地降低吸引力。行為經濟學稱之為「scarcity signaling」的反效果：你越表現出稀缺感，對方越不想成為你的解答。台灣在地化：從廟裡求姻緣到瘋狂滑 app，「太努力想找到人」這件事，可能才是問題所在。Lava 的邏輯剛好相反——不是讓你「努力找」，是讓你「直接出現」。\n\n病毒係數：7/10。荒誕新聞 + 反直覺洞察組合，「太想脫單反而脫不了單」是高度「這在說我」的自我代入情境，七夕節點加持\n\n熱度證明：\nPTT Boy-Girl｜太想脫單？男子七夕前闖樂成宮「綁架月老」廟方｜推 4，七夕前夕時效性高｜https://www.ptt.cc/bbs/Boy-Girl/M.1787282899.A.59E.html\n\nLava 接點：Lava 的 offline-first 邏輯——不是讓你焦慮地「努力找」，是讓你放鬆地「直接出現在對的地方」，去掉 desperate energy\n\n圖像建議：月老廟香火繚繞 vs 輕鬆出門的對比視覺\n\n建議類型：時事橋接型\n\n建議模板：無\n\n放行方式：勾選本卡「🚀 放行」即自動啟動撰稿（Cla",
+      "url": "https://app.clickup.com/t/86eypznkn",
+      "created_at": "2026-08-22T09:02:11+08:00",
+      "decision": "reject",
+      "decided_at": "2026-08-24T20:55:18+08:00",
+      "reason": "選題標準更新（2026-08-23）：標題禁用對話式開場（欸…你有沒有發現），讀起來像 AI。",
+      "applied": true
+    },
+    {
       "task_id": "86eypaz28",
       "title": "亞歷山大·茲維列夫今天台灣熱搜——但你知道「頂尖運動員的戀愛模式」有一個反直覺的研究結論嗎？｜病毒分 6｜🧠Claude",
       "desc": "選題來源：Claude 選題引擎\n\n切角：亞歷山大·茲維列夫（Alexander Zverev）今日台灣 Google 熱搜，他的感情史（多段高知名度關係、前女友指控家暴）在國際上引發大量討論。切角不走八卦路線，而是橋接到一個真實可查的研究：運動心理學家發現，高競爭性職業的人在感情裡往往呈現「勝負思維（zero-sum thinking）」——把關係當成一場比賽，要嘛贏要嘛輸，很難真正「並肩」。這和 John Gottman 說的「感情裡不能有輸家」直接對應。切角：你有沒有遇過那種「什麼事都要贏你」的人？\n\n病毒係數：6/10。時事橋接有熱度加持，但茲維列夫在台灣知名度有限，需要靠洞察本身撐住；「什麼事都要贏你的人」是高共鳴情境\n\n熱度證明：\nGoogle Trends 台灣｜亞歷山大·茲維列夫今日熱搜｜台灣今日熱搜榜｜https://trends.google.com.tw\n運動心理學研究｜Competitive mindset spillover into relationships｜APA 相關研究，可查證方向｜https://www.apa.org\n\nLava 接點：Lava 的見面文化讓你更快看出對方是「並肩型」還是「競爭型」——文字聊天很難看出這件事\n\n圖像建議：對比圖卡：「感情裡的勝負思維 vs 並肩思維」\n\n建議類型：時事橋接\n\n建議模板：無\n\n放行方式：勾選本卡「",
@@ -10,7 +230,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypaz25",
@@ -21,7 +241,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypaz24",
@@ -32,7 +252,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypaz23",
@@ -43,7 +263,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypaz20",
@@ -54,7 +274,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypaz1w",
@@ -65,7 +285,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynxrxp",
@@ -76,7 +296,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynxrxj",
@@ -87,7 +307,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynxrxe",
@@ -98,7 +318,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynxrxa",
@@ -109,7 +329,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T17:31:31+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynxrx5",
@@ -120,7 +340,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynxrx2",
@@ -131,7 +351,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynjccp",
@@ -142,7 +362,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T17:31:44+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynjccm",
@@ -153,7 +373,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynjccj",
@@ -164,7 +384,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynjcch",
@@ -175,7 +395,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynjccf",
@@ -186,7 +406,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eynjcca",
@@ -197,7 +417,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn7xut",
@@ -208,7 +428,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn7xum",
@@ -219,7 +439,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn7xu8",
@@ -230,7 +450,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn7xu1",
@@ -241,7 +461,7 @@
       "decision": "reject",
       "decided_at": "2026-08-24T17:33:42+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn7xtz",
@@ -252,7 +472,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn7xtn",
@@ -263,7 +483,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn2v4u",
@@ -274,7 +494,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn2v4t",
@@ -285,7 +505,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn2v4r",
@@ -296,7 +516,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn2v4q",
@@ -307,7 +527,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyn2v4p",
@@ -318,7 +538,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymxguf",
@@ -329,7 +549,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymxgu9",
@@ -340,7 +560,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymxgtp",
@@ -351,7 +571,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymxgth",
@@ -362,7 +582,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymxgtc",
@@ -373,7 +593,7 @@
       "decision": "reject",
       "decided_at": "2026-08-24T17:32:01+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymxgt8",
@@ -384,7 +604,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymjkr3",
@@ -395,7 +615,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymjkr2",
@@ -406,7 +626,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymjkqz",
@@ -417,7 +637,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymjkqx",
@@ -428,7 +648,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymjkqq",
@@ -439,7 +659,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eymjkq9",
@@ -450,7 +670,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eym6a1q",
@@ -461,7 +681,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eym6a14",
@@ -472,7 +692,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eym6a0g",
@@ -483,7 +703,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eym69zt",
@@ -494,7 +714,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eym69yh",
@@ -505,7 +725,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eym69xw",
@@ -516,7 +736,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyknz0m",
@@ -527,7 +747,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyknz0d",
@@ -538,7 +758,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyknz07",
@@ -549,7 +769,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyknz01",
@@ -560,7 +780,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T17:33:17+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyknyzt",
@@ -571,7 +791,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyknyzn",
@@ -582,7 +802,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyk8vtg",
@@ -593,7 +813,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T17:32:42+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyk8vt9",
@@ -604,7 +824,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyk8vt3",
@@ -615,7 +835,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T17:32:18+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyk8vrz",
@@ -626,7 +846,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyk8vrr",
@@ -637,7 +857,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyk8vrk",
@@ -648,7 +868,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjw70t",
@@ -659,7 +879,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjw70p",
@@ -670,7 +890,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjw70e",
@@ -681,7 +901,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjw701",
@@ -692,7 +912,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjw6zr",
@@ -703,7 +923,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjncn9",
@@ -714,7 +934,7 @@
       "decision": "approve",
       "decided_at": "2026-08-24T17:32:25+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjncn6",
@@ -725,7 +945,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjncn3",
@@ -736,7 +956,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：歐美趨勢類必須綁定具體大牌藝人／名人事件，且有多家國外主流媒體同時報導。純粹介紹約會新詞、或把數個新詞打包成一篇，不再採用。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjncn1",
@@ -747,7 +967,7 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：同一學者 30 天內不重複，學者／研究類大幅收斂。額度改給暢銷書榜（大家聽過但沒讀完）與影劇熱度題型。",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyjncmz",
@@ -758,8 +978,8 @@
       "decision": "reject",
       "decided_at": "2026-08-23T21:22:13+08:00",
       "reason": "選題標準更新（2026-08-23）：標題禁用「欸…你有沒有發現」這類對話式開場，已過度使用、讀起來像 AI。標題改為直接寫出具體的人、作品、數字或事件。",
-      "applied": false
+      "applied": true
     }
   ],
-  "pulled_at": "2026-08-20T20:28:11+08:00"
+  "pulled_at": "2026-08-24T20:52:32+08:00"
 }
