@@ -53,7 +53,8 @@ function postCard(p, key) {
   meta.appendChild(gatesNode(p));
   meta.appendChild(el("span", "age", esc(sinceOf(p, key))));
   c.appendChild(meta);
-  c.onclick = () => { location.href = "review.html"; };
+  // 帶上貼文編號，審稿台才知道你點的是哪一篇（原本一律開佇列第一篇）
+  c.onclick = () => { location.href = "review.html#" + encodeURIComponent(p.id); };
   return c;
 }
 
@@ -325,7 +326,7 @@ function boot() {
       : "渲染卡住：" + (p.render_note || "") + "。這篇不會前進。到審稿台處理。";
     c.appendChild(el("div", "age", esc(why)));
     const b = el("button", "btn", "去審稿台"); b.style.marginTop = "6px";
-    b.onclick = e => { e.stopPropagation(); location.href = "review.html"; };
+    b.onclick = e => { e.stopPropagation(); location.href = "review.html#" + encodeURIComponent(p.id); };
     c.appendChild(b);
     sb.appendChild(c);
   });

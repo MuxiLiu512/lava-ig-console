@@ -266,6 +266,50 @@ async function decide(decision) {
   } catch (e) { toast(e.message, true); }
 }
 
+// ── 排程（快捷鍵 S）────────────────────────────────────────────────
+// 這個動作原本只寫在說明表裡、沒有實作，所以「待排」欄的稿點進來無事可做
+// （Jesse 2026-08-25：點待排只會跳到審稿台，壞了？）。
+// 閘門在這裡就要擋：I9 不變量會拒絕「事實查核有 block 卻排程」的稿，
+// 若等到 CI 才擋，人已經以為排好了。
+async function scheduleCur() {
+  const p = cur(); if (!p) return;
+  if (p.status !== "approved")
+    return toast("只有已核准的稿能排程（目前：" + (p.status || "未知") + "）", true);
+  const blocks = ((p.fact && p.fact.issues) || []).filter(i => (i.severity || i.sev) === "block");
+  if (blocks.length)
+    return toast(`事實查核有 ${blocks.length} 項未解決，不能排程：${blocks[0].line || ""}`.slice(0, 90), true);
+
+  const d = new Date(); d.setSeconds(0, 0);
+  d.setHours(21, 0);                                  // 預設今晚 21:00；過了就明晚
+  if (d <= new Date()) d.setDate(d.getDate() + 1);
+  const pad = n => String(n).padStart(2, "0");
+  const localIso = x => `${x.getFullYear()}-${pad(x.getMonth() + 1)}-${pad(x.getDate())}T${pad(x.getHours())}:${pad(x.getMinutes())}`;
+  const wrap = el("div");
+  wrap.appendChild(el("div", "small muted", esc((p.topic || p.id).slice(0, 40))));
+  const inp = el("input"); inp.type = "datetime-local"; inp.value = localIso(d);
+  inp.style.cssText = "margin-top:8px;width:100%";
+  wrap.appendChild(inp);
+  wrap.appendChild(el("div", "small muted", "發佈由 n8n WF10 執行，每 15 分檢查一次，實際時間可能晚幾分鐘。"));
+  const ok = await modal("排程發佈", wrap,
+    [{ label: "取消", value: null }, { label: "排定", value: 1, cls: "primary" }]);
+  if (!ok || !inp.value) return;
+  // datetime-local 沒有時區，補上本機偏移，避免存成 UTC 而早發八小時
+  const t = new Date(inp.value);
+  const off = -t.getTimezoneOffset();
+  const iso = localIso(t) + ":00" + (off >= 0 ? "+" : "-") +
+              pad(Math.floor(Math.abs(off) / 60)) + ":" + pad(Math.abs(off) % 60);
+  try {
+    await saveJson(FILES.posts, doc => {
+      const q = (doc.posts || []).find(x => x.id === p.id);
+      if (q) { q.status = "scheduled"; q.publish_at = iso; }
+    }, `schedule: ${p.id} @ ${iso}`);
+    p.status = "scheduled"; p.publish_at = iso;
+    toast("已排程 " + iso.slice(5, 16).replace("T", " ") + " ✓");
+    QUEUE.splice(IDX, 1); if (IDX >= QUEUE.length) IDX = 0;
+    QUEUE.length ? openPost() : location.reload();
+  } catch (e) { toast(e.message, true); }
+}
+
 // ── 開一篇 ──────────────────────────────────────────────────────────
 function openPost() {
   const p = cur();
@@ -288,6 +332,7 @@ document.addEventListener("keydown", e => {
   if (k === "]") { if (IDX < QUEUE.length - 1) { IDX++; openPost(); } return; }
   if (k === "a" || k === "A") { if (!PEND.some(x => x.sev === "block")) decide("approve"); else toast("有 block 級待決項", true); return; }
   if (k === "r" || k === "R") { decide("reject"); return; }
+  if (k === "s" || k === "S") { scheduleCur(); return; }
   if (k === "?") showHelp();
 });
 function showHelp() {
@@ -314,6 +359,18 @@ loadAll().then(() => {
   const P = STATE.posts;
   if (!P || P._error || !Array.isArray(P.posts)) { loadFail(String((P && P._error) || "資料不是預期格式")); return; }
   QUEUE = P.posts.filter(p => p.status === "awaiting_review" || (p.status === "approved" && p.render_note));
+  // 從看板點某張卡進來（review.html#<post id>）：那一篇不一定符合預設佇列條件，
+  // 例如「待排」是 approved 且沒有 render_note。原本一律開佇列第一篇，
+  // 使用者以為點錯或壞了（Jesse 2026-08-25）。這裡把它補進佇列並選中。
+  const want = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+  if (want) {
+    let i = QUEUE.findIndex(p => p.id === want);
+    if (i < 0) {
+      const p = P.posts.find(x => x.id === want);
+      if (p) { QUEUE.unshift(p); i = 0; }
+    }
+    if (i >= 0) IDX = i;
+  }
   if (!QUEUE.length) { $("#rvHero").innerHTML = ""; $("#rvHero").appendChild(el("div", "empty", "佇列清空了 🎉")); renderBar(); return; }
   openPost();
 }).catch(e => loadFail(e.message));
