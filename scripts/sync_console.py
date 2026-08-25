@@ -1105,7 +1105,8 @@ def ideas_pull(args):
     # 這裡把 approve 的本地紀錄留成 tombstone，直到 posts.json 出現對應貼文才功成身退。
     def _tkey(s):
         s = re.sub(r"^(靈感｜|IG貼文｜)", "", str(s or "")).split("｜病毒分")[0]
-        return re.sub(r"[\s【】〖〗「」『』，。：！？—–\-…()（）]", "", s)[:22]
+        # 也剝 / \：Drive 檔名不能含斜線，存檔後 r/xxx 變 r xxx，兩邊對不上
+        return re.sub(r"[\s/\\【】〖〗「」『』，。：！？—–\-…()（）]", "", s)[:22]
     try:
         landed = {_tkey(p.get("topic") or p.get("id")) for p in load("posts.json").get("posts", [])}
     except Exception:

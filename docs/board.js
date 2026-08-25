@@ -118,7 +118,9 @@ const DRAFT_HOOK = "https://lavadating.app.n8n.cloud/webhook/lava-ig-draft";
 
 const _tkey = s => String(s || "")
   .replace(/^靈感｜|^IG貼文｜/, "").split("｜病毒分")[0]
-  .replace(/[\s【】〖〗「」『』，。：！？——–\-…()（）]/g, "").slice(0, 22);
+  // 也剝掉 / \ ：Drive 檔名不能含斜線，「r/datingoverthirty」存檔後變成
+  // 「r datingoverthirty」，貼文標題與靈感標題因此永遠對不上（2026-08-25）。
+  .replace(/[\s\/\\【】〖〗「」『』，。：！？——–\-…()（）]/g, "").slice(0, 22);
 
 function draftingIdeas(posts) {
   const ideas = ((STATE.ideas && STATE.ideas.ideas) || []).filter(x => x.decision === "approve");
