@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3969,24 +3969,14 @@
         }
       },
       "fact": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:37+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2026 年」的出處無法自動核對，請人工看過：https://www.penguinrandomhouse.com/books/806976/secure-by-amir-levine-md/"
-          },
-          {
             "severity": "block",
             "rule": "no_source",
             "line": "「hn Bowlby 的答案 1960 年代，精神科醫師 John B」沒有對應出處（年份）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「30%」的出處無法自動核對，請人工看過：https://www.cnbc.com/2022/08/20/why-attachment-theory-is-trending-according-to-dr-amir-levine.html"
           },
           {
             "severity": "warn",
@@ -4094,7 +4084,7 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "issues": []
       }
@@ -4692,12 +4682,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:37+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4712,9 +4702,9 @@
             "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60%」的出處無法自動核對，請人工看過：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
           },
           {
             "severity": "block",
@@ -5121,19 +5111,19 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:39+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2012 年」的出處無法自動核對，請人工看過：https://www.newharbinger.com/9781608820580/wired-for-love/"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
           },
           {
             "severity": "warn",
@@ -5144,11 +5134,6 @@
             "severity": "block",
             "rule": "no_source",
             "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「研究發現」的出處無法自動核對，請人工看過：https://www.newharbinger.com/9781608820580/wired-for-love/"
           },
           {
             "severity": "warn",
@@ -5551,12 +5536,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:39+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6038,29 +6023,19 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:33+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T08:50:33+08:00",
+        "ts": "2026-08-25T10:57:41+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2023 年」的出處無法自動核對，請人工看過：https://corp.oup.com/news/rizz-crowned-oxford-word-of-the-year-2023/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60%」的出處無法自動核對，請人工看過：https://www.psychologytoday.com/us/blog/between-cultures/201902/is-charisma-a-gift-or-can-it-be-trained"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「30,000 人」的出處無法自動核對，請人工看過：https://corp.oup.com/news/rizz-crowned-oxford-word-of-the-year-2023/"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.psychologytoday.com/us/blog/between-cultures/201902/is-charisma-a-gift-or-can-it-be-trained"
           },
           {
             "severity": "block",
