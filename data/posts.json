@@ -3602,32 +3602,41 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T16:23:41+08:00",
+        "ts": "2026-08-25T16:39:36+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T16:23:42+08:00",
+        "ts": "2026-08-25T16:39:36+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
         "note": "文案未偵測到數字或研究引用"
       },
       "qa": {
-        "ts": "2026-08-24T21:01:03+08:00",
-        "pass": true,
+        "ts": "2026-08-25T16:40:12+08:00",
+        "pass": false,
         "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              1,
+              3
+            ],
+            "severity": "block",
+            "detail": "第1張與第3張均使用「一男一女在酒吧/餐廳場景對坐/並坐飲酒」的情侶寫真作為主視覺，雖然模特兒不同、構圖一橫一直，但給讀者傳遞的視覺資訊完全重疊（都是『兩人實際見面』的場景照）。",
+            "fix": "第3張已承擔『約會成立通知』的功能敘事，建議將照片換成純 UI 截圖：手機畫面顯示 Lava 行事曆選時段介面，搭配『你的約會已成立』推播彈窗，去掉人像，讓該張聚焦在『流程』而非『約會氛圍』，與第1張做出人物vs介面的明確切換。"
+          },
           {
             "type": "composition",
             "slides": [
               1,
               2,
-              4,
-              5
+              4
             ],
             "severity": "warn",
-            "detail": "第1、2、4、5張底色全為純黑，主視覺元素（紅色圓角卡片／星星圖示）位置與尺寸高度相似，連續滑動時畫面幾乎沒有切換感，只有第3張黃底跳出來。黑底張佔整篇4／5，節奏嚴重失衡。",
-            "fix": "第4張（100%退費）建議改為深紅或炭灰漸層底，或引入一張有環境感的半暗場景照（例如：俯拍空桌面、一杯咖啡與手機的靜物，暖色調），打破純黑連續感；第5張CTA頁可改為品牌主色紅底白字，強化結尾視覺落點。"
+            "detail": "第1、2、4張底色均為純黑，視覺重量中央偏下，紅色發光卡片/圖框作為唯一焦點，三張構圖語言幾乎相同；第3張突然跳至淺黃雖有節奏感，但第4張又拉回純黑，整體形成『黑→黑→亮→黑→黑』的收縮感，尾段連續兩黑讓輪播失去推進動能。",
+            "fix": "將第4張（100%退款）的底色改為深紅色漸層（Lava品牌橙紅 #D93A2B → 深暗紅 #5C0F0F），讓黑底白字改為深紅底大白字，既維持衝擊感又打破連續純黑，同時強化『品牌保障』的視覺力道。"
           },
           {
             "type": "monotone",
@@ -3638,11 +3647,11 @@
               5
             ],
             "severity": "warn",
-            "detail": "全篇明度幾乎常駐在最暗區間，僅第3張黃底為唯一亮面，缺乏明暗起伏；讀者滑到第2張後已開始視覺疲勞，紅色卡片的強調效果也因背景過暗而互相抵消。",
-            "fix": "建議在第2張或第4張植入一張明度中高的畫面（例如：白底手機截圖UI展示、或亮灰色問卷題目排版頁），製造「暗→亮→暗→亮→暗」的明暗韻律。"
+            "detail": "五張中有四張底色為純黑（#000000 或極深灰），整篇明暗比例嚴重失衡，第3張的淺黃是唯一亮點，滑動體驗沉悶。",
+            "fix": "除第4張已建議換深紅底外，第2張（流程說明）可改用極深墨綠（#0D1F1A）底色配暖白字，在同屬深色系的前提下製造色相變化，讓五張的底色序列變成：黑→墨綠→亮黃→深紅→黑，形成有呼吸感的明暗與色相節奏。"
           }
         ],
-        "rhythm": "第3張黃底是全篇唯一的節奏喘息點，但前後都是純黑，整篇視覺像一首歌只有一個副歌、其餘全是靜音——黑底張需要至少再分化出一張明底或中調頁，才能讓輪播產生真正的滑動節奏感。"
+        "rhythm": "封面人像開場有溫度，但中段三連黑（張2→4→5）讓輪播像在原地踏步，唯一的亮黃（張3）孤立無援、無法帶動全篇節奏；需在深色系內製造色相差異，才能讓讀者有『往下滑有新東西』的驅動感。"
       }
     },
     {
@@ -3969,7 +3978,7 @@
         }
       },
       "fact": {
-        "ts": "2026-08-25T16:23:44+08:00",
+        "ts": "2026-08-25T16:39:40+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4084,634 +4093,9 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T16:23:41+08:00",
+        "ts": "2026-08-25T16:39:36+08:00",
         "pass": true,
         "issues": []
-      }
-    },
-    {
-      "id": "20260824-AnxiousAttac",
-      "topic": "「Anxious Attachment」「Avoidant Attachment」大家都聽過——但《Attached》裡有一章，說的是「兩個安全型的人在一起，還是會出問題」，這個反直覺結論，99% 的人都跳過了",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eynjccp",
-      "created_at": null,
-      "caption": "多數人讀《Attached》，記住的是焦慮型和逃避型的拉鋸戰。\n\n但精神科醫師 Amir Levine 在書裡埋了另一個地雷：就算兩個人測驗結果都是安全型，如果對「感知與表達親密感的方式」理解不同，誤解一樣會悄悄長出來。\n安全型不是終點，是起點的起點。\n\n如果「找到安全型的人」是終點，那關係就只是一道選擇題，做對了就沒事了。\n但 Connected Couples 的研究觀察指出，即使兩個安全型的人在一起，真正的邊界在於「不要變得自滿」，仍然需要刻意投入才能持續深化親密感。\nLava 的設計從一開始就不鼓勵在 App 裡聊到天荒地老，因為關係真正的質地，是在真實見面之後才開始被構建的，那才是安全感真正生長的地方。\n\n#依附理論 #AttachmentTheory #Attached #安全型依附 #親密關係 #關係心理學 #交友軟體 #約會 #台灣交友 #感情觀 #Lava交友 #不聊天的交友軟體 #戀愛心理 #關係溝通 #心理學",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-1a.webp",
-              "kind": "still",
-              "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-AnxiousAttac/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-AnxiousAttac/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-AnxiousAttac/slide-1j.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            }
-          ],
-          "final_src": null,
-          "heading": "兩個安全型，在一起——還是出問題了",
-          "display_copy": "兩個安全型，\n在一起——\n還是出問題了。\n\n測驗都過了，\n怎麼還是有一堵\n摸不到的牆？",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-2a.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-2c.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-2d.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-2e.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            }
-          ],
-          "final_src": null,
-          "heading": "「我們都很穩——但我們還是沒辦法好好說話」",
-          "display_copy": "測驗結果都是【安全型】，\n可是那個週五晚上，\n你說「我需要抱一下」，\n他把燈關掉、拿起手機——\n沒有說錯什麼，\n只是沒有轉過來。\n\n兩個人都安全，\n兩個人都不知道哪裡出了問題。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-3a.webp",
-              "kind": "still",
-              "source_label": "《Attached》Amir Levine & Rachel Heller 書封／Open Library",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "《Attached》說的不只是「找對類型」",
-          "display_copy": "Amir Levine × Rachel Heller\n《Attached》，2010 年出版，\n翻譯成【20 種語言】，\nAmazon 均分 4.7 顆星。\n\n書裡不只講焦慮型和逃避型——\n真正的核心是：\n許多關係問題源自\n〖「感知與表達親密感的方式不同」〗，\n而這件事，在兩個安全型之間也會發生。\n\n資料來源：SuperSummary supersummary.com/attached/summary/；Amazon slickdeals.net/f/19301172",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-AnxiousAttac/slide-4g.webp",
-              "kind": "still",
-              "source_label": "One Day"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-4h.webp",
-              "kind": "still",
-              "source_label": "One Day"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-AnxiousAttac/slide-4i.webp",
-              "kind": "still",
-              "source_label": "One Day"
-            }
-          ],
-          "final_src": null,
-          "heading": "「安全型」不是一個固定的到達點",
-          "display_copy": "研究估計約【50～60%】的人是安全型——\n但安全型不是「抵達終點」，\n而是一種需要持續實踐的動態能力。\n\n安全型的人依然會受傷，\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰，\n但這份相信，也需要被不斷餵養。\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-AnxiousAttac/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-AnxiousAttac/slide-5i.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            }
-          ],
-          "final_src": null,
-          "heading": "「舒適」不等於「安全」——這是最常被混淆的一條線",
-          "display_copy": "「低衝突」不等於「真實靠近」。\n\n舒適的關係可能感覺熟悉、沒什麼吵架，\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗，\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-6a.webp",
-              "kind": "still",
-              "source_label": "© amirlevinemd.com",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-6b.webp",
-              "kind": "still",
-              "source_label": "組圖：© amirlevinemd.com",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-6c.webp",
-              "kind": "still",
-              "source_label": "© amirlevinemd.com",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "依附風格不是固定標籤——脈絡才是關鍵",
-          "display_copy": "同一個人，對不同的關係\n可以有不同的依附表現——\n對朋友安全型、對伴侶焦慮型、對家人逃避型，\n這不是矛盾，而是依附本來就是\n對【關係歷史與當下脈絡】的動態回應。\n\n依附不是你的人格標籤，\n是你們之間那段歷史的產物。\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood99d60",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mood84276",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            }
-          ],
-          "final_src": null,
-          "heading": "安全感是動詞，不是名詞",
-          "display_copy": "「找到安全型的人」\n不是關係的終點，\n是起點的起點。\n\n研究指出，即使兩個安全型的人在一起，\n也需要【刻意投入】才能持續深化親密感——\n自滿，是安全型關係最容易跌倒的地方。\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood9be4a",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood0487d",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "三個問題，比再做一次測驗更有用",
-          "display_copy": "比再做一次測驗更有用的，\n是問自己三件事：\n\n① 我需要被安慰時，有沒有說出口？\n② 對方沉默時，我的第一個念頭是什麼？\n③ 我們上次真的說了一句\n【讓彼此都難受、但說完更靠近】的話，\n是什麼時候？\n\n安全型不是資格，\n是兩個人每一次選擇開口的累積。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "研究估計約有 50～60% 的人具有安全型依附風格",
-          "source": "https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships",
-          "quote": "Studies suggest that about 50 to 60 percent of people have a secure attachment style."
-        },
-        {
-          "claim": "《Attached》於 2010 年出版，目前已翻譯成 20 種語言",
-          "source": "https://www.supersummary.com/attached/summary/",
-          "quote": "Attached has been translated into over 20 languages since its publication in 2010."
-        },
-        {
-          "claim": "Amazon 上累計 23,000+ 則評分，均分 4.7 顆星",
-          "source": "https://slickdeals.net/f/19301172-1-99-attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love-ebook-by-amir-levine-rachel-heller",
-          "quote": "4.7 out of 5 stars, 23,000+ ratings on Amazon"
-        },
-        {
-          "claim": "焦慮型與逃避型依附均對關係滿意度有害，這兩種不安全依附風格的個體，關係滿意度顯著較低",
-          "source": "https://www.sciencedirect.com/science/article/abs/pii/S0191886919302673",
-          "quote": "Both anxious and avoidant attachment were significantly associated with lower relationship satisfaction, consistent with previous meta-analyses (Hadden, Smith & Webster, 2014; Li & Chan, 2012)."
-        },
-        {
-          "claim": "安全型依附者並不對關係問題免疫，差異在於他們不會因關係問題而陷入負向循環",
-          "source": "https://thrivefamilyservices.com/a-deep-dive-into-secure-attachment/",
-          "quote": "Secure attachment doesn't mean immunity from relationship problems; it means they don't fall into negative cycles when problems arise."
-        },
-        {
-          "claim": "即使兩個安全型的人在一起，也需要刻意投入努力才能持續深化親密感，不能自滿",
-          "source": "https://www.connectedcouples.app/blog/attachment-styles-in-relationships",
-          "quote": "Even two securely attached partners need to be careful not to become complacent; intentional effort is still required to deepen intimacy over time."
-        },
-        {
-          "claim": "安全型依附既是一種關係動態，也是一種可學習的能力，而不只是童年形成的固定特質",
-          "source": "https://anniewright.com/secure-attachment-romantic-relationship/",
-          "quote": "Secure attachment is both a relational dynamic and a learnable skill, not just a fixed trait formed in childhood."
-        },
-        {
-          "claim": "舒適的關係可能感覺熟悉、低衝突，但仍存在距離感與迴避；安全型依附的核心特徵，是在痛苦時能夠轉向彼此",
-          "source": "https://anniewright.com/secure-attachment-romantic-relationship/",
-          "quote": "A comfortable relationship may feel familiar and low-conflict but still involve emotional distance; the hallmark of secure attachment is being able to turn toward each other in distress."
-        },
-        {
-          "claim": "依附風格是隨脈絡而變動的，遠比社群媒體和通俗心理學描述的類別更細膩複雜",
-          "source": "https://lifescoretest.com/blog/attachment-style-myths",
-          "quote": "Attachment styles are far more context-dependent and nuanced than the fixed categories described by social media and pop psychology."
-        },
-        {
-          "claim": "Amir Levine 是精神科醫師暨神經科學家，畢業於紐約長老會醫院/哥倫比亞大學住院醫師訓練計畫",
-          "source": "https://intersectionsmatch.com/amir-levine/",
-          "quote": "Amir Levine is an adult, child, and adolescent psychiatrist and neuroscientist, trained at New York Presbyterian Hospital/Columbia University."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "多數人讀《Attached》，記住的是焦慮型和逃避型的拉鋸戰。\n\n但精神科醫師 Amir Levine 在書裡埋了另一個地雷：就算兩個人測驗結果都是安全型，如果對「感知與表達親密感的方式」理解不同，誤解一樣會悄悄長出來。\n安全型不是終點，是起點的起點。\n\n如果「找到安全型的人」是終點，那關係就只是一道選擇題，做對了就沒事了。\n但 Connected Couples 的研究觀察指出，即使兩個安全型的人在一起，真正的邊界在於「不要變得自滿」，仍然需要刻意投入才能持續深化親密感。\nLava 的設計從一開始就不鼓勵在 App 裡聊到天荒地老，因為關係真正的質地，是在真實見面之後才開始被構建的，那才是安全感真正生長的地方。\n\n#依附理論 #AttachmentTheory #Attached #安全型依附 #親密關係 #關係心理學 #交友軟體 #約會 #台灣交友 #感情觀 #Lava交友 #不聊天的交友軟體 #戀愛心理 #關係溝通 #心理學",
-          "slides": {
-            "1": {
-              "heading": "兩個安全型，在一起——還是出問題了",
-              "display_copy": "兩個安全型，\n在一起——\n還是出問題了。\n\n測驗都過了，\n怎麼還是有一堵\n摸不到的牆？"
-            },
-            "2": {
-              "heading": "「我們都很穩——但我們還是沒辦法好好說話」",
-              "display_copy": "測驗結果都是【安全型】，\n可是那個週五晚上，\n你說「我需要抱一下」，\n他把燈關掉、拿起手機——\n沒有說錯什麼，\n只是沒有轉過來。\n\n兩個人都安全，\n兩個人都不知道哪裡出了問題。"
-            },
-            "3": {
-              "heading": "《Attached》說的不只是「找對類型」",
-              "display_copy": "Amir Levine × Rachel Heller\n《Attached》，2010 年出版，\n翻譯成【20 種語言】，\nAmazon 均分 4.7 顆星。\n\n書裡不只講焦慮型和逃避型——\n真正的核心是：\n許多關係問題源自\n〖「感知與表達親密感的方式不同」〗，\n而這件事，在兩個安全型之間也會發生。\n\n資料來源：SuperSummary supersummary.com/attached/summary/；Amazon slickdeals.net/f/19301172"
-            },
-            "4": {
-              "heading": "「安全型」不是一個固定的到達點",
-              "display_copy": "研究估計約【50～60%】的人是安全型——\n但安全型不是「抵達終點」，\n而是一種需要持續實踐的動態能力。\n\n安全型的人依然會受傷，\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰，\n但這份相信，也需要被不斷餵養。\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship"
-            },
-            "5": {
-              "heading": "「舒適」不等於「安全」——這是最常被混淆的一條線",
-              "display_copy": "「低衝突」不等於「真實靠近」。\n\n舒適的關係可能感覺熟悉、沒什麼吵架，\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗，\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship"
-            },
-            "6": {
-              "heading": "依附風格不是固定標籤——脈絡才是關鍵",
-              "display_copy": "同一個人，對不同的關係\n可以有不同的依附表現——\n對朋友安全型、對伴侶焦慮型、對家人逃避型，\n這不是矛盾，而是依附本來就是\n對【關係歷史與當下脈絡】的動態回應。\n\n依附不是你的人格標籤，\n是你們之間那段歷史的產物。\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673"
-            },
-            "7": {
-              "heading": "安全感是動詞，不是名詞",
-              "display_copy": "「找到安全型的人」\n不是關係的終點，\n是起點的起點。\n\n研究指出，即使兩個安全型的人在一起，\n也需要【刻意投入】才能持續深化親密感——\n自滿，是安全型關係最容易跌倒的地方。\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships"
-            },
-            "8": {
-              "heading": "三個問題，比再做一次測驗更有用",
-              "display_copy": "比再做一次測驗更有用的，\n是問自己三件事：\n\n① 我需要被安慰時，有沒有說出口？\n② 對方沉默時，我的第一個念頭是什麼？\n③ 我們上次真的說了一句\n【讓彼此都難受、但說完更靠近】的話，\n是什麼時候？\n\n安全型不是資格，\n是兩個人每一次選擇開口的累積。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "rendered_lines": {
-        "1": [
-          "兩個安全型，在一起——還是出問題了",
-          "",
-          "兩個安全型",
-          "在一起",
-          "還是出問題了",
-          "測驗都過了",
-          "怎麼還是有一堵",
-          "摸不到的牆"
-        ],
-        "2": [
-          "「我們都很穩——但我們還是沒辦法好好說話」",
-          "",
-          "測驗結果都是安全型",
-          "可是那個週五晚上",
-          "你說「我需要抱一下」",
-          "他把燈關掉、拿起手機",
-          "沒有說錯什麼",
-          "只是沒有轉過來",
-          "兩個人都安全",
-          "兩個人都不知道哪裡出了問題"
-        ],
-        "3": [
-          "《Attached》說的不只是「找對類型」",
-          "",
-          "Amir Levine × Rachel Heller",
-          "《Attached》，2010 年出版",
-          "翻譯成20 種語言",
-          "Amazon 均分 4.7 顆星",
-          "書裡不只講焦慮型和逃避型",
-          "真正的核心是",
-          "許多關係問題源自",
-          "「感知與表達親密感的方式不同」",
-          "而這件事，在兩個安全型之間也會發生",
-          "資料來源：SuperSummary supersummary.com/",
-          "attached/summary/；Amazon slickdeals.net/f/",
-          "19301172"
-        ],
-        "4": [
-          "「安全型」不是一個固定的到達點",
-          "",
-          "研究估計約50～60%的人是安全型",
-          "但安全型不是「抵達終點」",
-          "而是一種需要持續實踐的動態能力",
-          "安全型的人依然會受傷",
-          "差異在底層結構",
-          "他們相信這段關係能承受困難而不崩潰",
-          "但這份相信，也需要被不斷餵養",
-          "資料來源：HelpGuide helpguide.org/relationships/",
-          "social-connection/",
-          "attachment-and-adult-relationships；Annie Wright",
-          "LMFT anniewright.com/",
-          "secure-attachment-romantic-relationship"
-        ],
-        "5": [
-          "「舒適」不等於「安全」——這是最常被混淆",
-          "的一條線",
-          "",
-          "「低衝突」不等於「真實靠近」",
-          "舒適的關係可能感覺熟悉、沒什麼吵架",
-          "但仍然存在距離感與迴避",
-          "安全型依附的真正特徵是",
-          "在痛苦的時刻，能夠轉向彼此",
-          "而不是各自消化、各自撐著",
-          "資料來源：Annie Wright LMFT anniewright.com/",
-          "secure-attachment-romantic-relationship"
-        ],
-        "6": [
-          "依附風格不是固定標籤——脈絡才是關鍵",
-          "",
-          "同一個人，對不同的關係",
-          "可以有不同的依附表現",
-          "對朋友安全型、對伴侶焦慮型、對家人逃避型",
-          "這不是矛盾，而是依附本來就是",
-          "對關係歷史與當下脈絡的動態回應",
-          "依附不是你的人格標籤",
-          "是你們之間那段歷史的產物",
-          "資料來源：Lifescore Test lifescoretest.com/blog/",
-          "attachment-style-myths；ScienceDirect",
-          "sciencedirect.com/science/article/abs/pii/",
-          "S0191886919302673"
-        ],
-        "7": [
-          "安全感是動詞，不是名詞",
-          "",
-          "「找到安全型的人」",
-          "不是關係的終點",
-          "是起點的起點",
-          "研究指出，即使兩個安全型的人在一起",
-          "也需要刻意投入才能持續深化親密感",
-          "自滿，是安全型關係最容易跌倒的地方",
-          "資料來源：Connected Couples connectedcouples.",
-          "app/blog/attachment-styles-in-relationships"
-        ],
-        "8": [
-          "三個問題，比再做一次測驗更有用",
-          "",
-          "比再做一次測驗更有用的",
-          "是問自己三件事",
-          "① 我需要被安慰時，有沒有說出口",
-          "② 對方沉默時，我的第一個念頭是什麼",
-          "③ 我們上次真的說了一句",
-          "讓彼此都難受、但說完更靠近的話",
-          "是什麼時候",
-          "安全型不是資格",
-          "是兩個人每一次選擇開口的累積"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T16:23:42+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-25T16:23:44+08:00",
-        "pass": false,
-        "claims": 4,
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2010 年」的出處無法自動核對，請人工看過：https://www.supersummary.com/attached/summary/"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「的終點， 是起點的起點。  研究指出，即使兩個安全型的人在一起，」沒有對應出處（研究引用）"
-          }
-        ]
       }
     },
     {
@@ -5111,12 +4495,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T16:23:42+08:00",
+        "ts": "2026-08-25T16:39:36+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T16:23:46+08:00",
+        "ts": "2026-08-25T16:39:42+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5536,12 +4920,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T16:23:42+08:00",
+        "ts": "2026-08-25T16:39:36+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T16:23:46+08:00",
+        "ts": "2026-08-25T16:39:42+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -5571,6 +4955,664 @@
             "line": "「Carl Rogers 說：你在感情裡一直在「評分」對」沒有對應出處（人物引述）"
           }
         ]
+      }
+    },
+    {
+      "id": "20260824-AnxiousAttac",
+      "topic": "「Anxious Attachment」「Avoidant Attachment」大家都聽過——但《Attached》裡有一章，說的是「兩個安全型的人在一起，還是會出問題」，這個反直覺結論，99% 的人都跳過了",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eynjccp",
+      "created_at": null,
+      "caption": "多數人讀《Attached》，記住的是焦慮型和逃避型的拉鋸戰。\n\n但精神科醫師 Amir Levine 在書裡埋了另一個地雷：就算兩個人測驗結果都是安全型，如果對「感知與表達親密感的方式」理解不同，誤解一樣會悄悄長出來。\n安全型不是終點，是起點的起點。\n\n如果「找到安全型的人」是終點，那關係就只是一道選擇題，做對了就沒事了。\n但 Connected Couples 的研究觀察指出，即使兩個安全型的人在一起，真正的邊界在於「不要變得自滿」，仍然需要刻意投入才能持續深化親密感。\nLava 的設計從一開始就不鼓勵在 App 裡聊到天荒地老，因為關係真正的質地，是在真實見面之後才開始被構建的，那才是安全感真正生長的地方。\n\n#依附理論 #AttachmentTheory #Attached #安全型依附 #親密關係 #關係心理學 #交友軟體 #約會 #台灣交友 #感情觀 #Lava交友 #不聊天的交友軟體 #戀愛心理 #關係溝通 #心理學",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-1a.webp",
+              "kind": "still",
+              "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-AnxiousAttac/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-AnxiousAttac/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-AnxiousAttac/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-1.jpg",
+          "heading": "兩個安全型，在一起——還是出問題了",
+          "display_copy": "兩個安全型，\n在一起——\n還是出問題了。\n\n測驗都過了，\n怎麼還是有一堵\n摸不到的牆？",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-2c.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-2d.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-2e.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-2.jpg",
+          "heading": "「我們都很穩——但我們還是沒辦法好好說話」",
+          "display_copy": "測驗結果都是【安全型】，\n可是那個週五晚上，\n你說「我需要抱一下」，\n他把燈關掉、拿起手機——\n沒有說錯什麼，\n只是沒有轉過來。\n\n兩個人都安全，\n兩個人都不知道哪裡出了問題。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-3a.webp",
+              "kind": "still",
+              "source_label": "《Attached》Amir Levine & Rachel Heller 書封／Open Library",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-3.jpg",
+          "heading": "《Attached》說的不只是「找對類型」",
+          "display_copy": "Amir Levine × Rachel Heller\n《Attached》，2010 年出版，\n翻譯成【20 種語言】，\nAmazon 均分 4.7 顆星。\n\n書裡不只講焦慮型和逃避型——\n真正的核心是：\n許多關係問題源自\n〖「感知與表達親密感的方式不同」〗，\n而這件事，在兩個安全型之間也會發生。\n\n資料來源：SuperSummary supersummary.com/attached/summary/；Amazon slickdeals.net/f/19301172",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-AnxiousAttac/slide-4g.webp",
+              "kind": "still",
+              "source_label": "One Day"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-4h.webp",
+              "kind": "still",
+              "source_label": "One Day"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-AnxiousAttac/slide-4i.webp",
+              "kind": "still",
+              "source_label": "One Day"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-4.jpg",
+          "heading": "「安全型」不是一個固定的到達點",
+          "display_copy": "研究估計約【50～60%】的人是安全型——\n但安全型不是「抵達終點」，\n而是一種需要持續實踐的動態能力。\n\n安全型的人依然會受傷，\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰，\n但這份相信，也需要被不斷餵養。\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-AnxiousAttac/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-AnxiousAttac/slide-5i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-5.jpg",
+          "heading": "「舒適」不等於「安全」——這是最常被混淆的一條線",
+          "display_copy": "「低衝突」不等於「真實靠近」。\n\n舒適的關係可能感覺熟悉、沒什麼吵架，\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗，\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-6a.webp",
+              "kind": "still",
+              "source_label": "© amirlevinemd.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-6b.webp",
+              "kind": "still",
+              "source_label": "組圖：© amirlevinemd.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-6c.webp",
+              "kind": "still",
+              "source_label": "© amirlevinemd.com",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-6.jpg",
+          "heading": "依附風格不是固定標籤——脈絡才是關鍵",
+          "display_copy": "同一個人，對不同的關係\n可以有不同的依附表現——\n對朋友安全型、對伴侶焦慮型、對家人逃避型，\n這不是矛盾，而是依附本來就是\n對【關係歷史與當下脈絡】的動態回應。\n\n依附不是你的人格標籤，\n是你們之間那段歷史的產物。\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood99d60",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mood84276",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-7.jpg",
+          "heading": "安全感是動詞，不是名詞",
+          "display_copy": "「找到安全型的人」\n不是關係的終點，\n是起點的起點。\n\n研究指出，即使兩個安全型的人在一起，\n也需要【刻意投入】才能持續深化親密感——\n自滿，是安全型關係最容易跌倒的地方。\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood9be4a",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood0487d",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-8.jpg",
+          "heading": "三個問題，比再做一次測驗更有用",
+          "display_copy": "比再做一次測驗更有用的，\n是問自己三件事：\n\n① 我需要被安慰時，有沒有說出口？\n② 對方沉默時，我的第一個念頭是什麼？\n③ 我們上次真的說了一句\n【讓彼此都難受、但說完更靠近】的話，\n是什麼時候？\n\n安全型不是資格，\n是兩個人每一次選擇開口的累積。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260824-AnxiousAttac/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "研究估計約有 50～60% 的人具有安全型依附風格",
+          "source": "https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships",
+          "quote": "Studies suggest that about 50 to 60 percent of people have a secure attachment style."
+        },
+        {
+          "claim": "《Attached》於 2010 年出版，目前已翻譯成 20 種語言",
+          "source": "https://www.supersummary.com/attached/summary/",
+          "quote": "Attached has been translated into over 20 languages since its publication in 2010."
+        },
+        {
+          "claim": "Amazon 上累計 23,000+ 則評分，均分 4.7 顆星",
+          "source": "https://slickdeals.net/f/19301172-1-99-attached-the-new-science-of-adult-attachment-and-how-it-can-help-you-find-and-keep-love-ebook-by-amir-levine-rachel-heller",
+          "quote": "4.7 out of 5 stars, 23,000+ ratings on Amazon"
+        },
+        {
+          "claim": "焦慮型與逃避型依附均對關係滿意度有害，這兩種不安全依附風格的個體，關係滿意度顯著較低",
+          "source": "https://www.sciencedirect.com/science/article/abs/pii/S0191886919302673",
+          "quote": "Both anxious and avoidant attachment were significantly associated with lower relationship satisfaction, consistent with previous meta-analyses (Hadden, Smith & Webster, 2014; Li & Chan, 2012)."
+        },
+        {
+          "claim": "安全型依附者並不對關係問題免疫，差異在於他們不會因關係問題而陷入負向循環",
+          "source": "https://thrivefamilyservices.com/a-deep-dive-into-secure-attachment/",
+          "quote": "Secure attachment doesn't mean immunity from relationship problems; it means they don't fall into negative cycles when problems arise."
+        },
+        {
+          "claim": "即使兩個安全型的人在一起，也需要刻意投入努力才能持續深化親密感，不能自滿",
+          "source": "https://www.connectedcouples.app/blog/attachment-styles-in-relationships",
+          "quote": "Even two securely attached partners need to be careful not to become complacent; intentional effort is still required to deepen intimacy over time."
+        },
+        {
+          "claim": "安全型依附既是一種關係動態，也是一種可學習的能力，而不只是童年形成的固定特質",
+          "source": "https://anniewright.com/secure-attachment-romantic-relationship/",
+          "quote": "Secure attachment is both a relational dynamic and a learnable skill, not just a fixed trait formed in childhood."
+        },
+        {
+          "claim": "舒適的關係可能感覺熟悉、低衝突，但仍存在距離感與迴避；安全型依附的核心特徵，是在痛苦時能夠轉向彼此",
+          "source": "https://anniewright.com/secure-attachment-romantic-relationship/",
+          "quote": "A comfortable relationship may feel familiar and low-conflict but still involve emotional distance; the hallmark of secure attachment is being able to turn toward each other in distress."
+        },
+        {
+          "claim": "依附風格是隨脈絡而變動的，遠比社群媒體和通俗心理學描述的類別更細膩複雜",
+          "source": "https://lifescoretest.com/blog/attachment-style-myths",
+          "quote": "Attachment styles are far more context-dependent and nuanced than the fixed categories described by social media and pop psychology."
+        },
+        {
+          "claim": "Amir Levine 是精神科醫師暨神經科學家，畢業於紐約長老會醫院/哥倫比亞大學住院醫師訓練計畫",
+          "source": "https://intersectionsmatch.com/amir-levine/",
+          "quote": "Amir Levine is an adult, child, and adolescent psychiatrist and neuroscientist, trained at New York Presbyterian Hospital/Columbia University."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-25T16:38:39+08:00",
+      "image_credits": [
+        "第 1 張：《Marriage Story》劇照，版權屬原權利方",
+        "第 2 張：Dr. Amir Levine／「How Attachment Works」（YouTube）（截圖引用）",
+        "第 3 張：《Attached》Amir Levine & Rachel Heller 書封／Open Library（截圖引用）",
+        "第 4 張：《Because This Is My First Life》劇照，版權屬原權利方",
+        "第 5 張：Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）（截圖引用）",
+        "第 6 張：組圖：© amirlevinemd.com（截圖引用）",
+        "第 7 張：《Before Sunset》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude",
+      "rendered_lines": {
+        "1": [
+          "兩個安全型，在一起——還是出問題了",
+          "",
+          "兩個安全型",
+          "在一起",
+          "還是出問題了",
+          "測驗都過了",
+          "怎麼還是有一堵",
+          "摸不到的牆"
+        ],
+        "2": [
+          "「我們都很穩——但我們還是沒辦法好好說話」",
+          "",
+          "測驗結果都是安全型",
+          "可是那個週五晚上",
+          "你說「我需要抱一下」",
+          "他把燈關掉、拿起手機",
+          "沒有說錯什麼",
+          "只是沒有轉過來",
+          "兩個人都安全",
+          "兩個人都不知道哪裡出了問題"
+        ],
+        "3": [
+          "《Attached》說的不只是「找對類型」",
+          "",
+          "Amir Levine × Rachel Heller",
+          "《Attached》，2010 年出版",
+          "翻譯成20 種語言",
+          "Amazon 均分 4.7 顆星",
+          "書裡不只講焦慮型和逃避型",
+          "真正的核心是",
+          "許多關係問題源自",
+          "「感知與表達親密感的方式不同」",
+          "而這件事，在兩個安全型之間也會發生",
+          "資料來源：SuperSummary supersummary.com/",
+          "attached/summary/；Amazon slickdeals.net/f/",
+          "19301172"
+        ],
+        "4": [
+          "「安全型」不是一個固定的到達點",
+          "",
+          "研究估計約50～60%的人是安全型",
+          "但安全型不是「抵達終點」",
+          "而是一種需要持續實踐的動態能力",
+          "安全型的人依然會受傷",
+          "差異在底層結構",
+          "他們相信這段關係能承受困難而不崩潰",
+          "但這份相信，也需要被不斷餵養",
+          "資料來源：HelpGuide helpguide.org/relationships/",
+          "social-connection/",
+          "attachment-and-adult-relationships；Annie Wright",
+          "LMFT anniewright.com/",
+          "secure-attachment-romantic-relationship"
+        ],
+        "5": [
+          "「舒適」不等於「安全」——這是最常被混淆",
+          "的一條線",
+          "",
+          "「低衝突」不等於「真實靠近」",
+          "舒適的關係可能感覺熟悉、沒什麼吵架",
+          "但仍然存在距離感與迴避",
+          "安全型依附的真正特徵是",
+          "在痛苦的時刻，能夠轉向彼此",
+          "而不是各自消化、各自撐著",
+          "資料來源：Annie Wright LMFT anniewright.com/",
+          "secure-attachment-romantic-relationship"
+        ],
+        "6": [
+          "依附風格不是固定標籤——脈絡才是關鍵",
+          "",
+          "同一個人，對不同的關係",
+          "可以有不同的依附表現",
+          "對朋友安全型、對伴侶焦慮型、對家人逃避型",
+          "這不是矛盾，而是依附本來就是",
+          "對關係歷史與當下脈絡的動態回應",
+          "依附不是你的人格標籤",
+          "是你們之間那段歷史的產物",
+          "資料來源：Lifescore Test lifescoretest.com/blog/",
+          "attachment-style-myths；ScienceDirect",
+          "sciencedirect.com/science/article/abs/pii/",
+          "S0191886919302673"
+        ],
+        "7": [
+          "安全感是動詞，不是名詞",
+          "",
+          "「找到安全型的人」",
+          "不是關係的終點",
+          "是起點的起點",
+          "研究指出，即使兩個安全型的人在一起",
+          "也需要刻意投入才能持續深化親密感",
+          "自滿，是安全型關係最容易跌倒的地方",
+          "資料來源：Connected Couples connectedcouples.",
+          "app/blog/attachment-styles-in-relationships"
+        ],
+        "8": [
+          "三個問題，比再做一次測驗更有用",
+          "",
+          "比再做一次測驗更有用的",
+          "是問自己三件事",
+          "① 我需要被安慰時，有沒有說出口",
+          "② 對方沉默時，我的第一個念頭是什麼",
+          "③ 我們上次真的說了一句",
+          "讓彼此都難受、但說完更靠近的話",
+          "是什麼時候",
+          "安全型不是資格",
+          "是兩個人每一次選擇開口的累積"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T16:39:36+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T16:39:43+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2010 年」的出處無法自動核對，請人工看過：https://www.supersummary.com/attached/summary/"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「的終點， 是起點的起點。  研究指出，即使兩個安全型的人在一起，」沒有對應出處（研究引用）"
+          }
+        ]
+      },
+      "qa": {
+        "ts": "2026-08-25T16:40:48+08:00",
+        "pass": false,
+        "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              2,
+              5,
+              6
+            ],
+            "severity": "block",
+            "detail": "Amir Levine 本人作為視覺主體在第2張（YouTube截圖正臉）、第5張（podcast側臉）、第6張（組圖左格仍是同一人坐在錄音室）連續出現三次，讀者滑到第5、6張時視覺資訊量為零，只是換了角度的同一張臉。",
+            "fix": "第5張換成「兩人坐在昏暗客廳對角沙發、中間有距離、各自低頭」的生活場景照，暗示舒適≠靠近的關係氛圍（搜圖關鍵字：couple sitting apart living room dim light cinematic）；第6張的左格換成抽象示意——例如同一人站在不同空間鏡像分割的概念圖，或以文字排版卡取代人物截圖，徹底移除Levine臉孔。"
+          },
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              7,
+              8
+            ],
+            "severity": "block",
+            "detail": "第7張《Before Sunset》男女主角、第8張極高機率同為《Before Sunrise/Sunset》系列劇照（男主角臉型、髮型、年代感高度一致），連續兩張使用同一部電影／同一對演員，視覺主體重複。",
+            "fix": "第8張換成完全不同質感的圖：建議用「一張寫在霧面玻璃上的三個問題手寫字、背景模糊暖光咖啡廳」的靜物構圖（搜圖關鍵字：handwriting questions foggy cafe window warm bokeh），與第7張的人像形成強烈對比，同時呼應「問自己三件事」的文案。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              4,
+              7,
+              8
+            ],
+            "severity": "warn",
+            "detail": "第1、4、7、8張全部採用「真人情侶／人物半身像置頂、文字壓下半部」的相同構圖公式，且色調均為暗部壓黑+少量暖光，四張連看節奏完全沒有換氣點。",
+            "fix": "第4張或第8張改為純色背景+大字排版卡（高對比白底或品牌橘底），或改用俯角拍攝的物件靜物（書、便條紙、手），打破人像主導的視覺慣性。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "severity": "warn",
+            "detail": "除第9張CTA純黑外，全篇底圖幾乎清一色深灰/暗棕/墨綠暗部，缺乏一張明亮或高飽和的呼吸點，長輪播看到第5張眼睛已疲勞、情緒無法在正確節點被拉起。",
+            "fix": "建議在第4或第5張插入一張高亮度畫面——例如日光穿窗的空床特寫、或純白背景上的單一物件——作為全篇情緒中場的喘息點，之後再收回暗調結尾。"
+          }
+        ],
+        "rhythm": "整篇節奏像一首歌從頭到尾只有一個動態：暗、人臉、文字，暗、人臉、文字——Levine的臉出現三次像卡帶，《Before》系列連開兩槍，第9張CTA雖然跳色但前八張完全沒有鋪好情緒起伏，建議至少插入一張「無人物、強光感」的視覺空隙，讓讀者在中段換一口氣再被結尾收住。"
       }
     },
     {
@@ -5624,7 +5666,8 @@
               "low_q": true
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-1.jpg",
           "heading": "Tom Holland 說他沒有 Rizz，但他追到了 Zendaya",
           "display_copy": "Tom Holland 說他沒有 Rizz\n但他追到了 Zendaya\n\n他的說法：靠的是【打長期戰】\n\n〖Rizz 到底能不能學？〗",
           "default_cid": "a"
@@ -5652,7 +5695,8 @@
               "source_label": "The Office"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-2.jpg",
           "heading": "你在手機螢幕前想了十分鐘，發出去三個字",
           "display_copy": "訊息欄空著，游標在閃\n你想了【十分鐘】，發出去三個字\n\n那種卡住的感覺，不是你天生沒 Rizz\n\n是因為沒有人告訴你\n線上和見面，根本是兩種遊戲",
           "default_cid": "a"
@@ -5691,7 +5735,8 @@
               "source_kind": "WM"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-3.jpg",
           "heading": "牛津說是「charisma 的縮寫」，發明人說根本不是",
           "display_copy": "牛津：rizz 是【charisma 的縮寫】\n發明人 Kai Cenat：「根本不是」\n\n超過【30,000 人投票】選出 2023 年度詞彙\n官方定義：吸引浪漫或性伴侶的風格與能力\n\nCenat 說，rizz 是朋友圈自然蹦出來的詞\n指的是你在現實裡讓對方對你感興趣的能力\n\n資料來源：Oxford University Press, 2023",
           "default_cid": "a"
@@ -5720,14 +5765,11 @@
               "source_label": "Suits"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-4.jpg",
           "heading": "洛桑大學的實驗：魅力訓練後，有人進步了 60%",
           "display_copy": "洛桑大學教授 John Antonakis 的實驗\n\n找來沒有演講經驗的 MBA 學生\n教他們【12 項魅力戰術（CLT）】\n\n部分人的魅力評分提升了【多達 60%】\n\n他的結論：魅力更像一種可學的技能\n不是你天生有或沒有的東西\n\n資料來源：Psychology Today, 2019",
-          "default_cid": "a",
-          "crop_focus": [
-            0.047,
-            0.5
-          ]
+          "default_cid": "a"
         },
         {
           "n": 5,
@@ -5752,7 +5794,8 @@
               "source_label": "Portraitofa Ladyon Fire"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-5.jpg",
           "heading": "魅力的三根柱子：存在感、力量、溫暖",
           "display_copy": "魅力研究者把 Rizz 拆成三根支柱\n\n【存在感】——問問題，而不是說更多話\n【力量】——自信，但透過自嘲和示弱傳達\n【溫暖】——讓對方感覺被善意對待\n\n每一根都有對應的練習方式\n不是等天份，而是選要先練哪根\n\n資料來源：Charles Duhigg, Substack",
           "default_cid": "a"
@@ -5780,14 +5823,11 @@
               "source_label": "Succession"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-6.jpg",
           "heading": "但 Kai Cenat 說：TikTok「殺死」了 rizz 原本的意思",
           "display_copy": "Rizz 最紅的時候，發明人 Kai Cenat 說\n他自己【已經不用這個詞了】\n\nTikTok「殺死」了它原本的意思\n\n它從描述真實互動能力的詞\n變成了人人在螢幕後宣稱擁有\n卻永遠不需要兌現的標籤\n\nRizz 只能在【真實見面裡被感知】\n\n資料來源：Complex",
-          "default_cid": "a",
-          "crop_focus": [
-            0.569,
-            0.5
-          ]
+          "default_cid": "a"
         },
         {
           "n": 7,
@@ -5812,7 +5852,8 @@
               "source_label": "Before Sunrise"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-7.jpg",
           "heading": "線上聊天最需要 Rizz，見面反而不用演",
           "display_copy": "線上交友把 Rizz 這件事搞反了\n\n你必須用幾行字讓陌生人對你感興趣\n沒有語氣，沒有眼神，沒有空氣感\n\nLava 把聊天壓力拿掉，直接安排見面\n\n讓 Rizz 回到它本來應該存在的地方\n【兩個人在同一個空間裡的那幾分鐘】",
           "default_cid": "a"
@@ -5840,20 +5881,18 @@
               "source_label": "Before Sunrise"
             }
           ],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-8.jpg",
           "heading": "三件你現在就能練的事（不用等天份）",
           "display_copy": "不用等天份，三個 CLT 起手動作\n\n【問一個你真的想知道答案的問題】\n讓對方說話超過你\n\n【找一件你覺得有點蠢的事說出來】\n不解釋、不道歉，存在感就是這樣傳遞的\n\n【在說「對耶」前多停一秒】\n回應對方在意的事，而不是字面上的意思\n\n這三件事，下次見面就能試",
-          "default_cid": "a",
-          "crop_focus": [
-            0.545,
-            0.5
-          ]
+          "default_cid": "a"
         },
         {
           "n": 9,
           "role": "CTA",
           "candidates": [],
-          "final_src": null,
+          "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-9.jpg",
           "heading": "CTA 公版",
           "display_copy": "CTA 公版"
         }
@@ -5896,49 +5935,18 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "2023 年，蜘蛛人演員 Tom Holland 在 BuzzFeed 訪談裡公開承認自己只有「limited rizz」，並說靠「打長期戰」才追到 Zendaya。\n\n這個說法當週讓 rizz 在全球搜尋量直接爆衝。\n問題是：如果連他都說自己沒有，那 rizz 到底是什麼，又能不能學？\n\n線上交友的遊戲規則把 rizz 這件事搞反了：你必須在什麼都不知道的情況下，用幾行字讓一個陌生人對你感興趣，這比任何現實搭訕都更難，因為你沒有語氣、沒有眼神、沒有當下的空氣感。\nLava 的邏輯是反過來的，把聊天的壓力拿掉，直接安排見面，讓 rizz 回到它本來應該存在的地方：兩個人在同一個空間裡，真實互動的那幾分鐘。\n\n#Rizz #交友軟體 #約會技巧 #魅力 #牛津年度詞彙 #戀愛心理學 #社交技巧 #約會 #線下約會 #Lava交友 #不聊天的交友軟體 #見面才是真的 #台灣交友 #KaiCenat",
-          "slides": {
-            "1": {
-              "heading": "Tom Holland 說他沒有 Rizz，但他追到了 Zendaya",
-              "display_copy": "Tom Holland 說他沒有 Rizz\n但他追到了 Zendaya\n\n他的說法：靠的是【打長期戰】\n\n〖Rizz 到底能不能學？〗"
-            },
-            "2": {
-              "heading": "你在手機螢幕前想了十分鐘，發出去三個字",
-              "display_copy": "訊息欄空著，游標在閃\n你想了【十分鐘】，發出去三個字\n\n那種卡住的感覺，不是你天生沒 Rizz\n\n是因為沒有人告訴你\n線上和見面，根本是兩種遊戲"
-            },
-            "3": {
-              "heading": "牛津說是「charisma 的縮寫」，發明人說根本不是",
-              "display_copy": "牛津：rizz 是【charisma 的縮寫】\n發明人 Kai Cenat：「根本不是」\n\n超過【30,000 人投票】選出 2023 年度詞彙\n官方定義：吸引浪漫或性伴侶的風格與能力\n\nCenat 說，rizz 是朋友圈自然蹦出來的詞\n指的是你在現實裡讓對方對你感興趣的能力\n\n資料來源：Oxford University Press, 2023"
-            },
-            "4": {
-              "heading": "洛桑大學的實驗：魅力訓練後，有人進步了 60%",
-              "display_copy": "洛桑大學教授 John Antonakis 的實驗\n\n找來沒有演講經驗的 MBA 學生\n教他們【12 項魅力戰術（CLT）】\n\n部分人的魅力評分提升了【多達 60%】\n\n他的結論：魅力更像一種可學的技能\n不是你天生有或沒有的東西\n\n資料來源：Psychology Today, 2019"
-            },
-            "5": {
-              "heading": "魅力的三根柱子：存在感、力量、溫暖",
-              "display_copy": "魅力研究者把 Rizz 拆成三根支柱\n\n【存在感】——問問題，而不是說更多話\n【力量】——自信，但透過自嘲和示弱傳達\n【溫暖】——讓對方感覺被善意對待\n\n每一根都有對應的練習方式\n不是等天份，而是選要先練哪根\n\n資料來源：Charles Duhigg, Substack"
-            },
-            "6": {
-              "heading": "但 Kai Cenat 說：TikTok「殺死」了 rizz 原本的意思",
-              "display_copy": "Rizz 最紅的時候，發明人 Kai Cenat 說\n他自己【已經不用這個詞了】\n\nTikTok「殺死」了它原本的意思\n\n它從描述真實互動能力的詞\n變成了人人在螢幕後宣稱擁有\n卻永遠不需要兌現的標籤\n\nRizz 只能在【真實見面裡被感知】\n\n資料來源：Complex"
-            },
-            "7": {
-              "heading": "線上聊天最需要 Rizz，見面反而不用演",
-              "display_copy": "線上交友把 Rizz 這件事搞反了\n\n你必須用幾行字讓陌生人對你感興趣\n沒有語氣，沒有眼神，沒有空氣感\n\nLava 把聊天壓力拿掉，直接安排見面\n\n讓 Rizz 回到它本來應該存在的地方\n【兩個人在同一個空間裡的那幾分鐘】"
-            },
-            "8": {
-              "heading": "三件你現在就能練的事（不用等天份）",
-              "display_copy": "不用等天份，三個 CLT 起手動作\n\n【問一個你真的想知道答案的問題】\n讓對方說話超過你\n\n【找一件你覺得有點蠢的事說出來】\n不解釋、不道歉，存在感就是這樣傳遞的\n\n【在說「對耶」前多停一秒】\n回應對方在意的事，而不是字面上的意思\n\n這三件事，下次見面就能試"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
+      "rendered_at": "2026-08-25T16:38:53+08:00",
+      "image_credits": [
+        "第 1 張：Wikimedia Commons（Tom Holland，自由授權）",
+        "第 2 張：《The Office》劇照，版權屬原權利方",
+        "第 3 張：Wikimedia Commons（Kai Cenat，自由授權）",
+        "第 4 張：《Suits》劇照，版權屬原權利方",
+        "第 5 張：《Portraitofa Ladyon Fire》劇照，版權屬原權利方",
+        "第 6 張：《Succession》劇照，版權屬原權利方",
+        "第 7 張：《Before Sunrise》劇照，版權屬原權利方",
+        "第 8 張：《Before Sunrise》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude",
       "rendered_lines": {
         "1": [
           "Tom Holland 說他沒有 Rizz，但他追到了",
@@ -6035,12 +6043,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T16:23:42+08:00",
+        "ts": "2026-08-25T16:39:36+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T16:23:48+08:00",
+        "ts": "2026-08-25T16:39:45+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6060,6 +6068,50 @@
             "line": "「g, Substack 但 Kai Cenat 說：TikTok「殺死」了 r」沒有對應出處（人物引述）"
           }
         ]
+      },
+      "qa": {
+        "ts": "2026-08-25T16:41:18+08:00",
+        "pass": false,
+        "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              7,
+              8
+            ],
+            "severity": "block",
+            "detail": "第7張與第8張均使用《Before Sunrise》同一部電影的劇照，且場景、人物、色調高度相近（同一對男女角色、同樣的暖黃夜景街道），連續兩張幾乎像是同一張圖的不同裁切，讀者滑過去毫無視覺跳躍感。",
+            "fix": "第8張（三件練習清單）換掉《Before Sunrise》劇照，改用能傳達「練習、行動、刻意嘗試」概念的圖：搜尋『person taking notes journal cafe warm light overhead』或『close-up hands writing notebook coffee shop bokeh』，選一張帶有手部動作、俯拍或特寫視角的暖色調靜物／動作照，與第7張的人物街景形成主體類型的切換。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "severity": "warn",
+            "detail": "第1、2、3、4、6張全部採用「人物半身／上半身置於畫面上半、文字壓在下半」的相同構圖邏輯，且底圖色調集中在深褐、暗灰、暗綠，連續滑動時節奏幾乎沒有呼吸。第5張風景雖有切換，但整體暗系比例仍偏重。",
+            "fix": "建議在第4張（洛桑大學實驗）或第6張（Kai Cenat／TikTok）其中一張改用非人物主體的圖：例如搜尋『data chart growth bar graph warm background minimal』或『smartphone screen social media scroll closeup』，讓輪播在人物流中插入一個純物件或資訊圖感的視覺節點，打破人臉連發的構圖慣性。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "severity": "warn",
+            "detail": "第1至第6張底圖幾乎清一色為低亮度暗色調（深棕、深灰、深橄欖），整篇前段過度沉重，缺乏明暗起伏。第7、8張雖略亮但仍屬中暗段；唯第9張純黑CTA是刻意設計，可接受。",
+            "fix": "建議將第5張（魅力三根柱子）或第4張底圖換成相對高亮度、中性色的圖，例如搜尋『bright minimalist white studio portrait confident person』或『airy natural light indoor scene soft focus』，在第4-5張之間製造一個亮部錨點，讓前後暗場有對比呼吸。"
+          }
+        ],
+        "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       }
     }
   ]
