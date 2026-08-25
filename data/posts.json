@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3654,7 +3654,7 @@
         "rhythm": "封面人像開場有溫度，但中段三連黑（張2→4→5）讓輪播像在原地踏步，唯一的亮黃（張3）孤立無援、無法帶動全篇節奏；需在深色系內製造色相差異，才能讓讀者有『往下滑有新東西』的驅動感。"
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4230,12 +4230,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:45+08:00",
+        "ts": "2026-08-25T19:03:28+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4318,7 +4318,7 @@
         "rhythm": "整篇節奏像一首歌從頭到尾只有一個動態：暗、人臉、文字，暗、人臉、文字——Levine的臉出現三次像卡帶，《Before》系列連開兩槍，第9張CTA雖然跳色但前八張完全沒有鋪好情緒起伏，建議至少插入一張「無人物、強光感」的視覺空隙，讓讀者在中段換一口氣再被結尾收住。"
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -4832,12 +4832,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:48+08:00",
+        "ts": "2026-08-25T19:03:30+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4903,7 +4903,7 @@
         "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 4
@@ -5534,12 +5534,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:48+08:00",
+        "ts": "2026-08-25T19:03:31+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5566,7 +5566,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -6136,12 +6136,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:49+08:00",
+        "ts": "2026-08-25T19:03:31+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6173,7 +6173,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 6
@@ -6906,12 +6906,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:50+08:00",
+        "ts": "2026-08-25T19:03:33+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -6933,7 +6933,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 4,
@@ -7290,7 +7290,7 @@
       },
       "candidates_since": "2026-08-25T18:36:41+08:00",
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 7
@@ -7448,12 +7448,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:26+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:50:51+08:00",
+        "ts": "2026-08-25T19:03:34+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -7471,6 +7471,558 @@
             "severity": "block",
             "rule": "no_source",
             "line": "「型依附：脆弱時最容易退場  研究顯示，迴避型依附者在脆弱時刻與壓」沒有對應出處（研究引用）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260824-重陽節今天熱搜但你知道孤",
+      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eypznm0",
+      "created_at": null,
+      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood09e98",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：UC San Diego Today",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moodcdeab",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            }
+          ],
+          "final_src": null,
+          "heading": "重陽節，全台灣都在關心老人",
+          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood5f74f",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood24a30",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "下班回家，那段靜默叫什麼",
+          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-3a.webp",
+              "kind": "still",
+              "source_label": "UC San Diego Today",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "研究說：20 歲，才是孤獨的高峰",
+          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            }
+          ],
+          "final_src": null,
+          "heading": "你的 IG 正在讓你更孤獨",
+          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-mood3a803",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-mooda7e6c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "為什麼老年人反而不孤獨？",
+          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood19a83",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            }
+          ],
+          "final_src": null,
+          "heading": "出社會之後，社交圈急速萎縮",
+          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-moode9cf7",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mood0787a",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "孤獨感的核心，是深度連結太少",
+          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-moodb1532",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood84f12",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "今天替老人過節，也替自己看見一件事",
+          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
+        },
+        {
+          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
+        },
+        {
+          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
+        },
+        {
+          "claim": "較低的自我效能感可能導致更強的孤獨感",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Lower self-efficacy may result in greater loneliness"
+        },
+        {
+          "claim": "孤獨感與智慧之間存在強烈的負相關",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness and wisdom were strongly and inversely related"
+        },
+        {
+          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+          "slides": {
+            "1": {
+              "heading": "重陽節，全台灣都在關心老人",
+              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
+            },
+            "2": {
+              "heading": "下班回家，那段靜默叫什麼",
+              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
+            },
+            "3": {
+              "heading": "研究說：20 歲，才是孤獨的高峰",
+              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "4": {
+              "heading": "你的 IG 正在讓你更孤獨",
+              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "5": {
+              "heading": "為什麼老年人反而不孤獨？",
+              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
+            },
+            "6": {
+              "heading": "出社會之後，社交圈急速萎縮",
+              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
+            },
+            "7": {
+              "heading": "孤獨感的核心，是深度連結太少",
+              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
+            },
+            "8": {
+              "heading": "今天替老人過節，也替自己看見一件事",
+              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-25T18:50:39+08:00",
+      "rendered_lines": {
+        "1": [
+          "重陽節，全台灣都在關心老人",
+          "",
+          "重陽節",
+          "全台灣都在關心老人",
+          "但 2020 年 UC San Diego 研究",
+          "調查 2,843 名成年人",
+          "用 UCLA Loneliness Scale 量測孤獨感",
+          "結論讓所有人都愣住了",
+          "〖最孤獨的年紀，是你現在〗"
+        ],
+        "2": [
+          "下班回家，那段靜默叫什麼",
+          "",
+          "下班回家，關上門",
+          "整個房間只剩你一個人的呼吸聲",
+          "滑開 IG，看見別人的聚餐合照",
+          "按了個愛心，放下手機",
+          "比剛才更安靜",
+          "舊友漸漸只剩按讚",
+          "連絡也變成「確認對方還活著」",
+          "這不叫寂寞",
+          "這叫無處投靠的空虛感"
+        ],
+        "3": [
+          "研究說：20 歲，才是孤獨的高峰",
+          "",
+          "2020 年 UC San Diego 研究",
+          "調查 2,843 名成年人",
+          "使用 UCLA Loneliness Scale 量測",
+          "孤獨感最高峰：20 歲世代",
+          "孤獨感最低點：60 歲世代",
+          "研究者稱之為「孤獨悖論」",
+          "你以為老了才孤獨",
+          "但你現在就已經是高峰",
+          "資料來源：Jeste & Nguyen et al., International",
+          "Psychogeriatrics, 2020"
+        ],
+        "4": [
+          "你的 IG 正在讓你更孤獨",
+          "",
+          "為什麼 20 歲世代最孤獨",
+          "研究者 Tanya Nguyen 直接點名",
+          "「持續在社群上比較自己",
+          "在意按讚數與追蹤數",
+          "導致更強的孤獨感」",
+          "台灣 12 歲以上網路族 95.1% 使用社群媒體",
+          "18–29 歲族群每天近 6 小時滑社群",
+          "按讚取代了對話，限動回覆取代了見面",
+          "研究指出這種淺度互動反而加重孤獨感",
+          "資料來源：數位發展部 2024；中研院臺灣傳播調查資",
+          "料庫；Nguyen et al., International Psychogeriatrics",
+          "2020"
+        ],
+        "5": [
+          "為什麼老年人反而不孤獨",
+          "",
+          "為什麼 60 歲世代孤獨感最低",
+          "研究者 Dilip Jeste 的發現",
+          "孤獨感與「智慧」存在",
+          "強烈且持續的負相關",
+          "尤其是智慧中的同理心成分",
+          "越能理解他人，越不孤獨",
+          "社交圈未必更大",
+          "隨年齡累積的智慧",
+          "讓他們更能與自己及他人共處",
+          "資料來源：Jeste et al., International Psychogeriatrics",
+          "2020"
+        ],
+        "6": [
+          "出社會之後，社交圈急速萎縮",
+          "",
+          "畢業之後，認識新朋友的門",
+          "一道道關上",
+          "沒有宿舍、社團、同班同學",
+          "沒有「結構性的相遇機會」",
+          "舊友漸漸只剩按讚",
+          "新朋友幾乎沒有在認識",
+          "30 歲前後的社交斷層",
+          "幾乎每個台灣年輕人都在經歷",
+          "只是很少人說出口"
+        ],
+        "7": [
+          "孤獨感的核心，是深度連結太少",
+          "",
+          "孤獨感的核心是什麼",
+          "研究指出：深度連結的匱乏",
+          "是孤獨感最關鍵的成因",
+          "按讚取代了對話，限動回覆取代了見面",
+          "這種淺度的社群互動反而會加重孤獨感",
+          "Lava 的出發點很簡單",
+          "線上聊天確認對方還活著",
+          "線下見面才是真正的相遇",
+          "真實地出現在彼此的生活裡",
+          "是你可以主動選擇的一步"
+        ],
+        "8": [
+          "今天替老人過節，也替自己看見一件事",
+          "",
+          "重陽節，我們記得長輩",
+          "但 2020 年 UC San Diego 研究說",
+          "最孤獨的，是 20 歲世代",
+          "Jeste 的研究顯示",
+          "這個年齡幾乎普遍承受著孤獨",
+          "只是很少人說出口",
+          "承認它，是誠實",
+          "從誠實出發，才有機會真實連結",
+          "你值得被真實地看見"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T19:03:27+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-25T19:03:27+08:00",
+        "pass": false,
+        "counts": {
+          "破折號": 1
+        },
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "標題",
+            "line": "標題：…重陽節今天熱搜——但你知道「孤獨感」的…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-08-25T19:03:35+08:00",
+        "pass": false,
+        "claims": 14,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「，線下見面才是真正的相遇。 研究指出，深度連結的匱乏是孤獨感的核」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
           }
         ]
       }
@@ -7901,12 +8453,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -7992,7 +8544,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-25T18:50:57+08:00",
+        "ts": "2026-08-25T19:03:41+08:00",
         "pass": false,
         "claims": 9,
         "issues": [
@@ -8502,12 +9054,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
+        "ts": "2026-08-25T19:03:27+08:00",
         "pass": false,
         "counts": {
           "破折號": 12,
@@ -8608,7 +9160,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-25T18:51:00+08:00",
+        "ts": "2026-08-25T19:03:44+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -8636,558 +9188,6 @@
             "severity": "block",
             "rule": "no_source",
             "line": "「Stan Tatkin 說：你以為「找到對的人」就不用」沒有對應出處（人物引述）"
-          }
-        ]
-      }
-    },
-    {
-      "id": "20260824-重陽節今天熱搜但你知道孤",
-      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eypznm0",
-      "created_at": null,
-      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood09e98",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：UC San Diego Today",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moodcdeab",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            }
-          ],
-          "final_src": null,
-          "heading": "重陽節，全台灣都在關心老人",
-          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood5f74f",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-mood24a30",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            }
-          ],
-          "final_src": null,
-          "heading": "下班回家，那段靜默叫什麼",
-          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-3a.webp",
-              "kind": "still",
-              "source_label": "UC San Diego Today",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "研究說：20 歲，才是孤獨的高峰",
-          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            }
-          ],
-          "final_src": null,
-          "heading": "你的 IG 正在讓你更孤獨",
-          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-mood3a803",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-mooda7e6c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            }
-          ],
-          "final_src": null,
-          "heading": "為什麼老年人反而不孤獨？",
-          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood19a83",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            }
-          ],
-          "final_src": null,
-          "heading": "出社會之後，社交圈急速萎縮",
-          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌輕置入",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-moode9cf7",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mood0787a",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "孤獨感的核心，是深度連結太少",
-          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-moodb1532",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood84f12",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "今天替老人過節，也替自己看見一件事",
-          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
-        },
-        {
-          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
-        },
-        {
-          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
-        },
-        {
-          "claim": "較低的自我效能感可能導致更強的孤獨感",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Lower self-efficacy may result in greater loneliness"
-        },
-        {
-          "claim": "孤獨感與智慧之間存在強烈的負相關",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Loneliness and wisdom were strongly and inversely related"
-        },
-        {
-          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
-          "slides": {
-            "1": {
-              "heading": "重陽節，全台灣都在關心老人",
-              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
-            },
-            "2": {
-              "heading": "下班回家，那段靜默叫什麼",
-              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
-            },
-            "3": {
-              "heading": "研究說：20 歲，才是孤獨的高峰",
-              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
-            },
-            "4": {
-              "heading": "你的 IG 正在讓你更孤獨",
-              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
-            },
-            "5": {
-              "heading": "為什麼老年人反而不孤獨？",
-              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
-            },
-            "6": {
-              "heading": "出社會之後，社交圈急速萎縮",
-              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
-            },
-            "7": {
-              "heading": "孤獨感的核心，是深度連結太少",
-              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
-            },
-            "8": {
-              "heading": "今天替老人過節，也替自己看見一件事",
-              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:50:39+08:00",
-      "rendered_lines": {
-        "1": [
-          "重陽節，全台灣都在關心老人",
-          "",
-          "重陽節",
-          "全台灣都在關心老人",
-          "但 2020 年 UC San Diego 研究",
-          "調查 2,843 名成年人",
-          "用 UCLA Loneliness Scale 量測孤獨感",
-          "結論讓所有人都愣住了",
-          "〖最孤獨的年紀，是你現在〗"
-        ],
-        "2": [
-          "下班回家，那段靜默叫什麼",
-          "",
-          "下班回家，關上門",
-          "整個房間只剩你一個人的呼吸聲",
-          "滑開 IG，看見別人的聚餐合照",
-          "按了個愛心，放下手機",
-          "比剛才更安靜",
-          "舊友漸漸只剩按讚",
-          "連絡也變成「確認對方還活著」",
-          "這不叫寂寞",
-          "這叫無處投靠的空虛感"
-        ],
-        "3": [
-          "研究說：20 歲，才是孤獨的高峰",
-          "",
-          "2020 年 UC San Diego 研究",
-          "調查 2,843 名成年人",
-          "使用 UCLA Loneliness Scale 量測",
-          "孤獨感最高峰：20 歲世代",
-          "孤獨感最低點：60 歲世代",
-          "研究者稱之為「孤獨悖論」",
-          "你以為老了才孤獨",
-          "但你現在就已經是高峰",
-          "資料來源：Jeste & Nguyen et al., International",
-          "Psychogeriatrics, 2020"
-        ],
-        "4": [
-          "你的 IG 正在讓你更孤獨",
-          "",
-          "為什麼 20 歲世代最孤獨",
-          "研究者 Tanya Nguyen 直接點名",
-          "「持續在社群上比較自己",
-          "在意按讚數與追蹤數",
-          "導致更強的孤獨感」",
-          "台灣 12 歲以上網路族 95.1% 使用社群媒體",
-          "18–29 歲族群每天近 6 小時滑社群",
-          "按讚取代了對話，限動回覆取代了見面",
-          "研究指出這種淺度互動反而加重孤獨感",
-          "資料來源：數位發展部 2024；中研院臺灣傳播調查資",
-          "料庫；Nguyen et al., International Psychogeriatrics",
-          "2020"
-        ],
-        "5": [
-          "為什麼老年人反而不孤獨",
-          "",
-          "為什麼 60 歲世代孤獨感最低",
-          "研究者 Dilip Jeste 的發現",
-          "孤獨感與「智慧」存在",
-          "強烈且持續的負相關",
-          "尤其是智慧中的同理心成分",
-          "越能理解他人，越不孤獨",
-          "社交圈未必更大",
-          "隨年齡累積的智慧",
-          "讓他們更能與自己及他人共處",
-          "資料來源：Jeste et al., International Psychogeriatrics",
-          "2020"
-        ],
-        "6": [
-          "出社會之後，社交圈急速萎縮",
-          "",
-          "畢業之後，認識新朋友的門",
-          "一道道關上",
-          "沒有宿舍、社團、同班同學",
-          "沒有「結構性的相遇機會」",
-          "舊友漸漸只剩按讚",
-          "新朋友幾乎沒有在認識",
-          "30 歲前後的社交斷層",
-          "幾乎每個台灣年輕人都在經歷",
-          "只是很少人說出口"
-        ],
-        "7": [
-          "孤獨感的核心，是深度連結太少",
-          "",
-          "孤獨感的核心是什麼",
-          "研究指出：深度連結的匱乏",
-          "是孤獨感最關鍵的成因",
-          "按讚取代了對話，限動回覆取代了見面",
-          "這種淺度的社群互動反而會加重孤獨感",
-          "Lava 的出發點很簡單",
-          "線上聊天確認對方還活著",
-          "線下見面才是真正的相遇",
-          "真實地出現在彼此的生活裡",
-          "是你可以主動選擇的一步"
-        ],
-        "8": [
-          "今天替老人過節，也替自己看見一件事",
-          "",
-          "重陽節，我們記得長輩",
-          "但 2020 年 UC San Diego 研究說",
-          "最孤獨的，是 20 歲世代",
-          "Jeste 的研究顯示",
-          "這個年齡幾乎普遍承受著孤獨",
-          "只是很少人說出口",
-          "承認它，是誠實",
-          "從誠實出發，才有機會真實連結",
-          "你值得被真實地看見"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T18:50:44+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-08-25T18:50:44+08:00",
-        "pass": false,
-        "counts": {
-          "破折號": 1
-        },
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "標題",
-            "line": "標題：…重陽節今天熱搜——但你知道「孤獨感」的…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          }
-        ]
-      },
-      "fact": {
-        "ts": "2026-08-25T18:51:01+08:00",
-        "pass": false,
-        "claims": 14,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「，線下見面才是真正的相遇。 研究指出，深度連結的匱乏是孤獨感的核」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
           }
         ]
       }
