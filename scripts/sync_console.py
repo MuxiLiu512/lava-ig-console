@@ -1452,12 +1452,23 @@ def ingest_new(args):
         ns = argparse.Namespace(drive_root=None, topic=frag, post_id=pid, finals_dir=None,
                                 version=1, clickup=t["id"], topic_type="A-知識型",
                                 json=None, topic_base=None)
-        try:
-            from_drive(ns); fed += 1
-        except SystemExit:
-            print("⏭ 餵入失敗：%s" % t["name"][:36])
-        except Exception as e:
-            print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e))
+        # Drive 掛載讀檔會撞 EDEADLK/EAGAIN/EIO——檔案剛同步下來還在 hydration，
+        # 或劇照工作流正在同一批圖上寫入。原本一撞就整篇放棄，下一輪又被 --limit 排到
+        # 後面，四篇稿因此卡了 19 小時（2026-08-25）。改成當場退避重試。
+        import errno as _errno, time as _time
+        for attempt in range(3):
+            try:
+                from_drive(ns); fed += 1
+                break
+            except SystemExit:
+                print("⏭ 餵入失敗：%s" % t["name"][:36]); break
+            except OSError as e:
+                if getattr(e, "errno", None) in (_errno.EDEADLK, _errno.EAGAIN, _errno.EIO) and attempt < 2:
+                    print("  ↻ Drive 讀檔暫時性錯誤（%s），%d 秒後重試" % (e.strerror or e, 5 * (attempt + 1)))
+                    _time.sleep(5 * (attempt + 1)); continue
+                print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e)); break
+            except Exception as e:
+                print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e)); break
     print("入料完成：%d 篇（佇列剩 %d 張未入）" % (fed, max(0, len(todo) - fed)))
 
 

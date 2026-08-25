@@ -154,9 +154,11 @@ echo "靈感同步" >"$RUNMARK"
 IDE=$(timeout 120 "$PY" scripts/sync_console.py ideas-apply 2>&1; timeout 120 "$PY" scripts/sync_console.py ideas-pull 2>&1)
 echo "$IDE" | grep -E "✓ 靈感|! " | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
-# 入料：在製中卡的新草稿自動餵進操控室（每輪最多 2 張，避免單輪過長）
+# 入料：在製中卡的新草稿自動餵進操控室。
+# limit 2 → 3：2026-08-25 積壓 6 篇時，每輪只吃 2 張又碰上 Drive 暫時性讀檔錯誤，
+# 佇列排不完；timeout 隨之從 420 拉到 700（每篇約 2 分鐘，含重試）。
 echo "入料" >"$RUNMARK"
-ING=$(timeout 420 "$PY" scripts/sync_console.py ingest-new --limit 2 2>&1)
+ING=$(timeout 700 "$PY" scripts/sync_console.py ingest-new --limit 3 2>&1)
 echo "[$(date '+%m-%d %H:%M')] $ING" | grep -E "✓ posts|入料完成：[1-9]|⏭ 餵入|Error" >>"$LOG"
 
 echo "渲染" >"$RUNMARK"
