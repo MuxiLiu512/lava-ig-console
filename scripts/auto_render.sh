@@ -190,6 +190,12 @@ fi
 # 資料不變量（修法 B）：違反＝立刻告警。「永遠不准發生」的狀態清單見 verify_invariants.py
 echo "不變量" >"$RUNMARK"
 INV=$(timeout 60 "$PY" scripts/verify_invariants.py 2>&1)
+
+# 陳舊稽核（2026-08-25）：不變量問「狀態合法嗎」，這支問「畫面與文件的宣稱還成立嗎」。
+# 陳舊不是壞掉、不該讓哨兵變紅，所以只印不擋（退出碼恆 0）。
+# 來源紀律：海巡機器人的模型 A/B 定案後面板仍每天要求裁決，問了 25 天——
+# 產生訊號有人做、讓訊號退場沒人做。
+timeout 60 "$PY" scripts/verify_staleness.py 2>&1 | sed 's/^/[stale] /' || true
 if echo "$INV" | grep -q "🔴"; then
   echo "$INV" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
   timeout 120 "$PY" scripts/sync_console.py alert "資料不變量違反：$(echo "$INV" | head -3 | tr '\n' '；')請立即檢查 posts.json。" >>"$LOG" 2>&1
