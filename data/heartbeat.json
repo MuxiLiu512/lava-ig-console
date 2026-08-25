@@ -1,13 +1,14 @@
 {
- "ts": "2026-08-25T20:31:12+08:00",
+ "ts": "2026-08-25T23:16:52+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
  "typography_ok": true,
  "errors": [
-  "[08-25 20:13] 事實🔴 20260825-白夜行                     宣稱 9 項，問題 2 項",
-  "[08-25 20:13] 事實🔴 20260824-StanTatkin說你            宣稱 4 項，問題 5 項",
-  "[08-25 20:31] 文案🔴 20260824-StanTatkin說你            {'破折號': 12, '赦免式安慰': 1}",
-  "[08-25 20:31] 事實🔴 20260824-StanTatkin說你            宣稱 4 項，問題 6 項"
+  "[08-25 23:14]   ✗ s5 https://www.simplypsychology.org/what-is-enmeshment.html（simplypsychology.org:截圖失敗）",
+  "[08-25 23:14]   ✗ s6 https://dictionary.apa.org/enmeshment（dictionary.apa.org:截圖失敗）",
+  "[08-25 23:16] 文案🔴 20260824-StanTatkin說你            {'破折號': 12, '赦免式安慰': 1}",
+  "[08-25 23:16] 事實🔴 20260825-白夜行                     宣稱 9 項，問題 2 項",
+  "[08-25 23:16] 事實🔴 20260824-StanTatkin說你            宣稱 4 項，問題 5 項"
  ]
 }

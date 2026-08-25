@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:23+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3654,7 +3654,7 @@
         "rhythm": "封面人像開場有溫度，但中段三連黑（張2→4→5）讓輪播像在原地踏步，唯一的亮黃（張3）孤立無援、無法帶動全篇節奏；需在深色系內製造色相差異，才能讓讀者有『往下滑有新東西』的驅動感。"
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4230,12 +4230,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:25+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4250,9 +4250,9 @@
             "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60%」的出處無法自動核對，請人工看過：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
           },
           {
             "severity": "block",
@@ -4318,7 +4318,7 @@
         "rhythm": "整篇節奏像一首歌從頭到尾只有一個動態：暗、人臉、文字，暗、人臉、文字——Levine的臉出現三次像卡帶，《Before》系列連開兩槍，第9張CTA雖然跳色但前八張完全沒有鋪好情緒起伏，建議至少插入一張「無人物、強光感」的視覺空隙，讓讀者在中段換一口氣再被結尾收住。"
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -4832,29 +4832,19 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:29+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2023 年」的出處無法自動核對，請人工看過：https://corp.oup.com/news/rizz-crowned-oxford-word-of-the-year-2023/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60%」的出處無法自動核對，請人工看過：https://www.psychologytoday.com/us/blog/between-cultures/201902/is-charisma-a-gift-or-can-it-be-trained"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「30,000 人」的出處無法自動核對，請人工看過：https://corp.oup.com/news/rizz-crowned-oxford-word-of-the-year-2023/"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.psychologytoday.com/us/blog/between-cultures/201902/is-charisma-a-gift-or-can-it-be-trained"
           },
           {
             "severity": "block",
@@ -4913,7 +4903,7 @@
         "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 4
@@ -5544,12 +5534,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:30+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5564,9 +5554,9 @@
             "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60%」的出處無法自動核對，請人工看過：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
           },
           {
             "severity": "block",
@@ -5576,7 +5566,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -6146,12 +6136,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:36+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6183,7 +6173,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 6
@@ -6916,59 +6906,19 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:38+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2024 年」的出處無法自動核對，請人工看過：https://grass.camp/blog/serious-dating-apps-taiwan-30s"
-          },
-          {
             "severity": "block",
             "rule": "no_source",
             "line": "「些流程消耗的時間與精力，是 20 歲才有的存款。 台灣 30+」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「30歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「30 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「40 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「75 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「39 歲」的出處無法自動核對，請人工看過：https://grass.camp/blog/serious-dating-apps-taiwan-30s"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「61.59%」的出處無法自動核對，請人工看過：https://grass.camp/blog/serious-dating-apps-taiwan-30s"
           },
           {
             "severity": "block",
@@ -6983,7 +6933,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 4,
@@ -7340,7 +7290,7 @@
       },
       "candidates_since": "2026-08-25T18:36:41+08:00",
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 7
@@ -7498,29 +7448,24 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:11+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:40+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2003 年」的出處無法自動核對，請人工看過：https://doi.org/10.1111/j.1475-6811.2003.tb00345.x"
+            "severity": "block",
+            "rule": "dead",
+            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「9%」的出處無法自動核對，請人工看過：https://en.wikipedia.org/wiki/Spooky_in_Love"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「11,582 名」的出處無法自動核對，請人工看過：https://doi.org/10.1111/j.1475-6811.2003.tb00345.x"
+            "severity": "block",
+            "rule": "dead",
+            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
           },
           {
             "severity": "block",
@@ -8004,12 +7949,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 1
@@ -8025,15 +7970,10 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:41+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2020 年」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
           {
             "severity": "block",
             "rule": "no_source",
@@ -8045,34 +7985,19 @@
             "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「60 歲」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「20 歲」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「20 歲」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
             "severity": "block",
             "rule": "no_source",
             "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「12 歲」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「29 歲」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
           },
           {
             "severity": "block",
@@ -8080,14 +8005,9 @@
             "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
           },
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「95.1%」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2,843 名」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
           },
           {
             "severity": "block",
@@ -8533,12 +8453,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -8624,45 +8544,10 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:49+08:00",
         "pass": false,
         "claims": 9,
         "issues": [
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2026 年」的出處無法自動核對，請人工看過：https://udn.com/news/story/6885/9660423"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「1970 年」的出處無法自動核對，請人工看過：https://www.simplypsychology.org/what-is-enmeshment.html"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2023 年」的出處無法自動核對，請人工看過：https://link.springer.com/doi/10.1007/s11469-022-00810-4"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2006 年」的出處無法自動核對，請人工看過：https://www.simplypsychology.org/what-is-enmeshment.html"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「68 歲」的出處無法自動核對，請人工看過：https://udn.com/news/story/6885/9660423"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「68 歲」的出處無法自動核對，請人工看過：https://www.simplypsychology.org/what-is-enmeshment.html"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「10 名」的出處無法自動核對，請人工看過：https://udn.com/news/story/6885/9660423"
-          },
           {
             "severity": "block",
             "rule": "no_source",
@@ -8672,11 +8557,6 @@
             "severity": "block",
             "rule": "no_source",
             "line": "「nd Family》的跨文化研究發現：  高度糾纏的關係，與更高」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「Salvador Minuchin 提出」的出處無法自動核對，請人工看過：https://www.simplypsychology.org/what-is-enmeshment.html"
           }
         ]
       }
@@ -9174,12 +9054,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:22+08:00",
         "pass": false,
         "counts": {
           "破折號": 12,
@@ -9280,14 +9160,14 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-25T20:31:12+08:00",
+        "ts": "2026-08-25T23:16:52+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
           {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2012 年」的出處無法自動核對，請人工看過：https://www.newharbinger.com/9781608820580/wired-for-love/"
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
           },
           {
             "severity": "warn",
@@ -9298,11 +9178,6 @@
             "severity": "block",
             "rule": "no_source",
             "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「研究發現」的出處無法自動核對，請人工看過：https://www.newharbinger.com/9781608820580/wired-for-love/"
           },
           {
             "severity": "warn",
