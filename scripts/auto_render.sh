@@ -201,6 +201,14 @@ echo "排版檢查" >"$RUNMARK"
 TYP=$(timeout 300 "$PY" scripts/check_typography.py --write 2>&1 | tail -8)
 echo "$TYP" | grep -E "違規 [1-9]|稿檔損毀|🔴" | sed "s/^/[$(date '+%m-%d %H:%M')] 排版/" >>"$LOG"
 
+# 文案禁句（機械，正則）：破折號、「不是…而是」、對話式開場、產品禁用詞。
+# 規則早就寫在 style-notes 與 WF01 審查裡，但實測八篇稿全部違規——因為 WF01
+# 的流程是「審查不過 → 重寫一輪 → 直接存檔」，重寫結果從未被重新審查。
+# 這種確定性規則本來就該用正則擋，不該交給 LLM 判斷。
+echo "文案禁句" >"$RUNMARK"
+CPY=$(timeout 300 "$PY" scripts/copy_check.py 2>&1 | tail -10)
+echo "$CPY" | grep -E "🔴|⚠" | sed "s/^/[$(date '+%m-%d %H:%M')] 文案/" >>"$LOG"
+
 # 事實查核（機械，不需 LLM）：抓文案裡的數字與研究引用，驗每一條有沒有活著且對得上的出處。
 # 起因是 2026-08-23 的 Jason Arday 靈感卡：宣稱「今天台灣熱搜」但當日榜上沒有，
 # 年齡數字也與英媒說法不符，唯一出處還是每天會變的 trends 首頁。

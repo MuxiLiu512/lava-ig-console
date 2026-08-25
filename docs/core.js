@@ -242,7 +242,9 @@ function gatesOf(p) {
     : ((x.issues || []).some(i => i.severity === "block" || i.sev === "block") ? "bad" : "warn"));
   // 「事實」原本是空格子（有欄位沒有人填）。2026-08-23 起由 scripts/fact_check.py 填，
   // 檢查每個數字／研究引用有沒有活著且對得上的出處。
-  return [["文案", ""], ["事實", g(p.fact)], ["視覺", g(p.qa)], ["排版", g(p.typography)]];
+  // 「文案」原本也是空格子。2026-08-25 起由 scripts/copy_check.py 填，
+  // 純正則檢查禁用句式（破折號、不是…而是、對話式開場、產品禁用詞）。
+  return [["文案", g(p.copy)], ["事實", g(p.fact)], ["視覺", g(p.qa)], ["排版", g(p.typography)]];
 }
 
 function alertOf(p) {
