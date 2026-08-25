@@ -149,6 +149,14 @@ echo "截圖策展" >"$RUNMARK"
 FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
+# 重掃缺料：把上一步（或前幾輪）補到的 SHOT 素材讀回 posts.json。
+# forage 只把檔案寫進 Drive 的「底圖」資料夾，ingest-new 又只吃「不在 posts.json 的卡」，
+# 已入板的稿因此永遠不會被重讀——2026-08-25 七篇稿掛在「缺料」不會自己好，
+# 補圖每輪都在跑、每輪都白跑。這一步就是接上那個斷點。
+echo "重掃缺料" >"$RUNMARK"
+RFS=$(timeout 600 "$PY" scripts/sync_console.py refresh-candidates --limit 3 2>&1)
+echo "$RFS" | grep -E "↻|重掃完成：[1-9]|⏭" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+
 # 靈感同步：先套用看板的放行/退回決定（勾 ClickUp 🚀放行 → WF07 接手），再拉新卡
 echo "靈感同步" >"$RUNMARK"
 IDE=$(timeout 120 "$PY" scripts/sync_console.py ideas-apply 2>&1; timeout 120 "$PY" scripts/sync_console.py ideas-pull 2>&1)

@@ -1412,6 +1412,51 @@ def rendered_lines(args):
 
 
 # ── 入料哨兵：ClickUp 在製中卡 × Drive 草稿 → 自動餵進 posts.json（零 AI）──
+def refresh_candidates(args):
+    """已入板但仍缺料的貼文：重掃 Drive 把新素材讀回 posts.json。
+
+    為什麼需要這支〔2026-08-25 事故〕：
+      forage-pending 會把策展截圖寫成 slideN-SHOT-*.png 放進該篇的「底圖」資料夾，
+      但 ingest-new 的過濾條件是「尚未在 posts.json 的卡」——已入板的貼文永遠不會
+      被重讀。於是補圖確實抓到了（每篇 10-14 張），posts.json 卻一張都沒多，
+      七篇稿掛在「卡住／缺料」不會自己好，看起來像補圖沒作用。
+      實測：白夜行重掃後缺料 slide 從 [3,5,7,8] 降到 [5]。
+    """
+    posts = load("posts.json").get("posts", [])
+    def _missing(p):
+        return [s["n"] for s in p.get("slides", [])
+                if not s.get("candidates") and not s.get("final_src") and not s.get("public_url")
+                and "CTA" not in str(s.get("role", ""))
+                and (s.get("product_layout") or "") not in DESIGN_LAYOUTS_REFRESH]
+    todo = [p for p in posts
+            if p.get("status") not in ("published", "scheduled") and _missing(p)]
+    if getattr(args, "post_id", None):
+        todo = [p for p in todo if p["id"] == args.post_id]
+    if not todo:
+        print("✓ 沒有缺料的貼文需要重掃"); return
+    done = 0
+    for p in todo[: (args.limit or 3)]:
+        before = _missing(p)
+        ns = argparse.Namespace(
+            drive_root=None, topic=_norm_topic(p.get("topic") or p["id"])[:6],
+            post_id=p["id"], finals_dir=None, version=p.get("version", 1),
+            clickup=p.get("clickup_task_id"), topic_type=p.get("topic_type", "A-知識型"),
+            json=None, topic_base=None)
+        try:
+            from_drive(ns)
+        except SystemExit:
+            print("⏭ 重掃失敗（找不到草稿）：%s" % p["id"][:30]); continue
+        except Exception as e:
+            print("⏭ 重掃錯誤 %s：%s" % (p["id"][:24], e)); continue
+        after = _missing(next(x for x in load("posts.json")["posts"] if x["id"] == p["id"]))
+        print("↻ %s 缺料 %s → %s" % (p["id"][:28], before, after or "無"))
+        done += 1
+    print("重掃完成：%d 篇" % done)
+
+
+DESIGN_LAYOUTS_REFRESH = ("diagram", "price", "cta")
+
+
 def ingest_new(args):
     """掃「在製中」且名為 IG貼文｜、尚未在 posts.json 的卡：Drive 有草稿就 from-drive 餵入。
     取代 Claude feed Part A 的機械部分；哨兵每 10 分呼叫（--limit 控制單輪量）。"""
@@ -1710,6 +1755,7 @@ def main():
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
     a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.set_defaults(func=forage_pending)
+    a = sub.add_parser("refresh-candidates", help="已入板但缺料的稿：重掃 Drive 把補到的素材讀回 posts.json"); a.add_argument("--limit", type=int, default=3); a.add_argument("--post-id", default=None); a.set_defaults(func=refresh_candidates)
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
     a = sub.add_parser("post-qa", help="成篇視覺總檢（WF15）：撞主體/浮水印/不可讀/出處異常"); a.add_argument("--post-id", default=None); a.set_defaults(func=post_qa)
