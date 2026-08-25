@@ -195,15 +195,33 @@ function renderSide() {
   // 候選圖：預設只顯示前 6 張（策展分數最高者），看全部是次要按鈕
   const cands = (s && s.candidates) || [];
   if (cands.length) {
-    box.appendChild(el("div", "small muted", `候選圖 ${cands.length} 張`));
+    // 說清楚點了會怎樣。原本只寫「候選圖 N 張」，能點但沒有任何說明，
+    // 也看不出哪一張是目前選中的（Jesse 2026-08-25：點了要幹麻？）。
+    box.appendChild(el("div", "small muted",
+      `第 ${SLIDE} 張的候選底圖 ${cands.length} 張 · <b>點一張＝選它當這張的底圖</b>，核准後用它出成品`));
     const grid = el("div", "rv-cand"); grid.style.margin = "6px 0";
     let shown = 6;
     const paint = () => {
       grid.innerHTML = "";
+      const picked = CHOICE[SLIDE] || s.default_cid;
       cands.slice(0, shown).forEach(c => {
-        const w = el("span", (CHOICE[SLIDE] || s.default_cid) === c.cid ? "on" : "");
+        const on = picked === c.cid;
+        const w = el("span", on ? "on" : "");
         w.appendChild(img(c.src));
-        w.onclick = () => { CHOICE[SLIDE] = c.cid; renderStage(); renderSide(); };
+        w.title = (c.source_label || c.source_kind || c.kind || "候選") +
+                  (c.low_q ? "（畫質偏低）" : "") + (on ? "／目前選用" : "／點擊選用");
+        if (on) {
+          const tag = el("b", null, "使用中");
+          tag.style.cssText = "position:absolute;left:2px;bottom:2px;background:var(--stage-done,#3fa66a);" +
+            "color:#fff;font-size:10px;padding:0 4px;border-radius:3px;line-height:14px";
+          w.style.position = "relative";
+          w.appendChild(tag);
+        }
+        w.onclick = () => {
+          CHOICE[SLIDE] = c.cid;
+          toast("第 " + SLIDE + " 張改用這張底圖，核准後生效");
+          renderStage(); renderSide();
+        };
         grid.appendChild(w);
       });
     };
@@ -225,6 +243,23 @@ function renderBar() {
   if (!p) return;
   const mk = (t, cls, fn) => { const b = el("button", "btn " + cls, t); b.onclick = fn; bar.appendChild(b); return b; };
   const blocked = PEND.some(x => x.sev === "block");
+
+  // 動作列要跟著貼文的階段走。原本不論狀態一律顯示「核准／退回」，
+  // 於是從看板點「待排」（已核准）的稿進來，看到的是一顆停用的「核准（被擋）」——
+  // 已經核准過的東西再問要不要核准，而真正該做的「排程」只綁在鍵盤 S、畫面上沒有按鈕
+  //（Jesse 2026-08-25：點到待排程的貼文，沒看到哪裡可以上架排程）。
+  if (p.status === "approved" && !p.render_note) {
+    const factBlocks = ((p.fact && p.fact.issues) || []).filter(i => (i.severity || i.sev) === "block");
+    const sch = mk("📅 排程發佈", "primary", () => scheduleCur());
+    if (factBlocks.length) {
+      sch.disabled = true; sch.style.opacity = ".38"; sch.style.cursor = "not-allowed";
+      sch.textContent = "排程（事實未過）";
+      sch.title = "事實查核有 " + factBlocks.length + " 項未解決：" + (factBlocks[0].line || "");
+    }
+    mk("退回重做 R", "", () => decide("reject"));
+    return;
+  }
+
   // block 級不可被「全部採用建議」略過（§4.2）
   mk("全部採用建議", "", () => { PEND.filter(x => x.sev !== "block").forEach(x => { }); toast(blocked ? "仍有 block 項必須逐項處理" : "已採用系統建議"); });
   const a = mk("核准 A", "primary", () => decide("approve"));
