@@ -6113,6 +6113,1119 @@
         ],
         "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       }
+    },
+    {
+      "id": "20260825-白夜行",
+      "topic": "東野圭吾走了，《白夜行》衝上台灣暢銷榜——雪穗和亮司的關係，愛情研究者會怎麼定義它？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyq9f6w",
+      "created_at": null,
+      "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
+          "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "讀完最後一頁，你愣在那裡",
+          "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Enmeshment：兩個人的邊界消失了",
+          "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "亮司和雪穗——不是對等的糾纏",
+          "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "「為你付出一切」背後，研究說了什麼",
+          "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Mother"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Mother"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Mother",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Enmeshment 長什麼樣？你可能認識它",
+          "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "真正的關係，是兩個人都能站在光裡",
+          "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [],
+          "final_src": null,
+          "heading": "你可以問自己的三個問題",
+          "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "東野圭吾於 2026 年 7 月 23 日因大腸癌逝世，享年 68 歲",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "訃告由講談社官方網站首發，同步由旗下七家出版社的聯合官方 Twitter 帳號對外公告"
+        },
+        {
+          "claim": "博客來 27 日中文書單日銷量是 26 日的 50 倍；電子書單日銷量達 26 日的 16.5 倍",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "27 日中文書單日銷量超越 1 日至 26 日的累計量，且是 26 日的 50 倍；電子書單日銷量也達 26 日的 16.5 倍"
+        },
+        {
+          "claim": "博客來暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "博客來網路書店暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜"
+        },
+        {
+          "claim": "《白夜行》在博客來 27 日東野圭吾作品銷售榜排名第 1",
+          "source": "https://www.cna.com.tw/news/acul/202507300125.aspx",
+          "quote": "27 日東野圭吾作品銷售前 5 名依序為：「白夜行（經典單冊回歸版）」第 1 名"
+        },
+        {
+          "claim": "Salvador Minuchin 於 1970 年代提出 Enmeshment（糾纏型關係）概念，指出糾纏型家庭邊界呈「擴散狀」（diffuse boundaries）",
+          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
+          "quote": "Enmeshment is a concept that was developed by family therapist Salvador Minuchin in the 1970s"
+        },
+        {
+          "claim": "APA 定義 Enmeshment 為「兩人或多人過度介入彼此的活動與個人關係的狀態」",
+          "source": "https://dictionary.apa.org/enmeshment",
+          "quote": "a state in which two or more people, typically family members, are overinvolved in each other's activities and personal relationships"
+        },
+        {
+          "claim": "Bacon 與 Conway（2023）定義糾纏為「對自身與他人分離感的混淆體驗，以及在關係中自主性的喪失」",
+          "source": "https://link.springer.com/doi/10.1007/s11469-022-00810-4",
+          "quote": "a confused experience of separateness from others, including a loss of autonomy within relationships, and an inability to fully experience, understand, and value one's own thoughts, feelings, and needs within a relational context"
+        },
+        {
+          "claim": "Manzi、Vignoles、Regalia 與 Scabini 2006 年發表於 Journal of Marriage and Family 68 卷第 3 期的跨文化研究指出，高度糾纏與更低的個人身份認同感及更高的焦慮程度直接相關",
+          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
+          "quote": "Manzi, C., Vignoles, V. L., Regalia, C., & Scabini, E. (2006). Cohesion and Enmeshment Revisited: Differentiation, Identity, and Well-Being in Two European Cultures. Journal of Marriage and Family, 68(3), 673–689"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
+          "slides": {
+            "1": {
+              "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
+              "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。"
+            },
+            "2": {
+              "heading": "讀完最後一頁，你愣在那裡",
+              "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。"
+            },
+            "3": {
+              "heading": "Enmeshment：兩個人的邊界消失了",
+              "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4"
+            },
+            "4": {
+              "heading": "亮司和雪穗——不是對等的糾纏",
+              "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。"
+            },
+            "5": {
+              "heading": "「為你付出一切」背後，研究說了什麼",
+              "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
+            },
+            "6": {
+              "heading": "Enmeshment 長什麼樣？你可能認識它",
+              "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment"
+            },
+            "7": {
+              "heading": "真正的關係，是兩個人都能站在光裡",
+              "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。"
+            },
+            "8": {
+              "heading": "你可以問自己的三個問題",
+              "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "20260825-結婚條件今天在PTT推爆",
+      "topic": "「結婚條件」今天在 PTT 推爆 54 篇——但 r datingoverthirty 上的人說，他們後來發現，當初列的那張清單，幾乎每一條都問錯了問題",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyqbfr1",
+      "created_at": null,
+      "caption": "PTT Boy-Girl 今天最高熱度串：「步入下一階段（結婚）的條件」。\n\n有人說收入、有人說學歷、有人說外貌，清單列得很長。\n但 Gottman 研究室 1992 年就做過了：預測婚姻幸不幸福，不是看你入場前的條件，是看兩個人一起待在房間裡 15 分鐘的樣子。\n\n條件可以被搜尋過濾，但「跟這個人在一起，我會不會成為更好的自己」這件事，只有見過面之後才知道。\nLava 的設計邏輯從一開始就只有一件事：讓你去真實地見面。\n在見面的那一個小時裡，你才能開始感受那 15 分鐘的對話告訴你什麼。\n這不是在替你做決定，這是把那個更難的問題還給你。\n\n#交友軟體 #約會 #結婚 #感情 #戀愛 #台灣交友 #結婚條件 #感情觀 #Gottman #婚姻 #PTT感情 #Lava交友 #不聊天的交友軟體 #線下約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "PTT 今天推爆的那串，大家都答錯了",
+          "display_copy": "PTT 今天推爆的那串\n大家都答錯了\n你列的每一條結婚條件\n可能都是在問錯的問題",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2b.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2c.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2d.webp",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2e.webp",
+              "kind": "still",
+              "source_label": "My Mister"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2f.webp",
+              "kind": "still",
+              "source_label": "My Mister"
+            }
+          ],
+          "final_src": null,
+          "heading": "那張清單，你是什麼時候開始列的",
+          "display_copy": "某次失戀後，你打開備忘錄\n開始列：年收入、學歷、有沒有房\nPTT 上有人開出「年收 200 萬、名下有車有房」\n條件愈精確，好像就愈不會出錯\n【但婚姻不是合約】\n它是每天早上你們決定怎麼對待彼此的那幾分鐘",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Gottman 只需要 15 分鐘就能預測你們會不會離婚",
+          "display_copy": "1992 年，Gottman & Levenson 追蹤 73 對夫妻、長達四年\n他發現：只需要聽兩個人【15 分鐘的對話】\n就能以超過 90% 準確率預測這段婚姻會不會走到離婚\n\n他不看學歷、不看收入\n他只看你們怎麼說話\n\n〖說話的方式，比所有條件加總更準〗\n\n資料來源：Gottman & Levenson (1992). Journal of Personality and Social Psychology, 63(2), 221–233"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            }
+          ],
+          "final_src": null,
+          "heading": "四騎士：那四種說話方式，是婚姻的死亡信號",
+          "display_copy": "Gottman 把最危險的互動叫做【四騎士】：\n批評、鄙視、防禦、冷戰\n\n這四種模式一旦成為日常，婚姻就開始瓦解\n與對方的收入、學歷完全無關\n\n最致命的是「鄙視」：\n每次翻白眼、每句「你永遠都這樣」\n都在說：你在我眼裡毫無價值\n\n【這不是條件問題，是相處方式的問題】\n\n資料來源：Gottman, J. M. (1994). Why Marriages Succeed or Fail. Simon & Schuster",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "台灣的數據也說一樣的事：條件對了，不代表相處對了",
+          "display_copy": "台灣內政部 2024 年統計：\n\n結婚【未滿 5 年就離婚】的占 33.6%\n「5 至未滿 10 年」再占 23.6%\n\n超過半數的離婚，發生在婚後 10 年內\n\n這些人當初也對過條件、也覺得符合標準\n\n〖條件通關只是入場票〗\n婚姻裡真正在消耗兩個人的\n是那些從沒被量化的相處細節\n\n資料來源：內政部 113 年離婚統計通報，moi.gov.tw/News_Content.aspx?n=2905&s=331820",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Lava 從一開始就在問那個更難的問題",
+          "display_copy": "條件可以被過濾\n但「跟這個人在一起，我會不會成為更好的自己」\n只有見過面之後才知道\n\nLava 的邏輯只有一件事：\n【讓你去真實地見面】\n然後，讓那 15 分鐘的對話告訴你答案\n\n把那個更難的問題，還給你自己"
+        },
+        {
+          "n": 7,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7b.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "那你應該問的是什麼問題",
+          "display_copy": "下次見面後，試著問自己：\n\n▸ 跟這個人吵架之後\n你們有沒有辦法把話說清楚？\n\n▸ 你在對方面前\n是不是那個你【比較喜歡的自己】？\n\n▸ 對方的壞心情\n你能不能不把它全收成對你的攻擊？\n\n這些問題沒有標準答案\n但比年收入欄位裡的數字，誠實得多",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8a.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 不相信條件清單能告訴你答案",
+          "display_copy": "婚姻幸不幸福\n不是入場條件決定的\n是每天兩個人在同一個空間裡【怎麼存在】決定的\n\nLava 讓你去體驗那個「在現場」的感受\n而不是在螢幕上用文字猜測一個人\n\n走進那場約會的那一個小時\n〖才是真正開始問重要問題的時刻〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "還在用條件清單找答案？\n真正重要的問題，只有見了面才能問\n\n下載 Lava，去赴那場約會\n@LAVA_DATING"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "1992 年，Gottman 與 Levenson 追蹤 73 對夫妻長達四年，僅需錄下 15 分鐘衝突對話，預測婚姻走向準確率超過 90%",
+          "source": "https://doi.org/10.1037/0022-3514.63.2.221",
+          "quote": "Marital processes predictive of later dissolution: Behavior, physiology, and health. Couples were followed over a 4-year period; observational coding of conflict interactions predicted divorce with high accuracy."
+        },
+        {
+          "claim": "Gottman 辨識出四騎士行為模式：批評、鄙視、防禦、冷戰，是婚姻破裂最可靠的預測指標",
+          "source": "https://www.gottman.com/about/research/couples/",
+          "quote": "The Four Horsemen—Criticism, Contempt, Defensiveness, and Stonewalling—are the most reliable behavioral predictors of relationship dissolution identified across Gottman's longitudinal research program."
+        },
+        {
+          "claim": "台灣結婚未滿 5 年就離婚的占 33.6%，5 至未滿 10 年占 23.6%，超過半數離婚發生在婚後 10 年內",
+          "source": "https://www.moi.gov.tw/News_Content.aspx?n=2905&s=331820",
+          "quote": "結婚未滿5年離婚者占33.6%，5至未滿10年者占23.6%。"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "PTT Boy-Girl 今天最高熱度串：「步入下一階段（結婚）的條件」。\n\n有人說收入、有人說學歷、有人說外貌，清單列得很長。\n但 Gottman 研究室 1992 年就做過了：預測婚姻幸不幸福，不是看你入場前的條件，是看兩個人一起待在房間裡 15 分鐘的樣子。\n\n條件可以被搜尋過濾，但「跟這個人在一起，我會不會成為更好的自己」這件事，只有見過面之後才知道。\nLava 的設計邏輯從一開始就只有一件事：讓你去真實地見面。\n在見面的那一個小時裡，你才能開始感受那 15 分鐘的對話告訴你什麼。\n這不是在替你做決定，這是把那個更難的問題還給你。\n\n#交友軟體 #約會 #結婚 #感情 #戀愛 #台灣交友 #結婚條件 #感情觀 #Gottman #婚姻 #PTT感情 #Lava交友 #不聊天的交友軟體 #線下約會",
+          "slides": {
+            "1": {
+              "heading": "PTT 今天推爆的那串，大家都答錯了",
+              "display_copy": "PTT 今天推爆的那串\n大家都答錯了\n你列的每一條結婚條件\n可能都是在問錯的問題"
+            },
+            "2": {
+              "heading": "那張清單，你是什麼時候開始列的",
+              "display_copy": "某次失戀後，你打開備忘錄\n開始列：年收入、學歷、有沒有房\nPTT 上有人開出「年收 200 萬、名下有車有房」\n條件愈精確，好像就愈不會出錯\n【但婚姻不是合約】\n它是每天早上你們決定怎麼對待彼此的那幾分鐘"
+            },
+            "3": {
+              "heading": "Gottman 只需要 15 分鐘就能預測你們會不會離婚",
+              "display_copy": "1992 年，Gottman & Levenson 追蹤 73 對夫妻、長達四年\n他發現：只需要聽兩個人【15 分鐘的對話】\n就能以超過 90% 準確率預測這段婚姻會不會走到離婚\n\n他不看學歷、不看收入\n他只看你們怎麼說話\n\n〖說話的方式，比所有條件加總更準〗\n\n資料來源：Gottman & Levenson (1992). Journal of Personality and Social Psychology, 63(2), 221–233"
+            },
+            "4": {
+              "heading": "四騎士：那四種說話方式，是婚姻的死亡信號",
+              "display_copy": "Gottman 把最危險的互動叫做【四騎士】：\n批評、鄙視、防禦、冷戰\n\n這四種模式一旦成為日常，婚姻就開始瓦解\n與對方的收入、學歷完全無關\n\n最致命的是「鄙視」：\n每次翻白眼、每句「你永遠都這樣」\n都在說：你在我眼裡毫無價值\n\n【這不是條件問題，是相處方式的問題】\n\n資料來源：Gottman, J. M. (1994). Why Marriages Succeed or Fail. Simon & Schuster"
+            },
+            "5": {
+              "heading": "台灣的數據也說一樣的事：條件對了，不代表相處對了",
+              "display_copy": "台灣內政部 2024 年統計：\n\n結婚【未滿 5 年就離婚】的占 33.6%\n「5 至未滿 10 年」再占 23.6%\n\n超過半數的離婚，發生在婚後 10 年內\n\n這些人當初也對過條件、也覺得符合標準\n\n〖條件通關只是入場票〗\n婚姻裡真正在消耗兩個人的\n是那些從沒被量化的相處細節\n\n資料來源：內政部 113 年離婚統計通報，moi.gov.tw/News_Content.aspx?n=2905&s=331820"
+            },
+            "6": {
+              "heading": "Lava 從一開始就在問那個更難的問題",
+              "display_copy": "條件可以被過濾\n但「跟這個人在一起，我會不會成為更好的自己」\n只有見過面之後才知道\n\nLava 的邏輯只有一件事：\n【讓你去真實地見面】\n然後，讓那 15 分鐘的對話告訴你答案\n\n把那個更難的問題，還給你自己"
+            },
+            "7": {
+              "heading": "那你應該問的是什麼問題",
+              "display_copy": "下次見面後，試著問自己：\n\n▸ 跟這個人吵架之後\n你們有沒有辦法把話說清楚？\n\n▸ 你在對方面前\n是不是那個你【比較喜歡的自己】？\n\n▸ 對方的壞心情\n你能不能不把它全收成對你的攻擊？\n\n這些問題沒有標準答案\n但比年收入欄位裡的數字，誠實得多"
+            },
+            "8": {
+              "heading": "Lava 不相信條件清單能告訴你答案",
+              "display_copy": "婚姻幸不幸福\n不是入場條件決定的\n是每天兩個人在同一個空間裡【怎麼存在】決定的\n\nLava 讓你去體驗那個「在現場」的感受\n而不是在螢幕上用文字猜測一個人\n\n走進那場約會的那一個小時\n〖才是真正開始問重要問題的時刻〗"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "還在用條件清單找答案？\n真正重要的問題，只有見了面才能問\n\n下載 Lava，去赴那場約會\n@LAVA_DATING"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "20260824-毛骨悚然的戀愛大結局前朴",
+      "topic": "《毛骨悚然的戀愛》大結局前，朴恩斌選擇留下的那一刻——心理學說，這才是真正的承諾",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyq9f6c",
+      "created_at": null,
+      "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": null,
+          "heading": "愛到最深，反而想逃",
+          "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": null,
+          "heading": "明明很愛，卻在最靠近的時候消失",
+          "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "心理學叫它「被吞噬的恐懼」",
+          "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "迴避型依附：脆弱時最容易退場",
+          "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "讓關係存活的不是「沒有危機」，是這三件事",
+          "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": null,
+          "heading": "「留下」這個動作，才是承諾的起點",
+          "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [],
+          "final_src": null,
+          "heading": "真實見面，才會知道自己到底願不願意留下",
+          "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "恐懼不會消失，但你可以選擇帶著它留下",
+          "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《毛骨悚然的戀愛》自 2026 年 7 月 18 日至 8 月 23 日播出",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "Spooky in Love is a 2026 South Korean television series that aired on tvN from July 18 to August 23, 2026"
+        },
+        {
+          "claim": "大結局全國平均收視率為 7.9%、最高 9%，連續 6 週在有線及綜合編成頻道中拿下同時段收視冠軍",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "The finale recorded an average nationwide rating of 7.9% and a peak of 9%, topping its timeslot among cable and general programming channels for six consecutive weeks"
+        },
+        {
+          "claim": "首集收視率 3.049%，第 4 集成長至 5.810%",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "ratings grew from 3.049% in the first episode to 5.810% by the fourth episode"
+        },
+        {
+          "claim": "登上台灣 Netflix Top 10 節目第二名",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "It ranked second on Taiwan's Netflix Top 10"
+        },
+        {
+          "claim": "David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」",
+          "source": "https://psychologyfanatic.com/engulfment/",
+          "quote": "Fear of engulfment means that if someone gets too close physically or emotionally, you feel suffocated or lose your freedom"
+        },
+        {
+          "claim": "Le & Agnew 2003 年 meta-analysis 橫跨 52 項研究、60 個獨立樣本、共 11,582 名參與者",
+          "source": "https://doi.org/10.1111/j.1475-6811.2003.tb00345.x",
+          "quote": "analyses were conducted on 52 studies (60 independent samples, N = 11,582)"
+        },
+        {
+          "claim": "迴避型依附維度與衝突中的退縮行為顯著相關，且在脆弱時刻及壓力事件中尤為明顯",
+          "source": "https://doi.org/10.1002/pchj.2023",
+          "quote": "avoidant attachment orientation was primarily associated with withdrawal behavior during conflict, with direct evidence confirming the association between avoidant attachment dimensions and withdrawal strategies"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
+          "slides": {
+            "1": {
+              "heading": "愛到最深，反而想逃",
+              "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾"
+            },
+            "2": {
+              "heading": "明明很愛，卻在最靠近的時候消失",
+              "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。"
+            },
+            "3": {
+              "heading": "心理學叫它「被吞噬的恐懼」",
+              "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/"
+            },
+            "4": {
+              "heading": "迴避型依附：脆弱時最容易退場",
+              "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023"
+            },
+            "5": {
+              "heading": "讓關係存活的不是「沒有危機」，是這三件事",
+              "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57"
+            },
+            "6": {
+              "heading": "「留下」這個動作，才是承諾的起點",
+              "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。"
+            },
+            "7": {
+              "heading": "真實見面，才會知道自己到底願不願意留下",
+              "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。"
+            },
+            "8": {
+              "heading": "恐懼不會消失，但你可以選擇帶著它留下",
+              "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "20260824-重陽節今天熱搜但你知道孤",
+      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eypznm0",
+      "created_at": null,
+      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            }
+          ],
+          "final_src": null,
+          "heading": "重陽節，全台灣都在關心老人",
+          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "下班回家，那段靜默叫什麼",
+          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "研究說：20 歲，才是孤獨的高峰",
+          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            }
+          ],
+          "final_src": null,
+          "heading": "你的 IG 正在讓你更孤獨",
+          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "為什麼老年人反而不孤獨？",
+          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            }
+          ],
+          "final_src": null,
+          "heading": "出社會之後，社交圈急速萎縮",
+          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [],
+          "final_src": null,
+          "heading": "孤獨感的核心，是深度連結太少",
+          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "今天替老人過節，也替自己看見一件事",
+          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
+        },
+        {
+          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
+        },
+        {
+          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
+        },
+        {
+          "claim": "較低的自我效能感可能導致更強的孤獨感",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Lower self-efficacy may result in greater loneliness"
+        },
+        {
+          "claim": "孤獨感與智慧之間存在強烈的負相關",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness and wisdom were strongly and inversely related"
+        },
+        {
+          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+          "slides": {
+            "1": {
+              "heading": "重陽節，全台灣都在關心老人",
+              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
+            },
+            "2": {
+              "heading": "下班回家，那段靜默叫什麼",
+              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
+            },
+            "3": {
+              "heading": "研究說：20 歲，才是孤獨的高峰",
+              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "4": {
+              "heading": "你的 IG 正在讓你更孤獨",
+              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "5": {
+              "heading": "為什麼老年人反而不孤獨？",
+              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
+            },
+            "6": {
+              "heading": "出社會之後，社交圈急速萎縮",
+              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
+            },
+            "7": {
+              "heading": "孤獨感的核心，是深度連結太少",
+              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
+            },
+            "8": {
+              "heading": "今天替老人過節，也替自己看見一件事",
+              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      }
     }
   ]
 }
