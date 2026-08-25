@@ -149,6 +149,25 @@ echo "截圖策展" >"$RUNMARK"
 FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
+# 學習迴路（每天一次）〔2026-08-25 事故〕
+# iterate_harness 把「退回意見」轉成 config/style-notes.md 的規則（低風險自動生效、
+# 高風險轉提案待審），WF01 撰稿時會讀 style-notes。但哨兵從來沒有呼叫它——
+# 16 筆回饋只有 1 筆被消化，最後一則提案停在 7/15。於是 Jesse 退了什麼、
+# 系統完全不知道，同樣的問題（AI 用語、素材重複、選圖不相關）無限重演。
+ITR_STAMP="/tmp/lava-ig-iterate.$(date '+%Y-%m-%d')"
+if [ ! -f "$ITR_STAMP" ]; then
+  touch "$ITR_STAMP"
+  echo "學習迴路" >"$RUNMARK"
+  ITR=$(timeout 300 "$PY" scripts/iterate_harness.py 2>&1 | tail -6)
+  echo "$ITR" | grep -E "迭代摘要|⚙︎|✅|↩" | sed "s/^/[$(date '+%m-%d %H:%M')] 迭代/" >>"$LOG"
+  if [ -n "$(git status --porcelain config/ data/)" ]; then
+    git add config/ data/proposals.json data/reviews.json data/iterate_log.json 2>/dev/null
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-iterate: 消化審核回饋" \
+      -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+fi
+
 # 重掃缺料：把上一步（或前幾輪）補到的 SHOT 素材讀回 posts.json。
 # forage 只把檔案寫進 Drive 的「底圖」資料夾，ingest-new 又只吃「不在 posts.json 的卡」，
 # 已入板的稿因此永遠不會被重讀——2026-08-25 七篇稿掛在「缺料」不會自己好，

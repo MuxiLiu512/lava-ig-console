@@ -15,7 +15,7 @@
 #
 # 說明：本檔操作的是「工作副本」= 這個 repo 目錄本身。實際推送交給 push_files.sh
 # （需 .sync.json）。排程可先 `git pull` 再呼叫，或用 push_files.sh 的 clone-overlay 模式。
-import os, sys, json, re, glob, argparse, subprocess, unicodedata, shutil, datetime
+import hashlib, os, sys, json, re, glob, argparse, subprocess, unicodedata, shutil, datetime
 sys.path.insert(0, os.path.dirname(__file__))
 from _thumbs import make_thumb
 
@@ -639,6 +639,27 @@ def from_drive(args):
     for i, item in enumerate(pool):
         tgt = content_ns[i % max(1, len(content_ns))] if content_ns else 1
         pool_assign.setdefault(tgt, []).append(item)
+    # 候選去重〔2026-08-25 Jesse 退件：「重複出現已經用過的素材」〕
+    # 各來源（劇照工作流、SHOT 策展、生圖）各自查詢、各自落檔，不同 slide 的查詢
+    # 常常撈回同一張圖：實測《毛骨悚然》一篇就有 12 組位元組完全相同的檔案，
+    # 而且 s1/f = s2/c = s6/d 跨三張重複。以內容雜湊為準（檔名不同不代表圖不同），
+    # 整篇共用一個已見集合：先到先得，後面撞到的直接丟掉。
+    seen_hash = set()
+
+    def _dedupe(items):
+        out = []
+        for c in items:
+            fp = c.get("src")
+            try:
+                with open(fp, "rb") as fh:
+                    h = hashlib.md5(fh.read()).hexdigest()
+            except Exception:
+                out.append(c); continue      # 讀不到就不擋，交給後面的畫質閘門
+            if h in seen_hash:
+                continue
+            seen_hash.add(h); out.append(c)
+        return out
+
     for s in data.get("slides", []):
         n = s.get("index")
         cands = []
@@ -667,6 +688,7 @@ def from_drive(args):
                 fp = os.path.join(args.finals_dir, "final-%02d%s" % (n, ext))
                 if os.path.exists(fp):
                     final = fp; break
+        cands = _dedupe(cands)
         entry = {"n": n, "role": str(s.get("role", "")), "final": final, "candidates": cands,
                  "heading": s.get("heading", ""), "display_copy": s.get("display_copy", "")}
         # 產品版型：把 layout 與取景框比例一路帶到 posts.json——
