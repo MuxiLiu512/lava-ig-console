@@ -1,11 +1,14 @@
 {
- "ts": "2026-08-25T17:28:03+08:00",
+ "ts": "2026-08-25T18:30:47+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
  "typography_ok": true,
  "errors": [
-  "[08-25 17:11] 事實🔴 20260824-Rizz進了牛津詞典但r            宣稱 5 項，問題 3 項",
-  "[08-25 17:28] 事實🔴 20260824-重陽節今天熱搜但你知道孤            宣稱 14 項，問題 10 項"
+  "[08-25 18:29]   ✗ s4 https://www.netflix.com/title/81154658（netflix.com:截圖失敗）",
+  "[08-25 18:29]   ✗ s5 https://behavioralscientist.org/mastering-modern-love-lo（behavioralscientist.org:截圖失敗）",
+  "[08-25 18:29]   ✗ s6 https://ericsandroni.com/how-to-not-die-alone-summary/（ericsandroni.com:截圖失敗）",
+  "[08-25 18:29]   ✗ s7 https://grass.camp/blog/serious-dating-apps-taiwan-30s（grass.camp:截圖失敗）",
+  "[08-25 18:30] 事實🔴 20260825-結婚條件今天在PTT推爆            宣稱 11 項，問題 3 項"
  ]
 }

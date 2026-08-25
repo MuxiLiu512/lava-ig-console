@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T17:27:47+08:00",
+        "ts": "2026-08-25T18:30:25+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T17:27:47+08:00",
+        "ts": "2026-08-25T18:30:25+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -4224,12 +4224,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T17:27:47+08:00",
+        "ts": "2026-08-25T18:30:25+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T17:27:52+08:00",
+        "ts": "2026-08-25T18:30:26+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4740,12 +4740,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T17:27:47+08:00",
+        "ts": "2026-08-25T18:30:25+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T17:27:54+08:00",
+        "ts": "2026-08-25T18:30:30+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4810,1224 +4810,6 @@
         ],
         "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       }
-    },
-    {
-      "id": "20260824-毛骨悚然的戀愛大結局前朴",
-      "topic": "《毛骨悚然的戀愛》大結局前，朴恩斌選擇留下的那一刻——心理學說，這才是真正的承諾",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyq9f6c",
-      "created_at": null,
-      "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            }
-          ],
-          "final_src": null,
-          "heading": "愛到最深，反而想逃",
-          "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2a.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            }
-          ],
-          "final_src": null,
-          "heading": "明明很愛，卻在最靠近的時候消失",
-          "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "心理學叫它「被吞噬的恐懼」",
-          "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "迴避型依附：脆弱時最容易退場",
-          "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "讓關係存活的不是「沒有危機」，是這三件事",
-          "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6a.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            }
-          ],
-          "final_src": null,
-          "heading": "「留下」這個動作，才是承諾的起點",
-          "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌輕置入",
-          "candidates": [],
-          "final_src": null,
-          "heading": "真實見面，才會知道自己到底願不願意留下",
-          "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [],
-          "final_src": null,
-          "heading": "恐懼不會消失，但你可以選擇帶著它留下",
-          "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "《毛骨悚然的戀愛》自 2026 年 7 月 18 日至 8 月 23 日播出",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "Spooky in Love is a 2026 South Korean television series that aired on tvN from July 18 to August 23, 2026"
-        },
-        {
-          "claim": "大結局全國平均收視率為 7.9%、最高 9%，連續 6 週在有線及綜合編成頻道中拿下同時段收視冠軍",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "The finale recorded an average nationwide rating of 7.9% and a peak of 9%, topping its timeslot among cable and general programming channels for six consecutive weeks"
-        },
-        {
-          "claim": "首集收視率 3.049%，第 4 集成長至 5.810%",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "ratings grew from 3.049% in the first episode to 5.810% by the fourth episode"
-        },
-        {
-          "claim": "登上台灣 Netflix Top 10 節目第二名",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "It ranked second on Taiwan's Netflix Top 10"
-        },
-        {
-          "claim": "David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」",
-          "source": "https://psychologyfanatic.com/engulfment/",
-          "quote": "Fear of engulfment means that if someone gets too close physically or emotionally, you feel suffocated or lose your freedom"
-        },
-        {
-          "claim": "Le & Agnew 2003 年 meta-analysis 橫跨 52 項研究、60 個獨立樣本、共 11,582 名參與者",
-          "source": "https://doi.org/10.1111/j.1475-6811.2003.tb00345.x",
-          "quote": "analyses were conducted on 52 studies (60 independent samples, N = 11,582)"
-        },
-        {
-          "claim": "迴避型依附維度與衝突中的退縮行為顯著相關，且在脆弱時刻及壓力事件中尤為明顯",
-          "source": "https://doi.org/10.1002/pchj.2023",
-          "quote": "avoidant attachment orientation was primarily associated with withdrawal behavior during conflict, with direct evidence confirming the association between avoidant attachment dimensions and withdrawal strategies"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
-          "slides": {
-            "1": {
-              "heading": "愛到最深，反而想逃",
-              "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾"
-            },
-            "2": {
-              "heading": "明明很愛，卻在最靠近的時候消失",
-              "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。"
-            },
-            "3": {
-              "heading": "心理學叫它「被吞噬的恐懼」",
-              "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/"
-            },
-            "4": {
-              "heading": "迴避型依附：脆弱時最容易退場",
-              "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023"
-            },
-            "5": {
-              "heading": "讓關係存活的不是「沒有危機」，是這三件事",
-              "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57"
-            },
-            "6": {
-              "heading": "「留下」這個動作，才是承諾的起點",
-              "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。"
-            },
-            "7": {
-              "heading": "真實見面，才會知道自己到底願不願意留下",
-              "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。"
-            },
-            "8": {
-              "heading": "恐懼不會消失，但你可以選擇帶著它留下",
-              "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "fact": {
-        "ts": "2026-08-25T17:28:02+08:00",
-        "pass": false,
-        "claims": 4,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
-          },
-          {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「型依附：脆弱時最容易退場  研究顯示，迴避型依附者在脆弱時刻與壓」沒有對應出處（研究引用）"
-          }
-        ]
-      },
-      "rendered_lines": {
-        "1": [
-          "愛到最深，反而想逃",
-          "",
-          "〖愛到最深，反而想逃〗",
-          "《毛骨悚然的戀愛》大結局",
-          "朴恩斌選擇留下的那一刻",
-          "心理學說，這才是真正的承諾"
-        ],
-        "2": [
-          "明明很愛，卻在最靠近的時候消失",
-          "",
-          "明明很愛，卻在最靠近的時候消失",
-          "和一個人愈來愈近，某天卻突然不想回訊息、開始找",
-          "藉口不見面——不是因為不愛了，是因為太靠近讓你",
-          "喘不過氣",
-          "《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危",
-          "機最頂點選擇解除婚約。與其說是放棄，不如說是一",
-          "種逃脫的本能，而心理學早就給了這種本能一個名字"
-        ],
-        "3": [
-          "心理學叫它「被吞噬的恐懼」",
-          "",
-          "心理學叫它被吞噬的恐懼",
-          "Fear of Engulfment",
-          "心理學家 David Richo（2002）：「若有人在身體或情",
-          "感上過於靠近，你會感到窒息或失去自由。」",
-          "愈渴望親密的人，有時反而愈容易把對方推開",
-          "被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方",
-          "都困惑的推拉動態",
-          "資料來源：Psychology Fanatic，psychologyfanatic.",
-          "com/engulfment/"
-        ],
-        "4": [
-          "迴避型依附：脆弱時最容易退場",
-          "",
-          "迴避型依附：脆弱時最容易退場",
-          "研究顯示，迴避型依附者在脆弱時刻與壓力事件中退",
-          "縮行為最為明顯——習慣性地自我封閉、拒絕求援",
-          "把最需要對方的時刻，變成最有可能消失的時刻",
-          "千汝利在事業危機頂點解除婚約，不是不愛了，是恐",
-          "懼的防禦機制在說話",
-          "資料來源：PsyCh Journal, Wiley, 2023"
-        ],
-        "5": [
-          "讓關係存活的不是「沒有危機」，是這三件事",
-          "",
-          "讓關係存活的不是沒有危機，是這三件事",
-          "Caryl E. Rusbult 投資模型，Le & Agnew 2003 年",
-          "meta-analysis 橫跨11,582 名參與者驗證",
-          "① 對關係的滿意度",
-          "② 替代方案的吸引力（愈低愈好）",
-          "③ 已投入的資源規模",
-          "三者中，只要整體承諾夠高，即使某個因素暫時低落",
-          "關係仍能撐過去。危機不是終點，逃避才是",
-          "資料來源：Le & Agnew, Personal Relationships, Vol.",
-          "10, 2003, pp.37–57"
-        ],
-        "6": [
-          "「留下」這個動作，才是承諾的起點",
-          "",
-          "「留下」這個動作，才是承諾的起點",
-          "千汝利回頭，不是因為所有條件都完美了",
-          "而是在不確定、在脆弱、在壓力還沒消散的時候做出",
-          "了決定",
-          "投資模型告訴我們：承諾不是一種感覺，而是一個主",
-          "動的姿態——帶著所有的不確定留在這裡，對未來投",
-          "入，即使今天還看不清楚終點",
-          "那個「留下」的當下，才是承諾真正開始的地方"
-        ],
-        "7": [
-          "真實見面，才會知道自己到底願不願意留下",
-          "",
-          "真實見面，才會知道自己到底願不願意留下",
-          "在螢幕後面聊了幾百則，你依然可以保持讓你安心",
-          "的那道距離。但那道距離，同時也讓你永遠無法分清",
-          "是真的不適合，還是只是還不夠勇敢",
-          "Lava跳過那段假裝安全的暖身期，直接創造真實見面",
-          "的機會——因為承諾只在真實的接觸裡才有機會發生"
-        ],
-        "8": [
-          "恐懼不會消失，但你可以選擇帶著它留下",
-          "",
-          "恐懼不會消失，但你可以選擇帶著它留下",
-          "Fear of Engulfment 不是需要被治好的毛病",
-          "而是很多人在親密關係裡真實存在的狀態。重點",
-          "不是等到恐懼消失了再靠近，而是恐懼還在的時候",
-          "選擇不逃",
-          "《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週",
-          "同時段冠軍——觀眾被打動的，不是 Happy Ending 本",
-          "身，而是那個帶著所有不確定仍然選擇留下的瞬間",
-          "Lava相信：關係的品質，在你選擇真實接觸的那一刻",
-          "開始成形"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T17:27:47+08:00",
-        "pass": true,
-        "issues": []
-      }
-    },
-    {
-      "id": "20260824-重陽節今天熱搜但你知道孤",
-      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eypznm0",
-      "created_at": null,
-      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            }
-          ],
-          "final_src": null,
-          "heading": "重陽節，全台灣都在關心老人",
-          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            }
-          ],
-          "final_src": null,
-          "heading": "下班回家，那段靜默叫什麼",
-          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "研究說：20 歲，才是孤獨的高峰",
-          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            }
-          ],
-          "final_src": null,
-          "heading": "你的 IG 正在讓你更孤獨",
-          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            }
-          ],
-          "final_src": null,
-          "heading": "為什麼老年人反而不孤獨？",
-          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            }
-          ],
-          "final_src": null,
-          "heading": "出社會之後，社交圈急速萎縮",
-          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌輕置入",
-          "candidates": [],
-          "final_src": null,
-          "heading": "孤獨感的核心，是深度連結太少",
-          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [],
-          "final_src": null,
-          "heading": "今天替老人過節，也替自己看見一件事",
-          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
-        },
-        {
-          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
-        },
-        {
-          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
-        },
-        {
-          "claim": "較低的自我效能感可能導致更強的孤獨感",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Lower self-efficacy may result in greater loneliness"
-        },
-        {
-          "claim": "孤獨感與智慧之間存在強烈的負相關",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Loneliness and wisdom were strongly and inversely related"
-        },
-        {
-          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
-          "slides": {
-            "1": {
-              "heading": "重陽節，全台灣都在關心老人",
-              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
-            },
-            "2": {
-              "heading": "下班回家，那段靜默叫什麼",
-              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
-            },
-            "3": {
-              "heading": "研究說：20 歲，才是孤獨的高峰",
-              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
-            },
-            "4": {
-              "heading": "你的 IG 正在讓你更孤獨",
-              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
-            },
-            "5": {
-              "heading": "為什麼老年人反而不孤獨？",
-              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
-            },
-            "6": {
-              "heading": "出社會之後，社交圈急速萎縮",
-              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
-            },
-            "7": {
-              "heading": "孤獨感的核心，是深度連結太少",
-              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
-            },
-            "8": {
-              "heading": "今天替老人過節，也替自己看見一件事",
-              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "fact": {
-        "ts": "2026-08-25T17:28:03+08:00",
-        "pass": false,
-        "claims": 14,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「，線下見面才是真正的相遇。 研究指出，深度連結的匱乏是孤獨感的核」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
-          }
-        ]
-      },
-      "rendered_lines": {
-        "1": [
-          "重陽節，全台灣都在關心老人",
-          "",
-          "重陽節",
-          "全台灣都在關心老人",
-          "但 2020 年 UC San Diego 研究",
-          "調查 2,843 名成年人",
-          "用 UCLA Loneliness Scale 量測孤獨感",
-          "結論讓所有人都愣住了",
-          "〖最孤獨的年紀，是你現在〗"
-        ],
-        "2": [
-          "下班回家，那段靜默叫什麼",
-          "",
-          "下班回家，關上門",
-          "整個房間只剩你一個人的呼吸聲",
-          "滑開 IG，看見別人的聚餐合照",
-          "按了個愛心，放下手機",
-          "比剛才更安靜",
-          "舊友漸漸只剩按讚",
-          "連絡也變成「確認對方還活著」",
-          "這不叫寂寞",
-          "這叫無處投靠的空虛感"
-        ],
-        "3": [
-          "研究說：20 歲，才是孤獨的高峰",
-          "",
-          "2020 年 UC San Diego 研究",
-          "調查 2,843 名成年人",
-          "使用 UCLA Loneliness Scale 量測",
-          "孤獨感最高峰：20 歲世代",
-          "孤獨感最低點：60 歲世代",
-          "研究者稱之為「孤獨悖論」",
-          "你以為老了才孤獨",
-          "但你現在就已經是高峰",
-          "資料來源：Jeste & Nguyen et al., International",
-          "Psychogeriatrics, 2020"
-        ],
-        "4": [
-          "你的 IG 正在讓你更孤獨",
-          "",
-          "為什麼 20 歲世代最孤獨",
-          "研究者 Tanya Nguyen 直接點名",
-          "「持續在社群上比較自己",
-          "在意按讚數與追蹤數",
-          "導致更強的孤獨感」",
-          "台灣 12 歲以上網路族 95.1% 使用社群媒體",
-          "18–29 歲族群每天近 6 小時滑社群",
-          "按讚取代了對話，限動回覆取代了見面",
-          "研究指出這種淺度互動反而加重孤獨感",
-          "資料來源：數位發展部 2024；中研院臺灣傳播調查資",
-          "料庫；Nguyen et al., International Psychogeriatrics",
-          "2020"
-        ],
-        "5": [
-          "為什麼老年人反而不孤獨",
-          "",
-          "為什麼 60 歲世代孤獨感最低",
-          "研究者 Dilip Jeste 的發現",
-          "孤獨感與「智慧」存在",
-          "強烈且持續的負相關",
-          "尤其是智慧中的同理心成分",
-          "越能理解他人，越不孤獨",
-          "社交圈未必更大",
-          "隨年齡累積的智慧",
-          "讓他們更能與自己及他人共處",
-          "資料來源：Jeste et al., International Psychogeriatrics",
-          "2020"
-        ],
-        "6": [
-          "出社會之後，社交圈急速萎縮",
-          "",
-          "畢業之後，認識新朋友的門",
-          "一道道關上",
-          "沒有宿舍、社團、同班同學",
-          "沒有「結構性的相遇機會」",
-          "舊友漸漸只剩按讚",
-          "新朋友幾乎沒有在認識",
-          "30 歲前後的社交斷層",
-          "幾乎每個台灣年輕人都在經歷",
-          "只是很少人說出口"
-        ],
-        "7": [
-          "孤獨感的核心，是深度連結太少",
-          "",
-          "孤獨感的核心是什麼",
-          "研究指出：深度連結的匱乏",
-          "是孤獨感最關鍵的成因",
-          "按讚取代了對話，限動回覆取代了見面",
-          "這種淺度的社群互動反而會加重孤獨感",
-          "Lava 的出發點很簡單",
-          "線上聊天確認對方還活著",
-          "線下見面才是真正的相遇",
-          "真實地出現在彼此的生活裡",
-          "是你可以主動選擇的一步"
-        ],
-        "8": [
-          "今天替老人過節，也替自己看見一件事",
-          "",
-          "重陽節，我們記得長輩",
-          "但 2020 年 UC San Diego 研究說",
-          "最孤獨的，是 20 歲世代",
-          "Jeste 的研究顯示",
-          "這個年齡幾乎普遍承受著孤獨",
-          "只是很少人說出口",
-          "承認它，是誠實",
-          "從誠實出發，才有機會真實連結",
-          "你值得被真實地看見"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T17:27:47+08:00",
-        "pass": true,
-        "issues": []
-      }
-    },
-    {
-      "id": "20260825-結婚條件今天在PTT推爆",
-      "topic": "r datingoverthirty 上最多 30+ 的人在說：「我不是不想談戀愛，我只是不知道怎麼重新開始」",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyqbfr1",
-      "created_at": null,
-      "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Catastrophe"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Catastrophe",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Catastrophe",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "問題從來不是遇不到人",
-          "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2b.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2c.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            }
-          ],
-          "final_src": null,
-          "heading": "那個卡住的感覺，幾乎人人都有",
-          "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是——\n「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "30 歲前後，孤獨感真的有一個峰值",
-          "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Her",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
-              "kind": "still",
-              "source_label": "The Later Daters"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
-              "kind": "still",
-              "source_label": "The Later Daters"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
-              "kind": "still",
-              "source_label": "The Later Daters"
-            }
-          ],
-          "final_src": null,
-          "heading": "Logan Ury 把這個卡關命名了",
-          "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常——\n很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
-          "final_src": null,
-          "heading": "約會是一門需要學的技能，不是本能",
-          "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能——是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "行為科學給「不知道怎麼開始」的具體步驟",
-          "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7b.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "Lava 把「怎麼開始」這一步，設計進去了",
-          "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱——\n台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8a.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
-              "kind": "still",
-              "source_label": "Begin Again"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8h.webp",
-              "kind": "still",
-              "source_label": "Begin Again"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8i.webp",
-              "kind": "still",
-              "source_label": "Begin Again"
-            }
-          ],
-          "final_src": null,
-          "heading": "「刻意之愛」的意思，是你可以主動建立它",
-          "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "成人孤獨感呈現兩個高峰（接近 30 歲前後與 60 歲附近）與兩個低谷（約 40 歲、約 75 歲），並非線性攀升",
-          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/",
-          "quote": "Age and loneliness showed a U-shaped association, with loneliness being highest in young adulthood and old age."
-        },
-        {
-          "claim": "台灣 25–39 歲未婚率為 61.59%（男 67.07%、女 55.79%）",
-          "source": "https://grass.camp/blog/serious-dating-apps-taiwan-30s",
-          "quote": "根據內政部 2024 年戶政統計：25–39 歲台灣人未婚率為 61.59%（男 67.07%、女 55.79%）"
-        },
-        {
-          "claim": "Logan Ury 是 Hinge 關係科學總監，哈佛心理學畢業，曾主導 Google 行為科學團隊「非理性實驗室」（Irrational Lab），亦是 Netflix 節目《The Later Daters》的約會教練嘉賓",
-          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
-          "quote": "Logan Ury is the Director of Relationship Science at Hinge and a former behavioral scientist at Google's Irrational Lab."
-        },
-        {
-          "claim": "Logan Ury 將「對重新約會的恐懼」命名為 FODA，指出人們擔心的是社交技能生疏、不知道聊什麼，並建議先理解這非常正常、很多人都在經歷同樣的事",
-          "source": "https://www.pressreader.com/usa/chicago-tribune-sunday/20210711/282707640062387",
-          "quote": "Ury calls this fear of dating again, or FODA. People worry their social skills have gotten rusty, or they won't know what to talk about."
-        },
-        {
-          "claim": "Logan Ury 說：Dating 在整個人類歷史中其實是非常新的事物；雖然我們天生就懂得愛，但不代表我們生來就懂得約會；什麼是長期伴侶關係中值得優先考量的特質，這不是本能知識，而是需要學習的",
-          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
-          "quote": "While we're born with the capacity to love, we're not born knowing how to date. What makes a good long-term partner is not instinctual knowledge—it needs to be learned."
-        },
-        {
-          "claim": "行為科學建議的具體步驟包括：設定短期截止日期、做準備（下載 App、準備照片）、公開宣告、建立新的自我認同、從每週一次約會開始（不超過）、對自己保持同理心、不聯絡前任",
-          "source": "https://ericsandroni.com/how-to-not-die-alone-summary/",
-          "quote": "Set a deadline, do the prep work (download apps, prepare photos), make a public commitment, create a new self-story, start with one date a week, and show yourself compassion."
-        },
-        {
-          "claim": "Logan Ury 提出「刻意之愛」（intentional love）：要擁有好的感情，你必須主動建立它，而非等待它的出現",
-          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
-          "quote": "To have a great relationship, you need to build it intentionally rather than wait for it to happen to you."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
-          "slides": {
-            "1": {
-              "heading": "問題從來不是遇不到人",
-              "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步"
-            },
-            "2": {
-              "heading": "那個卡住的感覺，幾乎人人都有",
-              "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是——\n「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」"
-            },
-            "3": {
-              "heading": "30 歲前後，孤獨感真的有一個峰值",
-              "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計"
-            },
-            "4": {
-              "heading": "Logan Ury 把這個卡關命名了",
-              "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常——\n很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021"
-            },
-            "5": {
-              "heading": "約會是一門需要學的技能，不是本能",
-              "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能——是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview"
-            },
-            "6": {
-              "heading": "行為科學給「不知道怎麼開始」的具體步驟",
-              "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要"
-            },
-            "7": {
-              "heading": "Lava 把「怎麼開始」這一步，設計進去了",
-              "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱——\n台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去"
-            },
-            "8": {
-              "heading": "「刻意之愛」的意思，是你可以主動建立它",
-              "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:17:33+08:00"
     },
     {
       "id": "20260825-白夜行",
@@ -6473,7 +5255,141 @@
           }
         }
       },
-      "candidates_since": "2026-08-25T18:18:48+08:00"
+      "candidates_since": "2026-08-25T18:18:48+08:00",
+      "rendered_lines": {
+        "1": [
+          "亮司用一生躲在暗處，讓雪穗永遠站在光裡",
+          "—那算愛嗎",
+          "",
+          "亮司用一生躲在暗處",
+          "讓雪穗永遠站在光裡",
+          "〖那算愛嗎〗",
+          "東野圭吾辭世，《白夜行》再度衝上博客來榜首",
+          "這個問題，值得重新問一次"
+        ],
+        "2": [
+          "讀完最後一頁，你愣在那裡",
+          "",
+          "讀完最後一頁，你愣在那裡",
+          "不是因為結局太悲",
+          "而是因為你心裡有個聲音說這是愛",
+          "另一個聲音說：這裡有什麼地方不對",
+          "亮司從沒要求雪穗回頭看他一眼",
+          "他把所有犯罪的理由藏進黑暗",
+          "讓她的世界永遠乾淨",
+          "那個「不對」，關係心理學早就有名字"
+        ],
+        "3": [
+          "Enmeshment：兩個人的邊界消失了",
+          "",
+          "1970 年代，家族治療師 Salvador Minuchin 提出",
+          "Enmeshment（糾纏型關係）",
+          "當邊界變得「擴散」，兩人開始過度介入彼此",
+          "個體的自主性逐漸消失",
+          "2023 年 Bacon & Conway 將它定義得更精準",
+          "「對自身與他人分離感的混淆體驗",
+          "以及無法充分感受自己的想法與需求。」",
+          "這不叫親密。這叫糾纏",
+          "資料來源：Simply Psychology, simplypsychology.org",
+          "/what-is-enmeshment.html；Bacon & Conway (",
+          "2023), Springer, doi:10.1007/s11469-022-00810-4"
+        ],
+        "4": [
+          "亮司和雪穗——不是對等的糾纏",
+          "",
+          "一般的糾纏是雙向的",
+          "兩人同時失去邊界",
+          "但亮司與雪穗不一樣",
+          "他的存在只為成全她",
+          "她從未同等犧牲",
+          "研究者稱這為非對稱糾纏",
+          "其中一方成為「使能者（enabler）」",
+          "用自我毀滅維持對方的世界",
+          "守護者在暗處沉淪",
+          "被守護者也因此永遠無法真正自由"
+        ],
+        "5": [
+          "「為你付出一切」背後，研究說了什麼",
+          "",
+          "你以為「為你付出一切」是愛的極致",
+          "但 Manzi、Vignoles 等人 2006 年發表於",
+          "《Journal of Marriage and Family》的跨文化研究發",
+          "現",
+          "【高度糾纏的關係，與更高的焦慮",
+          "更低的自我認同感直接相關】",
+          "糾纏讓人失去分辨「這是我自己的需求」的能力",
+          "兩個人都困在裡面，誰也出不去",
+          "資料來源：Manzi et al. (2006), Journal of Marriage",
+          "and Family, 68(3), 673–689"
+        ],
+        "6": [
+          "Enmeshment 長什麼樣？你可能認識它",
+          "",
+          "糾纏型關係，你可能認識它",
+          "「她不在，我不知道自己要什麼。」",
+          "「我的快樂好像只有在他開心的時候才算數。」",
+          "APA 官方定義",
+          "【Enmeshment 是兩人或多人過度介入",
+          "彼此活動與個人關係的狀態】",
+          "起點很像深度在乎",
+          "直到你發現，其中一個人已經完全消失在關係裡",
+          "資料來源：APA Dictionary of Psychology, dictionary.",
+          "apa.org/enmeshment"
+        ],
+        "7": [
+          "真正的關係，是兩個人都能站在光裡",
+          "",
+          "亮司以為躲在暗處是愛",
+          "但真正的關係",
+          "是兩個人的自我都還完整",
+          "然後選擇彼此靠近",
+          "不是融化進對方裡",
+          "不是為了對方消失",
+          "不需要有人犧牲自己的光",
+          "不需要有人永遠活在陰影裡",
+          "Lava 想幫你找的",
+          "是那種兩個人都能站在光裡的連結"
+        ],
+        "8": [
+          "你可以問自己的三個問題",
+          "",
+          "不用把自己對比到亮司",
+          "但這三個問題，值得靜靜問自己",
+          "① 在這段關係裡，我還知道「我自己喜歡什麼」嗎",
+          "【② 當對方不開心，我是選擇陪伴",
+          "還是覺得「必須」讓他開心】",
+          "【③ 如果這段關係結束",
+          "我還剩下多少「我自己」】",
+          "你的第一個念頭，往往比你以為的更誠實"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:36+08:00",
+        "pass": false,
+        "claims": 9,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「由。 「為你付出一切」背後，研究說了什麼 你以為「為你付出一切」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「nd Family》的跨文化研究發現：  高度糾纏的關係，與更高」沒有對應出處（研究引用）"
+          }
+        ]
+      }
     },
     {
       "id": "20260824-Attached說你不是",
@@ -6953,7 +5869,153 @@
           }
         }
       },
-      "candidates_since": "2026-08-25T18:20:13+08:00"
+      "candidates_since": "2026-08-25T18:20:13+08:00",
+      "rendered_lines": {
+        "1": [
+          "兩個安全型，在一起——還是出問題了",
+          "",
+          "兩個安全型",
+          "在一起",
+          "還是出問題了",
+          "測驗都過了",
+          "怎麼還是有一堵",
+          "摸不到的牆"
+        ],
+        "2": [
+          "「我們都很穩——但我們還是沒辦法好好說話」",
+          "",
+          "測驗結果都是安全型",
+          "可是那個週五晚上",
+          "你說「我需要抱一下」",
+          "他把燈關掉、拿起手機",
+          "沒有說錯什麼",
+          "只是沒有轉過來",
+          "兩個人都安全",
+          "兩個人都不知道哪裡出了問題"
+        ],
+        "3": [
+          "《Attached》說的不只是「找對類型」",
+          "",
+          "Amir Levine × Rachel Heller",
+          "《Attached》，2010 年出版",
+          "翻譯成20 種語言",
+          "Amazon 均分 4.7 顆星",
+          "書裡不只講焦慮型和逃避型",
+          "真正的核心是",
+          "許多關係問題源自",
+          "「感知與表達親密感的方式不同」",
+          "而這件事，在兩個安全型之間也會發生",
+          "資料來源：SuperSummary supersummary.com/",
+          "attached/summary/；Amazon slickdeals.net/f/",
+          "19301172"
+        ],
+        "4": [
+          "「安全型」不是一個固定的到達點",
+          "",
+          "研究估計約50～60%的人是安全型",
+          "但安全型不是「抵達終點」",
+          "而是一種需要持續實踐的動態能力",
+          "安全型的人依然會受傷",
+          "差異在底層結構",
+          "他們相信這段關係能承受困難而不崩潰",
+          "但這份相信，也需要被不斷餵養",
+          "資料來源：HelpGuide helpguide.org/relationships/",
+          "social-connection/",
+          "attachment-and-adult-relationships；Annie Wright",
+          "LMFT anniewright.com/",
+          "secure-attachment-romantic-relationship"
+        ],
+        "5": [
+          "「舒適」不等於「安全」——這是最常被混淆",
+          "的一條線",
+          "",
+          "「低衝突」不等於「真實靠近」",
+          "舒適的關係可能感覺熟悉、沒什麼吵架",
+          "但仍然存在距離感與迴避",
+          "安全型依附的真正特徵是",
+          "在痛苦的時刻，能夠轉向彼此",
+          "而不是各自消化、各自撐著",
+          "資料來源：Annie Wright LMFT anniewright.com/",
+          "secure-attachment-romantic-relationship"
+        ],
+        "6": [
+          "依附風格不是固定標籤——脈絡才是關鍵",
+          "",
+          "同一個人，對不同的關係",
+          "可以有不同的依附表現",
+          "對朋友安全型、對伴侶焦慮型、對家人逃避型",
+          "這不是矛盾，而是依附本來就是",
+          "對關係歷史與當下脈絡的動態回應",
+          "依附不是你的人格標籤",
+          "是你們之間那段歷史的產物",
+          "資料來源：Lifescore Test lifescoretest.com/blog/",
+          "attachment-style-myths；ScienceDirect",
+          "sciencedirect.com/science/article/abs/pii/",
+          "S0191886919302673"
+        ],
+        "7": [
+          "安全感是動詞，不是名詞",
+          "",
+          "「找到安全型的人」",
+          "不是關係的終點",
+          "是起點的起點",
+          "研究指出，即使兩個安全型的人在一起",
+          "也需要刻意投入才能持續深化親密感",
+          "自滿，是安全型關係最容易跌倒的地方",
+          "資料來源：Connected Couples connectedcouples.",
+          "app/blog/attachment-styles-in-relationships"
+        ],
+        "8": [
+          "三個問題，比再做一次測驗更有用",
+          "",
+          "比再做一次測驗更有用的",
+          "是問自己三件事",
+          "① 我需要被安慰時，有沒有說出口",
+          "② 對方沉默時，我的第一個念頭是什麼",
+          "③ 我們上次真的說了一句",
+          "讓彼此都難受、但說完更靠近的話",
+          "是什麼時候",
+          "安全型不是資格",
+          "是兩個人每一次選擇開口的累積"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:36+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2010 年」的出處無法自動核對，請人工看過：https://www.supersummary.com/attached/summary/"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「的終點， 是起點的起點。  研究指出，即使兩個安全型的人在一起，」沒有對應出處（研究引用）"
+          }
+        ]
+      }
     },
     {
       "id": "20260824-StanTatkin說你",
@@ -7309,7 +6371,181 @@
           }
         }
       },
-      "candidates_since": "2026-08-25T18:20:24+08:00"
+      "candidates_since": "2026-08-25T18:20:24+08:00",
+      "rendered_lines": {
+        "1": [
+          "吵架前，你的大腦已經先輸了",
+          "",
+          "〖吵架前，你的大腦已經先輸了〗",
+          "那場架還沒開始",
+          "你的身體早就備戰了",
+          "心跳加速、肩膀緊繃",
+          "嘴裡冒出一句連自己都沒預料到的話",
+          "不是你們不合適",
+          "是你的神經系統還不認識他",
+          "大腦優先為生存設計",
+          "不是為愛設計的",
+          "但這件事，可以改變"
+        ],
+        "2": [
+          "那個「無緣無故的煩躁」其實有原因",
+          "",
+          "他只是把杯子放錯地方",
+          "你卻突然很想哭",
+          "她只是回了一個「哦」",
+          "你卻開始反覆回放她的語氣",
+          "不是你太敏感",
+          "是你的大腦把對方的小動作",
+          "讀成了威脅信號",
+          "PACT 模型說",
+          "小衝突感覺像大威脅",
+          "是因為你們的神經系統",
+          "還在學習調節彼此",
+          "這不是性格問題，是生物問題"
+        ],
+        "3": [
+          "杏仁核比你更快開口",
+          "",
+          "你以為你在「冷靜思考」",
+          "但杏仁核早就出手了",
+          "在你決定「算了別吵」之前",
+          "心跳已經加速",
+          "肌肉已經備戰",
+          "這場衝突在你開口前就開始了",
+          "Tatkin",
+          "我們感到不安全時",
+          "會在反思之前就先反應",
+          "對象正好是我們最在乎的人",
+          "資料來源：Feinstein JS et al. (2011), Current Biology",
+          "— amygdala causal role in responding to imminent",
+          "danger. PubMed ID: 21390292"
+        ],
+        "4": [
+          "焦慮型依附的神經特徵",
+          "",
+          "Vrticka 等人 2012 年研究發現",
+          "焦慮型依附的人",
+          "大腦「理性煞車」",
+          "對「情緒油門」的控制力",
+          "顯著更弱",
+          "為什麼在最親近的人面前",
+          "反而最容易失控",
+          "因為親密關係本身",
+          "就是高喚醒狀態",
+          "你的神經系統一直在高速運轉",
+          "這不是你的錯，是你大腦的設計",
+          "資料來源：Vrticka P et al. (2012), Social Cognitive",
+          "and Affective Neuroscience, Vol. 7(3)"
+        ],
+        "5": [
+          "愛不是找到的，是練出來的",
+          "",
+          "Stan Tatkin 在《Wired for Love》裡說",
+          "伴侶是彼此的",
+          "生物存活單位",
+          "關係不是「找到對的人就自動運作」",
+          "而是兩個神經系統",
+          "學習把對方辨識為「安全」",
+          "的過程",
+          "大腦透過一次次親身接觸",
+          "把對方的臉、聲音、觸感",
+          "登錄為安全信號",
+          "這需要面對面，反覆地練",
+          "資料來源：Tatkin S. (2012). Wired for Love. New",
+          "Harbinger Publications"
+        ],
+        "6": [
+          "線上聊再久，神經系統不買單",
+          "",
+          "聊再多訊息",
+          "你的神經系統都不買單",
+          "大腦靠的是",
+          "眼神、聲音的溫度",
+          "對方離你多近的體感",
+          "和你們共同在場的那些片刻",
+          "——來學習把對方辨識為安全",
+          "催產素、多巴胺這些連結機制",
+          "在面對面互動中啟動的強度",
+          "遠高於數位溝通",
+          "Lava 選擇線下優先",
+          "不是反科技",
+          "是因為大腦就是這樣運作的"
+        ],
+        "7": [
+          "Anchor、Island、Wave：你是哪一種",
+          "",
+          "你是哪一種",
+          "⚓ Anchor 錨型 — 安全依附",
+          "🏝 Island 島型 — 迴避型",
+          "🌊 Wave 浪型 — 焦慮型",
+          "Tatkin 說",
+          "沒有哪一型是壞的",
+          "每一種都是你從成長經驗中",
+          "發展出來的生存策略",
+          "問題從來不是你是哪一型",
+          "而是你有沒有讓對方的神經系統",
+          "學會你是安全的",
+          "任何組合，都可以建立安全感"
+        ],
+        "8": [
+          "把對方「登錄」進你大腦的安全清單",
+          "",
+          "把對方「登錄」進你大腦的安全清單",
+          "——Tatkin 說，這需要每天練習",
+          "👁 重聚時，給一個真實的眼神接觸",
+          "🌬 爭吵前，先深呼吸三次",
+          "　　讓前額葉有機會介入",
+          "📵 重要的情緒，不要用訊息處理",
+          "　　改約一次面對面",
+          "伴侶泡泡（couple bubble）",
+          "不是浪漫的隱喻",
+          "是有神經生物學基礎的日常練習",
+          "重複。然後再重複",
+          "這就是你們建立安全感的方式"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:42+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2012 年」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究發現」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「Stan Tatkin 說：你以為「找到對的人」就不用」沒有對應出處（人物引述）"
+          }
+        ]
+      }
     },
     {
       "id": "20260824-CarlRogers說你",
@@ -7686,7 +6922,1836 @@
           }
         }
       },
-      "candidates_since": "2026-08-25T18:20:36+08:00"
+      "candidates_since": "2026-08-25T18:20:36+08:00",
+      "rendered_lines": {
+        "1": [
+          "你的腦袋裡，有一張隱形的評分表",
+          "",
+          "你的腦袋裡",
+          "有一張〖隱形的評分表〗",
+          "身高、工作、那次遲到",
+          "那個奇怪的笑聲",
+          "你以為這叫「有眼光」",
+          "Rogers 說，這才是問題所在"
+        ],
+        "2": [
+          "那場約會，你其實從沒「到場」",
+          "",
+          "他點了奇怪的飲料，你扣半分",
+          "他提到前任，再扣一分",
+          "他笑聲很大，再扣",
+          "約會結束你說「沒火花」",
+          "——但你從來沒有",
+          "真正到場過"
+        ],
+        "3": [
+          "Rogers：被「接納」的人，才敢展示真實",
+          "的自己",
+          "",
+          "Rogers",
+          "「當我能接受他們作為獨立個體",
+          "他們就會開始往某個方向移動」",
+          "被完整接納的人",
+          "才敢展示真實的自己",
+          "那才是你判斷「有沒有火花」",
+          "的唯一材料",
+          "資料來源：Rogers, C.R. (1961). On Becoming a",
+          "Person. Houghton Mifflin"
+        ],
+        "4": [
+          "2016 年研究：「條件式關懷」正在毀掉你們",
+          "的關係",
+          "",
+          "2016 年，125 人跨四種關係的研究",
+          "條件式關懷同時傷害兩件事",
+          "「自主感」：你不需要為了被喜歡而表演",
+          "「歸屬感」：你被當成真實的你被接受",
+          "評分制度，本質上就是一種條件式關懷",
+          "資料來源：Kanat-Maymon et al. (2016). Journal of",
+          "Personality, 84, 446–460"
+        ],
+        "5": [
+          "2017 年每日追蹤研究：扣分的那天，關係滿",
+          "意度就下降了",
+          "",
+          "2017 年，80 人每日追蹤研究",
+          "「你符合我期望，我才對你好」",
+          "→ 關係滿意度下降",
+          "「你讓我失望，我就撤回溫暖」",
+          "→ 關係滿意度同樣下降",
+          "評分不只發生在第一次約會",
+          "它每一天都在侵蝕關係",
+          "資料來源：Kanat-Maymon, Argaman & Roth (2017).",
+          "Personal Relationships, 24, 27–35"
+        ],
+        "6": [
+          "「放棄評分」不是放低標準，是換一種認識方",
+          "式",
+          "",
+          "Rogers 說的「接納」",
+          "不是愛上所有人",
+          "是給對方一個空間",
+          "讓他不需要為了讓你滿意",
+          "而表演",
+          "見到面",
+          "才是認識真正開始的地方"
+        ],
+        "7": [
+          "Rogers 的日落比喻：你為什麼要替日落打分",
+          "數",
+          "",
+          "Rogers，《A Way of Being》",
+          "「人就像日落一樣美麗",
+          "只要你讓他們自然展現",
+          "我不會對日落說",
+          "『把右角的橙色調淡一點』",
+          "我帶著敬畏看著它展開」",
+          "——在你看清楚之前",
+          "先放下那支評分的筆",
+          "資料來源：Rogers, C.R. A Way of Being. Goodreads"
+        ],
+        "8": [
+          "下次約會，試著做一件事：先不要評分",
+          "",
+          "下次約會，試一件事",
+          "先不要評分",
+          "不是接受一切",
+          "是真正在場",
+          "聽他說話，不是為了找破綻",
+          "而是因為你想知道他是誰",
+          "那種感受",
+          "比任何評分表都準確",
+          "資料來源：Rogers, C.R. (1961). On Becoming a",
+          "Person. Goodreads"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:43+08:00",
+        "pass": false,
+        "claims": 5,
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2016 年」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2017 年」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/pere.12164"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「125 人」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「80 人」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/pere.12164"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「Carl Rogers 說：你在感情裡一直在「評分」對」沒有對應出處（人物引述）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260824-毛骨悚然的戀愛大結局前朴",
+      "topic": "《毛骨悚然的戀愛》大結局前，朴恩斌選擇留下的那一刻——心理學說，這才是真正的承諾",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyq9f6c",
+      "created_at": null,
+      "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-moodbb4f4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
+              "kind": "still",
+              "source_label": "a-moodf1efb",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
+              "kind": "still",
+              "source_label": "組圖：",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1d.webp",
+              "kind": "still",
+              "source_label": "c-mood1e1aa",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1e.webp",
+              "kind": "still",
+              "source_label": "c-moodec4e1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": null,
+          "heading": "愛到最深，反而想逃",
+          "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood8dbf0",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood9869c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": null,
+          "heading": "明明很愛，卻在最靠近的時候消失",
+          "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3a.webp",
+              "kind": "still",
+              "source_label": "a-mood07005",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3b.webp",
+              "kind": "still",
+              "source_label": "a-moodd13c1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3c.webp",
+              "kind": "still",
+              "source_label": "b-mood04ef4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3d.webp",
+              "kind": "still",
+              "source_label": "b-mood5f6bd",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "心理學叫它「被吞噬的恐懼」",
+          "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4a.webp",
+              "kind": "still",
+              "source_label": "a-mood191b3",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4b.webp",
+              "kind": "still",
+              "source_label": "a-mood959cc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4c.webp",
+              "kind": "still",
+              "source_label": "b-mood8372f",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4d.webp",
+              "kind": "still",
+              "source_label": "b-moodf6981",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "迴避型依附：脆弱時最容易退場",
+          "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-mood6d791",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-5b.webp",
+              "kind": "still",
+              "source_label": "a-mood75624",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "讓關係存活的不是「沒有危機」，是這三件事",
+          "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood3dbb4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6b.webp",
+              "kind": "still",
+              "source_label": "a-mood4a6f1",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6c.webp",
+              "kind": "still",
+              "source_label": "b-mood4502f",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6f.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": null,
+          "heading": "「留下」這個動作，才是承諾的起點",
+          "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood1c14e",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7b.webp",
+              "kind": "still",
+              "source_label": "a-mood44673",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7c.webp",
+              "kind": "still",
+              "source_label": "b-mood1f1ce",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7d.webp",
+              "kind": "still",
+              "source_label": "b-mood64b17",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "真實見面，才會知道自己到底願不願意留下",
+          "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-moodf56c8",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "恐懼不會消失，但你可以選擇帶著它留下",
+          "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《毛骨悚然的戀愛》自 2026 年 7 月 18 日至 8 月 23 日播出",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "Spooky in Love is a 2026 South Korean television series that aired on tvN from July 18 to August 23, 2026"
+        },
+        {
+          "claim": "大結局全國平均收視率為 7.9%、最高 9%，連續 6 週在有線及綜合編成頻道中拿下同時段收視冠軍",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "The finale recorded an average nationwide rating of 7.9% and a peak of 9%, topping its timeslot among cable and general programming channels for six consecutive weeks"
+        },
+        {
+          "claim": "首集收視率 3.049%，第 4 集成長至 5.810%",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "ratings grew from 3.049% in the first episode to 5.810% by the fourth episode"
+        },
+        {
+          "claim": "登上台灣 Netflix Top 10 節目第二名",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "It ranked second on Taiwan's Netflix Top 10"
+        },
+        {
+          "claim": "David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」",
+          "source": "https://psychologyfanatic.com/engulfment/",
+          "quote": "Fear of engulfment means that if someone gets too close physically or emotionally, you feel suffocated or lose your freedom"
+        },
+        {
+          "claim": "Le & Agnew 2003 年 meta-analysis 橫跨 52 項研究、60 個獨立樣本、共 11,582 名參與者",
+          "source": "https://doi.org/10.1111/j.1475-6811.2003.tb00345.x",
+          "quote": "analyses were conducted on 52 studies (60 independent samples, N = 11,582)"
+        },
+        {
+          "claim": "迴避型依附維度與衝突中的退縮行為顯著相關，且在脆弱時刻及壓力事件中尤為明顯",
+          "source": "https://doi.org/10.1002/pchj.2023",
+          "quote": "avoidant attachment orientation was primarily associated with withdrawal behavior during conflict, with direct evidence confirming the association between avoidant attachment dimensions and withdrawal strategies"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
+          "slides": {
+            "1": {
+              "heading": "愛到最深，反而想逃",
+              "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾"
+            },
+            "2": {
+              "heading": "明明很愛，卻在最靠近的時候消失",
+              "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。"
+            },
+            "3": {
+              "heading": "心理學叫它「被吞噬的恐懼」",
+              "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/"
+            },
+            "4": {
+              "heading": "迴避型依附：脆弱時最容易退場",
+              "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023"
+            },
+            "5": {
+              "heading": "讓關係存活的不是「沒有危機」，是這三件事",
+              "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57"
+            },
+            "6": {
+              "heading": "「留下」這個動作，才是承諾的起點",
+              "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。"
+            },
+            "7": {
+              "heading": "真實見面，才會知道自己到底願不願意留下",
+              "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。"
+            },
+            "8": {
+              "heading": "恐懼不會消失，但你可以選擇帶著它留下",
+              "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-25T18:29:53+08:00",
+      "rendered_lines": {
+        "1": [
+          "愛到最深，反而想逃",
+          "",
+          "〖愛到最深，反而想逃〗",
+          "《毛骨悚然的戀愛》大結局",
+          "朴恩斌選擇留下的那一刻",
+          "心理學說，這才是真正的承諾"
+        ],
+        "2": [
+          "明明很愛，卻在最靠近的時候消失",
+          "",
+          "明明很愛，卻在最靠近的時候消失",
+          "和一個人愈來愈近，某天卻突然不想回訊息、開始找",
+          "藉口不見面——不是因為不愛了，是因為太靠近讓你",
+          "喘不過氣",
+          "《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危",
+          "機最頂點選擇解除婚約。與其說是放棄，不如說是一",
+          "種逃脫的本能，而心理學早就給了這種本能一個名字"
+        ],
+        "3": [
+          "心理學叫它「被吞噬的恐懼」",
+          "",
+          "心理學叫它被吞噬的恐懼",
+          "Fear of Engulfment",
+          "心理學家 David Richo（2002）：「若有人在身體或情",
+          "感上過於靠近，你會感到窒息或失去自由。」",
+          "愈渴望親密的人，有時反而愈容易把對方推開",
+          "被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方",
+          "都困惑的推拉動態",
+          "資料來源：Psychology Fanatic，psychologyfanatic.",
+          "com/engulfment/"
+        ],
+        "4": [
+          "迴避型依附：脆弱時最容易退場",
+          "",
+          "迴避型依附：脆弱時最容易退場",
+          "研究顯示，迴避型依附者在脆弱時刻與壓力事件中退",
+          "縮行為最為明顯——習慣性地自我封閉、拒絕求援",
+          "把最需要對方的時刻，變成最有可能消失的時刻",
+          "千汝利在事業危機頂點解除婚約，不是不愛了，是恐",
+          "懼的防禦機制在說話",
+          "資料來源：PsyCh Journal, Wiley, 2023"
+        ],
+        "5": [
+          "讓關係存活的不是「沒有危機」，是這三件事",
+          "",
+          "讓關係存活的不是沒有危機，是這三件事",
+          "Caryl E. Rusbult 投資模型，Le & Agnew 2003 年",
+          "meta-analysis 橫跨11,582 名參與者驗證",
+          "① 對關係的滿意度",
+          "② 替代方案的吸引力（愈低愈好）",
+          "③ 已投入的資源規模",
+          "三者中，只要整體承諾夠高，即使某個因素暫時低落",
+          "關係仍能撐過去。危機不是終點，逃避才是",
+          "資料來源：Le & Agnew, Personal Relationships, Vol.",
+          "10, 2003, pp.37–57"
+        ],
+        "6": [
+          "「留下」這個動作，才是承諾的起點",
+          "",
+          "「留下」這個動作，才是承諾的起點",
+          "千汝利回頭，不是因為所有條件都完美了",
+          "而是在不確定、在脆弱、在壓力還沒消散的時候做出",
+          "了決定",
+          "投資模型告訴我們：承諾不是一種感覺，而是一個主",
+          "動的姿態——帶著所有的不確定留在這裡，對未來投",
+          "入，即使今天還看不清楚終點",
+          "那個「留下」的當下，才是承諾真正開始的地方"
+        ],
+        "7": [
+          "真實見面，才會知道自己到底願不願意留下",
+          "",
+          "真實見面，才會知道自己到底願不願意留下",
+          "在螢幕後面聊了幾百則，你依然可以保持讓你安心",
+          "的那道距離。但那道距離，同時也讓你永遠無法分清",
+          "是真的不適合，還是只是還不夠勇敢",
+          "Lava跳過那段假裝安全的暖身期，直接創造真實見面",
+          "的機會——因為承諾只在真實的接觸裡才有機會發生"
+        ],
+        "8": [
+          "恐懼不會消失，但你可以選擇帶著它留下",
+          "",
+          "恐懼不會消失，但你可以選擇帶著它留下",
+          "Fear of Engulfment 不是需要被治好的毛病",
+          "而是很多人在親密關係裡真實存在的狀態。重點",
+          "不是等到恐懼消失了再靠近，而是恐懼還在的時候",
+          "選擇不逃",
+          "《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週",
+          "同時段冠軍——觀眾被打動的，不是 Happy Ending 本",
+          "身，而是那個帶著所有不確定仍然選擇留下的瞬間",
+          "Lava相信：關係的品質，在你選擇真實接觸的那一刻",
+          "開始成形"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:44+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "dead",
+            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+          },
+          {
+            "severity": "block",
+            "rule": "dead",
+            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「型依附：脆弱時最容易退場  研究顯示，迴避型依附者在脆弱時刻與壓」沒有對應出處（研究引用）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260824-重陽節今天熱搜但你知道孤",
+      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eypznm0",
+      "created_at": null,
+      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            }
+          ],
+          "final_src": null,
+          "heading": "重陽節，全台灣都在關心老人",
+          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "下班回家，那段靜默叫什麼",
+          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "研究說：20 歲，才是孤獨的高峰",
+          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            }
+          ],
+          "final_src": null,
+          "heading": "你的 IG 正在讓你更孤獨",
+          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "為什麼老年人反而不孤獨？",
+          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            }
+          ],
+          "final_src": null,
+          "heading": "出社會之後，社交圈急速萎縮",
+          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [],
+          "final_src": null,
+          "heading": "孤獨感的核心，是深度連結太少",
+          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "今天替老人過節，也替自己看見一件事",
+          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
+        },
+        {
+          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
+        },
+        {
+          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
+        },
+        {
+          "claim": "較低的自我效能感可能導致更強的孤獨感",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Lower self-efficacy may result in greater loneliness"
+        },
+        {
+          "claim": "孤獨感與智慧之間存在強烈的負相關",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness and wisdom were strongly and inversely related"
+        },
+        {
+          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+          "slides": {
+            "1": {
+              "heading": "重陽節，全台灣都在關心老人",
+              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
+            },
+            "2": {
+              "heading": "下班回家，那段靜默叫什麼",
+              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
+            },
+            "3": {
+              "heading": "研究說：20 歲，才是孤獨的高峰",
+              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "4": {
+              "heading": "你的 IG 正在讓你更孤獨",
+              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "5": {
+              "heading": "為什麼老年人反而不孤獨？",
+              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
+            },
+            "6": {
+              "heading": "出社會之後，社交圈急速萎縮",
+              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
+            },
+            "7": {
+              "heading": "孤獨感的核心，是深度連結太少",
+              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
+            },
+            "8": {
+              "heading": "今天替老人過節，也替自己看見一件事",
+              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "rendered_lines": {
+        "1": [
+          "重陽節，全台灣都在關心老人",
+          "",
+          "重陽節",
+          "全台灣都在關心老人",
+          "但 2020 年 UC San Diego 研究",
+          "調查 2,843 名成年人",
+          "用 UCLA Loneliness Scale 量測孤獨感",
+          "結論讓所有人都愣住了",
+          "〖最孤獨的年紀，是你現在〗"
+        ],
+        "2": [
+          "下班回家，那段靜默叫什麼",
+          "",
+          "下班回家，關上門",
+          "整個房間只剩你一個人的呼吸聲",
+          "滑開 IG，看見別人的聚餐合照",
+          "按了個愛心，放下手機",
+          "比剛才更安靜",
+          "舊友漸漸只剩按讚",
+          "連絡也變成「確認對方還活著」",
+          "這不叫寂寞",
+          "這叫無處投靠的空虛感"
+        ],
+        "3": [
+          "研究說：20 歲，才是孤獨的高峰",
+          "",
+          "2020 年 UC San Diego 研究",
+          "調查 2,843 名成年人",
+          "使用 UCLA Loneliness Scale 量測",
+          "孤獨感最高峰：20 歲世代",
+          "孤獨感最低點：60 歲世代",
+          "研究者稱之為「孤獨悖論」",
+          "你以為老了才孤獨",
+          "但你現在就已經是高峰",
+          "資料來源：Jeste & Nguyen et al., International",
+          "Psychogeriatrics, 2020"
+        ],
+        "4": [
+          "你的 IG 正在讓你更孤獨",
+          "",
+          "為什麼 20 歲世代最孤獨",
+          "研究者 Tanya Nguyen 直接點名",
+          "「持續在社群上比較自己",
+          "在意按讚數與追蹤數",
+          "導致更強的孤獨感」",
+          "台灣 12 歲以上網路族 95.1% 使用社群媒體",
+          "18–29 歲族群每天近 6 小時滑社群",
+          "按讚取代了對話，限動回覆取代了見面",
+          "研究指出這種淺度互動反而加重孤獨感",
+          "資料來源：數位發展部 2024；中研院臺灣傳播調查資",
+          "料庫；Nguyen et al., International Psychogeriatrics",
+          "2020"
+        ],
+        "5": [
+          "為什麼老年人反而不孤獨",
+          "",
+          "為什麼 60 歲世代孤獨感最低",
+          "研究者 Dilip Jeste 的發現",
+          "孤獨感與「智慧」存在",
+          "強烈且持續的負相關",
+          "尤其是智慧中的同理心成分",
+          "越能理解他人，越不孤獨",
+          "社交圈未必更大",
+          "隨年齡累積的智慧",
+          "讓他們更能與自己及他人共處",
+          "資料來源：Jeste et al., International Psychogeriatrics",
+          "2020"
+        ],
+        "6": [
+          "出社會之後，社交圈急速萎縮",
+          "",
+          "畢業之後，認識新朋友的門",
+          "一道道關上",
+          "沒有宿舍、社團、同班同學",
+          "沒有「結構性的相遇機會」",
+          "舊友漸漸只剩按讚",
+          "新朋友幾乎沒有在認識",
+          "30 歲前後的社交斷層",
+          "幾乎每個台灣年輕人都在經歷",
+          "只是很少人說出口"
+        ],
+        "7": [
+          "孤獨感的核心，是深度連結太少",
+          "",
+          "孤獨感的核心是什麼",
+          "研究指出：深度連結的匱乏",
+          "是孤獨感最關鍵的成因",
+          "按讚取代了對話，限動回覆取代了見面",
+          "這種淺度的社群互動反而會加重孤獨感",
+          "Lava 的出發點很簡單",
+          "線上聊天確認對方還活著",
+          "線下見面才是真正的相遇",
+          "真實地出現在彼此的生活裡",
+          "是你可以主動選擇的一步"
+        ],
+        "8": [
+          "今天替老人過節，也替自己看見一件事",
+          "",
+          "重陽節，我們記得長輩",
+          "但 2020 年 UC San Diego 研究說",
+          "最孤獨的，是 20 歲世代",
+          "Jeste 的研究顯示",
+          "這個年齡幾乎普遍承受著孤獨",
+          "只是很少人說出口",
+          "承認它，是誠實",
+          "從誠實出發，才有機會真實連結",
+          "你值得被真實地看見"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:45+08:00",
+        "pass": false,
+        "claims": 14,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「，線下見面才是真正的相遇。 研究指出，深度連結的匱乏是孤獨感的核」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260825-結婚條件今天在PTT推爆",
+      "topic": "r datingoverthirty 上最多 30+ 的人在說：「我不是不想談戀愛，我只是不知道怎麼重新開始」",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyqbfr1",
+      "created_at": null,
+      "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood22e4a",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：loganury.com；Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moode5df2",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Catastrophe"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1k.webp",
+              "kind": "still",
+              "source_label": "Catastrophe",
+              "low_q": true
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1l.webp",
+              "kind": "still",
+              "source_label": "Catastrophe",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "問題從來不是遇不到人",
+          "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-moodba4db",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood09dce",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2c.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2d.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2e.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個卡住的感覺，幾乎人人都有",
+          "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是——\n「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Gottman Institute 官方研究頁",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3b.webp",
+              "kind": "still",
+              "source_label": "b-mooda7f03",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "30 歲前後，孤獨感真的有一個峰值",
+          "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4a.webp",
+              "kind": "still",
+              "source_label": "loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4b.webp",
+              "kind": "still",
+              "source_label": "loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4k.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4l.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            }
+          ],
+          "final_src": null,
+          "heading": "Logan Ury 把這個卡關命名了",
+          "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常——\n很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "約會是一門需要學的技能，不是本能",
+          "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能——是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood5c3e6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-moodc24e3",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "行為科學給「不知道怎麼開始」的具體步驟",
+          "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-moodc8425",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-moode71c4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7g.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7h.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 把「怎麼開始」這一步，設計進去了",
+          "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱——\n台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood48bcc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-moodab9ca",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8i.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8j.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8k.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            }
+          ],
+          "final_src": null,
+          "heading": "「刻意之愛」的意思，是你可以主動建立它",
+          "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "成人孤獨感呈現兩個高峰（接近 30 歲前後與 60 歲附近）與兩個低谷（約 40 歲、約 75 歲），並非線性攀升",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/",
+          "quote": "Age and loneliness showed a U-shaped association, with loneliness being highest in young adulthood and old age."
+        },
+        {
+          "claim": "台灣 25–39 歲未婚率為 61.59%（男 67.07%、女 55.79%）",
+          "source": "https://grass.camp/blog/serious-dating-apps-taiwan-30s",
+          "quote": "根據內政部 2024 年戶政統計：25–39 歲台灣人未婚率為 61.59%（男 67.07%、女 55.79%）"
+        },
+        {
+          "claim": "Logan Ury 是 Hinge 關係科學總監，哈佛心理學畢業，曾主導 Google 行為科學團隊「非理性實驗室」（Irrational Lab），亦是 Netflix 節目《The Later Daters》的約會教練嘉賓",
+          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
+          "quote": "Logan Ury is the Director of Relationship Science at Hinge and a former behavioral scientist at Google's Irrational Lab."
+        },
+        {
+          "claim": "Logan Ury 將「對重新約會的恐懼」命名為 FODA，指出人們擔心的是社交技能生疏、不知道聊什麼，並建議先理解這非常正常、很多人都在經歷同樣的事",
+          "source": "https://www.pressreader.com/usa/chicago-tribune-sunday/20210711/282707640062387",
+          "quote": "Ury calls this fear of dating again, or FODA. People worry their social skills have gotten rusty, or they won't know what to talk about."
+        },
+        {
+          "claim": "Logan Ury 說：Dating 在整個人類歷史中其實是非常新的事物；雖然我們天生就懂得愛，但不代表我們生來就懂得約會；什麼是長期伴侶關係中值得優先考量的特質，這不是本能知識，而是需要學習的",
+          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
+          "quote": "While we're born with the capacity to love, we're not born knowing how to date. What makes a good long-term partner is not instinctual knowledge—it needs to be learned."
+        },
+        {
+          "claim": "行為科學建議的具體步驟包括：設定短期截止日期、做準備（下載 App、準備照片）、公開宣告、建立新的自我認同、從每週一次約會開始（不超過）、對自己保持同理心、不聯絡前任",
+          "source": "https://ericsandroni.com/how-to-not-die-alone-summary/",
+          "quote": "Set a deadline, do the prep work (download apps, prepare photos), make a public commitment, create a new self-story, start with one date a week, and show yourself compassion."
+        },
+        {
+          "claim": "Logan Ury 提出「刻意之愛」（intentional love）：要擁有好的感情，你必須主動建立它，而非等待它的出現",
+          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
+          "quote": "To have a great relationship, you need to build it intentionally rather than wait for it to happen to you."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
+          "slides": {
+            "1": {
+              "heading": "問題從來不是遇不到人",
+              "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步"
+            },
+            "2": {
+              "heading": "那個卡住的感覺，幾乎人人都有",
+              "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是——\n「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」"
+            },
+            "3": {
+              "heading": "30 歲前後，孤獨感真的有一個峰值",
+              "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計"
+            },
+            "4": {
+              "heading": "Logan Ury 把這個卡關命名了",
+              "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常——\n很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021"
+            },
+            "5": {
+              "heading": "約會是一門需要學的技能，不是本能",
+              "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能——是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview"
+            },
+            "6": {
+              "heading": "行為科學給「不知道怎麼開始」的具體步驟",
+              "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要"
+            },
+            "7": {
+              "heading": "Lava 把「怎麼開始」這一步，設計進去了",
+              "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱——\n台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去"
+            },
+            "8": {
+              "heading": "「刻意之愛」的意思，是你可以主動建立它",
+              "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-25T18:30:21+08:00",
+      "rendered_lines": {
+        "1": [
+          "問題從來不是遇不到人",
+          "",
+          "問題從來不是",
+          "遇不到人",
+          "是站在入口前",
+          "不知道怎麼",
+          "重新踏進去",
+          "30 歲後重新約會",
+          "障礙從來不是機會",
+          "是那個第一步"
+        ],
+        "2": [
+          "那個卡住的感覺，幾乎人人都有",
+          "",
+          "分手之後的第一個念頭",
+          "往往不是「我不想再愛」",
+          "而是",
+          "「我已經不知道",
+          "現在的規則是什麼了」",
+          "上一次認真約會可能是六年前、八年前",
+          "那時候還沒有滑卡",
+          "還不需要在三張照片裡定義自己",
+          "r/datingoverthirty 上最常見的問題",
+          "「我準備好了，但第一步是什麼？」"
+        ],
+        "3": [
+          "30 歲前後，孤獨感真的有一個峰值",
+          "",
+          "孤獨感並非年紀越大越深",
+          "研究發現它有兩個高峰",
+          "一個在接近 30 歲前後",
+          "一個在 60 歲附近",
+          "低谷反而在 40 歲與 75 歲",
+          "台灣 25–39 歲未婚率：61.59%",
+          "這不是個人問題",
+          "是整整一個世代同時走到的轉折",
+          "資料來源：Luhmann & Hawkley (2016), PMC/NCBI",
+          "內政部 2024 年戶政統計"
+        ],
+        "4": [
+          "Logan Ury 把這個卡關命名了",
+          "",
+          "Hinge 關係科學總監",
+          "Logan Ury 把它命名了",
+          "FODA",
+          "Fear of Dating Again",
+          "對重新約會的恐懼",
+          "「人們擔心的是",
+          "社交技能生疏、不知道聊什麼」",
+          "她說：與其自責",
+          "先知道這非常正常",
+          "很多人都在經歷同樣的事",
+          "這不是你出了問題",
+          "是一個有名字的現象",
+          "資料來源：Logan Ury / Chicago Tribune, via",
+          "PressReader, 2021"
+        ],
+        "5": [
+          "約會是一門需要學的技能，不是本能",
+          "",
+          "Logan Ury 說了一件",
+          "讓很多人鬆一口氣的事",
+          "「Dating 在人類歷史上",
+          "其實是非常新的事物",
+          "我們天生就懂得愛",
+          "但不代表我們生來",
+          "就懂得約會",
+          "什麼是好伴侶的特質",
+          "這不是本能——是需要學習的」",
+          "30+ 卡住不是你的問題",
+          "你只是之前從來沒被教過",
+          "資料來源：Logan Ury, How Not to Die Alone (2021)",
+          "Behavioral Scientist interview"
+        ],
+        "6": [
+          "行為科學給「不知道怎麼開始」的具體步驟",
+          "",
+          "行為科學的答案不是",
+          "「鼓起勇氣」",
+          "而是把「開始」拆解成步驟",
+          "① 設定截止日期",
+          "② 準備照片、下載 App",
+          "③ 向朋友公開宣告",
+          "④ 建立新的自我認同",
+          "⑤ 每週一次約會，不超過",
+          "⑥ 對自己保持同理心",
+          "⑦ 不聯絡前任",
+          "把模糊的情感決定",
+          "變成可以執行的小動作",
+          "資料來源：Logan Ury, How Not to Die Alone",
+          "ericsandroni.com 摘要"
+        ],
+        "7": [
+          "Lava 把「怎麼開始」這一步，設計進去了",
+          "",
+          "大多數 App 的節奏",
+          "是為 20 代設計的",
+          "無止盡滑卡、尬聊、慢熱",
+          "台灣 30+ 面對的是",
+          "結構性的時間壓縮",
+          "工作與體力都不允許同等消耗",
+          "Lava 把第一步從",
+          "「怎麼開口」",
+          "變成「去哪裡」",
+          "讓那個門檻低一點點",
+          "低到你真的能跨過去"
+        ],
+        "8": [
+          "「刻意之愛」的意思，是你可以主動建立它",
+          "",
+          "Logan Ury 說",
+          "「要擁有好的感情",
+          "你必須主動建立它",
+          "而非等待它的出現」",
+          "愛情不是隨機降臨的意外",
+          "而是一連串可以主動決策的事件",
+          "30 歲之後的愛情",
+          "需要的不是更多緣分",
+          "而是一個決定",
+          "今天要踏出去",
+          "資料來源：Logan Ury, How Not to Die Alone",
+          "Behavioral Scientist interview"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:30:25+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:30:47+08:00",
+        "pass": false,
+        "claims": 11,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「些流程消耗的時間與精力，是 20 歲才有的存款。 台灣 30+」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「孤獨感並非年紀越大越深  研究發現它有兩個高峰： 一個在接近」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「一門需要學的技能，不是本能 Logan Ury 說了一件 讓很多人鬆一口氣的事」沒有對應出處（人物引述）"
+          }
+        ]
+      }
     }
   ]
 }

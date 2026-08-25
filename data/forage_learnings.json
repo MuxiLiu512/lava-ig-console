@@ -89,12 +89,29 @@
   "2b844d66efd7": 2,
   "a9bbe8fa8875": 2,
   "9a502f6b64d9": 2,
-  "dc6a441f2c3a": 2
+  "dc6a441f2c3a": 2,
+  "1b7f11ec093b": 1,
+  "73007b8c8bd4": 1,
+  "c39398b2f580": 1,
+  "b834dc2e3f4e": 1,
+  "ad52fe06b62c": 1
  },
  "sciencedirect.com": {
   "fails": 1,
   "strategy": "skip_screenshot",
   "why": "近白頁 95%（登入牆/空頁）",
   "last": "2026-08-17T17:41:23+08:00"
+ },
+ "loganury.com": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 93%（登入牆/空頁）",
+  "last": "2026-08-25T18:24:03+08:00"
+ },
+ "pressreader.com": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 100%（登入牆/空頁）",
+  "last": "2026-08-25T18:24:05+08:00"
  }
 }
