@@ -127,21 +127,32 @@ function draftingIdeas(posts) {
               .sort((a, b) => String(a.decided_at || "").localeCompare(String(b.decided_at || "")));
 }
 
+// 正常情況下「放行 → 入板」的上限：排程器每 15 分收 2 篇、撰稿約 7 分、哨兵入板每 10 分一輪。
+// 佇列再長也不該超過這個上限太多，超過就是卡住，不是還在排隊。
+const DRAFT_SLA_MIN = 45;
+
 function draftingCard(idea, pos) {
-  const c = el("div", "bd-card"); c.style.borderLeftColor = "var(--stage-make, #d9a441)";
-  c.appendChild(el("div", "t", "✍ " + esc(_tkey(idea.title) ? idea.title.replace(/^靈感｜/, "").split("｜病毒分")[0] : idea.title)));
+  const mins = idea.decided_at ? Math.round((Date.now() - new Date(idea.decided_at)) / 60000) : 0;
+  const late = mins > DRAFT_SLA_MIN;
+  const c = el("div", "bd-card");
+  c.style.borderLeftColor = late ? "var(--stage-you, #e05c4b)" : "var(--stage-make, #d9a441)";
+  c.appendChild(el("div", "t", (late ? "⚠ " : "✍ ") +
+    esc(idea.title.replace(/^靈感｜/, "").split("｜病毒分")[0])));
   const meta = el("div", "meta");
-  meta.appendChild(el("span", "age", "撰稿中 · 放行於 " + esc(ago(idea.decided_at))));
-  // 預估：排程器每 15 分收 2 篇 → 撰稿 6 分 → 哨兵入板最慢 10 分。依佇列位置往後推。
-  const etaMin = 15 * (Math.floor(pos / 2) + 1) + 10;
-  meta.appendChild(el("span", "age", idea.rushed_at ? "已加速，入板最慢 15 分" : `預計 ${etaMin} 分內入板`));
+  meta.appendChild(el("span", "age", "放行於 " + esc(ago(idea.decided_at))));
   c.appendChild(meta);
-  if (!idea.rushed_at) {
-    const b = el("button", "btn", "⚡ 加速");
-    b.style.marginTop = "6px";
-    b.onclick = e => { e.stopPropagation(); rushDraft(idea, b); };
-    c.appendChild(b);
-  }
+  // 時間只說已知的事：等多久、正不正常。原本印「預計 25 分內入板」是憑排隊位置推的，
+  // 卡了 19 小時還照印，數字完全失真（Jesse 2026-08-25 退件）。超時就直說卡住與該做什麼。
+  const note = el("div", "age");
+  note.style.marginTop = "4px";
+  note.textContent = late
+    ? `已等 ${mins < 120 ? mins + " 分" : Math.round(mins / 60) + " 小時"}，超過正常的 ${DRAFT_SLA_MIN} 分。稿可能寫好了但沒進來，按加速重跑一次。`
+    : `撰稿中，正常約 ${DRAFT_SLA_MIN} 分內入板`;
+  c.appendChild(note);
+  const b = el("button", "btn" + (late ? " primary" : ""), late ? "⚡ 重跑撰稿" : "⚡ 加速");
+  b.style.marginTop = "6px";
+  b.onclick = e => { e.stopPropagation(); rushDraft(idea, b); };
+  c.appendChild(b);
   return c;
 }
 
@@ -242,6 +253,10 @@ function healthBar(posts, hb) {
   }
   const todo = posts.filter(p => p.status === "approved" && stageOf(p)[2] === "make").length;
   item(todo ? "var(--stage-make)" : "var(--stage-done)", `待渲染 ${todo}`);
+  // 撰稿卡住：放行超過 SLA 還沒入板的張數。這是最容易靜默的一段，健康列要直接說。
+  const late = draftingIdeas(posts).filter(
+    i => i.decided_at && (Date.now() - new Date(i.decided_at)) / 60000 > DRAFT_SLA_MIN).length;
+  if (late) item("var(--stage-you)", `撰稿卡住 ${late}`).title = "放行超過 " + DRAFT_SLA_MIN + " 分仍未入板，到製作中欄按「重跑撰稿」";
   const next = posts.filter(p => p.status === "scheduled" && p.publish_at > nowISO())
                     .map(p => p.publish_at).sort()[0];
   if (next) {
