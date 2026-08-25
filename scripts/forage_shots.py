@@ -261,7 +261,12 @@ def _apify_images(query, want):
     tok = _sync_get("apify_token")
     if not tok:
         return []
-    actor = _sync_get("apify_image_actor") or "hooli~google-images-scraper"
+    # 預設 johnvc：2026-08-25 兩支實測「Park Eun-bin drama still」——
+    # hooli（4.48★、6028 人、Apify 官方）回的是狗美容、莎麗上衣、阿里巴巴，幾乎全不相關；
+    # johnvc（5.00★、147 人、社群）前 10 筆 9 筆命中，來源是 Korea Herald／SCMP／Forbes／Tatler。
+    # 教訓：Apify 的「成功率 99.9%」只計「有沒有跑完」，不計結果對不對——星等與官方維護
+    # 都不能取代實測。johnvc 還便宜 19 倍（$0.10 vs $1.90／千張）。
+    actor = _sync_get("apify_image_actor") or "johnvc~google-images-api"
     url = ("https://api.apify.com/v2/acts/%s/run-sync-get-dataset-items?token=%s"
            % (actor, tok))
     body = json.dumps({"queries": [query], "maxResultsPerQuery": max(want * 3, 20)}).encode()
