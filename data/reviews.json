@@ -582,6 +582,23 @@
       "scope": null,
       "feedback": "素材亂生一通，沒有達到我們要的標準，來源看起來就沒有上網找過，不是媒體的品質",
       "consumed": false
+    },
+    {
+      "id": "R-mt8elsvk",
+      "post_id": "20260824-CarlRogers說你",
+      "ts": "2026-08-25T16:29:19+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "素材品質不合格，重複出現已經用過的素材，應該更多搜尋網上高解析度的圖片，可使用 apify 或其他工具",
+      "consumed": false
     }
   ]
 }
