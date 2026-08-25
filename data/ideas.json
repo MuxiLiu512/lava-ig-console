@@ -10,7 +10,7 @@
       "decision": "approve",
       "decided_at": "2026-08-25T18:27:59+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyqbfrc",
@@ -882,5 +882,5 @@
       "applied": true
     }
   ],
-  "pulled_at": "2026-08-25T18:30:22+08:00"
+  "pulled_at": "2026-08-25T18:50:42+08:00"
 }

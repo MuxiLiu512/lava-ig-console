@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3654,7 +3654,7 @@
         "rhythm": "封面人像開場有溫度，但中段三連黑（張2→4→5）讓輪播像在原地踏步，唯一的亮黃（張3）孤立無援、無法帶動全篇節奏；需在深色系內製造色相差異，才能讓讀者有『往下滑有新東西』的驅動感。"
       },
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4230,12 +4230,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:30:26+08:00",
+        "ts": "2026-08-25T18:50:45+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4318,7 +4318,7 @@
         "rhythm": "整篇節奏像一首歌從頭到尾只有一個動態：暗、人臉、文字，暗、人臉、文字——Levine的臉出現三次像卡帶，《Before》系列連開兩槍，第9張CTA雖然跳色但前八張完全沒有鋪好情緒起伏，建議至少插入一張「無人物、強光感」的視覺空隙，讓讀者在中段換一口氣再被結尾收住。"
       },
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -4832,12 +4832,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:30:30+08:00",
+        "ts": "2026-08-25T18:50:48+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4903,7 +4903,7 @@
         "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       },
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": false,
         "counts": {
           "破折號": 4
@@ -4935,672 +4935,6 @@
             "rule": "破折號",
             "where": "第5張內文",
             "line": "第5張內文：…和示弱傳達 【溫暖】——讓對方感覺被善意對待…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          }
-        ]
-      }
-    },
-    {
-      "id": "20260825-白夜行",
-      "topic": "東野圭吾走了，《白夜行》衝上台灣暢銷榜——雪穗和亮司的關係，愛情研究者會怎麼定義它？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyq9f6w",
-      "created_at": null,
-      "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood80116",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-1b.webp",
-              "kind": "still",
-              "source_label": "a-mooda96f5",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-1c.webp",
-              "kind": "still",
-              "source_label": "a-moodd5f07",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-1d.webp",
-              "kind": "still",
-              "source_label": "組圖：Simply Psychology",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-1e.webp",
-              "kind": "still",
-              "source_label": "c-mood76dd8",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-白夜行/slide-1f.webp",
-              "kind": "still",
-              "source_label": "c-mood9cace",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-白夜行/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-白夜行/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-白夜行/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Byakuyako"
-            }
-          ],
-          "final_src": null,
-          "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
-          "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood1024c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-2b.webp",
-              "kind": "still",
-              "source_label": "a-mood5a364",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-2c.webp",
-              "kind": "still",
-              "source_label": "a-mood5da33",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-2d.webp",
-              "kind": "still",
-              "source_label": "b-mood27078",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Byakuyako"
-            }
-          ],
-          "final_src": null,
-          "heading": "讀完最後一頁，你愣在那裡",
-          "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Simply Psychology",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-3b.webp",
-              "kind": "still",
-              "source_label": "Simply Psychology",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-3c.webp",
-              "kind": "still",
-              "source_label": "a-articlec20b0",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Enmeshment：兩個人的邊界消失了",
-          "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mood02be4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-4b.webp",
-              "kind": "still",
-              "source_label": "a-moodb233c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-4c.webp",
-              "kind": "still",
-              "source_label": "a-moodf7274",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-4d.webp",
-              "kind": "still",
-              "source_label": "b-mood1e322",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-4e.webp",
-              "kind": "still",
-              "source_label": "b-mood3970c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-白夜行/slide-4f.webp",
-              "kind": "still",
-              "source_label": "b-mood4338b",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-白夜行/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-白夜行/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-白夜行/slide-4i.webp",
-              "kind": "still",
-              "source_label": "Byakuyako"
-            }
-          ],
-          "final_src": null,
-          "heading": "亮司和雪穗——不是對等的糾纏",
-          "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "「為你付出一切」背後，研究說了什麼",
-          "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-6a.webp",
-              "kind": "still",
-              "source_label": "Mother"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Mother"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Mother",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "Enmeshment 長什麼樣？你可能認識它",
-          "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood79405",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-7b.webp",
-              "kind": "still",
-              "source_label": "a-mooda7c8a",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-7c.webp",
-              "kind": "still",
-              "source_label": "a-moodfdcf6",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "真正的關係，是兩個人都能站在光裡",
-          "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood048b3",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-8b.webp",
-              "kind": "still",
-              "source_label": "a-mood52a02",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-8c.webp",
-              "kind": "still",
-              "source_label": "a-moodf548a",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-8d.webp",
-              "kind": "still",
-              "source_label": "b-mood2441c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-8e.webp",
-              "kind": "still",
-              "source_label": "b-mood46eb2",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-白夜行/slide-8f.webp",
-              "kind": "still",
-              "source_label": "b-moode75ed",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "你可以問自己的三個問題",
-          "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "東野圭吾於 2026 年 7 月 23 日因大腸癌逝世，享年 68 歲",
-          "source": "https://udn.com/news/story/6885/9660423",
-          "quote": "訃告由講談社官方網站首發，同步由旗下七家出版社的聯合官方 Twitter 帳號對外公告"
-        },
-        {
-          "claim": "博客來 27 日中文書單日銷量是 26 日的 50 倍；電子書單日銷量達 26 日的 16.5 倍",
-          "source": "https://udn.com/news/story/6885/9660423",
-          "quote": "27 日中文書單日銷量超越 1 日至 26 日的累計量，且是 26 日的 50 倍；電子書單日銷量也達 26 日的 16.5 倍"
-        },
-        {
-          "claim": "博客來暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜",
-          "source": "https://udn.com/news/story/6885/9660423",
-          "quote": "博客來網路書店暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜"
-        },
-        {
-          "claim": "《白夜行》在博客來 27 日東野圭吾作品銷售榜排名第 1",
-          "source": "https://www.cna.com.tw/news/acul/202507300125.aspx",
-          "quote": "27 日東野圭吾作品銷售前 5 名依序為：「白夜行（經典單冊回歸版）」第 1 名"
-        },
-        {
-          "claim": "Salvador Minuchin 於 1970 年代提出 Enmeshment（糾纏型關係）概念，指出糾纏型家庭邊界呈「擴散狀」（diffuse boundaries）",
-          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
-          "quote": "Enmeshment is a concept that was developed by family therapist Salvador Minuchin in the 1970s"
-        },
-        {
-          "claim": "APA 定義 Enmeshment 為「兩人或多人過度介入彼此的活動與個人關係的狀態」",
-          "source": "https://dictionary.apa.org/enmeshment",
-          "quote": "a state in which two or more people, typically family members, are overinvolved in each other's activities and personal relationships"
-        },
-        {
-          "claim": "Bacon 與 Conway（2023）定義糾纏為「對自身與他人分離感的混淆體驗，以及在關係中自主性的喪失」",
-          "source": "https://link.springer.com/doi/10.1007/s11469-022-00810-4",
-          "quote": "a confused experience of separateness from others, including a loss of autonomy within relationships, and an inability to fully experience, understand, and value one's own thoughts, feelings, and needs within a relational context"
-        },
-        {
-          "claim": "Manzi、Vignoles、Regalia 與 Scabini 2006 年發表於 Journal of Marriage and Family 68 卷第 3 期的跨文化研究指出，高度糾纏與更低的個人身份認同感及更高的焦慮程度直接相關",
-          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
-          "quote": "Manzi, C., Vignoles, V. L., Regalia, C., & Scabini, E. (2006). Cohesion and Enmeshment Revisited: Differentiation, Identity, and Well-Being in Two European Cultures. Journal of Marriage and Family, 68(3), 673–689"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
-          "slides": {
-            "1": {
-              "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
-              "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。"
-            },
-            "2": {
-              "heading": "讀完最後一頁，你愣在那裡",
-              "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。"
-            },
-            "3": {
-              "heading": "Enmeshment：兩個人的邊界消失了",
-              "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4"
-            },
-            "4": {
-              "heading": "亮司和雪穗——不是對等的糾纏",
-              "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。"
-            },
-            "5": {
-              "heading": "「為你付出一切」背後，研究說了什麼",
-              "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
-            },
-            "6": {
-              "heading": "Enmeshment 長什麼樣？你可能認識它",
-              "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment"
-            },
-            "7": {
-              "heading": "真正的關係，是兩個人都能站在光裡",
-              "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。"
-            },
-            "8": {
-              "heading": "你可以問自己的三個問題",
-              "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:18:48+08:00",
-      "rendered_lines": {
-        "1": [
-          "亮司用一生躲在暗處，讓雪穗永遠站在光裡",
-          "—那算愛嗎",
-          "",
-          "亮司用一生躲在暗處",
-          "讓雪穗永遠站在光裡",
-          "〖那算愛嗎〗",
-          "東野圭吾辭世，《白夜行》再度衝上博客來榜首",
-          "這個問題，值得重新問一次"
-        ],
-        "2": [
-          "讀完最後一頁，你愣在那裡",
-          "",
-          "讀完最後一頁，你愣在那裡",
-          "不是因為結局太悲",
-          "而是因為你心裡有個聲音說這是愛",
-          "另一個聲音說：這裡有什麼地方不對",
-          "亮司從沒要求雪穗回頭看他一眼",
-          "他把所有犯罪的理由藏進黑暗",
-          "讓她的世界永遠乾淨",
-          "那個「不對」，關係心理學早就有名字"
-        ],
-        "3": [
-          "Enmeshment：兩個人的邊界消失了",
-          "",
-          "1970 年代，家族治療師 Salvador Minuchin 提出",
-          "Enmeshment（糾纏型關係）",
-          "當邊界變得「擴散」，兩人開始過度介入彼此",
-          "個體的自主性逐漸消失",
-          "2023 年 Bacon & Conway 將它定義得更精準",
-          "「對自身與他人分離感的混淆體驗",
-          "以及無法充分感受自己的想法與需求。」",
-          "這不叫親密。這叫糾纏",
-          "資料來源：Simply Psychology, simplypsychology.org",
-          "/what-is-enmeshment.html；Bacon & Conway (",
-          "2023), Springer, doi:10.1007/s11469-022-00810-4"
-        ],
-        "4": [
-          "亮司和雪穗——不是對等的糾纏",
-          "",
-          "一般的糾纏是雙向的",
-          "兩人同時失去邊界",
-          "但亮司與雪穗不一樣",
-          "他的存在只為成全她",
-          "她從未同等犧牲",
-          "研究者稱這為非對稱糾纏",
-          "其中一方成為「使能者（enabler）」",
-          "用自我毀滅維持對方的世界",
-          "守護者在暗處沉淪",
-          "被守護者也因此永遠無法真正自由"
-        ],
-        "5": [
-          "「為你付出一切」背後，研究說了什麼",
-          "",
-          "你以為「為你付出一切」是愛的極致",
-          "但 Manzi、Vignoles 等人 2006 年發表於",
-          "《Journal of Marriage and Family》的跨文化研究發",
-          "現",
-          "【高度糾纏的關係，與更高的焦慮",
-          "更低的自我認同感直接相關】",
-          "糾纏讓人失去分辨「這是我自己的需求」的能力",
-          "兩個人都困在裡面，誰也出不去",
-          "資料來源：Manzi et al. (2006), Journal of Marriage",
-          "and Family, 68(3), 673–689"
-        ],
-        "6": [
-          "Enmeshment 長什麼樣？你可能認識它",
-          "",
-          "糾纏型關係，你可能認識它",
-          "「她不在，我不知道自己要什麼。」",
-          "「我的快樂好像只有在他開心的時候才算數。」",
-          "APA 官方定義",
-          "【Enmeshment 是兩人或多人過度介入",
-          "彼此活動與個人關係的狀態】",
-          "起點很像深度在乎",
-          "直到你發現，其中一個人已經完全消失在關係裡",
-          "資料來源：APA Dictionary of Psychology, dictionary.",
-          "apa.org/enmeshment"
-        ],
-        "7": [
-          "真正的關係，是兩個人都能站在光裡",
-          "",
-          "亮司以為躲在暗處是愛",
-          "但真正的關係",
-          "是兩個人的自我都還完整",
-          "然後選擇彼此靠近",
-          "不是融化進對方裡",
-          "不是為了對方消失",
-          "不需要有人犧牲自己的光",
-          "不需要有人永遠活在陰影裡",
-          "Lava 想幫你找的",
-          "是那種兩個人都能站在光裡的連結"
-        ],
-        "8": [
-          "你可以問自己的三個問題",
-          "",
-          "不用把自己對比到亮司",
-          "但這三個問題，值得靜靜問自己",
-          "① 在這段關係裡，我還知道「我自己喜歡什麼」嗎",
-          "【② 當對方不開心，我是選擇陪伴",
-          "還是覺得「必須」讓他開心】",
-          "【③ 如果這段關係結束",
-          "我還剩下多少「我自己」】",
-          "你的第一個念頭，往往比你以為的更誠實"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-25T18:30:36+08:00",
-        "pass": false,
-        "claims": 9,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「由。 「為你付出一切」背後，研究說了什麼 你以為「為你付出一切」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「nd Family》的跨文化研究發現：  高度糾纏的關係，與更高」沒有對應出處（研究引用）"
-          }
-        ]
-      },
-      "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
-        "pass": false,
-        "counts": {
-          "破折號": 11
-        },
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "標題",
-            "line": "標題：…夜行》衝上台灣暢銷榜——雪穗和亮司的關係，愛…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第1張主標",
-            "line": "第1張主標：…，讓雪穗永遠站在光裡——那算愛嗎？…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第2張內文",
-            "line": "第2張內文：…  不是因為結局太悲—— 而是因為你心裡有個…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第3張內文",
-            "line": "第3張內文：…兩人開始過度介入彼此—— 個體的自主性逐漸消…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第4張主標",
-            "line": "第4張主標：…亮司和雪穗——不是對等的糾纏…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第4張內文",
-            "line": "第4張內文：…般的糾纏是【雙向的】—— 兩人同時失去邊界。…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第4張內文",
-            "line": "第4張內文：…稱這為〖非對稱糾纏〗—— 其中一方成為「使能…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第5張內文",
-            "line": "第5張內文：…付出一切」是愛的極致——  但 Manzi、…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第5張內文",
-            "line": "第5張內文：…我自己的需求」的能力—— 兩個人都困在裡面，…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第6張內文",
-            "line": "第6張內文：…  起點很像深度在乎—— 直到你發現，其中一…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第7張內文",
-            "line": "第7張內文：…亮司以為躲在暗處是愛——  但真正的關係， …",
             "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
           }
         ]
@@ -6200,12 +5534,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:30:36+08:00",
+        "ts": "2026-08-25T18:50:48+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -6232,7 +5566,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": false,
         "counts": {
           "破折號": 11
@@ -6313,637 +5647,6 @@
             "rule": "破折號",
             "where": "第7張內文",
             "line": "第7張內文：…】才能持續深化親密感—— 自滿，是安全型關係…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          }
-        ]
-      }
-    },
-    {
-      "id": "20260824-StanTatkin說你",
-      "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力——但神經科學說，愛情是一項需要每天練習的技能",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyknz01",
-      "created_at": null,
-      "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood1dd71",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
-              "kind": "still",
-              "source_label": "b-collage",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moodc38b6",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            }
-          ],
-          "final_src": null,
-          "heading": "吵架前，你的大腦已經先輸了",
-          "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-moodb9fba",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-moodc7b70",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            }
-          ],
-          "final_src": null,
-          "heading": "那個「無緣無故的煩躁」其實有原因",
-          "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "杏仁核比你更快開口",
-          "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "焦慮型依附的神經特徵",
-          "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-bookfe3de",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-book189b0",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            }
-          ],
-          "final_src": null,
-          "heading": "愛不是找到的，是練出來的",
-          "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications.",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood17b9c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-mood36cbd",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "線上聊再久，神經系統不買單",
-          "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood4ff93",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-moodd4ab0",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Anchor、Island、Wave：你是哪一種？",
-          "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-moodeba66",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood1e905",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            }
-          ],
-          "final_src": null,
-          "heading": "把對方「登錄」進你大腦的安全清單",
-          "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "Stan Tatkin 是 PACT（Psychobiological Approach to Couple Therapy）的創立者，臨床心理學博士（PsyD）兼婚姻家庭治療師（MFT）",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy (PACT)."
-        },
-        {
-          "claim": "Tatkin 於 2010 年與妻子 Tracey Boldemann-Tatkin 博士共同創立 PACT Institute",
-          "source": "https://www.pactinstitute.com/about",
-          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
-        },
-        {
-          "claim": "Tatkin 兼任 UCLA David Geffen School of Medicine 的助理臨床教授",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "He is an assistant clinical professor at UCLA David Geffen School of Medicine."
-        },
-        {
-          "claim": "《Wired for Love》由 New Harbinger Publications 於 2012 年出版",
-          "source": "https://www.newharbinger.com/9781608820580/wired-for-love/",
-          "quote": "Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship. New Harbinger Publications, 2012."
-        },
-        {
-          "claim": "《Wired for Love》已售出超過 170,000 冊",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Wired for Love has sold over 170,000 copies."
-        },
-        {
-          "claim": "Tatkin 的 TEDx 演講累計觀看人次已超過 170 萬",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "His TEDx talk has been viewed over 1.7 million times."
-        },
-        {
-          "claim": "2012 年 Pascal Vrticka 等人的研究發現，焦慮型依附個體在社會評估任務中，前額葉皮質與杏仁核之間的功能性連結顯著降低",
-          "source": "https://academic.oup.com/scan/article/7/3/290/1573643",
-          "quote": "Anxiously attached individuals showed reduced functional connectivity between the prefrontal cortex and the amygdala during social evaluation tasks."
-        },
-        {
-          "claim": "人類杏仁核病變會損害威脅優先處理能力，提供了杏仁核對回應迫在眉睫的危險具有因果角色的首個直接證據",
-          "source": "https://pubmed.ncbi.nlm.nih.gov/21390292/",
-          "quote": "Patients with bilateral amygdala damage failed to show the normal threat-priority effect, providing the first direct evidence for a causal role of the amygdala in responding to imminent danger."
-        },
-        {
-          "claim": "伴侶是彼此的「生物存活單位（biological survival unit）」",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Stan Tatkin describes couples as a biological survival unit — each person's primary attachment figure and the one they can always count on."
-        },
-        {
-          "claim": "Tatkin 使用 Anchor（錨型）、Island（島型）、Wave（浪型）三個標籤描述依附風格，不將任何一種類型描繪為有缺陷",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Tatkin describes three attachment styles — Anchor, Island, and Wave — and emphasizes that no type is inherently flawed; each develops from personal history and can thrive in relationship with the right understanding."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
-          "slides": {
-            "1": {
-              "heading": "吵架前，你的大腦已經先輸了",
-              "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。"
-            },
-            "2": {
-              "heading": "那個「無緣無故的煩躁」其實有原因",
-              "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。"
-            },
-            "3": {
-              "heading": "杏仁核比你更快開口",
-              "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
-            },
-            "4": {
-              "heading": "焦慮型依附的神經特徵",
-              "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
-            },
-            "5": {
-              "heading": "愛不是找到的，是練出來的",
-              "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications."
-            },
-            "6": {
-              "heading": "線上聊再久，神經系統不買單",
-              "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。"
-            },
-            "7": {
-              "heading": "Anchor、Island、Wave：你是哪一種？",
-              "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。"
-            },
-            "8": {
-              "heading": "把對方「登錄」進你大腦的安全清單",
-              "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:20:24+08:00",
-      "rendered_lines": {
-        "1": [
-          "吵架前，你的大腦已經先輸了",
-          "",
-          "〖吵架前，你的大腦已經先輸了〗",
-          "那場架還沒開始",
-          "你的身體早就備戰了",
-          "心跳加速、肩膀緊繃",
-          "嘴裡冒出一句連自己都沒預料到的話",
-          "不是你們不合適",
-          "是你的神經系統還不認識他",
-          "大腦優先為生存設計",
-          "不是為愛設計的",
-          "但這件事，可以改變"
-        ],
-        "2": [
-          "那個「無緣無故的煩躁」其實有原因",
-          "",
-          "他只是把杯子放錯地方",
-          "你卻突然很想哭",
-          "她只是回了一個「哦」",
-          "你卻開始反覆回放她的語氣",
-          "不是你太敏感",
-          "是你的大腦把對方的小動作",
-          "讀成了威脅信號",
-          "PACT 模型說",
-          "小衝突感覺像大威脅",
-          "是因為你們的神經系統",
-          "還在學習調節彼此",
-          "這不是性格問題，是生物問題"
-        ],
-        "3": [
-          "杏仁核比你更快開口",
-          "",
-          "你以為你在「冷靜思考」",
-          "但杏仁核早就出手了",
-          "在你決定「算了別吵」之前",
-          "心跳已經加速",
-          "肌肉已經備戰",
-          "這場衝突在你開口前就開始了",
-          "Tatkin",
-          "我們感到不安全時",
-          "會在反思之前就先反應",
-          "對象正好是我們最在乎的人",
-          "資料來源：Feinstein JS et al. (2011), Current Biology",
-          "— amygdala causal role in responding to imminent",
-          "danger. PubMed ID: 21390292"
-        ],
-        "4": [
-          "焦慮型依附的神經特徵",
-          "",
-          "Vrticka 等人 2012 年研究發現",
-          "焦慮型依附的人",
-          "大腦「理性煞車」",
-          "對「情緒油門」的控制力",
-          "顯著更弱",
-          "為什麼在最親近的人面前",
-          "反而最容易失控",
-          "因為親密關係本身",
-          "就是高喚醒狀態",
-          "你的神經系統一直在高速運轉",
-          "這不是你的錯，是你大腦的設計",
-          "資料來源：Vrticka P et al. (2012), Social Cognitive",
-          "and Affective Neuroscience, Vol. 7(3)"
-        ],
-        "5": [
-          "愛不是找到的，是練出來的",
-          "",
-          "Stan Tatkin 在《Wired for Love》裡說",
-          "伴侶是彼此的",
-          "生物存活單位",
-          "關係不是「找到對的人就自動運作」",
-          "而是兩個神經系統",
-          "學習把對方辨識為「安全」",
-          "的過程",
-          "大腦透過一次次親身接觸",
-          "把對方的臉、聲音、觸感",
-          "登錄為安全信號",
-          "這需要面對面，反覆地練",
-          "資料來源：Tatkin S. (2012). Wired for Love. New",
-          "Harbinger Publications"
-        ],
-        "6": [
-          "線上聊再久，神經系統不買單",
-          "",
-          "聊再多訊息",
-          "你的神經系統都不買單",
-          "大腦靠的是",
-          "眼神、聲音的溫度",
-          "對方離你多近的體感",
-          "和你們共同在場的那些片刻",
-          "——來學習把對方辨識為安全",
-          "催產素、多巴胺這些連結機制",
-          "在面對面互動中啟動的強度",
-          "遠高於數位溝通",
-          "Lava 選擇線下優先",
-          "不是反科技",
-          "是因為大腦就是這樣運作的"
-        ],
-        "7": [
-          "Anchor、Island、Wave：你是哪一種",
-          "",
-          "你是哪一種",
-          "⚓ Anchor 錨型 — 安全依附",
-          "🏝 Island 島型 — 迴避型",
-          "🌊 Wave 浪型 — 焦慮型",
-          "Tatkin 說",
-          "沒有哪一型是壞的",
-          "每一種都是你從成長經驗中",
-          "發展出來的生存策略",
-          "問題從來不是你是哪一型",
-          "而是你有沒有讓對方的神經系統",
-          "學會你是安全的",
-          "任何組合，都可以建立安全感"
-        ],
-        "8": [
-          "把對方「登錄」進你大腦的安全清單",
-          "",
-          "把對方「登錄」進你大腦的安全清單",
-          "——Tatkin 說，這需要每天練習",
-          "👁 重聚時，給一個真實的眼神接觸",
-          "🌬 爭吵前，先深呼吸三次",
-          "　　讓前額葉有機會介入",
-          "📵 重要的情緒，不要用訊息處理",
-          "　　改約一次面對面",
-          "伴侶泡泡（couple bubble）",
-          "不是浪漫的隱喻",
-          "是有神經生物學基礎的日常練習",
-          "重複。然後再重複",
-          "這就是你們建立安全感的方式"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-25T18:30:42+08:00",
-        "pass": false,
-        "claims": 4,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2012 年」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「研究發現」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「Stan Tatkin 說：你以為「找到對的人」就不用」沒有對應出處（人物引述）"
-          }
-        ]
-      },
-      "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
-        "pass": false,
-        "counts": {
-          "破折號": 12,
-          "赦免式安慰": 1
-        },
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "標題",
-            "line": "標題：…到對的人」就不用努力——但神經科學說，愛情是…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第1張內文",
-            "line": "第1張內文：…。  不是你們不合適—— 是你的神經系統還不…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第2張內文",
-            "line": "第2張內文：…氣。  不是你太敏感—— 是你的大腦把對方的…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第3張內文",
-            "line": "第3張內文：…決定「算了別吵」之前—— 心跳已經加速 肌肉…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第3張內文",
-            "line": "第3張內文：…會在反思之前就先反應—— 對象正好是我們最在…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第4張內文",
-            "line": "第4張內文：…本身 就是高喚醒狀態—— 你的神經系統一直在…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "warn",
-            "rule": "赦免式安慰",
-            "where": "第4張內文",
-            "line": "第4張內文：…統一直在高速運轉。 這不是你的錯，是你大腦的設計。 …",
-            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第5張內文",
-            "line": "第5張內文：…到對的人就自動運作」—— 而是兩個神經系統 …",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第6張內文",
-            "line": "第6張內文：…共同在場的那些片刻 ——來學習【把對方辨識為…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第7張內文",
-            "line": "第7張內文：…： 沒有哪一型是壞的—— 每一種都是你從成長…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第7張內文",
-            "line": "第7張內文：…題從來不是你是哪一型—— 而是你有沒有讓對方…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第8張內文",
-            "line": "第8張內文：…進你大腦的安全清單 ——Tatkin 說，這…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          },
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "第8張內文",
-            "line": "第8張內文：…e） 不是浪漫的隱喻—— 是有神經生物學基礎…",
             "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
           }
         ]
@@ -7433,12 +6136,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:30:43+08:00",
+        "ts": "2026-08-25T18:50:49+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -7470,7 +6173,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": false,
         "counts": {
           "破折號": 6
@@ -7516,460 +6219,6 @@
             "rule": "破折號",
             "where": "第8張內文",
             "line": "第8張內文：…接受一切 是真正在場—— 聽他說話，不是為了…",
-            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
-          }
-        ]
-      }
-    },
-    {
-      "id": "20260824-重陽節今天熱搜但你知道孤",
-      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eypznm0",
-      "created_at": null,
-      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            }
-          ],
-          "final_src": null,
-          "heading": "重陽節，全台灣都在關心老人",
-          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            }
-          ],
-          "final_src": null,
-          "heading": "下班回家，那段靜默叫什麼",
-          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "研究說：20 歲，才是孤獨的高峰",
-          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            }
-          ],
-          "final_src": null,
-          "heading": "你的 IG 正在讓你更孤獨",
-          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            }
-          ],
-          "final_src": null,
-          "heading": "為什麼老年人反而不孤獨？",
-          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven"
-            }
-          ],
-          "final_src": null,
-          "heading": "出社會之後，社交圈急速萎縮",
-          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌輕置入",
-          "candidates": [],
-          "final_src": null,
-          "heading": "孤獨感的核心，是深度連結太少",
-          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [],
-          "final_src": null,
-          "heading": "今天替老人過節，也替自己看見一件事",
-          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
-        },
-        {
-          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
-        },
-        {
-          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
-        },
-        {
-          "claim": "較低的自我效能感可能導致更強的孤獨感",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Lower self-efficacy may result in greater loneliness"
-        },
-        {
-          "claim": "孤獨感與智慧之間存在強烈的負相關",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "Loneliness and wisdom were strongly and inversely related"
-        },
-        {
-          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
-          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
-          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
-          "slides": {
-            "1": {
-              "heading": "重陽節，全台灣都在關心老人",
-              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
-            },
-            "2": {
-              "heading": "下班回家，那段靜默叫什麼",
-              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
-            },
-            "3": {
-              "heading": "研究說：20 歲，才是孤獨的高峰",
-              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
-            },
-            "4": {
-              "heading": "你的 IG 正在讓你更孤獨",
-              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
-            },
-            "5": {
-              "heading": "為什麼老年人反而不孤獨？",
-              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
-            },
-            "6": {
-              "heading": "出社會之後，社交圈急速萎縮",
-              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
-            },
-            "7": {
-              "heading": "孤獨感的核心，是深度連結太少",
-              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
-            },
-            "8": {
-              "heading": "今天替老人過節，也替自己看見一件事",
-              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "rendered_lines": {
-        "1": [
-          "重陽節，全台灣都在關心老人",
-          "",
-          "重陽節",
-          "全台灣都在關心老人",
-          "但 2020 年 UC San Diego 研究",
-          "調查 2,843 名成年人",
-          "用 UCLA Loneliness Scale 量測孤獨感",
-          "結論讓所有人都愣住了",
-          "〖最孤獨的年紀，是你現在〗"
-        ],
-        "2": [
-          "下班回家，那段靜默叫什麼",
-          "",
-          "下班回家，關上門",
-          "整個房間只剩你一個人的呼吸聲",
-          "滑開 IG，看見別人的聚餐合照",
-          "按了個愛心，放下手機",
-          "比剛才更安靜",
-          "舊友漸漸只剩按讚",
-          "連絡也變成「確認對方還活著」",
-          "這不叫寂寞",
-          "這叫無處投靠的空虛感"
-        ],
-        "3": [
-          "研究說：20 歲，才是孤獨的高峰",
-          "",
-          "2020 年 UC San Diego 研究",
-          "調查 2,843 名成年人",
-          "使用 UCLA Loneliness Scale 量測",
-          "孤獨感最高峰：20 歲世代",
-          "孤獨感最低點：60 歲世代",
-          "研究者稱之為「孤獨悖論」",
-          "你以為老了才孤獨",
-          "但你現在就已經是高峰",
-          "資料來源：Jeste & Nguyen et al., International",
-          "Psychogeriatrics, 2020"
-        ],
-        "4": [
-          "你的 IG 正在讓你更孤獨",
-          "",
-          "為什麼 20 歲世代最孤獨",
-          "研究者 Tanya Nguyen 直接點名",
-          "「持續在社群上比較自己",
-          "在意按讚數與追蹤數",
-          "導致更強的孤獨感」",
-          "台灣 12 歲以上網路族 95.1% 使用社群媒體",
-          "18–29 歲族群每天近 6 小時滑社群",
-          "按讚取代了對話，限動回覆取代了見面",
-          "研究指出這種淺度互動反而加重孤獨感",
-          "資料來源：數位發展部 2024；中研院臺灣傳播調查資",
-          "料庫；Nguyen et al., International Psychogeriatrics",
-          "2020"
-        ],
-        "5": [
-          "為什麼老年人反而不孤獨",
-          "",
-          "為什麼 60 歲世代孤獨感最低",
-          "研究者 Dilip Jeste 的發現",
-          "孤獨感與「智慧」存在",
-          "強烈且持續的負相關",
-          "尤其是智慧中的同理心成分",
-          "越能理解他人，越不孤獨",
-          "社交圈未必更大",
-          "隨年齡累積的智慧",
-          "讓他們更能與自己及他人共處",
-          "資料來源：Jeste et al., International Psychogeriatrics",
-          "2020"
-        ],
-        "6": [
-          "出社會之後，社交圈急速萎縮",
-          "",
-          "畢業之後，認識新朋友的門",
-          "一道道關上",
-          "沒有宿舍、社團、同班同學",
-          "沒有「結構性的相遇機會」",
-          "舊友漸漸只剩按讚",
-          "新朋友幾乎沒有在認識",
-          "30 歲前後的社交斷層",
-          "幾乎每個台灣年輕人都在經歷",
-          "只是很少人說出口"
-        ],
-        "7": [
-          "孤獨感的核心，是深度連結太少",
-          "",
-          "孤獨感的核心是什麼",
-          "研究指出：深度連結的匱乏",
-          "是孤獨感最關鍵的成因",
-          "按讚取代了對話，限動回覆取代了見面",
-          "這種淺度的社群互動反而會加重孤獨感",
-          "Lava 的出發點很簡單",
-          "線上聊天確認對方還活著",
-          "線下見面才是真正的相遇",
-          "真實地出現在彼此的生活裡",
-          "是你可以主動選擇的一步"
-        ],
-        "8": [
-          "今天替老人過節，也替自己看見一件事",
-          "",
-          "重陽節，我們記得長輩",
-          "但 2020 年 UC San Diego 研究說",
-          "最孤獨的，是 20 歲世代",
-          "Jeste 的研究顯示",
-          "這個年齡幾乎普遍承受著孤獨",
-          "只是很少人說出口",
-          "承認它，是誠實",
-          "從誠實出發，才有機會真實連結",
-          "你值得被真實地看見"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-25T18:30:45+08:00",
-        "pass": false,
-        "claims": 14,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「，線下見面才是真正的相遇。 研究指出，深度連結的匱乏是孤獨感的核」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
-          }
-        ]
-      },
-      "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
-        "pass": false,
-        "counts": {
-          "破折號": 1
-        },
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "破折號",
-            "where": "標題",
-            "line": "標題：…重陽節今天熱搜——但你知道「孤獨感」的…",
             "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
           }
         ]
@@ -8657,12 +6906,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-25T18:30:25+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-25T18:30:47+08:00",
+        "ts": "2026-08-25T18:50:50+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -8684,7 +6933,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": false,
         "counts": {
           "破折號": 4,
@@ -9041,7 +7290,7 @@
       },
       "candidates_since": "2026-08-25T18:36:41+08:00",
       "copy": {
-        "ts": "2026-08-25T18:43:03+08:00",
+        "ts": "2026-08-25T18:50:44+08:00",
         "pass": false,
         "counts": {
           "破折號": 7
@@ -9095,6 +7344,1850 @@
             "where": "第8張內文",
             "line": "第8張內文：…續 6 週同時段冠軍——觀眾被打動的，不是 …",
             "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          }
+        ]
+      },
+      "rendered_lines": {
+        "1": [
+          "愛到最深，反而想逃",
+          "",
+          "〖愛到最深，反而想逃〗",
+          "《毛骨悚然的戀愛》大結局",
+          "朴恩斌選擇留下的那一刻",
+          "心理學說，這才是真正的承諾"
+        ],
+        "2": [
+          "明明很愛，卻在最靠近的時候消失",
+          "",
+          "明明很愛，卻在最靠近的時候消失",
+          "和一個人愈來愈近，某天卻突然不想回訊息、開始找",
+          "藉口不見面——不是因為不愛了，是因為太靠近讓你",
+          "喘不過氣",
+          "《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危",
+          "機最頂點選擇解除婚約。與其說是放棄，不如說是一",
+          "種逃脫的本能，而心理學早就給了這種本能一個名字"
+        ],
+        "3": [
+          "心理學叫它「被吞噬的恐懼」",
+          "",
+          "心理學叫它被吞噬的恐懼",
+          "Fear of Engulfment",
+          "心理學家 David Richo（2002）：「若有人在身體或情",
+          "感上過於靠近，你會感到窒息或失去自由。」",
+          "愈渴望親密的人，有時反而愈容易把對方推開",
+          "被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方",
+          "都困惑的推拉動態",
+          "資料來源：Psychology Fanatic，psychologyfanatic.",
+          "com/engulfment/"
+        ],
+        "4": [
+          "迴避型依附：脆弱時最容易退場",
+          "",
+          "迴避型依附：脆弱時最容易退場",
+          "研究顯示，迴避型依附者在脆弱時刻與壓力事件中退",
+          "縮行為最為明顯——習慣性地自我封閉、拒絕求援",
+          "把最需要對方的時刻，變成最有可能消失的時刻",
+          "千汝利在事業危機頂點解除婚約，不是不愛了，是恐",
+          "懼的防禦機制在說話",
+          "資料來源：PsyCh Journal, Wiley, 2023"
+        ],
+        "5": [
+          "讓關係存活的不是「沒有危機」，是這三件事",
+          "",
+          "讓關係存活的不是沒有危機，是這三件事",
+          "Caryl E. Rusbult 投資模型，Le & Agnew 2003 年",
+          "meta-analysis 橫跨11,582 名參與者驗證",
+          "① 對關係的滿意度",
+          "② 替代方案的吸引力（愈低愈好）",
+          "③ 已投入的資源規模",
+          "三者中，只要整體承諾夠高，即使某個因素暫時低落",
+          "關係仍能撐過去。危機不是終點，逃避才是",
+          "資料來源：Le & Agnew, Personal Relationships, Vol.",
+          "10, 2003, pp.37–57"
+        ],
+        "6": [
+          "「留下」這個動作，才是承諾的起點",
+          "",
+          "「留下」這個動作，才是承諾的起點",
+          "千汝利回頭，不是因為所有條件都完美了",
+          "而是在不確定、在脆弱、在壓力還沒消散的時候做出",
+          "了決定",
+          "投資模型告訴我們：承諾不是一種感覺，而是一個主",
+          "動的姿態——帶著所有的不確定留在這裡，對未來投",
+          "入，即使今天還看不清楚終點",
+          "那個「留下」的當下，才是承諾真正開始的地方"
+        ],
+        "7": [
+          "真實見面，才會知道自己到底願不願意留下",
+          "",
+          "真實見面，才會知道自己到底願不願意留下",
+          "在螢幕後面聊了幾百則，你依然可以保持讓你安心",
+          "的那道距離。但那道距離，同時也讓你永遠無法分清",
+          "是真的不適合，還是只是還不夠勇敢",
+          "Lava跳過那段假裝安全的暖身期，直接創造真實見面",
+          "的機會——因為承諾只在真實的接觸裡才有機會發生"
+        ],
+        "8": [
+          "恐懼不會消失，但你可以選擇帶著它留下",
+          "",
+          "恐懼不會消失，但你可以選擇帶著它留下",
+          "Fear of Engulfment 不是需要被治好的毛病",
+          "而是很多人在親密關係裡真實存在的狀態。重點",
+          "不是等到恐懼消失了再靠近，而是恐懼還在的時候",
+          "選擇不逃",
+          "《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週",
+          "同時段冠軍——觀眾被打動的，不是 Happy Ending 本",
+          "身，而是那個帶著所有不確定仍然選擇留下的瞬間",
+          "Lava相信：關係的品質，在你選擇真實接觸的那一刻",
+          "開始成形"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-25T18:50:51+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "dead",
+            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+          },
+          {
+            "severity": "block",
+            "rule": "dead",
+            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「型依附：脆弱時最容易退場  研究顯示，迴避型依附者在脆弱時刻與壓」沒有對應出處（研究引用）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260825-白夜行",
+      "topic": "東野圭吾走了，《白夜行》衝上台灣暢銷榜——雪穗和亮司的關係，愛情研究者會怎麼定義它？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyq9f6w",
+      "created_at": null,
+      "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood80116",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Simply Psychology",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mood76dd8",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-1d.webp",
+              "kind": "still",
+              "source_label": "c-mood9cace",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-白夜行/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
+          "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood1024c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood27078",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "讀完最後一頁，你愣在那裡",
+          "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Simply Psychology",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "Enmeshment：兩個人的邊界消失了",
+          "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-4a.webp",
+              "kind": "still",
+              "source_label": "a-mood02be4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-4b.webp",
+              "kind": "still",
+              "source_label": "b-mood1e322",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "亮司和雪穗——不是對等的糾纏",
+          "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "「為你付出一切」背後，研究說了什麼",
+          "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-6a.webp",
+              "kind": "still",
+              "source_label": "Mother"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Mother"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Mother",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Enmeshment 長什麼樣？你可能認識它",
+          "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood79405",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "真正的關係，是兩個人都能站在光裡",
+          "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-mood048b3",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood2441c",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "你可以問自己的三個問題",
+          "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "東野圭吾於 2026 年 7 月 23 日因大腸癌逝世，享年 68 歲",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "訃告由講談社官方網站首發，同步由旗下七家出版社的聯合官方 Twitter 帳號對外公告"
+        },
+        {
+          "claim": "博客來 27 日中文書單日銷量是 26 日的 50 倍；電子書單日銷量達 26 日的 16.5 倍",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "27 日中文書單日銷量超越 1 日至 26 日的累計量，且是 26 日的 50 倍；電子書單日銷量也達 26 日的 16.5 倍"
+        },
+        {
+          "claim": "博客來暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "博客來網路書店暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜"
+        },
+        {
+          "claim": "《白夜行》在博客來 27 日東野圭吾作品銷售榜排名第 1",
+          "source": "https://www.cna.com.tw/news/acul/202507300125.aspx",
+          "quote": "27 日東野圭吾作品銷售前 5 名依序為：「白夜行（經典單冊回歸版）」第 1 名"
+        },
+        {
+          "claim": "Salvador Minuchin 於 1970 年代提出 Enmeshment（糾纏型關係）概念，指出糾纏型家庭邊界呈「擴散狀」（diffuse boundaries）",
+          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
+          "quote": "Enmeshment is a concept that was developed by family therapist Salvador Minuchin in the 1970s"
+        },
+        {
+          "claim": "APA 定義 Enmeshment 為「兩人或多人過度介入彼此的活動與個人關係的狀態」",
+          "source": "https://dictionary.apa.org/enmeshment",
+          "quote": "a state in which two or more people, typically family members, are overinvolved in each other's activities and personal relationships"
+        },
+        {
+          "claim": "Bacon 與 Conway（2023）定義糾纏為「對自身與他人分離感的混淆體驗，以及在關係中自主性的喪失」",
+          "source": "https://link.springer.com/doi/10.1007/s11469-022-00810-4",
+          "quote": "a confused experience of separateness from others, including a loss of autonomy within relationships, and an inability to fully experience, understand, and value one's own thoughts, feelings, and needs within a relational context"
+        },
+        {
+          "claim": "Manzi、Vignoles、Regalia 與 Scabini 2006 年發表於 Journal of Marriage and Family 68 卷第 3 期的跨文化研究指出，高度糾纏與更低的個人身份認同感及更高的焦慮程度直接相關",
+          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
+          "quote": "Manzi, C., Vignoles, V. L., Regalia, C., & Scabini, E. (2006). Cohesion and Enmeshment Revisited: Differentiation, Identity, and Well-Being in Two European Cultures. Journal of Marriage and Family, 68(3), 673–689"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
+          "slides": {
+            "1": {
+              "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
+              "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。"
+            },
+            "2": {
+              "heading": "讀完最後一頁，你愣在那裡",
+              "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。"
+            },
+            "3": {
+              "heading": "Enmeshment：兩個人的邊界消失了",
+              "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4"
+            },
+            "4": {
+              "heading": "亮司和雪穗——不是對等的糾纏",
+              "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。"
+            },
+            "5": {
+              "heading": "「為你付出一切」背後，研究說了什麼",
+              "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
+            },
+            "6": {
+              "heading": "Enmeshment 長什麼樣？你可能認識它",
+              "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment"
+            },
+            "7": {
+              "heading": "真正的關係，是兩個人都能站在光裡",
+              "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。"
+            },
+            "8": {
+              "heading": "你可以問自己的三個問題",
+              "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-25T18:50:16+08:00",
+      "rendered_lines": {
+        "1": [
+          "亮司用一生躲在暗處，讓雪穗永遠站在光裡",
+          "—那算愛嗎",
+          "",
+          "亮司用一生躲在暗處",
+          "讓雪穗永遠站在光裡",
+          "〖那算愛嗎〗",
+          "東野圭吾辭世，《白夜行》再度衝上博客來榜首",
+          "這個問題，值得重新問一次"
+        ],
+        "2": [
+          "讀完最後一頁，你愣在那裡",
+          "",
+          "讀完最後一頁，你愣在那裡",
+          "不是因為結局太悲",
+          "而是因為你心裡有個聲音說這是愛",
+          "另一個聲音說：這裡有什麼地方不對",
+          "亮司從沒要求雪穗回頭看他一眼",
+          "他把所有犯罪的理由藏進黑暗",
+          "讓她的世界永遠乾淨",
+          "那個「不對」，關係心理學早就有名字"
+        ],
+        "3": [
+          "Enmeshment：兩個人的邊界消失了",
+          "",
+          "1970 年代，家族治療師 Salvador Minuchin 提出",
+          "Enmeshment（糾纏型關係）",
+          "當邊界變得「擴散」，兩人開始過度介入彼此",
+          "個體的自主性逐漸消失",
+          "2023 年 Bacon & Conway 將它定義得更精準",
+          "「對自身與他人分離感的混淆體驗",
+          "以及無法充分感受自己的想法與需求。」",
+          "這不叫親密。這叫糾纏",
+          "資料來源：Simply Psychology, simplypsychology.org",
+          "/what-is-enmeshment.html；Bacon & Conway (",
+          "2023), Springer, doi:10.1007/s11469-022-00810-4"
+        ],
+        "4": [
+          "亮司和雪穗——不是對等的糾纏",
+          "",
+          "一般的糾纏是雙向的",
+          "兩人同時失去邊界",
+          "但亮司與雪穗不一樣",
+          "他的存在只為成全她",
+          "她從未同等犧牲",
+          "研究者稱這為非對稱糾纏",
+          "其中一方成為「使能者（enabler）」",
+          "用自我毀滅維持對方的世界",
+          "守護者在暗處沉淪",
+          "被守護者也因此永遠無法真正自由"
+        ],
+        "5": [
+          "「為你付出一切」背後，研究說了什麼",
+          "",
+          "你以為「為你付出一切」是愛的極致",
+          "但 Manzi、Vignoles 等人 2006 年發表於",
+          "《Journal of Marriage and Family》的跨文化研究發",
+          "現",
+          "【高度糾纏的關係，與更高的焦慮",
+          "更低的自我認同感直接相關】",
+          "糾纏讓人失去分辨「這是我自己的需求」的能力",
+          "兩個人都困在裡面，誰也出不去",
+          "資料來源：Manzi et al. (2006), Journal of Marriage",
+          "and Family, 68(3), 673–689"
+        ],
+        "6": [
+          "Enmeshment 長什麼樣？你可能認識它",
+          "",
+          "糾纏型關係，你可能認識它",
+          "「她不在，我不知道自己要什麼。」",
+          "「我的快樂好像只有在他開心的時候才算數。」",
+          "APA 官方定義",
+          "【Enmeshment 是兩人或多人過度介入",
+          "彼此活動與個人關係的狀態】",
+          "起點很像深度在乎",
+          "直到你發現，其中一個人已經完全消失在關係裡",
+          "資料來源：APA Dictionary of Psychology, dictionary.",
+          "apa.org/enmeshment"
+        ],
+        "7": [
+          "真正的關係，是兩個人都能站在光裡",
+          "",
+          "亮司以為躲在暗處是愛",
+          "但真正的關係",
+          "是兩個人的自我都還完整",
+          "然後選擇彼此靠近",
+          "不是融化進對方裡",
+          "不是為了對方消失",
+          "不需要有人犧牲自己的光",
+          "不需要有人永遠活在陰影裡",
+          "Lava 想幫你找的",
+          "是那種兩個人都能站在光裡的連結"
+        ],
+        "8": [
+          "你可以問自己的三個問題",
+          "",
+          "不用把自己對比到亮司",
+          "但這三個問題，值得靜靜問自己",
+          "① 在這段關係裡，我還知道「我自己喜歡什麼」嗎",
+          "【② 當對方不開心，我是選擇陪伴",
+          "還是覺得「必須」讓他開心】",
+          "【③ 如果這段關係結束",
+          "我還剩下多少「我自己」】",
+          "你的第一個念頭，往往比你以為的更誠實"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": false,
+        "counts": {
+          "破折號": 11
+        },
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "標題",
+            "line": "標題：…夜行》衝上台灣暢銷榜——雪穗和亮司的關係，愛…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第1張主標",
+            "line": "第1張主標：…，讓雪穗永遠站在光裡——那算愛嗎？…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第2張內文",
+            "line": "第2張內文：…  不是因為結局太悲—— 而是因為你心裡有個…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第3張內文",
+            "line": "第3張內文：…兩人開始過度介入彼此—— 個體的自主性逐漸消…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第4張主標",
+            "line": "第4張主標：…亮司和雪穗——不是對等的糾纏…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第4張內文",
+            "line": "第4張內文：…般的糾纏是【雙向的】—— 兩人同時失去邊界。…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第4張內文",
+            "line": "第4張內文：…稱這為〖非對稱糾纏〗—— 其中一方成為「使能…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第5張內文",
+            "line": "第5張內文：…付出一切」是愛的極致——  但 Manzi、…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第5張內文",
+            "line": "第5張內文：…我自己的需求」的能力—— 兩個人都困在裡面，…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第6張內文",
+            "line": "第6張內文：…  起點很像深度在乎—— 直到你發現，其中一…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第7張內文",
+            "line": "第7張內文：…亮司以為躲在暗處是愛——  但真正的關係， …",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-08-25T18:50:57+08:00",
+        "pass": false,
+        "claims": 9,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「由。 「為你付出一切」背後，研究說了什麼 你以為「為你付出一切」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「nd Family》的跨文化研究發現：  高度糾纏的關係，與更高」沒有對應出處（研究引用）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260824-StanTatkin說你",
+      "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力——但神經科學說，愛情是一項需要每天練習的技能",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyknz01",
+      "created_at": null,
+      "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood1dd71",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "b-collage",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moodc38b6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": null,
+          "heading": "吵架前，你的大腦已經先輸了",
+          "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-moodb9fba",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-moodc7b70",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個「無緣無故的煩躁」其實有原因",
+          "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "杏仁核比你更快開口",
+          "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "焦慮型依附的神經特徵",
+          "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-bookfe3de",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-book189b0",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "愛不是找到的，是練出來的",
+          "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications.",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood17b9c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-mood36cbd",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "線上聊再久，神經系統不買單",
+          "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood4ff93",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-moodd4ab0",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "Anchor、Island、Wave：你是哪一種？",
+          "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-moodeba66",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood1e905",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "把對方「登錄」進你大腦的安全清單",
+          "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Stan Tatkin 是 PACT（Psychobiological Approach to Couple Therapy）的創立者，臨床心理學博士（PsyD）兼婚姻家庭治療師（MFT）",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy (PACT)."
+        },
+        {
+          "claim": "Tatkin 於 2010 年與妻子 Tracey Boldemann-Tatkin 博士共同創立 PACT Institute",
+          "source": "https://www.pactinstitute.com/about",
+          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
+        },
+        {
+          "claim": "Tatkin 兼任 UCLA David Geffen School of Medicine 的助理臨床教授",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "He is an assistant clinical professor at UCLA David Geffen School of Medicine."
+        },
+        {
+          "claim": "《Wired for Love》由 New Harbinger Publications 於 2012 年出版",
+          "source": "https://www.newharbinger.com/9781608820580/wired-for-love/",
+          "quote": "Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship. New Harbinger Publications, 2012."
+        },
+        {
+          "claim": "《Wired for Love》已售出超過 170,000 冊",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Wired for Love has sold over 170,000 copies."
+        },
+        {
+          "claim": "Tatkin 的 TEDx 演講累計觀看人次已超過 170 萬",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "His TEDx talk has been viewed over 1.7 million times."
+        },
+        {
+          "claim": "2012 年 Pascal Vrticka 等人的研究發現，焦慮型依附個體在社會評估任務中，前額葉皮質與杏仁核之間的功能性連結顯著降低",
+          "source": "https://academic.oup.com/scan/article/7/3/290/1573643",
+          "quote": "Anxiously attached individuals showed reduced functional connectivity between the prefrontal cortex and the amygdala during social evaluation tasks."
+        },
+        {
+          "claim": "人類杏仁核病變會損害威脅優先處理能力，提供了杏仁核對回應迫在眉睫的危險具有因果角色的首個直接證據",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/21390292/",
+          "quote": "Patients with bilateral amygdala damage failed to show the normal threat-priority effect, providing the first direct evidence for a causal role of the amygdala in responding to imminent danger."
+        },
+        {
+          "claim": "伴侶是彼此的「生物存活單位（biological survival unit）」",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin describes couples as a biological survival unit — each person's primary attachment figure and the one they can always count on."
+        },
+        {
+          "claim": "Tatkin 使用 Anchor（錨型）、Island（島型）、Wave（浪型）三個標籤描述依附風格，不將任何一種類型描繪為有缺陷",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Tatkin describes three attachment styles — Anchor, Island, and Wave — and emphasizes that no type is inherently flawed; each develops from personal history and can thrive in relationship with the right understanding."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
+          "slides": {
+            "1": {
+              "heading": "吵架前，你的大腦已經先輸了",
+              "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。"
+            },
+            "2": {
+              "heading": "那個「無緣無故的煩躁」其實有原因",
+              "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。"
+            },
+            "3": {
+              "heading": "杏仁核比你更快開口",
+              "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
+            },
+            "4": {
+              "heading": "焦慮型依附的神經特徵",
+              "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
+            },
+            "5": {
+              "heading": "愛不是找到的，是練出來的",
+              "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications."
+            },
+            "6": {
+              "heading": "線上聊再久，神經系統不買單",
+              "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。"
+            },
+            "7": {
+              "heading": "Anchor、Island、Wave：你是哪一種？",
+              "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。"
+            },
+            "8": {
+              "heading": "把對方「登錄」進你大腦的安全清單",
+              "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-25T18:20:24+08:00",
+      "rendered_lines": {
+        "1": [
+          "吵架前，你的大腦已經先輸了",
+          "",
+          "〖吵架前，你的大腦已經先輸了〗",
+          "那場架還沒開始",
+          "你的身體早就備戰了",
+          "心跳加速、肩膀緊繃",
+          "嘴裡冒出一句連自己都沒預料到的話",
+          "不是你們不合適",
+          "是你的神經系統還不認識他",
+          "大腦優先為生存設計",
+          "不是為愛設計的",
+          "但這件事，可以改變"
+        ],
+        "2": [
+          "那個「無緣無故的煩躁」其實有原因",
+          "",
+          "他只是把杯子放錯地方",
+          "你卻突然很想哭",
+          "她只是回了一個「哦」",
+          "你卻開始反覆回放她的語氣",
+          "不是你太敏感",
+          "是你的大腦把對方的小動作",
+          "讀成了威脅信號",
+          "PACT 模型說",
+          "小衝突感覺像大威脅",
+          "是因為你們的神經系統",
+          "還在學習調節彼此",
+          "這不是性格問題，是生物問題"
+        ],
+        "3": [
+          "杏仁核比你更快開口",
+          "",
+          "你以為你在「冷靜思考」",
+          "但杏仁核早就出手了",
+          "在你決定「算了別吵」之前",
+          "心跳已經加速",
+          "肌肉已經備戰",
+          "這場衝突在你開口前就開始了",
+          "Tatkin",
+          "我們感到不安全時",
+          "會在反思之前就先反應",
+          "對象正好是我們最在乎的人",
+          "資料來源：Feinstein JS et al. (2011), Current Biology",
+          "— amygdala causal role in responding to imminent",
+          "danger. PubMed ID: 21390292"
+        ],
+        "4": [
+          "焦慮型依附的神經特徵",
+          "",
+          "Vrticka 等人 2012 年研究發現",
+          "焦慮型依附的人",
+          "大腦「理性煞車」",
+          "對「情緒油門」的控制力",
+          "顯著更弱",
+          "為什麼在最親近的人面前",
+          "反而最容易失控",
+          "因為親密關係本身",
+          "就是高喚醒狀態",
+          "你的神經系統一直在高速運轉",
+          "這不是你的錯，是你大腦的設計",
+          "資料來源：Vrticka P et al. (2012), Social Cognitive",
+          "and Affective Neuroscience, Vol. 7(3)"
+        ],
+        "5": [
+          "愛不是找到的，是練出來的",
+          "",
+          "Stan Tatkin 在《Wired for Love》裡說",
+          "伴侶是彼此的",
+          "生物存活單位",
+          "關係不是「找到對的人就自動運作」",
+          "而是兩個神經系統",
+          "學習把對方辨識為「安全」",
+          "的過程",
+          "大腦透過一次次親身接觸",
+          "把對方的臉、聲音、觸感",
+          "登錄為安全信號",
+          "這需要面對面，反覆地練",
+          "資料來源：Tatkin S. (2012). Wired for Love. New",
+          "Harbinger Publications"
+        ],
+        "6": [
+          "線上聊再久，神經系統不買單",
+          "",
+          "聊再多訊息",
+          "你的神經系統都不買單",
+          "大腦靠的是",
+          "眼神、聲音的溫度",
+          "對方離你多近的體感",
+          "和你們共同在場的那些片刻",
+          "——來學習把對方辨識為安全",
+          "催產素、多巴胺這些連結機制",
+          "在面對面互動中啟動的強度",
+          "遠高於數位溝通",
+          "Lava 選擇線下優先",
+          "不是反科技",
+          "是因為大腦就是這樣運作的"
+        ],
+        "7": [
+          "Anchor、Island、Wave：你是哪一種",
+          "",
+          "你是哪一種",
+          "⚓ Anchor 錨型 — 安全依附",
+          "🏝 Island 島型 — 迴避型",
+          "🌊 Wave 浪型 — 焦慮型",
+          "Tatkin 說",
+          "沒有哪一型是壞的",
+          "每一種都是你從成長經驗中",
+          "發展出來的生存策略",
+          "問題從來不是你是哪一型",
+          "而是你有沒有讓對方的神經系統",
+          "學會你是安全的",
+          "任何組合，都可以建立安全感"
+        ],
+        "8": [
+          "把對方「登錄」進你大腦的安全清單",
+          "",
+          "把對方「登錄」進你大腦的安全清單",
+          "——Tatkin 說，這需要每天練習",
+          "👁 重聚時，給一個真實的眼神接觸",
+          "🌬 爭吵前，先深呼吸三次",
+          "　　讓前額葉有機會介入",
+          "📵 重要的情緒，不要用訊息處理",
+          "　　改約一次面對面",
+          "伴侶泡泡（couple bubble）",
+          "不是浪漫的隱喻",
+          "是有神經生物學基礎的日常練習",
+          "重複。然後再重複",
+          "這就是你們建立安全感的方式"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": false,
+        "counts": {
+          "破折號": 12,
+          "赦免式安慰": 1
+        },
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "標題",
+            "line": "標題：…到對的人」就不用努力——但神經科學說，愛情是…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第1張內文",
+            "line": "第1張內文：…。  不是你們不合適—— 是你的神經系統還不…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第2張內文",
+            "line": "第2張內文：…氣。  不是你太敏感—— 是你的大腦把對方的…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第3張內文",
+            "line": "第3張內文：…決定「算了別吵」之前—— 心跳已經加速 肌肉…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第3張內文",
+            "line": "第3張內文：…會在反思之前就先反應—— 對象正好是我們最在…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第4張內文",
+            "line": "第4張內文：…本身 就是高喚醒狀態—— 你的神經系統一直在…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "warn",
+            "rule": "赦免式安慰",
+            "where": "第4張內文",
+            "line": "第4張內文：…統一直在高速運轉。 這不是你的錯，是你大腦的設計。 …",
+            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第5張內文",
+            "line": "第5張內文：…到對的人就自動運作」—— 而是兩個神經系統 …",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第6張內文",
+            "line": "第6張內文：…共同在場的那些片刻 ——來學習【把對方辨識為…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第7張內文",
+            "line": "第7張內文：…： 沒有哪一型是壞的—— 每一種都是你從成長…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第7張內文",
+            "line": "第7張內文：…題從來不是你是哪一型—— 而是你有沒有讓對方…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第8張內文",
+            "line": "第8張內文：…進你大腦的安全清單 ——Tatkin 說，這…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          },
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "第8張內文",
+            "line": "第8張內文：…e） 不是浪漫的隱喻—— 是有神經生物學基礎…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-08-25T18:51:00+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2012 年」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究發現」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「Stan Tatkin 說：你以為「找到對的人」就不用」沒有對應出處（人物引述）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260824-重陽節今天熱搜但你知道孤",
+      "topic": "重陽節今天熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是 25 到 35 歲？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eypznm0",
+      "created_at": null,
+      "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood09e98",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：UC San Diego Today",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moodcdeab",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            }
+          ],
+          "final_src": null,
+          "heading": "重陽節，全台灣都在關心老人",
+          "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood5f74f",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood24a30",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            }
+          ],
+          "final_src": null,
+          "heading": "下班回家，那段靜默叫什麼",
+          "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-3a.webp",
+              "kind": "still",
+              "source_label": "UC San Diego Today",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "研究說：20 歲，才是孤獨的高峰",
+          "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Euphoria"
+            }
+          ],
+          "final_src": null,
+          "heading": "你的 IG 正在讓你更孤獨",
+          "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-mood3a803",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-mooda7e6c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "為什麼老年人反而不孤獨？",
+          "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood19a83",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven"
+            }
+          ],
+          "final_src": null,
+          "heading": "出社會之後，社交圈急速萎縮",
+          "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-moode9cf7",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mood0787a",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "孤獨感的核心，是深度連結太少",
+          "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-moodb1532",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood84f12",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "今天替老人過節，也替自己看見一件事",
+          "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "2020 年 UC San Diego 醫學院的 Dilip Jeste 與 Tanya Nguyen 團隊，對全美 2,843 名 20 至 69 歲成年人進行調查，發表於 International Psychogeriatrics",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "The study, published online Nov. 10, 2020 in the International Psychogeriatrics, surveyed 2,843 adults between the ages of 20 and 69"
+        },
+        {
+          "claim": "孤獨感在 20 歲世代達到最高峰，在 60 歲世代反而最低",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness was highest in young adults in their 20s and lowest in those in their 60s"
+        },
+        {
+          "claim": "研究使用 UCLA Loneliness Scale 量測孤獨程度",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Participants completed the UCLA Loneliness Scale, the San Diego Wisdom Scale, and other psychosocial measures"
+        },
+        {
+          "claim": "較低的自我效能感可能導致更強的孤獨感",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Lower self-efficacy may result in greater loneliness"
+        },
+        {
+          "claim": "孤獨感與智慧之間存在強烈的負相關",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "Loneliness and wisdom were strongly and inversely related"
+        },
+        {
+          "claim": "台灣 12 歲以上網路族中有 95.1% 曾使用社群媒體；18 至 29 歲是最活躍族群，每天花費近 6 小時在社群媒體上",
+          "source": "https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s",
+          "quote": "【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位；下版更新前編輯須自行確認中研院資料庫原始頁面連結"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "但 2020 年 UC San Diego 的研究說：人生中孤獨感最強烈的，不是 60 歲，是你現在這個年紀。\n\n研究者用 UCLA Loneliness Scale 量測了全美 2,843 名成年人，結論讓所有人都愣住了。\n\n研究告訴我們，20 歲世代孤獨感的成因之一，是社群媒體上的比較與淺度連結。\nLava 的出發點很簡單：線上聊天確認對方還活著，線下見面才是真正的相遇。\n研究指出，深度連結的匱乏是孤獨感的核心成因；真實地出現在彼此的生活裡，是你可以主動選擇的一步。\n\n#孤獨 #交友軟體 #重陽節 #約會 #孤獨感 #社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #Lava交友 #不聊天的交友軟體 #線下約會 #孤獨悖論 #真實連結",
+          "slides": {
+            "1": {
+              "heading": "重陽節，全台灣都在關心老人",
+              "display_copy": "重陽節\n全台灣都在關心老人\n\n但 2020 年 UC San Diego 研究\n調查 2,843 名成年人\n用 UCLA Loneliness Scale 量測孤獨感\n\n結論讓所有人都愣住了：\n\n〖最孤獨的年紀，是你現在〗"
+            },
+            "2": {
+              "heading": "下班回家，那段靜默叫什麼",
+              "display_copy": "下班回家，關上門\n整個房間只剩你一個人的呼吸聲\n\n滑開 IG，看見別人的聚餐合照\n按了個愛心，放下手機\n比剛才【更安靜】\n\n舊友漸漸只剩按讚\n連絡也變成「確認對方還活著」\n\n這不叫寂寞\n這叫【無處投靠的空虛感】"
+            },
+            "3": {
+              "heading": "研究說：20 歲，才是孤獨的高峰",
+              "display_copy": "2020 年 UC San Diego 研究\n調查 2,843 名成年人\n使用 UCLA Loneliness Scale 量測\n\n孤獨感【最高峰】：20 歲世代\n孤獨感【最低點】：60 歲世代\n\n研究者稱之為「孤獨悖論」\n你以為老了才孤獨\n但你現在就已經是高峰\n\n資料來源：Jeste & Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "4": {
+              "heading": "你的 IG 正在讓你更孤獨",
+              "display_copy": "為什麼 20 歲世代最孤獨？\n\n研究者 Tanya Nguyen 直接點名：\n「持續在社群上比較自己\n在意按讚數與追蹤數\n導致更強的孤獨感」\n\n台灣 12 歲以上網路族 95.1% 使用社群媒體\n18–29 歲族群每天【近 6 小時】滑社群\n按讚取代了對話，限動回覆取代了見面\n研究指出這種淺度互動反而加重孤獨感\n\n資料來源：數位發展部 2024；中研院臺灣傳播調查資料庫；Nguyen et al., International Psychogeriatrics, 2020"
+            },
+            "5": {
+              "heading": "為什麼老年人反而不孤獨？",
+              "display_copy": "為什麼 60 歲世代孤獨感最低？\n\n研究者 Dilip Jeste 的發現：\n孤獨感與「智慧」存在\n【強烈且持續的負相關】\n\n尤其是智慧中的同理心成分\n越能理解他人，越不孤獨\n\n社交圈未必更大\n隨年齡累積的智慧\n讓他們更能與自己及他人共處\n\n資料來源：Jeste et al., International Psychogeriatrics, 2020"
+            },
+            "6": {
+              "heading": "出社會之後，社交圈急速萎縮",
+              "display_copy": "畢業之後，認識新朋友的門\n一道道關上\n\n沒有宿舍、社團、同班同學\n沒有「結構性的相遇機會」\n\n舊友漸漸只剩按讚\n新朋友幾乎沒有在認識\n\n30 歲前後的社交斷層\n幾乎【每個台灣年輕人都在經歷】\n只是很少人說出口"
+            },
+            "7": {
+              "heading": "孤獨感的核心，是深度連結太少",
+              "display_copy": "孤獨感的核心是什麼？\n\n研究指出：深度連結的匱乏\n是孤獨感最關鍵的成因\n\n按讚取代了對話，限動回覆取代了見面，\n這種淺度的社群互動反而會加重孤獨感\n\nLava 的出發點很簡單：\n線上聊天確認對方還活著\n線下見面才是真正的相遇\n\n【真實地出現在彼此的生活裡】\n是你可以主動選擇的一步"
+            },
+            "8": {
+              "heading": "今天替老人過節，也替自己看見一件事",
+              "display_copy": "重陽節，我們記得長輩\n\n但 2020 年 UC San Diego 研究說：\n最孤獨的，是 20 歲世代\n\nJeste 的研究顯示\n這個年齡幾乎普遍承受著孤獨\n只是很少人說出口\n\n承認它，是誠實\n從誠實出發，才有機會真實連結\n\n〖你值得被真實地看見〗"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-08-25T18:50:39+08:00",
+      "rendered_lines": {
+        "1": [
+          "重陽節，全台灣都在關心老人",
+          "",
+          "重陽節",
+          "全台灣都在關心老人",
+          "但 2020 年 UC San Diego 研究",
+          "調查 2,843 名成年人",
+          "用 UCLA Loneliness Scale 量測孤獨感",
+          "結論讓所有人都愣住了",
+          "〖最孤獨的年紀，是你現在〗"
+        ],
+        "2": [
+          "下班回家，那段靜默叫什麼",
+          "",
+          "下班回家，關上門",
+          "整個房間只剩你一個人的呼吸聲",
+          "滑開 IG，看見別人的聚餐合照",
+          "按了個愛心，放下手機",
+          "比剛才更安靜",
+          "舊友漸漸只剩按讚",
+          "連絡也變成「確認對方還活著」",
+          "這不叫寂寞",
+          "這叫無處投靠的空虛感"
+        ],
+        "3": [
+          "研究說：20 歲，才是孤獨的高峰",
+          "",
+          "2020 年 UC San Diego 研究",
+          "調查 2,843 名成年人",
+          "使用 UCLA Loneliness Scale 量測",
+          "孤獨感最高峰：20 歲世代",
+          "孤獨感最低點：60 歲世代",
+          "研究者稱之為「孤獨悖論」",
+          "你以為老了才孤獨",
+          "但你現在就已經是高峰",
+          "資料來源：Jeste & Nguyen et al., International",
+          "Psychogeriatrics, 2020"
+        ],
+        "4": [
+          "你的 IG 正在讓你更孤獨",
+          "",
+          "為什麼 20 歲世代最孤獨",
+          "研究者 Tanya Nguyen 直接點名",
+          "「持續在社群上比較自己",
+          "在意按讚數與追蹤數",
+          "導致更強的孤獨感」",
+          "台灣 12 歲以上網路族 95.1% 使用社群媒體",
+          "18–29 歲族群每天近 6 小時滑社群",
+          "按讚取代了對話，限動回覆取代了見面",
+          "研究指出這種淺度互動反而加重孤獨感",
+          "資料來源：數位發展部 2024；中研院臺灣傳播調查資",
+          "料庫；Nguyen et al., International Psychogeriatrics",
+          "2020"
+        ],
+        "5": [
+          "為什麼老年人反而不孤獨",
+          "",
+          "為什麼 60 歲世代孤獨感最低",
+          "研究者 Dilip Jeste 的發現",
+          "孤獨感與「智慧」存在",
+          "強烈且持續的負相關",
+          "尤其是智慧中的同理心成分",
+          "越能理解他人，越不孤獨",
+          "社交圈未必更大",
+          "隨年齡累積的智慧",
+          "讓他們更能與自己及他人共處",
+          "資料來源：Jeste et al., International Psychogeriatrics",
+          "2020"
+        ],
+        "6": [
+          "出社會之後，社交圈急速萎縮",
+          "",
+          "畢業之後，認識新朋友的門",
+          "一道道關上",
+          "沒有宿舍、社團、同班同學",
+          "沒有「結構性的相遇機會」",
+          "舊友漸漸只剩按讚",
+          "新朋友幾乎沒有在認識",
+          "30 歲前後的社交斷層",
+          "幾乎每個台灣年輕人都在經歷",
+          "只是很少人說出口"
+        ],
+        "7": [
+          "孤獨感的核心，是深度連結太少",
+          "",
+          "孤獨感的核心是什麼",
+          "研究指出：深度連結的匱乏",
+          "是孤獨感最關鍵的成因",
+          "按讚取代了對話，限動回覆取代了見面",
+          "這種淺度的社群互動反而會加重孤獨感",
+          "Lava 的出發點很簡單",
+          "線上聊天確認對方還活著",
+          "線下見面才是真正的相遇",
+          "真實地出現在彼此的生活裡",
+          "是你可以主動選擇的一步"
+        ],
+        "8": [
+          "今天替老人過節，也替自己看見一件事",
+          "",
+          "重陽節，我們記得長輩",
+          "但 2020 年 UC San Diego 研究說",
+          "最孤獨的，是 20 歲世代",
+          "Jeste 的研究顯示",
+          "這個年齡幾乎普遍承受著孤獨",
+          "只是很少人說出口",
+          "承認它，是誠實",
+          "從誠實出發，才有機會真實連結",
+          "你值得被真實地看見"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-25T18:50:44+08:00",
+        "pass": false,
+        "counts": {
+          "破折號": 1
+        },
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "破折號",
+            "where": "標題",
+            "line": "標題：…重陽節今天熱搜——但你知道「孤獨感」的…",
+            "fix": "刪掉破折號。前半句收句號，後半句自己成句；或改成冒號。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-08-25T18:51:01+08:00",
+        "pass": false,
+        "claims": 14,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤獨的其實是」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「，最孤獨的其實是 25 到 35 歲？ 但 2020 年 UC」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「#社交焦慮 #台灣單身 #30歲 #心理健康 #深度連結 #」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「12 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「29 歲」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「讚 新朋友幾乎沒有在認識  30 歲前後的社交斷層 幾乎每個台灣」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「95.1%」的數字在出處頁面裡找不到：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「熱搜——但你知道「孤獨感」的研究說，65 歲以上最不孤獨，最孤」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「，線下見面才是真正的相遇。 研究指出，深度連結的匱乏是孤獨感的核」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
           }
         ]
       }

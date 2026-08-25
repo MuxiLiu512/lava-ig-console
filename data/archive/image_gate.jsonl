@@ -277,3 +277,6 @@
 {"ts": "2026-08-25T18:30:16+08:00", "post_id": "20260825-結婚條件今天在PTT推爆", "slide": 7, "file": "slide7-TerraceHouse-1.jpg", "reason": "low_res", "metrics": {"w": 512, "h": 288, "bytes": 31179}}
 {"ts": "2026-08-25T18:30:16+08:00", "post_id": "20260825-結婚條件今天在PTT推爆", "slide": 7, "file": "slide7-TerraceHouse-2.jpg", "reason": "low_res", "metrics": {"w": 512, "h": 288, "bytes": 40803}}
 {"ts": "2026-08-25T18:30:17+08:00", "post_id": "20260825-結婚條件今天在PTT推爆", "slide": 7, "file": "slide7-TerraceHouse-3.jpg", "reason": "low_res", "metrics": {"w": 512, "h": 288, "bytes": 21647}}
+{"ts": "2026-08-25T18:50:12+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-1.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 155571}}
+{"ts": "2026-08-25T18:50:12+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-2.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 113255}}
+{"ts": "2026-08-25T18:50:15+08:00", "post_id": "20260825-白夜行", "slide": 6, "file": "slide6-Mother-3.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 93139, "bpp": 0.0449}}
