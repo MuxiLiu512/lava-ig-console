@@ -40,6 +40,14 @@
       "seconds": 109,
       "pending": 0,
       "slides": 9
+    },
+    {
+      "post_id": "20260824-CarlRogers說你",
+      "ts": "2026-08-25T16:28:26+08:00",
+      "decision": "reject",
+      "seconds": 36,
+      "pending": 2,
+      "slides": 9
     }
   ]
 }
