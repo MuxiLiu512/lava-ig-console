@@ -5783,7 +5783,11 @@
           "final_src": null,
           "heading": "但 Kai Cenat 說：TikTok「殺死」了 rizz 原本的意思",
           "display_copy": "Rizz 最紅的時候，發明人 Kai Cenat 說\n他自己【已經不用這個詞了】\n\nTikTok「殺死」了它原本的意思\n\n它從描述真實互動能力的詞\n變成了人人在螢幕後宣稱擁有\n卻永遠不需要兌現的標籤\n\nRizz 只能在【真實見面裡被感知】\n\n資料來源：Complex",
-          "default_cid": "a"
+          "default_cid": "a",
+          "crop_focus": [
+            0.569,
+            0.5
+          ]
         },
         {
           "n": 7,
