@@ -5723,7 +5723,11 @@
           "final_src": null,
           "heading": "洛桑大學的實驗：魅力訓練後，有人進步了 60%",
           "display_copy": "洛桑大學教授 John Antonakis 的實驗\n\n找來沒有演講經驗的 MBA 學生\n教他們【12 項魅力戰術（CLT）】\n\n部分人的魅力評分提升了【多達 60%】\n\n他的結論：魅力更像一種可學的技能\n不是你天生有或沒有的東西\n\n資料來源：Psychology Today, 2019",
-          "default_cid": "a"
+          "default_cid": "a",
+          "crop_focus": [
+            0.047,
+            0.5
+          ]
         },
         {
           "n": 5,
