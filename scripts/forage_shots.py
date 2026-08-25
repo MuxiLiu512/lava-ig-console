@@ -250,11 +250,66 @@ def grab_browser(url, work):
     return [(out, st)], rejects
 
 
+def _apify_images(query, want):
+    """Apify Google Images → [{m: 原圖URL, t: 縮圖URL, w, h}]。沒設 token 就回空，交給 DDG 備援。
+
+    為什麼換掉 DuckDuckGo〔2026-08-25 Jesse 退件：「來源看起來就沒有上網找過，
+    不是媒體的品質」〕：舊版刮的是 DDG 的未公開 i.js 端點，要先從 HTML 撈 vqd token，
+    對方一改版就整條斷；而且 DDG 的圖片索引本來就比 Google 弱，排序差＝相關性差。
+    Apify 走正式 API、回傳真實長寬，可以在下載前就濾掉小圖。
+    """
+    tok = _sync_get("apify_token")
+    if not tok:
+        return []
+    actor = _sync_get("apify_image_actor") or "hooli~google-images-scraper"
+    url = ("https://api.apify.com/v2/acts/%s/run-sync-get-dataset-items?token=%s"
+           % (actor, tok))
+    body = json.dumps({"queries": [query], "maxResultsPerQuery": max(want * 3, 20)}).encode()
+    req = Request(url, data=body, headers={"Content-Type": "application/json"})
+    try:
+        with urlopen(req, timeout=120) as r:
+            rows = json.load(r)
+    except Exception as e:
+        sys.stderr.write("  ! Apify 圖搜失敗（%s），改用備援\n" % type(e).__name__)
+        return []
+    out = []
+    for x in rows if isinstance(rows, list) else []:
+        m = x.get("imageUrl") or x.get("image") or ""
+        t = x.get("thumbnailUrl") or x.get("thumbnail") or m
+        w = int(x.get("imageWidth") or x.get("width") or 0)
+        h = int(x.get("imageHeight") or x.get("height") or 0)
+        if m and w >= 850:
+            out.append({"m": m, "t": t, "w": w, "h": h})
+    return out
+
+
+def _sync_get(key):
+    """讀 .sync.json 的設定值。token 永遠只在本機，不進 repo。"""
+    try:
+        with open(os.path.join(REPO, ".sync.json"), encoding="utf-8") as f:
+            return json.load(f).get(key) or ""
+    except Exception:
+        return ""
+
+
 def grab_imagesearch(query, work, want=6, source_type="mood"):
     """圖片搜尋（Bing Images via browse daemon）→ 抓 top N 原圖並驗證。
     視覺企劃層 v2.2：人物多場合照/情緒場景圖/持書照都靠這個（wknd 的 art direction 做法）。"""
     cands, rejects = [], []
+    STOCK_BLOCK = ("alamy.", "gettyimages.", "shutterstock.", "istockphoto.", "dreamstime.",
+                   "123rf.", "depositphotos.", "freepik.", "vecteezy.", "stock.adobe.",
+                   "qiantucdn.", "58pic.", "nipic.", "mindframe.", "magnific.", "canva.",
+                   "envato.", "pond5.", "bigstockphoto.", "shutterfly.", "photodune.", "stocksy.")
+    # 主要來源：Apify Google Images（排序品質遠勝 DDG）。沒 token 或失敗就落到下面的備援。
+    pairs = [x for x in _apify_images(query, want)
+             if not any(sb in x["m"] for sb in STOCK_BLOCK)]
+    if pairs:
+        src_name = "apify"
+    else:
+        src_name = "ddg"
     try:
+        if pairs:
+            raise StopIteration          # 已有 Apify 結果，跳過備援
         from urllib.parse import quote
         # DuckDuckGo Images API：l=us-en 鎖美區（Bing 會被 geo/cookies 蓋掉 mkt 而撈回中文商用圖庫）；
         # thumbnail 走 DDG 官方代理必可抓（縮圖先策展），image=原圖 URL 供勝者抓取；附原始寬高可預濾
@@ -263,12 +318,6 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
         if not mv:
             return [], [(query[:40], "ddg vqd 不可得")]
         j = json.loads(_fetch("https://duckduckgo.com/i.js?l=us-en&o=json&q=%s&vqd=%s&f=,,,&p=1" % (quote(query), mv.group(1))).decode(errors="ignore"))
-        STOCK_BLOCK = ("alamy.", "gettyimages.", "shutterstock.", "istockphoto.", "dreamstime.",
-                       "123rf.", "depositphotos.", "freepik.", "vecteezy.", "stock.adobe.",
-                       "qiantucdn.", "58pic.", "nipic.",
-                       # 2026-08-10 補：滿版平鋪浮水印，成篇總檢才抓到（縮圖策展看不出）
-                       "mindframe.", "magnific.", "canva.", "envato.", "pond5.",
-                       "bigstockphoto.", "shutterfly.", "photodune.", "stocksy.")   # 圖庫預覽必帶浮水印，512px 縮圖下策展員會看漏
         pairs = []
         for res in j.get("results", []):
             img_u = res.get("image") or ""
@@ -278,8 +327,13 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
                 pairs.append({"m": img_u, "t": res["thumbnail"]})
             if len(pairs) >= want * 3:
                 break
+    except StopIteration:
+        pass
     except Exception as e:
-        return [], [(query[:40], "圖搜:%s" % type(e).__name__)]
+        if not pairs:
+            return [], [(query[:40], "圖搜:%s" % type(e).__name__)]
+    if pairs:
+        sys.stderr.write("    圖搜來源 %s：%d 筆\n" % (src_name, len(pairs)))
     # 縮圖先行：staging 用 Bing 縮圖（永遠抓得到→無「盜連站倖存偏差」），策展勝出後才抓原圖
     for it in pairs:
         if len(cands) >= want:
