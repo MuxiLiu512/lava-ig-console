@@ -54,8 +54,19 @@ body.bd{ margin:0; max-width:none; width:100%; height:100vh; overflow:hidden;
   </div>
   <div class="bd-main" id="bdMain"></div>
   <div class="bd-drawer" id="bdDrawer"></div>
-  <script src="config.js"></script>
-  <script src="core.js"></script>
-  <script src="board.js"></script>
+  <script>
+  // 每次載入都帶時間戳取新檔。GitHub Pages 給靜態資產 Cache-Control: max-age=600，
+  // 於是「我修好了、你重整卻沒變化」重複發生了兩次（Jesse 2026-08-24、08-25）——
+  // 修的是對的，看到的是十分鐘前的舊程式。單人內部工具，正確性遠比快取重要。
+  // async=false 保證動態插入的 script 仍照順序執行（config → core → 頁面）。
+  (function () {
+    var v = "?v=" + Date.now();
+    ["config.js", "core.js", "board.js"].forEach(function (f) {
+      var s = document.createElement("script");
+      s.src = f + v; s.async = false;
+      document.head.appendChild(s);
+    });
+  })();
+  </script>
 </body>
 </html>
