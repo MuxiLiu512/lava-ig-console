@@ -511,6 +511,22 @@
       "scope": null,
       "feedback": "照片是舊版的，品質太低",
       "consumed": false
+    },
+    {
+      "id": "R-mt8edvfi",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-25T16:23:09+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "這是舊的內容，不需要這種排版形式",
+      "consumed": false
     }
   ]
 }
