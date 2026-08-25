@@ -527,6 +527,25 @@
       "scope": null,
       "feedback": "這是舊的內容，不需要這種排版形式",
       "consumed": false
+    },
+    {
+      "id": "R-mt8eggjx",
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-08-25T16:25:09+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "i",
+        "2": "a",
+        "3": "a",
+        "4": "e",
+        "5": "b",
+        "6": "b",
+        "7": "c",
+        "8": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
