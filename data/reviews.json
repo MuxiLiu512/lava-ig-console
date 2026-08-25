@@ -546,6 +546,25 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mt8ejo9o",
+      "post_id": "20260824-Rizz進了牛津詞典但r",
+      "ts": "2026-08-25T16:27:39+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "b",
+        "3": "d",
+        "4": "c",
+        "5": "a",
+        "6": "a",
+        "7": "c",
+        "8": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
