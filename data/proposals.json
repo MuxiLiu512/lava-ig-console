@@ -104,6 +104,84 @@
       "status": "pending",
       "created_at": "2026-08-25T18:37:40+08:00",
       "decided_at": null
+    },
+    {
+      "pid": "P-20260825-01",
+      "risk": "high",
+      "title": "依回饋調整：文案不過關，跟母胎單身關聯性較低",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性較低",
+      "evidence": [
+        "review R-mrywcuj3 feedback",
+        "分類：copy_tone"
+      ],
+      "status": "pending",
+      "created_at": "2026-08-25T18:50:08+08:00",
+      "decided_at": null
+    },
+    {
+      "pid": "P-20260825-02",
+      "risk": "high",
+      "title": "依回饋調整：文案不過關，跟母胎單身好像關聯性低",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身好像關聯性低",
+      "evidence": [
+        "review R-mrywdupl feedback",
+        "分類：copy_tone"
+      ],
+      "status": "pending",
+      "created_at": "2026-08-25T18:50:08+08:00",
+      "decided_at": null
+    },
+    {
+      "pid": "P-20260825-03",
+      "risk": "high",
+      "title": "依回饋調整：文案不過關，跟母胎單身關聯性低",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性低",
+      "evidence": [
+        "review R-mrywebga feedback",
+        "分類：copy_tone"
+      ],
+      "status": "pending",
+      "created_at": "2026-08-25T18:50:08+08:00",
+      "decided_at": null
+    },
+    {
+      "pid": "P-20260825-04",
+      "risk": "high",
+      "title": "依回饋調整：使用過多劇照，但劇照跟文案內容不相符、低關聯",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：使用過多劇照，但劇照跟文案內容不相符、低關聯",
+      "evidence": [
+        "review R-ms4poznb feedback",
+        "分類：copy_tone"
+      ],
+      "status": "pending",
+      "created_at": "2026-08-25T18:50:08+08:00",
+      "decided_at": null
+    },
+    {
+      "pid": "P-20260825-05",
+      "risk": "high",
+      "title": "依回饋調整：v2 重做：沿用初版選圖，套用修復後引擎（缺字備",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。",
+      "evidence": [
+        "review R-v2-kawaguchi feedback",
+        "分類：copy_tone"
+      ],
+      "status": "pending",
+      "created_at": "2026-08-25T18:50:08+08:00",
+      "decided_at": null
+    },
+    {
+      "pid": "P-20260825-06",
+      "risk": "high",
+      "title": "依回饋調整：這是舊的內容，不需要這種排版形式",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：這是舊的內容，不需要這種排版形式",
+      "evidence": [
+        "review R-mt8edvfi feedback",
+        "分類：layout"
+      ],
+      "status": "pending",
+      "created_at": "2026-08-25T18:50:08+08:00",
+      "decided_at": null
     }
   ]
 }

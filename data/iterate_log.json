@@ -114,6 +114,57 @@
         "metrics_window": "2026-08-25"
       },
       "rollback_of": null
+    },
+    {
+      "v": "cfg-008",
+      "date": "2026-08-25",
+      "commit": "f650ae9",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 照片是舊版的，品質太低"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mt7bi9qb"
+        ],
+        "metrics_window": "2026-07-11–2026-07-12"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-009",
+      "date": "2026-08-25",
+      "commit": "d56b947",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 素材亂生一通，沒有達到我們要的標準，來源看起來就沒有上網找過，不是媒體的品質"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mt8ekmpg"
+        ],
+        "metrics_window": "2026-07-11–2026-07-12"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-010",
+      "date": "2026-08-25",
+      "commit": "cfc5338",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 素材品質不合格，重複出現已經用過的素材，應該更多搜尋網上高解析度的圖片，可使用 apify 或其他工具"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mt8elsvk"
+        ],
+        "metrics_window": "2026-07-11–2026-07-12"
+      },
+      "rollback_of": null
     }
   ],
   "rollback_requests": []
