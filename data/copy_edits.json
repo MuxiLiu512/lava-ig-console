@@ -3,7 +3,7 @@
     {
       "post_id": "20260716-關係幻覺",
       "ts": "2026-07-24T21:05:46+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 5,
@@ -17,7 +17,7 @@
     {
       "post_id": "20260716-關係幻覺",
       "ts": "2026-07-24T21:06:11+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 5,
@@ -31,7 +31,7 @@
     {
       "post_id": "20260811-川口春奈效應v2",
       "ts": "2026-08-11T15:07:25+08:00",
-      "consumed": false,
+      "consumed": true,
       "by": "claude-proposal",
       "note": "封面 hollow_hook 修正提案（self-check A1）：主標補進主題「心動的臉／冷」，副標改用專有名詞「塩顔」並逐行語意完整。Jesse 可在操控室直接改寫覆蓋。",
       "edits": [
@@ -54,7 +54,7 @@
     {
       "post_id": "20260811-川口春奈效應v2",
       "ts": "2026-08-11T15:29:00+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 1,
@@ -89,7 +89,7 @@
     {
       "post_id": "20260811-川口春奈效應v2",
       "ts": "2026-08-11T16:09:10+08:00",
-      "consumed": false,
+      "consumed": true,
       "by": "jesse-request",
       "note": "Jesse 指定主標分兩行",
       "edits": [
@@ -105,7 +105,7 @@
     {
       "post_id": "20260803-JohnGottman研",
       "ts": "2026-08-12T13:40:55+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 1,
@@ -126,7 +126,7 @@
     {
       "post_id": "20260803-欸你有沒有發現歐美正在流",
       "ts": "2026-08-12T13:48:39+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 1,

@@ -6,8 +6,13 @@
       "commit": "init0000",
       "risk": "low",
       "auto_applied": true,
-      "changes": ["建立 config 初始版本：從風格規格 v1.0+v1.1 與現行 pipeline prompt 萃取"],
-      "trigger": { "reviews": [], "metrics_window": null },
+      "changes": [
+        "建立 config 初始版本：從風格規格 v1.0+v1.1 與現行 pipeline prompt 萃取"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": null
+      },
       "rollback_of": null
     },
     {
@@ -16,8 +21,98 @@
       "commit": "abc1234",
       "risk": "low",
       "auto_applied": true,
-      "changes": ["負面 prompt 追加 'deformed fingers, extra fingers'", "禁用詞 +2：加價、手續費"],
-      "trigger": { "reviews": ["R-20260713-01"], "metrics_window": "07/09–07/15" },
+      "changes": [
+        "負面 prompt 追加 'deformed fingers, extra fingers'",
+        "禁用詞 +2：加價、手續費"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-20260713-01"
+        ],
+        "metrics_window": "07/09–07/15"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-003",
+      "date": "2026-08-25",
+      "commit": "195f44f",
+      "risk": "high",
+      "auto_applied": false,
+      "changes": [
+        "套用提案 P-20260715-01：封面光線配比改 暖:冷 = 7:3"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": null,
+        "proposal": "P-20260715-01"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-004",
+      "date": "2026-08-25",
+      "commit": "260249b",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-manual-aziz-s2fix"
+        ],
+        "metrics_window": "2026-07-11–2026-07-12"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-005",
+      "date": "2026-08-25",
+      "commit": "45f53af",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) slide3 原候選僅 1 張（Gottman 官網截圖，中文壓在英文正文上不可讀，成篇總檢 block）。補抓 per"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-fix-gottman-s3"
+        ],
+        "metrics_window": "2026-07-11–2026-07-12"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-006",
+      "date": "2026-08-25",
+      "commit": "37e5e09",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 成篇總檢 block：第1/2/7/8 張都是情侶近距離同構圖。slide2 改靜物（桌上手機）、slide7 改非情侶"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-fix-nophone-dup"
+        ],
+        "metrics_window": "2026-07-11–2026-07-12"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-007",
+      "date": "2026-08-25",
+      "commit": "20aee6c",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "成效觀察：高「Superlike 是什麼：把心」14.0% / 低「1810180428」1.0%"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": "2026-08-25"
+      },
       "rollback_of": null
     }
   ],
