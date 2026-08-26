@@ -655,6 +655,25 @@
       "scope": null,
       "feedback": "這篇過時了",
       "consumed": false
+    },
+    {
+      "id": "R-mtabhayh",
+      "post_id": "20260824-毛骨悚然的戀愛大結局前朴",
+      "ts": "2026-08-27T00:37:22+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "b",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "圖片請使用新的API, apify",
+      "consumed": false
     }
   ]
 }
