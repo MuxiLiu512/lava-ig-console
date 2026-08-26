@@ -173,7 +173,7 @@
       },
       "scope": "mockup",
       "feedback": "文案不過關，跟母胎單身關聯性較低",
-      "consumed": false
+      "consumed": true
     },
     {
       "id": "R-mrywdupl",
@@ -189,7 +189,7 @@
       },
       "scope": "mockup",
       "feedback": "文案不過關，跟母胎單身好像關聯性低",
-      "consumed": false
+      "consumed": true
     },
     {
       "id": "R-mrywebga",
@@ -205,7 +205,7 @@
       },
       "scope": "base_image",
       "feedback": "文案不過關，跟母胎單身關聯性低",
-      "consumed": false
+      "consumed": true
     },
     {
       "id": "R-mrz0wir4",
@@ -254,7 +254,7 @@
       },
       "scope": "base_image",
       "feedback": "使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "consumed": false,
+      "consumed": true,
       "copy_choice": "claude"
     },
     {
@@ -526,7 +526,7 @@
       },
       "scope": null,
       "feedback": "這是舊的內容，不需要這種排版形式",
-      "consumed": false
+      "consumed": true
     },
     {
       "id": "R-mt8eggjx",
