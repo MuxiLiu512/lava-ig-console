@@ -391,3 +391,6 @@
 {"ts": "2026-08-26T19:01:21+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-1.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 155571}}
 {"ts": "2026-08-26T19:01:21+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-2.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 113255}}
 {"ts": "2026-08-26T19:01:24+08:00", "post_id": "20260825-白夜行", "slide": 6, "file": "slide6-Mother-3.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 93139, "bpp": 0.0449}}
+{"ts": "2026-08-26T22:02:34+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-1.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 155571}}
+{"ts": "2026-08-26T22:02:34+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-2.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 113255}}
+{"ts": "2026-08-26T22:02:37+08:00", "post_id": "20260825-白夜行", "slide": 6, "file": "slide6-Mother-3.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 93139, "bpp": 0.0449}}
