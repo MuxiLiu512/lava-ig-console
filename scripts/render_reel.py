@@ -70,6 +70,18 @@ def _draw_runs_h(im, d, lines, base, y, gap=1.5):
             fs = int(base * r.get("s", 1.0)); f = _font(r.get("f", "brand"), fs)
             yy = y + (maxh - fs)          # 底對齊，大小字同行不飄
             col = COLORS.get(r.get("c", "white"), COLORS["white"])
+            if r.get("hl"):
+                # 螢光筆標記（morning.jason 手法）：不是整塊反白，是一條掃過字下半部的
+                # 半透明色帶，字仍是原色。hl_frac 控制掃過的比例，做出「講到哪標到哪」。
+                # 與 block 的差別：block 是黑底白字（重、單張定格用），
+                # hl 是輕的、可以逐字推進、不改變閱讀節奏（Jesse 2026-08-27 參考素材）。
+                hf = float(r.get("hl_frac", 1.0))
+                hw = max(0, int(w * min(max(hf, 0.0), 1.0)))
+                if hw:
+                    hc = COLORS.get(r["hl"], COLORS.get("neon_green")) if isinstance(r.get("hl"), str) else COLORS["neon_green"]
+                    band = Image.new("RGBA", (hw + int(fs * 0.16), int(fs * 0.52)), hc[:3] + (150,))
+                    im.paste(band, (int(x - fs * 0.08), int(yy + fs * 0.56)), band)
+                    d = ImageDraw.Draw(im)
             if r.get("block"):
                 # 畫重點色塊（Jesse 2026-08-23：混排手寫會錯位，重點改黑塊白字）。
                 # 塊寬跟著當下文字長度，打字時逐步變寬＝螢光筆掃過的感覺。
