@@ -27,6 +27,8 @@ FFPROBE = "/opt/homebrew/bin/ffprobe"
 CURATOR_URL = "https://lavadating.app.n8n.cloud/webhook/lava-ig-curate"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0 Safari/537.36"
 LEARN_FP = os.path.join(DATA, "forage_learnings.json")
+# 暫存路徑 → 搜尋引擎（apify／ddg）。credits 落檔時併進出處字串。
+ENGINE_OF = {}
 NOW = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
 
 
@@ -350,6 +352,10 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
             open(p, "wb").write(data)
             ok, why = _valid_img(p, min_dim=260, min_bytes=6000)   # 縮圖階段放寬；原圖階段再嚴驗
             if ok:
+                # 帶上搜尋引擎：Jesse 2026-08-27 要「標注照片的來源」，
+                # 而且劇照與 Apify 兩條路並存時，要能分辨哪張是誰找來的，
+                # 否則永遠無法比較兩個來源的品質（這正是「看不出差異」的原因）。
+                ENGINE_OF[p] = src_name
                 cands.append((p, source_type, it["m"]))
             else:
                 rejects.append((tu[:40], why))
@@ -740,7 +746,9 @@ def main():
             selfrej += 1
     for n in sorted(resolved):
         for rank_i, c in enumerate(resolved[n]):
-            slug = re.sub(r"[^A-Za-z0-9]+", "", c["source_type"])[:10] + hashlib.md5(c["path"].encode()).hexdigest()[:5]
+            eng = ENGINE_OF.get(c["path"], "")
+            slug = ("ap" if eng == "apify" else "") + \
+                   re.sub(r"[^A-Za-z0-9]+", "", c["source_type"])[:10] + hashlib.md5(c["path"].encode()).hexdigest()[:5]
             is_cover_dual = (n == cover_n and len(winners_all) >= 3)
             letter = ("a" if rank_i == 0 else ("c" if is_cover_dual else "b"))   # 封面：a=hero、b=組圖、c=次選
             fn = "slide%d-SHOT-%s-%s.png" % (n, letter, slug)
@@ -749,7 +757,8 @@ def main():
                 continue
             img = compose(c["path"], c["source_type"], focus.get(c["_cid"]))
             if _write_checked(img, fp, work):
-                credits[fn] = c["credit"]
+                eng = ENGINE_OF.get(c["path"])
+                credits[fn] = c["credit"] + ("（%s）" % {"apify": "Google 圖片", "ddg": "DuckDuckGo"}.get(eng, eng) if eng else "")
                 made += 1
             else:
                 selfrej += 1

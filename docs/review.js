@@ -52,6 +52,21 @@ function renderQueue() {
   });
 }
 
+// 候選圖的來源標籤。source_kind 是機器用的代號，這裡翻成人看得懂的字。
+// -ap 檔名前綴＝Apify（Google 圖片）路線，其餘 SHOT 是策展截圖。
+function srcTag(c) {
+  const f = String(c.src || "");
+  const k = String(c.source_kind || "");
+  if (k === "SHOT") return /-SHOT-[a-z]-ap/.test(f)
+    ? { text: "Google 圖片", color: "#1a73c7" }
+    : { text: "策展截圖", color: "#4b5057" };
+  if (k === "WM") return { text: "Wikimedia", color: "#5a6b3a" };
+  if (k === "OV") return { text: "Open Library", color: "#5a6b3a" };
+  if (k === "DESIGN") return { text: "設計底", color: "#4b5057" };
+  if (c.kind === "generated") return { text: "生成圖", color: "#6b4a7a" };
+  return { text: c.source_label ? String(c.source_label).slice(0, 12) : "劇照", color: "#7a4a2a" };
+}
+
 const srcOfCand = (s, cid) => (((s && s.candidates) || []).find(c => c.cid === cid) || {}).src || null;
 
 // ── 裁切（2026-08-20 Jesse：底圖是 16:9 時要能直接裁）────────────────
@@ -218,8 +233,24 @@ function renderSide() {
         const on = picked === c.cid;
         const w = el("span", on ? "on" : "");
         w.appendChild(img(c.src));
+        // 出處標在圖上，不只放在 hover〔Jesse 2026-08-27：請標注照片的來源〕。
+        // 兩條取圖路線（n8n 劇照工作流／Apify Google 圖片）並存後，
+        // 看得出哪張是誰找來的，才有辦法判斷哪個來源值得留。
+        const src = srcTag(c);
         w.title = (c.source_label || c.source_kind || c.kind || "候選") +
                   (c.low_q ? "（畫質偏低）" : "") + (on ? "／目前選用" : "／點擊選用");
+        const sb = el("b", null, esc(src.text));
+        sb.style.cssText = "position:absolute;left:2px;top:2px;background:" + src.color +
+          ";color:#fff;font-size:9px;padding:0 3px;border-radius:3px;line-height:13px;max-width:92%;" +
+          "overflow:hidden;text-overflow:ellipsis;white-space:nowrap";
+        w.style.position = "relative";
+        w.appendChild(sb);
+        if (c.low_q) {
+          const lq = el("b", null, "低畫質");
+          lq.style.cssText = "position:absolute;right:2px;top:2px;background:#8a5a00;color:#fff;" +
+            "font-size:9px;padding:0 3px;border-radius:3px;line-height:13px";
+          w.appendChild(lq);
+        }
         if (on) {
           const tag = el("b", null, "使用中");
           tag.style.cssText = "position:absolute;left:2px;bottom:2px;background:var(--stage-done,#3fa66a);" +

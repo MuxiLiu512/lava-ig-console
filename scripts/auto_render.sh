@@ -146,7 +146,9 @@ fi
 
 # 截圖策展：新稿的 visual_refs 實地截圖（素材線 v2；在入料前跑，餵入時 SHOT 即在池）
 echo "截圖策展" >"$RUNMARK"
-FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 2>&1)
+# --topup：已有舊圖的 slide 也補抓一輪 Apify 候選，兩來源並存讓 Jesse 比較
+# （2026-08-27：換源後既有稿一張都沒被重抓，所以「看不出品質差異」）。
+FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 --topup 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
 # 學習迴路（每天一次）〔2026-08-25 事故〕

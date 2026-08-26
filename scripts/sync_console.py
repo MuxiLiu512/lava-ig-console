@@ -1678,6 +1678,16 @@ def forage_pending(args):
         bds = [dd for dd in subdirs if "底圖" in os.path.basename(dd) and _topic_match(ntopic, os.path.basename(dd))]
         bd = max(bds, key=os.path.getmtime) if bds else os.path.join(root, "%s %s 底圖" % (date or "20260000", topic_raw[:24]))
         missing = [r for r in refs if not glob.glob(os.path.join(bd, "slide%d-SHOT-*" % r["slide"]))]
+        # 補抓模式〔Jesse 2026-08-27：劇照留著、Apify 也留著，反正每張都有候選〕
+        # 換源前抓好的稿不會再被碰（上面的 missing 判斷會全部跳過），所以 Apify
+        # 至今對既有稿一張都沒貢獻，自然「看不出品質差異」。
+        # 改成：已有舊 SHOT 但還沒有 Apify 版的 slide，也送去抓一輪，兩邊並存讓人比。
+        if args.topup:
+            for r in refs:
+                have = glob.glob(os.path.join(bd, "slide%d-SHOT-*" % r["slide"]))
+                if have and not any("-ap" in os.path.basename(x) for x in have):
+                    if r not in missing:
+                        missing.append(dict(r, _topup=True))
         if not missing:
             continue
         rf = os.path.join("/private/tmp", "forage-refs-%d.json" % os.getpid())
@@ -1818,7 +1828,7 @@ def main():
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
-    a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.set_defaults(func=forage_pending)
+    a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.add_argument("--topup", action="store_true", help="已有舊圖的 slide 也補抓一輪 Apify 候選（兩來源並存）"); a.set_defaults(func=forage_pending)
     a = sub.add_parser("refresh-candidates", help="已入板但缺料的稿：重掃 Drive 把補到的素材讀回 posts.json"); a.add_argument("--limit", type=int, default=3); a.add_argument("--post-id", default=None); a.set_defaults(func=refresh_candidates)
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
