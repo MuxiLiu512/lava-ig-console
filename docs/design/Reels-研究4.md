@@ -320,6 +320,6 @@ S2 與 S3 仍偏快，正式生產時 S3 應拆成兩鏡或減到 11 字。這�
 - Higgsfield MCP 實測（2026-08-13）：`models_explore`、`list_voices`、`generate_video get_cost`、`balance`
 
 **相關檔案**
-`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/make_reel.py`（現行對照組產生器，DUR_BODY 2.6 秒是本文第 0 節的檢驗對象，且輸出無音訊串流）
-`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/ig_insights.py`（目前僅骨架，留存指標尚未接上，測量計畫要靠它）
-`/Users/mimo/Desktop/Claude/貼文製造機器人/風格規格-v1.0.md`（第五條禁句、第九條 mood 後綴、第三條 CTA 逐字鎖定，分鏡閘門直接沿用）
+`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/make_reel.py`（現行對照組產生器，DUR_BODY 2.6 秒是本文第 0 節的檢驗對象，且輸出無音訊串流）
+`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/ig_insights.py`（目前僅骨架，留存指標尚未接上，測量計畫要靠它）
+`/Users/mimo/Claude/貼文製造機器人/風格規格-v1.0.md`（第五條禁句、第九條 mood 後綴、第三條 CTA 逐字鎖定，分鏡閘門直接沿用）

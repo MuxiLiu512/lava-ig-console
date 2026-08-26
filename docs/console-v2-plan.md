@@ -182,9 +182,9 @@ per-slide 中位數 4、最大 12，這部分對。但 Jesse 講的是**每篇�
 3. **`git checkout HEAD -- .` 我驗證了症狀，沒驗證修法在真實 repo 的完整行為**（stash 是否保留、後續 commit 內容是否乾淨）。所以段 1 第 4 項寫成獨立驗收，不是順手做完就算。
 
 **關鍵檔案**
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/auto_render.sh`（:55-65 stash 復原反向，:100+ `git add -A` 過寬，:86 post-qa 觸發條件）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/sync_console.py`（:128 `save()` 非原子、:1160 `alert` 無 token 靜默 return、:1275 `except` 吞掉 EDEADLK、:318-341 reconcile 只看 ClickUp）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/forage_shots.py`（:646 `MIN_SCORE`、:651 `keep >= 2` 是單輪 per-slide 上限、:27 CURATOR_URL 打 n8n）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/docs/app.js`（:57-85 CAS 正確、:91-98 setImg 走 GitHub blob、:303 CTA 無候選是設計、:509 排程按鈕前置、:522 取消排程降級無回程）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/data/archived-posts.json`（兩篇過期 `scheduled`：weak-ties、已讀不回-v5）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/排版引擎/render_post_v5.py`（不在版控）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/auto_render.sh`（:55-65 stash 復原反向，:100+ `git add -A` 過寬，:86 post-qa 觸發條件）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/sync_console.py`（:128 `save()` 非原子、:1160 `alert` 無 token 靜默 return、:1275 `except` 吞掉 EDEADLK、:318-341 reconcile 只看 ClickUp）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/forage_shots.py`（:646 `MIN_SCORE`、:651 `keep >= 2` 是單輪 per-slide 上限、:27 CURATOR_URL 打 n8n）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/docs/app.js`（:57-85 CAS 正確、:91-98 setImg 走 GitHub blob、:303 CTA 無候選是設計、:509 排程按鈕前置、:522 取消排程降級無回程）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/data/archived-posts.json`（兩篇過期 `scheduled`：weak-ties、已讀不回-v5）
+- `/Users/mimo/Claude/貼文製造機器人/排版引擎/render_post_v5.py`（不在版控）

@@ -461,12 +461,12 @@ IG 已在 2025-03-25 棄用 carousel album impressions，且從未提供逐張 s
 
 **相關檔案（絕對路徑）**
 
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/排版引擎/render_post_v5.py`（改造主體：registry 化，新增 `text_slots` 與 manifest 輸出）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/check_typography.py`（第 54 到 58 行字級與 `max_w` 與引擎不符，須改讀 manifest）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/forage_shots.py`（第 421 行 `compose_collage` 抽成共用模組供 T7 使用；第 676 行封面雙版產出改由決策表決定）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/sync_console.py`（第 1102 行 `_post_qa`、第 1130 行 `post_qa` 改版；第 721 行 `render_approved` 接版型指派）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/config/self-check.md`（規則正本，B1／B3 判準改寫，新增 R1 到 R8 與 C1 到 C4）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/config/visual-rules.md`（第 8 條「封面雙版都出讓操控室挑」須改為決策表）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/config/style-notes.md`（§光線「亮色調至少 2 張」由 R4 給出可計算定義）
-- `/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/docs/app.js`（第 553 行 `buildMockup` 保留並降為次要，finalize 面板新建）
+- `/Users/mimo/Claude/貼文製造機器人/排版引擎/render_post_v5.py`（改造主體：registry 化，新增 `text_slots` 與 manifest 輸出）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/check_typography.py`（第 54 到 58 行字級與 `max_w` 與引擎不符，須改讀 manifest）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/forage_shots.py`（第 421 行 `compose_collage` 抽成共用模組供 T7 使用；第 676 行封面雙版產出改由決策表決定）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/sync_console.py`（第 1102 行 `_post_qa`、第 1130 行 `post_qa` 改版；第 721 行 `render_approved` 接版型指派）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/config/self-check.md`（規則正本，B1／B3 判準改寫，新增 R1 到 R8 與 C1 到 C4）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/config/visual-rules.md`（第 8 條「封面雙版都出讓操控室挑」須改為決策表）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/config/style-notes.md`（§光線「亮色調至少 2 張」由 R4 給出可計算定義）
+- `/Users/mimo/Claude/貼文製造機器人/lava-ig-console/docs/app.js`（第 553 行 `buildMockup` 保留並降為次要，finalize 面板新建）
 - 新增：`scripts/check_rhythm.py`、`data/render_manifest/{pid}.json`、`data/archive/postqa.jsonl`

@@ -7,8 +7,11 @@
 const { $, el, esc, MODE, setImg, saveJson, STATE, FILES, loadAll, toast, modal, nowISO, tfetch,
         stageOf, gatesOf, alertOf } = window.LavaCore;
 
+// 「規則提案」原本跟靈感卡混在放行欄，19 則同義提案把整欄塞爆，
+// 靈感被推到看不見（Jesse 2026-08-26：這種類型不應該出現在待審的貼文主題內，
+// 他應該是自己一個 column）。提案是「改系統」，靈感是「做內容」，兩種決策分開放。
 const COLS = [
-  ["放行", "rel"], ["製作中", "make"], ["等你", "you"], ["待排", "wait"], ["已排", "sched"],
+  ["靈感放行", "rel"], ["製作中", "make"], ["等你", "you"], ["待排", "wait"], ["已排", "sched"], ["規則提案", "prop"],
 ];
 const WIP_LIMIT = 6;
 
@@ -146,18 +149,36 @@ function draftingCard(idea, pos) {
   c.appendChild(meta);
   // 時間只說已知的事：等多久、正不正常。原本印「預計 25 分內入板」是憑排隊位置推的，
   // 卡了 19 小時還照印，數字完全失真（Jesse 2026-08-25 退件）。超時就直說卡住與該做什麼。
+  // 按下加速之後要看得出「正在進行」與「什麼時候會好」，而且不能再按。
+  // 原本按完只跳一個 toast，卡片完全沒變、按鈕還能一直按，
+  // 使用者無法確認剛剛那下有沒有生效（Jesse 2026-08-26）。
+  const rushMin = idea.rushed_at
+    ? Math.round((Date.now() - new Date(idea.rushed_at)) / 60000) : null;
+  const rushing = rushMin !== null && rushMin < RUSH_ETA_MIN;
   const note = el("div", "age");
   note.style.marginTop = "4px";
-  note.textContent = late
-    ? `已等 ${mins < 120 ? mins + " 分" : Math.round(mins / 60) + " 小時"}，超過正常的 ${DRAFT_SLA_MIN} 分。稿可能寫好了但沒進來，按加速重跑一次。`
-    : `撰稿中，正常約 ${DRAFT_SLA_MIN} 分內入板`;
+  note.textContent = rushing
+    ? `已重跑撰稿（${rushMin} 分前）。撰稿約 6 分、入板每 10 分一輪，最晚 ${RUSH_ETA_MIN - rushMin} 分後會出現在「等你」。`
+    : late
+      ? `已等 ${mins < 120 ? mins + " 分" : Math.round(mins / 60) + " 小時"}，超過正常的 ${DRAFT_SLA_MIN} 分。稿可能寫好了但沒進來。`
+      : `撰稿中，正常約 ${DRAFT_SLA_MIN} 分內入板`;
   c.appendChild(note);
-  const b = el("button", "btn" + (late ? " primary" : ""), late ? "⚡ 重跑撰稿" : "⚡ 加速");
-  b.style.marginTop = "6px";
-  b.onclick = e => { e.stopPropagation(); rushDraft(idea, b); };
-  c.appendChild(b);
+  if (rushing) {
+    const w = el("div", "age");
+    w.style.cssText = "margin-top:6px;color:var(--stage-make,#d9a441)";
+    w.textContent = "⏳ 撰稿進行中，不用再按";
+    c.appendChild(w);
+  } else {
+    const b = el("button", "btn" + (late ? " primary" : ""), late ? "⚡ 重跑撰稿" : "⚡ 加速");
+    b.style.marginTop = "6px";
+    b.onclick = e => { e.stopPropagation(); rushDraft(idea, b); };
+    c.appendChild(b);
+  }
   return c;
 }
+
+// 重跑後多久內視為「進行中」：撰稿約 6 分＋哨兵入料每 10 分一輪，抓 20 分留餘裕。
+const RUSH_ETA_MIN = 20;
 
 async function rushDraft(idea, btn) {
   const ok = await modal("立即觸發撰稿？",
@@ -176,7 +197,7 @@ async function rushDraft(idea, btn) {
       body: JSON.stringify({ topic, type: "知識型", slides: 9, angle, taskId: idea.task_id, writer: "claude" }),
     }, 20000);
     if (!r.ok) throw new Error("觸發失敗 (" + r.status + ")");
-    toast("已觸發撰稿 ✓ 約 6 分寫完，哨兵 10 分內入板");
+    toast(`已觸發撰稿 ✓ 最晚 ${RUSH_ETA_MIN} 分後出現在「等你」欄，期間卡片會顯示進行中`);
     try {
       await saveJson(FILES.ideas, doc => {
         const t = (doc.ideas || []).find(x => x.task_id === idea.task_id);
@@ -277,6 +298,30 @@ function healthBar(posts, hb) {
     "本週：" + mix.map(([k, n]) => `${k}${n ? "●" : "○"}${n || ""}`).join(" ")));
 }
 
+async function regenPost(p, btn) {
+  const ok = await modal("重新生成這一篇？",
+    el("div", "small muted",
+      "會用同一個主題重跑撰稿與視覺企劃，產生新的一版草稿。舊版留在 Drive 不會刪。約 6 分寫完，入板最晚 20 分。"),
+    [{ label: "取消", value: null }, { label: "重新生成", value: 1, cls: "primary" }]);
+  if (!ok) return;
+  btn.disabled = true; btn.textContent = "已送出…";
+  try {
+    const r = await tfetch(DRAFT_HOOK, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic: p.topic || p.id, type: "知識型", slides: 9,
+                             angle: "重新生成：前一版有 slide 補不到合適圖片，請調整視覺企劃讓每張都有可取得的具體素材",
+                             taskId: p.clickup_task_id || "", writer: "claude" }),
+    }, 20000);
+    if (!r.ok) throw new Error("觸發失敗 (" + r.status + ")");
+    await saveJson(FILES.posts, doc => {
+      const q = (doc.posts || []).find(x => x.id === p.id);
+      if (q) { q.regen_requested_at = nowISO(); delete q.regen_needed; }
+    }, "regen: " + p.id).catch(() => {});
+    toast("已送出重新生成 ✓ 最晚 20 分後會有新版草稿");
+    boot();
+  } catch (e) { btn.disabled = false; btn.textContent = "♻ 重新生成"; toast(e.message, true); }
+}
+
 // ── 組版 ────────────────────────────────────────────────────────────
 function boot() {
   const posts = ((STATE.posts && STATE.posts.posts) || []);
@@ -293,9 +338,12 @@ function boot() {
     if (key === "rel") {
       const ideas = (((STATE.ideas && STATE.ideas.ideas) || [])).filter(x => !x.decision);
       ideas.forEach(idea => cards.appendChild(ideaCard(idea)));
+      if (!ideas.length) cards.appendChild(el("div", "small muted", "（今天沒有待放行的靈感）"));
+      list = ideas;
+    } else if (key === "prop") {
       props.forEach(pr => cards.appendChild(proposalCard(pr)));
-      if (!ideas.length && !props.length) cards.appendChild(el("div", "small muted", "（今天沒有待放行的靈感）"));
-      list = ideas.concat(props);
+      if (!props.length) cards.appendChild(el("div", "small muted", "（沒有待審的規則提案）"));
+      list = props;
     } else if (key === "make") {
       list = by(key);
       const drafting = draftingIdeas(posts);
@@ -321,13 +369,25 @@ function boot() {
   stuck.forEach(p => {
     const c = el("div", "bd-card");
     c.appendChild(el("div", "t", esc(p.topic || p.id)));
-    const why = alertOf(p) === "缺料"
-      ? "有 slide 沒有任何候選圖。這篇無法出成品。等哨兵補圖，或到審稿台看是哪幾張。"
-      : "渲染卡住：" + (p.render_note || "") + "。這篇不會前進。到審稿台處理。";
+    // 補不回來的稿不該一直等一個不會來的補圖。哨兵連兩輪重掃仍缺就寫 regen_needed，
+    // 這裡直接給「重新生成」而不是叫人再去審稿台看一次（Jesse 2026-08-26）。
+    const rg = p.regen_needed;
+    const why = rg
+      ? `第 ${(rg.slides || []).join("、")} 張連兩輪都補不到圖，視覺企劃本身有問題。重新生成會重寫這篇的圖文企劃。`
+      : alertOf(p) === "缺料"
+        ? "有 slide 沒有任何候選圖。哨兵每輪會嘗試補圖，連兩輪補不到會自動轉為待重生。"
+        : "渲染卡住：" + (p.render_note || "") + "。這篇不會前進。到審稿台處理。";
     c.appendChild(el("div", "age", esc(why)));
-    const b = el("button", "btn", "去審稿台"); b.style.marginTop = "6px";
+    const row = el("div", "row"); row.style.cssText = "gap:6px;margin-top:6px";
+    if (rg) {
+      const rb = el("button", "btn primary", "♻ 重新生成");
+      rb.onclick = e => { e.stopPropagation(); regenPost(p, rb); };
+      row.appendChild(rb);
+    }
+    const b = el("button", "btn", "去審稿台");
     b.onclick = e => { e.stopPropagation(); location.href = "review.html#" + encodeURIComponent(p.id); };
-    c.appendChild(b);
+    row.appendChild(b);
+    c.appendChild(row);
     sb.appendChild(c);
   });
   if (!stuck.length) sb.appendChild(el("div", "small muted", "（沒有卡住的貼文）"));

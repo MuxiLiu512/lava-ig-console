@@ -1,265 +1,101 @@
 {
-  "proposals": [
-    {
-      "pid": "P-20260715-01",
-      "risk": "high",
-      "title": "封面光線配比改 暖:冷 = 7:3",
-      "diff_summary": "config/style-notes.md §光線：六張中亮色調由『至少 2 張』提升為『至少 3 張』，封面禁冷藍調。",
-      "evidence": [
-        "reviews: 2 篇退回底圖 feedback 皆提『封面光線太冷』",
-        "metrics: 冷色封面 3 篇 reach 平均較暖色封面低約 38%"
-      ],
-      "status": "applied",
-      "created_at": "2026-07-15T21:30:00+08:00",
-      "decided_at": "2026-07-23T12:35:37+08:00",
-      "applied_at": "2026-08-25T18:37:39+08:00"
-    },
-    {
-      "pid": "P-20260715-02",
-      "risk": "high",
-      "title": "CTA 尾板文案 A/B：加入『本週限定地點』動態行",
-      "diff_summary": "config/style-notes.md §CTA：尾板固定文案下方新增一行可變地點資訊（不改逐字鎖定的主文案）。",
-      "evidence": [
-        "metrics: follows 轉換在含具體地點的貼文較高",
-        "review: Jesse 於 07/13 approve 註記『想試試把地點講清楚』"
-      ],
-      "status": "pending",
-      "created_at": "2026-07-15T21:30:00+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-01",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身關聯性較低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性較低",
-      "evidence": [
-        "review R-mrywcuj3 feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:37:39+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-02",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身好像關聯性低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身好像關聯性低",
-      "evidence": [
-        "review R-mrywdupl feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:37:39+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-03",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身關聯性低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性低",
-      "evidence": [
-        "review R-mrywebga feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:37:39+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-04",
-      "risk": "high",
-      "title": "依回饋調整：使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "evidence": [
-        "review R-ms4poznb feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:37:39+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-05",
-      "risk": "high",
-      "title": "依回饋調整：v2 重做：沿用初版選圖，套用修復後引擎（缺字備",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。",
-      "evidence": [
-        "review R-v2-kawaguchi feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:37:40+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-06",
-      "risk": "high",
-      "title": "依回饋調整：這是舊的內容，不需要這種排版形式",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：這是舊的內容，不需要這種排版形式",
-      "evidence": [
-        "review R-mt8edvfi feedback",
-        "分類：layout"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:37:40+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-01",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身關聯性較低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性較低",
-      "evidence": [
-        "review R-mrywcuj3 feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:50:08+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-02",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身好像關聯性低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身好像關聯性低",
-      "evidence": [
-        "review R-mrywdupl feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:50:08+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-03",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身關聯性低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性低",
-      "evidence": [
-        "review R-mrywebga feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:50:08+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-04",
-      "risk": "high",
-      "title": "依回饋調整：使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "evidence": [
-        "review R-ms4poznb feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:50:08+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-05",
-      "risk": "high",
-      "title": "依回饋調整：v2 重做：沿用初版選圖，套用修復後引擎（缺字備",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。",
-      "evidence": [
-        "review R-v2-kawaguchi feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:50:08+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260825-06",
-      "risk": "high",
-      "title": "依回饋調整：這是舊的內容，不需要這種排版形式",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：這是舊的內容，不需要這種排版形式",
-      "evidence": [
-        "review R-mt8edvfi feedback",
-        "分類：layout"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-25T18:50:08+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260826-01",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身關聯性較低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性較低",
-      "evidence": [
-        "review R-mrywcuj3 feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-26T00:10:22+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260826-02",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身好像關聯性低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身好像關聯性低",
-      "evidence": [
-        "review R-mrywdupl feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-26T00:10:22+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260826-03",
-      "risk": "high",
-      "title": "依回饋調整：文案不過關，跟母胎單身關聯性低",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性低",
-      "evidence": [
-        "review R-mrywebga feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-26T00:10:22+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260826-04",
-      "risk": "high",
-      "title": "依回饋調整：使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：使用過多劇照，但劇照跟文案內容不相符、低關聯",
-      "evidence": [
-        "review R-ms4poznb feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-26T00:10:22+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260826-05",
-      "risk": "high",
-      "title": "依回饋調整：v2 重做：沿用初版選圖，套用修復後引擎（缺字備",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。",
-      "evidence": [
-        "review R-v2-kawaguchi feedback",
-        "分類：copy_tone"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-26T00:10:22+08:00",
-      "decided_at": null
-    },
-    {
-      "pid": "P-20260826-06",
-      "risk": "high",
-      "title": "依回饋調整：這是舊的內容，不需要這種排版形式",
-      "diff_summary": "來自審核回饋，需人工判斷影響範圍：這是舊的內容，不需要這種排版形式",
-      "evidence": [
-        "review R-mt8edvfi feedback",
-        "分類：layout"
-      ],
-      "status": "pending",
-      "created_at": "2026-08-26T00:10:22+08:00",
-      "decided_at": null
-    }
-  ]
+ "proposals": [
+  {
+   "pid": "P-20260715-01",
+   "risk": "high",
+   "title": "封面光線配比改 暖:冷 = 7:3",
+   "diff_summary": "config/style-notes.md §光線：六張中亮色調由『至少 2 張』提升為『至少 3 張』，封面禁冷藍調。",
+   "evidence": [
+    "reviews: 2 篇退回底圖 feedback 皆提『封面光線太冷』",
+    "metrics: 冷色封面 3 篇 reach 平均較暖色封面低約 38%"
+   ],
+   "status": "applied",
+   "created_at": "2026-07-15T21:30:00+08:00",
+   "decided_at": "2026-07-23T12:35:37+08:00",
+   "applied_at": "2026-08-25T18:37:39+08:00"
+  },
+  {
+   "pid": "P-20260715-02",
+   "risk": "high",
+   "title": "CTA 尾板文案 A/B：加入『本週限定地點』動態行",
+   "diff_summary": "config/style-notes.md §CTA：尾板固定文案下方新增一行可變地點資訊（不改逐字鎖定的主文案）。",
+   "evidence": [
+    "metrics: follows 轉換在含具體地點的貼文較高",
+    "review: Jesse 於 07/13 approve 註記『想試試把地點講清楚』"
+   ],
+   "status": "pending",
+   "created_at": "2026-07-15T21:30:00+08:00",
+   "decided_at": null
+  },
+  {
+   "pid": "P-20260825-01",
+   "risk": "high",
+   "title": "依回饋調整：文案不過關，跟母胎單身關聯性較低",
+   "diff_summary": "來自審核回饋，需人工判斷影響範圍：文案不過關，跟母胎單身關聯性較低",
+   "evidence": [
+    "review R-mrywcuj3 feedback",
+    "分類：copy_tone"
+   ],
+   "status": "pending",
+   "created_at": "2026-08-25T18:37:39+08:00",
+   "decided_at": null,
+   "dupe_of": [
+    "P-20260825-01",
+    "P-20260826-01",
+    "P-20260825-02",
+    "P-20260825-03"
+   ]
+  },
+  {
+   "pid": "P-20260825-04",
+   "risk": "high",
+   "title": "依回饋調整：使用過多劇照，但劇照跟文案內容不相符、低關聯",
+   "diff_summary": "來自審核回饋，需人工判斷影響範圍：使用過多劇照，但劇照跟文案內容不相符、低關聯",
+   "evidence": [
+    "review R-ms4poznb feedback",
+    "分類：copy_tone"
+   ],
+   "status": "pending",
+   "created_at": "2026-08-25T18:37:39+08:00",
+   "decided_at": null,
+   "dupe_of": [
+    "P-20260825-04",
+    "P-20260826-04"
+   ]
+  },
+  {
+   "pid": "P-20260825-05",
+   "risk": "high",
+   "title": "依回饋調整：v2 重做：沿用初版選圖，套用修復後引擎（缺字備",
+   "diff_summary": "來自審核回饋，需人工判斷影響範圍：v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。",
+   "evidence": [
+    "review R-v2-kawaguchi feedback",
+    "分類：copy_tone"
+   ],
+   "status": "pending",
+   "created_at": "2026-08-25T18:37:40+08:00",
+   "decided_at": null,
+   "dupe_of": [
+    "P-20260825-05",
+    "P-20260826-05"
+   ]
+  },
+  {
+   "pid": "P-20260825-06",
+   "risk": "high",
+   "title": "依回饋調整：這是舊的內容，不需要這種排版形式",
+   "diff_summary": "來自審核回饋，需人工判斷影響範圍：這是舊的內容，不需要這種排版形式",
+   "evidence": [
+    "review R-mt8edvfi feedback",
+    "分類：layout"
+   ],
+   "status": "pending",
+   "created_at": "2026-08-25T18:37:40+08:00",
+   "decided_at": null,
+   "dupe_of": [
+    "P-20260825-06",
+    "P-20260826-06"
+   ]
+  }
+ ]
 }

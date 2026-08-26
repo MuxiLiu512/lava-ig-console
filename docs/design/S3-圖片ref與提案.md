@@ -435,4 +435,4 @@ AI 已經排好序，top-1 預設選中。Jesse 的工作應該是**只處理有
 - [TMDB API Terms of Use](https://www.themoviedb.org/api-terms-of-use) · [TMDB Image Basics](https://developer.themoviedb.org/docs/image-basics) · [Getty Images Embed](https://www.gettyimages.com/resources/embed) · [Instagram oEmbed](https://developers.facebook.com/docs/instagram-platform/oembed/)
 - [Europe PMC Developers](https://europepmc.org/developers) · [觀光多媒體開放資料](https://media.taiwan.net.tw/zh-tw/portal) · [政府資料開放平臺](https://data.gov.tw/dataset/52790)
 - [Anthropic Vision（token 公式與上限）](https://platform.claude.com/docs/en/build-with-claude/vision.md) · [Vimeo oEmbed](https://developer.vimeo.com/api/oembed) · [Adobe/Shutterstock/iStock 訂閱比較](https://photutorial.com/best-stock-image-subscriptions/)
-- 本機實測檔案：`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/data/quality_metrics.jsonl`、`data/forage_learnings.json`、`scripts/forage_shots.py`、`config/visual-rules.md`、`docs/app.js`
+- 本機實測檔案：`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/data/quality_metrics.jsonl`、`data/forage_learnings.json`、`scripts/forage_shots.py`、`config/visual-rules.md`、`docs/app.js`

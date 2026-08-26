@@ -346,8 +346,8 @@ PAT 存 localStorage 是現況，桌面優先後不變。要做的只有兩件�
 ---
 
 **相關檔案（絕對路徑）**
-`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/docs/app.js`（869 行，主要改動對象）
-`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/docs/index.html`（四頁籤定義處）
-`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/data/posts.json`（473KB，須拆檔）
-`/Users/mimo/Desktop/Claude/貼文製造機器人/lava-ig-console/scripts/auto_render.sh`（哨兵，須加心跳與快車道）
+`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/docs/app.js`（869 行，主要改動對象）
+`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/docs/index.html`（四頁籤定義處）
+`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/data/posts.json`（473KB，須拆檔）
+`/Users/mimo/Claude/貼文製造機器人/lava-ig-console/scripts/auto_render.sh`（哨兵，須加心跳與快車道）
 `/Users/mimo/Library/LaunchAgents/tw.lava.ig-autorender.plist`（StartInterval=600）

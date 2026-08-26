@@ -1457,6 +1457,10 @@ def refresh_candidates(args):
     if not todo:
         print("✓ 沒有缺料的貼文需要重掃"); return
     done = 0
+    # 重掃補不回來的，就不是「等哨兵」而是「這篇的視覺企劃有問題」。
+    # 原本會一直掛在卡住欄等一個永遠不會來的補圖（Jesse 2026-08-26：
+    # 沒有候選圖的就直接回到重新 gen）。連兩輪重掃仍缺 → 標記待重生。
+    stale = load("ingest_state.json") if os.path.exists(os.path.join(DATA, "ingest_state.json")) else {}
     for p in todo[: (args.limit or 3)]:
         before = _missing(p)
         ns = argparse.Namespace(
@@ -1473,6 +1477,24 @@ def refresh_candidates(args):
         after = _missing(next(x for x in load("posts.json")["posts"] if x["id"] == p["id"]))
         print("↻ %s 缺料 %s → %s" % (p["id"][:28], before, after or "無"))
         done += 1
+        # 補不回來就記次數；連兩輪沒進展 → 寫 regen_needed，看板據此提供「重新生成」
+        k = p["id"]
+        rec = stale.setdefault(k, {"tries": 0, "last_missing": None})
+        if after and after == rec.get("last_missing"):
+            rec["tries"] += 1
+        elif after:
+            rec.update({"tries": 1, "last_missing": after})
+        else:
+            stale.pop(k, None); rec = None
+        if rec and rec["tries"] >= 2:
+            pj = load("posts.json")
+            q = next((x for x in pj["posts"] if x["id"] == k), None)
+            if q and not q.get("regen_needed"):
+                q["regen_needed"] = {"ts": _now_iso(), "slides": after,
+                                     "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"}
+                save("posts.json", pj)
+                print("  ⚠ %s 連兩輪補不到 slide %s → 標記待重生" % (k[:26], after))
+    save("ingest_state.json", stale)
     print("重掃完成：%d 篇" % done)
 
 

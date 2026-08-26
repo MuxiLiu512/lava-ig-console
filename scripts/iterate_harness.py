@@ -184,6 +184,20 @@ def run(args):
         change = {"category": cat, "summary": fb[:60], "payload": fb.strip()}
         high = cat in HIGH_RISK or cat in downgraded
         if high:
+            # 同義回饋只留一則提案〔2026-08-25 事故〕：Jesse 對同一篇連退三次、
+            # 措辭略有不同（「關聯性低」「好像關聯性低」「關聯性較低」），
+            # 舊版一則回饋開一則提案，19 則裡有 12 則是同一件事，把放行欄塞爆。
+            def _sig(t):
+                t = re.sub(r"[\s，。、？！「」『』…—－\-]", "", str(t).replace("依回饋調整：", ""))
+                return set(re.findall(r"[一-鿿]", t))
+            _new = _sig(fb)
+            _dup = next((q for q in props_d.get("proposals", [])
+                         if q.get("status") == "pending"
+                         and len(_sig(q.get("title", "")) & _new) / max(len(_sig(q.get("title", "")) | _new), 1) > 0.7), None)
+            if _dup:
+                _dup.setdefault("dupe_of", []).append(r.get("id"))
+                r["consumed"] = True
+                continue
             pid = "P-%s-%02d" % (today().strftime("%Y%m%d"), summary["new_proposals"] + 1)
             props_d.setdefault("proposals", []).append({
                 "pid": pid, "risk": "high", "title": "依回饋調整：%s" % fb[:24],

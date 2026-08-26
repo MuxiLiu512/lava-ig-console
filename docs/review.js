@@ -250,12 +250,28 @@ function renderBar() {
   //（Jesse 2026-08-25：點到待排程的貼文，沒看到哪裡可以上架排程）。
   if (p.status === "approved" && !p.render_note) {
     const factBlocks = ((p.fact && p.fact.issues) || []).filter(i => (i.severity || i.sev) === "block");
-    const sch = mk("📅 排程發佈", "primary", () => scheduleCur());
     if (factBlocks.length) {
-      sch.disabled = true; sch.style.opacity = ".38"; sch.style.cursor = "not-allowed";
-      sch.textContent = "排程（事實未過）";
-      sch.title = "事實查核有 " + factBlocks.length + " 項未解決：" + (factBlocks[0].line || "");
+      // 死路修正〔Jesse 2026-08-26：事實未過又在待排程裡面，我也沒辦法按任何下一步〕
+      // 這些稿是在事實閘門上線「之前」核准的，之後才被驗出問題。
+      // 只給一顆停用的按鈕等於把人鎖死——要嘛回審稿修，要嘛整篇退回。
+      const back = mk("← 退回待審修正", "primary", async () => {
+        try {
+          await saveJson(FILES.posts, doc => {
+            const q = (doc.posts || []).find(x => x.id === p.id);
+            if (q) q.status = "awaiting_review";
+          }, "reopen for fact fix: " + p.id);
+          toast("已退回待審 ✓ 事實問題列在右欄待決項，逐項處理後再核准");
+          location.reload();
+        } catch (e) { toast(e.message, true); }
+      });
+      back.title = "事實查核有 " + factBlocks.length + " 項：" + (factBlocks[0].line || "");
+      const w = el("span", "small muted", `事實未過 ${factBlocks.length} 項，不能排程`);
+      w.style.cssText = "align-self:center;margin:0 8px;color:var(--stage-you)";
+      bar.appendChild(w);
+      mk("整篇退回重做 R", "", () => decide("reject"));
+      return;
     }
+    mk("📅 排程發佈", "primary", () => scheduleCur());
     mk("退回重做 R", "", () => decide("reject"));
     return;
   }
