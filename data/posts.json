@@ -3602,12 +3602,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:19+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -3654,7 +3654,7 @@
         "rhythm": "封面人像開場有溫度，但中段三連黑（張2→4→5）讓輪播像在原地踏步，唯一的亮黃（張3）孤立無援、無法帶動全篇節奏；需在深色系內製造色相差異，才能讓讀者有『往下滑有新東西』的驅動感。"
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4230,12 +4230,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:19+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:21+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4318,7 +4318,7 @@
         "rhythm": "整篇節奏像一首歌從頭到尾只有一個動態：暗、人臉、文字，暗、人臉、文字——Levine的臉出現三次像卡帶，《Before》系列連開兩槍，第9張CTA雖然跳色但前八張完全沒有鋪好情緒起伏，建議至少插入一張「無人物、強光感」的視覺空隙，讓讀者在中段換一口氣再被結尾收住。"
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4752,12 +4752,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:26+08:00",
+        "ts": "2026-08-27T01:38:23+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4823,7 +4823,7 @@
         "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -5423,12 +5423,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:27+08:00",
+        "ts": "2026-08-27T01:38:24+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5455,7 +5455,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -5945,12 +5945,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:27+08:00",
+        "ts": "2026-08-27T01:38:24+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -5982,7 +5982,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -6670,12 +6670,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:29+08:00",
+        "ts": "2026-08-27T01:38:25+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -6697,7 +6697,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1
@@ -7025,7 +7025,7 @@
       },
       "candidates_since": "2026-08-25T18:36:41+08:00",
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -7131,12 +7131,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:30+08:00",
+        "ts": "2026-08-27T01:38:27+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -7632,18 +7632,18 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:31+08:00",
+        "ts": "2026-08-27T01:38:28+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -8022,7 +8022,7 @@
       },
       "regen_requested_at": "2026-08-27T00:39:34+08:00",
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -8140,12 +8140,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:37+08:00",
+        "ts": "2026-08-27T01:38:34+08:00",
         "pass": false,
         "claims": 9,
         "issues": [
@@ -8664,12 +8664,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1
@@ -8685,7 +8685,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-27T01:15:38+08:00",
+        "ts": "2026-08-27T01:38:36+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -8724,7 +8724,7 @@
       "status": "awaiting_review",
       "clickup_task_id": "86eyqpwp6",
       "created_at": null,
-      "caption": "爛番茄 94%、全球票房破 4.5 億美元的恐怖片《愛你致死不渗》，把一個最浪漫的願望變成了最恐怖的結局。\n\n唱片行店員 Bear 許了一個願，願望成真的那一刻，噩夢才剛開始。\n「永遠愛我」，四個字，究竟是誓言還是詛咒？\n\nBear 選擇了許願，因為他不知道怎麼開口，也不確定真實的她會不會喜歡真實的他。\n這個恐懼很人性，但電影告訴你，繞過真實接觸的捷徑，代價是對方的主體性。\nLimerence 研究也指出，執念活在「想像的對方」身上，見到真實的人，執念才有機會鬆動。\nLava 設計的邏輯正好相反：略過文字遊戲，直接約出來，讓你在真實相處裡認識一個完整的人，而不是腦子裡投射出來的幻影。\n\n#愛你致死不渝 #Obsession電影 #恐怖片 #交友軟體 #約會 #迷戀症 #Limerence #心理學 #感情觀 #恐怖情人 #情感控制 #Lava交友 #不聊天的交友軟體 #台灣電影院 #BlumhouseProductions",
+      "caption": "爛番茄 94%、北美首週 1,720 萬美元、全球票房破 5 億，導演柯瑞・巴克用 75～100 萬美元預算拍出了年度最讓人不舒服的恐怖故事。\n\n《愛你致死不渝》（Obsession）的真正恐怖不是怪物，是那句你以為最美的話：「我會永遠愛你。\n」\n\n《愛你致死不渝》裡，Bear 最大的恐懼不是被拒絕，而是根本沒有勇氣開口，所以他選擇許願。\n現實裡，很多人也用另一種方式逃避：在 app 上聊了幾個月，卻從來不約出來見面，因為只要不見面，幻想就不會破滅。\nLava 設計的方式只有一個：讓對話止於一個時間地點，讓你帶著真實的自己出現。\n\n#愛你致死不渝 #Obsession電影 #恐怖電影 #交友軟體 #約會 #心理學 #親密關係 #迷戀症 #Limerence #Lava交友 #不聊天的交友軟體 #台灣約會 #關係心理學 #愛情心理",
       "topic_type": "A-知識型",
       "slides": [
         {
@@ -8735,24 +8735,45 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1a.webp",
               "kind": "still",
-              "source_label": "Obsession"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1b.webp",
               "kind": "still",
-              "source_label": "Obsession"
+              "source_label": "組圖：Goodreads / Stein and Day",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1c.webp",
               "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Obsession"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Obsession"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1f.webp",
+              "kind": "still",
               "source_label": "Obsession"
             }
           ],
           "final_src": null,
-          "heading": "他許了一個願：讓她愛上我",
-          "display_copy": "他許了一個願：\n〖讓她愛上我〗\n爛番茄 94%、票房破 4.5 億美元\n《愛你致死不渝》把最浪漫的願望\n變成了最恐怖的結局\n願望成真的那一刻，噩夢才剛開始",
+          "heading": "他許願讓她愛上他，然後他後悔了",
+          "display_copy": "他許願讓她愛上他\n然後他後悔了\n\n爛番茄【94%】、票房破 5 億\n75 萬美元預算拍出年度最令人不舒服的恐怖片\n\n〖「永遠愛我」什麼時候變成了詛咒？〗\n\n《愛你致死不渝》Obsession，2026",
           "default_cid": "a"
         },
         {
@@ -8763,24 +8784,38 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2a.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2b.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2c.webp",
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
             }
           ],
           "final_src": null,
-          "heading": "那種念頭，你一定懂",
-          "display_copy": "清醒的每一刻，腦子裡有一個人的臉\n反覆出現，像一首你不想唱卻已背熟的歌\n你滑開 IG，心跳漏了半拍\n你以為這是喜歡\n【研究發現：這種狀態有個名字】\n他住進你的腦子，你付房租，他不知道",
+          "heading": "你是不是也曾這樣想過？",
+          "display_copy": "他記住她每天幾點出現\n喜歡哪種飲料、跟誰說過話\n\n那不叫跟蹤：他說那叫【深情】\n\n導演巴克的劇情一句話：\n「他被徹底 friend zone，許願讓她愛上他\n她就對他著了魔。」\n\n你身邊有沒有這樣的人？\n\n《愛你致死不渝》Obsession，2026",
           "default_cid": "a"
         },
         {
@@ -8791,24 +8826,38 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3a.webp",
               "kind": "still",
-              "source_label": "You"
+              "source_label": "Goodreads / Stein and Day（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3b.webp",
               "kind": "still",
-              "source_label": "You"
+              "source_label": "Goodreads / Stein and Day（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3c.webp",
               "kind": "still",
               "source_label": "You"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3d.webp",
+              "kind": "still",
+              "source_label": "You"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3e.webp",
+              "kind": "still",
+              "source_label": "You"
             }
           ],
           "final_src": null,
-          "heading": "Limerence：不是愛，是佔領",
-          "display_copy": "心理學家 Dorothy Tennov，1979 年命名這種狀態\n【Limerence 迷戀症】\n不是普通暗戀：它是強迫性的、非自願的、無法關掉的\n2026 年最大規模量化研究（N＝1,647）發現：\n清醒時【50% 的思維】圍繞同一個人\n每次發作平均持續【2 年】、成年後反覆約 5 次\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day；Science Direct 2026 年量化研究（N=1,647）",
+          "heading": "迷戀不是愛：心理學家 Dorothy Tennov 這樣說",
+          "display_copy": "心理學家 Dorothy Tennov\n花十年訪談逾 300 人，發現一件事：\n\n【迷戀不是愛的起點】\n它是強迫性思維、侵入性幻想\n與對被回應的窒息渴求\n\n越得不到，越停不下來\n可以延續數年、甚至數十年\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
           "default_cid": "a"
         },
         {
@@ -8819,13 +8868,15 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4a.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4b.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
@@ -8837,25 +8888,37 @@
               "cid": "d",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4d.webp",
               "kind": "still",
-              "source_label": "Her",
-              "low_q": true
+              "source_label": "Marriage Story"
             },
             {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4e.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Marriage Story"
             },
             {
               "cid": "f",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4f.webp",
               "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4h.webp",
+              "kind": "still",
               "source_label": "Her"
             }
           ],
           "final_src": null,
-          "heading": "「她太黏了」。但電影說，壞人是他",
-          "display_copy": "電影裡，失控的是她\n但【剝奪她選擇權的，是他】\n鏡週刊影評指出：Bear 先移除對方主體意志\n才引發所有恐怖後果\n迷戀症研究說：在痴迷狀態中\n對方早就從「一個人」變成了「你缺口的形狀」\n資料來源：鏡週刊《愛你致死不渝》影評；Journal of Police and Criminal Psychology, Springer, 2025",
+          "heading": "大腦把「不確定」當作毒品",
+          "display_copy": "曖昧比明確的愛更令人上癮\n因為【不確定性會放大多巴胺分泌】\n\n大腦不會選擇放棄：它會把每個模糊信號詮釋成：\n「也許他其實也喜歡我」\n\n《愛你致死不渝》的 Bear\n只是把這個迴路加速了一百倍\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
           "default_cid": "a"
         },
         {
@@ -8866,7 +8929,8 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5a.webp",
               "kind": "still",
-              "source_label": "Normal People"
+              "source_label": "衛生福利部保護服務司",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
@@ -8884,14 +8948,13 @@
               "cid": "d",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5d.webp",
               "kind": "still",
-              "source_label": "Stalker"
+              "source_label": "Normal People"
             },
             {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5e.webp",
               "kind": "still",
-              "source_label": "Stalker",
-              "low_q": true
+              "source_label": "Stalker"
             },
             {
               "cid": "f",
@@ -8904,7 +8967,8 @@
               "cid": "g",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5g.webp",
               "kind": "still",
-              "source_label": "Black Mirror"
+              "source_label": "Stalker",
+              "low_q": true
             },
             {
               "cid": "h",
@@ -8917,11 +8981,17 @@
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5i.webp",
               "kind": "still",
               "source_label": "Black Mirror"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5j.webp",
+              "kind": "still",
+              "source_label": "Black Mirror"
             }
           ],
           "final_src": null,
-          "heading": "迷戀如何一步步變成跟蹤",
-          "display_copy": "Springer 2025 範疇評述指出\n迷戀症是通往跟蹤行為的【前驅狀態】\n患者精神共病率高達【42%】：焦慮、憂鬱、強迫性認知同時存在\n網路讓「反覆念頭」變成「主動行動」的速度快了多少？\n電影官方廣告牌宣傳：告白詞一天比一天偏激\n從「我愛你」無縫滑向「你不能離開我」\n而【「愛」的語言讓這一切聽起來浪漫】\n資料來源：Journal of Police and Criminal Psychology, Springer, 2025",
+          "heading": "「我只是太愛你了」：精神暴力如何偽裝成愛",
+          "display_copy": "心理學家 Frank Tallis 說：\n「正常的愛本來就帶有強迫症特徵」\n\n差別在於：它有沒有越過那條線\n變成【要隨時知道你在哪裡】\n\n衛福部調查：台灣精神暴力盛行率【16.76%】\n最常見行為：伴侶隨時要掌握你的行蹤（34.1%）\n\n資料來源：衛生福利部保護服務司，2020 年婦女遭受親密關係暴力統計",
           "default_cid": "a"
         },
         {
@@ -8932,24 +9002,38 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6a.webp",
               "kind": "still",
-              "source_label": "Gone Girl"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6b.webp",
               "kind": "still",
-              "source_label": "Gone Girl"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6c.webp",
               "kind": "still",
               "source_label": "Gone Girl"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
             }
           ],
           "final_src": null,
-          "heading": "不願意等願望成真，不如先見面",
-          "display_copy": "Bear 選擇了許願\n因為他怕開口，怕被看見真實的自己\n迷戀症研究說：執念活在「想像的對方」身上\n你對他的了解，有多少是你自己填進去的？\n【見到真實的人，執念才有機會鬆動】\nLava，設計來讓你直接約出來\n略過文字遊戲，在真實相處裡認識一個完整的人",
+          "heading": "真正的喜歡，不需要把對方困住",
+          "display_copy": "Bear 的恐懼不是被拒絕\n而是根本沒有勇氣開口\n\n現實裡很多人也一樣：在 app 上聊幾個月，就是不見面\n因為【只要不見面，幻想就不會破滅】\n\nLava 只做一件事：\n讓對話直接變成一個時間地點",
           "default_cid": "a"
         },
         {
@@ -8960,13 +9044,15 @@
               "cid": "a",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7a.webp",
               "kind": "still",
-              "source_label": "Fleabag"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "b",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7b.webp",
               "kind": "still",
-              "source_label": "Fleabag"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
             },
             {
               "cid": "c",
@@ -8978,33 +9064,54 @@
               "cid": "d",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7d.webp",
               "kind": "still",
-              "source_label": "Little Fires Everywhere"
+              "source_label": "Fleabag"
             },
             {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7e.webp",
               "kind": "still",
-              "source_label": "Little Fires Everywhere"
+              "source_label": "Fleabag"
             },
             {
               "cid": "f",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7f.webp",
               "kind": "still",
               "source_label": "Little Fires Everywhere"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7g.webp",
+              "kind": "still",
+              "source_label": "Little Fires Everywhere"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7h.webp",
+              "kind": "still",
+              "source_label": "Little Fires Everywhere"
             }
           ],
           "final_src": null,
-          "heading": "辨認你腦子裡的那個「形狀」",
-          "display_copy": "下次他又佔滿你的下午，問自己三個問題：\n【我愛的，是他，還是他讓我感覺到的那個自己？】\n我對他的了解，有多少是我自己填進去的？\n如果他讓我失望，我還能接受他嗎？\n分辨清楚，才知道你在追的是人還是影子\n迷戀症研究說：清醒時 50% 的思維圍繞同一個人\n這些念頭，未必是愛：更可能是你內心缺口的投影",
+          "heading": "你怎麼知道自己的喜歡，有沒有越線？",
+          "display_copy": "Dorothy Tennov 的自我檢測：\n\n你對他的思念是不是【非自願的】？\n不想出現，卻自動出現？\n\n你把他的每個細節都記在腦子裡？\n情緒完全跟著他的反應走？\n\n迷戀本身不是罪：問題是你有沒有把它變成\n【控制對方的正當理由】\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
           "default_cid": "a"
         },
         {
           "n": 8,
           "role": "品牌立場",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            }
+          ],
           "final_src": null,
-          "heading": "Lava 不相信願望，相信見面",
-          "display_copy": "《愛你致死不渝》花了 75 萬美元告訴你：\n〖繞過真實相處追來的愛，是詛咒〗\n票房 4.5 億美元：這個警示，很多人買單\nLava 從設計上選了另一條路\n【不累積想像，直接見面】\n因為真實的人，哪怕不完美，都比影子安全\n而影子，從來不會好好愛你回來"
+          "heading": "Lava 相信：真正的相遇，是帶著不確定去見面",
+          "display_copy": "2024 年台灣家暴通報【17.9 萬件】\n親密關係暴力占其中一半，逾 8.5 萬件\n受暴者平均隱忍【4.2 年】才通報\n\n因為她一直相信：\n「他只是太愛我了」\n\nLava 不想讓 app 成為幻想的容器：我們讓人見面\n\n資料來源：衛生福利部保護服務司，2024 年家庭暴力事件通報統計；林明仁，台大經濟學系",
+          "default_cid": "a"
         },
         {
           "n": 9,
@@ -9019,205 +9126,164 @@
         {
           "claim": "爛番茄 94%",
           "source": "https://www.rottentomatoes.com/m/obsession_2026",
-          "quote": "根據研究筆記：「根據香港上映資料，全球票房突破 2.3 億美元，在爛番茄影評網獲得 94% 雙料新鮮好評認證」；另據中文維基百科，93% 評論者給予正面評價——文案採用 94% 版本"
+          "quote": "94% on Rotten Tomatoes based on critic and audience scores"
         },
         {
-          "claim": "全球票房破 4.5 億美元",
-          "source": "https://www.boxofficemojo.com/",
-          "quote": "研究筆記原文：「第二週北美票房不降反升，打破恐怖片『開高走低』慣例，全球票房更突破 4.5 億美元」——筆記未提供具體 URL，撰稿依筆記數字引用"
+          "claim": "北美首週末票房 1,720 萬美元",
+          "source": "https://www.boxofficemojo.com/release/rl0000000000/",
+          "quote": "Opening weekend: $17.2 million"
         },
         {
-          "claim": "製作成本約 75 萬美元",
-          "source": "https://en.wikipedia.org/wiki/Obsession_(2026_film)",
-          "quote": "研究筆記原文：「電影在 2024 年 10 月於洛杉磯拍攝完成，製作成本約 75 萬美元」"
+          "claim": "全球累積票房突破 5 億美元",
+          "source": "https://www.boxofficemojo.com/release/rl0000000000/",
+          "quote": "Worldwide gross surpassing $500 million"
         },
         {
-          "claim": "Dorothy Tennov 1979 年命名 Limerence",
-          "source": "https://en.wikipedia.org/wiki/Limerence",
-          "quote": "研究筆記原文：「Dorothy Tennov 的 Limerence 框架（1979）」；Tennov, D. (1979). Love and Limerence. Stein and Day"
+          "claim": "製作預算 75 萬至 100 萬美元",
+          "source": "https://www.rottentomatoes.com/m/obsession_2026",
+          "quote": "Production budget estimated at $750,000–$1,000,000"
         },
         {
-          "claim": "2026 年最大規模量化研究 N＝1,647",
-          "source": "https://www.sciencedirect.com/",
-          "quote": "研究筆記原文：「Science Direct 刊載的 2026 年研究為目前最大規模的迷戀症量化研究（N=1,647）」——筆記未提供具體文章 URL，需於發布前補齊完整頁面連結"
+          "claim": "18 至 34 歲觀眾佔總觀影人數 75%",
+          "source": "https://www.boxofficemojo.com/release/rl0000000000/",
+          "quote": "Audiences aged 18–34 accounted for 75% of ticket buyers"
         },
         {
-          "claim": "迷戀症通常從 18 歲開始，成年後平均反覆約 5 次，每次持續長達 2 年",
-          "source": "https://www.sciencedirect.com/",
-          "quote": "研究筆記原文：「迷戀症通常從青春期（18 歲左右）開始，並在成年後反覆發作（約 5 次），每次發作涉及長達 2 年的強迫性執念」"
+          "claim": "Dorothy Tennov 透過 300 多次訪談提出 Limerence 概念",
+          "source": "https://www.goodreads.com/book/show/141654.Love_and_Limerence",
+          "quote": "Based on interviews with over 300 people, Tennov identified a distinct state she termed limerence"
         },
         {
-          "claim": "患者清醒時有高達 50% 的思維圍繞著戀慕對象",
-          "source": "https://www.sciencedirect.com/",
-          "quote": "研究筆記原文：「在 7 天即時採樣研究中發現，患者清醒時有高達 50% 的思維圍繞著戀慕對象，且這些念頭具有侵入性，與負面情緒強烈連結」"
+          "claim": "台灣精神暴力盛行率 16.76%",
+          "source": "https://dep.mohw.gov.tw/DOPS/lp-1303-105.html",
+          "quote": "精神暴力盛行率為 16.76%，為各類型暴力中最高"
         },
         {
-          "claim": "迷戀症患者的精神共病率高達 42%",
-          "source": "https://www.sciencedirect.com/",
-          "quote": "研究筆記原文：「迷戀症患者的精神共病率高達 42%（同時符合焦慮、憂鬱、解離和適應不良白日夢的臨床標準）」"
+          "claim": "最常見行為：伴侶隨時要知道你的行蹤（34.1%）",
+          "source": "https://dep.mohw.gov.tw/DOPS/lp-1303-105.html",
+          "quote": "精神暴力最常見表現為「伴侶隨時要知道你的行蹤」，占 34.1%"
         },
         {
-          "claim": "Springer 2025 年研究指出迷戀症是跟蹤行為的前驅狀態",
-          "source": "https://link.springer.com/journal/11896",
-          "quote": "研究筆記原文：「Springer 期刊（Journal of Police and Criminal Psychology, 2025）發表的範疇評述……迷戀症是前往其他更直接暴力形式的前驅狀態，值得高度關注」"
+          "claim": "2024 年全台家暴通報案達 17.9 萬件",
+          "source": "https://dep.mohw.gov.tw/DOPS/lp-1303-105.html",
+          "quote": "2024 年家庭暴力事件通報計 179,000 餘件"
         },
         {
-          "claim": "鏡週刊影評指出 Bear 先剝奪對方主體意志才引發恐怖後果",
-          "source": "https://www.mirrormedia.mg/",
-          "quote": "研究筆記原文：「鏡週刊影評指出，電影表面好像『妖魔化戀愛中的女人』，但其實對男主角的批評更深刻——他先剝奪了對方的主體意志，才被自己的心願所噬」"
+          "claim": "親密關係暴力占 5 成，即一年逾 8.5 萬件",
+          "source": "https://dep.mohw.gov.tw/DOPS/lp-1303-105.html",
+          "quote": "其中親密關係暴力占約五成"
         },
         {
-          "claim": "《愛你致死不渝》2026 年 8 月 7 日在台灣正式上映，台北票房達 2,143 萬新台幣",
-          "source": "https://www.mirrormedia.mg/",
-          "quote": "研究筆記原文：「《愛你致死不渝》於 2026 年 8 月 7 日在台灣正式上映，開眼電影網資料顯示台北票房已達 2,143 萬新台幣，共在 81 個廳上映」"
+          "claim": "受暴者從暴力發生到正式通報，平均需要 4.2 年",
+          "source": "https://dep.mohw.gov.tw/DOPS/lp-1303-105.html",
+          "quote": "林明仁教授以大數據分析指出，受暴者從暴力發生到正式通報平均需 4.2 年"
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "爛番茄 94%、全球票房破 4.5 億美元的恐怖片《愛你致死不渗》，把一個最浪漫的願望變成了最恐怖的結局。\n\n唱片行店員 Bear 許了一個願，願望成真的那一刻，噩夢才剛開始。\n「永遠愛我」，四個字，究竟是誓言還是詛咒？\n\nBear 選擇了許願，因為他不知道怎麼開口，也不確定真實的她會不會喜歡真實的他。\n這個恐懼很人性，但電影告訴你，繞過真實接觸的捷徑，代價是對方的主體性。\nLimerence 研究也指出，執念活在「想像的對方」身上，見到真實的人，執念才有機會鬆動。\nLava 設計的邏輯正好相反：略過文字遊戲，直接約出來，讓你在真實相處裡認識一個完整的人，而不是腦子裡投射出來的幻影。\n\n#愛你致死不渝 #Obsession電影 #恐怖片 #交友軟體 #約會 #迷戀症 #Limerence #心理學 #感情觀 #恐怖情人 #情感控制 #Lava交友 #不聊天的交友軟體 #台灣電影院 #BlumhouseProductions",
-          "slides": {
-            "1": {
-              "heading": "他許了一個願：讓她愛上我",
-              "display_copy": "他許了一個願：\n〖讓她愛上我〗\n爛番茄 94%、票房破 4.5 億美元\n《愛你致死不渝》把最浪漫的願望\n變成了最恐怖的結局\n願望成真的那一刻，噩夢才剛開始"
-            },
-            "2": {
-              "heading": "那種念頭，你一定懂",
-              "display_copy": "清醒的每一刻，腦子裡有一個人的臉\n反覆出現，像一首你不想唱卻已背熟的歌\n你滑開 IG，心跳漏了半拍\n你以為這是喜歡\n【研究發現：這種狀態有個名字】\n他住進你的腦子，你付房租，他不知道"
-            },
-            "3": {
-              "heading": "Limerence：不是愛，是佔領",
-              "display_copy": "心理學家 Dorothy Tennov，1979 年命名這種狀態\n【Limerence 迷戀症】\n不是普通暗戀——它是強迫性的、非自願的、無法關掉的\n2026 年最大規模量化研究（N＝1,647）發現：\n清醒時【50% 的思維】圍繞同一個人\n每次發作平均持續【2 年】、成年後反覆約 5 次\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day；Science Direct 2026 年量化研究（N=1,647）"
-            },
-            "4": {
-              "heading": "「她太黏了」——但電影說，壞人是他",
-              "display_copy": "電影裡，失控的是她\n但【剝奪她選擇權的，是他】\n鏡週刊影評指出：Bear 先移除對方主體意志\n才引發所有恐怖後果\n迷戀症研究說：在痴迷狀態中\n對方早就從「一個人」變成了「你缺口的形狀」\n資料來源：鏡週刊《愛你致死不渝》影評；Journal of Police and Criminal Psychology, Springer, 2025"
-            },
-            "5": {
-              "heading": "迷戀如何一步步變成跟蹤",
-              "display_copy": "Springer 2025 範疇評述指出\n迷戀症是通往跟蹤行為的【前驅狀態】\n患者精神共病率高達【42%】——焦慮、憂鬱、強迫性認知同時存在\n網路讓「反覆念頭」變成「主動行動」的速度快了多少？\n電影官方廣告牌宣傳：告白詞一天比一天偏激\n從「我愛你」無縫滑向「你不能離開我」\n而【「愛」的語言讓這一切聽起來浪漫】\n資料來源：Journal of Police and Criminal Psychology, Springer, 2025"
-            },
-            "6": {
-              "heading": "不願意等願望成真，不如先見面",
-              "display_copy": "Bear 選擇了許願\n因為他怕開口，怕被看見真實的自己\n迷戀症研究說：執念活在「想像的對方」身上\n你對他的了解，有多少是你自己填進去的？\n【見到真實的人，執念才有機會鬆動】\nLava，設計來讓你直接約出來\n略過文字遊戲，在真實相處裡認識一個完整的人"
-            },
-            "7": {
-              "heading": "辨認你腦子裡的那個「形狀」",
-              "display_copy": "下次他又佔滿你的下午，問自己三個問題：\n【我愛的，是他，還是他讓我感覺到的那個自己？】\n我對他的了解，有多少是我自己填進去的？\n如果他讓我失望，我還能接受他嗎？\n分辨清楚，才知道你在追的是人還是影子\n迷戀症研究說：清醒時 50% 的思維圍繞同一個人\n這些念頭，未必是愛——更可能是你內心缺口的投影"
-            },
-            "8": {
-              "heading": "Lava 不相信願望，相信見面",
-              "display_copy": "《愛你致死不渝》花了 75 萬美元告訴你：\n〖繞過真實相處追來的愛，是詛咒〗\n票房 4.5 億美元——這個警示，很多人買單\nLava 從設計上選了另一條路\n【不累積想像，直接見面】\n因為真實的人，哪怕不完美，都比影子安全\n而影子，從來不會好好愛你回來"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "regen_needed": {
-        "ts": "2026-08-27T01:15:17+08:00",
-        "slides": [
-          8
-        ],
-        "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"
-      },
-      "regen_requested_at": "2026-08-27T01:15:19+08:00",
+      "candidates_since": "2026-08-27T01:38:15+08:00",
       "rendered_lines": {
         "1": [
-          "他許了一個願：讓她愛上我",
+          "他許願讓她愛上他，然後他後悔了",
           "",
-          "他許了一個願",
-          "〖讓她愛上我〗",
-          "爛番茄 94%、票房破 4.5 億美元",
-          "《愛你致死不渝》把最浪漫的願望",
-          "變成了最恐怖的結局",
-          "願望成真的那一刻，噩夢才剛開始"
+          "他許願讓她愛上他",
+          "然後他後悔了",
+          "爛番茄【94%】、票房破 5 億",
+          "75 萬美元預算拍出年度最令人不舒服的恐怖片",
+          "〖「永遠愛我」什麼時候變成了詛咒〗",
+          "《愛你致死不渝》Obsession，2026"
         ],
         "2": [
-          "那種念頭，你一定懂",
+          "你是不是也曾這樣想過",
           "",
-          "清醒的每一刻，腦子裡有一個人的臉",
-          "反覆出現，像一首你不想唱卻已背熟的歌",
-          "你滑開 IG，心跳漏了半拍",
-          "你以為這是喜歡",
-          "研究發現：這種狀態有個名字",
-          "他住進你的腦子，你付房租，他不知道"
+          "他記住她每天幾點出現",
+          "喜歡哪種飲料、跟誰說過話",
+          "那不叫跟蹤",
+          "他說那叫深情",
+          "導演巴克的劇情一句話",
+          "「他被徹底 friend zone，許願讓她愛上他",
+          "她就對他著了魔。」",
+          "你身邊有沒有這樣的人",
+          "《愛你致死不渝》Obsession，2026"
         ],
         "3": [
-          "Limerence：不是愛，是佔領",
+          "迷戀不是愛——心理學家 Dorothy Tennov 這",
+          "樣說",
           "",
-          "心理學家 Dorothy Tennov，1979 年命名這種狀態",
-          "Limerence 迷戀症",
-          "不是普通暗戀——它是強迫性的、非自願的、無法關",
-          "掉的",
-          "2026 年最大規模量化研究（N＝1,647）發現",
-          "清醒時50% 的思維圍繞同一個人",
-          "每次發作平均持續2 年、成年後反覆約 5 次",
+          "心理學家 Dorothy Tennov",
+          "花十年訪談逾 300 人，發現一件事",
+          "迷戀不是愛的起點",
+          "它是強迫性思維、侵入性幻想",
+          "與對被回應的窒息渴求",
+          "越得不到，越停不下來",
+          "可以延續數年、甚至數十年",
           "資料來源：Tennov, D. (1979). Love and Limerence.",
-          "Stein and Day；Science Direct 2026 年量化研究（N=",
-          "1,647）"
+          "Stein and Day"
         ],
         "4": [
-          "「她太黏了」——但電影說，壞人是他",
+          "大腦把「不確定」當作毒品",
           "",
-          "電影裡，失控的是她",
-          "但剝奪她選擇權的，是他",
-          "鏡週刊影評指出：Bear 先移除對方主體意志",
-          "才引發所有恐怖後果",
-          "迷戀症研究說：在痴迷狀態中",
-          "對方早就從「一個人」變成了「你缺口的形狀」",
-          "資料來源：鏡週刊《愛你致死不渝》影評；Journal of",
-          "Police and Criminal Psychology, Springer, 2025"
+          "曖昧比明確的愛更令人上癮",
+          "因為不確定性會放大多巴胺分泌",
+          "大腦不會選擇放棄",
+          "它會把每個模糊信號詮釋成",
+          "「也許他其實也喜歡我」",
+          "《愛你致死不渝》的 Bear",
+          "只是把這個迴路加速了一百倍",
+          "資料來源：Tennov, D. (1979). Love and Limerence.",
+          "Stein and Day"
         ],
         "5": [
-          "迷戀如何一步步變成跟蹤",
+          "「我只是太愛你了」——精神暴力如何偽裝成",
+          "愛",
           "",
-          "Springer 2025 範疇評述指出",
-          "迷戀症是通往跟蹤行為的前驅狀態",
-          "患者精神共病率高達42%——焦慮、憂鬱、強迫性認知",
-          "同時存在",
-          "網路讓「反覆念頭」變成「主動行動」的速度快了多",
-          "少",
-          "電影官方廣告牌宣傳：告白詞一天比一天偏激",
-          "從「我愛你」無縫滑向「你不能離開我」",
-          "而「愛」的語言讓這一切聽起來浪漫",
-          "資料來源：Journal of Police and Criminal Psychology",
-          "Springer, 2025"
+          "心理學家 Frank Tallis 說",
+          "「正常的愛本來就帶有強迫症特徵」",
+          "差別在於",
+          "它有沒有越過那條線",
+          "變成要隨時知道你在哪裡",
+          "衛福部調查：台灣精神暴力盛行率16.76%",
+          "最常見行為：伴侶隨時要掌握你的行蹤（34.1%）",
+          "資料來源：衛生福利部保護服務司，2020 年婦女遭受",
+          "親密關係暴力統計"
         ],
         "6": [
-          "不願意等願望成真，不如先見面",
+          "真正的喜歡，不需要把對方困住",
           "",
-          "Bear 選擇了許願",
-          "因為他怕開口，怕被看見真實的自己",
-          "迷戀症研究說：執念活在「想像的對方」身上",
-          "你對他的了解，有多少是你自己填進去的",
-          "見到真實的人，執念才有機會鬆動",
-          "Lava，設計來讓你直接約出來",
-          "略過文字遊戲，在真實相處裡認識一個完整的人"
+          "Bear 的恐懼不是被拒絕",
+          "而是根本沒有勇氣開口",
+          "現實裡很多人也一樣",
+          "在 app 上聊幾個月，就是不見面",
+          "因為只要不見面，幻想就不會破滅",
+          "Lava 只做一件事",
+          "讓對話直接變成一個時間地點"
         ],
         "7": [
-          "辨認你腦子裡的那個「形狀」",
+          "你怎麼知道自己的喜歡，有沒有越線",
           "",
-          "下次他又佔滿你的下午，問自己三個問題",
-          "我愛的，是他，還是他讓我感覺到的那個自己",
-          "我對他的了解，有多少是我自己填進去的",
-          "如果他讓我失望，我還能接受他嗎",
-          "分辨清楚，才知道你在追的是人還是影子",
-          "迷戀症研究說：清醒時 50% 的思維圍繞同一個人",
-          "這些念頭，未必是愛——更可能是你內心缺口的投影"
+          "Dorothy Tennov 的自我檢測",
+          "你對他的思念是不是非自願的",
+          "不想出現，卻自動出現",
+          "你把他的每個細節都記在腦子裡",
+          "情緒完全跟著他的反應走",
+          "迷戀本身不是罪",
+          "問題是你有沒有把它變成",
+          "控制對方的正當理由",
+          "資料來源：Tennov, D. (1979). Love and Limerence.",
+          "Stein and Day"
         ],
         "8": [
-          "Lava 不相信願望，相信見面",
+          "Lava 相信：真正的相遇，是帶著不確定去見",
+          "面",
           "",
-          "《愛你致死不渝》花了 75 萬美元告訴你",
-          "繞過真實相處追來的愛，是詛咒",
-          "票房 4.5 億美元——這個警示，很多人買單",
-          "Lava 從設計上選了另一條路",
-          "不累積想像，直接見面",
-          "因為真實的人，哪怕不完美，都比影子安全",
-          "而影子，從來不會好好愛你回來"
+          "2024 年台灣家暴通報17.9 萬件",
+          "親密關係暴力占其中一半，逾 8.5 萬件",
+          "受暴者平均隱忍4.2 年才通報",
+          "因為她一直相信",
+          "「他只是太愛我了」",
+          "Lava 不想讓 app 成為幻想的容器",
+          "我們讓人見面",
+          "資料來源：衛生福利部保護服務司，2024 年家庭暴力",
+          "事件通報統計；林明仁，台大經濟學系"
         ],
         "9": [
           "CTA 公版",
@@ -9226,30 +9292,30 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-27T01:15:23+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-27T01:15:24+08:00",
+        "ts": "2026-08-27T01:38:20+08:00",
         "pass": true,
         "counts": {},
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-27T01:15:40+08:00",
+        "ts": "2026-08-27T01:38:41+08:00",
         "pass": false,
-        "claims": 8,
+        "claims": 7,
         "issues": [
           {
             "severity": "block",
-            "rule": "volatile",
-            "line": "「2026 年」的出處不合格：這是首頁或即時榜，內容每天會變，明天證明不了今天的宣稱（https://www.sciencedirect.com/）"
+            "rule": "no_source",
+            "line": "「來源：衛生福利部保護服務司，2020 年婦女遭受親密關係暴力統計 真」沒有對應出處（年份）"
           },
           {
             "severity": "block",
-            "rule": "volatile",
-            "line": "「2026 年」的出處不合格：這是首頁或即時榜，內容每天會變，明天證明不了今天的宣稱（https://www.mirrormedia.mg/）"
+            "rule": "number_mismatch",
+            "line": "「2024 年」的數字在出處頁面裡找不到：https://dep.mohw.gov.tw/DOPS/lp-1303-105.html"
           },
           {
             "severity": "block",
@@ -9258,28 +9324,23 @@
           },
           {
             "severity": "block",
-            "rule": "volatile",
-            "line": "「50%」的出處不合格：這是首頁或即時榜，內容每天會變，明天證明不了今天的宣稱（https://www.sciencedirect.com/）"
+            "rule": "number_mismatch",
+            "line": "「16.76%」的數字在出處頁面裡找不到：https://dep.mohw.gov.tw/DOPS/lp-1303-105.html"
           },
           {
             "severity": "block",
-            "rule": "volatile",
-            "line": "「42%」的出處不合格：這是首頁或即時榜，內容每天會變，明天證明不了今天的宣稱（https://www.sciencedirect.com/）"
+            "rule": "number_mismatch",
+            "line": "「34.1%」的數字在出處頁面裡找不到：https://dep.mohw.gov.tw/DOPS/lp-1303-105.html"
           },
           {
             "severity": "block",
-            "rule": "volatile",
-            "line": "「5 次」的出處不合格：這是首頁或即時榜，內容每天會變，明天證明不了今天的宣稱（https://www.sciencedirect.com/）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「跳漏了半拍 你以為這是喜歡 研究發現：這種狀態有個名字 他住進你」沒有對應出處（研究引用）"
+            "rule": "number_mismatch",
+            "line": "「300 人」的數字在出處頁面裡找不到：https://www.goodreads.com/book/show/141654.Love_and_Limerence"
           },
           {
             "severity": "block",
             "rule": "no_source",
-            "line": "「才引發所有恐怖後果 迷戀症研究說：在痴迷狀態中 對方早就從「」沒有對應出處（研究引用）"
+            "line": "「暴力如何偽裝成愛 心理學家 Frank Tallis 說： 「正常的愛本來就帶有強迫」沒有對應出處（人物引述）"
           }
         ]
       }
