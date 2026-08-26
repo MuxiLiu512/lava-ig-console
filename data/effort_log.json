@@ -96,6 +96,14 @@
       "seconds": 9,
       "pending": 2,
       "slides": 9
+    },
+    {
+      "post_id": "20260825-白夜行",
+      "ts": "2026-08-27T00:38:39+08:00",
+      "decision": "reject",
+      "seconds": 4,
+      "pending": 1,
+      "slides": 9
     }
   ]
 }
