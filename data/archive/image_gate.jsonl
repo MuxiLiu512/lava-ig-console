@@ -412,3 +412,9 @@
 {"ts": "2026-08-27T00:34:47+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-1.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 155571}}
 {"ts": "2026-08-27T00:34:48+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-2.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 113255}}
 {"ts": "2026-08-27T00:34:51+08:00", "post_id": "20260825-白夜行", "slide": 6, "file": "slide6-Mother-3.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 93139, "bpp": 0.0449}}
+{"ts": "2026-08-27T00:44:13+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-1.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 155571}}
+{"ts": "2026-08-27T00:44:13+08:00", "post_id": "20260825-白夜行", "slide": 1, "file": "slide1-Byakuyako-2.jpg", "reason": "low_res", "metrics": {"w": 1080, "h": 608, "bytes": 113255}}
+{"ts": "2026-08-27T00:44:16+08:00", "post_id": "20260825-白夜行", "slide": 6, "file": "slide6-Mother-3.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 93139, "bpp": 0.0449}}
+{"ts": "2026-08-27T00:46:17+08:00", "post_id": "20260826-愛你致死不渝爛番茄永遠愛", "slide": 4, "file": "slide4-Her-1.jpg", "reason": "over_compressed", "metrics": {"w": 3840, "h": 2160, "bytes": 364565, "bpp": 0.044}}
+{"ts": "2026-08-27T00:46:20+08:00", "post_id": "20260826-愛你致死不渝爛番茄永遠愛", "slide": 5, "file": "slide5-Stalker-2.jpg", "reason": "low_res", "metrics": {"w": 400, "h": 225, "bytes": 17658}}
+{"ts": "2026-08-27T00:46:20+08:00", "post_id": "20260826-愛你致死不渝爛番茄永遠愛", "slide": 5, "file": "slide5-Stalker-3.jpg", "reason": "low_res", "metrics": {"w": 400, "h": 225, "bytes": 24586}}

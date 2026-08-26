@@ -5,7 +5,7 @@
    與舊介面並存，隨時可從左上角切回。 */
 (() => {
 "use strict";
-const { S, MODE, $, el, esc, saveJson, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid, stageOf, gatesOf, alertOf, lacksMaterial, DESIGN_LAYOUTS } = window.LavaCore;
+const { S, MODE, $, el, esc, saveJson, tfetch, patModal, setImg, img, STATE, FILES, loadAll, toast, modal, nowISO, rid, stageOf, gatesOf, alertOf, lacksMaterial, DESIGN_LAYOUTS } = window.LavaCore;
 
 const FILE_EFFORT = "data/effort_log.json";
 let QUEUE = [], IDX = 0, SLIDE = 1, PEND = [], PI = 0, CHOICE = {}, T0 = 0;
@@ -141,7 +141,17 @@ function renderStage() {
   } else if (cand) {
     hero.appendChild(cropPreview(p, s, cand));
   } else {
-    hero.appendChild(el("div", "empty", "第 " + SLIDE + " 張沒有候選圖也沒有成品。等哨兵補圖，或退回這篇。"));
+    const box = el("div", "empty");
+    const rg = p.regen_needed;
+    box.appendChild(el("div", null, rg
+      ? `第 ${SLIDE} 張補不到圖。哨兵已重試 ${(rg.slides || []).length ? "多輪" : ""}仍失敗，代表視覺企劃本身有問題。`
+      : `第 ${SLIDE} 張沒有候選圖也沒有成品。哨兵每輪會嘗試補圖。`));
+    const rw = el("div", "row"); rw.style.cssText = "gap:8px;justify-content:center;margin-top:10px";
+    const rb = el("button", "btn primary", "♻ 重新生成這一篇");
+    rb.onclick = () => regenFromReview(p, rb);
+    rw.appendChild(rb);
+    box.appendChild(rw);
+    hero.appendChild(box);
   }
 
   const film = $("#rvFilm"); film.innerHTML = "";
@@ -312,9 +322,33 @@ async function decide(decision) {
         seconds: secs, pending: PEND.length, slides: (p.slides || []).length });
     }, `effort: ${p.id} ${secs}s`).catch(() => {});
     toast(`已${decision === "approve" ? "核准" : "退回"} ✓（${secs} 秒）`);
-    QUEUE.splice(IDX, 1); if (IDX >= QUEUE.length) IDX = 0;
+    // 用 id 移除，不能用 IDX〔Jesse 2026-08-27：按退回後換下一篇，
+    // 結果要退回的還在、下一篇卻不見了〕。退回要填原因、期間是可以點左欄
+    // 換篇的，IDX 因此在 await 之間被改掉，splice(IDX) 砍到的是換過去的那一篇。
+    const at = QUEUE.findIndex(x => x.id === p.id);
+    if (at >= 0) QUEUE.splice(at, 1);
+    if (IDX >= QUEUE.length) IDX = Math.max(0, QUEUE.length - 1);
     openPost();
   } catch (e) { toast(e.message, true); }
+}
+
+async function regenFromReview(p, btn) {
+  const ok = await modal("重新生成這一篇？",
+    el("div", "small muted",
+      "會用同一個主題重跑撰稿與視覺企劃，並要求每張都給得出可取得的具體素材。舊版留在 Drive。約 6 分寫完，最晚 20 分入板。"),
+    [{ label: "取消", value: null }, { label: "重新生成", value: 1, cls: "primary" }]);
+  if (!ok) return;
+  btn.disabled = true; btn.textContent = "已送出…";
+  try {
+    const r = await tfetch("https://lavadating.app.n8n.cloud/webhook/lava-ig-draft", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic: p.topic || p.id, type: "知識型", slides: 9,
+        angle: "重新生成：前一版有 slide 補不到合適圖片，請調整視覺企劃，每張都要給具體、公開可取得的素材（具名人物／具名作品／可截圖的頁面）",
+        taskId: p.clickup_task_id || "", writer: "claude" }),
+    }, 20000);
+    if (!r.ok) throw new Error("觸發失敗 (" + r.status + ")");
+    toast("已送出重新生成 ✓ 最晚 20 分後會有新版草稿");
+  } catch (e) { btn.disabled = false; btn.textContent = "♻ 重新生成這一篇"; toast(e.message, true); }
 }
 
 // ── 排程（快捷鍵 S）────────────────────────────────────────────────

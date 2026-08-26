@@ -216,6 +216,13 @@ echo "文案禁句" >"$RUNMARK"
 CPY=$(timeout 300 "$PY" scripts/copy_check.py 2>&1 | tail -10)
 echo "$CPY" | grep -E "🔴|⚠" | sed "s/^/[$(date '+%m-%d %H:%M')] 文案/" >>"$LOG"
 
+# 禁句自動修：破折號這種「改法唯一」的違規直接機械修掉，不佔用人工。
+# 一天三篇的瓶頸不在排程器而在閘門——10 篇待發稿有 7 篇卡在禁句、共 73 處
+#（Jesse 2026-08-27 要求提高產量時抓到）。判斷性的違規不碰，留給人。
+echo "禁句自動修" >"$RUNMARK"
+CFX=$(timeout 300 "$PY" scripts/copy_fix.py 2>&1 | tail -6)
+echo "$CFX" | grep -E "→ 0|已修" | sed "s/^/[$(date '+%m-%d %H:%M')] 修文/" >>"$LOG"
+
 # 事實查核（機械，不需 LLM）：抓文案裡的數字與研究引用，驗每一條有沒有活著且對得上的出處。
 # 起因是 2026-08-23 的 Jason Arday 靈感卡：宣稱「今天台灣熱搜」但當日榜上沒有，
 # 年齡數字也與英媒說法不符，唯一出處還是每天會變的 trends 首頁。

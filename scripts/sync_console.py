@@ -1435,6 +1435,7 @@ def rendered_lines(args):
 
 # ── 入料哨兵：ClickUp 在製中卡 × Drive 草稿 → 自動餵進 posts.json（零 AI）──
 def refresh_candidates(args):
+    import urllib.request
     """已入板但仍缺料的貼文：重掃 Drive 把新素材讀回 posts.json。
 
     為什麼需要這支〔2026-08-25 事故〕：
@@ -1489,11 +1490,30 @@ def refresh_candidates(args):
         if rec and rec["tries"] >= 2:
             pj = load("posts.json")
             q = next((x for x in pj["posts"] if x["id"] == k), None)
-            if q and not q.get("regen_needed"):
+            if q and not q.get("regen_requested_at"):
                 q["regen_needed"] = {"ts": _now_iso(), "slides": after,
                                      "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"}
+                # 只標記不動手＝人要自己發現、自己按〔Jesse 2026-08-27：缺料依舊沒有
+                # 自動查到、重新生成〕。實測 tries 已經累到 21 輪，代表補圖永遠不會成功，
+                # 卻沒有任何人事物推它前進。改成直接觸發重寫，並記 regen_requested_at 防重複。
+                try:
+                    body = json.dumps({
+                        "topic": q.get("topic") or k, "type": "知識型", "slides": 9,
+                        "angle": "重新生成：前一版第 %s 張補不到合適圖片，請調整視覺企劃，"
+                                 "每張都要給具體、公開可取得的素材（具名人物／具名作品／可截圖的頁面）"
+                                 % "、".join(map(str, after)),
+                        "taskId": q.get("clickup_task_id") or "", "writer": "claude",
+                    }).encode()
+                    req = urllib.request.Request(
+                        "https://lavadating.app.n8n.cloud/webhook/lava-ig-draft",
+                        data=body, headers={"Content-Type": "application/json"}, method="POST")
+                    urllib.request.urlopen(req, timeout=30).read()
+                    q["regen_requested_at"] = _now_iso()
+                    print("  ♻ %s 補不到 slide %s（第 %d 輪）→ 已自動重新生成"
+                          % (k[:26], after, rec["tries"]))
+                except Exception as e:
+                    print("  ⚠ %s 自動重生觸發失敗：%s" % (k[:26], e))
                 save("posts.json", pj)
-                print("  ⚠ %s 連兩輪補不到 slide %s → 標記待重生" % (k[:26], after))
     save("ingest_state.json", stale)
     print("重掃完成：%d 篇" % done)
 
