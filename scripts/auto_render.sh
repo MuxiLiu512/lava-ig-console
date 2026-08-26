@@ -158,10 +158,17 @@ ITR_STAMP="/tmp/lava-ig-iterate.$(date '+%Y-%m-%d')"
 if [ ! -f "$ITR_STAMP" ]; then
   touch "$ITR_STAMP"
   echo "學習迴路" >"$RUNMARK"
+  # 迭代四段：搜集特徵×成效 → 假說評估 → 消化回饋 → 產生規則／提案。
+  # 順序不能反：iterate_harness 讀 metrics.json，那份要先由 learn_features 產出，
+  # 否則成效那條手臂永遠沒有資料（2026-08-26 之前 metrics.json entries 一直是 0）。
+  LFT=$(timeout 300 "$PY" scripts/learn_features.py 2>&1 | tail -4)
+  echo "$LFT" | grep -E "已寫入|樣本" | sed "s/^/[$(date '+%m-%d %H:%M')] 特徵/" >>"$LOG"
+  HYP=$(timeout 300 "$PY" scripts/hypotheses.py 2>&1 | tail -12)
+  echo "$HYP" | grep -E "✅|❌|登記簿已更新" | sed "s/^/[$(date '+%m-%d %H:%M')] 假說/" >>"$LOG"
   ITR=$(timeout 300 "$PY" scripts/iterate_harness.py 2>&1 | tail -6)
   echo "$ITR" | grep -E "迭代摘要|⚙︎|✅|↩" | sed "s/^/[$(date '+%m-%d %H:%M')] 迭代/" >>"$LOG"
   if [ -n "$(git status --porcelain config/ data/)" ]; then
-    git add config/ data/proposals.json data/reviews.json data/iterate_log.json 2>/dev/null
+    git add config/ data/proposals.json data/reviews.json data/iterate_log.json data/metrics.json data/hypotheses.json 2>/dev/null
     git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-iterate: 消化審核回饋" \
       -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
       && git push --quiet origin main >>"$LOG" 2>&1

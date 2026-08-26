@@ -1,0 +1,76 @@
+{
+  "note": "假說登記簿。每一條在測試開始前就要寫下來——事後才挑指標叫做找藉口，不叫驗證。由 scripts/hypotheses.py 評估。",
+  "updated_at": "2026-08-26T12:55:25+08:00",
+  "rules": [
+    "一條假說一次只變一個因素，其他條件維持不變。",
+    "成功指標與最小樣本數必須在開始前寫死，不得中途更改。",
+    "樣本數未達 min_n 之前，狀態一律停在 running，不准宣告結論。",
+    "推翻與成立同等重要。refuted 的假說要留著，避免下次又重試一遍。"
+  ],
+  "hypotheses": [
+    {
+      "id": "H1-publish-hour",
+      "statement": "下午（12–18 時）發佈的互動率高於晚上（18 時後）。",
+      "why": "現有 9 篇的觀察資料顯示下午 8.13%、晚上 3.28%，但下午只有 4 篇、晚上 3 篇，且兩組主題不同，完全可能是主題差異而非時段差異。",
+      "variable": "publish_hour",
+      "arms": [
+        "下午 14:00",
+        "晚上 21:00"
+      ],
+      "metric": "interaction_rate",
+      "min_n_per_arm": 8,
+      "design": "同一批已核准的稿，隨機指派時段交替發佈，主題型態在兩組間平衡。",
+      "status": "running",
+      "created_at": "2026-08-26",
+      "result": null
+    },
+    {
+      "id": "H2-celebrity-anchor",
+      "statement": "標題綁定具體名人／作品的貼文，觸及高於純概念型貼文。",
+      "why": "Jesse 2026-08-23 的選題新規假設「大牌藝人＋多家媒體報導」能帶來熱度。目前資料 有名人 5.72% vs 無名人 5.18%，差距遠小於雜訊。",
+      "variable": "has_celebrity",
+      "arms": [
+        "綁名人／作品",
+        "純概念"
+      ],
+      "metric": "reach",
+      "min_n_per_arm": 8,
+      "design": "選題雷達每日產出時強制兩型各半，連續兩週。",
+      "status": "running",
+      "created_at": "2026-08-26",
+      "result": null
+    },
+    {
+      "id": "H3-image-source",
+      "statement": "改用 Apify（Google Images）取圖後，Jesse 的退圖率下降。",
+      "why": "2026-08-25 換掉 DuckDuckGo。實測單一查詢相關命中率 9/10 vs 舊來源明顯較差，但尚未有 Jesse 實際審稿的退圖資料。",
+      "variable": "image_source",
+      "arms": [
+        "apify",
+        "ddg"
+      ],
+      "metric": "reject_rate_visual",
+      "min_n_per_arm": 6,
+      "design": "換源前後各取 6 篇，比較「視覺類退回次數 ÷ 篇數」。換源前的資料已存在 reviews.json。",
+      "status": "running",
+      "created_at": "2026-08-26",
+      "result": null
+    },
+    {
+      "id": "H4-copy-gate",
+      "statement": "文案禁句閘門上線後，Jesse 因文案問題退回的比率下降。",
+      "why": "2026-08-25 上線正則閘門前，八篇稿 100% 含禁用句式。閘門讓問題在人看到之前就被抓出來。",
+      "variable": "copy_gate",
+      "arms": [
+        "有閘門",
+        "無閘門"
+      ],
+      "metric": "reject_rate_copy",
+      "min_n_per_arm": 6,
+      "design": "以 2026-08-25 為切點，前後各 6 篇比較退回原因分類。",
+      "status": "running",
+      "created_at": "2026-08-26",
+      "result": null
+    }
+  ]
+}
