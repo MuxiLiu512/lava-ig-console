@@ -549,6 +549,17 @@ def _scan_dirs(root, ntopic, prune=True):
     return _collect_slide_imgs(base_dirs, "generated", prune), _collect_slide_imgs(still_dirs, "still", prune)
 
 
+def _repair_json(raw):
+    """撰稿模型偶爾把 JSON 的結構符號打成中文全形，整份就解不開。
+    〔2026-08-27：《愛你致死不渝》那篇在 slides 陣列裡打了「}，{」，
+    forage 每輪都讀稿失敗，該篇永遠補不到圖也永遠不會有人發現。〕
+    只修「結構位置上的全形符號」——前後緊鄰 JSON 結構字元時才換，
+    不碰文案內容裡正常的中文標點。"""
+    fixed = re.sub(r'(?<=[}\]"])\s*，\s*(?=[{\["])', ", ", raw)
+    fixed = re.sub(r'(?<=[}\]"])\s*：\s*(?=[{\["])', ": ", fixed)
+    return fixed
+
+
 def _read_json_retry(path, tries=4, wait=3.0):
     """Drive 掛載讀檔：檔案剛從雲端同步下來、本地尚在 hydration 時會撞 EDEADLK/EAGAIN，退避重試。"""
     import errno, time
@@ -556,7 +567,13 @@ def _read_json_retry(path, tries=4, wait=3.0):
     for i in range(tries):
         try:
             with open(path, encoding="utf-8") as f:
-                return json.load(f)
+                raw = f.read()
+            try:
+                return json.loads(raw)
+            except json.JSONDecodeError:
+                d = json.loads(_repair_json(raw))    # 修得好就用，修不好照樣拋原錯
+                sys.stderr.write("  ⚠ 稿檔有全形結構符號，已自動修正：%s\n" % os.path.basename(path)[:40])
+                return d
         except OSError as e:
             if getattr(e, "errno", None) not in (errno.EDEADLK, errno.EAGAIN, errno.EIO):
                 raise

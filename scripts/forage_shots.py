@@ -306,7 +306,10 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
     STOCK_BLOCK = ("alamy.", "gettyimages.", "shutterstock.", "istockphoto.", "dreamstime.",
                    "123rf.", "depositphotos.", "freepik.", "vecteezy.", "stock.adobe.",
                    "qiantucdn.", "58pic.", "nipic.", "mindframe.", "magnific.", "canva.",
-                   "envato.", "pond5.", "bigstockphoto.", "shutterfly.", "photodune.", "stocksy.")
+                   "envato.", "pond5.", "bigstockphoto.", "shutterfly.", "photodune.", "stocksy.",
+                   # 2026-08-27：Apify 結果裡混入大量社群爬蟲代理網址，
+                   # 實際回傳 300–400 bytes 的佔位圖，抓了必定不合格、白花時間與額度。
+                   "lookaside.fbsbx.com", "lookaside.instagram.com", "external-", "/safe_image.php")
     # 主要來源：Apify Google Images（排序品質遠勝 DDG）。沒 token 或失敗就落到下面的備援。
     pairs = [x for x in _apify_images(query, want)
              if not any(sb in x["m"] for sb in STOCK_BLOCK)]
@@ -727,6 +730,11 @@ def main():
                     ok, why = _valid_img(fpth, min_dim=550, min_bytes=15000)
                     if not ok:
                         sys.stderr.write("  ↩ 原圖不合格 %s（%s）→ 用次名\n" % (c["murl"][:44], why)); continue
+                    # 引擎標記要跟著路徑走：策展用縮圖、勝者才抓原圖，
+                    # 換了路徑就查不到 ENGINE_OF，補抓出來的檔案全部沒有 -ap 前綴
+                    # （2026-08-27 第一輪補抓 9 張，0 張標到來源）。
+                    if c["path"] in ENGINE_OF:
+                        ENGINE_OF[fpth] = ENGINE_OF[c["path"]]
                     path = fpth
                 except Exception as e:
                     sys.stderr.write("  ↩ 原圖抓取失敗（%s）→ 用次名\n" % type(e).__name__); continue
