@@ -636,6 +636,25 @@
       "scope": null,
       "feedback": "這篇發過了",
       "consumed": false
+    },
+    {
+      "id": "R-mtabfuyw",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-27T00:36:15+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "這篇過時了",
+      "consumed": false
     }
   ]
 }
