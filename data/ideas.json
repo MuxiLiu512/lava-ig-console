@@ -10,19 +10,7 @@
       "decision": "approve",
       "decided_at": "2026-08-27T00:39:39+08:00",
       "reason": "",
-      "applied": false
-    },
-    {
-      "task_id": "86eyqpwp6",
-      "title": "《愛你致死不渝》爛番茄 94%——「永遠愛我」這句話，什麼時候變成了最可怕的詛咒？｜病毒分 8｜🧠Claude",
-      "desc": "選題來源：Claude 選題引擎\n\n切角：《愛你致死不渝》本週在台灣引發「恐怖情人」熱論，多家媒體同步報導。切入點不是劇情，而是片中核心設定：一個人的愛，在什麼臨界點從「深情」變成「控制」？從具體情節出發，梳理「愛的強度」與「愛的安全感」之間的斷裂——真正讓人窒息的關係，往往不是從暴力開始，而是從「我這麼愛你，你怎麼可以離開」開始。橋接 Lava：在認識一個人的早期，你怎麼分辨對方的熱情是真實的安全感，還是一種需要你永遠回應的佔有？\n\n病毒係數：8/10。出圈證據為 Cosmopolitan、Marie Claire、udnSTYLE 三家台灣主流媒體在同一時間點集中報導同一部片，並帶動「恐怖情人」關鍵字討論，符合「多家主流媒體同時報導同一件事」的出圈標準。\n\n熱度證明：\nCosmopolitan 台灣｜《愛你致死不渝》爛番茄94%超高評價神作，2026最佳恐怖片，戀愛焦慮化為毛骨悚然惡夢｜爛番茄 94%，台灣主流媒體報導，定性為 2026 最佳恐怖片｜https://news.google.com/rss/articles/CBMioAFBVV95cUxPWjVyNG1aNldkbmNfLTZiQWpTeGh0cHpxV3o4QWg5VUhoYzJXUDhaLVJ4aGh0ZmJmbjBsOEloSVFFYmRRRkRaNUhtTGpaZkdNdDEwYVdveEU1NlJmak",
-      "url": "https://app.clickup.com/t/86eyqpwp6",
-      "created_at": "2026-08-25T09:02:16+08:00",
-      "decision": "approve",
-      "decided_at": "2026-08-25T18:27:59+08:00",
-      "reason": "",
-      "applied": true,
-      "rushed_at": "2026-08-26T12:42:48+08:00"
+      "applied": true
     },
     {
       "task_id": "86eyqbfrc",
@@ -132,7 +120,7 @@
       "decision": "approve",
       "decided_at": "2026-08-27T00:40:30+08:00",
       "reason": "",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eyq3ynw",
@@ -154,7 +142,7 @@
       "decision": "reject",
       "decided_at": "2026-08-27T00:40:12+08:00",
       "reason": "要的話，要更多的名人離婚或者婚前協議新聞",
-      "applied": false
+      "applied": true
     },
     {
       "task_id": "86eypznkw",
@@ -894,5 +882,5 @@
       "applied": true
     }
   ],
-  "pulled_at": "2026-08-27T00:35:05+08:00"
+  "pulled_at": "2026-08-27T01:01:03+08:00"
 }
