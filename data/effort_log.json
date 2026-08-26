@@ -64,6 +64,14 @@
       "seconds": 94,
       "pending": 1,
       "slides": 9
+    },
+    {
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-27T00:35:19+08:00",
+      "decision": "reject",
+      "seconds": 25,
+      "pending": 0,
+      "slides": 9
     }
   ]
 }
