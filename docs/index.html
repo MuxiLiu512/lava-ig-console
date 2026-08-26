@@ -1,36 +1,59 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-  <meta name="theme-color" content="#0e0f11">
-  <title>Lava IG 操控室</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e0f11">
+<title>工作台 · Lava</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* 工作台看板 〔UIUX 總體架構 §2.1〕五欄固定＋卡住側欄；<1216px 欄區水平捲動。 */
+:root{ --stage-you:#E84224; --stage-make:#6B7280; --stage-wait:#B45309;
+       --stage-sched:#2563EB; --stage-done:#15803D; }
+body.bd{ margin:0; max-width:none; width:100%; height:100vh; overflow:hidden;
+         display:flex; flex-direction:column; padding-bottom:0; }
+.bd-health{ display:flex; align-items:center; gap:14px; padding:7px 14px; font-size:12.5px;
+            border-bottom:1px solid var(--line,#25272c); flex:0 0 auto; flex-wrap:wrap; }
+.bd-health .dot{ display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px }
+.bd-main{ flex:1; display:flex; gap:10px; padding:10px; overflow-x:auto; min-height:0 }
+.bd-col{ flex:0 0 220px; display:flex; flex-direction:column; min-height:0 }
+.bd-col h4{ margin:0 0 8px; font-size:13px; display:flex; justify-content:space-between; align-items:center }
+.bd-col h4 .n{ font-weight:400; color:var(--muted,#8a8f98) }
+.bd-col h4.over{ color:var(--stage-you) }
+.bd-cards{ overflow-y:auto; min-height:0; display:flex; flex-direction:column; gap:8px }
+.bd-card{ background:#16181c; border:1px solid #25272c; border-radius:8px; padding:8px;
+          cursor:pointer; border-left:3px solid transparent }
+.bd-card:hover{ background:#1c1f24 }
+.bd-card .top{ display:flex; gap:8px }
+.bd-card .thumb{ width:56px; height:56px; object-fit:cover; border-radius:6px; flex:none; background:#222 }
+.bd-card .t{ font-size:12px; line-height:1.35; display:-webkit-box; -webkit-line-clamp:3;
+             -webkit-box-orient:vertical; overflow:hidden }
+.bd-card .meta{ display:flex; justify-content:space-between; align-items:center; margin-top:6px }
+.bd-card .age{ font-size:11px; color:var(--muted,#8a8f98) }
+.gates{ display:flex; gap:4px; align-items:center }
+.gate{ width:7px; height:7px; border-radius:50%; background:#4b5057 }
+.gate.ok{ background:var(--stage-done) } .gate.warn{ background:var(--stage-wait) }
+.gate.bad{ background:var(--stage-you) }
+.bd-stuck{ flex:0 0 240px; border:1px dashed #4b5057; border-radius:8px; padding:8px;
+           overflow-y:auto; min-height:0 }
+.bd-stuck h4{ margin:0 0 8px; font-size:13px }
+.bd-stuck .bd-card{ border-left-color:var(--stage-you); cursor:default }
+.bd-drawer{ position:fixed; top:0; right:-400px; width:380px; height:100vh; background:#141619;
+            border-left:1px solid #25272c; padding:16px; overflow-y:auto; transition:right .18s; z-index:50 }
+.bd-drawer.open{ right:0 }
+.bd-drawer h3{ margin:0 0 10px; font-size:15px }
+</style>
 </head>
-<body>
-  <header>
-    <div class="row" style="gap:4px">
-      <a class="icon-btn" href="home.html" title="回首頁" style="text-decoration:none">🏠</a>
-      <div class="title">Lava IG 操控室 <small id="modeTag"></small></div>
-    </div>
-    <div class="row" style="gap:6px">
-      <a class="btn" href="board.html" style="text-decoration:none;padding:4px 10px;font-size:12px">工作台</a>
-      <a class="btn" href="review.html" style="text-decoration:none;padding:4px 10px;font-size:12px">審稿台 v2</a>
-      <button class="icon-btn" id="btnSettings" title="設定">⚙︎</button>
-    </div>
-  </header>
-
-  <main id="app">
-    <div class="empty"><span class="spin"></span> 載入中…</div>
-  </main>
-
-  <nav class="tabbar">
-    <button data-tab="review" class="active"><span class="ic">📥</span>審核<span class="cnt badge-dot hidden" id="cntReview"></span></button>
-    <button data-tab="metrics"><span class="ic">📊</span>成效</button>
-    <button data-tab="proposals"><span class="ic">💡</span>提案<span class="cnt badge-dot hidden" id="cntProp"></span></button>
-    <button data-tab="versions"><span class="ic">🕑</span>版本</button>
-  </nav>
-
+<body class="bd">
+  <div class="bd-health" id="bdHealth"><span class="muted small">載入中…</span></div>
+  <div class="rv-bar" style="display:flex;align-items:center;gap:10px;padding:6px 14px;border-bottom:1px solid #25272c">
+    <a class="icon-btn" href="https://app.clickup.com/90182716173/v/li/901819351278" target="_blank" rel="noopener" style="text-decoration:none" title="ClickUp 選題清單">☰</a>
+    <div class="title" style="font-size:14px">工作台 <small id="modeTag"></small></div>
+    <div class="grow" style="flex:1"></div>
+    <a class="btn" href="review.html" style="text-decoration:none;font-size:12px;padding:3px 10px">審稿台 →</a>
+  </div>
+  <div class="bd-main" id="bdMain"></div>
+  <div class="bd-drawer" id="bdDrawer"></div>
   <script>
   // 每次載入都帶時間戳取新檔。GitHub Pages 給靜態資產 Cache-Control: max-age=600，
   // 於是「我修好了、你重整卻沒變化」重複發生了兩次（Jesse 2026-08-24、08-25）——
@@ -38,7 +61,7 @@
   // async=false 保證動態插入的 script 仍照順序執行（config → core → 頁面）。
   (function () {
     var v = "?v=" + Date.now();
-    ["config.js", "core.js", "app.js"].forEach(function (f) {
+    ["config.js", "core.js", "board.js"].forEach(function (f) {
       var s = document.createElement("script");
       s.src = f + v; s.async = false;
       document.head.appendChild(s);
