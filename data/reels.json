@@ -1,0 +1,57 @@
+{
+  "note": "Reels 生產紀錄：每次生成的段落、模型、成本與 prompt 版本。",
+  "reels": [
+    {
+      "id": "20260827-混合式樣片-聊兩週",
+      "title": "聊了兩個禮拜，然後呢",
+      "ts": "2026-08-27T02:21:42+08:00",
+      "seconds": 27.0,
+      "credits": 172.62,
+      "segments": [
+        {
+          "n": 1,
+          "type": "talk",
+          "seconds": 8.0,
+          "credits": 79.12,
+          "model": "seedance_2_5 1080p+語音 ＋ gpt_image_2 分鏡",
+          "note": "hook＋命題：聊兩週還是不知道他是誰"
+        },
+        {
+          "n": 2,
+          "type": "broll",
+          "seconds": 5.0,
+          "credits": 32.5,
+          "model": "seedance_2_5 720p 無語音",
+          "note": "空景：台北夜晚餐酒館吧台，兩只酒杯，無人臉"
+        },
+        {
+          "n": 3,
+          "type": "own",
+          "seconds": 4.0,
+          "credits": 0.0,
+          "model": "自有素材（零成本）",
+          "note": "自有素材：Lava App 配對成功後直接排時段的螢幕錄影"
+        },
+        {
+          "n": 4,
+          "type": "talk",
+          "seconds": 6.0,
+          "credits": 61.0,
+          "model": "seedance_2_5 1080p+語音 ＋ gpt_image_2 分鏡",
+          "note": "轉折：Lava 沒有聊天室"
+        },
+        {
+          "n": 5,
+          "type": "cards",
+          "seconds": 4.0,
+          "credits": 0.0,
+          "model": "render_reel.py 字卡（零成本）",
+          "note": "字卡收尾＋螢光筆標關鍵詞＋品牌 logo"
+        }
+      ],
+      "prompt_version": "7c54525d",
+      "jobs": [],
+      "status": "estimated"
+    }
+  ]
+}

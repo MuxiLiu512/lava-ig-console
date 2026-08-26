@@ -1,0 +1,16 @@
+{
+  "id": "20260827-混合式樣片-聊兩週",
+  "title": "聊了兩個禮拜，然後呢",
+  "note": "混合式結構驗證：口播開場立命題，空景承接情緒，自有素材帶產品，字卡收尾。",
+  "segments": [
+    {"type": "talk",  "seconds": 8,  "note": "hook＋命題：聊兩週還是不知道他是誰",
+     "script": "你有沒有算過，跟一個人聊了兩個禮拜，然後呢？聊到最後，你其實還是不知道他是誰。"},
+    {"type": "broll", "seconds": 5,  "note": "空景：台北夜晚餐酒館吧台，兩只酒杯，無人臉",
+     "prompt_hint": "handheld phone footage, Taipei wine bar counter at night, two glasses being poured, warm interior light, no faces, no people looking at camera"},
+    {"type": "own",   "seconds": 4,  "note": "自有素材：Lava App 配對成功後直接排時段的螢幕錄影"},
+    {"type": "talk",  "seconds": 6,  "note": "轉折：Lava 沒有聊天室",
+     "script": "Lava 沒有聊天室，配對成功就直接排一場見面。"},
+    {"type": "cards", "seconds": 4,  "note": "字卡收尾＋螢光筆標關鍵詞＋品牌 logo",
+     "lines": [[{"t": "說再多，"}], [{"t": "不如"}, {"t": "坐下來看對方一眼", "hl": "neon_green"}]]}
+  ]
+}

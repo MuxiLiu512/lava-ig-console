@@ -119,9 +119,22 @@ def append_line(path, line, marker="<!-- 迭代增補從這行以下 append"):
     return True
 
 
+REEL_KEYS = ("reel", "影片", "口播", "字卡", "空景", "旁白", "語速", "台詞")
+
+
+def _is_reel_feedback(text):
+    return any(k in str(text) for k in REEL_KEYS)
+
+
 def apply_low_risk(change):
     """change: {category, summary, payload}. 回傳 True 表示有實際改檔。"""
     cat = change["category"]
+    # Reels 的回饋要落到 Reels 的 prompt 正本，不是貼文的 style-notes。
+    # 兩條線的用語規則有交集（禁句共用）但不相同（語速、口播腔、字卡節奏只有 Reels 有），
+    # 混在一起會讓貼文撰稿讀到不相干的規則（Jesse 2026-08-27 開始量產 Reels）。
+    if _is_reel_feedback(change.get("payload")):
+        return append_line(os.path.join(CONFIG, "reel-prompts.md"),
+                           "- （回饋 %s）%s" % (today().isoformat(), change["payload"]))
     if cat == "negative_prompt":
         return append_line(os.path.join(CONFIG, "gen-prompt-template.md"),
                            "- （迭代 %s）負面 prompt 追加：%s" % (today().isoformat(), change["payload"]))

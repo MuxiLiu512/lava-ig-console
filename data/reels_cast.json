@@ -1,0 +1,18 @@
+{
+ "note": "Reels 常駐班底。角色一次生成長期重用——換人會讓帳號的臉不連續，比省下的 0.12 點重要。",
+ "cast": [
+  {
+   "id": "host-01",
+   "name": "主持人 A",
+   "gender": "female",
+   "age_band": "late-20s",
+   "character_job_id": "5cb65ae6-ae93-4063-a7a8-3054e473580c",
+   "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GD1szoTnFS7H5vlDa9ZkhYLRBr/hf_20260826_175330_5cb65ae6-ae93-4063-a7a8-3054e473580c.png",
+   "look": "及肩深棕層次髮、單眼皮、奶油色寬版針織上衣、深靛藍直筒丹寧",
+   "scene": "台北小公寓客廳，清水模橫樑、淺橡木書架、亞麻窗簾，冷調陰天自然光",
+   "created_at": "2026-08-26",
+   "model": "soul_2",
+   "role_limit": "主持人，不是用戶。可介紹產品，不得宣稱自身使用經驗或約會結果。"
+  }
+ ]
+}
