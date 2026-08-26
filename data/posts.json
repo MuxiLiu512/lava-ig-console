@@ -8420,13 +8420,6 @@
         }
       },
       "candidates_since": "2026-08-25T18:50:16+08:00",
-      "regen_needed": {
-        "ts": "2026-08-26T23:20:28+08:00",
-        "slides": [
-          5
-        ],
-        "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"
-      },
       "rendered_lines": {
         "1": [
           "亮司用一生躲在暗處，讓雪穗永遠站在光裡",
@@ -8686,7 +8679,8 @@
             "line": "「Salvador Minuchin 提出」的出處無法自動核對，請人工看過：https://www.simplypsychology.org/what-is-enmeshment.html"
           }
         ]
-      }
+      },
+      "regen_requested_at": "2026-08-27T00:39:34+08:00"
     },
     {
       "id": "20260824-StanTatkin說你",
