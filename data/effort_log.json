@@ -88,6 +88,14 @@
       "seconds": 64,
       "pending": 0,
       "slides": 9
+    },
+    {
+      "post_id": "20260824-StanTatkin說你",
+      "ts": "2026-08-27T00:38:31+08:00",
+      "decision": "reject",
+      "seconds": 9,
+      "pending": 2,
+      "slides": 9
     }
   ]
 }
