@@ -1,14 +1,14 @@
 {
- "ts": "2026-08-27T05:30:45+08:00",
+ "ts": "2026-08-27T12:44:27+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
  "typography_ok": true,
  "errors": [
-  "[08-27 05:29]   ✗ s5 https://dep.mohw.gov.tw/DOPS/lp-1303-105.html（dep.mohw.gov.tw:截圖失敗）",
-  "[08-27 05:29]   ✗ s3 https://en.wikipedia.org/wiki/Traumatic_bonding（en.wikipedia.org:截圖失敗）",
-  "[08-27 05:30] 文案⚠ 20260825-結婚條件今天在PTT推爆            {'赦免式安慰': 1}",
-  "[08-27 05:30] 文案⚠ 20260824-StanTatkin說你            {'赦免式安慰': 1}",
-  "[08-27 05:30] 事實🔴 20260826-愛你致死不渝爛番茄永遠愛            宣稱 7 項，問題 7 項"
+  "[08-27 11:22]   ✗ s5 https://dep.mohw.gov.tw/DOPS/lp-1303-105.html（dep.mohw.gov.tw:截圖失敗）",
+  "[08-27 11:22]   ✗ s3 https://en.wikipedia.org/wiki/Traumatic_bonding（en.wikipedia.org:截圖失敗）",
+  "[08-27 12:38] 文案⚠ 20260825-結婚條件今天在PTT推爆            {'赦免式安慰': 1}",
+  "[08-27 12:38] 文案⚠ 20260824-StanTatkin說你            {'赦免式安慰': 1}",
+  "[08-27 12:44] 事實🔴 20260826-愛你致死不渝爛番茄永遠愛            宣稱 7 項，問題 7 項"
  ]
 }

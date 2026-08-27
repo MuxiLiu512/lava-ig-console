@@ -2,6 +2,17 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "86eyrdm6u",
+      "title": "《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起——你選了誰？｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：電影設定「全球一年限時一晚情慾解禁」，表面是喜劇噱頭，實際上是一個關係測試：當選擇從「無限期」變成「只有今晚」，你才知道自己真正想見的是誰。從這個設定切進一個洞察——現代人談戀愛最大的問題不是沒有選擇，是選擇永遠開著、永遠不需要決定。Lava 的 offline-first 邏輯正好是反向操作：把「見面」從一個可以無限拖延的選項，變成一個你必須決定的具體時刻。\n\n病毒係數：7/10。ELLE Taiwan 與 Cosmopolitan Taiwan 為台灣主流媒體，兩者在七夕檔期同時獨立報導同一部電影，構成出圈證據；電影「限時一晚」設定本身具強烈討論性，與 Lava offline-first 邏輯高度契合，易引發共鳴留言\n\n熱度證明：\nELLE Taiwan｜七夕就看這部！《一夜限定》電影6大看點：沒有交友軟體，你還知道怎麼愛一個人嗎？莫妮卡芭芭羅、卡倫透納譜寫命定戀曲｜台灣主流媒體七夕檔期重點推介，含具體演員與看點｜https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEx6dC1JQTBDTlRLQ3ZQSjZGYk1GRnIzQjRkamJQNmZIRVFIS190WlJvS0c5R1ZkWFlLaS1uWWJjTUpLdElGRXEtU0hiWUpfcXhEZHRWY1pKTV",
+      "url": "https://app.clickup.com/t/86eyrdm6u",
+      "created_at": "2026-08-27T09:02:20+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "86eyr1e0e",
       "title": "A24《開放性邀請》問了一個讓人說不出話的問題：你喜歡對方，還是你喜歡「有人喜歡你」這件事？｜病毒分 7｜🧠Claude",
       "desc": "選題來源：Claude 選題引擎\n\n切角：從 A24 新片《開放性邀請》（Materialists）裡的核心衝突切入：三角關係的表面下，藏著一個更根本的問題——你對這個人的感情，有多少是真的喜歡「他」，有多少只是喜歡「被選擇」的感覺？電影用一個不舒服的方式逼你回答，而這個問題在現實的約會裡同樣存在，只是我們很少問自己。Lava 的設計邏輯是讓你真的去見面、去感受一個真實的人——因為只有這樣，你才能分清楚這兩種喜歡的差別。\n\n病毒係數：7/10。出圈證據為 GQ Taiwan（台灣主流媒體）深度影評，標題直接點出「最基本的喜歡對方」這個讓人不舒服的問題；換日線為第二獨立來源。兩家媒體同時從關係心理角度切入同一部電影，顯示台灣媒體圈有真實討論熱度。\n\n熱度證明：\nGQ Taiwan｜A24《開放性邀請》其實是愛情恐怖片，你敢不敢靈魂拷問自己：最基本的「喜歡對方」你們做到了嗎？｜台灣主流媒體 GQ Taiwan 深度影評，直接以「最基本的喜歡對方」為核心提問｜https://news.google.com/rss/articles/CBMi2gJBVV95cUxQV1o4a2V3akQxTktZNWxHRWVJVU12RzIweE1idGNoaHJqc0x2eTVtNTVVaXNDY1R2Q2pLcnhhMGN4cDB5MXV3Y0FaR09WNlNtbk9ubGd3Vmx4cGIxNH",
@@ -882,5 +893,5 @@
       "applied": true
     }
   ],
-  "pulled_at": "2026-08-27T05:30:22+08:00"
+  "pulled_at": "2026-08-27T11:23:29+08:00"
 }
