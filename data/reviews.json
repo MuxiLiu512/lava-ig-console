@@ -766,6 +766,25 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mtcezhxr",
+      "post_id": "20260825-結婚條件今天在PTT推爆",
+      "ts": "2026-08-28T11:51:02+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "b",
+        "6": "a",
+        "7": "a",
+        "8": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
