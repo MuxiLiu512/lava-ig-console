@@ -785,6 +785,25 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mtcf1ax7",
+      "post_id": "20260824-CarlRogers說你",
+      "ts": "2026-08-28T11:52:27+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "c",
+        "2": "d",
+        "3": "a",
+        "4": "c",
+        "5": "b",
+        "6": "c",
+        "7": "b",
+        "8": "e"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
