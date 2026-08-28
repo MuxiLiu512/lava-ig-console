@@ -363,6 +363,72 @@
         "metrics_window": "2026-08-28"
       },
       "rollback_of": null
+    },
+    {
+      "v": "cfg-023",
+      "date": "2026-08-29",
+      "commit": "d3c6501",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 選擇過少"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mryw8kv4"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-024",
+      "date": "2026-08-29",
+      "commit": "d3c3153",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 底圖重複太多，每篇都是一樣的"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mrywardn"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-025",
+      "date": "2026-08-29",
+      "commit": "1b70f33",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mrywblpd"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-026",
+      "date": "2026-08-29",
+      "commit": "a8f5d0e",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "成效觀察：高「Superlike 是什麼：把心」9.2% / 低「1810180428」1.0%"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": "2026-08-29"
+      },
+      "rollback_of": null
     }
   ],
   "rollback_requests": []
