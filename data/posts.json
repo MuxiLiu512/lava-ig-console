@@ -8919,7 +8919,11 @@
           "final_src": null,
           "heading": "大腦把「不確定」當作毒品",
           "display_copy": "曖昧比明確的愛更令人上癮\n因為【不確定性會放大多巴胺分泌】\n\n大腦不會選擇放棄：它會把每個模糊信號詮釋成：\n「也許他其實也喜歡我」\n\n《愛你致死不渝》的 Bear\n只是把這個迴路加速了一百倍\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
-          "default_cid": "a"
+          "default_cid": "a",
+          "crop_focus": [
+            0.781,
+            0.5
+          ]
         },
         {
           "n": 5,
