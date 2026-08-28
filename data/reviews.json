@@ -823,6 +823,25 @@
       "scope": null,
       "feedback": "稍微過時",
       "consumed": false
+    },
+    {
+      "id": "R-mtcf4lal",
+      "post_id": "20260826-愛你致死不渝爛番茄永遠愛",
+      "ts": "2026-08-28T11:55:00+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "d",
+        "2": "a",
+        "3": "a",
+        "4": "f",
+        "5": "a",
+        "6": "a",
+        "7": "f",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
     }
   ]
 }
