@@ -3602,41 +3602,32 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:13+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
         "note": "文案未偵測到數字或研究引用"
       },
       "qa": {
-        "ts": "2026-08-25T16:40:12+08:00",
-        "pass": false,
+        "ts": "2026-08-28T12:02:52+08:00",
+        "pass": true,
         "issues": [
-          {
-            "type": "duplicate_subject",
-            "slides": [
-              1,
-              3
-            ],
-            "severity": "block",
-            "detail": "第1張與第3張均使用「一男一女在酒吧/餐廳場景對坐/並坐飲酒」的情侶寫真作為主視覺，雖然模特兒不同、構圖一橫一直，但給讀者傳遞的視覺資訊完全重疊（都是『兩人實際見面』的場景照）。",
-            "fix": "第3張已承擔『約會成立通知』的功能敘事，建議將照片換成純 UI 截圖：手機畫面顯示 Lava 行事曆選時段介面，搭配『你的約會已成立』推播彈窗，去掉人像，讓該張聚焦在『流程』而非『約會氛圍』，與第1張做出人物vs介面的明確切換。"
-          },
           {
             "type": "composition",
             "slides": [
               1,
               2,
-              4
+              4,
+              5
             ],
             "severity": "warn",
-            "detail": "第1、2、4張底色均為純黑，視覺重量中央偏下，紅色發光卡片/圖框作為唯一焦點，三張構圖語言幾乎相同；第3張突然跳至淺黃雖有節奏感，但第4張又拉回純黑，整體形成『黑→黑→亮→黑→黑』的收縮感，尾段連續兩黑讓輪播失去推進動能。",
-            "fix": "將第4張（100%退款）的底色改為深紅色漸層（Lava品牌橙紅 #D93A2B → 深暗紅 #5C0F0F），讓黑底白字改為深紅底大白字，既維持衝擊感又打破連續純黑，同時強化『品牌保障』的視覺力道。"
+            "detail": "第1、2、4、5張底色均為純黑，主視覺元素（紅色卡片／紅色發光框）置中，文字左對齊排版結構幾乎一致；連續黑底張數佔全篇80%，滑動時視覺幾乎靜止，節奏斷在第3張黃底後又立刻跳回黑。",
+            "fix": "建議將第4張（100%退款）改為深紅色漸層或暗酒紅底，讓它在黑底序列裡有色溫差異；或將第5張CTA改為品牌橘紅滿版底色，製造收尾的亮度高潮，避免黑→黃→黑→黑→黑的明暗曲線在第3張後直接崩平。"
           },
           {
             "type": "monotone",
@@ -3647,14 +3638,14 @@
               5
             ],
             "severity": "warn",
-            "detail": "五張中有四張底色為純黑（#000000 或極深灰），整篇明暗比例嚴重失衡，第3張的淺黃是唯一亮點，滑動體驗沉悶。",
-            "fix": "除第4張已建議換深紅底外，第2張（流程說明）可改用極深墨綠（#0D1F1A）底色配暖白字，在同屬深色系的前提下製造色相變化，讓五張的底色序列變成：黑→墨綠→亮黃→深紅→黑，形成有呼吸感的明暗與色相節奏。"
+            "detail": "全篇五張中四張為純黑底，亮度集中在第3張（淡黃底），其餘各張整體曝光值極低；缺乏由暗→亮→暗→亮的起伏節奏，長時間瀏覽易造成視覺疲勞且品牌調性顯得沉悶。",
+            "fix": "在第2張（流程說明）考慮換成深炭灰（#1A1A1A以上）或加入半透明紋理底，與純黑做出層次；第5張CTA頁可拉高至品牌紅（#E8300F）滿版，作為全篇最亮的收尾錨點，製造明暗曲線。"
           }
         ],
-        "rhythm": "封面人像開場有溫度，但中段三連黑（張2→4→5）讓輪播像在原地踏步，唯一的亮黃（張3）孤立無援、無法帶動全篇節奏；需在深色系內製造色相差異，才能讓讀者有『往下滑有新東西』的驅動感。"
+        "rhythm": "黑底四連發把第3張黃底夾成孤島，節奏只有一個起伏就斷了；主視覺語言（紅色星星卡片）在第1、2、3、4、5張反覆出現雖有品牌一致性，但缺乏大小、角度、距離的變化，滑動感接近在同一個畫面上換字，建議至少讓一張改用截圖式UI畫面或俯拍實景約會場景，打破平面圖示連發的沉悶感。"
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4230,12 +4221,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:13+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:15+08:00",
+        "ts": "2026-08-28T12:02:11+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4262,7 +4253,7 @@
         ]
       },
       "qa": {
-        "ts": "2026-08-25T16:40:48+08:00",
+        "ts": "2026-08-28T12:03:22+08:00",
         "pass": false,
         "issues": [
           {
@@ -4273,8 +4264,8 @@
               6
             ],
             "severity": "block",
-            "detail": "Amir Levine 本人作為視覺主體在第2張（YouTube截圖正臉）、第5張（podcast側臉）、第6張（組圖左格仍是同一人坐在錄音室）連續出現三次，讀者滑到第5、6張時視覺資訊量為零，只是換了角度的同一張臉。",
-            "fix": "第5張換成「兩人坐在昏暗客廳對角沙發、中間有距離、各自低頭」的生活場景照，暗示舒適≠靠近的關係氛圍（搜圖關鍵字：couple sitting apart living room dim light cinematic）；第6張的左格換成抽象示意——例如同一人站在不同空間鏡像分割的概念圖，或以文字排版卡取代人物截圖，徹底移除Levine臉孔。"
+            "detail": "Amir Levine 本人在第2張（YouTube截圖正臉）、第5張（podcast側臉）、第6張（組圖左格podcast坐姿）連續三度出現，主體雖角度與來源不同，但同一張臉三度入鏡，讀者滑到第三次會產生『怎麼又是他』的視覺疲勞，且資訊密度被人物重複稀釋。",
+            "fix": "第5張或第6張擇一保留Levine畫面；另一張改用『兩人背對坐在同一張沙發、中間留有距離』的情境攝影（搜尋關鍵字：couple sitting apart on couch distance moody warm light），或改用黑底白字的純文字排版卡以製造節奏斷點。"
           },
           {
             "type": "duplicate_subject",
@@ -4283,8 +4274,8 @@
               8
             ],
             "severity": "block",
-            "detail": "第7張《Before Sunset》男女主角、第8張極高機率同為《Before Sunrise/Sunset》系列劇照（男主角臉型、髮型、年代感高度一致），連續兩張使用同一部電影／同一對演員，視覺主體重複。",
-            "fix": "第8張換成完全不同質感的圖：建議用「一張寫在霧面玻璃上的三個問題手寫字、背景模糊暖光咖啡廳」的靜物構圖（搜圖關鍵字：handwriting questions foggy cafe window warm bokeh），與第7張的人像形成強烈對比，同時呼應「問自己三件事」的文案。"
+            "detail": "第7張《Before Sunset》男女主角同框，第8張《Before Sunrise》系列同一男主角（Ethan Hawke年輕版）再度出現，雖為不同作品截圖，但同一演員、相似電影質感底圖連續兩張，讀者幾乎無法感知視覺切換。",
+            "fix": "第8張底圖改為非人物類畫面——例如『兩支手機螢幕對著彼此、桌面上有未讀訊息提示燈』（搜尋：two phones on table unread message night warm light），呼應『說出口』的文案主題，同時與第7張形成人物→物件的節奏對比。"
           },
           {
             "type": "composition",
@@ -4295,8 +4286,8 @@
               8
             ],
             "severity": "warn",
-            "detail": "第1、4、7、8張全部採用「真人情侶／人物半身像置頂、文字壓下半部」的相同構圖公式，且色調均為暗部壓黑+少量暖光，四張連看節奏完全沒有換氣點。",
-            "fix": "第4張或第8張改為純色背景+大字排版卡（高對比白底或品牌橘底），或改用俯角拍攝的物件靜物（書、便條紙、手），打破人像主導的視覺慣性。"
+            "detail": "第1、4、7、8張全部採用『上半部：真人照片暗調底圖，下半部：半透明深色蒙版疊文字』的相同構圖公式，四張連環出現時滑動節奏像在原地踏步，缺乏視覺呼吸點。",
+            "fix": "建議至少在第4或第8張轉換構圖語言：改用『全版純色或漸層背景＋大字排版』（無底圖），或採橫向分割版型（左圖右文），製造一個明顯的視覺休止符。"
           },
           {
             "type": "monotone",
@@ -4311,14 +4302,14 @@
               8
             ],
             "severity": "warn",
-            "detail": "除第9張CTA純黑外，全篇底圖幾乎清一色深灰/暗棕/墨綠暗部，缺乏一張明亮或高飽和的呼吸點，長輪播看到第5張眼睛已疲勞、情緒無法在正確節點被拉起。",
-            "fix": "建議在第4或第5張插入一張高亮度畫面——例如日光穿窗的空床特寫、或純白背景上的單一物件——作為全篇情緒中場的喘息點，之後再收回暗調結尾。"
+            "detail": "全篇底色幾乎清一色深褐/深灰暗調（唯一例外是第9張純黑CTA），缺少任何一張明亮或高彩度的對比張，九張輪播在Feed上整體呈現一塊黑色磚牆，無法在中段製造視覺驚喜留住讀者繼續滑。",
+            "fix": "建議在第4或第5張插入一張『米白/象牙底色＋黑色大標題＋黃色accent』的純排版卡，既符合Lava品牌色系，又能在暗調海中打一道光，強迫讀者眼球停頓。"
           }
         ],
-        "rhythm": "整篇節奏像一首歌從頭到尾只有一個動態：暗、人臉、文字，暗、人臉、文字——Levine的臉出現三次像卡帶，《Before》系列連開兩槍，第9張CTA雖然跳色但前八張完全沒有鋪好情緒起伏，建議至少插入一張「無人物、強光感」的視覺空隙，讓讀者在中段換一口氣再被結尾收住。"
+        "rhythm": "整篇視覺邏輯是『暗＋人臉＋文字block』的無限迴圈，同一套公式用了八張，Amir Levine的臉三度現身是最大硬傷，需在發佈前強制換掉至少一張人物圖並插入一張純排版明亮卡，才能讓節奏產生真正的起伏。"
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -4752,12 +4743,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:18+08:00",
+        "ts": "2026-08-28T12:02:14+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4779,7 +4770,7 @@
         ]
       },
       "qa": {
-        "ts": "2026-08-25T16:41:18+08:00",
+        "ts": "2026-08-28T12:03:50+08:00",
         "pass": false,
         "issues": [
           {
@@ -4789,8 +4780,8 @@
               8
             ],
             "severity": "block",
-            "detail": "第7張與第8張均使用《Before Sunrise》同一部電影的劇照，且場景、人物、色調高度相近（同一對男女角色、同樣的暖黃夜景街道），連續兩張幾乎像是同一張圖的不同裁切，讀者滑過去毫無視覺跳躍感。",
-            "fix": "第8張（三件練習清單）換掉《Before Sunrise》劇照，改用能傳達「練習、行動、刻意嘗試」概念的圖：搜尋『person taking notes journal cafe warm light overhead』或『close-up hands writing notebook coffee shop bokeh』，選一張帶有手部動作、俯拍或特寫視角的暖色調靜物／動作照，與第7張的人物街景形成主體類型的切換。"
+            "detail": "第7張與第8張均使用《Before Sunrise》同一部電影的劇照，場景同為夜間街道上的男女互動，人物、色調、構圖極度相似，滑動時視覺毫無切換感，讀者會以為沒有翻頁。",
+            "fix": "第8張改換能傳達「練習、行動、可操作」感的圖：建議搜尋「person writing notes in notebook cafe warm light overhead」或「two people laughing at coffee shop first date candid」，需與第7張的電影感浪漫氛圍形成對比，改用明亮、現實感的日常場景。"
           },
           {
             "type": "composition",
@@ -4802,8 +4793,8 @@
               6
             ],
             "severity": "warn",
-            "detail": "第1、2、3、4、6張全部採用「人物半身／上半身置於畫面上半、文字壓在下半」的相同構圖邏輯，且底圖色調集中在深褐、暗灰、暗綠，連續滑動時節奏幾乎沒有呼吸。第5張風景雖有切換，但整體暗系比例仍偏重。",
-            "fix": "建議在第4張（洛桑大學實驗）或第6張（Kai Cenat／TikTok）其中一張改用非人物主體的圖：例如搜尋『data chart growth bar graph warm background minimal』或『smartphone screen social media scroll closeup』，讓輪播在人物流中插入一個純物件或資訊圖感的視覺節點，打破人臉連發的構圖慣性。"
+            "detail": "第1～4張及第6張全數採用「真實人物半身／上半身居中偏上、文字壓下半部」的相同構圖公式，五張連續滑動節奏感趨近於零；雖然人物不同，但取景框架幾乎一模一樣，整體像在看同一個模版複製貼上。",
+            "fix": "建議在第2張（The Office辦公室）或第4張（Suits）中，至少有一張改成純色背景資訊圖表卡、或大面積留白的文字排版卡，打破「人像+文字」的單一節奏；另可考慮將第5張的風景橫構圖邏輯移植到第3或第4張。"
           },
           {
             "type": "monotone",
@@ -4816,14 +4807,14 @@
               6
             ],
             "severity": "warn",
-            "detail": "第1至第6張底圖幾乎清一色為低亮度暗色調（深棕、深灰、深橄欖），整篇前段過度沉重，缺乏明暗起伏。第7、8張雖略亮但仍屬中暗段；唯第9張純黑CTA是刻意設計，可接受。",
-            "fix": "建議將第5張（魅力三根柱子）或第4張底圖換成相對高亮度、中性色的圖，例如搜尋『bright minimalist white studio portrait confident person』或『airy natural light indoor scene soft focus』，在第4-5張之間製造一個亮部錨點，讓前後暗場有對比呼吸。"
+            "detail": "前六張底圖色調幾乎清一色為暗部壓黑（深棕、深灰、深綠），僅第5張稍有自然光但整體仍偏暗沉；第7、8張才出現較亮的場景，但佔比過少，整篇明暗比嚴重失衡，在Feed上會讓封面顯得沉悶。",
+            "fix": "建議在第3張（Kai Cenat）或第4張（Suits）置換為高亮度、飽和度較高的底圖，例如「bright studio podcast recording microphone colorful background」（對應Kai Cenat主題）或「sunlit business school campus students walking」（對應洛桑大學主題），讓輪播中段有一次明度躍升。"
           }
         ],
-        "rhythm": "整篇節奏呈現『暗—暗—暗—暗—暗—暗—微亮—微亮—全黑』的單調下坡，人物主體連發六張、劇照來源重複出現兩次（Before Sunrise），缺乏視覺換氣點；建議在第4或第5張插入一個亮色或非人物主體的張次，讓滑動節奏產生『重—輕—重』的呼吸結構。"
+        "rhythm": "整篇節奏呈現「暗—暗—暗—暗—暗—暗—暗—亮—黑」的單峰曲線，前六張人像底圖構圖公式幾乎無差異，第7、8張雖有突破卻犯了主體重複的硬傷，建議至少製造三次明暗或構圖類型的切換，才能讓讀者有繼續滑的動力。"
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -5423,12 +5414,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:18+08:00",
+        "ts": "2026-08-28T12:02:14+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5455,1707 +5446,10 @@
         ]
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
-      }
-    },
-    {
-      "id": "20260824-CarlRogers說你",
-      "topic": "Carl Rogers 說：你在感情裡一直在「評分」對方。但心理學最反直覺的發現是，放棄評分的人，反而更容易找到對的人",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eynxrxa",
-      "created_at": null,
-      "caption": "身高、工作、說話方式、那次遲到、那個奇怪的笑聲，你以為這叫「有眼光」，但人本心理學家 Carl Rogers 在研究人與人之間最真實的連結時，發現了一件反直覺的事：越努力評分的人，越難真正認識對方。\n\n他提出的「無條件正向關懷（UPR）」，後來被關係研究者帶入約會情境，結論同樣成立。\n\nRogers 說的 UPR，從來不是「無條件愛上每一個人」，而是在初次相遇時先給對方一個空間，讓他不需要為了讓你滿意而表演，讓他展示真實的自己，然後你再決定。\nLava 設計線下面對面見面的方式，也是基於同樣的邏輯：在你能真正觀察到一個人之前，聊天裡的印象管理幾乎是必然的。\n見到面，才是認識的開始。\n\n#交友軟體 #約會心理學 #感情 #戀愛 #Lava交友 #不聊天的交友軟體 #心理學 #CarlRogers #無條件正向關懷 #關係滿意度 #線下約會 #台灣交友 #感情觀 #自我成長 #人際關係",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-moode5b3d",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Goodreads",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-mood2395a",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-CarlRogers說你/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-CarlRogers說你/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-CarlRogers說你/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            }
-          ],
-          "final_src": null,
-          "heading": "你的腦袋裡，有一張隱形的評分表",
-          "display_copy": "你的腦袋裡\n有一張〖隱形的評分表〗\n\n身高、工作、那次遲到\n那個奇怪的笑聲\n\n你以為這叫「有眼光」\nRogers 說，這才是問題所在",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood9291d",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-mood88b45",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-2c.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-CarlRogers說你/slide-2d.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-CarlRogers說你/slide-2e.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            }
-          ],
-          "final_src": null,
-          "heading": "那場約會，你其實從沒「到場」",
-          "display_copy": "他點了奇怪的飲料，你【扣半分】\n他提到前任，再扣一分\n他笑聲很大，再扣\n\n約會結束你說「沒火花」\n\n。但你從來沒有\n真正【到場】過",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Goodreads",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-3b.webp",
-              "kind": "still",
-              "source_label": "Goodreads",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Rogers：被「接納」的人，才敢展示真實的自己",
-          "display_copy": "Rogers：\n\n「當我能接受他們作為獨立個體\n他們就會開始往某個方向移動」\n\n被【完整接納】的人\n才敢展示真實的自己\n\n那才是你判斷「有沒有火花」\n的唯一材料\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Houghton Mifflin.",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Suits",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Suits"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Suits"
-            }
-          ],
-          "final_src": null,
-          "heading": "2016 年研究：「條件式關懷」正在毀掉你們的關係",
-          "display_copy": "2016 年，125 人跨四種關係的研究：\n\n【條件式關懷】同時傷害兩件事：「自主感」：你不需要為了被喜歡而表演\n「歸屬感」：你被當成真實的你被接受\n\n評分制度，本質上就是一種條件式關懷\n\n資料來源：Kanat-Maymon et al. (2016). Journal of Personality, 84, 446–460.",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            }
-          ],
-          "final_src": null,
-          "heading": "2017 年每日追蹤研究：扣分的那天，關係滿意度就下降了",
-          "display_copy": "2017 年，80 人每日追蹤研究：\n\n「你符合我期望，我才對你好」\n→ 關係滿意度【下降】\n\n「你讓我失望，我就撤回溫暖」\n→ 關係滿意度【同樣下降】\n\n評分不只發生在第一次約會\n它每一天都在侵蝕關係\n\n資料來源：Kanat-Maymon, Argaman & Roth (2017). Personal Relationships, 24, 27–35.",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-moodb8168",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-moodc2c89",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-CarlRogers說你/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-CarlRogers說你/slide-6e.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
-          "final_src": null,
-          "heading": "「放棄評分」不是放低標準，是換一種認識方式",
-          "display_copy": "Rogers 說的「接納」\n不是愛上所有人\n\n是給對方一個空間：讓他不需要為了讓你滿意\n而【表演】\n\n見到面\n才是認識真正開始的地方",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood81dcc",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mooda6f21",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Rogers 的日落比喻：你為什麼要替日落打分數？",
-          "display_copy": "Rogers，《A Way of Being》：\n\n「人就像日落一樣美麗\n只要你讓他們自然展現\n\n我不會對日落說\n『把右角的橙色調淡一點』\n我帶著敬畏看著它展開」\n\n：在你看清楚之前\n〖先放下那支評分的筆〗\n\n資料來源：Rogers, C.R. A Way of Being. Goodreads.",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-moode5b3d",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-CarlRogers說你/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood7d6b5",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-CarlRogers說你/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-CarlRogers說你/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
-          "final_src": null,
-          "heading": "下次約會，試著做一件事：先不要評分",
-          "display_copy": "下次約會，試一件事：\n\n【先不要評分】\n\n不是接受一切\n是真正在場：聽他說話，不是為了找破綻\n而是因為你想知道他是誰\n\n那種感受\n比任何評分表都準確\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Goodreads.",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "UPR 最初由 Stanley Standal 於 1954 年提出概念雛型，後由 Carl Rogers 於 1956 年擴展並發揚光大",
-          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
-          "quote": "Rogers 著作與引言收錄於 Goodreads，On Becoming a Person 出版於 1961 年，UPR 概念在 1950 年代由 Rogers 系統化發展"
-        },
-        {
-          "claim": "Rogers 說：「在我與那些最困擾的個案最深接觸中，當我能接受他們作為獨立個體，他們就會開始往某個方向移動。」",
-          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
-          "quote": "In my most inner-most relationships with these individuals, when I am most sensitive in understanding them, and when I receive them as independent persons, then I find that they tend to move in certain directions."
-        },
-        {
-          "claim": "Rogers 在《A Way of Being》中的日落比喻：「人就像日落一樣美麗，只要你讓他們自然展現……」",
-          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
-          "quote": "People are just as wonderful as sunsets if you let them be. When I look at a sunset, I don't find myself saying, 'Soften the orange a bit on the right hand corner.' I don't try to control a sunset. I watch with awe as it unfolds."
-        },
-        {
-          "claim": "Rogers 的悖論語錄：「奇怪的矛盾在於，當我接受自己本來的樣子，我才能改變。」出自《On Becoming a Person》",
-          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
-          "quote": "The curious paradox is that when I accept myself just as I am, then I can change."
-        },
-        {
-          "claim": "Kanat-Maymon 等研究者於 2016 年針對 125 名受試者、橫跨戀人、好友、父母四種關係類型進行研究，發現條件式正向關懷（CPR）與關係品質呈顯著負相關",
-          "source": "https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171",
-          "quote": "Study 1 (N = 125) examined CPR from four relationship partners (mother, father, romantic partner, and best friend) and its associations with relationship quality... CPR was associated with poorer relationship quality."
-        },
-        {
-          "claim": "2017 年以每日日記法追蹤 80 名受試者，CPR 與 CNR 在個人層次皆與關係滿意度呈負相關",
-          "source": "https://onlinelibrary.wiley.com/doi/10.1111/pere.12164",
-          "quote": "Multilevel analyses on data from 80 participants… showed that both CPR and CNR were negatively associated with relationship satisfaction at the between-person level."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "身高、工作、說話方式、那次遲到、那個奇怪的笑聲，你以為這叫「有眼光」，但人本心理學家 Carl Rogers 在研究人與人之間最真實的連結時，發現了一件反直覺的事：越努力評分的人，越難真正認識對方。\n\n他提出的「無條件正向關懷（UPR）」，後來被關係研究者帶入約會情境，結論同樣成立。\n\nRogers 說的 UPR，從來不是「無條件愛上每一個人」，而是在初次相遇時先給對方一個空間，讓他不需要為了讓你滿意而表演，讓他展示真實的自己，然後你再決定。\nLava 設計線下面對面見面的方式，也是基於同樣的邏輯：在你能真正觀察到一個人之前，聊天裡的印象管理幾乎是必然的。\n見到面，才是認識的開始。\n\n#交友軟體 #約會心理學 #感情 #戀愛 #Lava交友 #不聊天的交友軟體 #心理學 #CarlRogers #無條件正向關懷 #關係滿意度 #線下約會 #台灣交友 #感情觀 #自我成長 #人際關係",
-          "slides": {
-            "1": {
-              "heading": "你的腦袋裡，有一張隱形的評分表",
-              "display_copy": "你的腦袋裡\n有一張〖隱形的評分表〗\n\n身高、工作、那次遲到\n那個奇怪的笑聲\n\n你以為這叫「有眼光」\nRogers 說，這才是問題所在"
-            },
-            "2": {
-              "heading": "那場約會，你其實從沒「到場」",
-              "display_copy": "他點了奇怪的飲料，你【扣半分】\n他提到前任，再扣一分\n他笑聲很大，再扣\n\n約會結束你說「沒火花」\n\n——但你從來沒有\n真正【到場】過"
-            },
-            "3": {
-              "heading": "Rogers：被「接納」的人，才敢展示真實的自己",
-              "display_copy": "Rogers：\n\n「當我能接受他們作為獨立個體\n他們就會開始往某個方向移動」\n\n被【完整接納】的人\n才敢展示真實的自己\n\n那才是你判斷「有沒有火花」\n的唯一材料\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Houghton Mifflin."
-            },
-            "4": {
-              "heading": "2016 年研究：「條件式關懷」正在毀掉你們的關係",
-              "display_copy": "2016 年，125 人跨四種關係的研究：\n\n【條件式關懷】同時傷害兩件事——\n\n「自主感」：你不需要為了被喜歡而表演\n「歸屬感」：你被當成真實的你被接受\n\n評分制度，本質上就是一種條件式關懷\n\n資料來源：Kanat-Maymon et al. (2016). Journal of Personality, 84, 446–460."
-            },
-            "5": {
-              "heading": "2017 年每日追蹤研究：扣分的那天，關係滿意度就下降了",
-              "display_copy": "2017 年，80 人每日追蹤研究：\n\n「你符合我期望，我才對你好」\n→ 關係滿意度【下降】\n\n「你讓我失望，我就撤回溫暖」\n→ 關係滿意度【同樣下降】\n\n評分不只發生在第一次約會\n它每一天都在侵蝕關係\n\n資料來源：Kanat-Maymon, Argaman & Roth (2017). Personal Relationships, 24, 27–35."
-            },
-            "6": {
-              "heading": "「放棄評分」不是放低標準，是換一種認識方式",
-              "display_copy": "Rogers 說的「接納」\n不是愛上所有人\n\n是給對方一個空間——\n讓他不需要為了讓你滿意\n而【表演】\n\n見到面\n才是認識真正開始的地方"
-            },
-            "7": {
-              "heading": "Rogers 的日落比喻：你為什麼要替日落打分數？",
-              "display_copy": "Rogers，《A Way of Being》：\n\n「人就像日落一樣美麗\n只要你讓他們自然展現\n\n我不會對日落說\n『把右角的橙色調淡一點』\n我帶著敬畏看著它展開」\n\n——在你看清楚之前\n〖先放下那支評分的筆〗\n\n資料來源：Rogers, C.R. A Way of Being. Goodreads."
-            },
-            "8": {
-              "heading": "下次約會，試著做一件事：先不要評分",
-              "display_copy": "下次約會，試一件事：\n\n【先不要評分】\n\n不是接受一切\n是真正在場——\n聽他說話，不是為了找破綻\n而是因為你想知道他是誰\n\n那種感受\n比任何評分表都準確\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Goodreads."
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:20:36+08:00",
-      "rendered_lines": {
-        "1": [
-          "你的腦袋裡，有一張隱形的評分表",
-          "",
-          "你的腦袋裡",
-          "有一張〖隱形的評分表〗",
-          "身高、工作、那次遲到",
-          "那個奇怪的笑聲",
-          "你以為這叫「有眼光」",
-          "Rogers 說，這才是問題所在"
-        ],
-        "2": [
-          "那場約會，你其實從沒「到場」",
-          "",
-          "他點了奇怪的飲料，你扣半分",
-          "他提到前任，再扣一分",
-          "他笑聲很大，再扣",
-          "約會結束你說「沒火花」",
-          "——但你從來沒有",
-          "真正到場過"
-        ],
-        "3": [
-          "Rogers：被「接納」的人，才敢展示真實",
-          "的自己",
-          "",
-          "Rogers",
-          "「當我能接受他們作為獨立個體",
-          "他們就會開始往某個方向移動」",
-          "被完整接納的人",
-          "才敢展示真實的自己",
-          "那才是你判斷「有沒有火花」",
-          "的唯一材料",
-          "資料來源：Rogers, C.R. (1961). On Becoming a",
-          "Person. Houghton Mifflin"
-        ],
-        "4": [
-          "2016 年研究：「條件式關懷」正在毀掉你們",
-          "的關係",
-          "",
-          "2016 年，125 人跨四種關係的研究",
-          "條件式關懷同時傷害兩件事",
-          "「自主感」：你不需要為了被喜歡而表演",
-          "「歸屬感」：你被當成真實的你被接受",
-          "評分制度，本質上就是一種條件式關懷",
-          "資料來源：Kanat-Maymon et al. (2016). Journal of",
-          "Personality, 84, 446–460"
-        ],
-        "5": [
-          "2017 年每日追蹤研究：扣分的那天，關係滿",
-          "意度就下降了",
-          "",
-          "2017 年，80 人每日追蹤研究",
-          "「你符合我期望，我才對你好」",
-          "→ 關係滿意度下降",
-          "「你讓我失望，我就撤回溫暖」",
-          "→ 關係滿意度同樣下降",
-          "評分不只發生在第一次約會",
-          "它每一天都在侵蝕關係",
-          "資料來源：Kanat-Maymon, Argaman & Roth (2017).",
-          "Personal Relationships, 24, 27–35"
-        ],
-        "6": [
-          "「放棄評分」不是放低標準，是換一種認識方",
-          "式",
-          "",
-          "Rogers 說的「接納」",
-          "不是愛上所有人",
-          "是給對方一個空間",
-          "讓他不需要為了讓你滿意",
-          "而表演",
-          "見到面",
-          "才是認識真正開始的地方"
-        ],
-        "7": [
-          "Rogers 的日落比喻：你為什麼要替日落打分",
-          "數",
-          "",
-          "Rogers，《A Way of Being》",
-          "「人就像日落一樣美麗",
-          "只要你讓他們自然展現",
-          "我不會對日落說",
-          "『把右角的橙色調淡一點』",
-          "我帶著敬畏看著它展開」",
-          "——在你看清楚之前",
-          "先放下那支評分的筆",
-          "資料來源：Rogers, C.R. A Way of Being. Goodreads"
-        ],
-        "8": [
-          "下次約會，試著做一件事：先不要評分",
-          "",
-          "下次約會，試一件事",
-          "先不要評分",
-          "不是接受一切",
-          "是真正在場",
-          "聽他說話，不是為了找破綻",
-          "而是因為你想知道他是誰",
-          "那種感受",
-          "比任何評分表都準確",
-          "資料來源：Rogers, C.R. (1961). On Becoming a",
-          "Person. Goodreads"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-28T11:44:19+08:00",
-        "pass": false,
-        "claims": 5,
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2016 年」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2017 年」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/pere.12164"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「125 人」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「80 人」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/pere.12164"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「Carl Rogers 說：你在感情裡一直在「評分」對」沒有對應出處（人物引述）"
-          }
-        ]
-      },
-      "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      }
-    },
-    {
-      "id": "20260825-結婚條件今天在PTT推爆",
-      "topic": "r datingoverthirty 上最多 30+ 的人在說：「我不是不想談戀愛，我只是不知道怎麼重新開始」",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eyqbfr1",
-      "created_at": null,
-      "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood22e4a",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：loganury.com；Amazon / Simon & Schuster",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moode5df2",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1j.webp",
-              "kind": "still",
-              "source_label": "Catastrophe"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1k.webp",
-              "kind": "still",
-              "source_label": "Catastrophe",
-              "low_q": true
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1l.webp",
-              "kind": "still",
-              "source_label": "Catastrophe",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "問題從來不是遇不到人",
-          "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-moodba4db",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-mood09dce",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2c.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2d.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2e.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            }
-          ],
-          "final_src": null,
-          "heading": "那個卡住的感覺，幾乎人人都有",
-          "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是：「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Gottman Institute 官方研究頁",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3b.webp",
-              "kind": "still",
-              "source_label": "b-mooda7f03",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "30 歲前後，孤獨感真的有一個峰值",
-          "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4a.webp",
-              "kind": "still",
-              "source_label": "loganury.com",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4b.webp",
-              "kind": "still",
-              "source_label": "loganury.com",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Her",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
-              "kind": "still",
-              "source_label": "The Later Daters"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4k.webp",
-              "kind": "still",
-              "source_label": "The Later Daters"
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4l.webp",
-              "kind": "still",
-              "source_label": "The Later Daters"
-            }
-          ],
-          "final_src": null,
-          "heading": "Logan Ury 把這個卡關命名了",
-          "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常：很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Amazon / Simon & Schuster",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Amazon / Simon & Schuster",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            }
-          ],
-          "final_src": null,
-          "heading": "約會是一門需要學的技能，不是本能",
-          "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能。是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood5c3e6",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-moodc24e3",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "行為科學給「不知道怎麼開始」的具體步驟",
-          "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-moodc8425",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-moode71c4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
-              "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7g.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7h.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "Lava 把「怎麼開始」這一步，設計進去了",
-          "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱：台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood48bcc",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-moodab9ca",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
-              "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8h.webp",
-              "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8i.webp",
-              "kind": "still",
-              "source_label": "Begin Again"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8j.webp",
-              "kind": "still",
-              "source_label": "Begin Again"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8k.webp",
-              "kind": "still",
-              "source_label": "Begin Again"
-            }
-          ],
-          "final_src": null,
-          "heading": "「刻意之愛」的意思，是你可以主動建立它",
-          "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "成人孤獨感呈現兩個高峰（接近 30 歲前後與 60 歲附近）與兩個低谷（約 40 歲、約 75 歲），並非線性攀升",
-          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/",
-          "quote": "Age and loneliness showed a U-shaped association, with loneliness being highest in young adulthood and old age."
-        },
-        {
-          "claim": "台灣 25–39 歲未婚率為 61.59%（男 67.07%、女 55.79%）",
-          "source": "https://grass.camp/blog/serious-dating-apps-taiwan-30s",
-          "quote": "根據內政部 2024 年戶政統計：25–39 歲台灣人未婚率為 61.59%（男 67.07%、女 55.79%）"
-        },
-        {
-          "claim": "Logan Ury 是 Hinge 關係科學總監，哈佛心理學畢業，曾主導 Google 行為科學團隊「非理性實驗室」（Irrational Lab），亦是 Netflix 節目《The Later Daters》的約會教練嘉賓",
-          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
-          "quote": "Logan Ury is the Director of Relationship Science at Hinge and a former behavioral scientist at Google's Irrational Lab."
-        },
-        {
-          "claim": "Logan Ury 將「對重新約會的恐懼」命名為 FODA，指出人們擔心的是社交技能生疏、不知道聊什麼，並建議先理解這非常正常、很多人都在經歷同樣的事",
-          "source": "https://www.pressreader.com/usa/chicago-tribune-sunday/20210711/282707640062387",
-          "quote": "Ury calls this fear of dating again, or FODA. People worry their social skills have gotten rusty, or they won't know what to talk about."
-        },
-        {
-          "claim": "Logan Ury 說：Dating 在整個人類歷史中其實是非常新的事物；雖然我們天生就懂得愛，但不代表我們生來就懂得約會；什麼是長期伴侶關係中值得優先考量的特質，這不是本能知識，而是需要學習的",
-          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
-          "quote": "While we're born with the capacity to love, we're not born knowing how to date. What makes a good long-term partner is not instinctual knowledge—it needs to be learned."
-        },
-        {
-          "claim": "行為科學建議的具體步驟包括：設定短期截止日期、做準備（下載 App、準備照片）、公開宣告、建立新的自我認同、從每週一次約會開始（不超過）、對自己保持同理心、不聯絡前任",
-          "source": "https://ericsandroni.com/how-to-not-die-alone-summary/",
-          "quote": "Set a deadline, do the prep work (download apps, prepare photos), make a public commitment, create a new self-story, start with one date a week, and show yourself compassion."
-        },
-        {
-          "claim": "Logan Ury 提出「刻意之愛」（intentional love）：要擁有好的感情，你必須主動建立它，而非等待它的出現",
-          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
-          "quote": "To have a great relationship, you need to build it intentionally rather than wait for it to happen to you."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
-          "slides": {
-            "1": {
-              "heading": "問題從來不是遇不到人",
-              "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步"
-            },
-            "2": {
-              "heading": "那個卡住的感覺，幾乎人人都有",
-              "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是——\n「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」"
-            },
-            "3": {
-              "heading": "30 歲前後，孤獨感真的有一個峰值",
-              "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計"
-            },
-            "4": {
-              "heading": "Logan Ury 把這個卡關命名了",
-              "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常——\n很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021"
-            },
-            "5": {
-              "heading": "約會是一門需要學的技能，不是本能",
-              "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能——是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview"
-            },
-            "6": {
-              "heading": "行為科學給「不知道怎麼開始」的具體步驟",
-              "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要"
-            },
-            "7": {
-              "heading": "Lava 把「怎麼開始」這一步，設計進去了",
-              "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱——\n台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去"
-            },
-            "8": {
-              "heading": "「刻意之愛」的意思，是你可以主動建立它",
-              "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:30:21+08:00",
-      "rendered_lines": {
-        "1": [
-          "問題從來不是遇不到人",
-          "",
-          "問題從來不是",
-          "遇不到人",
-          "是站在入口前",
-          "不知道怎麼",
-          "重新踏進去",
-          "30 歲後重新約會",
-          "障礙從來不是機會",
-          "是那個第一步"
-        ],
-        "2": [
-          "那個卡住的感覺，幾乎人人都有",
-          "",
-          "分手之後的第一個念頭",
-          "往往不是「我不想再愛」",
-          "而是",
-          "「我已經不知道",
-          "現在的規則是什麼了」",
-          "上一次認真約會可能是六年前、八年前",
-          "那時候還沒有滑卡",
-          "還不需要在三張照片裡定義自己",
-          "r/datingoverthirty 上最常見的問題",
-          "「我準備好了，但第一步是什麼？」"
-        ],
-        "3": [
-          "30 歲前後，孤獨感真的有一個峰值",
-          "",
-          "孤獨感並非年紀越大越深",
-          "研究發現它有兩個高峰",
-          "一個在接近 30 歲前後",
-          "一個在 60 歲附近",
-          "低谷反而在 40 歲與 75 歲",
-          "台灣 25–39 歲未婚率：61.59%",
-          "這不是個人問題",
-          "是整整一個世代同時走到的轉折",
-          "資料來源：Luhmann & Hawkley (2016), PMC/NCBI",
-          "內政部 2024 年戶政統計"
-        ],
-        "4": [
-          "Logan Ury 把這個卡關命名了",
-          "",
-          "Hinge 關係科學總監",
-          "Logan Ury 把它命名了",
-          "FODA",
-          "Fear of Dating Again",
-          "對重新約會的恐懼",
-          "「人們擔心的是",
-          "社交技能生疏、不知道聊什麼」",
-          "她說：與其自責",
-          "先知道這非常正常",
-          "很多人都在經歷同樣的事",
-          "這不是你出了問題",
-          "是一個有名字的現象",
-          "資料來源：Logan Ury / Chicago Tribune, via",
-          "PressReader, 2021"
-        ],
-        "5": [
-          "約會是一門需要學的技能，不是本能",
-          "",
-          "Logan Ury 說了一件",
-          "讓很多人鬆一口氣的事",
-          "「Dating 在人類歷史上",
-          "其實是非常新的事物",
-          "我們天生就懂得愛",
-          "但不代表我們生來",
-          "就懂得約會",
-          "什麼是好伴侶的特質",
-          "這不是本能——是需要學習的」",
-          "30+ 卡住不是你的問題",
-          "你只是之前從來沒被教過",
-          "資料來源：Logan Ury, How Not to Die Alone (2021)",
-          "Behavioral Scientist interview"
-        ],
-        "6": [
-          "行為科學給「不知道怎麼開始」的具體步驟",
-          "",
-          "行為科學的答案不是",
-          "「鼓起勇氣」",
-          "而是把「開始」拆解成步驟",
-          "① 設定截止日期",
-          "② 準備照片、下載 App",
-          "③ 向朋友公開宣告",
-          "④ 建立新的自我認同",
-          "⑤ 每週一次約會，不超過",
-          "⑥ 對自己保持同理心",
-          "⑦ 不聯絡前任",
-          "把模糊的情感決定",
-          "變成可以執行的小動作",
-          "資料來源：Logan Ury, How Not to Die Alone",
-          "ericsandroni.com 摘要"
-        ],
-        "7": [
-          "Lava 把「怎麼開始」這一步，設計進去了",
-          "",
-          "大多數 App 的節奏",
-          "是為 20 代設計的",
-          "無止盡滑卡、尬聊、慢熱",
-          "台灣 30+ 面對的是",
-          "結構性的時間壓縮",
-          "工作與體力都不允許同等消耗",
-          "Lava 把第一步從",
-          "「怎麼開口」",
-          "變成「去哪裡」",
-          "讓那個門檻低一點點",
-          "低到你真的能跨過去"
-        ],
-        "8": [
-          "「刻意之愛」的意思，是你可以主動建立它",
-          "",
-          "Logan Ury 說",
-          "「要擁有好的感情",
-          "你必須主動建立它",
-          "而非等待它的出現」",
-          "愛情不是隨機降臨的意外",
-          "而是一連串可以主動決策的事件",
-          "30 歲之後的愛情",
-          "需要的不是更多緣分",
-          "而是一個決定",
-          "今天要踏出去",
-          "資料來源：Logan Ury, How Not to Die Alone",
-          "Behavioral Scientist interview"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-28T11:44:21+08:00",
-        "pass": false,
-        "claims": 11,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「些流程消耗的時間與精力，是 20 歲才有的存款。 台灣 30+」沒有對應出處（年齡）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「孤獨感並非年紀越大越深  研究發現它有兩個高峰： 一個在接近」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「一門需要學的技能，不是本能 Logan Ury 說了一件 讓很多人鬆一口氣的事」沒有對應出處（人物引述）"
-          }
-        ]
-      },
-      "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
-        "pass": false,
-        "counts": {
-          "赦免式安慰": 1
-        },
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "赦免式安慰",
-            "where": "第5張內文",
-            "line": "第5張內文：…的」  30+ 卡住不是你的問題 你只是之前從來沒被…",
-            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
-          }
-        ]
-      }
-    },
-    {
-      "id": "20260824-毛骨悚然的戀愛大結局前朴",
-      "topic": "《毛骨悚然的戀愛》大結局前，朴恩斌選擇留下的那一刻：心理學說，這才是真正的承諾",
-      "version": 1,
-      "status": "approved",
-      "clickup_task_id": "86eyq9f6c",
-      "created_at": null,
-      "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-moodbb4f4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-mood1e1aa",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love"
-            }
-          ],
-          "final_src": null,
-          "heading": "愛到最深，反而想逃",
-          "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood8dbf0",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-mood9869c",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "明明很愛，卻在最靠近的時候消失",
-          "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面：不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3a.webp",
-              "kind": "still",
-              "source_label": "a-mood07005",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3b.webp",
-              "kind": "still",
-              "source_label": "a-moodd13c1",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "心理學叫它「被吞噬的恐懼」",
-          "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開：被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mood191b3",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4b.webp",
-              "kind": "still",
-              "source_label": "b-mood8372f",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "迴避型依附：脆弱時最容易退場",
-          "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯：習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-mood6d791",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "讓關係存活的不是「沒有危機」，是這三件事",
-          "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood3dbb4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-mood4502f",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "「留下」這個動作，才是承諾的起點",
-          "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態：帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌輕置入",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood1c14e",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-mood1f1ce",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7c.webp",
-              "kind": "still",
-              "source_label": "b-mood64b17",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "真實見面，才會知道自己到底願不願意留下",
-          "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會：因為承諾只在真實的接觸裡才有機會發生。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-moodf56c8",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "恐懼不會消失，但你可以選擇帶著它留下",
-          "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍：觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "《毛骨悚然的戀愛》自 2026 年 7 月 18 日至 8 月 23 日播出",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "Spooky in Love is a 2026 South Korean television series that aired on tvN from July 18 to August 23, 2026"
-        },
-        {
-          "claim": "大結局全國平均收視率為 7.9%、最高 9%，連續 6 週在有線及綜合編成頻道中拿下同時段收視冠軍",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "The finale recorded an average nationwide rating of 7.9% and a peak of 9%, topping its timeslot among cable and general programming channels for six consecutive weeks"
-        },
-        {
-          "claim": "首集收視率 3.049%，第 4 集成長至 5.810%",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "ratings grew from 3.049% in the first episode to 5.810% by the fourth episode"
-        },
-        {
-          "claim": "登上台灣 Netflix Top 10 節目第二名",
-          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
-          "quote": "It ranked second on Taiwan's Netflix Top 10"
-        },
-        {
-          "claim": "David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」",
-          "source": "https://psychologyfanatic.com/engulfment/",
-          "quote": "Fear of engulfment means that if someone gets too close physically or emotionally, you feel suffocated or lose your freedom"
-        },
-        {
-          "claim": "Le & Agnew 2003 年 meta-analysis 橫跨 52 項研究、60 個獨立樣本、共 11,582 名參與者",
-          "source": "https://doi.org/10.1111/j.1475-6811.2003.tb00345.x",
-          "quote": "analyses were conducted on 52 studies (60 independent samples, N = 11,582)"
-        },
-        {
-          "claim": "迴避型依附維度與衝突中的退縮行為顯著相關，且在脆弱時刻及壓力事件中尤為明顯",
-          "source": "https://doi.org/10.1002/pchj.2023",
-          "quote": "avoidant attachment orientation was primarily associated with withdrawal behavior during conflict, with direct evidence confirming the association between avoidant attachment dimensions and withdrawal strategies"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
-          "slides": {
-            "1": {
-              "heading": "愛到最深，反而想逃",
-              "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾"
-            },
-            "2": {
-              "heading": "明明很愛，卻在最靠近的時候消失",
-              "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面——不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。"
-            },
-            "3": {
-              "heading": "心理學叫它「被吞噬的恐懼」",
-              "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開——被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/"
-            },
-            "4": {
-              "heading": "迴避型依附：脆弱時最容易退場",
-              "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯——習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023"
-            },
-            "5": {
-              "heading": "讓關係存活的不是「沒有危機」，是這三件事",
-              "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57"
-            },
-            "6": {
-              "heading": "「留下」這個動作，才是承諾的起點",
-              "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態——帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。"
-            },
-            "7": {
-              "heading": "真實見面，才會知道自己到底願不願意留下",
-              "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會——因為承諾只在真實的接觸裡才有機會發生。"
-            },
-            "8": {
-              "heading": "恐懼不會消失，但你可以選擇帶著它留下",
-              "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍——觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:36:41+08:00",
-      "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      },
-      "rendered_lines": {
-        "1": [
-          "愛到最深，反而想逃",
-          "",
-          "〖愛到最深，反而想逃〗",
-          "《毛骨悚然的戀愛》大結局",
-          "朴恩斌選擇留下的那一刻",
-          "心理學說，這才是真正的承諾"
-        ],
-        "2": [
-          "明明很愛，卻在最靠近的時候消失",
-          "",
-          "明明很愛，卻在最靠近的時候消失",
-          "和一個人愈來愈近，某天卻突然不想回訊息、開始找",
-          "藉口不見面——不是因為不愛了，是因為太靠近讓你",
-          "喘不過氣",
-          "《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危",
-          "機最頂點選擇解除婚約。與其說是放棄，不如說是一",
-          "種逃脫的本能，而心理學早就給了這種本能一個名字"
-        ],
-        "3": [
-          "心理學叫它「被吞噬的恐懼」",
-          "",
-          "心理學叫它被吞噬的恐懼",
-          "Fear of Engulfment",
-          "心理學家 David Richo（2002）：「若有人在身體或情",
-          "感上過於靠近，你會感到窒息或失去自由。」",
-          "愈渴望親密的人，有時反而愈容易把對方推開",
-          "被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方",
-          "都困惑的推拉動態",
-          "資料來源：Psychology Fanatic，psychologyfanatic.",
-          "com/engulfment/"
-        ],
-        "4": [
-          "迴避型依附：脆弱時最容易退場",
-          "",
-          "迴避型依附：脆弱時最容易退場",
-          "研究顯示，迴避型依附者在脆弱時刻與壓力事件中退",
-          "縮行為最為明顯——習慣性地自我封閉、拒絕求援",
-          "把最需要對方的時刻，變成最有可能消失的時刻",
-          "千汝利在事業危機頂點解除婚約，不是不愛了，是恐",
-          "懼的防禦機制在說話",
-          "資料來源：PsyCh Journal, Wiley, 2023"
-        ],
-        "5": [
-          "讓關係存活的不是「沒有危機」，是這三件事",
-          "",
-          "讓關係存活的不是沒有危機，是這三件事",
-          "Caryl E. Rusbult 投資模型，Le & Agnew 2003 年",
-          "meta-analysis 橫跨11,582 名參與者驗證",
-          "① 對關係的滿意度",
-          "② 替代方案的吸引力（愈低愈好）",
-          "③ 已投入的資源規模",
-          "三者中，只要整體承諾夠高，即使某個因素暫時低落",
-          "關係仍能撐過去。危機不是終點，逃避才是",
-          "資料來源：Le & Agnew, Personal Relationships, Vol.",
-          "10, 2003, pp.37–57"
-        ],
-        "6": [
-          "「留下」這個動作，才是承諾的起點",
-          "",
-          "「留下」這個動作，才是承諾的起點",
-          "千汝利回頭，不是因為所有條件都完美了",
-          "而是在不確定、在脆弱、在壓力還沒消散的時候做出",
-          "了決定",
-          "投資模型告訴我們：承諾不是一種感覺，而是一個主",
-          "動的姿態——帶著所有的不確定留在這裡，對未來投",
-          "入，即使今天還看不清楚終點",
-          "那個「留下」的當下，才是承諾真正開始的地方"
-        ],
-        "7": [
-          "真實見面，才會知道自己到底願不願意留下",
-          "",
-          "真實見面，才會知道自己到底願不願意留下",
-          "在螢幕後面聊了幾百則，你依然可以保持讓你安心",
-          "的那道距離。但那道距離，同時也讓你永遠無法分清",
-          "是真的不適合，還是只是還不夠勇敢",
-          "Lava跳過那段假裝安全的暖身期，直接創造真實見面",
-          "的機會——因為承諾只在真實的接觸裡才有機會發生"
-        ],
-        "8": [
-          "恐懼不會消失，但你可以選擇帶著它留下",
-          "",
-          "恐懼不會消失，但你可以選擇帶著它留下",
-          "Fear of Engulfment 不是需要被治好的毛病",
-          "而是很多人在親密關係裡真實存在的狀態。重點",
-          "不是等到恐懼消失了再靠近，而是恐懼還在的時候",
-          "選擇不逃",
-          "《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週",
-          "同時段冠軍——觀眾被打動的，不是 Happy Ending 本",
-          "身，而是那個帶著所有不確定仍然選擇留下的瞬間",
-          "Lava相信：關係的品質，在你選擇真實接觸的那一刻",
-          "開始成形"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-08-28T11:44:22+08:00",
-        "pass": false,
-        "claims": 4,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
-          },
-          {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「型依附：脆弱時最容易退場  研究顯示，迴避型依附者在脆弱時刻與壓」沒有對應出處（研究引用）"
-          }
-        ]
       }
     },
     {
@@ -7632,18 +5926,18 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:23+08:00",
+        "ts": "2026-08-28T12:02:15+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -8022,7 +6316,7 @@
       },
       "regen_requested_at": "2026-08-27T00:39:34+08:00",
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -8140,12 +6434,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:29+08:00",
+        "ts": "2026-08-28T12:02:20+08:00",
         "pass": false,
         "claims": 9,
         "issues": [
@@ -8664,12 +6958,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1
@@ -8685,7 +6979,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-08-28T11:44:31+08:00",
+        "ts": "2026-08-28T12:02:24+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -9296,18 +7590,18 @@
         ]
       },
       "typography": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:09+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-08-28T11:44:14+08:00",
+        "ts": "2026-08-28T12:02:10+08:00",
         "pass": true,
         "counts": {},
         "issues": []
       },
       "fact": {
-        "ts": "2026-08-28T11:44:35+08:00",
+        "ts": "2026-08-28T12:02:27+08:00",
         "pass": false,
         "claims": 7,
         "issues": [
@@ -9347,6 +7641,1813 @@
             "line": "「暴力如何偽裝成愛 心理學家 Frank Tallis 說： 「正常的愛本來就帶有強迫」沒有對應出處（人物引述）"
           }
         ]
+      }
+    },
+    {
+      "id": "20260824-CarlRogers說你",
+      "topic": "Carl Rogers 說：你在感情裡一直在「評分」對方。但心理學最反直覺的發現是，放棄評分的人，反而更容易找到對的人",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eynxrxa",
+      "created_at": null,
+      "caption": "身高、工作、說話方式、那次遲到、那個奇怪的笑聲，你以為這叫「有眼光」，但人本心理學家 Carl Rogers 在研究人與人之間最真實的連結時，發現了一件反直覺的事：越努力評分的人，越難真正認識對方。\n\n他提出的「無條件正向關懷（UPR）」，後來被關係研究者帶入約會情境，結論同樣成立。\n\nRogers 說的 UPR，從來不是「無條件愛上每一個人」，而是在初次相遇時先給對方一個空間，讓他不需要為了讓你滿意而表演，讓他展示真實的自己，然後你再決定。\nLava 設計線下面對面見面的方式，也是基於同樣的邏輯：在你能真正觀察到一個人之前，聊天裡的印象管理幾乎是必然的。\n見到面，才是認識的開始。\n\n#交友軟體 #約會心理學 #感情 #戀愛 #Lava交友 #不聊天的交友軟體 #心理學 #CarlRogers #無條件正向關懷 #關係滿意度 #線下約會 #台灣交友 #感情觀 #自我成長 #人際關係",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-moode5b3d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Goodreads",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mood2395a",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-CarlRogers說你/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-CarlRogers說你/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-CarlRogers說你/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-1.jpg",
+          "heading": "你的腦袋裡，有一張隱形的評分表",
+          "display_copy": "你的腦袋裡\n有一張〖隱形的評分表〗\n\n身高、工作、那次遲到\n那個奇怪的笑聲\n\n你以為這叫「有眼光」\nRogers 說，這才是問題所在",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood9291d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood88b45",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-CarlRogers說你/slide-2d.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-CarlRogers說你/slide-2e.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-2.jpg",
+          "heading": "那場約會，你其實從沒「到場」",
+          "display_copy": "他點了奇怪的飲料，你【扣半分】\n他提到前任，再扣一分\n他笑聲很大，再扣\n\n約會結束你說「沒火花」\n\n。但你從來沒有\n真正【到場】過",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Goodreads",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Goodreads",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-3.jpg",
+          "heading": "Rogers：被「接納」的人，才敢展示真實的自己",
+          "display_copy": "Rogers：\n\n「當我能接受他們作為獨立個體\n他們就會開始往某個方向移動」\n\n被【完整接納】的人\n才敢展示真實的自己\n\n那才是你判斷「有沒有火花」\n的唯一材料\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Houghton Mifflin.",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Suits",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Suits"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-4.jpg",
+          "heading": "2016 年研究：「條件式關懷」正在毀掉你們的關係",
+          "display_copy": "2016 年，125 人跨四種關係的研究：\n\n【條件式關懷】同時傷害兩件事：「自主感」：你不需要為了被喜歡而表演\n「歸屬感」：你被當成真實的你被接受\n\n評分制度，本質上就是一種條件式關懷\n\n資料來源：Kanat-Maymon et al. (2016). Journal of Personality, 84, 446–460.",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-5.jpg",
+          "heading": "2017 年每日追蹤研究：扣分的那天，關係滿意度就下降了",
+          "display_copy": "2017 年，80 人每日追蹤研究：\n\n「你符合我期望，我才對你好」\n→ 關係滿意度【下降】\n\n「你讓我失望，我就撤回溫暖」\n→ 關係滿意度【同樣下降】\n\n評分不只發生在第一次約會\n它每一天都在侵蝕關係\n\n資料來源：Kanat-Maymon, Argaman & Roth (2017). Personal Relationships, 24, 27–35.",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-moodb8168",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-moodc2c89",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-CarlRogers說你/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-CarlRogers說你/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-CarlRogers說你/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-6.jpg",
+          "heading": "「放棄評分」不是放低標準，是換一種認識方式",
+          "display_copy": "Rogers 說的「接納」\n不是愛上所有人\n\n是給對方一個空間：讓他不需要為了讓你滿意\n而【表演】\n\n見到面\n才是認識真正開始的地方",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood81dcc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-CarlRogers說你/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mooda6f21",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-7.jpg",
+          "heading": "Rogers 的日落比喻：你為什麼要替日落打分數？",
+          "display_copy": "Rogers，《A Way of Being》：\n\n「人就像日落一樣美麗\n只要你讓他們自然展現\n\n我不會對日落說\n『把右角的橙色調淡一點』\n我帶著敬畏看著它展開」\n\n：在你看清楚之前\n〖先放下那支評分的筆〗\n\n資料來源：Rogers, C.R. A Way of Being. Goodreads.",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "b-mood7d6b5",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-8.jpg",
+          "heading": "下次約會，試著做一件事：先不要評分",
+          "display_copy": "下次約會，試一件事：\n\n【先不要評分】\n\n不是接受一切\n是真正在場：聽他說話，不是為了找破綻\n而是因為你想知道他是誰\n\n那種感受\n比任何評分表都準確\n\n資料來源：Rogers, C.R. (1961). On Becoming a Person. Goodreads.",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260824-CarlRogers說你/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "UPR 最初由 Stanley Standal 於 1954 年提出概念雛型，後由 Carl Rogers 於 1956 年擴展並發揚光大",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "Rogers 著作與引言收錄於 Goodreads，On Becoming a Person 出版於 1961 年，UPR 概念在 1950 年代由 Rogers 系統化發展"
+        },
+        {
+          "claim": "Rogers 說：「在我與那些最困擾的個案最深接觸中，當我能接受他們作為獨立個體，他們就會開始往某個方向移動。」",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "In my most inner-most relationships with these individuals, when I am most sensitive in understanding them, and when I receive them as independent persons, then I find that they tend to move in certain directions."
+        },
+        {
+          "claim": "Rogers 在《A Way of Being》中的日落比喻：「人就像日落一樣美麗，只要你讓他們自然展現……」",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "People are just as wonderful as sunsets if you let them be. When I look at a sunset, I don't find myself saying, 'Soften the orange a bit on the right hand corner.' I don't try to control a sunset. I watch with awe as it unfolds."
+        },
+        {
+          "claim": "Rogers 的悖論語錄：「奇怪的矛盾在於，當我接受自己本來的樣子，我才能改變。」出自《On Becoming a Person》",
+          "source": "https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers",
+          "quote": "The curious paradox is that when I accept myself just as I am, then I can change."
+        },
+        {
+          "claim": "Kanat-Maymon 等研究者於 2016 年針對 125 名受試者、橫跨戀人、好友、父母四種關係類型進行研究，發現條件式正向關懷（CPR）與關係品質呈顯著負相關",
+          "source": "https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171",
+          "quote": "Study 1 (N = 125) examined CPR from four relationship partners (mother, father, romantic partner, and best friend) and its associations with relationship quality... CPR was associated with poorer relationship quality."
+        },
+        {
+          "claim": "2017 年以每日日記法追蹤 80 名受試者，CPR 與 CNR 在個人層次皆與關係滿意度呈負相關",
+          "source": "https://onlinelibrary.wiley.com/doi/10.1111/pere.12164",
+          "quote": "Multilevel analyses on data from 80 participants… showed that both CPR and CNR were negatively associated with relationship satisfaction at the between-person level."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-28T12:00:29+08:00",
+      "candidates_since": "2026-08-28T12:01:19+08:00",
+      "image_credits": [
+        "第 2 張：《500Daysof Summer》劇照，版權屬原權利方",
+        "第 3 張：Goodreads（截圖引用）",
+        "第 4 張：《Suits》劇照，版權屬原權利方",
+        "第 5 張：《Marriage Story》劇照，版權屬原權利方",
+        "第 6 張：《Before Sunrise》劇照，版權屬原權利方",
+        "第 8 張：《Before Sunrise》劇照，版權屬原權利方"
+      ],
+      "copy_choice": "claude",
+      "rendered_lines": {
+        "1": [
+          "你的腦袋裡，有一張隱形的評分表",
+          "",
+          "你的腦袋裡",
+          "有一張〖隱形的評分表〗",
+          "身高、工作、那次遲到",
+          "那個奇怪的笑聲",
+          "你以為這叫「有眼光」",
+          "Rogers 說，這才是問題所在"
+        ],
+        "2": [
+          "那場約會，你其實從沒「到場」",
+          "",
+          "他點了奇怪的飲料，你扣半分",
+          "他提到前任，再扣一分",
+          "他笑聲很大，再扣",
+          "約會結束你說「沒火花」",
+          "——但你從來沒有",
+          "真正到場過"
+        ],
+        "3": [
+          "Rogers：被「接納」的人，才敢展示真實",
+          "的自己",
+          "",
+          "Rogers",
+          "「當我能接受他們作為獨立個體",
+          "他們就會開始往某個方向移動」",
+          "被完整接納的人",
+          "才敢展示真實的自己",
+          "那才是你判斷「有沒有火花」",
+          "的唯一材料",
+          "資料來源：Rogers, C.R. (1961). On Becoming a",
+          "Person. Houghton Mifflin"
+        ],
+        "4": [
+          "2016 年研究：「條件式關懷」正在毀掉你們",
+          "的關係",
+          "",
+          "2016 年，125 人跨四種關係的研究",
+          "條件式關懷同時傷害兩件事",
+          "「自主感」：你不需要為了被喜歡而表演",
+          "「歸屬感」：你被當成真實的你被接受",
+          "評分制度，本質上就是一種條件式關懷",
+          "資料來源：Kanat-Maymon et al. (2016). Journal of",
+          "Personality, 84, 446–460"
+        ],
+        "5": [
+          "2017 年每日追蹤研究：扣分的那天，關係滿",
+          "意度就下降了",
+          "",
+          "2017 年，80 人每日追蹤研究",
+          "「你符合我期望，我才對你好」",
+          "→ 關係滿意度下降",
+          "「你讓我失望，我就撤回溫暖」",
+          "→ 關係滿意度同樣下降",
+          "評分不只發生在第一次約會",
+          "它每一天都在侵蝕關係",
+          "資料來源：Kanat-Maymon, Argaman & Roth (2017).",
+          "Personal Relationships, 24, 27–35"
+        ],
+        "6": [
+          "「放棄評分」不是放低標準，是換一種認識方",
+          "式",
+          "",
+          "Rogers 說的「接納」",
+          "不是愛上所有人",
+          "是給對方一個空間",
+          "讓他不需要為了讓你滿意",
+          "而表演",
+          "見到面",
+          "才是認識真正開始的地方"
+        ],
+        "7": [
+          "Rogers 的日落比喻：你為什麼要替日落打分",
+          "數",
+          "",
+          "Rogers，《A Way of Being》",
+          "「人就像日落一樣美麗",
+          "只要你讓他們自然展現",
+          "我不會對日落說",
+          "『把右角的橙色調淡一點』",
+          "我帶著敬畏看著它展開」",
+          "——在你看清楚之前",
+          "先放下那支評分的筆",
+          "資料來源：Rogers, C.R. A Way of Being. Goodreads"
+        ],
+        "8": [
+          "下次約會，試著做一件事：先不要評分",
+          "",
+          "下次約會，試一件事",
+          "先不要評分",
+          "不是接受一切",
+          "是真正在場",
+          "聽他說話，不是為了找破綻",
+          "而是因為你想知道他是誰",
+          "那種感受",
+          "比任何評分表都準確",
+          "資料來源：Rogers, C.R. (1961). On Becoming a",
+          "Person. Goodreads"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-28T12:02:09+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-28T12:02:10+08:00",
+        "pass": true,
+        "counts": {},
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-28T12:02:28+08:00",
+        "pass": false,
+        "claims": 5,
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2016 年」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2017 年」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/pere.12164"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「125 人」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/jopy.12171"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「80 人」的出處無法自動核對，請人工看過：https://onlinelibrary.wiley.com/doi/10.1111/pere.12164"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「Carl Rogers 說：你在感情裡一直在「評分」對」沒有對應出處（人物引述）"
+          }
+        ]
+      },
+      "qa": {
+        "ts": "2026-08-28T12:04:25+08:00",
+        "pass": false,
+        "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              3,
+              7
+            ],
+            "severity": "block",
+            "detail": "兩張都以 Carl Rogers 為核心視覺主體：第3張用《On Becoming a Person》書封大字鋪滿版面，第7張雖換成日落剪影，但標題與內文都再度點名『Rogers 的日落比喻』並引用同一本《A Way of Being》——讀者連滑兩張，視覺資訊都停在『Rogers 說了什麼』，沒有給出新的視覺場景切換。",
+            "fix": "第7張已有日落剪影，視覺本身是對的；問題是第3張應改掉書封大字底圖，換成『某人坐在諮商室窗邊、光從側面打進來的靜物感空間照』（搜圖關鍵字：therapy room window side light minimal warm），讓第3張傳遞『被接納的空間感』，與第7張日落剪影形成不同敘事層次。"
+          },
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              6,
+              8
+            ],
+            "severity": "block",
+            "detail": "第6張與第8張同為《Before Sunrise》劇照，且都是男女主角面對面坐／依偎的場景，底圖主體、色調（暖棕暗調）、人物配置高度相似，圖片來源標示也完全一樣。讀者滑過去會誤以為沒有換張。",
+            "fix": "第6張或第8張必須換掉其中一張的底圖。建議第6張（主題：換一種認識方式）改用『兩雙陌生人的手放在咖啡桌上、各自握著杯子但尚未觸碰』的靜物構圖（搜圖關鍵字：two cups coffee table hands strangers first date overhead flat lay warm light），用物件暗示關係初始；第8張保留《Before Sunrise》的親密浪漫劇照作為情感高潮收尾。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              4,
+              5
+            ],
+            "severity": "warn",
+            "detail": "第4張《Suits》劇照（戶外、兩男站立、仰角、冷灰藍調）與第5張《Marriage Story》劇照（室內、一人躺臥、低角度、冷藍暗調）構圖取景都是『人物佔畫面上半部、冷色半暗底、白字文字塊壓下半部』，色溫與版型幾乎如出一轍，連滑兩張節奏感消失。",
+            "fix": "第5張建議換成色溫明顯偏暖、且為特寫局部（如：伴侶手牽手、或一人低頭看手機的桌面特寫）的畫面，製造冷→暖的情緒轉折，同時把文字排版從左對齊改為置中，打破版型慣性。搜圖關鍵字：couple holding hands warm light close up intimate bedroom golden hour。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              4,
+              5,
+              6,
+              9
+            ],
+            "severity": "warn",
+            "detail": "全篇9張中有5張整體明度偏暗（大面積深黑／深灰底），僅第3張書封（中灰）和第7張日落（橘棕）稍有亮度，第9張CTA純黑，整篇視覺重心持續下沉，缺少一張高明度、高飽和的呼吸點來製造起伏。",
+            "fix": "建議在第6張或第8張其中一張換成明亮版本（日間自然光、淺色背景），或在第9張CTA加入品牌橘紅色塊作為背景，讓結尾有視覺能量而不是沉進黑洞。"
+          }
+        ],
+        "rhythm": "整篇節奏像一條持續往下沉的曲線——開場暗、中段暗、收尾純黑，缺少一個明亮高點來讓讀者喘息；加上《Before Sunrise》劇照連用兩張、Rogers 主題連佔兩張，中後段幾乎沒有視覺換氣，需要在第6或第8張植入一個色調與構圖都截然不同的畫面，才能讓整篇有『吸氣→呼氣→落地』的敘事韻律。"
+      }
+    },
+    {
+      "id": "20260824-毛骨悚然的戀愛大結局前朴",
+      "topic": "《毛骨悚然的戀愛》大結局前，朴恩斌選擇留下的那一刻：心理學說，這才是真正的承諾",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eyq9f6c",
+      "created_at": null,
+      "caption": "《毛骨悚然的戀愛》大結局播出，朴恩斌在所有人都以為她會放手的那一刻，選擇了留下。\n\n心理學說，那個「留下」比說一千次「我愛你」都更接近承諾的本質。\n\nFear of Engulfment 的核心悖論是：你無法在安全距離裡測試自己是否真的想靠近。\n在螢幕後面聊了幾百則訊息，你依然可以保持那道讓你安心的距離，但那道距離，同時也讓你永遠無法知道，你是真的不適合，還是只是還不夠勇敢。\nLava 的設計邏輯是：跳過那段假裝很安全的暖身期，直接創造真實見面的機會，因為承諾只在真實的接觸裡才有機會發生。\n\n#毛骨悚然的戀愛 #朴恩斌 #韓劇 #交友軟體 #約會 #戀愛心理學 #依附理論 #FearOfEngulfment #關係承諾 #迴避型依附 #Lava交友 #不聊天的交友軟體 #線下約會 #真實見面 #SpookyInLove",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-moodbb4f4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mood1e1aa",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-1.jpg",
+          "heading": "愛到最深，反而想逃",
+          "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-mood8dbf0",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-mood9869c",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-2.jpg",
+          "heading": "明明很愛，卻在最靠近的時候消失",
+          "display_copy": "明明很愛，卻在【最靠近的時候消失】\n\n和一個人愈來愈近，某天卻突然不想回訊息、開始找藉口不見面：不是因為不愛了，是因為太靠近讓你喘不過氣。\n\n《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危機最頂點選擇解除婚約。與其說是放棄，不如說是一種逃脫的本能，而心理學早就給了這種本能一個名字。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3a.webp",
+              "kind": "still",
+              "source_label": "a-mood07005",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-3b.webp",
+              "kind": "still",
+              "source_label": "a-moodd13c1",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-3.jpg",
+          "heading": "心理學叫它「被吞噬的恐懼」",
+          "display_copy": "心理學叫它【被吞噬的恐懼】\nFear of Engulfment\n\n心理學家 David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」\n\n愈渴望親密的人，有時反而愈容易把對方推開：被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方都困惑的推拉動態。\n\n資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4a.webp",
+              "kind": "still",
+              "source_label": "a-mood191b3",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-4b.webp",
+              "kind": "still",
+              "source_label": "b-mood8372f",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-4.jpg",
+          "heading": "迴避型依附：脆弱時最容易退場",
+          "display_copy": "【迴避型依附】：脆弱時最容易退場\n\n研究顯示，迴避型依附者在脆弱時刻與壓力事件中退縮行為最為明顯：習慣性地自我封閉、拒絕求援，把最需要對方的時刻，變成最有可能消失的時刻。\n\n千汝利在事業危機頂點解除婚約，不是不愛了，是恐懼的防禦機制在說話。\n\n資料來源：PsyCh Journal, Wiley, 2023",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-mood6d791",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-5.jpg",
+          "heading": "讓關係存活的不是「沒有危機」，是這三件事",
+          "display_copy": "讓關係存活的不是【沒有危機】，是這三件事\n\nCaryl E. Rusbult 投資模型，Le & Agnew 2003 年 meta-analysis 橫跨【11,582 名參與者】驗證：\n\n① 對關係的滿意度\n② 替代方案的吸引力（愈低愈好）\n③ 已投入的資源規模\n\n三者中，只要整體承諾夠高，即使某個因素暫時低落，關係仍能撐過去。危機不是終點，逃避才是。\n\n資料來源：Le & Agnew, Personal Relationships, Vol.10, 2003, pp.37–57",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood3dbb4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-mood4502f",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-6.jpg",
+          "heading": "「留下」這個動作，才是承諾的起點",
+          "display_copy": "「留下」這個動作，才是【承諾的起點】\n\n千汝利回頭，不是因為所有條件都完美了，而是在不確定、在脆弱、在壓力還沒消散的時候做出了決定。\n\n投資模型告訴我們：承諾不是一種感覺，而是一個主動的姿態：帶著所有的不確定留在這裡，對未來投入，即使今天還看不清楚終點。\n\n那個「留下」的當下，才是承諾真正開始的地方。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood1c14e",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-mood1f1ce",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7c.webp",
+              "kind": "still",
+              "source_label": "b-mood64b17",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-7.jpg",
+          "heading": "真實見面，才會知道自己到底願不願意留下",
+          "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會：因為承諾只在真實的接觸裡才有機會發生。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-moodf56c8",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-8.jpg",
+          "heading": "恐懼不會消失，但你可以選擇帶著它留下",
+          "display_copy": "恐懼不會消失，但你可以選擇【帶著它留下】\n\nFear of Engulfment 不是需要被治好的毛病，而是很多人在親密關係裡真實存在的狀態。重點不是等到恐懼消失了再靠近，而是恐懼還在的時候，選擇不逃。\n\n《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週同時段冠軍：觀眾被打動的，不是 Happy Ending 本身，而是那個帶著所有不確定仍然選擇留下的瞬間。\n\n【Lava】相信：關係的品質，在你選擇真實接觸的那一刻開始成形。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《毛骨悚然的戀愛》自 2026 年 7 月 18 日至 8 月 23 日播出",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "Spooky in Love is a 2026 South Korean television series that aired on tvN from July 18 to August 23, 2026"
+        },
+        {
+          "claim": "大結局全國平均收視率為 7.9%、最高 9%，連續 6 週在有線及綜合編成頻道中拿下同時段收視冠軍",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "The finale recorded an average nationwide rating of 7.9% and a peak of 9%, topping its timeslot among cable and general programming channels for six consecutive weeks"
+        },
+        {
+          "claim": "首集收視率 3.049%，第 4 集成長至 5.810%",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "ratings grew from 3.049% in the first episode to 5.810% by the fourth episode"
+        },
+        {
+          "claim": "登上台灣 Netflix Top 10 節目第二名",
+          "source": "https://en.wikipedia.org/wiki/Spooky_in_Love",
+          "quote": "It ranked second on Taiwan's Netflix Top 10"
+        },
+        {
+          "claim": "David Richo（2002）：「若有人在身體或情感上過於靠近，你會感到窒息或失去自由。」",
+          "source": "https://psychologyfanatic.com/engulfment/",
+          "quote": "Fear of engulfment means that if someone gets too close physically or emotionally, you feel suffocated or lose your freedom"
+        },
+        {
+          "claim": "Le & Agnew 2003 年 meta-analysis 橫跨 52 項研究、60 個獨立樣本、共 11,582 名參與者",
+          "source": "https://doi.org/10.1111/j.1475-6811.2003.tb00345.x",
+          "quote": "analyses were conducted on 52 studies (60 independent samples, N = 11,582)"
+        },
+        {
+          "claim": "迴避型依附維度與衝突中的退縮行為顯著相關，且在脆弱時刻及壓力事件中尤為明顯",
+          "source": "https://doi.org/10.1002/pchj.2023",
+          "quote": "avoidant attachment orientation was primarily associated with withdrawal behavior during conflict, with direct evidence confirming the association between avoidant attachment dimensions and withdrawal strategies"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-28T12:00:40+08:00",
+      "candidates_since": "2026-08-25T18:36:41+08:00",
+      "copy_choice": "claude",
+      "rendered_lines": {
+        "1": [
+          "愛到最深，反而想逃",
+          "",
+          "〖愛到最深，反而想逃〗",
+          "《毛骨悚然的戀愛》大結局",
+          "朴恩斌選擇留下的那一刻",
+          "心理學說，這才是真正的承諾"
+        ],
+        "2": [
+          "明明很愛，卻在最靠近的時候消失",
+          "",
+          "明明很愛，卻在最靠近的時候消失",
+          "和一個人愈來愈近，某天卻突然不想回訊息、開始找",
+          "藉口不見面——不是因為不愛了，是因為太靠近讓你",
+          "喘不過氣",
+          "《毛骨悚然的戀愛》裡，財閥繼承人千汝利在事業危",
+          "機最頂點選擇解除婚約。與其說是放棄，不如說是一",
+          "種逃脫的本能，而心理學早就給了這種本能一個名字"
+        ],
+        "3": [
+          "心理學叫它「被吞噬的恐懼」",
+          "",
+          "心理學叫它被吞噬的恐懼",
+          "Fear of Engulfment",
+          "心理學家 David Richo（2002）：「若有人在身體或情",
+          "感上過於靠近，你會感到窒息或失去自由。」",
+          "愈渴望親密的人，有時反而愈容易把對方推開",
+          "被吞噬的恐懼與被拋棄的恐懼同時拉扯，形成令雙方",
+          "都困惑的推拉動態",
+          "資料來源：Psychology Fanatic，psychologyfanatic.",
+          "com/engulfment/"
+        ],
+        "4": [
+          "迴避型依附：脆弱時最容易退場",
+          "",
+          "迴避型依附：脆弱時最容易退場",
+          "研究顯示，迴避型依附者在脆弱時刻與壓力事件中退",
+          "縮行為最為明顯——習慣性地自我封閉、拒絕求援",
+          "把最需要對方的時刻，變成最有可能消失的時刻",
+          "千汝利在事業危機頂點解除婚約，不是不愛了，是恐",
+          "懼的防禦機制在說話",
+          "資料來源：PsyCh Journal, Wiley, 2023"
+        ],
+        "5": [
+          "讓關係存活的不是「沒有危機」，是這三件事",
+          "",
+          "讓關係存活的不是沒有危機，是這三件事",
+          "Caryl E. Rusbult 投資模型，Le & Agnew 2003 年",
+          "meta-analysis 橫跨11,582 名參與者驗證",
+          "① 對關係的滿意度",
+          "② 替代方案的吸引力（愈低愈好）",
+          "③ 已投入的資源規模",
+          "三者中，只要整體承諾夠高，即使某個因素暫時低落",
+          "關係仍能撐過去。危機不是終點，逃避才是",
+          "資料來源：Le & Agnew, Personal Relationships, Vol.",
+          "10, 2003, pp.37–57"
+        ],
+        "6": [
+          "「留下」這個動作，才是承諾的起點",
+          "",
+          "「留下」這個動作，才是承諾的起點",
+          "千汝利回頭，不是因為所有條件都完美了",
+          "而是在不確定、在脆弱、在壓力還沒消散的時候做出",
+          "了決定",
+          "投資模型告訴我們：承諾不是一種感覺，而是一個主",
+          "動的姿態——帶著所有的不確定留在這裡，對未來投",
+          "入，即使今天還看不清楚終點",
+          "那個「留下」的當下，才是承諾真正開始的地方"
+        ],
+        "7": [
+          "真實見面，才會知道自己到底願不願意留下",
+          "",
+          "真實見面，才會知道自己到底願不願意留下",
+          "在螢幕後面聊了幾百則，你依然可以保持讓你安心",
+          "的那道距離。但那道距離，同時也讓你永遠無法分清",
+          "是真的不適合，還是只是還不夠勇敢",
+          "Lava跳過那段假裝安全的暖身期，直接創造真實見面",
+          "的機會——因為承諾只在真實的接觸裡才有機會發生"
+        ],
+        "8": [
+          "恐懼不會消失，但你可以選擇帶著它留下",
+          "",
+          "恐懼不會消失，但你可以選擇帶著它留下",
+          "Fear of Engulfment 不是需要被治好的毛病",
+          "而是很多人在親密關係裡真實存在的狀態。重點",
+          "不是等到恐懼消失了再靠近，而是恐懼還在的時候",
+          "選擇不逃",
+          "《毛骨悚然的戀愛》大結局收視衝上 9%，連續 6 週",
+          "同時段冠軍——觀眾被打動的，不是 Happy Ending 本",
+          "身，而是那個帶著所有不確定仍然選擇留下的瞬間",
+          "Lava相信：關係的品質，在你選擇真實接觸的那一刻",
+          "開始成形"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-28T12:02:09+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-28T12:02:10+08:00",
+        "pass": true,
+        "counts": {},
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-08-28T12:02:29+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "dead",
+            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+          },
+          {
+            "severity": "block",
+            "rule": "dead",
+            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「型依附：脆弱時最容易退場  研究顯示，迴避型依附者在脆弱時刻與壓」沒有對應出處（研究引用）"
+          }
+        ]
+      },
+      "qa": {
+        "ts": "2026-08-28T12:04:58+08:00",
+        "pass": false,
+        "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "severity": "block",
+            "detail": "《毛骨悚然的戀愛》劇情人物「千汝利」與「朴恩斌」作為敘事主體在第1、2、4、8張重複出現（第1張用劇照、第2張用動畫風雨景帶出千汝利解除婚約、第4張再次點名千汝利事業危機、第8張再次以毛骨悚然大結局9%收視當結語）——同一個戲劇事件被當作視覺錨點反覆召喚，讀者滑到第4張已無新資訊刺激。",
+            "fix": "第4張換掉文字層對劇情的重複引用，改以純心理學概念視覺呈現：搜圖方向「close-up person sitting alone corner dark room avoidant attachment editorial」，背景換成室內封閉空間的壓迫感構圖，劇情舉例只保留一次（建議留在第2張），第4、8張劇情句全部刪除，改用研究數據或第一人稱告白式文案。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              2,
+              4,
+              8
+            ],
+            "severity": "warn",
+            "detail": "第1、2、4、8張全部是：深色底＋人物或孤獨身影居上半部＋黃色標題在左下、白色內文填滿下半部。四張版型幾乎一模一樣，滑動時視覺無停頓感，節奏像在原地踏步。",
+            "fix": "第4張或第8張至少一張改用「文字主導型」版式——純色漸層底（深藍或炭灰）＋超大引言字句佔滿畫面、無圖片背景，製造視覺空白節奏點；搜圖關鍵字不需要，直接以設計排版處理即可。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              4,
+              7,
+              8
+            ],
+            "severity": "warn",
+            "detail": "全篇9張有5張為深黑／暗灰調，第6張（暖橘夕陽）和第9張（純黑CTA）雖色調不同但仍偏暗，只有第3張（灰白手部特寫）和第5張（暖棕室內）提供亮度起伏。整篇明暗節奏嚴重頭重腳輕、暗部過密。",
+            "fix": "建議在第7張（真實見面）換成日間城市街頭淺景深正面構圖，搜圖方向「two people meeting first date sunny cafe window bokeh warm light street」，為全篇在7/8張轉折前注入一張高亮度呼吸圖，打破連續暗調的壓迫感。"
+          }
+        ],
+        "rhythm": "整篇節奏像一首歌只有副歌——深色、孤獨身影、黃字白文的組合重複出現五次以上，讀者滑到第4張已有視覺疲勞；最致命的是劇情素材《毛骨悚然的戀愛》被反覆提及卻從未給出新的視覺角度，建議將劇情錨點集中在前兩張，中段全力切換為心理學概念圖像，第6張暖橘情侶剪影是全篇唯一情緒轉折點但被埋在第六位、力道已衰減，應提前至第5張發揮。"
+      }
+    },
+    {
+      "id": "20260825-結婚條件今天在PTT推爆",
+      "topic": "r datingoverthirty 上最多 30+ 的人在說：「我不是不想談戀愛，我只是不知道怎麼重新開始」",
+      "version": 1,
+      "status": "approved",
+      "clickup_task_id": "86eyqbfr1",
+      "created_at": null,
+      "caption": "r/datingoverthirty 上最高讚的那些貼文，幾乎都在說同一件事：不是沒有機會，是站在入口前不知道怎麼踏進去。\n\n台灣 30+ 面對的另一個問題，是大多數 App 的互動節奏根本不是為這個年紀設計的：無止盡滑卡、尬聊熱場、慢熱試探，這些流程消耗的時間與精力，是 20 歲才有的存款。\n台灣 30+ 面對的是結構性的時間壓縮，工作與體力都不允許同等消耗。\nLava 的設計邏輯從另一個方向出發，不靠聊天建立關係，直接約出來見面。\n這不是在幫你跳過「重新開始」的過程，而是把第一步從「怎麼開口」變成「去哪裡」，讓那個門檻低一點點，低到你真的能跨過去。\n資料來源：GRASS.camp，https://grass.camp/blog/serious-dating-apps-taiwan-30s\n\n#交友軟體 #約會 #單身 #30歲後 #重新開始 #Lava交友 #不聊天的交友軟體 #台灣交友 #認真交往 #線下約會 #datingoverthirty #感情 #戀愛",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1b.webp",
+              "kind": "still",
+              "source_label": "a-mood22e4a",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
+              "kind": "still",
+              "source_label": "組圖：loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1d.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1e.webp",
+              "kind": "still",
+              "source_label": "c-mood11e85",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1k.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1l.webp",
+              "kind": "still",
+              "source_label": "Catastrophe"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-1.jpg",
+          "heading": "問題從來不是遇不到人",
+          "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2b.webp",
+              "kind": "still",
+              "source_label": "a-mood6178d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2c.webp",
+              "kind": "still",
+              "source_label": "b-mood09dce",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2d.webp",
+              "kind": "still",
+              "source_label": "b-mooda3a45",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2e.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2f.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2g.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-2.jpg",
+          "heading": "那個卡住的感覺，幾乎人人都有",
+          "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是：「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Gottman Institute 官方研究頁",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3d.webp",
+              "kind": "still",
+              "source_label": "b-mooda7f03",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-3.jpg",
+          "heading": "30 歲前後，孤獨感真的有一個峰值",
+          "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4a.webp",
+              "kind": "still",
+              "source_label": "loganury.com（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4b.webp",
+              "kind": "still",
+              "source_label": "loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4c.webp",
+              "kind": "still",
+              "source_label": "loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4d.webp",
+              "kind": "still",
+              "source_label": "loganury.com（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4k.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4l.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-4.jpg",
+          "heading": "Logan Ury 把這個卡關命名了",
+          "display_copy": "Hinge 關係科學總監\nLogan Ury 把它命名了：\n\n〖FODA〗\nFear of Dating Again\n對重新約會的恐懼\n\n「人們擔心的是\n社交技能生疏、不知道聊什麼」\n\n她說：與其自責，\n先知道這非常正常：很多人都在經歷同樣的事\n\n這不是你出了問題\n是一個【有名字的現象】\n\n資料來源：Logan Ury / Chicago Tribune, via PressReader, 2021",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-5.jpg",
+          "heading": "約會是一門需要學的技能，不是本能",
+          "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能。是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6b.webp",
+              "kind": "still",
+              "source_label": "a-mood5c3e6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6d.webp",
+              "kind": "still",
+              "source_label": "b-mood9141d",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-6.jpg",
+          "heading": "行為科學給「不知道怎麼開始」的具體步驟",
+          "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7b.webp",
+              "kind": "still",
+              "source_label": "a-moodc8425",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
+              "kind": "still",
+              "source_label": "b-mood60273",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7g.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7h.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7i.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-7.jpg",
+          "heading": "Lava 把「怎麼開始」這一步，設計進去了",
+          "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱：台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
+              "kind": "still",
+              "source_label": "a-mood48bcc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
+              "kind": "still",
+              "source_label": "b-moodab9ca",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8i.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8j.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8k.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8l.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            }
+          ],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-8.jpg",
+          "heading": "「刻意之愛」的意思，是你可以主動建立它",
+          "display_copy": "Logan Ury 說：\n\n「要擁有好的感情\n你必須【主動建立它】\n而非等待它的出現」\n\n愛情不是隨機降臨的意外\n而是一連串可以主動決策的事件\n\n30 歲之後的愛情\n需要的不是更多緣分\n\n而是一個決定：\n今天要踏出去\n\n資料來源：Logan Ury, How Not to Die Alone；Behavioral Scientist interview",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "成人孤獨感呈現兩個高峰（接近 30 歲前後與 60 歲附近）與兩個低谷（約 40 歲、約 75 歲），並非線性攀升",
+          "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/",
+          "quote": "Age and loneliness showed a U-shaped association, with loneliness being highest in young adulthood and old age."
+        },
+        {
+          "claim": "台灣 25–39 歲未婚率為 61.59%（男 67.07%、女 55.79%）",
+          "source": "https://grass.camp/blog/serious-dating-apps-taiwan-30s",
+          "quote": "根據內政部 2024 年戶政統計：25–39 歲台灣人未婚率為 61.59%（男 67.07%、女 55.79%）"
+        },
+        {
+          "claim": "Logan Ury 是 Hinge 關係科學總監，哈佛心理學畢業，曾主導 Google 行為科學團隊「非理性實驗室」（Irrational Lab），亦是 Netflix 節目《The Later Daters》的約會教練嘉賓",
+          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
+          "quote": "Logan Ury is the Director of Relationship Science at Hinge and a former behavioral scientist at Google's Irrational Lab."
+        },
+        {
+          "claim": "Logan Ury 將「對重新約會的恐懼」命名為 FODA，指出人們擔心的是社交技能生疏、不知道聊什麼，並建議先理解這非常正常、很多人都在經歷同樣的事",
+          "source": "https://www.pressreader.com/usa/chicago-tribune-sunday/20210711/282707640062387",
+          "quote": "Ury calls this fear of dating again, or FODA. People worry their social skills have gotten rusty, or they won't know what to talk about."
+        },
+        {
+          "claim": "Logan Ury 說：Dating 在整個人類歷史中其實是非常新的事物；雖然我們天生就懂得愛，但不代表我們生來就懂得約會；什麼是長期伴侶關係中值得優先考量的特質，這不是本能知識，而是需要學習的",
+          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
+          "quote": "While we're born with the capacity to love, we're not born knowing how to date. What makes a good long-term partner is not instinctual knowledge—it needs to be learned."
+        },
+        {
+          "claim": "行為科學建議的具體步驟包括：設定短期截止日期、做準備（下載 App、準備照片）、公開宣告、建立新的自我認同、從每週一次約會開始（不超過）、對自己保持同理心、不聯絡前任",
+          "source": "https://ericsandroni.com/how-to-not-die-alone-summary/",
+          "quote": "Set a deadline, do the prep work (download apps, prepare photos), make a public commitment, create a new self-story, start with one date a week, and show yourself compassion."
+        },
+        {
+          "claim": "Logan Ury 提出「刻意之愛」（intentional love）：要擁有好的感情，你必須主動建立它，而非等待它的出現",
+          "source": "https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/",
+          "quote": "To have a great relationship, you need to build it intentionally rather than wait for it to happen to you."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "rendered_at": "2026-08-28T12:00:58+08:00",
+      "candidates_since": "2026-08-28T12:02:06+08:00",
+      "image_credits": [
+        "第 3 張：Gottman Institute 官方研究頁（截圖引用）",
+        "第 4 張：loganury.com（截圖引用）",
+        "第 5 張：Amazon / Simon & Schuster（截圖引用）"
+      ],
+      "copy_choice": "claude",
+      "rendered_lines": {
+        "1": [
+          "問題從來不是遇不到人",
+          "",
+          "問題從來不是",
+          "遇不到人",
+          "是站在入口前",
+          "不知道怎麼",
+          "重新踏進去",
+          "30 歲後重新約會",
+          "障礙從來不是機會",
+          "是那個第一步"
+        ],
+        "2": [
+          "那個卡住的感覺，幾乎人人都有",
+          "",
+          "分手之後的第一個念頭",
+          "往往不是「我不想再愛」",
+          "而是",
+          "「我已經不知道",
+          "現在的規則是什麼了」",
+          "上一次認真約會可能是六年前、八年前",
+          "那時候還沒有滑卡",
+          "還不需要在三張照片裡定義自己",
+          "r/datingoverthirty 上最常見的問題",
+          "「我準備好了，但第一步是什麼？」"
+        ],
+        "3": [
+          "30 歲前後，孤獨感真的有一個峰值",
+          "",
+          "孤獨感並非年紀越大越深",
+          "研究發現它有兩個高峰",
+          "一個在接近 30 歲前後",
+          "一個在 60 歲附近",
+          "低谷反而在 40 歲與 75 歲",
+          "台灣 25–39 歲未婚率：61.59%",
+          "這不是個人問題",
+          "是整整一個世代同時走到的轉折",
+          "資料來源：Luhmann & Hawkley (2016), PMC/NCBI",
+          "內政部 2024 年戶政統計"
+        ],
+        "4": [
+          "Logan Ury 把這個卡關命名了",
+          "",
+          "Hinge 關係科學總監",
+          "Logan Ury 把它命名了",
+          "FODA",
+          "Fear of Dating Again",
+          "對重新約會的恐懼",
+          "「人們擔心的是",
+          "社交技能生疏、不知道聊什麼」",
+          "她說：與其自責",
+          "先知道這非常正常",
+          "很多人都在經歷同樣的事",
+          "這不是你出了問題",
+          "是一個有名字的現象",
+          "資料來源：Logan Ury / Chicago Tribune, via",
+          "PressReader, 2021"
+        ],
+        "5": [
+          "約會是一門需要學的技能，不是本能",
+          "",
+          "Logan Ury 說了一件",
+          "讓很多人鬆一口氣的事",
+          "「Dating 在人類歷史上",
+          "其實是非常新的事物",
+          "我們天生就懂得愛",
+          "但不代表我們生來",
+          "就懂得約會",
+          "什麼是好伴侶的特質",
+          "這不是本能——是需要學習的」",
+          "30+ 卡住不是你的問題",
+          "你只是之前從來沒被教過",
+          "資料來源：Logan Ury, How Not to Die Alone (2021)",
+          "Behavioral Scientist interview"
+        ],
+        "6": [
+          "行為科學給「不知道怎麼開始」的具體步驟",
+          "",
+          "行為科學的答案不是",
+          "「鼓起勇氣」",
+          "而是把「開始」拆解成步驟",
+          "① 設定截止日期",
+          "② 準備照片、下載 App",
+          "③ 向朋友公開宣告",
+          "④ 建立新的自我認同",
+          "⑤ 每週一次約會，不超過",
+          "⑥ 對自己保持同理心",
+          "⑦ 不聯絡前任",
+          "把模糊的情感決定",
+          "變成可以執行的小動作",
+          "資料來源：Logan Ury, How Not to Die Alone",
+          "ericsandroni.com 摘要"
+        ],
+        "7": [
+          "Lava 把「怎麼開始」這一步，設計進去了",
+          "",
+          "大多數 App 的節奏",
+          "是為 20 代設計的",
+          "無止盡滑卡、尬聊、慢熱",
+          "台灣 30+ 面對的是",
+          "結構性的時間壓縮",
+          "工作與體力都不允許同等消耗",
+          "Lava 把第一步從",
+          "「怎麼開口」",
+          "變成「去哪裡」",
+          "讓那個門檻低一點點",
+          "低到你真的能跨過去"
+        ],
+        "8": [
+          "「刻意之愛」的意思，是你可以主動建立它",
+          "",
+          "Logan Ury 說",
+          "「要擁有好的感情",
+          "你必須主動建立它",
+          "而非等待它的出現」",
+          "愛情不是隨機降臨的意外",
+          "而是一連串可以主動決策的事件",
+          "30 歲之後的愛情",
+          "需要的不是更多緣分",
+          "而是一個決定",
+          "今天要踏出去",
+          "資料來源：Logan Ury, How Not to Die Alone",
+          "Behavioral Scientist interview"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-08-28T12:02:10+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-08-28T12:02:10+08:00",
+        "pass": false,
+        "counts": {
+          "赦免式安慰": 1
+        },
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "赦免式安慰",
+            "where": "第5張內文",
+            "line": "第5張內文：…的」  30+ 卡住不是你的問題 你只是之前從來沒被…",
+            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-08-28T12:02:31+08:00",
+        "pass": false,
+        "claims": 11,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「些流程消耗的時間與精力，是 20 歲才有的存款。 台灣 30+」沒有對應出處（年齡）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「孤獨感並非年紀越大越深  研究發現它有兩個高峰： 一個在接近」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「一門需要學的技能，不是本能 Logan Ury 說了一件 讓很多人鬆一口氣的事」沒有對應出處（人物引述）"
+          }
+        ]
+      },
+      "qa": {
+        "ts": "2026-08-28T12:05:33+08:00",
+        "pass": false,
+        "issues": [
+          {
+            "type": "duplicate_subject",
+            "slides": [
+              4,
+              5,
+              8
+            ],
+            "severity": "block",
+            "detail": "Logan Ury 是這三張的共同核心主體：第4張用本人受訪照片、第5張用她的著作書封、第8張再次引用她的語錄作為視覺重心。讀者連滑三張都在消化同一個人的同一套論述，視覺資訊量等於零成長。",
+            "fix": "第8張應抽離Logan Ury的人名框架，改用純情境攝影作底圖——建議搜圖方向：overhead shot of a person writing in a journal on a minimalist desk, warm morning light, intentional mood，配合「刻意之愛」的主題，強調主動行動的質感，而非繼續引用同一位專家的臉或書。"
+          },
+          {
+            "type": "composition",
+            "slides": [
+              1,
+              2,
+              8
+            ],
+            "severity": "warn",
+            "detail": "第1張（暗色人群俯拍）、第2張（暗室獨坐女性）、第8張（暗色街道走廊灰階）三張底圖同為暗調、同為孤立人物／空間、同為左文右景或全版暗壓構圖，連續出現在輪播前段與後段形成夾擊，滑動時缺乏呼吸感。",
+            "fix": "第8張建議換成明度較高的構圖，例如：person standing at a sunlit open door or window, back to camera, sense of stepping forward，以光線象徵「主動踏出」，同時在整篇製造一次明暗轉折。"
+          },
+          {
+            "type": "unreadable",
+            "slides": [
+              3
+            ],
+            "severity": "block",
+            "detail": "第3張底圖為Gottman Institute網站截圖，頁面本身已有大量英文數字infographic（90% ACCURACY、69%、6 YEARS等），中文內文直接疊在這些元素上方，兩層資訊互相干擾，「研究發現它有兩個高峰」等行在局部區域對比度嚴重不足，掃讀困難。",
+            "fix": "底圖應替換為單一低資訊量的純色或極簡場景，例如：close-up of a simple line graph or single data point printed on matte paper, dark background，或直接改用純色色塊底搭配乾淨的數據視覺化設計，確保中文字與底層零干擾。"
+          },
+          {
+            "type": "monotone",
+            "slides": [
+              1,
+              2,
+              4,
+              8,
+              9
+            ],
+            "severity": "warn",
+            "detail": "全篇9張中有5張以深灰／近黑為主調（第1暗街群眾、第2暗室、第4暗色訪談、第8灰階走廊、第9純黑CTA），僅第5張書封、第6張桌面、第7張咖啡館有相對暖亮的中間值，整體偏沉、缺少一張真正高亮的「透氣張」來製造情緒起伏。",
+            "fix": "建議在第6或第7張之後插入一張高亮暖白底圖作為節奏重置點，搜圖方向：bright minimalist flat lay, white background, small green plant and open notebook, natural window light——或將現有第6張桌面底圖的曝光度拉高30%，讓整篇有一次明確的視覺呼吸。"
+          }
+        ],
+        "rhythm": "整篇節奏呈『暗→暗→雜→暗→書封→桌面→咖啡→暗→純黑』的W字型跌宕，前四張連續壓沉、中段短暫透氣後又在第8張拉回黑場，讀者情緒被反覆下壓卻缺少足夠的上揚錨點，建議在第3張和第8張各置換一次底圖明度，讓節奏從W型重塑為有方向感的V型上升弧線。"
       }
     }
   ]
