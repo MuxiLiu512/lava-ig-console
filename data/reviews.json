@@ -804,6 +804,25 @@
       "scope": null,
       "feedback": "",
       "consumed": false
+    },
+    {
+      "id": "R-mtcf22ag",
+      "post_id": "20260824-重陽節今天熱搜但你知道孤",
+      "ts": "2026-08-28T11:53:02+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "稍微過時",
+      "consumed": false
     }
   ]
 }
