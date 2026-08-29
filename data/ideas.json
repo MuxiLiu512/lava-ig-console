@@ -2,6 +2,28 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "86eyrz3fb",
+      "title": "《愛情故事：甘迺迪與貝塞特》創 Disney+ 史上最高收視——卡洛琳最後幾年幾乎不能公開做自己，這段關係從哪裡開始壞掉的？｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《愛情故事：甘迺迪與貝塞特》剛創下 Disney+ 史上最高影集收視紀錄。這部劇最讓人窒息的不是悲劇結局，而是過程：卡洛琳貝塞特嫁給 JFK Jr. 之後，她的每一個眼神、每一件衣服、每一次出門，都被公眾解讀、放大、評論。心理學研究顯示，「持續被外部凝視」會讓人在關係裡啟動一種自我保護機制——你開始表演，而不是存在。當兩個人都在表演給外界看，他們之間的真實連結就開始消失。這不只是名人的困境：任何一段關係，只要你開始在意「我們看起來怎樣」多過「我們實際上怎樣」，這個機制就啟動了。Lava 連結：offline-first 的設計邏輯——先把外部凝視拿掉，才能看見真實的彼此。\n\n病毒係數：7/10。出圈證據為 Vogue Taiwan 明確報導「Disney+ 史上最高影集收視紀錄」，具體數字支撐出圈性；「表演給外界看 vs 真實存在」的關係洞察角度新穎，切入點不是劇評而是具體情節引發的普世困境，預期留言率高。\n\n熱度證明：\nVogue Taiwan｜《愛情故事：甘迺迪與貝塞特》創Disney+史上最高影集收視紀錄！5大亮點｜Disney+ 史上最高影集收視紀錄（出圈證據：Vogue Taiwan 主流媒體報導官方平台歷史紀錄）｜https://news.google.com/rss/articles/CBMid0FVX3lxTE9JSzVSd",
+      "url": "https://app.clickup.com/t/86eyrz3fb",
+      "created_at": "2026-08-29T09:02:30+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "86eyrz3f9",
+      "title": "Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」——這件事，心理學有個名字｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《我的荒糖戀愛》連霸 Netflix 台灣收視冠軍，丁海寅飾演的角色對女主角的「過度寵愛」是全劇最大賣點。但切入點不是甜——而是：當一個人對你好到讓你覺得「拒絕他好像很殘忍」，這種感覺叫什麼？心理學稱之為「reciprocity pressure（互惠壓力）」：對方付出越多，你越難說不，不是因為你愛他，而是因為你欠他。這和真正的喜歡，是兩件完全不同的事。Lava 連結：在真實見面之前，你怎麼分辨自己是「被他吸引」還是「被他的付出綁住」？\n\n病毒係數：7/10。出圈證據為風傳媒與 ELLE 台灣同時報導 Netflix 台灣收視冠軍，具備主流媒體多源確認；「被寵到說不出口」的情感困境高度貼近台灣觀眾正在追劇的情緒，容易引發共鳴留言。\n\n熱度證明：\n風傳媒｜《我的荒糖戀愛》《毛骨悚然的戀愛》輸了！Netflix台灣最新收視排行榜出爐，冠軍讓人超意外｜Netflix 台灣收視排行榜冠軍（出圈證據：主流媒體報導 Netflix 官方排行）｜https://news.google.com/rss/articles/CBMiUEFVX3lxTFA4eDlZQVlpal9DRHAxcXJMNk91b2IwMmNScmVBQTdyU3FvOWhfVTBCaVFVdm5Yb2xlMVZZNjFpdVhQWk43azJ1S09JWUdHWGd4?oc=5\nEL",
+      "url": "https://app.clickup.com/t/86eyrz3f9",
+      "created_at": "2026-08-29T09:02:28+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "86eyrdm6u",
       "title": "《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起——你選了誰？｜病毒分 7｜🧠Claude",
       "desc": "選題來源：Claude 選題引擎\n\n切角：電影設定「全球一年限時一晚情慾解禁」，表面是喜劇噱頭，實際上是一個關係測試：當選擇從「無限期」變成「只有今晚」，你才知道自己真正想見的是誰。從這個設定切進一個洞察——現代人談戀愛最大的問題不是沒有選擇，是選擇永遠開著、永遠不需要決定。Lava 的 offline-first 邏輯正好是反向操作：把「見面」從一個可以無限拖延的選項，變成一個你必須決定的具體時刻。\n\n病毒係數：7/10。ELLE Taiwan 與 Cosmopolitan Taiwan 為台灣主流媒體，兩者在七夕檔期同時獨立報導同一部電影，構成出圈證據；電影「限時一晚」設定本身具強烈討論性，與 Lava offline-first 邏輯高度契合，易引發共鳴留言\n\n熱度證明：\nELLE Taiwan｜七夕就看這部！《一夜限定》電影6大看點：沒有交友軟體，你還知道怎麼愛一個人嗎？莫妮卡芭芭羅、卡倫透納譜寫命定戀曲｜台灣主流媒體七夕檔期重點推介，含具體演員與看點｜https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZEx6dC1JQTBDTlRLQ3ZQSjZGYk1GRnIzQjRkamJQNmZIRVFIS190WlJvS0c5R1ZkWFlLaS1uWWJjTUpLdElGRXEtU0hiWUpfcXhEZHRWY1pKTV",
@@ -893,5 +915,5 @@
       "applied": true
     }
   ],
-  "pulled_at": "2026-08-29T07:55:05+08:00"
+  "pulled_at": "2026-08-29T12:19:57+08:00"
 }
