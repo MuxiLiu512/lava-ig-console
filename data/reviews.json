@@ -1,885 +1,885 @@
 {
- "reviews": [
-  {
-   "id": "R-mrov1tkr",
-   "post_id": "20260712-已讀不回的心理學-v5",
-   "ts": "2026-07-17T19:34:34+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "b",
-    "2": "b",
-    "3": "b",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrov2hbv",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-17T19:35:05+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrown8qe",
-   "post_id": "20260717-PitchYourFriend",
-   "ts": "2026-07-17T20:19:13+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "c",
-    "2": "c",
-    "3": "c",
-    "4": "e",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrownxh4",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-17T20:19:45+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mrpunred",
-   "post_id": "20260717-PitchYourFriend",
-   "ts": "2026-07-18T12:11:24+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "b",
-    "2": "d",
-    "3": "a",
-    "4": "e",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mryw4tz0",
-   "post_id": "20260716-關係幻覺",
-   "ts": "2026-07-24T20:02:36+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "b",
-    "2": "b",
-    "3": "a",
-    "4": "c",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mryw6ibi",
-   "post_id": "20260716-見面卻尷尬到想逃",
-   "ts": "2026-07-24T20:03:54+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "d",
-    "3": "c",
-    "4": "c",
-    "5": "b"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mryw8kv4",
-   "post_id": "20260723-傳100則訊息還是不熟",
-   "ts": "2026-07-24T20:05:31+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a"
-   },
-   "scope": null,
-   "feedback": "選擇過少",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-mrywardn",
-   "post_id": "20260716-見面前聊越久",
-   "ts": "2026-07-24T20:07:12+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "e",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "底圖重複太多，每篇都是一樣的",
-   "consumed": false
-  },
-  {
-   "id": "R-mrywblpd",
-   "post_id": "20260723-天氣變差約會取消",
-   "ts": "2026-07-24T20:07:52+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a"
-   },
-   "scope": null,
-   "feedback": "第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少",
-   "consumed": false,
-   "copy_choice": "gpt"
-  },
-  {
-   "id": "R-mrywcuj3",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-24T20:08:50+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "e",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": "mockup",
-   "feedback": "文案不過關，跟母胎單身關聯性較低",
-   "consumed": true
-  },
-  {
-   "id": "R-mrywdupl",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-24T20:09:37+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "e",
-    "2": "d",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": "mockup",
-   "feedback": "文案不過關，跟母胎單身好像關聯性低",
-   "consumed": true
-  },
-  {
-   "id": "R-mrywebga",
-   "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
-   "ts": "2026-07-24T20:09:58+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "e",
-    "2": "d",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": "base_image",
-   "feedback": "文案不過關，跟母胎單身關聯性低",
-   "consumed": true
-  },
-  {
-   "id": "R-mrz0wir4",
-   "post_id": "20260723-天氣變差約會取消",
-   "ts": "2026-07-24T22:16:06+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "e",
-    "3": "c",
-    "4": "d",
-    "5": "d"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-ms4pldg6",
-   "post_id": "20260725-大稻埕煙火約會指南人擠人",
-   "ts": "2026-07-28T21:46:07+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "f",
-    "3": "b",
-    "4": "a",
-    "5": "e"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-ms4poznb",
-   "post_id": "20260724-SoftLaunch你的",
-   "ts": "2026-07-28T21:48:56+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "h",
-    "2": "a",
-    "3": "a",
-    "4": "a"
-   },
-   "scope": "base_image",
-   "feedback": "使用過多劇照，但劇照跟文案內容不相符、低關聯",
-   "consumed": true,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-manual-20260729-dadaocheng",
-   "post_id": "20260725-大稻埕煙火約會指南人擠人",
-   "ts": "2026-07-30T15:22:21+08:00",
-   "decision": "reject",
-   "scope": "base_image",
-   "feedback": "1. 品牌底圖完全不行，不要用這種沒有意義的東西 2. 其他的選圖跟煙火、人擠人相關的內容毫無關聯",
-   "consumed": true,
-   "note": "PAT 403 寫入失敗，由 Claude 代錄（截圖原文）；已執行：DESIGN 停用＋補打煙火/人潮素材重餵"
-  },
-  {
-   "id": "R-msbc8rqy",
-   "post_id": "20260728-AzizAnsari花年",
-   "ts": "2026-08-02T13:06:48+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "gpt"
-  },
-  {
-   "id": "R-msbhkfuv",
-   "post_id": "20260801-大稻埕煙火v2",
-   "ts": "2026-08-02T15:35:50+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "d",
-    "2": "a",
-    "3": "d",
-    "4": "a",
-    "5": "f",
-    "6": "b"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-manual-aziz-s2fix",
-   "post_id": "20260728-AzizAnsari花年",
-   "ts": "2026-08-03T18:31:35+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "c",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
-  },
-  {
-   "id": "R-msnadkr8",
-   "post_id": "20260803-JohnGottman研",
-   "ts": "2026-08-10T21:47:47+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "e",
-    "2": "b",
-    "3": "a",
-    "4": "a",
-    "5": "d",
-    "6": "e",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-msnahv87",
-   "post_id": "20260803-川口春奈效應為什麼日系清",
-   "ts": "2026-08-10T21:51:07+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "c",
-    "2": "a",
-    "3": "c",
-    "4": "e",
-    "5": "g",
-    "6": "h",
-    "7": "d",
-    "8": "d"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-msnajcsq",
-   "post_id": "20260803-欸你有沒有發現歐美正在流",
-   "ts": "2026-08-10T21:52:16+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "d",
-    "3": "a",
-    "4": "b",
-    "5": "b",
-    "6": "b",
-    "7": "c",
-    "8": "d"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-fix-gottman-s3",
-   "post_id": "20260803-JohnGottman研",
-   "ts": "2026-08-10T22:07:38+08:00",
-   "decision": "approve",
-   "scope": null,
-   "slide_choices": {
-    "1": "e",
-    "2": "b",
-    "3": "b",
-    "4": "a",
-    "5": "d",
-    "6": "e",
-    "7": "a",
-    "8": "a"
-   },
-   "feedback": "slide3 原候選僅 1 張（Gottman 官網截圖，中文壓在英文正文上不可讀，成篇總檢 block）。補抓 person 素材後改用講台照；Jesse 可在操控室改選其他候選。"
-  },
-  {
-   "id": "R-fix-nophone-dup",
-   "post_id": "20260803-欸你有沒有發現歐美正在流",
-   "ts": "2026-08-10T22:15:14+08:00",
-   "decision": "approve",
-   "scope": null,
-   "slide_choices": {
-    "1": "a",
-    "2": "m",
-    "3": "a",
-    "4": "b",
-    "5": "b",
-    "6": "b",
-    "7": "m",
-    "8": "d"
-   },
-   "feedback": "成篇總檢 block：第1/2/7/8 張都是情侶近距離同構圖。slide2 改靜物（桌上手機）、slide7 改非情侶對話場景，保留第1張封面與第8張收尾。原 slide7 首選候選帶 Mindframe 圖庫浮水印，已加入黑名單。"
-  },
-  {
-   "id": "R-v2-kawaguchi",
-   "post_id": "20260811-川口春奈效應v2",
-   "ts": "2026-08-11T15:09:26+08:00",
-   "decision": "approve",
-   "scope": null,
-   "slide_choices": {
-    "1": "c",
-    "2": "a",
-    "3": "c",
-    "4": "e",
-    "5": "g",
-    "6": "h",
-    "7": "d",
-    "8": "d"
-   },
-   "feedback": "v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。"
-  },
-  {
-   "id": "R-mspo7trv",
-   "post_id": "20260803-欸你有沒有發現歐美正在流",
-   "ts": "2026-08-12T13:50:45+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "g",
-    "3": "b",
-    "4": "a",
-    "5": "a",
-    "6": "d",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-mspo9gaq",
-   "post_id": "20260803-欸你有沒有發現歐美正在流",
-   "ts": "2026-08-12T13:52:01+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "g",
-    "3": "b",
-    "4": "b",
-    "5": "a",
-    "6": "d",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false,
-   "copy_choice": "claude"
-  },
-  {
-   "id": "R-mt71i539",
-   "post_id": "20260803-Laa是怎麼把配對變成真",
-   "ts": "2026-08-24T17:34:47+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "3": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mt71iald",
-   "post_id": "20260803-Laa是怎麼把配對變成真",
-   "ts": "2026-08-24T17:34:54+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "3": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mt7bi9qb",
-   "post_id": "20260824-Attached說你不是",
-   "ts": "2026-08-24T22:14:49+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "照片是舊版的，品質太低",
-   "consumed": false
-  },
-  {
-   "id": "R-mt8edvfi",
-   "post_id": "20260824-Attached說你不是",
-   "ts": "2026-08-25T16:23:09+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a"
-   },
-   "scope": null,
-   "feedback": "這是舊的內容，不需要這種排版形式",
-   "consumed": true
-  },
-  {
-   "id": "R-mt8eggjx",
-   "post_id": "20260824-AnxiousAttac",
-   "ts": "2026-08-25T16:25:09+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "i",
-    "2": "a",
-    "3": "a",
-    "4": "e",
-    "5": "b",
-    "6": "b",
-    "7": "c",
-    "8": "b"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mt8ejo9o",
-   "post_id": "20260824-Rizz進了牛津詞典但r",
-   "ts": "2026-08-25T16:27:39+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "e",
-    "2": "b",
-    "3": "d",
-    "4": "c",
-    "5": "a",
-    "6": "a",
-    "7": "c",
-    "8": "b"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mt8ekmpg",
-   "post_id": "20260824-CarlRogers說你",
-   "ts": "2026-08-25T16:28:24+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "素材亂生一通，沒有達到我們要的標準，來源看起來就沒有上網找過，不是媒體的品質",
-   "consumed": false
-  },
-  {
-   "id": "R-mt8elsvk",
-   "post_id": "20260824-CarlRogers說你",
-   "ts": "2026-08-25T16:29:19+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "素材品質不合格，重複出現已經用過的素材，應該更多搜尋網上高解析度的圖片，可使用 apify 或其他工具",
-   "consumed": false
-  },
-  {
-   "id": "R-mt9lp85u",
-   "post_id": "20260825-白夜行",
-   "ts": "2026-08-26T12:35:42+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "重新撰稿，有缺圖，用apify試試看，封面的照片有選到不錯的，其他稍微沒那麼好",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabelsd",
-   "post_id": "20260824-Attached說你不是",
-   "ts": "2026-08-27T00:35:16+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "這篇發過了",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabfuyw",
-   "post_id": "20260824-Attached說你不是",
-   "ts": "2026-08-27T00:36:15+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "這篇過時了",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabhayh",
-   "post_id": "20260824-毛骨悚然的戀愛大結局前朴",
-   "ts": "2026-08-27T00:37:22+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "b",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "圖片請使用新的API, apify",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabipwx",
-   "post_id": "20260824-StanTatkin說你",
-   "ts": "2026-08-27T00:38:28+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "缺料",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabiwcr",
-   "post_id": "20260825-白夜行",
-   "ts": "2026-08-27T00:38:37+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "缺料",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabj8ug",
-   "post_id": "20260824-重陽節今天熱搜但你知道孤",
-   "ts": "2026-08-27T00:38:53+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "圖片素材不通過，用apify",
-   "consumed": false
-  },
-  {
-   "id": "R-mtabjhvg",
-   "post_id": "20260824-Attached說你不是",
-   "ts": "2026-08-27T00:39:05+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "這篇過時了",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcexhe0",
-   "post_id": "20260824-毛骨悚然的戀愛大結局前朴",
-   "ts": "2026-08-28T11:49:28+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "b",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "c",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcezhxr",
-   "post_id": "20260825-結婚條件今天在PTT推爆",
-   "ts": "2026-08-28T11:51:02+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "b",
-    "6": "a",
-    "7": "a",
-    "8": "b"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcf1ax7",
-   "post_id": "20260824-CarlRogers說你",
-   "ts": "2026-08-28T11:52:27+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "c",
-    "2": "d",
-    "3": "a",
-    "4": "c",
-    "5": "b",
-    "6": "c",
-    "7": "b",
-    "8": "e"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcf22ag",
-   "post_id": "20260824-重陽節今天熱搜但你知道孤",
-   "ts": "2026-08-28T11:53:02+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "稍微過時",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcf4lal",
-   "post_id": "20260826-愛你致死不渝爛番茄永遠愛",
-   "ts": "2026-08-28T11:55:00+08:00",
-   "decision": "approve",
-   "slide_choices": {
-    "1": "d",
-    "2": "a",
-    "3": "a",
-    "4": "f",
-    "5": "a",
-    "6": "a",
-    "7": "f",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcf6aft",
-   "post_id": "20260824-重陽節今天熱搜但你知道孤",
-   "ts": "2026-08-28T11:56:19+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "過時",
-   "consumed": false
-  },
-  {
-   "id": "R-mtcf6gmn",
-   "post_id": "20260824-Attached說你不是",
-   "ts": "2026-08-28T11:56:27+08:00",
-   "decision": "reject",
-   "slide_choices": {
-    "1": "a",
-    "2": "a",
-    "3": "a",
-    "4": "a",
-    "5": "a",
-    "6": "a",
-    "7": "a",
-    "8": "a"
-   },
-   "scope": null,
-   "feedback": "過時",
-   "consumed": false
-  }
- ]
+  "reviews": [
+    {
+      "id": "R-mrov1tkr",
+      "post_id": "20260712-已讀不回的心理學-v5",
+      "ts": "2026-07-17T19:34:34+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "b",
+        "3": "b",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrov2hbv",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-17T19:35:05+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrown8qe",
+      "post_id": "20260717-PitchYourFriend",
+      "ts": "2026-07-17T20:19:13+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "c",
+        "2": "c",
+        "3": "c",
+        "4": "e",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrownxh4",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-17T20:19:45+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mrpunred",
+      "post_id": "20260717-PitchYourFriend",
+      "ts": "2026-07-18T12:11:24+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "d",
+        "3": "a",
+        "4": "e",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mryw4tz0",
+      "post_id": "20260716-關係幻覺",
+      "ts": "2026-07-24T20:02:36+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "b",
+        "2": "b",
+        "3": "a",
+        "4": "c",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mryw6ibi",
+      "post_id": "20260716-見面卻尷尬到想逃",
+      "ts": "2026-07-24T20:03:54+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "d",
+        "3": "c",
+        "4": "c",
+        "5": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mryw8kv4",
+      "post_id": "20260723-傳100則訊息還是不熟",
+      "ts": "2026-07-24T20:05:31+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a"
+      },
+      "scope": null,
+      "feedback": "選擇過少",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-mrywardn",
+      "post_id": "20260716-見面前聊越久",
+      "ts": "2026-07-24T20:07:12+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "底圖重複太多，每篇都是一樣的",
+      "consumed": false
+    },
+    {
+      "id": "R-mrywblpd",
+      "post_id": "20260723-天氣變差約會取消",
+      "ts": "2026-07-24T20:07:52+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a"
+      },
+      "scope": null,
+      "feedback": "第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少",
+      "consumed": false,
+      "copy_choice": "gpt"
+    },
+    {
+      "id": "R-mrywcuj3",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:08:50+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "mockup",
+      "feedback": "文案不過關，跟母胎單身關聯性較低",
+      "consumed": true
+    },
+    {
+      "id": "R-mrywdupl",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:09:37+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "d",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "mockup",
+      "feedback": "文案不過關，跟母胎單身好像關聯性低",
+      "consumed": true
+    },
+    {
+      "id": "R-mrywebga",
+      "post_id": "20260711-母胎單身其實比你更懂得選擇伴侶",
+      "ts": "2026-07-24T20:09:58+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "e",
+        "2": "d",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": "base_image",
+      "feedback": "文案不過關，跟母胎單身關聯性低",
+      "consumed": true
+    },
+    {
+      "id": "R-mrz0wir4",
+      "post_id": "20260723-天氣變差約會取消",
+      "ts": "2026-07-24T22:16:06+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "e",
+        "3": "c",
+        "4": "d",
+        "5": "d"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-ms4pldg6",
+      "post_id": "20260725-大稻埕煙火約會指南人擠人",
+      "ts": "2026-07-28T21:46:07+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "f",
+        "3": "b",
+        "4": "a",
+        "5": "e"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-ms4poznb",
+      "post_id": "20260724-SoftLaunch你的",
+      "ts": "2026-07-28T21:48:56+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "h",
+        "2": "a",
+        "3": "a",
+        "4": "a"
+      },
+      "scope": "base_image",
+      "feedback": "使用過多劇照，但劇照跟文案內容不相符、低關聯",
+      "consumed": true,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-manual-20260729-dadaocheng",
+      "post_id": "20260725-大稻埕煙火約會指南人擠人",
+      "ts": "2026-07-30T15:22:21+08:00",
+      "decision": "reject",
+      "scope": "base_image",
+      "feedback": "1. 品牌底圖完全不行，不要用這種沒有意義的東西 2. 其他的選圖跟煙火、人擠人相關的內容毫無關聯",
+      "consumed": true,
+      "note": "PAT 403 寫入失敗，由 Claude 代錄（截圖原文）；已執行：DESIGN 停用＋補打煙火/人潮素材重餵"
+    },
+    {
+      "id": "R-msbc8rqy",
+      "post_id": "20260728-AzizAnsari花年",
+      "ts": "2026-08-02T13:06:48+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "gpt"
+    },
+    {
+      "id": "R-msbhkfuv",
+      "post_id": "20260801-大稻埕煙火v2",
+      "ts": "2026-08-02T15:35:50+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "d",
+        "2": "a",
+        "3": "d",
+        "4": "a",
+        "5": "f",
+        "6": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-manual-aziz-s2fix",
+      "post_id": "20260728-AzizAnsari花年",
+      "ts": "2026-08-03T18:31:35+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "c",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
+    },
+    {
+      "id": "R-msnadkr8",
+      "post_id": "20260803-JohnGottman研",
+      "ts": "2026-08-10T21:47:47+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "b",
+        "3": "a",
+        "4": "a",
+        "5": "d",
+        "6": "e",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-msnahv87",
+      "post_id": "20260803-川口春奈效應為什麼日系清",
+      "ts": "2026-08-10T21:51:07+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "c",
+        "2": "a",
+        "3": "c",
+        "4": "e",
+        "5": "g",
+        "6": "h",
+        "7": "d",
+        "8": "d"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-msnajcsq",
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-10T21:52:16+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "d",
+        "3": "a",
+        "4": "b",
+        "5": "b",
+        "6": "b",
+        "7": "c",
+        "8": "d"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-fix-gottman-s3",
+      "post_id": "20260803-JohnGottman研",
+      "ts": "2026-08-10T22:07:38+08:00",
+      "decision": "approve",
+      "scope": null,
+      "slide_choices": {
+        "1": "e",
+        "2": "b",
+        "3": "b",
+        "4": "a",
+        "5": "d",
+        "6": "e",
+        "7": "a",
+        "8": "a"
+      },
+      "feedback": "slide3 原候選僅 1 張（Gottman 官網截圖，中文壓在英文正文上不可讀，成篇總檢 block）。補抓 person 素材後改用講台照；Jesse 可在操控室改選其他候選。"
+    },
+    {
+      "id": "R-fix-nophone-dup",
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-10T22:15:14+08:00",
+      "decision": "approve",
+      "scope": null,
+      "slide_choices": {
+        "1": "a",
+        "2": "m",
+        "3": "a",
+        "4": "b",
+        "5": "b",
+        "6": "b",
+        "7": "m",
+        "8": "d"
+      },
+      "feedback": "成篇總檢 block：第1/2/7/8 張都是情侶近距離同構圖。slide2 改靜物（桌上手機）、slide7 改非情侶對話場景，保留第1張封面與第8張收尾。原 slide7 首選候選帶 Mindframe 圖庫浮水印，已加入黑名單。"
+    },
+    {
+      "id": "R-v2-kawaguchi",
+      "post_id": "20260811-川口春奈效應v2",
+      "ts": "2026-08-11T15:09:26+08:00",
+      "decision": "approve",
+      "scope": null,
+      "slide_choices": {
+        "1": "c",
+        "2": "a",
+        "3": "c",
+        "4": "e",
+        "5": "g",
+        "6": "h",
+        "7": "d",
+        "8": "d"
+      },
+      "feedback": "v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。"
+    },
+    {
+      "id": "R-mspo7trv",
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-12T13:50:45+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "g",
+        "3": "b",
+        "4": "a",
+        "5": "a",
+        "6": "d",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-mspo9gaq",
+      "post_id": "20260803-欸你有沒有發現歐美正在流",
+      "ts": "2026-08-12T13:52:01+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "g",
+        "3": "b",
+        "4": "b",
+        "5": "a",
+        "6": "d",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
+    },
+    {
+      "id": "R-mt71i539",
+      "post_id": "20260803-Laa是怎麼把配對變成真",
+      "ts": "2026-08-24T17:34:47+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "3": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mt71iald",
+      "post_id": "20260803-Laa是怎麼把配對變成真",
+      "ts": "2026-08-24T17:34:54+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "3": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mt7bi9qb",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-24T22:14:49+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "照片是舊版的，品質太低",
+      "consumed": false
+    },
+    {
+      "id": "R-mt8edvfi",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-25T16:23:09+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a"
+      },
+      "scope": null,
+      "feedback": "這是舊的內容，不需要這種排版形式",
+      "consumed": true
+    },
+    {
+      "id": "R-mt8eggjx",
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-08-25T16:25:09+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "i",
+        "2": "a",
+        "3": "a",
+        "4": "e",
+        "5": "b",
+        "6": "b",
+        "7": "c",
+        "8": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mt8ejo9o",
+      "post_id": "20260824-Rizz進了牛津詞典但r",
+      "ts": "2026-08-25T16:27:39+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "e",
+        "2": "b",
+        "3": "d",
+        "4": "c",
+        "5": "a",
+        "6": "a",
+        "7": "c",
+        "8": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mt8ekmpg",
+      "post_id": "20260824-CarlRogers說你",
+      "ts": "2026-08-25T16:28:24+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "素材亂生一通，沒有達到我們要的標準，來源看起來就沒有上網找過，不是媒體的品質",
+      "consumed": false
+    },
+    {
+      "id": "R-mt8elsvk",
+      "post_id": "20260824-CarlRogers說你",
+      "ts": "2026-08-25T16:29:19+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "素材品質不合格，重複出現已經用過的素材，應該更多搜尋網上高解析度的圖片，可使用 apify 或其他工具",
+      "consumed": false
+    },
+    {
+      "id": "R-mt9lp85u",
+      "post_id": "20260825-白夜行",
+      "ts": "2026-08-26T12:35:42+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "重新撰稿，有缺圖，用apify試試看，封面的照片有選到不錯的，其他稍微沒那麼好",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabelsd",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-27T00:35:16+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "這篇發過了",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabfuyw",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-27T00:36:15+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "這篇過時了",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabhayh",
+      "post_id": "20260824-毛骨悚然的戀愛大結局前朴",
+      "ts": "2026-08-27T00:37:22+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "b",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "圖片請使用新的API, apify",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabipwx",
+      "post_id": "20260824-StanTatkin說你",
+      "ts": "2026-08-27T00:38:28+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "缺料",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabiwcr",
+      "post_id": "20260825-白夜行",
+      "ts": "2026-08-27T00:38:37+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "缺料",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabj8ug",
+      "post_id": "20260824-重陽節今天熱搜但你知道孤",
+      "ts": "2026-08-27T00:38:53+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "圖片素材不通過，用apify",
+      "consumed": false
+    },
+    {
+      "id": "R-mtabjhvg",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-27T00:39:05+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "這篇過時了",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcexhe0",
+      "post_id": "20260824-毛骨悚然的戀愛大結局前朴",
+      "ts": "2026-08-28T11:49:28+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "b",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "c",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcezhxr",
+      "post_id": "20260825-結婚條件今天在PTT推爆",
+      "ts": "2026-08-28T11:51:02+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "b",
+        "6": "a",
+        "7": "a",
+        "8": "b"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcf1ax7",
+      "post_id": "20260824-CarlRogers說你",
+      "ts": "2026-08-28T11:52:27+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "c",
+        "2": "d",
+        "3": "a",
+        "4": "c",
+        "5": "b",
+        "6": "c",
+        "7": "b",
+        "8": "e"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcf22ag",
+      "post_id": "20260824-重陽節今天熱搜但你知道孤",
+      "ts": "2026-08-28T11:53:02+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "稍微過時",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcf4lal",
+      "post_id": "20260826-愛你致死不渝爛番茄永遠愛",
+      "ts": "2026-08-28T11:55:00+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "d",
+        "2": "a",
+        "3": "a",
+        "4": "f",
+        "5": "a",
+        "6": "a",
+        "7": "f",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcf6aft",
+      "post_id": "20260824-重陽節今天熱搜但你知道孤",
+      "ts": "2026-08-28T11:56:19+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "過時",
+      "consumed": false
+    },
+    {
+      "id": "R-mtcf6gmn",
+      "post_id": "20260824-Attached說你不是",
+      "ts": "2026-08-28T11:56:27+08:00",
+      "decision": "reject",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "過時",
+      "consumed": false
+    }
+  ]
 }
