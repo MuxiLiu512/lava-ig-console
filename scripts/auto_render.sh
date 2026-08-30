@@ -187,12 +187,12 @@ echo "$RFS" | grep -E "↻|重掃完成：[1-9]|⏭" | sed "s/^/[$(date '+%m-%d 
 
 # 事件折疊〔2026-08-30 脫離 ClickUp〕：操控台的每個決定（events/pending/）
 # 折疊成狀態變化；idea 放行直接觸發 WF01 撰稿。ideas-apply（勾 ClickUp）退役。
-# ideas-pull 暫留一天：選題雷達還在寫 ClickUp，明天改寫完成後一併移除。
 echo "事件折疊" >"$RUNMARK"
 EVA=$(timeout 180 "$PY" scripts/sync_console.py events-apply 2>&1)
 echo "$EVA" | grep -E "✓|⚠|折疊完成" | sed "s/^/[$(date '+%m-%d %H:%M')] 事件/" >>"$LOG"
-IDE=$(timeout 120 "$PY" scripts/sync_console.py ideas-pull 2>&1)
-echo "$IDE" | grep -E "✓ 靈感|! " | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
+# 靈感收件匣：WF05 雷達 → n8n 資料表 → 這裡拉進 ideas.json（ClickUp 完全出局）。
+IDE=$(timeout 120 "$PY" scripts/sync_console.py radar-pull 2>&1)
+echo "$IDE" | grep -E "✓ 收件匣|! " | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
 # 入料：在製中卡的新草稿自動餵進操控室。
 # limit 2 → 3：2026-08-25 積壓 6 篇時，每輪只吃 2 張又碰上 Drive 暫時性讀檔錯誤，

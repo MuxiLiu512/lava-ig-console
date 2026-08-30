@@ -1164,6 +1164,65 @@ def ideas_pull(args):
           % (len(ideas), kept, carried))
 
 
+def radar_pull(args):
+    """靈感收件匣：n8n 資料表 radar_inbox → data/ideas.json（看板放行欄的資料源）。
+    〔2026-08-30 脫離 ClickUp〕選題雷達 WF05 改寫 n8n 資料表，這裡經 WF16 webhook
+    拉取。webhook 端「取走即標記 consumed」，本地合併以 idea_id 冪等——
+    萬一取走後合併前中斷，該批仍留在資料表（consumed=true），可人工救回。
+    取代 ideas_pull（ClickUp 讀者，隨雷達改造一併退役）。"""
+    import urllib.request, urllib.parse
+    key = _read_sync().get("radar_inbox_key")
+    if not key:
+        print("缺 radar_inbox_key，略過收件匣"); return
+    url = ("https://lavadating.app.n8n.cloud/webhook/lava-radar-inbox?k="
+           + urllib.parse.quote(key))
+    try:
+        raw = urllib.request.urlopen(url, timeout=45).read()
+        rows = json.loads(raw).get("ideas", [])
+    except Exception as e:
+        print("! 收件匣拉取失敗：%s" % e); return
+    rows = [r for r in rows if r.get("idea_id")]
+    if not rows:
+        return
+    try:
+        doc = load("ideas.json")
+    except FileNotFoundError:
+        doc = {"note": "靈感卡快照＋放行決定。雷達經 radar-pull 進場；決定由看板寫事件、events-apply 套用。",
+               "ideas": []}
+    seen = {x.get("task_id") or x.get("id") for x in doc.get("ideas", [])}
+    added = 0
+    for r in rows:
+        iid = r["idea_id"]
+        if iid in seen:
+            continue
+        try:
+            ev = json.loads(r.get("evidence") or "[]")
+        except Exception:
+            ev = []
+        ev_lines = "\n".join("- %s｜%s｜%s｜%s" % (e.get("source", ""), e.get("title", ""),
+                                                  e.get("metric", ""), e.get("link", ""))
+                             for e in ev) or "（無）"
+        desc = ("選題來源：%s 選題引擎\n\n切角：%s\n\n病毒係數：%s/10。%s\n\n熱度證明：\n%s\n\n"
+                "Lava 接點：%s\n\n圖像建議：%s\n\n建議類型：%s\n\n建議模板：%s") % (
+            r.get("scout", ""), r.get("angle", ""), r.get("virality_score", ""),
+            r.get("virality_reason", ""), ev_lines, r.get("lava_tie", ""),
+            r.get("suggested_show", ""), r.get("suggested_type", ""),
+            r.get("template_id") or "無")
+        doc["ideas"].append({
+            "task_id": iid,
+            "title": "%s｜病毒分 %s｜🧠%s" % (r.get("title", ""), r.get("virality_score", ""),
+                                             r.get("scout", "")),
+            "desc": desc[:600], "url": "",
+            "created_at": r.get("ts") or _now_iso(),
+            "decision": None, "decided_at": None, "reason": "", "applied": False})
+        seen.add(iid); added += 1
+    if added:
+        doc["ideas"].sort(key=lambda x: x.get("created_at") or "", reverse=True)
+        doc["pulled_at"] = _now_iso()
+        save("ideas.json", doc)
+        print("✓ 收件匣新靈感 %d 張" % added)
+
+
 def events_apply(args):
     """事件折疊：把操控台寫下的決定（events/pending/*.json）套用成狀態變化。
     〔2026-08-30 脫離 ClickUp〕這支取代 ideas-apply（勾 ClickUp 放行）與從未被排程的
@@ -1946,7 +2005,8 @@ def main():
     a = sub.add_parser("reconcile-published", help="ClickUp 已發布 → posts.json 翻 published（補發佈回寫缺口）"); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=reconcile_published)
     a = sub.add_parser("ingest-new", help="在製中卡×Drive 草稿 → 自動餵進操控室（哨兵用）"); a.add_argument("--limit", type=int, default=3); a.set_defaults(func=ingest_new)
     a = sub.add_parser("marketing-archive", help="已發佈貼文回填 02_Marketing/05_貼文規劃"); a.set_defaults(func=marketing_archive)
-    a = sub.add_parser("ideas-pull", help="ClickUp 靈感審核卡 → data/ideas.json（看板放行欄）"); a.set_defaults(func=ideas_pull)
+    a = sub.add_parser("ideas-pull", help="〔退役〕ClickUp 靈感審核卡 → data/ideas.json（雷達已改 radar-pull）"); a.set_defaults(func=ideas_pull)
+    a = sub.add_parser("radar-pull", help="靈感收件匣：n8n 資料表 → data/ideas.json（看板放行欄，哨兵用）"); a.set_defaults(func=radar_pull)
     a = sub.add_parser("events-apply", help="事件折疊：操控台決定 → 狀態變化＋觸發撰稿（脫離 ClickUp 後的核心）"); a.set_defaults(func=events_apply)
     a = sub.add_parser("ideas-apply", help="看板放行/退回決定回寫 ClickUp（勾🚀放行/留言）"); a.set_defaults(func=ideas_apply)
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
