@@ -1164,6 +1164,96 @@ def ideas_pull(args):
           % (len(ideas), kept, carried))
 
 
+def events_apply(args):
+    """事件折疊：把操控台寫下的決定（events/pending/*.json）套用成狀態變化。
+    〔2026-08-30 脫離 ClickUp〕這支取代 ideas-apply（勾 ClickUp 放行）與從未被排程的
+    apply-reviews。合法變遷只認 state_machine.py；idea 放行後由這裡直接打 WF01 撰稿
+    webhook——WF07 放行監聽與 WF13 排程器同時退役。
+    瀏覽器端一個決定＝一個新檔（永不撞 sha），套用後移到 events/applied/ 留審計。"""
+    import importlib.util, urllib.request
+    smp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state_machine.py")
+    _s = importlib.util.spec_from_file_location("sm", smp)
+    SM = importlib.util.module_from_spec(_s); _s.loader.exec_module(SM)
+
+    pend_dir = os.path.join(REPO, "events", "pending")
+    done_dir = os.path.join(REPO, "events", "applied")
+    if not os.path.isdir(pend_dir):
+        print("（無 events/pending，跳過）"); return
+    evs = sorted(glob.glob(os.path.join(pend_dir, "*.json")))
+    if not evs:
+        return
+    posts_d = load("posts.json")
+    ideas_d = load("ideas.json")
+    reviews_d = load("reviews.json")
+    posts = {p["id"]: p for p in posts_d.get("posts", [])}
+    ideas = {i.get("task_id") or i.get("id"): i for i in ideas_d.get("ideas", [])}
+    os.makedirs(done_dir, exist_ok=True)
+    changed, applied = 0, []
+    for fp in evs:
+        try:
+            ev = json.load(open(fp, encoding="utf-8"))
+        except Exception as e:
+            print("⚠ 事件檔壞掉，移到 applied 隔離：%s（%s）" % (os.path.basename(fp), e))
+            shutil.move(fp, os.path.join(done_dir, os.path.basename(fp) + ".bad")); continue
+        t, target = ev.get("type", ""), ev.get("target", "")
+        ok, msg = False, "無目標"
+        if t.startswith("post.") and target in posts:
+            ok, msg = SM.apply_post_event(posts[target], ev)
+            if ok and t in ("post.approve", "post.reject"):
+                # 審核紀錄與工時仍寫回原檔，學習迴路照舊讀 reviews.json——但寫者只有這裡
+                pay = ev.get("payload") or {}
+                reviews_d.setdefault("reviews", []).append({
+                    "id": "R-" + os.path.basename(fp)[:17], "post_id": target,
+                    "ts": ev.get("ts"), "decision": t.split(".")[1],
+                    "slide_choices": pay.get("slide_choices") or {},
+                    "scope": None, "feedback": pay.get("feedback") or "",
+                    "consumed": False, "copy_choice": pay.get("copy_choice")})
+        elif t.startswith("idea.") and target in ideas:
+            ok, msg = SM.apply_idea_event(ideas[target], ev)
+            if ok and t == "idea.approve":
+                # 直接觸發撰稿：our id 一路帶進 WF01 → 稿檔名 → 貼文 id（單一 id 走完全程）
+                idea = ideas[target]
+                title = (idea.get("title") or "").split("｜病毒分")[0].replace("靈感｜", "")
+                try:
+                    body = json.dumps({"topic": title, "type": "知識型", "slides": 9,
+                                       "angle": (idea.get("desc") or "")[:400],
+                                       "taskId": target, "writer": "claude"}).encode()
+                    req = urllib.request.Request(
+                        "https://lavadating.app.n8n.cloud/webhook/lava-ig-draft",
+                        data=body, headers={"Content-Type": "application/json"}, method="POST")
+                    urllib.request.urlopen(req, timeout=30).read()
+                    idea["applied"] = True
+                    msg += "；已觸發撰稿"
+                except Exception as e:
+                    msg += "；⚠ 撰稿觸發失敗（%s），下輪重試" % type(e).__name__
+                    # applied 維持 False，下一輪 events-apply 的 retry 區會再打
+        else:
+            msg = "找不到目標 %s（%s）" % (target, t)
+        print(("✓ " if ok else "⏭ ") + os.path.basename(fp)[:24] + " " + msg)
+        shutil.move(fp, os.path.join(done_dir, os.path.basename(fp)))
+        if ok:
+            changed += 1; applied.append(t)
+    # 放行了但撰稿觸發失敗的，重試
+    for iid, idea in ideas.items():
+        if idea.get("decision") == "approve" and not idea.get("applied"):
+            try:
+                title = (idea.get("title") or "").split("｜病毒分")[0].replace("靈感｜", "")
+                body = json.dumps({"topic": title, "type": "知識型", "slides": 9,
+                                   "angle": (idea.get("desc") or "")[:400],
+                                   "taskId": iid, "writer": "claude"}).encode()
+                req = urllib.request.Request(
+                    "https://lavadating.app.n8n.cloud/webhook/lava-ig-draft",
+                    data=body, headers={"Content-Type": "application/json"}, method="POST")
+                urllib.request.urlopen(req, timeout=30).read()
+                idea["applied"] = True; changed += 1
+                print("✓ 補觸發撰稿 %s" % iid)
+            except Exception:
+                pass
+    if changed:
+        save("posts.json", posts_d); save("ideas.json", ideas_d); save("reviews.json", reviews_d)
+        print("事件折疊完成：%d 件（%s）" % (changed, "、".join(applied[:6])))
+
+
 def ideas_apply(args):
     """把看板寫入的放行／退回決定回寫 ClickUp。放行＝勾 🚀放行（WF07 接手），
     退回＝卡上留言（狀態不動）。每筆只套用一次（applied 旗標）。"""
@@ -1548,24 +1638,40 @@ def ingest_new(args):
     root = DRIVE_PRODUCE
     if not os.path.isdir(root):
         print("Drive 未掛載，略過入料"); return
-    known = {p.get("clickup_task_id") for p in load("posts.json").get("posts", [])}
-    try:   # 已歸檔者不得被當新卡重新入料（清存貨後的防迴圈）
+    # 〔2026-08-30 脫離 ClickUp〕入料佇列改為平台原生：
+    # 「已放行（events-apply 已觸發撰稿）且還沒有對應貼文」的靈感＝待入料。
+    # id 一路同一顆：idea id → WF01 taskId → 稿檔名前綴 → 貼文 id。
+    posts_all = load("posts.json").get("posts", [])
+    known = {p.get("clickup_task_id") for p in posts_all} | {p["id"] for p in posts_all}
+    try:
         known |= {p.get("clickup_task_id") for p in load("archived-posts.json").get("posts", [])}
+        known |= {p["id"] for p in load("archived-posts.json").get("posts", [])}
     except FileNotFoundError:
         pass
-    try:
-        tasks = _clickup("GET", "/list/901819351278/task?" +
-                         urllib.parse.urlencode({"statuses[]": "在製中"}), token).get("tasks", [])
-    except Exception as e:
-        print("! ClickUp 查詢失敗：%s" % e); return
-    todo = [t for t in tasks if t["id"] not in known
-            and (t.get("name") or "").startswith("IG貼文｜")
-            and "端到端測試" not in (t.get("name") or "")]
+    ideas_all = load("ideas.json").get("ideas", [])
+    todo = [{"id": (i.get("task_id") or i.get("id")),
+             "name": "IG貼文｜" + (i.get("title") or "").split("｜病毒分")[0].replace("靈感｜", "")}
+            for i in ideas_all
+            if i.get("decision") == "approve" and i.get("applied")
+            and (i.get("task_id") or i.get("id")) not in known]
     fed = 0
     for t in todo:
         if fed >= (args.limit or 3):
             break
         topic_full = t["name"].split("｜", 1)[1]
+        # 新式：稿檔名以 id 開頭（WF01 已改），比對零歧義；舊稿走主題比對過渡
+        idfiles = [x for x in glob.glob(os.path.join(root, "%s*文案初稿*.json" % t["id"]))
+                   if not re.search(r"\(\d+\)\.json$", os.path.basename(x))]
+        if idfiles:
+            newest = max(idfiles, key=os.path.getmtime)
+            ns = argparse.Namespace(drive_root=None, topic=None, post_id=t["id"], finals_dir=None,
+                                    version=1, clickup=t["id"], topic_type="A-知識型",
+                                    json=newest, topic_base=None)
+            try:
+                from_drive(ns); fed += 1
+            except Exception as e:
+                print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e))
+            continue
         nt = _norm_topic(topic_full)
         # 比對兩側都走 _norm_topic：卡名與檔名的空白/標點/v+數字剝除互相抵消（「Lava」→「Laa」bug 修正）
         cand = [(x, _norm_topic(os.path.basename(x))) for x in glob.glob(os.path.join(root, "*.json"))
@@ -1841,6 +1947,7 @@ def main():
     a = sub.add_parser("ingest-new", help="在製中卡×Drive 草稿 → 自動餵進操控室（哨兵用）"); a.add_argument("--limit", type=int, default=3); a.set_defaults(func=ingest_new)
     a = sub.add_parser("marketing-archive", help="已發佈貼文回填 02_Marketing/05_貼文規劃"); a.set_defaults(func=marketing_archive)
     a = sub.add_parser("ideas-pull", help="ClickUp 靈感審核卡 → data/ideas.json（看板放行欄）"); a.set_defaults(func=ideas_pull)
+    a = sub.add_parser("events-apply", help="事件折疊：操控台決定 → 狀態變化＋觸發撰稿（脫離 ClickUp 後的核心）"); a.set_defaults(func=events_apply)
     a = sub.add_parser("ideas-apply", help="看板放行/退回決定回寫 ClickUp（勾🚀放行/留言）"); a.set_defaults(func=ideas_apply)
     a = sub.add_parser("archive-post", help="把 demo/廢棄貼文移出主檔（不動 IG）"); a.add_argument("ids", nargs="+"); a.add_argument("--note", default=None); a.set_defaults(func=archive_post)
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)

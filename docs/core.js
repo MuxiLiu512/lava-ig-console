@@ -124,6 +124,30 @@ async function shaOf(path) {
   return hit.sha;
 }
 
+// 事件寫入：一個決定＝一個新檔（events/pending/<ts>-<rand>.json）。
+// 新檔的 PUT 不需要 sha，永遠不會與哨兵或另一個分頁互相覆蓋——
+// 這就是「8 個寫者搶一個 posts.json」的結構性解法（2026-08-30 脫離 ClickUp 定案）。
+// 決定寫下後由哨兵折疊成狀態變化（scripts/state_machine.py 是唯一的合法變遷表）。
+async function postEvent(type, target, payload) {
+  if (!S.pat) throw new Error("尚未設定 PAT，無法寫入。請點右上角 ⚙︎ 設定。");
+  const ts = new Date().toISOString().replace(/[:.]/g, "-");
+  const rand = Math.random().toString(16).slice(2, 6);
+  const path = `events/pending/${ts}-${rand}.json`;
+  const body = {
+    message: `event: ${type} ${target}`,
+    content: strToB64(JSON.stringify({ type, target, ts: nowISO(), by: "console", payload: payload || {} }, null, 1)),
+    branch: S.branch,
+  };
+  const r = await tfetch(`${apiBase()}/${path}`, {
+    method: "PUT",
+    headers: { Accept: "application/vnd.github+json", "Content-Type": "application/json", ...authHdr() },
+    body: JSON.stringify(body),
+  });
+  if (r.status === 401) { AUTH_BAD = true; authBanner(); throw new Error("PAT 已失效，無法寫入決定。"); }
+  if (!r.ok) throw new Error(`決定寫入失敗 (${r.status})`);
+  return true;
+}
+
 // 寫回：GET sha → mutate → PUT，409 重試 3 次
 async function saveJson(path, mutateFn, message) {
   if (MODE === "local") {
@@ -253,5 +277,5 @@ function alertOf(p) {
   return null;
 }
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, postEvent, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();

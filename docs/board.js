@@ -4,7 +4,7 @@
    所以卡片點擊是「帶你去做那個動作的地方」，不是拖拉。 */
 (() => {
 "use strict";
-const { $, el, esc, MODE, setImg, saveJson, STATE, FILES, loadAll, toast, modal, nowISO, tfetch,
+const { $, el, esc, MODE, setImg, saveJson, STATE, FILES, loadAll, toast, modal, nowISO, tfetch, postEvent,
         stageOf, gatesOf, alertOf } = window.LavaCore;
 
 // 「規則提案」原本跟靈感卡混在放行欄，19 則同義提案把整欄塞爆，
@@ -101,13 +101,13 @@ function openIdeaDrawer(idea) {
 
 async function decideIdea(idea, decision, reason) {
   try {
-    await saveJson(FILES.ideas, doc => {
-      const t = (doc.ideas || []).find(x => x.task_id === idea.task_id);
-      if (t) { t.decision = decision; t.decided_at = nowISO(); t.reason = reason || ""; t.applied = false; }
-    }, `idea ${decision}: ${idea.task_id}`);
+    // 脫離 ClickUp（2026-08-30）：放行＝寫一個事件，哨兵折疊後直接觸發撰稿。
+    // 不再勾 ClickUp checkbox、不再等 WF07/WF13 中轉。
+    await postEvent("idea." + decision, idea.task_id, { feedback: reason || "" });
+    idea.decision = decision; idea.decided_at = nowISO();
     toast(decision === "approve"
-      ? "已放行 ✓ 哨兵 10 分鐘內回寫 ClickUp，之後自動撰稿入料"
-      : "已退回，原因會留言到卡上");
+      ? "已放行 ✓ 哨兵 10 分鐘內啟動撰稿，稿會出現在製作中"
+      : "已退回 ✓");
     $("#bdDrawer").classList.remove("open");
     boot();
   } catch (e) { toast(e.message, true); }

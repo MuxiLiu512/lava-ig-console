@@ -185,9 +185,13 @@ echo "重掃缺料" >"$RUNMARK"
 RFS=$(timeout 600 "$PY" scripts/sync_console.py refresh-candidates --limit 3 2>&1)
 echo "$RFS" | grep -E "↻|重掃完成：[1-9]|⏭" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
-# 靈感同步：先套用看板的放行/退回決定（勾 ClickUp 🚀放行 → WF07 接手），再拉新卡
-echo "靈感同步" >"$RUNMARK"
-IDE=$(timeout 120 "$PY" scripts/sync_console.py ideas-apply 2>&1; timeout 120 "$PY" scripts/sync_console.py ideas-pull 2>&1)
+# 事件折疊〔2026-08-30 脫離 ClickUp〕：操控台的每個決定（events/pending/）
+# 折疊成狀態變化；idea 放行直接觸發 WF01 撰稿。ideas-apply（勾 ClickUp）退役。
+# ideas-pull 暫留一天：選題雷達還在寫 ClickUp，明天改寫完成後一併移除。
+echo "事件折疊" >"$RUNMARK"
+EVA=$(timeout 180 "$PY" scripts/sync_console.py events-apply 2>&1)
+echo "$EVA" | grep -E "✓|⚠|折疊完成" | sed "s/^/[$(date '+%m-%d %H:%M')] 事件/" >>"$LOG"
+IDE=$(timeout 120 "$PY" scripts/sync_console.py ideas-pull 2>&1)
 echo "$IDE" | grep -E "✓ 靈感|! " | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
 # 入料：在製中卡的新草稿自動餵進操控室。
