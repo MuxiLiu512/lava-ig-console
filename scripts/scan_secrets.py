@@ -77,7 +77,13 @@ def main():
         files = [f for f in _git("diff", "--cached", "--name-only").split("\n") if f.strip()]
     else:
         files = [f for f in _git("ls-files").split("\n") if f.strip()]
-    if not files:      # 非 git repo（如海巡）：掃描原始碼與文件
+    # --staged 且暫存區為空＝沒有東西要提交，直接放行。
+    # 2026-08-30 實案：與哨兵的 git 動作撞在同一工作樹，暫存被清空後
+    # 走到下面的檔案系統後備掃描，把 gitignore 隔離中的 .sync.json 當外洩擋下。
+    # 後備掃描只留給「非 git repo」的情境（如海巡）。
+    if not files and staged_only:
+        files = []
+    elif not files:    # 非 git repo（如海巡）：掃描原始碼與文件
         for root, dirs, fs in os.walk(REPO):
             dirs[:] = [d for d in dirs if d not in
                        {".git", "node_modules", "__pycache__", "data", "inbox", "eval"}]
