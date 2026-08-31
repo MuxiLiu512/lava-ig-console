@@ -5997,1008 +5997,6 @@
       }
     },
     {
-      "id": "20260825-白夜行",
-      "topic": "東野圭吾走了，《白夜行》衝上台灣暢銷榜：雪穗和亮司的關係，愛情研究者會怎麼定義它？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyq9f6w",
-      "created_at": null,
-      "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood80116",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Simply Psychology",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-mood76dd8",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-1d.webp",
-              "kind": "still",
-              "source_label": "c-mood9cace",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-白夜行/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-白夜行/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Byakuyako"
-            }
-          ],
-          "final_src": null,
-          "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡：那算愛嗎？",
-          "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-mood1024c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-mood27078",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Byakuyako"
-            }
-          ],
-          "final_src": null,
-          "heading": "讀完最後一頁，你愣在那裡",
-          "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲。而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Simply Psychology",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Enmeshment：兩個人的邊界消失了",
-          "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此：個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-4a.webp",
-              "kind": "still",
-              "source_label": "a-mood02be4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-4b.webp",
-              "kind": "still",
-              "source_label": "b-mood1e322",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "亮司和雪穗：不是對等的糾纏",
-          "display_copy": "一般的糾纏是【雙向的】：兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗。其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "「為你付出一切」背後，研究說了什麼",
-          "display_copy": "你以為「為你付出一切」是愛的極致。但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力：兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
-        },
-        {
-          "n": 6,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-6a.webp",
-              "kind": "still",
-              "source_label": "Mother"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Mother"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Mother",
-              "low_q": true
-            }
-          ],
-          "final_src": null,
-          "heading": "Enmeshment 長什麼樣？你可能認識它",
-          "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎：直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood79405",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "真正的關係，是兩個人都能站在光裡",
-          "display_copy": "亮司以為躲在暗處是愛。但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260825-白夜行/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-mood048b3",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-白夜行/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood2441c",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "你可以問自己的三個問題",
-          "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "東野圭吾於 2026 年 7 月 23 日因大腸癌逝世，享年 68 歲",
-          "source": "https://udn.com/news/story/6885/9660423",
-          "quote": "訃告由講談社官方網站首發，同步由旗下七家出版社的聯合官方 Twitter 帳號對外公告"
-        },
-        {
-          "claim": "博客來 27 日中文書單日銷量是 26 日的 50 倍；電子書單日銷量達 26 日的 16.5 倍",
-          "source": "https://udn.com/news/story/6885/9660423",
-          "quote": "27 日中文書單日銷量超越 1 日至 26 日的累計量，且是 26 日的 50 倍；電子書單日銷量也達 26 日的 16.5 倍"
-        },
-        {
-          "claim": "博客來暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜",
-          "source": "https://udn.com/news/story/6885/9660423",
-          "quote": "博客來網路書店暢銷總榜前 10 名一度同時出現 5 本東野圭吾作品，百大排行榜共有 24 本進榜"
-        },
-        {
-          "claim": "《白夜行》在博客來 27 日東野圭吾作品銷售榜排名第 1",
-          "source": "https://www.cna.com.tw/news/acul/202507300125.aspx",
-          "quote": "27 日東野圭吾作品銷售前 5 名依序為：「白夜行（經典單冊回歸版）」第 1 名"
-        },
-        {
-          "claim": "Salvador Minuchin 於 1970 年代提出 Enmeshment（糾纏型關係）概念，指出糾纏型家庭邊界呈「擴散狀」（diffuse boundaries）",
-          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
-          "quote": "Enmeshment is a concept that was developed by family therapist Salvador Minuchin in the 1970s"
-        },
-        {
-          "claim": "APA 定義 Enmeshment 為「兩人或多人過度介入彼此的活動與個人關係的狀態」",
-          "source": "https://dictionary.apa.org/enmeshment",
-          "quote": "a state in which two or more people, typically family members, are overinvolved in each other's activities and personal relationships"
-        },
-        {
-          "claim": "Bacon 與 Conway（2023）定義糾纏為「對自身與他人分離感的混淆體驗，以及在關係中自主性的喪失」",
-          "source": "https://link.springer.com/doi/10.1007/s11469-022-00810-4",
-          "quote": "a confused experience of separateness from others, including a loss of autonomy within relationships, and an inability to fully experience, understand, and value one's own thoughts, feelings, and needs within a relational context"
-        },
-        {
-          "claim": "Manzi、Vignoles、Regalia 與 Scabini 2006 年發表於 Journal of Marriage and Family 68 卷第 3 期的跨文化研究指出，高度糾纏與更低的個人身份認同感及更高的焦慮程度直接相關",
-          "source": "https://www.simplypsychology.org/what-is-enmeshment.html",
-          "quote": "Manzi, C., Vignoles, V. L., Regalia, C., & Scabini, E. (2006). Cohesion and Enmeshment Revisited: Differentiation, Identity, and Well-Being in Two European Cultures. Journal of Marriage and Family, 68(3), 673–689"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "東野圭吾於 2026 年 7 月 23 日因大腸癌辭世，享年 68 歲。\n\n訃告傳出後，博客來 27 日中文書單日銷量是 26 日的 50 倍，東野圭吾作品一度同時佔據暢銷總榜前 10 名中的 5 個位置，《白夜行》穩居榜首。\n無數人重新翻開這本書，讀到最後一頁說不出話，不是因為它太悲，而是因為它讓你懷疑：你以為的「為對方付出一切」，和這個故事的距離，到底有多遠？\n\n亮司選擇永遠待在暗處，因為他相信那是愛。\n但關係心理學告訴我們，一段健康的連結不需要有人躲進陰影去成全另一個人。\n真正的在一起，是兩個人的自我都還完整，然後選擇彼此靠近，不是融化進對方裡，也不是為了對方消失。\nLava 想找的，就是這種連結：不需要有人站在暗處，不需要有人犧牲自己的光，只是兩個真實的人，在同一個世界裡相遇。\n\n#白夜行 #東野圭吾 #推理小說 #日本文學 #愛情心理學 #Enmeshment #糾纏型關係 #關係心理學 #交友軟體 #約會 #戀愛觀 #Lava交友 #不聊天的交友軟體 #健康關係 #自我認識",
-          "slides": {
-            "1": {
-              "heading": "亮司用一生躲在暗處，讓雪穗永遠站在光裡——那算愛嗎？",
-              "display_copy": "亮司用一生躲在暗處\n讓雪穗永遠站在光裡\n\n〖那算愛嗎？〗\n\n東野圭吾辭世，《白夜行》再度衝上博客來榜首。\n這個問題，值得重新問一次。"
-            },
-            "2": {
-              "heading": "讀完最後一頁，你愣在那裡",
-              "display_copy": "讀完最後一頁，你愣在那裡。\n\n不是因為結局太悲——\n而是因為你心裡有個聲音說【這是愛】，\n另一個聲音說：【這裡有什麼地方不對】。\n\n亮司從沒要求雪穗回頭看他一眼。\n他把所有犯罪的理由藏進黑暗，\n讓她的世界永遠乾淨。\n\n那個「不對」，關係心理學早就有名字。"
-            },
-            "3": {
-              "heading": "Enmeshment：兩個人的邊界消失了",
-              "display_copy": "1970 年代，家族治療師 Salvador Minuchin 提出\n【Enmeshment（糾纏型關係）】：\n\n當邊界變得「擴散」，兩人開始過度介入彼此——\n個體的自主性逐漸消失。\n\n2023 年 Bacon & Conway 將它定義得更精準：\n「對自身與他人分離感的混淆體驗，\n以及無法充分感受自己的想法與需求。」\n\n這不叫親密。這叫糾纏。\n\n資料來源：Simply Psychology, simplypsychology.org/what-is-enmeshment.html；Bacon & Conway (2023), Springer, doi:10.1007/s11469-022-00810-4"
-            },
-            "4": {
-              "heading": "亮司和雪穗——不是對等的糾纏",
-              "display_copy": "一般的糾纏是【雙向的】——\n兩人同時失去邊界。\n\n但亮司與雪穗不一樣：\n他的存在只為成全她，\n她從未同等犧牲。\n\n研究者稱這為〖非對稱糾纏〗——\n其中一方成為「使能者（enabler）」，\n用自我毀滅維持對方的世界。\n\n守護者在暗處沉淪，\n被守護者也因此永遠無法真正自由。"
-            },
-            "5": {
-              "heading": "「為你付出一切」背後，研究說了什麼",
-              "display_copy": "你以為「為你付出一切」是愛的極致——\n\n但 Manzi、Vignoles 等人 2006 年發表於\n《Journal of Marriage and Family》的跨文化研究發現：\n\n【高度糾纏的關係，與更高的焦慮、\n更低的自我認同感直接相關。】\n\n糾纏讓人失去分辨「這是我自己的需求」的能力——\n兩個人都困在裡面，誰也出不去。\n\n資料來源：Manzi et al. (2006), Journal of Marriage and Family, 68(3), 673–689"
-            },
-            "6": {
-              "heading": "Enmeshment 長什麼樣？你可能認識它",
-              "display_copy": "糾纏型關係，你可能認識它：\n\n「她不在，我不知道自己要什麼。」\n「我的快樂好像只有在他開心的時候才算數。」\n\nAPA 官方定義：\n【Enmeshment 是兩人或多人過度介入\n彼此活動與個人關係的狀態。】\n\n起點很像深度在乎——\n直到你發現，其中一個人已經完全消失在關係裡。\n\n資料來源：APA Dictionary of Psychology, dictionary.apa.org/enmeshment"
-            },
-            "7": {
-              "heading": "真正的關係，是兩個人都能站在光裡",
-              "display_copy": "亮司以為躲在暗處是愛——\n\n但真正的關係，\n是【兩個人的自我都還完整】，\n然後選擇彼此靠近。\n\n不是融化進對方裡。\n不是為了對方消失。\n\n不需要有人犧牲自己的光。\n不需要有人永遠活在陰影裡。\n\nLava 想幫你找的，\n是那種〖兩個人都能站在光裡〗的連結。"
-            },
-            "8": {
-              "heading": "你可以問自己的三個問題",
-              "display_copy": "不用把自己對比到亮司。\n但這三個問題，值得靜靜問自己：\n\n【① 在這段關係裡，我還知道「我自己喜歡什麼」嗎？】\n\n【② 當對方不開心，我是選擇陪伴，\n還是覺得「必須」讓他開心？】\n\n【③ 如果這段關係結束，\n我還剩下多少「我自己」？】\n\n你的第一個念頭，往往比你以為的更誠實。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:50:16+08:00",
-      "regen_requested_at": "2026-09-01T02:03:41+08:00",
-      "copy": {
-        "ts": "2026-09-01T02:07:57+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      },
-      "rendered_lines": {
-        "1": [
-          "亮司用一生躲在暗處，讓雪穗永遠站在光裡",
-          "—那算愛嗎",
-          "",
-          "亮司用一生躲在暗處",
-          "讓雪穗永遠站在光裡",
-          "〖那算愛嗎〗",
-          "東野圭吾辭世，《白夜行》再度衝上博客來榜首",
-          "這個問題，值得重新問一次"
-        ],
-        "2": [
-          "讀完最後一頁，你愣在那裡",
-          "",
-          "讀完最後一頁，你愣在那裡",
-          "不是因為結局太悲",
-          "而是因為你心裡有個聲音說這是愛",
-          "另一個聲音說：這裡有什麼地方不對",
-          "亮司從沒要求雪穗回頭看他一眼",
-          "他把所有犯罪的理由藏進黑暗",
-          "讓她的世界永遠乾淨",
-          "那個「不對」，關係心理學早就有名字"
-        ],
-        "3": [
-          "Enmeshment：兩個人的邊界消失了",
-          "",
-          "1970 年代，家族治療師 Salvador Minuchin 提出",
-          "Enmeshment（糾纏型關係）",
-          "當邊界變得「擴散」，兩人開始過度介入彼此",
-          "個體的自主性逐漸消失",
-          "2023 年 Bacon & Conway 將它定義得更精準",
-          "「對自身與他人分離感的混淆體驗",
-          "以及無法充分感受自己的想法與需求。」",
-          "這不叫親密。這叫糾纏",
-          "資料來源：Simply Psychology, simplypsychology.org",
-          "/what-is-enmeshment.html；Bacon & Conway (",
-          "2023), Springer, doi:10.1007/s11469-022-00810-4"
-        ],
-        "4": [
-          "亮司和雪穗——不是對等的糾纏",
-          "",
-          "一般的糾纏是雙向的",
-          "兩人同時失去邊界",
-          "但亮司與雪穗不一樣",
-          "他的存在只為成全她",
-          "她從未同等犧牲",
-          "研究者稱這為非對稱糾纏",
-          "其中一方成為「使能者（enabler）」",
-          "用自我毀滅維持對方的世界",
-          "守護者在暗處沉淪",
-          "被守護者也因此永遠無法真正自由"
-        ],
-        "5": [
-          "「為你付出一切」背後，研究說了什麼",
-          "",
-          "你以為「為你付出一切」是愛的極致",
-          "但 Manzi、Vignoles 等人 2006 年發表於",
-          "《Journal of Marriage and Family》的跨文化研究發",
-          "現",
-          "【高度糾纏的關係，與更高的焦慮",
-          "更低的自我認同感直接相關】",
-          "糾纏讓人失去分辨「這是我自己的需求」的能力",
-          "兩個人都困在裡面，誰也出不去",
-          "資料來源：Manzi et al. (2006), Journal of Marriage",
-          "and Family, 68(3), 673–689"
-        ],
-        "6": [
-          "Enmeshment 長什麼樣？你可能認識它",
-          "",
-          "糾纏型關係，你可能認識它",
-          "「她不在，我不知道自己要什麼。」",
-          "「我的快樂好像只有在他開心的時候才算數。」",
-          "APA 官方定義",
-          "【Enmeshment 是兩人或多人過度介入",
-          "彼此活動與個人關係的狀態】",
-          "起點很像深度在乎",
-          "直到你發現，其中一個人已經完全消失在關係裡",
-          "資料來源：APA Dictionary of Psychology, dictionary.",
-          "apa.org/enmeshment"
-        ],
-        "7": [
-          "真正的關係，是兩個人都能站在光裡",
-          "",
-          "亮司以為躲在暗處是愛",
-          "但真正的關係",
-          "是兩個人的自我都還完整",
-          "然後選擇彼此靠近",
-          "不是融化進對方裡",
-          "不是為了對方消失",
-          "不需要有人犧牲自己的光",
-          "不需要有人永遠活在陰影裡",
-          "Lava 想幫你找的",
-          "是那種兩個人都能站在光裡的連結"
-        ],
-        "8": [
-          "你可以問自己的三個問題",
-          "",
-          "不用把自己對比到亮司",
-          "但這三個問題，值得靜靜問自己",
-          "① 在這段關係裡，我還知道「我自己喜歡什麼」嗎",
-          "【② 當對方不開心，我是選擇陪伴",
-          "還是覺得「必須」讓他開心】",
-          "【③ 如果這段關係結束",
-          "我還剩下多少「我自己」】",
-          "你的第一個念頭，往往比你以為的更誠實"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T02:07:57+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-09-01T02:08:07+08:00",
-        "pass": false,
-        "claims": 9,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「由。 「為你付出一切」背後，研究說了什麼 你以為「為你付出一切」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「nd Family》的跨文化研究發現：  高度糾纏的關係，與更高」沒有對應出處（研究引用）"
-          }
-        ]
-      }
-    },
-    {
-      "id": "20260824-StanTatkin說你",
-      "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力。但神經科學說，愛情是一項需要每天練習的技能",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyknz01",
-      "created_at": null,
-      "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-mood1dd71",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
-              "kind": "still",
-              "source_label": "b-collage",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moodc38b6",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            }
-          ],
-          "final_src": null,
-          "heading": "吵架前，你的大腦已經先輸了",
-          "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適。是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
-              "kind": "still",
-              "source_label": "a-moodb9fba",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
-              "kind": "still",
-              "source_label": "b-moodc7b70",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            }
-          ],
-          "final_src": null,
-          "heading": "那個「無緣無故的煩躁」其實有原因",
-          "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感。是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "杏仁核比你更快開口",
-          "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前：心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應：對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "焦慮型依附的神經特徵",
-          "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態：你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
-              "kind": "still",
-              "source_label": "a-bookfe3de",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
-              "kind": "still",
-              "source_label": "b-book189b0",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            }
-          ],
-          "final_src": null,
-          "heading": "愛不是找到的，是練出來的",
-          "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」。而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications.",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood17b9c",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-mood36cbd",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "線上聊再久，神經系統不買單",
-          "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n：來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood4ff93",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-7b.webp",
-              "kind": "still",
-              "source_label": "b-moodd4ab0",
-              "source_kind": "SHOT"
-            }
-          ],
-          "final_src": null,
-          "heading": "Anchor、Island、Wave：你是哪一種？",
-          "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的：每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型。而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
-              "kind": "still",
-              "source_label": "a-moodeba66",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
-              "kind": "still",
-              "source_label": "b-mood1e905",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            }
-          ],
-          "final_src": null,
-          "heading": "把對方「登錄」進你大腦的安全清單",
-          "display_copy": "把對方「登錄」進你大腦的安全清單\n：Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻。是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "Stan Tatkin 是 PACT（Psychobiological Approach to Couple Therapy）的創立者，臨床心理學博士（PsyD）兼婚姻家庭治療師（MFT）",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy (PACT)."
-        },
-        {
-          "claim": "Tatkin 於 2010 年與妻子 Tracey Boldemann-Tatkin 博士共同創立 PACT Institute",
-          "source": "https://www.pactinstitute.com/about",
-          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
-        },
-        {
-          "claim": "Tatkin 兼任 UCLA David Geffen School of Medicine 的助理臨床教授",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "He is an assistant clinical professor at UCLA David Geffen School of Medicine."
-        },
-        {
-          "claim": "《Wired for Love》由 New Harbinger Publications 於 2012 年出版",
-          "source": "https://www.newharbinger.com/9781608820580/wired-for-love/",
-          "quote": "Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship. New Harbinger Publications, 2012."
-        },
-        {
-          "claim": "《Wired for Love》已售出超過 170,000 冊",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Wired for Love has sold over 170,000 copies."
-        },
-        {
-          "claim": "Tatkin 的 TEDx 演講累計觀看人次已超過 170 萬",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "His TEDx talk has been viewed over 1.7 million times."
-        },
-        {
-          "claim": "2012 年 Pascal Vrticka 等人的研究發現，焦慮型依附個體在社會評估任務中，前額葉皮質與杏仁核之間的功能性連結顯著降低",
-          "source": "https://academic.oup.com/scan/article/7/3/290/1573643",
-          "quote": "Anxiously attached individuals showed reduced functional connectivity between the prefrontal cortex and the amygdala during social evaluation tasks."
-        },
-        {
-          "claim": "人類杏仁核病變會損害威脅優先處理能力，提供了杏仁核對回應迫在眉睫的危險具有因果角色的首個直接證據",
-          "source": "https://pubmed.ncbi.nlm.nih.gov/21390292/",
-          "quote": "Patients with bilateral amygdala damage failed to show the normal threat-priority effect, providing the first direct evidence for a causal role of the amygdala in responding to imminent danger."
-        },
-        {
-          "claim": "伴侶是彼此的「生物存活單位（biological survival unit）」",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Stan Tatkin describes couples as a biological survival unit — each person's primary attachment figure and the one they can always count on."
-        },
-        {
-          "claim": "Tatkin 使用 Anchor（錨型）、Island（島型）、Wave（浪型）三個標籤描述依附風格，不將任何一種類型描繪為有缺陷",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Tatkin describes three attachment styles — Anchor, Island, and Wave — and emphasizes that no type is inherently flawed; each develops from personal history and can thrive in relationship with the right understanding."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
-          "slides": {
-            "1": {
-              "heading": "吵架前，你的大腦已經先輸了",
-              "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。"
-            },
-            "2": {
-              "heading": "那個「無緣無故的煩躁」其實有原因",
-              "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。"
-            },
-            "3": {
-              "heading": "杏仁核比你更快開口",
-              "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292"
-            },
-            "4": {
-              "heading": "焦慮型依附的神經特徵",
-              "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)"
-            },
-            "5": {
-              "heading": "愛不是找到的，是練出來的",
-              "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications."
-            },
-            "6": {
-              "heading": "線上聊再久，神經系統不買單",
-              "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。"
-            },
-            "7": {
-              "heading": "Anchor、Island、Wave：你是哪一種？",
-              "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。"
-            },
-            "8": {
-              "heading": "把對方「登錄」進你大腦的安全清單",
-              "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-08-25T18:20:24+08:00",
-      "regen_requested_at": "2026-09-01T02:03:38+08:00",
-      "rendered_lines": {
-        "1": [
-          "吵架前，你的大腦已經先輸了",
-          "",
-          "〖吵架前，你的大腦已經先輸了〗",
-          "那場架還沒開始",
-          "你的身體早就備戰了",
-          "心跳加速、肩膀緊繃",
-          "嘴裡冒出一句連自己都沒預料到的話",
-          "不是你們不合適",
-          "是你的神經系統還不認識他",
-          "大腦優先為生存設計",
-          "不是為愛設計的",
-          "但這件事，可以改變"
-        ],
-        "2": [
-          "那個「無緣無故的煩躁」其實有原因",
-          "",
-          "他只是把杯子放錯地方",
-          "你卻突然很想哭",
-          "她只是回了一個「哦」",
-          "你卻開始反覆回放她的語氣",
-          "不是你太敏感",
-          "是你的大腦把對方的小動作",
-          "讀成了威脅信號",
-          "PACT 模型說",
-          "小衝突感覺像大威脅",
-          "是因為你們的神經系統",
-          "還在學習調節彼此",
-          "這不是性格問題，是生物問題"
-        ],
-        "3": [
-          "杏仁核比你更快開口",
-          "",
-          "你以為你在「冷靜思考」",
-          "但杏仁核早就出手了",
-          "在你決定「算了別吵」之前",
-          "心跳已經加速",
-          "肌肉已經備戰",
-          "這場衝突在你開口前就開始了",
-          "Tatkin",
-          "我們感到不安全時",
-          "會在反思之前就先反應",
-          "對象正好是我們最在乎的人",
-          "資料來源：Feinstein JS et al. (2011), Current Biology",
-          "— amygdala causal role in responding to imminent",
-          "danger. PubMed ID: 21390292"
-        ],
-        "4": [
-          "焦慮型依附的神經特徵",
-          "",
-          "Vrticka 等人 2012 年研究發現",
-          "焦慮型依附的人",
-          "大腦「理性煞車」",
-          "對「情緒油門」的控制力",
-          "顯著更弱",
-          "為什麼在最親近的人面前",
-          "反而最容易失控",
-          "因為親密關係本身",
-          "就是高喚醒狀態",
-          "你的神經系統一直在高速運轉",
-          "這不是你的錯，是你大腦的設計",
-          "資料來源：Vrticka P et al. (2012), Social Cognitive",
-          "and Affective Neuroscience, Vol. 7(3)"
-        ],
-        "5": [
-          "愛不是找到的，是練出來的",
-          "",
-          "Stan Tatkin 在《Wired for Love》裡說",
-          "伴侶是彼此的",
-          "生物存活單位",
-          "關係不是「找到對的人就自動運作」",
-          "而是兩個神經系統",
-          "學習把對方辨識為「安全」",
-          "的過程",
-          "大腦透過一次次親身接觸",
-          "把對方的臉、聲音、觸感",
-          "登錄為安全信號",
-          "這需要面對面，反覆地練",
-          "資料來源：Tatkin S. (2012). Wired for Love. New",
-          "Harbinger Publications"
-        ],
-        "6": [
-          "線上聊再久，神經系統不買單",
-          "",
-          "聊再多訊息",
-          "你的神經系統都不買單",
-          "大腦靠的是",
-          "眼神、聲音的溫度",
-          "對方離你多近的體感",
-          "和你們共同在場的那些片刻",
-          "——來學習把對方辨識為安全",
-          "催產素、多巴胺這些連結機制",
-          "在面對面互動中啟動的強度",
-          "遠高於數位溝通",
-          "Lava 選擇線下優先",
-          "不是反科技",
-          "是因為大腦就是這樣運作的"
-        ],
-        "7": [
-          "Anchor、Island、Wave：你是哪一種",
-          "",
-          "你是哪一種",
-          "⚓ Anchor 錨型 — 安全依附",
-          "🏝 Island 島型 — 迴避型",
-          "🌊 Wave 浪型 — 焦慮型",
-          "Tatkin 說",
-          "沒有哪一型是壞的",
-          "每一種都是你從成長經驗中",
-          "發展出來的生存策略",
-          "問題從來不是你是哪一型",
-          "而是你有沒有讓對方的神經系統",
-          "學會你是安全的",
-          "任何組合，都可以建立安全感"
-        ],
-        "8": [
-          "把對方「登錄」進你大腦的安全清單",
-          "",
-          "把對方「登錄」進你大腦的安全清單",
-          "——Tatkin 說，這需要每天練習",
-          "👁 重聚時，給一個真實的眼神接觸",
-          "🌬 爭吵前，先深呼吸三次",
-          "　　讓前額葉有機會介入",
-          "📵 重要的情緒，不要用訊息處理",
-          "　　改約一次面對面",
-          "伴侶泡泡（couple bubble）",
-          "不是浪漫的隱喻",
-          "是有神經生物學基礎的日常練習",
-          "重複。然後再重複",
-          "這就是你們建立安全感的方式"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T02:07:57+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-01T02:07:57+08:00",
-        "pass": false,
-        "counts": {
-          "赦免式安慰": 1
-        },
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "赦免式安慰",
-            "where": "第4張內文",
-            "line": "第4張內文：…統一直在高速運轉。 這不是你的錯，是你大腦的設計。 …",
-            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
-          }
-        ]
-      },
-      "fact": {
-        "ts": "2026-09-01T02:08:09+08:00",
-        "pass": false,
-        "claims": 4,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2012 年」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
-          },
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「研究發現」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「Stan Tatkin 說：你以為「找到對的人」就不用」沒有對應出處（人物引述）"
-          }
-        ]
-      }
-    },
-    {
       "id": "20260826-愛你致死不渝爛番茄永遠愛",
       "topic": "《愛你致死不渝》爛番茄 94%：「永遠愛我」這句話，什麼時候變成了最可怕的詛咒？",
       "version": 1,
@@ -9436,6 +8434,1913 @@
         ],
         "rhythm": "整篇節奏呈『暗→暗→雜→暗→書封→桌面→咖啡→暗→純黑』的W字型跌宕，前四張連續壓沉、中段短暫透氣後又在第8張拉回黑場，讀者情緒被反覆下壓卻缺少足夠的上揚錨點，建議在第3張和第8張各置換一次底圖明度，讓節奏從W型重塑為有方向感的V型上升弧線。"
       }
+    },
+    {
+      "id": "86eyr1e0e",
+      "topic": "86eyr1e0e｜20260901-A24《開放性邀請》問了一個讓人說不出話的問題：你喜歡對方，還是你喜歡「有人喜歡你」這件事？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyr1e0e",
+      "created_at": null,
+      "caption": "A24 新片《開放性邀請》（2026）用一頓晚餐問了一個問題：你留在這段關係裡，是因為對方這個人，還是因為你需要那個位置不空著？\n\n心理學把這個現象叫做互惠好感效應，1966 年，Aronson 與 Worchel 就在實驗室裡驗證：光是知道「對方喜歡我」這件事，就足以製造出心動。\n兩件事長得太像，住在同一個感受裡，很難分清楚。\n\n交友軟體最容易發生的事，不是認識了一個人，而是認識了一個「和你聊天的感覺」。\n訊息裡的節奏、對方回應你的速度、那種被看見的感受，這些都很真實，但它們有時候比「對方這個人」更早出現在你的腦子裡。\nLava 從設計上就把流程往前推了一步：減少純文字的時間，讓你更早在現實裡判斷，你喜歡的，到底是誰。\n\n#交友軟體 #約會 #感情 #心理學 #A24 #開放性邀請 #TheInvite #關係 #戀愛心理 #自我認識 #互惠好感 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Materialists"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Materialists"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Materialists"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyr1e0e/slide-1d.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyr1e0e/slide-1e.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyr1e0e/slide-1f.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            }
+          ],
+          "final_src": null,
+          "heading": "你愛上的，是他？還是那個讓你感覺被需要的感受？",
+          "display_copy": "A24《開放性邀請》（2026）\n用一頓晚餐問了一個問題：\n\n你留在這段關係裡，\n是因為對方這個人，\n還是因為【你需要那個位置不空著】？\n\n心理學家 Aronson 在 1966 年就發現：\n光是知道「對方喜歡我」，\n就足以在大腦裡製造出心動。\n這兩件事，住在同一個感受裡。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [],
+          "final_src": null,
+          "heading": "那種心動，你有沒有想過從哪裡來？",
+          "display_copy": "對方傳來一個訊息，你看了三遍。\n那個感覺很好——\n但那個【「好」，究竟是關於他，\n還是關於你被在意這件事】？\n\n心理學研究發現，\n「對方先喜歡我」是人們最常提及的\n當初被吸引的原因之一。\n兩件事長得太像，平時住在同一個房間裡。"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "「互惠好感效應」：你的心動，可能是被觸發的",
+          "display_copy": "1966 年，心理學家 Aronson 與 Worchel 做了一個實驗：\n讓陌生人對話後，\n偷偷告訴其中一方【「對方給你評分很高」】。\n\n結果：那個人對對方的好感，立刻上升。\n\n這是互惠好感效應最早的實驗室驗證之一——\n〖心動，有時候不是因為對方本身，\n而是因為你知道對方喜歡你〗。\n\n資料來源：Aronson & Worchel, 1966, Journal of Experimental Social Psychology"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-4a.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-4b.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-4c.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            }
+          ],
+          "final_src": null,
+          "heading": "被喜歡本身就是一種獎賞",
+          "display_copy": "Montoya & Insko（2008）指出：\n被喜歡具有【「獎賞性」】——\n它驗證了你是值得被愛的這件事。\n\n大腦會把「他讓我感覺良好」\n誤讀成「我喜歡他這個人」。\n\n這是神經層面正常的情感機制——\n理解它，才能在心動時\n多一點空間分辨兩者的差異。\n\n資料來源：Montoya & Insko, 2008, Journal of Social and Personal Relationships",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "《開放性邀請》把這個問題放到婚姻裡",
+          "display_copy": "A24《開放性邀請》（2026）\n改編自西班牙導演 Cesc Gay 的 2021 年電影《Sentimental》。\nEdward Norton 飾演 Hawk、Penélope Cruz 飾演 Piña，\n兩人在一頓晚餐裡問了另一對夫妻一個問題：\n\n【你留在這裡，是為了對方，\n還是為了「有個人在那裡」這件事本身？】\n\n長期關係裡，時間會把這兩件事黏在一起，\n讓人更難分清楚。"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-6a.webp",
+              "kind": "still",
+              "source_label": "1"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-6b.webp",
+              "kind": "still",
+              "source_label": "2"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-6c.webp",
+              "kind": "still",
+              "source_label": "3"
+            }
+          ],
+          "final_src": null,
+          "heading": "文字的世界最容易讓人愛上「感受」而不是對方",
+          "display_copy": "交友軟體最容易讓人愛上的，\n往往不是一個人，\n而是【「和那個人聊天的感覺」】。\n\n訊息節奏、回應速度、被看見的感受——\n這些都很真實，\n但有時候比「對方這個人」更早出現在腦子裡。\n\nLava 把流程往前推一步——\n讓你更早在現實裡拿到答案：\n你喜歡的，到底是誰。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-7a.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-7b.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Her"
+            }
+          ],
+          "final_src": null,
+          "heading": "一個問題，可以在下次心動的時候問自己",
+          "display_copy": "下次心動，先停一秒問自己一句話：\n\n【「如果對方突然不喜歡我了，\n我對他的感覺還在嗎？」】\n\n答案是「會消失大半」——\n代表驅動心動的，\n很可能是那個被愛的獎賞感，\n而不完全是對方本身的特質。\n\n這是大腦正常的情感機制，\n知道它的存在，判斷時就能多一點清醒。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [],
+          "final_src": null,
+          "heading": "Lava 相信：見面之前，你還不知道你喜歡的是誰",
+          "display_copy": "線上交流有它的位置；\n真正的判斷需要現實輸入。\n\n當你們在同一個空間裡，\n對話節奏、眼神、那頓飯點了什麼——\n這些才是你在認識那個人，\n\n〖而不是在認識一個\n由訊息構成的投影。〗\n\nLava，不聊天的交友軟體。"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《開放性邀請》2026 年 1 月 24 日在日舞影展世界首映",
+          "source": "https://en.wikipedia.org/wiki/The_Invite",
+          "quote": "The film had its world premiere at the Sundance Film Festival on January 24, 2026."
+        },
+        {
+          "claim": "《開放性邀請》改編自西班牙導演 Cesc Gay 的 2021 年電影 Sentimental",
+          "source": "https://en.wikipedia.org/wiki/The_Invite",
+          "quote": "The film is a remake of the 2021 Spanish film Sentimental, directed by Cesc Gay."
+        },
+        {
+          "claim": "Edward Norton 在片中飾演角色 Hawk，Penélope Cruz 飾演角色 Piña，兩人為片中一對夫妻",
+          "source": "https://en.wikipedia.org/wiki/The_Invite",
+          "quote": "Edward Norton and Penélope Cruz star as Hawk and Piña, a mysterious couple who are invited to dinner by their downstairs neighbors."
+        },
+        {
+          "claim": "Aronson 與 Worchel 1966 年實驗驗證互惠好感效應：受試者得知對方對自己評價高，對對方好感立刻上升",
+          "source": "https://www.sciencedirect.com/science/article/abs/pii/0022103166900410",
+          "quote": "Subjects who believed that the confederate liked them expressed greater liking for the confederate than did subjects who believed the confederate disliked them.",
+          "quote_type": "verbatim_abstract"
+        },
+        {
+          "claim": "Montoya & Insko（2008）指出被喜歡本身具有獎賞性，會產生對對方的正向情感",
+          "source": "https://doi.org/10.1177/0265407508090641",
+          "quote": "Being liked by another person is rewarding in and of itself, and this reward value produces positive affect toward the other."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "86eyq3yp0",
+      "topic": "86eyq3yp0｜20260901-「步入下一階段」這件事——r datingoverthirty 上 30 歲後的人說，他們最後悔的不是「太早結婚」，而是這個",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyq3yp0",
+      "created_at": null,
+      "caption": "r/datingoverthirty 上，最常出現的後悔不是「早知道不要結婚」，而是「早知道要認真一點」。\n\n那個沒說出口的告白，那段沒推進的關係，30歲以後，它變得比任何決定都更重。\n\n遺憾研究說的「沒有採取行動」，放到現代交友場景裡，有一個很具體的版本：你們已經聊了三個禮拜，話題越來越深，卻誰都沒有提出見面。\n不是沒感覺，是都在等對方先說。\nLava 的設計邏輯很簡單，不讓「聊天」本身變成終點，而是把約出來當成起點，因為那一步不踏出去，它就只是一段沒有重量的對話。\n\n#交友軟體 #約會 #感情 #台灣交友 #30歲後 #Lava交友 #不聊天的交友軟體 #線下約會 #遺憾心理學 #感情觀 #認真交往 #單身日常 #心理學 #台灣單身 #步入下一階段",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-1b.webp",
+              "kind": "still",
+              "source_label": "a-mood22e4a",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-1c.webp",
+              "kind": "still",
+              "source_label": "組圖：loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-1d.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-1e.webp",
+              "kind": "still",
+              "source_label": "c-mood11e85",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "j",
+              "src": "assets/86eyq3yp0/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "k",
+              "src": "assets/86eyq3yp0/slide-1k.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "l",
+              "src": "assets/86eyq3yp0/slide-1l.webp",
+              "kind": "still",
+              "source_label": "Catastrophe"
+            }
+          ],
+          "final_src": null,
+          "heading": "沒有太早，只有沒走出去",
+          "display_copy": "沒有太早\n只有沒走出去\n\n30歲後，人最後悔的\n不是「太早結婚」\n而是「那一步，始終沒踏出去」\n\n那個沒說出口的告白\n那段差點推進的關係\n重量，會隨著時間一直累積",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-2b.webp",
+              "kind": "still",
+              "source_label": "a-mood6178d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-2c.webp",
+              "kind": "still",
+              "source_label": "b-mood09dce",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-2d.webp",
+              "kind": "still",
+              "source_label": "b-mooda3a45",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-2e.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-2f.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-2g.webp",
+              "kind": "still",
+              "source_label": "High Fidelity"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-2h.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-2i.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "j",
+              "src": "assets/86eyq3yp0/slide-2j.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "k",
+              "src": "assets/86eyq3yp0/slide-2k.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "l",
+              "src": "assets/86eyq3yp0/slide-2l.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            }
+          ],
+          "final_src": null,
+          "heading": "那個你「差點推進」的關係",
+          "display_copy": "那個你說「等我準備好再說」的人\n\n某天你看到他們的限時動態\n背景裡有另一個人\n那個時機窗口，靜悄悄地關了\n\n台灣2024年\n女性平均初婚年齡：31.1歲\n男性平均初婚年齡：33.1歲\n\n30歲，不是太晚——\n是「等到穩定」的代價\n正在悄悄堆積的年紀\n\n資料來源：內政部統計（2024）；ETtoday，2026.08.03",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-3a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Gottman Institute 官方研究頁",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-3c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-3d.webp",
+              "kind": "still",
+              "source_label": "b-mooda7f03",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-3e.webp",
+              "kind": "still",
+              "source_label": "Good Will Hunting"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-3f.webp",
+              "kind": "still",
+              "source_label": "Good Will Hunting"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-3g.webp",
+              "kind": "still",
+              "source_label": "Good Will Hunting"
+            }
+          ],
+          "final_src": null,
+          "heading": "心理學早就測量過這件事",
+          "display_copy": "1994年，【康乃爾大學心理學教授 Thomas Gilovich】測量了遺憾的形狀\n\n短期：「做錯事」最刺\n長期：〖「沒做的事」才是真正壓著你的重量〗\n\n2023年，芝加哥科學博物館現場複製這個實驗\n結論不變——\n時間越長，沒有採取的行動\n才是遺憾的主體\n\n資料來源：Gilovich & Medvec（1994）；Royal Society Open Science，2023，doi:10.1098/rsos.221574",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-4a.webp",
+              "kind": "still",
+              "source_label": "loganury.com（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-4b.webp",
+              "kind": "still",
+              "source_label": "loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-4c.webp",
+              "kind": "still",
+              "source_label": "loganury.com",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-4d.webp",
+              "kind": "still",
+              "source_label": "loganury.com（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM"
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-4i.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            },
+            {
+              "cid": "j",
+              "src": "assets/86eyq3yp0/slide-4j.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            },
+            {
+              "cid": "k",
+              "src": "assets/86eyq3yp0/slide-4k.webp",
+              "kind": "still",
+              "source_label": "The Later Daters"
+            },
+            {
+              "cid": "l",
+              "src": "assets/86eyq3yp0/slide-4l.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "16,000人告訴 Daniel Pink：最痛的是沒走出去那步",
+          "display_copy": "Daniel Pink《The Power of Regret》\n調查【105個國家、16,000人以上】\n\n四大遺憾類別中\n「大膽遺憾」幾乎清一色來自不行動：\n沒有告白、沒有約那個人\n沒有認真走進那段關係\n\n每1個「試了但失敗」的遺憾\n對應〖25個「沒有試過」的遺憾〗\n\n感情邏輯完全相同\n\n資料來源：Daniel Pink, The Power of Regret (2022)；Behavioral Scientist 訪談，behavioralscientist.org",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Robert Waldinger",
+              "source_kind": "OV"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire"
+            }
+          ],
+          "final_src": null,
+          "heading": "20歲和50歲，後悔的重量不一樣",
+          "display_copy": "20歲：行動遺憾 ＝ 不行動遺憾\n\n【50歲：不行動遺憾是行動遺憾的2倍】\n\n每一次「等等再說」\n都在未來的你身上，多放一點重量\n\n台灣2024：\n25–29歲女性有偶率：17.72%\n30–34歲女性有偶率：41.41%\n\n六成的人，那一步還沒踏出去\n\n資料來源：Daniel Pink, American Regret Project (2022)；ETtoday，2026.08.03；內政部統計",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-6b.webp",
+              "kind": "still",
+              "source_label": "a-mood5c3e6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-6c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-6d.webp",
+              "kind": "still",
+              "source_label": "b-mood9141d",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-6e.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-6f.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-6g.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            }
+          ],
+          "final_src": null,
+          "heading": "「線上聊很久，卻始終沒見面」也是一種不行動",
+          "display_copy": "「線上聊了三週」\n「但從沒見面」\n\n不是沒感覺\n是都在等對方先說\n\n這也是一種不行動\n也會變成你日後的遺憾\n\n【Lava 把「約出來」設計成起點】\n不讓聊天本身變成終點\n\n那一步不踏出去\n它就只是一段沒有重量的對話",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-7b.webp",
+              "kind": "still",
+              "source_label": "a-moodc8425",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-7c.webp",
+              "kind": "still",
+              "source_label": "b-mood60273",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-7d.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-7e.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-7f.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-7g.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-7h.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-7i.webp",
+              "kind": "still",
+              "source_label": "Terrace House",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "「再等一下」是遺憾最常用的名字",
+          "display_copy": "把遺憾當成資訊，不是懲罰\n\nPink 給了一個很簡單的問題——\n\n【「我現在有沒有一個差點推進的對象？」】\n\n「差點告白的」\n「差點約出來的」\n「差點說出口的」\n\n那個「差點」，就是你的答案\n\n等到時機完全對了\n才叫做太晚",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyq3yp0/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyq3yp0/slide-8b.webp",
+              "kind": "still",
+              "source_label": "a-mood48bcc",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyq3yp0/slide-8c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyq3yp0/slide-8d.webp",
+              "kind": "still",
+              "source_label": "b-moodab9ca",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-8i.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "j",
+              "src": "assets/86eyq3yp0/slide-8j.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "k",
+              "src": "assets/86eyq3yp0/slide-8k.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            },
+            {
+              "cid": "l",
+              "src": "assets/86eyq3yp0/slide-8l.webp",
+              "kind": "still",
+              "source_label": "Begin Again"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 存在的理由",
+          "display_copy": "最好的關係不會自然發生\n它需要一個人先踏出去\n\nLava 是線下優先的約會軟體\n\n【設計邏輯不是「讓你聊更多」】\n而是「讓你更快約出來見真人」\n\n因為遺憾通常不是「那次見面搞砸了」\n〖而是「那次，根本沒有見面」〗",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Thomas Gilovich 與 Victoria Medvec 1994 年發表關鍵發現：長期遺憾以不行動為主",
+          "source": "https://royalsocietypublishing.org/doi/10.1098/rsos.221574",
+          "quote": "The present study was a close replication of Gilovich and Medvec (1994, 1995), who found that people's regrets of inaction tend to outweigh their regrets of action over time."
+        },
+        {
+          "claim": "2023 年芝加哥科學博物館複製實驗，發表於 Royal Society Open Science，結論仍支持長期遺憾以不行動為主",
+          "source": "https://royalsocietypublishing.org/doi/10.1098/rsos.221574",
+          "quote": "The present study was a close replication of Gilovich and Medvec (1994, 1995), who found that people's regrets of inaction tend to outweigh their regrets of action over time."
+        },
+        {
+          "claim": "Daniel Pink《The Power of Regret》調查橫跨 105 個國家、超過 16,000 人",
+          "source": "https://behavioralscientist.org/what-is-the-power-of-regret-a-conversation-with-daniel-pink/",
+          "quote": "Pink surveyed more than 16,000 people in 105 countries for what he calls the World Regret Survey."
+        },
+        {
+          "claim": "在 Daniel Pink 的資料庫裡，每一位「創業失敗而後悔」的人，就對應著 25 位「當初沒有嘗試而後悔」的人",
+          "source": "https://www.danpink.com/the-power-of-regret/",
+          "quote": "For every person who regretted starting a business that failed, there were 25 who regretted not starting a business at all."
+        },
+        {
+          "claim": "到了 50 歲，不行動遺憾的數量是行動遺憾的兩倍",
+          "source": "https://behavioralscientist.org/what-is-the-power-of-regret-a-conversation-with-daniel-pink/",
+          "quote": "By the time people reach their 50s, inaction regrets outnumber action regrets by roughly two to one."
+        },
+        {
+          "claim": "台灣 2024 年男性平均初婚年齡為 33.1 歲，女性為 31.1 歲",
+          "source": "https://www.ettoday.net/news/20260803/3211058.htm",
+          "quote": "根據內政部統計，2024年台灣男性平均初婚年齡為33.1歲，女性為31.1歲。"
+        },
+        {
+          "claim": "台灣 25–29 歲女性有偶率僅 17.72%，30–34 歲女性有偶率僅 41.41%",
+          "source": "https://www.ettoday.net/news/20260803/3211058.htm",
+          "quote": "25至29歲女性走入婚姻的比率僅17.72%，30至34歲也只剩41.41%。"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "20260825-白夜行",
+      "topic": "86eyq9f6w｜20260901-東野圭吾走了，《白夜行》衝上台灣暢銷榜：雪穗和亮司的關係，愛情研究者會怎麼定義它？",
+      "version": 2,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyq9f6w",
+      "created_at": null,
+      "caption": "亮司死在她身後幾公尺，她沒有停下腳步。\n\n19 年裡從未在公開場合對話過一次，卻是彼此唯一的存在。\n這不叫愛情，但愛情研究者給了它一個名字。\n\n雪穗和亮司的故事之所以讓人窒息，正是因為他們從來沒有機會在陽光下走在一起。\n創傷依附的本質，是用自己僅剩的安全感去填補另一個人的空洞，然後兩個人一起沉下去。\nLava 想做的事情只有一件：讓線下的見面，成為真正屬於你自己的選擇，而不是逃避孤獨的反射動作。\n\n#東野圭吾 #白夜行 #日本文學 #交友軟體 #約會 #依附理論 #心理學 #雪穗亮司 #創傷依附 #感情心理 #Lava交友 #不聊天的交友軟體 #台灣交友 #線下約會 #愛情研究",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-1b.webp",
+              "kind": "still",
+              "source_label": "a-mood80116",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-1c.webp",
+              "kind": "still",
+              "source_label": "組圖：Wikipedia, Traumatic Bonding",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-1d.webp",
+              "kind": "still",
+              "source_label": "c-mood9cace",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Byakuyako",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-白夜行/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "她說「我不認識那個人」",
+          "display_copy": "她說「我不認識那個人」\n亮司死在她身後幾公尺\n她沒有停下腳步\n\n19 年裡從未在公開場合對話過一次\n卻是彼此唯一的存在\n\n這不叫愛情——\n但它有名字",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-2b.webp",
+              "kind": "still",
+              "source_label": "a-mood1024c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-2c.webp",
+              "kind": "still",
+              "source_label": "a-mood76cf9",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-2d.webp",
+              "kind": "still",
+              "source_label": "b-mood27078",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-2f.webp",
+              "kind": "still",
+              "source_label": "Byakuyako"
+            }
+          ],
+          "final_src": null,
+          "heading": "2026年7月27日，博客來暢銷榜前10有5本是他的書",
+          "display_copy": "【2026 年 7 月 23 日】\n東野圭吾因大腸癌辭世，享年 68 歲\n\n消息傳出的 27 日\n博客來暢銷榜前 10，有【5 本】是他的書\n中文書單日銷量是前一天的【50 倍】\n\n排名第一的，是出版超過 25 年的《白夜行》\n台灣讀者第一個想起的，是雪穗和亮司\n\n資料來源：聯合新聞網，2026/07/27",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Simply Psychology",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Wikipedia, Traumatic Bonding",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-3c.webp",
+              "kind": "still",
+              "source_label": "Byakuyakou",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "19年，公開場合零接觸",
+          "display_copy": "《白夜行》橫跨【1973 至 1992 年】\n這 19 年裡，雪穗和亮司在公開場合\n【從未對話過一次】\n\n她在地面建立信用\n他在暗面清除障礙\n兩人對等——不是公主與騎士\n\n「不屬於戀人、夫妻、共犯中任何一種的存在」\n\n資料來源：note.com 書評深度分析",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-4a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-4b.webp",
+              "kind": "still",
+              "source_label": "a-mood02be4",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-4c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-4d.webp",
+              "kind": "still",
+              "source_label": "b-mood1e322",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-4e.webp",
+              "kind": "still",
+              "source_label": "White Night"
+            }
+          ],
+          "final_src": null,
+          "heading": "愛情研究者給它一個名字：創傷依附",
+          "display_copy": "【1981 年】，心理學者 Dutton & Painter\n提出「〖Traumatic Bonding 創傷依附〗」\n\n定義是：透過情感親密、心理痛苦\n與【間歇性強化】的循環\n形成的病理性情感連結\n即便關係有害，依附仍會持續\n\n1994 年實證研究發現：\n間歇虐待與權力不對等造成的情感依附\n在六個月後仍持續存在\n\n資料來源：Dutton & Painter, Victimology 1981；PubMed PMID 8193053",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-5a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-5b.webp",
+              "kind": "still",
+              "source_label": "a-moodc04ca",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-5c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Gone Girl"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-白夜行/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Besselvander Kolk",
+              "source_kind": "OV"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-白夜行/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Besselvander Kolk",
+              "source_kind": "WM",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-白夜行/slide-5i.webp",
+              "kind": "still",
+              "source_label": "Besselvander Kolk",
+              "source_kind": "WM",
+              "low_q": true
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-白夜行/slide-5j.webp",
+              "kind": "still",
+              "source_label": "Besselvander Kolk",
+              "source_kind": "WM",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-白夜行/slide-5k.webp",
+              "kind": "still",
+              "source_label": "Byakuyakou"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260825-白夜行/slide-5l.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "讓人留下來的，不是愛，是「時有時無」",
+          "display_copy": "讓人留下來的，不是愛\n而是「【時有時無】」\n\n情感的給予與剝奪無法預期地交替出現\n大腦會產生【類成癮的制約反應】\n\n2025 年《Psychological Journal》整合研究指出：\n依附焦慮或恐懼-回避型的人\n對創傷依附的脆弱性顯著更高\n\n沒有一次溫柔的擁抱\n卻有 19 年從未斷過的隱形確認\n\n資料來源：APSI Psychological Journal 2025，PMID 8193053",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-6b.webp",
+              "kind": "still",
+              "source_label": "a-mood88e32",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-6c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Mother"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Mother"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-6f.webp",
+              "kind": "still",
+              "source_label": "Mother",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "「共生」不等於「相愛」",
+          "display_copy": "分析者稱它為\n「【互相寄生又互相補完的共生關係】」\n\n兩人都從對方身上獲得自己無法單獨擁有的東西\n卻也因此永遠無法自由\n\n愛情的前提是【選擇的自由】\n而創傷依附的前提\n是選擇的能力早在童年就被剝奪了\n\n資料來源：note.com 書評深度分析",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-7b.webp",
+              "kind": "still",
+              "source_label": "a-mood79405",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-7c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-7f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            }
+          ],
+          "final_src": null,
+          "heading": "你值得一段你能在陽光下走的關係",
+          "display_copy": "雪穗和亮司從來沒有機會\n在【陽光下走在一起】\n\n創傷依附的本質是：\n用自己僅剩的安全感\n填補另一個人的空洞\n然後兩個人一起沉下去\n\nLava 只做一件事\n讓見面成為【你真正的選擇】\n而不是逃避孤獨的反射動作",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260825-白夜行/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-白夜行/slide-8b.webp",
+              "kind": "still",
+              "source_label": "a-mood048b3",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-白夜行/slide-8c.webp",
+              "kind": "still",
+              "source_label": "b-mood2441c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Journey Underthe Midnight Sun",
+              "source_kind": "OL",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-8e.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-白夜行/slide-8f.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-白夜行/slide-8g.webp",
+              "kind": "still",
+              "source_label": "My Liberation Notes"
+            }
+          ],
+          "final_src": null,
+          "heading": "讀完《白夜行》之後，可以問自己一個問題",
+          "display_copy": "讀完《白夜行》之後\n可以問自己一個問題：\n\n你在意那個人\n是因為他讓你【成為更好的自己】\n還是因為他讓你【暫時不那麼害怕】\n\n這兩種感覺表面很像\n但一種讓人往前走\n一種讓你留在原地\n等下一次的確認\n\n不是叫你離開——\n而是值得先知道自己在哪裡",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "東野圭吾因大腸癌於2026年7月23日辭世，享年68歲",
+          "source": "https://x.com/higashinokeigo_/status/2081638350864429474",
+          "quote": "東野圭吾官方X帳號2026年7月27日正式公告確認死訊"
+        },
+        {
+          "claim": "博客來暢銷總榜前10名一度有5本東野圭吾作品",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "聯合新聞網報導博客來27日東野作品銷售狀況，前10名5本為東野圭吾作品"
+        },
+        {
+          "claim": "27日中文書單日銷量是26日的50倍，超越1月到26日累計總和",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "聯合新聞網報導：27日中文書單日銷量超越1日至26日累計，更是26日的50倍"
+        },
+        {
+          "claim": "27日電子書單日銷量達26日的16.5倍",
+          "source": "https://udn.com/news/story/6885/9660423",
+          "quote": "聯合新聞網報導：電子書單日銷量達26日的16.5倍"
+        },
+        {
+          "claim": "1981年，Dutton與Painter提出Traumatic Bonding（創傷依附）",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/8193053/",
+          "quote": "Dutton DG, Painter SL. Traumatic bonding: the development of emotional attachments in battered women and other relationships of intermittent abuse. Victimology. 1981"
+        },
+        {
+          "claim": "Dutton & Painter 1994年實證研究發現：關係中的極端間歇虐待與權力不對等，對受害者的長期情感依附與創傷症狀在六個月後仍持續存在",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/8193053/",
+          "quote": "Dutton & Painter實證研究：強烈情感連結由間歇性虐待所形成，依附效果在六個月後仍持續存在"
+        },
+        {
+          "claim": "2025年《Psychological Journal》整合研究指出不安全依附模式（依附焦慮與恐懼-回避型）對創傷依附的脆弱性顯著更高",
+          "source": "https://apsijournal.com/index.php/psyjournal/article/view/1729",
+          "quote": "APSI Psychological Journal 2025年整合依附理論、情感神經科學、行為心理學與創傷研究，特別關注不安全依附模式（尤其是依附焦慮與恐懼-回避型依附）如何提高個體對創傷依附的脆弱性"
+        },
+        {
+          "claim": "《白夜行》1997年1月至1999年1月連載於集英社《小說すばる》，日本銷售量超過200萬本",
+          "source": "https://www.books.com.tw/products/0010976664",
+          "quote": "博客來書籍頁記載《白夜行》出版資訊與版本說明"
+        },
+        {
+          "claim": "雪穗和亮司在19年間公開場合從未接觸，從未在任何人面前同時出現、對話或承認彼此",
+          "source": "https://note.com/damasurrender_00/n/n978e76bfb56c",
+          "quote": "note.com書評分析：兩人在案發後整整19年裡，從未在任何人面前同時出現、對話、或承認彼此"
+        },
+        {
+          "claim": "書評社群稱雪穗亮司的關係「不屬於戀人、夫妻、共犯中的任何一種」，兩人為「互相寄生又互相補完的共生關係」，雪穗並非被保護的公主",
+          "source": "https://note.com/damasurrender_00/n/n978e76bfb56c",
+          "quote": "note.com書評分析：兩人是相當對等的共犯關係，雪穗並非被保護的公主；「不屬於戀人、夫妻、共犯中的任何一種」"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "candidates_since": "2026-09-01T05:18:04+08:00",
+      "redo_note": "重新生成：文案與視覺企劃已重寫（86eyq9f6w｜20260901-東野圭吾走了，《白夜行》衝上台灣暢銷榜：雪）"
+    },
+    {
+      "id": "20260824-StanTatkin說你",
+      "topic": "86eyknz01｜20260901-Stan Tatkin 說：你以為「找到對的人」就不用努力。但神經科學說，愛情是一項需要每天練習的技能",
+      "version": 2,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyknz01",
+      "created_at": null,
+      "caption": "只有「練出來的關係」。\n\nTatkin 強調的安全功能關係，建立在面對面的神經生物學同頻上，兩個人的神經系統需要真實的在場，才能學會互相調節。\nLava 從設計之初選擇線下優先，因為神經系統的同頻只能在真實在場中發生。\n在 Lava，你選擇從真實的相遇開始練習。\n\n#交友軟體 #約會 #感情 #戀愛 #依附理論 #神經科學 #伴侶關係 #關係練習 #StanTatkin #PACT #Lava交友 #不聊天的交友軟體 #線下約會 #愛情科學 #安全依附",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-mood1dd71",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "b-collage",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moodc38b6",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Wiredfor Love Stan Tatkin",
+              "source_kind": "OV"
+            }
+          ],
+          "final_src": null,
+          "heading": "沒有「對的人」這件事",
+          "display_copy": "〖沒有「對的人」這件事〗\n只有「練出來的關係」。\n\n神經科學家 Stan Tatkin 說：讓感情變難的，有一個比你、比對方更原始的理由。\nTatkin 稱之為神經系統的演化設定。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "a-moodb9fba",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "b-moodc7b70",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Fleabag"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-2f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-2g.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-2h.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-2i.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-2j.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-2k.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-2l.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            }
+          ],
+          "final_src": null,
+          "heading": "那種努力了還是卡關的感覺",
+          "display_copy": "你們吵完架，坐在沙發兩端，誰都沒說話。\n努力了，還是這麼難。\n你開始懷疑：【是不是我們根本不適合？】\n\nTatkin 說：問題不在你，也不在他。\n讓感情變難的，有一個更原始的理由。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Stan Tatkin",
+              "source_kind": "WM",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Stan Tatkin 是誰",
+          "display_copy": "**Stan Tatkin**\nUCLA David Geffen 醫學院助理臨床教授\nKaiser Permanente 家庭醫學住院醫師培訓指導\n神經科學 × 依附理論 × 伴侶治療\n\n他在【2016 年 9 月 TEDxKC 演講】提問：\n「讓感情變難的，如果是比你、比對方更原始的理由，那會是什麼？」\n\n資料來源：PACT Institute, thepactinstitute.com；TEDxKC, youtube.com/watch?v=2xKXLPuju8U",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            }
+          ],
+          "final_src": null,
+          "heading": "大腦不懂「緣分」，只懂「安全感」",
+          "display_copy": "你的大腦不在乎「緣分」。\n它只在乎一件事：【你在這裡安全嗎？】\n\nTatkin 的 PACT 框架整合三大領域：\n神經科學 × 依附理論 × 生理喚醒機制\n\n每次吵架，啟動的是演化寫進你體內的威脅反應。\n這是神經系統在做它的工作，與你們合不合無關。\n\n資料來源：PACT Institute, thepactinstitute.com",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "a-bookfe3de",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "b-book189b0",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-5f.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-5g.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-5h.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-5i.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-5j.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-5k.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-5l.webp",
+              "kind": "still",
+              "source_label": "Call Me By Your Name"
+            }
+          ],
+          "final_src": null,
+          "heading": "即使是「不安全依附」，也能練出安全行為",
+          "display_copy": "你不需要等自己「被治癒」。\n\nPACT 最反直覺的發現：\n即使天生是焦慮型或迴避型依附，\n也能透過【刻意練習安全行為】來改變神經迴路。\n\n依附類型不是命運。\n它是大腦寫的程式，而程式可以更新。\n\n資料來源：PACT Institute, thepactinstitute.com",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood17b9c",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-mood36cbd",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-6f.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-6g.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-6h.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            }
+          ],
+          "final_src": null,
+          "heading": "研究確認：練習有效",
+          "display_copy": "數字說明一切：\n\n【58 項研究、2,092 對伴侶】統合分析\n伴侶治療效應量 Hedges ḡ = 1.12（大效應）\n等待組效應量 ḡ = 0.12\n\n差距是 10 倍。\n練習的人改變了；等待的人原地踏步。\n\n資料來源：Journal of Consulting and Clinical Psychology, 2020年7月, PubMed PMID 32673050",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood4ff93",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-7b.webp",
+              "kind": "still",
+              "source_label": "b-moodd4ab0",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-7c.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-7d.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-7e.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            }
+          ],
+          "final_src": null,
+          "heading": "線下見面，是練習的起點",
+          "display_copy": "Tatkin 說：安全感來自【真實的在場】，訊息框裡的完美回覆給不了這件事。\n\n神經系統需要看見對方的表情、聽見對方的聲音，才能學會同頻。\n\nLava 從設計之初選擇線下優先，\n因為神經系統的同頻只能在真實在場中發生。\n\n在 Lava，你選擇從真實的相遇開始練習。\n\n#不聊天的交友軟體",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "a-moodeba66",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
+              "kind": "still",
+              "source_label": "b-mood1e905",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-8d.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-8i.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-8j.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-8k.webp",
+              "kind": "still",
+              "source_label": "About Time"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-8l.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            }
+          ],
+          "final_src": null,
+          "heading": "從今天開始的三個練習",
+          "display_copy": "Tatkin 的安全功能關係，從三個日常動作開始：\n\n【1. 離開前：給一個真實的告別】\n眼神接觸後說再見，而非只是已讀。\n\n【2. 回來後：先連結，再抱怨】\n讓神經系統先安定，問題之後再談。\n\n【3. 吵架時：說「我們」，放下「你」】\n把衝突從對立，變成共同面對的難題。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Stan Tatkin 在 UCLA David Geffen 醫學院擔任助理臨床教授，並於 Kaiser Permanente 指導家庭醫學住院醫師培訓",
+          "source": "https://www.thepactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy® (PACT). He has a private practice in Calabasas, California; is on faculty at Kaiser Permanente."
+        },
+        {
+          "claim": "Tatkin 與妻子 Tracey Boldemann-Tatkin 博士於 2010 年共同創立 PACT Institute",
+          "source": "https://www.thepactinstitute.com/about",
+          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
+        },
+        {
+          "claim": "Stan Tatkin 的 TEDxKC 演講於 2016 年 9 月上傳 YouTube，演講標題為「Relationships Are Hard, But Why?」",
+          "source": "https://www.youtube.com/watch?v=2xKXLPuju8U",
+          "quote": "Relationships Are Hard, But Why? | Stan Tatkin | TEDxKC"
+        },
+        {
+          "claim": "統合分析納入 58 項研究、40 個獨立樣本、2,092 對伴侶，伴侶治療對關係滿意度效應量 Hedges ḡ = 1.12（大效應），等待組 ḡ = 0.12",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/32673050/",
+          "quote": "Results indicated a large effect size for couple therapy on relationship satisfaction (pre-post Hedges' g = 1.12)... The wait-list control ES was g = 0.12."
+        },
+        {
+          "claim": "PACT 安全功能關係定義：由兩人組成的系統，建立在團隊合作、完全協作與相互敏感的基礎上，公開與私下都互相保護，並做出對雙方公平公正的決策",
+          "source": "https://www.thepactinstitute.com/about",
+          "quote": "A secure-functioning relationship is defined as a two-person system based on true partnership, full collaboration, and mutual sensitivity—where both partners protect each other in public and in private, and make decisions that are fair and just to both."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "candidates_since": "2026-09-01T05:19:54+08:00",
+      "redo_note": "重新生成：文案與視覺企劃已重寫（86eyknz01｜20260901-Stan Tatkin 說：你以為「找到對）"
     }
   ]
 }
