@@ -151,6 +151,27 @@ echo "截圖策展" >"$RUNMARK"
 FRG=$(timeout 700 "$PY" scripts/sync_console.py forage-pending --limit 2 --topup 2>&1)
 echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"
 
+# 書榜爬取（每天一次）〔2026-08-31 crawl4ai 上線〕
+# 雷達的「書與趨勢榜」題型從二手報導升級成第一手榜單。跑在哨兵層是因為
+# 需要完整 Chromium（n8n 雲端跑不了）。venv 缺席就跳過並記錄，不擋主流程。
+TC_STAMP="/tmp/lava-ig-trendcrawl.$(date '+%Y-%m-%d')"
+C4AI_PY="$REPO/.venv-c4ai/bin/python"
+if [ ! -f "$TC_STAMP" ] && [ -x "$C4AI_PY" ]; then
+  touch "$TC_STAMP"
+  echo "書榜爬取" >"$RUNMARK"
+  TCR=$(timeout 240 "$C4AI_PY" scripts/trend_crawl.py 2>&1 | tail -6)
+  echo "$TCR" | grep -E "✓|⏭|寫入" | sed "s/^/[$(date '+%m-%d %H:%M')] 書榜/" >>"$LOG"
+  if [ -n "$(git status --porcelain data/trend_crawl.json)" ]; then
+    git add data/trend_crawl.json
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-crawl: 書榜快照" \
+      -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+elif [ ! -f "$TC_STAMP" ]; then
+  touch "$TC_STAMP"
+  echo "[$(date '+%m-%d %H:%M')] 書榜：.venv-c4ai 缺席，跳過（重建法見 scripts/trend_crawl.py 尾註）" >>"$LOG"
+fi
+
 # 學習迴路（每天一次）〔2026-08-25 事故〕
 # iterate_harness 把「退回意見」轉成 config/style-notes.md 的規則（低風險自動生效、
 # 高風險轉提案待審），WF01 撰稿時會讀 style-notes。但哨兵從來沒有呼叫它——

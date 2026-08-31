@@ -23,3 +23,4 @@ docs/reels/
 排版引擎/__pycache__/
 排版引擎/*.png
 排版引擎/.DS_Store
+.venv-c4ai/
