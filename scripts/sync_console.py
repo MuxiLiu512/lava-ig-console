@@ -1530,15 +1530,22 @@ def post_qa(args):
 
 
 def alert(args):
-    """哨兵自報告警（管線自身停擺時，n8n 的 errorWorkflow 抓不到——它只看 n8n 執行）。"""
-    token = _read_sync().get("clickup_token")
-    if not token or not token.isascii():
-        print("缺 clickup_token，略過告警"); return
+    """哨兵自報告警（管線自身停擺時，n8n 的 errorWorkflow 抓不到——它只看 n8n 執行）。
+    〔2026-08-31 脫離 ClickUp〕改經 WF17 LINE 通知管道；userId 集中在 WF17。"""
+    import urllib.request, urllib.parse
+    key = _read_sync().get("radar_inbox_key")
+    if not key:
+        print("缺 radar_inbox_key，略過告警"); return
     ts = datetime.datetime.now().astimezone().strftime("%m-%d %H:%M")
     try:
-        _clickup("POST", "/task/%s/comment" % ALERT_CARD, token,
-                 {"comment_text": "⚠ [%s] 哨兵告警：%s" % (ts, args.message), "notify_all": True})
-        print("✓ 告警已送出")
+        body = json.dumps({"text": "⚠ [%s] 哨兵告警：%s" % (ts, args.message)}).encode()
+        req = urllib.request.Request(
+            "https://lavadating.app.n8n.cloud/webhook/lava-line-notify?k="
+            + urllib.parse.quote(key),
+            data=body, headers={"Content-Type": "application/json"}, method="POST")
+        r = json.loads(urllib.request.urlopen(req, timeout=30).read() or b"{}")
+        print("✓ 告警已送出" if not r.get("skip") else
+              "⚠ 告警管道略過：%s" % r.get("reason"))
     except Exception as e:
         print("! 告警送出失敗：%s" % e)
 
