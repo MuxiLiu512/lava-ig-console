@@ -1263,6 +1263,7 @@ def events_apply(args):
                 pay = ev.get("payload") or {}
                 reviews_d.setdefault("reviews", []).append({
                     "id": "R-" + os.path.basename(fp)[:17], "post_id": target,
+                    "version": posts[target].get("version", 0),  # §1.3 防護：重做必須讓 version 前進
                     "ts": ev.get("ts"), "decision": t.split(".")[1],
                     "slide_choices": pay.get("slide_choices") or {},
                     "scope": None, "feedback": pay.get("feedback") or "",

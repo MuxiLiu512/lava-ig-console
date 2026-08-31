@@ -23,6 +23,7 @@ POST_TRANSITIONS = {
     ("approved",        "post.reject"):  "rejected",
     ("approved",        "post.schedule"): "scheduled",
     ("scheduled",       "post.reject"):  "rejected",     # 排程後反悔也要能退
+    ("scheduled",       "post.unschedule"): "approved",  # 取消排程：回到等你排時間（UI 規格 §3D）
     ("awaiting_review", "post.schedule"): None,          # 明確非法：沒核准不能排
 }
 
@@ -38,9 +39,12 @@ def apply_post_event(post, ev):
         return False, "非法變遷 %s --%s--> ?（維持原狀）" % (cur, t)
     nxt = POST_TRANSITIONS[key]
     post["status"] = nxt
+    post["status_since"] = ev.get("ts")   # UI 的「已多久」唯一來源（規格 §2.2）
     pay = ev.get("payload") or {}
     if t == "post.schedule":
         post["publish_at"] = pay.get("publish_at")
+    if t == "post.unschedule":
+        post.pop("publish_at", None)
     if t == "post.approve" and pay.get("copy_choice"):
         post["copy_choice"] = pay["copy_choice"]
     if t == "post.reject":
