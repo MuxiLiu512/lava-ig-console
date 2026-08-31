@@ -192,6 +192,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260803-Laa是怎麼把配對變成真",
+      "ts": "2026-09-01T01:53:29+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 1,
+          "field": "heading",
+          "original": "配對只是開始。\n【見面，我們幫你排。】",
+          "edited": "配對只是開始\n【見面，我們幫你排】",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
