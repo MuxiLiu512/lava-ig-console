@@ -154,7 +154,8 @@
       "decision": "approve",
       "decided_at": "2026-08-27T00:40:30+08:00",
       "reason": "",
-      "applied": true
+      "applied": true,
+      "rushed_at": "2026-09-01T02:03:36+08:00"
     },
     {
       "task_id": "86eyq3ynw",
