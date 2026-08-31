@@ -129,5 +129,180 @@ function Section(opt) {
   return { wrap, body, head };
 }
 
-window.LavaUI = { icon, ago, dur, ActionButton, StatusLine, Section, inFlight };
+// ── 即時文案檢查（輸入中提示）───────────────────────────────────────
+// 規則正本在後端：禁用詞＝config/banned-words.txt、禁句式＝scripts/copy_check.py。
+// 這裡只做打字時的即時提示；存檔後的裁決仍以文案閘門為準。
+let BANNED = null;
+async function loadBanned() {
+  if (BANNED) return BANNED;
+  try {
+    const { tfetch, rawUrl, MODE } = window.LavaCore;
+    const url = MODE === "local" ? "../config/banned-words.txt" : rawUrl("config/banned-words.txt");
+    const r = await tfetch(url + "?t=" + Date.now());
+    BANNED = (await r.text()).split("\n").map(s => s.trim()).filter(s => s && !s.startsWith("#"));
+  } catch (e) { BANNED = []; }
+  return BANNED;
+}
+const LINT_PATTERNS = [
+  [/——/, "破折號（——）"],
+  [/不是[^，。\n]{1,14}[，、]?\s*而是/, "「不是…而是…」句式"],
+  [/欸[⋯…]*[，,]?\s*你|你有沒有發現|你知道嗎/, "對話式開場"],
+];
+function lintText(text) {
+  const hits = [];
+  (BANNED || []).forEach(w => { if (w && text.includes(w)) hits.push("禁用詞「" + w + "」"); });
+  LINT_PATTERNS.forEach(([re, name]) => { if (re.test(text)) hits.push(name); });
+  return [...new Set(hits)];
+}
+
+// ── InlineEdit（§6）— 就地文字編輯 ──────────────────────────────────
+// textarea（非 contenteditable，避免貼上帶格式）＋即時檢查（300ms debounce）＋
+// 儲存列。Esc 取消、Cmd+Enter 儲存。onSave 收 [{field, original, edited}]（只含有變動的）。
+function InlineEdit(opt) {
+  const box = el("div", "inedit");
+  const tas = [];
+  let saveBtnWrap;
+  const dirty = () => tas.some(x => x.ta.value !== x.f.value);
+  const paintBar = () => { saveBtnWrap.style.display = dirty() ? "flex" : "none"; };
+  opt.fields.forEach(f => {
+    if (f.label) box.appendChild(el("label", "fld", esc(f.label)));
+    const ta = el("textarea");
+    ta.value = f.value || "";
+    ta.rows = Math.max(2, (f.value || "").split("\n").length + 1);
+    const lint = el("div", "lintline");
+    let deb;
+    const runLint = () => {
+      const hits = lintText(ta.value);
+      lint.innerHTML = hits.length
+        ? hits.map(h => `<span class="hit">${esc(h)}</span>`).join(" ")
+        : "";
+      lint.style.display = hits.length ? "block" : "none";
+    };
+    ta.addEventListener("input", () => {
+      ta.rows = Math.max(2, ta.value.split("\n").length + 1);
+      clearTimeout(deb); deb = setTimeout(runLint, 300);
+      paintBar();
+    });
+    ta.addEventListener("keydown", e => {
+      if (e.key === "Escape") { e.preventDefault(); opt.onCancel && opt.onCancel(); }
+      if ((e.metaKey || e.ctrlKey) && e.key === "Enter") { e.preventDefault(); doSave.click(); }
+    });
+    runLint();
+    box.appendChild(ta); box.appendChild(lint);
+    tas.push({ f, ta });
+  });
+  saveBtnWrap = el("div", "btnrow"); saveBtnWrap.style.cssText = "margin-top:8px;display:none";
+  const doSave = ActionButton({
+    id: opt.saveId, label: "儲存修改", kind: "primary", doneLabel: "已儲存",
+    run: async () => {
+      const edits = tas.filter(x => x.ta.value !== x.f.value)
+        .map(x => ({ field: x.f.field, original: x.f.value || "", edited: x.ta.value }));
+      if (!edits.length) throw new Error("沒有變動");
+      await opt.onSave(edits);
+    },
+    onDone: () => opt.onDone && opt.onDone(),
+  });
+  const revert = el("button", "btn ghost", "還原");
+  revert.type = "button";
+  revert.onclick = () => { tas.forEach(x => { x.ta.value = x.f.value || ""; x.ta.dispatchEvent(new Event("input")); }); };
+  const cancel = el("button", "btn ghost", "取消");
+  cancel.type = "button";
+  cancel.onclick = () => opt.onCancel && opt.onCancel();
+  saveBtnWrap.appendChild(doSave); saveBtnWrap.appendChild(revert); saveBtnWrap.appendChild(cancel);
+  box.appendChild(saveBtnWrap);
+  paintBar();
+  const hint = el("div", "meta", "Esc 取消 · Cmd+Enter 儲存 · 檢查提示僅供參考，存檔後仍以文案閘門為準");
+  hint.style.marginTop = "4px";
+  box.appendChild(hint);
+  if (tas[0]) setTimeout(() => tas[0].ta.focus(), 0);
+  return box;
+}
+
+// ── TemplatePicker（§5）— 範本選擇器（全螢幕彈層）───────────────────
+// 範本卡：骨架示意（skeleton 以「→」分段畫小條）＋為什麼有效＋證據標籤＋使用數。
+// 不得把 unverified 的互動數據標成「高互動」——一律灰標「互動數據未查證」。
+const tplName = tp => window.LavaTerms.tplName(tp);   // 顯名對照在 terms.js
+
+function skeletonViz(skeleton) {
+  const wrap = el("div", "tpl-skel");
+  String(skeleton || "").split("→").map(s => s.trim()).filter(Boolean).slice(0, 6).forEach(seg => {
+    const b = el("div", "seg");
+    b.appendChild(el("i"));
+    b.appendChild(el("span", null, esc(seg.slice(0, 26))));
+    wrap.appendChild(b);
+  });
+  return wrap;
+}
+
+function openTemplatePicker(opt) {
+  // opt: {templates, currentId, typeFilter:"post"|"reels", onPick(tpl)}
+  const bg = el("div", "tplpicker");
+  bg.setAttribute("role", "dialog");
+  const head = el("div", "tp-head");
+  head.appendChild(el("b", null, "選擇範本"));
+  const close = el("button", "icon-btn");
+  close.setAttribute("aria-label", "關閉");
+  close.appendChild(icon("x", 17));
+  close.onclick = () => bg.remove();
+  head.appendChild(el("span", "grow"));
+  head.appendChild(close);
+  bg.appendChild(head);
+  document.addEventListener("keydown", function escClose(e) {
+    if (e.key === "Escape") { bg.remove(); document.removeEventListener("keydown", escClose); }
+  });
+
+  const body = el("div", "tp-body");
+  const all = (opt.templates || []).filter(tp => !opt.typeFilter || tp.type === opt.typeFilter);
+  const main = all.filter(tp => tp.status === "validated");
+  const rest = all.filter(tp => tp.status !== "validated");
+
+  const card = tp => {
+    const c = el("div", "tpl-card" + (tp.id === opt.currentId ? " on" : ""));
+    c.appendChild(skeletonViz(tp.skeleton));
+    c.appendChild(el("h3", null, esc(tplName(tp))));
+    const why = el("details");
+    why.appendChild(el("summary", "small muted", esc(String(tp.why_it_works || "").slice(0, 60)) + "…"));
+    why.appendChild(el("div", "small muted", esc(tp.why_it_works || "")));
+    c.appendChild(why);
+    const meta = el("div", "tpl-meta");
+    const ev = tp.evidence || {};
+    if (String(ev.engagement || "").includes("unverified"))
+      meta.appendChild(el("span", "gate", "互動數據未查證"));
+    if (ev.source_account) {
+      const a = el("a", "meta", esc(ev.source_account));
+      if (ev.post_url) { a.href = ev.post_url; a.target = "_blank"; a.rel = "noopener"; }
+      meta.appendChild(a);
+    }
+    meta.appendChild(el("span", "meta", "已用 " + ((tp.used_by || []).length) + " 篇"));
+    c.appendChild(meta);
+    c.appendChild(ActionButton({
+      id: "pick-tpl-" + tp.id, label: tp.id === opt.currentId ? "目前使用中" : "用這個範本",
+      kind: tp.id === opt.currentId ? "ghost" : "primary", doneLabel: "已選定",
+      run: async () => {
+        if (tp.id === opt.currentId) throw new Error("已是目前範本");
+        await opt.onPick(tp);
+      },
+      onDone: () => bg.remove(),
+    }));
+    return c;
+  };
+
+  const grid = el("div", "tpl-grid");
+  main.forEach(tp => grid.appendChild(card(tp)));
+  if (!main.length) grid.appendChild(el("div", "empty", "這個類型還沒有可用的範本"));
+  body.appendChild(grid);
+  if (rest.length) {
+    const det = el("details", "drawer");
+    det.appendChild(el("summary", null, `候選與停用範本（${rest.length}）`));
+    const g2 = el("div", "tpl-grid inner");
+    rest.forEach(tp => g2.appendChild(card(tp)));
+    det.appendChild(g2);
+    body.appendChild(det);
+  }
+  bg.appendChild(body);
+  document.body.appendChild(bg);
+}
+
+window.LavaUI = { icon, ago, dur, ActionButton, StatusLine, Section, inFlight,
+                  loadBanned, lintText, InlineEdit, openTemplatePicker, tplName };
 })();

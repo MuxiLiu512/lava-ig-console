@@ -331,6 +331,39 @@ details.drawer .inner { padding: 4px 14px 14px; }
 kbd { background: var(--surface-3); border: 1px solid var(--line-strong); border-radius: 4px;
   padding: 1px 6px; font-size: 11px; font-family: inherit; }
 
+/* ── 就地文字編輯（InlineEdit）─────────────────────────────────────── */
+.inedit { margin-top: 6px; }
+.inedit textarea { font-size: 13.5px; line-height: 1.7; }
+.lintline { display: none; margin: 4px 0 8px; font-size: 12px; }
+.lintline .hit { display: inline-block; color: var(--danger); background: rgba(239,106,95,.1);
+  border-radius: 4px; padding: 1px 7px; margin-right: 6px; }
+.edited-tag { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px;
+  color: var(--text-3); border: 1px solid var(--line); padding: 1px 8px; border-radius: 999px; }
+
+/* ── 範本選擇器（TemplatePicker）───────────────────────────────────── */
+.tplpicker { position: fixed; inset: 0; z-index: 55; background: rgba(8,9,11,.97);
+  display: flex; flex-direction: column; }
+.tp-head { display: flex; align-items: center; gap: 10px; padding: 12px 18px;
+  border-bottom: 1px solid var(--line); font-size: 15px; }
+.tp-body { flex: 1; overflow-y: auto; padding: 16px 18px 40px; max-width: 980px;
+  margin: 0 auto; width: 100%; }
+.tpl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.tpl-grid.inner { margin-top: 8px; }
+.tpl-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.tpl-card.on { border-color: var(--you); }
+.tpl-card h3 { font-size: 14px; }
+.tpl-card details summary { cursor: pointer; list-style: none; }
+.tpl-card details summary::-webkit-details-marker { display: none; }
+.tpl-card details[open] summary { display: none; }
+.tpl-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: auto; }
+.tpl-skel { display: flex; flex-direction: column; gap: 3px; }
+.tpl-skel .seg { display: flex; align-items: center; gap: 7px; font-size: 11px; color: var(--text-3); }
+.tpl-skel .seg i { width: 22px; height: 12px; border-radius: 3px; background: var(--surface-3);
+  border: 1px solid var(--line-strong); flex: none; }
+.tpl-skel .seg:first-child i { background: rgba(232,68,42,.25); border-color: rgba(232,68,42,.4); }
+.tpl-skel .seg span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
 /* 側抽屜（靈感／提案詳情） */
 .drawer-panel { position: fixed; top: 0; right: -420px; width: min(400px, 92vw); height: 100vh;
   background: var(--surface); border-left: 1px solid var(--line-strong); padding: 18px 16px;

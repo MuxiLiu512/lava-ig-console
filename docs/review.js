@@ -6,9 +6,31 @@
 const { S, MODE, $, el, esc, saveJson, tfetch, postEvent, patModal, setImg, img, STATE, FILES, loadAll,
         toast, modal, nowISO, gatesOf, lacksMaterial, DESIGN_LAYOUTS, slidesDone } = window.LavaCore;
 const { t, SCHEDULE, statusView, candSourceLabel } = window.LavaTerms;
-const { icon, ago, dur, ActionButton, StatusLine } = window.LavaUI;
+const { icon, ago, dur, ActionButton, StatusLine, loadBanned, lintText, InlineEdit, openTemplatePicker, tplName } = window.LavaUI;
 
 let QUEUE = [], IDX = 0, CHOICE = {}, CONFIRMED = new Set(), CROPDRAFT = {}, T0 = 0;
+let EDITING = null;   // 目前展開編輯的目標："s<n>" 或 "caption"，同時間只開一個
+
+// ── 文案的有效值：copy_edits 最新編輯優先（與後端 _latest_copy_edits 同一套規則）──
+// 不變量（藍圖 v2 第 21 項）：copy_edits 最新版 = 目前顯示值。
+function latestEditsOf(p) {
+  const out = {};
+  const list = ((STATE.copy_edits && STATE.copy_edits.edits) || [])
+    .filter(e => e.post_id === p.id)
+    .sort((a, b) => String(a.ts || "").localeCompare(String(b.ts || "")));
+  let newestTs = null;
+  list.forEach(e => (e.edits || []).forEach(ed => {
+    if (ed.version && p.copy_choice && ed.version !== p.copy_choice) return;
+    out[String(ed.n) + ":" + ed.field] = ed.edited;
+    newestTs = e.ts;
+  }));
+  out._ts = newestTs;
+  return out;
+}
+const effField = (p, n, field, fallback) => {
+  const v = latestEditsOf(p)[String(n) + ":" + field];
+  return v != null ? v : (fallback || "");
+};
 
 const cur = () => QUEUE[IDX];
 const finalOf = s => s && (s.public_url || s.final_src);
@@ -97,13 +119,62 @@ function cropPreview(p, s, path) {
   return wrap;
 }
 
+// ── 文案編輯寫入：copy_edits.json 追加一筆（瀏覽器是這個檔的唯一寫者）──
+// 圖上字由渲染引擎在排版時折入（_latest_copy_edits）；caption 由哨兵折回 posts.json。
+async function saveCopyEdits(p, n, edits) {
+  const entry = {
+    post_id: p.id, ts: nowISO(), consumed: false,
+    edits: edits.map(e => ({ n, field: e.field, original: e.original, edited: e.edited,
+                             ...(p.copy_choice ? { version: p.copy_choice } : {}) })),
+  };
+  await saveJson(FILES.copy_edits, doc => {
+    (doc.edits = doc.edits || []).push(entry);
+  }, `copy edit: ${p.id} s${n}`);
+  // 樂觀更新本地 STATE，畫面立即反映新字
+  ((STATE.copy_edits = STATE.copy_edits || { edits: [] }).edits =
+    STATE.copy_edits.edits || []).push(entry);
+  CONFIRMED.delete(n);   // 改了字＝這張要重新看過
+  toast("已儲存。圖上字在排版時生效" + (n === 0 ? "；貼文文案由哨兵 10 分內同步" : ""));
+}
+
 // ── ① 整體資訊卡 ────────────────────────────────────────────────────
+let TPLCACHE = null;
+async function loadTemplates() {
+  if (TPLCACHE) return TPLCACHE;
+  try { TPLCACHE = ((await window.LavaCore.apiGet("data/templates.json")).json.templates) || []; }
+  catch (e) { TPLCACHE = null; throw new Error("範本庫暫時讀不到，可先照預設骨架繼續"); }
+  return TPLCACHE;
+}
+
 function infoCard(p) {
   const c = el("div", "card"); const pad = el("div", "pad");
   const row = el("div", "row");
   row.appendChild(el("b", null, esc(p.topic_type || "知識型")));
   row.appendChild(el("span", "meta", (p.slides || []).length + " 張"));
-  if (p.template_id) row.appendChild(el("span", "meta", "範本 " + esc(p.template_id)));
+  if (p.template_id) {
+    const tag = el("span", "meta", "範本 " + esc(p.template_id));
+    if (TPLCACHE) { const tp = TPLCACHE.find(x => x.id === p.template_id); if (tp) tag.textContent = "範本：" + tplName(tp); }
+    row.appendChild(tag);
+  }
+  const chg = el("button", "btn ghost", p.template_id ? "換範本" : "選範本");
+  chg.type = "button"; chg.style.cssText = "min-height:28px;padding:3px 10px;font-size:12px";
+  chg.onclick = async () => {
+    let tpls;
+    try { tpls = await loadTemplates(); } catch (e) { return toast(e.message, true); }
+    openTemplatePicker({
+      templates: tpls, currentId: p.template_id, typeFilter: "post",
+      onPick: async tp => {
+        await saveJson(FILES.posts, doc => {
+          const q = (doc.posts || []).find(x => x.id === p.id);
+          if (q) q.template_id = tp.id;
+        }, `template: ${p.id} → ${tp.id}`);
+        p.template_id = tp.id;
+        toast("已選定範本「" + tplName(tp) + "」。重做或重寫這篇時，產線會照它的骨架。");
+        render();
+      },
+    });
+  };
+  row.appendChild(chg);
   const gz = el("div", "gates"); gz.style.marginLeft = "auto";
   gatesOf(p).forEach(([name, st]) => {
     const d = el("span", "gate " + st, esc(name));
@@ -152,16 +223,64 @@ function slideCard(p, s, pend) {
   }
   card.appendChild(hero);
 
-  // 內文：圖上文字為主、原稿收摺疊
+  // 內文：有效文字為主（最新編輯優先＝目前顯示值不變量）、就地可改；
+  // 排版後的逐行實況與 AI 原稿各收一個摺疊。
   const body = el("div", "sc-body");
+  const effH = effField(p, n, "heading", s.heading);
+  const effC = effField(p, n, "display_copy", s.display_copy);
+  const effTxt = [effH, effC].filter(Boolean).join("\n");
+  const edits = latestEditsOf(p);
+  const hasEdit = (String(n) + ":heading") in edits || (String(n) + ":display_copy") in edits;
+  if (effTxt || !isDesign(s)) {
+    const hd = el("div", "row");
+    hd.appendChild(el("span", "meta", t("display_copy")));
+    if (hasEdit && fin && edits._ts > (p.rendered_at || "")) {
+      const tag = el("span", "edited-tag", "文字已改、圖未更新");
+      tag.title = "核准後排版會用新文字重出成品";
+      hd.appendChild(tag);
+    }
+    hd.appendChild(el("span", "grow"));
+    const eb = el("button", "btn ghost", "");
+    eb.type = "button"; eb.style.cssText = "min-height:28px;padding:3px 10px;font-size:12px";
+    eb.appendChild(icon("edit", 13));
+    eb.appendChild(document.createTextNode(" 改文字"));
+    hd.appendChild(eb);
+    body.appendChild(hd);
+    if (EDITING === "s" + n) {
+      body.appendChild(InlineEdit({
+        saveId: "edit-" + p.id + "-s" + n,
+        fields: [
+          { field: "heading", label: "標題行", value: effH },
+          { field: "display_copy", label: "內文", value: effC },
+        ],
+        onSave: edits2 => saveCopyEdits(p, n, edits2),
+        onDone: () => { EDITING = null; render(); },
+        onCancel: () => { EDITING = null; render(); },
+      }));
+      eb.style.display = "none";
+    } else {
+      const pre = el("div", "sc-lines"); pre.textContent = effTxt || "（無文字）";
+      pre.style.marginTop = "4px";
+      body.appendChild(pre);
+      const hits = lintText(effTxt);
+      if (hits.length) {
+        const d = el("div", "pend block");
+        d.innerHTML = `<b class="k">${esc(t("gate_copy"))}</b> · 含 ${hits.map(esc).join("、")}——改完才能確認這張`;
+        body.appendChild(d);
+      }
+      eb.onclick = () => { EDITING = "s" + n; render();
+        const e2 = $("#slide-" + n); if (e2) e2.scrollIntoView({ block: "center" }); };
+    }
+  }
   const rl = (p.rendered_lines || {})[String(n)];
-  const linesTxt = (Array.isArray(rl) && rl.length) ? rl.join("\n")
-    : [s.heading, s.display_copy].filter(Boolean).join("\n");
-  if (linesTxt) {
-    body.appendChild(el("div", "meta", Array.isArray(rl) && rl.length ? "圖上實際呈現" : "圖上文字（尚未排版）"));
-    const pre = el("div", "sc-lines"); pre.textContent = linesTxt;
-    pre.style.marginTop = "4px";
-    body.appendChild(pre);
+  if (Array.isArray(rl) && rl.length) {
+    const det0 = el("details");
+    det0.appendChild(el("summary", "meta", "排版後的逐行實況"));
+    const pre0 = el("div", "sc-lines"); pre0.textContent = rl.join("\n");
+    pre0.style.marginTop = "4px";
+    det0.appendChild(pre0);
+    det0.style.marginTop = "8px";
+    body.appendChild(det0);
   }
   if (!fin && candSrc && !isDesign(s)) {
     const note = el("div", "sc-note");
@@ -223,15 +342,16 @@ function slideCard(p, s, pend) {
     card.appendChild(det);
   }
 
-  // 卡尾：確認本張
+  // 卡尾：確認本張。block 級待決項或含禁詞的文字都擋確認（可存檔但不可確認，§6）。
   const foot = el("div", "sc-foot");
   const blocked = pendOfSlide(pend, n).some(x => x.sev === "block");
+  const lintBlocked = lintText(effTxt).length > 0;
   const cb = el("button", "btn " + (CONFIRMED.has(n) ? "ghost" : "primary"));
   cb.type = "button";
   cb.textContent = CONFIRMED.has(n) ? "取消確認" : "確認這張";
-  if (blocked && !CONFIRMED.has(n)) {
+  if ((blocked || lintBlocked) && !CONFIRMED.has(n)) {
     cb.disabled = true;
-    foot.appendChild(el("span", "meta", "先處理上面的待決項才能確認"));
+    foot.appendChild(el("span", "meta", lintBlocked ? "文字含禁用詞，改完才能確認" : "先處理上面的待決項才能確認"));
   }
   cb.onclick = () => {
     if (CONFIRMED.has(n)) CONFIRMED.delete(n); else { CONFIRMED.add(n); }
@@ -252,16 +372,48 @@ function scrollToNextUnconfirmed(after) {
   if (target) target.scrollIntoView({ behavior: "smooth", block: next != null ? "start" : "end" });
 }
 
-// ── ③ 貼文文案卡 ────────────────────────────────────────────────────
+// ── ③ 貼文文案卡（caption 就地編輯：n=0；哨兵折回 posts.json 後發佈用新字）──
 function captionCard(p) {
   const c = el("div", "card"); const pad = el("div", "pad");
-  pad.appendChild(el("div", "meta", t("caption")));
-  const pre = el("div", "sc-lines"); pre.style.marginTop = "4px";
-  pre.textContent = p.caption || "（無文案）";
-  pad.appendChild(pre);
+  const effCap = effField(p, 0, "caption", p.caption);
+  const hd = el("div", "row");
+  hd.appendChild(el("span", "meta", t("caption")));
+  if (effCap !== (p.caption || "")) {
+    const tag = el("span", "edited-tag", "已改、待哨兵同步");
+    tag.title = "哨兵每 " + SCHEDULE.SENTINEL_MIN + " 分把新文案寫回正式資料，發佈用新字";
+    hd.appendChild(tag);
+  }
+  hd.appendChild(el("span", "grow"));
+  const eb = el("button", "btn ghost", "");
+  eb.type = "button"; eb.style.cssText = "min-height:28px;padding:3px 10px;font-size:12px";
+  eb.appendChild(icon("edit", 13));
+  eb.appendChild(document.createTextNode(" 改文字"));
+  hd.appendChild(eb);
+  pad.appendChild(hd);
+  if (EDITING === "caption") {
+    eb.style.display = "none";
+    pad.appendChild(InlineEdit({
+      saveId: "edit-" + p.id + "-caption",
+      fields: [{ field: "caption", label: null, value: effCap }],
+      onSave: edits2 => saveCopyEdits(p, 0, edits2),
+      onDone: () => { EDITING = null; render(); },
+      onCancel: () => { EDITING = null; render(); },
+    }));
+  } else {
+    eb.onclick = () => { EDITING = "caption"; render(); };
+    const pre = el("div", "sc-lines"); pre.style.marginTop = "4px";
+    pre.textContent = effCap || "（無文案）";
+    pad.appendChild(pre);
+    const hits = lintText(effCap);
+    if (hits.length) {
+      const d = el("div", "pend");
+      d.innerHTML = `<b class="k">${esc(t("gate_copy"))}</b> · 含 ${hits.map(esc).join("、")}`;
+      pad.appendChild(d);
+    }
+  }
   const info = el("div", "meta"); info.style.marginTop = "6px";
-  const tags = (String(p.caption || "").match(/#[^\s#]+/g) || []).length;
-  info.textContent = `${String(p.caption || "").length} 字 · ${tags} 個 hashtag`;
+  const tags = (String(effCap || "").match(/#[^\s#]+/g) || []).length;
+  info.textContent = `${String(effCap || "").length} 字 · ${tags} 個 hashtag`;
   pad.appendChild(info);
   const copyIssues = ((p.copy && p.copy.issues) || []);
   copyIssues.slice(0, 4).forEach(i => {
@@ -504,13 +656,24 @@ function renderEmpty() {
 
 function openPost() {
   const p = cur();
-  CHOICE = {}; CROPDRAFT = {}; CONFIRMED = new Set(); T0 = Date.now();
+  CHOICE = {}; CROPDRAFT = {}; CONFIRMED = new Set(); EDITING = null; T0 = Date.now();
   window.scrollTo(0, 0);
   render();
 }
 
+// 確認資格：block 級待決項與禁詞文字都不可確認（按鈕與 Space 走同一條規則）
+function canConfirmSlide(p, n) {
+  const pend = pendingOf(p);
+  if (pendOfSlide(pend, n).some(x => x.sev === "block")) return "先處理待決項";
+  const s = (p.slides || []).find(x => Number(x.n) === n) || {};
+  const eff = [effField(p, n, "heading", s.heading), effField(p, n, "display_copy", s.display_copy)]
+    .filter(Boolean).join("\n");
+  if (lintText(eff).length) return "文字含禁用詞";
+  return null;
+}
+
 // ── 鍵盤 ────────────────────────────────────────────────────────────
-const HELP = [["Space", "確認目前這張並跳下一張"], ["1-9", "跳到第 N 張"],
+const HELP = [["Space", "確認目前這張並跳下一張"], ["E", "改目前這張的文字"], ["1-9", "跳到第 N 張"],
               ["[ / ]", "上一篇／下一篇"], ["A", "核准"], ["R", "退回"], ["S", "排時間"], ["?", "本表"]];
 function slideInView() {
   const p = cur(); if (!p) return null;
@@ -531,7 +694,17 @@ document.addEventListener("keydown", e => {
   if (k === " ") {
     e.preventDefault();
     const n = slideInView();
-    if (n != null) { CONFIRMED.add(n); render(); scrollToNextUnconfirmed(n); }
+    if (n != null) {
+      const why = canConfirmSlide(p, n);
+      if (why) return toast("第 " + n + " 張不能確認：" + why, true);
+      CONFIRMED.add(n); render(); scrollToNextUnconfirmed(n);
+    }
+    return;
+  }
+  if (k === "e" || k === "E") {
+    const n = slideInView();
+    if (n != null) { EDITING = "s" + n; render();
+      const e2 = $("#slide-" + n); if (e2) e2.scrollIntoView({ block: "center" }); }
     return;
   }
   if (k >= "1" && k <= "9") { const e2 = $("#slide-" + k); if (e2) e2.scrollIntoView({ behavior: "smooth" }); return; }
@@ -564,6 +737,7 @@ $("#backBtn").appendChild(icon("arrowLeft", 17));
 $("#btnHelp").appendChild(icon("help", 17));
 $("#btnHelp").onclick = showHelp;
 
+loadBanned();   // 禁詞表先載，即時檢查才有料（失敗＝空表，閘門仍在後端把關）
 loadAll().then(() => {
   $("#modeTag").textContent = MODE === "local" ? "· 本地預覽" : "";
   const P = STATE.posts;

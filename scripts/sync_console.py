@@ -1239,8 +1239,8 @@ def events_apply(args):
     if not os.path.isdir(pend_dir):
         print("（無 events/pending，跳過）"); return
     evs = sorted(glob.glob(os.path.join(pend_dir, "*.json")))
-    if not evs:
-        return
+    # 零事件也要往下走：caption 折回與「撰稿觸發失敗」的重試不依賴新事件。
+    # （原本零事件就 return，放行後 webhook 一失敗要等下一個事件才重試——潛在死等。）
     posts_d = load("posts.json")
     ideas_d = load("ideas.json")
     reviews_d = load("reviews.json")
@@ -1293,6 +1293,24 @@ def events_apply(args):
         shutil.move(fp, os.path.join(done_dir, os.path.basename(fp)))
         if ok:
             changed += 1; applied.append(t)
+    # caption 折回〔就地編輯 §6，2026-09-01〕：瀏覽器把貼文文案的修改寫進
+    # copy_edits.json（n=0, field=caption），這裡折回 posts.json——發佈（WF10 讀
+    # posts.json）才會用新字。圖上字不用折：渲染引擎在排版時讀 _latest_copy_edits。
+    try:
+        ce = load("copy_edits.json").get("edits", [])
+        for pid in {e.get("post_id") for e in ce}:
+            if pid not in posts:
+                continue
+            m = _latest_copy_edits(pid, ce, version=posts[pid].get("copy_choice"))
+            cap = m.get((0, "caption"))
+            if cap is not None and posts[pid].get("caption") != cap:
+                posts[pid]["caption"] = cap
+                changed += 1
+                print("✓ 文案同步 %s（caption %d 字）" % (pid, len(cap)))
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print("⚠ 文案同步略過：%s" % e)
     # 放行了但撰稿觸發失敗的，重試
     for iid, idea in ideas.items():
         if idea.get("decision") == "approve" and not idea.get("applied"):

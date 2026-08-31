@@ -73,6 +73,11 @@ function candSourceLabel(c) {
   return c.source_label ? t("still") + " · " + String(c.source_label).slice(0, 10) : t("still");
 }
 
+
+// 範本 PM 化顯名（§5）：hook_type → 介面名。沒對照的用 hook_type 原文。
+const TPL_NAME_MAP = { "趨勢詞策展": "趨勢詞文字卡" };
+function tplName(tp) { return TPL_NAME_MAP[tp.hook_type] || tp.hook_type || tp.id; }
+
 // 狀態 → 介面詞（貼文物件 → {label, tone, zone}）
 // tone: you=品牌橘（只給等你）/ ok / info / warn / neutral；zone: queue / system / done
 function statusView(p, latestReview) {
@@ -101,5 +106,5 @@ function statusView(p, latestReview) {
   return { label: t("making"), tone: "neutral", zone: "system" };
 }
 
-window.LavaTerms = { TERMS, SCHEDULE, t, tip, statusView, candSourceLabel };
+window.LavaTerms = { TERMS, SCHEDULE, t, tip, statusView, candSourceLabel, TPL_NAME_MAP, tplName };
 })();
