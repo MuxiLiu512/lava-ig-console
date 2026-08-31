@@ -206,6 +206,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260803-Laa是怎麼把配對變成真",
+      "ts": "2026-09-01T01:54:18+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 2,
+          "field": "display_copy",
+          "original": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。",
+          "edited": "配對成功不等於會見面\n多數人卡在「要約嗎」這一步",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
