@@ -978,7 +978,22 @@ def render_approved(args):
                 cid = choices.get(n) or s.get("default_cid") or s["candidates"][0]["cid"]
                 path = (srcs.get(str(n)) or {}).get(cid)
             if not path or not os.path.exists(path):
-                skipped.append((pid, "slide %d 選圖原檔不存在" % n)); ok = False; break
+                # 退而求其次，不要整篇卡死〔2026-09-01 事故的同一類：一顆壞掉的
+                # 資料不該癱瘓整條產線〕。選圖與原檔對照表可能不同步——重餵會用
+                # 當下的候選重寫對照表，先前審核選的 cid 就可能已經不在表裡。
+                # 這時用「現在還拿得到原檔的最佳候選」出圖，並在該篇留下註記，
+                # 讓你知道這張不是你當初選的那張。
+                alt = None
+                for c in (s.get("candidates") or []):
+                    q = (srcs.get(str(n)) or {}).get(c["cid"])
+                    if q and os.path.exists(q):
+                        alt, cid = q, c["cid"]; break
+                if not alt:
+                    skipped.append((pid, "slide %d 完全沒有可用的原檔" % n)); ok = False; break
+                p.setdefault("choice_fallback", []).append(
+                    {"slide": n, "wanted": choices.get(n) or s.get("default_cid"), "used": cid, "ts": _now_iso()})
+                sys.stderr.write("  ↩ slide %d 你選的圖原檔已不在，改用現有最佳候選 %s\n" % (n, cid))
+                path = alt
             if _flat_image(path):
                 skipped.append((pid, "slide %d 選圖疑似破圖，請到操控室改選其他候選再核准" % n)); ok = False; break
             cand = next((c for c in s["candidates"] if c.get("cid") == cid), None)
