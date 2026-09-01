@@ -6527,191 +6527,214 @@
           "role": "Hook",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "b",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1b.webp",
               "kind": "still",
               "source_label": "a-mood22e4a",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1a.webp",
               "kind": "still",
-              "source_label": "組圖：loganury.com",
-              "source_kind": "SHOT"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "curator_score": 7
             },
             {
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1d.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 5
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "curator_score": 5
             },
             {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1e.webp",
               "kind": "still",
               "source_label": "c-mood11e85",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 3
             },
             {
               "cid": "g",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1g.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1j.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
-              "kind": "still",
               "source_label": "Marriage Story",
-              "low_q": true
+              "curator_score": 4
             },
             {
               "cid": "i",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 4
             },
             {
-              "cid": "k",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1k.webp",
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "low_q": true
+              "source_label": "Marriage Story",
+              "low_q": true,
+              "curator_score": 3
             },
             {
               "cid": "l",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1l.webp",
               "kind": "still",
               "source_label": "Catastrophe",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1k.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "curator_score": 2
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1c.webp",
+              "kind": "still",
+              "source_label": "組圖：loganury.com",
+              "source_kind": "SHOT",
+              "curator_score": 1
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-1.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-1.jpg",
           "heading": "問題從來不是遇不到人",
           "display_copy": "問題從來不是\n遇不到人\n\n是站在入口前\n不知道怎麼\n重新踏進去\n\n30 歲後重新約會\n障礙從來不是機會\n是那個第一步",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 2,
           "role": "共感場景",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "b",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2b.webp",
               "kind": "still",
               "source_label": "a-mood6178d",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 7
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "curator_score": 6
             },
             {
               "cid": "c",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2c.webp",
               "kind": "still",
               "source_label": "b-mood09dce",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2d.webp",
-              "kind": "still",
-              "source_label": "b-mooda3a45",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 5
             },
             {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2e.webp",
               "kind": "still",
               "source_label": "High Fidelity",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2f.webp",
-              "kind": "still",
-              "source_label": "High Fidelity",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 3
             },
             {
               "cid": "g",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2g.webp",
               "kind": "still",
               "source_label": "High Fidelity",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 3
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2f.webp",
+              "kind": "still",
+              "source_label": "High Fidelity",
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2d.webp",
+              "kind": "still",
+              "source_label": "b-mooda3a45",
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-2.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-2.jpg",
           "heading": "那個卡住的感覺，幾乎人人都有",
           "display_copy": "分手之後的第一個念頭\n往往不是「我不想再愛」\n\n而是：「我已經不知道\n現在的規則是什麼了」\n\n上一次認真約會可能是六年前、八年前\n那時候還沒有滑卡\n還不需要在三張照片裡定義自己\n\nr/datingoverthirty 上最常見的問題：\n「我準備好了，但第一步是什麼？」",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 3,
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3b.webp",
-              "kind": "still",
-              "source_label": "Gottman Institute 官方研究頁",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "c",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3c.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 6
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "curator_score": 4
             },
             {
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3d.webp",
               "kind": "still",
               "source_label": "b-mooda7f03",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Gottman Institute 官方研究頁",
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-3.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-3.jpg",
           "heading": "30 歲前後，孤獨感真的有一個峰值",
           "display_copy": "孤獨感並非年紀越大越深\n\n研究發現它有【兩個高峰】：\n一個在接近 30 歲前後\n一個在 60 歲附近\n低谷反而在 40 歲與 75 歲\n\n台灣 25–39 歲未婚率：【61.59%】\n\n這不是個人問題\n是整整一個世代同時走到的轉折\n\n資料來源：Luhmann & Hawkley (2016), PMC/NCBI；內政部 2024 年戶政統計",
-          "default_cid": "a"
+          "default_cid": "c"
         },
         {
           "n": 4,
@@ -6722,83 +6745,95 @@
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4a.webp",
               "kind": "still",
               "source_label": "loganury.com（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
               "cid": "b",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4b.webp",
               "kind": "still",
               "source_label": "loganury.com",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 5
             },
             {
               "cid": "c",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4c.webp",
               "kind": "still",
               "source_label": "loganury.com",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 4
             },
             {
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4d.webp",
               "kind": "still",
               "source_label": "loganury.com（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
-              "kind": "still",
-              "source_label": "Her"
+              "source_kind": "SHOT",
+              "curator_score": 3
             },
             {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
               "kind": "still",
               "source_label": "Logan Ury",
-              "source_kind": "WM"
+              "source_kind": "WM",
+              "curator_score": 1
             },
             {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
               "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
-              "kind": "still",
-              "source_label": "Logan Ury",
-              "source_kind": "WM"
+              "source_label": "Her",
+              "curator_score": 1
             },
             {
               "cid": "j",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
               "kind": "still",
               "source_label": "Her",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 1
             },
             {
               "cid": "k",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4k.webp",
               "kind": "still",
               "source_label": "Her",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 1
             },
             {
               "cid": "l",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4l.webp",
               "kind": "still",
               "source_label": "The Later Daters",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 1
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM",
+              "curator_score": 1
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM",
+              "curator_score": 1
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4h.webp",
+              "kind": "still",
+              "source_label": "Logan Ury",
+              "source_kind": "WM",
+              "curator_score": 1
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-4.webp",
@@ -6812,149 +6847,166 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "b",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5b.webp",
               "kind": "still",
               "source_label": "Amazon / Simon & Schuster",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 7
             },
             {
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5d.webp",
               "kind": "still",
               "source_label": "Amazon / Simon & Schuster",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 6
             },
             {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5g.webp",
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5a.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
+              "source_kind": "SHOT",
+              "curator_score": 5
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Amazon / Simon & Schuster（Google 圖片）",
+              "source_kind": "SHOT",
+              "curator_score": 3
             },
             {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5e.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 4
             },
             {
               "cid": "f",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5f.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 3
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-5.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-5.jpg",
           "heading": "約會是一門需要學的技能，不是本能",
           "display_copy": "Logan Ury 說了一件\n讓很多人鬆一口氣的事：\n\n「Dating 在人類歷史上\n其實是非常新的事物\n\n我們天生就懂得愛\n但【不代表】我們生來\n就懂得約會\n\n什麼是好伴侶的特質\n這不是本能。是需要學習的」\n\n30+ 卡住不是你的問題\n你只是之前從來沒被教過\n\n資料來源：Logan Ury, How Not to Die Alone (2021)；Behavioral Scientist interview",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 6,
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6a.webp",
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6c.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 6
             },
             {
               "cid": "b",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6b.webp",
               "kind": "still",
               "source_label": "a-mood5c3e6",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 5
             },
             {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6c.webp",
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 2
             },
             {
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-6d.webp",
               "kind": "still",
               "source_label": "b-mood9141d",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 3
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-6.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-6.jpg",
           "heading": "行為科學給「不知道怎麼開始」的具體步驟",
           "display_copy": "行為科學的答案不是\n「鼓起勇氣」\n\n而是把「開始」【拆解成步驟】：\n\n① 設定截止日期\n② 準備照片、下載 App\n③ 向朋友公開宣告\n④ 建立新的自我認同\n⑤ 每週一次約會，不超過\n⑥ 對自己保持同理心\n⑦ 不聯絡前任\n\n把模糊的情感決定\n變成可以執行的小動作\n\n資料來源：Logan Ury, How Not to Die Alone；ericsandroni.com 摘要",
-          "default_cid": "a"
+          "default_cid": "c"
         },
         {
           "n": 7,
           "role": "品牌立場",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "b",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7b.webp",
               "kind": "still",
               "source_label": "a-moodc8425",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
-              "kind": "still",
-              "source_label": "b-mood60273",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 6
             },
             {
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
               "kind": "still",
               "source_label": "About Time",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 5
             },
             {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
+              "cid": "c",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7c.webp",
               "kind": "still",
-              "source_label": "About Time",
-              "low_q": true
+              "source_label": "b-mood60273",
+              "source_kind": "SHOT",
+              "curator_score": 4
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "curator_score": 3
             },
             {
               "cid": "f",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
               "kind": "still",
               "source_label": "About Time",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 3
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
+              "kind": "still",
+              "source_label": "About Time",
+              "low_q": true,
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-7.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260825-%E7%B5%90%E5%A9%9A%E6%A2%9D%E4%BB%B6%E4%BB%8A%E5%A4%A9%E5%9C%A8PTT%E6%8E%A8%E7%88%86/slide-7.jpg",
           "heading": "Lava 把「怎麼開始」這一步，設計進去了",
           "display_copy": "大多數 App 的節奏\n是為 20 代設計的\n\n無止盡滑卡、尬聊、慢熱：台灣 30+ 面對的是\n結構性的時間壓縮\n【工作與體力都不允許同等消耗】\n\nLava 把第一步從\n「怎麼開口」\n變成「去哪裡」\n\n讓那個門檻低一點點\n低到你真的能跨過去",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 8,
@@ -6965,77 +7017,88 @@
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
-              "kind": "still",
-              "source_label": "a-mood48bcc",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
               "cid": "c",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8c.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 7
             },
             {
-              "cid": "d",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
+              "cid": "b",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8b.webp",
               "kind": "still",
-              "source_label": "b-moodab9ca",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
-              "kind": "still",
-              "source_label": "Brooklyn Nine Nine",
-              "low_q": true
+              "source_label": "a-mood48bcc",
+              "source_kind": "SHOT",
+              "curator_score": 7
             },
             {
               "cid": "h",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8h.webp",
               "kind": "still",
               "source_label": "Amlie",
-              "low_q": true
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8j.webp",
-              "kind": "still",
-              "source_label": "Amlie",
-              "low_q": true
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8k.webp",
-              "kind": "still",
-              "source_label": "Begin Again",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 5
             },
             {
               "cid": "l",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8l.webp",
               "kind": "still",
               "source_label": "Begin Again",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8k.webp",
+              "kind": "still",
+              "source_label": "Begin Again",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true,
+              "curator_score": 3
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8d.webp",
+              "kind": "still",
+              "source_label": "b-moodab9ca",
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8j.webp",
+              "kind": "still",
+              "source_label": "Amlie",
+              "low_q": true,
+              "curator_score": 1
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-8.webp",
@@ -7366,7 +7429,8 @@
           }
         ],
         "rhythm": "整篇節奏呈『暗→暗→資訊爆炸→人像→書封→亮→暖→暗→純黑』的M型走勢，中段第5—7張是唯一有溫度的視覺呼吸，但首尾雙暗把情緒拉不起來；建議把第8張拉亮、第9張換色，讓輪播結尾能量向上收，而非沉入黑洞。"
-      }
+      },
+      "curated_at": "2026-09-02T00:38:26+08:00"
     },
     {
       "id": "86eyq3yp0",
