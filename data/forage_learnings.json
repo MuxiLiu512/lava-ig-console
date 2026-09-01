@@ -107,7 +107,9 @@
   "b984ac736f76": 2,
   "c1e7a5220f73": 2,
   "8eb06a80b188": 1,
-  "7ddfa9938a78": 1
+  "7ddfa9938a78": 1,
+  "1ebb3b0c1c24": 1,
+  "3c34d61a352c": 1
  },
  "sciencedirect.com": {
   "fails": 1,
@@ -132,5 +134,17 @@
   "strategy": "skip_screenshot",
   "why": "近白頁 100%（登入牆/空頁）",
   "last": "2026-08-27T01:24:57+08:00"
+ },
+ "deadline.com": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 100%（登入牆/空頁）",
+  "last": "2026-09-01T18:24:12+08:00"
+ },
+ "tandfonline.com": {
+  "fails": 1,
+  "strategy": "skip_screenshot",
+  "why": "近白頁 98%（登入牆/空頁）",
+  "last": "2026-09-01T18:25:29+08:00"
  }
 }
