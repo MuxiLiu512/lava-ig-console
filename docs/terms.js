@@ -65,6 +65,10 @@ function tip(key) { return (TERMS[key] || [, ""])[1] || ""; }
 // 候選圖來源 → 介面標籤。機器代號（source_kind、檔名前綴）只有這裡認得。
 function candSourceLabel(c) {
   const f = String(c.src || ""), k = String(c.source_kind || "");
+  // source_engine 是入料時固化的欄位；舊資料沒有就退回檔名比對（縮圖路徑通常認不出，
+  // 因此只當備援）。〔2026-09-01：Apify 一直在跑，是標籤看不出來〕
+  if (c.source_engine === "apify") return t("apify");
+  if (c.source_engine === "ddg") return "DuckDuckGo 圖片";
   if (k === "SHOT") return /-SHOT-[a-z]-ap/.test(f) ? t("apify") : t("shot");
   if (k === "WM") return "Wikimedia";
   if (k === "OV") return "Open Library";

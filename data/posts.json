@@ -3679,38 +3679,7 @@
               "src": "assets/20260824-AnxiousAttac/slide-1i.webp",
               "kind": "still",
               "source_label": "Marriage Story",
-              "curator_score": 6
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-AnxiousAttac/slide-1j.webp",
-              "kind": "still",
-              "source_label": "Marriage Story",
-              "low_q": true,
               "curator_score": 5
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
-              "source_kind": "SHOT",
-              "curator_score": 5
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
-              "source_kind": "SHOT",
-              "curator_score": 4
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "curator_score": 4
             },
             {
               "cid": "f",
@@ -3718,7 +3687,38 @@
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend",
               "low_q": true,
+              "curator_score": 5
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-AnxiousAttac/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
               "curator_score": 3
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT",
+              "curator_score": 2
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT",
+              "curator_score": 2
             },
             {
               "cid": "a",
@@ -3726,7 +3726,7 @@
               "kind": "still",
               "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
               "source_kind": "SHOT",
-              "curator_score": 2
+              "curator_score": 1
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-1.webp",
@@ -3745,7 +3745,7 @@
               "kind": "still",
               "source_label": "A Separation",
               "low_q": true,
-              "curator_score": 7
+              "curator_score": 6
             },
             {
               "cid": "e",
@@ -3800,21 +3800,6 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life",
-              "low_q": true,
-              "curator_score": 7
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life",
-              "curator_score": 6
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-AnxiousAttac/slide-4e.webp",
               "kind": "still",
@@ -3822,11 +3807,19 @@
               "curator_score": 6
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-4d.webp",
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
               "kind": "still",
               "source_label": "Because This Is My First Life",
+              "low_q": true,
               "curator_score": 5
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life",
+              "curator_score": 4
             },
             {
               "cid": "i",
@@ -3834,7 +3827,7 @@
               "kind": "still",
               "source_label": "One Day",
               "low_q": true,
-              "curator_score": 5
+              "curator_score": 4
             },
             {
               "cid": "h",
@@ -3850,7 +3843,14 @@
               "kind": "still",
               "source_label": "One Day",
               "low_q": true,
-              "curator_score": 4
+              "curator_score": 3
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Because This Is My First Life",
+              "curator_score": 3
             },
             {
               "cid": "b",
@@ -3873,7 +3873,7 @@
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-4.jpg",
           "heading": "「安全型」不是一個固定的到達點",
           "display_copy": "研究估計約【50～60%】的人是安全型。但安全型不是「抵達終點」，\n而是一種需要持續實踐的動態能力。\n\n安全型的人依然會受傷，\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰，\n但這份相信，也需要被不斷餵養。\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
-          "default_cid": "f"
+          "default_cid": "e"
         },
         {
           "n": 5,
@@ -3885,14 +3885,6 @@
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind",
               "low_q": true,
-              "curator_score": 8
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-AnxiousAttac/slide-5i.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "low_q": true,
               "curator_score": 7
             },
             {
@@ -3901,46 +3893,7 @@
               "kind": "still",
               "source_label": "Hometown Cha Cha Cha",
               "low_q": true,
-              "curator_score": 6
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "curator_score": 5
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true,
               "curator_score": 4
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true,
-              "curator_score": 4
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
-              "source_kind": "SHOT",
-              "curator_score": 3
-            },
-            {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
-              "source_kind": "SHOT",
-              "curator_score": 3
             },
             {
               "cid": "c",
@@ -3948,6 +3901,53 @@
               "kind": "still",
               "source_label": "Hometown Cha Cha Cha",
               "low_q": true,
+              "curator_score": 3
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-AnxiousAttac/slide-5i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true,
+              "curator_score": 3
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "curator_score": 2
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT",
+              "curator_score": 2
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT",
               "curator_score": 2
             }
           ],
@@ -3967,7 +3967,7 @@
               "kind": "still",
               "source_label": "組圖：© amirlevinemd.com",
               "source_kind": "SHOT",
-              "curator_score": 5
+              "curator_score": 7
             },
             {
               "cid": "a",
@@ -3997,18 +3997,18 @@
           "role": "品牌立場",
           "candidates": [
             {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Before Sunset",
-              "curator_score": 7
-            },
-            {
               "cid": "c",
               "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
               "kind": "still",
               "source_label": "Before Sunset",
               "curator_score": 6
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Before Sunset",
+              "curator_score": 5
             },
             {
               "cid": "e",
@@ -4023,7 +4023,7 @@
               "kind": "still",
               "source_label": "a-mood99d60",
               "source_kind": "SHOT",
-              "curator_score": 5
+              "curator_score": 4
             },
             {
               "cid": "b",
@@ -4038,7 +4038,7 @@
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-7.jpg",
           "heading": "安全感是動詞，不是名詞",
           "display_copy": "「找到安全型的人」\n不是關係的終點，\n是起點的起點。\n\n研究指出，即使兩個安全型的人在一起，\n也需要【刻意投入】才能持續深化親密感：自滿，是安全型關係最容易跌倒的地方。\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships",
-          "default_cid": "d"
+          "default_cid": "c"
         },
         {
           "n": 8,
@@ -4345,7 +4345,7 @@
         "counts": {},
         "issues": []
       },
-      "curated_at": "2026-09-01T18:06:40+08:00"
+      "curated_at": "2026-09-01T18:11:47+08:00"
     },
     {
       "id": "20260824-Rizz進了牛津詞典但r",

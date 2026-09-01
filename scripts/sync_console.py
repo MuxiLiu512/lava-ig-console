@@ -154,6 +154,29 @@ def _line_notify(text):
     return True
 
 
+def _slide_text_hash(p):
+    """每張 slide 的「排版當下用的文字」指紋。
+    〔2026-09-01 Jesse：圖上文字跟下方文字不一致〕
+    原本判斷要不要重排只比時間戳（審核／文案編輯），但腳本直接改 posts.json
+    的情況（例如 copy_fix 把破折號改成冒號）不動任何被監看的時間戳——
+    於是圖永遠停在舊字。實例：8/25 排版、8/27 修破折號、圖到 9/1 還印著破折號，
+    等於閘門擋掉的標點照樣上了圖。改用內容指紋：誰改的都逃不掉。"""
+    out = {}
+    for s in p.get("slides", []):
+        raw = (s.get("heading") or "") + "\x1f" + (s.get("display_copy") or "")
+        out[str(s.get("n"))] = hashlib.md5(raw.encode("utf-8")).hexdigest()[:12]
+    return out
+
+
+def _render_stale_slides(p):
+    """回傳「圖上文字已過期」的張號清單（指紋不符）。無指紋＝舊資料，不猜。"""
+    old = p.get("render_src_hash") or {}
+    if not old:
+        return []
+    now = _slide_text_hash(p)
+    return sorted([int(n) for n, h in now.items() if old.get(n) and old[n] != h])
+
+
 def _load_local_sources():
     if os.path.exists(LOCAL_SOURCES):
         with open(LOCAL_SOURCES, encoding="utf-8") as f:
@@ -443,6 +466,13 @@ def _build_and_write(m):
                 entry["source_label"] = c["source_label"]
             if c.get("source_kind"):
                 entry["source_kind"] = c["source_kind"]   # WM/OV/OL/DESIGN → UI badge 與法遵標注都靠它
+            # 來源引擎〔2026-09-01〕：原檔名 slideN-SHOT-x-ap… 的 ap＝Apify Google 圖片。
+            # 入料後 src 只剩縮圖路徑（assets/<id>/slide-3a.webp），前端再也認不出來源，
+            # 於是所有策展產物一律顯示「畫面截圖」——看起來就像 Google 圖片那條線停掉了。
+            # 在這裡把來源固化成欄位，前端不必再從檔名猜。
+            _m = re.search(r"-SHOT-[a-z]-(ap|dd)?", _bn)
+            if _m:
+                entry["source_engine"] = {"ap": "apify", "dd": "ddg"}.get(_m.group(1) or "", "shot")
             if c.get("low_q"):
                 entry["low_q"] = True
             if c.get("prompt_hash"):
@@ -871,7 +901,8 @@ def render_approved(args):
             # 仍必須重出——否則修改靜默失效，且 WF10 到點把舊版發上 IG，無法回收。
             _ts = [e.get("ts", "") for e in ce_list if e.get("post_id") == pid] + [r.get("ts", "")]
             _newest = max([t for t in _ts if t] or [""])
-            if not (_newest and p.get("rendered_at") and _newest > p["rendered_at"]):
+            if not (_render_stale_slides(p)
+                    or (_newest and p.get("rendered_at") and _newest > p["rendered_at"])):
                 continue
             print("   ↻ %s 排程後有新修改（%s）→ 重出成品" % (pid[:22], _newest[:16]))
         dec, scope = r.get("decision"), r.get("scope")
@@ -886,10 +917,15 @@ def render_approved(args):
         for e in ce_list:
             if e.get("post_id") == pid and e.get("ts", "") > want_ts:
                 want_ts = e["ts"]
-        if not getattr(args, "force", False) and p.get("rendered_at") and p["rendered_at"] >= want_ts and all(
-                s.get("public_url") for s in p["slides"] if s.get("final_src") or s.get("candidates")):
+        _stale_txt = _render_stale_slides(p)
+        if (not getattr(args, "force", False) and not _stale_txt
+                and p.get("rendered_at") and p["rendered_at"] >= want_ts and all(
+                s.get("public_url") for s in p["slides"] if s.get("final_src") or s.get("candidates"))):
             skipped.append((pid, "已渲染且無新變更"))
             continue
+        if _stale_txt:
+            print("   ↻ %s 第 %s 張的文字與圖上不符 → 重出成品"
+                  % (pid[:22], "、".join(map(str, _stale_txt))))
         entry = ls.get(pid) or {}
         # 候選圖在審核之後被更新過 → 該審核的 cid 選圖已失效
         stale = bool(p.get("candidates_since")) and r.get("ts", "") < p["candidates_since"]
@@ -1026,6 +1062,7 @@ def render_approved(args):
             skipped.append((pid, "渲染失敗：" + (rr.stderr or rr.stdout)[-300:].strip()))
             continue
         p["rendered_at"] = _now_iso()
+        p["render_src_hash"] = _slide_text_hash(p)   # 圖是用「這份文字」排的
         p.pop("render_note", None)   # 渲染成功清掉卡住原因
         if choice:
             p["copy_choice"] = choice
@@ -1828,6 +1865,92 @@ def refresh_candidates(args):
 DESIGN_LAYOUTS_REFRESH = ("diagram", "price", "cta")
 
 
+def curate_post(args):
+    """把「整個候選池」送進 WF14 策展員（Claude vision，受眾視角）重排。
+    〔2026-09-01 Jesse：把 TMDB 劇照也接進策展員〕
+
+    為什麼接在入料後而不是各來源自己接：TMDB 劇照走 WF06→上傳→Drive，
+    截圖走 forage，兩條線各自排序等於沒有共同標準。入料後所有候選都已在本機，
+    一次策展全部涵蓋——而且視覺模型看得出「這是海報主視覺不是劇情畫格」，
+    正是本機啟發式分不出來的那件事（平坦區塊占比實測：海報 0.33 vs 劇照 0.41）。
+
+    只重排不刪圖：策展員的判斷是建議，最終仍由你在審稿台選。
+    解析度閘門先跑（過小的早已剔除），策展員只在合格池裡排順序。"""
+    import importlib.util
+    fs_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "forage_shots.py")
+    spec = importlib.util.spec_from_file_location("fs", fs_path)
+    FS = importlib.util.module_from_spec(spec)
+    try:
+        spec.loader.exec_module(FS)
+    except Exception as e:
+        print("✗ 載入 forage_shots 失敗：%s" % e); return
+    ls = _load_local_sources()
+    d = load("posts.json")
+    targets = [p for p in d.get("posts", [])
+               if (not args.post_id or p["id"] == args.post_id)
+               and p.get("status") in ("awaiting_review", "approved")
+               and not p.get("curated_at")]
+    if args.post_id:
+        targets = [p for p in d.get("posts", []) if p["id"] == args.post_id]
+    if not targets:
+        print("（沒有待策展的貼文）"); return
+    done = 0
+    for p in targets[: (args.limit or 1)]:
+        srcs = (ls.get(p["id"]) or {}).get("sources") or {}
+        staged, copy_by, intent = {}, {}, {}
+        for s in p.get("slides", []):
+            n = int(s.get("n"))
+            cands = s.get("candidates") or []
+            if len(cands) < 3:           # 1-2 張沒有排序的意義，省一次呼叫
+                continue
+            m = srcs.get(str(n)) or {}
+            items = []
+            for c in cands:
+                path = m.get(c.get("cid"))
+                if path and os.path.exists(path):
+                    items.append({"id": c["cid"], "path": path,
+                                  "source_type": c.get("source_kind") or c.get("kind") or "image",
+                                  "credit": c.get("source_label") or ""})
+            if len(items) >= 3:
+                staged[n] = items
+                copy_by[n] = {"heading": s.get("heading") or "", "display_copy": s.get("display_copy") or ""}
+                intent[n] = {"role": s.get("role") or ""}
+        if not staged:
+            print("⏭ %s：沒有可策展的版位（候選不足或原檔不在本機）" % p["id"][:26]); continue
+        print("→ 策展 %s（%d 個版位、%d 張候選）"
+              % (p["id"][:26], len(staged), sum(len(v) for v in staged.values())))
+        try:
+            ranking, scores, focus, curated = FS.curate(staged, copy_by, intent)
+        except Exception as e:
+            print("  ! 策展呼叫失敗（%s），維持原順序" % type(e).__name__); continue
+        if not curated:
+            print("  ! 策展員無回應，維持原順序（解析度排序仍在）"); continue
+        moved = 0
+        for s in p.get("slides", []):
+            n = int(s.get("n"))
+            order = ranking.get(n)
+            if not order:
+                continue
+            by = {c["cid"]: c for c in (s.get("candidates") or [])}
+            new = [by[cid] for cid in order if cid in by] + \
+                  [c for c in (s.get("candidates") or []) if c["cid"] not in set(order)]
+            if [c["cid"] for c in new] != [c["cid"] for c in (s.get("candidates") or [])]:
+                moved += 1
+            s["candidates"] = new
+            sc = (scores or {}).get(n) or {}
+            for c in new:
+                if c["cid"] in sc:
+                    c["curator_score"] = sc[c["cid"]]
+            if new:
+                s["default_cid"] = new[0]["cid"]
+        p["curated_at"] = _now_iso()
+        done += 1
+        print("  ✓ 策展完成：%d 個版位重排" % moved)
+    if done:
+        save("posts.json", d)
+    print("策展完成：%d 篇" % done)
+
+
 def regrade_candidates(args):
     """把解析度閘門套用到「已經在庫」的貼文〔2026-09-01〕。
     新閘門只在入料時作用，存貨還是舊排序——等於修了以後看不到。這支補上。
@@ -2261,6 +2384,7 @@ def main():
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
     a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.add_argument("--topup", action="store_true", help="已有舊圖的 slide 也補抓一輪 Apify 候選（兩來源並存）"); a.set_defaults(func=forage_pending)
+    a = sub.add_parser("curate-post", help="整個候選池送 WF14 策展員（含 TMDB 劇照）重排"); a.add_argument("--post-id", default=None); a.add_argument("--limit", type=int, default=1); a.set_defaults(func=curate_post)
     a = sub.add_parser("regrade-candidates", help="把解析度閘門套用到已在庫的貼文（剔除過小、依銳利度重排）"); a.add_argument("--dry", action="store_true"); a.set_defaults(func=regrade_candidates)
     a = sub.add_parser("refresh-candidates", help="已入板但缺料的稿：重掃 Drive 把補到的素材讀回 posts.json"); a.add_argument("--limit", type=int, default=3); a.add_argument("--post-id", default=None); a.set_defaults(func=refresh_candidates)
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)

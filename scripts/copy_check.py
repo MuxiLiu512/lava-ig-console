@@ -41,6 +41,42 @@ RULES = [
      "改用「平日優惠場／精選時段／店家加碼／黃金場」等既定說法。"),
 ]
 
+# 只作用在「會被壓到圖上」的文字（slide heading／display_copy）的版面規則。
+# 〔2026-09-01 Jesse：內文撰寫有點潦草〕實測近 8 篇：35 處把「資料來源：」印在圖上、
+# 其中 9 處是完整網址路徑（anniewright.com/secure-attachment-romantic-relationship）。
+# IG 圖卡印一串網址，任何專業帳號都不會這樣做——這不是 AI 味問題，是版面規範缺席。
+# 出處仍要標（事實查核要求），但圖上只留來源「名字」，完整網址進貼文文案。
+SLIDE_RULES = [
+    ("圖上印網址", r"[A-Za-z0-9-]+\.(?:com|org|net|edu|gov|io|co)/[A-Za-z0-9\-/_.%]+", "block",
+     "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"),
+    ("圖上單行過長", None, "warn",
+     "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"),
+]
+LINE_MAX = 24
+
+
+def slide_layout_issues(p):
+    """圖面文字的版面問題（只查會被壓上圖的欄位）。"""
+    out = []
+    for s in p.get("slides", []):
+        n = s.get("n")
+        for field, label in (("heading", "主標"), ("display_copy", "內文")):
+            txt = s.get(field) or ""
+            if not txt:
+                continue
+            for name, pat, sev, fix in SLIDE_RULES:
+                if pat and re.search(pat, txt):
+                    out.append({"rule": name, "severity": sev, "where": "第%s張%s" % (n, label),
+                                "line": re.search(pat, txt).group(0)[:70], "fix": fix})
+            for ln in txt.split("\n"):
+                if len(ln.strip()) > LINE_MAX:
+                    out.append({"rule": "圖上單行過長", "severity": "warn",
+                                "where": "第%s張%s" % (n, label),
+                                "line": ln.strip()[:40] + "…（%d 字）" % len(ln.strip()),
+                                "fix": SLIDE_RULES[1][3]})
+                    break
+    return out
+
 
 def post_text_parts(p):
     """回傳 [(位置說明, 文字)]，讓報告能指出是哪一格出問題。"""
@@ -68,9 +104,11 @@ def check_post(p):
                     "line": "%s：…%s…" % (where, txt[a:b].replace("\n", " ")),
                     "fix": fix,
                 })
+    issues += slide_layout_issues(p)
+    names = [n for n, *_ in RULES] + [n for n, *_ in SLIDE_RULES]
     return {"ts": SC._now_iso(), "pass": not issues,
             "counts": {n: sum(1 for i in issues if i["rule"] == n)
-                       for n, *_ in RULES if any(i["rule"] == n for i in issues)},
+                       for n in names if any(i["rule"] == n for i in issues)},
             "issues": issues[:40]}
 
 

@@ -198,6 +198,13 @@ if [ ! -f "$ITR_STAMP" ]; then
   fi
 fi
 
+# 圖像策展（WF14 受眾視角）〔2026-09-01 Jesse：把 TMDB 劇照也接進策展員〕
+# 入料後所有候選都在本機，一次策展涵蓋劇照＋截圖；視覺模型看得出海報與劇照的差別，
+# 那正是本機啟發式分不出來的。只重排不刪圖，最終仍由人選。每輪最多 1 篇（省額度）。
+echo "圖像策展" >"$RUNMARK"
+CUR=$(timeout 420 "$PY" scripts/sync_console.py curate-post --limit 1 2>&1)
+echo "$CUR" | grep -E "→ 策展|✓ 策展|策展完成：[1-9]|!" | sed "s/^/[$(date '+%m-%d %H:%M')] 策展/" >>"$LOG"
+
 # 重掃缺料：把上一步（或前幾輪）補到的 SHOT 素材讀回 posts.json。
 # forage 只把檔案寫進 Drive 的「底圖」資料夾，ingest-new 又只吃「不在 posts.json 的卡」，
 # 已入板的稿因此永遠不會被重讀——2026-08-25 七篇稿掛在「缺料」不會自己好，
