@@ -107,6 +107,20 @@ def diagnose(posts, ideas, only=None):
                 out.append(("bad", title, "排定時間已過 %.0f 小時仍未發佈" % h,
                             "查 n8n WF10 執行紀錄與 IG token 是否過期"))
 
+        # 6b) 已排程卻違反閘門〔2026-09-01：Laa 篇帶著視覺 block 排進明晚發佈〕
+        if st == "scheduled":
+            ovk = {o.get("key") for o in (p.get("gate_overrides") or [])}
+            bl = []
+            for gate, key in (("fact", "fact"), ("qa", "qa")):
+                for idx, i in enumerate((p.get(gate) or {}).get("issues", [])):
+                    if (i.get("severity") or i.get("sev")) == "block" and \
+                       key + ":" + str(i.get("line") or i.get("detail") or idx)[:60] not in ovk:
+                        bl.append(i)
+            if bl:
+                out.append(("bad", title,
+                            "已排程（%s）但閘門有 %d 項未過" % (str(p.get("publish_at"))[:16], len(bl)),
+                            "到審稿台處理或取消排程，否則到點會照發"))
+
         # 6) 渲染卡住的明確標記
         if p.get("render_note") and st != "published":
             out.append(("bad", title, "排版卡住：%s" % str(p["render_note"])[:60],

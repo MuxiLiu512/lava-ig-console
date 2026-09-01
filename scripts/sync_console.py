@@ -1427,18 +1427,22 @@ def events_apply(args):
             tgt = posts.get(target, {})
             ovk = {o.get("key") for o in (tgt.get("gate_overrides") or [])}
             blocks = []
-            for idx, i in enumerate((tgt.get("fact") or {}).get("issues", [])):
-                if (i.get("severity") or i.get("sev")) != "block":
-                    continue
-                k = "fact:" + str(i.get("line") or i.get("detail") or idx)[:60]
-                if k not in ovk:
-                    blocks.append(i)
+            # 事實與視覺兩道都要驗〔2026-09-01〕：不變量 I3 早就宣告「視覺未過不得排程」，
+            # 但排程守門只驗事實，於是 Laa 篇帶著視覺 block 排進了明晚的發佈佇列。
+            # 宣告了卻沒有人執法的規則，等於沒有規則。
+            for gate, key in (("fact", "fact"), ("qa", "qa")):
+                for idx, i in enumerate((tgt.get(gate) or {}).get("issues", [])):
+                    if (i.get("severity") or i.get("sev")) != "block":
+                        continue
+                    k = key + ":" + str(i.get("line") or i.get("detail") or idx)[:60]
+                    if k not in ovk:
+                        blocks.append(i)
             if blocks:
                 tgt["schedule_refused"] = {
                     "ts": ev.get("ts"),
-                    "why": "事實查核仍有 %d 項未解決：%s" % (len(blocks), str(blocks[0].get("line"))[:80]),
+                    "why": "閘門仍有 %d 項未解決：%s" % (len(blocks), str(blocks[0].get("line") or blocks[0].get("detail"))[:80]),
                 }
-                ok, msg = False, "拒絕排程：事實查核 %d 項未過（維持已核准）" % len(blocks)
+                ok, msg = False, "拒絕排程：閘門 %d 項未過（維持已核准）" % len(blocks)
                 try:
                     _line_notify("⚠ 排程被擋下：%s\n%s\n請回操控台修正文字或標記為已確認。"
                                  % (target, tgt["schedule_refused"]["why"]))

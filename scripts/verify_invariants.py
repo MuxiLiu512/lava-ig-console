@@ -17,10 +17,27 @@ import os, sys, json, glob, datetime, argparse
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 DATA = os.path.join(REPO, "data")
 BAD = []
+WARN = []
 
 
 def fail(rule, detail):
     BAD.append((rule, detail))
+
+
+def warn(rule, detail):
+    """進度類問題：東西沒在前進，但資料本身沒壞。
+    不擋 CI（會誤擋正常的製作中狀態），但一定要被印出來、被哨兵看到。"""
+    WARN.append((rule, detail))
+
+
+def _age_h(iso):
+    if not iso:
+        return None
+    try:
+        return (datetime.datetime.now().astimezone()
+                - datetime.datetime.fromisoformat(iso)).total_seconds() / 3600
+    except Exception:
+        return None
 
 
 def main():
@@ -107,12 +124,116 @@ def main():
                 fail("I9", "%s 事實查核有 %d 項 block：%s"
                      % (p["id"], len(blk), blk[0].get("line", "")[:60]))
 
+    # ── I10-I15〔2026-09-01 新增〕──────────────────────────────────────
+    # 為什麼補這幾條：I1-I9 全部在驗「資料長得對不對」，沒有一條在驗
+    # 「東西有沒有在前進」或「兩份該一致的資料是否真的一致」。
+    # 這三天抓到的 bug 全部落在後兩類，所以全部靠人來回試才找得到：
+    #   稿檔壞掉讓整輪排版全滅（資料一直合法，只是永遠不動）
+    #   圖上印著已被修掉的破折號（兩份記錄不一致）
+    #   重生的稿沒人接手（狀態合法，就是不前進）
+    # 規則：每次事故都要變成這裡的一條，否則同一類還會再來一次。
+    import hashlib
+
+    def _slide_hash(p):
+        return {str(s.get("n")): hashlib.md5(
+            ((s.get("heading") or "") + "\x1f" + (s.get("display_copy") or "")).encode("utf-8")
+        ).hexdigest()[:12] for s in p.get("slides", [])}
+
+    try:
+        ce = json.load(open(os.path.join(DATA, "copy_edits.json"), encoding="utf-8")).get("edits", [])
+    except Exception:
+        ce = []
+    try:
+        ideas = json.load(open(os.path.join(DATA, "ideas.json"), encoding="utf-8")).get("ideas", [])
+    except Exception:
+        ideas = []
+
+    BANNED_ON_IMAGE = ("——",)          # 圖是最終呈現，禁句在這裡出現＝已經上到成品
+    pids = {p["id"] for p in posts} | {p.get("clickup_task_id") for p in posts}
+
+    for p in posts:
+        pid = p["id"]
+        st = p.get("status")
+        has_final = any(s.get("public_url") for s in p.get("slides", []))
+
+        # I10 圖文一致：成品是用「現在這份文字」排的嗎（指紋比對，來源無關）
+        if has_final and p.get("render_src_hash"):
+            now_h = _slide_hash(p)
+            drift = [n for n, h in now_h.items()
+                     if p["render_src_hash"].get(n) and p["render_src_hash"][n] != h]
+            if drift:
+                (fail if st == "scheduled" else warn)(
+                    "I10", "%s 第 %s 張的圖是用舊文字排的（文字已改、圖未更新）"
+                    % (pid[:26], "、".join(sorted(drift))))
+
+        # I11 禁句不得出現在成品上。閘門擋的是輸入，這條驗輸出——
+        # 8/27 修好的破折號到 9/1 還印在圖上，就是因為沒有人驗過輸出。
+        for n, lines in (p.get("rendered_lines") or {}).items():
+            hit = [b for b in BANNED_ON_IMAGE if any(b in str(l) for l in (lines or []))]
+            if hit:
+                # scheduled 還來得及修 → 擋下；published 已上線收不回 → 只記錄，
+                # 留給週報當「這條規則漏過幾次」的統計，不要每輪都紅著沒人能處理。
+                (fail if st == "scheduled" else warn)(
+                    "I11", "%s 第 %s 張圖上有禁句 %s%s"
+                    % (pid[:26], n, "／".join(hit), "（已發佈，無法回收）" if st == "published" else ""))
+
+        # I12 進度：核准且候選齊全，卻遲遲沒有成品（這次卡 6 天的那類）
+        if st == "approved" and not p.get("render_note") and not has_final:
+            ready = all(s.get("candidates") for s in p.get("slides", [])
+                        if "CTA" not in str(s.get("role", ""))
+                        and str(s.get("product_layout") or "") not in ("diagram", "price", "cta"))
+            h = _age_h(p.get("status_since") or p.get("candidates_since"))
+            if ready and h and h > 4:
+                warn("I12", "%s 核准後 %.0f 小時仍無成品（排版可能整輪失敗）" % (pid[:26], h))
+
+        # I13 文案修正要活著：copy_edits 的最新值必須等於現值。
+        # 不相等＝有人寫錯層或被重餵沖掉（破折號復活的那個 bug）。
+        latest = {}
+        for e in sorted([x for x in ce if x.get("post_id") == pid], key=lambda x: x.get("ts", "")):
+            for ed in e.get("edits", []):
+                latest[(str(ed.get("n")), ed.get("field"))] = ed.get("edited")
+        for (n, field), val in latest.items():
+            if field == "caption":
+                cur = p.get("caption")
+            else:
+                sl = next((s for s in p.get("slides", []) if str(s.get("n")) == n), None)
+                cur = sl.get(field) if sl else None
+            if cur is not None and val is not None and cur != val:
+                warn("I13", "%s 第 %s 張 %s 的修改沒有生效（現值與 copy_edits 最新值不符）"
+                     % (pid[:26], n, field))
+                break
+
+    # I14 放行對帳：放行的靈感必須變成貼文（幻影卡與撰稿斷線都在這裡現形）
+    for i in ideas:
+        if i.get("decision") != "approve":
+            continue
+        tid = i.get("task_id") or i.get("id")
+        if tid in pids:
+            continue
+        h = _age_h(i.get("decided_at"))
+        if h and h > 2:
+            warn("I14", "靈感 %s 放行 %.0f 小時仍無對應貼文" % (str(tid)[:14], h))
+
+    # I15 哨兵活著：心跳停了，上面所有檢查都是在驗一份不會再更新的資料
+    try:
+        hb = json.load(open(os.path.join(DATA, "heartbeat.json"), encoding="utf-8"))
+        h = _age_h(hb.get("ts"))
+        if h and h > 2:
+            warn("I15", "哨兵心跳落後 %.1f 小時（產線可能停擺）" % h)
+    except Exception:
+        pass
+
+    if WARN:
+        print("🟡 進度警告 %d 條（不擋 CI，但要看）：" % len(WARN))
+        for r, d in WARN:
+            print("  [%s] %s" % (r, d))
     if BAD:
         print("🔴 不變量違反 %d 條：" % len(BAD))
         for r, d in BAD:
             print("  [%s] %s" % (r, d))
         return 1
-    print("✅ 不變量 I1-I9 全過（posts %d、archived %d）" % (len(posts), len(arch)))
+    print("✅ 不變量 I1-I15 全過（posts %d、archived %d%s）"
+          % (len(posts), len(arch), "；進度警告 %d 條" % len(WARN) if WARN else ""))
     return 0
 
 
