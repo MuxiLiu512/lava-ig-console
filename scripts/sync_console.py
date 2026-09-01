@@ -139,6 +139,21 @@ def _now_iso():
 LOCAL_SOURCES = os.path.join(DATA, ".local_sources.json")
 
 
+def _line_notify(text):
+    """推播到 WF17 LINE 通知管道（發佈完成／告警／排程被擋共用同一條管）。
+    通知失敗永遠不能影響主流程——呼叫端一律包在 try 裡。"""
+    import urllib.request, urllib.parse
+    key = _read_sync().get("radar_inbox_key")
+    if not key:
+        return False
+    body = json.dumps({"text": text}).encode()
+    req = urllib.request.Request(
+        "https://lavadating.app.n8n.cloud/webhook/lava-line-notify?k=" + urllib.parse.quote(key),
+        data=body, headers={"Content-Type": "application/json"}, method="POST")
+    urllib.request.urlopen(req, timeout=30).read()
+    return True
+
+
 def _load_local_sources():
     if os.path.exists(LOCAL_SOURCES):
         with open(LOCAL_SOURCES, encoding="utf-8") as f:
@@ -352,6 +367,26 @@ def add_post(args):
     _build_and_write(m)
 
 
+# 成品畫布（config/render-config.json canvas）。候選圖要鋪滿它需要的放大倍率
+# ＝ max(1950/w, 2438/h)——這才是「會不會糊」的誠實指標，min(w,h) 會騙人：
+# 1920×1080 的 min 是 1080 看似夠大，鋪成 4:5 卻要放大 2.3 倍。
+CANVAS_W, CANVAS_H = 1950, 2438
+UPSCALE_REJECT = 3.0    # 超過＝鋪滿必糊，直接不給看（400×225 要 10.8 倍）
+UPSCALE_SOFT = 2.0      # 2.0-3.0＝可用但排最後，預設永遠不選它
+
+
+def _upscale_needed(path):
+    """回傳鋪滿 4:5 成品需要的放大倍率；讀不到回 None（不因此剔除）。"""
+    try:
+        from PIL import Image
+        w, h = Image.open(path).size
+        if not w or not h:
+            return None
+        return max(CANVAS_W / float(w), CANVAS_H / float(h))
+    except Exception:
+        return None
+
+
 def _build_and_write(m):
     """manifest dict → 縮圖 + posts.json upsert。final/candidates 的 src 為本機絕對路徑。
     同時把 cid→原圖路徑 寫進 .local_sources.json（渲染時取 PT 選定原檔用）。"""
@@ -360,6 +395,18 @@ def _build_and_write(m):
     srcmap = {}
     for s in m["slides"]:
         cands = []
+        # 先按「鋪滿需要的放大倍率」排序：最銳利的排最前，糊的排最後。
+        # 〔2026-09-01 Jesse：很多低畫質內容〕原本完全不排序，於是預設選中的
+        # （第一張）可能是全篇最糊的一張。DESIGN 是自產底圖，永遠排最前不參與評分。
+        _raw = list(s.get("candidates", []))
+        def _rank(c):
+            bn = os.path.basename(c.get("src", ""))
+            if "-DESIGN-" in bn:
+                return (0, 0.0)
+            u = _upscale_needed(c.get("src", ""))
+            return (1, u if u is not None else 2.5)
+        _raw.sort(key=_rank)
+        s = dict(s); s["candidates"] = _raw
         for i, c in enumerate(s.get("candidates", [])):
             if i >= len(CID):
                 sys.stderr.write("  ! slide %d 候選超過 %d 張，其餘截斷（清舊資料夾可減量）\n" % (s["n"], len(CID))); break
@@ -368,10 +415,22 @@ def _build_and_write(m):
             _bn = os.path.basename(c["src"])
             if "-DESIGN-" not in _bn and "-SHOT-" not in _bn and _flat_image(c["src"]):
                 sys.stderr.write("  ↩ 剔除空圖/破圖候選：%s\n" % _bn); continue
+            # 解析度硬閘〔2026-09-01 上線〕：DESIGN 是自產 1950×2438 底圖，豁免。
+            # 其餘一律驗（含 SHOT——原本整類跳過檢查，Apify 抓回的小圖因此無人攔）。
+            if "-DESIGN-" not in _bn:
+                up = _upscale_needed(c["src"])
+                if up is not None and up > UPSCALE_REJECT:
+                    _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
+                               "file": _bn, "reason": "upscale_reject", "metrics": {"upscale": round(up, 2)}})
+                    sys.stderr.write("  ↩ 剔除過小候選（鋪滿要放大 %.1f 倍必糊）：%s\n" % (up, _bn)); continue
+                if up is not None and up > UPSCALE_SOFT:
+                    c["low_q"] = True
+                    _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
+                               "file": _bn, "reason": "upscale_soft", "metrics": {"upscale": round(up, 2)}})
             if "-DESIGN-" not in _bn and "-SHOT-" not in _bn:
                 ok, reason, metrics = _image_ok(c["src"])
                 if not ok:
-                    c["low_q"] = True   # log-only：標記不剔除，門檻用 gate-audit 校準後再升硬閘
+                    c["low_q"] = True   # 模糊／過度壓縮：標記排後，不硬剔（暗色劇照易誤判）
                     _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
                                "file": os.path.basename(c["src"]), "reason": reason, "metrics": metrics})
                     sys.stderr.write("  ⚠ 低畫質標記（%s）：%s\n" % (reason, os.path.basename(c["src"])))
@@ -1256,7 +1315,69 @@ def events_apply(args):
             shutil.move(fp, os.path.join(done_dir, os.path.basename(fp) + ".bad")); continue
         t, target = ev.get("type", ""), ev.get("target", "")
         ok, msg = False, "無目標"
-        if t.startswith("post.") and target in posts:
+        # 註記型事件：不改狀態，但解開「閘門擋住卻沒有處理路徑」的死結
+        # 〔2026-09-01 Jesse：只能退回，退回又回到同一批內容，死循環〕
+        if t == "post.recheck" and target in posts:
+            import subprocess as _sp
+            here = os.path.dirname(os.path.abspath(__file__))
+            outs = []
+            for script, flag in (("fact_check.py", "--post"), ("copy_check.py", "--post")):
+                try:
+                    r = _sp.run([sys.executable, os.path.join(here, script), flag, target],
+                                capture_output=True, text=True, timeout=300)
+                    outs.append("%s rc=%d" % (script.split(".")[0], r.returncode))
+                except Exception as e:
+                    outs.append("%s ✗%s" % (script.split(".")[0], type(e).__name__))
+            # 閘門腳本自己寫 posts.json，這裡要重讀避免後續覆蓋掉它們的結果
+            posts_d = load("posts.json")
+            posts = {p["id"]: p for p in posts_d.get("posts", [])}
+            if target in posts:
+                posts[target]["rechecked_at"] = ev.get("ts")
+            ok, msg = True, "重新檢查：" + "、".join(outs)
+        elif t == "post.resolve_issue" and target in posts:
+            pay = ev.get("payload") or {}
+            ov = posts[target].setdefault("gate_overrides", [])
+            ov.append({"key": pay.get("key"), "gate": pay.get("gate"),
+                       "reason": (pay.get("reason") or "")[:300], "ts": ev.get("ts")})
+            ok, msg = True, "已標記處理：%s（%s）" % (str(pay.get("gate"))[:8], (pay.get("reason") or "")[:24])
+        elif t == "post.schedule" and target in posts:
+            # 排程＝不可逆的前一步，必須用「現在的文字」重驗事實，不能吃舊判定。
+            # 〔2026-09-01〕UI 允許「改過文字 → 舊的事實封鎖降級為待重驗」放行審核，
+            # 那條路若直通發佈，等於改個錯字就能繞過事實查核。閘門補在這裡：
+            # 重跑一次，仍有 block 就拒絕排程、退回已核准，並說清楚原因。
+            import subprocess as _sp
+            here = os.path.dirname(os.path.abspath(__file__))
+            try:
+                _sp.run([sys.executable, os.path.join(here, "fact_check.py"), "--post", target],
+                        capture_output=True, text=True, timeout=300)
+                posts_d = load("posts.json")
+                posts = {p["id"]: p for p in posts_d.get("posts", [])}
+            except Exception as e:
+                print("  ⚠ 排程前事實重驗失敗（%s），保守起見照舊判定" % type(e).__name__)
+            tgt = posts.get(target, {})
+            ovk = {o.get("key") for o in (tgt.get("gate_overrides") or [])}
+            blocks = []
+            for idx, i in enumerate((tgt.get("fact") or {}).get("issues", [])):
+                if (i.get("severity") or i.get("sev")) != "block":
+                    continue
+                k = "fact:" + str(i.get("line") or i.get("detail") or idx)[:60]
+                if k not in ovk:
+                    blocks.append(i)
+            if blocks:
+                tgt["schedule_refused"] = {
+                    "ts": ev.get("ts"),
+                    "why": "事實查核仍有 %d 項未解決：%s" % (len(blocks), str(blocks[0].get("line"))[:80]),
+                }
+                ok, msg = False, "拒絕排程：事實查核 %d 項未過（維持已核准）" % len(blocks)
+                try:
+                    _line_notify("⚠ 排程被擋下：%s\n%s\n請回操控台修正文字或標記為已確認。"
+                                 % (target, tgt["schedule_refused"]["why"]))
+                except Exception:
+                    pass
+            else:
+                tgt.pop("schedule_refused", None)
+                ok, msg = SM.apply_post_event(tgt, ev)
+        elif t.startswith("post.") and target in posts:
             ok, msg = SM.apply_post_event(posts[target], ev)
             if ok and t in ("post.approve", "post.reject"):
                 # 審核紀錄與工時仍寫回原檔，學習迴路照舊讀 reviews.json——但寫者只有這裡
@@ -1557,14 +1678,8 @@ def alert(args):
         print("缺 radar_inbox_key，略過告警"); return
     ts = datetime.datetime.now().astimezone().strftime("%m-%d %H:%M")
     try:
-        body = json.dumps({"text": "⚠ [%s] 哨兵告警：%s" % (ts, args.message)}).encode()
-        req = urllib.request.Request(
-            "https://lavadating.app.n8n.cloud/webhook/lava-line-notify?k="
-            + urllib.parse.quote(key),
-            data=body, headers={"Content-Type": "application/json"}, method="POST")
-        r = json.loads(urllib.request.urlopen(req, timeout=30).read() or b"{}")
-        print("✓ 告警已送出" if not r.get("skip") else
-              "⚠ 告警管道略過：%s" % r.get("reason"))
+        _line_notify("⚠ [%s] 哨兵告警：%s" % (ts, args.message))
+        print("✓ 告警已送出")
     except Exception as e:
         print("! 告警送出失敗：%s" % e)
 
@@ -1714,12 +1829,10 @@ DESIGN_LAYOUTS_REFRESH = ("diagram", "price", "cta")
 
 
 def ingest_new(args):
-    """掃「在製中」且名為 IG貼文｜、尚未在 posts.json 的卡：Drive 有草稿就 from-drive 餵入。
-    取代 Claude feed Part A 的機械部分；哨兵每 10 分呼叫（--limit 控制單輪量）。"""
-    import urllib.parse
-    token = _read_sync().get("clickup_token")
-    if not token or not token.isascii():
-        print("缺 clickup_token，略過入料"); return
+    """入料：已放行且無對應貼文的靈感 × Drive 草稿 → 餵進操控室；
+    另接手「重新生成」的新稿（同 id 覆寫，版本 +1）。哨兵每 10 分呼叫。
+    〔2026-09-01〕拆掉 clickup_token 守門——佇列早已平台原生，留著它等於
+    「撤銷 ClickUp token 的瞬間入料全停」的定時炸彈。"""
     root = DRIVE_PRODUCE
     if not os.path.isdir(root):
         print("Drive 未掛載，略過入料"); return
@@ -1787,7 +1900,59 @@ def ingest_new(args):
                 print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e)); break
             except Exception as e:
                 print("⏭ 餵入錯誤 %s：%s" % (t["name"][:24], e)); break
-    print("入料完成：%d 篇（佇列剩 %d 張未入）" % (fed, max(0, len(todo) - fed)))
+    # ── 重生接手〔2026-09-01，Jesse：「擔心重新生成會不會又失敗」〕──────────
+    # 病因：入料佇列只收「沒有對應貼文」的靈感；既有貼文按重新生成後，
+    # WF01 寫出的新稿沒有任何人接手——按了永遠沒反應（舊 bug 家族的殘存成員）。
+    # 接法：貼文有 regen_requested_at 且 Drive 出現「比請求時間新」的稿檔
+    # → from_drive 同 id 覆寫（add_post 本就 upsert，含 0 候選安全網），
+    #    版本 +1、寫 redo_note、清 regen_requested_at——重做鏈（§1.3）從此成立。
+    import datetime as _dt
+    took = 0
+    for p in posts_all:
+        if fed + took >= (args.limit or 3):
+            break
+        rra = p.get("regen_requested_at")
+        if not rra or p.get("status") in ("published", "scheduled", "rejected"):
+            continue
+        try:
+            rra_ts = _dt.datetime.fromisoformat(rra).timestamp()
+        except ValueError:
+            continue
+        tid = p.get("clickup_task_id") or ""
+        cands = []
+        if tid:
+            cands = [x for x in glob.glob(os.path.join(root, "%s*文案初稿*.json" % tid))
+                     if not re.search(r"\(\d+\)\.json$", os.path.basename(x))]
+        if not cands:
+            nt = _norm_topic(p.get("topic") or p["id"])
+            cands = [x for x in glob.glob(os.path.join(root, "*.json"))
+                     if "文案初稿" in os.path.basename(x)
+                     and not re.search(r"\(\d+\)\.json$", os.path.basename(x))
+                     and nt[:6] and nt[:6] in _norm_topic(os.path.basename(x))]
+        fresh = [x for x in cands if os.path.getmtime(x) > rra_ts]
+        if not fresh:
+            continue
+        newest = max(fresh, key=os.path.getmtime)
+        ns = argparse.Namespace(drive_root=None, topic=None, post_id=p["id"], finals_dir=None,
+                                version=1, clickup=tid or p["id"], topic_type=p.get("topic_type") or "A-知識型",
+                                json=newest, topic_base=None)
+        try:
+            from_drive(ns)
+        except SystemExit as e:
+            print("⏭ 重生接手失敗 %s：%s" % (p["id"][:26], e)); continue
+        except Exception as e:
+            print("⏭ 重生接手錯誤 %s：%s" % (p["id"][:26], e)); continue
+        pj = load("posts.json")
+        q = next((x for x in pj.get("posts", []) if x["id"] == p["id"]), None)
+        if q:
+            q["version"] = int(p.get("version") or 0) + 1
+            q["redo_note"] = "重新生成：文案與視覺企劃已重寫（%s）" % os.path.basename(newest)[:40]
+            q.pop("regen_requested_at", None)
+            save("posts.json", pj)
+        took += 1
+        print("♻ 重生接手 ✓ %s ← %s" % (p["id"][:26], os.path.basename(newest)[:44]))
+    print("入料完成：%d 篇＋重生接手 %d 篇（佇列剩 %d 張未入）"
+          % (fed, took, max(0, len(todo) - fed)))
 
 
 # ── #2：發佈後把該主題舊輪 Drive 產出資料夾搬 ZZ-歸檔（控候選爆量） ──────

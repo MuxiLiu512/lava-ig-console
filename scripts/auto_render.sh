@@ -211,6 +211,15 @@ echo "$RFS" | grep -E "↻|重掃完成：[1-9]|⏭" | sed "s/^/[$(date '+%m-%d 
 echo "事件折疊" >"$RUNMARK"
 EVA=$(timeout 180 "$PY" scripts/sync_console.py events-apply 2>&1)
 echo "$EVA" | grep -E "✓|⚠|折疊完成" | sed "s/^/[$(date '+%m-%d %H:%M')] 事件/" >>"$LOG"
+# 折疊必須立刻 commit＋push〔2026-09-01 事故〕：事件檔從 pending 移到 applied 的
+# 檔案異動原本沒有任何 commit 路徑收，工作區累積髒檔 → push 全卡 → 決定折了
+# 但遠端看不到 → 前端重整又把稿抓回來（「排時間無限迴圈」的第二隻腳）。
+if [ -n "$(git status --porcelain events/ data/posts.json data/ideas.json data/reviews.json)" ]; then
+  git add events/ data/posts.json data/ideas.json data/reviews.json 2>/dev/null
+  git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-events: 折疊決定" \
+    -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+    && git push --quiet origin main >>"$LOG" 2>&1
+fi
 # 靈感收件匣：WF05 雷達 → n8n 資料表 → 這裡拉進 ideas.json（ClickUp 完全出局）。
 IDE=$(timeout 120 "$PY" scripts/sync_console.py radar-pull 2>&1)
 echo "$IDE" | grep -E "✓ 收件匣|! " | sed "s/^/[$(date '+%m-%d %H:%M')] /" >>"$LOG"

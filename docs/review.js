@@ -14,17 +14,20 @@ let EDITING = null;   // 目前展開編輯的目標："s<n>" 或 "caption"，�
 // ── 文案的有效值：copy_edits 最新編輯優先（與後端 _latest_copy_edits 同一套規則）──
 // 不變量（藍圖 v2 第 21 項）：copy_edits 最新版 = 目前顯示值。
 function latestEditsOf(p) {
-  const out = {};
+  const out = {}, ts = {};
   const list = ((STATE.copy_edits && STATE.copy_edits.edits) || [])
     .filter(e => e.post_id === p.id)
     .sort((a, b) => String(a.ts || "").localeCompare(String(b.ts || "")));
   let newestTs = null;
   list.forEach(e => (e.edits || []).forEach(ed => {
     if (ed.version && p.copy_choice && ed.version !== p.copy_choice) return;
-    out[String(ed.n) + ":" + ed.field] = ed.edited;
+    const k = String(ed.n) + ":" + ed.field;
+    out[k] = ed.edited;
+    ts[k] = e.ts;              // 逐欄位時間：判定「這一張」有沒有比閘門新，不能用全篇最新
     newestTs = e.ts;
   }));
   out._ts = newestTs;
+  out._fieldTs = ts;
   return out;
 }
 const effField = (p, n, field, fallback) => {
@@ -40,19 +43,97 @@ const latestReviewOf = id => {
   return rs.length ? rs[rs.length - 1] : null;
 };
 
-// ── 待決項：只有系統沒把握的才進來，掛在所屬的 slide 卡裡 ─────────────
+// ── 待決項〔2026-09-01 重寫〕：閘門結果是「當時」對「當時內容」的判定。
+// 內容改過（換圖／改字）之後，舊判定就是過期的——過期的判定不該再擋人。
+// 三條解結路徑：改內容 → 自動轉「待重驗」；重新檢查 → 閘門重跑；標記已處理 → 記錄後放行。
+// 這是「只能退回、退回又回到同一批內容」死循環的根治。
+function issueKey(gate, i, idx) {
+  return gate + ":" + String(i.line || i.detail || i.rule || i.type || idx).slice(0, 60);
+}
+function overriddenKeys(p) {
+  return new Set(((p.gate_overrides) || []).map(o => o.key));
+}
+// 這張 slide 的內容在閘門跑完之後被改過嗎
+function touchedAfterGate(p, n) {
+  if (CHOICE[n] != null) return "換過底圖";      // 這一輪剛換的，最即時
+  const fts = latestEditsOf(p)._fieldTs || {};
+  const gateTs = p.rechecked_at || p.rendered_at || "";
+  const mine = ["heading", "display_copy", "caption"]
+    .map(f => fts[String(n) + ":" + f]).filter(Boolean);
+  if (mine.length && mine.sort().slice(-1)[0] > gateTs) return "改過文字";
+  return null;
+}
+// 事實查核的問題屬於哪一張：用引文比對 slide 文字；找不到就掛在文案卡（n=0）
+function slideOfFactIssue(p, line) {
+  const frag = String(line || "").replace(/[「」『』]/g, "").slice(0, 12);
+  if (!frag) return 0;
+  const hit = (p.slides || []).find(s => {
+    const txt = [effField(p, Number(s.n), "heading", s.heading),
+                 effField(p, Number(s.n), "display_copy", s.display_copy)].join("\n");
+    return txt && txt.includes(frag);
+  });
+  return hit ? Number(hit.n) : 0;
+}
+
 function pendingOf(p) {
   const out = [];
+  const ov = overriddenKeys(p);
+  const push = o => {
+    if (ov.has(o.key)) return;                       // 你標記過「這項沒問題」
+    const why = touchedAfterGate(p, o.n);
+    if (why && o.sev === "block") { o.sev = "warn"; o.stale = why; }
+    out.push(o);
+  };
   (p.slides || []).forEach(s => {
     if (lacksMaterial(s))
-      out.push({ n: Number(s.n), kind: "缺圖", sev: "block", text: "這張沒有可用的圖。補圖前無法出成品。" });
+      push({ n: Number(s.n), kind: "缺圖", sev: "block", gate: "material",
+             key: "material:" + s.n, text: "這張沒有可用的圖。補圖前無法出成品。" });
   });
-  ((p.qa && p.qa.issues) || []).forEach(i =>
-    out.push({ n: Number((i.slides || [])[0] || 1), slides: i.slides || [], kind: t("gate_visual"),
-               sev: i.severity || "warn", text: i.detail || i.type, fix: i.fix }));
-  ((p.typography && p.typography.issues) || []).forEach(i =>
-    out.push({ n: Number(i.slide || 1), kind: t("gate_typo"), sev: "block", text: i.rule + "：" + i.line }));
+  ((p.qa && p.qa.issues) || []).forEach((i, idx) =>
+    push({ n: Number((i.slides || [])[0] || 1), slides: i.slides || [], kind: t("gate_visual"),
+           sev: i.severity || "warn", gate: "qa", key: issueKey("qa", i, idx),
+           text: i.detail || i.type, fix: i.fix }));
+  ((p.typography && p.typography.issues) || []).forEach((i, idx) =>
+    push({ n: Number(i.slide || 1), kind: t("gate_typo"), sev: "block", gate: "typography",
+           key: issueKey("typo", i, idx), text: i.rule + "：" + i.line }));
+  // 事實查核原本完全不顯示在審稿流程裡——只有頂端一顆紅點，你看不到問題是什麼、
+  // 更沒有處理它的地方。這是死循環最深的一層。
+  ((p.fact && p.fact.issues) || []).forEach((i, idx) => {
+    const line = i.line || i.detail || "";
+    push({ n: slideOfFactIssue(p, line), kind: t("gate_fact"),
+           sev: (i.severity || i.sev) === "block" ? "block" : "warn",
+           gate: "fact", key: issueKey("fact", i, idx), text: line,
+           fix: "改掉這句沒有出處的說法，或標記為已確認（下方兩顆鍵）" });
+  });
   return out;
+}
+
+// 待決項卡片：問題 + 兩顆解結鍵
+function pendNode(p, x) {
+  const d = el("div", "pend" + (x.sev === "block" ? " block" : ""));
+  const head = el("div");
+  head.innerHTML = `<b class="k">${esc(x.kind)}</b>${x.stale ? ` <span class="edited-tag">已${esc(x.stale)} · 待重驗</span>` : ""} · ${esc(String(x.text).slice(0, 220))}`;
+  d.appendChild(head);
+  if (x.fix) d.appendChild(el("div", "fix", "建議：" + esc(String(x.fix).slice(0, 180))));
+  if (x.gate === "material") return d;          // 缺圖只能等補圖或重新生成
+  const row = el("div", "btnrow"); row.style.marginTop = "8px";
+  row.appendChild(ActionButton({
+    id: "resolve-" + p.id + "-" + x.key, label: "這項我已確認沒問題", kind: "ghost", doneLabel: "已記錄",
+    run: async () => {
+      const ta = el("textarea"); ta.rows = 2;
+      ta.placeholder = "為什麼沒問題？（例：99% 是修辭不是數據；出處頁面改版但內容仍在）";
+      const okc = await modal("標記為已處理", ta,
+        [{ label: "取消", value: null }, { label: "確認", value: 1, cls: "primary" }]);
+      if (!okc) { const e = new Error("已取消"); e.silent = true; throw e; }
+      if (ta.value.trim().length < 4) throw new Error("請寫一句原因（會留存紀錄）");
+      await postEvent("post.resolve_issue", p.id,
+        { key: x.key, gate: x.gate, reason: ta.value.trim() });
+      (p.gate_overrides = p.gate_overrides || []).push({ key: x.key, gate: x.gate, reason: ta.value.trim() });
+    },
+    onDone: () => { toast("已記錄。這項不再擋你。"); render(); },
+  }));
+  d.appendChild(row);
+  return d;
 }
 const pendOfSlide = (pend, n) =>
   pend.filter(x => (x.slides && x.slides.length ? x.slides : [x.n]).some(m => String(m) === String(n)));
@@ -134,7 +215,8 @@ async function saveCopyEdits(p, n, edits) {
   ((STATE.copy_edits = STATE.copy_edits || { edits: [] }).edits =
     STATE.copy_edits.edits || []).push(entry);
   CONFIRMED.delete(n);   // 改了字＝這張要重新看過
-  toast("已儲存。圖上字在排版時生效" + (n === 0 ? "；貼文文案由哨兵 10 分內同步" : ""));
+  toast("已儲存 ✓ " + (n === 0 ? "貼文文案 10 分內同步，發佈用新字。" : "排版時用新字。")
+    + "你的改法今晚會進學習迴路（語氣範例）。");
 }
 
 // ── ① 整體資訊卡 ────────────────────────────────────────────────────
@@ -206,9 +288,15 @@ function slideCard(p, s, pend) {
   const hero = el("div", "sc-hero");
   const fin = finalOf(s);
   const candSrc = srcOfCand(s, CHOICE[n] || s.default_cid) || (((s.candidates || [])[0]) || {}).src;
+  const _fts0 = latestEditsOf(p)._fieldTs || {};
+  const _myTs0 = ["heading", "display_copy"].map(f => _fts0[String(n) + ":" + f]).filter(Boolean).sort().slice(-1)[0];
+  const _stale = !!_myTs0 && _myTs0 > (p.rendered_at || "");
   if (fin) {
-    if (/^https?:/.test(fin)) { const e = el("img"); e.src = fin; e.alt = "第 " + n + " 張成品"; hero.appendChild(e); }
-    else hero.appendChild(img(fin));
+    const w0 = el("div"); w0.style.cssText = "position:relative;display:flex;justify-content:center;width:100%";
+    if (/^https?:/.test(fin)) { const e = el("img"); e.src = fin; e.alt = "第 " + n + " 張成品"; w0.appendChild(e); }
+    else w0.appendChild(img(fin));
+    if (_stale) w0.appendChild(el("div", "crop-badge", "圖上仍是舊字 · 最新文字在下方"));
+    hero.appendChild(w0);
   } else if (isDesign(s)) {
     const name = { diagram: "卡片圖解", price: "數字卡", cta: "CTA 尾板" }[String(s.product_layout || "")] || "CTA 公版";
     hero.appendChild(el("div", "design-ph", name + "：由引擎繪製，不需要照片。文字內容在下方，成品排版後回來看。"));
@@ -230,13 +318,18 @@ function slideCard(p, s, pend) {
   const effC = effField(p, n, "display_copy", s.display_copy);
   const effTxt = [effH, effC].filter(Boolean).join("\n");
   const edits = latestEditsOf(p);
-  const hasEdit = (String(n) + ":heading") in edits || (String(n) + ":display_copy") in edits;
+  const _fts = edits._fieldTs || {};
+  const _myTs = ["heading", "display_copy"].map(f => _fts[String(n) + ":" + f]).filter(Boolean).sort().slice(-1)[0];
+  const hasEdit = !!_myTs;
   if (effTxt || !isDesign(s)) {
     const hd = el("div", "row");
     hd.appendChild(el("span", "meta", t("display_copy")));
-    if (hasEdit && fin && edits._ts > (p.rendered_at || "")) {
-      const tag = el("span", "edited-tag", "文字已改、圖未更新");
-      tag.title = "核准後排版會用新文字重出成品";
+    if (hasEdit && fin && _myTs > (p.rendered_at || "")) {
+      const approvedFlow = p.status === "approved";
+      const tag = el("span", "edited-tag", approvedFlow
+        ? "文字已改 · 15 分內自動重出成品" : "文字已改 · 核准後排版用新字");
+      tag.title = approvedFlow
+        ? "哨兵偵測到文案比成品新，會自動重排這一篇" : "圖上還是舊字；排版時一定用最新文字";
       hd.appendChild(tag);
     }
     hd.appendChild(el("span", "grow"));
@@ -289,12 +382,7 @@ function slideCard(p, s, pend) {
     body.appendChild(note);
   }
   // 本張待決項就地展開
-  pendOfSlide(pend, n).forEach(x => {
-    const d = el("div", "pend" + (x.sev === "block" ? " block" : ""));
-    d.innerHTML = `<b class="k">${esc(x.kind)}</b> · ${esc(String(x.text).slice(0, 200))}`;
-    if (x.fix) d.appendChild(el("div", "fix", "建議：" + esc(String(x.fix).slice(0, 160))));
-    body.appendChild(d);
-  });
+  pendOfSlide(pend, n).forEach(x => body.appendChild(pendNode(p, x)));
   card.appendChild(body);
 
   // 原始文案摺疊
@@ -415,6 +503,8 @@ function captionCard(p) {
   const tags = (String(effCap || "").match(/#[^\s#]+/g) || []).length;
   info.textContent = `${String(effCap || "").length} 字 · ${tags} 個 hashtag`;
   pad.appendChild(info);
+  // 對不到特定張數的待決項（多為事實查核的整篇引文）掛在這裡，不再無處可去
+  pendOfSlide(pendingOf(p), 0).forEach(x => pad.appendChild(pendNode(p, x)));
   const copyIssues = ((p.copy && p.copy.issues) || []);
   copyIssues.slice(0, 4).forEach(i => {
     const d = el("div", "pend" + ((i.severity || i.sev) === "block" ? " block" : ""));
@@ -454,7 +544,7 @@ function igPreview(p) {
     media.appendChild(el("div", "ig-count", "1/" + (p.slides || []).length));
     ig.appendChild(media);
     const cap = el("div", "ig-cap");
-    cap.innerHTML = `<span class="nm">lava_dating</span><span class="body clamp">${esc(p.caption || "")}</span>`;
+    cap.innerHTML = `<span class="nm">lava_dating</span><span class="body clamp">${esc(effField(p, 0, "caption", p.caption))}</span>`;
     ig.appendChild(cap);
     phone.appendChild(ig);
     inner.appendChild(phone);
@@ -477,12 +567,14 @@ function decisionBar(p, pend) {
   const blocked = pend.some(x => x.sev === "block");
 
   if (p.status === "approved" && !p.render_note) {
-    // 已核准 → 排時間（事實閘門前置）
-    const factBlocks = ((p.fact && p.fact.issues) || []).filter(i => (i.severity || i.sev) === "block");
+    // 已核准 → 排時間（事實閘門前置）。用 pendingOf 的結果，才吃得到
+    // 「已標記處理」與「內容改過待重驗」——否則就是死循環的來源。
+    const factBlocks = pend.filter(x => x.gate === "fact" && x.sev === "block");
     if (factBlocks.length) {
-      bar.appendChild(el("span", "meta", `${t("gate_fact")}未過 ${factBlocks.length} 項，不能排程`));
+      bar.appendChild(el("span", "meta", `${t("gate_fact")}未過 ${factBlocks.length} 項`));
+      bar.appendChild(recheckButton(p));
       bar.appendChild(ActionButton({
-        id: "reopen-" + p.id, label: "退回待審修正", kind: "primary", doneLabel: "已退回待審",
+        id: "reopen-" + p.id, label: "回到逐張審核", kind: "ghost", doneLabel: "已回到待審",
         run: () => saveJson(FILES.posts, doc => {
           const q = (doc.posts || []).find(x => x.id === p.id);
           if (q) q.status = "awaiting_review";
@@ -519,8 +611,19 @@ function decisionBar(p, pend) {
     ab.title = blocked ? "有待決項必須先處理或整篇退回"
       : "還有第 " + missing.join("、") + " 張未確認";
   }
+  if (blocked) bar.appendChild(recheckButton(p));
   bar.appendChild(ab);
   bar.appendChild(rejectButton(p));
+}
+
+// 重新檢查：內容改過之後讓閘門重跑一次，取代「只能退回」。
+// 事件由哨兵接手實跑 fact_check／copy_check（每 10 分一輪）。
+function recheckButton(p) {
+  return ActionButton({
+    id: "recheck-" + p.id, label: "重新檢查", kind: "ghost", doneLabel: "已排入重檢",
+    run: () => postEvent("post.recheck", p.id, {}),
+    onDone: () => toast(`已排入重新檢查。哨兵 ${SCHEDULE.SENTINEL_MIN} 分內重跑事實與文案檢查，結果會更新在這裡。`),
+  });
 }
 
 function rejectButton(p) {
@@ -593,7 +696,7 @@ async function scheduleFlow(p) {
   wrap.appendChild(inp);
   wrap.appendChild(el("div", "meta", "發佈每 15 分檢查一次，實際時間可能晚幾分鐘。"));
   const ok = await modal("排程發佈", wrap, [{ label: "取消", value: null }, { label: "排定", value: 1, cls: "primary" }]);
-  if (!ok || !inp.value) throw new Error("已取消");
+  if (!ok || !inp.value) { const e = new Error("已取消"); e.silent = true; throw e; }
   const t2 = new Date(inp.value);
   const off = -t2.getTimezoneOffset();
   const iso = localIso(t2) + ":00" + (off >= 0 ? "+" : "-") + pad(Math.floor(Math.abs(off) / 60)) + ":" + pad(Math.abs(off) % 60);
@@ -742,13 +845,15 @@ loadAll().then(() => {
   $("#modeTag").textContent = MODE === "local" ? "· 本地預覽" : "";
   const P = STATE.posts;
   if (!P || P._error || !Array.isArray(P.posts)) { loadFail(String((P && P._error) || "資料不是預期格式")); return; }
-  QUEUE = P.posts.filter(p => p.status !== "rejected"
+  const gone = p => { const d = window.LavaCore.pendingDecisionOf(p.id, p.status);
+    return d && (d.type === "post.schedule" || d.type === "post.reject"); };
+  QUEUE = P.posts.filter(p => p.status !== "rejected" && !gone(p)
     && (p.status === "awaiting_review" || (p.status === "approved" && p.render_note)));
   const want = decodeURIComponent((location.hash || "").replace(/^#/, ""));
   if (want) {
     let i = QUEUE.findIndex(p => p.id === want);
     if (i < 0) {
-      const p = P.posts.find(x => x.id === want && x.status !== "rejected");
+      const p = P.posts.find(x => x.id === want && x.status !== "rejected" && !gone(x));
       if (p) { QUEUE.unshift(p); i = 0; }
     }
     if (i >= 0) IDX = i;

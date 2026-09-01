@@ -58,9 +58,9 @@ function globalStatus(posts) {
     const min = Math.round((Date.now() - new Date(hb.ts)) / 60000);
     const errs = (hb.errors || []).length;
     if (min > SCHEDULE.HEARTBEAT_BAD_MIN) {
-      line = StatusLine({ who: "系統", stage: `產線 ${Math.round(min / 60)} 小時沒有心跳`, next: "回報工程（點此複製狀態）", tone: "bad" });
+      line = StatusLine({ who: "系統", stage: `產線 ${Math.round(min / 60)} 小時沒有心跳`, next: "點此複製狀態、貼給 Claude 查", tone: "bad" });
       line.style.cursor = "pointer";
-      line.onclick = () => { navigator.clipboard.writeText(JSON.stringify(hb, null, 1)); toast("狀態已複製，貼給工程即可"); };
+      line.onclick = () => { navigator.clipboard.writeText(JSON.stringify(hb, null, 1)); toast("已複製。貼到對話裡，Claude 會直接查。"); };
     } else if (min > SCHEDULE.HEARTBEAT_WARN_MIN || errs) {
       line = StatusLine({ who: "系統", stage: `心跳 ${min} 分前` + (errs ? ` · 上輪告警 ${errs} 則` : ""),
         next: errs ? "點開看告警內容" : "不用動，观察中", tone: "warn",
@@ -147,7 +147,7 @@ function openIdeaDrawer(idea) {
     run: async () => {
       const ta = el("textarea"); ta.rows = 2;
       const r = await modal("退回原因", ta, [{ label: "取消", value: null }, { label: "退回", value: 1, cls: "primary" }]);
-      if (!r) throw new Error("已取消");
+      if (!r) { const e = new Error("已取消"); e.silent = true; throw e; }
       await postEvent("idea.reject", idea.task_id, { feedback: ta.value.trim() });
       idea.decision = "reject"; idea.decided_at = nowISO();
     },
@@ -174,8 +174,9 @@ function sysRow(o) {
   r.appendChild(when);
   if (o.action) r.appendChild(o.action);
   else if (o.late && o.report) {
-    const b = el("button", "btn ghost", "回報工程");
-    b.onclick = () => { navigator.clipboard.writeText(o.report); toast("狀態已複製，貼給工程即可"); };
+    const b = el("button", "btn ghost", "複製狀態給 Claude");
+    b.title = "複製這一篇的卡住狀態，貼到與 Claude 的對話裡，我會直接查原因";
+    b.onclick = () => { navigator.clipboard.writeText(o.report); toast("已複製。貼到對話裡，Claude 會直接查。"); };
     r.appendChild(b);
   }
   return r;
@@ -315,7 +316,7 @@ function openProposalDrawer(pr) {
     run: async () => {
       const ta = el("textarea"); ta.rows = 2;
       const r = await modal("否決原因", ta, [{ label: "取消", value: null }, { label: "否決", value: 1, cls: "primary" }]);
-      if (!r) throw new Error("已取消");
+      if (!r) { const e = new Error("已取消"); e.silent = true; throw e; }
       await saveJson(FILES.proposals, doc => {
         const x = (doc.proposals || []).find(y => y.pid === pr.pid);
         if (x) { x.status = "rejected"; x.decided_at = nowISO(); if (ta.value.trim()) x.reject_reason = ta.value.trim(); }

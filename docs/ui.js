@@ -90,7 +90,9 @@ function ActionButton(opt) {
     } catch (e) {
       inFlight.delete(opt.id);
       peers.forEach(x => { x.disabled = false; });
-      b.disabled = false; b.classList.add("err");
+      b.disabled = false;
+      if (e && e.silent) { idle(); return; }   // 使用者主動取消：安靜回原狀，不是錯誤
+      b.classList.add("err");
       paint("重試：" + esc(String(e.message || e).slice(0, 60)));
     }
   };

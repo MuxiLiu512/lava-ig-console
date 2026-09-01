@@ -145,7 +145,37 @@ async function postEvent(type, target, payload) {
   });
   if (r.status === 401) { AUTH_BAD = true; authBanner(); throw new Error("PAT 已失效，無法寫入決定。"); }
   if (!r.ok) throw new Error(`決定寫入失敗 (${r.status})`);
+  rememberDecision(type, target);
   return true;
+}
+
+// 決定記憶〔2026-09-01，Jesse：「排時間會無限迴圈」〕——
+// 事件寫下後要等哨兵折疊（最長 10 分），期間 posts.json 還是舊狀態；
+// 一重整頁面，剛排程的稿又回到佇列，看起來像沒排成、於是再排一次。
+// 這裡把「你做過的決定」存進 localStorage，折疊完成（狀態變了）或超過
+// 30 分（哨兵必已跑過，仍沒變＝真的失敗）之前，都蓋在畫面狀態上。
+const PENDING_TTL_MS = 30 * 60 * 1000;
+function rememberDecision(type, target) {
+  try {
+    const all = JSON.parse(LS.getItem("lava_pending_decisions") || "{}");
+    all[target] = { type, ts: Date.now() };
+    LS.setItem("lava_pending_decisions", JSON.stringify(all));
+  } catch (e) { /* 記憶失敗不影響已寫入的事件 */ }
+}
+function pendingDecisionOf(target, currentStatus) {
+  try {
+    const all = JSON.parse(LS.getItem("lava_pending_decisions") || "{}");
+    const d = all[target];
+    if (!d) return null;
+    const expected = { "post.approve": "approved", "post.reject": "rejected",
+                       "post.schedule": "scheduled", "post.unschedule": "approved" }[d.type];
+    // 折疊完成（狀態已到位）或超時 → 清掉記憶
+    if (currentStatus === expected || Date.now() - d.ts > PENDING_TTL_MS) {
+      delete all[target]; LS.setItem("lava_pending_decisions", JSON.stringify(all));
+      return null;
+    }
+    return d;
+  } catch (e) { return null; }
 }
 
 // 寫回：GET sha → mutate → PUT，409 重試 3 次
@@ -277,5 +307,5 @@ function alertOf(p) {
   return null;
 }
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, postEvent, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, postEvent, pendingDecisionOf, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();

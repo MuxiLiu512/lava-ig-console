@@ -82,6 +82,19 @@ function tplName(tp) { return TPL_NAME_MAP[tp.hook_type] || tp.hook_type || tp.i
 // tone: you=品牌橘（只給等你）/ ok / info / warn / neutral；zone: queue / system / done
 function statusView(p, latestReview) {
   const st = p.status;
+  // 決定記憶：你剛做的決定還在等哨兵折疊（最長 10 分）→ 先照決定顯示，
+  // 加「同步中」標記，避免重整後看到稿跑回佇列（排時間無限迴圈的根治）。
+  const pend = window.LavaCore.pendingDecisionOf(p.id, st);
+  if (pend) {
+    if (pend.type === "post.schedule")
+      return { label: t("scheduled") + "（同步中）", tone: "info", zone: "done" };
+    if (pend.type === "post.reject")
+      return { label: t("rejected") + "（同步中）", tone: "neutral", zone: "gone" };
+    if (pend.type === "post.approve")
+      return { label: t("approved") + "（同步中）", tone: "you", zone: "queue" };
+    if (pend.type === "post.unschedule")
+      return { label: t("approved") + "（同步中）", tone: "you", zone: "queue" };
+  }
   if (st === "published") return { label: t("published"), tone: "ok", zone: "done" };
   if (st === "scheduled") return { label: t("scheduled"), tone: "info", zone: "done" };
   if (st === "rejected")  return { label: t("rejected"), tone: "neutral", zone: "gone" };
