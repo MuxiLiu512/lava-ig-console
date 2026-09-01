@@ -443,9 +443,20 @@ def _build_and_write(m):
             if "-DESIGN-" not in _bn:
                 up = _upscale_needed(c["src"])
                 if up is not None and up > UPSCALE_REJECT:
-                    _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
-                               "file": _bn, "reason": "upscale_reject", "metrics": {"upscale": round(up, 2)}})
-                    sys.stderr.write("  ↩ 剔除過小候選（鋪滿要放大 %.1f 倍必糊）：%s\n" % (up, _bn)); continue
+                    # 但不能把一張版位剔到 0 候選〔2026-09-02〕：《一夜限定》第 2、5 張
+                    # 的候選全都過小，整批剔掉之後那兩張就變成「缺圖」——
+                    # 一張糊的圖仍然可以審、可以換，沒有圖則整篇卡住。
+                    # 保留該版位最好的一張並標記低畫質，其餘照剔。
+                    _rest = [c2 for c2 in s.get("candidates", [])[i + 1:]
+                             if os.path.exists(c2.get("src", ""))
+                             and (_upscale_needed(c2["src"]) or 9) <= UPSCALE_REJECT]
+                    if cands or _rest:
+                        _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
+                                   "file": _bn, "reason": "upscale_reject", "metrics": {"upscale": round(up, 2)}})
+                        sys.stderr.write("  ↩ 剔除過小候選（鋪滿要放大 %.1f 倍必糊）：%s\n" % (up, _bn)); continue
+                    c["low_q"] = True
+                    sys.stderr.write("  ⚠ slide %d 只剩過小候選（放大 %.1f 倍），保留最好的一張避免缺圖：%s\n"
+                                     % (s["n"], up, _bn))
                 if up is not None and up > UPSCALE_SOFT:
                     c["low_q"] = True
                     _gate_log({"ts": _now_iso(), "post_id": pid, "slide": s["n"],
@@ -642,12 +653,24 @@ def _collect_slide_imgs(dirs, kind, prune=True):
     return out
 
 
-def _scan_dirs(root, ntopic, prune=True):
-    """依主題掃 Drive 產出/ 的底圖與劇照資料夾 → (gen, still) 兩個 {n: [(path,label)]}。"""
+def _scan_dirs(root, ntopic, prune=True, task_id=None):
+    """掃 Drive 產出/ 的底圖與劇照資料夾 → (gen, still) 兩個 {n: [(path,label)]}。
+
+    配對優先用 task_id〔2026-09-02〕：資料夾名稱是 <taskId>｜<日期> <主題截斷> <類別>，
+    主題那段會被截斷、且會因為重餵疊出雙重前綴、又因為 copy_fix 改標點而與貼文不一致，
+    主題字串比對於是配不上——實例：《一夜限定》的 21 張劇照與《我的荒糖戀愛》的 12 張
+    早就下載在 Drive 裡，操控台卻顯示「連兩輪補不到圖」，因為沒有人找得到那個資料夾。
+    id 是同一顆、不會被截斷也不會被改標點，優先用它。"""
     subdirs = sorted(d for d in glob.glob(os.path.join(root, "*")) if os.path.isdir(d) and "ZZ" not in os.path.basename(d))
-    base_dirs = [d for d in subdirs if "底圖" in os.path.basename(d) and _topic_match(ntopic, os.path.basename(d))]
     _SK = ("劇照", "人物", "書封", "參考圖")
-    still_dirs = [d for d in subdirs if any(k in os.path.basename(d) for k in _SK) and _topic_match(ntopic, os.path.basename(d))]
+
+    def _match(name):
+        if task_id and str(task_id) and str(task_id) in name:
+            return True
+        return _topic_match(ntopic, name)
+
+    base_dirs = [d for d in subdirs if "底圖" in os.path.basename(d) and _match(os.path.basename(d))]
+    still_dirs = [d for d in subdirs if any(k in os.path.basename(d) for k in _SK) and _match(os.path.basename(d))]
     return _collect_slide_imgs(base_dirs, "generated", prune), _collect_slide_imgs(still_dirs, "still", prune)
 
 
@@ -748,7 +771,7 @@ def from_drive(args):
                         "--draft", jf, "--outdir", _bd, "--post-id", pid], check=False, timeout=300)
     except Exception as e:
         sys.stderr.write("  ! 設計底生成失敗（不阻斷）：%s\n" % e)
-    gen, still = _scan_dirs(root, ntopic)
+    gen, still = _scan_dirs(root, ntopic, task_id=(getattr(args, "clickup", None) or pid))
     sys.stderr.write("→ 底圖 slide 數 %d、劇照 slide 數 %d\n" % (len(gen), len(still)))
 
     slides = []
@@ -766,7 +789,12 @@ def from_drive(args):
     seen_hash = set()
 
     def _dedupe(items):
-        out = []
+        """跨版位內容去重（同一張圖不該在多張出現）。
+        但不能把一張版位去到 0〔2026-09-02〕：《一夜限定》第 2 張的三張劇照
+        與第 1 張逐位元組相同（同一部片的官方劇照被兩張都選中），整批被砍光，
+        該版位就變成「連兩輪補不到圖」——實際上圖一直都在。
+        全被判重複時保留第一張並標記，讓你自己決定要不要換。"""
+        out, dropped = [], []
         for c in items:
             fp = c.get("src")
             try:
@@ -775,8 +803,14 @@ def from_drive(args):
             except Exception:
                 out.append(c); continue      # 讀不到就不擋，交給後面的畫質閘門
             if h in seen_hash:
-                continue
+                dropped.append(c); continue
             seen_hash.add(h); out.append(c)
+        if not out and dropped:
+            keep = dropped[0]
+            keep["dup_of_other_slide"] = True
+            sys.stderr.write("  ⚠ 本版位候選全與其他張重複，保留一張避免缺圖：%s\n"
+                             % os.path.basename(keep.get("src", ""))[:44])
+            out.append(keep)
         return out
 
     for s in data.get("slides", []):
@@ -859,7 +893,8 @@ ENGINE_DIR = next((p for p in [
 def _rebuild_sources(p):
     """無 .local_sources 的舊貼文：復刻 from-drive 掃描邏輯重建 cid→原圖，並以 (cid,kind) 序列驗證。"""
     ntopic = _norm_topic(p.get("topic", ""))
-    gen, still = _scan_dirs(DRIVE_PRODUCE, ntopic, prune=False)  # 復刻原始（未剔破圖）序列
+    gen, still = _scan_dirs(DRIVE_PRODUCE, ntopic, prune=False,
+                            task_id=(p.get("clickup_task_id") or p.get("id")))  # 復刻原始（未剔破圖）序列
     srcs = {}
     for s in p.get("slides", []):
         n = s["n"]

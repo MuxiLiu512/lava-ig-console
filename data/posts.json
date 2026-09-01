@@ -10112,879 +10112,6 @@
       }
     },
     {
-      "id": "86eyrz3f9",
-      "topic": "Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」：這件事，心理學有個名字",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyrz3f9",
-      "created_at": null,
-      "caption": "《我的荒糖戀愛》讓丁海寅的「整車玫瑰花」、「尋找古董 MP3 圓夢」席捲 Netflix 非英語節目全球收視冠軍。\n\n但有一種感覺藏在所有甜寵橋段底下，心理學已經幫它命名了，而且它出現的頻率，比你想像的更高。\n\n這個問題，在對話框裡很難回答，因為對話本身就是一種付出的累積，訊息回覆、表情符號、線上陪伴，每一個都在悄悄增加那個義務感的重量。\nLava 的出發點是：先見面，再決定。\n在真實的相處裡，你才能感受到自己對這個人的感覺，是輕盈的靠近，還是沉重的留著。\n\n#我的荒糖戀愛 #丁海寅 #Netflix台灣 #韓劇推薦 #交友軟體 #約會 #心理學 #互惠壓力 #感情心理學 #關係焦慮 #Lava交友 #不聊天的交友軟體 #線下約會 #戀愛心理",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-1a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyrz3f9/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：Wikipedia — Reciprocity (social psychology)；Cognitigence — Cialdini's 7 Principles of Persuasion",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            }
-          ],
-          "final_src": null,
-          "heading": "被他寵到覺得「拒絕他好像很殘忍」：這不是愛，是虧欠感",
-          "display_copy": "《我的荒糖戀愛》\n丁海寅把人寵到〖說不出口〗\n心理學說，這不是愛\n\n那個卡在喉嚨裡的感覺，已經被命名了：它出現的頻率，比你想像的更高。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-2a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyrz3f9/slide-2b.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            }
-          ],
-          "final_src": null,
-          "heading": "你追過這種劇情：也活過這種感覺",
-          "display_copy": "他備咖啡、接送、買展票\n你想分手，話卻卡在喉嚨\n\n【那個卡住的感覺，有它自己的名字。】\n\n心理學早已將它命名：大多數人從來沒發現自己正在這個狀態裡，因為它長得太像「捨不得」了。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Wikipedia — Reciprocity (social psychology)（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyrz3f9/slide-3b.webp",
-              "kind": "still",
-              "source_label": "Wikipedia — Reciprocity (social psychology)（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            }
-          ],
-          "final_src": null,
-          "heading": "你以為是愛，Cialdini 1984 年說那叫義務感",
-          "display_copy": "你以為是愛，Cialdini 1984 說那叫義務感\n\n【互惠性的真正驚人之處】：\n不需要你喜歡對方\n不需要你主動開口要\n\n光是「收到」這個動作，就足以在你心裡製造出義務感：對方付出越多，那個重量就越大，大到讓「說不」感覺像在犯罪。\n\n資料來源：Wikipedia — Reciprocity (social psychology)",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Cognitigence — Cialdini's 7 Principles of Persuasion",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            }
-          ],
-          "final_src": null,
-          "heading": "你沒開口要那瓶飲料，但 1971 年的實驗告訴你，你已經欠他了",
-          "display_copy": "你沒開口要那瓶飲料\n但 1971 年的實驗告訴你，你已經欠他了\n\nRegan 實驗，1971\n\n他幫你買了一瓶飲料\n然後拜託你買他的彩票\n\n結果：【你買了】\n\n不請自來的付出依然能啟動義務感：那份債，你沒同意，但它已經掛在你身上了。\n\n資料來源：Cognitigence — Cialdini's 7 Principles of Persuasion",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "感激 vs. 虧欠感：長得一樣，但一個讓關係變好，一個讓你留下來卻越來越遠",
-          "display_copy": "Algoe 等人，2010年｜《個人關係》期刊\n\n【感激】→ 預測次日關係連結與滿意度上升\n【虧欠感】→ 維持關係的外部信號，但讓你越來越遠\n\n兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相連：感激才是真正讓關係變好的那個，而你現在感受到的，是哪一種？\n\n資料來源：Algoe, Gable & Maisel (2010), Personal Relationships"
-        },
-        {
-          "n": 6,
-          "role": "品牌輕置入",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-6a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyrz3f9/slide-6b.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            }
-          ],
-          "final_src": null,
-          "heading": "見面之前，你怎麼知道自己是「被他吸引」還是「被他的付出綁住」？",
-          "display_copy": "見面之前，你怎麼知道是【被他吸引】，還是被他的付出綁住？\n\n對話框裡每一個回覆、每一個表情符號\n都在悄悄加重那個義務感的重量\n\nLava 的出發點：先見面，再決定\n\n在真實相處裡，你才感受得到那個感覺\n是輕盈的靠近，還是沉重的留著",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-7a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            }
-          ],
-          "final_src": null,
-          "heading": "下次那個「說不出口」的感覺來了，先問自己這三件事",
-          "display_copy": "「說不出口」來了\n先問自己三件事\n\n① 如果他這個月什麼都沒做\n   你還會想靠近他嗎？\n\n② 想到「離開」\n   第一個念頭是【解脫】還是愧疚？\n\n③ 你對這段關係的投入\n   來自期待，還是來自壓力？\n\n這三個問題不給你答案。但它們能幫你認出，那個卡住的感覺，究竟從哪裡來。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyrz3f9/slide-8a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyrz3f9/slide-8b.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            }
-          ],
-          "final_src": null,
-          "heading": "Lava 的立場：真實感受，只能在真實裡認識",
-          "display_copy": "義務感最容易在「累積的付出」裡滋長\n在你還沒機會認識他之前\n\nLava 想讓你在見面之前保持那份清醒\n\n在認識一個人之前，累積的對話只會製造噪音：【讓你更難分辨，自己真正感受到的是什麼。】\n\n《我的荒糖戀愛》最甜的，是真實相處裡長出來的時刻，那才是故事的核心。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "《我的荒糖戀愛》Netflix 於 2026 年 8 月 7 日上線",
-          "source": "https://woman.tvbs.com.tw/entertainment/66609",
-          "quote": "Netflix 於 2026 年 8 月 7 日上線的原創韓國劇集"
-        },
-        {
-          "claim": "8 月 10 至 16 日一週收視，《我的荒糖戀愛》上榜第 2 週錄得 750 萬觀看次數，登上非英語節目收視冠軍",
-          "source": "https://ol.mingpao.com/ldy/showbiz/latest/20260819/1787143299331/",
-          "quote": "Netflix 公布 8 月 10 至 16 日一週收視，《我的荒糖戀愛》上榜第 2 週錄得 750 萬觀看次數，迅速登上非英語節目收視冠軍"
-        },
-        {
-          "claim": "Robert Cialdini 在《影響力：說服的心理學》中將「互惠性」列為六大核心說服原則之一",
-          "source": "https://en.wikipedia.org/wiki/Reciprocity_(social_psychology)",
-          "quote": "Robert Cialdini broadly documented this principle in his bestselling book Influence: The Psychology of Persuasion, identifying reciprocity as one of six key principles of persuasion that shape human behavior"
-        },
-        {
-          "claim": "互惠規則在面對「不請自來的恩惠」時依然能觸發虧欠感，且這種感受與你是否喜歡施惠者無關",
-          "source": "https://en.wikipedia.org/wiki/Reciprocity_(social_psychology)",
-          "quote": "Reciprocity as a social norm refers to the expectation that people will respond to each other in similar ways—responding to gifts and kindnesses from others with similar benevolence of their own"
-        },
-        {
-          "claim": "Regan 1971 年實驗顯示，收到飲料的參與者購買彩票的機率顯著更高，即使那瓶飲料根本沒人開口要",
-          "source": "https://www.cognitigence.com/blog/cialdini-7-principles-of-persuasion",
-          "quote": "Regan (1971) showed that participants were significantly more likely to purchase lottery tickets from someone who had bought them a drink—even though they hadn't asked for the drink"
-        },
-        {
-          "claim": "不請自來的恩惠也能啟動義務感，接受者並沒有同意承擔這份債",
-          "source": "https://www.cognitigence.com/blog/cialdini-7-principles-of-persuasion",
-          "quote": "The power of reciprocity can even be activated when the initial favor was completely uninvited. The recipient may not have wanted the initial gift at all, but the sense of indebtedness is still triggered, creating an obligation they did not agree to take on"
-        },
-        {
-          "claim": "Algoe 等研究者 2010 年研究發現感激能預測次日關係連結與滿意度的提升，而虧欠感僅維持關係參與的外部信號",
-          "source": "https://greatergood.berkeley.edu/images/uploads/Algoe-Gable-Maisel-2010-Its-the-little-things.pdf",
-          "quote": "For both men and women, gratitude predicted next-day relationship connection and satisfaction, while indebtedness maintained the external signals of relationship engagement but gratitude had unique relationship-promoting power"
-        },
-        {
-          "claim": "虧欠感源自外部壓力如社會期待與聲譽成本，並與壓迫感、負擔感、焦慮與怨恨相關聯",
-          "source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10762097/",
-          "quote": "indebtedness stems from external pressures such as social expectations and reputational costs, and is associated with feelings of oppression, burden, anxiety, and resentment"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "《我的荒糖戀愛》讓丁海寅的「整車玫瑰花」、「尋找古董 MP3 圓夢」席捲 Netflix 非英語節目全球收視冠軍。\n\n但有一種感覺藏在所有甜寵橋段底下，心理學已經幫它命名了，而且它出現的頻率，比你想像的更高。\n\n這個問題，在對話框裡很難回答，因為對話本身就是一種付出的累積，訊息回覆、表情符號、線上陪伴，每一個都在悄悄增加那個義務感的重量。\nLava 的出發點是：先見面，再決定。\n在真實的相處裡，你才能感受到自己對這個人的感覺，是輕盈的靠近，還是沉重的留著。\n\n#我的荒糖戀愛 #丁海寅 #Netflix台灣 #韓劇推薦 #交友軟體 #約會 #心理學 #互惠壓力 #感情心理學 #關係焦慮 #Lava交友 #不聊天的交友軟體 #線下約會 #戀愛心理",
-          "slides": {
-            "1": {
-              "heading": "被他寵到覺得「拒絕他好像很殘忍」——這不是愛，是虧欠感",
-              "display_copy": "《我的荒糖戀愛》\n丁海寅把人寵到〖說不出口〗\n心理學說，這不是愛\n\n那個卡在喉嚨裡的感覺，已經被命名了——它出現的頻率，比你想像的更高。"
-            },
-            "2": {
-              "heading": "你追過這種劇情——也活過這種感覺",
-              "display_copy": "他備咖啡、接送、買展票\n你想分手，話卻卡在喉嚨\n\n【那個卡住的感覺，有它自己的名字。】\n\n心理學早已將它命名——大多數人從來沒發現自己正在這個狀態裡，因為它長得太像「捨不得」了。"
-            },
-            "3": {
-              "heading": "你以為是愛，Cialdini 1984 年說那叫義務感",
-              "display_copy": "你以為是愛，Cialdini 1984 說那叫義務感\n\n【互惠性的真正驚人之處】：\n不需要你喜歡對方\n不需要你主動開口要\n\n光是「收到」這個動作，就足以在你心裡製造出義務感——對方付出越多，那個重量就越大，大到讓「說不」感覺像在犯罪。\n\n資料來源：Wikipedia — Reciprocity (social psychology)"
-            },
-            "4": {
-              "heading": "你沒開口要那瓶飲料，但 1971 年的實驗告訴你，你已經欠他了",
-              "display_copy": "你沒開口要那瓶飲料\n但 1971 年的實驗告訴你，你已經欠他了\n\nRegan 實驗，1971\n\n他幫你買了一瓶飲料\n然後拜託你買他的彩票\n\n結果：【你買了】\n\n不請自來的付出依然能啟動義務感——那份債，你沒同意，但它已經掛在你身上了。\n\n資料來源：Cognitigence — Cialdini's 7 Principles of Persuasion"
-            },
-            "5": {
-              "heading": "感激 vs. 虧欠感：長得一樣，但一個讓關係變好，一個讓你留下來卻越來越遠",
-              "display_copy": "Algoe 等人，2010年｜《個人關係》期刊\n\n【感激】→ 預測次日關係連結與滿意度上升\n【虧欠感】→ 維持關係的外部信號，但讓你越來越遠\n\n兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相連——感激才是真正讓關係變好的那個，而你現在感受到的，是哪一種？\n\n資料來源：Algoe, Gable & Maisel (2010), Personal Relationships"
-            },
-            "6": {
-              "heading": "見面之前，你怎麼知道自己是「被他吸引」還是「被他的付出綁住」？",
-              "display_copy": "見面之前，你怎麼知道是【被他吸引】，還是被他的付出綁住？\n\n對話框裡每一個回覆、每一個表情符號\n都在悄悄加重那個義務感的重量\n\nLava 的出發點：先見面，再決定\n\n在真實相處裡，你才感受得到那個感覺\n是輕盈的靠近，還是沉重的留著"
-            },
-            "7": {
-              "heading": "下次那個「說不出口」的感覺來了，先問自己這三件事",
-              "display_copy": "「說不出口」來了\n先問自己三件事\n\n① 如果他這個月什麼都沒做\n   你還會想靠近他嗎？\n\n② 想到「離開」\n   第一個念頭是【解脫】還是愧疚？\n\n③ 你對這段關係的投入\n   來自期待，還是來自壓力？\n\n這三個問題不給你答案——但它們能幫你認出，那個卡住的感覺，究竟從哪裡來。"
-            },
-            "8": {
-              "heading": "Lava 的立場：真實感受，只能在真實裡認識",
-              "display_copy": "義務感最容易在「累積的付出」裡滋長\n在你還沒機會認識他之前\n\nLava 想讓你在見面之前保持那份清醒\n\n在認識一個人之前，累積的對話只會製造噪音——【讓你更難分辨，自己真正感受到的是什麼。】\n\n《我的荒糖戀愛》最甜的，是真實相處裡長出來的時刻，那才是故事的核心。"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "candidates_since": "2026-09-01T18:33:03+08:00",
-      "regen_needed": {
-        "ts": "2026-09-01T18:48:33+08:00",
-        "slides": [
-          5
-        ],
-        "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"
-      },
-      "regen_requested_at": "2026-09-01T18:48:34+08:00",
-      "rendered_lines": {
-        "1": [
-          "被他寵到覺得「拒絕他好像很殘忍」——這",
-          "不是愛，是虧欠感",
-          "",
-          "《我的荒糖戀愛》",
-          "丁海寅把人寵到〖說不出口〗",
-          "心理學說，這不是愛",
-          "那個卡在喉嚨裡的感覺",
-          "已經被命名了——它出現的頻率，比你想像的更高"
-        ],
-        "2": [
-          "你追過這種劇情——也活過這種感覺",
-          "",
-          "他備咖啡、接送、買展票",
-          "你想分手，話卻卡在喉嚨",
-          "那個卡住的感覺，有它自己的名字",
-          "心理學早已將它命名——大多數人從來沒發現自己",
-          "正在這個狀態裡，因為它長得太像「捨不得」了"
-        ],
-        "3": [
-          "你以為是愛，Cialdini 1984 年說那叫義務感",
-          "",
-          "你以為是愛，Cialdini 1984 說那叫義務感",
-          "互惠性的真正驚人之處",
-          "不需要你喜歡對方",
-          "不需要你主動開口要",
-          "光是「收到」這個動作，就足以在你心裡製造出義務",
-          "感——對方付出越多，那個重量就越大，大到讓「說",
-          "不」感覺像在犯罪",
-          "資料來源：Wikipedia — Reciprocity (social",
-          "psychology)"
-        ],
-        "4": [
-          "你沒開口要那瓶飲料，但 1971 年的實驗告訴",
-          "你，你已經欠他了",
-          "",
-          "你沒開口要那瓶飲料",
-          "但 1971 年的實驗告訴你，你已經欠他了",
-          "Regan 實驗，1971",
-          "他幫你買了一瓶飲料",
-          "然後拜託你買他的彩票",
-          "結果：你買了",
-          "不請自來的付出依然能啟動義務感——那份債，你",
-          "沒同意，但它已經掛在你身上了",
-          "資料來源：Cognitigence — Cialdini's 7 Principles of",
-          "Persuasion"
-        ],
-        "5": [
-          "感激 vs. 虧欠感：長得一樣，但一個讓關係變",
-          "好，一個讓你留下來卻越來越遠",
-          "",
-          "Algoe 等人，2010年｜《個人關係》期刊",
-          "感激→ 預測次日關係連結與滿意度上升",
-          "虧欠感→ 維持關係的外部信號，但讓你越來越遠",
-          "兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相",
-          "連——感激才是真正讓關係變好的那個，而你現在感",
-          "受到的，是哪一種",
-          "資料來源：Algoe, Gable & Maisel (2010), Personal",
-          "Relationships"
-        ],
-        "6": [
-          "見面之前，你怎麼知道自己是「被他吸引」",
-          "還是「被他的付出綁住」",
-          "",
-          "見面之前，你怎麼知道是被他吸引，還是被他的付出",
-          "綁住",
-          "對話框裡每一個回覆、每一個表情符號",
-          "都在悄悄加重那個義務感的重量",
-          "Lava 的出發點：先見面，再決定",
-          "在真實相處裡，你才感受得到那個感覺",
-          "是輕盈的靠近，還是沉重的留著"
-        ],
-        "7": [
-          "下次那個「說不出口」的感覺來了，先問自己",
-          "這三件事",
-          "",
-          "「說不出口」來了",
-          "先問自己三件事",
-          "① 如果他這個月什麼都沒做",
-          "   你還會想靠近他嗎",
-          "② 想到「離開」",
-          "   第一個念頭是解脫還是愧疚",
-          "③ 你對這段關係的投入",
-          "   來自期待，還是來自壓力",
-          "這三個問題不給你答案——但它們能幫你認出，那個",
-          "卡住的感覺，究竟從哪裡來"
-        ],
-        "8": [
-          "Lava 的立場：真實感受，只能在真實裡認識",
-          "",
-          "義務感最容易在「累積的付出」裡滋長",
-          "在你還沒機會認識他之前",
-          "Lava 想讓你在見面之前保持那份清醒",
-          "在認識一個人之前，累積的對話只會製造噪音",
-          "讓你更難分辨，自己真正感受到的是什麼",
-          "《我的荒糖戀愛》最甜的，是真實相處裡長出來的時",
-          "刻，那才是故事的核心"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-02T01:44:35+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
-        "pass": false,
-        "counts": {
-          "圖上單行過長": 13
-        },
-        "issues": [
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第1張主標",
-            "line": "被他寵到覺得「拒絕他好像很殘忍」：這不是愛，是虧欠感…（26 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第1張內文",
-            "line": "那個卡在喉嚨裡的感覺，已經被命名了：它出現的頻率，比你想像的更高。…（33 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第2張內文",
-            "line": "心理學早已將它命名：大多數人從來沒發現自己正在這個狀態裡，因為它長得太像「捨不得…（43 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第3張主標",
-            "line": "你以為是愛，Cialdini 1984 年說那叫義務感…（27 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第3張內文",
-            "line": "你以為是愛，Cialdini 1984 說那叫義務感…（26 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第4張主標",
-            "line": "你沒開口要那瓶飲料，但 1971 年的實驗告訴你，你已經欠他了…（31 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第4張內文",
-            "line": "不請自來的付出依然能啟動義務感：那份債，你沒同意，但它已經掛在你身上了。…（36 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第5張主標",
-            "line": "感激 vs. 虧欠感：長得一樣，但一個讓關係變好，一個讓你留下來卻越來越遠…（37 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第5張內文",
-            "line": "兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相連：感激才是真正讓關係變好的那個，…（54 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第6張主標",
-            "line": "見面之前，你怎麼知道自己是「被他吸引」還是「被他的付出綁住」？…（31 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第6張內文",
-            "line": "見面之前，你怎麼知道是【被他吸引】，還是被他的付出綁住？…（28 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第7張內文",
-            "line": "這三個問題不給你答案。但它們能幫你認出，那個卡住的感覺，究竟從哪裡來。…（35 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第8張內文",
-            "line": "在認識一個人之前，累積的對話只會製造噪音：【讓你更難分辨，自己真正感受到的是什麼…（42 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          }
-        ]
-      },
-      "fact": {
-        "ts": "2026-09-02T01:45:47+08:00",
-        "pass": false,
-        "claims": 3,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「以為是愛，Cialdini 1984 年說那叫義務感 你以為是愛，C」沒有對應出處（年份）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「1971 年」的數字在出處頁面裡找不到：https://www.cognitigence.com/blog/cialdini-7-principles-of-persuasion"
-          }
-        ]
-      }
-    },
-    {
-      "id": "86eyrdm6u",
-      "topic": "《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起：你選了誰？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyrdm6u",
-      "created_at": null,
-      "caption": "《一夜限定》的世界觀是：全球每年只有一個夜晚的 12 小時，你可以和任何人在一起。\n\n問題不是你會怎麼用這 12 小時，問題是你的第一個念頭，想到的是誰。\n\n電影用一個荒謬的法律設定做了一件很有意思的事：它把「選擇」從無限期變成了有期限，而期限，讓每個人都必須誠實。\n主角 Owen 和 Allie 都是城市裡唯二只想找真愛的人，正因為今晚過了就沒有了，他們才會在街頭追逐、才會在意每一個錯過。\nLava 的邏輯和這個設定有一點像：配對的目的不是繼續聊，而是讓見面這件事從一個可以無限延遲的選項，變成一個你必須面對的具體時刻。\n\n#一夜限定 #交友軟體 #約會 #愛情 #七夕 #選擇悖論 #交友心理 #現代愛情 #見面 #Lava交友 #不聊天的交友軟體 #台灣電影 #浪漫喜劇 #線下約會 #關係",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [],
-          "final_src": null,
-          "heading": "一年只有今晚",
-          "display_copy": "一年只有今晚\n你腦海裡第一個出現的\n是誰的臉？\n\n《一夜限定》One Night Only (2026)"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [],
-          "final_src": null,
-          "heading": "你不是沒興趣，你只是「還沒決定」",
-          "display_copy": "你認識他／她【三週】了\n訊息每天來回，感覺不錯\n但見面這件事\n就這樣一直【飄著】\n\n因為「隨時可以約」\n所以「現在不急」\n\n選項永遠開著的代價\n是它永遠不需要被決定"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "選項越多，越難決定：這不是你的問題，是設計的問題",
-          "display_copy": "【選項越多，越難決定】\n心理學家 Barry Schwartz\n稱之為「選擇悖論」\n（paradox of choice）\n\n當選項無限開著\n你的決策能力下降\n對最終選擇的滿意度\n也同步下滑\n\n資料來源：Barry Schwartz, The Paradox of Choice: Why More Is Less (HarperCollins, 2004)"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "配對越多，追求越少",
-          "display_copy": "配對越多，反而越少行動\n\nPronk & Denissen【2019】研究：\n交友 App 使用者面對過多配對時\n實際追求任何一個人的可能性\n顯著【降低】\n\n選項本身製造了\n「還不需要決定」的幻覺\n讓每個人都變得「不急」\n\n資料來源：Pronk & Denissen (2019), Journal of Social and Personal Relationships. researchgate.net/publication/335312368"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "用越久，越累：這不是巧合",
-          "display_copy": "滑動、配對、對話、沉默\n這個循環本身就在消耗人\n\nPronk & Denissen【2020】：\n無限選項搭配遊戲化機制\n促使使用者快速循環換人\n【阻礙有意義連結的形成】\n\n「今晚過了就沒有了」\n反而是一種解藥\n\n資料來源：Pronk & Denissen (2020), 轉引自 researchgate.net/publication/335312368"
-        },
-        {
-          "n": 6,
-          "role": "品牌輕置入",
-          "candidates": [],
-          "final_src": null,
-          "heading": "《一夜限定》的設定其實是一種反向設計",
-          "display_copy": "《一夜限定》裡的 Owen 和 Allie\n因為今晚過了就沒有了\n才會在街頭追\n才會在意每個錯過\n\n【截止日期，讓選擇變得誠實】\n\nLava 的邏輯也是這樣：\n見面不是選項的終點\n而是整件事的起點"
-        },
-        {
-          "n": 7,
-          "role": "應用/怎麼做",
-          "candidates": [],
-          "final_src": null,
-          "heading": "那個你一直說「改天」的人，現在就可以約",
-          "display_copy": "有沒有一個人\n你已經想見很久\n\n理由一直是\n「還沒準備好」\n「等更好的時機」\n\n那個時機\n從來不會自己出現\n\n【今天，就是那個時機】"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [],
-          "final_src": null,
-          "heading": "Lava：幫你把見面變成一個有日期的約定",
-          "display_copy": "〖Lava 在幫你做一件事〗\n\n把「改天見」\n變成一個有日期的約定\n\n因為連結不發生在對話框裡\n它發生在你們決定出現\n在同一個地方的那一刻"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "《One Night Only》曾入選 2024 年 Black List（好萊塢年度最受期待未拍劇本名單）",
-          "source": "https://en.wikipedia.org/wiki/One_Night_Only_(2026_film)",
-          "quote": "The script was featured on the 2024 Black List."
-        },
-        {
-          "claim": "北美正式上映日：2026 年 8 月 7 日；台灣上映日：2026 年 8 月 19 日",
-          "source": "https://www.atmovies.com.tw/movie/foen37853455/",
-          "quote": "台灣上映日期：2026/08/19"
-        },
-        {
-          "claim": "電影世界觀：因保守政治通過「婚姻授權法」，婚前性行為全年違法，僅有每年一個特定夜晚 12 小時合法開放",
-          "source": "https://www.onenightonlymovie.ca/synopsis/",
-          "quote": "the one night a year that sex is legal"
-        },
-        {
-          "claim": "Owen 剛被女友狠甩，Allie 是滿懷浪漫情懷的女子，城市裡唯二只想尋找真愛、而不只是一夜情性伴侶的單身人士",
-          "source": "https://www.chinatimes.com/realtimenews/20260615003590-260404",
-          "quote": "城市裡唯二只想尋找真愛、而不只是一夜情性伴侶的單身人士"
-        },
-        {
-          "claim": "Barry Schwartz 於 2004 年出版《The Paradox of Choice: Why More Is Less》，提出選擇悖論（paradox of choice）：選項過多導致決策癱瘓，對最終選擇的滿意度同步下降",
-          "source": "https://www.harpercollins.com/products/the-paradox-of-choice-barry-schwartz",
-          "quote": "The Paradox of Choice: Why More Is Less by Barry Schwartz (HarperCollins, 2004)"
-        },
-        {
-          "claim": "Pronk 與 Denissen 2019 年研究：交友 App 使用者面對過多配對選項時，選擇過載弔詭地阻礙決策，降低使用者實際追求任何配對的可能性",
-          "source": "https://www.researchgate.net/publication/335312368_A_Rejection_Mind-Set_Choice_Overload_in_Online_Dating",
-          "quote": "choice overload in online dating paradoxically impedes decision-making, reducing the likelihood that users actually pursue any given match"
-        },
-        {
-          "claim": "Pronk 與 Denissen 2020 年進一步指出，數位平台上無限選項搭配遊戲化獎勵機制，促使使用者快速循環換人，阻礙有意義連結的形成",
-          "source": "https://www.researchgate.net/publication/335312368_A_Rejection_Mind-Set_Choice_Overload_in_Online_Dating",
-          "quote": "choice overload in online dating paradoxically impedes decision-making, reducing the likelihood that users actually pursue any given match"
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "copy_versions": {
-        "claude": {
-          "caption": "《一夜限定》的世界觀是：全球每年只有一個夜晚的 12 小時，你可以和任何人在一起。\n\n問題不是你會怎麼用這 12 小時，問題是你的第一個念頭，想到的是誰。\n\n電影用一個荒謬的法律設定做了一件很有意思的事：它把「選擇」從無限期變成了有期限，而期限，讓每個人都必須誠實。\n主角 Owen 和 Allie 都是城市裡唯二只想找真愛的人，正因為今晚過了就沒有了，他們才會在街頭追逐、才會在意每一個錯過。\nLava 的邏輯和這個設定有一點像：配對的目的不是繼續聊，而是讓見面這件事從一個可以無限延遲的選項，變成一個你必須面對的具體時刻。\n\n#一夜限定 #交友軟體 #約會 #愛情 #七夕 #選擇悖論 #交友心理 #現代愛情 #見面 #Lava交友 #不聊天的交友軟體 #台灣電影 #浪漫喜劇 #線下約會 #關係",
-          "slides": {
-            "1": {
-              "heading": "一年只有今晚",
-              "display_copy": "一年只有今晚\n你腦海裡第一個出現的\n是誰的臉？\n\n《一夜限定》One Night Only (2026)"
-            },
-            "2": {
-              "heading": "你不是沒興趣，你只是「還沒決定」",
-              "display_copy": "你認識他／她【三週】了\n訊息每天來回，感覺不錯\n但見面這件事\n就這樣一直【飄著】\n\n因為「隨時可以約」\n所以「現在不急」\n\n選項永遠開著的代價\n是它永遠不需要被決定"
-            },
-            "3": {
-              "heading": "選項越多，越難決定——這不是你的問題，是設計的問題",
-              "display_copy": "【選項越多，越難決定】\n心理學家 Barry Schwartz\n稱之為「選擇悖論」\n（paradox of choice）\n\n當選項無限開著\n你的決策能力下降\n對最終選擇的滿意度\n也同步下滑\n\n資料來源：Barry Schwartz, The Paradox of Choice: Why More Is Less (HarperCollins, 2004)"
-            },
-            "4": {
-              "heading": "配對越多，追求越少",
-              "display_copy": "配對越多，反而越少行動\n\nPronk & Denissen【2019】研究：\n交友 App 使用者面對過多配對時\n實際追求任何一個人的可能性\n顯著【降低】\n\n選項本身製造了\n「還不需要決定」的幻覺\n讓每個人都變得「不急」\n\n資料來源：Pronk & Denissen (2019), Journal of Social and Personal Relationships. researchgate.net/publication/335312368"
-            },
-            "5": {
-              "heading": "用越久，越累——這不是巧合",
-              "display_copy": "滑動、配對、對話、沉默\n這個循環本身就在消耗人\n\nPronk & Denissen【2020】：\n無限選項搭配遊戲化機制\n促使使用者快速循環換人\n【阻礙有意義連結的形成】\n\n「今晚過了就沒有了」\n反而是一種解藥\n\n資料來源：Pronk & Denissen (2020), 轉引自 researchgate.net/publication/335312368"
-            },
-            "6": {
-              "heading": "《一夜限定》的設定其實是一種反向設計",
-              "display_copy": "《一夜限定》裡的 Owen 和 Allie\n因為今晚過了就沒有了\n才會在街頭追\n才會在意每個錯過\n\n【截止日期，讓選擇變得誠實】\n\nLava 的邏輯也是這樣：\n見面不是選項的終點\n而是整件事的起點"
-            },
-            "7": {
-              "heading": "那個你一直說「改天」的人，現在就可以約",
-              "display_copy": "有沒有一個人\n你已經想見很久\n\n理由一直是\n「還沒準備好」\n「等更好的時機」\n\n那個時機\n從來不會自己出現\n\n【今天，就是那個時機】"
-            },
-            "8": {
-              "heading": "Lava：幫你把見面變成一個有日期的約定",
-              "display_copy": "〖Lava 在幫你做一件事〗\n\n把「改天見」\n變成一個有日期的約定\n\n因為連結不發生在對話框裡\n它發生在你們決定出現\n在同一個地方的那一刻"
-            },
-            "9": {
-              "heading": "CTA 公版",
-              "display_copy": "CTA 公版"
-            }
-          }
-        }
-      },
-      "regen_needed": {
-        "ts": "2026-09-01T18:48:45+08:00",
-        "slides": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8
-        ],
-        "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"
-      },
-      "regen_requested_at": "2026-09-01T18:48:46+08:00",
-      "rendered_lines": {
-        "1": [
-          "一年只有今晚",
-          "",
-          "一年只有今晚",
-          "你腦海裡第一個出現的",
-          "是誰的臉",
-          "《一夜限定》One Night Only (2026)"
-        ],
-        "2": [
-          "你不是沒興趣，你只是「還沒決定」",
-          "",
-          "你認識他／她三週了",
-          "訊息每天來回，感覺不錯",
-          "但見面這件事",
-          "就這樣一直飄著",
-          "因為「隨時可以約」",
-          "所以「現在不急」",
-          "選項永遠開著的代價",
-          "是它永遠不需要被決定"
-        ],
-        "3": [
-          "選項越多，越難決定——這不是你的問題",
-          "是設計的問題",
-          "",
-          "選項越多，越難決定",
-          "心理學家 Barry Schwartz",
-          "稱之為「選擇悖論」",
-          "（paradox of choice）",
-          "當選項無限開著",
-          "你的決策能力下降",
-          "對最終選擇的滿意度",
-          "也同步下滑",
-          "資料來源：Barry Schwartz, The Paradox of Choice",
-          "Why More Is Less (HarperCollins, 2004)"
-        ],
-        "4": [
-          "配對越多，追求越少",
-          "",
-          "配對越多，反而越少行動",
-          "Pronk & Denissen2019研究",
-          "交友 App 使用者面對過多配對時",
-          "實際追求任何一個人的可能性",
-          "顯著降低",
-          "選項本身製造了",
-          "「還不需要決定」的幻覺",
-          "讓每個人都變得「不急」",
-          "資料來源：Pronk & Denissen (2019), Journal of",
-          "Social and Personal Relationships. researchgate.net/",
-          "publication/335312368"
-        ],
-        "5": [
-          "用越久，越累——這不是巧合",
-          "",
-          "滑動、配對、對話、沉默",
-          "這個循環本身就在消耗人",
-          "Pronk & Denissen2020",
-          "無限選項搭配遊戲化機制",
-          "促使使用者快速循環換人",
-          "阻礙有意義連結的形成",
-          "「今晚過了就沒有了」",
-          "反而是一種解藥",
-          "資料來源：Pronk & Denissen (2020), 轉引自",
-          "researchgate.net/publication/335312368"
-        ],
-        "6": [
-          "《一夜限定》的設定其實是一種反向設計",
-          "",
-          "《一夜限定》裡的 Owen 和 Allie",
-          "因為今晚過了就沒有了",
-          "才會在街頭追",
-          "才會在意每個錯過",
-          "截止日期，讓選擇變得誠實",
-          "Lava 的邏輯也是這樣",
-          "見面不是選項的終點",
-          "而是整件事的起點"
-        ],
-        "7": [
-          "那個你一直說「改天」的人，現在就可以約",
-          "",
-          "有沒有一個人",
-          "你已經想見很久",
-          "理由一直是",
-          "「還沒準備好」",
-          "「等更好的時機」",
-          "那個時機",
-          "從來不會自己出現",
-          "今天，就是那個時機"
-        ],
-        "8": [
-          "Lava：幫你把見面變成一個有日期的約定",
-          "",
-          "Lava 在幫你做一件事",
-          "把「改天見」",
-          "變成一個有日期的約定",
-          "因為連結不發生在對話框裡",
-          "它發生在你們決定出現",
-          "在同一個地方的那一刻"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-02T01:44:54+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
-        "pass": false,
-        "counts": {
-          "赦免式安慰": 1,
-          "圖上印網址": 2,
-          "圖上單行過長": 4
-        },
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "赦免式安慰",
-            "where": "第3張主標",
-            "line": "第3張主標：…項越多，越難決定：這不是你的問題，是設計的問題…",
-            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第1張內文",
-            "line": "《一夜限定》One Night Only (2026)…（27 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第3張內文",
-            "line": "資料來源：Barry Schwartz, The Paradox of Choi…（82 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上印網址",
-            "severity": "block",
-            "where": "第4張內文",
-            "line": "researchgate.net/publication/335312368",
-            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第4張內文",
-            "line": "Pronk & Denissen【2019】研究：…（25 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          },
-          {
-            "rule": "圖上印網址",
-            "severity": "block",
-            "where": "第5張內文",
-            "line": "researchgate.net/publication/335312368",
-            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
-          },
-          {
-            "rule": "圖上單行過長",
-            "severity": "warn",
-            "where": "第5張內文",
-            "line": "資料來源：Pronk & Denissen (2020), 轉引自 resear…（72 字）",
-            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
-          }
-        ]
-      },
-      "fact": {
-        "ts": "2026-09-02T01:45:47+08:00",
-        "pass": true,
-        "claims": 0,
-        "issues": [],
-        "note": "文案未偵測到數字或研究引用"
-      }
-    },
-    {
       "id": "20260824-StanTatkin說你",
       "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力。但神經科學說，愛情是一項需要每天練習的技能",
       "version": 2,
@@ -13643,6 +12770,760 @@
         ],
         "rhythm": "九張裡有七張是深色人物劇照＋下壓文字，節奏如同一首歌從頭到尾只有一個音量，讀者滑到第四張就已感知疲勞；建議在第4或第5張置入一張亮色系或純排版卡作為視覺轉折點，讓後半段的情緒遞進有地方站。"
       }
+    },
+    {
+      "id": "86eyrz3f9",
+      "topic": "86eyrz3f9｜20260901-86eyrz3f9｜20260901-Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」——這件事，心理學有個名字",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyrz3f9",
+      "created_at": null,
+      "caption": "《我的荒糖戀愛》2026年8月7日登上Netflix台灣冠軍。\n\n丁海寅扮演的前拳擊手出身黑道成員，謊稱是失憶女主角的男友、對她過度照顧，讓無數觀眾說「如果是我也說不出拒絕」。\n但心理治療師Pete Walker早在2003年就給這件事取了一個名字，而且它和軟弱完全無關。\n\n無法看到對方的全貌、資訊嚴重不對稱、害怕打破剛建立的連結，這些是訊息交友的結構性壓力，也正是 Fawn Response 最容易被觸發的條件。\nLava 選擇跳過漫長的訊息試探，直接從見面開始，不是為了讓約會更「有效率」，而是因為真實場景裡的你更知道自己的感覺，更容易聽見那個想說「不」的聲音。\n\n#交友軟體 #約會 #韓劇 #Netflix #我的荒糖戀愛 #丁海寅 #JungHaein #OurStickyLove #FawnResponse #心理學 #戀愛心理 #創傷知識 #Lava交友 #不聊天的交友軟體 #台灣交友",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Wikipedia — Reciprocity (social psychology)；Cognitigence — Cialdini's 7 Principles of Persuasion",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrz3f9/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Our Sticky Love",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrz3f9/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Our Sticky Love",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyrz3f9/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Our Sticky Love",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "被他寵到說不出「不」——不是軟弱，是神經系統在保護你",
+          "display_copy": "被他寵到說不出「不」\n不是軟弱\n是神經系統在保護你\n\n《我的荒糖戀愛》登上 Netflix 台灣冠軍——丁海寅謊稱是失憶女主的男友，過度照顧、貼身守護。觀眾看著覺得甜，卻說不出為什麼那個「不」始終到不了嘴邊。心理學管這個叫【Fawn Response（趨附反應）】——它跟軟弱完全無關。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-2b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrz3f9/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Our Sticky Love",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrz3f9/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Our Sticky Love",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "她不是因為愛他才說不出「不」",
+          "display_copy": "她不是因為愛他才說不出「不」\n\n高恩世失憶後，身分認同完全空白——現實的座標全數由張泰河提供。他說他是她男友，她就信了；他說留下來更安全，她就留了。\n\n這不是愛情裡的順從。失去身分認同的人，會把【提供現實框架的人】當作安全錨點。神經系統依附他，不是因為軟弱，而是因為在高度不確定性下，這是它唯一認識的安全路徑。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Wikipedia — Reciprocity (social psychology)（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Wikipedia — Reciprocity (social psychology)（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
+          "final_src": null,
+          "heading": "Fight、Flight、Freeze——還有一個你沒聽說過的第四種",
+          "display_copy": "Fight、Flight、Freeze——\n還有第四種你沒聽說過的\n\n心理治療師 Pete Walker 約於【2003 年】提出「Fawn Response（趨附反應）」，並在 2013 年的著作《Complex PTSD: From Surviving to Thriving》中正式論述：當大腦感知到威脅，神經系統有時不會戰鬥、不會逃跑、也不會僵住——它選擇討好。四種反應裡，Fawn 是最少被認識的一種。\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Cognitigence — Cialdini's 7 Principles of Persuasion",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Weightlifting Fairy Kim Bokjoo",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrz3f9/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Weightlifting Fairy Kim Bokjoo",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrz3f9/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Weightlifting Fairy Kim Bokjoo",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Fawn Response 長什麼樣子？它看起來像好人",
+          "display_copy": "Fawn Response 長什麼樣子？\n\n它看起來像【好人】——溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝突、保持安全而啟動的自動程式。\n\n難以說不、過度道歉、為對方的情緒負責——這三件事同時出現，不是個性，是神經系統在告訴你它感受到了威脅。一般討好可能出於社會動機；Fawn 是焦慮驅動的強迫性順從。\n\n資料來源：CPTSD Foundation, \"Fawn Response\" (2025/06/05), cptsdfoundation.org",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-5a.webp",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-5b.webp",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrz3f9/slide-5c.webp",
+              "kind": "still",
+              "source_label": "My Mister",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "真正的善意讓你充滿能量；Fawn 式討好讓你精疲力竭",
+          "display_copy": "真正的善意讓你【充滿能量】\nFawn 式討好讓你精疲力竭\n\n怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？\n\n如果是——你的順從很可能不是慷慨，是神經系統在告訴你它正處於威脅狀態。真正的善意出於選擇；Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完全不成比例。\n\n資料來源：Psychology Today, \"Demystifying the Fawn Response\" (Apr 2025), psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-6b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
+          "final_src": null,
+          "heading": "線上認識一個人，你的神經系統更容易進入 Fawn 模式",
+          "display_copy": "訊息交友的結構性壓力\n正好是 Fawn 模式最容易觸發的條件\n\n資訊不對稱、害怕打破剛建立的連結、看不見對方全貌——這三件事讓神經系統更難說不，甚至讓你自己也搞不清楚哪個是選擇、哪個是焦慮。\n\n〖Lava 選擇從見面開始〗，不是效率考量，而是讓你在真實場景裡更容易聽見自己的感覺——包括那個想說「不」的聲音。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-7b.webp",
+              "kind": "still",
+              "source_label": "Its Okayto Not Be Okay",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrz3f9/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Its Okayto Not Be Okay",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrz3f9/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Its Okayto Not Be Okay",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "你不需要「學會拒絕」——你需要先認出這個模式",
+          "display_copy": "你不需要「學會拒絕」\n你需要先認出這個模式\n\nFawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成——孩子學會停止反抗以避免養育者報復，因而喪失說「不」的能力。靠意志力無法覆蓋。\n\n第一步只有一個：當那個【與情境不相稱的焦慮】出現時，先停下來，問自己——「這是我想要的，還是我在讓自己感覺安全？」\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-8b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的邏輯是：讓你有機會在真實情境裡練習聽見自己",
+          "display_copy": "Lava 不是心理治療\n但它的設計有一個副作用\n\n真實場景給你更多身體信號——讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道怎麼離開」〗。\n\nFawn 模式在資訊不對稱、看不見對方的環境裡最容易滋生。從見面開始，不是效率考量——是讓你在更容易聽見自己的地方約會。不是保證，是機會。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《我的荒糖戀愛》於2026年8月7日在Netflix獨家全球上線",
+          "source": "https://about.netflix.com/en/news/our-sticky-love-main-trailer",
+          "quote": "Our Sticky Love premieres globally on Netflix on August 7, 2026"
+        },
+        {
+          "claim": "Pete Walker 約於2003年提出「Fawn Response（趨附反應）」的概念，作為 fight-flight-freeze 之外的第四種創傷反應",
+          "source": "https://www.psychologytoday.com/us/blog/emotional-sobriety/202303/what-is-the-fawning-trauma-response",
+          "quote": "Pete Walker, a psychotherapist, coined the term 'fawn response' around 2003 as a fourth survival response alongside fight, flight, and freeze"
+        },
+        {
+          "claim": "Pete Walker 在2013年出版的著作《Complex PTSD: From Surviving to Thriving》中對 Fawn Response 做了詳細論述",
+          "source": "https://www.amazon.com/Complex-PTSD-Surviving-PETE-WALKER/dp/1492871842",
+          "quote": "Complex PTSD: From Surviving to Thriving — Pete Walker, published 2013"
+        },
+        {
+          "claim": "Fawn Response 的常見行為包括：難以說不、過度道歉、為對方的情緒反應負責",
+          "source": "https://cptsdfoundation.org/2025/06/05/fawn-response-the-trauma-survival-pattern-thats-mistaken-for-kindness/",
+          "quote": "Common fawn behaviors include difficulty saying no, excessive apologizing, and taking responsibility for others' emotional reactions"
+        },
+        {
+          "claim": "若說「不」會引發與情境不相稱的焦慮，行為很可能是由 fawn 驅動，而非出於慷慨",
+          "source": "https://www.psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response",
+          "quote": "If saying 'no' triggers anxiety that seems disproportionate to the situation, the behavior is likely fawn-driven rather than genuine generosity"
+        },
+        {
+          "claim": "真正的善意出於選擇、令人充滿能量；而以 Fawn 為基礎的討好行為源於恐懼、令人精疲力竭",
+          "source": "https://www.psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response",
+          "quote": "Genuine kindness comes from choice and leaves you energized, while fawn-based people-pleasing stems from fear and leaves you exhausted"
+        },
+        {
+          "claim": "Fawn 模式通常在童年形成——孩子學會停止反抗以避免養育者的報復，因而喪失說「不」的能力",
+          "source": "https://www.amazon.com/Complex-PTSD-Surviving-PETE-WALKER/dp/1492871842",
+          "quote": "Pete Walker describes how fawn patterns typically form in childhood, when children learn to stop resisting in order to avoid retaliation from caregivers, losing the capacity to say no"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "《我的荒糖戀愛》2026年8月7日登上Netflix台灣冠軍。\n\n丁海寅扮演的前拳擊手出身黑道成員，謊稱是失憶女主角的男友、對她過度照顧，讓無數觀眾說「如果是我也說不出拒絕」。\n但心理治療師Pete Walker早在2003年就給這件事取了一個名字，而且它和軟弱完全無關。\n\n無法看到對方的全貌、資訊嚴重不對稱、害怕打破剛建立的連結，這些是訊息交友的結構性壓力，也正是 Fawn Response 最容易被觸發的條件。\nLava 選擇跳過漫長的訊息試探，直接從見面開始，不是為了讓約會更「有效率」，而是因為真實場景裡的你更知道自己的感覺，更容易聽見那個想說「不」的聲音。\n\n#交友軟體 #約會 #韓劇 #Netflix #我的荒糖戀愛 #丁海寅 #JungHaein #OurStickyLove #FawnResponse #心理學 #戀愛心理 #創傷知識 #Lava交友 #不聊天的交友軟體 #台灣交友",
+          "slides": {
+            "1": {
+              "heading": "被他寵到說不出「不」——不是軟弱，是神經系統在保護你",
+              "display_copy": "被他寵到說不出「不」\n不是軟弱\n是神經系統在保護你\n\n《我的荒糖戀愛》登上 Netflix 台灣冠軍——丁海寅謊稱是失憶女主的男友，過度照顧、貼身守護。觀眾看著覺得甜，卻說不出為什麼那個「不」始終到不了嘴邊。心理學管這個叫【Fawn Response（趨附反應）】——它跟軟弱完全無關。"
+            },
+            "2": {
+              "heading": "她不是因為愛他才說不出「不」",
+              "display_copy": "她不是因為愛他才說不出「不」\n\n高恩世失憶後，身分認同完全空白——現實的座標全數由張泰河提供。他說他是她男友，她就信了；他說留下來更安全，她就留了。\n\n這不是愛情裡的順從。失去身分認同的人，會把【提供現實框架的人】當作安全錨點。神經系統依附他，不是因為軟弱，而是因為在高度不確定性下，這是它唯一認識的安全路徑。"
+            },
+            "3": {
+              "heading": "Fight、Flight、Freeze——還有一個你沒聽說過的第四種",
+              "display_copy": "Fight、Flight、Freeze——\n還有第四種你沒聽說過的\n\n心理治療師 Pete Walker 約於【2003 年】提出「Fawn Response（趨附反應）」，並在 2013 年的著作《Complex PTSD: From Surviving to Thriving》中正式論述：當大腦感知到威脅，神經系統有時不會戰鬥、不會逃跑、也不會僵住——它選擇討好。四種反應裡，Fawn 是最少被認識的一種。\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842"
+            },
+            "4": {
+              "heading": "Fawn Response 長什麼樣子？它看起來像好人",
+              "display_copy": "Fawn Response 長什麼樣子？\n\n它看起來像【好人】——溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝突、保持安全而啟動的自動程式。\n\n難以說不、過度道歉、為對方的情緒負責——這三件事同時出現，不是個性，是神經系統在告訴你它感受到了威脅。一般討好可能出於社會動機；Fawn 是焦慮驅動的強迫性順從。\n\n資料來源：CPTSD Foundation, \"Fawn Response\" (2025/06/05), cptsdfoundation.org"
+            },
+            "5": {
+              "heading": "真正的善意讓你充滿能量；Fawn 式討好讓你精疲力竭",
+              "display_copy": "真正的善意讓你【充滿能量】\nFawn 式討好讓你精疲力竭\n\n怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？\n\n如果是——你的順從很可能不是慷慨，是神經系統在告訴你它正處於威脅狀態。真正的善意出於選擇；Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完全不成比例。\n\n資料來源：Psychology Today, \"Demystifying the Fawn Response\" (Apr 2025), psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response"
+            },
+            "6": {
+              "heading": "線上認識一個人，你的神經系統更容易進入 Fawn 模式",
+              "display_copy": "訊息交友的結構性壓力\n正好是 Fawn 模式最容易觸發的條件\n\n資訊不對稱、害怕打破剛建立的連結、看不見對方全貌——這三件事讓神經系統更難說不，甚至讓你自己也搞不清楚哪個是選擇、哪個是焦慮。\n\n〖Lava 選擇從見面開始〗，不是效率考量，而是讓你在真實場景裡更容易聽見自己的感覺——包括那個想說「不」的聲音。"
+            },
+            "7": {
+              "heading": "你不需要「學會拒絕」——你需要先認出這個模式",
+              "display_copy": "你不需要「學會拒絕」\n你需要先認出這個模式\n\nFawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成——孩子學會停止反抗以避免養育者報復，因而喪失說「不」的能力。靠意志力無法覆蓋。\n\n第一步只有一個：當那個【與情境不相稱的焦慮】出現時，先停下來，問自己——「這是我想要的，還是我在讓自己感覺安全？」\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842"
+            },
+            "8": {
+              "heading": "Lava 的邏輯是：讓你有機會在真實情境裡練習聽見自己",
+              "display_copy": "Lava 不是心理治療\n但它的設計有一個副作用\n\n真實場景給你更多身體信號——讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道怎麼離開」〗。\n\nFawn 模式在資訊不對稱、看不見對方的環境裡最容易滋生。從見面開始，不是效率考量——是讓你在更容易聽見自己的地方約會。不是保證，是機會。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-09-02T01:48:49+08:00"
+    },
+    {
+      "id": "86eyrdm6u",
+      "topic": "86eyrdm6u｜20260901-86eyrdm6u｜20260901-《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起——你選了誰？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyrdm6u",
+      "created_at": null,
+      "caption": "2026 年 8 月 7 日，Universal Pictures 上映電影《One Night Only》，由 Will Gluck 執導。\n\n故事設定：架空的當代美國，政府每年只給未婚成年人 12 小時合法的親密時間，稱為「The Mandate」。\nMonica Barbaro 飾演的 Allie 與 Callum Turner 飾演的 Owen，兩個陌生人試圖在這一晚弄清楚彼此的意義。\n那一晚，你選誰？\n\n大多數交友軟體讓你在見面之前，先用幾百則訊息把對方想像成你希望的樣子。\nLava 跳過了那個步驟，先約出來，讓真實的對話、真實的眼神、真實的尷尬決定這個人值不值得你繼續走下去。\n就像電影裡的那個夜晚：不是最長的那段時間，而是你有沒有把握當下那一刻。\nArthur Aron 的研究也說了：親密感的入口是真實的相互袒露，而不是文字的堆疊。\n\n#交友軟體 #約會 #戀愛心理學 #一夜限定 #OneNightOnly #心理學 #稀缺效應 #親密感 #ArthurAron #36個問題 #Lava交友 #不聊天的交友軟體 #線下約會 #台灣交友",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-1a.webp",
+              "kind": "still",
+              "source_label": "組圖：Universal Pictures YouTube；UC Berkeley News",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-1b.webp",
+              "kind": "still",
+              "source_label": "One Night Only"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrdm6u/slide-1c.webp",
+              "kind": "still",
+              "source_label": "One Night Only"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrdm6u/slide-1d.webp",
+              "kind": "still",
+              "source_label": "One Night Only"
+            }
+          ],
+          "final_src": null,
+          "heading": "一年只有這一晚",
+          "display_copy": "一年只有這一晚\n政府只給你 12 小時\n可以和你想在一起的人在一起\n\n——你選了誰？\n\n© Universal Pictures／《One Night Only》2026",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-2a.webp",
+              "kind": "still",
+              "source_label": "Universal Pictures YouTube",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-2b.webp",
+              "kind": "still",
+              "source_label": "Universal Pictures YouTube",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            }
+          ],
+          "final_src": null,
+          "heading": "《One Night Only》的世界觀",
+          "display_copy": "《One Night Only》的世界裡\n政府每年給你 12 小時\n去找到你想在一起的人\n\nMonica Barbaro 與 Callum Turner 飾演的\n兩個陌生人，試圖在時間耗盡前\n【弄清楚彼此的意義】\n\n資料來源：Universal Pictures, universalpictures.com/movies/one-night-only",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-3a.webp",
+              "kind": "still",
+              "source_label": "High Fidelity",
+              "low_q": true
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-3b.webp",
+              "kind": "still",
+              "source_label": "High Fidelity",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrdm6u/slide-3c.webp",
+              "kind": "still",
+              "source_label": "High Fidelity",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "稀缺感讓選擇變得更認真",
+          "display_copy": "「限定一晚」不會讓人更輕浮\n\n心理阻抗理論（Reactance Theory）說：\n當選擇快消失，人反而更清醒\n稀缺感提高大腦獎勵中樞活躍度\n讓你更快知道——\n【那個位置是不是給對了人】\n\n資料來源：Psychology Today, psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-4a.webp",
+              "kind": "still",
+              "source_label": "UC Berkeley News",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-4b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrdm6u/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrdm6u/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyrdm6u/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            }
+          ],
+          "final_src": null,
+          "heading": "Arthur Aron 的實驗：36 個問題",
+          "display_copy": "1997 年，Arthur Aron 博士與 Elaine Aron 博士\n發表了一個實驗：\n讓兩個陌生人回答 36 個問題\n\n結論是——\n【相互脆弱，是親密感的入口】\n\n不是在一起多久\n而是你們聊到了多深\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-5a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
+          "final_src": null,
+          "heading": "Mandy Len Catron 把實驗帶進了真實世界",
+          "display_copy": "2015 年，Mandy Len Catron 在《紐約時報》寫道：\n她用 Arthur Aron 的 36 個問題\n和一個朋友對話\n然後【真的愛上了他】\n\n讓人愛上你的，不是問題——\n是你選擇說出真實自己的那個決定\n\n資料來源：NYT, nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-6b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrdm6u/slide-6c.webp",
+              "kind": "still",
+              "source_label": "One Night Only"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrdm6u/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyrdm6u/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyrdm6u/slide-6f.webp",
+              "kind": "still",
+              "source_label": "One Night Only",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "「感覺像愛」和「是愛」是兩件事",
+          "display_copy": "Arthur Aron 說：\n36 個問題創造的是「暫時性親密感」\n〖不等於愛〗\n\n一夜限定的強烈感，可以感覺像愛\n但愛，是第二天早上\n你還想繼續的決定\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "品牌輕置入",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-7b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrdm6u/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Amlie"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyrdm6u/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Amlie",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyrdm6u/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Amlie",
+              "low_q": true
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 的邏輯：先見面，再說",
+          "display_copy": "Lava 不讓你聊天\n是因為——\n\n【真實的相遇，發生在見面之後】\n不是訊息裡想像出來的那個人\n\n36 個問題的核心不是問題本身\n是你願意說出真實自己的那個決定\n\n先約出來，再說",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrdm6u/slide-8a.webp",
+              "kind": "still",
+              "source_label": "One Night Only"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrdm6u/slide-8b.webp",
+              "kind": "still",
+              "source_label": "One Night Only"
+            }
+          ],
+          "final_src": null,
+          "heading": "你現在選，比等到那一晚更值得",
+          "display_copy": "電影裡的設定是架空的\n但那個問題是真的：\n\n〖如果只有一次機會——你選誰？〗\n\n多數人不缺機會\n缺的是「就是現在」的決定\n\nLava 幫你把日期訂下來",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Universal Pictures 電影《One Night Only》於 2026 年 8 月 7 日在美國院線上映，由 Will Gluck 執導",
+          "source": "https://en.wikipedia.org/wiki/One_Night_Only_(2026_film)",
+          "quote": "One Night Only is a 2026 American romantic comedy film directed by Will Gluck"
+        },
+        {
+          "claim": "電影設定為政府每年只給未婚成年人 12 小時合法的親密時間，稱為「The Mandate」",
+          "source": "https://bleedingcool.com/movies/one-night-only-official-trailer-poster-images-summary-released/",
+          "quote": "the government gives unmarried adults 12 hours once a year"
+        },
+        {
+          "claim": "Monica Barbaro 飾演 Allie，Callum Turner 飾演 Owen，配角包括 Maya Hawke、Julia Fox、Molly Ringwald",
+          "source": "https://en.wikipedia.org/wiki/One_Night_Only_(2026_film)",
+          "quote": "Monica Barbaro and Callum Turner star as Allie and Owen"
+        },
+        {
+          "claim": "1997 年，Arthur Aron 博士與 Elaine Aron 博士在《Personality and Social Psychology Bulletin》發表 36 個問題研究",
+          "source": "https://news.berkeley.edu/2015/02/12/love-in-the-lab/",
+          "quote": "In 1997, psychologist Arthur Aron published research in the Personality and Social Psychology Bulletin"
+        },
+        {
+          "claim": "2015 年，作家 Mandy Len Catron 在《紐約時報》發表〈To Fall in Love With Anyone, Do This〉",
+          "source": "https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html",
+          "quote": "To Fall in Love With Anyone, Do This"
+        },
+        {
+          "claim": "Arthur Aron 指出 36 個問題創造的是「暫時性的親密感」而非持久承諾",
+          "source": "https://news.berkeley.edu/2015/02/12/love-in-the-lab/",
+          "quote": "the study created temporary closeness, not a lasting commitment"
+        },
+        {
+          "claim": "心理阻抗理論（Reactance Theory）指出當選擇自由受到威脅，人們反而更有動力在機會消失前鎖定它",
+          "source": "https://www.psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable",
+          "quote": "scarcity makes everything desirable"
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "2026 年 8 月 7 日，Universal Pictures 上映電影《One Night Only》，由 Will Gluck 執導。\n\n故事設定：架空的當代美國，政府每年只給未婚成年人 12 小時合法的親密時間，稱為「The Mandate」。\nMonica Barbaro 飾演的 Allie 與 Callum Turner 飾演的 Owen，兩個陌生人試圖在這一晚弄清楚彼此的意義。\n那一晚，你選誰？\n\n大多數交友軟體讓你在見面之前，先用幾百則訊息把對方想像成你希望的樣子。\nLava 跳過了那個步驟，先約出來，讓真實的對話、真實的眼神、真實的尷尬決定這個人值不值得你繼續走下去。\n就像電影裡的那個夜晚：不是最長的那段時間，而是你有沒有把握當下那一刻。\nArthur Aron 的研究也說了：親密感的入口是真實的相互袒露，而不是文字的堆疊。\n\n#交友軟體 #約會 #戀愛心理學 #一夜限定 #OneNightOnly #心理學 #稀缺效應 #親密感 #ArthurAron #36個問題 #Lava交友 #不聊天的交友軟體 #線下約會 #台灣交友",
+          "slides": {
+            "1": {
+              "heading": "一年只有這一晚",
+              "display_copy": "一年只有這一晚\n政府只給你 12 小時\n可以和你想在一起的人在一起\n\n——你選了誰？\n\n© Universal Pictures／《One Night Only》2026"
+            },
+            "2": {
+              "heading": "《One Night Only》的世界觀",
+              "display_copy": "《One Night Only》的世界裡\n政府每年給你 12 小時\n去找到你想在一起的人\n\nMonica Barbaro 與 Callum Turner 飾演的\n兩個陌生人，試圖在時間耗盡前\n【弄清楚彼此的意義】\n\n資料來源：Universal Pictures, universalpictures.com/movies/one-night-only"
+            },
+            "3": {
+              "heading": "稀缺感讓選擇變得更認真",
+              "display_copy": "「限定一晚」不會讓人更輕浮\n\n心理阻抗理論（Reactance Theory）說：\n當選擇快消失，人反而更清醒\n稀缺感提高大腦獎勵中樞活躍度\n讓你更快知道——\n【那個位置是不是給對了人】\n\n資料來源：Psychology Today, psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable"
+            },
+            "4": {
+              "heading": "Arthur Aron 的實驗：36 個問題",
+              "display_copy": "1997 年，Arthur Aron 博士與 Elaine Aron 博士\n發表了一個實驗：\n讓兩個陌生人回答 36 個問題\n\n結論是——\n【相互脆弱，是親密感的入口】\n\n不是在一起多久\n而是你們聊到了多深\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab"
+            },
+            "5": {
+              "heading": "Mandy Len Catron 把實驗帶進了真實世界",
+              "display_copy": "2015 年，Mandy Len Catron 在《紐約時報》寫道：\n她用 Arthur Aron 的 36 個問題\n和一個朋友對話\n然後【真的愛上了他】\n\n讓人愛上你的，不是問題——\n是你選擇說出真實自己的那個決定\n\n資料來源：NYT, nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html"
+            },
+            "6": {
+              "heading": "「感覺像愛」和「是愛」是兩件事",
+              "display_copy": "Arthur Aron 說：\n36 個問題創造的是「暫時性親密感」\n〖不等於愛〗\n\n一夜限定的強烈感，可以感覺像愛\n但愛，是第二天早上\n你還想繼續的決定\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab"
+            },
+            "7": {
+              "heading": "Lava 的邏輯：先見面，再說",
+              "display_copy": "Lava 不讓你聊天\n是因為——\n\n【真實的相遇，發生在見面之後】\n不是訊息裡想像出來的那個人\n\n36 個問題的核心不是問題本身\n是你願意說出真實自己的那個決定\n\n先約出來，再說"
+            },
+            "8": {
+              "heading": "你現在選，比等到那一晚更值得",
+              "display_copy": "電影裡的設定是架空的\n但那個問題是真的：\n\n〖如果只有一次機會——你選誰？〗\n\n多數人不缺機會\n缺的是「就是現在」的決定\n\nLava 幫你把日期訂下來"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-09-02T01:51:20+08:00"
     }
   ]
 }
