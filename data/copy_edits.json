@@ -255,6 +255,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-09-01T15:04:38+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 3,
+          "field": "display_copy",
+          "original": "Amir Levine × Rachel Heller\n《Attached》，2010 年出版，\n翻譯成【20 種語言】，\nAmazon 均分 4.7 顆星。\n\n書裡不只講焦慮型和逃避型：真正的核心是：\n許多關係問題源自\n〖「感知與表達親密感的方式不同」〗，\n而這件事，在兩個安全型之間也會發生。\n\n資料來源：SuperSummary supersummary.com/attached/summary/；Amazon slickdeals.net/f/19301172",
+          "edited": "Amir Levine × Rachel Heller\n《Attached》 2010 年出版\n翻譯成【20 種語言】\nAmazon 均分 4.7 顆星\n\n書裡不只講焦慮型和逃避型：真正的核心是：\n許多關係問題源自\n〖 感知與表達親密感的方式不同 〗\n而這件事，在兩個安全型之間也會發生\n\n資料來源：SuperSummary supersummary.com/attached/summary/；Amazon slickdeals.net/f/19301172",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
