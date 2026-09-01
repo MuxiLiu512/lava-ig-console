@@ -4362,25 +4362,20 @@
           "role": "Hook",
           "candidates": [
             {
-              "cid": "b",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Tom Holland",
-              "source_kind": "WM"
-            },
-            {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1a.webp",
               "kind": "still",
               "source_label": "Tom Holland",
-              "source_kind": "OV"
+              "source_kind": "OV",
+              "curator_score": 5
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1d.webp",
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1b.webp",
               "kind": "still",
               "source_label": "Tom Holland",
-              "source_kind": "WM"
+              "source_kind": "WM",
+              "curator_score": 3
             },
             {
               "cid": "c",
@@ -4388,7 +4383,16 @@
               "kind": "still",
               "source_label": "Tom Holland",
               "source_kind": "WM",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 1
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Tom Holland",
+              "source_kind": "WM",
+              "curator_score": 1
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-1.webp",
@@ -4402,32 +4406,35 @@
           "role": "共感場景",
           "candidates": [
             {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2c.webp",
+              "kind": "still",
+              "source_label": "The Office",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2a.webp",
               "kind": "still",
               "source_label": "The Office",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 3
             },
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2b.webp",
               "kind": "still",
               "source_label": "The Office",
-              "low_q": true
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2c.webp",
-              "kind": "still",
-              "source_label": "The Office",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-2.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-2.jpg",
           "heading": "你在手機螢幕前想了十分鐘，發出去三個字",
           "display_copy": "訊息欄空著，游標在閃\n你想了【十分鐘】，發出去三個字\n\n那種卡住的感覺，不是你天生沒 Rizz\n\n是因為沒有人告訴你\n線上和見面，根本是兩種遊戲",
-          "default_cid": "a"
+          "default_cid": "c"
         },
         {
           "n": 3,
@@ -4438,15 +4445,8 @@
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3d.webp",
               "kind": "still",
               "source_label": "Kai Cenat",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "a",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Kai Cenat",
               "source_kind": "WM",
-              "low_q": true
+              "curator_score": 7
             },
             {
               "cid": "b",
@@ -4454,14 +4454,24 @@
               "kind": "still",
               "source_label": "Kai Cenat",
               "source_kind": "WM",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Kai Cenat",
+              "source_kind": "WM",
+              "low_q": true,
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-3.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-3.jpg",
           "heading": "牛津說是「charisma 的縮寫」，發明人說根本不是",
           "display_copy": "牛津：rizz 是【charisma 的縮寫】\n發明人 Kai Cenat：「根本不是」\n\n超過【30,000 人投票】選出 2023 年度詞彙\n官方定義：吸引浪漫或性伴侶的風格與能力\n\nCenat 說，rizz 是朋友圈自然蹦出來的詞\n指的是你在現實裡讓對方對你感興趣的能力\n\n資料來源：Oxford University Press, 2023",
-          "default_cid": "a"
+          "default_cid": "d"
         },
         {
           "n": 4,
@@ -4491,29 +4501,32 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Portraitofa Ladyon Fire"
-            },
-            {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5b.webp",
               "kind": "still",
-              "source_label": "Portraitofa Ladyon Fire"
+              "source_label": "Portraitofa Ladyon Fire",
+              "curator_score": 5
             },
             {
               "cid": "c",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5c.webp",
               "kind": "still",
-              "source_label": "Portraitofa Ladyon Fire"
+              "source_label": "Portraitofa Ladyon Fire",
+              "curator_score": 4
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire",
+              "curator_score": 3
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-5.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-5.jpg",
           "heading": "魅力的三根柱子：存在感、力量、溫暖",
           "display_copy": "魅力研究者把 Rizz 拆成三根支柱\n\n【存在感】：問問題，而不是說更多話\n【力量】：自信，但透過自嘲和示弱傳達\n【溫暖】：讓對方感覺被善意對待\n\n每一根都有對應的練習方式\n不是等天份，而是選要先練哪根\n\n資料來源：Charles Duhigg, Substack",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 6,
@@ -4524,21 +4537,24 @@
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6a.webp",
               "kind": "still",
               "source_label": "Succession",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Succession",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 2
             },
             {
               "cid": "c",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6c.webp",
               "kind": "still",
               "source_label": "Succession",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Succession",
+              "low_q": true,
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-6.webp",
@@ -4555,48 +4571,54 @@
               "cid": "c",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7c.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 8
             },
             {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7a.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 7
             },
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7b.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 5
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-7.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-7.jpg",
           "heading": "線上聊天最需要 Rizz，見面反而不用演",
           "display_copy": "線上交友把 Rizz 這件事搞反了\n\n你必須用幾行字讓陌生人對你感興趣\n沒有語氣，沒有眼神，沒有空氣感\n\nLava 把聊天壓力拿掉，直接安排見面\n\n讓 Rizz 回到它本來應該存在的地方\n【兩個人在同一個空間裡的那幾分鐘】",
-          "default_cid": "a"
+          "default_cid": "c"
         },
         {
           "n": 8,
           "role": "應用/怎麼做",
           "candidates": [
             {
-              "cid": "c",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8a.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 8
             },
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8b.webp",
               "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "Before Sunrise",
+              "curator_score": 6
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise",
+              "curator_score": 4
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-8.webp",
@@ -4836,7 +4858,8 @@
         "pass": true,
         "counts": {},
         "issues": []
-      }
+      },
+      "curated_at": "2026-09-01T18:32:36+08:00"
     },
     {
       "id": "20260824-Attached說你不是",
@@ -11166,7 +11189,7 @@
     },
     {
       "id": "86eyrz3fb",
-      "topic": "86eyrz3fb｜20260901-《愛情故事：甘迺迪與貝塞特》創 Disney+ 史上最高收視：卡洛琳最後幾年幾乎不能公開做自己，這段關係從哪裡開始壞掉的？",
+      "topic": "86eyrz3fb｜20260901-《愛情故事：甘迺迪與貝塞特》創 Disney+ 史上最高收視——卡洛琳最後幾年幾乎不能公開做自己，這段關係從哪裡開始壞掉的？",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyrz3fb",
@@ -11177,50 +11200,158 @@
         {
           "n": 1,
           "role": "Hook",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3fb/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Simply Psychology",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyrz3fb/slide-1c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "一個頂尖公關，卻無法為自己的婚姻做公關",
-          "display_copy": "〖一個頂尖公關，卻無法為自己的婚姻做公關〗\n\n她嫁給 JFK Jr. 之後，\n辭掉了工作，失去了日常，\n然後，漸漸失去了自己。\n\n6,500 萬小時的觀看：不是因為她是名人，\n而是那個窒息感，很多人都認識。\n\n資料來源：Deadline（2026）"
+          "display_copy": "〖一個頂尖公關，卻無法為自己的婚姻做公關〗\n\n她嫁給 JFK Jr. 之後，\n辭掉了工作，失去了日常，\n然後，漸漸失去了自己。\n\n6,500 萬小時的觀看——\n不是因為她是名人，\n而是那個窒息感，很多人都認識。\n\n資料來源：Deadline（2026）",
+          "default_cid": "a"
         },
         {
           "n": 2,
           "role": "共感場景",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3fb/slide-2b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "你有沒有試過，在一段關係裡開始「表演」",
-          "display_copy": "你是什麼時候開始，\n在這段關係裡【表演】的？\n\n不是說謊。是你意識到有人在看，\n然後你的每一句話，\n都多了一個隱形的觀眾。\n\n「我們看起來怎樣？」\n開始蓋過「我們實際上怎樣？」的那一刻，\n就是起點。"
+          "display_copy": "你是什麼時候開始，\n在這段關係裡【表演】的？\n\n不是說謊——\n是你意識到有人在看，\n然後你的每一句話，\n都多了一個隱形的觀眾。\n\n「我們看起來怎樣？」\n開始蓋過「我們實際上怎樣？」的那一刻，\n就是起點。",
+          "default_cid": "a"
         },
         {
           "n": 3,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Simply Psychology",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            }
+          ],
           "final_src": null,
           "heading": "Goffman 1959 年就說了：我們的生活是一個舞台",
-          "display_copy": "社會學家 Goffman（1959）把人際互動比喻為舞台演出。\n\n每段關係都有【前台】與【後台】：前台是你表演給外界看的，\n後台是只有兩個人的真實。\n\n當外部凝視太強，\n〖後台就會消失〗。\n\n資料來源：Goffman, E.（1959）. The Presentation of Self in Everyday Life. / Simply Psychology"
+          "display_copy": "社會學家 Goffman（1959）把人際互動比喻為舞台演出。\n\n每段關係都有【前台】與【後台】——\n前台是你表演給外界看的，\n後台是只有兩個人的真實。\n\n當外部凝視太強，\n〖後台就會消失〗。\n\n資料來源：Goffman, E.（1959）. The Presentation of Self in Everyday Life. / Simply Psychology",
+          "default_cid": "a"
         },
         {
           "n": 4,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-4a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3fb/slide-4b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "卡洛琳的「後台」，在婚禮當天就開始縮水",
-          "display_copy": "婚後卡洛琳辭去了 Calvin Klein 的工作：那是她每天「回到自己」的錨點。\n\n之後她的每一次出門、\n每一件外套、每一個表情，\n都成為公眾解讀的材料。\n\n【當一個人沒有後台，\n她只剩下表演。】\n\n據當時報導：每當攝影師接近，\n她就低下頭、縮起肩膀：那是身體最後的防線。\n\n資料來源：Today.com（Elizabeth Beller 訪談）"
+          "display_copy": "婚後卡洛琳辭去了 Calvin Klein 的工作——\n那是她每天「回到自己」的錨點。\n\n之後她的每一次出門、\n每一件外套、每一個表情，\n都成為公眾解讀的材料。\n\n【當一個人沒有後台，\n她只剩下表演。】\n\n據當時報導：每當攝影師接近，\n她就低下頭、縮起肩膀——\n那是身體最後的防線。\n\n資料來源：Today.com（Elizabeth Beller 訪談）",
+          "default_cid": "a"
         },
         {
           "n": 5,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-5a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3fb/slide-5b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "外部凝視會讓你開始用「他們的眼睛」看自己",
-          "display_copy": "《Media Psychology》2023 年統合分析（McComb et al.）：\n持續暴露在【外部比較目標】之下，\n會對自我評價與情緒造成因果性傷害。\n\n不需要是名人才會這樣。只要你開始用「他們的眼睛」\n看自己的關係，\n那個機制就啟動了。\n\n資料來源：McComb et al.（2023）Media Psychology"
+          "display_copy": "《Media Psychology》2023 年統合分析（McComb et al.）：\n持續暴露在【外部比較目標】之下，\n會對自我評價與情緒造成因果性傷害。\n\n不需要是名人才會這樣——\n只要你開始用「他們的眼睛」\n看自己的關係，\n那個機制就啟動了。\n\n資料來源：McComb et al.（2023）Media Psychology",
+          "default_cid": "a"
         },
         {
           "n": 6,
           "role": "品牌立場",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3fb/slide-6b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "這不只是名人的故事",
-          "display_copy": "任何關係，只要你開始在意\n【「我們看起來怎樣」】\n多過「我們實際上怎樣」：那個讓卡洛琳窒息的機制，\n就在你們之間啟動了。\n\nLava 的邏輯：\n先把外部凝視拿掉，\n才能看見真實的彼此。\n\n沒有追蹤數、沒有曬圖機制。只有兩個人，願不願意見面。"
+          "display_copy": "任何關係，只要你開始在意\n【「我們看起來怎樣」】\n多過「我們實際上怎樣」——\n\n那個讓卡洛琳窒息的機制，\n就在你們之間啟動了。\n\nLava 的邏輯：\n先把外部凝視拿掉，\n才能看見真實的彼此。\n\n沒有追蹤數、沒有曬圖機制——\n只有兩個人，願不願意見面。",
+          "default_cid": "a"
         },
         {
           "n": 7,
@@ -11228,15 +11359,33 @@
           "candidates": [],
           "final_src": null,
           "heading": "你可以問自己一個問題",
-          "display_copy": "問自己一個問題：\n\n最近一次，你在這段關係裡\n【完全不在意別人怎麼看】，\n是什麼時候？\n\n想不起來，\n不代表感情有問題。只是你們的「後台」，\n很久沒有被保護了。\n\n你們需要的不是更多溝通技巧，\n而是一個沒有觀眾的空間。"
+          "display_copy": "問自己一個問題：\n\n最近一次，你在這段關係裡\n【完全不在意別人怎麼看】，\n是什麼時候？\n\n想不起來，\n不代表感情有問題——\n只是你們的「後台」，\n很久沒有被保護了。\n\n你們需要的不是更多溝通技巧，\n而是一個沒有觀眾的空間。"
         },
         {
           "n": 8,
           "role": "品牌立場",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3fb/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3fb/slide-8b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "Lava 的設計，從一開始就只做這一件事",
-          "display_copy": "6,500 萬小時的觀看時數，\n不是因為那是名人的故事。而是因為那個\n〖在關係裡消失自己〗的感覺，\n很多人都認識。\n\nLava 的起點：\n沒有追蹤數、沒有曬圖機制，\n只有：你們願不願意見面。\n\n資料來源：Deadline（2026）"
+          "display_copy": "6,500 萬小時的觀看時數，\n不是因為那是名人的故事——\n\n而是因為那個\n〖在關係裡消失自己〗的感覺，\n很多人都認識。\n\nLava 的起點：\n沒有追蹤數、沒有曬圖機制，\n只有——你們願不願意見面。\n\n資料來源：Deadline（2026）",
+          "default_cid": "a"
         },
         {
           "n": 9,
@@ -11290,149 +11439,54 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_lines": {
-        "1": [
-          "一個頂尖公關，卻無法為自己的婚姻做公關",
-          "",
-          "〖一個頂尖公關，卻無法為自己的婚姻做公關〗",
-          "她嫁給 JFK Jr. 之後",
-          "辭掉了工作，失去了日常",
-          "然後，漸漸失去了自己",
-          "6,500 萬小時的觀看",
-          "不是因為她是名人",
-          "而是那個窒息感，很多人都認識",
-          "資料來源：Deadline（2026）"
-        ],
-        "2": [
-          "你有沒有試過，在一段關係裡開始「表演」",
-          "",
-          "你是什麼時候開始",
-          "在這段關係裡表演的",
-          "不是說謊",
-          "是你意識到有人在看",
-          "然後你的每一句話",
-          "都多了一個隱形的觀眾",
-          "「我們看起來怎樣？」",
-          "開始蓋過「我們實際上怎樣？」的那一刻",
-          "就是起點"
-        ],
-        "3": [
-          "Goffman 1959 年就說了：我們的生活是一個",
-          "舞台",
-          "",
-          "社會學家 Goffman（1959）把人際互動比喻為舞台演",
-          "出",
-          "每段關係都有前台與後台",
-          "前台是你表演給外界看的",
-          "後台是只有兩個人的真實",
-          "當外部凝視太強",
-          "後台就會消失",
-          "資料來源：Goffman, E.（1959）. The Presentation",
-          "of Self in Everyday Life. / Simply Psychology"
-        ],
-        "4": [
-          "卡洛琳的「後台」，在婚禮當天就開始縮水",
-          "",
-          "婚後卡洛琳辭去了 Calvin Klein 的工作",
-          "那是她每天「回到自己」的錨點",
-          "之後她的每一次出門",
-          "每一件外套、每一個表情",
-          "都成為公眾解讀的材料",
-          "【當一個人沒有後台",
-          "她只剩下表演】",
-          "據當時報導：每當攝影師接近",
-          "她就低下頭、縮起肩膀",
-          "那是身體最後的防線",
-          "資料來源：Today.com（Elizabeth Beller 訪談）"
-        ],
-        "5": [
-          "外部凝視會讓你開始用「他們的眼睛」看自己",
-          "",
-          "《Media Psychology》2023 年統合分析（McComb et",
-          "al.）",
-          "持續暴露在外部比較目標之下",
-          "會對自我評價與情緒造成因果性傷害",
-          "不需要是名人才會這樣",
-          "只要你開始用「他們的眼睛」",
-          "看自己的關係",
-          "那個機制就啟動了",
-          "資料來源：McComb et al.（2023）Media",
-          "Psychology"
-        ],
-        "6": [
-          "這不只是名人的故事",
-          "",
-          "任何關係，只要你開始在意",
-          "「我們看起來怎樣」",
-          "多過「我們實際上怎樣」",
-          "那個讓卡洛琳窒息的機制",
-          "就在你們之間啟動了",
-          "Lava 的邏輯",
-          "先把外部凝視拿掉",
-          "才能看見真實的彼此",
-          "沒有追蹤數、沒有曬圖機制",
-          "只有兩個人，願不願意見面"
-        ],
-        "7": [
-          "你可以問自己一個問題",
-          "",
-          "問自己一個問題",
-          "最近一次，你在這段關係裡",
-          "完全不在意別人怎麼看",
-          "是什麼時候",
-          "想不起來",
-          "不代表感情有問題",
-          "只是你們的「後台」",
-          "很久沒有被保護了",
-          "你們需要的不是更多溝通技巧",
-          "而是一個沒有觀眾的空間"
-        ],
-        "8": [
-          "Lava 的設計，從一開始就只做這一件事",
-          "",
-          "6,500 萬小時的觀看時數",
-          "不是因為那是名人的故事",
-          "而是因為那個",
-          "在關係裡消失自己的感覺",
-          "很多人都認識",
-          "Lava 的起點",
-          "沒有追蹤數、沒有曬圖機制",
-          "只有——你們願不願意見面",
-          "資料來源：Deadline（2026）"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T18:08:38+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-01T18:08:39+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-09-01T18:09:10+08:00",
-        "pass": false,
-        "claims": 2,
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「2023 年」的出處無法自動核對，請人工看過：https://www.tandfonline.com/doi/full/10.1080/15213269.2023.2180647"
+      "copy_versions": {
+        "claude": {
+          "caption": "卡洛琳·貝塞特在嫁給 JFK Jr. 之前，是 Calvin Klein 最懂得管理形象的公關。\n\n但婚後，她每一個眼神、每一件外套、每一次低頭走過街口，都被公眾解讀，而她，失去了詮釋自己的權利。\nFX 迷你影集《愛情故事：甘迺迪與貝塞特》完播後跨平台累積 6,500 萬小時觀看，成為 FX 史上串流收視最高的限定影集。\n這麼多人看，不是因為結局，而是因為過程太窒息。\n\n卡洛琳的處境是極端的，但那個機制不是。\n任何一段關係，只要外部凝視的重量開始超過兩個人之間真實的連結，你們就會開始慢慢表演給「觀眾」看，而不是真正地對彼此存在。\nLava 的設計從一開始就只做一件事：先把外部凝視拿掉，沒有追蹤人數、沒有公開曬圖的機制，只有兩個人在同一個城市、願不願意見面的決定。\n這不是保護隱私，而是讓兩個人在有機會「表演」之前，先有機會是自己。\n\n#甘迺迪 #卡洛琳貝塞特 #愛情故事 #JFKJr #關係心理學 #交友軟體 #約會 #親密關係 #印象管理 #外部凝視 #Lava交友 #不聊天的交友軟體 #線下約會 #台灣交友 #LovePsychology",
+          "slides": {
+            "1": {
+              "heading": "一個頂尖公關，卻無法為自己的婚姻做公關",
+              "display_copy": "〖一個頂尖公關，卻無法為自己的婚姻做公關〗\n\n她嫁給 JFK Jr. 之後，\n辭掉了工作，失去了日常，\n然後，漸漸失去了自己。\n\n6,500 萬小時的觀看——\n不是因為她是名人，\n而是那個窒息感，很多人都認識。\n\n資料來源：Deadline（2026）"
+            },
+            "2": {
+              "heading": "你有沒有試過，在一段關係裡開始「表演」",
+              "display_copy": "你是什麼時候開始，\n在這段關係裡【表演】的？\n\n不是說謊——\n是你意識到有人在看，\n然後你的每一句話，\n都多了一個隱形的觀眾。\n\n「我們看起來怎樣？」\n開始蓋過「我們實際上怎樣？」的那一刻，\n就是起點。"
+            },
+            "3": {
+              "heading": "Goffman 1959 年就說了：我們的生活是一個舞台",
+              "display_copy": "社會學家 Goffman（1959）把人際互動比喻為舞台演出。\n\n每段關係都有【前台】與【後台】——\n前台是你表演給外界看的，\n後台是只有兩個人的真實。\n\n當外部凝視太強，\n〖後台就會消失〗。\n\n資料來源：Goffman, E.（1959）. The Presentation of Self in Everyday Life. / Simply Psychology"
+            },
+            "4": {
+              "heading": "卡洛琳的「後台」，在婚禮當天就開始縮水",
+              "display_copy": "婚後卡洛琳辭去了 Calvin Klein 的工作——\n那是她每天「回到自己」的錨點。\n\n之後她的每一次出門、\n每一件外套、每一個表情，\n都成為公眾解讀的材料。\n\n【當一個人沒有後台，\n她只剩下表演。】\n\n據當時報導：每當攝影師接近，\n她就低下頭、縮起肩膀——\n那是身體最後的防線。\n\n資料來源：Today.com（Elizabeth Beller 訪談）"
+            },
+            "5": {
+              "heading": "外部凝視會讓你開始用「他們的眼睛」看自己",
+              "display_copy": "《Media Psychology》2023 年統合分析（McComb et al.）：\n持續暴露在【外部比較目標】之下，\n會對自我評價與情緒造成因果性傷害。\n\n不需要是名人才會這樣——\n只要你開始用「他們的眼睛」\n看自己的關係，\n那個機制就啟動了。\n\n資料來源：McComb et al.（2023）Media Psychology"
+            },
+            "6": {
+              "heading": "這不只是名人的故事",
+              "display_copy": "任何關係，只要你開始在意\n【「我們看起來怎樣」】\n多過「我們實際上怎樣」——\n\n那個讓卡洛琳窒息的機制，\n就在你們之間啟動了。\n\nLava 的邏輯：\n先把外部凝視拿掉，\n才能看見真實的彼此。\n\n沒有追蹤數、沒有曬圖機制——\n只有兩個人，願不願意見面。"
+            },
+            "7": {
+              "heading": "你可以問自己一個問題",
+              "display_copy": "問自己一個問題：\n\n最近一次，你在這段關係裡\n【完全不在意別人怎麼看】，\n是什麼時候？\n\n想不起來，\n不代表感情有問題——\n只是你們的「後台」，\n很久沒有被保護了。\n\n你們需要的不是更多溝通技巧，\n而是一個沒有觀眾的空間。"
+            },
+            "8": {
+              "heading": "Lava 的設計，從一開始就只做這一件事",
+              "display_copy": "6,500 萬小時的觀看時數，\n不是因為那是名人的故事——\n\n而是因為那個\n〖在關係裡消失自己〗的感覺，\n很多人都認識。\n\nLava 的起點：\n沒有追蹤數、沒有曬圖機制，\n只有——你們願不願意見面。\n\n資料來源：Deadline（2026）"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
           }
-        ]
-      }
+        }
+      },
+      "candidates_since": "2026-09-01T18:32:47+08:00"
     },
     {
       "id": "86eyrz3f9",
-      "topic": "86eyrz3f9｜20260901-Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」：這件事，心理學有個名字",
+      "topic": "86eyrz3f9｜20260901-Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」——這件事，心理學有個名字",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyrz3f9",
@@ -11443,34 +11497,98 @@
         {
           "n": 1,
           "role": "Hook",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：Wikipedia — Reciprocity (social psychology)；Cognitigence — Cialdini's 7 Principles of Persuasion",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            }
+          ],
           "final_src": null,
-          "heading": "被他寵到覺得「拒絕他好像很殘忍」：這不是愛，是虧欠感",
-          "display_copy": "《我的荒糖戀愛》\n丁海寅把人寵到〖說不出口〗\n心理學說，這不是愛\n\n那個卡在喉嚨裡的感覺，已經被命名了：它出現的頻率，比你想像的更高。"
+          "heading": "被他寵到覺得「拒絕他好像很殘忍」——這不是愛，是虧欠感",
+          "display_copy": "《我的荒糖戀愛》\n丁海寅把人寵到〖說不出口〗\n心理學說，這不是愛\n\n那個卡在喉嚨裡的感覺，已經被命名了——它出現的頻率，比你想像的更高。",
+          "default_cid": "a"
         },
         {
           "n": 2,
           "role": "共感場景",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-2b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
-          "heading": "你追過這種劇情：也活過這種感覺",
-          "display_copy": "他備咖啡、接送、買展票\n你想分手，話卻卡在喉嚨\n\n【那個卡住的感覺，有它自己的名字。】\n\n心理學早已將它命名：大多數人從來沒發現自己正在這個狀態裡，因為它長得太像「捨不得」了。"
+          "heading": "你追過這種劇情——也活過這種感覺",
+          "display_copy": "他備咖啡、接送、買展票\n你想分手，話卻卡在喉嚨\n\n【那個卡住的感覺，有它自己的名字。】\n\n心理學早已將它命名——大多數人從來沒發現自己正在這個狀態裡，因為它長得太像「捨不得」了。",
+          "default_cid": "a"
         },
         {
           "n": 3,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Wikipedia — Reciprocity (social psychology)（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-3b.webp",
+              "kind": "still",
+              "source_label": "Wikipedia — Reciprocity (social psychology)（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "你以為是愛，Cialdini 1984 年說那叫義務感",
-          "display_copy": "你以為是愛，Cialdini 1984 說那叫義務感\n\n【互惠性的真正驚人之處】：\n不需要你喜歡對方\n不需要你主動開口要\n\n光是「收到」這個動作，就足以在你心裡製造出義務感：對方付出越多，那個重量就越大，大到讓「說不」感覺像在犯罪。\n\n資料來源：Wikipedia — Reciprocity (social psychology)"
+          "display_copy": "你以為是愛，Cialdini 1984 說那叫義務感\n\n【互惠性的真正驚人之處】：\n不需要你喜歡對方\n不需要你主動開口要\n\n光是「收到」這個動作，就足以在你心裡製造出義務感——對方付出越多，那個重量就越大，大到讓「說不」感覺像在犯罪。\n\n資料來源：Wikipedia — Reciprocity (social psychology)",
+          "default_cid": "a"
         },
         {
           "n": 4,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Cognitigence — Cialdini's 7 Principles of Persuasion",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            }
+          ],
           "final_src": null,
           "heading": "你沒開口要那瓶飲料，但 1971 年的實驗告訴你，你已經欠他了",
-          "display_copy": "你沒開口要那瓶飲料\n但 1971 年的實驗告訴你，你已經欠他了\n\nRegan 實驗，1971\n\n他幫你買了一瓶飲料\n然後拜託你買他的彩票\n\n結果：【你買了】\n\n不請自來的付出依然能啟動義務感：那份債，你沒同意，但它已經掛在你身上了。\n\n資料來源：Cognitigence — Cialdini's 7 Principles of Persuasion"
+          "display_copy": "你沒開口要那瓶飲料\n但 1971 年的實驗告訴你，你已經欠他了\n\nRegan 實驗，1971\n\n他幫你買了一瓶飲料\n然後拜託你買他的彩票\n\n結果：【你買了】\n\n不請自來的付出依然能啟動義務感——那份債，你沒同意，但它已經掛在你身上了。\n\n資料來源：Cognitigence — Cialdini's 7 Principles of Persuasion",
+          "default_cid": "a"
         },
         {
           "n": 5,
@@ -11478,31 +11596,77 @@
           "candidates": [],
           "final_src": null,
           "heading": "感激 vs. 虧欠感：長得一樣，但一個讓關係變好，一個讓你留下來卻越來越遠",
-          "display_copy": "Algoe 等人，2010年｜《個人關係》期刊\n\n【感激】→ 預測次日關係連結與滿意度上升\n【虧欠感】→ 維持關係的外部信號，但讓你越來越遠\n\n兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相連：感激才是真正讓關係變好的那個，而你現在感受到的，是哪一種？\n\n資料來源：Algoe, Gable & Maisel (2010), Personal Relationships"
+          "display_copy": "Algoe 等人，2010年｜《個人關係》期刊\n\n【感激】→ 預測次日關係連結與滿意度上升\n【虧欠感】→ 維持關係的外部信號，但讓你越來越遠\n\n兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相連——感激才是真正讓關係變好的那個，而你現在感受到的，是哪一種？\n\n資料來源：Algoe, Gable & Maisel (2010), Personal Relationships"
         },
         {
           "n": 6,
           "role": "品牌輕置入",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-6b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "見面之前，你怎麼知道自己是「被他吸引」還是「被他的付出綁住」？",
-          "display_copy": "見面之前，你怎麼知道是【被他吸引】，還是被他的付出綁住？\n\n對話框裡每一個回覆、每一個表情符號\n都在悄悄加重那個義務感的重量\n\nLava 的出發點：先見面，再決定\n\n在真實相處裡，你才感受得到那個感覺\n是輕盈的靠近，還是沉重的留著"
+          "display_copy": "見面之前，你怎麼知道是【被他吸引】，還是被他的付出綁住？\n\n對話框裡每一個回覆、每一個表情符號\n都在悄悄加重那個義務感的重量\n\nLava 的出發點：先見面，再決定\n\n在真實相處裡，你才感受得到那個感覺\n是輕盈的靠近，還是沉重的留著",
+          "default_cid": "a"
         },
         {
           "n": 7,
           "role": "應用/怎麼做",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "下次那個「說不出口」的感覺來了，先問自己這三件事",
-          "display_copy": "「說不出口」來了\n先問自己三件事\n\n① 如果他這個月什麼都沒做\n   你還會想靠近他嗎？\n\n② 想到「離開」\n   第一個念頭是【解脫】還是愧疚？\n\n③ 你對這段關係的投入\n   來自期待，還是來自壓力？\n\n這三個問題不給你答案。但它們能幫你認出，那個卡住的感覺，究竟從哪裡來。"
+          "display_copy": "「說不出口」來了\n先問自己三件事\n\n① 如果他這個月什麼都沒做\n   你還會想靠近他嗎？\n\n② 想到「離開」\n   第一個念頭是【解脫】還是愧疚？\n\n③ 你對這段關係的投入\n   來自期待，還是來自壓力？\n\n這三個問題不給你答案——但它們能幫你認出，那個卡住的感覺，究竟從哪裡來。",
+          "default_cid": "a"
         },
         {
           "n": 8,
           "role": "品牌立場",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyrz3f9/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyrz3f9/slide-8b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
           "heading": "Lava 的立場：真實感受，只能在真實裡認識",
-          "display_copy": "義務感最容易在「累積的付出」裡滋長\n在你還沒機會認識他之前\n\nLava 想讓你在見面之前保持那份清醒\n\n在認識一個人之前，累積的對話只會製造噪音：【讓你更難分辨，自己真正感受到的是什麼。】\n\n《我的荒糖戀愛》最甜的，是真實相處裡長出來的時刻，那才是故事的核心。"
+          "display_copy": "義務感最容易在「累積的付出」裡滋長\n在你還沒機會認識他之前\n\nLava 想讓你在見面之前保持那份清醒\n\n在認識一個人之前，累積的對話只會製造噪音——【讓你更難分辨，自己真正感受到的是什麼。】\n\n《我的荒糖戀愛》最甜的，是真實相處裡長出來的時刻，那才是故事的核心。",
+          "default_cid": "a"
         },
         {
           "n": 9,
@@ -11556,143 +11720,54 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_lines": {
-        "1": [
-          "被他寵到覺得「拒絕他好像很殘忍」——這",
-          "不是愛，是虧欠感",
-          "",
-          "《我的荒糖戀愛》",
-          "丁海寅把人寵到〖說不出口〗",
-          "心理學說，這不是愛",
-          "那個卡在喉嚨裡的感覺",
-          "已經被命名了——它出現的頻率，比你想像的更高"
-        ],
-        "2": [
-          "你追過這種劇情——也活過這種感覺",
-          "",
-          "他備咖啡、接送、買展票",
-          "你想分手，話卻卡在喉嚨",
-          "那個卡住的感覺，有它自己的名字",
-          "心理學早已將它命名——大多數人從來沒發現自己",
-          "正在這個狀態裡，因為它長得太像「捨不得」了"
-        ],
-        "3": [
-          "你以為是愛，Cialdini 1984 年說那叫義務感",
-          "",
-          "你以為是愛，Cialdini 1984 說那叫義務感",
-          "互惠性的真正驚人之處",
-          "不需要你喜歡對方",
-          "不需要你主動開口要",
-          "光是「收到」這個動作，就足以在你心裡製造出義務",
-          "感——對方付出越多，那個重量就越大，大到讓「說",
-          "不」感覺像在犯罪",
-          "資料來源：Wikipedia — Reciprocity (social",
-          "psychology)"
-        ],
-        "4": [
-          "你沒開口要那瓶飲料，但 1971 年的實驗告訴",
-          "你，你已經欠他了",
-          "",
-          "你沒開口要那瓶飲料",
-          "但 1971 年的實驗告訴你，你已經欠他了",
-          "Regan 實驗，1971",
-          "他幫你買了一瓶飲料",
-          "然後拜託你買他的彩票",
-          "結果：你買了",
-          "不請自來的付出依然能啟動義務感——那份債，你",
-          "沒同意，但它已經掛在你身上了",
-          "資料來源：Cognitigence — Cialdini's 7 Principles of",
-          "Persuasion"
-        ],
-        "5": [
-          "感激 vs. 虧欠感：長得一樣，但一個讓關係變",
-          "好，一個讓你留下來卻越來越遠",
-          "",
-          "Algoe 等人，2010年｜《個人關係》期刊",
-          "感激→ 預測次日關係連結與滿意度上升",
-          "虧欠感→ 維持關係的外部信號，但讓你越來越遠",
-          "兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相",
-          "連——感激才是真正讓關係變好的那個，而你現在感",
-          "受到的，是哪一種",
-          "資料來源：Algoe, Gable & Maisel (2010), Personal",
-          "Relationships"
-        ],
-        "6": [
-          "見面之前，你怎麼知道自己是「被他吸引」",
-          "還是「被他的付出綁住」",
-          "",
-          "見面之前，你怎麼知道是被他吸引，還是被他的付出",
-          "綁住",
-          "對話框裡每一個回覆、每一個表情符號",
-          "都在悄悄加重那個義務感的重量",
-          "Lava 的出發點：先見面，再決定",
-          "在真實相處裡，你才感受得到那個感覺",
-          "是輕盈的靠近，還是沉重的留著"
-        ],
-        "7": [
-          "下次那個「說不出口」的感覺來了，先問自己",
-          "這三件事",
-          "",
-          "「說不出口」來了",
-          "先問自己三件事",
-          "① 如果他這個月什麼都沒做",
-          "   你還會想靠近他嗎",
-          "② 想到「離開」",
-          "   第一個念頭是解脫還是愧疚",
-          "③ 你對這段關係的投入",
-          "   來自期待，還是來自壓力",
-          "這三個問題不給你答案——但它們能幫你認出，那個",
-          "卡住的感覺，究竟從哪裡來"
-        ],
-        "8": [
-          "Lava 的立場：真實感受，只能在真實裡認識",
-          "",
-          "義務感最容易在「累積的付出」裡滋長",
-          "在你還沒機會認識他之前",
-          "Lava 想讓你在見面之前保持那份清醒",
-          "在認識一個人之前，累積的對話只會製造噪音",
-          "讓你更難分辨，自己真正感受到的是什麼",
-          "《我的荒糖戀愛》最甜的，是真實相處裡長出來的時",
-          "刻，那才是故事的核心"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T18:08:38+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-01T18:08:39+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-09-01T18:09:13+08:00",
-        "pass": false,
-        "claims": 3,
-        "issues": [
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「以為是愛，Cialdini 1984 年說那叫義務感 你以為是愛，C」沒有對應出處（年份）"
-          },
-          {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「1971 年」的數字在出處頁面裡找不到：https://www.cognitigence.com/blog/cialdini-7-principles-of-persuasion"
+      "copy_versions": {
+        "claude": {
+          "caption": "《我的荒糖戀愛》讓丁海寅的「整車玫瑰花」、「尋找古董 MP3 圓夢」席捲 Netflix 非英語節目全球收視冠軍。\n\n但有一種感覺藏在所有甜寵橋段底下，心理學已經幫它命名了，而且它出現的頻率，比你想像的更高。\n\n這個問題，在對話框裡很難回答，因為對話本身就是一種付出的累積，訊息回覆、表情符號、線上陪伴，每一個都在悄悄增加那個義務感的重量。\nLava 的出發點是：先見面，再決定。\n在真實的相處裡，你才能感受到自己對這個人的感覺，是輕盈的靠近，還是沉重的留著。\n\n#我的荒糖戀愛 #丁海寅 #Netflix台灣 #韓劇推薦 #交友軟體 #約會 #心理學 #互惠壓力 #感情心理學 #關係焦慮 #Lava交友 #不聊天的交友軟體 #線下約會 #戀愛心理",
+          "slides": {
+            "1": {
+              "heading": "被他寵到覺得「拒絕他好像很殘忍」——這不是愛，是虧欠感",
+              "display_copy": "《我的荒糖戀愛》\n丁海寅把人寵到〖說不出口〗\n心理學說，這不是愛\n\n那個卡在喉嚨裡的感覺，已經被命名了——它出現的頻率，比你想像的更高。"
+            },
+            "2": {
+              "heading": "你追過這種劇情——也活過這種感覺",
+              "display_copy": "他備咖啡、接送、買展票\n你想分手，話卻卡在喉嚨\n\n【那個卡住的感覺，有它自己的名字。】\n\n心理學早已將它命名——大多數人從來沒發現自己正在這個狀態裡，因為它長得太像「捨不得」了。"
+            },
+            "3": {
+              "heading": "你以為是愛，Cialdini 1984 年說那叫義務感",
+              "display_copy": "你以為是愛，Cialdini 1984 說那叫義務感\n\n【互惠性的真正驚人之處】：\n不需要你喜歡對方\n不需要你主動開口要\n\n光是「收到」這個動作，就足以在你心裡製造出義務感——對方付出越多，那個重量就越大，大到讓「說不」感覺像在犯罪。\n\n資料來源：Wikipedia — Reciprocity (social psychology)"
+            },
+            "4": {
+              "heading": "你沒開口要那瓶飲料，但 1971 年的實驗告訴你，你已經欠他了",
+              "display_copy": "你沒開口要那瓶飲料\n但 1971 年的實驗告訴你，你已經欠他了\n\nRegan 實驗，1971\n\n他幫你買了一瓶飲料\n然後拜託你買他的彩票\n\n結果：【你買了】\n\n不請自來的付出依然能啟動義務感——那份債，你沒同意，但它已經掛在你身上了。\n\n資料來源：Cognitigence — Cialdini's 7 Principles of Persuasion"
+            },
+            "5": {
+              "heading": "感激 vs. 虧欠感：長得一樣，但一個讓關係變好，一個讓你留下來卻越來越遠",
+              "display_copy": "Algoe 等人，2010年｜《個人關係》期刊\n\n【感激】→ 預測次日關係連結與滿意度上升\n【虧欠感】→ 維持關係的外部信號，但讓你越來越遠\n\n兩種情緒長得像，但虧欠感與壓迫感、焦慮、怨恨相連——感激才是真正讓關係變好的那個，而你現在感受到的，是哪一種？\n\n資料來源：Algoe, Gable & Maisel (2010), Personal Relationships"
+            },
+            "6": {
+              "heading": "見面之前，你怎麼知道自己是「被他吸引」還是「被他的付出綁住」？",
+              "display_copy": "見面之前，你怎麼知道是【被他吸引】，還是被他的付出綁住？\n\n對話框裡每一個回覆、每一個表情符號\n都在悄悄加重那個義務感的重量\n\nLava 的出發點：先見面，再決定\n\n在真實相處裡，你才感受得到那個感覺\n是輕盈的靠近，還是沉重的留著"
+            },
+            "7": {
+              "heading": "下次那個「說不出口」的感覺來了，先問自己這三件事",
+              "display_copy": "「說不出口」來了\n先問自己三件事\n\n① 如果他這個月什麼都沒做\n   你還會想靠近他嗎？\n\n② 想到「離開」\n   第一個念頭是【解脫】還是愧疚？\n\n③ 你對這段關係的投入\n   來自期待，還是來自壓力？\n\n這三個問題不給你答案——但它們能幫你認出，那個卡住的感覺，究竟從哪裡來。"
+            },
+            "8": {
+              "heading": "Lava 的立場：真實感受，只能在真實裡認識",
+              "display_copy": "義務感最容易在「累積的付出」裡滋長\n在你還沒機會認識他之前\n\nLava 想讓你在見面之前保持那份清醒\n\n在認識一個人之前，累積的對話只會製造噪音——【讓你更難分辨，自己真正感受到的是什麼。】\n\n《我的荒糖戀愛》最甜的，是真實相處裡長出來的時刻，那才是故事的核心。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
           }
-        ]
-      }
+        }
+      },
+      "candidates_since": "2026-09-01T18:33:03+08:00"
     },
     {
       "id": "86eyrdm6u",
-      "topic": "86eyrdm6u｜20260901-《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起：你選了誰？",
+      "topic": "86eyrdm6u｜20260901-《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起——你選了誰？",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyrdm6u",
@@ -11721,7 +11796,7 @@
           "role": "知識解釋",
           "candidates": [],
           "final_src": null,
-          "heading": "選項越多，越難決定：這不是你的問題，是設計的問題",
+          "heading": "選項越多，越難決定——這不是你的問題，是設計的問題",
           "display_copy": "【選項越多，越難決定】\n心理學家 Barry Schwartz\n稱之為「選擇悖論」\n（paradox of choice）\n\n當選項無限開著\n你的決策能力下降\n對最終選擇的滿意度\n也同步下滑\n\n資料來源：Barry Schwartz, The Paradox of Choice: Why More Is Less (HarperCollins, 2004)"
         },
         {
@@ -11737,7 +11812,7 @@
           "role": "知識解釋",
           "candidates": [],
           "final_src": null,
-          "heading": "用越久，越累：這不是巧合",
+          "heading": "用越久，越累——這不是巧合",
           "display_copy": "滑動、配對、對話、沉默\n這個循環本身就在消耗人\n\nPronk & Denissen【2020】：\n無限選項搭配遊戲化機制\n促使使用者快速循環換人\n【阻礙有意義連結的形成】\n\n「今晚過了就沒有了」\n反而是一種解藥\n\n資料來源：Pronk & Denissen (2020), 轉引自 researchgate.net/publication/335312368"
         },
         {
@@ -11811,138 +11886,48 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_lines": {
-        "1": [
-          "一年只有今晚",
-          "",
-          "一年只有今晚",
-          "你腦海裡第一個出現的",
-          "是誰的臉",
-          "《一夜限定》One Night Only (2026)"
-        ],
-        "2": [
-          "你不是沒興趣，你只是「還沒決定」",
-          "",
-          "你認識他／她三週了",
-          "訊息每天來回，感覺不錯",
-          "但見面這件事",
-          "就這樣一直飄著",
-          "因為「隨時可以約」",
-          "所以「現在不急」",
-          "選項永遠開著的代價",
-          "是它永遠不需要被決定"
-        ],
-        "3": [
-          "選項越多，越難決定——這不是你的問題",
-          "是設計的問題",
-          "",
-          "選項越多，越難決定",
-          "心理學家 Barry Schwartz",
-          "稱之為「選擇悖論」",
-          "（paradox of choice）",
-          "當選項無限開著",
-          "你的決策能力下降",
-          "對最終選擇的滿意度",
-          "也同步下滑",
-          "資料來源：Barry Schwartz, The Paradox of Choice",
-          "Why More Is Less (HarperCollins, 2004)"
-        ],
-        "4": [
-          "配對越多，追求越少",
-          "",
-          "配對越多，反而越少行動",
-          "Pronk & Denissen2019研究",
-          "交友 App 使用者面對過多配對時",
-          "實際追求任何一個人的可能性",
-          "顯著降低",
-          "選項本身製造了",
-          "「還不需要決定」的幻覺",
-          "讓每個人都變得「不急」",
-          "資料來源：Pronk & Denissen (2019), Journal of",
-          "Social and Personal Relationships. researchgate.net/",
-          "publication/335312368"
-        ],
-        "5": [
-          "用越久，越累——這不是巧合",
-          "",
-          "滑動、配對、對話、沉默",
-          "這個循環本身就在消耗人",
-          "Pronk & Denissen2020",
-          "無限選項搭配遊戲化機制",
-          "促使使用者快速循環換人",
-          "阻礙有意義連結的形成",
-          "「今晚過了就沒有了」",
-          "反而是一種解藥",
-          "資料來源：Pronk & Denissen (2020), 轉引自",
-          "researchgate.net/publication/335312368"
-        ],
-        "6": [
-          "《一夜限定》的設定其實是一種反向設計",
-          "",
-          "《一夜限定》裡的 Owen 和 Allie",
-          "因為今晚過了就沒有了",
-          "才會在街頭追",
-          "才會在意每個錯過",
-          "截止日期，讓選擇變得誠實",
-          "Lava 的邏輯也是這樣",
-          "見面不是選項的終點",
-          "而是整件事的起點"
-        ],
-        "7": [
-          "那個你一直說「改天」的人，現在就可以約",
-          "",
-          "有沒有一個人",
-          "你已經想見很久",
-          "理由一直是",
-          "「還沒準備好」",
-          "「等更好的時機」",
-          "那個時機",
-          "從來不會自己出現",
-          "今天，就是那個時機"
-        ],
-        "8": [
-          "Lava：幫你把見面變成一個有日期的約定",
-          "",
-          "Lava 在幫你做一件事",
-          "把「改天見」",
-          "變成一個有日期的約定",
-          "因為連結不發生在對話框裡",
-          "它發生在你們決定出現",
-          "在同一個地方的那一刻"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T18:08:38+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-01T18:08:39+08:00",
-        "pass": false,
-        "counts": {
-          "赦免式安慰": 1
-        },
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "赦免式安慰",
-            "where": "第3張主標",
-            "line": "第3張主標：…項越多，越難決定：這不是你的問題，是設計的問題…",
-            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
+      "copy_versions": {
+        "claude": {
+          "caption": "《一夜限定》的世界觀是：全球每年只有一個夜晚的 12 小時，你可以和任何人在一起。\n\n問題不是你會怎麼用這 12 小時，問題是你的第一個念頭，想到的是誰。\n\n電影用一個荒謬的法律設定做了一件很有意思的事：它把「選擇」從無限期變成了有期限，而期限，讓每個人都必須誠實。\n主角 Owen 和 Allie 都是城市裡唯二只想找真愛的人，正因為今晚過了就沒有了，他們才會在街頭追逐、才會在意每一個錯過。\nLava 的邏輯和這個設定有一點像：配對的目的不是繼續聊，而是讓見面這件事從一個可以無限延遲的選項，變成一個你必須面對的具體時刻。\n\n#一夜限定 #交友軟體 #約會 #愛情 #七夕 #選擇悖論 #交友心理 #現代愛情 #見面 #Lava交友 #不聊天的交友軟體 #台灣電影 #浪漫喜劇 #線下約會 #關係",
+          "slides": {
+            "1": {
+              "heading": "一年只有今晚",
+              "display_copy": "一年只有今晚\n你腦海裡第一個出現的\n是誰的臉？\n\n《一夜限定》One Night Only (2026)"
+            },
+            "2": {
+              "heading": "你不是沒興趣，你只是「還沒決定」",
+              "display_copy": "你認識他／她【三週】了\n訊息每天來回，感覺不錯\n但見面這件事\n就這樣一直【飄著】\n\n因為「隨時可以約」\n所以「現在不急」\n\n選項永遠開著的代價\n是它永遠不需要被決定"
+            },
+            "3": {
+              "heading": "選項越多，越難決定——這不是你的問題，是設計的問題",
+              "display_copy": "【選項越多，越難決定】\n心理學家 Barry Schwartz\n稱之為「選擇悖論」\n（paradox of choice）\n\n當選項無限開著\n你的決策能力下降\n對最終選擇的滿意度\n也同步下滑\n\n資料來源：Barry Schwartz, The Paradox of Choice: Why More Is Less (HarperCollins, 2004)"
+            },
+            "4": {
+              "heading": "配對越多，追求越少",
+              "display_copy": "配對越多，反而越少行動\n\nPronk & Denissen【2019】研究：\n交友 App 使用者面對過多配對時\n實際追求任何一個人的可能性\n顯著【降低】\n\n選項本身製造了\n「還不需要決定」的幻覺\n讓每個人都變得「不急」\n\n資料來源：Pronk & Denissen (2019), Journal of Social and Personal Relationships. researchgate.net/publication/335312368"
+            },
+            "5": {
+              "heading": "用越久，越累——這不是巧合",
+              "display_copy": "滑動、配對、對話、沉默\n這個循環本身就在消耗人\n\nPronk & Denissen【2020】：\n無限選項搭配遊戲化機制\n促使使用者快速循環換人\n【阻礙有意義連結的形成】\n\n「今晚過了就沒有了」\n反而是一種解藥\n\n資料來源：Pronk & Denissen (2020), 轉引自 researchgate.net/publication/335312368"
+            },
+            "6": {
+              "heading": "《一夜限定》的設定其實是一種反向設計",
+              "display_copy": "《一夜限定》裡的 Owen 和 Allie\n因為今晚過了就沒有了\n才會在街頭追\n才會在意每個錯過\n\n【截止日期，讓選擇變得誠實】\n\nLava 的邏輯也是這樣：\n見面不是選項的終點\n而是整件事的起點"
+            },
+            "7": {
+              "heading": "那個你一直說「改天」的人，現在就可以約",
+              "display_copy": "有沒有一個人\n你已經想見很久\n\n理由一直是\n「還沒準備好」\n「等更好的時機」\n\n那個時機\n從來不會自己出現\n\n【今天，就是那個時機】"
+            },
+            "8": {
+              "heading": "Lava：幫你把見面變成一個有日期的約定",
+              "display_copy": "〖Lava 在幫你做一件事〗\n\n把「改天見」\n變成一個有日期的約定\n\n因為連結不發生在對話框裡\n它發生在你們決定出現\n在同一個地方的那一刻"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
           }
-        ]
-      },
-      "fact": {
-        "ts": "2026-09-01T18:09:13+08:00",
-        "pass": true,
-        "claims": 0,
-        "issues": [],
-        "note": "文案未偵測到數字或研究引用"
+        }
       }
     }
   ]
