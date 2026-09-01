@@ -3905,7 +3905,7 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "issues": [
           {
@@ -3916,7 +3916,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:27+08:00",
+        "ts": "2026-09-02T02:01:45+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -3991,7 +3991,7 @@
         "rhythm": "整篇前四張連續人臉深色底圖像在原地踏步，第5張山景是唯一的構圖休息站，第7、8張雖然換場景卻撞片源，CTA的純黑結尾雖乾淨但收得太硬——整體節奏是『悶→喘一口氣→再悶→硬煞車』，建議至少在第2或第4張做一次主體與明暗的雙重切換，才能讓九張滑起來有層次。"
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -4675,12 +4675,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:43:04+08:00",
+        "ts": "2026-09-02T02:00:40+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-02T01:45:28+08:00",
+        "ts": "2026-09-02T02:01:46+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4707,7 +4707,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -5286,7 +5286,7 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "issues": [
           {
@@ -5297,7 +5297,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -5341,7 +5341,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:30+08:00",
+        "ts": "2026-09-02T02:01:47+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -5844,12 +5844,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:43:34+08:00",
+        "ts": "2026-09-02T02:01:11+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -5914,7 +5914,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:30+08:00",
+        "ts": "2026-09-02T02:01:48+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6379,12 +6379,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:43:34+08:00",
+        "ts": "2026-09-02T02:01:11+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 1,
@@ -6450,7 +6450,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:32+08:00",
+        "ts": "2026-09-02T02:01:49+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -7300,12 +7300,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:43:35+08:00",
+        "ts": "2026-09-02T02:01:11+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -7364,7 +7364,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:33+08:00",
+        "ts": "2026-09-02T02:01:51+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -8217,18 +8217,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
-        "pass": false,
-        "issues": [
-          {
-            "slide": null,
-            "rule": "draft_broken",
-            "line": "讀稿失敗 [Errno 11] Resource deadlock avoided"
-          }
-        ]
+        "ts": "2026-09-02T02:01:11+08:00",
+        "pass": true,
+        "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -8279,7 +8273,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:35+08:00",
+        "ts": "2026-09-02T02:01:53+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -8892,12 +8886,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:44:05+08:00",
+        "ts": "2026-09-02T02:01:11+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 3
@@ -8927,7 +8921,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:41+08:00",
+        "ts": "2026-09-02T02:01:58+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -9528,18 +9522,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
-        "pass": false,
-        "issues": [
-          {
-            "slide": null,
-            "rule": "draft_broken",
-            "line": "讀稿失敗 [Errno 11] Resource deadlock avoided"
-          }
-        ]
+        "ts": "2026-09-02T02:01:11+08:00",
+        "pass": true,
+        "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -9605,7 +9593,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:43+08:00",
+        "ts": "2026-09-02T02:02:01+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -10050,12 +10038,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:44:35+08:00",
+        "ts": "2026-09-02T02:01:11+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -10099,7 +10087,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:44+08:00",
+        "ts": "2026-09-02T02:02:01+08:00",
         "pass": false,
         "claims": 2,
         "issues": [
@@ -10766,7 +10754,7 @@
       "writer_model": "claude-sonnet-4-6",
       "candidates_since": "2026-09-01T19:19:51+08:00",
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -10968,12 +10956,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:44:54+08:00",
+        "ts": "2026-09-02T02:01:11+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-02T01:45:49+08:00",
+        "ts": "2026-09-02T02:02:04+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -11657,7 +11645,7 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "issues": [
           {
@@ -11668,7 +11656,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -11733,7 +11721,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:54+08:00",
+        "ts": "2026-09-02T02:02:08+08:00",
         "pass": false,
         "claims": 7,
         "issues": [
@@ -11975,7 +11963,7 @@
         "rhythm": "整篇節奏呈『黑→黑→米黃→米黃→黑』的對稱式夾心結構，中段亮色雙張連發雖有意圖但執行上因構圖幾乎相同而失去衝擊力，星號 icon 過度複用更讓品牌符號從亮點變成壁紙；建議重新分配色調出現順序並限縮星號出場次數，才能讓五張各自有存在理由。"
       },
       "fact": {
-        "ts": "2026-09-02T01:45:54+08:00",
+        "ts": "2026-09-02T02:02:08+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -12011,12 +11999,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -12611,12 +12599,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-02T01:45:24+08:00",
+        "ts": "2026-09-02T02:01:42+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -12689,7 +12677,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-02T01:45:55+08:00",
+        "ts": "2026-09-02T02:02:08+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -12773,7 +12761,7 @@
     },
     {
       "id": "86eyrz3f9",
-      "topic": "86eyrz3f9｜20260901-86eyrz3f9｜20260901-Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」——這件事，心理學有個名字",
+      "topic": "86eyrz3f9｜20260901-86eyrz3f9｜20260901-Netflix 台灣冠軍《我的荒糖戀愛》：丁海寅把人寵到「不知道怎麼說不」：這件事，心理學有個名字",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyrz3f9",
@@ -12824,8 +12812,8 @@
             }
           ],
           "final_src": null,
-          "heading": "被他寵到說不出「不」——不是軟弱，是神經系統在保護你",
-          "display_copy": "被他寵到說不出「不」\n不是軟弱\n是神經系統在保護你\n\n《我的荒糖戀愛》登上 Netflix 台灣冠軍——丁海寅謊稱是失憶女主的男友，過度照顧、貼身守護。觀眾看著覺得甜，卻說不出為什麼那個「不」始終到不了嘴邊。心理學管這個叫【Fawn Response（趨附反應）】——它跟軟弱完全無關。",
+          "heading": "被他寵到說不出「不」：不是軟弱，是神經系統在保護你",
+          "display_copy": "被他寵到說不出「不」\n不是軟弱\n是神經系統在保護你\n\n《我的荒糖戀愛》登上 Netflix 台灣冠軍：丁海寅謊稱是失憶女主的男友，過度照顧、貼身守護。觀眾看著覺得甜，卻說不出為什麼那個「不」始終到不了嘴邊。心理學管這個叫【Fawn Response（趨附反應）】：它跟軟弱完全無關。",
           "default_cid": "a"
         },
         {
@@ -12865,7 +12853,7 @@
           ],
           "final_src": null,
           "heading": "她不是因為愛他才說不出「不」",
-          "display_copy": "她不是因為愛他才說不出「不」\n\n高恩世失憶後，身分認同完全空白——現實的座標全數由張泰河提供。他說他是她男友，她就信了；他說留下來更安全，她就留了。\n\n這不是愛情裡的順從。失去身分認同的人，會把【提供現實框架的人】當作安全錨點。神經系統依附他，不是因為軟弱，而是因為在高度不確定性下，這是它唯一認識的安全路徑。",
+          "display_copy": "她不是因為愛他才說不出「不」\n\n高恩世失憶後，身分認同完全空白：現實的座標全數由張泰河提供。他說他是她男友，她就信了；他說留下來更安全，她就留了。\n\n這不是愛情裡的順從。失去身分認同的人，會把【提供現實框架的人】當作安全錨點。神經系統依附他，不是因為軟弱，而是因為在高度不確定性下，這是它唯一認識的安全路徑。",
           "default_cid": "a"
         },
         {
@@ -12890,8 +12878,8 @@
             }
           ],
           "final_src": null,
-          "heading": "Fight、Flight、Freeze——還有一個你沒聽說過的第四種",
-          "display_copy": "Fight、Flight、Freeze——\n還有第四種你沒聽說過的\n\n心理治療師 Pete Walker 約於【2003 年】提出「Fawn Response（趨附反應）」，並在 2013 年的著作《Complex PTSD: From Surviving to Thriving》中正式論述：當大腦感知到威脅，神經系統有時不會戰鬥、不會逃跑、也不會僵住——它選擇討好。四種反應裡，Fawn 是最少被認識的一種。\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
+          "heading": "Fight、Flight、Freeze：還有一個你沒聽說過的第四種",
+          "display_copy": "Fight、Flight、Freeze：還有第四種你沒聽說過的\n\n心理治療師 Pete Walker 約於【2003 年】提出「Fawn Response（趨附反應）」，並在 2013 年的著作《Complex PTSD: From Surviving to Thriving》中正式論述：當大腦感知到威脅，神經系統有時不會戰鬥、不會逃跑、也不會僵住：它選擇討好。四種反應裡，Fawn 是最少被認識的一種。\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
           "default_cid": "a"
         },
         {
@@ -12930,7 +12918,7 @@
           ],
           "final_src": null,
           "heading": "Fawn Response 長什麼樣子？它看起來像好人",
-          "display_copy": "Fawn Response 長什麼樣子？\n\n它看起來像【好人】——溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝突、保持安全而啟動的自動程式。\n\n難以說不、過度道歉、為對方的情緒負責——這三件事同時出現，不是個性，是神經系統在告訴你它感受到了威脅。一般討好可能出於社會動機；Fawn 是焦慮驅動的強迫性順從。\n\n資料來源：CPTSD Foundation, \"Fawn Response\" (2025/06/05), cptsdfoundation.org",
+          "display_copy": "Fawn Response 長什麼樣子？\n\n它看起來像【好人】：溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝突、保持安全而啟動的自動程式。\n\n難以說不、過度道歉、為對方的情緒負責：這三件事同時出現，不是個性，是神經系統在告訴你它感受到了威脅。一般討好可能出於社會動機；Fawn 是焦慮驅動的強迫性順從。\n\n資料來源：CPTSD Foundation, \"Fawn Response\" (2025/06/05), cptsdfoundation.org",
           "default_cid": "a"
         },
         {
@@ -12961,7 +12949,7 @@
           ],
           "final_src": null,
           "heading": "真正的善意讓你充滿能量；Fawn 式討好讓你精疲力竭",
-          "display_copy": "真正的善意讓你【充滿能量】\nFawn 式討好讓你精疲力竭\n\n怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？\n\n如果是——你的順從很可能不是慷慨，是神經系統在告訴你它正處於威脅狀態。真正的善意出於選擇；Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完全不成比例。\n\n資料來源：Psychology Today, \"Demystifying the Fawn Response\" (Apr 2025), psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response",
+          "display_copy": "真正的善意讓你【充滿能量】\nFawn 式討好讓你精疲力竭\n\n怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？\n\n如果是：你的順從很可能不是慷慨，是神經系統在告訴你它正處於威脅狀態。真正的善意出於選擇；Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完全不成比例。\n\n資料來源：Psychology Today, \"Demystifying the Fawn Response\" (Apr 2025), psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response",
           "default_cid": "a"
         },
         {
@@ -12987,7 +12975,7 @@
           ],
           "final_src": null,
           "heading": "線上認識一個人，你的神經系統更容易進入 Fawn 模式",
-          "display_copy": "訊息交友的結構性壓力\n正好是 Fawn 模式最容易觸發的條件\n\n資訊不對稱、害怕打破剛建立的連結、看不見對方全貌——這三件事讓神經系統更難說不，甚至讓你自己也搞不清楚哪個是選擇、哪個是焦慮。\n\n〖Lava 選擇從見面開始〗，不是效率考量，而是讓你在真實場景裡更容易聽見自己的感覺——包括那個想說「不」的聲音。",
+          "display_copy": "訊息交友的結構性壓力\n正好是 Fawn 模式最容易觸發的條件\n\n資訊不對稱、害怕打破剛建立的連結、看不見對方全貌：這三件事讓神經系統更難說不，甚至讓你自己也搞不清楚哪個是選擇、哪個是焦慮。\n\n〖Lava 選擇從見面開始〗，不是效率考量，而是讓你在真實場景裡更容易聽見自己的感覺：包括那個想說「不」的聲音。",
           "default_cid": "a"
         },
         {
@@ -13025,8 +13013,8 @@
             }
           ],
           "final_src": null,
-          "heading": "你不需要「學會拒絕」——你需要先認出這個模式",
-          "display_copy": "你不需要「學會拒絕」\n你需要先認出這個模式\n\nFawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成——孩子學會停止反抗以避免養育者報復，因而喪失說「不」的能力。靠意志力無法覆蓋。\n\n第一步只有一個：當那個【與情境不相稱的焦慮】出現時，先停下來，問自己——「這是我想要的，還是我在讓自己感覺安全？」\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
+          "heading": "你不需要「學會拒絕」：你需要先認出這個模式",
+          "display_copy": "你不需要「學會拒絕」\n你需要先認出這個模式\n\nFawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成：孩子學會停止反抗以避免養育者報復，因而喪失說「不」的能力。靠意志力無法覆蓋。\n\n第一步只有一個：當那個【與情境不相稱的焦慮】出現時，先停下來，問自己：「這是我想要的，還是我在讓自己感覺安全？」\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
           "default_cid": "a"
         },
         {
@@ -13052,7 +13040,7 @@
           ],
           "final_src": null,
           "heading": "Lava 的邏輯是：讓你有機會在真實情境裡練習聽見自己",
-          "display_copy": "Lava 不是心理治療\n但它的設計有一個副作用\n\n真實場景給你更多身體信號——讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道怎麼離開」〗。\n\nFawn 模式在資訊不對稱、看不見對方的環境裡最容易滋生。從見面開始，不是效率考量——是讓你在更容易聽見自己的地方約會。不是保證，是機會。",
+          "display_copy": "Lava 不是心理治療\n但它的設計有一個副作用\n\n真實場景給你更多身體信號：讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道怎麼離開」〗。\n\nFawn 模式在資訊不對稱、看不見對方的環境裡最容易滋生。從見面開始，不是效率考量。是讓你在更容易聽見自己的地方約會。不是保證，是機會。",
           "default_cid": "a"
         },
         {
@@ -13145,11 +13133,295 @@
           }
         }
       },
-      "candidates_since": "2026-09-02T01:48:49+08:00"
+      "candidates_since": "2026-09-02T01:48:49+08:00",
+      "rendered_lines": {
+        "1": [
+          "被他寵到說不出「不」——不是軟弱，是神經",
+          "系統在保護你",
+          "",
+          "被他寵到說不出「不」",
+          "不是軟弱",
+          "是神經系統在保護你",
+          "《我的荒糖戀愛》登上 Netflix 台灣冠軍——丁海寅謊",
+          "稱是失憶女主的男友，過度照顧、貼身守護",
+          "觀眾看著覺得甜",
+          "卻說不出為什麼那個「不」始終到不了嘴邊",
+          "心理學管這個叫【Fawn Response（趨附反應）】",
+          "它跟軟弱完全無關"
+        ],
+        "2": [
+          "她不是因為愛他才說不出「不」",
+          "",
+          "她不是因為愛他才說不出「不」",
+          "高恩世失憶後，身分認同完全空白——現實的座標全",
+          "數由張泰河提供。他說他是她男友，她就信了；他說",
+          "留下來更安全，她就留了",
+          "這不是愛情裡的順從。失去身分認同的人，會把提供",
+          "現實框架的人當作安全錨點。神經系統依附他",
+          "不是因為軟弱，而是因為在高度不確定性下，這是它",
+          "唯一認識的安全路徑"
+        ],
+        "3": [
+          "Fight、Flight、Freeze——還有一個你沒聽說",
+          "過的第四種",
+          "",
+          "Fight、Flight、Freeze",
+          "還有第四種你沒聽說過的",
+          "心理治療師 Pete Walker 約於2003 年提出「Fawn",
+          "Response（趨附反應）」，並在 2013 年的著作《",
+          "Complex PTSD: From Surviving to Thriving》中正式",
+          "論述：當大腦感知到威脅，神經系統有時不會戰鬥",
+          "不會逃跑、也不會僵住——它選擇討好。四種反應裡",
+          "Fawn 是最少被認識的一種",
+          "資料來源：Pete Walker, Complex PTSD: From",
+          "Surviving to Thriving (2013), amazon.com/dp/",
+          "1492871842"
+        ],
+        "4": [
+          "Fawn Response 長什麼樣子？它看起來像好",
+          "人",
+          "",
+          "Fawn Response 長什麼樣子",
+          "它看起來像好人——溫暖、隨和、從不拒絕別人",
+          "但表面之下，它是神經系統為了避免衝突、保持安全",
+          "而啟動的自動程式",
+          "難以說不、過度道歉、為對方的情緒負責——這三件",
+          "事同時出現，不是個性，是神經系統在告訴你它感受",
+          "到了威脅。一般討好可能出於社會動機；Fawn 是焦慮",
+          "驅動的強迫性順從",
+          "資料來源：CPTSD Foundation, \"Fawn Response\" (",
+          "2025/06/05), cptsdfoundation.org"
+        ],
+        "5": [
+          "真正的善意讓你充滿能量；Fawn 式討好讓你",
+          "精疲力竭",
+          "",
+          "真正的善意讓你充滿能量",
+          "Fawn 式討好讓你精疲力竭",
+          "怎麼區分？只問自己一件事：「說不」這件事",
+          "會讓你焦慮到與情境完全不相稱嗎",
+          "如果是——你的順從很可能不是慷慨，是神經系統",
+          "在告訴你它正處於威脅狀態。真正的善意出於選擇",
+          "Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完",
+          "全不成比例",
+          "資料來源：Psychology Today, \"Demystifying the",
+          "Fawn Response\" (Apr 2025), psychologytoday.com/",
+          "us/blog/bipoc-mental-health/202504/",
+          "demystifying-the-fawn-response"
+        ],
+        "6": [
+          "線上認識一個人，你的神經系統更容易進入",
+          "Fawn 模式",
+          "",
+          "訊息交友的結構性壓力",
+          "正好是 Fawn 模式最容易觸發的條件",
+          "資訊不對稱、害怕打破剛建立的連結、看不見對方全",
+          "貌——這三件事讓神經系統更難說不，甚至讓你自己",
+          "也搞不清楚哪個是選擇、哪個是焦慮",
+          "Lava 選擇從見面開始，不是效率考量，而是讓你在真",
+          "實場景裡更容易聽見自己的感覺——包括那個想說「",
+          "不」的聲音"
+        ],
+        "7": [
+          "你不需要「學會拒絕」——你需要先認出這個",
+          "模式",
+          "",
+          "你不需要「學會拒絕」",
+          "你需要先認出這個模式",
+          "Fawn 模式不是態度問題，是神經系統的習得反應",
+          "Pete Walker 指出它通常在童年就形成——孩子學會停",
+          "止反抗以避免養育者報復，因而喪失說「不」的能力",
+          "靠意志力無法覆蓋",
+          "第一步只有一個：當那個與情境不相稱的焦慮出現時",
+          "先停下來，問自己——「這是我想要的，還是我",
+          "在讓自己感覺安全？」",
+          "資料來源：Pete Walker, Complex PTSD: From",
+          "Surviving to Thriving (2013), amazon.com/dp/",
+          "1492871842"
+        ],
+        "8": [
+          "Lava 的邏輯是：讓你有機會在真實情境裡練",
+          "習聽見自己",
+          "",
+          "Lava 不是心理治療",
+          "但它的設計有一個副作用",
+          "真實場景給你更多身體信號——讓你更容易分辨，「",
+          "我真的想繼續」，還是「我只是不知道怎麼離開」",
+          "Fawn 模式在資訊不對稱、看不見對方的環境裡最容易",
+          "滋生。從見面開始，不是效率考量——是讓你在更容",
+          "易聽見自己的地方約會。不是保證，是機會"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-09-02T02:01:42+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-09-02T02:01:42+08:00",
+        "pass": false,
+        "counts": {
+          "圖上印網址": 3,
+          "圖上單行過長": 14
+        },
+        "issues": [
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第1張主標",
+            "line": "被他寵到說不出「不」：不是軟弱，是神經系統在保護你…（25 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第1張內文",
+            "line": "《我的荒糖戀愛》登上 Netflix 台灣冠軍：丁海寅謊稱是失憶女主的男友，過度…（114 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第2張內文",
+            "line": "高恩世失憶後，身分認同完全空白：現實的座標全數由張泰河提供。他說他是她男友，她就…（57 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第3張主標",
+            "line": "Fight、Flight、Freeze：還有一個你沒聽說過的第四種…（33 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第3張內文",
+            "line": "amazon.com/dp/1492871842",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第3張內文",
+            "line": "Fight、Flight、Freeze：還有第四種你沒聽說過的…（31 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第4張主標",
+            "line": "Fawn Response 長什麼樣子？它看起來像好人…（27 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第4張內文",
+            "line": "它看起來像【好人】：溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝…（55 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第5張主標",
+            "line": "真正的善意讓你充滿能量；Fawn 式討好讓你精疲力竭…（26 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第5張內文",
+            "line": "psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-th",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第5張內文",
+            "line": "怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？…（37 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第6張主標",
+            "line": "線上認識一個人，你的神經系統更容易進入 Fawn 模式…（27 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第6張內文",
+            "line": "資訊不對稱、害怕打破剛建立的連結、看不見對方全貌：這三件事讓神經系統更難說不，甚…（62 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第7張內文",
+            "line": "amazon.com/dp/1492871842",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第7張內文",
+            "line": "Fawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它…（87 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第8張主標",
+            "line": "Lava 的邏輯是：讓你有機會在真實情境裡練習聽見自己…（27 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第8張內文",
+            "line": "真實場景給你更多身體信號：讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道…（47 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-09-02T02:02:13+08:00",
+        "pass": false,
+        "claims": 5,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2003年」的數字在出處頁面裡找不到：https://www.psychologytoday.com/us/blog/emotional-sobriety/202303/what-is-the-fawning-trauma-response"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2003 年」的數字在出處頁面裡找不到：https://www.psychologytoday.com/us/blog/emotional-sobriety/202303/what-is-the-fawning-trauma-response"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2013 年」的數字在出處頁面裡找不到：https://www.amazon.com/Complex-PTSD-Surviving-PETE-WALKER/dp/1492871842"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成：孩子學會」沒有對應出處（人物引述）"
+          }
+        ]
+      }
     },
     {
       "id": "86eyrdm6u",
-      "topic": "86eyrdm6u｜20260901-86eyrdm6u｜20260901-《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起——你選了誰？",
+      "topic": "86eyrdm6u｜20260901-86eyrdm6u｜20260901-《一夜限定》的設定是：一年只有這一晚，你可以和任何人在一起：你選了誰？",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyrdm6u",
@@ -13190,7 +13462,7 @@
           ],
           "final_src": null,
           "heading": "一年只有這一晚",
-          "display_copy": "一年只有這一晚\n政府只給你 12 小時\n可以和你想在一起的人在一起\n\n——你選了誰？\n\n© Universal Pictures／《One Night Only》2026",
+          "display_copy": "一年只有這一晚\n政府只給你 12 小時\n可以和你想在一起的人在一起\n\n：你選了誰？\n\n© Universal Pictures／《One Night Only》2026",
           "default_cid": "a"
         },
         {
@@ -13247,7 +13519,7 @@
           ],
           "final_src": null,
           "heading": "稀缺感讓選擇變得更認真",
-          "display_copy": "「限定一晚」不會讓人更輕浮\n\n心理阻抗理論（Reactance Theory）說：\n當選擇快消失，人反而更清醒\n稀缺感提高大腦獎勵中樞活躍度\n讓你更快知道——\n【那個位置是不是給對了人】\n\n資料來源：Psychology Today, psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable",
+          "display_copy": "「限定一晚」不會讓人更輕浮\n\n心理阻抗理論（Reactance Theory）說：\n當選擇快消失，人反而更清醒\n稀缺感提高大腦獎勵中樞活躍度\n讓你更快知道：【那個位置是不是給對了人】\n\n資料來源：Psychology Today, psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable",
           "default_cid": "a"
         },
         {
@@ -13291,7 +13563,7 @@
           ],
           "final_src": null,
           "heading": "Arthur Aron 的實驗：36 個問題",
-          "display_copy": "1997 年，Arthur Aron 博士與 Elaine Aron 博士\n發表了一個實驗：\n讓兩個陌生人回答 36 個問題\n\n結論是——\n【相互脆弱，是親密感的入口】\n\n不是在一起多久\n而是你們聊到了多深\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab",
+          "display_copy": "1997 年，Arthur Aron 博士與 Elaine Aron 博士\n發表了一個實驗：\n讓兩個陌生人回答 36 個問題\n\n結論是：【相互脆弱，是親密感的入口】\n\n不是在一起多久\n而是你們聊到了多深\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab",
           "default_cid": "a"
         },
         {
@@ -13309,7 +13581,7 @@
           ],
           "final_src": null,
           "heading": "Mandy Len Catron 把實驗帶進了真實世界",
-          "display_copy": "2015 年，Mandy Len Catron 在《紐約時報》寫道：\n她用 Arthur Aron 的 36 個問題\n和一個朋友對話\n然後【真的愛上了他】\n\n讓人愛上你的，不是問題——\n是你選擇說出真實自己的那個決定\n\n資料來源：NYT, nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html",
+          "display_copy": "2015 年，Mandy Len Catron 在《紐約時報》寫道：\n她用 Arthur Aron 的 36 個問題\n和一個朋友對話\n然後【真的愛上了他】\n\n讓人愛上你的，不是問題。是你選擇說出真實自己的那個決定\n\n資料來源：NYT, nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html",
           "default_cid": "a"
         },
         {
@@ -13408,7 +13680,7 @@
           ],
           "final_src": null,
           "heading": "Lava 的邏輯：先見面，再說",
-          "display_copy": "Lava 不讓你聊天\n是因為——\n\n【真實的相遇，發生在見面之後】\n不是訊息裡想像出來的那個人\n\n36 個問題的核心不是問題本身\n是你願意說出真實自己的那個決定\n\n先約出來，再說",
+          "display_copy": "Lava 不讓你聊天\n是因為：【真實的相遇，發生在見面之後】\n不是訊息裡想像出來的那個人\n\n36 個問題的核心不是問題本身\n是你願意說出真實自己的那個決定\n\n先約出來，再說",
           "default_cid": "a"
         },
         {
@@ -13430,7 +13702,7 @@
           ],
           "final_src": null,
           "heading": "你現在選，比等到那一晚更值得",
-          "display_copy": "電影裡的設定是架空的\n但那個問題是真的：\n\n〖如果只有一次機會——你選誰？〗\n\n多數人不缺機會\n缺的是「就是現在」的決定\n\nLava 幫你把日期訂下來",
+          "display_copy": "電影裡的設定是架空的\n但那個問題是真的：\n\n〖如果只有一次機會：你選誰？〗\n\n多數人不缺機會\n缺的是「就是現在」的決定\n\nLava 幫你把日期訂下來",
           "default_cid": "a"
         },
         {
@@ -13523,7 +13795,217 @@
           }
         }
       },
-      "candidates_since": "2026-09-02T01:51:20+08:00"
+      "candidates_since": "2026-09-02T01:51:20+08:00",
+      "rendered_lines": {
+        "1": [
+          "一年只有這一晚",
+          "",
+          "一年只有這一晚",
+          "政府只給你 12 小時",
+          "可以和你想在一起的人在一起",
+          "——你選了誰",
+          "© Universal Pictures／《One Night Only》2026"
+        ],
+        "2": [
+          "《One Night Only》的世界觀",
+          "",
+          "《One Night Only》的世界裡",
+          "政府每年給你 12 小時",
+          "去找到你想在一起的人",
+          "Monica Barbaro 與 Callum Turner 飾演的",
+          "兩個陌生人，試圖在時間耗盡前",
+          "弄清楚彼此的意義",
+          "資料來源：Universal Pictures, universalpictures.com/",
+          "movies/one-night-only"
+        ],
+        "3": [
+          "稀缺感讓選擇變得更認真",
+          "",
+          "「限定一晚」不會讓人更輕浮",
+          "心理阻抗理論（Reactance Theory）說",
+          "當選擇快消失，人反而更清醒",
+          "稀缺感提高大腦獎勵中樞活躍度",
+          "讓你更快知道",
+          "那個位置是不是給對了人",
+          "資料來源：Psychology Today, psychologytoday.com",
+          "/us/blog/science-choice/201704/",
+          "scarcity-makes-everything-desirable"
+        ],
+        "4": [
+          "Arthur Aron 的實驗：36 個問題",
+          "",
+          "1997 年，Arthur Aron 博士與 Elaine Aron 博士",
+          "發表了一個實驗",
+          "讓兩個陌生人回答 36 個問題",
+          "結論是",
+          "相互脆弱，是親密感的入口",
+          "不是在一起多久",
+          "而是你們聊到了多深",
+          "資料來源：Berkeley News, news.berkeley.edu/2015/",
+          "02/12/love-in-the-lab"
+        ],
+        "5": [
+          "Mandy Len Catron 把實驗帶進了真實世界",
+          "",
+          "2015 年，Mandy Len Catron 在《紐約時報》寫道",
+          "她用 Arthur Aron 的 36 個問題",
+          "和一個朋友對話",
+          "然後真的愛上了他",
+          "讓人愛上你的，不是問題",
+          "是你選擇說出真實自己的那個決定",
+          "資料來源：NYT, nytimes.com/2015/01/09/style/",
+          "no-37-big-wedding-or-small.html"
+        ],
+        "6": [
+          "「感覺像愛」和「是愛」是兩件事",
+          "",
+          "Arthur Aron 說",
+          "36 個問題創造的是「暫時性親密感」",
+          "不等於愛",
+          "一夜限定的強烈感，可以感覺像愛",
+          "但愛，是第二天早上",
+          "你還想繼續的決定",
+          "資料來源：Berkeley News, news.berkeley.edu/2015/",
+          "02/12/love-in-the-lab"
+        ],
+        "7": [
+          "Lava 的邏輯：先見面，再說",
+          "",
+          "Lava 不讓你聊天",
+          "是因為",
+          "真實的相遇，發生在見面之後",
+          "不是訊息裡想像出來的那個人",
+          "36 個問題的核心不是問題本身",
+          "是你願意說出真實自己的那個決定",
+          "先約出來，再說"
+        ],
+        "8": [
+          "你現在選，比等到那一晚更值得",
+          "",
+          "電影裡的設定是架空的",
+          "但那個問題是真的",
+          "如果只有一次機會——你選誰",
+          "多數人不缺機會",
+          "缺的是「就是現在」的決定",
+          "Lava 幫你把日期訂下來"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-09-02T02:01:42+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-09-02T02:01:42+08:00",
+        "pass": false,
+        "counts": {
+          "圖上印網址": 5,
+          "圖上單行過長": 7
+        },
+        "issues": [
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第1張內文",
+            "line": "© Universal Pictures／《One Night Only》202…（41 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第2張內文",
+            "line": "universalpictures.com/movies/one-night-only",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第2張內文",
+            "line": "Monica Barbaro 與 Callum Turner 飾演的…（34 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第3張內文",
+            "line": "psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-every",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第3張內文",
+            "line": "心理阻抗理論（Reactance Theory）說：…（26 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第4張內文",
+            "line": "berkeley.edu/2015/02/12/love-in-the-lab",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第4張內文",
+            "line": "1997 年，Arthur Aron 博士與 Elaine Aron 博士…（37 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第5張主標",
+            "line": "Mandy Len Catron 把實驗帶進了真實世界…（27 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第5張內文",
+            "line": "nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第5張內文",
+            "line": "2015 年，Mandy Len Catron 在《紐約時報》寫道：…（34 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第6張內文",
+            "line": "berkeley.edu/2015/02/12/love-in-the-lab",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第6張內文",
+            "line": "資料來源：Berkeley News, news.berkeley.edu/20…（64 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-09-02T02:02:14+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2015 年」的出處無法自動核對，請人工看過：https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html"
+          }
+        ]
+      }
     }
   ]
 }

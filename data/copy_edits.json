@@ -483,6 +483,124 @@
           "edited": "依附風格不是固定標籤：脈絡才是關鍵"
         }
       ]
+    },
+    {
+      "post_id": "86eyrz3f9",
+      "ts": "2026-09-02T02:01:42+08:00",
+      "consumed": false,
+      "by": "copy_fix",
+      "edits": [
+        {
+          "n": 1,
+          "field": "heading",
+          "original": "被他寵到說不出「不」——不是軟弱，是神經系統在保護你",
+          "edited": "被他寵到說不出「不」：不是軟弱，是神經系統在保護你"
+        },
+        {
+          "n": 1,
+          "field": "display_copy",
+          "original": "被他寵到說不出「不」\n不是軟弱\n是神經系統在保護你\n\n《我的荒糖戀愛》登上 Netflix 台灣冠軍——丁海寅謊稱是失憶女主的男友，過度照顧、貼身守護。觀眾看著覺得甜，卻說不出為什麼那個「不」始終到不了嘴邊。心理學管這個叫【Fawn Response（趨附反應）】——它跟軟弱完全無關。",
+          "edited": "被他寵到說不出「不」\n不是軟弱\n是神經系統在保護你\n\n《我的荒糖戀愛》登上 Netflix 台灣冠軍：丁海寅謊稱是失憶女主的男友，過度照顧、貼身守護。觀眾看著覺得甜，卻說不出為什麼那個「不」始終到不了嘴邊。心理學管這個叫【Fawn Response（趨附反應）】：它跟軟弱完全無關。"
+        },
+        {
+          "n": 2,
+          "field": "display_copy",
+          "original": "她不是因為愛他才說不出「不」\n\n高恩世失憶後，身分認同完全空白——現實的座標全數由張泰河提供。他說他是她男友，她就信了；他說留下來更安全，她就留了。\n\n這不是愛情裡的順從。失去身分認同的人，會把【提供現實框架的人】當作安全錨點。神經系統依附他，不是因為軟弱，而是因為在高度不確定性下，這是它唯一認識的安全路徑。",
+          "edited": "她不是因為愛他才說不出「不」\n\n高恩世失憶後，身分認同完全空白：現實的座標全數由張泰河提供。他說他是她男友，她就信了；他說留下來更安全，她就留了。\n\n這不是愛情裡的順從。失去身分認同的人，會把【提供現實框架的人】當作安全錨點。神經系統依附他，不是因為軟弱，而是因為在高度不確定性下，這是它唯一認識的安全路徑。"
+        },
+        {
+          "n": 3,
+          "field": "heading",
+          "original": "Fight、Flight、Freeze——還有一個你沒聽說過的第四種",
+          "edited": "Fight、Flight、Freeze：還有一個你沒聽說過的第四種"
+        },
+        {
+          "n": 3,
+          "field": "display_copy",
+          "original": "Fight、Flight、Freeze——\n還有第四種你沒聽說過的\n\n心理治療師 Pete Walker 約於【2003 年】提出「Fawn Response（趨附反應）」，並在 2013 年的著作《Complex PTSD: From Surviving to Thriving》中正式論述：當大腦感知到威脅，神經系統有時不會戰鬥、不會逃跑、也不會僵住——它選擇討好。四種反應裡，Fawn 是最少被認識的一種。\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
+          "edited": "Fight、Flight、Freeze：還有第四種你沒聽說過的\n\n心理治療師 Pete Walker 約於【2003 年】提出「Fawn Response（趨附反應）」，並在 2013 年的著作《Complex PTSD: From Surviving to Thriving》中正式論述：當大腦感知到威脅，神經系統有時不會戰鬥、不會逃跑、也不會僵住：它選擇討好。四種反應裡，Fawn 是最少被認識的一種。\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842"
+        },
+        {
+          "n": 4,
+          "field": "display_copy",
+          "original": "Fawn Response 長什麼樣子？\n\n它看起來像【好人】——溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝突、保持安全而啟動的自動程式。\n\n難以說不、過度道歉、為對方的情緒負責——這三件事同時出現，不是個性，是神經系統在告訴你它感受到了威脅。一般討好可能出於社會動機；Fawn 是焦慮驅動的強迫性順從。\n\n資料來源：CPTSD Foundation, \"Fawn Response\" (2025/06/05), cptsdfoundation.org",
+          "edited": "Fawn Response 長什麼樣子？\n\n它看起來像【好人】：溫暖、隨和、從不拒絕別人。但表面之下，它是神經系統為了避免衝突、保持安全而啟動的自動程式。\n\n難以說不、過度道歉、為對方的情緒負責：這三件事同時出現，不是個性，是神經系統在告訴你它感受到了威脅。一般討好可能出於社會動機；Fawn 是焦慮驅動的強迫性順從。\n\n資料來源：CPTSD Foundation, \"Fawn Response\" (2025/06/05), cptsdfoundation.org"
+        },
+        {
+          "n": 5,
+          "field": "display_copy",
+          "original": "真正的善意讓你【充滿能量】\nFawn 式討好讓你精疲力竭\n\n怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？\n\n如果是——你的順從很可能不是慷慨，是神經系統在告訴你它正處於威脅狀態。真正的善意出於選擇；Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完全不成比例。\n\n資料來源：Psychology Today, \"Demystifying the Fawn Response\" (Apr 2025), psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response",
+          "edited": "真正的善意讓你【充滿能量】\nFawn 式討好讓你精疲力竭\n\n怎麼區分？只問自己一件事：「說不」這件事，會讓你焦慮到與情境完全不相稱嗎？\n\n如果是：你的順從很可能不是慷慨，是神經系統在告訴你它正處於威脅狀態。真正的善意出於選擇；Fawn 源於恐懼，而且恐懼的程度和眼前的情境往往完全不成比例。\n\n資料來源：Psychology Today, \"Demystifying the Fawn Response\" (Apr 2025), psychologytoday.com/us/blog/bipoc-mental-health/202504/demystifying-the-fawn-response"
+        },
+        {
+          "n": 6,
+          "field": "display_copy",
+          "original": "訊息交友的結構性壓力\n正好是 Fawn 模式最容易觸發的條件\n\n資訊不對稱、害怕打破剛建立的連結、看不見對方全貌——這三件事讓神經系統更難說不，甚至讓你自己也搞不清楚哪個是選擇、哪個是焦慮。\n\n〖Lava 選擇從見面開始〗，不是效率考量，而是讓你在真實場景裡更容易聽見自己的感覺——包括那個想說「不」的聲音。",
+          "edited": "訊息交友的結構性壓力\n正好是 Fawn 模式最容易觸發的條件\n\n資訊不對稱、害怕打破剛建立的連結、看不見對方全貌：這三件事讓神經系統更難說不，甚至讓你自己也搞不清楚哪個是選擇、哪個是焦慮。\n\n〖Lava 選擇從見面開始〗，不是效率考量，而是讓你在真實場景裡更容易聽見自己的感覺：包括那個想說「不」的聲音。"
+        },
+        {
+          "n": 7,
+          "field": "heading",
+          "original": "你不需要「學會拒絕」——你需要先認出這個模式",
+          "edited": "你不需要「學會拒絕」：你需要先認出這個模式"
+        },
+        {
+          "n": 7,
+          "field": "display_copy",
+          "original": "你不需要「學會拒絕」\n你需要先認出這個模式\n\nFawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成——孩子學會停止反抗以避免養育者報復，因而喪失說「不」的能力。靠意志力無法覆蓋。\n\n第一步只有一個：當那個【與情境不相稱的焦慮】出現時，先停下來，問自己——「這是我想要的，還是我在讓自己感覺安全？」\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842",
+          "edited": "你不需要「學會拒絕」\n你需要先認出這個模式\n\nFawn 模式不是態度問題，是神經系統的習得反應。Pete Walker 指出它通常在童年就形成：孩子學會停止反抗以避免養育者報復，因而喪失說「不」的能力。靠意志力無法覆蓋。\n\n第一步只有一個：當那個【與情境不相稱的焦慮】出現時，先停下來，問自己：「這是我想要的，還是我在讓自己感覺安全？」\n\n資料來源：Pete Walker, Complex PTSD: From Surviving to Thriving (2013), amazon.com/dp/1492871842"
+        },
+        {
+          "n": 8,
+          "field": "display_copy",
+          "original": "Lava 不是心理治療\n但它的設計有一個副作用\n\n真實場景給你更多身體信號——讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道怎麼離開」〗。\n\nFawn 模式在資訊不對稱、看不見對方的環境裡最容易滋生。從見面開始，不是效率考量——是讓你在更容易聽見自己的地方約會。不是保證，是機會。",
+          "edited": "Lava 不是心理治療\n但它的設計有一個副作用\n\n真實場景給你更多身體信號：讓你更容易分辨，「我真的想繼續」，還是〖「我只是不知道怎麼離開」〗。\n\nFawn 模式在資訊不對稱、看不見對方的環境裡最容易滋生。從見面開始，不是效率考量。是讓你在更容易聽見自己的地方約會。不是保證，是機會。"
+        }
+      ]
+    },
+    {
+      "post_id": "86eyrdm6u",
+      "ts": "2026-09-02T02:01:42+08:00",
+      "consumed": false,
+      "by": "copy_fix",
+      "edits": [
+        {
+          "n": 1,
+          "field": "display_copy",
+          "original": "一年只有這一晚\n政府只給你 12 小時\n可以和你想在一起的人在一起\n\n——你選了誰？\n\n© Universal Pictures／《One Night Only》2026",
+          "edited": "一年只有這一晚\n政府只給你 12 小時\n可以和你想在一起的人在一起\n\n：你選了誰？\n\n© Universal Pictures／《One Night Only》2026"
+        },
+        {
+          "n": 3,
+          "field": "display_copy",
+          "original": "「限定一晚」不會讓人更輕浮\n\n心理阻抗理論（Reactance Theory）說：\n當選擇快消失，人反而更清醒\n稀缺感提高大腦獎勵中樞活躍度\n讓你更快知道——\n【那個位置是不是給對了人】\n\n資料來源：Psychology Today, psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable",
+          "edited": "「限定一晚」不會讓人更輕浮\n\n心理阻抗理論（Reactance Theory）說：\n當選擇快消失，人反而更清醒\n稀缺感提高大腦獎勵中樞活躍度\n讓你更快知道：【那個位置是不是給對了人】\n\n資料來源：Psychology Today, psychologytoday.com/us/blog/science-choice/201704/scarcity-makes-everything-desirable"
+        },
+        {
+          "n": 4,
+          "field": "display_copy",
+          "original": "1997 年，Arthur Aron 博士與 Elaine Aron 博士\n發表了一個實驗：\n讓兩個陌生人回答 36 個問題\n\n結論是——\n【相互脆弱，是親密感的入口】\n\n不是在一起多久\n而是你們聊到了多深\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab",
+          "edited": "1997 年，Arthur Aron 博士與 Elaine Aron 博士\n發表了一個實驗：\n讓兩個陌生人回答 36 個問題\n\n結論是：【相互脆弱，是親密感的入口】\n\n不是在一起多久\n而是你們聊到了多深\n\n資料來源：Berkeley News, news.berkeley.edu/2015/02/12/love-in-the-lab"
+        },
+        {
+          "n": 5,
+          "field": "display_copy",
+          "original": "2015 年，Mandy Len Catron 在《紐約時報》寫道：\n她用 Arthur Aron 的 36 個問題\n和一個朋友對話\n然後【真的愛上了他】\n\n讓人愛上你的，不是問題——\n是你選擇說出真實自己的那個決定\n\n資料來源：NYT, nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html",
+          "edited": "2015 年，Mandy Len Catron 在《紐約時報》寫道：\n她用 Arthur Aron 的 36 個問題\n和一個朋友對話\n然後【真的愛上了他】\n\n讓人愛上你的，不是問題。是你選擇說出真實自己的那個決定\n\n資料來源：NYT, nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html"
+        },
+        {
+          "n": 7,
+          "field": "display_copy",
+          "original": "Lava 不讓你聊天\n是因為——\n\n【真實的相遇，發生在見面之後】\n不是訊息裡想像出來的那個人\n\n36 個問題的核心不是問題本身\n是你願意說出真實自己的那個決定\n\n先約出來，再說",
+          "edited": "Lava 不讓你聊天\n是因為：【真實的相遇，發生在見面之後】\n不是訊息裡想像出來的那個人\n\n36 個問題的核心不是問題本身\n是你願意說出真實自己的那個決定\n\n先約出來，再說"
+        },
+        {
+          "n": 8,
+          "field": "display_copy",
+          "original": "電影裡的設定是架空的\n但那個問題是真的：\n\n〖如果只有一次機會——你選誰？〗\n\n多數人不缺機會\n缺的是「就是現在」的決定\n\nLava 幫你把日期訂下來",
+          "edited": "電影裡的設定是架空的\n但那個問題是真的：\n\n〖如果只有一次機會：你選誰？〗\n\n多數人不缺機會\n缺的是「就是現在」的決定\n\nLava 幫你把日期訂下來"
+        }
+      ]
     }
   ]
 }
