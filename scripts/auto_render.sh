@@ -198,6 +198,17 @@ if [ ! -f "$ITR_STAMP" ]; then
   fi
 fi
 
+# 卡彈偵測〔2026-09-01 Jesse：「能做 schedule tasks 確認有沒有卡彈的貼文嗎」〕
+# 每 3 小時一次：自己找出停住的貼文，嚴重級才推 LINE（警告級天天有，會變噪音）。
+# 過去都是 Jesse 自己發現不對才回報——白夜行卡了 6 天沒人知道。偵測是系統的責任。
+SK_STAMP="/tmp/lava-ig-stuck.$(date '+%Y-%m-%d-%H')"
+if [ ! -f "$SK_STAMP" ] && [ "$(( 10#$(date '+%H') % 3 ))" -eq 0 ]; then
+  touch "$SK_STAMP"
+  echo "卡彈偵測" >"$RUNMARK"
+  STK=$(timeout 120 "$PY" scripts/stuck_check.py 2>&1)
+  echo "$STK" | grep -E "卡彈 [0-9]+ 件|✓ 沒有卡住|已推 LINE|! LINE" | sed "s/^/[$(date '+%m-%d %H:%M')] 卡彈/" >>"$LOG"
+fi
+
 # 圖像策展（WF14 受眾視角）〔2026-09-01 Jesse：把 TMDB 劇照也接進策展員〕
 # 入料後所有候選都在本機，一次策展涵蓋劇照＋截圖；視覺模型看得出海報與劇照的差別，
 # 那正是本機啟發式分不出來的。只重排不刪圖，最終仍由人選。每輪最多 1 篇（省額度）。

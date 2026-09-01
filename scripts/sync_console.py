@@ -1371,6 +1371,18 @@ def events_apply(args):
             if target in posts:
                 posts[target]["rechecked_at"] = ev.get("ts")
             ok, msg = True, "重新檢查：" + "、".join(outs)
+        elif t == "post.diagnose" and target in posts:
+            # 操控台「回報這一篇」按鈕〔2026-09-01 Jesse：複製狀態能不能直接自動回報〕
+            # 原本按了只是複製到剪貼簿，還要自己貼給我。現在按下＝寫事件，
+            # 哨兵跑診斷並把「卡在哪、下一步」推 LINE，不必手動轉述。
+            import subprocess as _sp
+            here = os.path.dirname(os.path.abspath(__file__))
+            try:
+                r = _sp.run([sys.executable, os.path.join(here, "stuck_check.py"), "--post", target],
+                            capture_output=True, text=True, timeout=180)
+                ok, msg = True, "已診斷並回報：%s" % (r.stdout.strip().splitlines() or ["無異常"])[0][:40]
+            except Exception as e:
+                ok, msg = False, "診斷失敗 %s" % type(e).__name__
         elif t == "post.resolve_issue" and target in posts:
             pay = ev.get("payload") or {}
             ov = posts[target].setdefault("gate_overrides", [])
@@ -2128,6 +2140,21 @@ def ingest_new(args):
             q["version"] = int(p.get("version") or 0) + 1
             q["redo_note"] = "重新生成：文案與視覺企劃已重寫（%s）" % os.path.basename(newest)[:40]
             q.pop("regen_requested_at", None)
+            # 新版＝新內容，舊的核准對它無效。不退回待審的話會卡死：
+            # render-approved 因「候選比審核新」而跳過 → 不出成品；狀態是 approved
+            # → 也不進審稿佇列。既不前進也不現身（2026-09-01 實測 StanTatkin 篇）。
+            if q.get("status") == "approved":
+                q["status"] = "awaiting_review"
+                q["status_since"] = _now_iso()
+            # 主題被檔名前綴污染：新檔名是 <taskId>｜<日期>-<主題>，
+            # from_drive 由檔名推主題時會把前綴一起吃進去。
+            _t = q.get("topic") or ""
+            for _ in range(3):               # 重餵多次會疊出雙重前綴，剝到乾淨為止
+                _t2 = re.sub(r"^[0-9a-z]{6,}｜\d{6,8}-", "", _t)
+                if _t2 == _t:
+                    break
+                _t = _t2
+            q["topic"] = _t
             save("posts.json", pj)
         took += 1
         print("♻ 重生接手 ✓ %s ← %s" % (p["id"][:26], os.path.basename(newest)[:44]))

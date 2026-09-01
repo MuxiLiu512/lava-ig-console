@@ -42,9 +42,18 @@ const _tkey = s => String(s || "")
 
 function draftingIdeas(posts) {
   const ideas = ((STATE.ideas && STATE.ideas.ideas) || []).filter(x => x.decision === "approve");
-  const have = new Set(posts.map(p => _tkey(p.topic || p.id)));
-  return ideas.filter(i => !have.has(_tkey(i.title)))
-              .sort((a, b) => String(a.decided_at || "").localeCompare(String(b.decided_at || "")));
+  // 以 id 比對為主〔2026-09-01〕：靈感 id → WF01 taskId → 貼文 id 是同一顆，
+  // 比對零歧義。原本只比主題字串，標點稍有出入（「——這件事」vs「：這件事」）
+  // 就對不上，於是稿早就入板了、看板還在畫「撰稿中，超過 45 分」的幻影卡，
+  // 旁邊同時列著同一篇的製作中狀態。這是字串比對 bug 家族的最後一隻。
+  const ids = new Set();
+  posts.forEach(p => { ids.add(p.id); if (p.clickup_task_id) ids.add(p.clickup_task_id); });
+  const topics = new Set(posts.map(p => _tkey(p.topic || p.id)));   // 舊資料的過渡備援
+  return ideas.filter(i => {
+    const tid = i.task_id || i.id;
+    if (tid && ids.has(tid)) return false;
+    return !topics.has(_tkey(i.title));
+  }).sort((a, b) => String(a.decided_at || "").localeCompare(String(b.decided_at || "")));
 }
 
 // ── A 區：全域狀態列（誠實心跳）────────────────────────────────────
@@ -173,11 +182,14 @@ function sysRow(o) {
   when.innerHTML = esc(dur(o.since)) + (o.eta ? "<br>" + esc(o.eta) : "");
   r.appendChild(when);
   if (o.action) r.appendChild(o.action);
-  else if (o.late && o.report) {
-    const b = el("button", "btn ghost", "複製狀態給 Claude");
-    b.title = "複製這一篇的卡住狀態，貼到與 Claude 的對話裡，我會直接查原因";
-    b.onclick = () => { navigator.clipboard.writeText(o.report); toast("已複製。貼到對話裡，Claude 會直接查。"); };
-    r.appendChild(b);
+  else if (o.late && o.postId) {
+    // 按下＝寫事件，哨兵跑診斷並把「卡在哪、下一步」推 LINE。
+    // 〔2026-09-01 Jesse：複製狀態能不能直接變成自動回報〕不必再自己貼給我。
+    r.appendChild(ActionButton({
+      id: "diagnose-" + o.postId, label: "回報這一篇", kind: "ghost", doneLabel: "已送出診斷",
+      run: () => postEvent("post.diagnose", o.postId, {}),
+      onDone: () => toast(`已送出。哨兵 ${SCHEDULE.SENTINEL_MIN} 分內診斷完，結果推到你的 LINE。`),
+    }));
   }
   return r;
 }
@@ -251,8 +263,7 @@ function makingRow(p, view) {
   }
   return sysRow({ img: im, title: p.topic || p.id, what, since: sinceOf(p),
     eta: late ? "" : "補完自動回佇列", late,
-    report: JSON.stringify({ post_id: p.id, status: p.status, view: view.label, since: sinceOf(p) }),
-    action });
+    postId: p.id, action });
 }
 
 // ── D 區：已完成 ────────────────────────────────────────────────────
