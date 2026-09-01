@@ -269,6 +269,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-09-01T15:05:14+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 4,
+          "field": "display_copy",
+          "original": "研究估計約【50～60%】的人是安全型。但安全型不是「抵達終點」，\n而是一種需要持續實踐的動態能力。\n\n安全型的人依然會受傷，\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰，\n但這份相信，也需要被不斷餵養。\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
+          "edited": "研究估計約【50～60%】的人是安全型\n但安全型不是「抵達終點」，只是一種需要持續實踐的動態能力\n\n安全型的人依然會受傷\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰\n但這份相信，也需要被不斷餵養\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
