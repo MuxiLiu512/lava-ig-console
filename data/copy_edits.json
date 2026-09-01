@@ -297,6 +297,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-09-01T15:06:56+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 6,
+          "field": "display_copy",
+          "original": "同一個人，對不同的關係\n可以有不同的依附表現：對朋友安全型、對伴侶焦慮型、對家人逃避型，\n這不是矛盾，而是依附本來就是\n對【關係歷史與當下脈絡】的動態回應。\n\n依附不是你的人格標籤，\n是你們之間那段歷史的產物。\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673",
+          "edited": "同一個人，對不同的關係\n可以有不同的依附表現：對朋友安全型、對伴侶焦慮型、對家人逃避型\n這並不是矛盾，依附本來就是\n對【關係歷史與當下脈絡】的動態回應\n\n依附不是你的人格標籤\n是你們之間那段歷史的產物\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
