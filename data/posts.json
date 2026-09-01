@@ -8436,218 +8436,6 @@
       }
     },
     {
-      "id": "86eyr1e0e",
-      "topic": "86eyr1e0e｜20260901-A24《開放性邀請》問了一個讓人說不出話的問題：你喜歡對方，還是你喜歡「有人喜歡你」這件事？",
-      "version": 1,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyr1e0e",
-      "created_at": null,
-      "caption": "A24 新片《開放性邀請》（2026）用一頓晚餐問了一個問題：你留在這段關係裡，是因為對方這個人，還是因為你需要那個位置不空著？\n\n心理學把這個現象叫做互惠好感效應，1966 年，Aronson 與 Worchel 就在實驗室裡驗證：光是知道「對方喜歡我」這件事，就足以製造出心動。\n兩件事長得太像，住在同一個感受裡，很難分清楚。\n\n交友軟體最容易發生的事，不是認識了一個人，而是認識了一個「和你聊天的感覺」。\n訊息裡的節奏、對方回應你的速度、那種被看見的感受，這些都很真實，但它們有時候比「對方這個人」更早出現在你的腦子裡。\nLava 從設計上就把流程往前推了一步：減少純文字的時間，讓你更早在現實裡判斷，你喜歡的，到底是誰。\n\n#交友軟體 #約會 #感情 #心理學 #A24 #開放性邀請 #TheInvite #關係 #戀愛心理 #自我認識 #互惠好感 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyr1e0e/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Materialists"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyr1e0e/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Materialists"
-            },
-            {
-              "cid": "c",
-              "src": "assets/86eyr1e0e/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Materialists"
-            },
-            {
-              "cid": "d",
-              "src": "assets/86eyr1e0e/slide-1d.webp",
-              "kind": "still",
-              "source_label": "The Invite"
-            },
-            {
-              "cid": "e",
-              "src": "assets/86eyr1e0e/slide-1e.webp",
-              "kind": "still",
-              "source_label": "The Invite"
-            },
-            {
-              "cid": "f",
-              "src": "assets/86eyr1e0e/slide-1f.webp",
-              "kind": "still",
-              "source_label": "The Invite"
-            }
-          ],
-          "final_src": null,
-          "heading": "你愛上的，是他？還是那個讓你感覺被需要的感受？",
-          "display_copy": "A24《開放性邀請》（2026）\n用一頓晚餐問了一個問題：\n\n你留在這段關係裡，\n是因為對方這個人，\n還是因為【你需要那個位置不空著】？\n\n心理學家 Aronson 在 1966 年就發現：\n光是知道「對方喜歡我」，\n就足以在大腦裡製造出心動。\n這兩件事，住在同一個感受裡。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [],
-          "final_src": null,
-          "heading": "那種心動，你有沒有想過從哪裡來？",
-          "display_copy": "對方傳來一個訊息，你看了三遍。\n那個感覺很好——\n但那個【「好」，究竟是關於他，\n還是關於你被在意這件事】？\n\n心理學研究發現，\n「對方先喜歡我」是人們最常提及的\n當初被吸引的原因之一。\n兩件事長得太像，平時住在同一個房間裡。"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "「互惠好感效應」：你的心動，可能是被觸發的",
-          "display_copy": "1966 年，心理學家 Aronson 與 Worchel 做了一個實驗：\n讓陌生人對話後，\n偷偷告訴其中一方【「對方給你評分很高」】。\n\n結果：那個人對對方的好感，立刻上升。\n\n這是互惠好感效應最早的實驗室驗證之一——\n〖心動，有時候不是因為對方本身，\n而是因為你知道對方喜歡你〗。\n\n資料來源：Aronson & Worchel, 1966, Journal of Experimental Social Psychology"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyr1e0e/slide-4a.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyr1e0e/slide-4b.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
-              "cid": "c",
-              "src": "assets/86eyr1e0e/slide-4c.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            }
-          ],
-          "final_src": null,
-          "heading": "被喜歡本身就是一種獎賞",
-          "display_copy": "Montoya & Insko（2008）指出：\n被喜歡具有【「獎賞性」】——\n它驗證了你是值得被愛的這件事。\n\n大腦會把「他讓我感覺良好」\n誤讀成「我喜歡他這個人」。\n\n這是神經層面正常的情感機制——\n理解它，才能在心動時\n多一點空間分辨兩者的差異。\n\n資料來源：Montoya & Insko, 2008, Journal of Social and Personal Relationships",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [],
-          "final_src": null,
-          "heading": "《開放性邀請》把這個問題放到婚姻裡",
-          "display_copy": "A24《開放性邀請》（2026）\n改編自西班牙導演 Cesc Gay 的 2021 年電影《Sentimental》。\nEdward Norton 飾演 Hawk、Penélope Cruz 飾演 Piña，\n兩人在一頓晚餐裡問了另一對夫妻一個問題：\n\n【你留在這裡，是為了對方，\n還是為了「有個人在那裡」這件事本身？】\n\n長期關係裡，時間會把這兩件事黏在一起，\n讓人更難分清楚。"
-        },
-        {
-          "n": 6,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyr1e0e/slide-6a.webp",
-              "kind": "still",
-              "source_label": "1"
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyr1e0e/slide-6b.webp",
-              "kind": "still",
-              "source_label": "2"
-            },
-            {
-              "cid": "c",
-              "src": "assets/86eyr1e0e/slide-6c.webp",
-              "kind": "still",
-              "source_label": "3"
-            }
-          ],
-          "final_src": null,
-          "heading": "文字的世界最容易讓人愛上「感受」而不是對方",
-          "display_copy": "交友軟體最容易讓人愛上的，\n往往不是一個人，\n而是【「和那個人聊天的感覺」】。\n\n訊息節奏、回應速度、被看見的感受——\n這些都很真實，\n但有時候比「對方這個人」更早出現在腦子裡。\n\nLava 把流程往前推一步——\n讓你更早在現實裡拿到答案：\n你喜歡的，到底是誰。",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/86eyr1e0e/slide-7a.webp",
-              "kind": "still",
-              "source_label": "Her",
-              "low_q": true
-            },
-            {
-              "cid": "b",
-              "src": "assets/86eyr1e0e/slide-7b.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
-              "cid": "c",
-              "src": "assets/86eyr1e0e/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Her"
-            }
-          ],
-          "final_src": null,
-          "heading": "一個問題，可以在下次心動的時候問自己",
-          "display_copy": "下次心動，先停一秒問自己一句話：\n\n【「如果對方突然不喜歡我了，\n我對他的感覺還在嗎？」】\n\n答案是「會消失大半」——\n代表驅動心動的，\n很可能是那個被愛的獎賞感，\n而不完全是對方本身的特質。\n\n這是大腦正常的情感機制，\n知道它的存在，判斷時就能多一點清醒。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "品牌立場",
-          "candidates": [],
-          "final_src": null,
-          "heading": "Lava 相信：見面之前，你還不知道你喜歡的是誰",
-          "display_copy": "線上交流有它的位置；\n真正的判斷需要現實輸入。\n\n當你們在同一個空間裡，\n對話節奏、眼神、那頓飯點了什麼——\n這些才是你在認識那個人，\n\n〖而不是在認識一個\n由訊息構成的投影。〗\n\nLava，不聊天的交友軟體。"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": null,
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "《開放性邀請》2026 年 1 月 24 日在日舞影展世界首映",
-          "source": "https://en.wikipedia.org/wiki/The_Invite",
-          "quote": "The film had its world premiere at the Sundance Film Festival on January 24, 2026."
-        },
-        {
-          "claim": "《開放性邀請》改編自西班牙導演 Cesc Gay 的 2021 年電影 Sentimental",
-          "source": "https://en.wikipedia.org/wiki/The_Invite",
-          "quote": "The film is a remake of the 2021 Spanish film Sentimental, directed by Cesc Gay."
-        },
-        {
-          "claim": "Edward Norton 在片中飾演角色 Hawk，Penélope Cruz 飾演角色 Piña，兩人為片中一對夫妻",
-          "source": "https://en.wikipedia.org/wiki/The_Invite",
-          "quote": "Edward Norton and Penélope Cruz star as Hawk and Piña, a mysterious couple who are invited to dinner by their downstairs neighbors."
-        },
-        {
-          "claim": "Aronson 與 Worchel 1966 年實驗驗證互惠好感效應：受試者得知對方對自己評價高，對對方好感立刻上升",
-          "source": "https://www.sciencedirect.com/science/article/abs/pii/0022103166900410",
-          "quote": "Subjects who believed that the confederate liked them expressed greater liking for the confederate than did subjects who believed the confederate disliked them.",
-          "quote_type": "verbatim_abstract"
-        },
-        {
-          "claim": "Montoya & Insko（2008）指出被喜歡本身具有獎賞性，會產生對對方的正向情感",
-          "source": "https://doi.org/10.1177/0265407508090641",
-          "quote": "Being liked by another person is rewarding in and of itself, and this reward value produces positive affect toward the other."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6"
-    },
-    {
       "id": "86eyq3yp0",
       "topic": "86eyq3yp0｜20260901-「步入下一階段」這件事——r datingoverthirty 上 30 歲後的人說，他們最後悔的不是「太早結婚」，而是這個",
       "version": 1,
@@ -10341,6 +10129,373 @@
       "writer_model": "claude-sonnet-4-6",
       "candidates_since": "2026-09-01T05:19:54+08:00",
       "redo_note": "重新生成：文案與視覺企劃已重寫（86eyknz01｜20260901-Stan Tatkin 說：你以為「找到對）"
+    },
+    {
+      "id": "86eyr1e0e",
+      "topic": "86eyr1e0e｜20260901-A24《開放性邀請》問了一個讓人說不出話的問題：你喜歡對方，還是你喜歡「有人喜歡你」這件事？",
+      "version": 1,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyr1e0e",
+      "created_at": null,
+      "caption": "A24 新片《開放性邀請》（2026）用一頓晚餐問了一個問題：你留在這段關係裡，是因為對方這個人，還是因為你需要那個位置不空著？\n\n心理學把這個現象叫做互惠好感效應，1966 年，Aronson 與 Worchel 就在實驗室裡驗證：光是知道「對方喜歡我」這件事，就足以製造出心動。\n兩件事長得太像，住在同一個感受裡，很難分清楚。\n\n交友軟體最容易發生的事，不是認識了一個人，而是認識了一個「和你聊天的感覺」。\n訊息裡的節奏、對方回應你的速度、那種被看見的感受，這些都很真實，但它們有時候比「對方這個人」更早出現在你的腦子裡。\nLava 從設計上就把流程往前推了一步：減少純文字的時間，讓你更早在現實裡判斷，你喜歡的，到底是誰。\n\n#交友軟體 #約會 #感情 #心理學 #A24 #開放性邀請 #TheInvite #關係 #戀愛心理 #自我認識 #互惠好感 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-1a.webp",
+              "kind": "still",
+              "source_label": "（DuckDuckGo）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：© A24",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-1c.webp",
+              "kind": "still",
+              "source_label": "（DuckDuckGo）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyr1e0e/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Materialists"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyr1e0e/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Materialists"
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyr1e0e/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Materialists"
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyr1e0e/slide-1g.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyr1e0e/slide-1h.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyr1e0e/slide-1i.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            }
+          ],
+          "final_src": null,
+          "heading": "你愛上的，是他？還是那個讓你感覺被需要的感受？",
+          "display_copy": "A24《開放性邀請》（2026）\n用一頓晚餐問了一個問題：\n\n你留在這段關係裡，\n是因為對方這個人，\n還是因為【你需要那個位置不空著】？\n\n心理學家 Aronson 在 1966 年就發現：\n光是知道「對方喜歡我」，\n就足以在大腦裡製造出心動。\n這兩件事，住在同一個感受裡。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-2b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "那種心動，你有沒有想過從哪裡來？",
+          "display_copy": "對方傳來一個訊息，你看了三遍。\n那個感覺很好——\n但那個【「好」，究竟是關於他，\n還是關於你被在意這件事】？\n\n心理學研究發現，\n「對方先喜歡我」是人們最常提及的\n當初被吸引的原因之一。\n兩件事長得太像，平時住在同一個房間裡。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [],
+          "final_src": null,
+          "heading": "「互惠好感效應」：你的心動，可能是被觸發的",
+          "display_copy": "1966 年，心理學家 Aronson 與 Worchel 做了一個實驗：\n讓陌生人對話後，\n偷偷告訴其中一方【「對方給你評分很高」】。\n\n結果：那個人對對方的好感，立刻上升。\n\n這是互惠好感效應最早的實驗室驗證之一——\n〖心動，有時候不是因為對方本身，\n而是因為你知道對方喜歡你〗。\n\n資料來源：Aronson & Worchel, 1966, Journal of Experimental Social Psychology"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-4a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-4b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-4c.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyr1e0e/slide-4d.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyr1e0e/slide-4e.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer"
+            }
+          ],
+          "final_src": null,
+          "heading": "被喜歡本身就是一種獎賞",
+          "display_copy": "Montoya & Insko（2008）指出：\n被喜歡具有【「獎賞性」】——\n它驗證了你是值得被愛的這件事。\n\n大腦會把「他讓我感覺良好」\n誤讀成「我喜歡他這個人」。\n\n這是神經層面正常的情感機制——\n理解它，才能在心動時\n多一點空間分辨兩者的差異。\n\n資料來源：Montoya & Insko, 2008, Journal of Social and Personal Relationships",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-5a.webp",
+              "kind": "still",
+              "source_label": "© A24",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-5b.webp",
+              "kind": "still",
+              "source_label": "© A24",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "《開放性邀請》把這個問題放到婚姻裡",
+          "display_copy": "A24《開放性邀請》（2026）\n改編自西班牙導演 Cesc Gay 的 2021 年電影《Sentimental》。\nEdward Norton 飾演 Hawk、Penélope Cruz 飾演 Piña，\n兩人在一頓晚餐裡問了另一對夫妻一個問題：\n\n【你留在這裡，是為了對方，\n還是為了「有個人在那裡」這件事本身？】\n\n長期關係裡，時間會把這兩件事黏在一起，\n讓人更難分清楚。",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-6a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-6b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-6c.webp",
+              "kind": "still",
+              "source_label": "1"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyr1e0e/slide-6d.webp",
+              "kind": "still",
+              "source_label": "2"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyr1e0e/slide-6e.webp",
+              "kind": "still",
+              "source_label": "3"
+            }
+          ],
+          "final_src": null,
+          "heading": "文字的世界最容易讓人愛上「感受」而不是對方",
+          "display_copy": "交友軟體最容易讓人愛上的，\n往往不是一個人，\n而是【「和那個人聊天的感覺」】。\n\n訊息節奏、回應速度、被看見的感受——\n這些都很真實，\n但有時候比「對方這個人」更早出現在腦子裡。\n\nLava 把流程往前推一步——\n讓你更早在現實裡拿到答案：\n你喜歡的，到底是誰。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-7b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyr1e0e/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyr1e0e/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Her"
+            }
+          ],
+          "final_src": null,
+          "heading": "一個問題，可以在下次心動的時候問自己",
+          "display_copy": "下次心動，先停一秒問自己一句話：\n\n【「如果對方突然不喜歡我了，\n我對他的感覺還在嗎？」】\n\n答案是「會消失大半」——\n代表驅動心動的，\n很可能是那個被愛的獎賞感，\n而不完全是對方本身的特質。\n\n這是大腦正常的情感機制，\n知道它的存在，判斷時就能多一點清醒。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-8b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT"
+            }
+          ],
+          "final_src": null,
+          "heading": "Lava 相信：見面之前，你還不知道你喜歡的是誰",
+          "display_copy": "線上交流有它的位置；\n真正的判斷需要現實輸入。\n\n當你們在同一個空間裡，\n對話節奏、眼神、那頓飯點了什麼——\n這些才是你在認識那個人，\n\n〖而不是在認識一個\n由訊息構成的投影。〗\n\nLava，不聊天的交友軟體。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": null,
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "《開放性邀請》2026 年 1 月 24 日在日舞影展世界首映",
+          "source": "https://en.wikipedia.org/wiki/The_Invite",
+          "quote": "The film had its world premiere at the Sundance Film Festival on January 24, 2026."
+        },
+        {
+          "claim": "《開放性邀請》改編自西班牙導演 Cesc Gay 的 2021 年電影 Sentimental",
+          "source": "https://en.wikipedia.org/wiki/The_Invite",
+          "quote": "The film is a remake of the 2021 Spanish film Sentimental, directed by Cesc Gay."
+        },
+        {
+          "claim": "Edward Norton 在片中飾演角色 Hawk，Penélope Cruz 飾演角色 Piña，兩人為片中一對夫妻",
+          "source": "https://en.wikipedia.org/wiki/The_Invite",
+          "quote": "Edward Norton and Penélope Cruz star as Hawk and Piña, a mysterious couple who are invited to dinner by their downstairs neighbors."
+        },
+        {
+          "claim": "Aronson 與 Worchel 1966 年實驗驗證互惠好感效應：受試者得知對方對自己評價高，對對方好感立刻上升",
+          "source": "https://www.sciencedirect.com/science/article/abs/pii/0022103166900410",
+          "quote": "Subjects who believed that the confederate liked them expressed greater liking for the confederate than did subjects who believed the confederate disliked them.",
+          "quote_type": "verbatim_abstract"
+        },
+        {
+          "claim": "Montoya & Insko（2008）指出被喜歡本身具有獎賞性，會產生對對方的正向情感",
+          "source": "https://doi.org/10.1177/0265407508090641",
+          "quote": "Being liked by another person is rewarding in and of itself, and this reward value produces positive affect toward the other."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "copy_versions": {
+        "claude": {
+          "caption": "A24 新片《開放性邀請》（2026）用一頓晚餐問了一個問題：你留在這段關係裡，是因為對方這個人，還是因為你需要那個位置不空著？\n\n心理學把這個現象叫做互惠好感效應，1966 年，Aronson 與 Worchel 就在實驗室裡驗證：光是知道「對方喜歡我」這件事，就足以製造出心動。\n兩件事長得太像，住在同一個感受裡，很難分清楚。\n\n交友軟體最容易發生的事，不是認識了一個人，而是認識了一個「和你聊天的感覺」。\n訊息裡的節奏、對方回應你的速度、那種被看見的感受，這些都很真實，但它們有時候比「對方這個人」更早出現在你的腦子裡。\nLava 從設計上就把流程往前推了一步：減少純文字的時間，讓你更早在現實裡判斷，你喜歡的，到底是誰。\n\n#交友軟體 #約會 #感情 #心理學 #A24 #開放性邀請 #TheInvite #關係 #戀愛心理 #自我認識 #互惠好感 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友",
+          "slides": {
+            "1": {
+              "heading": "你愛上的，是他？還是那個讓你感覺被需要的感受？",
+              "display_copy": "A24《開放性邀請》（2026）\n用一頓晚餐問了一個問題：\n\n你留在這段關係裡，\n是因為對方這個人，\n還是因為【你需要那個位置不空著】？\n\n心理學家 Aronson 在 1966 年就發現：\n光是知道「對方喜歡我」，\n就足以在大腦裡製造出心動。\n這兩件事，住在同一個感受裡。"
+            },
+            "2": {
+              "heading": "那種心動，你有沒有想過從哪裡來？",
+              "display_copy": "對方傳來一個訊息，你看了三遍。\n那個感覺很好——\n但那個【「好」，究竟是關於他，\n還是關於你被在意這件事】？\n\n心理學研究發現，\n「對方先喜歡我」是人們最常提及的\n當初被吸引的原因之一。\n兩件事長得太像，平時住在同一個房間裡。"
+            },
+            "3": {
+              "heading": "「互惠好感效應」：你的心動，可能是被觸發的",
+              "display_copy": "1966 年，心理學家 Aronson 與 Worchel 做了一個實驗：\n讓陌生人對話後，\n偷偷告訴其中一方【「對方給你評分很高」】。\n\n結果：那個人對對方的好感，立刻上升。\n\n這是互惠好感效應最早的實驗室驗證之一——\n〖心動，有時候不是因為對方本身，\n而是因為你知道對方喜歡你〗。\n\n資料來源：Aronson & Worchel, 1966, Journal of Experimental Social Psychology"
+            },
+            "4": {
+              "heading": "被喜歡本身就是一種獎賞",
+              "display_copy": "Montoya & Insko（2008）指出：\n被喜歡具有【「獎賞性」】——\n它驗證了你是值得被愛的這件事。\n\n大腦會把「他讓我感覺良好」\n誤讀成「我喜歡他這個人」。\n\n這是神經層面正常的情感機制——\n理解它，才能在心動時\n多一點空間分辨兩者的差異。\n\n資料來源：Montoya & Insko, 2008, Journal of Social and Personal Relationships"
+            },
+            "5": {
+              "heading": "《開放性邀請》把這個問題放到婚姻裡",
+              "display_copy": "A24《開放性邀請》（2026）\n改編自西班牙導演 Cesc Gay 的 2021 年電影《Sentimental》。\nEdward Norton 飾演 Hawk、Penélope Cruz 飾演 Piña，\n兩人在一頓晚餐裡問了另一對夫妻一個問題：\n\n【你留在這裡，是為了對方，\n還是為了「有個人在那裡」這件事本身？】\n\n長期關係裡，時間會把這兩件事黏在一起，\n讓人更難分清楚。"
+            },
+            "6": {
+              "heading": "文字的世界最容易讓人愛上「感受」而不是對方",
+              "display_copy": "交友軟體最容易讓人愛上的，\n往往不是一個人，\n而是【「和那個人聊天的感覺」】。\n\n訊息節奏、回應速度、被看見的感受——\n這些都很真實，\n但有時候比「對方這個人」更早出現在腦子裡。\n\nLava 把流程往前推一步——\n讓你更早在現實裡拿到答案：\n你喜歡的，到底是誰。"
+            },
+            "7": {
+              "heading": "一個問題，可以在下次心動的時候問自己",
+              "display_copy": "下次心動，先停一秒問自己一句話：\n\n【「如果對方突然不喜歡我了，\n我對他的感覺還在嗎？」】\n\n答案是「會消失大半」——\n代表驅動心動的，\n很可能是那個被愛的獎賞感，\n而不完全是對方本身的特質。\n\n這是大腦正常的情感機制，\n知道它的存在，判斷時就能多一點清醒。"
+            },
+            "8": {
+              "heading": "Lava 相信：見面之前，你還不知道你喜歡的是誰",
+              "display_copy": "線上交流有它的位置；\n真正的判斷需要現實輸入。\n\n當你們在同一個空間裡，\n對話節奏、眼神、那頓飯點了什麼——\n這些才是你在認識那個人，\n\n〖而不是在認識一個\n由訊息構成的投影。〗\n\nLava，不聊天的交友軟體。"
+            },
+            "9": {
+              "heading": "CTA 公版",
+              "display_copy": "CTA 公版"
+            }
+          }
+        }
+      },
+      "candidates_since": "2026-09-01T08:21:25+08:00"
     }
   ]
 }
