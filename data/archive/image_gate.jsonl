@@ -448,3 +448,12 @@
 {"ts": "2026-09-01T05:19:37+08:00", "post_id": "20260824-StanTatkin說你", "slide": 3, "file": "slide3-WM-StanTatkin-1.jpg", "reason": "low_res", "metrics": {"w": 240, "h": 300, "bytes": 16396}}
 {"ts": "2026-09-01T08:21:24+08:00", "post_id": "86eyr1e0e", "slide": 7, "file": "slide7-Her-1.jpg", "reason": "over_compressed", "metrics": {"w": 3840, "h": 2160, "bytes": 364565, "bpp": 0.044}}
 {"ts": "2026-09-01T10:53:37+08:00", "post_id": "86eyr1e0e", "slide": 7, "file": "slide7-Her-1.jpg", "reason": "over_compressed", "metrics": {"w": 3840, "h": 2160, "bytes": 364565, "bpp": 0.044}}
+{"ts": "2026-09-01T18:07:32+08:00", "post_id": "86eyr1e0e", "slide": 4, "file": "slide4-500DaysofSummer-2.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-01T18:07:32+08:00", "post_id": "86eyr1e0e", "slide": 4, "file": "slide4-500DaysofSummer-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-01T18:07:33+08:00", "post_id": "86eyr1e0e", "slide": 4, "file": "slide4-500DaysofSummer-1.jpg", "reason": "upscale_reject", "metrics": {"upscale": 3.39}}
+{"ts": "2026-09-01T18:07:35+08:00", "post_id": "86eyr1e0e", "slide": 6, "file": "slide6--1.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-01T18:07:36+08:00", "post_id": "86eyr1e0e", "slide": 6, "file": "slide6--2.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-01T18:07:36+08:00", "post_id": "86eyr1e0e", "slide": 6, "file": "slide6--3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-01T18:07:37+08:00", "post_id": "86eyr1e0e", "slide": 7, "file": "slide7-Her-1.jpg", "reason": "over_compressed", "metrics": {"w": 3840, "h": 2160, "bytes": 364565, "bpp": 0.044}}
+{"ts": "2026-09-01T18:07:37+08:00", "post_id": "86eyr1e0e", "slide": 7, "file": "slide7-Her-2.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-01T18:07:38+08:00", "post_id": "86eyr1e0e", "slide": 7, "file": "slide7-Her-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
