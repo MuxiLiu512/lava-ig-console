@@ -283,6 +283,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-09-01T15:05:51+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 5,
+          "field": "display_copy",
+          "original": "「低衝突」不等於「真實靠近」。\n\n舒適的關係可能感覺熟悉、沒什麼吵架，\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗，\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
+          "edited": "「低衝突」不等於「真實靠近」\n\n舒適的關係可能感覺熟悉、沒什麼吵架\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
