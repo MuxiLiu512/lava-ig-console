@@ -3689,27 +3689,14 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "i",
+              "src": "assets/20260824-AnxiousAttac/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
               "cid": "d",
               "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-AnxiousAttac/slide-1g.webp",
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend"
             },
@@ -3720,16 +3707,18 @@
               "source_label": "Marriage Story"
             },
             {
-              "cid": "i",
-              "src": "assets/20260824-AnxiousAttac/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
               "cid": "j",
               "src": "assets/20260824-AnxiousAttac/slide-1j.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-1.webp",
@@ -3757,22 +3746,17 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-2c.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-2d.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-AnxiousAttac/slide-2e.webp",
               "kind": "still",
               "source_label": "A Separation"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-2c.webp",
+              "kind": "still",
+              "source_label": "A Separation",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-2.webp",
@@ -3839,25 +3823,29 @@
               "cid": "f",
               "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
               "kind": "still",
-              "source_label": "Because This Is My First Life"
+              "source_label": "Because This Is My First Life",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260824-AnxiousAttac/slide-4g.webp",
               "kind": "still",
-              "source_label": "One Day"
+              "source_label": "One Day",
+              "low_q": true
             },
             {
               "cid": "h",
               "src": "assets/20260824-AnxiousAttac/slide-4h.webp",
               "kind": "still",
-              "source_label": "One Day"
+              "source_label": "One Day",
+              "low_q": true
             },
             {
               "cid": "i",
               "src": "assets/20260824-AnxiousAttac/slide-4i.webp",
               "kind": "still",
-              "source_label": "One Day"
+              "source_label": "One Day",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-4.webp",
@@ -3885,6 +3873,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
               "cid": "c",
               "src": "assets/20260824-AnxiousAttac/slide-5c.webp",
               "kind": "still",
@@ -3895,37 +3889,36 @@
               "cid": "d",
               "src": "assets/20260824-AnxiousAttac/slide-5d.webp",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260824-AnxiousAttac/slide-5g.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             },
             {
               "cid": "i",
               "src": "assets/20260824-AnxiousAttac/slide-5i.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-5.webp",
@@ -3985,8 +3978,8 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-7e.webp",
               "kind": "still",
               "source_label": "Before Sunset"
             },
@@ -3997,8 +3990,8 @@
               "source_label": "Before Sunset"
             },
             {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-7e.webp",
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
               "kind": "still",
               "source_label": "Before Sunset"
             }
@@ -4330,13 +4323,6 @@
           "role": "Hook",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Tom Holland",
-              "source_kind": "OV"
-            },
-            {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1b.webp",
               "kind": "still",
@@ -4344,11 +4330,11 @@
               "source_kind": "WM"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1c.webp",
+              "cid": "a",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1a.webp",
               "kind": "still",
               "source_label": "Tom Holland",
-              "source_kind": "WM"
+              "source_kind": "OV"
             },
             {
               "cid": "d",
@@ -4358,8 +4344,8 @@
               "source_kind": "WM"
             },
             {
-              "cid": "e",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1e.webp",
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-1c.webp",
               "kind": "still",
               "source_label": "Tom Holland",
               "source_kind": "WM",
@@ -4380,19 +4366,22 @@
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2a.webp",
               "kind": "still",
-              "source_label": "The Office"
+              "source_label": "The Office",
+              "low_q": true
             },
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2b.webp",
               "kind": "still",
-              "source_label": "The Office"
+              "source_label": "The Office",
+              "low_q": true
             },
             {
               "cid": "c",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-2c.webp",
               "kind": "still",
-              "source_label": "The Office"
+              "source_label": "The Office",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-2.webp",
@@ -4406,33 +4395,27 @@
           "role": "知識解釋",
           "candidates": [
             {
+              "cid": "d",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3d.webp",
+              "kind": "still",
+              "source_label": "Kai Cenat",
+              "source_kind": "WM"
+            },
+            {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3a.webp",
-              "kind": "still",
-              "source_label": "Kai Cenat",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3b.webp",
-              "kind": "still",
-              "source_label": "Kai Cenat",
-              "source_kind": "WM"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3c.webp",
               "kind": "still",
               "source_label": "Kai Cenat",
               "source_kind": "WM",
               "low_q": true
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3d.webp",
+              "cid": "b",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-3b.webp",
               "kind": "still",
               "source_label": "Kai Cenat",
-              "source_kind": "WM"
+              "source_kind": "WM",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-3.webp",
@@ -4445,13 +4428,6 @@
           "n": 4,
           "role": "知識解釋",
           "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Suits",
-              "low_q": true
-            },
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-4b.webp",
@@ -4469,7 +4445,7 @@
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-Rizz%E9%80%B2%E4%BA%86%E7%89%9B%E6%B4%A5%E8%A9%9E%E5%85%B8%E4%BD%86r/slide-4.jpg",
           "heading": "洛桑大學的實驗：魅力訓練後，有人進步了 60%",
           "display_copy": "洛桑大學教授 John Antonakis 的實驗\n\n找來沒有演講經驗的 MBA 學生\n教他們【12 項魅力戰術（CLT）】\n\n部分人的魅力評分提升了【多達 60%】\n\n他的結論：魅力更像一種可學的技能\n不是你天生有或沒有的東西\n\n資料來源：Psychology Today, 2019",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 5,
@@ -4508,19 +4484,22 @@
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6a.webp",
               "kind": "still",
-              "source_label": "Succession"
+              "source_label": "Succession",
+              "low_q": true
             },
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6b.webp",
               "kind": "still",
-              "source_label": "Succession"
+              "source_label": "Succession",
+              "low_q": true
             },
             {
               "cid": "c",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-6c.webp",
               "kind": "still",
-              "source_label": "Succession"
+              "source_label": "Succession",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-Rizz進了牛津詞典但r/final/slide-6.webp",
@@ -4534,6 +4513,12 @@
           "role": "品牌立場",
           "candidates": [
             {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7a.webp",
               "kind": "still",
@@ -4542,12 +4527,6 @@
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7b.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-7c.webp",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -4563,6 +4542,12 @@
           "role": "應用/怎麼做",
           "candidates": [
             {
+              "cid": "c",
+              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
               "cid": "a",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8a.webp",
               "kind": "still",
@@ -4571,12 +4556,6 @@
             {
               "cid": "b",
               "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8b.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-Rizz進了牛津詞典但r/slide-8c.webp",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -4856,27 +4835,14 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "i",
+              "src": "assets/20260824-Attached說你不是/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
               "cid": "d",
               "src": "assets/20260824-Attached說你不是/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-Attached說你不是/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-Attached說你不是/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-Attached說你不是/slide-1g.webp",
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend"
             },
@@ -4887,16 +4853,18 @@
               "source_label": "Marriage Story"
             },
             {
-              "cid": "i",
-              "src": "assets/20260824-Attached說你不是/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
               "cid": "j",
               "src": "assets/20260824-Attached說你不是/slide-1j.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-Attached說你不是/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -4923,22 +4891,17 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-Attached說你不是/slide-2c.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-Attached說你不是/slide-2d.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-Attached說你不是/slide-2e.webp",
               "kind": "still",
               "source_label": "A Separation"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-Attached說你不是/slide-2c.webp",
+              "kind": "still",
+              "source_label": "A Separation",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5003,25 +4966,29 @@
               "cid": "f",
               "src": "assets/20260824-Attached說你不是/slide-4f.webp",
               "kind": "still",
-              "source_label": "Because This Is My First Life"
+              "source_label": "Because This Is My First Life",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260824-Attached說你不是/slide-4g.webp",
               "kind": "still",
-              "source_label": "One Day"
+              "source_label": "One Day",
+              "low_q": true
             },
             {
               "cid": "h",
               "src": "assets/20260824-Attached說你不是/slide-4h.webp",
               "kind": "still",
-              "source_label": "One Day"
+              "source_label": "One Day",
+              "low_q": true
             },
             {
               "cid": "i",
               "src": "assets/20260824-Attached說你不是/slide-4i.webp",
               "kind": "still",
-              "source_label": "One Day"
+              "source_label": "One Day",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5048,6 +5015,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "h",
+              "src": "assets/20260824-Attached說你不是/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
               "cid": "c",
               "src": "assets/20260824-Attached說你不是/slide-5c.webp",
               "kind": "still",
@@ -5058,37 +5031,36 @@
               "cid": "d",
               "src": "assets/20260824-Attached說你不是/slide-5d.webp",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260824-Attached說你不是/slide-5e.webp",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260824-Attached說你不是/slide-5f.webp",
               "kind": "still",
-              "source_label": "Hometown Cha Cha Cha"
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260824-Attached說你不是/slide-5g.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-Attached說你不是/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             },
             {
               "cid": "i",
               "src": "assets/20260824-Attached說你不是/slide-5i.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5146,8 +5118,8 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-Attached說你不是/slide-7c.webp",
+              "cid": "e",
+              "src": "assets/20260824-Attached說你不是/slide-7e.webp",
               "kind": "still",
               "source_label": "Before Sunset"
             },
@@ -5158,8 +5130,8 @@
               "source_label": "Before Sunset"
             },
             {
-              "cid": "e",
-              "src": "assets/20260824-Attached說你不是/slide-7e.webp",
+              "cid": "c",
+              "src": "assets/20260824-Attached說你不是/slide-7c.webp",
               "kind": "still",
               "source_label": "Before Sunset"
             }
@@ -5488,22 +5460,24 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1e.webp",
               "kind": "still",
               "source_label": "Midnightin Paris"
             },
             {
+              "cid": "d",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris",
+              "low_q": true
+            },
+            {
               "cid": "f",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1f.webp",
               "kind": "still",
-              "source_label": "Midnightin Paris"
+              "source_label": "Midnightin Paris",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5575,22 +5549,24 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
               "cid": "b",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
               "kind": "still",
               "source_label": "Euphoria"
             },
             {
+              "cid": "a",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Euphoria",
+              "low_q": true
+            },
+            {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
               "kind": "still",
-              "source_label": "Euphoria"
+              "source_label": "Euphoria",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5617,6 +5593,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
               "kind": "still",
@@ -5626,13 +5608,8 @@
               "cid": "d",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5d.webp",
               "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Our Times"
+              "source_label": "Our Times",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -5655,19 +5632,22 @@
               "cid": "b",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
               "kind": "still",
-              "source_label": "Moveto Heaven"
+              "source_label": "Moveto Heaven",
+              "low_q": true
             },
             {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
               "kind": "still",
-              "source_label": "Moveto Heaven"
+              "source_label": "Moveto Heaven",
+              "low_q": true
             },
             {
               "cid": "d",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6d.webp",
               "kind": "still",
-              "source_label": "Moveto Heaven"
+              "source_label": "Moveto Heaven",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6030,12 +6010,6 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "d",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Obsession"
-            },
-            {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1e.webp",
               "kind": "still",
@@ -6044,6 +6018,12 @@
             {
               "cid": "f",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Obsession"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-1d.webp",
               "kind": "still",
               "source_label": "Obsession"
             }
@@ -6072,22 +6052,24 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2c.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
               "cid": "d",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2d.webp",
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
+              "cid": "c",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-2e.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6117,19 +6099,22 @@
               "cid": "c",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3c.webp",
               "kind": "still",
-              "source_label": "You"
+              "source_label": "You",
+              "low_q": true
             },
             {
               "cid": "d",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3d.webp",
               "kind": "still",
-              "source_label": "You"
+              "source_label": "You",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-3e.webp",
               "kind": "still",
-              "source_label": "You"
+              "source_label": "You",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6156,20 +6141,8 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
               "cid": "d",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4e.webp",
               "kind": "still",
               "source_label": "Marriage Story"
             },
@@ -6177,20 +6150,34 @@
               "cid": "f",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4f.webp",
               "kind": "still",
-              "source_label": "Her",
+              "source_label": "Her"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
               "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4g.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Her",
+              "low_q": true
             },
             {
               "cid": "h",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-4h.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Her",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6226,48 +6213,38 @@
               "source_label": "Normal People"
             },
             {
-              "cid": "d",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Stalker"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Stalker",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Stalker",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Black Mirror"
-            },
-            {
               "cid": "i",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5i.webp",
               "kind": "still",
               "source_label": "Black Mirror"
             },
             {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Stalker",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Normal People",
+              "low_q": true
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Black Mirror",
+              "low_q": true
+            },
+            {
               "cid": "j",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-5j.webp",
               "kind": "still",
-              "source_label": "Black Mirror"
+              "source_label": "Black Mirror",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6300,16 +6277,17 @@
               "source_label": "Gone Girl"
             },
             {
-              "cid": "d",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
               "cid": "e",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6e.webp",
               "kind": "still",
               "source_label": "Gone Girl"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Gone Girl",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6336,22 +6314,10 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7c.webp",
+              "cid": "h",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7h.webp",
               "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
+              "source_label": "Little Fires Everywhere"
             },
             {
               "cid": "f",
@@ -6360,16 +6326,32 @@
               "source_label": "Little Fires Everywhere"
             },
             {
+              "cid": "c",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
               "cid": "g",
               "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7g.webp",
               "kind": "still",
-              "source_label": "Little Fires Everywhere"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260826-愛你致死不渝爛番茄永遠愛/slide-7h.webp",
-              "kind": "still",
-              "source_label": "Little Fires Everywhere"
+              "source_label": "Little Fires Everywhere",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -6662,22 +6644,24 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-CarlRogers說你/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-CarlRogers說你/slide-1e.webp",
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
+              "cid": "d",
+              "src": "assets/20260824-CarlRogers說你/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
               "cid": "f",
               "src": "assets/20260824-CarlRogers說你/slide-1f.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-CarlRogers說你/final/slide-1.webp",
@@ -6705,22 +6689,18 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-CarlRogers說你/slide-2c.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
               "cid": "d",
               "src": "assets/20260824-CarlRogers說你/slide-2d.webp",
               "kind": "still",
-              "source_label": "500Daysof Summer"
+              "source_label": "500Daysof Summer",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260824-CarlRogers說你/slide-2e.webp",
               "kind": "still",
-              "source_label": "500Daysof Summer"
+              "source_label": "500Daysof Summer",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-CarlRogers說你/final/slide-2.webp",
@@ -6759,13 +6739,6 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-4a.webp",
-              "kind": "still",
-              "source_label": "Suits",
-              "low_q": true
-            },
-            {
               "cid": "b",
               "src": "assets/20260824-CarlRogers說你/slide-4b.webp",
               "kind": "still",
@@ -6782,18 +6755,12 @@
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-CarlRogers%E8%AA%AA%E4%BD%A0/slide-4.jpg",
           "heading": "2016 年研究：「條件式關懷」正在毀掉你們的關係",
           "display_copy": "2016 年，125 人跨四種關係的研究：\n\n【條件式關懷】同時傷害兩件事：「自主感」：你不需要為了被喜歡而表演\n「歸屬感」：你被當成真實的你被接受\n\n評分制度，本質上就是一種條件式關懷\n\n資料來源：Kanat-Maymon et al. (2016). Journal of Personality, 84, 446–460.",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 5,
           "role": "知識解釋",
           "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-CarlRogers說你/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
             {
               "cid": "b",
               "src": "assets/20260824-CarlRogers說你/slide-5b.webp",
@@ -6801,10 +6768,17 @@
               "source_label": "Marriage Story"
             },
             {
+              "cid": "a",
+              "src": "assets/20260824-CarlRogers說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
               "cid": "c",
               "src": "assets/20260824-CarlRogers說你/slide-5c.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Marriage Story",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-CarlRogers說你/final/slide-5.webp",
@@ -6832,6 +6806,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "e",
+              "src": "assets/20260824-CarlRogers說你/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
               "cid": "c",
               "src": "assets/20260824-CarlRogers說你/slide-6c.webp",
               "kind": "still",
@@ -6840,12 +6820,6 @@
             {
               "cid": "d",
               "src": "assets/20260824-CarlRogers說你/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-CarlRogers說你/slide-6e.webp",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -7193,19 +7167,22 @@
               "cid": "d",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1d.webp",
               "kind": "still",
-              "source_label": "Spookyin Love"
+              "source_label": "Spookyin Love",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1e.webp",
               "kind": "still",
-              "source_label": "Spookyin Love"
+              "source_label": "Spookyin Love",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1f.webp",
               "kind": "still",
-              "source_label": "Spookyin Love"
+              "source_label": "Spookyin Love",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-1.webp",
@@ -7661,28 +7638,10 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "f",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
               "cid": "g",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1g.webp",
               "kind": "still",
               "source_label": "Marriage Story"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
               "cid": "j",
@@ -7691,16 +7650,38 @@
               "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
+              "cid": "f",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
               "cid": "k",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1k.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             },
             {
               "cid": "l",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-1l.webp",
               "kind": "still",
-              "source_label": "Catastrophe"
+              "source_label": "Catastrophe",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-1.webp",
@@ -7745,19 +7726,22 @@
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2e.webp",
               "kind": "still",
-              "source_label": "High Fidelity"
+              "source_label": "High Fidelity",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2f.webp",
               "kind": "still",
-              "source_label": "High Fidelity"
+              "source_label": "High Fidelity",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-2g.webp",
               "kind": "still",
-              "source_label": "High Fidelity"
+              "source_label": "High Fidelity",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-2.webp",
@@ -7838,6 +7822,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "i",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
+              "kind": "still",
+              "source_label": "Her"
+            },
+            {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4e.webp",
               "kind": "still",
@@ -7866,29 +7856,25 @@
               "source_kind": "WM"
             },
             {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4i.webp",
+              "cid": "j",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
               "kind": "still",
               "source_label": "Her",
               "low_q": true
             },
             {
-              "cid": "j",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4j.webp",
-              "kind": "still",
-              "source_label": "Her"
-            },
-            {
               "cid": "k",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4k.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Her",
+              "low_q": true
             },
             {
               "cid": "l",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-4l.webp",
               "kind": "still",
-              "source_label": "The Later Daters"
+              "source_label": "The Later Daters",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-4.webp",
@@ -7930,6 +7916,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "g",
+              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5e.webp",
               "kind": "still",
@@ -7938,12 +7930,6 @@
             {
               "cid": "f",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-5g.webp",
               "kind": "still",
               "source_label": "Before Sunrise"
             }
@@ -8022,39 +8008,21 @@
               "cid": "d",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7d.webp",
               "kind": "still",
-              "source_label": "About Time"
+              "source_label": "About Time",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7e.webp",
               "kind": "still",
-              "source_label": "About Time"
+              "source_label": "About Time",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7f.webp",
               "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7g.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7h.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-7i.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
+              "source_label": "About Time",
               "low_q": true
             }
           ],
@@ -8100,49 +8068,50 @@
               "cid": "e",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8e.webp",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8f.webp",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8g.webp",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true
             },
             {
               "cid": "h",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8h.webp",
               "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8i.webp",
-              "kind": "still",
-              "source_label": "Amlie"
+              "source_label": "Amlie",
+              "low_q": true
             },
             {
               "cid": "j",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8j.webp",
               "kind": "still",
-              "source_label": "Amlie"
+              "source_label": "Amlie",
+              "low_q": true
             },
             {
               "cid": "k",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8k.webp",
               "kind": "still",
-              "source_label": "Begin Again"
+              "source_label": "Begin Again",
+              "low_q": true
             },
             {
               "cid": "l",
               "src": "assets/20260825-結婚條件今天在PTT推爆/slide-8l.webp",
               "kind": "still",
-              "source_label": "Begin Again"
+              "source_label": "Begin Again",
+              "low_q": true
             }
           ],
           "final_src": "assets/20260825-結婚條件今天在PTT推爆/final/slide-8.webp",
@@ -8483,28 +8452,10 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "f",
-              "src": "assets/86eyq3yp0/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
               "cid": "g",
               "src": "assets/86eyq3yp0/slide-1g.webp",
               "kind": "still",
               "source_label": "Marriage Story"
-            },
-            {
-              "cid": "h",
-              "src": "assets/86eyq3yp0/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "i",
-              "src": "assets/86eyq3yp0/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
               "cid": "j",
@@ -8513,16 +8464,38 @@
               "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
               "cid": "k",
               "src": "assets/86eyq3yp0/slide-1k.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             },
             {
               "cid": "l",
               "src": "assets/86eyq3yp0/slide-1l.webp",
               "kind": "still",
-              "source_label": "Catastrophe"
+              "source_label": "Catastrophe",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -8563,41 +8536,16 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "e",
-              "src": "assets/86eyq3yp0/slide-2e.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
-              "cid": "f",
-              "src": "assets/86eyq3yp0/slide-2f.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
-              "cid": "g",
-              "src": "assets/86eyq3yp0/slide-2g.webp",
-              "kind": "still",
-              "source_label": "High Fidelity"
-            },
-            {
               "cid": "h",
               "src": "assets/86eyq3yp0/slide-2h.webp",
               "kind": "still",
-              "source_label": "Her",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/86eyq3yp0/slide-2i.webp",
-              "kind": "still",
               "source_label": "Her"
             },
             {
-              "cid": "j",
-              "src": "assets/86eyq3yp0/slide-2j.webp",
+              "cid": "l",
+              "src": "assets/86eyq3yp0/slide-2l.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Before Sunset"
             },
             {
               "cid": "k",
@@ -8606,10 +8554,39 @@
               "source_label": "Before Sunset"
             },
             {
-              "cid": "l",
-              "src": "assets/86eyq3yp0/slide-2l.webp",
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-2e.webp",
               "kind": "still",
-              "source_label": "Before Sunset"
+              "source_label": "High Fidelity",
+              "low_q": true
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-2f.webp",
+              "kind": "still",
+              "source_label": "High Fidelity",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-2g.webp",
+              "kind": "still",
+              "source_label": "High Fidelity",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/86eyq3yp0/slide-2i.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
+            },
+            {
+              "cid": "j",
+              "src": "assets/86eyq3yp0/slide-2j.webp",
+              "kind": "still",
+              "source_label": "Her",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -8659,13 +8636,15 @@
               "cid": "f",
               "src": "assets/86eyq3yp0/slide-3f.webp",
               "kind": "still",
-              "source_label": "Good Will Hunting"
+              "source_label": "Good Will Hunting",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/86eyq3yp0/slide-3g.webp",
               "kind": "still",
-              "source_label": "Good Will Hunting"
+              "source_label": "Good Will Hunting",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -8706,6 +8685,12 @@
               "source_kind": "SHOT"
             },
             {
+              "cid": "l",
+              "src": "assets/86eyq3yp0/slide-4l.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
               "cid": "e",
               "src": "assets/86eyq3yp0/slide-4e.webp",
               "kind": "still",
@@ -8737,25 +8722,22 @@
               "cid": "i",
               "src": "assets/86eyq3yp0/slide-4i.webp",
               "kind": "still",
-              "source_label": "The Later Daters"
+              "source_label": "The Later Daters",
+              "low_q": true
             },
             {
               "cid": "j",
               "src": "assets/86eyq3yp0/slide-4j.webp",
               "kind": "still",
-              "source_label": "The Later Daters"
+              "source_label": "The Later Daters",
+              "low_q": true
             },
             {
               "cid": "k",
               "src": "assets/86eyq3yp0/slide-4k.webp",
               "kind": "still",
-              "source_label": "The Later Daters"
-            },
-            {
-              "cid": "l",
-              "src": "assets/86eyq3yp0/slide-4l.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
+              "source_label": "The Later Daters",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -8796,13 +8778,6 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "e",
-              "src": "assets/86eyq3yp0/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Robert Waldinger",
-              "source_kind": "OV"
-            },
-            {
               "cid": "f",
               "src": "assets/86eyq3yp0/slide-5f.webp",
               "kind": "still",
@@ -8819,6 +8794,14 @@
               "src": "assets/86eyq3yp0/slide-5h.webp",
               "kind": "still",
               "source_label": "Portraitofa Ladyon Fire"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Robert Waldinger",
+              "source_kind": "OV",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -8865,14 +8848,14 @@
               "source_label": "When Harry Met Sally"
             },
             {
-              "cid": "f",
-              "src": "assets/86eyq3yp0/slide-6f.webp",
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-6g.webp",
               "kind": "still",
               "source_label": "When Harry Met Sally"
             },
             {
-              "cid": "g",
-              "src": "assets/86eyq3yp0/slide-6g.webp",
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-6f.webp",
               "kind": "still",
               "source_label": "When Harry Met Sally"
             }
@@ -8911,39 +8894,21 @@
               "cid": "d",
               "src": "assets/86eyq3yp0/slide-7d.webp",
               "kind": "still",
-              "source_label": "About Time"
+              "source_label": "About Time",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/86eyq3yp0/slide-7e.webp",
               "kind": "still",
-              "source_label": "About Time"
+              "source_label": "About Time",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/86eyq3yp0/slide-7f.webp",
               "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "g",
-              "src": "assets/86eyq3yp0/slide-7g.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/86eyq3yp0/slide-7h.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/86eyq3yp0/slide-7i.webp",
-              "kind": "still",
-              "source_label": "Terrace House",
+              "source_label": "About Time",
               "low_q": true
             }
           ],
@@ -8988,49 +8953,50 @@
               "cid": "e",
               "src": "assets/86eyq3yp0/slide-8e.webp",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/86eyq3yp0/slide-8f.webp",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/86eyq3yp0/slide-8g.webp",
               "kind": "still",
-              "source_label": "Brooklyn Nine Nine"
+              "source_label": "Brooklyn Nine Nine",
+              "low_q": true
             },
             {
               "cid": "h",
               "src": "assets/86eyq3yp0/slide-8h.webp",
               "kind": "still",
-              "source_label": "Amlie"
-            },
-            {
-              "cid": "i",
-              "src": "assets/86eyq3yp0/slide-8i.webp",
-              "kind": "still",
-              "source_label": "Amlie"
+              "source_label": "Amlie",
+              "low_q": true
             },
             {
               "cid": "j",
               "src": "assets/86eyq3yp0/slide-8j.webp",
               "kind": "still",
-              "source_label": "Amlie"
+              "source_label": "Amlie",
+              "low_q": true
             },
             {
               "cid": "k",
               "src": "assets/86eyq3yp0/slide-8k.webp",
               "kind": "still",
-              "source_label": "Begin Again"
+              "source_label": "Begin Again",
+              "low_q": true
             },
             {
               "cid": "l",
               "src": "assets/86eyq3yp0/slide-8l.webp",
               "kind": "still",
-              "source_label": "Begin Again"
+              "source_label": "Begin Again",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9306,24 +9272,11 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260825-白夜行/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Byakuyako",
-              "low_q": true
-            },
-            {
               "cid": "g",
               "src": "assets/20260825-白夜行/slide-1g.webp",
               "kind": "still",
-              "source_label": "Byakuyako"
+              "source_label": "Byakuyako",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9364,16 +9317,11 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Byakuyako"
-            },
-            {
               "cid": "f",
               "src": "assets/20260825-白夜行/slide-2f.webp",
               "kind": "still",
-              "source_label": "Byakuyako"
+              "source_label": "Byakuyako",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9398,13 +9346,6 @@
               "kind": "still",
               "source_label": "Wikipedia, Traumatic Bonding",
               "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260825-白夜行/slide-3c.webp",
-              "kind": "still",
-              "source_label": "Byakuyakou",
-              "low_q": true
             }
           ],
           "final_src": null,
@@ -9448,7 +9389,8 @@
               "cid": "e",
               "src": "assets/20260825-白夜行/slide-4e.webp",
               "kind": "still",
-              "source_label": "White Night"
+              "source_label": "White Night",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9488,59 +9430,32 @@
               "source_label": "Gone Girl"
             },
             {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Gone Girl"
-            },
-            {
               "cid": "f",
               "src": "assets/20260825-白夜行/slide-5f.webp",
               "kind": "still",
               "source_label": "Gone Girl"
             },
             {
-              "cid": "g",
-              "src": "assets/20260825-白夜行/slide-5g.webp",
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-5e.webp",
               "kind": "still",
-              "source_label": "Besselvander Kolk",
-              "source_kind": "OV"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260825-白夜行/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Besselvander Kolk",
-              "source_kind": "WM",
+              "source_label": "Gone Girl",
               "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260825-白夜行/slide-5i.webp",
-              "kind": "still",
-              "source_label": "Besselvander Kolk",
-              "source_kind": "WM",
-              "low_q": true
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260825-白夜行/slide-5j.webp",
-              "kind": "still",
-              "source_label": "Besselvander Kolk",
-              "source_kind": "WM",
-              "low_q": true
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260825-白夜行/slide-5k.webp",
-              "kind": "still",
-              "source_label": "Byakuyakou"
             },
             {
               "cid": "l",
               "src": "assets/20260825-白夜行/slide-5l.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260825-白夜行/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Besselvander Kolk",
+              "source_kind": "OV",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9577,13 +9492,15 @@
               "cid": "d",
               "src": "assets/20260825-白夜行/slide-6d.webp",
               "kind": "still",
-              "source_label": "Mother"
+              "source_label": "Mother",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/20260825-白夜行/slide-6e.webp",
               "kind": "still",
-              "source_label": "Mother"
+              "source_label": "Mother",
+              "low_q": true
             },
             {
               "cid": "f",
@@ -9624,14 +9541,14 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-7d.webp",
+              "cid": "e",
+              "src": "assets/20260825-白夜行/slide-7e.webp",
               "kind": "still",
               "source_label": "Marriage Story"
             },
             {
-              "cid": "e",
-              "src": "assets/20260825-白夜行/slide-7e.webp",
+              "cid": "d",
+              "src": "assets/20260825-白夜行/slide-7d.webp",
               "kind": "still",
               "source_label": "Marriage Story"
             },
@@ -9639,7 +9556,8 @@
               "cid": "f",
               "src": "assets/20260825-白夜行/slide-7f.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Marriage Story",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9673,30 +9591,25 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "d",
-              "src": "assets/20260825-白夜行/slide-8d.webp",
-              "kind": "still",
-              "source_label": "Journey Underthe Midnight Sun",
-              "source_kind": "OL",
-              "low_q": true
-            },
-            {
               "cid": "e",
               "src": "assets/20260825-白夜行/slide-8e.webp",
               "kind": "still",
-              "source_label": "My Liberation Notes"
+              "source_label": "My Liberation Notes",
+              "low_q": true
             },
             {
               "cid": "f",
               "src": "assets/20260825-白夜行/slide-8f.webp",
               "kind": "still",
-              "source_label": "My Liberation Notes"
+              "source_label": "My Liberation Notes",
+              "low_q": true
             },
             {
               "cid": "g",
               "src": "assets/20260825-白夜行/slide-8g.webp",
               "kind": "still",
-              "source_label": "My Liberation Notes"
+              "source_label": "My Liberation Notes",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -9966,20 +9879,15 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-1j.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Wiredfor Love Stan Tatkin",
+              "source_kind": "OV"
             },
             {
               "cid": "e",
               "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
               "kind": "still",
               "source_label": "Marriage Story"
             },
@@ -9990,23 +9898,31 @@
               "source_label": "Blue Valentine"
             },
             {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
               "cid": "h",
               "src": "assets/20260824-StanTatkin說你/slide-1h.webp",
               "kind": "still",
-              "source_label": "Blue Valentine"
+              "source_label": "Blue Valentine",
+              "low_q": true
             },
             {
               "cid": "i",
               "src": "assets/20260824-StanTatkin說你/slide-1i.webp",
               "kind": "still",
-              "source_label": "Blue Valentine"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-StanTatkin說你/slide-1j.webp",
-              "kind": "still",
-              "source_label": "Wiredfor Love Stan Tatkin",
-              "source_kind": "OV"
+              "source_label": "Blue Valentine",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10033,22 +9949,16 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-2j.webp",
               "kind": "still",
-              "source_label": "Fleabag"
+              "source_label": "A Separation"
             },
             {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-2l.webp",
               "kind": "still",
-              "source_label": "Fleabag"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
-              "kind": "still",
-              "source_label": "Fleabag"
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
               "cid": "f",
@@ -10060,37 +9970,43 @@
               "cid": "g",
               "src": "assets/20260824-StanTatkin說你/slide-2g.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
             },
             {
               "cid": "h",
               "src": "assets/20260824-StanTatkin說你/slide-2h.webp",
               "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-StanTatkin說你/slide-2i.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-StanTatkin說你/slide-2j.webp",
-              "kind": "still",
-              "source_label": "A Separation"
+              "source_label": "A Separation",
+              "low_q": true
             },
             {
               "cid": "k",
               "src": "assets/20260824-StanTatkin說你/slide-2k.webp",
               "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260824-StanTatkin說你/slide-2l.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10127,12 +10043,6 @@
               "source_label": "Eternal Sunshineofthe Spotless Mind"
             },
             {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
               "cid": "c",
               "src": "assets/20260824-StanTatkin說你/slide-4c.webp",
               "kind": "still",
@@ -10149,6 +10059,13 @@
               "src": "assets/20260824-StanTatkin說你/slide-4e.webp",
               "kind": "still",
               "source_label": "Past Lives"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10179,32 +10096,8 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
               "cid": "f",
               "src": "assets/20260824-StanTatkin說你/slide-5f.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-5g.webp",
               "kind": "still",
               "source_label": "When Harry Met Sally"
             },
@@ -10215,8 +10108,20 @@
               "source_label": "When Harry Met Sally"
             },
             {
-              "cid": "i",
-              "src": "assets/20260824-StanTatkin說你/slide-5i.webp",
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-5g.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-5k.webp",
               "kind": "still",
               "source_label": "Before Sunset"
             },
@@ -10227,16 +10132,30 @@
               "source_label": "Before Sunset"
             },
             {
-              "cid": "k",
-              "src": "assets/20260824-StanTatkin說你/slide-5k.webp",
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-5i.webp",
               "kind": "still",
               "source_label": "Before Sunset"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Our Times",
+              "low_q": true
             },
             {
               "cid": "l",
               "src": "assets/20260824-StanTatkin說你/slide-5l.webp",
               "kind": "still",
-              "source_label": "Call Me By Your Name"
+              "source_label": "Call Me By Your Name",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10263,18 +10182,6 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-StanTatkin說你/slide-6e.webp",
               "kind": "still",
@@ -10293,10 +10200,23 @@
               "source_label": "Normal People"
             },
             {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
               "cid": "h",
               "src": "assets/20260824-StanTatkin說你/slide-6h.webp",
               "kind": "still",
-              "source_label": "Normal People"
+              "source_label": "Normal People",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10383,46 +10303,51 @@
               "source_label": "Reply1988"
             },
             {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
               "cid": "g",
               "src": "assets/20260824-StanTatkin說你/slide-8g.webp",
               "kind": "still",
               "source_label": "Midnightin Paris"
             },
             {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-8l.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris",
+              "low_q": true
+            },
+            {
               "cid": "h",
               "src": "assets/20260824-StanTatkin說你/slide-8h.webp",
               "kind": "still",
-              "source_label": "Midnightin Paris"
+              "source_label": "Midnightin Paris",
+              "low_q": true
             },
             {
               "cid": "i",
               "src": "assets/20260824-StanTatkin說你/slide-8i.webp",
               "kind": "still",
-              "source_label": "About Time"
+              "source_label": "About Time",
+              "low_q": true
             },
             {
               "cid": "j",
               "src": "assets/20260824-StanTatkin說你/slide-8j.webp",
               "kind": "still",
-              "source_label": "About Time"
+              "source_label": "About Time",
+              "low_q": true
             },
             {
               "cid": "k",
               "src": "assets/20260824-StanTatkin說你/slide-8k.webp",
               "kind": "still",
-              "source_label": "About Time"
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260824-StanTatkin說你/slide-8l.webp",
-              "kind": "still",
-              "source_label": "Our Times"
+              "source_label": "About Time",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10731,22 +10656,18 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "c",
-              "src": "assets/86eyr1e0e/slide-4c.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer"
-            },
-            {
               "cid": "d",
               "src": "assets/86eyr1e0e/slide-4d.webp",
               "kind": "still",
-              "source_label": "500Daysof Summer"
+              "source_label": "500Daysof Summer",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/86eyr1e0e/slide-4e.webp",
               "kind": "still",
-              "source_label": "500Daysof Summer"
+              "source_label": "500Daysof Summer",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10800,19 +10721,22 @@
               "cid": "c",
               "src": "assets/86eyr1e0e/slide-6c.webp",
               "kind": "still",
-              "source_label": "1"
+              "source_label": "1",
+              "low_q": true
             },
             {
               "cid": "d",
               "src": "assets/86eyr1e0e/slide-6d.webp",
               "kind": "still",
-              "source_label": "2"
+              "source_label": "2",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/86eyr1e0e/slide-6e.webp",
               "kind": "still",
-              "source_label": "3"
+              "source_label": "3",
+              "low_q": true
             }
           ],
           "final_src": null,
@@ -10842,20 +10766,21 @@
               "cid": "c",
               "src": "assets/86eyr1e0e/slide-7c.webp",
               "kind": "still",
-              "source_label": "Her",
-              "low_q": true
+              "source_label": "Her"
             },
             {
               "cid": "d",
               "src": "assets/86eyr1e0e/slide-7d.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Her",
+              "low_q": true
             },
             {
               "cid": "e",
               "src": "assets/86eyr1e0e/slide-7e.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Her",
+              "low_q": true
             }
           ],
           "final_src": null,

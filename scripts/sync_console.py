@@ -1828,6 +1828,63 @@ def refresh_candidates(args):
 DESIGN_LAYOUTS_REFRESH = ("diagram", "price", "cta")
 
 
+def regrade_candidates(args):
+    """把解析度閘門套用到「已經在庫」的貼文〔2026-09-01〕。
+    新閘門只在入料時作用，存貨還是舊排序——等於修了以後看不到。這支補上。
+    原檔路徑取自 .local_sources.json（cid → 絕對路徑）。
+    保護：不讓任何一張因此變成 0 候選（寧可留一張糊的並標記，也不製造缺圖）。"""
+    ls = _load_local_sources()
+    d = load("posts.json")
+    touched = dropped = graded = 0
+    for p in d.get("posts", []):
+        if p.get("status") in ("published", "scheduled"):
+            continue
+        srcs = (ls.get(p["id"]) or {}).get("sources") or {}
+        if not srcs:
+            continue
+        changed = False
+        for s in p.get("slides", []):
+            m = srcs.get(str(s.get("n"))) or {}
+            cands = s.get("candidates") or []
+            if not cands:
+                continue
+            scored = []
+            for c in cands:
+                path = m.get(c.get("cid"))
+                bn = os.path.basename(path or c.get("src") or "")
+                u = None if ("-DESIGN-" in bn or not path) else _upscale_needed(path)
+                scored.append((c, u))
+            keep = [(c, u) for c, u in scored if u is None or u <= UPSCALE_REJECT]
+            if not keep:                      # 全部不合格：留最好的一張，不製造缺圖
+                keep = [min(scored, key=lambda x: x[1] if x[1] is not None else 9)]
+            if len(keep) != len(cands):
+                dropped += len(cands) - len(keep); changed = True
+            for c, u in keep:
+                want = bool(u is not None and u > UPSCALE_SOFT)
+                if want != bool(c.get("low_q")):
+                    if want: c["low_q"] = True
+                    else: c.pop("low_q", None)
+                    graded += 1; changed = True
+            keep.sort(key=lambda x: (0, 0.0) if x[1] is None else (1, x[1]))
+            new_c = [c for c, _ in keep]
+            if [c.get("cid") for c in new_c] != [c.get("cid") for c in cands]:
+                changed = True
+            s["candidates"] = new_c
+            # 選定的圖若被剔除／不再是首選，改指向現在最銳利的那張
+            cids = {c.get("cid") for c in new_c}
+            if s.get("default_cid") not in cids:
+                s["default_cid"] = new_c[0].get("cid") if new_c else None
+                changed = True
+        if changed:
+            touched += 1
+    if args.dry:
+        print("--dry：%d 篇會變動（剔除 %d 張、重評 %d 張）" % (touched, dropped, graded)); return
+    if touched:
+        save("posts.json", d)
+    print("重評完成：%d 篇（剔除過小候選 %d 張、低畫質標記調整 %d 張，並依銳利度重排）"
+          % (touched, dropped, graded))
+
+
 def ingest_new(args):
     """入料：已放行且無對應貼文的靈感 × Drive 草稿 → 餵進操控室；
     另接手「重新生成」的新稿（同 id 覆寫，版本 +1）。哨兵每 10 分呼叫。
@@ -2204,6 +2261,7 @@ def main():
     a = sub.add_parser("archive-data", help="reviews/copy_edits 過期歸檔、insights 快照裁切"); a.add_argument("--days", type=int, default=90); a.set_defaults(func=archive_data)
     a = sub.add_parser("archive-drive-rounds", help="發佈後把該主題舊輪 Drive 產出搬 ZZ-歸檔"); a.add_argument("post_id"); a.add_argument("--drive-root", default=None); a.add_argument("--dry-run", action="store_true"); a.set_defaults(func=archive_drive_rounds)
     a = sub.add_parser("forage-pending", help="截圖策展：visual_refs 缺 SHOT 檔的稿實地截圖（哨兵用）"); a.add_argument("--limit", type=int, default=2); a.add_argument("--topup", action="store_true", help="已有舊圖的 slide 也補抓一輪 Apify 候選（兩來源並存）"); a.set_defaults(func=forage_pending)
+    a = sub.add_parser("regrade-candidates", help="把解析度閘門套用到已在庫的貼文（剔除過小、依銳利度重排）"); a.add_argument("--dry", action="store_true"); a.set_defaults(func=regrade_candidates)
     a = sub.add_parser("refresh-candidates", help="已入板但缺料的稿：重掃 Drive 把補到的素材讀回 posts.json"); a.add_argument("--limit", type=int, default=3); a.add_argument("--post-id", default=None); a.set_defaults(func=refresh_candidates)
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
