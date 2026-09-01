@@ -66,9 +66,19 @@ def main():
         # I2 scheduled 必有 publish_at（沒有時間的排程＝WF10 永遠不會發）
         if st == "scheduled" and not p.get("publish_at"):
             fail("I2", "%s scheduled 但無 publish_at" % pid)
-        # I3 視覺總檢 block 的不得排程（閘門的意義）
-        if st == "scheduled" and (p.get("qa") or {}).get("pass") is False:
-            fail("I3", "%s qa 未過卻已排程" % pid)
+        # I3 視覺總檢 block 的不得排程（閘門的意義）。
+        # 看的是「還沒被處理掉的 block」，不是 qa.pass——pass 只要有任何一項
+        # warn 就會是 False，而且它不認得人工覆寫〔2026-09-02〕。
+        # 覆寫要一致：排程守門、卡彈偵測、這裡都吃 gate_overrides，否則
+        # 你在操控台按了「這項我已確認沒問題」，CI 還是紅的，等於那顆按鈕沒有用。
+        if st == "scheduled":
+            _ovk = {o.get("key") for o in (p.get("gate_overrides") or [])}
+            _blk = [i for idx, i in enumerate((p.get("qa") or {}).get("issues", []))
+                    if (i.get("severity") or i.get("sev")) == "block"
+                    and "qa:" + str(i.get("line") or i.get("detail") or idx)[:60] not in _ovk]
+            if _blk:
+                fail("I3", "%s 視覺檢查有 %d 項未處理卻已排程：%s"
+                     % (pid, len(_blk), str(_blk[0].get("detail") or "")[:50]))
         # I4 published 必有 published_at（成效對帳靠它）
         if st == "published" and not p.get("published_at"):
             fail("I4", "%s published 但無 published_at" % pid)
