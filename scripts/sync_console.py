@@ -1008,8 +1008,21 @@ def render_approved(args):
             shutil.copy2(path, os.path.join(bgdir, "slide-%d%s" % (n, os.path.splitext(path)[1].lower())))
         if not ok:
             continue
-        with open(jf, encoding="utf-8") as f:
-            draft = json.load(f)
+        # 稿檔壞掉不可以炸掉整輪〔2026-09-01 事故〕：一篇的 JSON 有全形逗號，
+        # 未接住的例外讓整個 render-approved 中止——不只這篇，**排在它後面的所有稿
+        # 都跟著不會出成品**，而且沒有任何錯誤訊息會傳到操控台。
+        # 症狀就是「核准了六天，圖全都在，卻永遠沒有成品」。
+        # 先走既有的修復器（撰稿模型偶爾吐全形結構符號），修不好就記在該篇身上、
+        # 跳過它繼續跑別篇——一顆壞掉的資料不該癱瘓整條產線。
+        try:
+            draft = _read_json_retry(jf)
+        except Exception as e:
+            msg = "稿檔讀不到或格式壞掉：%s" % str(e)[:80]
+            p["render_note"] = msg
+            skipped.append((pid, msg))
+            sys.stderr.write("  ✗ %s %s\n" % (pid[:26], msg))
+            save("posts.json", d)
+            continue
         # 變更紀錄：這輪跟上次渲染比，哪幾張換了圖（Jesse 2026-08-10：自動化改了什麼要看得到）
         prev = (entry.get("last_render_choices") or {})
         moved = [n for n, pth in chosen_paths.items()
@@ -1098,6 +1111,14 @@ def render_approved(args):
                                 json=os.path.join(ENGINE_DIR, ".render-tmp", pid, "draft.json"),
                                 topic_base=os.path.basename(jf))
         from_drive(ns)
+        # 重餵會用稿檔重建整個貼文物件，把渲染前蓋的指紋洗掉——指紋要在重餵之後補。
+        # 〔2026-09-01〕沒補的話 render_src_hash 永遠是空的，等於「圖是否過期」永遠測不出來。
+        _pd = load("posts.json")
+        _q = next((x for x in _pd.get("posts", []) if x["id"] == pid), None)
+        if _q is not None:
+            _q["render_src_hash"] = _slide_text_hash(_q)
+            save("posts.json", _pd)
+            posts = {x["id"]: x for x in _pd.get("posts", [])}
         ls = _load_local_sources()
         if pid in ls:
             ls[pid]["draft_json"] = os.path.abspath(jf)  # 還原成 Drive 正本（scratch 會被清）

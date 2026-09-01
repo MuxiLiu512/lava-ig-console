@@ -89,11 +89,39 @@ def main():
         print("\n--dry：未寫檔（%d 篇、%d 處）" % (touched, total)); return
     if touched:
         SC.save("posts.json", doc)
+        # 同時寫進 copy_edits——這才是能存活「重餵」的那一層。
+        # 〔2026-09-01 事故〕排版後會用 Drive 稿檔重建整個貼文物件，
+        # 只改 posts.json 的修正會被整份沖掉：8/27 修好的 11 處破折號，
+        # 到 9/1 又原封不動印在圖上（而破折號正是我們自己的禁句）。
+        # copy_edits 在渲染時由 _latest_copy_edits 重新套用，重餵沖不掉。
+        ce = SC.load("copy_edits.json")
+        for r in log:
+            edits = []
+            b = r.get("before") or {}
+            q = next((x for x in doc.get("posts", []) if x["id"] == r["post_id"]), None)
+            if not q:
+                continue
+            for i, (oh, od) in enumerate(b.get("slides") or []):
+                sl = (q.get("slides") or [])[i] if i < len(q.get("slides") or []) else None
+                if not sl:
+                    continue
+                if oh is not None and sl.get("heading") != oh:
+                    edits.append({"n": sl.get("n"), "field": "heading", "original": oh, "edited": sl.get("heading")})
+                if od is not None and sl.get("display_copy") != od:
+                    edits.append({"n": sl.get("n"), "field": "display_copy", "original": od, "edited": sl.get("display_copy")})
+            if b.get("caption") is not None and q.get("caption") != b["caption"]:
+                edits.append({"n": 0, "field": "caption", "original": b["caption"], "edited": q.get("caption")})
+            if edits:
+                ce.setdefault("edits", []).append({
+                    "post_id": r["post_id"], "ts": r["ts"], "consumed": False,
+                    "by": "copy_fix", "edits": edits})
+        SC.save("copy_edits.json", ce)
         fp = os.path.join(SC.DATA, "copy_fix_log.jsonl")
         with open(fp, "a", encoding="utf-8") as f:
             for r in log:
                 f.write(json.dumps(r, ensure_ascii=False) + "\n")
-        print("\n✓ 已修 %d 篇、%d 處；原文備份在 data/copy_fix_log.jsonl" % (touched, total))
+        print("\n✓ 已修 %d 篇、%d 處；同步寫入 copy_edits（重餵沖不掉），原文備份在 data/copy_fix_log.jsonl"
+              % (touched, total))
     else:
         print("沒有需要修的破折號")
 

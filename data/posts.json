@@ -3470,190 +3470,6 @@
       "marketing_archived": true
     },
     {
-      "id": "20260803-Laa是怎麼把配對變成真",
-      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
-      "version": 1,
-      "status": "scheduled",
-      "clickup_task_id": "86eyey802",
-      "created_at": null,
-      "caption": "厭倦無止盡的早午晚安、等待回覆的忐忑不安嗎？\n我們也是，因此我們打造了 Lava 不聊天的交友軟體\n\n『 跟無聊的開場白說聲再見吧！』\n- 配對後彼此回答對方設定的價值觀問題，審完長相，再確認內在 \n\n『 約會不用再擔心被帶去跑馬拉松 』\n- 由我們替用戶安排精選場域，與店家一同維持良好氣氛、守護安全\n\n『 第一次見面，不用再擔心不知道怎麼開口 』\n- 破冰卡牌隨桌附贈，由淺入深，不用再擔心沒有話題啦～\n\n讓 Lava 排一場真的會發生的約會\n不用再猜對方想不想見面\n流程會替你問，交給我們，社交就應該真實\n\n#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-1.webp",
-          "product_layout": "hero",
-          "frame_aspect": 0.75,
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-1.jpg",
-          "heading": "配對只是開始。\n【見面，我們幫你排。】",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "",
-          "candidates": [],
-          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-2.webp",
-          "product_layout": "diagram",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-2.jpg",
-          "heading": "互答 6 題，才【走到下一關】",
-          "display_copy": "配對成功不等於會見面。\n多數人卡在「要約嗎」這一步。"
-        },
-        {
-          "n": 3,
-          "role": "",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
-              "kind": "generated"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
-              "kind": "generated"
-            }
-          ],
-          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-3.webp",
-          "product_layout": "notify",
-          "frame_aspect": {
-            "portrait": 0.6,
-            "landscape": 2.924
-          },
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-3.jpg",
-          "heading": "兩邊都選好，\n【約會才算成立】",
-          "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "",
-          "candidates": [],
-          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-4.webp",
-          "product_layout": "price",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-4.jpg",
-          "display_copy": "如果對方沒有出現，"
-        },
-        {
-          "n": 5,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-5.webp",
-          "product_layout": "cta",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-5.jpg",
-          "heading": "排一場真的會發生的約會",
-          "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
-        }
-      ],
-      "template_id": "tpl-product-intro-carousel",
-      "writer_model": "claude",
-      "rendered_at": "2026-08-24T21:00:35+08:00",
-      "candidates_since": "2026-08-19T16:38:04+08:00",
-      "copy_choice": "claude",
-      "rendered_lines": {
-        "1": [
-          "配對只是開始",
-          "見面，我們幫你排",
-          ""
-        ],
-        "2": [
-          "互答 6 題，才走到下一關",
-          "",
-          "配對成功不等於會見面",
-          "多數人卡在「要約嗎」這一步"
-        ],
-        "3": [
-          "兩邊都選好",
-          "約會才算成立",
-          "",
-          "一方提出至少 3 個時段",
-          "另一方選一個"
-        ],
-        "4": [
-          "如果對方沒有出現"
-        ],
-        "5": [
-          "排一場真的會發生的約會",
-          "",
-          "不用再猜對方想不想見面",
-          "流程會替你問"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-09-01T19:06:03+08:00",
-        "pass": true,
-        "claims": 0,
-        "issues": [],
-        "note": "文案未偵測到數字或研究引用"
-      },
-      "qa": {
-        "ts": "2026-08-28T12:02:52+08:00",
-        "pass": true,
-        "issues": [
-          {
-            "type": "composition",
-            "slides": [
-              1,
-              2,
-              4,
-              5
-            ],
-            "severity": "warn",
-            "detail": "第1、2、4、5張底色均為純黑，主視覺元素（紅色卡片／紅色發光框）置中，文字左對齊排版結構幾乎一致；連續黑底張數佔全篇80%，滑動時視覺幾乎靜止，節奏斷在第3張黃底後又立刻跳回黑。",
-            "fix": "建議將第4張（100%退款）改為深紅色漸層或暗酒紅底，讓它在黑底序列裡有色溫差異；或將第5張CTA改為品牌橘紅滿版底色，製造收尾的亮度高潮，避免黑→黃→黑→黑→黑的明暗曲線在第3張後直接崩平。"
-          },
-          {
-            "type": "monotone",
-            "slides": [
-              1,
-              2,
-              4,
-              5
-            ],
-            "severity": "warn",
-            "detail": "全篇五張中四張為純黑底，亮度集中在第3張（淡黃底），其餘各張整體曝光值極低；缺乏由暗→亮→暗→亮的起伏節奏，長時間瀏覽易造成視覺疲勞且品牌調性顯得沉悶。",
-            "fix": "在第2張（流程說明）考慮換成深炭灰（#1A1A1A以上）或加入半透明紋理底，與純黑做出層次；第5張CTA頁可拉高至品牌紅（#E8300F）滿版，作為全篇最亮的收尾錨點，製造明暗曲線。"
-          }
-        ],
-        "rhythm": "黑底四連發把第3張黃底夾成孤島，節奏只有一個起伏就斷了；主視覺語言（紅色星星卡片）在第1、2、3、4、5張反覆出現雖有品牌一致性，但缺乏大小、角度、距離的變化，滑動感接近在同一個畫面上換字，建議至少讓一張改用截圖式UI畫面或俯拍實景約會場景，打破平面圖示連發的沉悶感。"
-      },
-      "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      },
-      "status_since": "2026-09-01T02:02:56+08:00",
-      "publish_at": "2026-09-02T21:00:00+08:00"
-    },
-    {
       "id": "20260824-AnxiousAttac",
       "topic": "「Anxious Attachment」「Avoidant Attachment」大家都聽過。但《Attached》裡有一章，說的是「兩個安全型的人在一起，還是會出問題」，這個反直覺結論，99% 的人都跳過了",
       "version": 1,
@@ -4252,12 +4068,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:06:04+08:00",
+        "ts": "2026-09-01T19:22:25+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4340,7 +4156,7 @@
         "rhythm": "整篇視覺邏輯是『暗＋人臉＋文字block』的無限迴圈，同一套公式用了八張，Amir Levine的臉三度現身是最大硬傷，需在發佈前強制換掉至少一張人物圖並插入一張純排版明亮卡，才能讓節奏產生真正的起伏。"
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -4412,7 +4228,8 @@
           }
         ]
       },
-      "curated_at": "2026-09-01T18:11:47+08:00"
+      "curated_at": "2026-09-01T18:11:47+08:00",
+      "render_note": "slide 1 選圖原檔不存在"
     },
     {
       "id": "20260824-Rizz進了牛津詞典但r",
@@ -4850,12 +4667,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:22+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:06:06+08:00",
+        "ts": "2026-09-01T19:22:27+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -4921,7 +4738,7 @@
         "rhythm": "整篇節奏呈現「暗—暗—暗—暗—暗—暗—暗—亮—黑」的單峰曲線，前六張人像底圖構圖公式幾乎無差異，第7、8張雖有突破卻犯了主體重複的硬傷，建議至少製造三次明暗或構圖類型的切換，才能讓讀者有繼續滑的動力。"
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -5605,12 +5422,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:06:07+08:00",
+        "ts": "2026-09-01T19:22:27+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -5637,7 +5454,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -6216,12 +6033,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -6265,7 +6082,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:08+08:00",
+        "ts": "2026-09-01T19:22:28+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -6768,12 +6585,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -6838,7 +6655,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:12+08:00",
+        "ts": "2026-09-01T19:22:29+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -7304,12 +7121,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 1,
@@ -7375,7 +7192,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:14+08:00",
+        "ts": "2026-09-01T19:22:31+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -8161,12 +7978,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -8225,7 +8042,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:15+08:00",
+        "ts": "2026-09-01T19:22:33+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -9067,12 +8884,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -9123,7 +8940,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:17+08:00",
+        "ts": "2026-09-01T19:22:35+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -9736,12 +9553,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:02+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 3
@@ -9771,7 +9588,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:23+08:00",
+        "ts": "2026-09-01T19:22:40+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -10372,12 +10189,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -10443,7 +10260,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:26+08:00",
+        "ts": "2026-09-01T19:22:42+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -10888,12 +10705,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -10937,7 +10754,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:27+08:00",
+        "ts": "2026-09-01T19:22:43+08:00",
         "pass": false,
         "claims": 2,
         "issues": [
@@ -11343,12 +11160,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 13
@@ -11448,7 +11265,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:29+08:00",
+        "ts": "2026-09-01T19:22:45+08:00",
         "pass": false,
         "claims": 3,
         "issues": [
@@ -11750,12 +11567,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:06:03+08:00",
+        "ts": "2026-09-01T19:22:23+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -11815,7 +11632,1060 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:06:29+08:00",
+        "ts": "2026-09-01T19:22:45+08:00",
+        "pass": true,
+        "claims": 0,
+        "issues": [],
+        "note": "文案未偵測到數字或研究引用"
+      }
+    },
+    {
+      "id": "20260824-StanTatkin說你",
+      "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力。但神經科學說，愛情是一項需要每天練習的技能",
+      "version": 2,
+      "status": "awaiting_review",
+      "clickup_task_id": "86eyknz01",
+      "created_at": null,
+      "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
+              "kind": "still",
+              "source_label": "Amazon 書籍頁（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
+              "kind": "still",
+              "source_label": "a-mood1dd71",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
+              "kind": "still",
+              "source_label": "組圖：Amazon 書籍頁；YouTube TEDxKC 官方頻道",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Amazon 書籍頁（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
+              "kind": "still",
+              "source_label": "c-moodc38b6",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
+              "kind": "still",
+              "source_label": "Wiredfor Love Stan Tatkin",
+              "source_kind": "OV"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-1g.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-1h.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-1i.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-1j.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-1k.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine",
+              "low_q": true
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-1l.webp",
+              "kind": "still",
+              "source_label": "Blue Valentine",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-1.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-1.jpg",
+          "heading": "吵架前，你的大腦已經先輸了",
+          "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適。是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "共感場景",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
+              "kind": "still",
+              "source_label": "a-moodb9fba",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
+              "kind": "still",
+              "source_label": "b-moodc7b70",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
+              "kind": "still",
+              "source_label": "A Separation"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-2f.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-2g.webp",
+              "kind": "still",
+              "source_label": "Marriage Story"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-2h.webp",
+              "kind": "still",
+              "source_label": "Marriage Story",
+              "low_q": true
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-2i.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-2j.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-2k.webp",
+              "kind": "still",
+              "source_label": "Fleabag",
+              "low_q": true
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-2l.webp",
+              "kind": "still",
+              "source_label": "A Separation",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-2.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-2.jpg",
+          "heading": "那個「無緣無故的煩躁」其實有原因",
+          "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感。是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。",
+          "default_cid": "a"
+        },
+        {
+          "n": 3,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-3a.webp",
+              "kind": "still",
+              "source_label": "YouTube TEDxKC 官方頻道",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-3.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-3.jpg",
+          "heading": "杏仁核比你更快開口",
+          "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前：心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應：對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-4a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-4b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-4c.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-4d.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-4e.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-4f.webp",
+              "kind": "still",
+              "source_label": "Past Lives"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-4g.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-4.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-4.jpg",
+          "heading": "焦慮型依附的神經特徵",
+          "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態：你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)",
+          "default_cid": "a"
+        },
+        {
+          "n": 5,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
+              "kind": "still",
+              "source_label": "a-bookfe3de",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
+              "kind": "still",
+              "source_label": "b-book189b0",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Call Me By Your Name"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-5g.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-5h.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-5i.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-5j.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-5k.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-5l.webp",
+              "kind": "still",
+              "source_label": "Before Sunset"
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-5.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-5.jpg",
+          "heading": "愛不是找到的，是練出來的",
+          "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」。而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications.",
+          "default_cid": "a"
+        },
+        {
+          "n": 6,
+          "role": "品牌立場",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-6a.webp",
+              "kind": "still",
+              "source_label": "a-mood17b9c",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-6b.webp",
+              "kind": "still",
+              "source_label": "b-mood36cbd",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-6c.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-6d.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-6e.webp",
+              "kind": "still",
+              "source_label": "Normal People"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-6f.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-6g.webp",
+              "kind": "still",
+              "source_label": "Before Sunrise"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-6h.webp",
+              "kind": "still",
+              "source_label": "Normal People",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-6.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-6.jpg",
+          "heading": "線上聊再久，神經系統不買單",
+          "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n：來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。",
+          "default_cid": "a"
+        },
+        {
+          "n": 7,
+          "role": "知識解釋",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-7a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-7b.webp",
+              "kind": "still",
+              "source_label": "a-mood4ff93",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-7c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-7d.webp",
+              "kind": "still",
+              "source_label": "b-moodd4ab0",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-7e.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-7f.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-7g.webp",
+              "kind": "still",
+              "source_label": "My Brilliant Friend"
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-7.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-7.jpg",
+          "heading": "Anchor、Island、Wave：你是哪一種？",
+          "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的：每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型。而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。",
+          "default_cid": "a"
+        },
+        {
+          "n": 8,
+          "role": "應用/怎麼做",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
+              "kind": "still",
+              "source_label": "a-moodeba66",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-StanTatkin說你/slide-8d.webp",
+              "kind": "still",
+              "source_label": "b-mood1e905",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-StanTatkin說你/slide-8e.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-StanTatkin說你/slide-8f.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-StanTatkin說你/slide-8g.webp",
+              "kind": "still",
+              "source_label": "Reply1988"
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-StanTatkin說你/slide-8h.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris"
+            },
+            {
+              "cid": "i",
+              "src": "assets/20260824-StanTatkin說你/slide-8i.webp",
+              "kind": "still",
+              "source_label": "Our Times"
+            },
+            {
+              "cid": "j",
+              "src": "assets/20260824-StanTatkin說你/slide-8j.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris",
+              "low_q": true
+            },
+            {
+              "cid": "k",
+              "src": "assets/20260824-StanTatkin說你/slide-8k.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris",
+              "low_q": true
+            },
+            {
+              "cid": "l",
+              "src": "assets/20260824-StanTatkin說你/slide-8l.webp",
+              "kind": "still",
+              "source_label": "About Time",
+              "low_q": true
+            }
+          ],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-8.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-8.jpg",
+          "heading": "把對方「登錄」進你大腦的安全清單",
+          "display_copy": "把對方「登錄」進你大腦的安全清單\n：Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻。是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。",
+          "default_cid": "a"
+        },
+        {
+          "n": 9,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260824-StanTatkin說你/final/slide-9.webp",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-9.jpg",
+          "heading": "CTA 公版",
+          "display_copy": "CTA 公版"
+        }
+      ],
+      "facts": [
+        {
+          "claim": "Stan Tatkin 是 PACT（Psychobiological Approach to Couple Therapy）的創立者，臨床心理學博士（PsyD）兼婚姻家庭治療師（MFT）",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy (PACT)."
+        },
+        {
+          "claim": "Tatkin 於 2010 年與妻子 Tracey Boldemann-Tatkin 博士共同創立 PACT Institute",
+          "source": "https://www.pactinstitute.com/about",
+          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
+        },
+        {
+          "claim": "Tatkin 兼任 UCLA David Geffen School of Medicine 的助理臨床教授",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "He is an assistant clinical professor at UCLA David Geffen School of Medicine."
+        },
+        {
+          "claim": "《Wired for Love》由 New Harbinger Publications 於 2012 年出版",
+          "source": "https://www.newharbinger.com/9781608820580/wired-for-love/",
+          "quote": "Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship. New Harbinger Publications, 2012."
+        },
+        {
+          "claim": "《Wired for Love》已售出超過 170,000 冊",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Wired for Love has sold over 170,000 copies."
+        },
+        {
+          "claim": "Tatkin 的 TEDx 演講累計觀看人次已超過 170 萬",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "His TEDx talk has been viewed over 1.7 million times."
+        },
+        {
+          "claim": "2012 年 Pascal Vrticka 等人的研究發現，焦慮型依附個體在社會評估任務中，前額葉皮質與杏仁核之間的功能性連結顯著降低",
+          "source": "https://academic.oup.com/scan/article/7/3/290/1573643",
+          "quote": "Anxiously attached individuals showed reduced functional connectivity between the prefrontal cortex and the amygdala during social evaluation tasks."
+        },
+        {
+          "claim": "人類杏仁核病變會損害威脅優先處理能力，提供了杏仁核對回應迫在眉睫的危險具有因果角色的首個直接證據",
+          "source": "https://pubmed.ncbi.nlm.nih.gov/21390292/",
+          "quote": "Patients with bilateral amygdala damage failed to show the normal threat-priority effect, providing the first direct evidence for a causal role of the amygdala in responding to imminent danger."
+        },
+        {
+          "claim": "伴侶是彼此的「生物存活單位（biological survival unit）」",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Stan Tatkin describes couples as a biological survival unit — each person's primary attachment figure and the one they can always count on."
+        },
+        {
+          "claim": "Tatkin 使用 Anchor（錨型）、Island（島型）、Wave（浪型）三個標籤描述依附風格，不將任何一種類型描繪為有缺陷",
+          "source": "https://www.pactinstitute.com/stan-tatkin",
+          "quote": "Tatkin describes three attachment styles — Anchor, Island, and Wave — and emphasizes that no type is inherently flawed; each develops from personal history and can thrive in relationship with the right understanding."
+        }
+      ],
+      "writer_model": "claude-sonnet-4-6",
+      "candidates_since": "2026-09-01T19:19:51+08:00",
+      "copy": {
+        "ts": "2026-09-01T19:22:23+08:00",
+        "pass": false,
+        "counts": {
+          "赦免式安慰": 1,
+          "圖上單行過長": 5
+        },
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "赦免式安慰",
+            "where": "第4張內文",
+            "line": "第4張內文：…統一直在高速運轉。 這不是你的錯，是你大腦的設計。 …",
+            "fix": "替讀者說出自我懷疑再赦免，是 AI 腔的第二名。拿掉，讓讀者自己認領。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第3張內文",
+            "line": "資料來源：Feinstein JS et al. (2011), Current…（125 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第4張內文",
+            "line": "資料來源：Vrticka P et al. (2012), Social Cog…（84 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第5張內文",
+            "line": "Stan Tatkin 在《Wired for Love》裡說：…（32 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第7張主標",
+            "line": "Anchor、Island、Wave：你是哪一種？…（25 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第7張內文",
+            "line": "問題從來不是你是哪一型。而是你有沒有讓對方的神經系統…（26 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          }
+        ]
+      },
+      "image_credits": [
+        "第 1 張：Openverse 創用 CC（Wiredfor Love Stan Tatkin）",
+        "第 2 張：《Marriage Story》劇照，版權屬原權利方",
+        "第 4 張：《Past Lives》劇照，版權屬原權利方",
+        "第 8 張：《Midnightin Paris》劇照，版權屬原權利方"
+      ],
+      "cover_head": "吵架前，你的大腦已經先輸了",
+      "rendered_at": "2026-09-01T19:21:47+08:00",
+      "render_src_hash": {
+        "1": "526c751b0609",
+        "2": "4f5a98efb496",
+        "3": "4f621d2d449f",
+        "4": "ba6259a9392e",
+        "5": "8610a6d68c2d",
+        "6": "796248a56ad8",
+        "7": "6c0cc725e966",
+        "8": "1105917a55d9",
+        "9": "9cb0c7260332"
+      },
+      "copy_choice": "claude",
+      "rendered_lines": {
+        "1": [
+          "吵架前，你的大腦已經先輸了",
+          "",
+          "〖吵架前，你的大腦已經先輸了〗",
+          "那場架還沒開始",
+          "你的身體早就備戰了",
+          "心跳加速、肩膀緊繃",
+          "嘴裡冒出一句連自己都沒預料到的話",
+          "不是你們不合適。是你的神經系統還不認識他",
+          "大腦優先為生存設計",
+          "不是為愛設計的",
+          "但這件事，可以改變"
+        ],
+        "2": [
+          "那個「無緣無故的煩躁」其實有原因",
+          "",
+          "他只是把杯子放錯地方",
+          "你卻突然很想哭",
+          "她只是回了一個「哦」",
+          "你卻開始反覆回放她的語氣",
+          "不是你太敏感。是你的大腦把對方的小動作",
+          "讀成了威脅信號",
+          "PACT 模型說",
+          "小衝突感覺像大威脅",
+          "是因為你們的神經系統",
+          "還在學習調節彼此",
+          "這不是性格問題，是生物問題"
+        ],
+        "3": [
+          "杏仁核比你更快開口",
+          "",
+          "你以為你在「冷靜思考」",
+          "但杏仁核早就出手了",
+          "在你決定「算了別吵」之前：心跳已經加速",
+          "肌肉已經備戰",
+          "這場衝突在你開口前就開始了",
+          "Tatkin",
+          "我們感到不安全時",
+          "會在反思之前就先反應：對象正好是我們最在乎的人",
+          "資料來源：Feinstein JS et al. (2011), Current Biology",
+          "— amygdala causal role in responding to imminent",
+          "danger. PubMed ID: 21390292"
+        ],
+        "4": [
+          "焦慮型依附的神經特徵",
+          "",
+          "Vrticka 等人 2012 年研究發現",
+          "焦慮型依附的人",
+          "大腦「理性煞車」",
+          "對「情緒油門」的控制力",
+          "顯著更弱",
+          "為什麼在最親近的人面前",
+          "反而最容易失控",
+          "因為親密關係本身",
+          "就是高喚醒狀態：你的神經系統一直在高速運轉",
+          "這不是你的錯，是你大腦的設計",
+          "資料來源：Vrticka P et al. (2012), Social Cognitive",
+          "and Affective Neuroscience, Vol. 7(3)"
+        ],
+        "5": [
+          "愛不是找到的，是練出來的",
+          "",
+          "Stan Tatkin 在《Wired for Love》裡說",
+          "伴侶是彼此的",
+          "生物存活單位",
+          "關係不是「找到對的人就自動運作」。而是兩個神經",
+          "系統",
+          "學習把對方辨識為「安全」",
+          "的過程",
+          "大腦透過一次次親身接觸",
+          "把對方的臉、聲音、觸感",
+          "登錄為安全信號",
+          "這需要面對面，反覆地練",
+          "資料來源：Tatkin S. (2012). Wired for Love. New",
+          "Harbinger Publications"
+        ],
+        "6": [
+          "線上聊再久，神經系統不買單",
+          "",
+          "聊再多訊息",
+          "你的神經系統都不買單",
+          "大腦靠的是",
+          "眼神、聲音的溫度",
+          "對方離你多近的體感",
+          "和你們共同在場的那些片刻",
+          "：來學習把對方辨識為安全",
+          "催產素、多巴胺這些連結機制",
+          "在面對面互動中啟動的強度",
+          "遠高於數位溝通",
+          "Lava 選擇線下優先",
+          "不是反科技",
+          "是因為大腦就是這樣運作的"
+        ],
+        "7": [
+          "Anchor、Island、Wave：你是哪一種",
+          "",
+          "你是哪一種",
+          "⚓ Anchor 錨型 — 安全依附",
+          "🏝 Island 島型 — 迴避型",
+          "🌊 Wave 浪型 — 焦慮型",
+          "Tatkin 說",
+          "沒有哪一型是壞的：每一種都是你從成長經驗中",
+          "發展出來的生存策略",
+          "問題從來不是你是哪一型。而是你有沒有讓對方的神",
+          "經系統",
+          "學會你是安全的",
+          "任何組合，都可以建立安全感"
+        ],
+        "8": [
+          "把對方「登錄」進你大腦的安全清單",
+          "",
+          "把對方「登錄」進你大腦的安全清單",
+          "：Tatkin 說，這需要每天練習",
+          "👁 重聚時，給一個真實的眼神接觸",
+          "🌬 爭吵前，先深呼吸三次",
+          "　　讓前額葉有機會介入",
+          "📵 重要的情緒，不要用訊息處理",
+          "　　改約一次面對面",
+          "伴侶泡泡（couple bubble）",
+          "不是浪漫的隱喻。是有神經生物學基礎的日常練習",
+          "重複。然後再重複",
+          "這就是你們建立安全感的方式"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-09-01T19:22:23+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-09-01T19:22:48+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「2012 年」的數字在出處頁面裡找不到：https://www.newharbinger.com/9781608820580/wired-for-love/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2012 年」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「的那些不完美片刻。 神經科學研究指出，催產素、多巴胺等連結感的神」沒有對應出處（研究引用）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究發現」的出處無法自動核對，請人工看過：https://academic.oup.com/scan/article/7/3/290/1573643"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「Stan Tatkin 說：你以為「找到對的人」就不用」沒有對應出處（人物引述）"
+          }
+        ]
+      }
+    },
+    {
+      "id": "20260803-Laa是怎麼把配對變成真",
+      "topic": "Lava 是怎麼把「配對」變成「真的見到面」的？產品機制圖解",
+      "version": 1,
+      "status": "scheduled",
+      "clickup_task_id": "86eyey802",
+      "created_at": null,
+      "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+      "topic_type": "A-知識型",
+      "slides": [
+        {
+          "n": 1,
+          "role": "Hook",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-1c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-1.webp",
+          "product_layout": "hero",
+          "frame_aspect": 0.75,
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-1.jpg",
+          "heading": "配對只是開始\n【見面，我們幫你排】",
+          "default_cid": "a"
+        },
+        {
+          "n": 2,
+          "role": "",
+          "candidates": [],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-2.webp",
+          "product_layout": "diagram",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-2.jpg",
+          "heading": "互答 6 題，才【走到下一關】",
+          "display_copy": "配對成功不等於會見面\n多數人卡在「要約嗎」這一步"
+        },
+        {
+          "n": 3,
+          "role": "",
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3a.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3b.webp",
+              "kind": "generated"
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260803-Laa是怎麼把配對變成真/slide-3c.webp",
+              "kind": "generated"
+            }
+          ],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-3.webp",
+          "product_layout": "notify",
+          "frame_aspect": {
+            "portrait": 0.6,
+            "landscape": 2.924
+          },
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-3.jpg",
+          "heading": "兩邊都選好，\n【約會才算成立】",
+          "display_copy": "一方提出至少 3 個時段，\n另一方選一個。",
+          "default_cid": "a"
+        },
+        {
+          "n": 4,
+          "role": "",
+          "candidates": [],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-4.webp",
+          "product_layout": "price",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-4.jpg",
+          "display_copy": "如果對方沒有出現，"
+        },
+        {
+          "n": 5,
+          "role": "CTA",
+          "candidates": [],
+          "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-5.webp",
+          "product_layout": "cta",
+          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-5.jpg",
+          "heading": "排一場真的會發生的約會",
+          "display_copy": "不用再猜對方想不想見面。\n流程會替你問。"
+        }
+      ],
+      "template_id": "tpl-product-intro-carousel",
+      "writer_model": "claude",
+      "publish_at": "2026-09-02T21:00:00+08:00",
+      "rendered_at": "2026-09-01T19:21:35+08:00",
+      "candidates_since": "2026-08-19T16:38:04+08:00",
+      "copy_choice": "claude",
+      "render_src_hash": {
+        "1": "3c75ee0b2b20",
+        "2": "80c59dc88f62",
+        "3": "1f3984abd39b",
+        "4": "a200cd9fd74e",
+        "5": "48b6826261c3"
+      },
+      "rendered_lines": {
+        "1": [
+          "配對只是開始",
+          "見面，我們幫你排",
+          ""
+        ],
+        "2": [
+          "互答 6 題，才走到下一關",
+          "",
+          "配對成功不等於會見面",
+          "多數人卡在「要約嗎」這一步"
+        ],
+        "3": [
+          "兩邊都選好",
+          "約會才算成立",
+          "",
+          "一方提出至少 3 個時段",
+          "另一方選一個"
+        ],
+        "4": [
+          "如果對方沒有出現"
+        ],
+        "5": [
+          "排一場真的會發生的約會",
+          "",
+          "不用再猜對方想不想見面",
+          "流程會替你問"
+        ]
+      },
+      "typography": {
+        "ts": "2026-09-01T19:22:23+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-09-01T19:22:23+08:00",
+        "pass": true,
+        "counts": {},
+        "issues": []
+      },
+      "fact": {
+        "ts": "2026-09-01T19:22:48+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -11929,7 +12799,7 @@
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-2.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-2.jpg",
           "heading": "你是不是也曾這樣想過？",
-          "display_copy": "他記住她每天幾點出現\n喜歡哪種飲料、跟誰說過話\n\n那不叫跟蹤——\n他說那叫【深情】\n\n導演巴克的劇情一句話：\n「他被徹底 friend zone，許願讓她愛上他\n她就對他著了魔。」\n\n你身邊有沒有這樣的人？\n\n《愛你致死不渝》Obsession，2026",
+          "display_copy": "他記住她每天幾點出現\n喜歡哪種飲料、跟誰說過話\n\n那不叫跟蹤：他說那叫【深情】\n\n導演巴克的劇情一句話：\n「他被徹底 friend zone，許願讓她愛上他\n她就對他著了魔。」\n\n你身邊有沒有這樣的人？\n\n《愛你致死不渝》Obsession，2026",
           "default_cid": "a"
         },
         {
@@ -11976,7 +12846,7 @@
           ],
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-3.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-3.jpg",
-          "heading": "迷戀不是愛——心理學家 Dorothy Tennov 這樣說",
+          "heading": "迷戀不是愛：心理學家 Dorothy Tennov 這樣說",
           "display_copy": "心理學家 Dorothy Tennov\n花十年訪談逾 300 人，發現一件事：\n\n【迷戀不是愛的起點】\n它是強迫性思維、侵入性幻想\n與對被回應的窒息渴求\n\n越得不到，越停不下來\n可以延續數年、甚至數十年\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
           "default_cid": "a"
         },
@@ -12044,7 +12914,7 @@
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-4.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-4.jpg",
           "heading": "大腦把「不確定」當作毒品",
-          "display_copy": "曖昧比明確的愛更令人上癮\n因為【不確定性會放大多巴胺分泌】\n\n大腦不會選擇放棄——\n它會把每個模糊信號詮釋成：\n「也許他其實也喜歡我」\n\n《愛你致死不渝》的 Bear\n只是把這個迴路加速了一百倍\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
+          "display_copy": "曖昧比明確的愛更令人上癮\n因為【不確定性會放大多巴胺分泌】\n\n大腦不會選擇放棄：它會把每個模糊信號詮釋成：\n「也許他其實也喜歡我」\n\n《愛你致死不渝》的 Bear\n只是把這個迴路加速了一百倍\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
           "default_cid": "a"
         },
         {
@@ -12141,8 +13011,8 @@
           ],
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-5.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-5.jpg",
-          "heading": "「我只是太愛你了」——精神暴力如何偽裝成愛",
-          "display_copy": "心理學家 Frank Tallis 說：\n「正常的愛本來就帶有強迫症特徵」\n\n差別在於——\n它有沒有越過那條線\n變成【要隨時知道你在哪裡】\n\n衛福部調查：台灣精神暴力盛行率【16.76%】\n最常見行為：伴侶隨時要掌握你的行蹤（34.1%）\n\n資料來源：衛生福利部保護服務司，2020 年婦女遭受親密關係暴力統計",
+          "heading": "「我只是太愛你了」：精神暴力如何偽裝成愛",
+          "display_copy": "心理學家 Frank Tallis 說：\n「正常的愛本來就帶有強迫症特徵」\n\n差別在於：它有沒有越過那條線\n變成【要隨時知道你在哪裡】\n\n衛福部調查：台灣精神暴力盛行率【16.76%】\n最常見行為：伴侶隨時要掌握你的行蹤（34.1%）\n\n資料來源：衛生福利部保護服務司，2020 年婦女遭受親密關係暴力統計",
           "default_cid": "a"
         },
         {
@@ -12188,7 +13058,7 @@
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-6.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-6.jpg",
           "heading": "真正的喜歡，不需要把對方困住",
-          "display_copy": "Bear 的恐懼不是被拒絕\n而是根本沒有勇氣開口\n\n現實裡很多人也一樣——\n在 app 上聊幾個月，就是不見面\n因為【只要不見面，幻想就不會破滅】\n\nLava 只做一件事：\n讓對話直接變成一個時間地點",
+          "display_copy": "Bear 的恐懼不是被拒絕\n而是根本沒有勇氣開口\n\n現實裡很多人也一樣：在 app 上聊幾個月，就是不見面\n因為【只要不見面，幻想就不會破滅】\n\nLava 只做一件事：\n讓對話直接變成一個時間地點",
           "default_cid": "a"
         },
         {
@@ -12255,7 +13125,7 @@
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-7.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-7.jpg",
           "heading": "你怎麼知道自己的喜歡，有沒有越線？",
-          "display_copy": "Dorothy Tennov 的自我檢測：\n\n你對他的思念是不是【非自願的】？\n不想出現，卻自動出現？\n\n你把他的每個細節都記在腦子裡？\n情緒完全跟著他的反應走？\n\n迷戀本身不是罪——\n問題是你有沒有把它變成\n【控制對方的正當理由】\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
+          "display_copy": "Dorothy Tennov 的自我檢測：\n\n你對他的思念是不是【非自願的】？\n不想出現，卻自動出現？\n\n你把他的每個細節都記在腦子裡？\n情緒完全跟著他的反應走？\n\n迷戀本身不是罪：問題是你有沒有把它變成\n【控制對方的正當理由】\n\n資料來源：Tennov, D. (1979). Love and Limerence. Stein and Day.",
           "default_cid": "a"
         },
         {
@@ -12274,7 +13144,7 @@
           "final_src": "assets/20260826-愛你致死不渝爛番茄永遠愛/final/slide-8.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260826-%E6%84%9B%E4%BD%A0%E8%87%B4%E6%AD%BB%E4%B8%8D%E6%B8%9D%E7%88%9B%E7%95%AA%E8%8C%84%E6%B0%B8%E9%81%A0%E6%84%9B/slide-8.jpg",
           "heading": "Lava 相信：真正的相遇，是帶著不確定去見面",
-          "display_copy": "2024 年台灣家暴通報【17.9 萬件】\n親密關係暴力占其中一半，逾 8.5 萬件\n受暴者平均隱忍【4.2 年】才通報\n\n因為她一直相信：\n「他只是太愛我了」\n\nLava 不想讓 app 成為幻想的容器——\n我們讓人見面\n\n資料來源：衛生福利部保護服務司，2024 年家庭暴力事件通報統計；林明仁，台大經濟學系",
+          "display_copy": "2024 年台灣家暴通報【17.9 萬件】\n親密關係暴力占其中一半，逾 8.5 萬件\n受暴者平均隱忍【4.2 年】才通報\n\n因為她一直相信：\n「他只是太愛我了」\n\nLava 不想讓 app 成為幻想的容器：我們讓人見面\n\n資料來源：衛生福利部保護服務司，2024 年家庭暴力事件通報統計；林明仁，台大經濟學系",
           "default_cid": "a"
         },
         {
@@ -12345,7 +13215,7 @@
         }
       ],
       "writer_model": "claude-sonnet-4-6",
-      "rendered_at": "2026-09-01T19:17:17+08:00",
+      "rendered_at": "2026-09-01T19:21:58+08:00",
       "candidates_since": "2026-09-01T19:17:44+08:00",
       "image_credits": [
         "第 1 張：《Obsession》劇照，版權屬原權利方",
@@ -12357,662 +13227,18 @@
         "第 7 張：《Little Fires Everywhere》劇照，版權屬原權利方",
         "第 8 張：（Google 圖片）（截圖引用）"
       ],
-      "copy_choice": "claude"
-    },
-    {
-      "id": "20260824-StanTatkin說你",
-      "topic": "Stan Tatkin 說：你以為「找到對的人」就不用努力——但神經科學說，愛情是一項需要每天練習的技能",
-      "version": 2,
-      "status": "awaiting_review",
-      "clickup_task_id": "86eyknz01",
-      "created_at": null,
-      "caption": "那場架還沒開始，你的身體早就備戰，心跳加速、肩膀緊繃、嘴裡冒出一句連自己都沒預料到的話。\n\n這不是你們不合適，是你的神經系統還沒學會把對方辨識為「安全的人」。\n臨床心理學家 Stan Tatkin 說，大腦優先為生存設計，不是為愛設計的，而這，是可以改變的。\n\n你的大腦不是靠文字訊息學會信任一個人的，它靠的是眼神、聲音的抑揚頓挫、對方離你多近的體感，以及你們共同在場的那些不完美片刻。\n神經科學研究指出，催產素、多巴胺等連結感的神經生物學機制，在真實的面對面互動中被啟動的強度遠高於數位溝通。\nTatkin 說，大腦把對方的臉、聲音、觸感登錄為安全信號，這件事無法靠文字訊息完成。\n這也是 Lava 從一開始就選擇「線下優先」的原因，不是反科技，是因為大腦就是這樣運作的。\n\n#交友軟體 #約會 #愛情 #依附理論 #神經科學 #關係經營 #Lava交友 #不聊天的交友軟體 #StanTatkin #WiredForLove #線下約會 #安全依附 #台灣交友 #感情心理學 #伴侶關係",
-      "topic_type": "A-知識型",
-      "slides": [
-        {
-          "n": 1,
-          "role": "Hook",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-1a.webp",
-              "kind": "still",
-              "source_label": "Amazon 書籍頁（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-1b.webp",
-              "kind": "still",
-              "source_label": "a-mood1dd71",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-1c.webp",
-              "kind": "still",
-              "source_label": "組圖：Amazon 書籍頁；YouTube TEDxKC 官方頻道",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Amazon 書籍頁（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-1e.webp",
-              "kind": "still",
-              "source_label": "c-moodc38b6",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-1f.webp",
-              "kind": "still",
-              "source_label": "Wiredfor Love Stan Tatkin",
-              "source_kind": "OV"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-1g.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-StanTatkin說你/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-StanTatkin說你/slide-1i.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-StanTatkin說你/slide-1j.webp",
-              "kind": "still",
-              "source_label": "Marriage Story",
-              "low_q": true
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260824-StanTatkin說你/slide-1k.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine",
-              "low_q": true
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260824-StanTatkin說你/slide-1l.webp",
-              "kind": "still",
-              "source_label": "Blue Valentine",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-1.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-1.jpg",
-          "heading": "吵架前，你的大腦已經先輸了",
-          "display_copy": "〖吵架前，你的大腦已經先輸了〗\n\n那場架還沒開始\n你的身體早就備戰了。\n\n心跳加速、肩膀緊繃\n嘴裡冒出一句連自己都沒預料到的話。\n\n不是你們不合適——\n是你的神經系統還不認識他。\n\n大腦優先為生存設計，\n不是為愛設計的。\n但這件事，可以改變。",
-          "default_cid": "a"
-        },
-        {
-          "n": 2,
-          "role": "共感場景",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-2a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-2b.webp",
-              "kind": "still",
-              "source_label": "a-moodb9fba",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-2c.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-2d.webp",
-              "kind": "still",
-              "source_label": "b-moodc7b70",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-2e.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-2f.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-2g.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-StanTatkin說你/slide-2h.webp",
-              "kind": "still",
-              "source_label": "Marriage Story",
-              "low_q": true
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-StanTatkin說你/slide-2i.webp",
-              "kind": "still",
-              "source_label": "Fleabag",
-              "low_q": true
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-StanTatkin說你/slide-2j.webp",
-              "kind": "still",
-              "source_label": "Fleabag",
-              "low_q": true
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260824-StanTatkin說你/slide-2k.webp",
-              "kind": "still",
-              "source_label": "Fleabag",
-              "low_q": true
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260824-StanTatkin說你/slide-2l.webp",
-              "kind": "still",
-              "source_label": "A Separation",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-2.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-2.jpg",
-          "heading": "那個「無緣無故的煩躁」其實有原因",
-          "display_copy": "他只是把杯子放錯地方\n你卻突然很想哭。\n\n她只是回了一個「哦」\n你卻開始反覆回放她的語氣。\n\n不是你太敏感——\n是你的大腦把對方的小動作\n讀成了【威脅信號】。\n\nPACT 模型說：\n小衝突感覺像大威脅\n是因為你們的神經系統\n還在學習調節彼此。\n\n這不是性格問題，是生物問題。",
-          "default_cid": "a"
-        },
-        {
-          "n": 3,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-3a.webp",
-              "kind": "still",
-              "source_label": "YouTube TEDxKC 官方頻道",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-3.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-3.jpg",
-          "heading": "杏仁核比你更快開口",
-          "display_copy": "你以為你在「冷靜思考」\n但杏仁核早就出手了。\n\n在你決定「算了別吵」之前——\n心跳已經加速\n肌肉已經備戰\n這場衝突【在你開口前就開始了】。\n\nTatkin：\n我們感到不安全時\n會在反思之前就先反應——\n對象正好是我們最在乎的人。\n\n資料來源：Feinstein JS et al. (2011), Current Biology — amygdala causal role in responding to imminent danger. PubMed ID: 21390292",
-          "default_cid": "a"
-        },
-        {
-          "n": 4,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-4a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-4b.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-4c.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Past Lives"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-4e.webp",
-              "kind": "still",
-              "source_label": "Past Lives"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-4f.webp",
-              "kind": "still",
-              "source_label": "Past Lives"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-4g.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-4.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-4.jpg",
-          "heading": "焦慮型依附的神經特徵",
-          "display_copy": "Vrticka 等人 2012 年研究發現：\n焦慮型依附的人\n大腦「理性煞車」\n對「情緒油門」的控制力\n【顯著更弱】。\n\n為什麼在最親近的人面前\n反而最容易失控？\n\n因為親密關係本身\n就是高喚醒狀態——\n你的神經系統一直在高速運轉。\n這不是你的錯，是你大腦的設計。\n\n資料來源：Vrticka P et al. (2012), Social Cognitive and Affective Neuroscience, Vol. 7(3)",
-          "default_cid": "a"
-        },
-        {
-          "n": 5,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-5a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-5b.webp",
-              "kind": "still",
-              "source_label": "a-bookfe3de",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-5c.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-5d.webp",
-              "kind": "still",
-              "source_label": "b-book189b0",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-5e.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Call Me By Your Name"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-5g.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-StanTatkin說你/slide-5h.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-StanTatkin說你/slide-5i.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-StanTatkin說你/slide-5j.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260824-StanTatkin說你/slide-5k.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260824-StanTatkin說你/slide-5l.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-5.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-5.jpg",
-          "heading": "愛不是找到的，是練出來的",
-          "display_copy": "Stan Tatkin 在《Wired for Love》裡說：\n伴侶是彼此的\n【生物存活單位】。\n\n關係不是「找到對的人就自動運作」——\n而是兩個神經系統\n學習把對方辨識為「安全」\n的過程。\n\n大腦透過一次次親身接觸\n把對方的臉、聲音、觸感\n登錄為安全信號。\n\n這需要面對面，反覆地練。\n\n資料來源：Tatkin S. (2012). Wired for Love. New Harbinger Publications.",
-          "default_cid": "a"
-        },
-        {
-          "n": 6,
-          "role": "品牌立場",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-6a.webp",
-              "kind": "still",
-              "source_label": "a-mood17b9c",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-6b.webp",
-              "kind": "still",
-              "source_label": "b-mood36cbd",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-6c.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-6d.webp",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-6e.webp",
-              "kind": "still",
-              "source_label": "Normal People"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-6f.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-6g.webp",
-              "kind": "still",
-              "source_label": "Before Sunrise"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-StanTatkin說你/slide-6h.webp",
-              "kind": "still",
-              "source_label": "Normal People",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-6.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-6.jpg",
-          "heading": "線上聊再久，神經系統不買單",
-          "display_copy": "聊再多訊息\n你的神經系統都不買單。\n\n大腦靠的是：\n眼神、聲音的溫度\n對方離你多近的體感\n和你們共同在場的那些片刻\n——來學習【把對方辨識為安全】。\n\n催產素、多巴胺這些連結機制\n在面對面互動中啟動的強度\n遠高於數位溝通。\n\nLava 選擇線下優先\n不是反科技\n是因為大腦就是這樣運作的。",
-          "default_cid": "a"
-        },
-        {
-          "n": 7,
-          "role": "知識解釋",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-7a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-7b.webp",
-              "kind": "still",
-              "source_label": "a-mood4ff93",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-7c.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-7d.webp",
-              "kind": "still",
-              "source_label": "b-moodd4ab0",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-7e.webp",
-              "kind": "still",
-              "source_label": "My Brilliant Friend"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-7f.webp",
-              "kind": "still",
-              "source_label": "My Brilliant Friend"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-7g.webp",
-              "kind": "still",
-              "source_label": "My Brilliant Friend"
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-7.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-7.jpg",
-          "heading": "Anchor、Island、Wave：你是哪一種？",
-          "display_copy": "你是哪一種？\n\n⚓ Anchor 錨型 — 安全依附\n🏝 Island 島型 — 迴避型\n🌊 Wave 浪型 — 焦慮型\n\nTatkin 說：\n沒有哪一型是壞的——\n每一種都是你從成長經驗中\n發展出來的生存策略。\n\n問題從來不是你是哪一型——\n而是你有沒有讓對方的神經系統\n【學會你是安全的】。\n\n任何組合，都可以建立安全感。",
-          "default_cid": "a"
-        },
-        {
-          "n": 8,
-          "role": "應用/怎麼做",
-          "candidates": [
-            {
-              "cid": "a",
-              "src": "assets/20260824-StanTatkin說你/slide-8a.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-StanTatkin說你/slide-8b.webp",
-              "kind": "still",
-              "source_label": "a-moodeba66",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-StanTatkin說你/slide-8c.webp",
-              "kind": "still",
-              "source_label": "（Google 圖片）",
-              "source_kind": "SHOT",
-              "source_engine": "apify"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-StanTatkin說你/slide-8d.webp",
-              "kind": "still",
-              "source_label": "b-mood1e905",
-              "source_kind": "SHOT",
-              "source_engine": "shot"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-StanTatkin說你/slide-8e.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-StanTatkin說你/slide-8f.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-StanTatkin說你/slide-8g.webp",
-              "kind": "still",
-              "source_label": "Reply1988"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-StanTatkin說你/slide-8h.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
-            },
-            {
-              "cid": "i",
-              "src": "assets/20260824-StanTatkin說你/slide-8i.webp",
-              "kind": "still",
-              "source_label": "Our Times"
-            },
-            {
-              "cid": "j",
-              "src": "assets/20260824-StanTatkin說你/slide-8j.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris",
-              "low_q": true
-            },
-            {
-              "cid": "k",
-              "src": "assets/20260824-StanTatkin說你/slide-8k.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris",
-              "low_q": true
-            },
-            {
-              "cid": "l",
-              "src": "assets/20260824-StanTatkin說你/slide-8l.webp",
-              "kind": "still",
-              "source_label": "About Time",
-              "low_q": true
-            }
-          ],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-8.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-8.jpg",
-          "heading": "把對方「登錄」進你大腦的安全清單",
-          "display_copy": "把對方「登錄」進你大腦的安全清單\n——Tatkin 說，這需要每天練習：\n\n👁 重聚時，給一個真實的眼神接觸\n🌬 爭吵前，先深呼吸三次\n　　讓前額葉有機會介入\n📵 【重要的情緒，不要用訊息處理】\n　　改約一次面對面\n\n伴侶泡泡（couple bubble）\n不是浪漫的隱喻——\n是有神經生物學基礎的日常練習。\n\n重複。然後再重複。\n這就是你們建立安全感的方式。",
-          "default_cid": "a"
-        },
-        {
-          "n": 9,
-          "role": "CTA",
-          "candidates": [],
-          "final_src": "assets/20260824-StanTatkin說你/final/slide-9.webp",
-          "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-StanTatkin%E8%AA%AA%E4%BD%A0/slide-9.jpg",
-          "heading": "CTA 公版",
-          "display_copy": "CTA 公版"
-        }
-      ],
-      "facts": [
-        {
-          "claim": "Stan Tatkin 是 PACT（Psychobiological Approach to Couple Therapy）的創立者，臨床心理學博士（PsyD）兼婚姻家庭治療師（MFT）",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Stan Tatkin, PsyD, MFT, is a clinician, researcher, teacher, and developer of A Psychobiological Approach to Couple Therapy (PACT)."
-        },
-        {
-          "claim": "Tatkin 於 2010 年與妻子 Tracey Boldemann-Tatkin 博士共同創立 PACT Institute",
-          "source": "https://www.pactinstitute.com/about",
-          "quote": "The PACT Institute was founded in 2010 by Stan Tatkin, PsyD, MFT and Tracey Boldemann-Tatkin, PhD."
-        },
-        {
-          "claim": "Tatkin 兼任 UCLA David Geffen School of Medicine 的助理臨床教授",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "He is an assistant clinical professor at UCLA David Geffen School of Medicine."
-        },
-        {
-          "claim": "《Wired for Love》由 New Harbinger Publications 於 2012 年出版",
-          "source": "https://www.newharbinger.com/9781608820580/wired-for-love/",
-          "quote": "Wired for Love: How Understanding Your Partner's Brain and Attachment Style Can Help You Defuse Conflict and Build a Secure Relationship. New Harbinger Publications, 2012."
-        },
-        {
-          "claim": "《Wired for Love》已售出超過 170,000 冊",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Wired for Love has sold over 170,000 copies."
-        },
-        {
-          "claim": "Tatkin 的 TEDx 演講累計觀看人次已超過 170 萬",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "His TEDx talk has been viewed over 1.7 million times."
-        },
-        {
-          "claim": "2012 年 Pascal Vrticka 等人的研究發現，焦慮型依附個體在社會評估任務中，前額葉皮質與杏仁核之間的功能性連結顯著降低",
-          "source": "https://academic.oup.com/scan/article/7/3/290/1573643",
-          "quote": "Anxiously attached individuals showed reduced functional connectivity between the prefrontal cortex and the amygdala during social evaluation tasks."
-        },
-        {
-          "claim": "人類杏仁核病變會損害威脅優先處理能力，提供了杏仁核對回應迫在眉睫的危險具有因果角色的首個直接證據",
-          "source": "https://pubmed.ncbi.nlm.nih.gov/21390292/",
-          "quote": "Patients with bilateral amygdala damage failed to show the normal threat-priority effect, providing the first direct evidence for a causal role of the amygdala in responding to imminent danger."
-        },
-        {
-          "claim": "伴侶是彼此的「生物存活單位（biological survival unit）」",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Stan Tatkin describes couples as a biological survival unit — each person's primary attachment figure and the one they can always count on."
-        },
-        {
-          "claim": "Tatkin 使用 Anchor（錨型）、Island（島型）、Wave（浪型）三個標籤描述依附風格，不將任何一種類型描繪為有缺陷",
-          "source": "https://www.pactinstitute.com/stan-tatkin",
-          "quote": "Tatkin describes three attachment styles — Anchor, Island, and Wave — and emphasizes that no type is inherently flawed; each develops from personal history and can thrive in relationship with the right understanding."
-        }
-      ],
-      "writer_model": "claude-sonnet-4-6",
-      "candidates_since": "2026-09-01T19:19:51+08:00"
+      "copy_choice": "claude",
+      "render_src_hash": {
+        "1": "baf4be5dd2ba",
+        "2": "3609481e91a3",
+        "3": "c37d469013e1",
+        "4": "9bb9b064d393",
+        "5": "b4e95a2f1ffb",
+        "6": "49de5099f53d",
+        "7": "91cfd6bc6294",
+        "8": "0d5cc2c33d17",
+        "9": "9cb0c7260332"
+      }
     }
   ]
 }
