@@ -1,14 +1,13 @@
 {
- "ts": "2026-09-01T18:34:27+08:00",
+ "ts": "2026-09-01T18:50:02+08:00",
  "drive": true,
  "rendered": 0,
  "ingested": 0,
  "typography_ok": true,
  "errors": [
-  "[09-01 18:30]   ✗ s5 https://greatergood.berkeley.edu/images/uploads/Algoe-Ga（greatergood.berkeley.edu:截圖失敗）",
-  "[09-01 18:30]   ✗ s5 https://www.tandfonline.com/doi/full/10.1080/15213269.20（tandfonline.com:白頁牆 98%）",
-  "[09-01 18:33] 文案🔴 86eyrdm6u                        {'破折號': 3, '赦免式安慰': 1, '圖上印網址': 2, '圖上單行過長': 5}",
-  "[09-01 18:34] 事實⚠ 86eyrz3fb                        宣稱 2 項，問題 1 項",
-  "[09-01 18:34] 事實🔴 86eyrz3f9                        宣稱 3 項，問題 2 項"
+  "[09-01 18:45]   ✗ s5 https://greatergood.berkeley.edu/images/uploads/Algoe-Ga（greatergood.berkeley.edu:截圖失敗）",
+  "[09-01 18:49] 文案🔴 86eyrdm6u                        {'破折號': 3, '赦免式安慰': 1, '圖上印網址': 2, '圖上單行過長': 5}",
+  "[09-01 18:50] 事實⚠ 86eyrz3fb                        宣稱 2 項，問題 1 項",
+  "[09-01 18:50] 事實🔴 86eyrz3f9                        宣稱 3 項，問題 2 項"
  ]
 }
