@@ -570,3 +570,20 @@
 {"ts": "2026-09-02T00:19:23+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-HometownChaChaCha-4.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
 {"ts": "2026-09-02T00:19:23+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-EternalSunshineoftheSpotlessMind-1.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
 {"ts": "2026-09-02T00:19:24+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-EternalSunshineoftheSpotlessMind-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:46+08:00", "post_id": "20260824-AnxiousAttac", "slide": 1, "file": "slide1-MarriageStory-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.17}}
+{"ts": "2026-09-02T00:40:47+08:00", "post_id": "20260824-AnxiousAttac", "slide": 1, "file": "slide1-CrazyExGirlfriend-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:47+08:00", "post_id": "20260824-AnxiousAttac", "slide": 1, "file": "slide1-CrazyExGirlfriend-4.jpg", "reason": "upscale_reject", "metrics": {"upscale": 3.39}}
+{"ts": "2026-09-02T00:40:47+08:00", "post_id": "20260824-AnxiousAttac", "slide": 1, "file": "slide1-CrazyExGirlfriend-2.jpg", "reason": "upscale_reject", "metrics": {"upscale": 10.84}}
+{"ts": "2026-09-02T00:40:49+08:00", "post_id": "20260824-AnxiousAttac", "slide": 2, "file": "slide2-ASeparation-1.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:50+08:00", "post_id": "20260824-AnxiousAttac", "slide": 2, "file": "slide2-ASeparation-2.jpg", "reason": "upscale_reject", "metrics": {"upscale": 3.39}}
+{"ts": "2026-09-02T00:40:53+08:00", "post_id": "20260824-AnxiousAttac", "slide": 4, "file": "slide4-BecauseThisIsMyFirstLife-4.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:53+08:00", "post_id": "20260824-AnxiousAttac", "slide": 4, "file": "slide4-OneDay-1.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:54+08:00", "post_id": "20260824-AnxiousAttac", "slide": 4, "file": "slide4-OneDay-2.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:54+08:00", "post_id": "20260824-AnxiousAttac", "slide": 4, "file": "slide4-OneDay-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:57+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-HometownChaChaCha-1.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:57+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-HometownChaChaCha-1.jpg", "reason": "over_compressed", "metrics": {"w": 1920, "h": 1080, "bytes": 74431, "bpp": 0.0359}}
+{"ts": "2026-09-02T00:40:57+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-HometownChaChaCha-2.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:57+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-HometownChaChaCha-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:58+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-HometownChaChaCha-4.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:58+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-EternalSunshineoftheSpotlessMind-1.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
+{"ts": "2026-09-02T00:40:58+08:00", "post_id": "20260824-AnxiousAttac", "slide": 5, "file": "slide5-EternalSunshineoftheSpotlessMind-3.jpg", "reason": "upscale_soft", "metrics": {"upscale": 2.26}}
