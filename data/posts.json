@@ -5730,41 +5730,47 @@
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1a.webp",
               "kind": "still",
               "source_label": "a-mood09e98",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
               "cid": "b",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1b.webp",
               "kind": "still",
               "source_label": "組圖：UC San Diego Today",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-moodcdeab",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1e.webp",
-              "kind": "still",
-              "source_label": "Midnightin Paris"
+              "source_kind": "SHOT",
+              "curator_score": 4
             },
             {
               "cid": "d",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1d.webp",
               "kind": "still",
               "source_label": "Midnightin Paris",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 3
             },
             {
               "cid": "f",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1f.webp",
               "kind": "still",
               "source_label": "Midnightin Paris",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 2
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1e.webp",
+              "kind": "still",
+              "source_label": "Midnightin Paris",
+              "curator_score": 2
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-moodcdeab",
+              "source_kind": "SHOT",
+              "curator_score": 1
             }
           ],
           "final_src": null,
@@ -5781,32 +5787,37 @@
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2a.webp",
               "kind": "still",
               "source_label": "a-mood5f74f",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
               "cid": "b",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2b.webp",
               "kind": "still",
               "source_label": "b-mood24a30",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 6
             },
             {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2c.webp",
               "kind": "still",
-              "source_label": "Reply1988"
+              "source_label": "Reply1988",
+              "curator_score": 3
             },
             {
               "cid": "d",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2d.webp",
               "kind": "still",
-              "source_label": "Reply1988"
+              "source_label": "Reply1988",
+              "curator_score": 3
             },
             {
               "cid": "e",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-2e.webp",
               "kind": "still",
-              "source_label": "Reply1988"
+              "source_label": "Reply1988",
+              "curator_score": 2
             }
           ],
           "final_src": null,
@@ -5836,24 +5847,27 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Euphoria"
-            },
-            {
               "cid": "a",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4a.webp",
               "kind": "still",
               "source_label": "Euphoria",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 6
             },
             {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4c.webp",
               "kind": "still",
               "source_label": "Euphoria",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Euphoria",
+              "curator_score": 3
             }
           ],
           "final_src": null,
@@ -5870,33 +5884,38 @@
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5a.webp",
               "kind": "still",
               "source_label": "a-mood3a803",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
               "cid": "b",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5b.webp",
               "kind": "still",
               "source_label": "b-mooda7e6c",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 4
             },
             {
               "cid": "e",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5e.webp",
               "kind": "still",
-              "source_label": "Our Times"
+              "source_label": "Our Times",
+              "curator_score": 2
             },
             {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5c.webp",
               "kind": "still",
-              "source_label": "Our Times"
+              "source_label": "Our Times",
+              "curator_score": 2
             },
             {
               "cid": "d",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-5d.webp",
               "kind": "still",
               "source_label": "Our Times",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 1
             }
           ],
           "final_src": null,
@@ -5913,28 +5932,32 @@
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6a.webp",
               "kind": "still",
               "source_label": "a-mood19a83",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
-              "kind": "still",
-              "source_label": "Moveto Heaven",
-              "low_q": true
+              "source_kind": "SHOT",
+              "curator_score": 8
             },
             {
               "cid": "c",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6c.webp",
               "kind": "still",
               "source_label": "Moveto Heaven",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 5
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6b.webp",
+              "kind": "still",
+              "source_label": "Moveto Heaven",
+              "low_q": true,
+              "curator_score": 3
             },
             {
               "cid": "d",
               "src": "assets/20260824-重陽節今天熱搜但你知道孤/slide-6d.webp",
               "kind": "still",
               "source_label": "Moveto Heaven",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 2
             }
           ],
           "final_src": null,
@@ -6297,7 +6320,8 @@
             "line": "「0 歲世代  Jeste 的研究顯示 這個年齡幾乎普遍承受著孤獨」沒有對應出處（研究引用）"
           }
         ]
-      }
+      },
+      "curated_at": "2026-09-01T19:03:28+08:00"
     },
     {
       "id": "20260826-愛你致死不渝爛番茄永遠愛",
