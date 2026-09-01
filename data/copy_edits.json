@@ -311,6 +311,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-09-01T15:07:19+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 7,
+          "field": "display_copy",
+          "original": "「找到安全型的人」\n不是關係的終點，\n是起點的起點。\n\n研究指出，即使兩個安全型的人在一起，\n也需要【刻意投入】才能持續深化親密感：自滿，是安全型關係最容易跌倒的地方。\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships",
+          "edited": "「找到安全型的人」\n不是關係的終點\n是起點的起點\n\n研究指出，即使兩個安全型的人在一起\n也需要【刻意投入】才能持續深化親密感：自滿，是安全型關係最容易跌倒的地方\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
