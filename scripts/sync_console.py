@@ -550,6 +550,19 @@ def _build_and_write(m):
         if post.get("status") == "approved" and not any(s.get("final_src") for s in slides):
             post["status"] = "awaiting_review"
             sys.stderr.write("  ↩ 候選圖已更新，%s 由 approved 退回待審（請重新選圖核准）\n" % pid)
+    # 文案編輯要在重建之後補回〔2026-09-02 事故〕：重餵用稿檔重建整個貼文，
+    # 你在操控台改的貼文文案會被沖掉。實例：Laa 篇重排後 caption 只剩 hashtag，
+    # 正文整段消失——而 WF10 發佈讀的正是這個欄位，今晚就會照那樣發出去。
+    # 圖上文字已經有這層保護（渲染時注入 draft），caption 一直沒有。
+    try:
+        _ce = load("copy_edits.json").get("edits", [])
+        _m = _latest_copy_edits(pid, _ce, version=post.get("copy_choice"))
+        _cap = _m.get((0, "caption"))
+        if _cap and post.get("caption") != _cap:
+            sys.stderr.write("  ↩ 貼文文案以操控台的修改為準（重建時會被稿檔覆蓋）\n")
+            post["caption"] = _cap
+    except Exception:
+        pass
     posts[:] = [p for p in posts if p["id"] != pid]  # upsert
     posts.append(post)
     save("posts.json", d)
@@ -1056,10 +1069,17 @@ def render_approved(args):
         # 預覽與成品同一套 object-position 數學，拖到哪裁到哪。
         _crops = {str(s2.get("n")): s2.get("crop_focus")
                   for s2 in p.get("slides", []) if s2.get("crop_focus")}
+        # 版面覆寫〔2026-09-02〕：bg（cream/dark）與 product_layout 由操控台決定時，
+        # 也要注入 draft——排版讀的是 Drive 稿檔，只改 posts.json 會完全沒有效果
+        # （與破折號復活同一個「寫錯層」模式，這是第三次）。
+        _lay = {str(s2.get("n")): {k: s2[k] for k in ("bg", "product_layout") if s2.get(k)}
+                for s2 in p.get("slides", [])}
         for s in draft.get("slides", []):
             _cfv = _crops.get(str(s.get("index")))
             if _cfv:
                 s["crop_focus"] = _cfv
+            for k, v in (_lay.get(str(s.get("index"))) or {}).items():
+                s[k] = v
             for field in ("heading", "display_copy"):
                 key = (int(s.get("index", -1)), field)
                 if key in edits:
