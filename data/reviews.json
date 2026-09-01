@@ -880,6 +880,27 @@
       "scope": null,
       "feedback": "過時",
       "consumed": false
+    },
+    {
+      "id": "R-2026-09-01T06-49-",
+      "post_id": "20260824-StanTatkin說你",
+      "version": 2,
+      "ts": "2026-09-01T14:49:37+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "j",
+        "2": "f",
+        "3": "a",
+        "4": "d",
+        "5": "b",
+        "6": "a",
+        "7": "b",
+        "8": "f"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": null
     }
   ]
 }
