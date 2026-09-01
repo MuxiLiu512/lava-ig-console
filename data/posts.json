@@ -3668,102 +3668,114 @@
           "role": "Hook",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-1a.webp",
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-1h.webp",
               "kind": "still",
-              "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-1b.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-1c.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
-              "source_kind": "SHOT"
+              "source_label": "Marriage Story",
+              "curator_score": 8
             },
             {
               "cid": "i",
               "src": "assets/20260824-AnxiousAttac/slide-1i.webp",
               "kind": "still",
-              "source_label": "Marriage Story"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Crazy Ex Girlfriend"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-1h.webp",
-              "kind": "still",
-              "source_label": "Marriage Story"
+              "source_label": "Marriage Story",
+              "curator_score": 6
             },
             {
               "cid": "j",
               "src": "assets/20260824-AnxiousAttac/slide-1j.webp",
               "kind": "still",
               "source_label": "Marriage Story",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 5
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-1b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT",
+              "curator_score": 5
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-1c.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」",
+              "source_kind": "SHOT",
+              "curator_score": 4
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Crazy Ex Girlfriend",
+              "curator_score": 4
             },
             {
               "cid": "f",
               "src": "assets/20260824-AnxiousAttac/slide-1f.webp",
               "kind": "still",
               "source_label": "Crazy Ex Girlfriend",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 3
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-1a.webp",
+              "kind": "still",
+              "source_label": "組圖：Dr. Amir Levine 訪談／YouTube「You've Been Using Attachment Theory Wrong」；Dr. Amir Levine／「How Attachment Works」（YouTube）；《Attached》Amir Levine & Rachel Heller 書封／Open Library；Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-1.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-1.jpg",
           "heading": "兩個安全型，在一起：還是出問題了",
           "display_copy": "兩個安全型，\n在一起：還是出問題了。\n\n測驗都過了，\n怎麼還是有一堵\n摸不到的牆？",
-          "default_cid": "a"
+          "default_cid": "h"
         },
         {
           "n": 2,
           "role": "共感場景",
           "candidates": [
             {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-2c.webp",
+              "kind": "still",
+              "source_label": "A Separation",
+              "low_q": true,
+              "curator_score": 7
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-2e.webp",
+              "kind": "still",
+              "source_label": "A Separation",
+              "curator_score": 5
+            },
+            {
               "cid": "a",
               "src": "assets/20260824-AnxiousAttac/slide-2a.webp",
               "kind": "still",
               "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 2
             },
             {
               "cid": "b",
               "src": "assets/20260824-AnxiousAttac/slide-2b.webp",
               "kind": "still",
               "source_label": "Dr. Amir Levine／「How Attachment Works」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-2e.webp",
-              "kind": "still",
-              "source_label": "A Separation"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-2c.webp",
-              "kind": "still",
-              "source_label": "A Separation",
-              "low_q": true
+              "source_kind": "SHOT",
+              "curator_score": 1
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-2.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-2.jpg",
           "heading": "「我們都很穩。但我們還是沒辦法好好說話」",
           "display_copy": "測驗結果都是【安全型】，\n可是那個週五晚上，\n你說「我需要抱一下」，\n他把燈關掉、拿起手機：沒有說錯什麼，\n只是沒有轉過來。\n\n兩個人都安全，\n兩個人都不知道哪裡出了問題。",
-          "default_cid": "a"
+          "default_cid": "c"
         },
         {
           "n": 3,
@@ -3788,219 +3800,245 @@
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-4a.webp",
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
               "kind": "still",
-              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-4b.webp",
-              "kind": "still",
-              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
-              "source_kind": "SHOT"
+              "source_label": "Because This Is My First Life",
+              "low_q": true,
+              "curator_score": 7
             },
             {
               "cid": "c",
               "src": "assets/20260824-AnxiousAttac/slide-4c.webp",
               "kind": "still",
-              "source_label": "Because This Is My First Life"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-4d.webp",
-              "kind": "still",
-              "source_label": "Because This Is My First Life"
+              "source_label": "Because This Is My First Life",
+              "curator_score": 6
             },
             {
               "cid": "e",
               "src": "assets/20260824-AnxiousAttac/slide-4e.webp",
               "kind": "still",
-              "source_label": "Because This Is My First Life"
+              "source_label": "Because This Is My First Life",
+              "curator_score": 6
             },
             {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-4f.webp",
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-4d.webp",
               "kind": "still",
               "source_label": "Because This Is My First Life",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/20260824-AnxiousAttac/slide-4g.webp",
-              "kind": "still",
-              "source_label": "One Day",
-              "low_q": true
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-4h.webp",
-              "kind": "still",
-              "source_label": "One Day",
-              "low_q": true
+              "curator_score": 5
             },
             {
               "cid": "i",
               "src": "assets/20260824-AnxiousAttac/slide-4i.webp",
               "kind": "still",
               "source_label": "One Day",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 5
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-4h.webp",
+              "kind": "still",
+              "source_label": "One Day",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "g",
+              "src": "assets/20260824-AnxiousAttac/slide-4g.webp",
+              "kind": "still",
+              "source_label": "One Day",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-4b.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-4a.webp",
+              "kind": "still",
+              "source_label": "Dr. Amir Levine／The Jordan Harbinger Show（YouTube）",
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-4.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-4.jpg",
           "heading": "「安全型」不是一個固定的到達點",
           "display_copy": "研究估計約【50～60%】的人是安全型。但安全型不是「抵達終點」，\n而是一種需要持續實踐的動態能力。\n\n安全型的人依然會受傷，\n差異在底層結構：\n他們相信這段關係能承受困難而不崩潰，\n但這份相信，也需要被不斷餵養。\n\n資料來源：HelpGuide helpguide.org/relationships/social-connection/attachment-and-adult-relationships；Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
-          "default_cid": "a"
+          "default_cid": "f"
         },
         {
           "n": 5,
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-5a.webp",
-              "kind": "still",
-              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-AnxiousAttac/slide-5b.webp",
-              "kind": "still",
-              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "h",
-              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Eternal Sunshineofthe Spotless Mind"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-5c.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-5d.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
-              "cid": "f",
-              "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Hometown Cha Cha Cha",
-              "low_q": true
-            },
-            {
               "cid": "g",
               "src": "assets/20260824-AnxiousAttac/slide-5g.webp",
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 8
             },
             {
               "cid": "i",
               "src": "assets/20260824-AnxiousAttac/slide-5i.webp",
               "kind": "still",
               "source_label": "Eternal Sunshineofthe Spotless Mind",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 7
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-5d.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true,
+              "curator_score": 6
+            },
+            {
+              "cid": "h",
+              "src": "assets/20260824-AnxiousAttac/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Eternal Sunshineofthe Spotless Mind",
+              "curator_score": 5
+            },
+            {
+              "cid": "f",
+              "src": "assets/20260824-AnxiousAttac/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-5e.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true,
+              "curator_score": 4
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-AnxiousAttac/slide-5b.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-5a.webp",
+              "kind": "still",
+              "source_label": "Amir Levine × Sabrina Zohar「Can You Change Your Attachment Style?」（YouTube）",
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-5c.webp",
+              "kind": "still",
+              "source_label": "Hometown Cha Cha Cha",
+              "low_q": true,
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-5.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-5.jpg",
           "heading": "「舒適」不等於「安全」：這是最常被混淆的一條線",
           "display_copy": "「低衝突」不等於「真實靠近」。\n\n舒適的關係可能感覺熟悉、沒什麼吵架，\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗，\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
-          "default_cid": "a"
+          "default_cid": "g"
         },
         {
           "n": 6,
           "role": "知識解釋",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-AnxiousAttac/slide-6a.webp",
-              "kind": "still",
-              "source_label": "© amirlevinemd.com",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "b",
               "src": "assets/20260824-AnxiousAttac/slide-6b.webp",
               "kind": "still",
               "source_label": "組圖：© amirlevinemd.com",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 5
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-AnxiousAttac/slide-6a.webp",
+              "kind": "still",
+              "source_label": "© amirlevinemd.com",
+              "source_kind": "SHOT",
+              "curator_score": 4
             },
             {
               "cid": "c",
               "src": "assets/20260824-AnxiousAttac/slide-6c.webp",
               "kind": "still",
               "source_label": "© amirlevinemd.com",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-6.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-6.jpg",
           "heading": "依附風格不是固定標籤：脈絡才是關鍵",
           "display_copy": "同一個人，對不同的關係\n可以有不同的依附表現：對朋友安全型、對伴侶焦慮型、對家人逃避型，\n這不是矛盾，而是依附本來就是\n對【關係歷史與當下脈絡】的動態回應。\n\n依附不是你的人格標籤，\n是你們之間那段歷史的產物。\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 7,
           "role": "品牌立場",
           "candidates": [
             {
+              "cid": "d",
+              "src": "assets/20260824-AnxiousAttac/slide-7d.webp",
+              "kind": "still",
+              "source_label": "Before Sunset",
+              "curator_score": 7
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
+              "kind": "still",
+              "source_label": "Before Sunset",
+              "curator_score": 6
+            },
+            {
+              "cid": "e",
+              "src": "assets/20260824-AnxiousAttac/slide-7e.webp",
+              "kind": "still",
+              "source_label": "Before Sunset",
+              "curator_score": 5
+            },
+            {
               "cid": "a",
               "src": "assets/20260824-AnxiousAttac/slide-7a.webp",
               "kind": "still",
               "source_label": "a-mood99d60",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 5
             },
             {
               "cid": "b",
               "src": "assets/20260824-AnxiousAttac/slide-7b.webp",
               "kind": "still",
               "source_label": "b-mood84276",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/20260824-AnxiousAttac/slide-7e.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-AnxiousAttac/slide-7d.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-AnxiousAttac/slide-7c.webp",
-              "kind": "still",
-              "source_label": "Before Sunset"
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-7.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-7.jpg",
           "heading": "安全感是動詞，不是名詞",
           "display_copy": "「找到安全型的人」\n不是關係的終點，\n是起點的起點。\n\n研究指出，即使兩個安全型的人在一起，\n也需要【刻意投入】才能持續深化親密感：自滿，是安全型關係最容易跌倒的地方。\n\n資料來源：Connected Couples connectedcouples.app/blog/attachment-styles-in-relationships",
-          "default_cid": "a"
+          "default_cid": "d"
         },
         {
           "n": 8,
@@ -4306,7 +4344,8 @@
         "pass": true,
         "counts": {},
         "issues": []
-      }
+      },
+      "curated_at": "2026-09-01T18:06:40+08:00"
     },
     {
       "id": "20260824-Rizz進了牛津詞典但r",
@@ -10530,12 +10569,12 @@
     },
     {
       "id": "86eyr1e0e",
-      "topic": "86eyr1e0e｜20260901-A24《開放性邀請》問了一個讓人說不出話的問題：你喜歡對方，還是你喜歡「有人喜歡你」這件事？",
+      "topic": "86eyr1e0e｜20260901-86eyr1e0e｜20260901-A24《開放性邀請》問了一個讓人說不出話的問題：你喜歡對方，還是你喜歡「有人喜歡你」這件事？",
       "version": 1,
       "status": "awaiting_review",
       "clickup_task_id": "86eyr1e0e",
       "created_at": null,
-      "caption": "A24 新片《開放性邀請》（2026）用一頓晚餐問了一個問題：你留在這段關係裡，是因為對方這個人，還是因為你需要那個位置不空著？\n\n心理學把這個現象叫做互惠好感效應，1966 年，Aronson 與 Worchel 就在實驗室裡驗證：光是知道「對方喜歡我」這件事，就足以製造出心動。\n兩件事長得太像，住在同一個感受裡，很難分清楚。\n\n交友軟體最容易發生的事，不是認識了一個人，而是認識了一個「和你聊天的感覺」。\n訊息裡的節奏、對方回應你的速度、那種被看見的感受，這些都很真實，但它們有時候比「對方這個人」更早出現在你的腦子裡。\nLava 從設計上就把流程往前推了一步：減少純文字的時間，讓你更早在現實裡判斷，你喜歡的，到底是誰。\n\n#交友軟體 #約會 #感情 #心理學 #A24 #開放性邀請 #TheInvite #關係 #戀愛心理 #自我認識 #互惠好感 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友",
+      "caption": "《Materialists》裡的女主角是職業配對師，幫人找到對的人，但她說不清楚自己愛的到底是那個人，還是「被選上」的感覺。\n\n這個問題輪到你，你能回答嗎？\n\n研究顯示，64.4% 的交友 App 受訪者表示，收到認同或讚美讓他們更頻繁使用 App；58.9% 表示拒絕與批評對自尊有負面影響。\n當「被選擇的感覺」成為使用動機，配對數本身就變成一種社交貨幣。\n很多人追求的不是約出來見面，而是「有人在等我回訊息」的存在感。\nLava 選擇只做一件事：讓兩個人真實出現在彼此面前，因為見面之後，那個問題才有辦法被回答。\n\n#交友軟體 #約會 #愛情心理學 #感情 #心理學 #Lava交友 #不聊天的交友軟體 #互惠喜歡效應 #戀愛 #線下約會 #台灣交友 #A24 #Materialists #感情觀 #自我認識",
       "topic_type": "A-知識型",
       "slides": [
         {
@@ -10546,34 +10585,41 @@
               "cid": "a",
               "src": "assets/86eyr1e0e/slide-1a.webp",
               "kind": "still",
-              "source_label": "（DuckDuckGo）",
-              "source_kind": "SHOT"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-1b.webp",
               "kind": "still",
-              "source_label": "組圖：© A24",
-              "source_kind": "SHOT"
+              "source_label": "（DuckDuckGo）",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
             },
             {
               "cid": "c",
               "src": "assets/86eyr1e0e/slide-1c.webp",
               "kind": "still",
-              "source_label": "（DuckDuckGo）",
-              "source_kind": "SHOT"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "d",
               "src": "assets/86eyr1e0e/slide-1d.webp",
               "kind": "still",
-              "source_label": "Materialists"
+              "source_label": "組圖：© A24",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
             },
             {
               "cid": "e",
               "src": "assets/86eyr1e0e/slide-1e.webp",
               "kind": "still",
-              "source_label": "Materialists"
+              "source_label": "（DuckDuckGo）",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
             },
             {
               "cid": "f",
@@ -10585,24 +10631,36 @@
               "cid": "g",
               "src": "assets/86eyr1e0e/slide-1g.webp",
               "kind": "still",
-              "source_label": "The Invite"
+              "source_label": "Materialists"
             },
             {
               "cid": "h",
               "src": "assets/86eyr1e0e/slide-1h.webp",
               "kind": "still",
-              "source_label": "The Invite"
+              "source_label": "Materialists"
             },
             {
               "cid": "i",
               "src": "assets/86eyr1e0e/slide-1i.webp",
               "kind": "still",
               "source_label": "The Invite"
+            },
+            {
+              "cid": "j",
+              "src": "assets/86eyr1e0e/slide-1j.webp",
+              "kind": "still",
+              "source_label": "The Invite"
+            },
+            {
+              "cid": "k",
+              "src": "assets/86eyr1e0e/slide-1k.webp",
+              "kind": "still",
+              "source_label": "The Invite"
             }
           ],
           "final_src": null,
-          "heading": "你愛上的，是他？還是那個讓你感覺被需要的感受？",
-          "display_copy": "A24《開放性邀請》（2026）\n用一頓晚餐問了一個問題：\n\n你留在這段關係裡，\n是因為對方這個人，\n還是因為【你需要那個位置不空著】？\n\n心理學家 Aronson 在 1966 年就發現：\n光是知道「對方喜歡我」，\n就足以在大腦裡製造出心動。\n這兩件事，住在同一個感受裡。",
+          "heading": "A24 新片問了一個讓人說不出話的問題",
+          "display_copy": "A24《Materialists》\n問了一個讓人說不出話的問題：\n\n〖你喜歡對方，\n還是你喜歡「有人喜歡你」？〗\n\n女主角是職業配對師——\n她自己卻答不出來。",
           "default_cid": "a"
         },
         {
@@ -10614,28 +10672,48 @@
               "src": "assets/86eyr1e0e/slide-2a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-2b.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             }
           ],
           "final_src": null,
-          "heading": "那種心動，你有沒有想過從哪裡來？",
-          "display_copy": "對方傳來一個訊息，你看了三遍。\n那個感覺很好。但那個【「好」，究竟是關於他，\n還是關於你被在意這件事】？\n\n心理學研究發現，\n「對方先喜歡我」是人們最常提及的\n當初被吸引的原因之一。\n兩件事長得太像，平時住在同一個房間裡。",
+          "heading": "你記得那個心跳加速的瞬間嗎",
+          "display_copy": "對方傳來第一個訊息，\n你整天都在看手機——\n但坐在對面兩個小時，\n你卻說不清楚自己在期待什麼。\n\n那個【心跳加速】\n是因為喜歡他，\n還是因為【有人在等你回訊息】？\n\n很多人從來沒把這兩件事分開過。",
           "default_cid": "a"
         },
         {
           "n": 3,
           "role": "知識解釋",
-          "candidates": [],
+          "candidates": [
+            {
+              "cid": "a",
+              "src": "assets/86eyr1e0e/slide-3a.webp",
+              "kind": "still",
+              "source_label": "Wikipedia",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "b",
+              "src": "assets/86eyr1e0e/slide-3b.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            }
+          ],
           "final_src": null,
-          "heading": "「互惠好感效應」：你的心動，可能是被觸發的",
-          "display_copy": "1966 年，心理學家 Aronson 與 Worchel 做了一個實驗：\n讓陌生人對話後，\n偷偷告訴其中一方【「對方給你評分很高」】。\n\n結果：那個人對對方的好感，立刻上升。\n\n這是互惠好感效應最早的實驗室驗證之一：〖心動，有時候不是因為對方本身，\n而是因為你知道對方喜歡你〗。\n\n資料來源：Aronson & Worchel, 1966, Journal of Experimental Social Psychology"
+          "heading": "心理學給這個感覺取了一個名字",
+          "display_copy": "心理學家 Elliot Aronson 的實驗：\n\n讓陌生人兩兩對話後互相評分——\n只要得知對方喜歡自己，\n受試者對對方的好感就【顯著提高】\n不管之前有沒有感覺。\n\n這叫【互惠喜歡效應】\nReciprocal Liking\n\n觸動你的，是那個人本身，\n還是「有人看上我」的信號？\n\n資料來源：Wikipedia, Reciprocal Liking, https://en.wikipedia.org/wiki/Reciprocal_liking",
+          "default_cid": "a"
         },
         {
           "n": 4,
@@ -10646,14 +10724,23 @@
               "src": "assets/86eyr1e0e/slide-4a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-4b.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-4c.webp",
+              "kind": "still",
+              "source_label": "500Daysof Summer",
+              "low_q": true
             },
             {
               "cid": "d",
@@ -10661,18 +10748,11 @@
               "kind": "still",
               "source_label": "500Daysof Summer",
               "low_q": true
-            },
-            {
-              "cid": "e",
-              "src": "assets/86eyr1e0e/slide-4e.webp",
-              "kind": "still",
-              "source_label": "500Daysof Summer",
-              "low_q": true
             }
           ],
           "final_src": null,
-          "heading": "被喜歡本身就是一種獎賞",
-          "display_copy": "Montoya & Insko（2008）指出：\n被喜歡具有【「獎賞性」】：它驗證了你是值得被愛的這件事。\n\n大腦會把「他讓我感覺良好」\n誤讀成「我喜歡他這個人」。\n\n這是神經層面正常的情感機制：理解它，才能在心動時\n多一點空間分辨兩者的差異。\n\n資料來源：Montoya & Insko, 2008, Journal of Social and Personal Relationships",
+          "heading": "反直覺：被唯一選上，才有效",
+          "display_copy": "Eastwick 等人（2007）速配研究發現：\n\n被一個【誰都喜歡的人】喜歡——\n吸引力幾乎不增加。\n\n真正有效的是：\n〖「在所有人裡，他只選了你」〗\n\n「超級喜歡」比普通配對更讓人在意，\n原因就在這裡。\n\n資料來源：Psychology Today, Gwendolyn Seidman, https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction",
           "default_cid": "a"
         },
         {
@@ -10683,39 +10763,67 @@
               "cid": "a",
               "src": "assets/86eyr1e0e/slide-5a.webp",
               "kind": "still",
-              "source_label": "© A24",
-              "source_kind": "SHOT"
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-5b.webp",
               "kind": "still",
               "source_label": "© A24",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "c",
+              "src": "assets/86eyr1e0e/slide-5c.webp",
+              "kind": "still",
+              "source_label": "（Google 圖片）",
+              "source_kind": "SHOT",
+              "source_engine": "apify"
+            },
+            {
+              "cid": "d",
+              "src": "assets/86eyr1e0e/slide-5d.webp",
+              "kind": "still",
+              "source_label": "© A24",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyr1e0e/slide-5e.webp",
+              "kind": "still",
+              "source_label": "© A24",
+              "source_kind": "SHOT",
+              "source_engine": "shot"
             }
           ],
           "final_src": null,
-          "heading": "《開放性邀請》把這個問題放到婚姻裡",
-          "display_copy": "A24《開放性邀請》（2026）\n改編自西班牙導演 Cesc Gay 的 2021 年電影《Sentimental》。\nEdward Norton 飾演 Hawk、Penélope Cruz 飾演 Piña，\n兩人在一頓晚餐裡問了另一對夫妻一個問題：\n\n【你留在這裡，是為了對方，\n還是為了「有個人在那裡」這件事本身？】\n\n長期關係裡，時間會把這兩件事黏在一起，\n讓人更難分清楚。",
+          "heading": "人類有一個根本需求讓這件事更複雜",
+          "display_copy": "Baumeister & Leary（1995）\n《Psychological Bulletin》Vol.117\n\n人有一個根本需求：\n【建立並維持人際連結】\n且會主動抗拒連結的消失。\n\n這個需求強大到能製造幻覺——\n「被連結的感覺」\n在情緒上幾乎等同於\n「喜歡這個人」\n\n來源不同，感受一樣。\n\n資料來源：Baumeister & Leary (1995), Psychological Bulletin, Vol.117, p.497–529；Wikipedia, Reciprocal Liking, https://en.wikipedia.org/wiki/Reciprocal_liking",
           "default_cid": "a"
         },
         {
           "n": 6,
-          "role": "品牌立場",
+          "role": "品牌輕置入",
           "candidates": [
             {
               "cid": "a",
               "src": "assets/86eyr1e0e/slide-6a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-6b.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "c",
@@ -10740,8 +10848,8 @@
             }
           ],
           "final_src": null,
-          "heading": "文字的世界最容易讓人愛上「感受」而不是對方",
-          "display_copy": "交友軟體最容易讓人愛上的，\n往往不是一個人，\n而是【「和那個人聊天的感覺」】。\n\n訊息節奏、回應速度、被看見的感受：這些都很真實，\n但有時候比「對方這個人」更早出現在腦子裡。\n\nLava 把流程往前推一步：讓你更早在現實裡拿到答案：\n你喜歡的，到底是誰。",
+          "heading": "交友 App 讓這件事更容易混淆",
+          "display_copy": "研究發現，【64.4%】的交友 App 用戶\n表示收到認同讓他們更頻繁使用 App；\n【58.9%】表示拒絕對自尊有負面影響。\n\n當「被選擇」本身成為目的，\n「喜歡誰」這個問題就沒有意義了。\n\nLava 只做一件事：\n讓兩個人【真實出現在彼此面前】。\n那個問題，見了面才能回答。\n\n資料來源：Psychology Today, Gwendolyn Seidman, https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction",
           "default_cid": "a"
         },
         {
@@ -10753,20 +10861,23 @@
               "src": "assets/86eyr1e0e/slide-7a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-7b.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "c",
               "src": "assets/86eyr1e0e/slide-7c.webp",
               "kind": "still",
-              "source_label": "Her"
+              "source_label": "Her",
+              "low_q": true
             },
             {
               "cid": "d",
@@ -10784,8 +10895,8 @@
             }
           ],
           "final_src": null,
-          "heading": "一個問題，可以在下次心動的時候問自己",
-          "display_copy": "下次心動，先停一秒問自己一句話：\n\n【「如果對方突然不喜歡我了，\n我對他的感覺還在嗎？」】\n\n答案是「會消失大半」：代表驅動心動的，\n很可能是那個被愛的獎賞感，\n而不完全是對方本身的特質。\n\n這是大腦正常的情感機制，\n知道它的存在，判斷時就能多一點清醒。",
+          "heading": "怎麼開始分辨這兩件事",
+          "display_copy": "心理學家 Seidman 建議問自己三件事：\n\n① 如果對方明天不再主動——\n你難過的是【失去他】\n還是【失去被喜歡的感覺】？\n\n② 你有沒有在意過\n他這個人本身的想法與生活？\n\n③ 知道他同樣喜歡其他人，\n你的感覺會改變嗎？\n\n誠實回答，你通常就知道了。",
           "default_cid": "a"
         },
         {
@@ -10797,19 +10908,21 @@
               "src": "assets/86eyr1e0e/slide-8a.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             },
             {
               "cid": "b",
               "src": "assets/86eyr1e0e/slide-8b.webp",
               "kind": "still",
               "source_label": "（Google 圖片）",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "source_engine": "apify"
             }
           ],
           "final_src": null,
-          "heading": "Lava 相信：見面之前，你還不知道你喜歡的是誰",
-          "display_copy": "線上交流有它的位置；\n真正的判斷需要現實輸入。\n\n當你們在同一個空間裡，\n對話節奏、眼神、那頓飯點了什麼：這些才是你在認識那個人，\n\n〖而不是在認識一個\n由訊息構成的投影。〗\n\nLava，不聊天的交友軟體。",
+          "heading": "Lava 的立場",
+          "display_copy": "想被喜歡，是人類的根本需求。\n這不是缺陷。\n\n但如果你想知道\n「我喜歡的到底是誰」——\n\n【不是再多傳一百則訊息】\n不是繼續刷對方的限動。\n\n是出現在同一個空間裡，\n讓那個感覺被〖真實檢驗〗。\n\n見了面，你才知道答案。",
           "default_cid": "a"
         },
         {
@@ -10823,68 +10936,72 @@
       ],
       "facts": [
         {
-          "claim": "《開放性邀請》2026 年 1 月 24 日在日舞影展世界首映",
-          "source": "https://en.wikipedia.org/wiki/The_Invite",
-          "quote": "The film had its world premiere at the Sundance Film Festival on January 24, 2026."
+          "claim": "《Materialists》以 2000 萬美元預算收穫 1.08 億美元票房，成為 2025 年最賣座獨立電影，A24 史上第三賣座作品",
+          "source": "https://en.wikipedia.org/wiki/Materialists_(film)",
+          "quote": "The film grossed $108 million worldwide against a production budget of $20 million, becoming the third highest-grossing film in A24's history."
         },
         {
-          "claim": "《開放性邀請》改編自西班牙導演 Cesc Gay 的 2021 年電影 Sentimental",
-          "source": "https://en.wikipedia.org/wiki/The_Invite",
-          "quote": "The film is a remake of the 2021 Spanish film Sentimental, directed by Cesc Gay."
+          "claim": "《Materialists》2025 年 6 月 13 日在美國院線公映",
+          "source": "https://en.wikipedia.org/wiki/Materialists_(film)",
+          "quote": "It was released in the United States on June 13, 2025."
         },
         {
-          "claim": "Edward Norton 在片中飾演角色 Hawk，Penélope Cruz 飾演角色 Piña，兩人為片中一對夫妻",
-          "source": "https://en.wikipedia.org/wiki/The_Invite",
-          "quote": "Edward Norton and Penélope Cruz star as Hawk and Piña, a mysterious couple who are invited to dinner by their downstairs neighbors."
+          "claim": "心理學家 Elliot Aronson 進行互惠喜歡效應實驗，發現只要得知對方喜歡自己，人對對方的好感會顯著提高",
+          "source": "https://en.wikipedia.org/wiki/Reciprocal_liking",
+          "quote": "Reciprocal liking is the act of a person liking another individual as a result of that individual liking them... Research has shown that people tend to like others who like them."
         },
         {
-          "claim": "Aronson 與 Worchel 1966 年實驗驗證互惠好感效應：受試者得知對方對自己評價高，對對方好感立刻上升",
-          "source": "https://www.sciencedirect.com/science/article/abs/pii/0022103166900410",
-          "quote": "Subjects who believed that the confederate liked them expressed greater liking for the confederate than did subjects who believed the confederate disliked them.",
-          "quote_type": "verbatim_abstract"
+          "claim": "Eastwick 等人 2007 年速配研究發現，被唯一偏好確實有加分效果，但被每個人都喜歡的人反而不受歡迎",
+          "source": "https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction",
+          "quote": "Being uniquely liked by someone had a positive effect on attraction, but those who liked everyone were actually less popular."
         },
         {
-          "claim": "Montoya & Insko（2008）指出被喜歡本身具有獎賞性，會產生對對方的正向情感",
-          "source": "https://doi.org/10.1177/0265407508090641",
-          "quote": "Being liked by another person is rewarding in and of itself, and this reward value produces positive affect toward the other."
+          "claim": "Baumeister & Leary（1995）在《Psychological Bulletin》第 117 卷（p.497–529）提出歸屬需求假說，核心主張人有建立與維持人際連結的強烈、根本性動機",
+          "source": "https://en.wikipedia.org/wiki/Reciprocal_liking",
+          "quote": "Baumeister and Leary (1995) proposed the need to belong hypothesis, which states that people have a fundamental motivation to form and maintain lasting, positive, and significant interpersonal relationships."
+        },
+        {
+          "claim": "64.4% 的交友 App 受訪者表示，收到認同或讚美讓他們更頻繁使用 App；58.9% 表示拒絕與批評對自尊有負面影響",
+          "source": "https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction",
+          "quote": "64.4% of respondents said that receiving validation/compliments made them use the app more frequently... 58.9% said that rejection and criticism had a negative impact on their self-esteem."
         }
       ],
       "writer_model": "claude-sonnet-4-6",
       "copy_versions": {
         "claude": {
-          "caption": "A24 新片《開放性邀請》（2026）用一頓晚餐問了一個問題：你留在這段關係裡，是因為對方這個人，還是因為你需要那個位置不空著？\n\n心理學把這個現象叫做互惠好感效應，1966 年，Aronson 與 Worchel 就在實驗室裡驗證：光是知道「對方喜歡我」這件事，就足以製造出心動。\n兩件事長得太像，住在同一個感受裡，很難分清楚。\n\n交友軟體最容易發生的事，不是認識了一個人，而是認識了一個「和你聊天的感覺」。\n訊息裡的節奏、對方回應你的速度、那種被看見的感受，這些都很真實，但它們有時候比「對方這個人」更早出現在你的腦子裡。\nLava 從設計上就把流程往前推了一步：減少純文字的時間，讓你更早在現實裡判斷，你喜歡的，到底是誰。\n\n#交友軟體 #約會 #感情 #心理學 #A24 #開放性邀請 #TheInvite #關係 #戀愛心理 #自我認識 #互惠好感 #線下約會 #Lava交友 #不聊天的交友軟體 #台灣交友",
+          "caption": "《Materialists》裡的女主角是職業配對師，幫人找到對的人，但她說不清楚自己愛的到底是那個人，還是「被選上」的感覺。\n\n這個問題輪到你，你能回答嗎？\n\n研究顯示，64.4% 的交友 App 受訪者表示，收到認同或讚美讓他們更頻繁使用 App；58.9% 表示拒絕與批評對自尊有負面影響。\n當「被選擇的感覺」成為使用動機，配對數本身就變成一種社交貨幣。\n很多人追求的不是約出來見面，而是「有人在等我回訊息」的存在感。\nLava 選擇只做一件事：讓兩個人真實出現在彼此面前，因為見面之後，那個問題才有辦法被回答。\n\n#交友軟體 #約會 #愛情心理學 #感情 #心理學 #Lava交友 #不聊天的交友軟體 #互惠喜歡效應 #戀愛 #線下約會 #台灣交友 #A24 #Materialists #感情觀 #自我認識",
           "slides": {
             "1": {
-              "heading": "你愛上的，是他？還是那個讓你感覺被需要的感受？",
-              "display_copy": "A24《開放性邀請》（2026）\n用一頓晚餐問了一個問題：\n\n你留在這段關係裡，\n是因為對方這個人，\n還是因為【你需要那個位置不空著】？\n\n心理學家 Aronson 在 1966 年就發現：\n光是知道「對方喜歡我」，\n就足以在大腦裡製造出心動。\n這兩件事，住在同一個感受裡。"
+              "heading": "A24 新片問了一個讓人說不出話的問題",
+              "display_copy": "A24《Materialists》\n問了一個讓人說不出話的問題：\n\n〖你喜歡對方，\n還是你喜歡「有人喜歡你」？〗\n\n女主角是職業配對師——\n她自己卻答不出來。"
             },
             "2": {
-              "heading": "那種心動，你有沒有想過從哪裡來？",
-              "display_copy": "對方傳來一個訊息，你看了三遍。\n那個感覺很好——\n但那個【「好」，究竟是關於他，\n還是關於你被在意這件事】？\n\n心理學研究發現，\n「對方先喜歡我」是人們最常提及的\n當初被吸引的原因之一。\n兩件事長得太像，平時住在同一個房間裡。"
+              "heading": "你記得那個心跳加速的瞬間嗎",
+              "display_copy": "對方傳來第一個訊息，\n你整天都在看手機——\n但坐在對面兩個小時，\n你卻說不清楚自己在期待什麼。\n\n那個【心跳加速】\n是因為喜歡他，\n還是因為【有人在等你回訊息】？\n\n很多人從來沒把這兩件事分開過。"
             },
             "3": {
-              "heading": "「互惠好感效應」：你的心動，可能是被觸發的",
-              "display_copy": "1966 年，心理學家 Aronson 與 Worchel 做了一個實驗：\n讓陌生人對話後，\n偷偷告訴其中一方【「對方給你評分很高」】。\n\n結果：那個人對對方的好感，立刻上升。\n\n這是互惠好感效應最早的實驗室驗證之一——\n〖心動，有時候不是因為對方本身，\n而是因為你知道對方喜歡你〗。\n\n資料來源：Aronson & Worchel, 1966, Journal of Experimental Social Psychology"
+              "heading": "心理學給這個感覺取了一個名字",
+              "display_copy": "心理學家 Elliot Aronson 的實驗：\n\n讓陌生人兩兩對話後互相評分——\n只要得知對方喜歡自己，\n受試者對對方的好感就【顯著提高】\n不管之前有沒有感覺。\n\n這叫【互惠喜歡效應】\nReciprocal Liking\n\n觸動你的，是那個人本身，\n還是「有人看上我」的信號？\n\n資料來源：Wikipedia, Reciprocal Liking, https://en.wikipedia.org/wiki/Reciprocal_liking"
             },
             "4": {
-              "heading": "被喜歡本身就是一種獎賞",
-              "display_copy": "Montoya & Insko（2008）指出：\n被喜歡具有【「獎賞性」】——\n它驗證了你是值得被愛的這件事。\n\n大腦會把「他讓我感覺良好」\n誤讀成「我喜歡他這個人」。\n\n這是神經層面正常的情感機制——\n理解它，才能在心動時\n多一點空間分辨兩者的差異。\n\n資料來源：Montoya & Insko, 2008, Journal of Social and Personal Relationships"
+              "heading": "反直覺：被唯一選上，才有效",
+              "display_copy": "Eastwick 等人（2007）速配研究發現：\n\n被一個【誰都喜歡的人】喜歡——\n吸引力幾乎不增加。\n\n真正有效的是：\n〖「在所有人裡，他只選了你」〗\n\n「超級喜歡」比普通配對更讓人在意，\n原因就在這裡。\n\n資料來源：Psychology Today, Gwendolyn Seidman, https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction"
             },
             "5": {
-              "heading": "《開放性邀請》把這個問題放到婚姻裡",
-              "display_copy": "A24《開放性邀請》（2026）\n改編自西班牙導演 Cesc Gay 的 2021 年電影《Sentimental》。\nEdward Norton 飾演 Hawk、Penélope Cruz 飾演 Piña，\n兩人在一頓晚餐裡問了另一對夫妻一個問題：\n\n【你留在這裡，是為了對方，\n還是為了「有個人在那裡」這件事本身？】\n\n長期關係裡，時間會把這兩件事黏在一起，\n讓人更難分清楚。"
+              "heading": "人類有一個根本需求讓這件事更複雜",
+              "display_copy": "Baumeister & Leary（1995）\n《Psychological Bulletin》Vol.117\n\n人有一個根本需求：\n【建立並維持人際連結】\n且會主動抗拒連結的消失。\n\n這個需求強大到能製造幻覺——\n「被連結的感覺」\n在情緒上幾乎等同於\n「喜歡這個人」\n\n來源不同，感受一樣。\n\n資料來源：Baumeister & Leary (1995), Psychological Bulletin, Vol.117, p.497–529；Wikipedia, Reciprocal Liking, https://en.wikipedia.org/wiki/Reciprocal_liking"
             },
             "6": {
-              "heading": "文字的世界最容易讓人愛上「感受」而不是對方",
-              "display_copy": "交友軟體最容易讓人愛上的，\n往往不是一個人，\n而是【「和那個人聊天的感覺」】。\n\n訊息節奏、回應速度、被看見的感受——\n這些都很真實，\n但有時候比「對方這個人」更早出現在腦子裡。\n\nLava 把流程往前推一步——\n讓你更早在現實裡拿到答案：\n你喜歡的，到底是誰。"
+              "heading": "交友 App 讓這件事更容易混淆",
+              "display_copy": "研究發現，【64.4%】的交友 App 用戶\n表示收到認同讓他們更頻繁使用 App；\n【58.9%】表示拒絕對自尊有負面影響。\n\n當「被選擇」本身成為目的，\n「喜歡誰」這個問題就沒有意義了。\n\nLava 只做一件事：\n讓兩個人【真實出現在彼此面前】。\n那個問題，見了面才能回答。\n\n資料來源：Psychology Today, Gwendolyn Seidman, https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction"
             },
             "7": {
-              "heading": "一個問題，可以在下次心動的時候問自己",
-              "display_copy": "下次心動，先停一秒問自己一句話：\n\n【「如果對方突然不喜歡我了，\n我對他的感覺還在嗎？」】\n\n答案是「會消失大半」——\n代表驅動心動的，\n很可能是那個被愛的獎賞感，\n而不完全是對方本身的特質。\n\n這是大腦正常的情感機制，\n知道它的存在，判斷時就能多一點清醒。"
+              "heading": "怎麼開始分辨這兩件事",
+              "display_copy": "心理學家 Seidman 建議問自己三件事：\n\n① 如果對方明天不再主動——\n你難過的是【失去他】\n還是【失去被喜歡的感覺】？\n\n② 你有沒有在意過\n他這個人本身的想法與生活？\n\n③ 知道他同樣喜歡其他人，\n你的感覺會改變嗎？\n\n誠實回答，你通常就知道了。"
             },
             "8": {
-              "heading": "Lava 相信：見面之前，你還不知道你喜歡的是誰",
-              "display_copy": "線上交流有它的位置；\n真正的判斷需要現實輸入。\n\n當你們在同一個空間裡，\n對話節奏、眼神、那頓飯點了什麼——\n這些才是你在認識那個人，\n\n〖而不是在認識一個\n由訊息構成的投影。〗\n\nLava，不聊天的交友軟體。"
+              "heading": "Lava 的立場",
+              "display_copy": "想被喜歡，是人類的根本需求。\n這不是缺陷。\n\n但如果你想知道\n「我喜歡的到底是誰」——\n\n【不是再多傳一百則訊息】\n不是繼續刷對方的限動。\n\n是出現在同一個空間裡，\n讓那個感覺被〖真實檢驗〗。\n\n見了面，你才知道答案。"
             },
             "9": {
               "heading": "CTA 公版",
@@ -10893,159 +11010,7 @@
           }
         }
       },
-      "candidates_since": "2026-09-01T08:21:25+08:00",
-      "regen_needed": {
-        "ts": "2026-09-01T10:53:39+08:00",
-        "slides": [
-          3
-        ],
-        "why": "連續兩輪重掃仍補不到候選圖，需重新生成視覺企劃"
-      },
-      "regen_requested_at": "2026-09-01T10:53:40+08:00",
-      "rendered_lines": {
-        "1": [
-          "你愛上的，是他？還是那個讓你感覺被需",
-          "要的感受",
-          "",
-          "A24《開放性邀請》（2026）",
-          "用一頓晚餐問了一個問題",
-          "你留在這段關係裡",
-          "是因為對方這個人",
-          "還是因為【你需要那個位置不空著】",
-          "心理學家 Aronson 在 1966 年就發現",
-          "光是知道「對方喜歡我」",
-          "就足以在大腦裡製造出心動",
-          "這兩件事，住在同一個感受裡"
-        ],
-        "2": [
-          "那種心動，你有沒有想過從哪裡來",
-          "",
-          "對方傳來一個訊息，你看了三遍",
-          "那個感覺很好",
-          "但那個【「好」，究竟是關於他",
-          "還是關於你被在意這件事】",
-          "心理學研究發現",
-          "「對方先喜歡我」是人們最常提及的",
-          "當初被吸引的原因之一",
-          "兩件事長得太像，平時住在同一個房間裡"
-        ],
-        "3": [
-          "「互惠好感效應」：你的心動，可能是被觸發",
-          "的",
-          "",
-          "1966 年，心理學家 Aronson 與 Worchel 做了一個實",
-          "驗",
-          "讓陌生人對話後",
-          "偷偷告訴其中一方「對方給你評分很高」",
-          "結果：那個人對對方的好感，立刻上升",
-          "這是互惠好感效應最早的實驗室驗證之一",
-          "〖心動，有時候不是因為對方本身",
-          "而是因為你知道對方喜歡你〗",
-          "資料來源：Aronson & Worchel, 1966, Journal of",
-          "Experimental Social Psychology"
-        ],
-        "4": [
-          "被喜歡本身就是一種獎賞",
-          "",
-          "Montoya & Insko（2008）指出",
-          "被喜歡具有「獎賞性」",
-          "它驗證了你是值得被愛的這件事",
-          "大腦會把「他讓我感覺良好」",
-          "誤讀成「我喜歡他這個人」",
-          "這是神經層面正常的情感機制",
-          "理解它，才能在心動時",
-          "多一點空間分辨兩者的差異",
-          "資料來源：Montoya & Insko, 2008, Journal of Social",
-          "and Personal Relationships"
-        ],
-        "5": [
-          "《開放性邀請》把這個問題放到婚姻裡",
-          "",
-          "A24《開放性邀請》（2026）",
-          "改編自西班牙導演 Cesc Gay 的 2021 年電影《",
-          "Sentimental》",
-          "Edward Norton 飾演 Hawk、Penélope Cruz 飾演 Piñ",
-          "a",
-          "兩人在一頓晚餐裡問了另一對夫妻一個問題",
-          "【你留在這裡，是為了對方",
-          "還是為了「有個人在那裡」這件事本身】",
-          "長期關係裡，時間會把這兩件事黏在一起",
-          "讓人更難分清楚"
-        ],
-        "6": [
-          "文字的世界最容易讓人愛上「感受」",
-          "而不是對方",
-          "",
-          "交友軟體最容易讓人愛上的",
-          "往往不是一個人",
-          "而是「和那個人聊天的感覺」",
-          "訊息節奏、回應速度、被看見的感受",
-          "這些都很真實",
-          "但有時候比「對方這個人」更早出現在腦子裡",
-          "Lava 把流程往前推一步",
-          "讓你更早在現實裡拿到答案",
-          "你喜歡的，到底是誰"
-        ],
-        "7": [
-          "一個問題，可以在下次心動的時候問自己",
-          "",
-          "下次心動，先停一秒問自己一句話",
-          "【「如果對方突然不喜歡我了",
-          "我對他的感覺還在嗎？」】",
-          "答案是「會消失大半」",
-          "代表驅動心動的",
-          "很可能是那個被愛的獎賞感",
-          "而不完全是對方本身的特質",
-          "這是大腦正常的情感機制",
-          "知道它的存在，判斷時就能多一點清醒"
-        ],
-        "8": [
-          "Lava 相信：見面之前，你還不知道你喜歡",
-          "的是誰",
-          "",
-          "線上交流有它的位置",
-          "真正的判斷需要現實輸入",
-          "當你們在同一個空間裡",
-          "對話節奏、眼神、那頓飯點了什麼",
-          "這些才是你在認識那個人",
-          "〖而不是在認識一個",
-          "由訊息構成的投影〗",
-          "Lava，不聊天的交友軟體"
-        ],
-        "9": [
-          "CTA 公版",
-          "",
-          "CTA 公版"
-        ]
-      },
-      "typography": {
-        "ts": "2026-09-01T17:53:30+08:00",
-        "pass": true,
-        "issues": []
-      },
-      "copy": {
-        "ts": "2026-09-01T17:53:30+08:00",
-        "pass": true,
-        "counts": {},
-        "issues": []
-      },
-      "fact": {
-        "ts": "2026-09-01T17:54:00+08:00",
-        "pass": false,
-        "claims": 3,
-        "issues": [
-          {
-            "severity": "warn",
-            "rule": "unreadable",
-            "line": "「1966 年」的出處無法自動核對，請人工看過：https://www.sciencedirect.com/science/article/abs/pii/0022103166900410"
-          },
-          {
-            "severity": "block",
-            "rule": "no_source",
-            "line": "「於你被在意這件事？  心理學研究發現， 「對方先喜歡我」是人們最」沒有對應出處（研究引用）"
-          }
-        ]
-      }
+      "candidates_since": "2026-09-01T18:07:39+08:00"
     }
   ]
 }
