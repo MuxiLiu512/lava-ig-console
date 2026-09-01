@@ -325,6 +325,20 @@
           "version": "claude"
         }
       ]
+    },
+    {
+      "post_id": "20260824-AnxiousAttac",
+      "ts": "2026-09-01T15:08:59+08:00",
+      "consumed": false,
+      "edits": [
+        {
+          "n": 2,
+          "field": "heading",
+          "original": "「我們都很穩 但我們還是沒辦法好好說話」",
+          "edited": "「我們都很穩 但我們還是沒辦法好好說話 」",
+          "version": "claude"
+        }
+      ]
     }
   ]
 }
