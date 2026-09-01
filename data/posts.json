@@ -3905,12 +3905,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:22+08:00",
+        "ts": "2026-09-02T00:23:42+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:22:27+08:00",
+        "ts": "2026-09-02T00:23:47+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -3982,7 +3982,7 @@
         "rhythm": "前段（1–4）靠真人肖像撐視覺尚有層次，但第5張切換到風景後整篇失速——接著第6、7、8張連續三張暗調室內／電影感劇照疊在一起，滑動節奏完全垮掉；第9張純黑CTA雖是慣例收尾，但前三張的視覺債讓讀者早已失去能量抵達這裡，建議在第6或第7張插入一張高亮度、非電影感的『現實感』畫面作為中場換氣點。"
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -4666,12 +4666,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:22:27+08:00",
+        "ts": "2026-09-02T00:23:48+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4698,7 +4698,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -5277,12 +5277,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -5326,7 +5326,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:28+08:00",
+        "ts": "2026-09-02T00:23:49+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -5829,12 +5829,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -5899,7 +5899,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:29+08:00",
+        "ts": "2026-09-02T00:23:49+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -6374,12 +6374,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 1,
@@ -6445,7 +6445,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:31+08:00",
+        "ts": "2026-09-02T00:23:51+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -7232,12 +7232,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -7296,7 +7296,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:33+08:00",
+        "ts": "2026-09-02T00:23:52+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -8137,12 +8137,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -8193,7 +8193,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:35+08:00",
+        "ts": "2026-09-02T00:23:54+08:00",
         "pass": false,
         "claims": 14,
         "issues": [
@@ -8806,12 +8806,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 3
@@ -8841,7 +8841,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:40+08:00",
+        "ts": "2026-09-02T00:24:01+08:00",
         "pass": false,
         "claims": 11,
         "issues": [
@@ -9442,12 +9442,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上印網址": 4,
@@ -9513,7 +9513,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:42+08:00",
+        "ts": "2026-09-02T00:24:04+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -9958,12 +9958,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -10007,7 +10007,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:43+08:00",
+        "ts": "2026-09-02T00:24:06+08:00",
         "pass": false,
         "claims": 2,
         "issues": [
@@ -10413,12 +10413,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 13
@@ -10518,7 +10518,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:45+08:00",
+        "ts": "2026-09-02T00:24:09+08:00",
         "pass": false,
         "claims": 3,
         "issues": [
@@ -10820,12 +10820,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -10885,7 +10885,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:45+08:00",
+        "ts": "2026-09-02T00:24:09+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -11547,7 +11547,7 @@
       "writer_model": "claude-sonnet-4-6",
       "candidates_since": "2026-09-01T19:19:51+08:00",
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -11749,12 +11749,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:22:48+08:00",
+        "ts": "2026-09-02T00:24:12+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -11871,7 +11871,8 @@
           "final_src": "assets/20260803-Laa是怎麼把配對變成真/final/slide-4.webp",
           "product_layout": "price",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260803-Laa%E6%98%AF%E6%80%8E%E9%BA%BC%E6%8A%8A%E9%85%8D%E5%B0%8D%E8%AE%8A%E6%88%90%E7%9C%9F/slide-4.jpg",
-          "display_copy": "如果對方沒有出現，"
+          "display_copy": "如果對方沒有出現，",
+          "bg": "cream"
         },
         {
           "n": 5,
@@ -11885,9 +11886,9 @@
         }
       ],
       "template_id": "tpl-product-intro-carousel",
-      "writer_model": "claude",
+      "writer_model": "claude-sonnet-4-6",
       "publish_at": "2026-09-02T21:00:00+08:00",
-      "rendered_at": "2026-09-01T19:21:35+08:00",
+      "rendered_at": "2026-09-02T00:23:37+08:00",
       "candidates_since": "2026-08-19T16:38:04+08:00",
       "copy_choice": "claude",
       "render_src_hash": {
@@ -11927,18 +11928,18 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": true,
         "counts": {},
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-01T19:22:48+08:00",
+        "ts": "2026-09-02T00:24:12+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -11983,7 +11984,8 @@
           }
         ],
         "rhythm": "封面用實景人物照開場有說服力，第3張米黃跳色是全篇唯一節奏呼吸點，但其餘四張黑底連段讓輪播像在同一個畫面裡重複點擊；紅色卡片元素在第1、2、3、4、5張全部出現，作為品牌符號已過度曝光，建議至少有一至兩張完全退場，把版面還給內容本身。"
-      }
+      },
+      "cover_head": "配對只是開始\n【見面，我們幫你排】"
     },
     {
       "id": "20260826-愛你致死不渝爛番茄永遠愛",
@@ -12637,12 +12639,12 @@
         ]
       },
       "typography": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:43+08:00",
         "pass": true,
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-01T19:22:23+08:00",
+        "ts": "2026-09-02T00:23:44+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -12707,7 +12709,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-01T19:22:52+08:00",
+        "ts": "2026-09-02T00:24:16+08:00",
         "pass": false,
         "claims": 7,
         "issues": [
@@ -12818,7 +12820,7 @@
     },
     {
       "id": "20260824-AnxiousAttac",
-      "topic": "「Anxious Attachment」「Avoidant Attachment」大家都聽過——但《Attached》裡有一章，說的是「兩個安全型的人在一起，還是會出問題」，這個反直覺結論，99% 的人都跳過了",
+      "topic": "「Anxious Attachment」「Avoidant Attachment」大家都聽過。但《Attached》裡有一章，說的是「兩個安全型的人在一起，還是會出問題」，這個反直覺結論，99% 的人都跳過了",
       "version": 1,
       "status": "approved",
       "clickup_task_id": "86eynjccp",
@@ -12889,8 +12891,8 @@
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-1.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-1.jpg",
-          "heading": "兩個安全型，在一起——還是出問題了",
-          "display_copy": "兩個安全型，\n在一起——\n還是出問題了。\n\n測驗都過了，\n怎麼還是有一堵\n摸不到的牆？",
+          "heading": "兩個安全型，在一起：還是出問題了",
+          "display_copy": "兩個安全型，\n在一起：還是出問題了。\n\n測驗都過了，\n怎麼還是有一堵\n摸不到的牆？",
           "default_cid": "a"
         },
         {
@@ -13096,7 +13098,7 @@
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-5.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-5.jpg",
-          "heading": "「舒適」不等於「安全」——這是最常被混淆的一條線",
+          "heading": "「舒適」不等於「安全」：這是最常被混淆的一條線",
           "display_copy": "「低衝突」不等於「真實靠近」\n\n舒適的關係可能感覺熟悉、沒什麼吵架\n但仍然存在距離感與迴避；\n安全型依附的真正特徵是：\n〖在痛苦的時刻，能夠轉向彼此〗\n而不是各自消化、各自撐著。\n\n資料來源：Annie Wright LMFT anniewright.com/secure-attachment-romantic-relationship",
           "default_cid": "a"
         },
@@ -13131,7 +13133,7 @@
           ],
           "final_src": "assets/20260824-AnxiousAttac/final/slide-6.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-AnxiousAttac/slide-6.jpg",
-          "heading": "依附風格不是固定標籤——脈絡才是關鍵",
+          "heading": "依附風格不是固定標籤：脈絡才是關鍵",
           "display_copy": "同一個人，對不同的關係\n可以有不同的依附表現：對朋友安全型、對伴侶焦慮型、對家人逃避型\n這並不是矛盾，依附本來就是\n對【關係歷史與當下脈絡】的動態回應\n\n依附不是你的人格標籤\n是你們之間那段歷史的產物\n\n資料來源：Lifescore Test lifescoretest.com/blog/attachment-style-myths；ScienceDirect sciencedirect.com/science/article/abs/pii/S0191886919302673",
           "default_cid": "a"
         },
@@ -13292,6 +13294,223 @@
         "7": "abf321ae9af2",
         "8": "2fee8bd9c64e",
         "9": "9cb0c7260332"
+      },
+      "rendered_lines": {
+        "1": [
+          "兩個安全型，在一起——還是出問題了",
+          "",
+          "兩個安全型",
+          "在一起",
+          "還是出問題了",
+          "測驗都過了",
+          "怎麼還是有一堵",
+          "摸不到的牆"
+        ],
+        "2": [
+          "「我們都很穩 但我們還是沒辦法好好說話 」",
+          "",
+          "測驗結果都是安全型",
+          "可是那個週五晚上",
+          "你說「我需要抱一下」",
+          "他把燈關掉、拿起手機：沒有說錯什麼",
+          "只是沒有轉過來",
+          "兩個人都安全",
+          "兩個人都不知道哪裡出了問題"
+        ],
+        "3": [
+          "《Attached》說的不只是「找對類型」",
+          "",
+          "Amir Levine × Rachel Heller",
+          "《Attached》 2010 年出版",
+          "翻譯成20 種語言",
+          "Amazon 均分 4.7 顆星",
+          "書裡不只講焦慮型和逃避型：真正的核心是",
+          "許多關係問題源自",
+          " 感知與表達親密感的方式不同",
+          "而這件事，在兩個安全型之間也會發生",
+          "資料來源：SuperSummary supersummary.com/",
+          "attached/summary/；Amazon slickdeals.net/f/",
+          "19301172"
+        ],
+        "4": [
+          "「安全型」不是一個固定的到達點",
+          "",
+          "研究估計約50～60%的人是安全型",
+          "但安全型不是「抵達終點」，只是一種需要持續實踐",
+          "的動態能力",
+          "安全型的人依然會受傷",
+          "差異在底層結構",
+          "他們相信這段關係能承受困難而不崩潰",
+          "但這份相信，也需要被不斷餵養",
+          "資料來源：HelpGuide helpguide.org/relationships/",
+          "social-connection/",
+          "attachment-and-adult-relationships；Annie Wright",
+          "LMFT anniewright.com/",
+          "secure-attachment-romantic-relationship"
+        ],
+        "5": [
+          "「舒適」不等於「安全」——這是最常被混淆",
+          "的一條線",
+          "",
+          "「低衝突」不等於「真實靠近」",
+          "舒適的關係可能感覺熟悉、沒什麼吵架",
+          "但仍然存在距離感與迴避",
+          "安全型依附的真正特徵是",
+          "在痛苦的時刻，能夠轉向彼此",
+          "而不是各自消化、各自撐著",
+          "資料來源：Annie Wright LMFT anniewright.com/",
+          "secure-attachment-romantic-relationship"
+        ],
+        "6": [
+          "依附風格不是固定標籤——脈絡才是關鍵",
+          "",
+          "同一個人，對不同的關係",
+          "可以有不同的依附表現：對朋友安全型、對伴侶焦慮",
+          "型、對家人逃避型",
+          "這並不是矛盾，依附本來就是",
+          "對關係歷史與當下脈絡的動態回應",
+          "依附不是你的人格標籤",
+          "是你們之間那段歷史的產物",
+          "資料來源：Lifescore Test lifescoretest.com/blog/",
+          "attachment-style-myths；ScienceDirect",
+          "sciencedirect.com/science/article/abs/pii/",
+          "S0191886919302673"
+        ],
+        "7": [
+          "安全感是動詞，不是名詞",
+          "",
+          "「找到安全型的人」",
+          "不是關係的終點",
+          "是起點的起點",
+          "研究指出，即使兩個安全型的人在一起",
+          "也需要刻意投入才能持續深化親密感：自滿，是安全",
+          "型關係最容易跌倒的地方",
+          "資料來源：Connected Couples connectedcouples.",
+          "app/blog/attachment-styles-in-relationships"
+        ],
+        "8": [
+          "三個問題，比再做一次測驗更有用",
+          "",
+          "比再做一次測驗更有用的",
+          "是問自己三件事",
+          "① 我需要被安慰時，有沒有說出口",
+          "② 對方沉默時，我的第一個念頭是什麼",
+          "③ 我們上次真的說了一句",
+          "讓彼此都難受、但說完更靠近的話",
+          "是什麼時候",
+          "安全型不是資格",
+          "是兩個人每一次選擇開口的累積"
+        ],
+        "9": [
+          "CTA 公版",
+          "",
+          "CTA 公版"
+        ]
+      },
+      "typography": {
+        "ts": "2026-09-02T00:23:43+08:00",
+        "pass": true,
+        "issues": []
+      },
+      "copy": {
+        "ts": "2026-09-02T00:23:44+08:00",
+        "pass": false,
+        "counts": {
+          "圖上印網址": 4,
+          "圖上單行過長": 5
+        },
+        "issues": [
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第3張內文",
+            "line": "supersummary.com/attached/summary/",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第3張內文",
+            "line": "Amir Levine × Rachel Heller…（27 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第4張內文",
+            "line": "helpguide.org/relationships/social-connection/attachment-and-adult-rel",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第4張內文",
+            "line": "但安全型不是「抵達終點」，只是一種需要持續實踐的動態能力…（28 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第5張內文",
+            "line": "anniewright.com/secure-attachment-romantic-relationship",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第5張內文",
+            "line": "資料來源：Annie Wright LMFT anniewright.com/s…（78 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上印網址",
+            "severity": "block",
+            "where": "第6張內文",
+            "line": "lifescoretest.com/blog/attachment-style-myths",
+            "fix": "圖上只寫來源名（例：資料來源：Annie Wright LMFT），完整網址放貼文文案。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第6張內文",
+            "line": "可以有不同的依附表現：對朋友安全型、對伴侶焦慮型、對家人逃避型…（31 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          },
+          {
+            "rule": "圖上單行過長",
+            "severity": "warn",
+            "where": "第7張內文",
+            "line": "也需要【刻意投入】才能持續深化親密感：自滿，是安全型關係最容易跌倒的地方…（36 字）",
+            "fix": "中文圖卡單行超過 24 字，排版會硬斷在奇怪的位置。自己斷句，不要交給排版。"
+          }
+        ]
+      },
+      "fact": {
+        "ts": "2026-09-02T00:24:17+08:00",
+        "pass": false,
+        "claims": 4,
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2010 年」的出處無法自動核對，請人工看過：https://www.supersummary.com/attached/summary/"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「會出問題」，這個反直覺結論，99% 的人都跳過了 多數人讀《A」沒有對應出處（百分比）"
+          },
+          {
+            "severity": "block",
+            "rule": "number_mismatch",
+            "line": "「60%」的數字在出處頁面裡找不到：https://www.helpguide.org/relationships/social-connection/attachment-and-adult-relationships"
+          },
+          {
+            "severity": "block",
+            "rule": "no_source",
+            "line": "「關係的終點 是起點的起點  研究指出，即使兩個安全型的人在一起」沒有對應出處（研究引用）"
+          }
+        ]
       }
     }
   ]
