@@ -5997,53 +5997,59 @@
           "role": "Hook",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
-              "kind": "still",
-              "source_label": "a-moodbb4f4",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "b",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
-              "kind": "still",
-              "source_label": "組圖：",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "c",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
-              "kind": "still",
-              "source_label": "c-mood1e1aa",
-              "source_kind": "SHOT"
-            },
-            {
-              "cid": "d",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1d.webp",
-              "kind": "still",
-              "source_label": "Spookyin Love",
-              "low_q": true
-            },
-            {
               "cid": "e",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1e.webp",
               "kind": "still",
               "source_label": "Spookyin Love",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 7
             },
             {
               "cid": "f",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1f.webp",
               "kind": "still",
               "source_label": "Spookyin Love",
-              "low_q": true
+              "low_q": true,
+              "curator_score": 6
+            },
+            {
+              "cid": "d",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1d.webp",
+              "kind": "still",
+              "source_label": "Spookyin Love",
+              "low_q": true,
+              "curator_score": 5
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1a.webp",
+              "kind": "still",
+              "source_label": "a-moodbb4f4",
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "c",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1c.webp",
+              "kind": "still",
+              "source_label": "c-mood1e1aa",
+              "source_kind": "SHOT",
+              "curator_score": 3
+            },
+            {
+              "cid": "b",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-1b.webp",
+              "kind": "still",
+              "source_label": "組圖：",
+              "source_kind": "SHOT",
+              "curator_score": 2
             }
           ],
           "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-1.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-1.jpg",
           "heading": "愛到最深，反而想逃",
           "display_copy": "〖愛到最深，反而想逃〗\n《毛骨悚然的戀愛》大結局\n朴恩斌選擇留下的那一刻\n心理學說，這才是真正的承諾",
-          "default_cid": "a"
+          "default_cid": "e"
         },
         {
           "n": 2,
@@ -6168,32 +6174,35 @@
           "role": "品牌輕置入",
           "candidates": [
             {
-              "cid": "a",
-              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7a.webp",
-              "kind": "still",
-              "source_label": "a-mood1c14e",
-              "source_kind": "SHOT"
-            },
-            {
               "cid": "b",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7b.webp",
               "kind": "still",
               "source_label": "b-mood1f1ce",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 7
             },
             {
               "cid": "c",
               "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7c.webp",
               "kind": "still",
               "source_label": "b-mood64b17",
-              "source_kind": "SHOT"
+              "source_kind": "SHOT",
+              "curator_score": 4
+            },
+            {
+              "cid": "a",
+              "src": "assets/20260824-毛骨悚然的戀愛大結局前朴/slide-7a.webp",
+              "kind": "still",
+              "source_label": "a-mood1c14e",
+              "source_kind": "SHOT",
+              "curator_score": 3
             }
           ],
           "final_src": "assets/20260824-毛骨悚然的戀愛大結局前朴/final/slide-7.webp",
           "public_url": "https://muxiliu512.github.io/lava-ig-console/finals/20260824-%E6%AF%9B%E9%AA%A8%E6%82%9A%E7%84%B6%E7%9A%84%E6%88%80%E6%84%9B%E5%A4%A7%E7%B5%90%E5%B1%80%E5%89%8D%E6%9C%B4/slide-7.jpg",
           "heading": "真實見面，才會知道自己到底願不願意留下",
           "display_copy": "真實見面，才會知道自己到底願不願意留下\n\n在螢幕後面聊了幾百則，你依然可以保持讓你安心的那道距離。但那道距離，同時也讓你永遠無法分清：是真的不適合，還是只是還不夠勇敢。\n\n【Lava】跳過那段假裝安全的暖身期，直接創造真實見面的機會：因為承諾只在真實的接觸裡才有機會發生。",
-          "default_cid": "a"
+          "default_cid": "b"
         },
         {
           "n": 8,
@@ -6500,7 +6509,8 @@
           }
         ],
         "rhythm": "整篇節奏像一首歌只有副歌——深色、孤獨身影、黃字白文的組合重複出現五次以上，讀者滑到第4張已有視覺疲勞；最致命的是劇情素材《毛骨悚然的戀愛》被反覆提及卻從未給出新的視覺角度，建議將劇情錨點集中在前兩張，中段全力切換為心理學概念圖像，第6張暖橘情侶剪影是全篇唯一情緒轉折點但被埋在第六位、力道已衰減，應提前至第5張發揮。"
-      }
+      },
+      "curated_at": "2026-09-02T00:21:35+08:00"
     },
     {
       "id": "20260825-結婚條件今天在PTT推爆",
@@ -11783,7 +11793,7 @@
       "status": "scheduled",
       "clickup_task_id": "86eyey802",
       "created_at": null,
-      "caption": "#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
+      "caption": "厭倦無止盡的早午晚安、等待回覆的忐忑不安嗎？\n我們也是，因此我們打造了 Lava 不聊天的交友軟體\n\n『 跟無聊的開場白說聲再見吧！』\n- 配對後彼此回答對方設定的價值觀問題，審完長相，再確認內在 \n\n『 約會不用再擔心被帶去跑馬拉松 』\n- 由我們替用戶安排精選場域，與店家一同維持良好氣氛、守護安全\n\n『 第一次見面，不用再擔心不知道怎麼開口 』\n- 破冰卡牌隨桌附贈，由淺入深，不用再擔心沒有話題啦～\n\n讓 Lava 排一場真的會發生的約會\n不用再猜對方想不想見面\n流程會替你問，交給我們，社交就應該真實\n\n#Lava交友 #不聊天的交友軟體 #見面才算數 #台灣交友 #約會",
       "topic_type": "A-知識型",
       "slides": [
         {
