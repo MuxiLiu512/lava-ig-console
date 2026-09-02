@@ -284,6 +284,16 @@ function slideCard(p, s, pend) {
   const st = el("span", "state dotlbl " + (CONFIRMED.has(n) ? "ok" : ""));
   st.innerHTML = CONFIRMED.has(n) ? "<i></i>已確認" : "<i></i>待確認";
   head.appendChild(st);
+  // 退路必須自己說話〔2026-09-03 Jesse：不要寫垃圾 cover 錯誤，導致全部都查不出錯誤〕
+  // 系統為了不讓整篇卡住而擅自換過圖時，那不是「修好了」，是「我替你做了決定」。
+  // 只寫進資料不顯示，等於把問題藏起來——那正是最該避免的一種修法。
+  const fb = (p.choice_fallback || []).filter(x => Number(x.slide) === n);
+  if (fb.length) {
+    const w = el("div", "pend");
+    w.innerHTML = `<b class="k">我替你換了圖</b> · 你原本選的 ${esc(String(fb[fb.length - 1].wanted || "?"))} 找不到原檔，` +
+      `我改用現在拿得到的最好的一張（${esc(String(fb[fb.length - 1].used || "?"))}）。請確認這張你能接受。`;
+    card.appendChild(w);
+  }
   card.appendChild(head);
 
   // 主圖：成品 > 候選裁切 > 設計版面 > 缺圖面板
@@ -416,6 +426,12 @@ function slideCard(p, s, pend) {
         w.appendChild(img(cd.src));
         w.appendChild(el("span", "srclbl", esc(srcLabel(cd))));
         if (cd.low_q) w.appendChild(el("span", "lowq", "低畫質"));
+        if (cd.dup_of_other_slide) {
+          const dp = el("span", "lowq", "與別張重複");
+          dp.style.background = "rgba(90,70,140,.9)"; dp.style.left = "auto"; dp.style.right = "4px";
+          dp.title = "這張圖在其他版位也用了。系統為了不讓這張變成缺圖才保留它，你多半該換一張。";
+          w.appendChild(dp);
+        }
         if (on) w.appendChild(el("span", "onlbl", "使用中"));
         w.onclick = () => {
           CHOICE[n] = cd.cid; CONFIRMED.delete(n);

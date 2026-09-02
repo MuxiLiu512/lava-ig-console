@@ -121,6 +121,20 @@ def diagnose(posts, ideas, only=None):
                             "已排程（%s）但閘門有 %d 項未過" % (str(p.get("publish_at"))[:16], len(bl)),
                             "到審稿台處理或取消排程，否則到點會照發"))
 
+        # 6c) 系統默默降級〔2026-09-03〕：退路救了管線，但成品變差了。
+        # 這種「沒有壞掉、只是變爛」最危險——不會有錯誤訊息，只會慢慢拉低品質。
+        if st in ("awaiting_review", "approved", "scheduled"):
+            if p.get("choice_fallback"):
+                out.append(("warn", title,
+                            "有 %d 張是系統替你換的圖（你原本選的找不到）" % len(p["choice_fallback"]),
+                            "到審稿台看那幾張，確認換掉的圖你能接受"))
+            bad = [s2.get("n") for s2 in p.get("slides", [])
+                   if (s2.get("candidates") and all(c.get("low_q") for c in s2["candidates"]))]
+            if bad:
+                out.append(("bad" if st == "scheduled" else "warn", title,
+                            "第 %s 張的候選全是低畫質，鋪滿會糊" % "、".join(map(str, bad)),
+                            "到審稿台換圖，或按「重新生成這篇」重找素材"))
+
         # 6) 渲染卡住的明確標記
         if p.get("render_note") and st != "published":
             out.append(("bad", title, "排版卡住：%s" % str(p["render_note"])[:60],

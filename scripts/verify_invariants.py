@@ -213,6 +213,28 @@ def main():
                      % (pid[:26], n, field))
                 break
 
+        # I16 系統替你做過決定，你必須知道〔2026-09-03 Jesse：不要寫垃圾 cover 錯誤，
+        # 導致全部都查不出錯誤〕。為了不讓管線卡住，程式裡有幾條退路會擅自替代：
+        # 選的圖不見了改用次佳、候選全過小保留一張糊的、候選與別張全重複保留一張。
+        # 每一條單獨看都合理，合起來會變成「系統默默降級、成品悄悄變差」。
+        # 退路本身不是問題，退路沒有出口才是。這條就是那個出口。
+        if p.get("choice_fallback"):
+            _fb = p["choice_fallback"]
+            (fail if st in ("scheduled", "published") else warn)(
+                "I16", "%s 有 %d 張是系統替你換的圖（原本選的找不到）：第 %s 張"
+                % (pid[:26], len(_fb), "、".join(str(x.get("slide")) for x in _fb[:4])))
+        _degraded = [s2.get("n") for s2 in p.get("slides", [])
+                     if any(c.get("dup_of_other_slide") for c in (s2.get("candidates") or []))]
+        if _degraded:
+            warn("I16", "%s 第 %s 張只剩與其他張重複的圖可用"
+                 % (pid[:26], "、".join(map(str, _degraded))))
+        _allbad = [s2.get("n") for s2 in p.get("slides", [])
+                   if (s2.get("candidates") and all(c.get("low_q") for c in s2["candidates"]))]
+        if _allbad:
+            (fail if st == "scheduled" else warn)(
+                "I16", "%s 第 %s 張的候選全是低畫質（鋪滿會糊）"
+                % (pid[:26], "、".join(map(str, _allbad))))
+
     # I14 放行對帳：放行的靈感必須變成貼文（幻影卡與撰稿斷線都在這裡現形）
     for i in ideas:
         if i.get("decision") != "approve":
@@ -242,7 +264,7 @@ def main():
         for r, d in BAD:
             print("  [%s] %s" % (r, d))
         return 1
-    print("✅ 不變量 I1-I15 全過（posts %d、archived %d%s）"
+    print("✅ 不變量 I1-I16 全過（posts %d、archived %d%s）"
           % (len(posts), len(arch), "；進度警告 %d 條" % len(WARN) if WARN else ""))
     return 0
 
