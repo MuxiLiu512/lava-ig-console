@@ -30,6 +30,23 @@ jobs:
                   print("✗", f, e); bad = 1
           sys.exit(bad)
           PYEOF
+      # 〔2026-09-03〕ast.parse 只驗「文法對不對」，不驗「這個變數存不存在」。
+      # 實例：sync_console.py:1087 把 posts_d 寫成 d，那一行正是「一篇壞稿不要
+      # 拖垮整輪」的修法本身——結果它自己一碰到壞稿就 NameError，整輪照樣全滅，
+      # 而 CI 從頭到尾是綠的。pyflakes 兩秒就抓得到，早該加。
+      - name: 未定義變數與死變數（pyflakes）
+        run: |
+          pip install -q pyflakes
+          python3 -m pyflakes scripts/*.py 排版引擎/*.py 2>&1 \
+            | grep -v "imported but unused" \
+            | grep -v "unable to detect undefined names" \
+            | tee /tmp/pf.txt
+          # 未定義變數一律擋；未使用的區域變數只提醒
+          if grep -q "undefined name" /tmp/pf.txt; then
+            echo "✗ 有未定義變數，這種錯誤上線一定當掉"; exit 1
+          fi
+      - name: 自我測試（scripts/selftest.py）
+        run: python3 scripts/selftest.py
       - name: 資料不變量（含 published 只增不減）
         run: |
           git show HEAD~1:data/posts.json > /tmp/prev-posts.json 2>/dev/null || true

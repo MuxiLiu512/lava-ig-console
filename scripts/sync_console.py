@@ -1084,7 +1084,7 @@ def render_approved(args):
             p["render_note"] = msg
             skipped.append((pid, msg))
             sys.stderr.write("  ✗ %s %s\n" % (pid[:26], msg))
-            save("posts.json", d)
+            save("posts.json", posts_d)   # 這個作用域是 posts_d，不是 d
             continue
         # 變更紀錄：這輪跟上次渲染比，哪幾張換了圖（Jesse 2026-08-10：自動化改了什麼要看得到）
         prev = (entry.get("last_render_choices") or {})
