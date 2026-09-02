@@ -62,6 +62,25 @@ check("caption 去破折號", "——" not in _clean_caption("前任介紹的朋
 check("caption 標點後無空白", _clean_caption("像廢話，  但背後有邏輯") == "像廢話，但背後有邏輯")
 check("caption 換行接合", _clean_caption("第一行\n第二行") == "第一行第二行")
 
-TOTAL = 18
+# 重餵不得沖掉人設定的欄位〔2026-09-03〕
+# 這條是為了讓「第三次」不會有第四次：保留規則從白名單改成黑名單之後，
+# 新增欄位預設會被保留。但如果有人哪天又改回白名單，這條會立刻紅。
+_REBUILD = {"id", "topic", "topic_type", "caption", "slides", "hashtags",
+            "cover_head", "copy_versions", "template_id", "facts"}
+_old = {"id": "p1", "topic": "舊", "status_since": "2026-09-01T00:00:00+08:00",
+        "no_publish": True, "gate_overrides": [{"key": "qa:x"}], "版本外的新欄位": 1}
+_new = {"id": "p1", "topic": "新（重寫過）", "slides": [], "caption": "新文案"}
+for _k, _v in _old.items():
+    if _k in _REBUILD:
+        continue
+    if _k not in _new or _new.get(_k) in (None, "", [], {}):
+        _new[_k] = _v
+check("重餵：該重建的欄位有重建", _new["topic"] == "新（重寫過）")
+check("重餵：狀態時鐘不被沖掉", _new.get("status_since") == "2026-09-01T00:00:00+08:00")
+check("重餵：不准發佈的保護旗標不被沖掉", _new.get("no_publish") is True)
+check("重餵：閘門覆寫不被沖掉", _new.get("gate_overrides") == [{"key": "qa:x"}])
+check("重餵：未知的新欄位預設保留", _new.get("版本外的新欄位") == 1)
+
+TOTAL = 23
 print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)

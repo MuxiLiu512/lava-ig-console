@@ -543,9 +543,21 @@ def _build_and_write(m):
     if old and old.get("status") in ("approved", "scheduled", "published"):  # 已核准/已排程/已發佈者不被重餵洗掉
         post["status"] = old["status"]
     if old:
-        for k in ("publish_at", "published_at", "media_id", "rendered_at", "candidates_since", "image_credits", "copy_choice"):
-            if old.get(k):
-                post[k] = old[k]
+        # 保留規則反過來寫〔2026-09-03〕：原本是「明列要留的 7 個欄位」，
+        # 於是這一個月新增的欄位一個都沒進白名單，每次重餵全被沖掉。
+        # 實測 27 篇：status_since 出現 0 次（「等你審已 N 天」的時鐘永遠歸零）、
+        # no_publish 出現 0 次（那是不准發佈的保護旗標，被沖掉等於保護消失）。
+        # 改成「明列該由稿檔重建的欄位」，其餘一律沿用舊值——
+        # 新增欄位預設會被保留，不必記得回來改這份清單。
+        REBUILD = {                       # 這些每次都要照新稿重算
+            "id", "topic", "topic_type", "caption", "slides", "hashtags",
+            "cover_head", "copy_versions", "template_id", "facts",
+        }
+        for k, v in old.items():
+            if k in REBUILD:
+                continue
+            if k not in post or post.get(k) in (None, "", [], {}):
+                post[k] = v
         if not post.get("clickup_task_id") and old.get("clickup_task_id"):
             post["clickup_task_id"] = old["clickup_task_id"]   # 重餵漏 --clickup 不得洗掉卡號（否則哨兵會重複入料）
     # 安全網：新版 0 候選不得覆蓋有候選的舊版（Drive 瞬時 I/O 錯誤會把全池誤判破圖清空）
