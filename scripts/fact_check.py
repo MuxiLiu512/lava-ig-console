@@ -81,7 +81,10 @@ def find_claims(text):
 def fetch(url, timeout=12):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        raw = r.read(400000)
+        # 上限從 400KB 提到 8MB〔2026-09-03〕：Netflix 官方 TSV 的台灣區資料
+        # 落在第 2,700 萬個位元組附近，400KB 永遠讀不到，出處等於形同虛設。
+        # 8MB 是折衷——大到吃得下榜單型檔案，小到不會被單一巨檔拖垮整輪。
+        raw = r.read(8_000_000)
     enc = "utf-8"
     m = re.search(rb'charset=["\']?([\w-]+)', raw[:2000], re.I)
     if m:
@@ -114,7 +117,21 @@ def check_source(src):
 
 
 def numbers_in(s):
-    return set(re.findall(r"\d[\d,]*(?:\.\d+)?", s or ""))
+    """抽出數字，並把千分位正規化掉。
+    〔2026-09-03〕原本原樣保留逗號，於是文案寫「41,427 次」、來源頁寫「41427」，
+    交集為空 → 判成「數字在出處裡找不到」→ block → 那篇永遠排不了程。
+    數值相同就是相同，逗號只是排版。同時保留原樣，來源頁若也帶逗號一樣對得上。"""
+    out = set()
+    for m in re.findall(r"\d[\d,]*(?:\.\d+)?", s or ""):
+        out.add(m)
+        bare = m.replace(",", "")
+        if bare != m:
+            out.add(bare)
+        # 「41427」也要能對上寫成「41,427」的來源
+        if "," not in m and len(bare.split(".")[0]) > 3:
+            ip, _, dp = bare.partition(".")
+            out.add("{:,}".format(int(ip)) + (("." + dp) if dp else ""))
+    return out
 
 
 def check_post(p, verbose=False):
