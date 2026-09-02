@@ -32,6 +32,11 @@ const PAGES = [
   { id: "qc", file: "config/qc-checklist.md", name: "發佈前檢查",
     sub: "成品發佈前的人工檢查清單",
     why: "這份是給人看的清單，不是機器讀的。放你希望自己每次發佈前都確認一遍的事。" },
+  { id: "templates", file: "data/templates.json", name: "內容範本", kind: "templates",
+    sub: "貼文與 Reels 的骨架，可新增可改",
+    why: "每個範本是一種「文章怎麼鋪陳」的骨架。撰稿時會挑一個來用，審稿台也可以換。" +
+         "改完立刻生效，下一篇就照新骨架寫——不必等我改程式。" +
+         "狀態分兩種：驗證過的會優先被挑，候選的要你確認有效才升級。" },
   { id: "rituals", file: "data/rituals.json", name: "自動化慣例", kind: "rituals",
     sub: "系統每輪自己做的事，可開關",
     why: "系統每 17 分鐘會自己做一輪，這些是它做的事。過去全部寫死在腳本裡，你看不到也關不掉。" +
@@ -66,6 +71,7 @@ async function open() {
   const sk = el("div", "skel"); sk.style.height = "60vh";
   body.appendChild(sk);
   if (CUR.kind === "rituals") { sk.remove(); return openRituals(body); }
+  if (CUR.kind === "templates") { sk.remove(); return openTemplates(body); }
   let text;
   try {
     text = await loadText(CUR.file);
@@ -114,6 +120,120 @@ async function open() {
     if ((e.metaKey || e.ctrlKey) && e.key === "Enter") { e.preventDefault(); if (DIRTY) save.click(); }
   });
   paint();
+}
+
+// 內容範本：新增、編輯、升降狀態，改完立刻生效。
+// 〔Jesse 2026-09-03：還要增加不同的 template，也希望能即時完成修改〕
+const T_FIELDS = [
+  { k: "hook_type", label: "名稱（開場類型）", ph: "例：數據反差、趨勢詞策展", req: true },
+  { k: "skeleton", label: "骨架", ph: "用 → 分段，例：cover=大字標題 → 2-4張=展開 → 尾張=CTA", req: true, big: true },
+  { k: "why_it_works", label: "為什麼有效", ph: "一段話說清楚它為什麼抓得住人", big: true },
+  { k: "fit_for_lava", label: "為什麼適合 Lava", ph: "跟我們的定位怎麼扣上", big: true },
+];
+
+async function openTemplates(body) {
+  const { saveJson, apiGet } = window.LavaCore;
+  let doc;
+  try { doc = (await apiGet("data/templates.json")).json; }
+  catch (e) { body.appendChild(el("div", "empty", "讀不到範本庫：" + esc(e.message))); return; }
+  const list = doc.templates || [];
+
+  const bar = el("div", "btnrow"); bar.style.marginBottom = "12px";
+  ["post", "reels"].forEach(tp => {
+    const b = el("button", "btn", "＋ 新增" + (tp === "post" ? "貼文" : "Reels") + "範本");
+    b.type = "button";
+    b.onclick = () => editTemplate(null, tp, doc);
+    bar.appendChild(b);
+  });
+  body.appendChild(bar);
+
+  ["post", "reels"].forEach(tp => {
+    const mine = list.filter(t => (t.type || "post") === tp);
+    if (!mine.length) return;
+    body.appendChild(el("div", "meta", (tp === "post" ? "貼文" : "Reels") + "範本 " + mine.length + " 個"));
+    const grid = el("div", "tpl-grid"); grid.style.margin = "6px 0 16px";
+    mine.sort((a, b) => (a.status === "validated" ? -1 : 1) - (b.status === "validated" ? -1 : 1));
+    mine.forEach(t => grid.appendChild(templateCard(t, doc)));
+    body.appendChild(grid);
+  });
+}
+
+function templateCard(t, doc) {
+  const { tplName } = window.LavaTerms;
+  const c = el("div", "tpl-card");
+  c.appendChild(skeletonMini(t.skeleton));
+  c.appendChild(el("h3", null, esc(tplName(t))));
+  c.appendChild(el("div", "small muted", esc(String(t.why_it_works || "").slice(0, 70)) + "…"));
+  const meta = el("div", "tpl-meta");
+  meta.appendChild(el("span", "gate " + (t.status === "validated" ? "ok" : ""),
+                      t.status === "validated" ? "驗證過" : "候選"));
+  meta.appendChild(el("span", "meta", "已用 " + ((t.used_by || []).length) + " 篇"));
+  c.appendChild(meta);
+  const row = el("div", "btnrow");
+  const edit = el("button", "btn ghost", "編輯");
+  edit.type = "button"; edit.onclick = () => editTemplate(t, t.type || "post", doc);
+  row.appendChild(edit);
+  row.appendChild(window.LavaUI.ActionButton({
+    id: "tpl-status-" + t.id,
+    label: t.status === "validated" ? "降回候選" : "標為驗證過",
+    kind: "ghost", doneLabel: "改好了",
+    run: () => window.LavaCore.saveJson("data/templates.json", d => {
+      const x = (d.templates || []).find(y => y.id === t.id);
+      if (x) x.status = t.status === "validated" ? "candidate" : "validated";
+    }, `template: ${t.id} 狀態`),
+    onDone: () => { toast("改好了。撰稿優先挑驗證過的範本。"); open(); },
+  }));
+  c.appendChild(row);
+  return c;
+}
+
+function skeletonMini(sk) {
+  const w = el("div", "tpl-skel");
+  String(sk || "").split("→").map(x => x.trim()).filter(Boolean).slice(0, 6).forEach(seg => {
+    const b = el("div", "seg");
+    b.appendChild(el("i"));
+    b.appendChild(el("span", null, esc(seg.slice(0, 26))));
+    w.appendChild(b);
+  });
+  return w;
+}
+
+async function editTemplate(t, type, doc) {
+  const isNew = !t;
+  const wrap = el("div");
+  const inputs = {};
+  T_FIELDS.forEach(f => {
+    wrap.appendChild(el("label", "fld", esc(f.label) + (f.req ? " *" : "")));
+    const i = f.big ? el("textarea") : el("input");
+    if (f.big) i.rows = 3;
+    i.placeholder = f.ph;
+    i.value = (t && t[f.k]) || "";
+    inputs[f.k] = i;
+    wrap.appendChild(i);
+  });
+  const ok = await modal(isNew ? "新增範本" : "編輯範本", wrap,
+    [{ label: "取消", value: null }, { label: isNew ? "新增" : "儲存", value: 1, cls: "primary" }]);
+  if (!ok) return;
+  for (const f of T_FIELDS) {
+    if (f.req && !inputs[f.k].value.trim()) return toast(f.label + " 一定要填", true);
+  }
+  try {
+    await window.LavaCore.saveJson("data/templates.json", d => {
+      const arr = d.templates = d.templates || [];
+      if (isNew) {
+        const id = "tpl-" + Date.now().toString(36);
+        const o = { id, type, status: "candidate", used_by: [],
+                    evidence: { engagement: "unverified（新增時未查證）" } };
+        T_FIELDS.forEach(f => { o[f.k] = inputs[f.k].value.trim(); });
+        arr.push(o);
+      } else {
+        const x = arr.find(y => y.id === t.id);
+        if (x) T_FIELDS.forEach(f => { x[f.k] = inputs[f.k].value.trim(); });
+      }
+    }, isNew ? "template: 新增" : "template: 編輯 " + t.id);
+    toast(isNew ? "新增好了。狀態是候選，用過覺得有效再標為驗證過。" : "存好了。下一篇撰稿就吃得到。");
+    open();
+  } catch (e) { toast(e.message, true); }
 }
 
 // 自動化慣例：一張卡一件事，開關即存。
