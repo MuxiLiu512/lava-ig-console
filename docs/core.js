@@ -211,6 +211,42 @@ async function saveJson(path, mutateFn, message) {
   throw lastErr || new Error("寫入重試失敗");
 }
 
+// 純文字檔讀寫〔2026-09-03 Brain 頁〕：config/*.md 是規則的正本，
+// 但它們一直只有我改得到——Stanley 把同樣的東西放進 Brain 分頁讓用戶自己編輯，
+// 那件事的價值不是介面好看，是讓規則的主人變成你。
+async function loadText(path) {
+  if (MODE === "local") {
+    const r = await tfetch("../" + path + "?t=" + Date.now());
+    if (!r.ok) throw new Error("讀不到 " + path);
+    return await r.text();
+  }
+  const url = `${apiBase()}/${path}?ref=${S.branch}&t=${Date.now()}`;
+  const hdr = { Accept: "application/vnd.github.raw", ...(AUTH_BAD ? {} : authHdr()) };
+  const r = await tfetch(url, { headers: hdr });
+  if (!r.ok) throw new Error(`讀不到 ${path} (${r.status})`);
+  return await r.text();
+}
+
+async function saveText(path, text, message) {
+  if (MODE === "local") throw new Error("本地預覽不寫檔");
+  if (!S.pat) throw new Error("尚未設定 PAT，無法寫入。請點右上角齒輪設定。");
+  if (AUTH_BAD) throw new Error("PAT 已失效：目前唯讀。");
+  for (let i = 0; i < 3; i++) {
+    const sha = await shaOf(path);
+    const r = await tfetch(`${apiBase()}/${path}`, {
+      method: "PUT",
+      headers: { Accept: "application/vnd.github+json", "Content-Type": "application/json", ...authHdr() },
+      body: JSON.stringify({ message: message || `console: edit ${path}`,
+                             content: strToB64(text), sha, branch: S.branch }),
+    });
+    if (r.ok) return true;
+    if (r.status === 401) { AUTH_BAD = true; authBanner(); throw new Error("PAT 已失效，寫入被拒。"); }
+    if (r.status === 409) continue;                 // 撞車重試（哨兵可能同時在改）
+    throw new Error(`寫入 ${path} 失敗 (${r.status})`);
+  }
+  throw new Error("寫入重試三次仍撞車，請稍後再試");
+}
+
 // ── 圖片載入（私有 repo 走 blob） ────────────────────────────────────
 const imgCache = {};
 async function setImg(node, path) {
@@ -307,5 +343,5 @@ function alertOf(p) {
   return null;
 }
 
-window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, postEvent, pendingDecisionOf, shaOf, saveJson, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
+window.LavaCore = { C, LS, S, MODE, isLocalHost, $, el, esc, nfmt, strToB64, apiBase, rawUrl, authHdr, apiGet, tfetch, postEvent, pendingDecisionOf, shaOf, saveJson, loadText, saveText, patModal, setImg, stageOf, gatesOf, alertOf, slidesDone, lacksMaterial, DESIGN_LAYOUTS, img, STATE, FILES, loadAll, toast, modal, nowISO, rid };
 })();
