@@ -1,0 +1,85 @@
+{
+ "note": "自動化慣例〔學 Stanley 的 Rituals，2026-09-03〕。哨兵每輪做的事，在這裡變成你看得到、關得掉的東西。enabled:false 的步驟哨兵會跳過並在日誌註明。id 必須與 auto_render.sh 的 ritual_on 呼叫一致。",
+ "rituals": [
+  {
+   "id": "trend_crawl",
+   "name": "每天爬書榜",
+   "what": "爬博客來即時榜，把第一手榜單交給選題雷達當出圈證據",
+   "cadence": "每天一次",
+   "enabled": true,
+   "note": "關掉的話，書與趨勢榜那類選題會退回只有二手報導可用"
+  },
+  {
+   "id": "forage",
+   "name": "幫每張找圖",
+   "what": "照撰稿寫的視覺企劃，去 Google 圖片、YouTube 影片、網頁截圖找候選底圖",
+   "cadence": "每一輪（約 17 分）· 每次 2 篇",
+   "enabled": true,
+   "note": "這是缺圖時唯一會自己補上的機制，非必要不要關"
+  },
+  {
+   "id": "curate",
+   "name": "幫你排選圖順序",
+   "what": "把整篇的候選圖送給視覺模型評分，好的排前面，海報與套路圖排後面",
+   "cadence": "每一輪 · 每次 1 篇",
+   "enabled": true,
+   "note": "關掉的話候選只會照銳利度排序，不會判斷內容好不好"
+  },
+  {
+   "id": "render",
+   "name": "把文字壓上圖",
+   "what": "你核准之後，用選定的底圖與最新文字排出成品",
+   "cadence": "每一輪",
+   "enabled": true,
+   "note": "關掉就不會有成品，等於整條線停住"
+  },
+  {
+   "id": "gates",
+   "name": "發佈前自我檢查",
+   "what": "文案禁句、事實出處、排版溢字、成篇視覺，四道逐一檢查並把結果標在稿上",
+   "cadence": "每一輪",
+   "enabled": true,
+   "note": "關掉不會擋你，但你會失去「哪裡有問題」的提示"
+  },
+  {
+   "id": "copy_fix",
+   "name": "自動修破折號",
+   "what": "把禁用的破折號改成句號或冒號，只修改法唯一的部分，判斷性的留給你",
+   "cadence": "每一輪",
+   "enabled": true,
+   "note": "這是機械替換，不會改動語意"
+  },
+  {
+   "id": "learn",
+   "name": "消化你的退回意見",
+   "what": "把你退回時寫的原因整理成規則，追加到規則本的文字風格，之後撰稿就會照做",
+   "cadence": "每天一次（深夜）",
+   "enabled": true,
+   "note": "這是系統唯一會自己變好的機制。關掉等於停止學習"
+  },
+  {
+   "id": "stuck_check",
+   "name": "自己找卡住的稿",
+   "what": "掃描六種卡法，嚴重的推 LINE 通知你，附上卡在哪與下一步",
+   "cadence": "每 3 小時",
+   "enabled": true,
+   "note": "關掉的話卡住的稿要靠你自己發現"
+  },
+  {
+   "id": "insights",
+   "name": "拉 IG 成效",
+   "what": "抓近八天貼文的觸及、儲存、分享等數字，寫進成效表供學習迴路使用",
+   "cadence": "每天一次",
+   "enabled": true,
+   "note": "關掉的話「哪種內容有效」就沒有資料可算"
+  },
+  {
+   "id": "marketing_archive",
+   "name": "回填行銷資料夾",
+   "what": "已發佈的貼文整理進 Google Drive 的貼文規劃資料夾",
+   "cadence": "每一輪",
+   "enabled": true,
+   "note": "純歸檔，關掉不影響產線"
+  }
+ ]
+}

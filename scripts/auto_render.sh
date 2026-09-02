@@ -59,6 +59,33 @@ if [ -f "$RUNMARK" ]; then
   timeout 120 "$PY" scripts/sync_console.py alert "哨兵上一輪未跑完就中斷（停在「${LASTSTEP}」，${STUCK} 分鐘前）。渲染／入料／成效在這段期間停止，請確認佇列狀態。" >>"$LOG" 2>&1
 fi
 echo "啟動" >"$RUNMARK"
+
+# 自動化慣例開關〔2026-09-03，學 Stanley 的 Rituals〕
+# 哨兵每輪做 22 件事，過去全部寫死在這支腳本裡——Jesse 看不到也關不掉。
+# 現在每個步驟先問一次 data/rituals.json。關掉的步驟會在日誌留一行，
+# 不是靜默跳過（靜默跳過的話，你會以為它壞了）。
+# 用輸出字串判斷，不用退出碼——退出碼會與「腳本本身跑失敗」混淆：
+# 第一版寫 sys.exit(1) 代表關閉，外層卻用 `|| return 0` 接住執行失敗，
+# 結果「刻意回報關閉」也被當成失敗、一律視為開啟，開關等於沒作用。
+ritual_on() {
+  local v
+  v=$("$PY" - "$1" <<'RITPY' 2>/dev/null
+import json, sys
+try:
+    for r in json.load(open("data/rituals.json", encoding="utf-8")).get("rituals", []):
+        if r.get("id") == sys.argv[1]:
+            print("off" if r.get("enabled", True) is False else "on"); break
+    else:
+        print("on")
+except Exception:
+    print("on")      # 讀不到設定就照跑，開關壞掉不該讓產線停擺
+RITPY
+)
+  [ "$v" != "off" ]
+}
+ritual_skip() {
+  echo "[$(date '+%m-%d %H:%M')] ⏸ 慣例「$1」已由你關閉，本輪跳過" >>"$LOG"
+}
 # 工作區髒污（未提交的腳本改動）曾讓 pull 每輪失敗、整條線靜默停擺兩天（2026-08-03~05）。
 # 改為：先 stash 再 pull，成功後還原；失敗才放棄本輪。哨兵不再被未提交檔案卡死。
 STASHED=0
@@ -156,6 +183,7 @@ echo "$FRG" | grep -E "→ forage|✓ slide|處理 [1-9]|✗" | sed "s/^/[$(date
 # 需要完整 Chromium（n8n 雲端跑不了）。venv 缺席就跳過並記錄，不擋主流程。
 TC_STAMP="/tmp/lava-ig-trendcrawl.$(date '+%Y-%m-%d')"
 C4AI_PY="$REPO/.venv-c4ai/bin/python"
+if ! ritual_on trend_crawl; then ritual_skip "每天爬書榜"; touch "$TC_STAMP"; fi
 if [ ! -f "$TC_STAMP" ] && [ -x "$C4AI_PY" ]; then
   touch "$TC_STAMP"
   echo "書榜爬取" >"$RUNMARK"
@@ -202,6 +230,7 @@ fi
 # 每 3 小時一次：自己找出停住的貼文，嚴重級才推 LINE（警告級天天有，會變噪音）。
 # 過去都是 Jesse 自己發現不對才回報——白夜行卡了 6 天沒人知道。偵測是系統的責任。
 SK_STAMP="/tmp/lava-ig-stuck.$(date '+%Y-%m-%d-%H')"
+if ! ritual_on stuck_check; then ritual_skip "自己找卡住的稿"; touch "$SK_STAMP"; fi
 if [ ! -f "$SK_STAMP" ] && [ "$(( 10#$(date '+%H') % 3 ))" -eq 0 ]; then
   touch "$SK_STAMP"
   echo "卡彈偵測" >"$RUNMARK"
@@ -213,7 +242,9 @@ fi
 # 入料後所有候選都在本機，一次策展涵蓋劇照＋截圖；視覺模型看得出海報與劇照的差別，
 # 那正是本機啟發式分不出來的。只重排不刪圖，最終仍由人選。每輪最多 1 篇（省額度）。
 echo "圖像策展" >"$RUNMARK"
+if ritual_on curate; then
 CUR=$(timeout 420 "$PY" scripts/sync_console.py curate-post --limit 1 2>&1)
+else CUR=""; ritual_skip "幫你排選圖順序"; fi
 echo "$CUR" | grep -E "→ 策展|✓ 策展|策展完成：[1-9]|!" | sed "s/^/[$(date '+%m-%d %H:%M')] 策展/" >>"$LOG"
 
 # 重掃缺料：把上一步（或前幾輪）補到的 SHOT 素材讀回 posts.json。

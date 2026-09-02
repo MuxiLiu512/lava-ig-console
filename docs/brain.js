@@ -32,6 +32,10 @@ const PAGES = [
   { id: "qc", file: "config/qc-checklist.md", name: "發佈前檢查",
     sub: "成品發佈前的人工檢查清單",
     why: "這份是給人看的清單，不是機器讀的。放你希望自己每次發佈前都確認一遍的事。" },
+  { id: "rituals", file: "data/rituals.json", name: "自動化慣例", kind: "rituals",
+    sub: "系統每輪自己做的事，可開關",
+    why: "系統每 17 分鐘會自己做一輪，這些是它做的事。過去全部寫死在腳本裡，你看不到也關不掉。" +
+         "關掉的步驟哨兵會在日誌留一行說明，不是靜默跳過——靜默跳過的話你會以為它壞了。" },
 ];
 
 let CUR = PAGES[0], ORIG = "", DIRTY = false;
@@ -61,6 +65,7 @@ async function open() {
 
   const sk = el("div", "skel"); sk.style.height = "60vh";
   body.appendChild(sk);
+  if (CUR.kind === "rituals") { sk.remove(); return openRituals(body); }
   let text;
   try {
     text = await loadText(CUR.file);
@@ -109,6 +114,50 @@ async function open() {
     if ((e.metaKey || e.ctrlKey) && e.key === "Enter") { e.preventDefault(); if (DIRTY) save.click(); }
   });
   paint();
+}
+
+// 自動化慣例：一張卡一件事，開關即存。
+// 〔Stanley 的 Rituals 命名法：動詞＋受詞，一句話說完它做什麼〕
+async function openRituals(body) {
+  const { saveJson, FILES, STATE, apiGet } = window.LavaCore;
+  let doc;
+  try {
+    doc = (await apiGet("data/rituals.json")).json;
+  } catch (e) {
+    body.appendChild(el("div", "empty", "讀不到慣例清單：" + esc(e.message))); return;
+  }
+  const wrap = el("div"); wrap.style.display = "grid"; wrap.style.gap = "10px";
+  (doc.rituals || []).forEach(r => {
+    const c = el("div", "card"); const pad = el("div", "pad");
+    const row = el("div", "row");
+    const mid = el("div", "grow");
+    mid.appendChild(el("div", null, `<b>${esc(r.name)}</b>`));
+    mid.appendChild(el("div", "sub", esc(r.what)));
+    const meta = el("div", "meta"); meta.style.marginTop = "4px";
+    meta.textContent = r.cadence + (r.note ? " · " + r.note : "");
+    mid.appendChild(meta);
+    row.appendChild(mid);
+    const st = el("span", "dotlbl " + (r.enabled ? "ok" : ""));
+    st.innerHTML = r.enabled ? "<i></i>開著" : "<i></i>關著";
+    row.appendChild(st);
+    row.appendChild(ActionButton({
+      id: "ritual-" + r.id, label: r.enabled ? "關掉" : "打開",
+      kind: r.enabled ? "ghost" : "primary", doneLabel: r.enabled ? "關了" : "開了",
+      confirm: r.enabled ? ("關掉之後系統就不會再做這件事。" + (r.note || "")) : null,
+      run: async () => {
+        await saveJson("data/rituals.json", d => {
+          const t = (d.rituals || []).find(x => x.id === r.id);
+          if (t) t.enabled = !r.enabled;
+        }, `ritual: ${r.id} → ${r.enabled ? "off" : "on"}`);
+      },
+      onDone: () => { toast(r.enabled ? "關了。下一輪起系統不再做這件事。" : "開了。下一輪起會恢復。"); open(); },
+    }));
+    pad.appendChild(row);
+    c.appendChild(pad);
+    if (!r.enabled) c.style.opacity = ".62";
+    wrap.appendChild(c);
+  });
+  body.appendChild(wrap);
 }
 
 // 沒存就離開會不見——瀏覽器層再擋一次
