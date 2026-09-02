@@ -2014,10 +2014,21 @@ def curate_post(args):
             items = []
             for c in cands:
                 path = m.get(c.get("cid"))
-                if path and os.path.exists(path):
-                    items.append({"id": c["cid"], "path": path,
-                                  "source_type": c.get("source_kind") or c.get("kind") or "image",
-                                  "credit": c.get("source_label") or ""})
+                if not (path and os.path.exists(path)):
+                    continue
+                # Drive 掛載的檔案「存在」不代表「讀得到」——雲端檔案還沒 hydrate 時
+                # 開檔會撞 EDEADLK/EAGAIN/EIO。〔2026-09-03〕一顆讀不到就讓整篇策展
+                # 拋 OSError、每輪都失敗，哨兵連續兩輪只印「維持原順序」。
+                # 讀不到就跳過那一張，其餘照策展——一顆壞資料不該癱瘓整批。
+                try:
+                    with open(path, "rb") as _fh:
+                        _fh.read(1024)
+                except OSError as e:
+                    print("  ⏭ 讀不到候選（%s），略過：%s" % (getattr(e, "strerror", e), os.path.basename(path)[:40]))
+                    continue
+                items.append({"id": c["cid"], "path": path,
+                              "source_type": c.get("source_kind") or c.get("kind") or "image",
+                              "credit": c.get("source_label") or ""})
             if len(items) >= 3:
                 staged[n] = items
                 copy_by[n] = {"heading": s.get("heading") or "", "display_copy": s.get("display_copy") or ""}
@@ -2029,7 +2040,7 @@ def curate_post(args):
         try:
             ranking, scores, focus, curated = FS.curate(staged, copy_by, intent)
         except Exception as e:
-            print("  ! 策展呼叫失敗（%s），維持原順序" % type(e).__name__); continue
+            print("  ! 策展呼叫失敗（%s：%s），維持原順序" % (type(e).__name__, str(e)[:80])); continue
         if not curated:
             print("  ! 策展員無回應，維持原順序（解析度排序仍在）"); continue
         moved = 0
@@ -2233,7 +2244,13 @@ def ingest_new(args):
         q = next((x for x in pj.get("posts", []) if x["id"] == p["id"]), None)
         if q:
             q["version"] = int(p.get("version") or 0) + 1
-            q["redo_note"] = "重新生成：文案與視覺企劃已重寫（%s）" % os.path.basename(newest)[:40]
+            # 說明句式〔Stanley 介面語言研究 §3〕：動詞開頭講我做了什麼、為什麼，
+            # 並明講我刻意沒動什麼——讓你知道系統認得你原本要的東西。
+            _why = (p.get("regen_needed") or {}).get("why") or "前一版有版位補不到合適的圖"
+            _ns = (p.get("regen_needed") or {}).get("slides") or []
+            q["redo_note"] = ("重寫了文案與視覺企劃，因為%s%s。"
+                              "保留了原本的主題與篇型，只換掉找不到素材的做法。"
+                              % (("第 %s 張" % "、".join(map(str, _ns))) if _ns else "", _why))
             q.pop("regen_requested_at", None)
             # 新版＝新內容，舊的核准對它無效。不退回待審的話會卡死：
             # render-approved 因「候選比審核新」而跳過 → 不出成品；狀態是 approved

@@ -112,13 +112,15 @@ function pendingOf(p) {
 function pendNode(p, x) {
   const d = el("div", "pend" + (x.sev === "block" ? " block" : ""));
   const head = el("div");
-  head.innerHTML = `<b class="k">${esc(x.kind)}</b>${x.stale ? ` <span class="edited-tag">已${esc(x.stale)} · 待重驗</span>` : ""} · ${esc(String(x.text).slice(0, 220))}`;
+  // 〔Stanley 介面語言研究 §3〕「我看到什麼」而不是「你哪裡錯了」。
+  // 判決句讓人只能接受或抗辯；提議句讓人可以協作。
+  head.innerHTML = `<b class="k">${esc(x.kind)}</b>${x.stale ? ` <span class="edited-tag">你已${esc(x.stale)} · 我要重看一次</span>` : ""} · 我看到：${esc(String(x.text).slice(0, 220))}`;
   d.appendChild(head);
-  if (x.fix) d.appendChild(el("div", "fix", "建議：" + esc(String(x.fix).slice(0, 180))));
+  if (x.fix) d.appendChild(el("div", "fix", "我建議：" + esc(String(x.fix).slice(0, 180))));
   if (x.gate === "material") return d;          // 缺圖只能等補圖或重新生成
   const row = el("div", "btnrow"); row.style.marginTop = "8px";
   row.appendChild(ActionButton({
-    id: "resolve-" + p.id + "-" + x.key, label: "這項我已確認沒問題", kind: "ghost", doneLabel: "已記錄",
+    id: "resolve-" + p.id + "-" + x.key, label: "這項沒問題，記下來", kind: "ghost", doneLabel: "記下了",
     run: async () => {
       const ta = el("textarea"); ta.rows = 2;
       ta.placeholder = "為什麼沒問題？（例：99% 是修辭不是數據；出處頁面改版但內容仍在）";
@@ -130,7 +132,7 @@ function pendNode(p, x) {
         { key: x.key, gate: x.gate, reason: ta.value.trim() });
       (p.gate_overrides = p.gate_overrides || []).push({ key: x.key, gate: x.gate, reason: ta.value.trim() });
     },
-    onDone: () => { toast("已記錄。這項不再擋你。"); render(); },
+    onDone: () => { toast("記下了。這項我不再提，理由留在紀錄裡。"); render(); },
   }));
   d.appendChild(row);
   return d;
@@ -306,7 +308,7 @@ function slideCard(p, s, pend) {
     hero.appendChild(w);
   } else {
     const boxp = el("div", "design-ph");
-    boxp.appendChild(el("div", null, "這張還沒有可用的圖。系統每輪會補圖；連兩輪補不到會轉為待重新生成。"));
+    boxp.appendChild(el("div", null, "這張我還沒找到能用的圖。我每一輪都在找；連兩輪找不到就會整篇重寫視覺企劃。"));
     hero.appendChild(boxp);
   }
   card.appendChild(hero);
@@ -620,9 +622,9 @@ function decisionBar(p, pend) {
 // 事件由哨兵接手實跑 fact_check／copy_check（每 10 分一輪）。
 function recheckButton(p) {
   return ActionButton({
-    id: "recheck-" + p.id, label: "重新檢查", kind: "ghost", doneLabel: "已排入重檢",
+    id: "recheck-" + p.id, label: "請我再看一次", kind: "ghost", doneLabel: "排進去了",
     run: () => postEvent("post.recheck", p.id, {}),
-    onDone: () => toast(`已排入重新檢查。哨兵 ${SCHEDULE.SENTINEL_MIN} 分內重跑事實與文案檢查，結果會更新在這裡。`),
+    onDone: () => toast(`好，我 ${SCHEDULE.SENTINEL_MIN} 分內用現在的文字重看一次事實與文案，結果直接更新在這頁。`),
   });
 }
 

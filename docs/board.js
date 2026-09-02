@@ -62,26 +62,26 @@ function globalStatus(posts) {
   const hb = STATE.heartbeat && !STATE.heartbeat._error ? STATE.heartbeat : null;
   let line;
   if (!hb || !hb.ts) {
-    line = StatusLine({ who: "系統", stage: "產線心跳：尚無資料", next: "不用動，第一輪心跳產出後這裡會亮", tone: "warn" });
+    line = StatusLine({ who: "系統", stage: "還沒開始運作", next: "不用動，第一輪跑完這裡會亮", tone: "warn" });
   } else {
     const min = Math.round((Date.now() - new Date(hb.ts)) / 60000);
     const errs = (hb.errors || []).length;
     if (min > SCHEDULE.HEARTBEAT_BAD_MIN) {
-      line = StatusLine({ who: "系統", stage: `產線 ${Math.round(min / 60)} 小時沒有心跳`, next: "點此複製狀態、貼給 Claude 查", tone: "bad" });
+      line = StatusLine({ who: "系統", stage: `內容團隊停了 ${Math.round(min / 60)} 小時`, next: "點此複製狀態、貼給 Claude 查", tone: "bad" });
       line.style.cursor = "pointer";
       line.onclick = () => { navigator.clipboard.writeText(JSON.stringify(hb, null, 1)); toast("已複製。貼到對話裡，Claude 會直接查。"); };
     } else if (min > SCHEDULE.HEARTBEAT_WARN_MIN || errs) {
-      line = StatusLine({ who: "系統", stage: `心跳 ${min} 分前` + (errs ? ` · 上輪告警 ${errs} 則` : ""),
-        next: errs ? "點開看告警內容" : "不用動，观察中", tone: "warn",
+      line = StatusLine({ who: "系統", stage: `${min} 分前還在動` + (errs ? ` · 有 ${errs} 件要看一眼` : ""),
+        next: errs ? "點開看是什麼事" : "不用動，再觀察一下", tone: "warn",
         detail: (hb.errors || []).join("\n") });
-      if (errs) { line.style.cursor = "pointer"; line.onclick = () => modal("上輪告警",
+      if (errs) { line.style.cursor = "pointer"; line.onclick = () => modal("這一輪要看一眼的事",
         el("div", "small", (hb.errors || []).map(e => `<div style="margin:4px 0">${esc(e)}</div>`).join("")),
         [{ label: "關閉", value: 1 }]); }
     } else {
       const next = posts.filter(p => p.status === "scheduled" && p.publish_at > nowISO())
                         .map(p => p.publish_at).sort()[0];
       const nextTxt = next ? "下篇 " + next.slice(5, 16).replace("T", " ") + " 自動發佈" : "沒有已排程的貼文";
-      line = StatusLine({ who: "系統", stage: "產線正常 · 心跳 " + min + " 分前", next: nextTxt, tone: next ? "ok" : "warn" });
+      line = StatusLine({ who: "系統", stage: "一切正常 · " + min + " 分前還在動", next: nextTxt, tone: next ? "ok" : "warn" });
     }
   }
   zone.appendChild(line);
@@ -99,7 +99,12 @@ function queueCard(p, view) {
   const sub = el("div", "sub");
   sub.innerHTML = `<b>${esc(view.label)}</b> · ${esc(dur(sinceOf(p)))}`;
   mid.appendChild(sub);
-  if (p.redo_note) mid.appendChild(el("div", "meta", "已重做：" + esc(String(p.redo_note).slice(0, 48))));
+  if (p.redo_note) {
+    // 〔Stanley §3〕助手報告自己做了什麼，不是系統宣告狀態變更
+    const rn = el("div", "meta", "內容團隊：" + esc(String(p.redo_note).slice(0, 90)));
+    rn.style.marginTop = "3px";
+    mid.appendChild(rn);
+  }
   const gz = gatesNode(p); gz.style.marginTop = "6px"; mid.appendChild(gz);
   c.appendChild(mid);
   const act = el("div", "act");
