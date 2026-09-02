@@ -19,6 +19,8 @@ RUNMARK="/tmp/lava-ig-autorender.running"
 # Jesse 的放行決定四天沒有回寫 ClickUp）。互動 shell 有 homebrew PATH，
 # 所以每次手動跑都是好的——正是「手動都過、排程全死」的經典組合。
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+# 讓共用的 save() 認得「這是哨兵在寫」，不對自己誤報撞車〔2026-09-03〕
+export LAVA_SENTINEL=1
 if ! command -v timeout >/dev/null 2>&1; then
   echo "[$(date '+%m-%d %H:%M')] ✗ 找不到 timeout（coreutils），哨兵中止——這會讓所有步驟靜默不跑" >>"$LOG"
   exit 1

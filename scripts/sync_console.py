@@ -125,7 +125,36 @@ def load(name):
         return json.load(f)
 
 
+SENTINEL_LOCK = "/tmp/lava-ig-autorender.lock"
+
+
+def _sentinel_running():
+    """哨兵這一輪是否正在跑。用它自己的鎖目錄判斷，超過 30 分視為殘留（與 auto_render.sh 同規則）。"""
+    try:
+        if not os.path.isdir(SENTINEL_LOCK):
+            return False
+        import time as _t
+        return (_t.time() - os.path.getmtime(SENTINEL_LOCK)) < 1800
+    except Exception:
+        return False
+
+
 def save(name, obj):
+    """寫資料檔。所有腳本（copy_check／fact_check／copy_fix／check_typography／
+    experiment／sync_console）共用這一支，所以撞車偵測放在這裡一次覆蓋全部。
+
+    〔2026-09-03 Jesse：平行作業會不會互相影響導致全體崩潰〕
+    哨兵每 10 分跑一輪，自己有鎖不會跑兩份。但人在終端機手動跑腳本時
+    完全不受那把鎖保護——兩邊各自「讀檔→改→寫回」，後寫的會整份蓋掉先寫的，
+    而且**沒有任何錯誤訊息**，只是有人的修改憑空消失。
+
+    這裡不擋（擋了會讓人以為壞掉），改成大聲說出來並留下痕跡：
+    要人知道剛才那一寫可能踩到別人。哨兵自己寫入時帶 LAVA_SENTINEL=1，不會誤報。"""
+    if _sentinel_running() and not os.environ.get("LAVA_SENTINEL"):
+        sys.stderr.write(
+            "  ⚠ 撞車風險：哨兵正在跑，而你現在手動寫 %s。\n"
+            "     兩邊都是「讀檔→改→寫回」，後寫的會整份蓋掉先寫的，而且不會報錯。\n"
+            "     建議等哨兵這一輪跑完（最多 10 分）再操作，或先確認它沒在動這個檔。\n" % name)
     with open(os.path.join(DATA, name), "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
         f.write("\n")
