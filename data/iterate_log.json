@@ -708,6 +708,87 @@
         "metrics_window": "2026-09-02"
       },
       "rollback_of": null
+    },
+    {
+      "v": "cfg-044",
+      "date": "2026-09-03",
+      "commit": "d294efb",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 選擇過少"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mryw8kv4"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-045",
+      "date": "2026-09-03",
+      "commit": "d35edca",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 底圖重複太多，每篇都是一樣的"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mrywardn"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-046",
+      "date": "2026-09-03",
+      "commit": "61caf54",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mrywblpd"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-047",
+      "date": "2026-09-03",
+      "commit": "d5b79ef",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "吸收操控室文案編輯的語氣範例 21 則"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": null
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-048",
+      "date": "2026-09-03",
+      "commit": "9d6fb9e",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "成效觀察：高「Superlike 是什麼：把心」6.9% / 低「1810180428」1.0%"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": "2026-09-03"
+      },
+      "rollback_of": null
     }
   ],
   "rollback_requests": []
