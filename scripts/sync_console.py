@@ -1574,6 +1574,18 @@ def events_apply(args):
                     "slide_choices": pay.get("slide_choices") or {},
                     "scope": None, "feedback": pay.get("feedback") or "",
                     "consumed": False, "copy_choice": pay.get("copy_choice")})
+        elif t.startswith("reel."):
+            # Reels 走同一條事件管路〔2026-09-03〕：一個決定＝一個事件檔，
+            # 哨兵是唯一寫者。貼文那一套已經證明有效（結構性終結「退回又跑回來」），
+            # 沒有理由讓 Reels 另立一套——多一套就是多一份會分歧的實作。
+            reels_d = load("reels.json")
+            rl = next((x for x in reels_d.get("reels", []) if x.get("id") == target), None)
+            if rl is None:
+                msg = "找不到這支 Reels %s" % target
+            else:
+                ok, msg = SM.apply_reel_event(rl, ev)
+                if ok:
+                    save("reels.json", reels_d)
         elif t.startswith("idea.") and target in ideas:
             ok, msg = SM.apply_idea_event(ideas[target], ev)
             if ok and t == "idea.approve":

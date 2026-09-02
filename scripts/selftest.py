@@ -81,6 +81,27 @@ check("重餵：不准發佈的保護旗標不被沖掉", _new.get("no_publish")
 check("重餵：閘門覆寫不被沖掉", _new.get("gate_overrides") == [{"key": "qa:x"}])
 check("重餵：未知的新欄位預設保留", _new.get("版本外的新欄位") == 1)
 
-TOTAL = 23
+# Reels 狀態機〔2026-09-03〕：影片是唯一「一按下去就燒錢」的東西，
+# 分鏡關卡是把「不喜歡」的成本從約 137 點降到 7 點的設計。
+# 那條路必須在狀態機層不存在，不是靠介面隱藏按鈕——介面會被繞過。
+import importlib.util as _ilu
+_sm_spec = _ilu.spec_from_file_location("sm", os.path.join(os.path.dirname(os.path.abspath(__file__)), "state_machine.py"))
+_SM = _ilu.module_from_spec(_sm_spec); _sm_spec.loader.exec_module(_SM)
+
+def _reel(status, ev):
+    r = {"status": status}
+    ok, _ = _SM.apply_reel_event(r, {"type": ev, "ts": "2026-09-03T00:00:00+08:00", "payload": {}})
+    return ok, r.get("status")
+
+check("Reels：跳過分鏡直接生影片會被擋", _reel("storyboard", "reel.generated")[0] is False)
+check("Reels：分鏡階段不能核准整支", _reel("storyboard", "reel.approve")[0] is False)
+check("Reels：沒核准不能排程", _reel("video_review", "reel.schedule")[0] is False)
+check("Reels：確認分鏡 → storyboard_ok", _reel("storyboard", "reel.approve_storyboard") == (True, "storyboard_ok"))
+check("Reels：分鏡確認後可生影片", _reel("storyboard_ok", "reel.generated") == (True, "video_review"))
+check("Reels：看過影片可核准", _reel("video_review", "reel.approve") == (True, "approved"))
+check("Reels：核准後可排程", _reel("approved", "reel.schedule") == (True, "scheduled"))
+check("Reels：排程後仍可退回", _reel("scheduled", "reel.reject") == (True, "rejected"))
+
+TOTAL = 31
 print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)
