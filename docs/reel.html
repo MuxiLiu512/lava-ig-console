@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0c0e">
+<title>影片審核 · Lava</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* 影片審核〔藍圖 UI 規格 §7＋Stanley 的 Script｜Caption 分頁模型〕
+   與貼文共用整頁骨架（頂欄、狀態列、決策列、ActionButton），只有中段換成分段卡。
+   兩階段：先看分鏡（7 點）再決定要不要生影片（約 137 點）。 */
+body { max-width: none; }
+.rl-wrap { max-width: 760px; margin: 0 auto; padding: 12px 16px 120px; }
+.rl-tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); margin: 14px 0 4px; }
+.rl-tabs button { background: none; border: none; color: var(--text-3); font-size: 14px;
+  padding: 8px 2px; border-bottom: 2px solid transparent; }
+.rl-tabs button.on { color: var(--text); border-bottom-color: var(--you); font-weight: 600; }
+.rl-cost { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; font-size: 13px; }
+.rl-cost b { font-size: 19px; font-variant-numeric: tabular-nums; }
+.segcard { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+  margin-bottom: 12px; overflow: hidden; }
+.segcard.done { border-color: rgba(87,189,125,.45); }
+.segcard.locked { opacity: .72; }
+.sg-head { display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+  border-bottom: 1px solid var(--line); font-size: 13px; }
+.sg-head .n { font-weight: 700; }
+.sg-head .kind { font-size: 11.5px; padding: 1px 8px; border-radius: 999px;
+  background: var(--surface-3); color: var(--text-2); }
+.sg-head .cost { margin-left: auto; color: var(--text-3); font-variant-numeric: tabular-nums; }
+.sg-body { padding: 12px 14px; }
+.sg-script { background: var(--surface-2); border-radius: var(--r-md); padding: 10px 12px;
+  white-space: pre-wrap; font-size: 13.5px; line-height: 1.75; }
+.sg-board { display: flex; justify-content: center; background: #08090b; }
+.sg-board img { max-width: 100%; max-height: 44vh; display: block; }
+.sg-board .ph { padding: 34px 18px; color: var(--text-3); font-size: 12.5px; text-align: center; }
+.sg-foot { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-top: 1px solid var(--line); }
+.sg-lock { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--warn); }
+.rl-timeline { display: flex; height: 22px; border-radius: 6px; overflow: hidden; margin: 10px 0 4px; }
+.rl-timeline span { display: block; font-size: 10px; color: #fff; text-align: center; line-height: 22px; }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="icon-btn" href="index.html" title="回工作台" aria-label="回工作台" id="backBtn"></a>
+    <div class="title ellip" id="rlTitle">影片審核 <small id="modeTag"></small></div>
+    <div class="grow"></div>
+    <span class="meta num" id="rlPos"></span>
+  </header>
+  <div class="rl-wrap" id="rlMain">
+    <div class="skel" style="height:44px;margin-bottom:12px" aria-busy="true" aria-label="載入中"></div>
+    <div class="skel" style="height:300px"></div>
+  </div>
+  <div class="decisionbar" id="rlBar" style="display:none"></div>
+  <script>
+  (function () {
+    var v = "?v=" + Date.now();
+    ["config.js", "core.js", "terms.js", "ui.js", "reel.js"].forEach(function (f) {
+      var s = document.createElement("script");
+      s.src = f + v; s.async = false;
+      document.head.appendChild(s);
+    });
+  })();
+  </script>
+</body>
+</html>

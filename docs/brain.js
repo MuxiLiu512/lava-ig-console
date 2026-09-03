@@ -246,13 +246,39 @@ async function openRituals(body) {
   } catch (e) {
     body.appendChild(el("div", "empty", "讀不到慣例清單：" + esc(e.message))); return;
   }
+  // 分組呈現〔Stanley 的 Rituals 頁：Daily rhythm 與各平台分開〕
+  // 它的標題是「Set Stanley's rhythm. / Things Stanley does when you're not looking.」
+  // ——慣例是你養成的節奏，不是機器的排程。這個用字差別決定誰是主人。
+  const hd = el("div", "bn-why");
+  hd.style.cssText = "margin:-4px 0 14px";
+  hd.innerHTML = "<b>設定內容團隊的節奏。</b><br>這些是你不在看的時候，它自己會做的事。";
+  body.appendChild(hd);
   const wrap = el("div"); wrap.style.display = "grid"; wrap.style.gap = "10px";
-  (doc.rituals || []).forEach(r => {
+  const groups = {};
+  (doc.rituals || []).forEach(r => { (groups[r.group || "其他"] = groups[r.group || "其他"] || []).push(r); });
+  Object.entries(groups).forEach(([g, rs]) => {
+    const h = el("div", "meta", g + "（" + rs.length + "）");
+    h.style.cssText = "margin-top:8px;font-weight:600;color:var(--text-2)";
+    wrap.appendChild(h);
+    rs.forEach(r => wrap.appendChild(ritualCard(r)));
+  });
+  body.appendChild(wrap);
+}
+
+function ritualCard(r) {
+  const { el, esc, toast } = window.LavaCore;
+  {
     const c = el("div", "card"); const pad = el("div", "pad");
     const row = el("div", "row");
     const mid = el("div", "grow");
     mid.appendChild(el("div", null, `<b>${esc(r.name)}</b>`));
     mid.appendChild(el("div", "sub", esc(r.what)));
+    if (r.flow) {
+      const fl = el("div", "meta");
+      fl.style.cssText = "margin-top:3px;font-variant-numeric:tabular-nums;color:var(--info)";
+      fl.textContent = r.flow;                 // 一眼看出這張卡在搬什麼
+      mid.appendChild(fl);
+    }
     const meta = el("div", "meta"); meta.style.marginTop = "4px";
     meta.textContent = r.cadence + (r.note ? " · " + r.note : "");
     mid.appendChild(meta);
@@ -275,9 +301,8 @@ async function openRituals(body) {
     pad.appendChild(row);
     c.appendChild(pad);
     if (!r.enabled) c.style.opacity = ".62";
-    wrap.appendChild(c);
-  });
-  body.appendChild(wrap);
+    return c;
+  }
 }
 
 // 沒存就離開會不見——瀏覽器層再擋一次
