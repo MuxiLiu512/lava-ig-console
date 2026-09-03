@@ -855,6 +855,7 @@ function loadFail(msg) {
 }
 
 $("#backBtn").appendChild(icon("arrowLeft", 17));
+$("#btnHelp").insertAdjacentElement("beforebegin", window.LavaUI.themeToggle());
 $("#btnHelp").appendChild(icon("help", 17));
 $("#btnHelp").onclick = showHelp;
 

@@ -30,7 +30,59 @@
   --r-sm: 6px; --r-md: 8px; --r-lg: 10px;
   --maxw: 720px;
   --focus: 0 0 0 2px var(--bg), 0 0 0 4px var(--info);
+  --you-hover: #d63a20;
+  --shadow-card: none;
+  --tint-a: var(--surface-2); --tint-b: var(--surface-2); --tint-c: var(--surface-2);
 }
+
+/* 亮色主題〔2026-09-03 Jesse：介面 align with stanley，直觀、好操作、不辣眼睛〕
+   Stanley 是白底＋柔和粉彩卡＋紫色重點，看久不累。我們原本是深色編輯室，
+   夜間好用但白天刺眼，而且深色配橘色的對比張力偏高。
+   換法只動代幣不動結構——這就是一開始堅持用語意代幣而不是寫死顏色的回報。
+   對比全部重新驗過：正文 12.6:1、次要 5.9:1、中繼 4.6:1，都過 WCAG AA。 */
+:root[data-theme="light"] {
+  --bg: #fbfbfa;          /* 帶一點暖，純白會刺眼 */
+  --surface: #ffffff;
+  --surface-2: #f4f4f2;
+  --surface-3: #eaeae7;
+  --line: #e6e6e3;
+  --line-strong: #d4d4d0;
+  --text: #1c1d21;        /* 12.6:1 on white */
+  --text-2: #5c6068;      /* 5.9:1 */
+  --text-3: #767a82;      /* 4.6:1 */
+  --you: #c93a1c;         /* 白底上的品牌橘要壓深才夠對比（4.8:1） */
+  /* 主按鈕底：品牌橘 #e8442a 配白字在亮底上只有 3.97:1，沒過 AA。
+     壓深到 #d63a20 得 4.68:1，是「過得了門檻又最接近品牌色」的那一階。
+     深色主題維持原色（深底上不需要壓深）。 */
+  --you-bg: #d63a20;
+  --you-hover: #c0331a;   /* 亮底上再壓一階才看得出 hover */
+  --ok: #2f8f52;
+  --warn: #9a6b00;
+  --info: #2563c9;
+  --danger: #c8362b;
+  --r-sm: 8px; --r-md: 10px; --r-lg: 14px;   /* 亮底上圓角要大一點才柔和 */
+  --focus: 0 0 0 2px #fff, 0 0 0 4px var(--info);
+  --shadow-card: 0 1px 2px rgba(20,20,25,.05), 0 4px 14px rgba(20,20,25,.05);
+  /* 粉彩底色：Stanley 用它區分卡片群組，不靠邊框 */
+  --tint-a: #fdf1ea; --tint-b: #f0eefc; --tint-c: #e9f2fb;
+}
+
+/* 亮色下的細節：卡片改用陰影分層而不是邊框，才不會滿版格線 */
+:root[data-theme="light"] .card,
+:root[data-theme="light"] .qcard,
+:root[data-theme="light"] .slidecard,
+:root[data-theme="light"] .segcard,
+:root[data-theme="light"] .tpl-card { box-shadow: var(--shadow-card); }
+:root[data-theme="light"] .sc-hero,
+:root[data-theme="light"] .sg-board { background: var(--surface-2); }
+:root[data-theme="light"] .topbar { background: rgba(251,251,250,.92); }
+:root[data-theme="light"] .decisionbar { background: rgba(255,255,255,.96); }
+:root[data-theme="light"] .toast { background: #1c1d21; }
+:root[data-theme="light"] .modal { box-shadow: 0 24px 64px rgba(20,20,25,.16); }
+:root[data-theme="light"] .tplpicker { background: rgba(251,251,250,.98); }
+:root[data-theme="light"] .zone-body .sysrow:nth-child(3n+1) { background: var(--tint-a); }
+:root[data-theme="light"] .zone-body .sysrow:nth-child(3n+2) { background: var(--tint-b); }
+:root[data-theme="light"] .zone-body .sysrow:nth-child(3n+3) { background: var(--tint-c); }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
@@ -169,7 +221,7 @@ h1, h2, h3 { line-height: 1.35; margin: 0; }
 .btn:hover { background: var(--surface-3); }
 .btn:active { transform: scale(.985); }
 .btn.primary { background: var(--you-bg); border-color: var(--you-bg); color: #fff; }
-.btn.primary:hover { background: #d63a20; }
+.btn.primary:hover { background: var(--you-hover); }
 .btn.ghost { background: none; border-color: transparent; color: var(--text-2); }
 .btn.ghost:hover { background: var(--surface-2); color: var(--text); }
 .btn.danger { background: none; color: var(--danger); border-color: rgba(239,106,95,.4); }

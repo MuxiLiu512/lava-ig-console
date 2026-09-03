@@ -125,7 +125,7 @@ async function open() {
 // 內容範本：新增、編輯、升降狀態，改完立刻生效。
 // 〔Jesse 2026-09-03：還要增加不同的 template，也希望能即時完成修改〕
 const T_FIELDS = [
-  { k: "hook_type", label: "名稱（開場類型）", ph: "例：數據反差、趨勢詞策展", req: true },
+  { k: "hook_type", label: "名稱（開場類型）", ph: "例：數據反差、趨勢詞文字卡", req: true },
   { k: "skeleton", label: "骨架", ph: "用 → 分段，例：cover=大字標題 → 2-4張=展開 → 尾張=CTA", req: true, big: true },
   { k: "why_it_works", label: "為什麼有效", ph: "一段話說清楚它為什麼抓得住人", big: true },
   { k: "fit_for_lava", label: "為什麼適合 Lava", ph: "跟我們的定位怎麼扣上", big: true },
@@ -311,6 +311,7 @@ window.addEventListener("beforeunload", e => {
 });
 
 $("#backBtn").appendChild(icon("arrowLeft", 17));
+$(".topbar").appendChild(window.LavaUI.themeToggle());
 $("#modeTag").textContent = MODE === "local" ? "· 本地預覽" : "";
 if (MODE === "local") $("#bnHint").textContent = "本地預覽：可以看，存檔要在正式站";
 open();

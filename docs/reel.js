@@ -313,6 +313,7 @@ function render() {
 }
 
 $("#backBtn").appendChild(icon("arrowLeft", 17));
+$(".topbar").appendChild(window.LavaUI.themeToggle());
 FILES.reels = "data/reels.json";
 loadAll().then(() => {
   $("#modeTag").textContent = MODE === "local" ? "· 本地預覽" : "";

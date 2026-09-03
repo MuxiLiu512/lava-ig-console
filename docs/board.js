@@ -398,6 +398,7 @@ function boot() {
   main.appendChild(D.wrap);
 }
 
+$("#btnSettings").insertAdjacentElement("beforebegin", window.LavaUI.themeToggle());
 $("#btnSettings").appendChild(window.LavaUI.icon("settings", 17));
 $("#btnSettings").onclick = patModal;
 

@@ -24,6 +24,8 @@ const ICONS = {
   lightbulb: '<path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/>',
   copy: '<rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>',
   edit: '<path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
   help: '<circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>',
 };
 function icon(name, size) {
@@ -305,6 +307,35 @@ function openTemplatePicker(opt) {
   document.body.appendChild(bg);
 }
 
-window.LavaUI = { icon, ago, dur, ActionButton, StatusLine, Section, inFlight,
+// ── 主題〔2026-09-03 Jesse：align with stanley，不辣眼睛〕──────────────
+// 預設亮色（Stanley 是白底柔和粉彩，看久不累）。深色留著，夜間排版時好用。
+// 選擇存 localStorage，四頁共用；套用寫在 <head> 之前執行，避免先閃一下深色。
+function initTheme() {
+  const saved = window.localStorage.getItem("lava_theme") || "light";
+  document.documentElement.setAttribute("data-theme", saved);
+  return saved;
+}
+function themeToggle() {
+  const b = el("button", "icon-btn");
+  b.type = "button";
+  const paint = () => {
+    const dark = document.documentElement.getAttribute("data-theme") !== "light";
+    b.innerHTML = "";
+    b.appendChild(icon(dark ? "sun" : "moon", 17));
+    b.title = dark ? "換成亮色" : "換成深色";
+    b.setAttribute("aria-label", b.title);
+  };
+  b.onclick = () => {
+    const dark = document.documentElement.getAttribute("data-theme") !== "light";
+    const next = dark ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    window.localStorage.setItem("lava_theme", next);
+    paint();
+  };
+  paint();
+  return b;
+}
+
+window.LavaUI = { icon, ago, dur, ActionButton, StatusLine, Section, inFlight, initTheme, themeToggle,
                   loadBanned, lintText, InlineEdit, openTemplatePicker, tplName };
 })();

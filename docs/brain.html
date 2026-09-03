@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0c0e">
 <title>規則本 · Lava</title>
-<link rel="stylesheet" href="style.css">
+<script>/* 樣式也要帶版本戳〔2026-09-03〕：JS 早就帶了，CSS 沒有——
+   於是改了配色、重整卻沒變，跟 8/24、8/25 那兩次「修好了卻看不到」是同一個根因。
+   Pages 給靜態資產 10 分鐘快取，單人內部工具正確性遠比快取重要。 */
+document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
 <style>
 /* 規則本〔學 Stanley 的 Brain：人格與策略是可編輯的正本，不是只有工程師改得到的檔案〕
    左側分頁、右側編輯。存檔直接寫回 repo，撰稿與檢查下一輪就吃到新規則。 */
@@ -28,6 +31,8 @@ body { max-width: 1180px; padding: 0 16px 40px; }
 .bn-bar { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
 .bn-bar .meta { margin-left: auto; }
 </style>
+<script>/* 先套主題，避免載入時閃一下深色 */
+try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lava_theme")||"light")}catch(e){}</script>
 </head>
 <body>
   <header class="topbar" style="margin:0 -16px">

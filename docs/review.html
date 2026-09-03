@@ -5,12 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b0c0e">
 <title>審稿台 · Lava</title>
-<link rel="stylesheet" href="style.css">
+<script>/* 樣式也要帶版本戳〔2026-09-03〕：JS 早就帶了，CSS 沒有——
+   於是改了配色、重整卻沒變，跟 8/24、8/25 那兩次「修好了卻看不到」是同一個根因。
+   Pages 給靜態資產 10 分鐘快取，單人內部工具正確性遠比快取重要。 */
+document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');</script>
 <style>
 /* 審稿台〔藍圖 UI 規格 §4〕：廢除三欄，單欄由上而下審完一篇，不換頁。
    順序固定：整體資訊 → 逐張審核卡 → 貼文文案 → IG 預覽（摺疊）→ 決策列（sticky）。 */
 body { max-width: none; }
 </style>
+<script>/* 先套主題，避免載入時閃一下深色 */
+try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lava_theme")||"light")}catch(e){}</script>
 </head>
 <body>
   <header class="topbar">
