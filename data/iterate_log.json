@@ -789,6 +789,72 @@
         "metrics_window": "2026-09-03"
       },
       "rollback_of": null
+    },
+    {
+      "v": "cfg-049",
+      "date": "2026-09-03",
+      "commit": "48d0079",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-manual-aziz-s2fix"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-050",
+      "date": "2026-09-03",
+      "commit": "f755f19",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) slide3 原候選僅 1 張（Gottman 官網截圖，中文壓在英文正文上不可讀，成篇總檢 block）。補抓 per"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-fix-gottman-s3"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-051",
+      "date": "2026-09-03",
+      "commit": "f38e6b1",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 成篇總檢 block：第1/2/7/8 張都是情侶近距離同構圖。slide2 改靜物（桌上手機）、slide7 改非情侶"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-fix-nophone-dup"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-052",
+      "date": "2026-09-03",
+      "commit": "fa5a787",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "成效觀察：高「Superlike 是什麼：把心」6.8% / 低「1810180428」1.0%"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": "2026-09-03"
+      },
+      "rollback_of": null
     }
   ],
   "rollback_requests": []
