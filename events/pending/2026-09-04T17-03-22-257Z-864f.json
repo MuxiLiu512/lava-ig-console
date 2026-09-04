@@ -1,0 +1,21 @@
+{
+ "type": "post.approve",
+ "target": "20260824-StanTatkin說你",
+ "ts": "2026-09-05T01:03:22+08:00",
+ "by": "console",
+ "payload": {
+  "feedback": "",
+  "slide_choices": {
+   "1": "a",
+   "2": "a",
+   "3": "a",
+   "4": "a",
+   "5": "a",
+   "6": "a",
+   "7": "a",
+   "8": "a"
+  },
+  "copy_choice": "claude",
+  "seconds": 129
+ }
+}
