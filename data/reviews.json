@@ -922,6 +922,48 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": null
+    },
+    {
+      "id": "R-2026-09-04T17-01-",
+      "post_id": "86eyrz3fb",
+      "version": 1,
+      "ts": "2026-09-05T01:01:11+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "b",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": null
+    },
+    {
+      "id": "R-2026-09-04T17-03-",
+      "post_id": "20260824-StanTatkin說你",
+      "version": 2,
+      "ts": "2026-09-05T01:03:22+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "a",
+        "4": "a",
+        "5": "a",
+        "6": "a",
+        "7": "a",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": "claude"
     }
   ]
 }
