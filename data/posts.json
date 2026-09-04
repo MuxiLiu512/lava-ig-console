@@ -3927,10 +3927,21 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:36+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 6,
-        "issues": []
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Tom Holland 說」的出處無法自動核對，請人工看過：https://www.npr.org/2023/12/04/1216950808/rizz-oxford-word-of-the-year-swiftie"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Kai Cenat 說」的出處無法自動核對，請人工看過：https://www.complex.com/pop-culture/a/brad-callas/kai-cenat-whether-he-invented-term-rizz"
+          }
+        ]
       },
       "qa": {
         "ts": "2026-09-02T00:42:19+08:00",
@@ -3986,7 +3997,7 @@
         "rhythm": "整篇前四張連續人臉深色底圖像在原地踏步，第5張山景是唯一的構圖休息站，第7、8張雖然換場景卻撞片源，CTA的純黑結尾雖乾淨但收得太硬——整體節奏是『悶→喘一口氣→再悶→硬煞車』，建議至少在第2或第4張做一次主體與明暗的雙重切換，才能讓九張滑起來有層次。"
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -4677,7 +4688,7 @@
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-04T11:01:37+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4685,11 +4696,16 @@
             "severity": "block",
             "rule": "no_source",
             "line": "主題的「99%」沒有任何一條出處提到這個數字（百分比）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究指出」的出處無法自動核對，請人工看過：https://www.connectedcouples.app/blog/attachment-styles-in-relationships"
           }
         ]
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 4
@@ -5244,7 +5260,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -5288,7 +5304,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:38+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "claims": 28,
         "issues": [
@@ -5306,6 +5322,11 @@
             "severity": "warn",
             "rule": "vague_authority",
             "line": "主題寫「研究說」但沒有指名是哪一個研究"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究說」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
           },
           {
             "severity": "warn",
@@ -5329,6 +5350,11 @@
           },
           {
             "severity": "block",
+            "rule": "placeholder_source",
+            "line": "「研究指出」的出處是暫代的，作者自己註明還沒查證：【注意】95.1% 數字來源為數位發展部 2024 年資料；每天近 6 小時數字來源為中研院臺灣傳播調查資料庫，兩項數字均引自研究筆記，具體"
+          },
+          {
+            "severity": "block",
             "rule": "no_source",
             "line": "第 6 張的「30 歲」沒有任何一條出處提到這個數字（年齡）"
           },
@@ -5336,6 +5362,11 @@
             "severity": "warn",
             "rule": "vague_authority",
             "line": "第 7 張寫「研究指出」但沒有指名是哪一個研究"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究顯示」的出處無法自動核對，請人工看過：https://today.ucsd.edu/story/study-loneliness-highest-in-the-20s-and-lowest-in-the-60s"
           }
         ]
       },
@@ -5792,7 +5823,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -5857,10 +5888,15 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:40+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 5,
         "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Carl Rogers 說」的出處無法自動核對，請人工看過：https://www.goodreads.com/author/quotes/102062.Carl_R_Rogers"
+          },
           {
             "severity": "warn",
             "rule": "unreadable",
@@ -6314,7 +6350,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -6372,8 +6408,8 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:42+08:00",
-        "pass": false,
+        "ts": "2026-09-04T13:52:42+08:00",
+        "pass": true,
         "claims": 4,
         "issues": [
           {
@@ -6382,14 +6418,9 @@
             "line": "第 4 張寫「研究顯示」但沒有指名是哪一個研究"
           },
           {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「2003 年」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
-          },
-          {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「11,582 名」的出處不合格：連結回 HTTP 404（https://doi.org/10.1111/j.1475-6811.2003.tb00345.x）"
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「2003 年」的出處無法自動核對，請人工看過：https://doi.org/10.1111/j.1475-6811.2003.tb00345.x"
           }
         ]
       },
@@ -7229,7 +7260,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -7288,7 +7319,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:44+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "claims": 12,
         "issues": [
@@ -7296,6 +7327,36 @@
             "severity": "block",
             "rule": "no_source",
             "line": "文案第 2 段的「20 歲」沒有任何一條出處提到這個數字（年齡）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「30 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「60 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「40 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「75 歲」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究發現」的出處無法自動核對，請人工看過：https://pmc.ncbi.nlm.nih.gov/articles/PMC8015413/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Logan Ury 說」的出處無法自動核對，請人工看過：https://behavioralscientist.org/mastering-modern-love-logan-ury-on-building-better-relationships-through-behavioral-science/"
           }
         ]
       },
@@ -8138,7 +8199,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -8189,7 +8250,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:46+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "claims": 17,
         "issues": [
@@ -8782,7 +8843,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 3
@@ -8812,14 +8873,14 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:51+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "claims": 9,
         "issues": [
           {
-            "severity": "block",
-            "rule": "number_mismatch",
-            "line": "「68 歲」（第 2 張）的數字在出處原文與頁面都找不到：https://x.com/higashinokeigo_/status/2081638350864429474"
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「68 歲」的出處無法自動核對，請人工看過：https://x.com/higashinokeigo_/status/2081638350864429474"
           },
           {
             "severity": "block",
@@ -8835,6 +8896,11 @@
             "severity": "warn",
             "rule": "unreadable",
             "line": "「研究發現」的出處無法自動核對，請人工看過：https://pubmed.ncbi.nlm.nih.gov/8193053/"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究指出」的出處無法自動核對，請人工看過：https://apsijournal.com/index.php/psyjournal/article/view/1729"
           }
         ]
       },
@@ -9409,7 +9475,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 4
@@ -9446,10 +9512,21 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:52+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 7,
-        "issues": []
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究顯示」的出處無法自動核對，請人工看過：https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究發現」的出處無法自動核對，請人工看過：https://www.psychologytoday.com/sg/blog/between-you-and-me/202009/the-role-of-reciprocity-in-attraction"
+          }
+        ]
       },
       "status_since": "2026-09-01T18:07:39+08:00"
     },
@@ -9881,7 +9958,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -9925,7 +10002,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:53+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 2,
         "issues": [
@@ -10593,7 +10670,7 @@
       "writer_model": "claude-sonnet-4-6",
       "candidates_since": "2026-09-01T19:19:51+08:00",
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -10800,19 +10877,19 @@
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-04T11:01:56+08:00",
-        "pass": false,
+        "ts": "2026-09-04T13:52:42+08:00",
+        "pass": true,
         "claims": 5,
         "issues": [
           {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「Stan Tatkin 說」的出處不合格：連結回 HTTP 404（https://www.pactinstitute.com/stan-tatkin）"
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Stan Tatkin 說」的出處無法自動核對，請人工看過：https://www.pactinstitute.com/stan-tatkin"
           },
           {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「研究指出」的出處不合格：連結回 HTTP 404（https://www.pactinstitute.com/stan-tatkin）"
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究指出」的出處無法自動核對，請人工看過：https://www.pactinstitute.com/stan-tatkin"
           },
           {
             "severity": "warn",
@@ -11486,7 +11563,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -11551,14 +11628,14 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:01:59+08:00",
-        "pass": false,
+        "ts": "2026-09-04T13:52:42+08:00",
+        "pass": true,
         "claims": 8,
         "issues": [
           {
-            "severity": "block",
-            "rule": "dead",
-            "line": "「94%」的出處不合格：連結回 HTTP 404（https://www.rottentomatoes.com/m/obsession_2026）"
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Frank Tallis 說」的出處無法自動核對，請人工看過：https://dep.mohw.gov.tw/DOPS/lp-1303-105.html"
           }
         ]
       },
@@ -11764,7 +11841,7 @@
         "rhythm": "整篇節奏呈『黑→黑→米黃→米黃→黑』的對稱式夾心結構，中段亮色雙張連發雖有意圖但執行上因構圖幾乎相同而失去衝擊力，星號 icon 過度複用更讓品牌符號從亮點變成壁紙；建議重新分配色調出現順序並限縮星號出場次數，才能讓五張各自有存在理由。"
       },
       "fact": {
-        "ts": "2026-09-04T11:01:59+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -11805,7 +11882,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -12414,7 +12491,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 4
@@ -12451,7 +12528,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:02:00+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -12459,6 +12536,11 @@
             "severity": "block",
             "rule": "no_source",
             "line": "主題的「99%」沒有任何一條出處提到這個數字（百分比）"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「研究指出」的出處無法自動核對，請人工看過：https://www.connectedcouples.app/blog/attachment-styles-in-relationships"
           }
         ]
       },
@@ -13023,7 +13105,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 14
@@ -13130,10 +13212,16 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:02:08+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 5,
-        "issues": []
+        "issues": [
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Pete Walker 指出」的出處無法自動核對，請人工看過：https://www.psychologytoday.com/us/blog/emotional-sobriety/202303/what-is-the-fawning-trauma-response"
+          }
+        ]
       },
       "status_since": "2026-09-02T01:48:49+08:00"
     },
@@ -13616,7 +13704,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-04T11:01:31+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -13667,7 +13755,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-04T11:02:10+08:00",
+        "ts": "2026-09-04T13:52:42+08:00",
         "pass": true,
         "claims": 4,
         "issues": [
@@ -13675,6 +13763,11 @@
             "severity": "warn",
             "rule": "unreadable",
             "line": "「2015 年」的出處無法自動核對，請人工看過：https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html"
+          },
+          {
+            "severity": "warn",
+            "rule": "unreadable",
+            "line": "「Arthur Aron 說」的出處無法自動核對，請人工看過：https://news.berkeley.edu/2015/02/12/love-in-the-lab/"
           }
         ]
       },
