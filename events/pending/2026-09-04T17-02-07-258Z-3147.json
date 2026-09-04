@@ -1,0 +1,11 @@
+{
+ "type": "post.resolve_issue",
+ "target": "20260824-StanTatkin說你",
+ "ts": "2026-09-05T01:02:07+08:00",
+ "by": "console",
+ "payload": {
+  "key": "fact:「Stan Tatkin 說」的出處不合格：連結回 HTTP 404（https://www.pactinstitute",
+  "gate": "fact",
+  "reason": "我查證過"
+ }
+}
