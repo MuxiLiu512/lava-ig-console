@@ -901,6 +901,27 @@
       "feedback": "",
       "consumed": false,
       "copy_choice": null
+    },
+    {
+      "id": "R-2026-09-04T16-57-",
+      "post_id": "86eyr1e0e",
+      "version": 1,
+      "ts": "2026-09-05T00:57:40+08:00",
+      "decision": "approve",
+      "slide_choices": {
+        "1": "a",
+        "2": "a",
+        "3": "b",
+        "4": "a",
+        "5": "a",
+        "6": "b",
+        "7": "d",
+        "8": "a"
+      },
+      "scope": null,
+      "feedback": "",
+      "consumed": false,
+      "copy_choice": null
     }
   ]
 }
