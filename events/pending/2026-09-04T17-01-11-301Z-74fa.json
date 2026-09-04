@@ -1,0 +1,20 @@
+{
+ "type": "post.approve",
+ "target": "86eyrz3fb",
+ "ts": "2026-09-05T01:01:11+08:00",
+ "by": "console",
+ "payload": {
+  "feedback": "",
+  "slide_choices": {
+   "1": "a",
+   "2": "a",
+   "3": "a",
+   "4": "a",
+   "5": "b",
+   "6": "a",
+   "7": "a",
+   "8": "a"
+  },
+  "seconds": 208
+ }
+}
