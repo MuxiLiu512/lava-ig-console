@@ -779,7 +779,7 @@
     {
       "post_id": "86eyrz3fb",
       "ts": "2026-09-05T01:00:03+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 7,
@@ -792,7 +792,7 @@
     {
       "post_id": "86eyrz3fb",
       "ts": "2026-09-05T01:00:59+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 1,
@@ -805,7 +805,7 @@
     {
       "post_id": "20260824-StanTatkin說你",
       "ts": "2026-09-05T01:02:53+08:00",
-      "consumed": false,
+      "consumed": true,
       "edits": [
         {
           "n": 8,

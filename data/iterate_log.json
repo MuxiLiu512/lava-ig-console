@@ -1002,6 +1002,87 @@
         "metrics_window": "2026-09-05"
       },
       "rollback_of": null
+    },
+    {
+      "v": "cfg-062",
+      "date": "2026-09-05",
+      "commit": "b1feddf",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) Jesse 8/3：slide2 alamy 浮水印圖替換為 Modern Romance 書封（其餘選圖不變）"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-manual-aziz-s2fix"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-063",
+      "date": "2026-09-05",
+      "commit": "1561d0d",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) slide3 原候選僅 1 張（Gottman 官網截圖，中文壓在英文正文上不可讀，成篇總檢 block）。補抓 per"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-fix-gottman-s3"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-064",
+      "date": "2026-09-05",
+      "commit": "45532d6",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 成篇總檢 block：第1/2/7/8 張都是情侶近距離同構圖。slide2 改靜物（桌上手機）、slide7 改非情侶"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-fix-nophone-dup"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-065",
+      "date": "2026-09-05",
+      "commit": "f160c6e",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "吸收操控室文案編輯的語氣範例 3 則"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": null
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-066",
+      "date": "2026-09-05",
+      "commit": "83e8a4a",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "成效觀察：高「1844064461」23.3% / 低「1810180428」1.0%"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": "2026-09-05"
+      },
+      "rollback_of": null
     }
   ],
   "rollback_requests": []
