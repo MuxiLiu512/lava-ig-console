@@ -151,8 +151,10 @@ h1, h2, h3 { line-height: 1.35; margin: 0; }
 .zone-body { display: grid; gap: 8px; }
 .zone.closed .zone-body { display: none; }
 /* 佇列欄數跟著寬度自己長出來〔2026-09-07〕。原本寫死「≥1024 就兩欄」，
-   於是 27 吋螢幕跟 13 吋筆電看到的欄數一樣多，多出來的 1600px 全是空白。 */
-@media (min-width: 1024px) { .zone-body.two-col { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); } }
+   於是 27 吋螢幕跟 13 吋筆電看到的欄數一樣多，多出來的 1600px 全是空白。
+   斷點從 1024 降到 760〔ui-ux-pro-max 的斷點清單提醒 768 要測〕：
+   768px 平板上左欄是橫的，內容有整整 768px，卻只排一欄。 */
+@media (min-width: 760px) { .zone-body.two-col { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); } }
 
 /* ── 卡片 ─────────────────────────────────────────────────────────── */
 .card { background: var(--surface); border: 1px solid var(--line);
@@ -491,7 +493,10 @@ body { max-width: none; margin: 0; }
 .rail a .badge.quiet { background: var(--surface-3); color: var(--text-2); font-weight: 400; }
 .rail-sep { height: 1px; background: var(--line); margin: 8px 12px; }
 .rail-foot { margin-top: auto; padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 8px; }
-.rail-health { font-size: 11.5px; color: var(--text-3); line-height: 1.5; }
+/* 用 --text-2 不是 --text-3〔2026-09-07 實測〕：11.5px 的小字用 --text-3
+   量到 4.31:1，沒過 AA 的 4.5。代幣註解寫 4.6:1 是對 --surface 算的，
+   左欄的底色不同，所以實際值更低。規則：小字一律實際量過，不要相信註解。 */
+.rail-health { font-size: 11.5px; color: var(--text-2); line-height: 1.5; }
 .rail-health .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
   background: var(--ok); margin-right: 5px; vertical-align: middle; }
 .rail-health.bad .dot { background: var(--danger); }
@@ -501,7 +506,7 @@ body { max-width: none; margin: 0; }
 .rail { display: flex; align-items: center; overflow-x: auto; padding: 0 10px;
   border-bottom: 1px solid var(--line); scrollbar-width: none; }
 .rail::-webkit-scrollbar { display: none; }
-.rail nav { flex-direction: row; padding: 5px 0; gap: 4px; }
+.rail nav { flex-direction: row; padding: 4px 0; gap: 4px; }
 .rail .rail-head, .rail .rail-sep, .rail .rail-foot { display: none; }
 .rail a { padding: 6px 10px; font-size: 13px; }
 
