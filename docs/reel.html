@@ -13,7 +13,6 @@ document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');
 /* 影片審核〔藍圖 UI 規格 §7＋Stanley 的 Script｜Caption 分頁模型〕
    與貼文共用整頁骨架（頂欄、狀態列、決策列、ActionButton），只有中段換成分段卡。
    兩階段：先看分鏡（7 點）再決定要不要生影片（約 137 點）。 */
-body { max-width: none; }
 .rl-wrap { max-width: 760px; margin: 0 auto; padding: 12px 16px 120px; }
 .rl-tabs { display: flex; gap: 18px; border-bottom: 1px solid var(--line); margin: 14px 0 4px; }
 .rl-tabs button { background: none; border: none; color: var(--text-3); font-size: 14px;
@@ -60,7 +59,7 @@ try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lav
   <script>
   (function () {
     var v = "?v=" + Date.now();
-    ["config.js", "core.js", "terms.js", "ui.js", "reel.js"].forEach(function (f) {
+    ["config.js", "core.js", "terms.js", "ui.js", "shell.js", "reel.js"].forEach(function (f) {
       var s = document.createElement("script");
       s.src = f + v; s.async = false;
       document.head.appendChild(s);

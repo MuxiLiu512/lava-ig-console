@@ -150,7 +150,9 @@ h1, h2, h3 { line-height: 1.35; margin: 0; }
 .zone.closed .zone-head .ic { transform: rotate(-90deg); }
 .zone-body { display: grid; gap: 8px; }
 .zone.closed .zone-body { display: none; }
-@media (min-width: 1024px) { .zone-body.two-col { grid-template-columns: 1fr 1fr; } }
+/* 佇列欄數跟著寬度自己長出來〔2026-09-07〕。原本寫死「≥1024 就兩欄」，
+   於是 27 吋螢幕跟 13 吋筆電看到的欄數一樣多，多出來的 1600px 全是空白。 */
+@media (min-width: 1024px) { .zone-body.two-col { grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); } }
 
 /* ── 卡片 ─────────────────────────────────────────────────────────── */
 .card { background: var(--surface); border: 1px solid var(--line);
@@ -242,9 +244,36 @@ textarea { min-height: 74px; resize: vertical; line-height: 1.55; }
 label.fld { display: block; margin: 10px 0 4px; font-size: 12.5px; color: var(--text-2); }
 .field-err { color: var(--danger); font-size: 12.5px; margin-top: 4px; }
 
-/* ── 審稿台：單欄流 ────────────────────────────────────────────────── */
-.rv-wrap { max-width: 720px; margin: 0 auto; padding: 12px 16px 120px; }
+/* ── 審稿台：縮圖導覽 ＋ 投影片 ＋ 右側決策欄〔2026-09-07 改版〕──────────
+   舊版是 720px 單欄，1512px 螢幕上浪費 52%，而且九張投影片只能上下捲。
+   視覺閘門最常報的問題是「第 7、8 張看起來一樣」——那件事在單欄裡看不出來，
+   你得捲上去再捲下來憑記憶比對。並排之後一眼就知道。 */
+.rv-wrap { max-width: 1120px; margin: 0 auto; padding: 12px 16px 120px; }
 .rv-wrap > .statusline { margin-bottom: 14px; }
+
+/* 投影片縮圖導覽：跳張用。sticky 讓它一直在，捲到第 8 張也還按得到第 2 張 */
+.sc-jump { display: flex; gap: 6px; overflow-x: auto; padding: 8px 0 10px;
+  position: sticky; top: 48px; z-index: 20; background: var(--bg); }
+.sc-jump button { flex: none; width: 40px; height: 50px; border-radius: var(--r-sm);
+  border: 1px solid var(--line); background: var(--surface-2); color: var(--text-2);
+  font-size: 12px; font-weight: 600; position: relative; padding: 0;
+  background-size: cover; background-position: center; }
+.sc-jump button:hover { border-color: var(--line-strong); color: var(--text); }
+.sc-jump button.pend::after { content: ""; position: absolute; top: 3px; right: 3px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--you); }
+.sc-jump button.ok::after { content: ""; position: absolute; top: 3px; right: 3px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--ok); }
+.sc-jump .lbl { position: absolute; left: 0; right: 0; bottom: 0; font-size: 10px;
+  background: rgba(0,0,0,.55); color: #fff; border-radius: 0 0 5px 5px; }
+
+/* 投影片並排：欄數跟著寬度長出來，不是寫死兩欄 */
+.sc-list { display: grid; gap: 14px; grid-template-columns: 1fr; }
+.sc-list.compare { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+.rv-wrap .measure { margin: 14px auto 0; }
+
+/* 右欄裡的閘門與待決項：字級比中欄小一階，它是輔助不是主角 */
+.aside .card { margin-bottom: 12px; }
+.aside .statusline { margin-bottom: 12px; }
 
 .slidecard { background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--r-lg); margin-bottom: 14px; overflow: hidden; }
@@ -422,3 +451,84 @@ kbd { background: var(--surface-3); border: 1px solid var(--line-strong); border
   overflow-y: auto; transition: right .2s ease; z-index: 45; }
 .drawer-panel.open { right: 0; box-shadow: -16px 0 48px rgba(0,0,0,.45); }
 .drawer-panel h3 { font-size: 15px; margin-bottom: 10px; }
+
+/* ══ 應用外殼〔2026-09-07 Jesse：左右兩側的空間都浪費掉了〕════════════════
+   實測（1512px MacBook）：工作台 body 只有 880px，左右各空 316px＝浪費 42%；
+   審稿台更嚴重，內容欄 720px、浪費 52%。27 吋螢幕上會到 66%。
+
+   修法不是把 max-width 拿掉讓字拉到 1500px 寬——那樣更難讀（一行超過 90 字
+   眼睛會找不到下一行的開頭）。多出來的寬度要拿去「多放一欄」，不是「拉長一行」。
+
+   結構抄 Linear／Notion／Stanley 共用的 app shell：
+     左欄 導覽（常駐、全高）｜ 中欄 工作區（頁首只蓋中欄）｜ 右欄 決策面板
+   Stanley 的右欄放「我做了什麼／為什麼／我沒動什麼」，我們放同一個位置。 */
+:root { --rail-w: 208px; --aside-w: 340px; --measure: 720px; }
+
+body { max-width: none; margin: 0; }
+
+.app { display: grid; grid-template-columns: 1fr; min-height: 100vh; }
+.work { min-width: 0; }                      /* min-width:0 是 grid 子項不撐爆的關鍵 */
+.work > main, .work > .workpad { padding: 0 20px 60px; }
+
+/* 左欄：常駐導覽。窄螢幕變成頁首下的一條橫向列（不是藏起來——
+   藏起來就等於沒有導覽，使用者會被困在單一頁面） */
+/* 左欄導覽。寫法是 mobile-first：先定義共用的長相，
+   窄螢幕的橫向列是預設，直欄版在下面的 min-width:1000px 裡覆蓋。
+   〔2026-09-07 踩過一次：把窄螢幕規則寫在共用規則「前面」，
+    後面同權重的 flex-direction: column 直接蓋掉它，手機版的四個項目就疊成一直排。〕*/
+.rail { background: var(--surface); }
+.rail-head { display: flex; align-items: center; gap: 8px; padding: 14px 14px 10px; }
+.rail-mark { font-weight: 800; letter-spacing: .5px; font-size: 15px; color: var(--text); }
+.rail nav { display: flex; }
+.rail a { display: flex; align-items: center; gap: 9px; border-radius: var(--r-md);
+  color: var(--text-2); text-decoration: none; white-space: nowrap;
+  transition: background .15s ease, color .15s ease; }
+.rail a:hover { background: var(--surface-2); color: var(--text); text-decoration: none; }
+.rail a.on { background: var(--surface-2); color: var(--text); font-weight: 600; }
+.rail a .badge { margin-left: auto; min-width: 20px; text-align: center; padding: 1px 6px;
+  border-radius: 999px; font-size: 11.5px; font-variant-numeric: tabular-nums;
+  background: var(--you-bg); color: #fff; font-weight: 600; }
+.rail a .badge.quiet { background: var(--surface-3); color: var(--text-2); font-weight: 400; }
+.rail-sep { height: 1px; background: var(--line); margin: 8px 12px; }
+.rail-foot { margin-top: auto; padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.rail-health { font-size: 11.5px; color: var(--text-3); line-height: 1.5; }
+.rail-health .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--ok); margin-right: 5px; vertical-align: middle; }
+.rail-health.bad .dot { background: var(--danger); }
+
+/* 窄螢幕：頁首上方一條橫向列。標字與健康列都收起來——
+   頁首已經寫了現在在哪一頁，重複的標題只是佔掉可用高度。 */
+.rail { display: flex; align-items: center; overflow-x: auto; padding: 0 10px;
+  border-bottom: 1px solid var(--line); scrollbar-width: none; }
+.rail::-webkit-scrollbar { display: none; }
+.rail nav { flex-direction: row; padding: 5px 0; gap: 4px; }
+.rail .rail-head, .rail .rail-sep, .rail .rail-foot { display: none; }
+.rail a { padding: 6px 10px; font-size: 13px; }
+
+/* 右欄：決策面板。內容由各頁自己填，沒填就整欄不存在（不是留白） */
+.aside { display: none; }
+
+@media (min-width: 1000px) {
+  .app { grid-template-columns: var(--rail-w) minmax(0, 1fr); }
+  .rail { flex-direction: column; align-items: stretch; position: sticky; top: 0; height: 100vh;
+    border-right: 1px solid var(--line); border-bottom: none; padding: 0;
+    overflow-y: auto; overflow-x: hidden; }
+  .rail nav { flex-direction: column; padding: 6px 8px; gap: 2px; }
+  .rail a { padding: 8px 10px; font-size: 13.5px; }
+  .rail .rail-sep { display: block; }
+  .rail .rail-head, .rail .rail-foot { display: flex; }
+  .work > main, .work > .workpad { padding: 0 24px 60px; }
+  /* 底部決策列本來貼齊視窗左緣，有了左欄要讓開 */
+  .decisionbar, .tplpicker { left: var(--rail-w); }
+}
+@media (min-width: 1360px) {
+  .app.has-aside { grid-template-columns: var(--rail-w) minmax(0, 1fr) var(--aside-w); }
+  .app.has-aside .aside { display: block; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+    border-left: 1px solid var(--line); background: var(--surface); padding: 14px 16px 40px; }
+}
+.aside h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .6px;
+  color: var(--text-3); font-weight: 600; margin: 16px 0 8px; }
+.aside h3:first-child { margin-top: 2px; }
+
+/* 可讀寬度：正文型內容不跟著螢幕拉寬，維持一行 65-75 字 */
+.measure { max-width: var(--measure); }

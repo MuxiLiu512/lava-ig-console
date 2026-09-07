@@ -12,7 +12,6 @@ document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');
 <style>
 /* 審稿台〔藍圖 UI 規格 §4〕：廢除三欄，單欄由上而下審完一篇，不換頁。
    順序固定：整體資訊 → 逐張審核卡 → 貼文文案 → IG 預覽（摺疊）→ 決策列（sticky）。 */
-body { max-width: none; }
 </style>
 <script>/* 先套主題，避免載入時閃一下深色 */
 try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lava_theme")||"light")}catch(e){}</script>
@@ -34,7 +33,7 @@ try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lav
   // 動態載入帶時間戳（Pages 快取 10 分鐘的解法，同工作台）。
   (function () {
     var v = "?v=" + Date.now();
-    ["config.js", "core.js", "terms.js", "ui.js", "review.js"].forEach(function (f) {
+    ["config.js", "core.js", "terms.js", "ui.js", "shell.js", "review.js"].forEach(function (f) {
       var s = document.createElement("script");
       s.src = f + v; s.async = false;
       document.head.appendChild(s);

@@ -12,7 +12,7 @@ document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');
 <style>
 /* 規則本〔學 Stanley 的 Brain：人格與策略是可編輯的正本，不是只有工程師改得到的檔案〕
    左側分頁、右側編輯。存檔直接寫回 repo，撰稿與檢查下一輪就吃到新規則。 */
-body { max-width: 1180px; padding: 0 16px 40px; }
+body { padding: 0 16px 40px; }
 .bn-main { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 18px; margin-top: 14px; }
 @media (max-width: 860px) { .bn-main { grid-template-columns: 1fr; } }
 .bn-nav { display: flex; flex-direction: column; gap: 3px; align-content: start; }
@@ -50,7 +50,7 @@ try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lav
   <script>
   (function () {
     var v = "?v=" + Date.now();
-    ["config.js", "core.js", "terms.js", "ui.js", "brain.js"].forEach(function (f) {
+    ["config.js", "core.js", "terms.js", "ui.js", "shell.js", "brain.js"].forEach(function (f) {
       var s = document.createElement("script");
       s.src = f + v; s.async = false;
       document.head.appendChild(s);

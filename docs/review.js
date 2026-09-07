@@ -752,14 +752,65 @@ function render() {
   }));
 
   main.appendChild(infoCard(p));
-  const list = el("div"); list.style.marginTop = "14px";
-  (p.slides || []).slice().sort((a, b) => Number(a.n) - Number(b.n))
-    .forEach(s => list.appendChild(slideCard(p, s, pend)));
+  const slides = (p.slides || []).slice().sort((a, b) => Number(a.n) - Number(b.n));
+  main.appendChild(slideJump(p, slides, pend));
+  const list = el("div", "sc-list");
+  slides.forEach(s => list.appendChild(slideCard(p, s, pend)));
   main.appendChild(list);
-  main.appendChild(captionCard(p));
-  const ig = igPreview(p); ig.style.marginTop = "14px";
+  const cap = captionCard(p); cap.classList.add("measure");
+  main.appendChild(cap);
+  const ig = igPreview(p); ig.style.marginTop = "14px"; ig.classList.add("measure");
   main.appendChild(ig);
+  layoutForWidth(p);
   decisionBar(p, pend);
+}
+
+/* 投影片縮圖導覽〔2026-09-07〕：九張投影片本來只能上下捲，
+   捲到第 8 張就看不到第 2 張。這一條讓你直接跳，而且用色點標出哪幾張還有待決項。 */
+function slideJump(p, slides, pend) {
+  const bar = el("div", "sc-jump");
+  bar.setAttribute("role", "navigation");
+  bar.setAttribute("aria-label", "跳到某一張");
+  slides.forEach(s => {
+    const n = Number(s.n);
+    const mine = pend.filter(x => Number(x.n) === n);
+    const b = el("button", mine.length ? "pend" : (CONFIRMED.has(n) ? "ok" : ""));
+    b.type = "button";
+    b.title = "第 " + n + " 張" + (mine.length ? "（有 " + mine.length + " 項待決）" : "");
+    b.setAttribute("aria-label", b.title);
+    const thumb = s.public_url || s.final_src;
+    if (thumb) { b.style.backgroundImage = "url(" + thumb + ")"; b.appendChild(el("span", "lbl", String(n))); }
+    else b.textContent = n;
+    b.onclick = () => {
+      const card = document.getElementById("slide-" + n);
+      if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    bar.appendChild(b);
+  });
+  return bar;
+}
+
+let _relayout;
+window.addEventListener("resize", () => {
+  clearTimeout(_relayout);
+  _relayout = setTimeout(() => { if (document.querySelector(".sc-list")) render(); }, 150);
+});
+
+/* 寬螢幕時把「整體資訊與狀態」搬到右欄，中欄留給投影片並排。
+   窄螢幕維持單欄由上而下——右欄在 1360px 以下不存在，東西留在中欄才看得到。 */
+function layoutForWidth() {
+  const S = window.LavaShell;
+  const main = $("#rvMain");
+  const list = main.querySelector(".sc-list");
+  if (!S) return;
+  if (S.asideVisible()) {
+    const move = [main.querySelector(".statusline"), main.querySelector(".card")].filter(Boolean);
+    S.aside(move);                       // aside() 會把節點搬過去，不是複製
+    if (list) list.classList.add("compare");
+  } else {
+    S.aside([]);
+    if (list) list.classList.remove("compare");
+  }
 }
 
 function renderEmpty() {

@@ -85,6 +85,20 @@ function globalStatus(posts) {
     }
   }
   zone.appendChild(line);
+
+  // 同步到左欄底部〔2026-09-07〕：狀態列只在工作台有，
+  // 但你在審稿台審到一半也需要知道產線有沒有停。
+  if (window.LavaShell) {
+    if (!hb || !hb.ts) window.LavaShell.setHealth("還沒開始運作", true);
+    else {
+      const m = Math.round((Date.now() - new Date(hb.ts)) / 60000);
+      const errs = (hb.errors || []).length;
+      window.LavaShell.setHealth(
+        m > SCHEDULE.HEARTBEAT_BAD_MIN ? "內容團隊停了" : m + " 分前還在動" + (errs ? " · " + errs + " 件要看" : ""),
+        m > SCHEDULE.HEARTBEAT_BAD_MIN,
+        "哨兵每約 10 分鐘跑一輪，這是最後一次回報的時間");
+    }
+  }
 }
 
 // ── B 區：待你處理（佇列卡）─────────────────────────────────────────
@@ -369,6 +383,7 @@ function boot() {
 
   // B 待你處理
   const nYou = queue.length + ideas.length;
+  if (window.LavaShell) window.LavaShell.setBadge("board", nYou);
   const B = Section({ title: "待你處理", count: nYou, collapsed: false });
   B.body.classList.add("two-col");
   queue.forEach(x => B.body.appendChild(queueCard(x.p, x.v)));

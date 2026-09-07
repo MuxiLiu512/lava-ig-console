@@ -14,7 +14,7 @@ document.write('<link rel="stylesheet" href="style.css?v=' + Date.now() + '">');
    A 全域狀態列（sticky）→ B 待你處理（家）→ C 系統處理中（收合）→ D 已完成（收合）。
    桌面 ≥1024 佇列卡兩欄，其餘不變。舊的五欄看板已廢：欄位是系統視角，
    四區塊是「跟我有關嗎」的人視角。 */
-body { max-width: 880px; padding: 0 16px 60px; }
+body { padding: 0 16px 60px; }
 #zoneA { position: sticky; top: 0; z-index: 25; background: var(--bg);
   padding: 10px 0 8px; }
 </style>
@@ -38,7 +38,7 @@ try{document.documentElement.setAttribute("data-theme",localStorage.getItem("lav
   // async=false 保證動態插入的 script 照順序執行。
   (function () {
     var v = "?v=" + Date.now();
-    ["config.js", "core.js", "terms.js", "ui.js", "board.js"].forEach(function (f) {
+    ["config.js", "core.js", "terms.js", "ui.js", "shell.js", "board.js"].forEach(function (f) {
       var s = document.createElement("script");
       s.src = f + v; s.async = false;
       document.head.appendChild(s);
