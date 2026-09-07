@@ -2,6 +2,17 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "i-63ab52c38f",
+      "title": "黃山料被炎上、書卻賣爆——《擁有過就好》這個書名，其實是一個讓人說不出話的問題｜病毒分 7｜🧠Claude",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：誠品上半年暢銷榜冠軍《擁有過就好》，作者黃山料正值炎上風波卻逆勢賣爆。切入點不是書評，而是書名本身：「擁有過就好」這句話，在感情裡到底是一種成熟，還是一種提前放棄？用書名當鏡子，讓讀者對照自己現在的關係狀態——你現在說「擁有過就好」，是真的放下了，還是還沒開口就先幫自己找退路？連結 Lava：offline-first 的設計邏輯，就是讓你從「擁有過就好」變成「我想繼續擁有」。\n\n病毒係數：7/10。出圈證據為誠品上半年暢銷榜公布，ETtoday、COOL-STYLE、工商時報、迷誠品等多家台灣主流媒體同日報導；黃山料炎上仍賣爆的反差本身就是今日台灣社群的討論焦點，書名「擁有過就好」作為關係哲學命題具備強烈的『這在說我』投射感。\n\n熱度證明：\n- ETtoday 新聞雲｜誠品公布上半年暢銷榜TOP 10 Threads推動書本熱銷、黃山料站穩前十｜誠品上半年暢銷榜公布，黃山料站穩前十，多家主流媒體同日報導（出圈證據）｜https://news.google.com/rss/articles/CBMiUkFVX3lxTFBQVlBHWHRoeU91Nl9ZUmJ0bk1lYkZRR0lwNG16dmJfdWZwUHNkSW9HamIycm1qZGFFX0tUVnpXbHpMcjduX1hBNmt5eV9XOFBuTUE\n- COOL-STYL",
+      "url": "",
+      "created_at": "2026-09-07T09:02:50.209+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "i-c97de001ab",
       "title": "《抓馬戀人》：A24 把婚禮前夕的秘密拍成驚悚片——羅伯派汀森和千黛亞在說的，其實是現代愛情最不敢承認的一件事｜病毒分 7｜🧠Claude",
       "desc": "選題來源：Claude 選題引擎\n\n切角：從《抓馬戀人》（Babygirl）的核心情節切入：一對看似完美的伴侶，在婚禮前夕因為一個秘密讓整段關係的地基鬆動。GQ Taiwan 和 Harper's BAZAAR 的影評都點出這部片的核心不是出軌，而是「你在關係裡到底有沒有真的讓對方看見你」。用這個具體情節帶出一個關係洞察：現代人最常見的親密障礙不是溝通不足，而是我們在最親近的人面前，反而最擅長表演一個「沒有需求的自己」——心理學稱之為 self-concealment in intimate relationships。最後橋接到 Lava 的 offline-first 設計邏輯：見面之前你可以精心包裝，但坐在對面的那一秒，表演就開始有成本了。\n\n病毒係數：7/10。出圈證據為 Harper's BAZAAR 台灣、GQ Taiwan、換日線三家主流媒體在同一時間點獨立報導《抓馬戀人》，符合「多家台灣主流媒體同時報導同一作品」的出圈標準；切入角度從具體情節（婚禮前夕秘密）直接跳到關係洞察（在最親近的人面前最擅長表演），避開劇評感，符合 Heaven Raven 式手法；「self-concealment」概念對 Lava 目標受眾（想認真交往但不知道怎麼真實呈現自己的人）有強烈的「這在說我」共鳴。\n\n熱度證明：\n- GQ Taiwan｜《艾諾拉》影評：撕碎愛情幻象的現實寓言，這絕",
@@ -939,5 +950,5 @@
       "applied": true
     }
   ],
-  "pulled_at": "2026-09-03T11:57:25+08:00"
+  "pulled_at": "2026-09-07T13:59:35+08:00"
 }
