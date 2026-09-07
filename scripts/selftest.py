@@ -102,6 +102,64 @@ check("Reels：看過影片可核准", _reel("video_review", "reel.approve") == 
 check("Reels：核准後可排程", _reel("approved", "reel.schedule") == (True, "scheduled"))
 check("Reels：排程後仍可退回", _reel("scheduled", "reel.reject") == (True, "rejected"))
 
-TOTAL = 31
+
+# 閘門的誠實度〔2026-09-03〕：舊版事實閘門在未發佈的 16 篇裡開出 51 個 block，
+# 已發佈的 11 篇則是 0——因為它從來沒放行過任何一篇，全是它自己造出來的假問題。
+# 這幾條測試釘住每一個當時實際發生的誤判，避免哪天又把判讀單位改回滑動窗。
+_fc_spec = _ilu.spec_from_file_location("fc", os.path.join(os.path.dirname(os.path.abspath(__file__)), "fact_check.py"))
+_FC = _ilu.module_from_spec(_fc_spec); _fc_spec.loader.exec_module(_FC)
+
+def _claims(**kw):
+    p = {"topic": kw.get("topic", ""), "caption": kw.get("caption", ""),
+         "slides": kw.get("slides", [])}
+    return [c["claim"] for c in _FC.find_claims(_FC.claim_units(p))]
+
+check("事實閘門：hashtag 不是宣稱",
+      "30歲" not in _claims(caption="今天聊聊\n\n#台灣單身 #30歲 #心理健康"))
+check("事實閘門：來源標註行不是宣稱",
+      not _claims(slides=[{"n": 1, "display_copy": "資料來源：衛生福利部，2020 年統計"}]))
+check("事實閘門：31.1歲 不會被讀成 1歲",
+      "1歲" not in _claims(slides=[{"n": 1, "display_copy": "女性平均初婚年齡：31.1歲"}]))
+check("事實閘門：Vol.117 後面接「人」不會變成「117 人」",
+      not any("117" in c for c in _claims(
+          slides=[{"n": 1, "display_copy": "《Psychological Bulletin》Vol.117\n\n人有一個根本需求"}])))
+check("事實閘門：2003年 與 2003 年 算同一個宣稱",
+      len(_claims(slides=[{"n": 1, "display_copy": "2003年的研究\n2003 年發表"}])) == 1)
+check("事實閘門：真的宣稱還是抓得到",
+      "2,843 名" in _claims(slides=[{"n": 1, "display_copy": "調查 2,843 名成年人"}]))
+
+_c = {"claim": "99%", "kind": "百分比", "where": "主題", "unit": "99% 的人都跳過了"}
+check("事實閘門：網址裡的數字不算證據",
+      not _FC._match_facts(_c, [{"claim": "書名 Attached", "quote": "",
+                                 "source": "https://slickdeals.net/f/19301172-1-99-attached"}])[0])
+check("事實閘門：出處引文裡的數字才算證據",
+      len(_FC._match_facts(_c, [{"claim": "調查顯示 99% 的人", "quote": "99 percent",
+                                 "source": "https://example.org/a"}])[0]) == 1)
+check("事實閘門：作者自承待查證的出處會被抓出來",
+      bool(_FC.UNVERIFIED.search("【注意】具體報告頁面 URL 尚待補充查證，暫以 UCSD 新聞稿佔位")))
+
+# 視覺總檢的嚴重度由 Python 決定〔設計文件 T3.8〕，不由模型決定。
+# 模型曾把「同一張臉出現兩次」判成 block，於是 16 篇裡 11 次 duplicate_subject 全部擋死。
+import sync_console as _SC  # noqa: E402
+_qa = _SC._apply_qa_policy([{"type": "duplicate_subject", "severity": "block"},
+                            {"type": "watermark", "severity": "warn"},
+                            {"type": "某個沒見過的類型", "severity": "block"}])
+check("視覺閘門：重複主體降為提醒", _qa[0]["severity"] == "warn")
+check("視覺閘門：浮水印一律擋，模型說 warn 也不算", _qa[1]["severity"] == "block")
+check("視覺閘門：沒有政策的類型保留模型判斷並標記", _qa[2]["severity"] == "block" and _qa[2]["policy"] == "model")
+
+# 圖上印網址的自動修：改法唯一才可以自動改。
+_cf_spec = _ilu.spec_from_file_location("cf", os.path.join(os.path.dirname(os.path.abspath(__file__)), "copy_fix.py"))
+_CF = _ilu.module_from_spec(_cf_spec); _cf_spec.loader.exec_module(_CF)
+check("文案自動修：刪網址後不留懸空標點",
+      _CF.fix_urls("資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/")[0]
+      == "資料來源：Psychology Fanatic")
+check("文案自動修：多個來源只刪網址、保留名字與分隔",
+      _CF.fix_urls("資料來源：SuperSummary supersummary.com/a/；Amazon slickdeals.net/f/1")[0]
+      == "資料來源：SuperSummary；Amazon")
+check("文案自動修：沒有網址就一個字都不動",
+      _CF.fix_urls("資料來源：Jeste & Nguyen et al., 2020") == ("資料來源：Jeste & Nguyen et al., 2020", 0))
+
+TOTAL = 45
 print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)

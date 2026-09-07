@@ -13,6 +13,7 @@
   A—B  → 若 B 是轉折（但／而／卻）：刪破折號，前句收句號
         → 否則：破折號換成冒號（多為「概念—解釋」結構）
   行尾破折號 → 直接刪
+  圖上的完整網址 → 直接刪掉網址，保留來源名字
 
 改完會重跑 copy_check 驗證，並把原文備份進 copy_fix_log.jsonl 以便回溯。
 """
@@ -46,6 +47,35 @@ def fix_dash(t):
     return out, n
 
 
+# 圖卡上的完整網址。〔2026-09-03：未發佈的 16 篇裡 21 處，卡住 6 篇。〕
+# 把 14 種寫法逐行看過之後確認這是「改法唯一」的規則——每一行都已經寫了來源名字，
+# 網址只是附在後面的多餘字串：
+#   「資料來源：Psychology Fanatic，psychologyfanatic.com/engulfment/」
+#   「資料來源：Wikipedia, Reciprocal Liking, https://en.wikipedia.org/wiki/…」
+# 刪掉網址不損失任何讀者看得到的資訊，完整網址仍在 facts[].source 裡。
+SLIDE_URL = re.compile(
+    r"(?:https?://)?(?:www\.)?[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*"
+    r"\.(?:com|org|net|edu|gov|io|co)/[A-Za-z0-9\-/_.%?=&#]*")
+
+
+def fix_urls(t):
+    """刪掉圖上的完整網址，並收拾刪完留下的懸空標點。"""
+    if not t or not SLIDE_URL.search(t):
+        return t, 0
+    out, n = [], 0
+    for ln in t.split("\n"):
+        new, k = SLIDE_URL.subn("", ln)
+        if k:
+            n += k
+            new = re.sub(r"[ \t]+", " ", new)
+            new = re.sub(r"\s*([，、；;,])", r"\1", new)          # 標點前不留空格
+            new = re.sub(r"([，、；;,])(?:\s*[，、；;,])+", r"\1", new)  # 連續標點收成一個
+            new = re.sub(r"[，、；;,\s]+$", "", new)               # 行尾懸空的標點
+            new = re.sub(r"[：:]\s*$", "", new)                   # 整串來源都被刪光時
+        out.append(new)
+    return "\n".join(x for x in out if x.strip() or not n), n
+
+
 def fix_post(p):
     changed = 0
     before = {"topic": p.get("topic"), "caption": p.get("caption"),
@@ -53,8 +83,10 @@ def fix_post(p):
     t, n = fix_dash(p.get("topic")); p["topic"] = t; changed += n
     c, n = fix_dash(p.get("caption")); p["caption"] = c; changed += n
     for s in p.get("slides", []):
-        h, n = fix_dash(s.get("heading")); s["heading"] = h; changed += n
-        d, n = fix_dash(s.get("display_copy")); s["display_copy"] = d; changed += n
+        h, n = fix_dash(s.get("heading")); changed += n
+        h, n = fix_urls(h); s["heading"] = h; changed += n
+        d, n = fix_dash(s.get("display_copy")); changed += n
+        d, n = fix_urls(d); s["display_copy"] = d; changed += n
     return changed, before
 
 
@@ -72,14 +104,17 @@ def main():
             continue
         pre = CC.check_post(p)
         dash = pre["counts"].get("破折號", 0)
-        if not dash:
+        urls = sum(1 for i in pre.get("issues", []) if i.get("rule") == "圖上印網址")
+        if not dash and not urls:
             continue
         n, before = fix_post(p)
         post = CC.check_post(p)
         p["copy"] = post
         left = post["counts"].get("破折號", 0)
-        print("%-32s 破折號 %d → %d%s" % (p["id"][:32], dash, left,
-              "  ⚠ 仍有殘留" if left else ""))
+        left_url = sum(1 for i in post.get("issues", []) if i.get("rule") == "圖上印網址")
+        print("%-32s 破折號 %d → %d ｜ 圖上網址 %d → %d%s" % (
+              p["id"][:32], dash, left, urls, left_url,
+              "  ⚠ 仍有殘留" if (left or left_url) else ""))
         other = {k: v for k, v in post["counts"].items() if k != "破折號"}
         if other:
             print("     其餘需人工：%s" % other)
@@ -123,7 +158,7 @@ def main():
         print("\n✓ 已修 %d 篇、%d 處；同步寫入 copy_edits（重餵沖不掉），原文備份在 data/copy_fix_log.jsonl"
               % (touched, total))
     else:
-        print("沒有需要修的破折號")
+        print("沒有需要自動修的破折號或圖上網址")
 
 
 if __name__ == "__main__":

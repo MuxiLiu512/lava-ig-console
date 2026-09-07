@@ -12,7 +12,11 @@
   python3 scripts/verify_invariants.py            # 全部檢查
   python3 scripts/verify_invariants.py --prev x.json  # 加驗「published 不得變少」（CI 用）
 """
-import os, sys, json, glob, datetime, argparse
+import os, sys, json, glob, datetime, argparse, importlib.util
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_spec = importlib.util.spec_from_file_location("sc", os.path.join(_HERE, "sync_console.py"))
+SC = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(SC)
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 DATA = os.path.join(REPO, "data")
@@ -158,7 +162,7 @@ def main():
     except Exception:
         ideas = []
 
-    BANNED_ON_IMAGE = ("——",)          # 圖是最終呈現，禁句在這裡出現＝已經上到成品
+    BANNED_ON_IMAGE = SC.BANNED_ON_IMAGE   # 正本在 sync_console，兩邊不要各寫一份
     pids = {p["id"] for p in posts} | {p.get("clickup_task_id") for p in posts}
 
     for p in posts:
@@ -255,6 +259,33 @@ def main():
     except Exception:
         pass
 
+    # I17 閘門必須有資訊量〔2026-09-03〕：擋住每一篇的閘門跟沒有閘門一樣。
+    # 事實閘門曾在未發佈的 16 篇開出 51 個 block、已發佈 11 篇開出 0 個——
+    # 不是因為舊稿比較乾淨，是因為它從來沒放行過任何一篇。
+    # 這條盯的是「閘門自己壞掉」，不是「稿子有問題」。
+    for gate in ("fact", "copy", "qa"):
+        judged = [p for p in posts if p.get(gate) and p.get("status") != "published"]
+        if len(judged) < 5:
+            continue
+        blocked = [p for p in judged
+                   if [i for i in (p.get(gate) or {}).get("issues", [])
+                       if (i.get("severity") or i.get("sev")) == "block"]]
+        if len(blocked) == len(judged):
+            warn("I17", "%s 閘門擋住全部 %d 篇，沒有任何一篇通過——先確認是閘門壞了還是稿真的都有問題"
+                 % (gate, len(judged)))
+
+    # I17b 沒有政策的閘門類型：模型自己判的 severity 還沒有人審過，
+    # 留在這裡當待辦，避免它默默擋線或默默放行（見 sync_console.QA_SEVERITY）。
+    seen_nopolicy = {}
+    for p in posts:
+        for i in (p.get("qa") or {}).get("issues", []):
+            if i.get("policy") == "model":
+                t = i.get("type") or i.get("code") or "?"
+                seen_nopolicy.setdefault(t, 0)
+                seen_nopolicy[t] += 1
+    for t, n in seen_nopolicy.items():
+        warn("I17", "視覺總檢出現沒有政策的類型「%s」%d 次，請到 QA_SEVERITY 決定它該擋還是該提醒" % (t, n))
+
     if WARN:
         print("🟡 進度警告 %d 條（不擋 CI，但要看）：" % len(WARN))
         for r, d in WARN:
@@ -264,7 +295,7 @@ def main():
         for r, d in BAD:
             print("  [%s] %s" % (r, d))
         return 1
-    print("✅ 不變量 I1-I16 全過（posts %d、archived %d%s）"
+    print("✅ 不變量 I1-I17 全過（posts %d、archived %d%s）"
           % (len(posts), len(arch), "；進度警告 %d 條" % len(WARN) if WARN else ""))
     return 0
 

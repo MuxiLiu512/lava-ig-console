@@ -197,13 +197,29 @@ def _slide_text_hash(p):
     return out
 
 
+# 圖是最終呈現：禁句出現在這裡＝已經印到成品上。這份清單是唯一正本，
+# verify_invariants 的 I11 也讀它〔2026-09-03：原本兩邊各寫一份，是「多份實作家族」的溫床〕。
+BANNED_ON_IMAGE = ("——",)
+
+
 def _render_stale_slides(p):
-    """回傳「圖上文字已過期」的張號清單（指紋不符）。無指紋＝舊資料，不猜。"""
+    """回傳「圖上文字已過期」的張號清單。"""
     old = p.get("render_src_hash") or {}
-    if not old:
-        return []
-    now = _slide_text_hash(p)
-    return sorted([int(n) for n, h in now.items() if old.get(n) and old[n] != h])
+    if old:
+        now = _slide_text_hash(p)
+        return sorted([int(n) for n, h in now.items() if old.get(n) and old[n] != h])
+    # 沒有指紋＝這張圖排在指紋機制之前。原本這裡直接回傳空清單（「不猜」），
+    # 結果 15 張圖到今天還印著 8/27 就修掉的破折號——指紋機制對它們一律說「不過期」，
+    # 因為它們根本沒有指紋，於是專門為這個 bug 做的機制對這個 bug 完全無效。
+    # 改看更硬的證據：圖上實際印出來的字。禁句在圖上、原文已經沒有 → 那張圖確定是舊的。
+    cur = {str(s.get("n")): (s.get("heading") or "") + (s.get("display_copy") or "")
+           for s in p.get("slides", [])}
+    stale = []
+    for n, lines in (p.get("rendered_lines") or {}).items():
+        blob = "".join(str(l) for l in (lines or []))
+        if any(b in blob and b not in cur.get(n, "") for b in BANNED_ON_IMAGE):
+            stale.append(int(n))
+    return sorted(stale)
 
 
 def _load_local_sources():
@@ -1835,11 +1851,63 @@ def _post_qa(pid, finals_dir):
         return json.loads(r.read().decode())
 
 
+# 視覺總檢的嚴重度由這裡決定，不由模型決定。
+# 〔設計文件 T3.8 早就寫明「模型只回報事實，Python 決定 block，保證同輸入同判定」，
+#  但實作一直原樣採用模型給的 severity。實測後果：未發佈的 16 篇裡，
+#  duplicate_subject 出現 11 次、全部是 block，連 Lava 自家星號 icon 在五張裡重複出現
+#  都被判成不能發。閘門擋住 100% 的稿，跟沒有閘門一樣沒有資訊量。〕
+#
+# 分界線：印出去會變成事故的，擋；印出去只是不夠好的，提醒。
+QA_SEVERITY = {
+    "watermark":         "block",   # 別人的浮水印印在我們的貼文上（2026-08-05 Aziz 事件）
+    "credit_leak":       "block",   # 版權來源標成「Google 圖片」或內部檔名
+    "unreadable":        "block",   # 底圖雜訊蓋掉文字，讀者看不懂
+    "text_overflow":     "block",   # 字出血、被裁掉
+    "text_clipped":      "block",
+    "duplicate_subject": "warn",    # 同一張臉／同一部片連兩張。是craft問題，不是事故
+    "monotone_run":      "warn",    # 連續數張色調雷同
+    "hook_repeat":       "warn",    # 開場句型與近期重複
+}
+
+
+def _apply_qa_policy(issues):
+    """把模型回報的事實套上我們的政策。沒有政策的類型保留模型判斷並標記，
+    這樣新類型不會被默默降級（漏擋），也不會默默升級（全線停住）——
+    它會出現在 verify_invariants 的待辦裡，等我們替它訂一條政策。"""
+    for i in issues:
+        t = i.get("type") or i.get("code")
+        if t in QA_SEVERITY:
+            i["severity"] = QA_SEVERITY[t]
+            i["policy"] = "table"
+        else:
+            i.setdefault("severity", "warn")
+            i["policy"] = "model"
+    return issues
+
+
 def post_qa(args):
-    """發佈前全篇檢查；block 級問題會擋住排程（操控室顯示待修）。"""
+    """發佈前全篇檢查；block 級問題會擋住排程（操控室顯示待修）。
+    --regrade 只把已存的結果重新套政策，不呼叫模型、不花錢——
+    政策改了以後，舊稿身上的舊判定不會自己更新，那些稿會一直卡著。"""
     posts_d = load("posts.json")
     targets = [p for p in posts_d.get("posts", [])
                if (p["id"] == args.post_id if args.post_id else p.get("status") in ("approved", "scheduled"))]
+    if getattr(args, "regrade", False):
+        n = 0
+        for p in posts_d.get("posts", []):
+            q = p.get("qa")
+            if not q or not q.get("issues"):
+                continue
+            was = [i.get("severity") for i in q["issues"]]
+            _apply_qa_policy(q["issues"])
+            now = [i.get("severity") for i in q["issues"]]
+            q["pass"] = not [i for i in q["issues"] if i.get("severity") == "block"]
+            if was != now:
+                n += 1
+                print("%-30s %s → %s" % (p["id"][:30], was, now))
+        save("posts.json", posts_d)
+        print("\n✓ 重新套政策：%d 篇的嚴重度有變（未呼叫模型，零成本）" % n)
+        return
     if not targets:
         print("無可檢查的貼文"); return
     for p in targets:
@@ -1852,7 +1920,7 @@ def post_qa(args):
             print("! %s 總檢失敗：%s" % (p["id"][:26], e)); continue
         if not res:
             print("⏭ %s：成品不足 3 張" % p["id"][:26]); continue
-        issues = res.get("issues") or []
+        issues = _apply_qa_policy(res.get("issues") or [])
         blocks = [i for i in issues if i.get("severity") == "block"]
         p["qa"] = {"ts": datetime.datetime.now().astimezone().isoformat(timespec="seconds"),
                    "pass": not blocks, "issues": issues, "rhythm": res.get("rhythm_note", "")}
@@ -2581,7 +2649,7 @@ def main():
     a = sub.add_parser("refresh-candidates", help="已入板但缺料的稿：重掃 Drive 把補到的素材讀回 posts.json"); a.add_argument("--limit", type=int, default=3); a.add_argument("--post-id", default=None); a.set_defaults(func=refresh_candidates)
     a = sub.add_parser("quality-report", help="素材線品質趨勢＋紅線（quality_metrics/curation_log）"); a.add_argument("--days", type=int, default=7); a.set_defaults(func=quality_report)
     a = sub.add_parser("gate-audit", help="低畫質標記審計（image_gate.jsonl 彙總）"); a.add_argument("--days", type=int, default=None); a.add_argument("--tail", type=int, default=8); a.set_defaults(func=gate_audit)
-    a = sub.add_parser("post-qa", help="成篇視覺總檢（WF15）：撞主體/浮水印/不可讀/出處異常"); a.add_argument("--post-id", default=None); a.set_defaults(func=post_qa)
+    a = sub.add_parser("post-qa", help="成篇視覺總檢（WF15）：撞主體/浮水印/不可讀/出處異常"); a.add_argument("--post-id", default=None); a.add_argument("--regrade", action="store_true", help="只把已存結果重新套 QA_SEVERITY 政策，不呼叫模型"); a.set_defaults(func=post_qa)
     a = sub.add_parser("rendered-lines", help="計算圖上實際呈現的逐行文字（供操控室對照）"); a.add_argument("--post-id", default=None); a.add_argument("--all", action="store_true"); a.set_defaults(func=rendered_lines)
     a = sub.add_parser("alert", help="哨兵自報告警 → ClickUp 告警日誌卡留言"); a.add_argument("message"); a.set_defaults(func=alert)
     a = sub.add_parser("push"); a.add_argument("message"); a.set_defaults(func=push)

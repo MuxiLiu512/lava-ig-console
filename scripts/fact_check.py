@@ -27,7 +27,7 @@
   python3 scripts/fact_check.py --post ID  # 只檢查一篇
   python3 scripts/fact_check.py --dry      # 只印報告，不寫檔
 """
-import os, sys, re, json, argparse, urllib.request, urllib.error, importlib.util
+import os, re, argparse, urllib.request, urllib.error, importlib.util
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _spec = importlib.util.spec_from_file_location("sc", os.path.join(_HERE, "sync_console.py"))
@@ -42,39 +42,71 @@ VOLATILE = re.compile(
     re.I)
 
 # 事實宣稱的樣態。抓得寬一點，寧可多問一句，也不要漏掉沒出處的數字。
+# \d 前面統一加 (?<![\d.,]) ：否則「31.1歲」會被讀成「1 歲」、「2,843 名」被讀成「843 名」，
+# 然後系統要求你為一個根本不存在的宣稱提供出處〔2026-09-03 實測 2 例〕。
+_B = r"(?<![\d.,])"
 CLAIM_PATTERNS = [
-    (r"\d{4}\s*年", "年份"),
-    (r"\d+\s*歲", "年齡"),
+    (_B + r"\d{4}\s*年", "年份"),
+    (_B + r"\d+(?:\.\d+)?\s*歲", "年齡"),
     (r"(?:NT\$|新台幣|US\$|\$)\s*[\d,]+", "金額"),
-    (r"\d+(?:\.\d+)?\s*%", "百分比"),
-    (r"\d[\d,]*\s*(?:人|位|名|場|次|篇|本|個研究)", "數量"),
+    (_B + r"\d+(?:\.\d+)?\s*%", "百分比"),
+    (_B + r"\d[\d,]*\s*(?:人|位|名|場|次|篇|本|個研究)", "數量"),
     (r"(?:研究|調查|實驗|統合分析|報告)(?:顯示|指出|發現|說)", "研究引用"),
     (r"[A-Z][a-zA-Z]+\s+[A-Z][a-zA-Z]+\s*(?:說|認為|指出|提出)", "人物引述"),
 ]
 
 
-def post_text(p):
-    """一篇貼文裡所有會被讀者看到的字。事實錯在哪一格都是錯。
-    先剝掉排版用的重點標記【】〖〗——它們會把「追蹤 134 對伴侶」切成
-    「追蹤【134 對伴侶】」，字串比對整組失靈（2026-08-24 首篇實測 5 項誤報 3 項）。"""
-    parts = [p.get("topic", ""), p.get("caption", "")]
+# 這幾種行不是宣稱，是排版：整串 hashtag、來源標註、裸網址。
+# 〔2026-09-03〕舊版把 caption（含 hashtag 與來源行）跟九張投影片黏成一坨，
+# 再用「前後 14 字」的滑動窗切出片語去要出處。後果實測：
+#   「#社交焦慮 #台灣單身 #30歲 #心理健康 #」→ 被當成沒有出處的「年齡」宣稱
+#   「來源：衛生福利部保護服務司，2020 年…」→ 來源行本身被要求提供來源
+#   「灣交友 #KaiCenat Tom Holland 說他沒有」→ 跨越兩個段落、開頭還缺字
+# 51 個 block 裡多數出自這裡。判讀的單位要跟讀者眼睛看到的一塊一致。
+NOISE_LINE = re.compile(
+    r"^\s*(?:資料來源|圖片來源|影片來源|來源|出處|參考|延伸閱讀|Source|Credit|Photo|Image)\s*[:：]"
+    r"|^\s*https?://\S+\s*$", re.I)
+
+# 作者自己承認出處還沒查實。只有 1/119 條，但那一條正是「95.1% 拿 UCSD 新聞稿佔位」，
+# 不抓出來就會以「數字對不上」的錯誤理由被擋，人看了不知道真正該做什麼。
+UNVERIFIED = re.compile(r"注意】|尚待|暫以|待補|待查|查證中|佔位|暫代|自行確認")
+
+
+def _strip_noise(t):
+    """去掉排版記號、hashtag、來源行、裸網址，剩下真正在對讀者說話的字。"""
+    t = re.sub(r"[【】〖〗]", "", t or "")
+    t = re.sub(r"#\S+", " ", t)
+    keep = [ln for ln in t.split("\n") if ln.strip() and not NOISE_LINE.match(ln)]
+    return re.sub(r"[ \t]+", " ", "\n".join(keep)).strip()
+
+
+def claim_units(p):
+    """把一篇拆成「可以獨立判讀的一塊」：文案一段一塊、投影片一張一塊。
+    出處對不對得上要在同一塊裡判斷——同一張投影片的來源行就在它自己底下。"""
+    units = []
+    if p.get("topic"):
+        units.append(("主題", _strip_noise(p["topic"])))
+    for i, para in enumerate((p.get("caption") or "").split("\n\n")):
+        units.append(("文案第 %d 段" % (i + 1), _strip_noise(para)))
     for s in p.get("slides", []):
-        parts += [s.get("heading") or "", s.get("display_copy") or ""]
-    return re.sub(r"[【】〖〗]", "", "\n".join(x for x in parts if x))
+        units.append(("第 %s 張" % s.get("n"),
+                      _strip_noise((s.get("heading") or "") + "\n" + (s.get("display_copy") or ""))))
+    return [(w, t) for w, t in units if t]
 
 
-def find_claims(text):
-    """回傳 [(片語, 類型)]。片語取宣稱前後的一小段，讓人看得懂在講什麼。"""
+def find_claims(units):
+    """回傳 [{claim, kind, where, unit}]。同一個宣稱在同一塊裡只算一次；
+    「2003年」與「2003 年」是同一個宣稱，正規化後才去重（舊版當成兩條，各擋一次）。"""
     out, seen = [], set()
-    for pat, kind in CLAIM_PATTERNS:
-        for m in re.finditer(pat, text):
-            a, b = max(0, m.start() - 14), min(len(text), m.end() + 14)
-            frag = text[a:b].replace("\n", " ").strip()
-            key = (m.group(0), kind)
-            if key in seen:
-                continue
-            seen.add(key)
-            out.append({"claim": m.group(0), "kind": kind, "context": frag})
+    for where, text in units:
+        for pat, kind in CLAIM_PATTERNS:
+            for m in re.finditer(pat, text):
+                key = (where, kind, re.sub(r"\s+", "", m.group(0)))
+                if key in seen:
+                    continue
+                seen.add(key)
+                out.append({"claim": re.sub(r"\s+", " ", m.group(0)).strip(), "kind": kind,
+                            "where": where, "unit": text})
     return out
 
 
@@ -134,60 +166,115 @@ def numbers_in(s):
     return out
 
 
+def _norm(s):
+    return re.sub(r"\s+", "", s or "")
+
+
+def _shares_phrase(a, b, n=6):
+    """a 裡有沒有任何 n 個字連續出現在 b。用來判斷「這條出處是不是在講這件事」。"""
+    a, b = _norm(a), _norm(b)
+    return any(a[i:i + n] in b for i in range(len(a) - n + 1))
+
+
+def _latin_names(s):
+    return re.findall(r"[A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+)+", s or "")
+
+
+def _match_facts(c, facts):
+    """回傳 (數字對得上的出處, 只是在講同一件事的出處)。
+    兩者要分開〔2026-09-03〕：舊版混在一起，於是「95.1%」跟一條只是主題相近的
+    出處配成一對，再拿那條的網址去找 95.1%，當然找不到，就報「數字對不上」。
+    真正的問題是「95.1% 這個數字任何一條出處都沒提到」——講錯理由，人就修錯地方。"""
+    want = numbers_in(c["claim"])
+    num, topic = [], []
+    for f in facts:
+        said = "%s %s" % (f.get("claim", ""), f.get("quote", ""))
+        blob = "%s %s" % (said, f.get("source", ""))
+        # 數字只跟「作者寫下的宣稱與引文」比對，不跟網址比對——
+        # 網址裡出現同樣的數字是巧合，不是證據。人名則可以在網址裡（作者頁）。
+        if want and (want & numbers_in(said)):
+            num.append(f); continue
+        if c["kind"] == "人物引述" and any(_norm(n) in _norm(blob) for n in _latin_names(c["claim"])):
+            topic.append(f); continue
+        if _shares_phrase(f.get("claim", ""), c["unit"]):
+            topic.append(f)
+    return num, topic
+
+
 def check_post(p, verbose=False):
-    text = post_text(p)
-    claims = find_claims(text)
+    units = claim_units(p)
+    claims = find_claims(units)
     facts = p.get("facts") or []          # [{claim, source, quote?}]
-    issues = []
+    issues, seen = [], set()
+
+    def add(sev, rule, line):
+        k = (rule, line)
+        if k not in seen:
+            seen.add(k)
+            issues.append({"severity": sev, "rule": rule, "line": line})
 
     if not claims:
         return {"ts": SC._now_iso(), "pass": True, "claims": 0,
                 "issues": [], "note": "文案未偵測到數字或研究引用"}
 
-    # 建索引：宣稱片語 → 出處
-    byclaim = {}
-    for f in facts:
-        byclaim.setdefault(str(f.get("claim", "")).strip(), []).append(f)
-
-    def _fact_hits(c):
-        """出處條目與宣稱的對應：字串包含，或數字交集（作者在 facts 裡的措辭
-        跟文案不必逐字相同——「20% 至 30%」對「20–30%」也該算對上）。"""
-        hits = [f for k, v in byclaim.items() if k and re.sub(r"[【】〖〗]", "", k) in c["context"] for f in v]
-        if hits:
-            return hits
-        # 「研究發現」這類宣稱本身沒有數字，改拿前後文的數字去對
-        #（「追蹤 134 對伴侶的縱向研究發現」→ 134 對得上 facts 裡的 134）
-        want = numbers_in(c["claim"]) or numbers_in(c["context"])
-        if want:
-            return [f for f in facts
-                    if want & numbers_in(str(f.get("claim", "")) + str(f.get("quote", "")))]
-        return []
-
     cache = {}
-    for c in claims:
-        matched = _fact_hits(c)
-        if not matched:
-            issues.append({"severity": "block", "rule": "no_source",
-                           "line": "「%s」沒有對應出處（%s）" % (c["context"], c["kind"])})
-            continue
-        for f in matched:
-            url = f.get("source", "")
-            if url not in cache:
-                cache[url] = check_source(url)
-            st, msg, txt = cache[url]
-            if st in ("dead", "volatile"):
-                issues.append({"severity": "block", "rule": st,
-                               "line": "「%s」的出處不合格：%s（%s）" % (c["claim"], msg, url)})
-            elif st == "unreadable":
-                issues.append({"severity": "warn", "rule": "unreadable",
-                               "line": "「%s」的出處無法自動核對，請人工看過：%s" % (c["claim"], url)})
-            else:
-                want = numbers_in(c["claim"])
-                if want and not (want & numbers_in(txt)):
-                    issues.append({"severity": "block", "rule": "number_mismatch",
-                                   "line": "「%s」的數字在出處頁面裡找不到：%s" % (c["claim"], url)})
 
-    return {"ts": SC._now_iso(), "pass": not issues, "claims": len(claims), "issues": issues}
+    def verdict(c, f):
+        """單一出處撐不撐得住這條宣稱。回傳 None＝撐得住，否則 (severity, rule, 說明)。"""
+        note = str(f.get("quote", ""))
+        if UNVERIFIED.search(note):
+            return ("block", "placeholder_source",
+                    "「%s」的出處是暫代的，作者自己註明還沒查證：%s" % (c["claim"], note.strip()[:70]))
+        url = f.get("source", "")
+        if url not in cache:
+            cache[url] = check_source(url)
+        st, msg, txt = cache[url]
+        if st in ("dead", "volatile"):
+            return ("block", st, "「%s」的出處不合格：%s（%s）" % (c["claim"], msg, url))
+        want = numbers_in(c["claim"])
+        if not want:
+            return None if st == "ok" else ("warn", "unreadable",
+                    "「%s」的出處無法自動核對，請人工看過：%s" % (c["claim"], url))
+        if want & numbers_in(note):
+            return None                    # 作者抄回來的原文裡就有這個數字
+        if st != "ok":
+            return ("warn", "unreadable",
+                    "「%s」的出處無法自動核對，請人工看過：%s" % (c["claim"], url))
+        if want & numbers_in(txt):
+            return None
+        return ("block", "number_mismatch",
+                "「%s」（%s）的數字在出處原文與頁面都找不到：%s" % (c["claim"], c["where"], url))
+
+    # 報哪一條問題：先報最能指出下一步的。「出處是暫代的」比「數字對不上」有用得多，
+    # 因為前者說得出要做什麼（去補真出處），後者只會讓人反覆核對一個本來就不對的網址。
+    RANK = {"placeholder_source": 0, "dead": 1, "volatile": 1,
+            "number_mismatch": 2, "unreadable": 3}
+
+    for c in claims:
+        num_hits, topic_hits = _match_facts(c, facts)
+        if numbers_in(c["claim"]) and not num_hits:
+            add("block", "no_source",
+                "%s的「%s」沒有任何一條出處提到這個數字（%s）" % (c["where"], c["claim"], c["kind"]))
+            continue
+        matched = num_hits or topic_hits
+        if not matched:
+            # 「研究指出…」這種沒有數字的訴諸權威，本身無從查核；擋它只會全線停住，
+            # 而且它旁邊的數字已經另外成為一條可查核的宣稱。降為提醒，仍然會顯示。
+            if c["kind"] == "研究引用":
+                add("warn", "vague_authority",
+                    "%s寫「%s」但沒有指名是哪一個研究" % (c["where"], c["claim"]))
+            else:
+                add("block", "no_source",
+                    "%s的「%s」沒有對應出處（%s）" % (c["where"], c["claim"], c["kind"]))
+            continue
+        vs = [verdict(c, f) for f in matched]
+        if any(v is None for v in vs):
+            continue                       # 只要有一條出處撐得住，這條宣稱就過
+        sev, rule, line = sorted([v for v in vs if v], key=lambda v: RANK.get(v[1], 9))[0]
+        add(sev, rule, line)
+
+    return {"ts": SC._now_iso(), "pass": not [i for i in issues if i["severity"] == "block"],
+            "claims": len(claims), "issues": issues}
 
 
 def main():
