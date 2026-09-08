@@ -782,7 +782,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 438,
+          "reach": 439,
           "saved": 5,
           "shares": 6,
           "total_interactions": 21,
@@ -1161,7 +1161,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 383,
+          "reach": 385,
           "saved": 4,
           "shares": 7,
           "total_interactions": 23,
@@ -1345,7 +1345,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 336,
+          "reach": 337,
           "saved": 1,
           "shares": 6,
           "total_interactions": 18,
@@ -1527,7 +1527,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 438,
+          "reach": 439,
           "saved": 2,
           "shares": 4,
           "total_interactions": 27,
@@ -2079,7 +2079,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 433,
+          "reach": 434,
           "saved": 2,
           "shares": 0,
           "total_interactions": 13,
@@ -2263,7 +2263,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 440,
+          "reach": 441,
           "saved": 0,
           "shares": 0,
           "total_interactions": 6,
@@ -2627,7 +2627,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 1108,
+          "reach": 1110,
           "saved": 5,
           "shares": 16,
           "total_interactions": 51,
@@ -2991,7 +2991,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 1316,
+          "reach": 1328,
           "saved": 23,
           "shares": 34,
           "total_interactions": 74,
@@ -3173,7 +3173,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 1637,
+          "reach": 1652,
           "saved": 8,
           "shares": 5,
           "total_interactions": 30,
@@ -4447,7 +4447,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 1565,
+          "reach": 1582,
           "saved": 3,
           "shares": 2,
           "total_interactions": 16,
@@ -8603,7 +8603,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 337,
+          "reach": 346,
           "saved": 0,
           "shares": 3,
           "total_interactions": 19,
@@ -8774,7 +8774,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 1606,
+          "reach": 1617,
           "saved": 2,
           "shares": 8,
           "total_interactions": 33,
@@ -8824,7 +8824,7 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 143,
+          "reach": 162,
           "saved": 1,
           "shares": 3,
           "total_interactions": 21,
@@ -8852,11 +8852,11 @@
         },
         {
           "day": "2026-09-08",
-          "reach": 131,
-          "saved": 1,
+          "reach": 162,
+          "saved": 2,
           "shares": 2,
-          "total_interactions": 23,
-          "likes": 11,
+          "total_interactions": 26,
+          "likes": 13,
           "comments": 8,
           "profile_visits": 2,
           "follows": 0
