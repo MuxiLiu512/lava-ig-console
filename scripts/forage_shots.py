@@ -130,9 +130,34 @@ def _screenshot(target, size, out, viewport_only):
 
 
 # ── 各型抓取器：回傳候選清單 [(path, source_type)] ─────────────────────
-def grab_youtube(url, work):
+def grab_youtube(url, work, want=""):
+    """want＝這一張要找的畫面內容。有 want 就先走字幕定位，沒有才盲抽。
+
+    〔2026-09-08 Jesse：「很多貼文的照片選擇也過於受限」〕
+    盲抽 25/50/75% 三格完全不看影片在演什麼——一支 20 分鐘的訪談，
+    第 50% 秒可能是主持人在喝水。字幕裡有時間戳，既然知道這一張要講什麼，
+    就該去字幕裡找講這件事的那幾秒。實測 3Blue1Brown 那支：
+    盲抽拿到三張隨機動畫，字幕定位拿到「Neural network 標題卡」與
+    「網路判斷手寫 9 得到 0.95」——後者正是文案在講的那件事。
+
+    盲抽沒有刪掉，降級成退路：字幕定位拿不到兩張以上時才用它，
+    而且會在 rejects 裡留一行說明用了退路（I16：系統默默降級最危險）。"""
     yid = _yt_id(url)
     cands, rejects = [], []
+    cued = 0
+    if want:
+        try:
+            sys.path.insert(0, SCRIPT_DIR)
+            import yt_frames
+            rep = yt_frames.harvest(url, want, n=3, outdir=work)
+            for fr in rep.get("frames", []):
+                fp = os.path.join(work, fr.get("file") or "")
+                if fr.get("file") and os.path.exists(fp):
+                    cands.append((fp, "yt_cued")); cued += 1
+            if rep.get("error"):
+                rejects.append(("字幕定位", rep["error"][:60]))
+        except Exception as e:
+            rejects.append(("字幕定位", "沒跑起來：%s" % type(e).__name__))
     # 縮圖
     for name in ("maxresdefault", "hq720", "sddefault"):
         try:
@@ -145,8 +170,13 @@ def grab_youtube(url, work):
             rejects.append(("thumb", why))
         except Exception:
             continue
-    # 影格 ×3（25/50/75%）：串流抽格——拿直連 URL 讓 ffmpeg range-seek，不下載整支影片
-    if os.path.exists(YTDLP) and os.path.exists(FFMPEG):
+    # 盲抽影格 ×3（25/50/75%）＝退路。字幕定位已經拿到兩張以上就不跑，
+    # 省一次串流抽格（約 20 秒），也避免候選裡混進無關畫面稀釋策展。
+    if cued >= 2:
+        rejects.append(("盲抽", "字幕定位已取得 %d 張，跳過" % cued))
+    elif os.path.exists(YTDLP) and os.path.exists(FFMPEG):
+        if want:
+            rejects.append(("盲抽", "字幕定位只拿到 %d 張 → 退回盲抽補足" % cued))
         try:
             meta = subprocess.run([YTDLP, "--no-playlist", "--print", "duration", "--print", "urls",
                                    "-f", "bv*[height<=1080][ext=mp4]/bv*[height<=1080]/b[height<=1080]/b",
@@ -367,9 +397,17 @@ def grab_imagesearch(query, work, want=6, source_type="mood"):
     return cands, rejects
 
 
-def grab(url, work):
+def _want_of(ref):
+    """把「這一張要找什麼」組成一串字，給字幕定位用。
+    query 與 frame_hint 是視覺企劃寫的意圖，heading／display_copy 是這一張
+    實際要講的話——四個一起丟，命中率比只用 query 高（query 常常只有兩個詞）。"""
+    return " ".join(x for x in (ref.get("query"), ref.get("frame_hint"),
+                                ref.get("heading"), ref.get("display_copy")) if x)[:400]
+
+
+def grab(url, work, want=""):
     if _yt_id(url):
-        return grab_youtube(url, work)
+        return grab_youtube(url, work, want=want)
     if re.search(r"\.(jpe?g|png|webp)(\?|$)", url, re.I) or "covers.openlibrary" in url or "books.google" in url:
         return grab_image(url, work)
     return grab_browser(url, work)
@@ -652,11 +690,11 @@ def main():
             if q and role in ("person", "mood", "book"):
                 cands, rejects = grab_imagesearch(q, work, want=(5 if role == "book" else 7), source_type=role)
                 if u and role == "person":   # 人物張補指定影片的影格（多場合多樣性）
-                    c2, r2 = grab(u, work); cands += c2; rejects += r2
+                    c2, r2 = grab(u, work, want=_want_of(r)); cands += c2; rejects += r2
                 if not cands and u:          # 圖搜空手 → 退回 URL 路徑
-                    c2, r2 = grab(u, work); cands += c2; rejects += r2
+                    c2, r2 = grab(u, work, want=_want_of(r)); cands += c2; rejects += r2
             elif u:
-                cands, rejects = grab(u, work)
+                cands, rejects = grab(u, work, want=_want_of(r))
         except Exception as e:
             rejects = [((u or q)[:50], type(e).__name__)]
         all_rejects += [(n,) + x for x in rejects]
