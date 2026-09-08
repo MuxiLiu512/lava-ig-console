@@ -682,11 +682,11 @@ function openDiscardPanel(p) {
   row.appendChild(ActionButton({
     id: "discard-" + p.id, groupId: "decide-" + p.id,
     label: "確定捨棄", kind: "danger", doneLabel: "已捨棄",
-    run: async () => {
-      await postEvent("post.discard", p.id,
-        { reason: ta.value.trim(), status_was: p.status });
-      rememberDecision(p.id, "post.discard");
-    },
+    run: () => postEvent("post.discard", p.id,
+      { reason: ta.value.trim(), status_was: p.status }),
+    // postEvent 成功後自己會呼叫 rememberDecision(type, target)〔core.js〕，
+    // 這裡不要再叫一次——上一版多寫了一行，而且參數還寫反了，
+    // 結果按下去噴 rememberDecision is not defined。
     onDone: () => { toast("已捨棄。這個題目不會再回來。"); afterDecision(p); },
   }));
   const cancel = el("button", "btn ghost", "算了");
