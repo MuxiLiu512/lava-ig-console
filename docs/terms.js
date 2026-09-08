@@ -13,6 +13,7 @@ const TERMS = {
   scheduled:       ["已排程", "會在指定時間自動發佈"],
   published:       ["已發佈", "已上 IG"],
   rejected:        ["已退回", "你退回了，這一版不會再出現"],
+  discarded:       ["已捨棄", "你說這個題目不要了。不會重做，選題雷達也不會再提"],
   redoing:         ["重做中", "你退回了，系統正按你的原因重做"],
   making:          ["系統製作中", "撰稿與素材生成進行中，完成會回到佇列"],
   fixing_images:   ["系統補圖中", "有版位沒有可用的圖，系統正在補"],
@@ -100,6 +101,8 @@ function statusView(p, latestReview) {
       return { label: t("scheduled") + "（同步中）", tone: "info", zone: "done" };
     if (pend.type === "post.reject")
       return { label: t("rejected") + "（同步中）", tone: "neutral", zone: "gone" };
+    if (pend.type === "post.discard")
+      return { label: t("discarded") + "（同步中）", tone: "neutral", zone: "gone" };
     if (pend.type === "post.approve")
       return { label: t("approved") + "（同步中）", tone: "you", zone: "queue" };
     if (pend.type === "post.unschedule")
@@ -108,6 +111,8 @@ function statusView(p, latestReview) {
   if (st === "published") return { label: t("published"), tone: "ok", zone: "done" };
   if (st === "scheduled") return { label: t("scheduled"), tone: "info", zone: "done" };
   if (st === "rejected")  return { label: t("rejected"), tone: "neutral", zone: "gone" };
+  // 捨棄＝你說了不要。zone "gone" 代表它不出現在任何一區，也不算進任何數字。
+  if (st === "discarded") return { label: t("discarded"), tone: "neutral", zone: "gone" };
   // §1.3 防護：最新 review 是 reject 且版本未前進 → 重做中，不進佇列。
   // 只認帶 version 欄的新制紀錄（2026-08-31 起）；舊紀錄沒有版本概念，
   // 套用防護會把「早退回過、已重做」的稿永遠判成重做中。

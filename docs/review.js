@@ -607,6 +607,7 @@ function decisionBar(p, pend) {
       }));
     }
     bar.appendChild(rejectButton(p));
+    bar.appendChild(discardButton(p));
     return;
   }
 
@@ -632,6 +633,7 @@ function decisionBar(p, pend) {
   if (blocked) bar.appendChild(recheckButton(p));
   bar.appendChild(ab);
   bar.appendChild(rejectButton(p));
+  bar.appendChild(discardButton(p));
 }
 
 // 重新檢查：內容改過之後讓閘門重跑一次，取代「只能退回」。
@@ -647,8 +649,52 @@ function recheckButton(p) {
 function rejectButton(p) {
   const b = el("button", "btn danger", "退回");
   b.type = "button";
+  b.title = "這個主題還要，但這一版不行 → 重做後會再回到你面前";
   b.onclick = () => openRejectPanel(p);
   return b;
+}
+
+/* 捨棄〔2026-09-08 Jesse：「覺得應該捨棄不用，但你的選擇只有退回」〕。
+   跟退回的差別必須讓人一眼看懂，否則兩顆紅鍵只會製造猶豫：
+     退回 = 這個主題還要，這一版不行
+     捨棄 = 這個主題不要了，連選題雷達都不准再提 */
+function discardButton(p) {
+  const b = el("button", "btn ghost", "捨棄");
+  b.type = "button";
+  b.style.color = "var(--danger)";
+  b.title = "這個主題不要了。不會重做，選題雷達也不會再提";
+  b.onclick = () => openDiscardPanel(p);
+  return b;
+}
+
+function openDiscardPanel(p) {
+  if ($("#disPanel")) return;
+  const panel = el("div", "rejectpanel"); panel.id = "disPanel";
+  panel.appendChild(el("h3", null, "捨棄這一篇"));
+  panel.appendChild(el("div", "small muted",
+    "這一篇不會再出現，選題雷達也不會再提「" + esc((p.topic || p.id).slice(0, 24)) +
+    "」這個題目。<br>如果只是這一版不好、主題還想要，請按<b>退回</b>而不是捨棄。"));
+  const ta = el("textarea"); ta.rows = 2;
+  ta.placeholder = "為什麼不要了？（選填，但寫了系統才學得會別再提類似的題）";
+  ta.style.marginTop = "10px";
+  panel.appendChild(ta);
+  const row = el("div", "btnrow"); row.style.marginTop = "10px";
+  row.appendChild(ActionButton({
+    id: "discard-" + p.id, groupId: "decide-" + p.id,
+    label: "確定捨棄", kind: "danger", doneLabel: "已捨棄",
+    run: async () => {
+      await postEvent("post.discard", p.id,
+        { reason: ta.value.trim(), status_was: p.status });
+      rememberDecision(p.id, "post.discard");
+    },
+    onDone: () => { toast("已捨棄。這個題目不會再回來。"); afterDecision(p); },
+  }));
+  const cancel = el("button", "btn ghost", "算了");
+  cancel.type = "button"; cancel.onclick = () => panel.remove();
+  row.appendChild(cancel);
+  panel.appendChild(row);
+  $("#rvBar").insertAdjacentElement("beforebegin", panel);
+  ta.focus();
 }
 
 // 退回面板：就地展開，退什麼（多選）＋原因必填（<10 字不可送）
@@ -917,13 +963,14 @@ loadAll().then(() => {
   if (!P || P._error || !Array.isArray(P.posts)) { loadFail(String((P && P._error) || "資料不是預期格式")); return; }
   const gone = p => { const d = window.LavaCore.pendingDecisionOf(p.id, p.status);
     return d && (d.type === "post.schedule" || d.type === "post.reject"); };
-  QUEUE = P.posts.filter(p => p.status !== "rejected" && !gone(p)
+  QUEUE = P.posts.filter(p => p.status !== "rejected" && p.status !== "discarded" && !gone(p)
     && (p.status === "awaiting_review" || (p.status === "approved" && p.render_note)));
   const want = decodeURIComponent((location.hash || "").replace(/^#/, ""));
   if (want) {
     let i = QUEUE.findIndex(p => p.id === want);
     if (i < 0) {
-      const p = P.posts.find(x => x.id === want && x.status !== "rejected" && !gone(x));
+      const p = P.posts.find(x => x.id === want && x.status !== "rejected"
+                                 && x.status !== "discarded" && !gone(x));
       if (p) { QUEUE.unshift(p); i = 0; }
     }
     if (i >= 0) IDX = i;

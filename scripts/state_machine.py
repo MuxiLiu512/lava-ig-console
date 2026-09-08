@@ -17,6 +17,12 @@ import os, json, re
 
 # 貼文狀態機。rejected 是明確狀態——之前「退回」只寫一筆紀錄、狀態不動，
 # 稿在資料裡永遠是待審，重整就跑回佇列（Jesse 2026-08-28 錄影）。
+# 「退回」與「捨棄」是兩件事〔2026-09-08 Jesse：「覺得應該捨棄不用，
+# 但你的選擇只有退回」〕：
+#   post.reject  → rejected   這個主題還要，但這一版不行 → 重做，會再回到你面前
+#   post.discard → discarded  這個主題不要了 → 永不再出現，選題雷達也不准再提
+# 只有一顆退回鍵時，想丟掉一篇的唯一辦法是退回，然後同一批內容再跑回待審——
+# 那正是他在 9/1 描述的死循環。缺的不是按鈕，是「不要了」這個狀態。
 POST_TRANSITIONS = {
     ("awaiting_review", "post.approve"): "approved",
     ("awaiting_review", "post.reject"):  "rejected",
@@ -24,7 +30,13 @@ POST_TRANSITIONS = {
     ("approved",        "post.schedule"): "scheduled",
     ("scheduled",       "post.reject"):  "rejected",     # 排程後反悔也要能退
     ("scheduled",       "post.unschedule"): "approved",  # 取消排程：回到等你排時間（UI 規格 §3D）
+    ("awaiting_review", "post.discard"): "discarded",
+    ("approved",        "post.discard"): "discarded",
+    ("scheduled",       "post.discard"): "discarded",
+    ("rejected",        "post.discard"): "discarded",    # 退回後才想通不要了
     ("awaiting_review", "post.schedule"): None,          # 明確非法：沒核准不能排
+    ("published",       "post.discard"): None,           # 已發佈的收不回來，捨棄沒有意義
+    ("discarded",       "post.approve"): None,           # 捨棄是終點，要復活請開新的
 }
 
 IDEA_DECISIONS = {"idea.approve": "approve", "idea.reject": "reject"}

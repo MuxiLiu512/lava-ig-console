@@ -160,6 +160,20 @@ check("文案自動修：多個來源只刪網址、保留名字與分隔",
 check("文案自動修：沒有網址就一個字都不動",
       _CF.fix_urls("資料來源：Jeste & Nguyen et al., 2020") == ("資料來源：Jeste & Nguyen et al., 2020", 0))
 
-TOTAL = 45
+# 捨棄與退回是兩個狀態〔2026-09-08〕：只有退回一顆鍵時，想丟掉一篇的
+# 唯一辦法是退回，然後同一批內容再跑回待審——那正是 9/1 的死循環。
+def _post(status, ev):
+    p = {"status": status}
+    ok, _ = _SM.apply_post_event(p, {"type": ev, "ts": "2026-09-08T00:00:00+08:00", "payload": {}})
+    return ok, p.get("status")
+
+check("捨棄：待審可以捨棄", _post("awaiting_review", "post.discard") == (True, "discarded"))
+check("捨棄：已核准可以捨棄", _post("approved", "post.discard") == (True, "discarded"))
+check("捨棄：已排程可以捨棄", _post("scheduled", "post.discard") == (True, "discarded"))
+check("捨棄：退回後才想通也能捨棄", _post("rejected", "post.discard") == (True, "discarded"))
+check("捨棄：已發佈的收不回來，不能捨棄", _post("published", "post.discard")[0] is False)
+check("捨棄：是終點，不能復活成已核准", _post("discarded", "post.approve")[0] is False)
+
+TOTAL = 51
 print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)

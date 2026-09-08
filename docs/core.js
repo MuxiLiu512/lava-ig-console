@@ -168,6 +168,7 @@ function pendingDecisionOf(target, currentStatus) {
     const d = all[target];
     if (!d) return null;
     const expected = { "post.approve": "approved", "post.reject": "rejected",
+                       "post.discard": "discarded",
                        "post.schedule": "scheduled", "post.unschedule": "approved" }[d.type];
     // 折疊完成（狀態已到位）或超時 → 清掉記憶
     if (currentStatus === expected || Date.now() - d.ts > PENDING_TTL_MS) {

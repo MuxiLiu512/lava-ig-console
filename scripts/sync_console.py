@@ -1580,6 +1580,20 @@ def events_apply(args):
                 ok, msg = SM.apply_post_event(tgt, ev)
         elif t.startswith("post.") and target in posts:
             ok, msg = SM.apply_post_event(posts[target], ev)
+            if ok and t == "post.discard":
+                # 捨棄要留下痕跡，否則選題雷達下週會把同一個題目再端上來一次。
+                # 這份清單是「不要再提」的正本，WF05／WF14 選題前要讀它。
+                # 存主題原文與正規化後的字串兩份：原文給人看，正規化的給機器比對。
+                pay = ev.get("payload") or {}
+                dd = load("discarded.json")
+                tp = posts[target].get("topic") or target
+                dd.setdefault("discarded", []).append({
+                    "post_id": target, "topic": tp, "topic_norm": _norm_topic(tp),
+                    "ts": ev.get("ts"), "reason": (pay.get("reason") or "").strip()[:300],
+                    "status_was": pay.get("status_was") or "",
+                })
+                save("discarded.json", dd)
+                msg += "；已記入不要再提清單（%d 筆）" % len(dd["discarded"])
             if ok and t in ("post.approve", "post.reject"):
                 # 審核紀錄與工時仍寫回原檔，學習迴路照舊讀 reviews.json——但寫者只有這裡
                 pay = ev.get("payload") or {}
