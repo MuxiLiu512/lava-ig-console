@@ -39,6 +39,86 @@ FFMPEG = "/opt/homebrew/bin/ffmpeg"
 SUB_LANGS = ["zh-TW", "zh-Hant", "zh", "zh-CN", "en", "en-US"]
 
 
+# ── 0 找影片 ─────────────────────────────────────────────────────────
+def _source_rules():
+    """讀 config/video-sources.md 的優先／避開清單。改這份檔就改得動排序，
+    不必動程式碼——它在規則本裡是可編輯的一頁。"""
+    fp = os.path.join(os.path.dirname(SCRIPT_DIR), "config", "video-sources.md")
+    prefer, avoid, ban, sec = [], [], [], None
+    try:
+        for ln in open(fp, encoding="utf-8"):
+            t = ln.strip()
+            if t.startswith("## 優先"):
+                sec = "p"; continue
+            if t.startswith("## 避開"):
+                sec = "a"; continue
+            if t.startswith("##"):
+                sec = None; continue
+            if not t or t.startswith("#") or t.startswith("```"):
+                continue
+            if sec == "p":
+                prefer.append(t.lower())
+            elif sec == "a":
+                if t.endswith("!"):
+                    ban.append(t[:-1].strip().lower())
+                else:
+                    avoid.append(t.lower())
+    except Exception:
+        pass
+    return prefer, avoid, ban
+
+
+def search_videos(query, n=6, timeout=120):
+    """用主題搜 YouTube，回傳候選影片。yt-dlp 自帶 ytsearch，不需要 API key。
+
+    〔2026-09-08〕沒有這一步的話，每支影片的網址都要人先找好貼進視覺企劃，
+    素材的天花板就是「有人手動貼了幾條連結」。實測搜「朴恩斌 毛骨悚然的戀愛
+    訪談」，前五筆全是相關的韓劇宣傳訪談。
+
+    篩選條件都有理由，不是拍腦袋：
+      45 秒以下   多半是 Shorts，畫面快切，抽到糊的機率高
+      40 分鐘以上 多半是直播重播或完整節目，字幕定位成本高、雜訊多
+      觀看數      不是品質保證，但低觀看的多是重製上傳，畫質通常較差
+    """
+    try:
+        r = subprocess.run(
+            [YTDLP, "ytsearch%d:%s" % (n, query), "--no-playlist", "--skip-download",
+             "--print", "%(id)s\t%(duration)s\t%(view_count)s\t%(title)s\t%(channel)s"],
+            capture_output=True, text=True, timeout=timeout)
+    except Exception as e:
+        return [], "搜尋失敗：%s" % type(e).__name__
+    prefer, avoid, ban = _source_rules()
+    out = []
+    for line in (r.stdout or "").splitlines():
+        parts = line.split("\t")
+        if len(parts) < 4:
+            continue
+        vid, dur, views, title = parts[0], parts[1], parts[2], parts[3]
+        chan = parts[4] if len(parts) > 4 else ""
+        try:
+            dur = float(dur)
+        except Exception:
+            continue
+        if dur < 45 or dur > 2400:
+            continue
+        blob = (title + " " + chan).lower()
+        if any(b and b in blob for b in ban):
+            continue
+        # 片源分級〔config/video-sources.md〕：官方頻道的畫面沒有第三方台標
+        # 與燒死的字幕；新聞台二次上傳每一格都髒。這一步避開，
+        # 比抽完格再逐格挑便宜得多，也可靠得多。
+        tier = 0
+        if any(a and a in blob for a in avoid):
+            tier = 2
+        elif any(p and p in blob for p in prefer):
+            tier = -1
+        out.append({"id": vid, "url": "https://www.youtube.com/watch?v=" + vid,
+                    "duration": dur, "views": int(views) if views.isdigit() else 0,
+                    "title": title[:90], "channel": chan[:50], "tier": tier})
+    out.sort(key=lambda x: (x["tier"], -x["views"]))
+    return out, (None if out else "搜不到合用的影片（都太短、太長，或全在禁用清單裡）")
+
+
 # ── 1 取字幕 ─────────────────────────────────────────────────────────
 def fetch_subs(url, work, langs=None, timeout=120):
     """下載自動字幕，回傳 [(檔案路徑, 語言)]。只抓字幕不抓影片。
@@ -267,6 +347,53 @@ def usable(path, min_dim=560):
 OFFSETS = (0.6, 1.5, 2.6)
 
 
+# ── 沒有字幕時的辦法：抓鏡頭切換點 ───────────────────────────────────
+def scene_frames(url, outdir, window=180, start=5, thresh=0.35, cap=40):
+    """沒有字幕就抓「每一個鏡頭的第一格」。
+
+    〔2026-09-08 實測〕台灣娛樂新聞頻道（三立娛樂星聞等）的影片多數
+    沒有自動字幕——而那正是我們做韓劇、藝人題材最常用的片源。
+    字幕定位對它們完全無效，總不能因此退回盲抽三格。
+
+    ffmpeg 的 scene 偵測會在畫面變化超過門檻時輸出一格，也就是每個鏡頭
+    的開頭。實測 150 秒的訪談片段抽到 73 個鏡頭，對比盲抽的 3 格。
+    而且每一格都是鏡頭剛切完的穩定畫面，不是運鏡途中的糊格。
+
+    這條路不需要字幕，但也不知道畫面在演什麼——它換來的是「選擇變多」，
+    不是「選得更準」。準不準交給後面的策展（WF14）與你。
+
+    ⚠ 已知限制，不要當成沒有：新聞台的二次上傳會把中韓文字幕與自家台標
+    燒進畫面（實測 fU6-L0vWsds 每一格都有）。那種圖鋪滿等於把別台的浮水印
+    印出去，我們自己的視覺閘門正是為此設了 watermark／credit_leak 兩條 block。
+    這是「片源」的問題，不是「哪一格」的問題——同一支影片的每一格都髒。
+    所以擋它的正確位置是選片（見 config/video-sources.md），不是逐格偵測。
+    我試過用「下方橫帶的邊緣密度」判斷有沒有燒字幕，實測不可用：
+    它量的是「下方比中段忙」，分不出「有字」與「背景本來就複雜」，
+    在忙碌背景上的字幕會漏判。寧可不放，也不要放一個查不出錯的偵測器。
+    """
+    surl, meta, err = stream_url(url)
+    if err:
+        return [], meta, err
+    os.makedirs(outdir, exist_ok=True)
+    pat = os.path.join(outdir, "scene-%03d.jpg")
+    try:
+        subprocess.run(
+            [FFMPEG, "-ss", str(start), "-t", str(window), "-i", surl,
+             "-vf", "select='gt(scene,%s)',scale=1280:-1" % thresh,
+             "-vsync", "vfr", "-q:v", "3", "-y", pat, "-loglevel", "error"],
+            capture_output=True, timeout=window * 3 + 120)
+    except Exception as e:
+        return [], meta, "抽鏡頭失敗：%s" % type(e).__name__
+    out = []
+    for fp in sorted(glob.glob(os.path.join(outdir, "scene-*.jpg")))[:cap]:
+        ok, why = usable(fp, min_dim=480)
+        if not ok:
+            os.remove(fp); continue
+        out.append({"file": os.path.basename(fp), "sharpness": sharpness(fp)})
+    out.sort(key=lambda x: -x["sharpness"])
+    return out, meta, (None if out else "抽到的鏡頭都不合格")
+
+
 def harvest(url, want, n=4, outdir=".", extra="", dry=False, keep_all=False):
     work = tempfile.mkdtemp(prefix="ytf-")
     report = {"url": url, "want": want, "stages": {}, "frames": []}
@@ -346,13 +473,19 @@ def _hhmmss(t):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--url", required=True)
+    ap.add_argument("--url", default="")
+    ap.add_argument("--search", default="", help="用主題搜影片，取代手動給 --url")
+    ap.add_argument("--try-videos", type=int, default=3,
+                    help="--search 時最多試幾支（前一支沒字幕或定位失敗就換下一支）")
     ap.add_argument("--want", default="", help="這一張要找的畫面內容")
     ap.add_argument("--extra", default="", help="補充關鍵字（人名、片名）")
     ap.add_argument("--n", type=int, default=4)
     ap.add_argument("--outdir", default=".")
     ap.add_argument("--dry", action="store_true", help="只做定位不抽格")
     ap.add_argument("--list-subs", action="store_true")
+    ap.add_argument("--scene", action="store_true",
+                    help="不靠字幕，直接抽每個鏡頭的第一格（片源沒字幕時用）")
+    ap.add_argument("--window", type=int, default=180, help="--scene 掃描前幾秒")
     a = ap.parse_args()
 
     if a.list_subs:
@@ -361,10 +494,45 @@ def main():
     if not a.want:
         sys.stderr.write("要給 --want：不知道要找什麼就只能盲抽，那正是現在的問題\n")
         return 2
+    if not a.url and not a.search:
+        sys.stderr.write("要給 --url 或 --search 其中一個\n")
+        return 2
 
-    r = harvest(a.url, a.want, a.n, a.outdir, a.extra, a.dry)
-    print(json.dumps(r, ensure_ascii=False, indent=1))
-    return 1 if r.get("error") else 0
+    if a.scene:
+        if not a.url:
+            sys.stderr.write("--scene 要給 --url\n")
+            return 2
+        frames, meta, err = scene_frames(a.url, a.outdir, window=a.window)
+        print(json.dumps({"url": a.url, "mode": "scene", "video": meta,
+                          "frames": frames, "error": err}, ensure_ascii=False, indent=1))
+        return 1 if err else 0
+
+    if a.url:
+        r = harvest(a.url, a.want, a.n, a.outdir, a.extra, a.dry)
+        print(json.dumps(r, ensure_ascii=False, indent=1))
+        return 1 if r.get("error") else 0
+
+    vids, err = search_videos(a.search)
+    if err:
+        print(json.dumps({"search": a.search, "error": err}, ensure_ascii=False, indent=1))
+        return 1
+    # 一支一支試：沒字幕、字幕對不上都算失敗，換下一支。
+    # 只試一支的話，命中率會被「這支剛好沒字幕」綁架。
+    tried = []
+    for v in vids[:max(1, a.try_videos)]:
+        r = harvest(v["url"], a.want, a.n, a.outdir, a.extra, a.dry)
+        r["video_pick"] = v
+        tried.append({"url": v["url"], "title": v["title"],
+                      "views": v["views"], "error": r.get("error")})
+        if not r.get("error") and (a.dry or r.get("frames")):
+            r["tried"] = tried
+            r["searched"] = [{"title": x["title"], "views": x["views"]} for x in vids[:6]]
+            print(json.dumps(r, ensure_ascii=False, indent=1))
+            return 0
+    print(json.dumps({"search": a.search, "want": a.want,
+                      "error": "試了 %d 支都沒成功" % len(tried), "tried": tried},
+                     ensure_ascii=False, indent=1))
+    return 1
 
 
 if __name__ == "__main__":
