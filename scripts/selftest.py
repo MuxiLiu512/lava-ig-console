@@ -174,6 +174,31 @@ check("捨棄：退回後才想通也能捨棄", _post("rejected", "post.discard
 check("捨棄：已發佈的收不回來，不能捨棄", _post("published", "post.discard")[0] is False)
 check("捨棄：是終點，不能復活成已核准", _post("discarded", "post.approve")[0] is False)
 
-TOTAL = 51
+# 範本拆解〔2026-09-10〕：重點色要抓得到小面積的品牌色，
+# 又不能把深褐當成彩色。第一版只用 HLS 的 saturation 篩，
+# 結果 L=0.05 的黑褐算出 S=0.5 被當成重點色——四個「重點色」全是黑。
+_td_spec = _ilu.spec_from_file_location("td", os.path.join(os.path.dirname(os.path.abspath(__file__)), "template_decompose.py"))
+_TD = _ilu.module_from_spec(_td_spec); _td_spec.loader.exec_module(_TD)
+
+def _synth_accent():
+    from PIL import Image, ImageDraw
+    import tempfile
+    im = Image.new("RGB", (1080, 1350), (10, 10, 12))
+    d = ImageDraw.Draw(im)
+    d.rectangle([120, 1080, 560, 1200], fill=(232, 68, 42))   # 品牌橘，佔約 3.6%
+    fp = os.path.join(tempfile.mkdtemp(), "t.png"); im.save(fp)
+    return _TD.measure(fp)
+
+_m = _synth_accent()
+check("範本拆解：抓得到只佔 3.6% 的品牌橘",
+      any(abs(int(h[1:3], 16) - 232) < 26 and abs(int(h[3:5], 16) - 68) < 26
+          and abs(int(h[5:7], 16) - 42) < 26 for h in _m["accents"]))
+check("範本拆解：近黑的深褐不算重點色",
+      not _TD.accents([{"hex": "#1C120A", "share": 0.2, "lightness": 0.08, "saturation": 0.47}]))
+check("範本拆解：近白的淡色也不算重點色",
+      not _TD.accents([{"hex": "#FBF6F2", "share": 0.2, "lightness": 0.96, "saturation": 0.50}]))
+check("範本拆解：長寬比量得對（4:5 = 0.8）", abs(_m["aspect"] - 0.8) < 0.01)
+
+TOTAL = 55
 print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)
