@@ -122,14 +122,22 @@
 │   ├── config/style-notes.md   # 風格增補層（harness 可改；正本在 Drive 不動）
 │   ├── scripts/sync_console.py # 主同步 CLI
 │   ├── scripts/iterate_harness.py # 迭代/吸收語氣
-│   ├── guides/IG-自動發佈-設定教學.md
+│   ├── guides/                 # 操作手冊（IG 自動發佈、內容管線、素材庫）
+│   ├── docs/design/操控室-PLAN.md   # 原始需求規格
+│   ├── docs/design/風格規格-v1.0.md # 風格正本（禁句／亮暗配比／CTA 逐字鎖）
 │   └── HANDOFF.md              # ← 你在讀這份
-├── 排版引擎/
-│   ├── render_post_v5.py       # Pillow 渲染，4:5 = 1950×2438，上下 padding 已加
-│   ├── render_and_archive.py   # 渲染 → 本機成品/ + Drive 歸檔
-│   └── 成品/<post-id>/
-└── 操控室-PLAN.md              # 原始需求規格
+└── 排版引擎/
+    ├── render_post_v5.py       # Pillow 渲染，4:5 = 1950×2438，上下 padding 已加
+    ├── render_and_archive.py   # 渲染 → 本機成品/ + Drive 歸檔
+    └── 成品/<post-id>/         # 產出，不進版控
 ```
+
+〔2026-09-10〕原本 `操控室-PLAN.md`、`風格規格-v1.0.md` 與兩份 .docx 手冊
+放在 repo 外面那一層（`貼文製造機器人/`），沒有版控，而且有 14 個檔案用
+絕對路徑 `/Users/mimo/Claude/貼文製造機器人/…` 引用它們——那種寫法
+搬一次家就斷一次。全部搬進 repo 並改成相對路徑。
+**專案資料夾請直接開 `lava-ig-console`**，不要開它的上一層：
+上一層不是 git repo，`/code-review ultra` 之類需要 repo 的指令會直接失敗。
 
 **常用指令**（都在 `lava-ig-console/`）：
 ```bash
