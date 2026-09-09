@@ -1,6 +1,6 @@
 {
   "note": "每篇貼文的特徵×成效。由 learn_features.py 產出，iterate_harness 讀取。",
-  "updated_at": "2026-09-10T00:25:41+08:00",
+  "updated_at": "2026-09-10T03:26:18+08:00",
   "entries": [
     {
       "post_id": "20260717-PitchYourFriend",
@@ -29,7 +29,10 @@
       "share_rate": 1.61,
       "save_rate": 0.69,
       "profile_visits": 1,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260716-見面卻尷尬到想逃",
@@ -58,7 +61,10 @@
       "share_rate": 0.0,
       "save_rate": 0.0,
       "profile_visits": 1,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260716-見面前聊越久",
@@ -87,7 +93,10 @@
       "share_rate": 0.0,
       "save_rate": 0.46,
       "profile_visits": 1,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260716-關係幻覺",
@@ -116,7 +125,10 @@
       "share_rate": 1.36,
       "save_rate": 1.14,
       "profile_visits": 2,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260801-大稻埕煙火v2",
@@ -145,7 +157,10 @@
       "share_rate": 0.33,
       "save_rate": 0.0,
       "profile_visits": 5,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260728-AzizAnsari花年",
@@ -174,7 +189,10 @@
       "share_rate": 0.0,
       "save_rate": 1.05,
       "profile_visits": 1,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260811-川口春奈效應v2",
@@ -203,7 +221,10 @@
       "share_rate": 1.76,
       "save_rate": 0.29,
       "profile_visits": 3,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260803-JohnGottman研",
@@ -232,7 +253,10 @@
       "share_rate": 1.8,
       "save_rate": 1.03,
       "profile_visits": 5,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     },
     {
       "post_id": "20260823-superlike介紹",
@@ -261,7 +285,10 @@
       "share_rate": 0.84,
       "save_rate": 0.0,
       "profile_visits": 7,
-      "follows": 0
+      "follows": 0,
+      "avg_watch_seconds": null,
+      "total_watch_seconds": null,
+      "is_reel": false
     }
   ]
 }

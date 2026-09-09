@@ -82,6 +82,15 @@ def outcome(media):
         "save_rate": round(100 * int(s.get("saved") or 0) / reach, 2),
         "profile_visits": int(s.get("profile_visits") or 0),
         "follows": int(s.get("follows") or 0),
+        # Reels 專屬〔2026-09-10〕。輪播沒有這兩欄，值會是 None——
+        # 用 None 而不是 0：0 的意思是「看了 0 秒」，None 的意思是
+        # 「這個格式沒有這個指標」。歸因時把兩者混在一起，
+        # 會得出「輪播的觀看時長是 0，所以輪播比 Reels 差」這種假結論。
+        "avg_watch_seconds": (round(float(s["ig_reels_avg_watch_time"]) / 1000.0, 2)
+                              if s.get("ig_reels_avg_watch_time") else None),
+        "total_watch_seconds": (round(float(s["ig_reels_video_view_total_time"]) / 1000.0, 1)
+                                if s.get("ig_reels_video_view_total_time") else None),
+        "is_reel": bool(s.get("ig_reels_avg_watch_time") or s.get("ig_reels_video_view_total_time")),
     }
 
 

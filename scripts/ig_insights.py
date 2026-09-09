@@ -29,10 +29,19 @@ GRAPH = "https://graph.facebook.com/v21.0"
 # period=lifetime 下實測可用的全部欄位（HANDOFF §271 已驗證）
 METRICS = ["reach", "saved", "shares", "total_interactions",
            "likes", "comments", "profile_visits", "follows"]
-# 只有圖文與輪播走這條；Reels 的指標欄位不同（plays/ig_reels_*），日後另開
-KINDS = ("IMAGE", "CAROUSEL_ALBUM")
+
+# Reels 專屬指標〔2026-09-10〕。外部研究一致把「觀看時長／看完率」列為
+# Reels 的第一排序訊號，遠高於讚。我們原本只抓 reach／saved／shares／likes——
+# 那組數字判斷得了輪播，判斷不了影片：一支 30 秒的 Reels 拿到 400 reach，
+# 你不知道是「大家看完了」還是「大家兩秒就滑走」，而那是完全相反的結論。
+# Reels 上線前不補，等於重回盲測。
+METRICS_REELS = ["ig_reels_avg_watch_time", "ig_reels_video_view_total_time"]
+
+# 圖文、輪播、影片都收。media_product_type 才分得出「影片」與「Reels」，
+# media_type 對 Reels 回的是 VIDEO。
+KINDS = ("IMAGE", "CAROUSEL_ALBUM", "VIDEO")
 # 落檔白名單：除此之外的欄位一律不寫，避免把夾 token 的 URL 帶進 repo
-SNAP_KEYS = tuple(METRICS)
+SNAP_KEYS = tuple(METRICS) + tuple(METRICS_REELS)
 
 
 def _get(url):
@@ -127,7 +136,7 @@ def main():
 
     try:
         uid = _resolve_user_id(token)
-        media = _get("%s/%s/media?fields=id,caption,timestamp,permalink,media_type"
+        media = _get("%s/%s/media?fields=id,caption,timestamp,permalink,media_type,media_product_type"
                      "&limit=%d&access_token=%s" % (GRAPH, uid, args.limit, urllib.parse.quote(token)))
     except urllib.error.HTTPError as e:
         body = e.read().decode("utf-8", "replace")[:300]
@@ -160,6 +169,7 @@ def main():
 
     for m in rows:
         mid = m["id"]
+        is_reel = (m.get("media_product_type") == "REELS")
         try:
             got = _get("%s/%s/insights?metric=%s&period=lifetime&access_token=%s"
                        % (GRAPH, mid, ",".join(METRICS), urllib.parse.quote(token)))
@@ -177,6 +187,27 @@ def main():
             vals = row.get("values") or [{}]
             snap[name] = vals[0].get("value", 0)
 
+        # Reels 指標分開要〔2026-09-10〕：跟基礎指標合併成一次請求的話，
+        # 只要 IG 對其中一個欄位不認帳，整包 400，連 reach 都拿不到。
+        # 分開要的代價是多一次 API 呼叫，換到的是「新指標壞掉不會弄丟舊指標」。
+        if is_reel:
+            try:
+                got2 = _get("%s/%s/insights?metric=%s&period=lifetime&access_token=%s"
+                            % (GRAPH, mid, ",".join(METRICS_REELS), urllib.parse.quote(token)))
+                for row in got2.get("data", []):
+                    if row.get("name") in SNAP_KEYS:
+                        snap[row["name"]] = (row.get("values") or [{}])[0].get("value", 0)
+            except urllib.error.HTTPError as e:
+                # 只記錄不中斷：Reels 指標拿不到時，這一篇仍有基礎數字可用。
+                # 靜默失敗會讓人以為「有抓，只是都是 0」——那比沒抓更糟。
+                snap["reels_metrics_error"] = "HTTP %s" % e.code
+                print("  ⚠ %s Reels 指標取不到（HTTP %s），基礎指標仍保留" % (mid, e.code))
+            # 看完率要算得出來才有用：平均觀看秒數 ÷ 影片長度。
+            # 影片長度不在 insights 裡，得從貼文物件帶；沒有就不算，不要猜。
+            avg = snap.get("ig_reels_avg_watch_time")
+            if avg:
+                snap["avg_watch_seconds"] = round(float(avg) / 1000.0, 2)   # API 給毫秒
+
         post, how = _match_post(m, posts, known)
         e = ins["media"].setdefault(mid, {})
         e["permalink"] = m.get("permalink", "")          # 白名單欄位，不夾 token
@@ -191,9 +222,14 @@ def main():
         snaps.append(snap)                               # 同日重跑覆寫，不重複堆
         e["snapshots"] = sorted(snaps, key=lambda s: s.get("day", ""))
         updated += 1
-        print("  ✓ %-20s reach %-5s 互動 %-4s %s" % (
+        extra = ""
+        if is_reel:
+            aw = snap.get("avg_watch_seconds")
+            extra = " 平均看 %ss" % aw if aw is not None else " ⚠Reels指標缺"
+        print("  ✓ %-20s reach %-5s 互動 %-4s%s %s" % (
             (e.get("topic") or mid)[:20], snap.get("reach", "-"),
-            snap.get("total_interactions", "-"), "[補 media_id]" if how == "timestamp" else ""))
+            snap.get("total_interactions", "-"), extra,
+            "[補 media_id]" if how == "timestamp" else ""))
 
     ins["updated_at"] = today
     ins["note"] = ("IG 成效由本機 scripts/ig_insights.py 每日抓取（哨兵掛載）。"
