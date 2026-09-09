@@ -202,6 +202,26 @@ elif [ ! -f "$TC_STAMP" ]; then
   echo "[$(date '+%m-%d %H:%M')] 書榜：.venv-c4ai 缺席，跳過（重建法見 scripts/trend_crawl.py 尾註）" >>"$LOG"
 fi
 
+# 外部知識流入（每天一次）〔2026-09-10 Jesse：「需要 up to date 地去搜尋
+# 網路上有沒有更多人發布這類領域的曝光及獲客知識點，這是我們現在沒做到的事」〕
+# 內部學習迴路只吃我們自己 11 篇貼文的資料，任何結論都不顯著。
+# 這一支去讀外面的研究，把「跟我們做法不一致」的寫成提案等 Jesse 決定。
+# 只用標準函式庫抓網頁，不需要 venv。
+PB_STAMP="/tmp/lava-ig-playbook.$(date '+%Y-%m-%d')"
+if ! ritual_on playbook_watch; then ritual_skip "讀外面的曝光研究"; touch "$PB_STAMP"; fi
+if [ ! -f "$PB_STAMP" ]; then
+  touch "$PB_STAMP"
+  echo "外部知識流入" >"$RUNMARK"
+  PBR=$(timeout 300 "$PY" scripts/playbook_watch.py 2>&1 | tail -8)
+  echo "$PBR" | grep -E "新增主張|新開提案|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] 知識/" >>"$LOG"
+  if [ -n "$(git status --porcelain data/playbook.json data/proposals.json)" ]; then
+    git add data/playbook.json data/proposals.json
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-playbook: 外部知識快照" \
+      -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+fi
+
 # 學習迴路（每天一次）〔2026-08-25 事故〕
 # iterate_harness 把「退回意見」轉成 config/style-notes.md 的規則（低風險自動生效、
 # 高風險轉提案待審），WF01 撰稿時會讀 style-notes。但哨兵從來沒有呼叫它——

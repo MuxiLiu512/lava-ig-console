@@ -1,0 +1,419 @@
+{
+  "note": "外部知識庫：每天從 config/playbook-sources.md 的來源抓回來的可查核主張。這裡的東西是「別人說的」，不是我們驗證過的事實。",
+  "claims": [
+    {
+      "topic": "first_slide",
+      "text": "Keep them short (under 90 seconds), open with a strong hook in the first three seconds, and loop them to stretch viewing time.",
+      "source": "https://blog.hootsuite.com/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "watch_time",
+      "text": "Your likelihood of finishing a video (watching 95% or more): High completion rates are a huge deal in Explore.",
+      "source": "https://blog.hootsuite.com/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Keep Reels under 90 seconds \n\n\n\n Reels can be up to 3 minutes , but experts recommend sticking closer to a minute and a half.",
+      "source": "https://blog.hootsuite.com/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "This Reel, for example, is less than 20 seconds.",
+      "source": "https://blog.hootsuite.com/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Use a hook \n\n\n\n “The first 3 seconds of your video is important,” says Kwok.",
+      "source": "https://blog.hootsuite.com/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Instagram Tips & Resources How the Instagram algorithm works in 2026 By Talar Mazloumian Updated on April 21, 2026 18 minute read See how the Instagram algorithm ranks in 2026: Feed, Reels, Stories, and Explore.",
+      "source": "https://later.com/blog/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Reels up to 3 minutes are now eligible for Explore page distribution, expanding opportunities for longer-form video content.",
+      "source": "https://later.com/blog/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Now, Reels up to 3 minutes can appear on the Explore page, giving creators who produce longer educational or entertainment content a better shot at discovery.",
+      "source": "https://later.com/blog/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "hashtag",
+      "text": "It's important to focus on quality, hyper-relevant hashtags —even using 5 or 10 hashtags is better than zero.",
+      "source": "https://later.com/blog/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Limit reels to 90 seconds or less Instagram will show reels that are up to three minutes long to users who don’t follow the creator, but shorter videos tend to perform better.",
+      "source": "https://buffer.com/resources/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "The ideal reels length for engagement is between 30 and 90 seconds — long enough to cover what matters and short enough to keep people watching.",
+      "source": "https://buffer.com/resources/instagram-algorithm/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Engagement rate on Carousels remains steady at 0.55%.",
+      "source": "https://www.socialinsider.io/blog/instagram-benchmarks/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousels: Instagram's Carousels engagement rate fell to 0.50% in Q2 2026, down from 0.52% in Q1 2026.",
+      "source": "https://www.socialinsider.io/blog/instagram-benchmarks/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousels remain Instagram's highest-performing content format Images: Instagram's Images engagement rate dropped to 0.33% in Q2 2026, down from 0.35% in Q1 2026.",
+      "source": "https://www.socialinsider.io/blog/instagram-benchmarks/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "With an average Instagram engagement rate of 0.55%, Carousels have truly become Instagram’s secret weapon for engagement.",
+      "source": "https://www.socialinsider.io/blog/instagram-benchmarks/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "watch_time",
+      "text": "In 2026, the ideal Instagram mix is mostly short-form video (around 60–70% Reels) because discovery still runs through watch time and shares.",
+      "source": "https://www.socialinsider.io/blog/instagram-benchmarks/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "saves",
+      "text": "About 20–30% should be carousels built for saves (value, education, opinion, or storytelling), as they deepen loyalty and signal quality to the algorithms.",
+      "source": "https://www.socialinsider.io/blog/instagram-benchmarks/",
+      "section": "演算法與成效研究",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Square: 1080 × 1080 px (1:1 ratio) \n\n\n\n The workhorse.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Portrait: 1080 × 1350 px (4:5 ratio) \n\n\n\n Portrait is the power move.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Landscape: 1080 × 608 px (1.91:1 ratio) \n\n\n\n Landscape is the underdog format that most creators ignore, and that’s partly why it works for those who use it deliberately.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Instagram renders carousel slides at widths between 320 px and 1080 px depending on the device.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Design at 1080 px and assume your slide will be viewed at roughly one-third that size in practice.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Recommended sizes (at 1080 × 1080 px or 1080 × 1350 px canvas): \n\n\n\n \n Headline / hook text: 60–90 px.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "If your goal is reach and new audience growth: Use portrait (1080 × 1350).",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "If your goal is saves and educational authority: Use square (1080 × 1080).",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "If your goal is aesthetic credibility: Use landscape (1080 × 608).",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Recommended format: Square (1080 × 1080) for educational product breakdowns, feature announcements, customer results.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Recommended format: Portrait (1080 × 1350) for maximum visual impact.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "first_slide",
+      "text": "“Why most designers undercharge by 40%” is a hook.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Your TikTok audience wants it as a slideshow (1080 × 1920).",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Instagram templates are broken out by format type: Square Post (1080×1080), Portrait Post (1080×1350), Landscape Post (1080×566), Story/Reel (1080×1920), and Profile Photo (320×320).",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "(No cut-off text, no critical info below the fold) \n\n\n\n Are all slides at least 1080 px wide?",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Portrait (1080 × 1350 px) takes up the most vertical space in the feed and gives your first slide the best chance of stopping a scroll.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Square (1080 × 1080 px) is the safest all-round choice.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Landscape (1080 × 608 px) suits visual-first content like photography or product showcases but takes up the least screen space.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Use 1080 × 1080 px for square, 1080 × 1350 px for portrait.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Always export carousel slides as high-quality JPGs or PNGs at exactly 1080 px wide, in RGB color mode.",
+      "source": "https://contentdrips.com/blog/2026/05/instagram-carousel-size-format/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Instagram Carousel Posts: Templates, Sizes & 12 Tips \n \n Instagram Carousel Posts: Templates, Sizes & 12 Tips Instagram carousels get up to 2x more engagement than single posts.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "The best-performing carousels run 8-10 slides at 1080x1350px (4:5 portrait), open with a hook that earns the swipe, and close with one clear call to action.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Instagram carousel posts average a 0.50% engagement rate by followers, the highest of any content format in 2026 (socialinsider.io/social-media-benchmarks/instagram, July 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousels slipped from 0.52% in Q1, so the gap over Reels is narrowing rather than widening, and Instagram CEO Adam Mosseri confirmed carousels get 1.4x more reach than static posts (as of February 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "Best dimensions: 1080x1350px (4:5 portrait ratio for maximum screen space).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "First slide: Carries 80% of the weight, earn the swipe with a hook.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Ads: Carousel ads get 2.5% CTR vs 1.9% for single-image ads.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Step 1: Design a Hook That Earns the Swipe \n Your first slide carries 80% of the weight (Mentionlytics, February 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Slide 1 carries 80% of total engagement, so give it one hook and one idea.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousels averaged 0.50% engagement by followers in Q2 2026, the highest of any format.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "shares_weight",
+      "text": "It carries 80% of engagement Mentionlytics, Jan 2026 Saves and shares Ask for them.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Weighted 3x higher than likes Improvado, February 2026 \n Apply these 12 tested tactics to maximize carousel performance.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "shares_weight",
+      "text": "Encourage Saves and Shares (Algorithm Priority) \n Saves and shares are weighted 3x higher than likes by Instagram’s algorithm in 2026 (Improvado, February 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousels with 8-10 slides consistently achieve the highest engagement rates, often exceeding 2% (UseVisuals, February 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "dimensions",
+      "text": "The recommended size is 1080 x 1350 pixels with a 4:5 portrait aspect ratio.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "You can also use square (1080x1080px, 1:1) or landscape (1080x566px, 1.91:1), but portrait performs best for carousels.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Yes, carousels get 12% more interactions than Reels and drive 114% more engagement than single-image posts (Buffer, February 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousels averaged 0.50% engagement by followers in Q2 2026 against 0.48% for Reels (socialinsider.io/social-media-benchmarks/instagram, July 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Reels typically get wider reach (30.81% vs 14.45% for carousels).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "reels_length",
+      "text": "Keep videos under 15 seconds and add captions since 85% watch without sound.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousel ads achieve 2.5% click-through rate compared to 1.9% for single-image ads (AdSpyder, February 2026).",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    },
+    {
+      "topic": "carousel",
+      "text": "Carousel ads have 18% higher engagement than single-image ads and work particularly well for product walkthroughs, tutorials, and step-by-step storytelling.",
+      "source": "https://creatorflow.so/blog/instagram-carousel-posts-guide/",
+      "section": "版面與範本拆解",
+      "seen_at": "2026-09-10"
+    }
+  ],
+  "updated_at": "2026-09-10T03:17:04+08:00"
+}

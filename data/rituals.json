@@ -1,5 +1,5 @@
 {
- "note": "自動化慣例〔學 Stanley 的 Rituals，2026-09-03〕。它的頁面標題是「Set Stanley's rhythm. / Things Stanley does when you're not looking.」——慣例是你養成的節奏，不是機器的排程。每張卡標「來源 → 產出」，一眼看出它在搬什麼。enabled:false 的步驟哨兵會跳過並在日誌註明。id 必須與 auto_render.sh 的 ritual_on 呼叫一致。",
+ "note": "自動化慣例〔學 Stanley 的 Rituals，2026-09-03〕。它的頁面標題是「Set Stanley's rhythm. / Things Stanley does when you're not looking.」——慣例是你養成的節奏，不是機器的排程。每張卡標「來源 → 產出」，一眼看出它在搬什麼。enabled:false 的步驟哨兵會跳過並在日誌註明。id 必須與 auto_render.sh 的 ritual_on 呼叫一致。〔2026-09-10 補〕原本有四個學習迴路在跑卻沒登記在這裡：外部知識、訊號蒐集、特徵歸因、假說評估。跑了但你看不到也關不掉，等於黑箱。",
  "rituals": [
   {
    "id": "trend_crawl",
@@ -100,6 +100,46 @@
    "note": "純歸檔，關掉不影響產線",
    "group": "每一輪的工序",
    "flow": "已發佈 → Drive 歸檔"
+  },
+  {
+   "id": "playbook_watch",
+   "name": "讀外面的曝光研究",
+   "enabled": true,
+   "what": "每天去讀別人發表的 IG／Reels 曝光研究，把帶數字的主張抓回來，跟我們的做法比對，不一致的開成提案",
+   "cadence": "每天一次",
+   "group": "每天的節奏",
+   "flow": "外部研究 → 提案",
+   "note": "關掉的話系統只會用我們自己 11 篇貼文的資料學習，那個樣本量任何結論都不顯著。來源清單在規則本的「外部知識來源」"
+  },
+  {
+   "id": "collect_signals",
+   "name": "蒐集選題訊號",
+   "enabled": true,
+   "what": "從新聞、榜單、社群抓當下的熱度訊號，存成當天的訊號快照供選題雷達使用",
+   "cadence": "每天一次",
+   "group": "每天的節奏",
+   "flow": "外部來源 → 訊號快照",
+   "note": "關掉的話選題只能靠既有題庫，會越來越舊。來源清單易變，所以跑在本機不在 n8n"
+  },
+  {
+   "id": "learn_features",
+   "name": "把特徵接上成效",
+   "enabled": true,
+   "what": "把每篇貼文的 27 個特徵（範本、有沒有名人、發佈時段、人物圖比例…）跟它的 reach／收藏／分享接起來",
+   "cadence": "每天一次",
+   "group": "每天的節奏",
+   "flow": "貼文＋IG 成效 → 特徵成效表",
+   "note": "這是回答「哪個因素最重要」的唯一資料來源。關掉之後所有歸因分析都沒有輸入"
+  },
+  {
+   "id": "hypotheses",
+   "name": "評估假說",
+   "enabled": true,
+   "what": "檢查假說登記簿，樣本夠了才判定，不夠就明說還差幾篇——事後才挑指標叫找藉口，不叫驗證",
+   "cadence": "每天一次",
+   "group": "每天的節奏",
+   "flow": "假說登記簿 → 判定或「還差 N 篇」",
+   "note": "關掉的話假說會一直停在「進行中」，沒有人結案"
   }
  ]
 }

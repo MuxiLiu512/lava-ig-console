@@ -335,6 +335,36 @@
       "status": "pending",
       "created_at": "2026-09-10T00:25:44+08:00",
       "decided_at": null
+    },
+    {
+      "id": "PB-track_reels_watch_time",
+      "key": "track_reels_watch_time",
+      "status": "pending",
+      "source": "playbook_watch",
+      "ts": "2026-09-10T03:17:04+08:00",
+      "title": "Reels 上線前要先量觀看時長",
+      "why": "外部研究把觀看時長列為 Reels 第一訊號，但 ig_insights.py 現在只抓 reach／saved／shares／likes，沒有 watch time。沒有這個數字，Reels 發出去之後我們無法判斷哪一支有效，等於重回盲測。",
+      "do": "在 ig_insights.py 的 metric 清單加 ig_reels_avg_watch_time 與 ig_reels_video_view_total_time（僅 Reels 型 media 適用）。"
+    },
+    {
+      "id": "PB-first_slide_discipline",
+      "key": "first_slide_discipline",
+      "status": "pending",
+      "source": "playbook_watch",
+      "ts": "2026-09-10T03:17:04+08:00",
+      "title": "第一張的鉤子紀律要變成硬規則",
+      "why": "多個來源指向「第一張承載大部分互動」。我們的範本有 cover 角色，但沒有任何閘門在檢查第一張是否只講一件事、是否給出具體承諾。",
+      "do": "在 copy_check 加一條 cover 專用規則（單一主張、要有具體名詞或數字），先設 warn 觀察一週再決定要不要升成 block。"
+    },
+    {
+      "id": "PB-sample_size_warning",
+      "key": "sample_size_warning",
+      "status": "pending",
+      "source": "playbook_watch",
+      "ts": "2026-09-10T03:17:04+08:00",
+      "title": "樣本數不足，內部結論先不要當定論",
+      "why": "metrics.json 只有 9 筆。任何「哪種做法比較好」的內部結論在這個樣本量下都不顯著。這一條不是要你改什麼，是要系統在報告裡誠實標注不確定性。",
+      "do": "weekly_report 與 hypotheses 的輸出加上樣本數與「尚不足以判定」標記。"
     }
   ]
 }
