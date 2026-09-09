@@ -202,6 +202,25 @@ elif [ ! -f "$TC_STAMP" ]; then
   echo "[$(date '+%m-%d %H:%M')] 書榜：.venv-c4ai 缺席，跳過（重建法見 scripts/trend_crawl.py 尾註）" >>"$LOG"
 fi
 
+# 每日實驗計畫（每天一次，只出計畫不排程）〔2026-09-10〕
+# experiment.py 寫好之後從來沒有被呼叫過——A/B 的骨架有，但沒人按下去。
+# 這裡每天產出「今天可以排哪三篇、或為什麼排不出來」寫進 data/experiment_plan.json。
+# **刻意不加 --commit**：排程等於決定發佈，那一步要人按。
+EX_STAMP="/tmp/lava-ig-experiment.$(date '+%Y-%m-%d')"
+if ! ritual_on experiment_plan; then ritual_skip "出今天的實驗計畫"; touch "$EX_STAMP"; fi
+if [ ! -f "$EX_STAMP" ]; then
+  touch "$EX_STAMP"
+  echo "實驗計畫" >"$RUNMARK"
+  EXR=$(timeout 120 "$PY" scripts/experiment.py --out 2>&1 | tail -6)
+  echo "$EXR" | grep -E "共 [0-9]+ 篇|✗" | sed "s/^/[$(date '+%m-%d %H:%M')] 實驗/" >>"$LOG"
+  if [ -n "$(git status --porcelain data/experiment_plan.json)" ]; then
+    git add data/experiment_plan.json
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-experiment: 每日實驗計畫" \
+      -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+fi
+
 # 外部知識流入（每天一次）〔2026-09-10 Jesse：「需要 up to date 地去搜尋
 # 網路上有沒有更多人發布這類領域的曝光及獲客知識點，這是我們現在沒做到的事」〕
 # 內部學習迴路只吃我們自己 11 篇貼文的資料，任何結論都不顯著。

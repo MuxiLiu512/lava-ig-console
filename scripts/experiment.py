@@ -113,6 +113,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=None, help="YYYY-MM-DD，預設明天")
     ap.add_argument("--commit", action="store_true", help="真的寫入排程（預設只印計畫）")
+    ap.add_argument("--out", action="store_true",
+                    help="把計畫寫進 data/experiment_plan.json（給哨兵每天跑，讓計畫看得見）")
     a = ap.parse_args()
     day = (datetime.date.fromisoformat(a.date) if a.date
            else datetime.date.today() + datetime.timedelta(days=1))
@@ -121,6 +123,25 @@ def main():
     metrics = SC.load("metrics.json").get("entries", [])
     picked, why = plan(day, doc.get("posts", []), hyps, metrics)
     print("排程日：%s（每日三篇：%s）\n" % (day, "、".join("%02d:%02d" % s for s in SLOTS)))
+
+    # 計畫要落檔才看得見〔2026-09-10〕。哨兵每天跑 --dry --out：
+    # 有稿就寫出「今天可以排哪三篇」，沒稿就寫出「為什麼排不出來」。
+    # 後者才是現在的真實狀態——5 篇已核准全部卡在閘門，實驗管線是餓著的。
+    # 這件事不寫下來，就只會表現成「實驗都沒進展」，看不出是餓死還是壞掉。
+    if a.out:
+        SC.save("experiment_plan.json", {
+            "note": "每日三篇的實驗排程計畫。由 scripts/experiment.py --dry --out 產生。"
+                    "這是計畫不是排程：真的要排要人按下去（--commit），"
+                    "因為排程等於決定發佈，那一步不該自動化。",
+            "for_date": str(day), "generated_at": SC._now_iso(),
+            "slots": ["%02d:%02d" % s for s in SLOTS],
+            "eligible": len(eligible(doc.get("posts", []))),
+            "blocked_reason": None if picked else (why or "無可排稿件"),
+            "picks": [{"post_id": p["id"], "topic": (p.get("topic") or "")[:60],
+                       "slot": p["_slot"].strftime("%H:%M"),
+                       "topic_type": p.get("topic_type") or "",
+                       "experiment": p.get("_exp")} for p in picked],
+        })
     if not picked:
         print("✗ " + (why or "無可排稿件")); return
     for p in picked:

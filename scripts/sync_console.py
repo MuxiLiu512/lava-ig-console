@@ -1452,10 +1452,24 @@ def radar_pull(args):
             r.get("virality_reason", ""), ev_lines, r.get("lava_tie", ""),
             r.get("suggested_show", ""), r.get("suggested_type", ""),
             r.get("template_id") or "無")
+        # 來源與病毒分抽成結構化欄位〔2026-09-10〕。
+        # 這些資料一直都在（scout、evidence[].source），但只被塞進 desc 字串裡，
+        # 於是「哪個海巡來源產出的稿比較好」這個問題永遠答不了——
+        # 87 筆靈感沒有一筆能對應回它的來源。要比較來源品質，
+        # 得先讓來源變成可以 group by 的欄位，不是一段散文。
+        _srcs = sorted({(e.get("source") or "").strip() for e in ev if e.get("source")})
+        try:
+            _vir = float(r.get("virality_score") or 0)
+        except Exception:
+            _vir = None
         doc["ideas"].append({
             "task_id": iid,
             "title": "%s｜病毒分 %s｜🧠%s" % (r.get("title", ""), r.get("virality_score", ""),
                                              r.get("scout", "")),
+            "scout": (r.get("scout") or "").strip(),
+            "sources": _srcs,
+            "virality_score": _vir,
+            "suggested_type": (r.get("suggested_type") or "").strip(),
             "desc": desc[:600], "url": "",
             "created_at": r.get("ts") or _now_iso(),
             "decision": None, "decided_at": None, "reason": "", "applied": False})
