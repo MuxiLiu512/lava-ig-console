@@ -202,6 +202,25 @@ elif [ ! -f "$TC_STAMP" ]; then
   echo "[$(date '+%m-%d %H:%M')] 書榜：.venv-c4ai 缺席，跳過（重建法見 scripts/trend_crawl.py 尾註）" >>"$LOG"
 fi
 
+# 靈感發想（每天一次）〔2026-09-10〕
+# 把外部知識、成效資料、範本庫三份交叉，找出「外面說有效、我們沒做過、
+# 而且有骨架可以做」的空白格。不呼叫生成模型——憑空生成的點子沒有理由
+# 可以審查，而沒有理由的建議只能憑感覺接受或拒絕，那不是決策。
+IN_STAMP="/tmp/lava-ig-inspire.$(date '+%Y-%m-%d')"
+if ! ritual_on inspire; then ritual_skip "想下一篇可以怎麼做"; touch "$IN_STAMP"; fi
+if [ ! -f "$IN_STAMP" ]; then
+  touch "$IN_STAMP"
+  echo "靈感發想" >"$RUNMARK"
+  INR=$(timeout 120 "$PY" scripts/inspire.py --save 2>&1 | tail -4)
+  echo "$INR" | grep -E "已寫入" | sed "s/^/[$(date '+%m-%d %H:%M')] 靈感/" >>"$LOG"
+  if [ -n "$(git status --porcelain data/inspirations.json)" ]; then
+    git add data/inspirations.json
+    git -c user.email=jesse@lava.tw -c user.name=MuxiLiu512 commit -q -m "auto-inspire: 每日靈感" \
+      -m "Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>" >>"$LOG" 2>&1 \
+      && git push --quiet origin main >>"$LOG" 2>&1
+  fi
+fi
+
 # 每日實驗計畫（每天一次，只出計畫不排程）〔2026-09-10〕
 # experiment.py 寫好之後從來沒有被呼叫過——A/B 的骨架有，但沒人按下去。
 # 這裡每天產出「今天可以排哪三篇、或為什麼排不出來」寫進 data/experiment_plan.json。

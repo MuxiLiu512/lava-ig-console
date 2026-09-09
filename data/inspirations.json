@@ -1,0 +1,144 @@
+{
+  "note": "靈感＝三份資料交叉後浮出來的空白格，不是模型憑空生成的。每一條都附推導理由，理由不成立就該否決它。",
+  "generated_at": "2026-09-10T03:37:26+08:00",
+  "inputs": {
+    "posts": 27,
+    "templates": 23,
+    "external_claims": 59,
+    "metrics_rows": 9
+  },
+  "inspirations": [
+    {
+      "kind": "資料斷點（先修這個，不然學不到東西）",
+      "title": "25/27 篇貼文沒有標範本，範本成效永遠算不出來",
+      "why": "範本庫有 23 個，但貼文沒有記錄自己用了哪一個。learn_features 的 template_id 欄位因此大多是空的，hypotheses 也就永遠檢定不了「哪個範本比較有效」。這不是分析不夠好，是輸入不存在。",
+      "how": "撰稿流程（n8n WF01）產稿時要把選用的 template_id 寫進稿檔，add_post 再帶進 posts.json。舊稿可由審稿台補標。",
+      "ref": {
+        "missing": 25,
+        "total": 27
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「趨勢詞策展」",
+      "why": "這個範本在庫裡但一篇都沒用過。趨勢詞自帶搜尋與討論熱度；設計文字卡在動態裡與照片流形成對比、3 秒可讀；策展（幫讀者命名一種處境）觸發『這在說我』的轉發動機，比知識灌輸的分享成本低。",
+      "how": "cover=單一趨勢詞大字（設計文字卡，非照片）→ 2-4張=該詞的情境展開（每張一個具體場景句）→ 尾張=線下活動/品牌 CTA",
+      "ref": {
+        "template_id": "tpl-trend-word-textcard"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「數據反差」",
+      "why": "這個範本在庫裡但一篇都沒用過。具體數字給 hook 可信度與畫面感；反差製造認知缺口驅動滑動；故事先行研究後置避免 wiki 感（AI 味主因之一）。",
+      "how": "cover=具體數字反差主標（例：傳了100則訊息，還是約不出來）→ 中段=場景故事先行、研究後置解釋內心戲 → 尾張=品牌段（使用者主動選擇的行動）",
+      "ref": {
+        "template_id": "tpl-data-contrast-hook"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「這在說我情境問句」",
+      "why": "這個範本在庫裡但一篇都沒用過。具體情境讓特定族群被精準命中（大題目=弱 hook）；tag 朋友的分享動機是『這就是你』；儲存動機是『這就是我』。",
+      "how": "cover=具體到動作層次的情境問句（你也會點開對話框看到已讀又退出去嗎）→ 中段=該族群內心戲逐張推進 → 尾張=解方+CTA",
+      "ref": {
+        "template_id": "tpl-thats-me-scenario"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「議題策展→主題桌 funnel」",
+      "why": "這個範本在庫裡但一篇都沒用過。先給完整的議題價值再把 CTA 包裝成「繼續聊這個話題的線下場」——活動報名不是廣告而是內容的自然延伸；議題選在目標客群的身分焦慮帶（不想只靠一份工作），精準觸發儲存與轉發給同溫層。",
+      "how": "cover=職涯/生活轉型議題立題（不談產品）→ 中段=議題乾貨（未來人才兩種原型：深度專家 vs 跨域連結者）→ 尾張=把議題收斂成本週主題桌（SideHustle 桌）報名 CTA。骨架依 embed 首圖+caption 推定，取得全輪播後補逐張拆解。",
+      "ref": {
+        "template_id": "tpl-issue-to-table-funnel"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「人生決策必看體」",
+      "why": "這個範本在庫裡但一篇都沒用過。「必看」＋明確族群圈定＝自我篩選的強 hook（處在該決策點的人無法滑過）；把搬家/換環境昇華成身分重啟的心理敘事，給讀者一個轉發給「正在考慮的那位朋友」的理由；aspirational 攝影讓儲存＝",
+      "how": "cover=「想要○○的朋友必看這篇」直接圈住處在人生決策點的族群 → 中段=決策的心理洞察（換城市＝擺脫既有名聲、能真實呈現自己）逐張推進 → 尾張=陌生人晚餐/品牌場景收尾。視覺整組 Emily in Paris 式暖調生活感攝影。骨架依 embed 推定，取得全輪播後補逐張拆解。",
+      "ref": {
+        "template_id": "tpl-life-decision-mustread"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「品牌承諾×情緒反差 one-liner」",
+      "why": "這個範本在庫裡但一篇都沒用過。句式把理性承諾（安全）與感性報酬（心動）壓進一個反差結構，一秒讀完且自帶溫度；「你只要負責心動」把產品該做的無聊事（安全機制）翻譯成用戶的情緒利益；單圖+短句=最低閱讀成本的品牌廣告，適合投放與置頂。",
+      "how": "單張：一句「我們搞定 X，你只要負責 Y」句式（Breeze was designed with your safety in mind. You just have to handle the butterflies 🦋）＋呼應的極簡視覺（蝴蝶）；caption 即主文，一句到位。",
+      "ref": {
+        "template_id": "tpl-promise-butterfly-oneliner"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「固定節奏儀式化敘事」",
+      "why": "這個範本在庫裡但一篇都沒用過。把產品從『無限滑卡』重新框架成『每週一次的儀式』——固定節奏製造期待與習慣迴圈（週三=約會日），也天然給每週一支內容的節目化排期；「我們全包」的 concierge 敘事直接消滅 dating app",
+      "how": "前 1.5 秒=點名痛點句（No more 'wyd tonight'）→ 中段=展示「每週三 7PM 幫你安排一場約會」的 concierge 流程（講你的型→我們排好人/時/地/活動）→ 收尾=校園/城市限定的歸屬感 CTA（join 35K+ students）。",
+      "ref": {
+        "template_id": "tpl-weekly-ritual-concierge"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「約會對象原型喜劇」",
+      "why": "這個範本在庫裡但一篇都沒用過。原型（archetype）是內建的分享觸發器——觀眾邊看邊 tag「這就是你」；多原型結構讓每 3-5 秒換一個梗，完播率與重看率雙高；喜劇先行、產品一句收尾，廣告感被劇情稀釋；121 留言/816 ",
+      "how": "前 1.5 秒=第一個原型登場自帶字卡（Gym bro）→ 中段=連續 3-5 個約會對象原型短喜劇（Finance Bro、Hot Nerd…每型一個梗）→ 收尾=產品主張一句收（get to your irl date 1000x faster）。高製作規格（正式導演/卡司/攝影）。",
+      "ref": {
+        "template_id": "tpl-archetype-comedy-reel"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「原型圖鑑輪播」",
+      "why": "這個範本在庫裡但一篇都沒用過。原型=內建 tag 觸發器（44 分享 vs 9 留言，分享比異常高＝DM『這就是你』轉傳型）；每張自成一格讓任意一張都能當入口、也都值得截圖；吐槽→溫情的兩拍反轉讓 tag 行為變成示愛不是嘲笑（轉",
+      "how": "每張=一個「朋友原型」自成一格：原型名大字（The 'one drink' wonder friend / The sorry I'm 20 min late friend / The judgey confessional friend…）＋兩拍行為梗（手寫感 tape 標籤句）＋一句反轉溫情 punchline（You hate it, but the ",
+      "ref": {
+        "template_id": "tpl-archetype-catalog-carousel"
+      }
+    },
+    {
+      "kind": "未用過的骨架",
+      "title": "試一次「時事畫面挪用一句反轉」",
+      "why": "這個範本在庫裡但一篇都沒用過。搭現成注意力波：病毒畫面自帶識別度，看到就想起那條新聞，省掉 hook 成本；一句手寫反轉把奇觀翻譯成人人可做的小事（爬樓示愛→傳訊息就好），情緒從獵奇轉溫情；caption 兩字＝笑點經濟學，圖負責",
+      "how": "單張：爆紅新聞畫面（雙人蒙面爬上紐約高樓頂的病毒照）裝進拍立得框 → 疊品牌拼貼系統（橘底、黑白城市剪貼、紙質感）→ 拍立得下緣一句手寫反轉（You don't have to climb a building to tell your friend you love them）→ caption 只有兩個字收梗（Just text）。",
+      "ref": {
+        "template_id": "tpl-newsjack-oneliner-collage"
+      }
+    },
+    {
+      "kind": "成效落差（線索，不是結論）",
+      "title": "has_celebrity＝True 的互動率比 False 高 32%",
+      "why": "樣本 True n=4、False n=5。這個樣本量不足以做檢定，只能當作「值得刻意再試幾篇」的線索。",
+      "how": "下一批刻意多排幾篇 has_celebrity＝True 的，累積到各組 8 篇再讓 hypotheses 判定。",
+      "ref": {
+        "feature": "has_celebrity",
+        "metric": "interaction_rate",
+        "means": {
+          "True": 4.77,
+          "False": 3.62
+        }
+      }
+    },
+    {
+      "kind": "視覺空白",
+      "title": "11 個範本只有敘事結構，沒有視覺拆解",
+      "why": "沒有色票、版位、明暗結構這些數字，排版引擎只能照預設做，所以不同範本產出的圖看起來會一樣——那等於沒有範本。",
+      "how": "找一張你喜歡的參考圖，跑 python3 scripts/template_decompose.py --dir <資料夾> --save <名稱>，再到規則本補完字型與風格那幾欄。",
+      "ref": {
+        "templates": [
+          "tpl-trend-word-textcard",
+          "tpl-data-contrast-hook",
+          "tpl-thats-me-scenario",
+          "tpl-issue-to-table-funnel",
+          "tpl-life-decision-mustread",
+          "tpl-product-intro-carousel",
+          "tpl-promise-butterfly-oneliner",
+          "tpl-weekly-ritual-concierge"
+        ]
+      }
+    }
+  ]
+}

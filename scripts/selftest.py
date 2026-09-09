@@ -199,6 +199,19 @@ check("範本拆解：近白的淡色也不算重點色",
       not _TD.accents([{"hex": "#FBF6F2", "share": 0.2, "lightness": 0.96, "saturation": 0.50}]))
 check("範本拆解：長寬比量得對（4:5 = 0.8）", abs(_m["aspect"] - 0.8) < 0.01)
 
-TOTAL = 55
+# 靈感發想器〔2026-09-10〕：它的價值在於「每一條都說得出為什麼」。
+# 沒有理由的建議只能憑感覺接受或拒絕，那不是決策。
+_in_spec = _ilu.spec_from_file_location("insp", os.path.join(os.path.dirname(os.path.abspath(__file__)), "inspire.py"))
+_INSP = _ilu.module_from_spec(_in_spec); _in_spec.loader.exec_module(_INSP)
+
+_d = _INSP.build()
+check("靈感器：每一條都有推導理由", all(x.get("why") for x in _d["inspirations"]))
+check("靈感器：每一條都有下一步", all(x.get("how") for x in _d["inspirations"]))
+check("靈感器：候選範本不算「被冷落」",
+      not _INSP.unused_templates([{"id": "T1", "status": "candidate", "hook_type": "x"}], []))
+# 樣本太少時不准講落差：n=3 以下的「高 40%」是雜訊不是訊號
+check("靈感器：樣本不足就不報成效落差", _INSP.outcome_gaps([{"topic_type": "a", "interaction_rate": 9}] * 4) == [])
+
+TOTAL = 59
 print("\n%s：%d 項通過，%d 項失敗" % ("🎉 全數通過" if not FAIL else "❌ 有失敗", TOTAL - len(FAIL), len(FAIL)))
 sys.exit(1 if FAIL else 0)
