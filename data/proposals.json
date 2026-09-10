@@ -365,6 +365,19 @@
       "title": "樣本數不足，內部結論先不要當定論",
       "why": "metrics.json 只有 9 筆。任何「哪種做法比較好」的內部結論在這個樣本量下都不顯著。這一條不是要你改什麼，是要系統在報告裡誠實標注不確定性。",
       "do": "weekly_report 與 hypotheses 的輸出加上樣本數與「尚不足以判定」標記。"
+    },
+    {
+      "pid": "P-20260910-01",
+      "risk": "high",
+      "title": "依回饋調整：v2 重做：沿用初版選圖，套用修復後引擎（缺字備",
+      "diff_summary": "來自審核回饋，需人工判斷影響範圍：v2 重做：沿用初版選圖，套用修復後引擎（缺字備援＋爛換行合併＋語意斷行）與封面文案修正提案。",
+      "evidence": [
+        "review R-v2-kawaguchi feedback",
+        "分類：copy_tone"
+      ],
+      "status": "pending",
+      "created_at": "2026-09-10T18:27:43+08:00",
+      "decided_at": null
     }
   ]
 }
