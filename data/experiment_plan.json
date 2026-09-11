@@ -1,24 +1,13 @@
 {
   "note": "每日三篇的實驗排程計畫。由 scripts/experiment.py --dry --out 產生。這是計畫不是排程：真的要排要人按下去（--commit），因為排程等於決定發佈，那一步不該自動化。",
-  "for_date": "2026-09-12",
-  "generated_at": "2026-09-11T12:48:26+08:00",
+  "for_date": "2026-09-13",
+  "generated_at": "2026-09-12T00:14:21+08:00",
   "slots": [
     "12:30",
     "18:30",
     "21:00"
   ],
-  "eligible": 1,
-  "blocked_reason": null,
-  "picks": [
-    {
-      "post_id": "20260826-愛你致死不渝爛番茄永遠愛",
-      "topic": "《愛你致死不渝》爛番茄 94%：「永遠愛我」這句話，什麼時候變成了最可怕的詛咒？",
-      "slot": "12:30",
-      "topic_type": "A-知識型",
-      "experiment": {
-        "hypothesis": "H2-celebrity-anchor",
-        "arm": "純概念"
-      }
-    }
-  ]
+  "eligible": 0,
+  "blocked_reason": "沒有可排程的稿（需已核准且事實／文案閘門皆過、無缺料）",
+  "picks": []
 }
