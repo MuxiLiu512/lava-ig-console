@@ -2,6 +2,25 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "i-492964c208",
+      "title": "《北歐時間》被 Threads 一篇文推爆、銷量暴漲近 5 倍——北歐人說「剛剛好」的關係，不是你以為的那種將就｜病毒分 6｜🧠Claude",
+      "scout": "Claude",
+      "sources": [
+        "meet.eslite.com",
+        "工商時報",
+        "翻爆"
+      ],
+      "virality_score": 6.0,
+      "suggested_type": "書摘型",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《北歐時間》因 Threads 單篇貼文帶動銷量成長近 5 倍，多家媒體報導，說明台灣人正在集體尋找某種「慢下來」的關係節奏。切入點：北歐核心概念「lagom」（不多不少、剛剛好）放進現代約會語境——不是「降低標準」，而是不強迫關係提速、不過度黏著、不急著貼標籤。具體情境：你們聊得來，但對方沒有主動說「我們在一起吧」——北歐人不會焦慮這件事，因為他們把「現在這個狀態很好」當成目的地，而不是過渡期。Lava 橋接：offline-first 的設計本身就是一種 lagom——不讓你無限滑卡製造焦慮，而是一週一次、見了再說。\n\n病毒係數：6/10。出圈證據為工商時報、翻爆、meet.eslite 三家媒體同時報導《北歐時間》Threads 帶動銷量近 5 倍，屬台灣主流媒體報導；數字反差（5 倍）是強 hook，但書本身非愛情書，橋接需要一格說明，略降分發潛力。\n\n熱度證明：\n- 工商時報｜誠品暢銷榜：Threads點書成金《北歐時間》銷量翻近5倍、《臺灣漫遊錄》累銷將破3萬本｜Threads 單篇帶動銷量成長近 5 倍，工商時報報導｜https://news.google.com/rss/articles/CBMiX0FVX3lxTE84T09pbjJndlVOTUs3VlQ3emZZU2JHX2pXNjN2RVc1WTVNMEtQMHRkU",
+      "url": "",
+      "created_at": "2026-09-13T09:02:06.714+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "i-fcb9ce37bd",
       "title": "李滄東《可能的愛情》不給你答案——他說，「這是不是愛情」這個問題，從來就沒有標準答案｜病毒分 7｜🧠Claude",
       "scout": "Claude",
@@ -1098,5 +1117,5 @@
       "scout": "Claude"
     }
   ],
-  "pulled_at": "2026-09-11T12:49:16+08:00"
+  "pulled_at": "2026-09-14T10:08:06+08:00"
 }
