@@ -1,381 +1,401 @@
 {
- "_schema": "swipe 庫：情報線（lava-research）唯一輸出工件；產文線 Strategy 階段讀此檔選模板。每筆必附 evidence，查不到互動數據標 unverified。retired 不刪除。",
- "templates": [
-  {
-   "id": "tpl-trend-word-textcard",
-   "type": "post",
-   "hook_type": "趨勢詞策展",
-   "skeleton": "cover=單一趨勢詞大字（設計文字卡，非照片）→ 2-4張=該詞的情境展開（每張一個具體場景句）→ 尾張=線下活動/品牌 CTA",
-   "why_it_works": "趨勢詞自帶搜尋與討論熱度；設計文字卡在動態裡與照片流形成對比、3 秒可讀；策展（幫讀者命名一種處境）觸發『這在說我』的轉發動機，比知識灌輸的分享成本低。",
-   "evidence": {
-    "source_account": "@thewknd.club",
-    "post_url": "https://www.instagram.com/p/DbPzikYEdZW/",
-    "engagement": "高互動（Jesse 指定對標；具體數據 unverified）",
-    "seen_at": "2026-07-28"
-   },
-   "fit_for_lava": "直接適配：Lava 線下優先的定位可承接『不想再聊天了』類趨勢詞；設計底生成器（DESIGN）已能產文字卡底。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-data-contrast-hook",
-   "type": "post",
-   "hook_type": "數據反差",
-   "skeleton": "cover=具體數字反差主標（例：傳了100則訊息，還是約不出來）→ 中段=場景故事先行、研究後置解釋內心戲 → 尾張=品牌段（使用者主動選擇的行動）",
-   "why_it_works": "具體數字給 hook 可信度與畫面感；反差製造認知缺口驅動滑動；故事先行研究後置避免 wiki 感（AI 味主因之一）。",
-   "evidence": {
-    "source_account": "多帳號通用公式（風格規格 v1.0 hook 公式庫）",
-    "post_url": "",
-    "engagement": "unverified",
-    "seen_at": "2026-07-28"
-   },
-   "fit_for_lava": "適配：Lava 的『不聊天』主張天然帶數據反差素材（訊息數 vs 見面數）。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-thats-me-scenario",
-   "type": "post",
-   "hook_type": "這在說我情境問句",
-   "skeleton": "cover=具體到動作層次的情境問句（你也會點開對話框看到已讀又退出去嗎）→ 中段=該族群內心戲逐張推進 → 尾張=解方+CTA",
-   "why_it_works": "具體情境讓特定族群被精準命中（大題目=弱 hook）；tag 朋友的分享動機是『這就是你』；儲存動機是『這就是我』。",
-   "evidence": {
-    "source_account": "critic rubric hook 公式＋Weekend Club 對話式 hook 機制",
-    "post_url": "",
-    "engagement": "unverified",
-    "seen_at": "2026-07-28"
-   },
-   "fit_for_lava": "適配：交友情境的內心戲題材庫近乎無限；注意禁句規則（不得用赦免式安慰收尾）。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-save-worthy-list",
-   "type": "post",
-   "hook_type": "清單體/金句卡",
-   "skeleton": "cover=承諾一個可截圖收藏的濃縮物（公式/清單/金句）→ 中段=逐條展開每條配一個場景例 → 尾張=完整版彙總卡（截圖點）+CTA",
-   "why_it_works": "儲存是 IG 演算法最重的互動訊號之一；『值得截圖』給讀者回訪理由；彙總卡讓儲存行為集中在同一張，放大訊號。",
-   "evidence": {
-    "source_account": "IG 通用高儲存格式（critic rubric 儲存價值項）",
-    "post_url": "",
-    "engagement": "unverified",
-    "seen_at": "2026-07-28"
-   },
-   "fit_for_lava": "適配：約會前檢查清單、開場白公式等；需守引用查證規則（研究來源可查證才可列）。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-stranger-story-comic",
-   "type": "post",
-   "hook_type": "真人故事漫畫化",
-   "skeleton": "cover 用單格漫畫定格在故事最具情緒張力的一瞬，一句對白直接當標題；內容張以漫畫分鏡格推進一位真實陌生人的故事，每張只放一個轉折、對白框帶情緒；倒數張收在故事的情緒落點（不說教、不總結）；CTA 張邀請讀者留言分享自己的版本或 tag 有同樣經歷的人。",
-   "why_it_works": "敘事的未完成張力驅動逐張滑動，swipe-through 完成率是輪播分發的主訊號；「真實陌生人的故事」框架讓讀者以第三人稱安全代入，情緒濃度越高越觸發同理，分享動機是「這則故事替我說了我說不出口的事」。作者自述關鍵轉折：同樣的故事從純文字改成漫畫分鏡呈現的第一天，成長曲線立刻改變——證明格式本身（分鏡+對白）就是機制，不是內容變好。",
-   "evidence": {
-    "source_account": "@bailee_story（街頭故事／李白）",
-    "post_url": "https://portaly.cc/blog/bailee-interview",
-    "engagement": "格式轉換後 2 個月粉絲 6,000→60,000（10 倍），帳號累積 17 萬追蹤（訪談自述，非單帖數據）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配。Lava 每場約會都發生在真實店家，是天然的故事產地——可做「在 Lava 約會的陌生人」系列（匿名化+插畫化規避隱私），把「見面 > 聊天」主張變成有情節的證言，比功能宣傳可信。台灣讀者對街頭故事式的敘事漫畫已有成熟閱讀習慣。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-notes-app-raw-card",
-   "type": "post",
-   "hook_type": "記事本原生截圖體",
-   "skeleton": "單張或 2-3 張輪播：模擬手機記事本／備忘錄介面，放一段犀利、像閨蜜諫言的愛情短文（時長時短、刻意不排版），cover 即全文、無設計感就是設計；tag-a-friend CTA 藏在 caption（「傳給那個需要看到這段話的人」）而非圖內。",
-   "why_it_works": "低製作感是訊號不是缺陷：記事本介面傳遞「這是真心話外流，不是行銷物」，繞過用戶的廣告防禦。犀利諫言型內容的分享動機是「替我罵／替我說」——tag 閨蜜等於一次低成本的社交干預，走 DM 分享路徑（演算法權重高於按讚）。與精緻金句卡的差異在美學訊號層：越 raw 越像私人筆記，轉傳意願越高。",
-   "evidence": {
-    "source_account": "@wecallbad（微靠背）",
-    "post_url": "https://chill.juksy.com/article/61807",
-    "engagement": "unverified（JUKSY 盤點文描述其愛情文字「一語中的、像閨蜜諫言」，未附互動數據）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "適配。Lava「不聊天」主張是犀利諫言的天然題庫（例：「你們聊了三週，連他咖啡加不加糖都還要用問的」）；製作成本近零、適合高頻試錯。與既有「清單體金句卡」條目的區隔點在 raw 美學與閨蜜口吻，不是句型——執行時必須守住不排版原則，一精緻化就失效。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-offline-recap-carousel",
-   "type": "post",
-   "hook_type": "線下活動回顧輪播",
-   "skeleton": "cover 用當週聚會最有生命力的現場照或一句參加者金句；內容張混排現場照片與參加者匿名心得卡（誰跟誰因此變朋友、當天最好笑的瞬間）；尾張放下期場次資訊與報名／下載 CTA，形成固定週更節奏。",
-   "why_it_works": "回顧貼文是社會證明的複利機器：每張現場照都在回答潛在用戶最大的疑慮（真的有人去嗎、會不會尷尬）；被拍到的參加者會主動轉發限動，每場活動自帶 N 個微型放大器做二次觸及；固定週更讓追蹤者把帳號當活動行事曆用，建立回訪習慣（profile visit 訊號）。線下體驗變成線上內容、線上內容再賣線下體驗，形成閉環。",
-   "evidence": {
-    "source_account": "@thewknd.club（The Weekend Club，台灣六人早午餐社交平台）",
-    "post_url": "https://www.threads.com/@thewknd.club/post/DQhAafAEiay",
-    "engagement": "unverified（帳號約 46K 追蹤——搜尋快照；單帖互動未公開）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "極高適配——thewknd.club 是台灣 offline-first 社交最接近的參照系。Lava 的成立約會（去識別化後）與 B 端合作店家場景都是現成素材；差異在 Lava 是 1:1 約會、匿名要求更高，可改拍「店家視角」「破冰道具與桌面」不拍人臉，心得卡用互答六題的匿名摘句。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-best-friend-roast",
-   "type": "reels",
-   "hook_type": "好友吐槽第三視角",
-   "skeleton": "前 1.5 秒：好友拿著你的手機或交友檔案直接開唸最尷尬的一句（畫面即衝突，無需鋪陳）；中段兩人 banter，好友以「最懂你的人」身分吐槽你的擇偶模式；收尾好友替你下結論或替你做選擇，自然落在產品功能上。",
-   "why_it_works": "第三人稱好友視角解決 dating 內容的根本可信度問題——當事人自述像廣告，好友吐槽自帶真實性與幽默衝突。「我朋友也會這樣講我」的投射讓 tag 好友成為內容的原生動作而非事後 CTA（分享出去=對朋友的溫和吐槽，社交貨幣）。品牌功能作為 banter 的道具出場，廣告感被劇情稀釋。",
-   "evidence": {
-    "source_account": "Hinge「My Best Friend's Take」campaign（LOI Digital 執行）",
-    "post_url": "https://www.loi.digital/hingecase",
-    "engagement": "該年度創作者系列合計 27.4M views、400K engagements、160 位創作者（case study 總量數據，單帖未拆分）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配。Lava 的快問快答與約會偏好可直接做「讓姊妹替你選約會時段」「好友看你的滑卡紀錄」系列；台灣創作者圈現成的閨蜜檔／兄弟檔雙人組合可低成本合作。注意口吻：吐槽對象是「只聊不約」的行為，不是外貌或條件（守性別中立、不物化原則）。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-expert-celeb-vulnerability",
-   "type": "reels",
-   "hook_type": "名人脆弱自白對談",
-   "skeleton": "前 1.5 秒名人／高知名度來賓說出一句反人設的脆弱自白（「我也會被已讀不回搞到睡不著」）；中段與關係專家對談，專家給一個可操作的重新框架；收尾把主張落回品牌世界觀，CTA 引導留言分享自身經驗。",
-   "why_it_works": "高地位者+脆弱=預期違反，是強停留訊號的 pattern interrupt；專家在場把內容從名人八卦升級為「值得儲存的建議」，同時觸發 save 與轉發；自白示範降低留言門檻，留言區變成告解室，UGC 留言量放大分發。Bumble 以此把品牌訊息從約會擴到 self-love／友誼，直接擴大可觸及人群分母。",
-   "evidence": {
-    "source_account": "@bumble（「For the Love of Love」2025.8 與 Aaron Pierre 情人節 campaign）",
-    "post_url": "https://goatagency.com/blog/bumble-influencer-marketing/",
-    "engagement": "unverified（GOAT Agency 分析文未附單帖互動數據）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "部分適配。Lava 無名人預算時可降維執行：台灣 podcast 主持人或在地 KOC 的「我約會最糗的一次」自白＋「見面才知道」收尾；但純專家說教版不適配——與 Lava 輕快、不說教的「不聊天」人設衝突，專家只能當配角不能當主角。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-slide2-standalone-carousel",
-   "type": "post",
-   "hook_type": "第二張獨立成立輪播",
-   "skeleton": "cover 用 5-8 字標題+具體數字製造 curiosity gap；第 2 張刻意設計成「獨立成立」——沒看過 cover 也能單獨提供完整價值；第 3-5 張每張一個 screenshot-worthy 的獨立要點；尾張回扣核心並放留言關鍵字 CTA（「留言 X 我私你 Y」）。",
-   "why_it_works": "直接針對分發機制設計：IG 會把輪播第 2 張作為獨立入口重新投放給未互動者，第 2 張獨立成立等於一篇貼文有兩次冷啟動機會。「每張可截圖」把儲存動機拆進每一張，而非押注在結尾。留言關鍵字 CTA 同時製造高權重留言訊號並把流量轉入 DM（DM 分享權重高於讚），還可接自動化發送。",
-   "evidence": {
-    "source_account": "Lindsey Jo（BAM 部落格作者）",
-    "post_url": "https://nowbam.com/the-carousel-strategy-that-grew-my-ig-steal-this-formula/",
-    "engagement": "unverified（作者自述以此公式帶動帳號成長，文中未附單帖數據）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "適配 Lava 知識型 carousel 生產線的結構層升級：「台北不冷場約會地點」「第一次見面救場話題」等乾貨把最強的一點前移到第 2 張；留言關鍵字可接 n8n 自動 DM 發約會路線圖，把互動直接轉私域。與既有 4 條目不重複——這條管的是張序結構，不是內容句型。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-panoramic-seamless-swipe",
-   "type": "post",
-   "hook_type": "無縫全景輪播",
-   "skeleton": "一張橫向大圖切成 N 張：cover 露出主視覺的一半，讓元素（路線、線條、人物）明顯延伸出畫面右緣製造未完成感；每張內容張既是全景的一段、又各自承載一個獨立資訊點；尾張全景收合成完整地圖或結論，配儲存 CTA。",
-   "why_it_works": "視覺未完成（元素被畫框切斷）製造生理性的補完衝動，把 swipe 從決策變成本能動作；swipe-through rate 是輪播分發主訊號（benchmark 50%+）。全景形式讓資訊自帶空間結構（地圖／流程／時間軸），儲存價值天然高於零散清單（save rate benchmark 5-10%，saves 是最強演算法訊號之一）。",
-   "evidence": {
-    "source_account": "PostNitro blog（IG carousel 策略拆解）",
-    "post_url": "https://postnitro.ai/blog/post/viral-instagram-carousels-strategies-2025",
-    "engagement": "文中 benchmark：優化輪播平均互動 +44%、saves/shares 為單圖 3 倍（平台自報數據，方向性參考）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "適配 Lava 的約會路線內容：「大安區一日約會散步地圖」畫成一條橫向路線切 6 張，途經點標注 Lava 合作店家，尾張完整地圖高儲存價值。視覺工程成本高於一般模板，定位為月更旗艦帖而非週更常規帖。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-half-second-flip-reel",
-   "type": "reels",
-   "hook_type": "半秒反轉開場",
-   "skeleton": "第 1 幀（約 0.3 秒）：與預期矛盾的畫面+一行大字（靜音可讀）；第 2 幀（約 0.2 秒）反轉或揭曉，製造「等等，什麼？」；中段用具體非整數的數字撐論點；結尾畫面接回第 1 幀構成無縫 loop，讓觀眾無感重播。",
-   "why_it_works": "2025 年 8 月起 IG Reels Insights 直接回報 skip rate（前 3 秒流失率），開場半秒從玄學變成可優化的顯性指標；約 40% 行動流量靜音觀看，首幀文字 overlay 是必需品不是加分項；首幀矛盾畫面在聲音載入前完成攔截。結尾接回開頭的 loop 設計墊高重播率與平均觀看時長，兩者都是分發權重訊號。retention benchmark：10K+ 追蹤帳號目標 35%+，小帳 40%+。",
-   "evidence": {
-    "source_account": "Tweetangels blog（Reels hook 公式拆解）",
-    "post_url": "https://tweetangels.com/instagram/instagram-reels-viral-hooks-2026-7-formulas/",
-    "engagement": "非單帖數據；文中含 retention benchmarks（35-40%）與 2025.8 skip rate 機制說明（部分統計標注待驗證）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配。「不聊天」主張天生是矛盾開場素材庫：首幀「兩支手機面朝下放桌上」+大字「我們整場約會沒傳半句訊息」→ 反轉揭曉是 Lava 破冰道具在帶話題。Loop 收尾接回桌面畫面即可，製作門檻低，適合 reels 週更線。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-issue-to-table-funnel",
-   "type": "post",
-   "hook_type": "議題策展→主題桌 funnel",
-   "curated_by": "jesse",
-   "skeleton": "cover=職涯/生活轉型議題立題（不談產品）→ 中段=議題乾貨（未來人才兩種原型：深度專家 vs 跨域連結者）→ 尾張=把議題收斂成本週主題桌（SideHustle 桌）報名 CTA。骨架依 embed 首圖+caption 推定，取得全輪播後補逐張拆解。",
-   "why_it_works": "先給完整的議題價值再把 CTA 包裝成「繼續聊這個話題的線下場」——活動報名不是廣告而是內容的自然延伸；議題選在目標客群的身分焦慮帶（不想只靠一份工作），精準觸發儲存與轉發給同溫層。",
-   "evidence": {
-    "source_account": "@thewknd.club",
-    "post_url": "https://www.instagram.com/p/DarbC6WEWGS/",
-    "engagement": "5,772 讚、19 留言（帳號 45.9K 粉）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配：Lava 可用同構把約會議題（如「不聊天約會學」）收斂成成立約會 CTA；差異在 Lava 是 1:1 不是主題桌，CTA 改「這週讓 Lava 幫你安排一場」。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-life-decision-mustread",
-   "type": "post",
-   "hook_type": "人生決策必看體",
-   "curated_by": "jesse",
-   "skeleton": "cover=「想要○○的朋友必看這篇」直接圈住處在人生決策點的族群 → 中段=決策的心理洞察（換城市＝擺脫既有名聲、能真實呈現自己）逐張推進 → 尾張=陌生人晚餐/品牌場景收尾。視覺整組 Emily in Paris 式暖調生活感攝影。骨架依 embed 推定，取得全輪播後補逐張拆解。",
-   "why_it_works": "「必看」＋明確族群圈定＝自我篩選的強 hook（處在該決策點的人無法滑過）；把搬家/換環境昇華成身分重啟的心理敘事，給讀者一個轉發給「正在考慮的那位朋友」的理由；aspirational 攝影讓儲存＝收藏一種想要的生活。此篇 33K 讚為該帳號量級異常值（粉絲 46K），屬 outlier 級模板。",
-   "evidence": {
-    "source_account": "@thewknd.club",
-    "post_url": "https://www.instagram.com/p/Dap5Ya8gdzj/",
-    "engagement": "33,158 讚、41+ 留言（帳號 46K 粉——讚數 72% of 粉絲數，outlier）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配：Lava 題材庫中「母胎單身」「Situationship」等身分決策點都可套（『想要結束曖昧的朋友必看這篇』）；尾張品牌段須守『使用者主動選擇』規則。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-product-intro-carousel",
-   "type": "post",
-   "hook_type": "產品機制圖解輪播",
-   "curated_by": "jesse",
-   "skeleton": "cover=受眾自我篩選宣言（Designed for intentional daters，halftone 人像+檔案卡 UI 疊框）→ 每張=一個產品機制寫成「立場句」而非功能名：No endless swiping（興趣 chips UI+每日限量策展）→ Built-in commitment（雙方預付＋一個硬數字 <1% stand-up rate 大字）→ Check, check, double check（確認/遲到/我到了 訊息 UI）→ Ghosters not welcome（幽靈插畫+帳號凍結訊息截圖）→ A clear path from match to date（match→付款→選日→地點揭曉→確認→約會日 時間軸 UI）→ 尾張=情感收尾+下載 CTA（Love is worth the leap + 真實約會照拼貼）；caption=一句世界觀宣言（A space for intentional dating. Where people show up and respect each other's time）。每張輪替主色（橘/粉/深梅/米），拼貼紙質感統一。",
-   "why_it_works": "把功能清單翻譯成立場清單——每張標題都是一個可認同的態度（Ghosters not welcome）而非功能名（帳號凍結），看的人是在『歸隊』不是在『讀說明書』；真實產品 UI 當插圖＝主張有實物背書；唯一一個硬數字（<1% 放鳥率）承擔全部說服力，比堆數據可信；craft 拼貼質感讓產品教學看起來像 zine 不像簡報；cover 自我篩選（intentional daters）讓非目標客群滑走、留下的全是高意圖受眾。⚠留言區教訓：產品主張型貼文會吸引問責型負評（篩選功能、配額、無聊天的反面聲音）——發布需備留言 SLA 與不過度承諾（數字必須真實可守）。",
-   "evidence": {
-    "source_account": "@breeze.social（verified，64.6K 粉）",
-    "post_url": "https://www.instagram.com/p/DSIPtx8CL_l/",
-    "engagement": "unverified（2025-12-11 發布；Jesse 登入截圖見完整 7 張）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "極高適配（Jesse 點名可用）：Lava 機制天然同構——不聊天（每日限量策展）／成立約會雙方承諾／時段地點確認流／爽約處理／match→見面路徑圖。製作走設計底+UI 元素圖解（DESIGN 系統）。鐵律：產品事實以 lava-product-context 正本為準（金額/規則/用語），放鳥率等數字必須用真實數據、沒有就不放；留言 SLA 24h。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-promise-butterfly-oneliner",
-   "type": "post",
-   "hook_type": "品牌承諾×情緒反差 one-liner",
-   "curated_by": "jesse",
-   "skeleton": "單張：一句「我們搞定 X，你只要負責 Y」句式（Breeze was designed with your safety in mind. You just have to handle the butterflies 🦋）＋呼應的極簡視覺（蝴蝶）；caption 即主文，一句到位。",
-   "why_it_works": "句式把理性承諾（安全）與感性報酬（心動）壓進一個反差結構，一秒讀完且自帶溫度；「你只要負責心動」把產品該做的無聊事（安全機制）翻譯成用戶的情緒利益；單圖+短句=最低閱讀成本的品牌廣告，適合投放與置頂。",
-   "evidence": {
-    "source_account": "@breeze.social",
-    "post_url": "https://www.instagram.com/p/DR2Nax3CC4L/",
-    "engagement": "unverified（embed 僅見 18 留言）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配且可量產：Lava 版句庫如「地點我們排好了，你只要人到」「尷尬的開場我們處理，你只要負責出現」——與『出現是主動選擇』的品牌規則同向。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-weekly-ritual-concierge",
-   "type": "reels",
-   "hook_type": "固定節奏儀式化敘事",
-   "curated_by": "jesse",
-   "skeleton": "前 1.5 秒=點名痛點句（No more 'wyd tonight'）→ 中段=展示「每週三 7PM 幫你安排一場約會」的 concierge 流程（講你的型→我們排好人/時/地/活動）→ 收尾=校園/城市限定的歸屬感 CTA（join 35K+ students）。",
-   "why_it_works": "把產品從『無限滑卡』重新框架成『每週一次的儀式』——固定節奏製造期待與習慣迴圈（週三=約會日），也天然給每週一支內容的節目化排期；「我們全包」的 concierge 敘事直接消滅 dating app 最大摩擦（誰主動、去哪、聊什麼）；在地社群數字（UCLA、35K+ 學生）給社會證明。",
-   "evidence": {
-    "source_account": "@ditto_ucla（美國校園 offline-first 約會新創）",
-    "post_url": "https://www.instagram.com/p/DQsKUSlEqWh/",
-    "engagement": "451 讚（新帳號早期數據）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "極高適配：Lava 的成立約會＝同一 concierge 主張，可做台灣版「週三 Lava 日」固定檔期敘事＋每週回顧接力（與 tpl-offline-recap-carousel 組成前後檔）。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-archetype-comedy-reel",
-   "type": "reels",
-   "hook_type": "約會對象原型喜劇",
-   "curated_by": "jesse",
-   "skeleton": "前 1.5 秒=第一個原型登場自帶字卡（Gym bro）→ 中段=連續 3-5 個約會對象原型短喜劇（Finance Bro、Hot Nerd…每型一個梗）→ 收尾=產品主張一句收（get to your irl date 1000x faster）。高製作規格（正式導演/卡司/攝影）。",
-   "why_it_works": "原型（archetype）是內建的分享觸發器——觀眾邊看邊 tag「這就是你」；多原型結構讓每 3-5 秒換一個梗，完播率與重看率雙高；喜劇先行、產品一句收尾，廣告感被劇情稀釋；121 留言/816 讚的留言比異常高＝原型引戰留言區（你是哪型）有效。",
-   "evidence": {
-    "source_account": "@ditto",
-    "post_url": "https://www.instagram.com/p/DMdgJ25ym-y/",
-    "engagement": "816 讚、121 留言（留言率異常高）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "適配（降製作規格版）：台灣版原型（健身仔/金融男/文青/工程師…）用 KOC 拍即可；守則：吐槽行為不吐槽外貌條件（性別中立、不物化），原型要男女對稱出。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-archetype-catalog-carousel",
-   "type": "post",
-   "hook_type": "原型圖鑑輪播",
-   "curated_by": "jesse",
-   "skeleton": "每張=一個「朋友原型」自成一格：原型名大字（The 'one drink' wonder friend / The sorry I'm 20 min late friend / The judgey confessional friend…）＋兩拍行為梗（手寫感 tape 標籤句）＋一句反轉溫情 punchline（You hate it, but the night is better when they arrive）；每張輪替一個主色（橘/藍/粉/紫）、halftone 網點人像拼貼＋皺紙質感＋箭頭引導鈕；尾張收斂成情感宣言（Friends like these are hard to find—CHERISH THEM. INVEST IN THEM. They are unhinged and irreplaceable）＋純 logo，不放硬 CTA；caption 才做產品轉接（Your future 2am crisis manager is at a table somewhere 🔥）。",
-   "why_it_works": "原型=內建 tag 觸發器（44 分享 vs 9 留言，分享比異常高＝DM『這就是你』轉傳型）；每張自成一格讓任意一張都能當入口、也都值得截圖；吐槽→溫情的兩拍反轉讓 tag 行為變成示愛不是嘲笑（轉傳零社交風險）；色彩輪替維持滑動新鮮感但拼貼系統統一＝一眼認出品牌；內容全程講友情不講產品，只用 caption 一句把『這種朋友』重新框架成『在某張餐桌等你』——廣告感為零的導流。",
-   "evidence": {
-    "source_account": "@timeleft（verified；陌生人晚餐平台，Lava 同賽道對標）",
-    "post_url": "https://www.instagram.com/p/DavuTdQDHNe/",
-    "engagement": "880 讚、9 留言、44 分享（2026-07-14 發布；Jesse 登入截圖實測）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "極高適配：可做「約會現場的 N 種人」「聊天室裡的 N 種曖昧對象」原型圖鑑；尾張情感宣言＋caption 轉接成立約會（『你的下一個 2am 救火隊，可能就坐在 Lava 排好的位子上』）；halftone 文字卡系統可納入設計底生成器新模板。守則：原型吐槽行為不吐槽外貌、男女對稱、punchline 必須溫情反轉（禁純嘲諷）。與 tpl-archetype-comedy-reel（Reels 版）互為姊妹條目。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-newsjack-oneliner-collage",
-   "type": "post",
-   "hook_type": "時事畫面挪用一句反轉",
-   "curated_by": "jesse",
-   "skeleton": "單張：爆紅新聞畫面（雙人蒙面爬上紐約高樓頂的病毒照）裝進拍立得框 → 疊品牌拼貼系統（橘底、黑白城市剪貼、紙質感）→ 拍立得下緣一句手寫反轉（You don't have to climb a building to tell your friend you love them）→ caption 只有兩個字收梗（Just text）。",
-   "why_it_works": "搭現成注意力波：病毒畫面自帶識別度，看到就想起那條新聞，省掉 hook 成本；一句手寫反轉把奇觀翻譯成人人可做的小事（爬樓示愛→傳訊息就好），情緒從獵奇轉溫情；caption 兩字＝笑點經濟學，圖負責鋪陳、caption 負責收梗，留言區自然接力（The power of love）；單張零製作負擔卻拿到全帳號 outlier 互動（2K 讚 vs 原型輪播 880），證明格式槓桿 > 內容量。",
-   "evidence": {
-    "source_account": "@timeleft（verified）",
-    "post_url": "https://www.instagram.com/p/DaTAHGKsrLr/",
-    "engagement": "2K 讚、33 留言、53 分享（2026-07-03 發布；Jesse 登入截圖實測）",
-    "seen_at": "2026-07-29"
-   },
-   "fit_for_lava": "高適配但有紀律要求：適用「非財經非賽事」的爆紅畫面（Lava 時事橋接配額仍每日≤1、股市運動禁出）；Lava 版收梗句庫如『不用爬大樓，見一面就好——Just meet.』；新聞照屬引用式使用，發布必標注出處（法遵規則）；拼貼視覺可併入 timeleft 系設計語言（與 tpl-archetype-catalog-carousel 同系統）。",
-   "status": "validated",
-   "used_by": []
-  },
-  {
-   "id": "tpl-manifest-proof-chain",
-   "type": "post",
-   "hook_type": "人物證言鏈（先立論再翻轉）",
-   "skeleton": "cover 用人物高質感肖像＋一句斷言式標題（他想要，他得到）＋副標點出反差（不相信顯化的都信了）→ 中段連續 3-5 張『成真證據』，每張一個具體事件（某年說想演某角色，三年後真的成了；說自己是某遊戲粉絲，說完就成了電影主演）→ 關鍵轉折張：『但如果全歸功於運氣，好像把事情想得太簡單了』→ 合作者證言鏈 3-4 張（同事／導演／前輩各說一句對他的評價，都指向同一個特質）→ 收尾張把兩段合一：真正的關鍵不是許願，是讓自己變成配得上願望的人",
-   "why_it_works": "雙層結構製造兩次認知翻轉。第一層用『巧合多到不像巧合』的證據堆疊把讀者拉進『真的有這種事』的驚訝，這一段負責留住滑動；第二層立刻自我否定，把讀者從獵奇拉回可操作的洞察，這一段負責分享與收藏。證言鏈的說服力來自第三方而非當事人自述，每個證言者身分越權威、說的話越具體（不是『他很棒』而是『他反覆練同一場打戲一整天』），可信度越高。收尾把勵志雞湯轉成行為準則，讓讀者有東西可帶走。",
-   "evidence": {
-    "source_account": "@heavenravenofficial（Tom Holland 顯化篇）",
-    "post_url": "https://www.instagram.com/heavenravenofficial/",
-    "engagement": "27.7k 讚、60 留言（Jesse 2026-08-12 截圖佐證；帳號其他貼文同欄目制）",
-    "seen_at": "2026-08-12"
-   },
-   "fit_for_lava": "高適配但需改造。Lava 不談明星八卦，但『說出口＋知行合一』的框架可直接移植到約會情境：想要一段關係卻從不主動邀約、把期待放在心裡等對方讀懂。人選改用關係心理學者、行為經濟學者或有具體事蹟的公眾人物；證言鏈改用研究者的同儕評價或受試者回饋。注意 Lava 禁說教，收尾要落在『你可以做的一件小事』而非人生道理。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-persona-column",
-   "type": "post",
-   "hook_type": "固定欄目制人物誌",
-   "skeleton": "封面左下角固定欄目標籤（HR 人物／HR 快看 這類 2-4 字欄目名）→ 大字主標兩行，第一行拋狀態、第二行給反差（25 歲登上時代雜誌／她是富豪的許願池）→ 主標下方一條細分隔線＋一句吐槽式副標（頂級社畜使命必達）→ 底圖為人物高質感照片滿版，右下角固定品牌 logo 與網址",
-   "why_it_works": "欄目標籤是帳號級資產：讀者滑到第三次就認得出這是誰家的內容，不用看帳號名。固定的視覺骨架（左下標籤／兩行主標／細線／吐槽副標／右下 logo）讓每篇成本極低卻高度一致，這是內容帳號規模化的關鍵。吐槽式副標提供第二層閱讀樂趣，把嚴肅人物報導變成可分享的社交貨幣。",
-   "evidence": {
-    "source_account": "@heavenravenofficial",
-    "post_url": "https://www.instagram.com/heavenravenofficial/",
-    "engagement": "unverified（欄目制觀察自 Jesse 2026-08-12 提供的帳號版面截圖，單帖數據未公開）",
-    "seen_at": "2026-08-12"
-   },
-   "fit_for_lava": "適配且應優先實作。Lava 目前每篇封面都在重新發明版型，導致總檢一直說『節奏停滯』。建立 2-3 個固定欄目（例如「Lava 觀察」談現象、「Lava 人物」談人、「Lava 研究」談研究）就能同時解決辨識度與生產效率。欄目名須繁中 2-4 字，吐槽副標要台灣語感，不可翻譯腔。",
-   "status": "candidate",
-   "used_by": []
-  },
-  {
-   "id": "tpl-concept-decode",
-   "type": "post",
-   "hook_type": "概念拆解（心靈／做事風格／魅力）",
-   "skeleton": "cover 拋一個近期在流行但沒人講清楚的概念詞（顯化／鬆弛感／鈍感力／鏡子理論）＋一句挑釁式定調（真正的顯化從來不是許願）→ 第 2 張給概念的通俗誤解（大家以為是這樣）→ 第 3-5 張給拆解：這個概念真正在講的機制是什麼，各附一個具體場景或研究→ 第 6 張給反例：什麼情況下這個概念會害了你→ 品牌張把概念接到 Lava 的世界觀→ 收尾給一個今天就能做的動作",
-   "why_it_works": "概念詞自帶搜尋熱度與討論慣性，但市面上多數內容停在『這個詞是什麼意思』。拆解到機制層再給反例，會讓讀者覺得『這篇跟其他篇不一樣』，這是收藏的主要動機。反例張特別重要：它讓內容從勵志轉成判斷力，也避開了 Lava 禁忌的雞湯感。",
-   "evidence": {
-    "source_account": "@heavenravenofficial（顯化篇的第二層結構）",
-    "post_url": "https://www.instagram.com/heavenravenofficial/",
-    "engagement": "27.7k 讚（該篇同時具備人物與概念兩層，此模板抽取其概念層）",
-    "seen_at": "2026-08-12"
-   },
-   "fit_for_lava": "極高適配。約會場域的概念詞供給充足（situationship／breadcrumbing／鬆弛感／安全型依附），且 Lava 的『不聊天』主張本身就是一個需要被拆解的概念。訊號源已接 Psyche 與 PsyArXiv，可供機制層的研究支撐。",
-   "status": "candidate",
-   "used_by": []
-  }
- ]
+  "_schema": "swipe 庫：情報線（lava-research）唯一輸出工件；產文線 Strategy 階段讀此檔選模板。每筆必附 evidence，查不到互動數據標 unverified。retired 不刪除。",
+  "templates": [
+    {
+      "id": "tpl-trend-word-textcard",
+      "type": "post",
+      "hook_type": "趨勢詞策展",
+      "skeleton": "cover=單一趨勢詞大字（設計文字卡，非照片）→ 2-4張=該詞的情境展開（每張一個具體場景句）→ 尾張=線下活動/品牌 CTA",
+      "why_it_works": "趨勢詞自帶搜尋與討論熱度；設計文字卡在動態裡與照片流形成對比、3 秒可讀；策展（幫讀者命名一種處境）觸發『這在說我』的轉發動機，比知識灌輸的分享成本低。",
+      "evidence": {
+        "source_account": "@thewknd.club",
+        "post_url": "https://www.instagram.com/p/DbPzikYEdZW/",
+        "engagement": "高互動（Jesse 指定對標；具體數據 unverified）",
+        "seen_at": "2026-07-28"
+      },
+      "fit_for_lava": "直接適配：Lava 線下優先的定位可承接『不想再聊天了』類趨勢詞；設計底生成器（DESIGN）已能產文字卡底。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-data-contrast-hook",
+      "type": "post",
+      "hook_type": "數據反差",
+      "skeleton": "cover=具體數字反差主標（例：傳了100則訊息，還是約不出來）→ 中段=場景故事先行、研究後置解釋內心戲 → 尾張=品牌段（使用者主動選擇的行動）",
+      "why_it_works": "具體數字給 hook 可信度與畫面感；反差製造認知缺口驅動滑動；故事先行研究後置避免 wiki 感（AI 味主因之一）。",
+      "evidence": {
+        "source_account": "多帳號通用公式（風格規格 v1.0 hook 公式庫）",
+        "post_url": "",
+        "engagement": "unverified",
+        "seen_at": "2026-07-28"
+      },
+      "fit_for_lava": "適配：Lava 的『不聊天』主張天然帶數據反差素材（訊息數 vs 見面數）。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-thats-me-scenario",
+      "type": "post",
+      "hook_type": "這在說我情境問句",
+      "skeleton": "cover=具體到動作層次的情境問句（你也會點開對話框看到已讀又退出去嗎）→ 中段=該族群內心戲逐張推進 → 尾張=解方+CTA",
+      "why_it_works": "具體情境讓特定族群被精準命中（大題目=弱 hook）；tag 朋友的分享動機是『這就是你』；儲存動機是『這就是我』。",
+      "evidence": {
+        "source_account": "critic rubric hook 公式＋Weekend Club 對話式 hook 機制",
+        "post_url": "",
+        "engagement": "unverified",
+        "seen_at": "2026-07-28"
+      },
+      "fit_for_lava": "適配：交友情境的內心戲題材庫近乎無限；注意禁句規則（不得用赦免式安慰收尾）。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-save-worthy-list",
+      "type": "post",
+      "hook_type": "清單體/金句卡",
+      "skeleton": "cover=承諾一個可截圖收藏的濃縮物（公式/清單/金句）→ 中段=逐條展開每條配一個場景例 → 尾張=完整版彙總卡（截圖點）+CTA",
+      "why_it_works": "儲存是 IG 演算法最重的互動訊號之一；『值得截圖』給讀者回訪理由；彙總卡讓儲存行為集中在同一張，放大訊號。",
+      "evidence": {
+        "source_account": "IG 通用高儲存格式（critic rubric 儲存價值項）",
+        "post_url": "",
+        "engagement": "unverified",
+        "seen_at": "2026-07-28"
+      },
+      "fit_for_lava": "適配：約會前檢查清單、開場白公式等；需守引用查證規則（研究來源可查證才可列）。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-stranger-story-comic",
+      "type": "post",
+      "hook_type": "真人故事漫畫化",
+      "skeleton": "cover 用單格漫畫定格在故事最具情緒張力的一瞬，一句對白直接當標題；內容張以漫畫分鏡格推進一位真實陌生人的故事，每張只放一個轉折、對白框帶情緒；倒數張收在故事的情緒落點（不說教、不總結）；CTA 張邀請讀者留言分享自己的版本或 tag 有同樣經歷的人。",
+      "why_it_works": "敘事的未完成張力驅動逐張滑動，swipe-through 完成率是輪播分發的主訊號；「真實陌生人的故事」框架讓讀者以第三人稱安全代入，情緒濃度越高越觸發同理，分享動機是「這則故事替我說了我說不出口的事」。作者自述關鍵轉折：同樣的故事從純文字改成漫畫分鏡呈現的第一天，成長曲線立刻改變——證明格式本身（分鏡+對白）就是機制，不是內容變好。",
+      "evidence": {
+        "source_account": "@bailee_story（街頭故事／李白）",
+        "post_url": "https://portaly.cc/blog/bailee-interview",
+        "engagement": "格式轉換後 2 個月粉絲 6,000→60,000（10 倍），帳號累積 17 萬追蹤（訪談自述，非單帖數據）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配。Lava 每場約會都發生在真實店家，是天然的故事產地——可做「在 Lava 約會的陌生人」系列（匿名化+插畫化規避隱私），把「見面 > 聊天」主張變成有情節的證言，比功能宣傳可信。台灣讀者對街頭故事式的敘事漫畫已有成熟閱讀習慣。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-notes-app-raw-card",
+      "type": "post",
+      "hook_type": "記事本原生截圖體",
+      "skeleton": "單張或 2-3 張輪播：模擬手機記事本／備忘錄介面，放一段犀利、像閨蜜諫言的愛情短文（時長時短、刻意不排版），cover 即全文、無設計感就是設計；tag-a-friend CTA 藏在 caption（「傳給那個需要看到這段話的人」）而非圖內。",
+      "why_it_works": "低製作感是訊號不是缺陷：記事本介面傳遞「這是真心話外流，不是行銷物」，繞過用戶的廣告防禦。犀利諫言型內容的分享動機是「替我罵／替我說」——tag 閨蜜等於一次低成本的社交干預，走 DM 分享路徑（演算法權重高於按讚）。與精緻金句卡的差異在美學訊號層：越 raw 越像私人筆記，轉傳意願越高。",
+      "evidence": {
+        "source_account": "@wecallbad（微靠背）",
+        "post_url": "https://chill.juksy.com/article/61807",
+        "engagement": "unverified（JUKSY 盤點文描述其愛情文字「一語中的、像閨蜜諫言」，未附互動數據）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "適配。Lava「不聊天」主張是犀利諫言的天然題庫（例：「你們聊了三週，連他咖啡加不加糖都還要用問的」）；製作成本近零、適合高頻試錯。與既有「清單體金句卡」條目的區隔點在 raw 美學與閨蜜口吻，不是句型——執行時必須守住不排版原則，一精緻化就失效。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-offline-recap-carousel",
+      "type": "post",
+      "hook_type": "線下活動回顧輪播",
+      "skeleton": "cover 用當週聚會最有生命力的現場照或一句參加者金句；內容張混排現場照片與參加者匿名心得卡（誰跟誰因此變朋友、當天最好笑的瞬間）；尾張放下期場次資訊與報名／下載 CTA，形成固定週更節奏。",
+      "why_it_works": "回顧貼文是社會證明的複利機器：每張現場照都在回答潛在用戶最大的疑慮（真的有人去嗎、會不會尷尬）；被拍到的參加者會主動轉發限動，每場活動自帶 N 個微型放大器做二次觸及；固定週更讓追蹤者把帳號當活動行事曆用，建立回訪習慣（profile visit 訊號）。線下體驗變成線上內容、線上內容再賣線下體驗，形成閉環。",
+      "evidence": {
+        "source_account": "@thewknd.club（The Weekend Club，台灣六人早午餐社交平台）",
+        "post_url": "https://www.threads.com/@thewknd.club/post/DQhAafAEiay",
+        "engagement": "unverified（帳號約 46K 追蹤——搜尋快照；單帖互動未公開）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "極高適配——thewknd.club 是台灣 offline-first 社交最接近的參照系。Lava 的成立約會（去識別化後）與 B 端合作店家場景都是現成素材；差異在 Lava 是 1:1 約會、匿名要求更高，可改拍「店家視角」「破冰道具與桌面」不拍人臉，心得卡用互答六題的匿名摘句。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-best-friend-roast",
+      "type": "reels",
+      "hook_type": "好友吐槽第三視角",
+      "skeleton": "前 1.5 秒：好友拿著你的手機或交友檔案直接開唸最尷尬的一句（畫面即衝突，無需鋪陳）；中段兩人 banter，好友以「最懂你的人」身分吐槽你的擇偶模式；收尾好友替你下結論或替你做選擇，自然落在產品功能上。",
+      "why_it_works": "第三人稱好友視角解決 dating 內容的根本可信度問題——當事人自述像廣告，好友吐槽自帶真實性與幽默衝突。「我朋友也會這樣講我」的投射讓 tag 好友成為內容的原生動作而非事後 CTA（分享出去=對朋友的溫和吐槽，社交貨幣）。品牌功能作為 banter 的道具出場，廣告感被劇情稀釋。",
+      "evidence": {
+        "source_account": "Hinge「My Best Friend's Take」campaign（LOI Digital 執行）",
+        "post_url": "https://www.loi.digital/hingecase",
+        "engagement": "該年度創作者系列合計 27.4M views、400K engagements、160 位創作者（case study 總量數據，單帖未拆分）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配。Lava 的快問快答與約會偏好可直接做「讓姊妹替你選約會時段」「好友看你的滑卡紀錄」系列；台灣創作者圈現成的閨蜜檔／兄弟檔雙人組合可低成本合作。注意口吻：吐槽對象是「只聊不約」的行為，不是外貌或條件（守性別中立、不物化原則）。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-expert-celeb-vulnerability",
+      "type": "reels",
+      "hook_type": "名人脆弱自白對談",
+      "skeleton": "前 1.5 秒名人／高知名度來賓說出一句反人設的脆弱自白（「我也會被已讀不回搞到睡不著」）；中段與關係專家對談，專家給一個可操作的重新框架；收尾把主張落回品牌世界觀，CTA 引導留言分享自身經驗。",
+      "why_it_works": "高地位者+脆弱=預期違反，是強停留訊號的 pattern interrupt；專家在場把內容從名人八卦升級為「值得儲存的建議」，同時觸發 save 與轉發；自白示範降低留言門檻，留言區變成告解室，UGC 留言量放大分發。Bumble 以此把品牌訊息從約會擴到 self-love／友誼，直接擴大可觸及人群分母。",
+      "evidence": {
+        "source_account": "@bumble（「For the Love of Love」2025.8 與 Aaron Pierre 情人節 campaign）",
+        "post_url": "https://goatagency.com/blog/bumble-influencer-marketing/",
+        "engagement": "unverified（GOAT Agency 分析文未附單帖互動數據）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "部分適配。Lava 無名人預算時可降維執行：台灣 podcast 主持人或在地 KOC 的「我約會最糗的一次」自白＋「見面才知道」收尾；但純專家說教版不適配——與 Lava 輕快、不說教的「不聊天」人設衝突，專家只能當配角不能當主角。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-slide2-standalone-carousel",
+      "type": "post",
+      "hook_type": "第二張獨立成立輪播",
+      "skeleton": "cover 用 5-8 字標題+具體數字製造 curiosity gap；第 2 張刻意設計成「獨立成立」——沒看過 cover 也能單獨提供完整價值；第 3-5 張每張一個 screenshot-worthy 的獨立要點；尾張回扣核心並放留言關鍵字 CTA（「留言 X 我私你 Y」）。",
+      "why_it_works": "直接針對分發機制設計：IG 會把輪播第 2 張作為獨立入口重新投放給未互動者，第 2 張獨立成立等於一篇貼文有兩次冷啟動機會。「每張可截圖」把儲存動機拆進每一張，而非押注在結尾。留言關鍵字 CTA 同時製造高權重留言訊號並把流量轉入 DM（DM 分享權重高於讚），還可接自動化發送。",
+      "evidence": {
+        "source_account": "Lindsey Jo（BAM 部落格作者）",
+        "post_url": "https://nowbam.com/the-carousel-strategy-that-grew-my-ig-steal-this-formula/",
+        "engagement": "unverified（作者自述以此公式帶動帳號成長，文中未附單帖數據）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "適配 Lava 知識型 carousel 生產線的結構層升級：「台北不冷場約會地點」「第一次見面救場話題」等乾貨把最強的一點前移到第 2 張；留言關鍵字可接 n8n 自動 DM 發約會路線圖，把互動直接轉私域。與既有 4 條目不重複——這條管的是張序結構，不是內容句型。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-panoramic-seamless-swipe",
+      "type": "post",
+      "hook_type": "無縫全景輪播",
+      "skeleton": "一張橫向大圖切成 N 張：cover 露出主視覺的一半，讓元素（路線、線條、人物）明顯延伸出畫面右緣製造未完成感；每張內容張既是全景的一段、又各自承載一個獨立資訊點；尾張全景收合成完整地圖或結論，配儲存 CTA。",
+      "why_it_works": "視覺未完成（元素被畫框切斷）製造生理性的補完衝動，把 swipe 從決策變成本能動作；swipe-through rate 是輪播分發主訊號（benchmark 50%+）。全景形式讓資訊自帶空間結構（地圖／流程／時間軸），儲存價值天然高於零散清單（save rate benchmark 5-10%，saves 是最強演算法訊號之一）。",
+      "evidence": {
+        "source_account": "PostNitro blog（IG carousel 策略拆解）",
+        "post_url": "https://postnitro.ai/blog/post/viral-instagram-carousels-strategies-2025",
+        "engagement": "文中 benchmark：優化輪播平均互動 +44%、saves/shares 為單圖 3 倍（平台自報數據，方向性參考）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "適配 Lava 的約會路線內容：「大安區一日約會散步地圖」畫成一條橫向路線切 6 張，途經點標注 Lava 合作店家，尾張完整地圖高儲存價值。視覺工程成本高於一般模板，定位為月更旗艦帖而非週更常規帖。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-half-second-flip-reel",
+      "type": "reels",
+      "hook_type": "半秒反轉開場",
+      "skeleton": "第 1 幀（約 0.3 秒）：與預期矛盾的畫面+一行大字（靜音可讀）；第 2 幀（約 0.2 秒）反轉或揭曉，製造「等等，什麼？」；中段用具體非整數的數字撐論點；結尾畫面接回第 1 幀構成無縫 loop，讓觀眾無感重播。",
+      "why_it_works": "2025 年 8 月起 IG Reels Insights 直接回報 skip rate（前 3 秒流失率），開場半秒從玄學變成可優化的顯性指標；約 40% 行動流量靜音觀看，首幀文字 overlay 是必需品不是加分項；首幀矛盾畫面在聲音載入前完成攔截。結尾接回開頭的 loop 設計墊高重播率與平均觀看時長，兩者都是分發權重訊號。retention benchmark：10K+ 追蹤帳號目標 35%+，小帳 40%+。",
+      "evidence": {
+        "source_account": "Tweetangels blog（Reels hook 公式拆解）",
+        "post_url": "https://tweetangels.com/instagram/instagram-reels-viral-hooks-2026-7-formulas/",
+        "engagement": "非單帖數據；文中含 retention benchmarks（35-40%）與 2025.8 skip rate 機制說明（部分統計標注待驗證）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配。「不聊天」主張天生是矛盾開場素材庫：首幀「兩支手機面朝下放桌上」+大字「我們整場約會沒傳半句訊息」→ 反轉揭曉是 Lava 破冰道具在帶話題。Loop 收尾接回桌面畫面即可，製作門檻低，適合 reels 週更線。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-issue-to-table-funnel",
+      "type": "post",
+      "hook_type": "議題策展→主題桌 funnel",
+      "curated_by": "jesse",
+      "skeleton": "cover=職涯/生活轉型議題立題（不談產品）→ 中段=議題乾貨（未來人才兩種原型：深度專家 vs 跨域連結者）→ 尾張=把議題收斂成本週主題桌（SideHustle 桌）報名 CTA。骨架依 embed 首圖+caption 推定，取得全輪播後補逐張拆解。",
+      "why_it_works": "先給完整的議題價值再把 CTA 包裝成「繼續聊這個話題的線下場」——活動報名不是廣告而是內容的自然延伸；議題選在目標客群的身分焦慮帶（不想只靠一份工作），精準觸發儲存與轉發給同溫層。",
+      "evidence": {
+        "source_account": "@thewknd.club",
+        "post_url": "https://www.instagram.com/p/DarbC6WEWGS/",
+        "engagement": "5,772 讚、19 留言（帳號 45.9K 粉）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配：Lava 可用同構把約會議題（如「不聊天約會學」）收斂成成立約會 CTA；差異在 Lava 是 1:1 不是主題桌，CTA 改「這週讓 Lava 幫你安排一場」。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-life-decision-mustread",
+      "type": "post",
+      "hook_type": "人生決策必看體",
+      "curated_by": "jesse",
+      "skeleton": "cover=「想要○○的朋友必看這篇」直接圈住處在人生決策點的族群 → 中段=決策的心理洞察（換城市＝擺脫既有名聲、能真實呈現自己）逐張推進 → 尾張=陌生人晚餐/品牌場景收尾。視覺整組 Emily in Paris 式暖調生活感攝影。骨架依 embed 推定，取得全輪播後補逐張拆解。",
+      "why_it_works": "「必看」＋明確族群圈定＝自我篩選的強 hook（處在該決策點的人無法滑過）；把搬家/換環境昇華成身分重啟的心理敘事，給讀者一個轉發給「正在考慮的那位朋友」的理由；aspirational 攝影讓儲存＝收藏一種想要的生活。此篇 33K 讚為該帳號量級異常值（粉絲 46K），屬 outlier 級模板。",
+      "evidence": {
+        "source_account": "@thewknd.club",
+        "post_url": "https://www.instagram.com/p/Dap5Ya8gdzj/",
+        "engagement": "33,158 讚、41+ 留言（帳號 46K 粉——讚數 72% of 粉絲數，outlier）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配：Lava 題材庫中「母胎單身」「Situationship」等身分決策點都可套（『想要結束曖昧的朋友必看這篇』）；尾張品牌段須守『使用者主動選擇』規則。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-product-intro-carousel",
+      "type": "post",
+      "hook_type": "產品機制圖解輪播",
+      "curated_by": "jesse",
+      "skeleton": "cover=受眾自我篩選宣言（Designed for intentional daters，halftone 人像+檔案卡 UI 疊框）→ 每張=一個產品機制寫成「立場句」而非功能名：No endless swiping（興趣 chips UI+每日限量策展）→ Built-in commitment（雙方預付＋一個硬數字 <1% stand-up rate 大字）→ Check, check, double check（確認/遲到/我到了 訊息 UI）→ Ghosters not welcome（幽靈插畫+帳號凍結訊息截圖）→ A clear path from match to date（match→付款→選日→地點揭曉→確認→約會日 時間軸 UI）→ 尾張=情感收尾+下載 CTA（Love is worth the leap + 真實約會照拼貼）；caption=一句世界觀宣言（A space for intentional dating. Where people show up and respect each other's time）。每張輪替主色（橘/粉/深梅/米），拼貼紙質感統一。",
+      "why_it_works": "把功能清單翻譯成立場清單——每張標題都是一個可認同的態度（Ghosters not welcome）而非功能名（帳號凍結），看的人是在『歸隊』不是在『讀說明書』；真實產品 UI 當插圖＝主張有實物背書；唯一一個硬數字（<1% 放鳥率）承擔全部說服力，比堆數據可信；craft 拼貼質感讓產品教學看起來像 zine 不像簡報；cover 自我篩選（intentional daters）讓非目標客群滑走、留下的全是高意圖受眾。⚠留言區教訓：產品主張型貼文會吸引問責型負評（篩選功能、配額、無聊天的反面聲音）——發布需備留言 SLA 與不過度承諾（數字必須真實可守）。",
+      "evidence": {
+        "source_account": "@breeze.social（verified，64.6K 粉）",
+        "post_url": "https://www.instagram.com/p/DSIPtx8CL_l/",
+        "engagement": "unverified（2025-12-11 發布；Jesse 登入截圖見完整 7 張）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "極高適配（Jesse 點名可用）：Lava 機制天然同構——不聊天（每日限量策展）／成立約會雙方承諾／時段地點確認流／爽約處理／match→見面路徑圖。製作走設計底+UI 元素圖解（DESIGN 系統）。鐵律：產品事實以 lava-product-context 正本為準（金額/規則/用語），放鳥率等數字必須用真實數據、沒有就不放；留言 SLA 24h。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-promise-butterfly-oneliner",
+      "type": "post",
+      "hook_type": "品牌承諾×情緒反差 one-liner",
+      "curated_by": "jesse",
+      "skeleton": "單張：一句「我們搞定 X，你只要負責 Y」句式（Breeze was designed with your safety in mind. You just have to handle the butterflies 🦋）＋呼應的極簡視覺（蝴蝶）；caption 即主文，一句到位。",
+      "why_it_works": "句式把理性承諾（安全）與感性報酬（心動）壓進一個反差結構，一秒讀完且自帶溫度；「你只要負責心動」把產品該做的無聊事（安全機制）翻譯成用戶的情緒利益；單圖+短句=最低閱讀成本的品牌廣告，適合投放與置頂。",
+      "evidence": {
+        "source_account": "@breeze.social",
+        "post_url": "https://www.instagram.com/p/DR2Nax3CC4L/",
+        "engagement": "unverified（embed 僅見 18 留言）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配且可量產：Lava 版句庫如「地點我們排好了，你只要人到」「尷尬的開場我們處理，你只要負責出現」——與『出現是主動選擇』的品牌規則同向。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-weekly-ritual-concierge",
+      "type": "reels",
+      "hook_type": "固定節奏儀式化敘事",
+      "curated_by": "jesse",
+      "skeleton": "前 1.5 秒=點名痛點句（No more 'wyd tonight'）→ 中段=展示「每週三 7PM 幫你安排一場約會」的 concierge 流程（講你的型→我們排好人/時/地/活動）→ 收尾=校園/城市限定的歸屬感 CTA（join 35K+ students）。",
+      "why_it_works": "把產品從『無限滑卡』重新框架成『每週一次的儀式』——固定節奏製造期待與習慣迴圈（週三=約會日），也天然給每週一支內容的節目化排期；「我們全包」的 concierge 敘事直接消滅 dating app 最大摩擦（誰主動、去哪、聊什麼）；在地社群數字（UCLA、35K+ 學生）給社會證明。",
+      "evidence": {
+        "source_account": "@ditto_ucla（美國校園 offline-first 約會新創）",
+        "post_url": "https://www.instagram.com/p/DQsKUSlEqWh/",
+        "engagement": "451 讚（新帳號早期數據）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "極高適配：Lava 的成立約會＝同一 concierge 主張，可做台灣版「週三 Lava 日」固定檔期敘事＋每週回顧接力（與 tpl-offline-recap-carousel 組成前後檔）。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-archetype-comedy-reel",
+      "type": "reels",
+      "hook_type": "約會對象原型喜劇",
+      "curated_by": "jesse",
+      "skeleton": "前 1.5 秒=第一個原型登場自帶字卡（Gym bro）→ 中段=連續 3-5 個約會對象原型短喜劇（Finance Bro、Hot Nerd…每型一個梗）→ 收尾=產品主張一句收（get to your irl date 1000x faster）。高製作規格（正式導演/卡司/攝影）。",
+      "why_it_works": "原型（archetype）是內建的分享觸發器——觀眾邊看邊 tag「這就是你」；多原型結構讓每 3-5 秒換一個梗，完播率與重看率雙高；喜劇先行、產品一句收尾，廣告感被劇情稀釋；121 留言/816 讚的留言比異常高＝原型引戰留言區（你是哪型）有效。",
+      "evidence": {
+        "source_account": "@ditto",
+        "post_url": "https://www.instagram.com/p/DMdgJ25ym-y/",
+        "engagement": "816 讚、121 留言（留言率異常高）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "適配（降製作規格版）：台灣版原型（健身仔/金融男/文青/工程師…）用 KOC 拍即可；守則：吐槽行為不吐槽外貌條件（性別中立、不物化），原型要男女對稱出。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-archetype-catalog-carousel",
+      "type": "post",
+      "hook_type": "原型圖鑑輪播",
+      "curated_by": "jesse",
+      "skeleton": "每張=一個「朋友原型」自成一格：原型名大字（The 'one drink' wonder friend / The sorry I'm 20 min late friend / The judgey confessional friend…）＋兩拍行為梗（手寫感 tape 標籤句）＋一句反轉溫情 punchline（You hate it, but the night is better when they arrive）；每張輪替一個主色（橘/藍/粉/紫）、halftone 網點人像拼貼＋皺紙質感＋箭頭引導鈕；尾張收斂成情感宣言（Friends like these are hard to find—CHERISH THEM. INVEST IN THEM. They are unhinged and irreplaceable）＋純 logo，不放硬 CTA；caption 才做產品轉接（Your future 2am crisis manager is at a table somewhere 🔥）。",
+      "why_it_works": "原型=內建 tag 觸發器（44 分享 vs 9 留言，分享比異常高＝DM『這就是你』轉傳型）；每張自成一格讓任意一張都能當入口、也都值得截圖；吐槽→溫情的兩拍反轉讓 tag 行為變成示愛不是嘲笑（轉傳零社交風險）；色彩輪替維持滑動新鮮感但拼貼系統統一＝一眼認出品牌；內容全程講友情不講產品，只用 caption 一句把『這種朋友』重新框架成『在某張餐桌等你』——廣告感為零的導流。",
+      "evidence": {
+        "source_account": "@timeleft（verified；陌生人晚餐平台，Lava 同賽道對標）",
+        "post_url": "https://www.instagram.com/p/DavuTdQDHNe/",
+        "engagement": "880 讚、9 留言、44 分享（2026-07-14 發布；Jesse 登入截圖實測）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "極高適配：可做「約會現場的 N 種人」「聊天室裡的 N 種曖昧對象」原型圖鑑；尾張情感宣言＋caption 轉接成立約會（『你的下一個 2am 救火隊，可能就坐在 Lava 排好的位子上』）；halftone 文字卡系統可納入設計底生成器新模板。守則：原型吐槽行為不吐槽外貌、男女對稱、punchline 必須溫情反轉（禁純嘲諷）。與 tpl-archetype-comedy-reel（Reels 版）互為姊妹條目。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-newsjack-oneliner-collage",
+      "type": "post",
+      "hook_type": "時事畫面挪用一句反轉",
+      "curated_by": "jesse",
+      "skeleton": "單張：爆紅新聞畫面（雙人蒙面爬上紐約高樓頂的病毒照）裝進拍立得框 → 疊品牌拼貼系統（橘底、黑白城市剪貼、紙質感）→ 拍立得下緣一句手寫反轉（You don't have to climb a building to tell your friend you love them）→ caption 只有兩個字收梗（Just text）。",
+      "why_it_works": "搭現成注意力波：病毒畫面自帶識別度，看到就想起那條新聞，省掉 hook 成本；一句手寫反轉把奇觀翻譯成人人可做的小事（爬樓示愛→傳訊息就好），情緒從獵奇轉溫情；caption 兩字＝笑點經濟學，圖負責鋪陳、caption 負責收梗，留言區自然接力（The power of love）；單張零製作負擔卻拿到全帳號 outlier 互動（2K 讚 vs 原型輪播 880），證明格式槓桿 > 內容量。",
+      "evidence": {
+        "source_account": "@timeleft（verified）",
+        "post_url": "https://www.instagram.com/p/DaTAHGKsrLr/",
+        "engagement": "2K 讚、33 留言、53 分享（2026-07-03 發布；Jesse 登入截圖實測）",
+        "seen_at": "2026-07-29"
+      },
+      "fit_for_lava": "高適配但有紀律要求：適用「非財經非賽事」的爆紅畫面（Lava 時事橋接配額仍每日≤1、股市運動禁出）；Lava 版收梗句庫如『不用爬大樓，見一面就好——Just meet.』；新聞照屬引用式使用，發布必標注出處（法遵規則）；拼貼視覺可併入 timeleft 系設計語言（與 tpl-archetype-catalog-carousel 同系統）。",
+      "status": "validated",
+      "used_by": []
+    },
+    {
+      "id": "tpl-manifest-proof-chain",
+      "type": "post",
+      "hook_type": "人物證言鏈（先立論再翻轉）",
+      "skeleton": "cover 用人物高質感肖像＋一句斷言式標題（他想要，他得到）＋副標點出反差（不相信顯化的都信了）→ 中段連續 3-5 張『成真證據』，每張一個具體事件（某年說想演某角色，三年後真的成了；說自己是某遊戲粉絲，說完就成了電影主演）→ 關鍵轉折張：『但如果全歸功於運氣，好像把事情想得太簡單了』→ 合作者證言鏈 3-4 張（同事／導演／前輩各說一句對他的評價，都指向同一個特質）→ 收尾張把兩段合一：真正的關鍵不是許願，是讓自己變成配得上願望的人",
+      "why_it_works": "雙層結構製造兩次認知翻轉。第一層用『巧合多到不像巧合』的證據堆疊把讀者拉進『真的有這種事』的驚訝，這一段負責留住滑動；第二層立刻自我否定，把讀者從獵奇拉回可操作的洞察，這一段負責分享與收藏。證言鏈的說服力來自第三方而非當事人自述，每個證言者身分越權威、說的話越具體（不是『他很棒』而是『他反覆練同一場打戲一整天』），可信度越高。收尾把勵志雞湯轉成行為準則，讓讀者有東西可帶走。",
+      "evidence": {
+        "source_account": "@heavenravenofficial（Tom Holland 顯化篇）",
+        "post_url": "https://www.instagram.com/heavenravenofficial/",
+        "engagement": "27.7k 讚、60 留言（Jesse 2026-08-12 截圖佐證；帳號其他貼文同欄目制）",
+        "seen_at": "2026-08-12"
+      },
+      "fit_for_lava": "高適配但需改造。Lava 不談明星八卦，但『說出口＋知行合一』的框架可直接移植到約會情境：想要一段關係卻從不主動邀約、把期待放在心裡等對方讀懂。人選改用關係心理學者、行為經濟學者或有具體事蹟的公眾人物；證言鏈改用研究者的同儕評價或受試者回饋。注意 Lava 禁說教，收尾要落在『你可以做的一件小事』而非人生道理。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-persona-column",
+      "type": "post",
+      "hook_type": "固定欄目制人物誌",
+      "skeleton": "封面左下角固定欄目標籤（HR 人物／HR 快看 這類 2-4 字欄目名）→ 大字主標兩行，第一行拋狀態、第二行給反差（25 歲登上時代雜誌／她是富豪的許願池）→ 主標下方一條細分隔線＋一句吐槽式副標（頂級社畜使命必達）→ 底圖為人物高質感照片滿版，右下角固定品牌 logo 與網址",
+      "why_it_works": "欄目標籤是帳號級資產：讀者滑到第三次就認得出這是誰家的內容，不用看帳號名。固定的視覺骨架（左下標籤／兩行主標／細線／吐槽副標／右下 logo）讓每篇成本極低卻高度一致，這是內容帳號規模化的關鍵。吐槽式副標提供第二層閱讀樂趣，把嚴肅人物報導變成可分享的社交貨幣。",
+      "evidence": {
+        "source_account": "@heavenravenofficial",
+        "post_url": "https://www.instagram.com/heavenravenofficial/",
+        "engagement": "unverified（欄目制觀察自 Jesse 2026-08-12 提供的帳號版面截圖，單帖數據未公開）",
+        "seen_at": "2026-08-12"
+      },
+      "fit_for_lava": "適配且應優先實作。Lava 目前每篇封面都在重新發明版型，導致總檢一直說『節奏停滯』。建立 2-3 個固定欄目（例如「Lava 觀察」談現象、「Lava 人物」談人、「Lava 研究」談研究）就能同時解決辨識度與生產效率。欄目名須繁中 2-4 字，吐槽副標要台灣語感，不可翻譯腔。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-concept-decode",
+      "type": "post",
+      "hook_type": "概念拆解（心靈／做事風格／魅力）",
+      "skeleton": "cover 拋一個近期在流行但沒人講清楚的概念詞（顯化／鬆弛感／鈍感力／鏡子理論）＋一句挑釁式定調（真正的顯化從來不是許願）→ 第 2 張給概念的通俗誤解（大家以為是這樣）→ 第 3-5 張給拆解：這個概念真正在講的機制是什麼，各附一個具體場景或研究→ 第 6 張給反例：什麼情況下這個概念會害了你→ 品牌張把概念接到 Lava 的世界觀→ 收尾給一個今天就能做的動作",
+      "why_it_works": "概念詞自帶搜尋熱度與討論慣性，但市面上多數內容停在『這個詞是什麼意思』。拆解到機制層再給反例，會讓讀者覺得『這篇跟其他篇不一樣』，這是收藏的主要動機。反例張特別重要：它讓內容從勵志轉成判斷力，也避開了 Lava 禁忌的雞湯感。",
+      "evidence": {
+        "source_account": "@heavenravenofficial（顯化篇的第二層結構）",
+        "post_url": "https://www.instagram.com/heavenravenofficial/",
+        "engagement": "27.7k 讚（該篇同時具備人物與概念兩層，此模板抽取其概念層）",
+        "seen_at": "2026-08-12"
+      },
+      "fit_for_lava": "極高適配。約會場域的概念詞供給充足（situationship／breadcrumbing／鬆弛感／安全型依附），且 Lava 的『不聊天』主張本身就是一個需要被拆解的概念。訊號源已接 Psyche 與 PsyArXiv，可供機制層的研究支撐。",
+      "status": "candidate",
+      "used_by": []
+    },
+    {
+      "id": "tpl-monthly-magazine-issue",
+      "type": "post",
+      "hook_type": "月刊式輪播（一期講完六件事）",
+      "skeleton": "cover=固定版式雜誌封面：頁首刊名英文＋年月、Lava 字標、中文刊名大字，去背人物層壓在刊名之上（標題在人後面），底部三項目錄行＋橘圓箭頭＋往右滑 → 內頁 6 張=每張一件事，共用一條跨頁連續的視覺骨架（英文字帶橫跨七張，或奶油色塊兩張一組連續），每張＝章節標＋主標＋兩行說明＋一個節慶版畫圖素 → 尾板=品牌收束句＋免責。全套 1080×1350，HTML/CSS 出圖。",
+      "why_it_works": "刊名與版式每月不變，讀者記住的是「Lava 每個月出一本」而不是六個零散功能，把單次貼文轉成可預期的連載，回訪成本降到零。跨頁連續（字母溢出到下一張左緣、色塊橫跨兩張）在滑動時提供「還沒完」的結構訊號，撐住 swipe-through 完成率——輪播分發的主訊號。雜誌語言（細線、留白、大字壓圖）在滿是模板貼文的動態牆上形成材質差異，三秒可辨；節慶版畫圖素提供 AI 照片以外的一層人味。",
+      "evidence": {
+        "source_account": "@lava_dating 自家",
+        "post_url": "",
+        "engagement": "七夕月（2026-08）首次採用、中秋月（2026-09）定案；互動數據 unverified",
+        "seen_at": "2026-09-17"
+      },
+      "fit_for_lava": "直接適配，且已有完整產線：prompt 與版面數值在 config/monthly-issue-kit.md，生成器在 九月號/gen_cover.py、gen_B2.py、gen_C2.py。限制：一期要六件真的值得講的事，功能不夠就不要硬湊成月刊。封面照需人物腰上構圖＋頭在上三分之一，且要去背，不能用一般素材庫照片。",
+      "curated_by": "claude/2026-09-17 中秋月第三輪定案",
+      "status": "validated",
+      "used_by": [
+        "2026-08 七夕月",
+        "2026-09 中秋月"
+      ]
+    }
+  ]
 }

@@ -1,1 +1,13 @@
-{"note":"捨棄清單〔2026-09-08〕。這裡的主題選題雷達不准再提。由 post.discard 事件寫入，哨兵是唯一寫者。","discarded":[]}
+{
+  "note": "捨棄清單〔2026-09-08〕。這裡的主題選題雷達不准再提。由 post.discard 事件寫入，哨兵是唯一寫者。",
+  "discarded": [
+    {
+      "post_id": "20260824-Rizz進了牛津詞典但r",
+      "topic": "「Rizz」進了牛津詞典。但 r Tinder 上最多人在問的是：Rizz 到底能不能學？還是你天生就有或沒有",
+      "topic_norm": "Rizz進了牛津詞典但rTinder上最多人在問的是：Rizz到底能不能學還是你天生就有或沒有",
+      "ts": "2026-09-08T19:54:29+08:00",
+      "reason": "tom holland 最紅的時間已經過了",
+      "status_was": "approved"
+    }
+  ]
+}

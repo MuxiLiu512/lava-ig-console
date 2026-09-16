@@ -1,0 +1,1452 @@
+{
+ "generated_at": "2026-09-10T00:12:46+08:00",
+ "source_count": 33,
+ "ok_count": 33,
+ "signal_count": 184,
+ "sources": [
+  {
+   "id": "r_relationships",
+   "name": "r/relationships",
+   "tier": "global_forum",
+   "url": "https://www.reddit.com/r/relationships/hot/.rss",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "If he doesn't propose on our anniversary, I might be devastated.",
+     "url": "https://www.reddit.com/r/relationships/comments/1waxlq2/if_he_doesnt_propose_on_our_anniversary_i_might/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My boyfriend has become obsessed with being around “important” people and I don't know how to talk to him about it",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbpgr5/my_boyfriend_has_become_obsessed_with_being/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Me (F23) boyfriend (M28)o",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbps35/me_f23_boyfriend_m28o/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Should I (33f) break up with my bf (33m) of 10 years?",
+     "url": "https://www.reddit.com/r/relationships/comments/1wb6nkv/should_i_33f_break_up_with_my_bf_33m_of_10_years/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "My girlfriend of 7 years cheated on me and I don’t know what to do",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbpfu1/my_girlfriend_of_7_years_cheated_on_me_and_i_dont/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "I(26F) love him(25M) but I dont see a future with him",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbo8es/i26f_love_him25m_but_i_dont_see_a_future_with_him/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Do I break up with my girlfriend?",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbc8hi/do_i_break_up_with_my_girlfriend/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "breach of trust (24 m 22f)",
+     "url": "https://www.reddit.com/r/relationships/comments/1wblfq0/breach_of_trust_24_m_22f/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "I (F22) am more sensitive than my boyfriend (M23) how do i deal with that?",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbf89k/i_f22_am_more_sensitive_than_my_boyfriend_m23_how/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Discussed relationship/future timelines with my (30F) boyfriend (41M) and it went terribly",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbakm6/discussed_relationshipfuture_timelines_with_my/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "Should I break up",
+     "url": "https://www.reddit.com/r/relationships/comments/1wbdt9v/should_i_break_up/",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "I (f18) keep making my partner (f18) feel like a failure when communicating feelings.",
+     "url": "https://www.reddit.com/r/relationships/comments/1wb8tna/i_f18_keep_making_my_partner_f18_feel_like_a/",
+     "note": "",
+     "rel": "raw"
+    }
+   ],
+   "ms": 2042
+  },
+  {
+   "id": "cosmo",
+   "name": "Cosmopolitan",
+   "tier": "global_pop",
+   "url": "https://www.cosmopolitan.com/rss/all.xml/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "Are Drew Starkey and Cailee Spaeny Dating? Here’s Why Fans Think They Had a Falling Out With Odessa A’zion",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73644294/drew-starkey-cailee-spaeny-odessa-azion-drama-timeline/",
+     "note": "What is happening???",
+     "rel": "strong"
+    },
+    {
+     "title": "Did Lady Gaga Elope? Friends Say Singer’s “Disappeared” and Think She Secretly Got Married",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73651060/did-lady-gaga-elope/",
+     "note": "Um, update?!",
+     "rel": "weak"
+    },
+    {
+     "title": "Catch Up on Jenna Dewan and Steve Kazee’s Relationship Timeline Ahead of Her ‘Dancing With the Stars’ Debut",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73643318/jenna-dewan-steve-kazee-relationship-timeline/",
+     "note": "They had a memorable encounter long before they started dating.",
+     "rel": "strong"
+    },
+    {
+     "title": "If You Loved ‘The Last Sunrise,’ You Have to Watch These 5 Films",
+     "url": "https://www.cosmopolitan.com/entertainment/movies/a73643753/films-like-the-last-sunrise/",
+     "note": "Between love triangles, first crushes, and big secrets, these romances could become your next obsession.",
+     "rel": "strong"
+    },
+    {
+     "title": "All the Essential Info on Phoebe Dynevor’s Husband, YouTuber Cameron Fuller",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73643576/phoebe-dynevor-husband-cameron-fuller/",
+     "note": "Yep, they’re fully married now!",
+     "rel": "weak"
+    },
+    {
+     "title": "Tyler Cameron and Tate Madden’s Relationship Timeline, From Hometown Friends to Fiancés",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73642129/tyler-cameron-tate-madden-relationship-timeline/",
+     "note": "They’re on the same page about being in love, but not about how they met.",
+     "rel": "strong"
+    },
+    {
+     "title": "Phaedra Parks and CT Tamburello’s ‘Traitors’ Showmance Turned Real-Life Relationship, Explained",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73641270/phaedra-parks-ct-tamburello-relationship/",
+     "note": "Let’s hope they’re both faithful! (I’ll show myself out...)",
+     "rel": "strong"
+    },
+    {
+     "title": "Anthony Mackie and ‘Southern Charm’ Star Venita Aspen Spark Romance Rumors at the U.S. Open",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73642076/anthony-mackie-venita-aspen-dating/",
+     "note": "But…are they dating?",
+     "rel": "strong"
+    },
+    {
+     "title": "Tom Bateman and Daisy Ridley’s Relationship Timeline Is Literally a Hollywood Rom-Com",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73570768/tom-bateman-daisy-ridley-relationship-timeline/",
+     "note": "Could they be any more perfect?",
+     "rel": "strong"
+    },
+    {
+     "title": "Rachael Kirkconnell and Shane Parton Spark Dating Rumors (Again) With Sneaky Social Media Posts",
+     "url": "https://www.cosmopolitan.com/entertainment/tv/a73641391/rachael-kirkconnell-shane-parton-dating/",
+     "note": "Is this a soft launch???",
+     "rel": "strong"
+    },
+    {
+     "title": "Is Julia Stiles Married? All About the ‘DWTS’ Star’s Sweet Love Life",
+     "url": "https://www.cosmopolitan.com/entertainment/celebs/a73640638/who-is-julia-stiles-husband-preston-j-cook/",
+     "note": "The cutest!",
+     "rel": "weak"
+    },
+    {
+     "title": "Who Everyone in the ‘Dancing With the Stars’ Season 35 Cast Is Dating",
+     "url": "https://www.cosmopolitan.com/entertainment/tv/a73581888/dancing-with-the-stars-season-35-cast-dating-married/",
+     "note": "Find out who’s married, engaged, and available.",
+     "rel": "strong"
+    }
+   ],
+   "ms": 746
+  },
+  {
+   "id": "dazed",
+   "name": "Dazed",
+   "tier": "global_pop",
+   "url": "https://www.dazeddigital.com/rss",
+   "ok": true,
+   "count": 3,
+   "items": [
+    {
+     "title": "Nicola Dinan and Ione Gamble on the power of admitting your desires",
+     "url": "https://www.dazeddigital.com/life-culture/article/70643/1/nicola-dinan-and-ione-gamble-on-admitting-your-desires-hinge-no-ordinary-love?utm_source=Link&utm_medium=Link&utm_campaign=RSSFeed&utm_term=nicola-dinan-and-ione-gamble-on-the-power-of-admitting-your-desires",
+     "note": "The writers dive into rejecting the cultural fear of cringe, having the patience to get to know someone and other lessons from working with a real Hinge couple ",
+     "rel": "weak"
+    },
+    {
+     "title": "Is it possible to decentre sexual attraction in dating?",
+     "url": "https://www.dazeddigital.com/beauty/article/70919/1/possible-decentre-physical-sexual-attraction-dating-appearance-sex-love?utm_source=Link&utm_medium=Link&utm_campaign=RSSFeed&utm_term=is-it-possible-to-decentre-sexual-attraction-in-dating",
+     "note": "When it comes to dating, looks are often everything – but whether it’s possible, or even desirable, to change that is up for debate",
+     "rel": "strong"
+    },
+    {
+     "title": "Why queer horror fans are obsessed with Leviticus",
+     "url": "https://www.dazeddigital.com/film-tv/article/70913/1/leviticus-adrian-chiarella-cult-queer-horror-romance-love-story-interview-2026?utm_source=Link&utm_medium=Link&utm_campaign=RSSFeed&utm_term=why-queer-horror-fans-are-obsessed-with-leviticus",
+     "note": "Adrian Chiarella’s cult horror turns teenage desire into something deadly – here, the director talks to Nick Chen about romance, real-world homophobia and why f",
+     "rel": "strong"
+    }
+   ],
+   "ms": 1219
+  },
+  {
+   "id": "elle",
+   "name": "ELLE",
+   "tier": "global_pop",
+   "url": "https://www.elle.com/rss/all.xml/",
+   "ok": true,
+   "count": 6,
+   "items": [
+    {
+     "title": "Margaret Qualley Stars in the Unexpected Romance Love of Your Life—See an Exclusive First Look",
+     "url": "https://www.elle.com/culture/movies-tv/a73607624/love-of-your-life-margaret-qualley-first-look-photos/",
+     "note": "Qualley and director Rachel Morrison walk us through the new film ahead of its TIFF premiere.",
+     "rel": "strong"
+    },
+    {
+     "title": "Ciara and Russell Wilson’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a44393915/ciara-russell-wilson-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    },
+    {
+     "title": "All About Jason Bard Yarmosky, Katie Holmes’s Boyfriend",
+     "url": "https://www.elle.com/culture/celebrities/a72024638/who-is-jason-bard-yarmosky-katie-holmes-boyfriend/",
+     "note": "",
+     "rel": "weak"
+    },
+    {
+     "title": "All About Antonia Roumelioti, Luke Newton’s Girlfriend",
+     "url": "https://www.elle.com/culture/celebrities/a61110583/who-is-antonia-roumelioti-luke-newton-girlfriend/",
+     "note": "",
+     "rel": "weak"
+    },
+    {
+     "title": "All About Taylor Goldsmith, Mandy Moore’s Musician Husband",
+     "url": "https://www.elle.com/culture/movies-tv/a28984943/who-is-taylor-goldsmith-mandy-moore-husband/",
+     "note": "She recently spoke about how they balance parenthood with their romantic relationship.",
+     "rel": "strong"
+    },
+    {
+     "title": "Nicola and Brooklyn Peltz Beckham’s Complete Relationship Timeline",
+     "url": "https://www.elle.com/culture/celebrities/a63411228/brooklyn-beckham-nicola-peltz-relationship-timeline/",
+     "note": "",
+     "rel": "strong"
+    }
+   ],
+   "ms": 1110
+  },
+  {
+   "id": "gq",
+   "name": "GQ",
+   "tier": "global_pop",
+   "url": "https://www.gq.com/feed/rss",
+   "ok": true,
+   "count": 2,
+   "items": [
+    {
+     "title": "Testosterone, Divorce, and Big-Ass Trucks: On the Trail With James Talarico and Ken Paxton",
+     "url": "https://www.gq.com/story/james-talarico-ken-paxton-midterms-2026",
+     "note": "One guy has a decent chance of flipping the state blue. The other guy excels at surviving scandal. Their Senate race shows what the rest of America gets wrong a",
+     "rel": "strong"
+    },
+    {
+     "title": "A Gay Hookup App Introduced Me to My Barber. 9 Years Later We’re Still at It",
+     "url": "https://www.gq.com/story/gay-hookup-app-barber-loyalty",
+     "note": "For nearly a decade, one man has cut my hair, heard my worst dating stories, and somehow become one of the steadiest fixtures in my life.",
+     "rel": "strong"
+    }
+   ],
+   "ms": 3254
+  },
+  {
+   "id": "highsnobiety",
+   "name": "Highsnobiety",
+   "tier": "global_pop",
+   "url": "https://www.highsnobiety.com/feed",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 695
+  },
+  {
+   "id": "hypebeast",
+   "name": "Hypebeast",
+   "tier": "global_pop",
+   "url": "https://hypebeast.com/feed",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 813
+  },
+  {
+   "id": "i_d",
+   "name": "i-D",
+   "tier": "global_pop",
+   "url": "https://i-d.co/feed",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 1521
+  },
+  {
+   "id": "interview",
+   "name": "Interview Magazine",
+   "tier": "global_pop",
+   "url": "https://www.interviewmagazine.com/feed",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Love Island’s Trinity Tatum is America’s Princess",
+     "url": "https://www.interviewmagazine.com/television/trinity-tatum-love-island-bryce-alakai-brinity-reunion",
+     "note": "Before the bombshell Love Island USA Season 8 reunion, we caught up with the show's breakout star to talk wigs, Wattpad, and why it's Brinity to infinity.\nThe p",
+     "rel": "weak"
+    }
+   ],
+   "ms": 8075
+  },
+  {
+   "id": "papermag",
+   "name": "PAPER",
+   "tier": "global_pop",
+   "url": "https://www.papermag.com/feeds/feed.rss",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Troye Sivan's Love Letter to Women (and the Gay Guys Who Love Them)",
+     "url": "https://www.papermag.com/troye-sivan-women-song",
+     "note": "Matthew broke his zoned-out, screen-scrolling silence with an “Aww.” \nWe sat across from each other on my new kitchen’s counter tops. He came with me to pick up",
+     "rel": "weak"
+    }
+   ],
+   "ms": 1131
+  },
+  {
+   "id": "psyche",
+   "name": "Psyche",
+   "tier": "global_pop",
+   "url": "https://psyche.co/feed.rss",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "Two actors, no director, one dreamlike play",
+     "url": "https://psyche.co/turning-points/how-acting-in-a-surreal-play-in-my-pyjamas-healed-my-heartache",
+     "note": "After a painful breakup, I found myself agreeing to perform in a surreal play, dressed in my pyjamas- by Melissa MatthewsonRead on Psyche",
+     "rel": "strong"
+    }
+   ],
+   "ms": 452
+  },
+  {
+   "id": "refinery29",
+   "name": "Refinery29",
+   "tier": "global_pop",
+   "url": "https://www.refinery29.com/en-us/rss.xml",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 533
+  },
+  {
+   "id": "thecut",
+   "name": "The Cut / NY Mag",
+   "tier": "global_pop",
+   "url": "https://feeds.feedburner.com/nymag/fashion",
+   "ok": true,
+   "count": 2,
+   "items": [
+    {
+     "title": "No One Disrespects Megan Thee Stallion",
+     "url": "http://www.thecut.com/article/megan-thee-stallion-will-not-be-disprespected-klay-thompson.html?utm_source=rss&utm_medium=social_acct&utm_campaign=feed-part",
+     "note": "Reflecting on her breakup with Klay Thompson, she said, “I cannot be minimized. I will not be behind any man.”",
+     "rel": "strong"
+    },
+    {
+     "title": "Phaedra Parks and Her ‘Castle Daddy’ Are Red Carpet Official",
+     "url": "http://www.thecut.com/article/phaedra-parks-ct-tamburello-dating.html?utm_source=rss&utm_medium=social_acct&utm_campaign=feed-part",
+     "note": "Two years after meeting on The Traitors, Parks and CT Tamburello have confirmed their relationship.",
+     "rel": "strong"
+    }
+   ],
+   "ms": 3538
+  },
+  {
+   "id": "vogue",
+   "name": "Vogue",
+   "tier": "global_pop",
+   "url": "https://www.vogue.com/feed/rss",
+   "ok": true,
+   "count": 6,
+   "items": [
+    {
+     "title": "Viva Las Lower East Side! Inside NYC’s New Vegas-Style Wedding Chapel",
+     "url": "https://www.vogue.com/article/inside-sure-thing-chapel-nyc-lower-east-side",
+     "note": "Vogue pays a visit to the newly opened Sure Thing Chapel on Allen Street to meet the couples tying the knot there—as well as Hellvis, the signature Elvis impers",
+     "rel": "weak"
+    },
+    {
+     "title": "Ever Anderson Walks in Her Mother Mila Jovovich’s Footsteps",
+     "url": "https://www.vogue.com/article/ever-anderson-walks-in-her-mother-mila-jovovich-s-footsteps",
+     "note": "In vintage and Christian Dior, the Father Jo actress made romance blossom on the red carpet.",
+     "rel": "strong"
+    },
+    {
+     "title": "Penélope Cruz and Javier Bardem Are Coming for the Clooneys’ Couple Style Crown",
+     "url": "https://www.vogue.com/article/penelope-cruz-and-javier-bardem-venice-film-festival",
+     "note": "The famously private couple save their joint red carpet appearances for their most special moments: as co-stars in the rapturously received “Bunker,” this was o",
+     "rel": "weak"
+    },
+    {
+     "title": "4 Wedding Guest Dress Trends You’ll See at the Chicest Nuptials This Fall",
+     "url": "https://www.vogue.com/article/top-wedding-guest-dress-trends",
+     "note": "From Art Deco influence to voluminous silhouettes, these are the four wedding guest dress trends you’ll see at all the chicest weddings in 2026, plus the best w",
+     "rel": "weak"
+    },
+    {
+     "title": "Who Is Katie Holmes’s Artist Boyfriend?",
+     "url": "https://www.vogue.com/article/i-want-what-they-have-katie-holmes-and-jason-bard-yarmosky",
+     "note": "Once I put in my contacts this morning and learned that Holmes’s new man’s name was Jason Bard—not “Jason Brad” as I had feared—I fell in love with the pairing.",
+     "rel": "weak"
+    },
+    {
+     "title": "The Bride Mirrored Her Mother’s Wedding Day Looks at Her Backyard Wedding in Santa Barbara",
+     "url": "https://www.vogue.com/slideshow/sarah-hancock-and-mattie-conaghan-wedding",
+     "note": "Sarah Hancock married Matthew Conaghan in a Danielle Frankel gown that she says “made me feel like Grace Kelly,” with a celebration at the bride’s family home t",
+     "rel": "weak"
+    }
+   ],
+   "ms": 2905
+  },
+  {
+   "id": "aeon",
+   "name": "Aeon 長文",
+   "tier": "mind",
+   "url": "https://aeon.co/feed.rss",
+   "ok": true,
+   "count": 7,
+   "items": [
+    {
+     "title": "Our eloquent hands",
+     "url": "https://aeon.co/essays/what-palmistry-and-medicine-have-always-had-in-common",
+     "note": "Physicians reject palmistry as nonsense. But reading the creases of our palms for hidden meaning is what doctors have always done- by Alison BashfordRead on Aeo",
+     "rel": "strong"
+    },
+    {
+     "title": "Neuroqueering on the lawn",
+     "url": "https://aeon.co/essays/neuroqueer-expression-and-the-limits-of-social-tolerance",
+     "note": "Hans Christian Andersen’s tantrum in Charles Dickens’s garden was a case of ‘too muchness’, emotions bursting past respectability- by Siobhan Unwin & Kathryne F",
+     "rel": "strong"
+    },
+    {
+     "title": "The Singapore strategies",
+     "url": "https://aeon.co/essays/did-singapore-go-wrong-in-its-quest-for-food-security",
+     "note": "The nation’s water is secure, but its food is another matter: lessons from the city-state in efficiency versus self-sufficiency- by Peter A CoclanisRead on Aeon",
+     "rel": "strong"
+    },
+    {
+     "title": "A vocabulary for the future: touch",
+     "url": "https://aeon.co/videos/repulsion-at-the-core-of-attraction-on-the-paradox-of-touch",
+     "note": "A mesmerising blend of words and images make touch a doorway into the deepest questions in physics and philosophy- by Aeon VideoWatch on Aeon",
+     "rel": "strong"
+    },
+    {
+     "title": "The neverending house",
+     "url": "https://aeon.co/essays/the-art-of-dwelling-in-santiagos-self-built-homes",
+     "note": "The self-built homes of Santiago are precarious and ever changing. They are, always and at once, being and becoming- by Consuelo AraosRead on Aeon",
+     "rel": "strong"
+    },
+    {
+     "title": "Mecca and the mall",
+     "url": "https://aeon.co/essays/my-pilgrimage-to-mecca-in-the-age-of-the-golf-cart-and-mall",
+     "note": "In a bid for spiritual renewal, I made a pilgrimage to Islam’s holy city. Almost everything I expected to see was gone- by Azania Imtiaz PatelRead on Aeon",
+     "rel": "strong"
+    },
+    {
+     "title": "Bouncy brothers",
+     "url": "https://aeon.co/videos/a-tale-of-brotherhood-bouncy-castles-and-the-american-dream",
+     "note": "Two brothers struggle to keep a bouncy house business afloat in this nuanced portrait of family and the pursuit of success- by Aeon VideoWatch on Aeon",
+     "rel": "strong"
+    }
+   ],
+   "ms": 371
+  },
+  {
+   "id": "bigthink",
+   "name": "Big Think",
+   "tier": "mind",
+   "url": "https://bigthink.com/feed/",
+   "ok": true,
+   "count": 4,
+   "items": [
+    {
+     "title": "Leadership isn’t natural — but making intelligent decisions can be learned",
+     "url": "https://bigthink.com/business/leadership-intelligence/",
+     "note": "Every day as a leader brings an endless flow of judgment calls, big and small. Even as you read this, you might be weighing where to focus your team’s efforts t",
+     "rel": "strong"
+    },
+    {
+     "title": "Can we be certain that time really exists?",
+     "url": "https://bigthink.com/starts-with-a-bang/does-time-exist-182965/",
+     "note": "From both a philosophical and a scientific perspective, we’re taught to doubt, question, and be skeptical of everything. Even the reality of ourselves and our o",
+     "rel": "strong"
+    },
+    {
+     "title": "This powerful belief can help you accomplish more",
+     "url": "https://bigthink.com/books/agency-and-self-efficacy/",
+     "note": "In the 1970s, academic psychology escaped from studying just behavior to start studying mental life. Albert Bandura, the father of this cognitive revolution wit",
+     "rel": "strong"
+    },
+    {
+     "title": "How to build a leadership development program that actually works",
+     "url": "https://bigthink.com/plus/how-to-build-a-leadership-development-program-that-works/",
+     "note": "Most leadership development programs fail quietly. Designed to look great on paper, rarely built to change behavior in practice. Jessica Lane, Director of Enabl",
+     "rel": "strong"
+    }
+   ],
+   "ms": 499
+  },
+  {
+   "id": "fs_blog",
+   "name": "Farnam Street",
+   "tier": "mind",
+   "url": "https://fs.blog/feed/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "Steve Jobs in Exile",
+     "url": "https://fs.blog/knowledge-project-podcast/geoffrey-cain/",
+     "note": "We all know the Steve Jobs who came back in the late 1990s and saved Apple from becoming a footnote. And we’ve all heard the story of how, in 1985, he was pushe",
+     "rel": "raw"
+    },
+    {
+     "title": "Roblox CEO: How to Make Better Decisions by Fixing Yourself First",
+     "url": "https://fs.blog/knowledge-project-podcast/david-baszucki/",
+     "note": "David Baszucki is the co-founder and CEO of Roblox, a platform built around a simple idea: give people the tools and incentives to create together. In this shor",
+     "rel": "raw"
+    },
+    {
+     "title": "The Mindset Behind Building a Great Little Business | Brad Jacobs",
+     "url": "https://fs.blog/knowledge-project-podcast/brad-jacobs-2/",
+     "note": "This summer, I’m revisiting one of my favorite episodes. If you haven’t heard it, now is the time. If you have, it’s a classic and worth listening to again. Bra",
+     "rel": "raw"
+    },
+    {
+     "title": "[Outliers] John D. Rockefeller: The Principles Behind The Greatest Fortune in History",
+     "url": "https://fs.blog/knowledge-project-podcast/outliers-john-d-rockefeller/",
+     "note": "John D. Rockefeller became the richest man the world had ever known by thinking differently about business, competition, and family. This episode isn’t just the",
+     "rel": "raw"
+    },
+    {
+     "title": "Truth Over Feelings: Inside Opendoor’s Turnaround",
+     "url": "https://fs.blog/knowledge-project-podcast/kaz-nejatian/",
+     "note": "No company decides to fail. It drifts there one comfortable lie at a time. Kaz Nejatian took over Opendoor when it was just months away from bankruptcy and set ",
+     "rel": "raw"
+    },
+    {
+     "title": "The Best Summary of Atlas Shrugged",
+     "url": "https://fs.blog/atlas-shrugged-summary/",
+     "note": "A brief, no-fluff, summary of Atlas Shrugged by Ayn Rand. If you want to learn how capitalist countries become socialist, this book will help you. Let’s dive in",
+     "rel": "raw"
+    },
+    {
+     "title": "The Mindset That Unlocks Your Full Potential | Dr. Gio Valiante",
+     "url": "https://fs.blog/knowledge-project-podcast/performance-psychologist-mindset/",
+     "note": "For the next hour, the world’s top mindset coach is your coach too. Dr. Gio Valiante is the world’s leading performance psychologist. We discuss why most people",
+     "rel": "raw"
+    },
+    {
+     "title": "How to Repair and Nourish Your Gut | Dr. Giulia Enders",
+     "url": "https://fs.blog/knowledge-project-podcast/dr-giulia-enders/",
+     "note": "Dr. Giulia Enders has changed the way millions of people think about the human body. As a physician, microbiome researcher, and bestselling author, she has spen",
+     "rel": "raw"
+    },
+    {
+     "title": "Mental Models That Change How You Think | Bill Gurley",
+     "url": "https://fs.blog/knowledge-project-podcast/bill-gurley/",
+     "note": "Bill Gurley spent years on Wall Street, built his career as a partner at Benchmark, worked through Uber’s hypergrowth era, and now serves on the board of the Sa",
+     "rel": "raw"
+    },
+    {
+     "title": "Proven, Better, New: Mark Pincus on the Rules of Innovation",
+     "url": "https://fs.blog/knowledge-project-podcast/mark-pincus/",
+     "note": "Mark Pincus is the creator behind Farmville and Words with Friends. He built Zynga into one of the biggest gaming companies in the world and helped shape the ea",
+     "rel": "raw"
+    },
+    {
+     "title": "[Outliers] Chung Ju-yung: The Hyundai Founder Who Put a Country on His Back",
+     "url": "https://fs.blog/knowledge-project-podcast/outliers-chung-ju-yung/",
+     "note": "Chung Ju-yung built Hyundai because he refused to be stopped. He is known for turning Hyundai into an industrial force that helped transform South Korea. The co",
+     "rel": "raw"
+    },
+    {
+     "title": "Winston Weinberg: Speed, Stress, and Better Decisions",
+     "url": "https://fs.blog/knowledge-project-podcast/winston-weinberg/",
+     "note": "Winston Weinberg is the CEO and co-founder of Harvey, the AI platform built for the legal industry. Available Now: YouTube | Spotify | Apple Podcasts | Transcri",
+     "rel": "raw"
+    }
+   ],
+   "ms": 448
+  },
+  {
+   "id": "lithub",
+   "name": "Literary Hub",
+   "tier": "mind",
+   "url": "https://lithub.com/feed/",
+   "ok": true,
+   "count": 3,
+   "items": [
+    {
+     "title": "Lit Hub Daily: September 9, 2026",
+     "url": "https://lithub.com/lit-hub-daily-september-9-2026/",
+     "note": "“Language is something that is practiced and learned and something that you can be awful at, and also something that you can get better at. But the only way tha",
+     "rel": "strong"
+    },
+    {
+     "title": "Learning From Shame: R.F. Kuang on Diaspora, Language and Writing Young Protagonists",
+     "url": "https://lithub.com/learning-from-shame-r-f-kuang-on-diaspora-language-and-writing-young-protagonists/",
+     "note": "R.F. Kuang is, in the best sense, a literary chameleon. Each one of her novels presents a different setting and dynamic, but her oeuvre is unified by careful th",
+     "rel": "strong"
+    },
+    {
+     "title": "A Legal History of Anti-Chinese Racism in America",
+     "url": "https://lithub.com/a-legal-history-of-anti-chinese-racism-in-america/",
+     "note": "In the history of the Chinese in America, the border has caught our attention and held it. Chinese migrants’ attempts to cross the border, and America’s attempt",
+     "rel": "strong"
+    }
+   ],
+   "ms": 1027
+  },
+  {
+   "id": "marginalian",
+   "name": "The Marginalian",
+   "tier": "mind",
+   "url": "https://www.themarginalian.org/feed/",
+   "ok": true,
+   "count": 9,
+   "items": [
+    {
+     "title": "The True Purpose of Tarot",
+     "url": "https://www.themarginalian.org/2026/09/06/alejandro-jorodowsky-tarot/",
+     "note": "“Nothing like this has ever happened before or will ever happen again,” a friend said to me about a lucky turn of events — a statement that struck me as touchin",
+     "rel": "strong"
+    },
+    {
+     "title": "How to Apologize: Reflections on Forgiveness, Self-Forgiveness, and the Vulnerabilities of Being Human",
+     "url": "https://www.themarginalian.org/2026/09/06/how-to-apologize-ellen-bass/",
+     "note": "\"It's permitted to receive solace for whatever you did or didn't do, pitiful, beautiful human.\"",
+     "rel": "strong"
+    },
+    {
+     "title": "Erich Fromm’s 6 Rules of Listening: The Great Humanistic Philosopher and Psychologist on the Art of Unselfish Understanding",
+     "url": "https://www.themarginalian.org/2026/09/06/erich-fromm-the-art-of-listening/",
+     "note": "\"Understanding and loving are inseparable. If they are separate, it is a cerebral process and the door to essential understanding remains closed.\"",
+     "rel": "strong"
+    },
+    {
+     "title": "How to Reconcile Your Most Painful Mistakes: The Life-Shaping Difference Between Regret and Remorse",
+     "url": "https://www.themarginalian.org/2026/09/05/regret-remorse/",
+     "note": "You know it, that awful moment your coherent self-image shatters and a part of you, shadowy and untended, splits off to cause harm and havoc as the rest of you ",
+     "rel": "strong"
+    },
+    {
+     "title": "How Two Souls Can Interact with One Another: Simone de Beauvoir on Love and Friendship",
+     "url": "https://www.themarginalian.org/2026/09/05/simone-de-beauvoir-love-friendship/",
+     "note": "It is in relationships that we discover both our depths and our limits, there that we anneal ourselves and transcend ourselves, there that we are hurt the most ",
+     "rel": "strong"
+    },
+    {
+     "title": "How to Handle Provocation: Bertrand Russell’s Remarkable Response to a Fascist",
+     "url": "https://www.themarginalian.org/2026/09/04/bertrand-russell-oswald-mosley/",
+     "note": "\"The emotional universes we inhabit are so distinct, and in deepest ways opposed, that nothing fruitful or sincere could ever emerge from association between us",
+     "rel": "strong"
+    },
+    {
+     "title": "The Power of Being a Threshold Person: Liminality, Communitas, and the Anti-structures of Possibility",
+     "url": "https://www.themarginalian.org/2026/09/04/turner-liminality-communitas/",
+     "note": "“All things are so very uncertain, and that’s exactly what makes me feel reassured,” one of the Moomins observes in Tove Jansson’s masterwork of philosophy disg",
+     "rel": "strong"
+    },
+    {
+     "title": "Wendell Berry on Solitude and the Two Great Enemies of Creative Work",
+     "url": "https://www.themarginalian.org/2026/09/03/wendell-berry-pride-despair-solitude/",
+     "note": "\"True solitude is found in the wild places, where one is without human obligation. One’s inner voices become audible... In consequence, one responds more clearl",
+     "rel": "strong"
+    },
+    {
+     "title": "The Paradox of Knowing Who You Are and What You Want: Cristina Campo on Fairy Tales, Time, and the Meaning of Maturity",
+     "url": "https://www.themarginalian.org/2026/09/02/cristina-campo-unforgivable-fairy-tales/",
+     "note": "“If you want your children to be intelligent, read them fairy tales,” Einstein reportedly told one mother who wished for her son to become a scientist. “If you ",
+     "rel": "strong"
+    }
+   ],
+   "ms": 1362
+  },
+  {
+   "id": "nextbigidea",
+   "name": "Next Big Idea 書摘",
+   "tier": "mind",
+   "url": "https://nextbigideaclub.com/magazine/feed/",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "The 10 Best Business Books of Fall",
+     "url": "https://nextbigideaclub.com/magazine/10-best-business-books-fall/61217/",
+     "note": "These 10 books offer fresh ideas for navigating the way we work now, and where we’re headed next.\nThe 10 Best Business Books of Fall - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "Want to Be a Billionaire CEO? Choose Your Industry Carefully",
+     "url": "https://nextbigideaclub.com/magazine/want-billionaire-ceo-choose-industry-carefully-bookbite/61206/",
+     "note": "The importance of timing.\nWant to Be a Billionaire CEO? Choose Your Industry Carefully - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "5 Science-Backed Ways to Become a Better Leader",
+     "url": "https://nextbigideaclub.com/magazine/5-science-backed-ways-become-better-leader-bookbite/61194/",
+     "note": "Behavioral science can make us better leaders by helping us work with, rather than against, the way our brains naturally operate.\n5 Science-Backed Ways to Becom",
+     "rel": "raw"
+    },
+    {
+     "title": "The Next Big Idea Club’s September 2026 Must-Read Books",
+     "url": "https://nextbigideaclub.com/magazine/next-big-idea-clubs-september-2026-must-read-books/61161/",
+     "note": "The most compelling and thought-provoking titles scheduled for release in September 2026.\nThe Next Big Idea Club’s September 2026 Must-Read Books - Next Big Ide",
+     "rel": "raw"
+    },
+    {
+     "title": "5 Ways to Get Surprisingly Good at Reading a Room",
+     "url": "https://nextbigideaclub.com/magazine/5-ways-get-surprisingly-good-reading-room-bookbite/61151/",
+     "note": "The more consequential the room, the worse we are at reading it.\n5 Ways to Get Surprisingly Good at Reading a Room - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "America’s Most Annoying Tax Isn’t Paid in Dollars",
+     "url": "https://nextbigideaclub.com/magazine/americas-annoying-tax-isnt-paid-dollars-bookbite/61140/",
+     "note": "Americans do way too much paperwork.\nAmerica’s Most Annoying Tax Isn’t Paid in Dollars - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "5 Things Sensitive People Wish Everyone Understood",
+     "url": "https://nextbigideaclub.com/magazine/5-things-sensitive-people-wish-everyone-understood-bookbite/61128/",
+     "note": "Emotional sensitivity doesn't look the same for everyone.\n5 Things Sensitive People Wish Everyone Understood - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "Why You Keep Putting off Things You Actually Want to Do",
+     "url": "https://nextbigideaclub.com/magazine/keep-putting-off-things-actually-want-bookbite/61116/",
+     "note": "Procrastinators care more, not less.\nWhy You Keep Putting off Things You Actually Want to Do - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "Your Favorite Artist Is a Terrible Person. Now What?",
+     "url": "https://nextbigideaclub.com/magazine/favorite-artist-terrible-person-now-bookbite/61105/",
+     "note": "Art has always helped us confront the darkest parts of human nature.\nYour Favorite Artist Is a Terrible Person. Now What? - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "The Hidden Psychology of Infidelity",
+     "url": "https://nextbigideaclub.com/magazine/hidden-psychology-infidelity-bookbite/61094/",
+     "note": "Scientific psychology has done a complete about-face.\nThe Hidden Psychology of Infidelity - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "5 Things Your Future Brain Wants You to Do Today",
+     "url": "https://nextbigideaclub.com/magazine/5-things-future-brain-wants-today-bookbite/61083/",
+     "note": "You are the architect of your brain's destiny.\n5 Things Your Future Brain Wants You to Do Today - Next Big Idea Club",
+     "rel": "raw"
+    },
+    {
+     "title": "Five Lessons I Learned About Caregiving From Wilderness Survival",
+     "url": "https://nextbigideaclub.com/magazine/five-lessons-learned-caregiving-wilderness-survival-bookbite/61072/",
+     "note": "Caregivers deserve a map.\nFive Lessons I Learned About Caregiving From Wilderness Survival - Next Big Idea Club",
+     "rel": "raw"
+    }
+   ],
+   "ms": 1033
+  },
+  {
+   "id": "ted",
+   "name": "TED Talks",
+   "tier": "mind",
+   "url": "https://feeds.feedburner.com/TEDTalks_video",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "This is what the future of media looks like | Hamish McKenzie",
+     "url": "https://www.ted.com/talks/hamish_mckenzie_this_is_what_the_future_of_media_looks_like?rss=172BB350-0205",
+     "note": "What if the polarizing mess of social media, clickbait headlines and addictive algorithms isn't a breakdown of media but a transition to something better? Subst",
+     "rel": "strong"
+    },
+    {
+     "title": "What if the climate movement felt like a house party? | Matthew Phillips",
+     "url": "https://www.ted.com/talks/matthew_phillips_what_if_the_climate_movement_felt_like_a_house_party?rss=172BB350-0205",
+     "note": "You’re invited into a bold new vision for the climate movement — a space of trust and honesty, where artists inspire action and everyone has a role to play. Soc",
+     "rel": "strong"
+    },
+    {
+     "title": "The poetry of family | Duncan Keegan",
+     "url": "https://www.ted.com/talks/duncan_keegan_the_poetry_of_family?rss=172BB350-0205",
+     "note": "Duncan Keegan doesn't consider himself a poet, but this deeply beautiful talk shows otherwise. With simple grace and quiet eloquence, he celebrates family, conn",
+     "rel": "strong"
+    },
+    {
+     "title": "You are the bridge to the next generation | Ndinini Kimesera Sikar",
+     "url": "https://www.ted.com/talks/ndinini_kimesera_sikar_you_are_the_bridge_to_the_next_generation?rss=172BB350-0205",
+     "note": "\"Do you know what you want to preserve for the next generation?\" asks community leader Ndinini Kimesera Sikar. Drawing on her experience growing up in a family ",
+     "rel": "strong"
+    },
+    {
+     "title": "A new vision of healthy masculinity | Davonte Green",
+     "url": "https://www.ted.com/talks/davonte_green_a_new_vision_of_healthy_masculinity?rss=172BB350-0205",
+     "note": "What does it actually mean to be a \"real man\" these days? In a personal talk packed with actionable advice, youth advocate Davonte Green challenges age-old ster",
+     "rel": "strong"
+    },
+    {
+     "title": "Feeling stressed? The answer isn’t to “just relax” | Aditi Nerurkar",
+     "url": "https://www.ted.com/talks/aditi_nerurkar_feeling_stressed_the_answer_isn_t_to_just_relax?rss=172BB350-0205",
+     "note": "Stress isn’t all bad. In fact, the right kind can fuel growth instead of burnout. In this actionable discussion, physician and author Aditi Nerurkar shares tips",
+     "rel": "strong"
+    },
+    {
+     "title": "The AI arsenal that could stop World War III | Palmer Luckey",
+     "url": "https://www.ted.com/talks/palmer_luckey_the_ai_arsenal_that_could_stop_world_war_iii?rss=172BB350-0205",
+     "note": "AI in warfare is no longer hypothetical; it's inevitable, says Palmer Luckey, an inventor and founder of the defense technology company Anduril Industries. He t",
+     "rel": "strong"
+    },
+    {
+     "title": "The role of art and forgiveness in democracy | Marc Bamuthi Joseph and Wendy Whelan",
+     "url": "https://www.ted.com/talks/marc_bamuthi_joseph_and_wendy_whelan_the_role_of_art_and_forgiveness_in_democracy?rss=172BB350-0205",
+     "note": "Can art pave the way for a politically divided nation to move forward? Artist, cultural strategist and TED Fellow Marc Bamuthi Joseph reflects on the role of ar",
+     "rel": "strong"
+    },
+    {
+     "title": "Your inner fire is your greatest strength | Xiye Bastida",
+     "url": "https://www.ted.com/talks/xiye_bastida_your_inner_fire_is_your_greatest_strength?rss=172BB350-0205",
+     "note": "Hope isn’t just a feeling, but a skill you can practice, explains climate activist Xiye Bastida. Taking cues from the resilience of nature, she shows why trusti",
+     "rel": "strong"
+    },
+    {
+     "title": "How music helped me live through long COVID | Joshua Roman",
+     "url": "https://www.ted.com/talks/joshua_roman_how_music_helped_me_live_through_long_covid?rss=172BB350-0205",
+     "note": "An accomplished cellist, TED Fellow Joshua Roman has practiced his instrument daily since he was a child — until a severe case of long COVID almost robbed him o",
+     "rel": "strong"
+    },
+    {
+     "title": "Norse mythology’s climate lessons for the future | Lauren Fadiman",
+     "url": "https://www.ted.com/talks/lauren_fadiman_norse_mythology_s_climate_lessons_for_the_future?rss=172BB350-0205",
+     "note": "What if ancient myths are warnings for the future? Contemporary folklorist Lauren Fadiman explores how the Norse tale of Ragnarök may stem from real climate cat",
+     "rel": "strong"
+    },
+    {
+     "title": "How \"Bluey\" teaches adults to be playful again | Sarina Petersen",
+     "url": "https://www.ted.com/talks/sarina_petersen_how_bluey_teaches_adults_to_be_playful_again?rss=172BB350-0205",
+     "note": "\"Bluey,\" the Australian children's show, is a global phenomenon. But how did a cartoon for kids become a smash hit with adults, too? Sarina Petersen, who studie",
+     "rel": "strong"
+    }
+   ],
+   "ms": 512
+  },
+  {
+   "id": "psyarxiv",
+   "name": "PsyArXiv 預印本",
+   "tier": "research",
+   "url": "https://api.osf.io/v2/preprints/?filter[provider]=psyarxiv&sort=-date_published&page[size]=30",
+   "ok": true,
+   "count": 5,
+   "items": [
+    {
+     "title": "Dense-Sampling the Menstrual Cycle Using EEG in a Single Case Study: Relating Markers of Cognitive Control and Mental Health",
+     "rel": "weak",
+     "url": "https://osf.io/preprints/psyarxiv/mxtqh_v4/",
+     "note": "Introduction. Women may show menstrual cycle-related susceptibility to depressive and anxiety symptoms during estradiol (E2) and progesterone (P4) fluctuations. Electrophysiological (EEG) markers, inc",
+     "metric": "2026-09-09"
+    },
+    {
+     "title": "Social relationships and cultural context shape predictions about third-party intervention",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/e9h5g_v1/",
+     "note": "Children acquire substantial knowledge about social relationships early in development, but less is known about how they use this knowledge when relationships conflict with other social and moral cons",
+     "metric": "2026-09-09"
+    },
+    {
+     "title": "Dynamic Structural Equation Modeling in Blimp",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/br4za_v2/",
+     "note": "Dynamic structural equation modeling (DSEM) provides a framework for studying temporal processes and individual differences in intensive longitudinal data. This article presents a tutorial on fitting ",
+     "metric": "2026-09-08"
+    },
+    {
+     "title": "Imposter Syndrome Among Students of Color: The Role of Perfectionism and Emotion Regulation",
+     "rel": "strong",
+     "url": "https://osf.io/preprints/psyarxiv/8hd6r_v2/",
+     "note": "Objective: This study examined the relationships among imposter syndrome, maladaptive perfectionism, and emotion regulation strategies among students of color. It also investigated whether expressive ",
+     "metric": "2026-09-08"
+    },
+    {
+     "title": "It takes two: Social anxiety and partner influences comparably shape social interaction behavior",
+     "rel": "weak",
+     "url": "https://osf.io/preprints/psyarxiv/t4ksm_v1/",
+     "note": "When interacting face-to-face, people exchange verbal and non-verbal signals that jointly shape the course of an interaction. Research seeking to understand variability in social interaction behavior ",
+     "metric": "2026-09-08"
+    }
+   ],
+   "ms": 5790
+  },
+  {
+   "id": "cna_life",
+   "name": "中央社 生活",
+   "tier": "tw_local",
+   "url": "https://feeds.feedburner.com/rsscna/lifehealth",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "疾管署設「性健康友善資源地圖」　提供匿名篩檢與諮詢",
+     "url": "https://www.cna.com.tw/news/ahel/202609090150.aspx",
+     "note": "（中央社記者沈佩瑤台北9日電）網紅Joeman與前女友感情風波，性病檢查話題受關注。疾管署表示，應全程正確使用保險套等安全性行為，有感染疑慮時，可善用「性健康友善資源地圖」，提供匿名篩檢或匿名諮詢資源。",
+     "rel": "strong"
+    }
+   ],
+   "ms": 2703
+  },
+  {
+   "id": "cna_social",
+   "name": "中央社 社會",
+   "tier": "tw_local",
+   "url": "https://feeds.feedburner.com/rsscna/social",
+   "ok": true,
+   "count": 1,
+   "items": [
+    {
+     "title": "眾量級頻道糾紛家寧一審無罪　Andy、新北檢皆提上訴",
+     "url": "https://www.cna.com.tw/news/asoc/202609090308.aspx",
+     "note": "（中央社記者曹亞沿新北9日電）網紅Andy與前女友家寧爆頻道帳務糾紛，日前一審判決出爐，家寧改頻道密碼無罪，母親曾淑惠業務侵占判刑1年8月，不可易科罰金。據了解，Andy與新北檢皆已提起上訴。",
+     "rel": "strong"
+    }
+   ],
+   "ms": 3288
+  },
+  {
+   "id": "ettoday",
+   "name": "ETtoday",
+   "tier": "tw_local",
+   "url": "https://feeds.feedburner.com/ettoday/realtime",
+   "ok": true,
+   "count": 3,
+   "items": [
+    {
+     "title": "當懸疑大師奈沙馬蘭碰上《手札情緣》作者　《滯留》難道跟鬼談戀愛",
+     "url": "https://star.ettoday.net/news/3234530",
+     "note": "從1999年《靈異第六感》（The Sixth Sense）開創了鬼片新境界、結局一定要大逆轉的公式以來，導演M.奈沙馬蘭（ M. Night Shyamalan）一直以恐怖題材擅長，讓觀眾坐立難安。 《詳全文...》",
+     "rel": "strong"
+    },
+    {
+     "title": "周年慶NOKE忠泰推京都話題展　誠品生活松菸開「咖啡電音趴」",
+     "url": "https://fashion.ettoday.net/news/3234614",
+     "note": "秋季百貨周年慶陸續開跑，商場跳脫單純買賣，改以展覽與派對體驗吸客成風潮。大直 NOKE 忠泰樂生活 10 月端出「潮玩藝｜城市馬戲」主題，首波直接將去年在京都引發話題的設計展《C-GRAPHIC/TAIPEI》搬到台灣；誠品生活松菸周年慶結合歐美「Coffee Rave」咖啡電音派對與二手市集，讓消費者逛街採購也能享受",
+     "rel": "strong"
+    },
+    {
+     "title": "Joeman復出新片玩雨衣哏引戰　陶晶瑩批「得意忘形」：女生被拖下水",
+     "url": "https://star.ettoday.net/news/3234583",
+     "note": "百萬YouTuber Joeman因感情風波停工，僅約2周後就宣布復出，但因在新片中拿爭議的關鍵字玩哏，又引前女友蕭伊再度開戰。對此，女星陶晶瑩與媒體人吳小帽在Podcast進行討論，陶晶瑩直言Joeman團隊似乎「得意忘形」，舉動確實會讓女方更受傷。 《詳全文...》",
+     "rel": "strong"
+    }
+   ],
+   "ms": 3953
+  },
+  {
+   "id": "gnews_dating",
+   "name": "Google News 交友軟體",
+   "tier": "tw_local",
+   "url": "https://news.google.com/rss/search?q=%E4%BA%A4%E5%8F%8B%E8%BB%9F%E9%AB%94&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "交友軟體約見面！泰女深夜到男網友住處約會　換完衣服就猝死 - NOWnews今日新聞",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LdWtpdnY5T3ZUUzBwNVBlbzQxT0hIRFpZcmRqVm9GNGtEWks2czMyQW9DZ2VOaGRRM0llbWVFQ0Y5VXI4Y0M4R1g1cUVJN2FqWlHSAVJBVV95cUxNS3VraXZ2OU92VFMwcDVQZW80MU9ISERaWXJkalZvRjRrRFpLNnMzMkFvQ2dlTmhkUTNJZW1lRUNGOVVyOGNDOEdYNXFFSTdhalpR?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1LdWtpdnY5T3ZUUzBwNVBlbzQxT0hIRFpZcmRqVm9GNGtEWks2czMyQW9DZ2VOaGRRM0llbWVFQ0Y5VXI4Y0M4R1g1cUVJN2FqWl",
+     "rel": "raw"
+    },
+    {
+     "title": "想脫單必看2026交友軟體TOP 10！Tinder、探探、Omi誰奪冠？慢慢聊、看顏值都有選擇｜每日調查 - 網路溫度計 DailyView",
+     "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFB2QzREVTkzZmFFY3FzZVQtUFllY2xQVHhrTXpEX2l0b0FGNXhvU1FZb0NRT3duckRpUUE5TTJHUzVpcnpGYWc?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTFB2QzREVTkzZmFFY3FzZVQtUFllY2xQVHhrTXpEX2l0b0FGNXhvU1FZb0NRT3duckRpUUE5TTJHUzVpcnpGYWc?oc=5\" target=\"",
+     "rel": "raw"
+    },
+    {
+     "title": "年齡門檻沒擋住13歲少女！交友軟體「限17歲」反成嘉義男無罪理由 - UDN",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAtRExlYWdmN0Z5OWk4T3pKZFlxaGlYSktHZHdpWERsY1FHX09aWlBUbG9lT05fM0tyVG5CWkUzeFlJRjBCaHRsOG1uck5RMTB20gFWQVVfeXFMTkN1RDJoYjFNYlBjeFpZOFVKQWE5N1YwUldTV1NWXzFvVXdqdnI4a09nMlhGQXpXTUNsRjVhTG9md29Cb1NBeDZQamJ0dWpKWEpaZnRMeXc?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTFAtRExlYWdmN0Z5OWk4T3pKZFlxaGlYSktHZHdpWERsY1FHX09aWlBUbG9lT05fM0tyVG5CWkUzeFlJRjBCaHRsOG1uck5RMTB20g",
+     "rel": "raw"
+    },
+    {
+     "title": "未滿16歲卻能在交友APP配對！嘉義男約砲少女挨告　法院「2原因」判無罪 | 社會 | CTWANT - CTWANT",
+     "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LWGJyQ2tSMldJWGFKV0NENGo5VVg3S0g5d2g0OFJaYkJLclBwSzZ2NFBPQzhEM0xIMlkzcTd2VnY5RkhsV0k5VVluVVpVQ1nSAVRBVV95cUxPNTl0MmNEV0hUdjB5ZXU2aUY3WXdmQzlCZDJUZ2JzVG9HbFQyN3pYSjVPRERUOExGbWVVcWdZeHdkaU5nSy1nZVVzNTh4TmNqNkdWSXU?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LWGJyQ2tSMldJWGFKV0NENGo5VVg3S0g5d2g0OFJaYkJLclBwSzZ2NFBPQzhEM0xIMlkzcTd2VnY5RkhsV0k5VVluVVpVQ1nSAV",
+     "rel": "raw"
+    },
+    {
+     "title": "交友軟體7分鐘速配國中生 嘉義男激戰後才知真相 法官根據這原因判無罪 - 鏡報",
+     "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1MQnp6djV3eVQ0bUc2bXF4STZxMnF0cVpaRjU0UzlLaVc5eVAtc3A2YUF2NFEwdkFZX3ptRU16OGY2Z0FrVEdWZlVlWjZ3dmx2aEE?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE1MQnp6djV3eVQ0bUc2bXF4STZxMnF0cVpaRjU0UzlLaVc5eVAtc3A2YUF2NFEwdkFZX3ptRU16OGY2Z0FrVEdWZlVlWjZ3dmx2aE",
+     "rel": "raw"
+    },
+    {
+     "title": "探探、Bumble輸了！2026年輕人最愛交友軟體TOP 10冠軍是它：優質對象多、脫單機率高| 網路溫度計DailyView | 風生活 - 風傳媒",
+     "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5YdnNlWWJBejNLTUJUQkUwUzAxeFZRa1NKR0w5cUhBNVlTVl9PYUJKc0RnZU4ySDc4REdVRGcwNmp4ZlJ0LVptQWdGeUlZS0RY?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE5YdnNlWWJBejNLTUJUQkUwUzAxeFZRa1NKR0w5cUhBNVlTVl9PYUJKc0RnZU4ySDc4REdVRGcwNmp4ZlJ0LVptQWdGeUlZS0RY?o",
+     "rel": "raw"
+    },
+    {
+     "title": "男子約13歲少女床戰判無罪 因她假個資騙過交友軟體「年齡門檻」 - 中時新聞網",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8yVEJlNFVPMFhDNFB1dTJZZk9pR040OWJMNkR3ZURIMlZJZ3MtT3dkcEJ0OXU3VGpwbmxOSE9PMUpuamx0eGNrUktDckR5OUZWallmNFFLS3l4QnBtc2VvdUkzRjZHSlF2NzFYODJn?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE8yVEJlNFVPMFhDNFB1dTJZZk9pR040OWJMNkR3ZURIMlZJZ3MtT3dkcEJ0OXU3VGpwbmxOSE9PMUpuamx0eGNrUktDckR5OUZWal",
+     "rel": "raw"
+    },
+    {
+     "title": "交友軟體讓人患得患失？擔心自己擇偶標準太高或太低？心理師教如何應對 - 健康醫療網",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KNHZWTGZIWDVRMXZFWHp1UFpkRnB6Qmk2dFJpaXJIT3cySU5TVTVpNGNXNFZNd2pCTDJrbjYzcUVIWnBMQkRMQks2SHBRY2V1OUIyS0J3?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE9KNHZWTGZIWDVRMXZFWHp1UFpkRnB6Qmk2dFJpaXJIT3cySU5TVTVpNGNXNFZNd2pCTDJrbjYzcUVIWnBMQkRMQks2SHBRY2V1OU",
+     "rel": "raw"
+    },
+    {
+     "title": "全球最大同志交友軟體由中企持有時洩露個資 今支付11億元和解 - 自由時報",
+     "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jYlY5WnZRY0twSHo0WDkyM3h0d2dpejRzRDlTeVB6U1BKek9YaEJFNjlZeklQd3JqWHlGc3ItY21ZX3JOQThFRkdYMTlzMUpXd1NWR0hDYVNReVU3S3JEY2xOOFhoRkxSR3hN0gFrQVVfeXFMT2NiVjladlFjS3BIejRYOTIzeHR3Z2l6NHNEOVN5UHpTUEp6T1hoQkU2OVl6SVB3cmpYeUZzci1jbVlfck5BOEVGR1gxOXMxSld3U1ZHSENhU1F5VTdLckRjbE44WGhGTFJHeE0?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE9jYlY5WnZRY0twSHo0WDkyM3h0d2dpejRzRDlTeVB6U1BKek9YaEJFNjlZeklQd3JqWHlGc3ItY21ZX3JOQThFRkdYMTlzMUpXd1",
+     "rel": "raw"
+    },
+    {
+     "title": "5年見90名網友全見光死！33歲母單女嘆「醜女沒資格談戀愛嗎」 網揪1盲點：用錯APP | 鏡週刊 - LINE TODAY",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE82dDdNdDE0MGc2d0UzazFrOW16WHRTbGdWUE00dl9reVVrYm5jYWE1amlYN3JPYkwtSm1hV1JXSWF2S2pYMXFRcDRuTUhDS3FnUzFCaC1n?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE82dDdNdDE0MGc2d0UzazFrOW16WHRTbGdWUE00dl9reVVrYm5jYWE1amlYN3JPYkwtSm1hV1JXSWF2S2pYMXFRcDRuTUhDS3FnUz",
+     "rel": "raw"
+    },
+    {
+     "title": "社媒症候群・二｜上交友軟件，是尋找真愛，還是出售焦慮？ - 香港01",
+     "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxPcW9nLVRnenN1YVQxVEtZNVdDWmlPTTdfT3dmU20wSG5rUHVHc29LaW0wdnVzcW00S0M5VlZ2TEZBOUtLQkFUUFV5bU5HXzNsQWs5bXFyRDkzdEU0YXJqeGl0dWhwdVhEZnI2NzdqRnF6VC1MM3F6ekU5akFMMkZvSm1ybjJ1NVNnYlN1Z3ZnV3NYY1FJOE1mSlNKcldvb2lLVjBmTUVGanJ6OS03X3AyZHpCQkVGRmtzN2RBdXZWSjVCLWtIWnMyMTlBc21PNzdQUnZ0Rkg0ckRIWThTN2NZaEZ2Z1BiaEJQX3ZiOGpfc3JGN0NiS2MwRXl1czFrMUMyNkhDZEJNcWFBOGRxZkdOT0VFM3pQbm1QTXJ4ZV9faC1oR1RzSzNmM0xtTXFyRXZSbzlBR3ZjcTJ2X0xBRGNwaXdwQ0JBN1JqZVpLMVE4bnQybFRwaDRmOEdyNkpNdzRKMjBlSXQ4Q0NSbWVYcWFDR0dZN1hpQ2VZQVo3dE5BS2tDNWM?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMigwNBVV95cUxPcW9nLVRnenN1YVQxVEtZNVdDWmlPTTdfT3dmU20wSG5rUHVHc29LaW0wdnVzcW00S0M5VlZ2TEZBOUtLQkFUUFV5bU5HXzNsQW",
+     "rel": "raw"
+    },
+    {
+     "title": "玩交友軟體跟少女曖昧、發生關係還拍裸照！台南警備隊長險失業…下場曝 - Yahoo新聞",
+     "url": "https://news.google.com/rss/articles/CBMivwNBVV95cUxQb1k0N2hUbV9DRzBCbXZqY0FyTHVMbXI2ZkhVblRkMTEtS05yTkl5LUZEQ2lLU2NJVElGMHNsMjR4WTdpMWNKWUVJaDEtdy02UV83c0lPOXBMaXlPendHLXNram8tUW9fV0tmSWxxNFZNZXdTam0wZGtCcTR1VFEyc0FOWThfT2V1bnlORG5SeThZZDhvUzcxVWxYZmVkMlVJcTJ4RU5lcUpYVnNvTGw4TzRCS3RQamVyeUR6ZVVDYnhLaVk2ZXZUVmU5V3hCVVZuVUhqTFlfZEV4MUxiVVRMTkZsQnRqVnBocTNHaFZaX0JHUDd4NGI2WkZmVjRjNGJCa1NlZkFnZVgwWXlsR3oxTy1fSjllYTdUYll2WkNxSG56eF9aWXJtY1B4emp6T3FON0NPd3FMazVzMmRXTG96Rk9lQURhMm1WeVg0NDV5bi1UZzItTUx6U3puZWJzc3l1VDB1UHBMTkRta0E2c3hnTjA4QzVBaHBnOUxUT3VMcm5RRkFTOVl1M085NHFmN283UDc1WXIxR0IwMHJqTjF1VE5HLXh5d2xLQWdmamdhejh0cjByVzJLZ3VoNk11bDA?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMivwNBVV95cUxQb1k0N2hUbV9DRzBCbXZqY0FyTHVMbXI2ZkhVblRkMTEtS05yTkl5LUZEQ2lLU2NJVElGMHNsMjR4WTdpMWNKWUVJaDEtdy02UV",
+     "rel": "raw"
+    }
+   ],
+   "ms": 619
+  },
+  {
+   "id": "gnews_dcard",
+   "name": "Google News Dcard熱帖",
+   "tier": "tw_local",
+   "url": "https://news.google.com/rss/search?q=dcard+%E6%84%9F%E6%83%85&hl=zh-TW&gl=TW&ceid=TW:zh-Hant",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "存股5年變提款機？女友嘴臉現形嚇壞他| 民視新聞網 - LINE TODAY",
+     "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nRTcySi0xc3hHb0RNVk5nLWtmZEY4LWhjZ3hFWk5HeXdpUVNwWl9VLWdQOGNwM0h5eGF4RWNVdzBFRTE4RHBuM2l6ZkNFdURLRGxhc2RB?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTE5nRTcySi0xc3hHb0RNVk5nLWtmZEY4LWhjZ3hFWk5HeXdpUVNwWl9VLWdQOGNwM0h5eGF4RWNVdzBFRTE4RHBuM2l6ZkNFdURLRG",
+     "rel": "raw"
+    },
+    {
+     "title": "性感照遭男友發到網路上 卡友批：很不尊重你｜Dcard熱門事件 - social-lab.cc",
+     "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNalBpNW80czdiTWxZa3Q2akVHeUNFTjJqNHo4NjJMeW5zRVVCemZHLXh1ZHBlcWlDTVlyTGdjbV84YzQyVzBJTzdXOFJSY0Rsc1ZzVUp6b25pM2xNLTlGM3RaUU91VU1VY3dDMThfeUVScXBBbWI2XzdTQ0lsRkFpMTYwbWVNVElpZFZBSzFROWFHcWdUakh4WDYzSmxxXzdsR2w0QlJzVFBQRVFUWEtyYVhuX19aWWtTb05IQVBtSGVMWkhEYnlIZk5XWVpwWngwTUM3WjltUHA4X3JqRFNSYVNmQTRPYWpSTmxvT0JsV3BCX1MxN1ZrLUtRWjZaMEtySEh2R3MwX2NEUjFpVGxyNS1oMkZ0UG5aaUhpb21Oa245SFFGYTUyWkI2NElHRFlqTFV0X2xpeGdNMzFuSTVTQ0RhVFY2VE5kZWxzODZncU5aYmk3TFNIbWdFa3VzRjQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMi3wJBVV95cUxNalBpNW80czdiTWxZa3Q2akVHeUNFTjJqNHo4NjJMeW5zRVVCemZHLXh1ZHBlcWlDTVlyTGdjbV84YzQyVzBJTzdXOFJSY0Rsc1",
+     "rel": "raw"
+    },
+    {
+     "title": "愛情長久不靠運氣！ 網友曝5大維繫法 - 花花日報",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GUEt0dWEyY2VCWjc5WHljeWlUZTBEczhsRHJZWGE0VmVqeGEyLUpHMnVVcVZVQkgyaF95Tmc1dDA5SWp3cDRPQjBaUkc3ZG9IcUZjQVhiQjBpSFhvZ2R2VnJsYXBnTmVzazBfZk5KMA?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1GUEt0dWEyY2VCWjc5WHljeWlUZTBEczhsRHJZWGE0VmVqeGEyLUpHMnVVcVZVQkgyaF95Tmc1dDA5SWp3cDRPQjBaUkc3ZG9IcU",
+     "rel": "raw"
+    },
+    {
+     "title": "擇偶條件總有前任影子？別幻想「完美縫合怪」 忽視缺點終會分手 - 香港01",
+     "url": "https://news.google.com/rss/articles/CBMisgNBVV95cUxPRkZFY3ZESjc5TTVLWldTck5WRjVMbjBSZmotcVo2bExqMm91c1gzU0dwZFJNUm9NallFeVNVWmV3dFZRLWVORGZBYUdHYzhoZHRmMmFaREU5aU9sbndkc0dBSzNWUVAzSHpaaFpFUF8wSlZaaVI5Qm1GcWlCTWtMRHo1djlZTDRtZk1oV2d0RC1nMXo0OEFyNjBGdW5vejhSOXhxWGl1Y2hoTGhiSjdrSDZyd2E5QXhrZjFjbFJXei1DUFJmeWE1YnZoVE45elBzOUlQQThZUUFrSmg2Q1JEeDlRdWhPbkpFNnU4MFYtSnRPSEhJNUx1Q2NVOFdteGo1WG1lcHFTeFNvNVhkSGxmcllTV3ZLaklIY2FnVll0Y0VTUXNVaENsQnRHQ1hPYUh6RF9LcmxTakJUS2w1RkVBSWRXb1plNTdCWm5WVnp0ckVPRXFZM3hHdkZrWHliTC0xRXEyakhaRTJiLTBXcXhkZXZZcjVEZlAxWTVycVVQSXlxaDBwTmVjall6d01GUHltZVhvVjNPUmluclZEaDhzMU00OWdaQkhSTnRUSGk5a1Jadw?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMisgNBVV95cUxPRkZFY3ZESjc5TTVLWldTck5WRjVMbjBSZmotcVo2bExqMm91c1gzU0dwZFJNUm9NallFeVNVWmV3dFZRLWVORGZBYUdHYzhoZH",
+     "rel": "raw"
+    },
+    {
+     "title": "幣安詐騙解析 2026｜PTT、Dcard 真實案例、交友詐騙手法整理 - Grenade 手榴彈",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8tU2hRd1c5c2U4VEtuUEhFWW5TX2txbXRZbksyY1JoUHVxRW93STVCMWhMbFkxMW5nNGRVbHI4Sm56Ui1fVEIxNFZheHhXeXloalIxYk9ZMk8xMlE?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE8tU2hRd1c5c2U4VEtuUEhFWW5TX2txbXRZbksyY1JoUHVxRW93STVCMWhMbFkxMW5nNGRVbHI4Sm56Ui1fVEIxNFZheHhXeXloal",
+     "rel": "raw"
+    },
+    {
+     "title": "交往3年！女友懷孕生下「混血寶寶」 工程師哭了 - TEEPR 亮新聞",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObWNGUE9jOGF5b3M4NmJjNUxTa1dIc21oV2hJUzVkWmF5aXExRlBQSWoxeVVFVEREMDUzanJ6R2ZBbHhRWXpUYVdkMXJDRnBXYWJJcW9Wb1M4X2Z1WFRpZUdhSEx1YmtHTjZGa1ZrNllpRS1EcmxRSG1scThaWjJZUFUwYzc?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxObWNGUE9jOGF5b3M4NmJjNUxTa1dIc21oV2hJUzVkWmF5aXExRlBQSWoxeVVFVEREMDUzanJ6R2ZBbHhRWXpUYVdkMXJDRnBXYW",
+     "rel": "raw"
+    },
+    {
+     "title": "「訊息一天一則」你能接受嗎？她怨：工程師男友上班像人間蒸發... - 四季線上4gTV",
+     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWFFGamgzYW1lNTZzYmF3YjlZdHN6SkdaSmk4Tm1UOUcyd0lZd2Z1YVlwS3N3ZVI3Yk5IRnF1dnFOWWk2MmZIVG5nUzlpVDlwVFg4ekpBUQ?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWFFGamgzYW1lNTZzYmF3YjlZdHN6SkdaSmk4Tm1UOUcyd0lZd2Z1YVlwS3N3ZVI3Yk5IRnF1dnFOWWk2MmZIVG5nUzlpVDlwVF",
+     "rel": "raw"
+    },
+    {
+     "title": "Dcard感情版「戀愛道具製造所」心理測驗！檢測感情狀態，找出2023脫單攻略| 生活發現 - Niusnews妞新聞",
+     "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9idDVXZUdGTXlONHlwdFpaNWd6Q0tmaUZkcUJtUnF5S0Y5a2FoU3ZoNEwwRllKTWluUDRXZGRnRHpBTEJoOUZPX0Yxcw?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiS0FVX3lxTE9idDVXZUdGTXlONHlwdFpaNWd6Q0tmaUZkcUJtUnF5S0Y5a2FoU3ZoNEwwRllKTWluUDRXZGRnRHpBTEJoOUZPX0Yxcw?oc=5\" t",
+     "rel": "raw"
+    },
+    {
+     "title": "《男生男生配》感情線大洗牌　Dcard網友敲碗這兩人配對成功 - 鏡週刊Mirror Media",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wNzNMVEMyNTdIUTJtVU12YlYza1RVLVJZel8yVkxJQk1mUGtTN3BvRFFwN28yRFBER1l3RTdEREJkbGVYazFsYjN1aG9wT016U1ZtclprbDRiTzDSAWBBVV95cUxPTWlnYmtBTkZITGFmdVpqMzJLRXlQRmVvY3l5NUVEQ0ViSEZCSWVPSVNSRUEybjBtWHVDTlpOd291X2xObXlUTnZCb0VsSElHUC1vRUpzN2tYMTZDZ085UG8?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wNzNMVEMyNTdIUTJtVU12YlYza1RVLVJZel8yVkxJQk1mUGtTN3BvRFFwN28yRFBER1l3RTdEREJkbGVYazFsYjN1aG9wT016U1",
+     "rel": "raw"
+    },
+    {
+     "title": "知三當三？Dcard大書小三黑歷史遭挖 2受害者出面爆料：是慣犯｜TTshow 台灣達人秀 - ttshow.tw",
+     "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtWFhtTmRvdmZXWjFUZ0FFT0UxUVNxT0hiNTluTFlOenJBbUZqT21MdDJ2UXRHTmN6LWo5czE5d3puWDh2WWhZNHNtV0M?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtWFhtTmRvdmZXWjFUZ0FFT0UxUVNxT0hiNTluTFlOenJBbUZqT21MdDJ2UXRHTmN6LWo5czE5d3puWDh2WWhZNHNtV0M?oc=5\" ",
+     "rel": "raw"
+    },
+    {
+     "title": "Dcard正妹新人疑搶閨密男友！感情黑歷史被挖出受害者不止一位- 娛樂 - 中時新聞網",
+     "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5McXhWRnJfTTE1MnY3ZzRUR3RvSTZ2ZThUMVFHend2TU5Kd3BFdHcyZlFJckNKVkZsczJKMUZCQzRCYWV6QWpWMmVUWGcwaVhuR0cxU0tfVm5qcTk5RV82YWlmeV9NYTU4akEza2FR?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5McXhWRnJfTTE1MnY3ZzRUR3RvSTZ2ZThUMVFHend2TU5Kd3BFdHcyZlFJckNKVkZsczJKMUZCQzRCYWV6QWpWMmVUWGcwaVhuR0",
+     "rel": "raw"
+    },
+    {
+     "title": "Dcard大書小三疑是慣犯！　黑歷史被挖「2受害者加碼爆料」曝光 - ETtoday星光雲",
+     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE94OVpJcy14SGdzWENTU25tbGNXMXVyUkJkMDFRYTJxUUs0YlctWlltMlRSU05HWklMcDhBVmgtQVFVWTEzY3FJRmVxeDlHUdIBTEFVX3lxTFBaWDV1ME1fVDVZeXE1Rkk4NzZFckpaRHhhZXFESVNqRFVvY3BFOWdKcHZqdlNqSk03V0lrSnJvNGQyWXRCLW1vWU45Zkg?oc=5",
+     "note": "<a href=\"https://news.google.com/rss/articles/CBMiTkFVX3lxTE94OVpJcy14SGdzWENTU25tbGNXMXVyUkJkMDFRYTJxUUs0YlctWlltMlRSU05HWklMcDhBVmgtQVFVWTEzY3FJRmVxeDlHUdIBTE",
+     "rel": "raw"
+    }
+   ],
+   "ms": 460
+  },
+  {
+   "id": "gtrends_tw",
+   "name": "Google Trends TW",
+   "tier": "tw_local",
+   "url": "https://trends.google.com/trending/rss?geo=TW",
+   "ok": true,
+   "count": 10,
+   "items": [
+    {
+     "title": "高鐵訂票",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "鄭欽文",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "布蘭特原油",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "雙十連假",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "天瀚做什麼",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "美債",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "通緝",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "阮經天",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "goog",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    },
+    {
+     "title": "臺北市議會",
+     "url": "https://trends.google.com/trending/rss?geo=TW",
+     "note": "",
+     "rel": "raw"
+    }
+   ],
+   "ms": 580
+  },
+  {
+   "id": "ltn",
+   "name": "自由時報",
+   "tier": "tw_local",
+   "url": "https://news.ltn.com.tw/rss/all.xml",
+   "ok": true,
+   "count": 0,
+   "items": [],
+   "ms": 203
+  },
+  {
+   "id": "ptt_boygirl",
+   "name": "PTT Boy-Girl",
+   "tier": "tw_local",
+   "url": "https://www.ptt.cc/bbs/Boy-Girl/index.html",
+   "ok": true,
+   "count": 7,
+   "items": [
+    {
+     "title": "[討論] 想試著追求女生又會被當成騷擾到底怎麼辦",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788755812.A.829.html",
+     "metric": "推 1"
+    },
+    {
+     "title": "Re: [討論] 追女生用死纏爛打有用嗎?",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788831459.A.1E1.html",
+     "metric": "推 11"
+    },
+    {
+     "title": "Re: [討論] 想試著追求女生又會被當成騷擾到底怎麼辦",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788836438.A.C2B.html",
+     "metric": "推 3"
+    },
+    {
+     "title": "[討論] 女生通常會怎麼看男生？",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788863057.A.834.html",
+     "metric": "推 5"
+    },
+    {
+     "title": "[閒聊] 追女生的思路",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788885759.A.CD3.html",
+     "metric": "推 15"
+    },
+    {
+     "title": "Re: [討論] 女生通常會怎麼看男生？",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788933482.A.C8D.html",
+     "metric": "推 6"
+    },
+    {
+     "title": "[心情] 她只說了一聲「喔」",
+     "url": "https://www.ptt.cc/bbs/Boy-Girl/M.1788959340.A.B4D.html",
+     "metric": "推 4"
+    }
+   ],
+   "ms": 183
+  },
+  {
+   "id": "ptt_marriage",
+   "name": "PTT marriage",
+   "tier": "tw_local",
+   "url": "https://www.ptt.cc/bbs/marriage/index.html",
+   "ok": true,
+   "count": 4,
+   "items": [
+    {
+     "title": "Re: [閒聊] 過年過節回婆家還是各自過",
+     "url": "https://www.ptt.cc/bbs/marriage/M.1788724522.A.79F.html",
+     "metric": "推 7"
+    },
+    {
+     "title": "Re: [閒聊] 過年過節回婆家還是各自過",
+     "url": "https://www.ptt.cc/bbs/marriage/M.1788864770.A.E9B.html",
+     "metric": "推 7"
+    },
+    {
+     "title": "[閒聊] 離婚灑花",
+     "url": "https://www.ptt.cc/bbs/marriage/M.1788932531.A.AE9.html",
+     "metric": "推 28"
+    },
+    {
+     "title": "[求助] 是我的問題嗎",
+     "url": "https://www.ptt.cc/bbs/marriage/M.1788961418.A.60E.html",
+     "metric": "推 2"
+    }
+   ],
+   "ms": 2275
+  },
+  {
+   "id": "ptt_women",
+   "name": "PTT WomenTalk",
+   "tier": "tw_local",
+   "url": "https://www.ptt.cc/bbs/WomenTalk/index.html",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "婚禮鬼故事 - 2 時光倒帶",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788932856.A.89C.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "婚禮鬼故事 -  3 我很聰明的",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788932925.A.622.html",
+     "metric": "推 1"
+    },
+    {
+     "title": "婚禮鬼故事 - 4 你可以大方點",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788933061.A.8EF.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "婚禮鬼故事 - 5 敬酒",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788933976.A.94E.html",
+     "metric": "推 1"
+    },
+    {
+     "title": "婚禮鬼故事 - 6 紅包可以退嗎？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788935114.A.6C5.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "婚禮鬼故事-7 送客",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788936769.A.2E4.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "[閒聊] 存一堆錢卻沒後代？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788944245.A.766.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "[討論] 如何避免飲料被下藥",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788952777.A.DBF.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "[閒聊] 台男駕駛普遍不愛花錢停車？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788959016.A.7A6.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "[閒聊] 有沒有人覺得很多女生聊天常忽略重要資訊",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788961061.A.F93.html",
+     "metric": "推 1"
+    },
+    {
+     "title": "Re: [閒聊] 台男駕駛普遍不愛花錢停車？",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788967638.A.C4B.html",
+     "metric": "推 0"
+    },
+    {
+     "title": "Re: [閒聊] 有沒有人覺得很多女生聊天常忽略重要資訊",
+     "url": "https://www.ptt.cc/bbs/WomenTalk/M.1788968201.A.CC2.html",
+     "metric": "推 2"
+    }
+   ],
+   "ms": 1150
+  },
+  {
+   "id": "womany",
+   "name": "女人迷",
+   "tier": "tw_local",
+   "url": "https://womany.net/read/feed",
+   "ok": true,
+   "count": 12,
+   "items": [
+    {
+     "title": "AI 時代什麼最稀缺？聲歷其境：語音能複製，但人走過的經歷與真實無法被取代",
+     "url": "https://womany.net/read/article/33517?ref=rss",
+     "note": "當 AI 在幾秒內生成解答、聲線越來越自然，我們為什麼還想聽真人說話？讓聲歷其境帶你重新思考，AI 時代下「人」的獨特力量。🙌🏻",
+     "rel": "raw"
+    },
+    {
+     "title": "總是委屈自己？黃嘉千給討好型人格的實用建言：卸下標籤，活出底氣｜與軒軒講 EP50",
+     "url": "https://womany.net/read/article/33516?ref=rss",
+     "note": "本集《與軒軒講》中，演員黃嘉千分享了從早期的「玉女」歌手，到後來在戲劇與綜藝節目中帶給大眾無數歡笑的「女丑」形象，自己是如何揭開這些人物設定，從迎合他人的期待，逐步走向找回個人界線的漫長過程。",
+     "rel": "raw"
+    },
+    {
+     "title": "裸辭台灣演藝圈、赴美從零開始：Janet 三心態找回人生主動權｜與軒軒講 EP51",
+     "url": "https://womany.net/read/article/33515?ref=rss",
+     "note": "本集《與軒軒講》Janet（謝怡芬）讓我們看到，真正強大的人生，不需要永遠無堅不摧；有時候，學會「有策略的放棄」，反而能讓我們找回人生的主動權。",
+     "rel": "raw"
+    },
+    {
+     "title": "影響力從「找到我是誰」開始！新北市青年局 X 女人迷活動直擊：在 AI 時代下，發揮你的共融影響力",
+     "url": "https://womany.net/read/article/33514?ref=rss",
+     "note": "8/22 週六，新北市青職基地迎來了「Next-Gen Impact 共融世代：啟動影響力的 3 場實踐學」系列課程的最終場！\n\n這場由新北市青年局以及女人迷共同舉辦的課程，匯聚來自不同性別、世代與背景的學員，一起透過整天的課程，培養領導力以及 AI 時代的共融思維。",
+     "rel": "raw"
+    },
+    {
+     "title": "三十年的工作經驗，如何變成企業資產？聲歷其境用訪談設計，打造帶不走的組織記憶",
+     "url": "https://womany.net/read/article/33512?ref=rss",
+     "note": "真正珍貴的企業知識，往往藏在「做久了自然知道」的直覺裡 👀\n\n聲歷其境透過深度訪談設計，將經驗轉化為聲音、影像與文字，讓個人的點滴記憶，成為企業資產！",
+     "rel": "raw"
+    },
+    {
+     "title": "品牌如何從被看見走向被記住？聲歷其境創辦人分享打造好內容的 3 關鍵！",
+     "url": "https://womany.net/read/article/33511?ref=rss",
+     "note": "真正建立信任的品牌，從不是因為廣告漂亮，而是它說出了你的心聲 🙌🏻\n\n聲歷其境創辦人拆解三大關鍵，看品牌如何從「被看見」走向「被記住」！",
+     "rel": "raw"
+    },
+    {
+     "title": "破解職場溝通難題！新北市青年局 X 女人迷工作坊直擊：結合 Lumina 與非暴力溝通，解鎖高效協作的核心關鍵",
+     "url": "https://womany.net/read/article/33509?ref=rss",
+     "note": "新北市政府青年局與女人迷於 8/1 再次攜手，於新北市青職基地舉辦「Next-Gen Impact 共融世代：啟動影響力的 3 場實踐學」系列工作坊。\n\n這一場，我們將焦點深化至更具體的溝通協作情境，陪伴大家進一步解鎖職場團隊合作的關鍵密碼。",
+     "rel": "raw"
+    },
+    {
+     "title": "走到別人的位置看世界！新北市青年局 X 女人迷首場活動直擊：用同理跨越偏見界線，讓平權走進工作與生活",
+     "url": "https://womany.net/read/article/33508?ref=rss",
+     "note": "7/25 在新北市青職基地，迎來由新北市政府青年局與女人迷攜手舉辦的「Next-Gen Impact 共融世代：啟動影響力的 3 場實踐學」系列工作坊首場活動。",
+     "rel": "raw"
+    },
+    {
+     "title": "和孩子留下一個夢幻夏天！遠東香格里拉 x 三麗鷗美樂蒂主題房登場",
+     "url": "https://womany.net/read/article/33507?ref=rss",
+     "note": "暑假倒數，你們的親子行程排好了嗎？☀️\n#台北遠東香格里拉 x #三麗鷗 聯手，整個 2026 暑假把整層樓變成 \"夏日星夢樂園\" 🎀\n\n✔️ 5 款夢幻主題房\n✔️ 7 大互動樂園\n✔️ 職能治療師帶手作課\n（非住客購票也能入園喔）\n\n#暑假親子飯店 #美樂蒂 #雙星仙子",
+     "rel": "raw"
+    },
+    {
+     "title": "真正的照顧，不是一直增加：metime 私密沐浴露帶給我的「生活減法哲學」",
+     "url": "https://womany.net/read/article/33506?ref=rss",
+     "note": "迷人體驗申請中！\n\n讓挑剔小姐分享她的減法哲學，用 metime 私密沐浴露，重新思考與身體相處的方式。",
+     "rel": "raw"
+    },
+    {
+     "title": "北歐芬蘭「護膚界護國神山」！芬蘭國民品牌 Lumene 露明研重磅登台",
+     "url": "https://womany.net/read/article/33505?ref=rss",
+     "note": "芬蘭國民保養品牌 Lumene 露明研正式登台！\n不僅通過 B 型企業認證、堅持 100% 純素永續，更以極地冰川水與白樺樹汁打造「極地小藍瓶」，為肌膚提供 72 小時長效補水！",
+     "rel": "raw"
+    },
+    {
+     "title": "第五屆「白蘭媽媽夢想勇敢 GO」成果發表直擊：從母親回歸自我，見證夢想在生活裡盛開的勇敢力量",
+     "url": "https://womany.net/read/article/33504?ref=rss",
+     "note": "第五屆白蘭媽媽夢想勇敢 GO 計劃成果發表會在 7/18 登場！\n\n這一天媽媽們以創作者、提案者與行動者的姿態，重新站回自己的人生裡。",
+     "rel": "raw"
+    }
+   ],
+   "ms": 318
+  }
+ ]
+}
