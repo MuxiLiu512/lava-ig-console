@@ -1,9 +1,9 @@
 {
   "note": "靈感＝三份資料交叉後浮出來的空白格，不是模型憑空生成的。每一條都附推導理由，理由不成立就該否決它。",
-  "generated_at": "2026-09-17T00:27:10+08:00",
+  "generated_at": "2026-09-18T01:16:59+08:00",
   "inputs": {
     "posts": 27,
-    "templates": 23,
+    "templates": 24,
     "external_claims": 60,
     "metrics_rows": 9
   },
@@ -11,7 +11,7 @@
     {
       "kind": "資料斷點（先修這個，不然學不到東西）",
       "title": "25/27 篇貼文沒有標範本，範本成效永遠算不出來",
-      "why": "範本庫有 23 個，但貼文沒有記錄自己用了哪一個。learn_features 的 template_id 欄位因此大多是空的，hypotheses 也就永遠檢定不了「哪個範本比較有效」。這不是分析不夠好，是輸入不存在。",
+      "why": "範本庫有 24 個，但貼文沒有記錄自己用了哪一個。learn_features 的 template_id 欄位因此大多是空的，hypotheses 也就永遠檢定不了「哪個範本比較有效」。這不是分析不夠好，是輸入不存在。",
       "how": "撰稿流程（n8n WF01）產稿時要把選用的 template_id 寫進稿檔，add_post 再帶進 posts.json。舊稿可由審稿台補標。",
       "ref": {
         "missing": 25,
@@ -110,21 +110,21 @@
     },
     {
       "kind": "成效落差（線索，不是結論）",
-      "title": "has_celebrity＝True 的互動率比 False 高 33%",
+      "title": "has_celebrity＝True 的互動率比 False 高 34%",
       "why": "樣本 True n=4、False n=5。這個樣本量不足以做檢定，只能當作「值得刻意再試幾篇」的線索。",
       "how": "下一批刻意多排幾篇 has_celebrity＝True 的，累積到各組 8 篇再讓 hypotheses 判定。",
       "ref": {
         "feature": "has_celebrity",
         "metric": "interaction_rate",
         "means": {
-          "True": 4.52,
-          "False": 3.4
+          "True": 4.43,
+          "False": 3.3
         }
       }
     },
     {
       "kind": "視覺空白",
-      "title": "11 個範本只有敘事結構，沒有視覺拆解",
+      "title": "12 個範本只有敘事結構，沒有視覺拆解",
       "why": "沒有色票、版位、明暗結構這些數字，排版引擎只能照預設做，所以不同範本產出的圖看起來會一樣——那等於沒有範本。",
       "how": "找一張你喜歡的參考圖，跑 python3 scripts/template_decompose.py --dir <資料夾> --save <名稱>，再到規則本補完字型與風格那幾欄。",
       "ref": {
