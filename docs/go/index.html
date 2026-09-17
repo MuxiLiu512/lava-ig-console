@@ -1,75 +1,45 @@
-<!doctype html>
-<html lang="zh-Hant">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lava</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
-<!--
-  Lava 點擊計數轉址頁（2026-07-30）
-  用途：回覆/貼文/bio 的連結先指到這裡 → 記一次點擊 → 立刻轉去 landing page（保留 UTM）。
-  為什麼要這一跳：GitHub Pages 是靜態站，無法在伺服器端計數；而 landing page
-  （wei-yin-hwang/lava-ig-link）不是我們的 repo。這頁放在自己的 Pages 上，
-  就能完全掌握點擊數，且不必更動別人的專案。
-
-  設定：把下面的 ANALYTICS.ga4 換成自己的 GA4 評估 ID（G-XXXXXXXXXX）即開始計數。
-  未設定時只轉址、不計數（不會壞掉）。
--->
+<title>Lava｜下載</title>
 <style>
-  html,body{height:100%;margin:0;background:#0b0f17;color:#e6edf6;
-    font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif}
-  .wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
-  .dot{width:34px;height:34px;border-radius:50%;border:3px solid #23304a;border-top-color:#ff5a3c;
-    animation:spin .8s linear infinite}
-  @keyframes spin{to{transform:rotate(360deg)}}
-  a{color:#ff8a6a}
-  p{font-size:14px;color:#8aa0bd;margin:0}
-  @media (prefers-reduced-motion:reduce){.dot{animation:none}}
+body{margin:0;background:#0C0E08;color:#FFE6A9;font-family:Inter,"HarmonyOS Sans TC","PingFang TC",sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
+main{padding:32px}
+a.btn{display:block;margin:14px auto;padding:14px 22px;max-width:320px;border-radius:999px;background:#E84224;color:#fff;text-decoration:none;font-weight:600}
+a.alt{background:transparent;border:1px solid rgba(255,230,169,.35);color:#FFE6A9}
+p{opacity:.75;font-size:14px}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="dot" aria-hidden="true"></div>
-  <p>正在前往 Lava…</p>
-  <p><a id="fallback" href="https://muxiliu512.github.io/lava-ig-console/lp/">沒有自動跳轉？點這裡</a></p>
-</div>
+<main>
+  <h1>Lava</h1>
+  <p>見面，不網聊。</p>
+  <a class="btn" id="ios" href="https://apps.apple.com/tw/app/id6749177441">App Store 下載</a>
+  <a class="btn" id="android" href="https://play.google.com/store/apps/details?id=tw.lava.app">Google Play 下載</a>
+  <a class="btn alt" id="web" href="https://muxiliu512.github.io/lava-ig-console/lp/">先看看 Lava 是什麼</a>
+  <p id="hint">正在判斷你的裝置…</p>
+</main>
 <script>
 (function () {
-  // ---- 設定 ----
-  var TARGET = "https://muxiliu512.github.io/lava-ig-console/lp/";  // 轉址目的地（我們自己的落地頁副本）
-  // 2026-08-22：原本指向 wei-yin-hwang/lava-ig-link。那是別人的 repo，
-  // 沒有分析碼又不能改，漏斗在那裡斷掉——量得到點擊、量不到下載。
-  // 改指向 docs/lp/（同一份頁面 + GA4 store_click 插樁），從此可自行改版。
-  var ANALYTICS = {
-    ga4: "G-8SE6BYLL3N"   // Lava 連結追蹤（GA4）；留空＝只轉址不計數
-  };
-
-  var qs = window.location.search || "";
-  var params = new URLSearchParams(qs);
-  var dest = TARGET + (qs ? qs : "");           // 原樣帶著 UTM 過去，落地頁仍看得到來源
-  document.getElementById("fallback").href = dest;
-
-  function go() { window.location.replace(dest); }
-
-  if (!ANALYTICS.ga4) { go(); return; }         // 未設定分析 → 直接轉址
-
-  // GA4：以 script 載入後送一個 click 事件，帶上 UTM 供分流統計
-  var s = document.createElement("script");
-  s.async = true;
-  s.src = "https://www.googletagmanager.com/gtag/js?id=" + ANALYTICS.ga4;
-  document.head.appendChild(s);
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag("js", new Date());
-  gtag("config", ANALYTICS.ga4, { send_page_view: true });
-  gtag("event", "link_click", {
-    utm_source: params.get("utm_source") || "(none)",
-    utm_medium: params.get("utm_medium") || "(none)",      // reply / bio / social
-    utm_campaign: params.get("utm_campaign") || "(none)",  // sge_reply / profile
-    utm_content: params.get("utm_content") || "(none)",    // draft_id 前 8 碼 → 可回溯單則回覆
-    event_callback: go                                     // 事件送出後才跳轉
-  });
-  setTimeout(go, 900);   // 保險：分析載不動也不能卡住使用者
+  // 依裝置導向商店；utm 參數原樣帶到 lp 頁與 Play（referrer），App Store 用 ct 記活動。
+  var q = location.search || "";
+  var params = new URLSearchParams(q);
+  var campaign = params.get("utm_campaign") || "";
+  var ios = "https://apps.apple.com/tw/app/id6749177441" + (campaign ? "?ct=" + encodeURIComponent(campaign) + "&mt=8" : "");
+  var android = "https://play.google.com/store/apps/details?id=tw.lava.app" + (q ? "&referrer=" + encodeURIComponent(q.slice(1)) : "");
+  var web = "https://muxiliu512.github.io/lava-ig-console/lp/" + q;
+  document.getElementById("ios").href = ios;
+  document.getElementById("android").href = android;
+  document.getElementById("web").href = web;
+  var ua = navigator.userAgent || "";
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/i.test(ua);
+  var target = isIOS ? ios : (isAndroid ? android : web);
+  document.getElementById("hint").textContent = isIOS ? "前往 App Store…" : (isAndroid ? "前往 Google Play…" : "");
+  if (isIOS || isAndroid) setTimeout(function () { location.replace(target); }, 400);
 })();
 </script>
 </body>
