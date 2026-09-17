@@ -3932,7 +3932,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:24:44+08:00",
+        "ts": "2026-09-17T17:57:27+08:00",
         "pass": true,
         "claims": 6,
         "issues": []
@@ -3995,7 +3995,7 @@
         "rhythm": "整篇前四張連續人臉深色底圖像在原地踏步，第5張山景是唯一的構圖休息站，第7、8張雖然換場景卻撞片源，CTA的純黑結尾雖乾淨但收得太硬——整體節奏是『悶→喘一口氣→再悶→硬煞車』，建議至少在第2或第4張做一次主體與明暗的雙重切換，才能讓九張滑起來有層次。"
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -4686,7 +4686,7 @@
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-17T17:24:45+08:00",
+        "ts": "2026-09-17T17:57:28+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -4698,7 +4698,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 4
@@ -5253,7 +5253,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -5297,7 +5297,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:24:46+08:00",
+        "ts": "2026-09-17T17:57:30+08:00",
         "pass": false,
         "claims": 28,
         "issues": [
@@ -5801,7 +5801,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -5866,7 +5866,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:24:49+08:00",
+        "ts": "2026-09-17T17:57:32+08:00",
         "pass": true,
         "claims": 5,
         "issues": [
@@ -6326,7 +6326,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 7
@@ -6384,7 +6384,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:24:50+08:00",
+        "ts": "2026-09-17T17:57:33+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -7244,7 +7244,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -7303,7 +7303,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:24:53+08:00",
+        "ts": "2026-09-17T17:57:36+08:00",
         "pass": false,
         "claims": 12,
         "issues": [
@@ -7581,6 +7581,29 @@
           "role": "知識解釋",
           "candidates": [
             {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-3f.webp",
+              "kind": "still",
+              "source_label": "Good Will Hunting",
+              "low_q": true,
+              "curator_score": 6
+            },
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-3e.webp",
+              "kind": "still",
+              "source_label": "Good Will Hunting",
+              "curator_score": 5
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-3g.webp",
+              "kind": "still",
+              "source_label": "Good Will Hunting",
+              "low_q": true,
+              "curator_score": 3
+            },
+            {
               "cid": "a",
               "src": "assets/86eyq3yp0/slide-3a.webp",
               "kind": "still",
@@ -7607,32 +7630,12 @@
               "kind": "still",
               "source_label": "b-mooda7f03",
               "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/86eyq3yp0/slide-3e.webp",
-              "kind": "still",
-              "source_label": "Good Will Hunting"
-            },
-            {
-              "cid": "f",
-              "src": "assets/86eyq3yp0/slide-3f.webp",
-              "kind": "still",
-              "source_label": "Good Will Hunting",
-              "low_q": true
-            },
-            {
-              "cid": "g",
-              "src": "assets/86eyq3yp0/slide-3g.webp",
-              "kind": "still",
-              "source_label": "Good Will Hunting",
-              "low_q": true
             }
           ],
           "final_src": null,
           "heading": "心理學早就測量過這件事",
           "display_copy": "1994年，【康乃爾大學心理學教授 Thomas Gilovich】測量了遺憾的形狀\n\n短期：「做錯事」最刺\n長期：〖「沒做的事」才是真正壓著你的重量〗\n\n2023年，芝加哥科學博物館現場複製這個實驗\n結論不變：時間越長，沒有採取的行動\n才是遺憾的主體\n\n資料來源：Gilovich & Medvec（1994）；Royal Society Open Science，2023，doi:10.1098/rsos.221574",
-          "default_cid": "a"
+          "default_cid": "f"
         },
         {
           "n": 4,
@@ -7732,6 +7735,27 @@
           "role": "知識解釋",
           "candidates": [
             {
+              "cid": "h",
+              "src": "assets/86eyq3yp0/slide-5h.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire",
+              "curator_score": 7
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-5f.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire",
+              "curator_score": 5
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-5g.webp",
+              "kind": "still",
+              "source_label": "Portraitofa Ladyon Fire",
+              "curator_score": 4
+            },
+            {
               "cid": "a",
               "src": "assets/86eyq3yp0/slide-5a.webp",
               "kind": "still",
@@ -7760,24 +7784,6 @@
               "source_kind": "SHOT"
             },
             {
-              "cid": "f",
-              "src": "assets/86eyq3yp0/slide-5f.webp",
-              "kind": "still",
-              "source_label": "Portraitofa Ladyon Fire"
-            },
-            {
-              "cid": "g",
-              "src": "assets/86eyq3yp0/slide-5g.webp",
-              "kind": "still",
-              "source_label": "Portraitofa Ladyon Fire"
-            },
-            {
-              "cid": "h",
-              "src": "assets/86eyq3yp0/slide-5h.webp",
-              "kind": "still",
-              "source_label": "Portraitofa Ladyon Fire"
-            },
-            {
               "cid": "e",
               "src": "assets/86eyq3yp0/slide-5e.webp",
               "kind": "still",
@@ -7789,12 +7795,33 @@
           "final_src": null,
           "heading": "20歲和50歲，後悔的重量不一樣",
           "display_copy": "20歲：行動遺憾 ＝ 不行動遺憾\n\n【50歲：不行動遺憾是行動遺憾的2倍】\n\n每一次「等等再說」\n都在未來的你身上，多放一點重量\n\n台灣2024：\n25–29歲女性有偶率：17.72%\n30–34歲女性有偶率：41.41%\n\n六成的人，那一步還沒踏出去\n\n資料來源：Daniel Pink, American Regret Project (2022)；ETtoday，2026.08.03；內政部統計",
-          "default_cid": "a"
+          "default_cid": "h"
         },
         {
           "n": 6,
           "role": "品牌輕置入",
           "candidates": [
+            {
+              "cid": "e",
+              "src": "assets/86eyq3yp0/slide-6e.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally",
+              "curator_score": 6
+            },
+            {
+              "cid": "f",
+              "src": "assets/86eyq3yp0/slide-6f.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally",
+              "curator_score": 5
+            },
+            {
+              "cid": "g",
+              "src": "assets/86eyq3yp0/slide-6g.webp",
+              "kind": "still",
+              "source_label": "When Harry Met Sally",
+              "curator_score": 3
+            },
             {
               "cid": "a",
               "src": "assets/86eyq3yp0/slide-6a.webp",
@@ -7822,30 +7849,12 @@
               "kind": "still",
               "source_label": "b-mood9141d",
               "source_kind": "SHOT"
-            },
-            {
-              "cid": "e",
-              "src": "assets/86eyq3yp0/slide-6e.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
-            },
-            {
-              "cid": "g",
-              "src": "assets/86eyq3yp0/slide-6g.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
-            },
-            {
-              "cid": "f",
-              "src": "assets/86eyq3yp0/slide-6f.webp",
-              "kind": "still",
-              "source_label": "When Harry Met Sally"
             }
           ],
           "final_src": null,
           "heading": "「線上聊很久，卻始終沒見面」也是一種不行動",
           "display_copy": "「線上聊了三週」\n「但從沒見面」\n\n不是沒感覺\n是都在等對方先說\n\n這也是一種不行動\n也會變成你日後的遺憾\n\n【Lava 把「約出來」設計成起點】\n不讓聊天本身變成終點\n\n那一步不踏出去\n它就只是一段沒有重量的對話",
-          "default_cid": "a"
+          "default_cid": "e"
         },
         {
           "n": 7,
@@ -8158,7 +8167,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -8209,7 +8218,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:24:55+08:00",
+        "ts": "2026-09-17T17:57:38+08:00",
         "pass": false,
         "claims": 17,
         "issues": [
@@ -8229,7 +8238,8 @@
             "line": "第 5 張的「20歲」沒有任何一條出處提到這個數字（年齡）"
           }
         ]
-      }
+      },
+      "curated_at": "2026-09-17T18:12:23+08:00"
     },
     {
       "id": "20260825-白夜行",
@@ -8802,7 +8812,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 3
@@ -8832,7 +8842,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:01+08:00",
+        "ts": "2026-09-17T17:57:44+08:00",
         "pass": false,
         "claims": 9,
         "issues": [
@@ -9433,7 +9443,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 4
@@ -9470,7 +9480,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:03+08:00",
+        "ts": "2026-09-17T17:57:46+08:00",
         "pass": true,
         "claims": 7,
         "issues": []
@@ -9906,7 +9916,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 5
@@ -9950,7 +9960,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:05+08:00",
+        "ts": "2026-09-17T17:57:49+08:00",
         "pass": true,
         "claims": 2,
         "issues": [
@@ -10619,7 +10629,7 @@
       "writer_model": "claude-sonnet-4-6",
       "candidates_since": "2026-09-01T19:19:51+08:00",
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "赦免式安慰": 1,
@@ -10826,7 +10836,7 @@
         "issues": []
       },
       "fact": {
-        "ts": "2026-09-17T17:25:10+08:00",
+        "ts": "2026-09-17T17:57:53+08:00",
         "pass": false,
         "claims": 5,
         "issues": [
@@ -11527,7 +11537,7 @@
         ]
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 8
@@ -11592,7 +11602,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:14+08:00",
+        "ts": "2026-09-17T17:57:58+08:00",
         "pass": false,
         "claims": 8,
         "issues": [
@@ -11812,7 +11822,7 @@
         "rhythm": "整篇節奏呈『黑→黑→米黃→米黃→黑』的對稱式夾心結構，中段亮色雙張連發雖有意圖但執行上因構圖幾乎相同而失去衝擊力，星號 icon 過度複用更讓品牌符號從亮點變成壁紙；建議重新分配色調出現順序並限縮星號出場次數，才能讓五張各自有存在理由。"
       },
       "fact": {
-        "ts": "2026-09-17T17:25:14+08:00",
+        "ts": "2026-09-17T17:57:58+08:00",
         "pass": true,
         "claims": 0,
         "issues": [],
@@ -11853,7 +11863,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": true,
         "counts": {},
         "issues": []
@@ -12462,7 +12472,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 4
@@ -12499,7 +12509,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:15+08:00",
+        "ts": "2026-09-17T17:58:00+08:00",
         "pass": false,
         "claims": 4,
         "issues": [
@@ -13075,7 +13085,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 14
@@ -13182,7 +13192,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:22+08:00",
+        "ts": "2026-09-17T17:58:07+08:00",
         "pass": true,
         "claims": 5,
         "issues": []
@@ -13668,7 +13678,7 @@
         "issues": []
       },
       "copy": {
-        "ts": "2026-09-17T17:24:38+08:00",
+        "ts": "2026-09-17T17:57:21+08:00",
         "pass": false,
         "counts": {
           "圖上單行過長": 6
@@ -13719,7 +13729,7 @@
         ]
       },
       "fact": {
-        "ts": "2026-09-17T17:25:24+08:00",
+        "ts": "2026-09-17T17:58:09+08:00",
         "pass": true,
         "claims": 4,
         "issues": [
