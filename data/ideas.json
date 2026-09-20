@@ -2,6 +2,42 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "i-55b7cb3d1f",
+      "title": "中秋連假第一天，全台灣最多人被問的那句話——「你有對象了嗎？」｜病毒分 8｜🧠Claude",
+      "scout": "Claude",
+      "sources": [
+        "ETtoday新聞雲",
+        "Google Trends 台灣"
+      ],
+      "virality_score": 8.0,
+      "suggested_type": "時事橋接型",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：中秋是台灣家庭聚會密度最高的節日之一，也是一年中「被催問感情狀況」壓力最集中的時刻。切入點不是雞湯式的「愛自己」，而是命中那個具體情境：圍爐前五分鐘、長輩夾菜的空檔、表哥表姐帶了新對象來的那個瞬間——你不是不想談，你只是還沒遇到讓你想帶回家的人。Lava 的角度：中秋連假是一個很好的理由，讓你真的去見一個人，而不是繼續在 app 上滑。\n\n病毒係數：8/10。出圈證據為 Google Trends 台灣今日熱搜「中秋連假」，屬硬門檻規定的出圈證據；情境命中率極高（台灣人幾乎人人有被問過的經驗），tpl-thats-me-scenario 模板的「這在說我」觸發點強，tag 朋友與儲存動機並存。\n\n熱度證明：\n- Google Trends 台灣｜「中秋連假」列入今日台灣熱搜｜Google Trends 台灣今日熱搜，屬硬門檻規定的出圈證據類型｜https://trends.google.com/trends/trendingsearches/daily?geo=TW\n- ETtoday新聞雲｜誠品公布上半年暢銷榜TOP 10 Threads推動書本熱銷、黃山料站穩前十（佐證台灣媒體當前活躍報導節慶與社會話題）｜主流媒體（ETtoday）當日活躍報導台灣社會話題，確認媒體環境熱度｜https://news.google.com/rss/art",
+      "url": "",
+      "created_at": "2026-09-20T09:02:10.360+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
+      "task_id": "i-55b7cbde42",
+      "title": "博客來即時榜第7名《Rewire》：你在感情裡那個「又來了」的反應——神經科學說，那不是你的個性，是一條可以重寫的迴圈｜病毒分 7｜🧠Claude",
+      "scout": "Claude",
+      "sources": [
+        "博客來即時榜",
+        "工商時報"
+      ],
+      "virality_score": 7.0,
+      "suggested_type": "書摘型",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《Rewire》以神經可塑性為核心，說明大腦的行為迴圈（焦慮、逃避、過度反應）並非固定性格，而是可透過刻意練習重塑的神經路徑。切入點：感情裡那些「我知道不對但就是會這樣」的反應——例如對方已讀不回就開始腦補最壞情況、吵架後習慣性沉默、越在乎越裝不在乎——這些不是「你這個人就是這樣」，而是大腦建立的預測迴圈。洞察：你不需要改變個性，你只需要打斷迴圈的觸發點。Lava 的 offline-first 設計本身就是一種「打斷舊迴圈、建立新行為路徑」的機制——見面，才能讓大腦有新的資料可以學習。\n\n病毒係數：7/10。出圈證據為博客來即時榜第7名（書籍排行榜），屬硬門檻規定的出圈證據類型之一；神經可塑性切入感情行為模式角度未出過，「不是個性是迴圈」結論對一般讀者具反直覺感，儲存動機強。\n\n熱度證明：\n- 博客來即時榜｜Rewire-神經可塑性 登博客來即時榜第7名（2026-09-11 抓取）｜即時榜第7名，屬書籍排行榜出圈證據｜https://www.books.com.tw/products/0010990062?loc=P_0003_007\n- 工商時報｜AI應用、台股熱潮帶動！商業理財類霸榜博客來百大暢銷書｜主流財經媒體報導博客來暢銷趨勢，確認博客來榜單當前熱度｜https://news.google.com/rss/articles/CB",
+      "url": "",
+      "created_at": "2026-09-20T09:02:09.417+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "i-bbeffecd21",
       "title": "博客來即時榜第3名《隨他們去》：「放手」和「不在乎」——你以為是同一件事，但心理學說差了十萬八千里｜病毒分 7｜🧠Claude",
       "scout": "Claude",
@@ -1135,5 +1171,5 @@
       "scout": "Claude"
     }
   ],
-  "pulled_at": "2026-09-16T09:15:26+08:00"
+  "pulled_at": "2026-09-20T09:14:38+08:00"
 }
