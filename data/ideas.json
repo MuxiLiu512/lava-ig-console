@@ -2,6 +2,24 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "i-a236789457",
+      "title": "孫藝珍和池昌旭在《挑情醜聲》裡打了一場愛情賭局——贏了之後，才是最難的部分｜病毒分 7｜🧠Claude",
+      "scout": "Claude",
+      "sources": [
+        "Cosmopolitan Taiwan",
+        "Netflix台灣收視榜（storm.mg報導）"
+      ],
+      "virality_score": 7.0,
+      "suggested_type": "影劇型",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：從《挑情醜聞》的核心設定切入：兩個人用「賭局」框架靠近彼此，但劇裡真正讓人坐立難安的，是賭局結束之後——當策略消失、目的達成，你才發現你根本不知道怎麼「真的喜歡一個人」。這個困境不只是劇情，是很多人談戀愛的真實處境：習慣用表現、用計算、用「讓自己顯得有價值」的方式靠近對方，卻從來沒有練習過「什麼都不做、就只是在一起」。Lava 的 offline-first 設計，就是要把這個「策略時間」壓縮掉——見面本身，才是起點。\n\n病毒係數：7/10。出圈證據為Cosmopolitan Taiwan主流媒體專題報導（8看點），加上孫藝珍、池昌旭兩位韓國大牌演員自帶台灣搜尋熱度；角度從「賭局結束後才是難題」切入，觸及現代人用表現感取代真實連結的普遍焦慮，具備「這在說我」的儲存與分享動機。\n\n熱度證明：\n- Cosmopolitan Taiwan｜Netflix《挑情醜聞》8看點！孫藝珍、池昌旭愛情賭局，翻拍19禁電影，最美臉孔NANA大尺度情慾拉扯｜主流媒體專題報導，列出8大看點，為Netflix新上線劇集做重點推介｜https://news.google.com/rss/articles/CBMihgFBVV95cUxPXzQyeFlRMkFjNXBjQU5RMkl2Umh5d3JGRnhuUm16SHh0R1E0NDZFanV3QV9mZEdqd2",
+      "url": "",
+      "created_at": "2026-09-22T09:01:54.695+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "i-55b7cb3d1f",
       "title": "中秋連假第一天，全台灣最多人被問的那句話——「你有對象了嗎？」｜病毒分 8｜🧠Claude",
       "scout": "Claude",
@@ -1171,5 +1189,5 @@
       "scout": "Claude"
     }
   ],
-  "pulled_at": "2026-09-20T09:14:38+08:00"
+  "pulled_at": "2026-09-22T09:08:10+08:00"
 }
