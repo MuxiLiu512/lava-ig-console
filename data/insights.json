@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23",
+  "updated_at": "2026-09-24",
   "note": "IG 成效由本機 scripts/ig_insights.py 每日抓取（哨兵掛載）。每篇每日一筆 snapshot，archive-data 裁切 90 天。token 不進此檔。",
   "media": {
     "18075957743686688": {
@@ -337,6 +337,17 @@
           "comments": 0,
           "profile_visits": 1,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 395,
+          "saved": 2,
+          "shares": 2,
+          "total_interactions": 13,
+          "likes": 9,
+          "comments": 0,
+          "profile_visits": 1,
+          "follows": 0
         }
       ]
     },
@@ -664,6 +675,17 @@
           "comments": 0,
           "profile_visits": 6,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 579,
+          "saved": 1,
+          "shares": 3,
+          "total_interactions": 12,
+          "likes": 7,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
         }
       ]
     },
@@ -983,6 +1005,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 751,
+          "saved": 0,
+          "shares": 15,
+          "total_interactions": 29,
+          "likes": 11,
+          "comments": 2,
+          "profile_visits": 14,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 751,
           "saved": 0,
           "shares": 15,
@@ -1318,6 +1351,17 @@
           "comments": 1,
           "profile_visits": 2,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 459,
+          "saved": 5,
+          "shares": 6,
+          "total_interactions": 21,
+          "likes": 9,
+          "comments": 1,
+          "profile_visits": 2,
+          "follows": 0
         }
       ]
     },
@@ -1645,6 +1689,17 @@
           "comments": 2,
           "profile_visits": 1,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 448,
+          "saved": 3,
+          "shares": 7,
+          "total_interactions": 22,
+          "likes": 6,
+          "comments": 2,
+          "profile_visits": 1,
+          "follows": 0
         }
       ]
     },
@@ -1954,6 +2009,17 @@
         {
           "day": "2026-09-23",
           "reach": 455,
+          "saved": 4,
+          "shares": 7,
+          "total_interactions": 23,
+          "likes": 8,
+          "comments": 1,
+          "profile_visits": 5,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 457,
           "saved": 4,
           "shares": 7,
           "total_interactions": 23,
@@ -2277,6 +2343,17 @@
           "comments": 1,
           "profile_visits": 3,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 392,
+          "saved": 1,
+          "shares": 6,
+          "total_interactions": 18,
+          "likes": 9,
+          "comments": 1,
+          "profile_visits": 3,
+          "follows": 0
         }
       ]
     },
@@ -2584,6 +2661,17 @@
         {
           "day": "2026-09-23",
           "reach": 484,
+          "saved": 2,
+          "shares": 4,
+          "total_interactions": 27,
+          "likes": 18,
+          "comments": 2,
+          "profile_visits": 9,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 485,
           "saved": 2,
           "shares": 4,
           "total_interactions": 27,
@@ -2907,6 +2995,17 @@
           "comments": 1,
           "profile_visits": 1,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 315,
+          "saved": 3,
+          "shares": 0,
+          "total_interactions": 8,
+          "likes": 4,
+          "comments": 1,
+          "profile_visits": 1,
+          "follows": 0
         }
       ]
     },
@@ -3216,6 +3315,17 @@
         {
           "day": "2026-09-23",
           "reach": 323,
+          "saved": 0,
+          "shares": 1,
+          "total_interactions": 11,
+          "likes": 9,
+          "comments": 1,
+          "profile_visits": 5,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 326,
           "saved": 0,
           "shares": 1,
           "total_interactions": 11,
@@ -3539,6 +3649,17 @@
           "comments": 1,
           "profile_visits": 1,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 461,
+          "saved": 2,
+          "shares": 0,
+          "total_interactions": 13,
+          "likes": 10,
+          "comments": 1,
+          "profile_visits": 1,
+          "follows": 0
         }
       ]
     },
@@ -3855,6 +3976,17 @@
           "comments": 1,
           "profile_visits": 1,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 466,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 6,
+          "likes": 5,
+          "comments": 1,
+          "profile_visits": 1,
+          "follows": 0
         }
       ]
     },
@@ -4161,6 +4293,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 605,
+          "saved": 2,
+          "shares": 18,
+          "total_interactions": 31,
+          "likes": 9,
+          "comments": 0,
+          "profile_visits": 8,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 605,
           "saved": 2,
           "shares": 18,
@@ -4483,6 +4626,17 @@
           "comments": 1,
           "profile_visits": 34,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 1127,
+          "saved": 5,
+          "shares": 16,
+          "total_interactions": 51,
+          "likes": 25,
+          "comments": 1,
+          "profile_visits": 34,
+          "follows": 0
         }
       ]
     },
@@ -4789,6 +4943,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 4365,
+          "saved": 16,
+          "shares": 5,
+          "total_interactions": 61,
+          "likes": 36,
+          "comments": 2,
+          "profile_visits": 197,
+          "follows": 6
+        },
+        {
+          "day": "2026-09-24",
           "reach": 4365,
           "saved": 16,
           "shares": 5,
@@ -5111,6 +5276,17 @@
           "comments": 1,
           "profile_visits": 12,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 1514,
+          "saved": 24,
+          "shares": 35,
+          "total_interactions": 76,
+          "likes": 16,
+          "comments": 1,
+          "profile_visits": 12,
+          "follows": 0
         }
       ]
     },
@@ -5425,6 +5601,17 @@
           "comments": 0,
           "profile_visits": 6,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 1860,
+          "saved": 8,
+          "shares": 5,
+          "total_interactions": 30,
+          "likes": 15,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
         }
       ]
     },
@@ -5731,6 +5918,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 563,
+          "saved": 4,
+          "shares": 3,
+          "total_interactions": 18,
+          "likes": 10,
+          "comments": 0,
+          "profile_visits": 17,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 563,
           "saved": 4,
           "shares": 3,
@@ -6053,6 +6251,17 @@
           "comments": 0,
           "profile_visits": 16,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 886,
+          "saved": 1,
+          "shares": 1,
+          "total_interactions": 13,
+          "likes": 11,
+          "comments": 0,
+          "profile_visits": 16,
+          "follows": 0
         }
       ]
     },
@@ -6359,6 +6568,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 723,
+          "saved": 3,
+          "shares": 3,
+          "total_interactions": 15,
+          "likes": 9,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 723,
           "saved": 3,
           "shares": 3,
@@ -6681,6 +6901,17 @@
           "comments": 0,
           "profile_visits": 8,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 522,
+          "saved": 0,
+          "shares": 1,
+          "total_interactions": 7,
+          "likes": 6,
+          "comments": 0,
+          "profile_visits": 8,
+          "follows": 0
         }
       ]
     },
@@ -6987,6 +7218,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 3982,
+          "saved": 19,
+          "shares": 4,
+          "total_interactions": 50,
+          "likes": 26,
+          "comments": 0,
+          "profile_visits": 113,
+          "follows": 2
+        },
+        {
+          "day": "2026-09-24",
           "reach": 3982,
           "saved": 19,
           "shares": 4,
@@ -7309,6 +7551,17 @@
           "comments": 0,
           "profile_visits": 257,
           "follows": 5
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 3477,
+          "saved": 18,
+          "shares": 9,
+          "total_interactions": 58,
+          "likes": 30,
+          "comments": 0,
+          "profile_visits": 257,
+          "follows": 5
         }
       ]
     },
@@ -7623,6 +7876,17 @@
           "comments": 0,
           "profile_visits": 10,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 1840,
+          "saved": 3,
+          "shares": 2,
+          "total_interactions": 17,
+          "likes": 12,
+          "comments": 0,
+          "profile_visits": 10,
+          "follows": 0
         }
       ]
     },
@@ -7929,6 +8193,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 834,
+          "saved": 0,
+          "shares": 9,
+          "total_interactions": 20,
+          "likes": 11,
+          "comments": 0,
+          "profile_visits": 21,
+          "follows": 2
+        },
+        {
+          "day": "2026-09-24",
           "reach": 834,
           "saved": 0,
           "shares": 9,
@@ -8251,6 +8526,17 @@
           "comments": 0,
           "profile_visits": 54,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 2240,
+          "saved": 1,
+          "shares": 18,
+          "total_interactions": 34,
+          "likes": 15,
+          "comments": 0,
+          "profile_visits": 54,
+          "follows": 0
         }
       ]
     },
@@ -8557,6 +8843,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 533,
+          "saved": 0,
+          "shares": 2,
+          "total_interactions": 11,
+          "likes": 9,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 533,
           "saved": 0,
           "shares": 2,
@@ -8879,6 +9176,17 @@
           "comments": 0,
           "profile_visits": 257,
           "follows": 3
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 5475,
+          "saved": 20,
+          "shares": 9,
+          "total_interactions": 60,
+          "likes": 30,
+          "comments": 0,
+          "profile_visits": 257,
+          "follows": 3
         }
       ]
     },
@@ -9185,6 +9493,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 706,
+          "saved": 0,
+          "shares": 1,
+          "total_interactions": 12,
+          "likes": 11,
+          "comments": 0,
+          "profile_visits": 12,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 706,
           "saved": 0,
           "shares": 1,
@@ -9507,6 +9826,17 @@
           "comments": 0,
           "profile_visits": 199,
           "follows": 2
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 4880,
+          "saved": 10,
+          "shares": 13,
+          "total_interactions": 60,
+          "likes": 37,
+          "comments": 0,
+          "profile_visits": 199,
+          "follows": 2
         }
       ]
     },
@@ -9813,6 +10143,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 1374,
+          "saved": 2,
+          "shares": 14,
+          "total_interactions": 42,
+          "likes": 26,
+          "comments": 0,
+          "profile_visits": 82,
+          "follows": 4
+        },
+        {
+          "day": "2026-09-24",
           "reach": 1374,
           "saved": 2,
           "shares": 14,
@@ -10135,6 +10476,17 @@
           "comments": 0,
           "profile_visits": 6,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 923,
+          "saved": 0,
+          "shares": 5,
+          "total_interactions": 12,
+          "likes": 7,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
         }
       ]
     },
@@ -10441,6 +10793,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 288,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 6,
+          "likes": 5,
+          "comments": 0,
+          "profile_visits": 4,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 288,
           "saved": 1,
           "shares": 0,
@@ -10763,6 +11126,17 @@
           "comments": 0,
           "profile_visits": 0,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 245,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 7,
+          "likes": 6,
+          "comments": 0,
+          "profile_visits": 0,
+          "follows": 0
         }
       ]
     },
@@ -11069,6 +11443,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 263,
+          "saved": 2,
+          "shares": 0,
+          "total_interactions": 11,
+          "likes": 9,
+          "comments": 0,
+          "profile_visits": 5,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 263,
           "saved": 2,
           "shares": 0,
@@ -11391,6 +11776,17 @@
           "comments": 0,
           "profile_visits": 6,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 270,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 5,
+          "likes": 4,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
         }
       ]
     },
@@ -11697,6 +12093,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 649,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 7,
+          "likes": 6,
+          "comments": 0,
+          "profile_visits": 5,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 649,
           "saved": 1,
           "shares": 0,
@@ -12019,6 +12426,17 @@
           "comments": 0,
           "profile_visits": 5,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 660,
+          "saved": 1,
+          "shares": 1,
+          "total_interactions": 11,
+          "likes": 9,
+          "comments": 0,
+          "profile_visits": 5,
+          "follows": 0
         }
       ]
     },
@@ -12325,6 +12743,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 612,
+          "saved": 2,
+          "shares": 0,
+          "total_interactions": 10,
+          "likes": 8,
+          "comments": 0,
+          "profile_visits": 7,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 612,
           "saved": 2,
           "shares": 0,
@@ -12647,6 +13076,17 @@
           "comments": 0,
           "profile_visits": 6,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 400,
+          "saved": 1,
+          "shares": 0,
+          "total_interactions": 4,
+          "likes": 3,
+          "comments": 0,
+          "profile_visits": 6,
+          "follows": 0
         }
       ]
     },
@@ -12953,6 +13393,17 @@
         },
         {
           "day": "2026-09-23",
+          "reach": 596,
+          "saved": 1,
+          "shares": 4,
+          "total_interactions": 9,
+          "likes": 4,
+          "comments": 0,
+          "profile_visits": 3,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
           "reach": 596,
           "saved": 1,
           "shares": 4,
@@ -14320,6 +14771,17 @@
           "comments": 0,
           "profile_visits": 7,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 506,
+          "saved": 0,
+          "shares": 3,
+          "total_interactions": 19,
+          "likes": 13,
+          "comments": 0,
+          "profile_visits": 7,
+          "follows": 0
         }
       ]
     },
@@ -14623,6 +15085,17 @@
           "comments": 1,
           "profile_visits": 6,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 1835,
+          "saved": 2,
+          "shares": 9,
+          "total_interactions": 37,
+          "likes": 23,
+          "comments": 1,
+          "profile_visits": 6,
+          "follows": 0
         }
       ]
     },
@@ -14805,6 +15278,17 @@
           "comments": 0,
           "profile_visits": 2,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 418,
+          "saved": 1,
+          "shares": 3,
+          "total_interactions": 23,
+          "likes": 18,
+          "comments": 0,
+          "profile_visits": 2,
+          "follows": 0
         }
       ]
     },
@@ -14965,6 +15449,17 @@
           "comments": 8,
           "profile_visits": 5,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 473,
+          "saved": 3,
+          "shares": 2,
+          "total_interactions": 33,
+          "likes": 19,
+          "comments": 8,
+          "profile_visits": 5,
+          "follows": 0
         }
       ]
     },
@@ -15059,6 +15554,17 @@
           "comments": 2,
           "profile_visits": 4,
           "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 310,
+          "saved": 2,
+          "shares": 9,
+          "total_interactions": 26,
+          "likes": 12,
+          "comments": 2,
+          "profile_visits": 4,
+          "follows": 0
         }
       ]
     },
@@ -15080,6 +15586,17 @@
         {
           "day": "2026-09-23",
           "reach": 211,
+          "saved": 0,
+          "shares": 12,
+          "total_interactions": 25,
+          "likes": 10,
+          "comments": 2,
+          "profile_visits": 10,
+          "follows": 0
+        },
+        {
+          "day": "2026-09-24",
+          "reach": 220,
           "saved": 0,
           "shares": 12,
           "total_interactions": 25,
