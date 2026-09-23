@@ -5,6 +5,12 @@ name: ci
 on:
   push:
     branches: [main]
+    # 哨兵的 auto-render 只改成品圖與 posts.json，不改程式；不用每 13 分鐘跑一次。
+    # 程式改動（scripts/、docs/、排版引擎/、workflows）照跑。
+    paths-ignore:
+      - "assets/**"
+      - "data/**"
+      - "events/**"
   workflow_dispatch:
 jobs:
   verify:
@@ -45,8 +51,12 @@ jobs:
           if grep -q "undefined name" /tmp/pf.txt; then
             echo "✗ 有未定義變數，這種錯誤上線一定當掉"; exit 1
           fi
+      # 〔2026-09-23〕selftest 會 import 排版引擎（PIL）。runner 沒裝 Pillow，
+      # 導致 9/17 之後每一次 auto-render 推送都紅燈、每 13 分鐘寄一封失敗信給 Jesse。
       - name: 自我測試（scripts/selftest.py）
-        run: python3 scripts/selftest.py
+        run: |
+          pip install -q pillow
+          python3 scripts/selftest.py
       - name: 資料不變量（含 published 只增不減）
         run: |
           git show HEAD~1:data/posts.json > /tmp/prev-posts.json 2>/dev/null || true
