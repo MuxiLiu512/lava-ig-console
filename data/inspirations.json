@@ -1,6 +1,6 @@
 {
   "note": "靈感＝三份資料交叉後浮出來的空白格，不是模型憑空生成的。每一條都附推導理由，理由不成立就該否決它。",
-  "generated_at": "2026-09-23T00:09:07+08:00",
+  "generated_at": "2026-09-24T00:04:58+08:00",
   "inputs": {
     "posts": 27,
     "templates": 24,
@@ -117,8 +117,8 @@
         "feature": "has_celebrity",
         "metric": "interaction_rate",
         "means": {
-          "True": 4.31,
-          "False": 3.21
+          "True": 4.28,
+          "False": 3.19
         }
       }
     },
