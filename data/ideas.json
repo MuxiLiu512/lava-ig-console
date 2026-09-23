@@ -2,6 +2,24 @@
   "note": "靈感卡快照＋放行決定。pull 只讀 ClickUp；決定由看板寫入、ideas-apply 回寫。",
   "ideas": [
     {
+      "task_id": "i-c8b3b7c434",
+      "title": "《母胎單身大作戰2》的那些人，不是不會愛——是從來沒有人教過他們怎麼開口｜病毒分 7｜🧠Claude",
+      "scout": "Claude",
+      "sources": [
+        "GQ Taiwan",
+        "女人我最大"
+      ],
+      "virality_score": 7.0,
+      "suggested_type": "影劇型",
+      "desc": "選題來源：Claude 選題引擎\n\n切角：《母胎單身大作戰2》正在台灣掀起討論，節目裡最讓人揪心的不是配對失敗，而是那些「明明有感覺，卻一句話都說不出口」的人。切進一個具體情節：某位參賽者在最後表白環節沉默了整整幾秒，然後說「我不知道怎麼說」——這不是沒勇氣，是從小到大沒有人示範過「喜歡一個人的時候，你可以直接說」。洞察：台灣人在感情裡的沉默，很多時候不是冷漠，是一種從來沒被練習過的語言。Lava 的設計邏輯：線下見面前的結構化引導，就是在幫你練習「開口」這件事。\n\n病毒係數：7/10。出圈證據為GQ Taiwan與女人我最大兩家台灣主流媒體在同一時間點以《母胎單身大作戰2》為主角發出推薦文，代表此節目在台灣正處於討論高峰；角度從節目具體情節切進「不會開口」的關係洞察，避開劇評路線，觸發『這在說我』的共鳴\n\n熱度證明：\n- GQ Taiwan｜不只《母胎單身大作戰2》，這些「戀綜」也超推薦：神明助攻、母子配對⋯⋯全都超乎你想像！｜GQ Taiwan 主流媒體報導，標題以《母胎單身大作戰2》為主角帶出戀綜推薦潮｜https://news.google.com/rss/articles/CBMi_ANBVV95cUxQQ09lY29seE5pUjVrT2pxOEZxa3dqeVFPNnRodFpqVnRjTGU5RWV6UkcwYkp4SEhDT0ZmZ0cxTHJmT1k2dDlPQ",
+      "url": "",
+      "created_at": "2026-09-23T09:02:03.203+08:00",
+      "decision": null,
+      "decided_at": null,
+      "reason": "",
+      "applied": false
+    },
+    {
       "task_id": "i-a236789457",
       "title": "孫藝珍和池昌旭在《挑情醜聲》裡打了一場愛情賭局——贏了之後，才是最難的部分｜病毒分 7｜🧠Claude",
       "scout": "Claude",
@@ -1189,5 +1207,5 @@
       "scout": "Claude"
     }
   ],
-  "pulled_at": "2026-09-22T09:08:10+08:00"
+  "pulled_at": "2026-09-23T09:02:30+08:00"
 }
