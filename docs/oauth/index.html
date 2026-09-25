@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>Threads OAuth 回呼</title>
+<body style="font:16px/1.6 -apple-system,sans-serif;max-width:640px;margin:48px auto;padding:0 20px">
+<h2>授權完成</h2>
+<p>把下面這串 <b>code</b> 貼給終端機：</p>
+<pre id="c" style="background:#f3f3f3;padding:12px;border-radius:8px;word-break:break-all;user-select:all"></pre>
+<pre style="background:#eef;padding:12px;border-radius:8px;word-break:break-all">cd ~/海巡機器人 && python3 scripts/threads_oauth.py exchange <span id="k">…</span></pre>
+<script>
+const p=new URLSearchParams(location.search);const code=(p.get('code')||'').replace(/#_$/,'');
+document.getElementById('c').textContent=code||'（網址裡沒有 code，請重新授權）';
+document.getElementById('k').textContent=code||'CODE';
+</script>
+</body>
