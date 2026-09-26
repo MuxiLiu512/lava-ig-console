@@ -2535,6 +2535,72 @@
         "metrics_window": "2026-09-25"
       },
       "rollback_of": null
+    },
+    {
+      "v": "cfg-155",
+      "date": "2026-09-26",
+      "commit": "bf1e7cf",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 選擇過少"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mryw8kv4"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-156",
+      "date": "2026-09-26",
+      "commit": "771adbe",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 底圖重複太多，每篇都是一樣的"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mrywardn"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-157",
+      "date": "2026-09-26",
+      "commit": "adf7e99",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "(misc) 第一張圖的嘗試很特別，有格外的意境，但整體而言候選圖太少"
+      ],
+      "trigger": {
+        "reviews": [
+          "R-mrywblpd"
+        ],
+        "metrics_window": "2026-07-23–2026-08-23"
+      },
+      "rollback_of": null
+    },
+    {
+      "v": "cfg-158",
+      "date": "2026-09-26",
+      "commit": "87c904c",
+      "risk": "low",
+      "auto_applied": true,
+      "changes": [
+        "成效觀察：高「1808837689」10.4% / 低「1847626943」0.9%"
+      ],
+      "trigger": {
+        "reviews": [],
+        "metrics_window": "2026-09-26"
+      },
+      "rollback_of": null
     }
   ],
   "rollback_requests": []
