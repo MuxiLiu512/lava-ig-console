@@ -1,0 +1,10 @@
+{
+ "type": "post.discard",
+ "target": "20260824-Attached說你不是",
+ "ts": "2026-09-30T01:33:53+08:00",
+ "by": "console",
+ "payload": {
+  "reason": "可以提這個貼文，但不是近期一個月",
+  "status_was": "awaiting_review"
+ }
+}
