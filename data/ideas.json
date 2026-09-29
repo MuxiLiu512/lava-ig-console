@@ -14,9 +14,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：《母胎單身大作戰2》正在台灣掀起討論，節目裡最讓人揪心的不是配對失敗，而是那些「明明有感覺，卻一句話都說不出口」的人。切進一個具體情節：某位參賽者在最後表白環節沉默了整整幾秒，然後說「我不知道怎麼說」——這不是沒勇氣，是從小到大沒有人示範過「喜歡一個人的時候，你可以直接說」。洞察：台灣人在感情裡的沉默，很多時候不是冷漠，是一種從來沒被練習過的語言。Lava 的設計邏輯：線下見面前的結構化引導，就是在幫你練習「開口」這件事。\n\n病毒係數：7/10。出圈證據為GQ Taiwan與女人我最大兩家台灣主流媒體在同一時間點以《母胎單身大作戰2》為主角發出推薦文，代表此節目在台灣正處於討論高峰；角度從節目具體情節切進「不會開口」的關係洞察，避開劇評路線，觸發『這在說我』的共鳴\n\n熱度證明：\n- GQ Taiwan｜不只《母胎單身大作戰2》，這些「戀綜」也超推薦：神明助攻、母子配對⋯⋯全都超乎你想像！｜GQ Taiwan 主流媒體報導，標題以《母胎單身大作戰2》為主角帶出戀綜推薦潮｜https://news.google.com/rss/articles/CBMi_ANBVV95cUxQQ09lY29seE5pUjVrT2pxOEZxa3dqeVFPNnRodFpqVnRjTGU5RWV6UkcwYkp4SEhDT0ZmZ0cxTHJmT1k2dDlPQ",
       "url": "",
       "created_at": "2026-09-23T09:02:03.203+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -32,9 +32,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：從《挑情醜聞》的核心設定切入：兩個人用「賭局」框架靠近彼此，但劇裡真正讓人坐立難安的，是賭局結束之後——當策略消失、目的達成，你才發現你根本不知道怎麼「真的喜歡一個人」。這個困境不只是劇情，是很多人談戀愛的真實處境：習慣用表現、用計算、用「讓自己顯得有價值」的方式靠近對方，卻從來沒有練習過「什麼都不做、就只是在一起」。Lava 的 offline-first 設計，就是要把這個「策略時間」壓縮掉——見面本身，才是起點。\n\n病毒係數：7/10。出圈證據為Cosmopolitan Taiwan主流媒體專題報導（8看點），加上孫藝珍、池昌旭兩位韓國大牌演員自帶台灣搜尋熱度；角度從「賭局結束後才是難題」切入，觸及現代人用表現感取代真實連結的普遍焦慮，具備「這在說我」的儲存與分享動機。\n\n熱度證明：\n- Cosmopolitan Taiwan｜Netflix《挑情醜聞》8看點！孫藝珍、池昌旭愛情賭局，翻拍19禁電影，最美臉孔NANA大尺度情慾拉扯｜主流媒體專題報導，列出8大看點，為Netflix新上線劇集做重點推介｜https://news.google.com/rss/articles/CBMihgFBVV95cUxPXzQyeFlRMkFjNXBjQU5RMkl2Umh5d3JGRnhuUm16SHh0R1E0NDZFanV3QV9mZEdqd2",
       "url": "",
       "created_at": "2026-09-22T09:01:54.695+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -50,9 +50,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：中秋是台灣家庭聚會密度最高的節日之一，也是一年中「被催問感情狀況」壓力最集中的時刻。切入點不是雞湯式的「愛自己」，而是命中那個具體情境：圍爐前五分鐘、長輩夾菜的空檔、表哥表姐帶了新對象來的那個瞬間——你不是不想談，你只是還沒遇到讓你想帶回家的人。Lava 的角度：中秋連假是一個很好的理由，讓你真的去見一個人，而不是繼續在 app 上滑。\n\n病毒係數：8/10。出圈證據為 Google Trends 台灣今日熱搜「中秋連假」，屬硬門檻規定的出圈證據；情境命中率極高（台灣人幾乎人人有被問過的經驗），tpl-thats-me-scenario 模板的「這在說我」觸發點強，tag 朋友與儲存動機並存。\n\n熱度證明：\n- Google Trends 台灣｜「中秋連假」列入今日台灣熱搜｜Google Trends 台灣今日熱搜，屬硬門檻規定的出圈證據類型｜https://trends.google.com/trends/trendingsearches/daily?geo=TW\n- ETtoday新聞雲｜誠品公布上半年暢銷榜TOP 10 Threads推動書本熱銷、黃山料站穩前十（佐證台灣媒體當前活躍報導節慶與社會話題）｜主流媒體（ETtoday）當日活躍報導台灣社會話題，確認媒體環境熱度｜https://news.google.com/rss/art",
       "url": "",
       "created_at": "2026-09-20T09:02:10.360+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -68,9 +68,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：《Rewire》以神經可塑性為核心，說明大腦的行為迴圈（焦慮、逃避、過度反應）並非固定性格，而是可透過刻意練習重塑的神經路徑。切入點：感情裡那些「我知道不對但就是會這樣」的反應——例如對方已讀不回就開始腦補最壞情況、吵架後習慣性沉默、越在乎越裝不在乎——這些不是「你這個人就是這樣」，而是大腦建立的預測迴圈。洞察：你不需要改變個性，你只需要打斷迴圈的觸發點。Lava 的 offline-first 設計本身就是一種「打斷舊迴圈、建立新行為路徑」的機制——見面，才能讓大腦有新的資料可以學習。\n\n病毒係數：7/10。出圈證據為博客來即時榜第7名（書籍排行榜），屬硬門檻規定的出圈證據類型之一；神經可塑性切入感情行為模式角度未出過，「不是個性是迴圈」結論對一般讀者具反直覺感，儲存動機強。\n\n熱度證明：\n- 博客來即時榜｜Rewire-神經可塑性 登博客來即時榜第7名（2026-09-11 抓取）｜即時榜第7名，屬書籍排行榜出圈證據｜https://www.books.com.tw/products/0010990062?loc=P_0003_007\n- 工商時報｜AI應用、台股熱潮帶動！商業理財類霸榜博客來百大暢銷書｜主流財經媒體報導博客來暢銷趨勢，確認博客來榜單當前熱度｜https://news.google.com/rss/articles/CB",
       "url": "",
       "created_at": "2026-09-20T09:02:09.417+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -86,9 +86,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：《隨他們去》（Let Them）全球熱銷破1000萬冊，核心概念是：當別人不回應你、不珍惜你，與其花力氣改變對方，不如「就讓他們去」。但台灣讀者最常誤讀的地方在於：把「隨他們去」讀成「算了、冷漠、不在乎」。卡片要拆解的是：放手（Let Them）的心理機制是主動選擇把注意力收回自己身上，而冷漠是被動的情緒關閉——兩者的身體感受、後續行為、對關係的影響完全不同。用約會場景具體化：「他三天沒回訊息，你刷了他IG 40次」vs.「你注意到自己在刷，然後放下手機去做別的事」——前者是焦慮，後者才是Let Them。Lava橋接：真正能「讓自己先動起來」去見面的人，往往已經練習過把注意力放回自己，而不是等對方給答案。\n\n病毒係數：7/10。出圈證據為博客來即時榜第一手榜單（#3），屬系統規定的出圈證據類型；工商時報為台灣主流媒體第二來源。「隨他們去」書名本身在台灣Threads與社群已有討論，「放手vs.冷漠」的辯證切入點能精準觸發「這在說我」的儲存動機，且書名即hook，標題無需解釋背景。\n\n熱度證明：\n- 博客來即時榜（第一手榜單）｜《隨他們去》博客來即時榜第3名｜即時榜#3，79折熱銷中｜https://www.books.com.tw/products/0011055312?loc=P_0003_003\n- 工商時報｜AI應用、台股熱潮帶動！",
       "url": "",
       "created_at": "2026-09-16T09:01:46.891+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -105,9 +105,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：《北歐時間》因 Threads 單篇貼文帶動銷量成長近 5 倍，多家媒體報導，說明台灣人正在集體尋找某種「慢下來」的關係節奏。切入點：北歐核心概念「lagom」（不多不少、剛剛好）放進現代約會語境——不是「降低標準」，而是不強迫關係提速、不過度黏著、不急著貼標籤。具體情境：你們聊得來，但對方沒有主動說「我們在一起吧」——北歐人不會焦慮這件事，因為他們把「現在這個狀態很好」當成目的地，而不是過渡期。Lava 橋接：offline-first 的設計本身就是一種 lagom——不讓你無限滑卡製造焦慮，而是一週一次、見了再說。\n\n病毒係數：6/10。出圈證據為工商時報、翻爆、meet.eslite 三家媒體同時報導《北歐時間》Threads 帶動銷量近 5 倍，屬台灣主流媒體報導；數字反差（5 倍）是強 hook，但書本身非愛情書，橋接需要一格說明，略降分發潛力。\n\n熱度證明：\n- 工商時報｜誠品暢銷榜：Threads點書成金《北歐時間》銷量翻近5倍、《臺灣漫遊錄》累銷將破3萬本｜Threads 單篇帶動銷量成長近 5 倍，工商時報報導｜https://news.google.com/rss/articles/CBMiX0FVX3lxTE84T09pbjJndlVOTUs3VlQ3emZZU2JHX2pXNjN2RVc1WTVNMEtQMHRkU",
       "url": "",
       "created_at": "2026-09-13T09:02:06.714+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -124,9 +124,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：從 verse.com.tw 導演專訪切入：李滄東說他「拒絕說服觀眾」，因為他認為電影不應該告訴你答案。這個創作哲學，其實說中了現代人在感情裡最大的焦慮——我們太想要一個「這算不算愛情」的標準答案，卻忘了真正的關係從來不是選擇題。四位影帝影后（趙寅成、全道嬿、曹汝貞、薛景求）在片中各自演繹不同的「可能」，每一種都不完美，每一種都像真的。卡片從「你有沒有問過自己這個問題」切進，拆解『我們為什麼這麼需要給感情貼標籤』，最後給出反例：那些說不清楚的關係，有時候比說得清楚的更誠實。\n\n病毒係數：7/10。出圈證據為多家台灣主流媒體（GQ Taiwan、KSD韓星網、verse.com.tw）同時報導李滄東《可能的愛情》，四大影帝影后合體衝奧斯卡具備高討論度；導演「拒絕給答案」的哲學與現代人「需要定義關係」的焦慮形成強烈對照，觸發『這在說我』的共鳴。\n\n熱度證明：\n- GQ Taiwan｜「這真的是愛情嗎？」導演李滄東專訪：拒絕說服觀眾的電影美學｜台灣主流媒體報導，導演專訪｜https://news.google.com/rss/articles/CBMicEFVX3lxTE5oYjRMREVOQWZnNlNIUkxzdXpHdG80TGdzbjRMZFhPZnpNN19DMlFkNjVOaXV3Rkd4TlJfR2R6dElSaHdaelp4M05",
       "url": "",
       "created_at": "2026-09-11T09:02:25.244+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -142,9 +142,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：從《不良一族尋愛記》第二季的具體設定切入：節目刻意選角「社會眼中的問題人物」去尋愛，這個框架本身就在測試一件事——觀眾（和參賽者）到底在被什麼吸引？不寫劇評，而是從節目裡一個具體的配對張力出發，切進「reformation fantasy（改造幻想）」這個關係動態：你以為你喜歡他，但你真正上癮的，是「我是那個讓他變好的人」這個角色。橋接到 Lava 的場景：在真實約會裡，你怎麼分辨自己是真的喜歡對方，還是喜歡「這個挑戰」？\n\n病毒係數：7/10。GQ Taiwan 為台灣主流媒體（出圈證據），主動將此節目納入戀綜推薦報導；加上 Netflix 官方宣布第二季回歸，具備雙來源且其中一筆為主流媒體出圈證據。\n\n熱度證明：\n- Netflix／迷誠品｜Netflix熱門日本戀愛實境秀回歸！《不良一族尋愛記》第二季成員IG一次大公開｜Netflix 官方宣布第二季回歸，迷誠品報導成員 IG 公開，引發追蹤熱潮｜https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HeEhqVGxvTFNMU3dSQWt6NVNTVmprVmFxQWp2NmVjR0pLQTJ5Yk5uVGIzLVpOTnlRNTVpcnZGdEpHUGM4MUxVd1E3QzVpMXZ4TU5MQVBpTXJ2SU9xUzBB\n- ",
       "url": "",
       "created_at": "2026-09-10T09:01:50.360+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false
     },
     {
@@ -153,9 +153,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：從村上春樹《城與其不確定的壁》登上誠品 2025 新書暢銷榜 TOP 6 切入：村上的故事幾乎永遠停在「靠近卻沒有抵達」——主角愛著某人，卻總是隔著一道說不清楚的牆。這道牆不是距離，是他選擇不越過去。用這個具體情節問讀者：你有沒有也在某段關係裡，選擇停在牆的這一側？心理學把這個模式叫做「avoidant intimacy」——不是不愛，是愛到某個距離就自動剎車。Lava 的 offline-first 設計邏輯：把「見面」設計成必須跨越的那一步，就是為了讓你沒辦法永遠停在牆的這一側。\n\n病毒係數：6/10。出圈證據為誠品 2025 新書暢銷榜（台灣排行榜，多家主流媒體報導），村上春樹是台灣大眾熟知的名字，「大家聽過但可能沒真的讀完」符合題型 C 標準；橋接「avoidant intimacy」的洞察具體且反直覺，但村上春樹本身話題性在台灣屬中等熱度，非當日爆炸性熱搜，virality 上限受限。\n\n熱度證明：\n- 500輯（誠品官方媒體）｜2025誠品書店十大新書暢銷榜！村上春樹長篇小說登TOP 6、榜首是這本｜誠品 2025 新書暢銷榜 TOP 6，多家媒體報導（出圈證據：誠品排行榜）｜https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUWm96UC1ueS1hUlBqMFl5ekpU",
       "url": "",
       "created_at": "2026-09-08T09:02:04.976+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false,
       "scout": "Claude",
       "sources": [
@@ -168,9 +168,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：誠品上半年暢銷榜冠軍《擁有過就好》，作者黃山料正值炎上風波卻逆勢賣爆。切入點不是書評，而是書名本身：「擁有過就好」這句話，在感情裡到底是一種成熟，還是一種提前放棄？用書名當鏡子，讓讀者對照自己現在的關係狀態——你現在說「擁有過就好」，是真的放下了，還是還沒開口就先幫自己找退路？連結 Lava：offline-first 的設計邏輯，就是讓你從「擁有過就好」變成「我想繼續擁有」。\n\n病毒係數：7/10。出圈證據為誠品上半年暢銷榜公布，ETtoday、COOL-STYLE、工商時報、迷誠品等多家台灣主流媒體同日報導；黃山料炎上仍賣爆的反差本身就是今日台灣社群的討論焦點，書名「擁有過就好」作為關係哲學命題具備強烈的『這在說我』投射感。\n\n熱度證明：\n- ETtoday 新聞雲｜誠品公布上半年暢銷榜TOP 10 Threads推動書本熱銷、黃山料站穩前十｜誠品上半年暢銷榜公布，黃山料站穩前十，多家主流媒體同日報導（出圈證據）｜https://news.google.com/rss/articles/CBMiUkFVX3lxTFBQVlBHWHRoeU91Nl9ZUmJ0bk1lYkZRR0lwNG16dmJfdWZwUHNkSW9HamIycm1qZGFFX0tUVnpXbHpMcjduX1hBNmt5eV9XOFBuTUE\n- COOL-STYL",
       "url": "",
       "created_at": "2026-09-07T09:02:50.209+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false,
       "scout": "Claude",
       "sources": [
@@ -184,9 +184,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：從《抓馬戀人》（Babygirl）的核心情節切入：一對看似完美的伴侶，在婚禮前夕因為一個秘密讓整段關係的地基鬆動。GQ Taiwan 和 Harper's BAZAAR 的影評都點出這部片的核心不是出軌，而是「你在關係裡到底有沒有真的讓對方看見你」。用這個具體情節帶出一個關係洞察：現代人最常見的親密障礙不是溝通不足，而是我們在最親近的人面前，反而最擅長表演一個「沒有需求的自己」——心理學稱之為 self-concealment in intimate relationships。最後橋接到 Lava 的 offline-first 設計邏輯：見面之前你可以精心包裝，但坐在對面的那一秒，表演就開始有成本了。\n\n病毒係數：7/10。出圈證據為 Harper's BAZAAR 台灣、GQ Taiwan、換日線三家主流媒體在同一時間點獨立報導《抓馬戀人》，符合「多家台灣主流媒體同時報導同一作品」的出圈標準；切入角度從具體情節（婚禮前夕秘密）直接跳到關係洞察（在最親近的人面前最擅長表演），避開劇評感，符合 Heaven Raven 式手法；「self-concealment」概念對 Lava 目標受眾（想認真交往但不知道怎麼真實呈現自己的人）有強烈的「這在說我」共鳴。\n\n熱度證明：\n- GQ Taiwan｜《艾諾拉》影評：撕碎愛情幻象的現實寓言，這絕",
       "url": "",
       "created_at": "2026-09-03T09:02:01.769+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false,
       "scout": "Claude",
       "sources": [
@@ -199,9 +199,9 @@
       "desc": "選題來源：Claude 選題引擎\n\n切角：Netflix韓國戀綜《我剩下的戀愛》的設定是：8位參賽者都曾被醫生宣告「生命危機」，罹癌、重病、與死亡擦肩而過。節目最讓人停下來的不是配對過程，而是這群人在選擇對象時的標準——他們幾乎沒有人在意對方的條件，在意的是「這個人在我最糟的時候，會不會留下來」。從這個具體情節切進一個關係洞察：大多數人在健康、穩定、選擇很多的時候，反而最不知道自己真正要什麼。「剩餘」這個詞，讓人突然變得誠實。Lava 的角度：你現在的擇偶標準，是你真正的標準，還是你「還有很多時間可以挑」時的標準？\n\n病毒係數：7/10。出圈證據為ELLE Taiwan與Bella.tw兩家台灣主流媒體獨立報導同一節目，且節目設定（生命危機參賽者）本身具強烈話題性，觸發「這在說我」的反思動機；角度從具體情節（擇偶標準的轉變）切進關係洞察，非劇評。\n\n熱度證明：\n- ELLE Taiwan｜韓國戀綜《我剩下的戀愛》線上看5亮點！8位成員抗病日記公開：罹癌四期重生，抗癌戰友相遇超催淚｜台灣主流媒體（ELLE）詳細報導，列出5大看點｜https://news.google.com/rss/articles/CBMifEFVX3lxTE5nVnJQRk14NGtXRkh4QzBCckp1YkFXQUV2V1ZCTE5RV0tFTnRrbWdYUkVPRWdpUGJUMHV4U3Q5Y2Js",
       "url": "",
       "created_at": "2026-09-02T09:01:57.508+08:00",
-      "decision": null,
-      "decided_at": null,
-      "reason": "",
+      "decision": "reject",
+      "decided_at": "2026-09-30T01:37:56+08:00",
+      "reason": "Jesse 2026-09-30：待審區清空重新開始",
       "applied": false,
       "scout": "Claude",
       "sources": [
