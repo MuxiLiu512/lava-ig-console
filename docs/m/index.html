@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>海巡審核</title><style>body{font:16px -apple-system,sans-serif;background:#0f1115;color:#8b93a7;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}</style></head>
+<body><div id="s">正在連到審核頁…</div>
+<script>
+// 固定入口（2026-10-09）：Mac 換網路時臨時通道的網址會變，這頁從 raw GitHub 讀最新網址再跳過去，
+// 手機只要存這一個網址。?t= 的 token 原樣帶過去，這裡不存 token。
+fetch('https://raw.githubusercontent.com/MuxiLiu512/lava-ig-console/main/docs/m/current.json?ts='+Date.now(),{cache:'no-store'})
+ .then(r=>r.json()).then(j=>{ if(!j.url) throw 0; location.replace(j.url.replace(/\/$/,'')+'/m'+location.search); })
+ .catch(()=>{ document.getElementById('s').textContent='通道暫時離線（Mac 剛換網路，最多等 5 分鐘再重新整理）'; });
+</script></body></html>
